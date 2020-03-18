@@ -1,0 +1,158 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartLineFormat:class'
+    summary: 直線要素の書式設定オプションをカプセル化します。
+    name: Excel.ChartLineFormat
+    fullName: Excel.ChartLineFormat
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.ChartLineFormat#clear:member(1)'
+      - 'excel!Excel.ChartLineFormat#color:member'
+      - 'excel!Excel.ChartLineFormat#context:member'
+      - 'excel!Excel.ChartLineFormat#lineStyle:member'
+      - 'excel!Excel.ChartLineFormat#load:member(1)'
+      - 'excel!Excel.ChartLineFormat#load:member(2)'
+      - 'excel!Excel.ChartLineFormat#set:member(1)'
+      - 'excel!Excel.ChartLineFormat#weight:member'
+  - uid: 'excel!Excel.ChartLineFormat#clear:member(1)'
+    summary: グラフ要素の線の書式をクリアします。
+    name: clear()
+    fullName: clear()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.ChartLineFormat#color:member'
+    summary: グラフの線の色を表す HTML カラー コード。
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ChartLineFormat#context:member'
+    summary: オブジェクトに関連付けられている要求コンテキスト。 これにより、アドインのプロセスが Office ホストアプリケーションのプロセスに接続されます。
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartLineFormat#lineStyle:member'
+    summary: 線のスタイルを表します。 詳細については、「Excel の ChartLineStyle」を参照してください。
+    name: lineStyle
+    fullName: lineStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'lineStyle: Excel.ChartLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25" | "Grey50" | "Grey75" | "Automatic" | "RoundDot";'
+      return:
+        type:
+          - 'excel!Excel.ChartLineFormat#lineStyle~0:complex'
+  - uid: 'excel!Excel.ChartLineFormat#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る`context.sync()`前に、を呼び出す必要があります。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ChartLineFormat;'
+      return:
+        type:
+          - 'excel!Excel.ChartLineFormat:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartLineFormat#load:member(2)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る`context.sync()`前に、を呼び出す必要があります。
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ChartLineFormat;
+      return:
+        type:
+          - 'excel!Excel.ChartLineFormat:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: '`propertyNamesAndPaths.select`は、読み込むプロパティを指定するコンマで区切られた文字列で`propertyNamesAndPaths.expand` 、読み込むナビゲーションプロパティを指定するコンマで区切られた文字列です。'
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.ChartLineFormat#set:member(1)'
+    summary: 既存の読み込まれたオブジェクトに基づいて、オブジェクトに複数のプロパティを設定します。
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.ChartLineFormat): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.ChartLineFormat:class'
+  - uid: 'excel!Excel.ChartLineFormat#weight:member'
+    summary: 線の太さ (ポイント数) を表します。
+    name: weight
+    fullName: weight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'weight: number;'
+      return:
+        type:
+          - number
+references:
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.ChartLineFormat#lineStyle~0:complex'
+    name: Excel.ChartLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25" | "Grey50" | "Grey75" | "Automatic" | "RoundDot"
+    fullName: Excel.ChartLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25" | "Grey50" | "Grey75" | "Automatic" | "RoundDot"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartLineStyle:enum'
+        name: Excel.ChartLineStyle
+        fullName: Excel.ChartLineStyle
+      - name: ' | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25" | "Grey50" | "Grey75" | "Automatic" | "RoundDot"'
+        fullName: ' | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25" | "Grey50" | "Grey75" | "Automatic" | "RoundDot"'
+  - uid: 'excel!Excel.ChartLineFormat:class'
+    name: ChartLineFormat
+    fullName: Excel.ChartLineFormat

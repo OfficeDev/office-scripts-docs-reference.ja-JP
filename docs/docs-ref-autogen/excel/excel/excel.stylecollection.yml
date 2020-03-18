@@ -1,0 +1,207 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.StyleCollection:class'
+    summary: すべてのスタイルのコレクションを表します。
+    name: Excel.StyleCollection
+    fullName: Excel.StyleCollection
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.StyleCollection#add:member(1)'
+      - 'excel!Excel.StyleCollection#context:member'
+      - 'excel!Excel.StyleCollection#getCount:member(1)'
+      - 'excel!Excel.StyleCollection#getItem:member(1)'
+      - 'excel!Excel.StyleCollection#getItemAt:member(1)'
+      - 'excel!Excel.StyleCollection#items:member'
+      - 'excel!Excel.StyleCollection#load:member(1)'
+  - uid: 'excel!Excel.StyleCollection#add:member(1)'
+    summary: コレクションに新しいスタイルを追加します。
+    name: add(name)
+    fullName: add(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(name: string): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let styles = context.workbook.styles;
+
+              // Add a new style to the style collection.
+              // Styles is in the Home tab ribbon.
+              styles.add("Diagonal Orientation Style");
+                    
+              let newStyle = styles.getItem("Diagonal Orientation Style");
+              
+              // The "Diagonal Orientation Style" properties.
+              newStyle.textOrientation = 38;
+              newStyle.autoIndent = true;
+              newStyle.includeProtection = true;
+              newStyle.shrinkToFit = true;
+              newStyle.locked = false;
+              
+              await context.sync();
+
+              console.log("Successfully added a new style with diagonal orientation to the Home tab ribbon.");
+          }
+          ```
+      parameters:
+        - id: name
+          description: 追加するスタイルの名前を指定します。
+          type:
+            - string
+  - uid: 'excel!Excel.StyleCollection#context:member'
+    summary: オブジェクトに関連付けられている要求コンテキスト。 これにより、アドインのプロセスが Office ホストアプリケーションのプロセスに接続されます。
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.StyleCollection#getCount:member(1)'
+    summary: コレクション内のスタイルの数を取得します。
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): ClientResult<number>;'
+      return:
+        type:
+          - 'excel!Excel.StyleCollection#getCount~0:complex'
+        description: ''
+  - uid: 'excel!Excel.StyleCollection#getItem:member(1)'
+    summary: 名前に基づいてスタイルを取得します。
+    name: getItem(name)
+    fullName: getItem(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(name: string): Excel.Style;'
+      return:
+        type:
+          - 'excel!Excel.Style:class'
+        description: |-
+
+
+          #### <a name="examples"></a>例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let styles = context.workbook.styles;
+
+              // Add a new style to the style collection.
+              // Styles is in the Home tab ribbon.
+              styles.add("Diagonal Orientation Style");
+                    
+              let newStyle = styles.getItem("Diagonal Orientation Style");
+              
+              // The "Diagonal Orientation Style" properties.
+              newStyle.textOrientation = 38;
+              newStyle.autoIndent = true;
+              newStyle.includeProtection = true;
+              newStyle.shrinkToFit = true;
+              newStyle.locked = false;
+              
+              await context.sync();
+
+              console.log("Successfully added a new style with diagonal orientation to the Home tab ribbon.");
+          }
+          ```
+      parameters:
+        - id: name
+          description: 取得するスタイルの名前を指定します。
+          type:
+            - string
+  - uid: 'excel!Excel.StyleCollection#getItemAt:member(1)'
+    summary: コレクション内の位置に基づいてスタイルを取得します。
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Excel.Style;'
+      return:
+        type:
+          - 'excel!Excel.Style:class'
+        description: ''
+      parameters:
+        - id: index
+          description: 取得する style オブジェクトのインデックス値を指定します。 0 を起点とする番号になります。
+          type:
+            - number
+  - uid: 'excel!Excel.StyleCollection#items:member'
+    summary: このコレクション内に読み込まれた子アイテムを取得します。
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Excel.Style[];'
+      return:
+        type:
+          - 'excel!Excel.StyleCollection#items~0:complex'
+  - uid: 'excel!Excel.StyleCollection#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る`context.sync()`前に、を呼び出す必要があります。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.StyleCollection;'
+      return:
+        type:
+          - 'excel!Excel.StyleCollection:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.StyleCollection#getCount~0:complex'
+    name: ClientResult<number>
+    fullName: Excel.ClientResult<number>
+    spec.typeScript:
+      - uid: 'excel!Excel.ClientResult:class'
+        name: ClientResult
+        fullName: Excel.ClientResult
+      - name: <number>
+        fullName: <number>
+  - uid: 'excel!Excel.Style:class'
+    name: Style
+    fullName: Excel.Style
+  - uid: 'excel!Excel.StyleCollection#items~0:complex'
+    name: 'Excel.Style[]'
+    fullName: 'Excel.Style[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Style:class'
+        name: Excel.Style
+        fullName: Excel.Style
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.StyleCollection:class'
+    name: StyleCollection
+    fullName: Excel.StyleCollection

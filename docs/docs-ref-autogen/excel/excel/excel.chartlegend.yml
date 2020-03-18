@@ -1,0 +1,241 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartLegend:class'
+    summary: グラフに凡例を表します。
+    name: Excel.ChartLegend
+    fullName: Excel.ChartLegend
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.ChartLegend#context:member'
+      - 'excel!Excel.ChartLegend#format:member'
+      - 'excel!Excel.ChartLegend#height:member'
+      - 'excel!Excel.ChartLegend#left:member'
+      - 'excel!Excel.ChartLegend#legendEntries:member'
+      - 'excel!Excel.ChartLegend#load:member(1)'
+      - 'excel!Excel.ChartLegend#load:member(2)'
+      - 'excel!Excel.ChartLegend#overlay:member'
+      - 'excel!Excel.ChartLegend#position:member'
+      - 'excel!Excel.ChartLegend#set:member(1)'
+      - 'excel!Excel.ChartLegend#showShadow:member'
+      - 'excel!Excel.ChartLegend#top:member'
+      - 'excel!Excel.ChartLegend#visible:member'
+      - 'excel!Excel.ChartLegend#width:member'
+  - uid: 'excel!Excel.ChartLegend#context:member'
+    summary: オブジェクトに関連付けられている要求コンテキスト。 これにより、アドインのプロセスが Office ホストアプリケーションのプロセスに接続されます。
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartLegend#format:member'
+    summary: 塗りつぶしとフォントの書式設定を含む、グラフの凡例の書式設定を表します。 読み取り専用。
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: Excel.ChartLegendFormat;'
+      return:
+        type:
+          - 'excel!Excel.ChartLegendFormat:class'
+  - uid: 'excel!Excel.ChartLegend#height:member'
+    summary: グラフの凡例の高さをポイント単位で表します。 凡例が表示されていない場合は Null。
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'height: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartLegend#left:member'
+    summary: グラフの凡例の左のポイントを表します。 凡例が表示されていない場合は Null。
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartLegend#legendEntries:member'
+    summary: 凡例に含まれる凡例エントリのコレクションを表します。 読み取り専用です。
+    name: legendEntries
+    fullName: legendEntries
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly legendEntries: Excel.ChartLegendEntryCollection;'
+      return:
+        type:
+          - 'excel!Excel.ChartLegendEntryCollection:class'
+  - uid: 'excel!Excel.ChartLegend#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る`context.sync()`前に、を呼び出す必要があります。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ChartLegend;'
+      return:
+        type:
+          - 'excel!Excel.ChartLegend:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartLegend#load:member(2)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る`context.sync()`前に、を呼び出す必要があります。
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ChartLegend;
+      return:
+        type:
+          - 'excel!Excel.ChartLegend:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: '`propertyNamesAndPaths.select`は、読み込むプロパティを指定するコンマで区切られた文字列で`propertyNamesAndPaths.expand` 、読み込むナビゲーションプロパティを指定するコンマで区切られた文字列です。'
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.ChartLegend#overlay:member'
+    summary: グラフの凡例をグラフの本体に重ねるかどうかを指定するブール型の値です。
+    name: overlay
+    fullName: overlay
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'overlay: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartLegend#position:member'
+    summary: グラフの凡例の位置を表します。 詳細については、「ChartLegendPosition」を参照してください。
+    name: position
+    fullName: position
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'position: Excel.ChartLegendPosition | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom";'
+      return:
+        type:
+          - 'excel!Excel.ChartLegend#position~0:complex'
+  - uid: 'excel!Excel.ChartLegend#set:member(1)'
+    summary: 既存の読み込まれたオブジェクトに基づいて、オブジェクトに複数のプロパティを設定します。
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.ChartLegend): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.ChartLegend:class'
+  - uid: 'excel!Excel.ChartLegend#showShadow:member'
+    summary: 凡例がグラフに影付きかどうかを表します。
+    name: showShadow
+    fullName: showShadow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showShadow: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartLegend#top:member'
+    summary: グラフ凡例の上を表します。
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartLegend#visible:member'
+    summary: ChartLegend オブジェクトを表示または非表示にするかを表すブール型の値。
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartLegend#width:member'
+    summary: グラフの凡例の幅をポイント単位で表します。 凡例が表示されていない場合は Null。
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width: number;'
+      return:
+        type:
+          - number
+references:
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.ChartLegendFormat:class'
+    name: ChartLegendFormat
+    fullName: Excel.ChartLegendFormat
+  - uid: 'excel!Excel.ChartLegendEntryCollection:class'
+    name: ChartLegendEntryCollection
+    fullName: Excel.ChartLegendEntryCollection
+  - uid: 'excel!Excel.ChartLegend:class'
+    name: ChartLegend
+    fullName: Excel.ChartLegend
+  - uid: 'excel!Excel.ChartLegend#position~0:complex'
+    name: Excel.ChartLegendPosition | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom"
+    fullName: Excel.ChartLegendPosition | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartLegendPosition:enum'
+        name: Excel.ChartLegendPosition
+        fullName: Excel.ChartLegendPosition
+      - name: ' | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom"'
+        fullName: ' | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom"'

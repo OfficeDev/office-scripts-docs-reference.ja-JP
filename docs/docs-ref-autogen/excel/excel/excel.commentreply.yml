@@ -1,0 +1,300 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.CommentReply:class'
+    summary: ブック内のコメントの返信を表します。
+    name: Excel.CommentReply
+    fullName: Excel.CommentReply
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.CommentReply#authorEmail:member'
+      - 'excel!Excel.CommentReply#authorName:member'
+      - 'excel!Excel.CommentReply#content:member'
+      - 'excel!Excel.CommentReply#context:member'
+      - 'excel!Excel.CommentReply#creationDate:member'
+      - 'excel!Excel.CommentReply#delete:member(1)'
+      - 'excel!Excel.CommentReply#getLocation:member(1)'
+      - 'excel!Excel.CommentReply#getParentComment:member(1)'
+      - 'excel!Excel.CommentReply#id:member'
+      - 'excel!Excel.CommentReply#load:member(1)'
+      - 'excel!Excel.CommentReply#load:member(2)'
+      - 'excel!Excel.CommentReply#mentions:member'
+      - 'excel!Excel.CommentReply#richContent:member'
+      - 'excel!Excel.CommentReply#set:member(1)'
+      - 'excel!Excel.CommentReply#updateMentions:member(1)'
+  - uid: 'excel!Excel.CommentReply#authorEmail:member'
+    summary: コメント返信作成者のメール アドレスを取得します。
+    name: authorEmail
+    fullName: authorEmail
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly authorEmail: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.CommentReply#authorName:member'
+    summary: コメント返信作成者の名前を取得します。
+    name: authorName
+    fullName: authorName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly authorName: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.CommentReply#content:member'
+    summary: コメント返信の内容を取得または設定します。 文字列はテキスト形式です。
+    name: content
+    fullName: content
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'content: string;'
+      return:
+        type:
+          - string
+        description: |-
+
+
+          #### <a name="examples"></a>例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Comments");
+              let comment = sheet.comments.getItemAt(0);
+              let reply = comment.replies.getItemAt(0);
+              reply.load("content");
+              // Sync to load the content of the comment reply.
+              await context.sync();
+
+              // Append "Please!" to the end of the comment reply.
+              reply.content += " Please!";
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.CommentReply#context:member'
+    summary: オブジェクトに関連付けられている要求コンテキスト。 これにより、アドインのプロセスが Office ホストアプリケーションのプロセスに接続されます。
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.CommentReply#creationDate:member'
+    summary: コメント返信の作成日時を取得します。
+    name: creationDate
+    fullName: creationDate
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly creationDate: Date;'
+      return:
+        type:
+          - '!Date:interface'
+  - uid: 'excel!Excel.CommentReply#delete:member(1)'
+    summary: コメント返信を削除します。
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              // Remove the first comment reply from this worksheet's first comment.
+              let sheet = context.workbook.worksheets.getItem("Comments");
+              let comment = sheet.comments.getItemAt(0);
+              comment.replies.getItemAt(0).delete();
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.CommentReply#getLocation:member(1)'
+    summary: このコメントの返信があるセルを取得します。
+    name: getLocation()
+    fullName: getLocation()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLocation(): Excel.Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:class'
+        description: ''
+  - uid: 'excel!Excel.CommentReply#getParentComment:member(1)'
+    summary: この返信の親コメントを取得します。
+    name: getParentComment()
+    fullName: getParentComment()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getParentComment(): Excel.Comment;'
+      return:
+        type:
+          - 'excel!Excel.Comment:class'
+        description: ''
+  - uid: 'excel!Excel.CommentReply#id:member'
+    summary: コメント返信 ID を表します。 読み取り専用です。
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.CommentReply#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る`context.sync()`前に、を呼び出す必要があります。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.CommentReply;'
+      return:
+        type:
+          - 'excel!Excel.CommentReply:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.CommentReply#load:member(2)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る`context.sync()`前に、を呼び出す必要があります。
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.CommentReply;
+      return:
+        type:
+          - 'excel!Excel.CommentReply:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: '`propertyNamesAndPaths.select`は、読み込むプロパティを指定するコンマで区切られた文字列で`propertyNamesAndPaths.expand` 、読み込むナビゲーションプロパティを指定するコンマで区切られた文字列です。'
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.CommentReply#mentions:member'
+    summary: コメントに記載されているエンティティ (人物など) を取得します。
+    name: mentions
+    fullName: mentions
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly mentions: Excel.CommentMention[];'
+      return:
+        type:
+          - 'excel!Excel.CommentReply#mentions~0:complex'
+  - uid: 'excel!Excel.CommentReply#richContent:member'
+    summary: リッチコメントの内容 (コメントに含まれるメンションなど) を取得します。 この文字列は、エンドユーザーに表示されることを意図したものではありません。 アドインでは、リッチコメントコンテンツを解析するためにのみ使用する必要があります。
+    name: richContent
+    fullName: richContent
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly richContent: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.CommentReply#set:member(1)'
+    summary: 既存の読み込まれたオブジェクトに基づいて、オブジェクトに複数のプロパティを設定します。
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.CommentReply): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.CommentReply:class'
+  - uid: 'excel!Excel.CommentReply#updateMentions:member(1)'
+    summary: 特別に書式設定された文字列とメンションの一覧を使用して、コメントの内容を更新します。
+    name: updateMentions(contentWithMentions)
+    fullName: updateMentions(contentWithMentions)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'updateMentions(contentWithMentions: Excel.CommentRichContent): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: contentWithMentions
+          description: コメントの内容を示します。 これには、特別に書式設定された文字列と、Excel で表示されるときに文字列に解析されるメンションの一覧が含まれています。
+          type:
+            - 'excel!Excel.CommentRichContent:interface'
+references:
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: '!Date:interface'
+    name: Date
+  - uid: 'excel!Excel.Range:class'
+    name: Range
+    fullName: Excel.Range
+  - uid: 'excel!Excel.Comment:class'
+    name: Comment
+    fullName: Excel.Comment
+  - uid: 'excel!Excel.CommentReply:class'
+    name: CommentReply
+    fullName: Excel.CommentReply
+  - uid: 'excel!Excel.CommentReply#mentions~0:complex'
+    name: 'Excel.CommentMention[]'
+    fullName: 'Excel.CommentMention[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.CommentMention:interface'
+        name: Excel.CommentMention
+        fullName: Excel.CommentMention
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.CommentRichContent:interface'
+    name: CommentRichContent
+    fullName: Excel.CommentRichContent

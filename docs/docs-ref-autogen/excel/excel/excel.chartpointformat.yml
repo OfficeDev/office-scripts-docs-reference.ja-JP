@@ -1,0 +1,128 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartPointFormat:class'
+    summary: グラフのポイントのオブジェクトの書式設定を表します。
+    name: Excel.ChartPointFormat
+    fullName: Excel.ChartPointFormat
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.ChartPointFormat#border:member'
+      - 'excel!Excel.ChartPointFormat#context:member'
+      - 'excel!Excel.ChartPointFormat#fill:member'
+      - 'excel!Excel.ChartPointFormat#load:member(1)'
+      - 'excel!Excel.ChartPointFormat#load:member(2)'
+      - 'excel!Excel.ChartPointFormat#set:member(1)'
+  - uid: 'excel!Excel.ChartPointFormat#border:member'
+    summary: 色、スタイル、および重みの情報を含むグラフデータポイントの罫線の書式を表します。 読み取り専用。
+    name: border
+    fullName: border
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly border: Excel.ChartBorder;'
+      return:
+        type:
+          - 'excel!Excel.ChartBorder:class'
+  - uid: 'excel!Excel.ChartPointFormat#context:member'
+    summary: オブジェクトに関連付けられている要求コンテキスト。 これにより、アドインのプロセスが Office ホストアプリケーションのプロセスに接続されます。
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartPointFormat#fill:member'
+    summary: 背景の書式設定情報を含むグラフの塗りつぶしの書式を表します。 読み取り専用。
+    name: fill
+    fullName: fill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly fill: Excel.ChartFill;'
+      return:
+        type:
+          - 'excel!Excel.ChartFill:class'
+  - uid: 'excel!Excel.ChartPointFormat#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る`context.sync()`前に、を呼び出す必要があります。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ChartPointFormat;'
+      return:
+        type:
+          - 'excel!Excel.ChartPointFormat:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartPointFormat#load:member(2)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る`context.sync()`前に、を呼び出す必要があります。
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ChartPointFormat;
+      return:
+        type:
+          - 'excel!Excel.ChartPointFormat:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: '`propertyNamesAndPaths.select`は、読み込むプロパティを指定するコンマで区切られた文字列で`propertyNamesAndPaths.expand` 、読み込むナビゲーションプロパティを指定するコンマで区切られた文字列です。'
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.ChartPointFormat#set:member(1)'
+    summary: 既存の読み込まれたオブジェクトに基づいて、オブジェクトに複数のプロパティを設定します。
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.ChartPointFormat): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.ChartPointFormat:class'
+references:
+  - uid: 'excel!Excel.ChartBorder:class'
+    name: ChartBorder
+    fullName: Excel.ChartBorder
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.ChartFill:class'
+    name: ChartFill
+    fullName: Excel.ChartFill
+  - uid: 'excel!Excel.ChartPointFormat:class'
+    name: ChartPointFormat
+    fullName: Excel.ChartPointFormat

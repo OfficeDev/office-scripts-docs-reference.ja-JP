@@ -1,0 +1,157 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartAxisTitle:class'
+    summary: グラフ軸のタイトルを表します。
+    name: Excel.ChartAxisTitle
+    fullName: Excel.ChartAxisTitle
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.ChartAxisTitle#context:member'
+      - 'excel!Excel.ChartAxisTitle#format:member'
+      - 'excel!Excel.ChartAxisTitle#load:member(1)'
+      - 'excel!Excel.ChartAxisTitle#load:member(2)'
+      - 'excel!Excel.ChartAxisTitle#set:member(1)'
+      - 'excel!Excel.ChartAxisTitle#setFormula:member(1)'
+      - 'excel!Excel.ChartAxisTitle#text:member'
+      - 'excel!Excel.ChartAxisTitle#visible:member'
+  - uid: 'excel!Excel.ChartAxisTitle#context:member'
+    summary: オブジェクトに関連付けられている要求コンテキスト。 これにより、アドインのプロセスが Office ホストアプリケーションのプロセスに接続されます。
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartAxisTitle#format:member'
+    summary: グラフ軸のタイトルの書式設定を表します。 値の取得のみ可能です。
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: Excel.ChartAxisTitleFormat;'
+      return:
+        type:
+          - 'excel!Excel.ChartAxisTitleFormat:class'
+  - uid: 'excel!Excel.ChartAxisTitle#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る`context.sync()`前に、を呼び出す必要があります。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ChartAxisTitle;'
+      return:
+        type:
+          - 'excel!Excel.ChartAxisTitle:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartAxisTitle#load:member(2)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る`context.sync()`前に、を呼び出す必要があります。
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ChartAxisTitle;
+      return:
+        type:
+          - 'excel!Excel.ChartAxisTitle:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: '`propertyNamesAndPaths.select`は、読み込むプロパティを指定するコンマで区切られた文字列で`propertyNamesAndPaths.expand` 、読み込むナビゲーションプロパティを指定するコンマで区切られた文字列です。'
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.ChartAxisTitle#set:member(1)'
+    summary: 既存の読み込まれたオブジェクトに基づいて、オブジェクトに複数のプロパティを設定します。
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.ChartAxisTitle): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.ChartAxisTitle:class'
+  - uid: 'excel!Excel.ChartAxisTitle#setFormula:member(1)'
+    summary: A1 スタイルの表記法を使用するグラフの軸タイトルの数式を表す文字列値。
+    name: setFormula(formula)
+    fullName: setFormula(formula)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setFormula(formula: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: formula
+          description: 設定する数式を示す文字列型 (string) の値を指定します。
+          type:
+            - string
+  - uid: 'excel!Excel.ChartAxisTitle#text:member'
+    summary: 軸タイトルを表します。
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'text: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ChartAxisTitle#visible:member'
+    summary: 軸のタイトルの表示/非表示を指定するブール型の値です。
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.ChartAxisTitleFormat:class'
+    name: ChartAxisTitleFormat
+    fullName: Excel.ChartAxisTitleFormat
+  - uid: 'excel!Excel.ChartAxisTitle:class'
+    name: ChartAxisTitle
+    fullName: Excel.ChartAxisTitle

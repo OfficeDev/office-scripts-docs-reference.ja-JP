@@ -1,0 +1,174 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartTrendlineCollection:class'
+    summary: グラフの近似曲線のコレクションを表します。
+    name: Excel.ChartTrendlineCollection
+    fullName: Excel.ChartTrendlineCollection
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.ChartTrendlineCollection#add:member(1)'
+      - 'excel!Excel.ChartTrendlineCollection#add:member(2)'
+      - 'excel!Excel.ChartTrendlineCollection#context:member'
+      - 'excel!Excel.ChartTrendlineCollection#getCount:member(1)'
+      - 'excel!Excel.ChartTrendlineCollection#getItem:member(1)'
+      - 'excel!Excel.ChartTrendlineCollection#items:member'
+      - 'excel!Excel.ChartTrendlineCollection#load:member(1)'
+  - uid: 'excel!Excel.ChartTrendlineCollection#add:member(1)'
+    summary: 近似曲線のコレクションに新しい近似曲線を追加します。
+    name: add(type)
+    fullName: add(type)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(type?: Excel.ChartTrendlineType): Excel.ChartTrendline;'
+      return:
+        type:
+          - 'excel!Excel.ChartTrendline:class'
+        description: |-
+
+
+          #### <a name="examples"></a>例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Sample");
+
+              let seriesCollection = sheet.charts.getItemAt(0).series;
+
+               // Add a trendline.  
+              seriesCollection.getItemAt(0).trendlines.add("Linear");
+
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: type
+          description: 近似曲線の種類を指定します。 既定値は "Linear" です。 詳細については、「Excel ChartTrendline 曲線」を参照してください。
+          type:
+            - 'excel!Excel.ChartTrendlineType:enum'
+  - uid: 'excel!Excel.ChartTrendlineCollection#add:member(2)'
+    summary: 近似曲線のコレクションに新しい近似曲線を追加します。
+    name: add(typeString)
+    fullName: add(typeString)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(typeString?: "Linear" | "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" | "Power"): Excel.ChartTrendline;'
+      return:
+        type:
+          - 'excel!Excel.ChartTrendline:class'
+        description: ''
+      parameters:
+        - id: typeString
+          description: 近似曲線の種類を指定します。 既定値は "Linear" です。 詳細については、「Excel ChartTrendline 曲線」を参照してください。
+          type:
+            - '"Linear" | "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" | "Power"'
+  - uid: 'excel!Excel.ChartTrendlineCollection#context:member'
+    summary: オブジェクトに関連付けられている要求コンテキスト。 これにより、アドインのプロセスが Office ホストアプリケーションのプロセスに接続されます。
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartTrendlineCollection#getCount:member(1)'
+    summary: コレクションに含まれる近似曲線の数を返します。
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): ClientResult<number>;'
+      return:
+        type:
+          - 'excel!Excel.ChartTrendlineCollection#getCount~0:complex'
+        description: ''
+  - uid: 'excel!Excel.ChartTrendlineCollection#getItem:member(1)'
+    summary: インデックス (項目配列内の挿入順序) に基づいて trendline オブジェクトを取得します。
+    name: getItem(index)
+    fullName: getItem(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(index: number): Excel.ChartTrendline;'
+      return:
+        type:
+          - 'excel!Excel.ChartTrendline:class'
+        description: ''
+      parameters:
+        - id: index
+          description: アイテムの配列内の挿入順序を表します。
+          type:
+            - number
+  - uid: 'excel!Excel.ChartTrendlineCollection#items:member'
+    summary: このコレクション内に読み込まれた子アイテムを取得します。
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Excel.ChartTrendline[];'
+      return:
+        type:
+          - 'excel!Excel.ChartTrendlineCollection#items~0:complex'
+  - uid: 'excel!Excel.ChartTrendlineCollection#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る`context.sync()`前に、を呼び出す必要があります。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ChartTrendlineCollection;'
+      return:
+        type:
+          - 'excel!Excel.ChartTrendlineCollection:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.ChartTrendline:class'
+    name: ChartTrendline
+    fullName: Excel.ChartTrendline
+  - uid: 'excel!Excel.ChartTrendlineType:enum'
+    name: ChartTrendlineType
+    fullName: Excel.ChartTrendlineType
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.ChartTrendlineCollection#getCount~0:complex'
+    name: ClientResult<number>
+    fullName: Excel.ClientResult<number>
+    spec.typeScript:
+      - uid: 'excel!Excel.ClientResult:class'
+        name: ClientResult
+        fullName: Excel.ClientResult
+      - name: <number>
+        fullName: <number>
+  - uid: 'excel!Excel.ChartTrendlineCollection#items~0:complex'
+    name: 'Excel.ChartTrendline[]'
+    fullName: 'Excel.ChartTrendline[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartTrendline:class'
+        name: Excel.ChartTrendline
+        fullName: Excel.ChartTrendline
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.ChartTrendlineCollection:class'
+    name: ChartTrendlineCollection
+    fullName: Excel.ChartTrendlineCollection

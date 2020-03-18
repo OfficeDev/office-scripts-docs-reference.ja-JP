@@ -1,0 +1,24 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ClientResult:class'
+    summary: プリミティブ型を返すメソッドの結果が含まれています。 オブジェクトの value プロパティは、が呼び出された後`context.sync()`にドキュメントから取得されます。
+    name: Excel.ClientResult
+    fullName: Excel.ClientResult
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.ClientResult#value:member'
+  - uid: 'excel!Excel.ClientResult#value:member'
+    summary: が呼び出された後`context.sync()`に、ドキュメントから取得される結果の値。
+    name: value
+    fullName: value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'value: T;'
+      return:
+        type:
+          - T
