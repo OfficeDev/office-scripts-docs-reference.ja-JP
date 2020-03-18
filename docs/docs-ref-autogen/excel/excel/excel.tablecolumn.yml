@@ -1,0 +1,237 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.TableColumn:class'
+    summary: テーブル内にある 1 つの列を表します。
+    name: Excel.TableColumn
+    fullName: Excel.TableColumn
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.TableColumn#context:member'
+      - 'excel!Excel.TableColumn#delete:member(1)'
+      - 'excel!Excel.TableColumn#filter:member'
+      - 'excel!Excel.TableColumn#getDataBodyRange:member(1)'
+      - 'excel!Excel.TableColumn#getHeaderRowRange:member(1)'
+      - 'excel!Excel.TableColumn#getRange:member(1)'
+      - 'excel!Excel.TableColumn#getTotalRowRange:member(1)'
+      - 'excel!Excel.TableColumn#id:member'
+      - 'excel!Excel.TableColumn#index:member'
+      - 'excel!Excel.TableColumn#load:member(1)'
+      - 'excel!Excel.TableColumn#load:member(2)'
+      - 'excel!Excel.TableColumn#name:member'
+      - 'excel!Excel.TableColumn#set:member(1)'
+      - 'excel!Excel.TableColumn#values:member'
+  - uid: 'excel!Excel.TableColumn#context:member'
+    summary: オブジェクトに関連付けられている要求コンテキスト。 これにより、アドインのプロセスが Office ホストアプリケーションのプロセスに接続されます。
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.TableColumn#delete:member(1)'
+    summary: テーブルから列を削除します。
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.TableColumn#filter:member'
+    summary: 列に適用されるフィルターを取得します。 読み取り専用です。
+    name: filter
+    fullName: filter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly filter: Excel.Filter;'
+      return:
+        type:
+          - 'excel!Excel.Filter:class'
+  - uid: 'excel!Excel.TableColumn#getDataBodyRange:member(1)'
+    summary: 列のデータ本体に関連付けられた範囲オブジェクトを取得します。
+    name: getDataBodyRange()
+    fullName: getDataBodyRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDataBodyRange(): Excel.Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:class'
+        description: ''
+  - uid: 'excel!Excel.TableColumn#getHeaderRowRange:member(1)'
+    summary: 列のヘッダー行に関連付けられた範囲オブジェクトを取得します。
+    name: getHeaderRowRange()
+    fullName: getHeaderRowRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getHeaderRowRange(): Excel.Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:class'
+        description: ''
+  - uid: 'excel!Excel.TableColumn#getRange:member(1)'
+    summary: 列全体に関連付けられた範囲オブジェクトを取得します。
+    name: getRange()
+    fullName: getRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRange(): Excel.Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:class'
+        description: ''
+  - uid: 'excel!Excel.TableColumn#getTotalRowRange:member(1)'
+    summary: 列の集計行に関連付けられた範囲オブジェクトを取得します。
+    name: getTotalRowRange()
+    fullName: getTotalRowRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTotalRowRange(): Excel.Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:class'
+        description: ''
+  - uid: 'excel!Excel.TableColumn#id:member'
+    summary: テーブル内の列を識別する一意のキーを返します。 読み取り専用。
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.TableColumn#index:member'
+    summary: テーブルの列コレクション内の列のインデックス番号を返します。 0 を起点とする番号になります。 読み取り専用。
+    name: index
+    fullName: index
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly index: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.TableColumn#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る`context.sync()`前に、を呼び出す必要があります。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.TableColumn;'
+      return:
+        type:
+          - 'excel!Excel.TableColumn:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.TableColumn#load:member(2)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る`context.sync()`前に、を呼び出す必要があります。
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.TableColumn;
+      return:
+        type:
+          - 'excel!Excel.TableColumn:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: '`propertyNamesAndPaths.select`は、読み込むプロパティを指定するコンマで区切られた文字列で`propertyNamesAndPaths.expand` 、読み込むナビゲーションプロパティを指定するコンマで区切られた文字列です。'
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.TableColumn#name:member'
+    summary: テーブル列の名前を表します。
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.TableColumn#set:member(1)'
+    summary: 既存の読み込まれたオブジェクトに基づいて、オブジェクトに複数のプロパティを設定します。
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.TableColumn): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.TableColumn:class'
+  - uid: 'excel!Excel.TableColumn#values:member'
+    summary: 指定した範囲の Raw 値を表します。 返されるデータの型は、文字列、数値、ブール値のいずれかになります。 エラーが含まれているセルは、エラー文字列を返します。
+    name: values
+    fullName: values
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'values: any[][];'
+      return:
+        type:
+          - 'any[][]'
+references:
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.Filter:class'
+    name: Filter
+    fullName: Excel.Filter
+  - uid: 'excel!Excel.Range:class'
+    name: Range
+    fullName: Excel.Range
+  - uid: 'excel!Excel.TableColumn:class'
+    name: TableColumn
+    fullName: Excel.TableColumn

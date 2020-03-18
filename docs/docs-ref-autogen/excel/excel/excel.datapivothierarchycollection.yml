@@ -1,0 +1,177 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.DataPivotHierarchyCollection:class'
+    summary: ピボットテーブルに関連付けられている DataPivotHierarchy items のコレクションを表します。
+    name: Excel.DataPivotHierarchyCollection
+    fullName: Excel.DataPivotHierarchyCollection
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.DataPivotHierarchyCollection#add:member(1)'
+      - 'excel!Excel.DataPivotHierarchyCollection#context:member'
+      - 'excel!Excel.DataPivotHierarchyCollection#getCount:member(1)'
+      - 'excel!Excel.DataPivotHierarchyCollection#getItem:member(1)'
+      - 'excel!Excel.DataPivotHierarchyCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.DataPivotHierarchyCollection#items:member'
+      - 'excel!Excel.DataPivotHierarchyCollection#load:member(1)'
+      - 'excel!Excel.DataPivotHierarchyCollection#remove:member(1)'
+  - uid: 'excel!Excel.DataPivotHierarchyCollection#add:member(1)'
+    summary: 現在の軸にピボット階層を追加します。
+    name: add(pivotHierarchy)
+    fullName: add(pivotHierarchy)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(pivotHierarchy: Excel.PivotHierarchy): Excel.DataPivotHierarchy;'
+      return:
+        type:
+          - 'excel!Excel.DataPivotHierarchy:class'
+        description: ''
+      parameters:
+        - id: pivotHierarchy
+          description: ''
+          type:
+            - 'excel!Excel.PivotHierarchy:class'
+  - uid: 'excel!Excel.DataPivotHierarchyCollection#context:member'
+    summary: オブジェクトに関連付けられている要求コンテキスト。 これにより、アドインのプロセスが Office ホストアプリケーションのプロセスに接続されます。
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.DataPivotHierarchyCollection#getCount:member(1)'
+    summary: コレクションに含まれるピボット階層の数を取得します。
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): ClientResult<number>;'
+      return:
+        type:
+          - 'excel!Excel.DataPivotHierarchyCollection#getCount~0:complex'
+        description: ''
+  - uid: 'excel!Excel.DataPivotHierarchyCollection#getItem:member(1)'
+    summary: 名前または ID に基づいて DataPivotHierarchy を取得します。
+    name: getItem(name)
+    fullName: getItem(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(name: string): Excel.DataPivotHierarchy;'
+      return:
+        type:
+          - 'excel!Excel.DataPivotHierarchy:class'
+        description: ''
+      parameters:
+        - id: name
+          description: 取得する DataPivotHierarchy の名前。
+          type:
+            - string
+  - uid: 'excel!Excel.DataPivotHierarchyCollection#getItemOrNullObject:member(1)'
+    summary: 名前に基づいて DataPivotHierarchy を取得します。 DataPivotHierarchy が存在しない場合は null オブジェクトを返します。
+    name: getItemOrNullObject(name)
+    fullName: getItemOrNullObject(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(name: string): Excel.DataPivotHierarchy;'
+      return:
+        type:
+          - 'excel!Excel.DataPivotHierarchy:class'
+        description: ''
+      parameters:
+        - id: name
+          description: 取得する DataPivotHierarchy の名前。
+          type:
+            - string
+  - uid: 'excel!Excel.DataPivotHierarchyCollection#items:member'
+    summary: このコレクション内に読み込まれた子アイテムを取得します。
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Excel.DataPivotHierarchy[];'
+      return:
+        type:
+          - 'excel!Excel.DataPivotHierarchyCollection#items~0:complex'
+  - uid: 'excel!Excel.DataPivotHierarchyCollection#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る`context.sync()`前に、を呼び出す必要があります。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.DataPivotHierarchyCollection;'
+      return:
+        type:
+          - 'excel!Excel.DataPivotHierarchyCollection:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.DataPivotHierarchyCollection#remove:member(1)'
+    summary: 現在の軸からピボット階層を削除します。
+    name: remove(DataPivotHierarchy)
+    fullName: remove(DataPivotHierarchy)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'remove(DataPivotHierarchy: Excel.DataPivotHierarchy): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: DataPivotHierarchy
+          description: ''
+          type:
+            - 'excel!Excel.DataPivotHierarchy:class'
+references:
+  - uid: 'excel!Excel.DataPivotHierarchy:class'
+    name: DataPivotHierarchy
+    fullName: Excel.DataPivotHierarchy
+  - uid: 'excel!Excel.PivotHierarchy:class'
+    name: PivotHierarchy
+    fullName: Excel.PivotHierarchy
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.DataPivotHierarchyCollection#getCount~0:complex'
+    name: ClientResult<number>
+    fullName: Excel.ClientResult<number>
+    spec.typeScript:
+      - uid: 'excel!Excel.ClientResult:class'
+        name: ClientResult
+        fullName: Excel.ClientResult
+      - name: <number>
+        fullName: <number>
+  - uid: 'excel!Excel.DataPivotHierarchyCollection#items~0:complex'
+    name: 'Excel.DataPivotHierarchy[]'
+    fullName: 'Excel.DataPivotHierarchy[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.DataPivotHierarchy:class'
+        name: Excel.DataPivotHierarchy
+        fullName: Excel.DataPivotHierarchy
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.DataPivotHierarchyCollection:class'
+    name: DataPivotHierarchyCollection
+    fullName: Excel.DataPivotHierarchyCollection

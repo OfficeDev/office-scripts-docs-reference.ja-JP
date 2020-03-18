@@ -1,0 +1,146 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ColorScaleConditionalFormat:class'
+    summary: 条件付き書式の IconSet 条件を表します。
+    name: Excel.ColorScaleConditionalFormat
+    fullName: Excel.ColorScaleConditionalFormat
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.ColorScaleConditionalFormat#context:member'
+      - 'excel!Excel.ColorScaleConditionalFormat#criteria:member'
+      - 'excel!Excel.ColorScaleConditionalFormat#load:member(1)'
+      - 'excel!Excel.ColorScaleConditionalFormat#load:member(2)'
+      - 'excel!Excel.ColorScaleConditionalFormat#set:member(1)'
+      - 'excel!Excel.ColorScaleConditionalFormat#threeColorScale:member'
+  - uid: 'excel!Excel.ColorScaleConditionalFormat#context:member'
+    summary: オブジェクトに関連付けられている要求コンテキスト。 これにより、アドインのプロセスが Office ホストアプリケーションのプロセスに接続されます。
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ColorScaleConditionalFormat#criteria:member'
+    summary: カラースケールの基準。 2ポイントのカラースケールを使用している場合、中点はオプションです。
+    name: criteria
+    fullName: criteria
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'criteria: Excel.ConditionalColorScaleCriteria;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalColorScaleCriteria:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Sample");
+              let range = sheet.getRange("B2:M5");
+              let conditionalFormat = range.conditionalFormats
+                  .add(Excel.ConditionalFormatType.colorScale);
+              let criteria = {
+                  minimum: { formula: null, type: Excel.ConditionalFormatColorCriterionType.lowestValue, color: "blue" },
+                  midpoint: { formula: "50", type: Excel.ConditionalFormatColorCriterionType.percent, color: "yellow" },
+                  maximum: { formula: null, type: Excel.ConditionalFormatColorCriterionType.highestValue, color: "red" }
+              };
+              conditionalFormat.colorScale.criteria = criteria;
+
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.ColorScaleConditionalFormat#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る`context.sync()`前に、を呼び出す必要があります。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ColorScaleConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.ColorScaleConditionalFormat:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ColorScaleConditionalFormat#load:member(2)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る`context.sync()`前に、を呼び出す必要があります。
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ColorScaleConditionalFormat;
+      return:
+        type:
+          - 'excel!Excel.ColorScaleConditionalFormat:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: '`propertyNamesAndPaths.select`は、読み込むプロパティを指定するコンマで区切られた文字列で`propertyNamesAndPaths.expand` 、読み込むナビゲーションプロパティを指定するコンマで区切られた文字列です。'
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.ColorScaleConditionalFormat#set:member(1)'
+    summary: 既存の読み込まれたオブジェクトに基づいて、オブジェクトに複数のプロパティを設定します。
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.ColorScaleConditionalFormat): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.ColorScaleConditionalFormat:class'
+  - uid: 'excel!Excel.ColorScaleConditionalFormat#threeColorScale:member'
+    summary: True の場合、カラースケールには3つのポイント (最小、中点、最大) が設定されます。それ以外の場合は、2つ (最小、最大) が設定されます。
+    name: threeColorScale
+    fullName: threeColorScale
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly threeColorScale: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.ConditionalColorScaleCriteria:interface'
+    name: ConditionalColorScaleCriteria
+    fullName: Excel.ConditionalColorScaleCriteria
+  - uid: 'excel!Excel.ColorScaleConditionalFormat:class'
+    name: ColorScaleConditionalFormat
+    fullName: Excel.ColorScaleConditionalFormat

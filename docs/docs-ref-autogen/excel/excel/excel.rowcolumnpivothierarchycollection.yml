@@ -1,0 +1,177 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.RowColumnPivotHierarchyCollection:class'
+    summary: ピボットテーブルに関連付けられている RowColumnPivotHierarchy items のコレクションを表します。
+    name: Excel.RowColumnPivotHierarchyCollection
+    fullName: Excel.RowColumnPivotHierarchyCollection
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.RowColumnPivotHierarchyCollection#add:member(1)'
+      - 'excel!Excel.RowColumnPivotHierarchyCollection#context:member'
+      - 'excel!Excel.RowColumnPivotHierarchyCollection#getCount:member(1)'
+      - 'excel!Excel.RowColumnPivotHierarchyCollection#getItem:member(1)'
+      - 'excel!Excel.RowColumnPivotHierarchyCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.RowColumnPivotHierarchyCollection#items:member'
+      - 'excel!Excel.RowColumnPivotHierarchyCollection#load:member(1)'
+      - 'excel!Excel.RowColumnPivotHierarchyCollection#remove:member(1)'
+  - uid: 'excel!Excel.RowColumnPivotHierarchyCollection#add:member(1)'
+    summary: 現在の軸にピボット階層を追加します。 階層が行、列、またはフィルター軸の他の場所に存在する場合は、その場所から削除されます。
+    name: add(pivotHierarchy)
+    fullName: add(pivotHierarchy)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(pivotHierarchy: Excel.PivotHierarchy): Excel.RowColumnPivotHierarchy;'
+      return:
+        type:
+          - 'excel!Excel.RowColumnPivotHierarchy:class'
+        description: ''
+      parameters:
+        - id: pivotHierarchy
+          description: ''
+          type:
+            - 'excel!Excel.PivotHierarchy:class'
+  - uid: 'excel!Excel.RowColumnPivotHierarchyCollection#context:member'
+    summary: オブジェクトに関連付けられている要求コンテキスト。 これにより、アドインのプロセスが Office ホストアプリケーションのプロセスに接続されます。
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.RowColumnPivotHierarchyCollection#getCount:member(1)'
+    summary: コレクションに含まれるピボット階層の数を取得します。
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): ClientResult<number>;'
+      return:
+        type:
+          - 'excel!Excel.RowColumnPivotHierarchyCollection#getCount~0:complex'
+        description: ''
+  - uid: 'excel!Excel.RowColumnPivotHierarchyCollection#getItem:member(1)'
+    summary: 名前または ID に基づいて RowColumnPivotHierarchy を取得します。
+    name: getItem(name)
+    fullName: getItem(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(name: string): Excel.RowColumnPivotHierarchy;'
+      return:
+        type:
+          - 'excel!Excel.RowColumnPivotHierarchy:class'
+        description: ''
+      parameters:
+        - id: name
+          description: 取得する RowColumnPivotHierarchy の名前。
+          type:
+            - string
+  - uid: 'excel!Excel.RowColumnPivotHierarchyCollection#getItemOrNullObject:member(1)'
+    summary: 名前に基づいて RowColumnPivotHierarchy を取得します。 RowColumnPivotHierarchy が存在しない場合は null オブジェクトを返します。
+    name: getItemOrNullObject(name)
+    fullName: getItemOrNullObject(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(name: string): Excel.RowColumnPivotHierarchy;'
+      return:
+        type:
+          - 'excel!Excel.RowColumnPivotHierarchy:class'
+        description: ''
+      parameters:
+        - id: name
+          description: 取得する RowColumnPivotHierarchy の名前。
+          type:
+            - string
+  - uid: 'excel!Excel.RowColumnPivotHierarchyCollection#items:member'
+    summary: このコレクション内に読み込まれた子アイテムを取得します。
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Excel.RowColumnPivotHierarchy[];'
+      return:
+        type:
+          - 'excel!Excel.RowColumnPivotHierarchyCollection#items~0:complex'
+  - uid: 'excel!Excel.RowColumnPivotHierarchyCollection#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る`context.sync()`前に、を呼び出す必要があります。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.RowColumnPivotHierarchyCollection;'
+      return:
+        type:
+          - 'excel!Excel.RowColumnPivotHierarchyCollection:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.RowColumnPivotHierarchyCollection#remove:member(1)'
+    summary: 現在の軸からピボット階層を削除します。
+    name: remove(rowColumnPivotHierarchy)
+    fullName: remove(rowColumnPivotHierarchy)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'remove(rowColumnPivotHierarchy: Excel.RowColumnPivotHierarchy): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: rowColumnPivotHierarchy
+          description: ''
+          type:
+            - 'excel!Excel.RowColumnPivotHierarchy:class'
+references:
+  - uid: 'excel!Excel.RowColumnPivotHierarchy:class'
+    name: RowColumnPivotHierarchy
+    fullName: Excel.RowColumnPivotHierarchy
+  - uid: 'excel!Excel.PivotHierarchy:class'
+    name: PivotHierarchy
+    fullName: Excel.PivotHierarchy
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.RowColumnPivotHierarchyCollection#getCount~0:complex'
+    name: ClientResult<number>
+    fullName: Excel.ClientResult<number>
+    spec.typeScript:
+      - uid: 'excel!Excel.ClientResult:class'
+        name: ClientResult
+        fullName: Excel.ClientResult
+      - name: <number>
+        fullName: <number>
+  - uid: 'excel!Excel.RowColumnPivotHierarchyCollection#items~0:complex'
+    name: 'Excel.RowColumnPivotHierarchy[]'
+    fullName: 'Excel.RowColumnPivotHierarchy[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.RowColumnPivotHierarchy:class'
+        name: Excel.RowColumnPivotHierarchy
+        fullName: Excel.RowColumnPivotHierarchy
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.RowColumnPivotHierarchyCollection:class'
+    name: RowColumnPivotHierarchyCollection
+    fullName: Excel.RowColumnPivotHierarchyCollection

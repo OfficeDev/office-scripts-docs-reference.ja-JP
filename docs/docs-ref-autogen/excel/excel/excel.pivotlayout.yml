@@ -1,0 +1,493 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.PivotLayout:class'
+    summary: ピボットテーブルの視覚的なレイアウトを表します。
+    name: Excel.PivotLayout
+    fullName: Excel.PivotLayout
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.PivotLayout#autoFormat:member'
+      - 'excel!Excel.PivotLayout#context:member'
+      - 'excel!Excel.PivotLayout#enableFieldList:member'
+      - 'excel!Excel.PivotLayout#getColumnLabelRange:member(1)'
+      - 'excel!Excel.PivotLayout#getDataBodyRange:member(1)'
+      - 'excel!Excel.PivotLayout#getDataHierarchy:member(1)'
+      - 'excel!Excel.PivotLayout#getFilterAxisRange:member(1)'
+      - 'excel!Excel.PivotLayout#getPivotItems:member(1)'
+      - 'excel!Excel.PivotLayout#getPivotItems:member(2)'
+      - 'excel!Excel.PivotLayout#getRange:member(1)'
+      - 'excel!Excel.PivotLayout#getRowLabelRange:member(1)'
+      - 'excel!Excel.PivotLayout#layoutType:member'
+      - 'excel!Excel.PivotLayout#load:member(1)'
+      - 'excel!Excel.PivotLayout#load:member(2)'
+      - 'excel!Excel.PivotLayout#preserveFormatting:member'
+      - 'excel!Excel.PivotLayout#set:member(1)'
+      - 'excel!Excel.PivotLayout#setAutoSortOnCell:member(1)'
+      - 'excel!Excel.PivotLayout#setAutoSortOnCell:member(2)'
+      - 'excel!Excel.PivotLayout#showColumnGrandTotals:member'
+      - 'excel!Excel.PivotLayout#showRowGrandTotals:member'
+      - 'excel!Excel.PivotLayout#subtotalLocation:member'
+  - uid: 'excel!Excel.PivotLayout#autoFormat:member'
+    summary: 更新時またはフィールドの削除時に書式が自動的に設定されるかどうかを指定します。
+    name: autoFormat
+    fullName: autoFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'autoFormat: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.PivotLayout#context:member'
+    summary: オブジェクトに関連付けられている要求コンテキスト。 これにより、アドインのプロセスが Office ホストアプリケーションのプロセスに接続されます。
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.PivotLayout#enableFieldList:member'
+    summary: フィールド リストを UI に表示できるかどうかを指定します。
+    name: enableFieldList
+    fullName: enableFieldList
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'enableFieldList: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.PivotLayout#getColumnLabelRange:member(1)'
+    summary: ピボットテーブルの列ラベルが存在する範囲を返します。
+    name: getColumnLabelRange()
+    fullName: getColumnLabelRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getColumnLabelRange(): Excel.Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:class'
+        description: ''
+  - uid: 'excel!Excel.PivotLayout#getDataBodyRange:member(1)'
+    summary: ピボットテーブルのデータ値が存在する範囲を返します。
+    name: getDataBodyRange()
+    fullName: getDataBodyRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDataBodyRange(): Excel.Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:class'
+        description: |-
+
+
+          #### <a name="examples"></a>例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+
+              // the layout controls the ranges used by the PivotTable
+              let range = pivotTable.layout.getDataBodyRange();
+
+              // get all the data hierarchy totals
+              let grandTotalRange = range.getLastRow();
+              grandTotalRange.load("address");
+              await context.sync();
+              
+              // use the wholesale and farm sale totals to make a final sum
+              let masterTotalRange = context.workbook.worksheets.getActiveWorksheet().getRange("B27:C27");
+              masterTotalRange.formulas = [["All Crates", "=SUM(" + grandTotalRange.address + ")"]];
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.PivotLayout#getDataHierarchy:member(1)'
+    summary: PivotTable 内で指定された範囲の値を計算するために使用される DataHierarchy を取得します。
+    name: getDataHierarchy(cell)
+    fullName: getDataHierarchy(cell)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDataHierarchy(cell: Range | string): Excel.DataPivotHierarchy;'
+      return:
+        type:
+          - 'excel!Excel.DataPivotHierarchy:class'
+        description: 指定したセルの値を計算するために使用される DataPivotHierarchy オブジェクト。
+      parameters:
+        - id: cell
+          description: ピボットテーブルのデータ本文内の1つのセル。
+          type:
+            - 'excel!Excel.PivotLayout#getDataHierarchy~0:complex'
+  - uid: 'excel!Excel.PivotLayout#getFilterAxisRange:member(1)'
+    summary: ピボットテーブルのフィルター エリアの範囲を返します。
+    name: getFilterAxisRange()
+    fullName: getFilterAxisRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFilterAxisRange(): Excel.Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:class'
+        description: ''
+  - uid: 'excel!Excel.PivotLayout#getPivotItems:member(1)'
+    summary: PivotTable 内で指定された範囲の値を構成する PivotItems を軸から取得します。
+    name: 'getPivotItems(axis, cell)'
+    fullName: 'getPivotItems(axis, cell)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPivotItems(axis: Excel.PivotAxis, cell: Range | string): ClientResult<Excel.PivotItem[]>;'
+      return:
+        type:
+          - 'excel!Excel.PivotLayout#getPivotItems~0:complex'
+        description: 指定された行の値を計算するために使用される PivotItems のコレクション。
+      parameters:
+        - id: axis
+          description: PivotItems の取得元の軸。 "Row" または "column" である必要があります。
+          type:
+            - 'excel!Excel.PivotAxis:enum'
+        - id: cell
+          description: ピボットテーブルのデータ本文内の1つのセル。
+          type:
+            - 'excel!Excel.PivotLayout#getPivotItems~1:complex'
+  - uid: 'excel!Excel.PivotLayout#getPivotItems:member(2)'
+    summary: PivotTable 内で指定された範囲の値を構成する PivotItems を軸から取得します。
+    name: 'getPivotItems(axisString, cell)'
+    fullName: 'getPivotItems(axisString, cell)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPivotItems(axisString: "Unknown" | "Row" | "Column" | "Data" | "Filter", cell: Range | string): ClientResult<Excel.PivotItem[]>;'
+      return:
+        type:
+          - 'excel!Excel.PivotLayout#getPivotItems~2:complex'
+        description: 指定された行の値を計算するために使用される PivotItems のコレクション。
+      parameters:
+        - id: axisString
+          description: PivotItems の取得元の軸。 "Row" または "column" である必要があります。
+          type:
+            - '"Unknown" | "Row" | "Column" | "Data" | "Filter"'
+        - id: cell
+          description: ピボットテーブルのデータ本文内の1つのセル。
+          type:
+            - 'excel!Excel.PivotLayout#getPivotItems~3:complex'
+  - uid: 'excel!Excel.PivotLayout#getRange:member(1)'
+    summary: フィルター エリアを除く、ピボットテーブルが存在する範囲を返します。
+    name: getRange()
+    fullName: getRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRange(): Excel.Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:class'
+        description: ''
+  - uid: 'excel!Excel.PivotLayout#getRowLabelRange:member(1)'
+    summary: ピボットテーブルの行ラベルが存在する範囲を返します。
+    name: getRowLabelRange()
+    fullName: getRowLabelRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRowLabelRange(): Excel.Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:class'
+        description: ''
+  - uid: 'excel!Excel.PivotLayout#layoutType:member'
+    summary: このプロパティは、ピボットテーブルのすべてのフィールドの PivotLayoutType を示します。 フィールドによって状態が異なる場合は null 値になります。
+    name: layoutType
+    fullName: layoutType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'layoutType: Excel.PivotLayoutType | "Compact" | "Tabular" | "Outline";'
+      return:
+        type:
+          - 'excel!Excel.PivotLayout#layoutType~0:complex'
+  - uid: 'excel!Excel.PivotLayout#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る`context.sync()`前に、を呼び出す必要があります。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.PivotLayout;'
+      return:
+        type:
+          - 'excel!Excel.PivotLayout:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.PivotLayout#load:member(2)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る`context.sync()`前に、を呼び出す必要があります。
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.PivotLayout;
+      return:
+        type:
+          - 'excel!Excel.PivotLayout:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: '`propertyNamesAndPaths.select`は、読み込むプロパティを指定するコンマで区切られた文字列で`propertyNamesAndPaths.expand` 、読み込むナビゲーションプロパティを指定するコンマで区切られた文字列です。'
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.PivotLayout#preserveFormatting:member'
+    summary: ピボット、並べ替え、ページ フィールド項目の変更などの操作によってレポートが更新または再計算されたとき、書式設定が保存されるかどうかを指定します。
+    name: preserveFormatting
+    fullName: preserveFormatting
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'preserveFormatting: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.PivotLayout#set:member(1)'
+    summary: 既存の読み込まれたオブジェクトに基づいて、オブジェクトに複数のプロパティを設定します。
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.PivotLayout): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.PivotLayout:class'
+  - uid: 'excel!Excel.PivotLayout#setAutoSortOnCell:member(1)'
+    summary: 必要なすべての条件とコンテキストを自動的に選択するため、指定したセルを使用して自動的に並べ替えを実行するようピボットテーブルを設定します。 これは、UI から自動並べ替えを適用するのと同じ動作です。
+    name: 'setAutoSortOnCell(cell, sortBy)'
+    fullName: 'setAutoSortOnCell(cell, sortBy)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setAutoSortOnCell(cell: Range | string, sortBy: Excel.SortBy): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: cell
+          description: 1つのセルを使用して、自動並べ替えを適用する抽出条件を取得します。
+          type:
+            - 'excel!Excel.PivotLayout#setAutoSortOnCell~0:complex'
+        - id: sortBy
+          description: 並べ替えの方向を示します。
+          type:
+            - 'excel!Excel.SortBy:enum'
+  - uid: 'excel!Excel.PivotLayout#setAutoSortOnCell:member(2)'
+    summary: 必要なすべての条件とコンテキストを自動的に選択するため、指定したセルを使用して自動的に並べ替えを実行するようピボットテーブルを設定します。 これは、UI から自動並べ替えを適用するのと同じ動作です。
+    name: 'setAutoSortOnCell(cell, sortByString)'
+    fullName: 'setAutoSortOnCell(cell, sortByString)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setAutoSortOnCell(cell: Range | string, sortByString: "Ascending" | "Descending"): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: cell
+          description: 1つのセルを使用して、自動並べ替えを適用する抽出条件を取得します。
+          type:
+            - 'excel!Excel.PivotLayout#setAutoSortOnCell~1:complex'
+        - id: sortByString
+          description: 並べ替えの方向を示します。
+          type:
+            - '"Ascending" | "Descending"'
+  - uid: 'excel!Excel.PivotLayout#showColumnGrandTotals:member'
+    summary: ピボットテーブルレポートに列の総計を表示するかどうかを指定します。
+    name: showColumnGrandTotals
+    fullName: showColumnGrandTotals
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showColumnGrandTotals: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.PivotLayout#showRowGrandTotals:member'
+    summary: ピボットテーブルレポートで行の総計を表示するかどうかを指定します。
+    name: showRowGrandTotals
+    fullName: showRowGrandTotals
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showRowGrandTotals: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.PivotLayout#subtotalLocation:member'
+    summary: このプロパティは、ピボットテーブルのすべてのフィールドの SubtotalLocationType を示します。 フィールドによって状態が異なる場合は null 値になります。
+    name: subtotalLocation
+    fullName: subtotalLocation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subtotalLocation: Excel.SubtotalLocationType | "AtTop" | "AtBottom" | "Off";'
+      return:
+        type:
+          - 'excel!Excel.PivotLayout#subtotalLocation~0:complex'
+references:
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.Range:class'
+    name: Range
+    fullName: Excel.Range
+  - uid: 'excel!Excel.DataPivotHierarchy:class'
+    name: DataPivotHierarchy
+    fullName: Excel.DataPivotHierarchy
+  - uid: 'excel!Excel.PivotLayout#getDataHierarchy~0:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:class'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.PivotLayout#getPivotItems~0:complex'
+    name: 'ClientResult<Excel.PivotItem[]>'
+    fullName: 'Excel.ClientResult<Excel.PivotItem[]>'
+    spec.typeScript:
+      - uid: 'excel!Excel.ClientResult:class'
+        name: ClientResult
+        fullName: Excel.ClientResult
+      - name: <
+        fullName: <
+      - uid: 'excel!Excel.PivotItem:class'
+        name: Excel.PivotItem
+        fullName: Excel.PivotItem
+      - name: '[]>'
+        fullName: '[]>'
+  - uid: 'excel!Excel.PivotAxis:enum'
+    name: PivotAxis
+    fullName: Excel.PivotAxis
+  - uid: 'excel!Excel.PivotLayout#getPivotItems~1:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:class'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.PivotLayout#getPivotItems~2:complex'
+    name: 'ClientResult<Excel.PivotItem[]>'
+    fullName: 'Excel.ClientResult<Excel.PivotItem[]>'
+    spec.typeScript:
+      - uid: 'excel!Excel.ClientResult:class'
+        name: ClientResult
+        fullName: Excel.ClientResult
+      - name: <
+        fullName: <
+      - uid: 'excel!Excel.PivotItem:class'
+        name: Excel.PivotItem
+        fullName: Excel.PivotItem
+      - name: '[]>'
+        fullName: '[]>'
+  - uid: 'excel!Excel.PivotLayout#getPivotItems~3:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:class'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.PivotLayout#layoutType~0:complex'
+    name: Excel.PivotLayoutType | "Compact" | "Tabular" | "Outline"
+    fullName: Excel.PivotLayoutType | "Compact" | "Tabular" | "Outline"
+    spec.typeScript:
+      - uid: 'excel!Excel.PivotLayoutType:enum'
+        name: Excel.PivotLayoutType
+        fullName: Excel.PivotLayoutType
+      - name: ' | "Compact" | "Tabular" | "Outline"'
+        fullName: ' | "Compact" | "Tabular" | "Outline"'
+  - uid: 'excel!Excel.PivotLayout:class'
+    name: PivotLayout
+    fullName: Excel.PivotLayout
+  - uid: 'excel!Excel.PivotLayout#setAutoSortOnCell~0:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:class'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.SortBy:enum'
+    name: SortBy
+    fullName: Excel.SortBy
+  - uid: 'excel!Excel.PivotLayout#setAutoSortOnCell~1:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:class'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.PivotLayout#subtotalLocation~0:complex'
+    name: Excel.SubtotalLocationType | "AtTop" | "AtBottom" | "Off"
+    fullName: Excel.SubtotalLocationType | "AtTop" | "AtBottom" | "Off"
+    spec.typeScript:
+      - uid: 'excel!Excel.SubtotalLocationType:enum'
+        name: Excel.SubtotalLocationType
+        fullName: Excel.SubtotalLocationType
+      - name: ' | "AtTop" | "AtBottom" | "Off"'
+        fullName: ' | "AtTop" | "AtBottom" | "Off"'

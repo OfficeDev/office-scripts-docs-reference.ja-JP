@@ -1,0 +1,231 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartCollection:class'
+    summary: ワークシート上のすべてのグラフ オブジェクトのコレクション。
+    name: Excel.ChartCollection
+    fullName: Excel.ChartCollection
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.ChartCollection#add:member(1)'
+      - 'excel!Excel.ChartCollection#add:member(2)'
+      - 'excel!Excel.ChartCollection#context:member'
+      - 'excel!Excel.ChartCollection#count:member'
+      - 'excel!Excel.ChartCollection#getCount:member(1)'
+      - 'excel!Excel.ChartCollection#getItem:member(1)'
+      - 'excel!Excel.ChartCollection#getItemAt:member(1)'
+      - 'excel!Excel.ChartCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.ChartCollection#items:member'
+      - 'excel!Excel.ChartCollection#load:member(1)'
+  - uid: 'excel!Excel.ChartCollection#add:member(1)'
+    summary: 新しいグラフを作成します。
+    name: 'add(type, sourceData, seriesBy)'
+    fullName: 'add(type, sourceData, seriesBy)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(type: Excel.ChartType, sourceData: Range, seriesBy?: Excel.ChartSeriesBy): Excel.Chart;'
+      return:
+        type:
+          - 'excel!Excel.Chart:class'
+        description: ''
+      parameters:
+        - id: type
+          description: グラフの種類を表します。 詳細については、「ChartType」を参照してください。
+          type:
+            - 'excel!Excel.ChartType:enum'
+        - id: sourceData
+          description: データ ソースに対応する Range オブジェクトです。
+          type:
+            - 'excel!Excel.Range:class'
+        - id: seriesBy
+          description: 省略可能。 列や行がグラフのデータ系列として使用される方法を指定します。 詳細については、「Excel Chart系列」を参照してください。
+          type:
+            - 'excel!Excel.ChartSeriesBy:enum'
+  - uid: 'excel!Excel.ChartCollection#add:member(2)'
+    summary: 新しいグラフを作成します。
+    name: 'add(typeString, sourceData, seriesBy)'
+    fullName: 'add(typeString, sourceData, seriesBy)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(typeString: "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel", sourceData: Range, seriesBy?: "Auto" | "Columns" | "Rows"): Excel.Chart;'
+      return:
+        type:
+          - 'excel!Excel.Chart:class'
+        description: ''
+      parameters:
+        - id: typeString
+          description: グラフの種類を表します。 詳細については、「ChartType」を参照してください。
+          type:
+            - '"Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel"'
+        - id: sourceData
+          description: データ ソースに対応する Range オブジェクトです。
+          type:
+            - 'excel!Excel.Range:class'
+        - id: seriesBy
+          description: 省略可能。 列や行がグラフのデータ系列として使用される方法を指定します。 詳細については、「Excel Chart系列」を参照してください。
+          type:
+            - '"Auto" | "Columns" | "Rows"'
+  - uid: 'excel!Excel.ChartCollection#context:member'
+    summary: オブジェクトに関連付けられている要求コンテキスト。 これにより、アドインのプロセスが Office ホストアプリケーションのプロセスに接続されます。
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartCollection#count:member'
+    summary: ワークシート上のグラフの数を返します。値の取得のみ可能です。
+    name: count
+    fullName: count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly count: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartCollection#getCount:member(1)'
+    summary: ワークシート上のグラフの数を返します。
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): ClientResult<number>;'
+      return:
+        type:
+          - 'excel!Excel.ChartCollection#getCount~0:complex'
+        description: ''
+  - uid: 'excel!Excel.ChartCollection#getItem:member(1)'
+    summary: グラフ名を使用してグラフを取得します。 同じ名前の複数のグラフがある場合は、最初の 1 つが返されます。
+    name: getItem(name)
+    fullName: getItem(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(name: string): Excel.Chart;'
+      return:
+        type:
+          - 'excel!Excel.Chart:class'
+        description: ''
+      parameters:
+        - id: name
+          description: 取得するグラフの名前。
+          type:
+            - string
+  - uid: 'excel!Excel.ChartCollection#getItemAt:member(1)'
+    summary: コレクション内での位置を基にグラフを取得します。
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Excel.Chart;'
+      return:
+        type:
+          - 'excel!Excel.Chart:class'
+        description: ''
+      parameters:
+        - id: index
+          description: 取得するオブジェクトのインデックス値。 0 を起点とする番号になります。
+          type:
+            - number
+  - uid: 'excel!Excel.ChartCollection#getItemOrNullObject:member(1)'
+    summary: グラフ名を使用してグラフを取得します。 同じ名前の複数のグラフがある場合は、最初の 1 つが返されます。 グラフが存在しない場合は、null オブジェクトが返されます。
+    name: getItemOrNullObject(name)
+    fullName: getItemOrNullObject(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(name: string): Excel.Chart;'
+      return:
+        type:
+          - 'excel!Excel.Chart:class'
+        description: ''
+      parameters:
+        - id: name
+          description: 取得するグラフの名前。
+          type:
+            - string
+  - uid: 'excel!Excel.ChartCollection#items:member'
+    summary: このコレクション内に読み込まれた子アイテムを取得します。
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Excel.Chart[];'
+      return:
+        type:
+          - 'excel!Excel.ChartCollection#items~0:complex'
+  - uid: 'excel!Excel.ChartCollection#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る`context.sync()`前に、を呼び出す必要があります。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ChartCollection;'
+      return:
+        type:
+          - 'excel!Excel.ChartCollection:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.Chart:class'
+    name: Chart
+    fullName: Excel.Chart
+  - uid: 'excel!Excel.ChartType:enum'
+    name: ChartType
+    fullName: Excel.ChartType
+  - uid: 'excel!Excel.Range:class'
+    name: Range
+    fullName: Excel.Range
+  - uid: 'excel!Excel.ChartSeriesBy:enum'
+    name: ChartSeriesBy
+    fullName: Excel.ChartSeriesBy
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.ChartCollection#getCount~0:complex'
+    name: ClientResult<number>
+    fullName: Excel.ClientResult<number>
+    spec.typeScript:
+      - uid: 'excel!Excel.ClientResult:class'
+        name: ClientResult
+        fullName: Excel.ClientResult
+      - name: <number>
+        fullName: <number>
+  - uid: 'excel!Excel.ChartCollection#items~0:complex'
+    name: 'Excel.Chart[]'
+    fullName: 'Excel.Chart[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Chart:class'
+        name: Excel.Chart
+        fullName: Excel.Chart
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.ChartCollection:class'
+    name: ChartCollection
+    fullName: Excel.ChartCollection

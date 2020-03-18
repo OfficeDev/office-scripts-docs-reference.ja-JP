@@ -1,0 +1,161 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.RangeBorderCollection:class'
+    summary: 範囲の境界線を構成する複数の境界線オブジェクトを表します。
+    name: Excel.RangeBorderCollection
+    fullName: Excel.RangeBorderCollection
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.RangeBorderCollection#context:member'
+      - 'excel!Excel.RangeBorderCollection#count:member'
+      - 'excel!Excel.RangeBorderCollection#getItem:member(1)'
+      - 'excel!Excel.RangeBorderCollection#getItem:member(2)'
+      - 'excel!Excel.RangeBorderCollection#getItemAt:member(1)'
+      - 'excel!Excel.RangeBorderCollection#items:member'
+      - 'excel!Excel.RangeBorderCollection#load:member(1)'
+      - 'excel!Excel.RangeBorderCollection#tintAndShade:member'
+  - uid: 'excel!Excel.RangeBorderCollection#context:member'
+    summary: オブジェクトに関連付けられている要求コンテキスト。 これにより、アドインのプロセスが Office ホストアプリケーションのプロセスに接続されます。
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.RangeBorderCollection#count:member'
+    summary: コレクションに含まれる境界線オブジェクトの数。 読み取り専用です。
+    name: count
+    fullName: count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly count: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.RangeBorderCollection#getItem:member(1)'
+    summary: オブジェクトの名前を使用して、境界線オブジェクトを取得します。
+    name: getItem(index)
+    fullName: getItem(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(index: Excel.BorderIndex): Excel.RangeBorder;'
+      return:
+        type:
+          - 'excel!Excel.RangeBorder:class'
+        description: ''
+      parameters:
+        - id: index
+          description: 取得する border オブジェクトのインデックス値を指定します。 詳細については、「Excel BorderIndex」を参照してください。
+          type:
+            - 'excel!Excel.BorderIndex:enum'
+  - uid: 'excel!Excel.RangeBorderCollection#getItem:member(2)'
+    summary: オブジェクトの名前を使用して、境界線オブジェクトを取得します。
+    name: getItem(indexString)
+    fullName: getItem(indexString)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(indexString: "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" | "InsideVertical" | "InsideHorizontal" | "DiagonalDown" | "DiagonalUp"): Excel.RangeBorder;'
+      return:
+        type:
+          - 'excel!Excel.RangeBorder:class'
+        description: ''
+      parameters:
+        - id: indexString
+          description: 取得する border オブジェクトのインデックス値を指定します。 詳細については、「Excel BorderIndex」を参照してください。
+          type:
+            - '"EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" | "InsideVertical" | "InsideHorizontal" | "DiagonalDown" | "DiagonalUp"'
+  - uid: 'excel!Excel.RangeBorderCollection#getItemAt:member(1)'
+    summary: オブジェクトのインデックスを使用して、境界線オブジェクトを取得します。
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Excel.RangeBorder;'
+      return:
+        type:
+          - 'excel!Excel.RangeBorder:class'
+        description: ''
+      parameters:
+        - id: index
+          description: 取得するオブジェクトのインデックス値。 0 を起点とする番号になります。
+          type:
+            - number
+  - uid: 'excel!Excel.RangeBorderCollection#items:member'
+    summary: このコレクション内に読み込まれた子アイテムを取得します。
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Excel.RangeBorder[];'
+      return:
+        type:
+          - 'excel!Excel.RangeBorderCollection#items~0:complex'
+  - uid: 'excel!Excel.RangeBorderCollection#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る`context.sync()`前に、を呼び出す必要があります。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.RangeBorderCollection;'
+      return:
+        type:
+          - 'excel!Excel.RangeBorderCollection:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.RangeBorderCollection#tintAndShade:member'
+    summary: 範囲の境界線の色を明るくするか、暗くする double 値を設定または返します。値は -1 が最も暗く、1 が最も明るくなります。元の色は 0 です。 Null 値は、境界のコレクション全体に均一な tintAndShade が設定されていないことを示します。
+    name: tintAndShade
+    fullName: tintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tintAndShade: number;'
+      return:
+        type:
+          - number
+references:
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.RangeBorder:class'
+    name: RangeBorder
+    fullName: Excel.RangeBorder
+  - uid: 'excel!Excel.BorderIndex:enum'
+    name: BorderIndex
+    fullName: Excel.BorderIndex
+  - uid: 'excel!Excel.RangeBorderCollection#items~0:complex'
+    name: 'Excel.RangeBorder[]'
+    fullName: 'Excel.RangeBorder[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.RangeBorder:class'
+        name: Excel.RangeBorder
+        fullName: Excel.RangeBorder
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.RangeBorderCollection:class'
+    name: RangeBorderCollection
+    fullName: Excel.RangeBorderCollection

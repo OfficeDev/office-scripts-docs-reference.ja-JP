@@ -1,0 +1,201 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.SlicerStyleCollection:class'
+    summary: SlicerStyle オブジェクトのコレクションを表します。
+    name: Excel.SlicerStyleCollection
+    fullName: Excel.SlicerStyleCollection
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.SlicerStyleCollection#add:member(1)'
+      - 'excel!Excel.SlicerStyleCollection#context:member'
+      - 'excel!Excel.SlicerStyleCollection#getCount:member(1)'
+      - 'excel!Excel.SlicerStyleCollection#getDefault:member(1)'
+      - 'excel!Excel.SlicerStyleCollection#getItem:member(1)'
+      - 'excel!Excel.SlicerStyleCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.SlicerStyleCollection#items:member'
+      - 'excel!Excel.SlicerStyleCollection#load:member(1)'
+      - 'excel!Excel.SlicerStyleCollection#setDefault:member(1)'
+  - uid: 'excel!Excel.SlicerStyleCollection#add:member(1)'
+    summary: 指定された名前で空の SlicerStyle を作成します。
+    name: 'add(name, makeUniqueName)'
+    fullName: 'add(name, makeUniqueName)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(name: string, makeUniqueName?: boolean): Excel.SlicerStyle;'
+      return:
+        type:
+          - 'excel!Excel.SlicerStyle:class'
+        description: 新しく作成された SlicerStyle。
+      parameters:
+        - id: name
+          description: 新しい SlicerStyle の一意の名前。 名前が既に使用されている場合は、無効な引数の例外がスローされます。
+          type:
+            - string
+        - id: makeUniqueName
+          description: 省略可能。既定値は false です。 場合は true を指定すると、必要に応じて、一意の番号を付けることができます。
+          type:
+            - boolean
+  - uid: 'excel!Excel.SlicerStyleCollection#context:member'
+    summary: オブジェクトに関連付けられている要求コンテキスト。 これにより、アドインのプロセスが Office ホストアプリケーションのプロセスに接続されます。
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.SlicerStyleCollection#getCount:member(1)'
+    summary: コレクション内のスライサー スタイルの数を取得します。
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): ClientResult<number>;'
+      return:
+        type:
+          - 'excel!Excel.SlicerStyleCollection#getCount~0:complex'
+        description: ''
+  - uid: 'excel!Excel.SlicerStyleCollection#getDefault:member(1)'
+    summary: 親オブジェクトのスコープに対する既定の SlicerStyle を取得します。
+    name: getDefault()
+    fullName: getDefault()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDefault(): Excel.SlicerStyle;'
+      return:
+        type:
+          - 'excel!Excel.SlicerStyle:class'
+        description: 現在の既定の SlicerStyle である SlicerStyle オブジェクト。
+  - uid: 'excel!Excel.SlicerStyleCollection#getItem:member(1)'
+    summary: 名前で SlicerStyle を取得します。
+    name: getItem(name)
+    fullName: getItem(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(name: string): Excel.SlicerStyle;'
+      return:
+        type:
+          - 'excel!Excel.SlicerStyle:class'
+        description: 入力に一致する名前を持つ SlicerStyle オブジェクト。
+      parameters:
+        - id: name
+          description: 取得する SlicerStyle の名前。
+          type:
+            - string
+  - uid: 'excel!Excel.SlicerStyleCollection#getItemOrNullObject:member(1)'
+    summary: 名前で SlicerStyle を取得します。 SlicerStyle が存在しない場合は、null オブジェクトを返します。
+    name: getItemOrNullObject(name)
+    fullName: getItemOrNullObject(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(name: string): Excel.SlicerStyle;'
+      return:
+        type:
+          - 'excel!Excel.SlicerStyle:class'
+        description: 入力に一致する名前を持つ SlicerStyle オブジェクト。
+      parameters:
+        - id: name
+          description: 取得する SlicerStyle の名前。
+          type:
+            - string
+  - uid: 'excel!Excel.SlicerStyleCollection#items:member'
+    summary: このコレクション内に読み込まれた子アイテムを取得します。
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Excel.SlicerStyle[];'
+      return:
+        type:
+          - 'excel!Excel.SlicerStyleCollection#items~0:complex'
+  - uid: 'excel!Excel.SlicerStyleCollection#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る`context.sync()`前に、を呼び出す必要があります。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.SlicerStyleCollection;'
+      return:
+        type:
+          - 'excel!Excel.SlicerStyleCollection:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.SlicerStyleCollection#setDefault:member(1)'
+    summary: 親オブジェクトのスコープで使用する既定の SlicerStyle を設定します。
+    name: setDefault(newDefaultStyle)
+    fullName: setDefault(newDefaultStyle)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setDefault(newDefaultStyle: SlicerStyle | string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: newDefaultStyle
+          description: 新しい既定値にする必要がある、SlicerStyle オブジェクトの SlicerStyle オブジェクトまたは名前。
+          type:
+            - 'excel!Excel.SlicerStyleCollection#setDefault~0:complex'
+references:
+  - uid: 'excel!Excel.SlicerStyle:class'
+    name: SlicerStyle
+    fullName: Excel.SlicerStyle
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.SlicerStyleCollection#getCount~0:complex'
+    name: ClientResult<number>
+    fullName: Excel.ClientResult<number>
+    spec.typeScript:
+      - uid: 'excel!Excel.ClientResult:class'
+        name: ClientResult
+        fullName: Excel.ClientResult
+      - name: <number>
+        fullName: <number>
+  - uid: 'excel!Excel.SlicerStyleCollection#items~0:complex'
+    name: 'Excel.SlicerStyle[]'
+    fullName: 'Excel.SlicerStyle[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.SlicerStyle:class'
+        name: Excel.SlicerStyle
+        fullName: Excel.SlicerStyle
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.SlicerStyleCollection:class'
+    name: SlicerStyleCollection
+    fullName: Excel.SlicerStyleCollection
+  - uid: 'excel!Excel.SlicerStyleCollection#setDefault~0:complex'
+    name: SlicerStyle | string
+    fullName: Excel.SlicerStyle | string
+    spec.typeScript:
+      - uid: 'excel!Excel.SlicerStyle:class'
+        name: SlicerStyle
+        fullName: Excel.SlicerStyle
+      - name: ' | string'
+        fullName: ' | string'

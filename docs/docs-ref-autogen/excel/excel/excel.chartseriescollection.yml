@@ -1,0 +1,153 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartSeriesCollection:class'
+    summary: グラフ系列のコレクションを表します。
+    name: Excel.ChartSeriesCollection
+    fullName: Excel.ChartSeriesCollection
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.ChartSeriesCollection#add:member(1)'
+      - 'excel!Excel.ChartSeriesCollection#context:member'
+      - 'excel!Excel.ChartSeriesCollection#count:member'
+      - 'excel!Excel.ChartSeriesCollection#getCount:member(1)'
+      - 'excel!Excel.ChartSeriesCollection#getItemAt:member(1)'
+      - 'excel!Excel.ChartSeriesCollection#items:member'
+      - 'excel!Excel.ChartSeriesCollection#load:member(1)'
+  - uid: 'excel!Excel.ChartSeriesCollection#add:member(1)'
+    summary: コレクションに新しい系列を追加します。 新たに追加された系列は、値を設定するか x 軸の値/バブルサイズを (グラフの種類に応じて) 表示されるまで表示されません。
+    name: 'add(name, index)'
+    fullName: 'add(name, index)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(name?: string, index?: number): Excel.ChartSeries;'
+      return:
+        type:
+          - 'excel!Excel.ChartSeries:class'
+        description: ''
+      parameters:
+        - id: name
+          description: 省略可能です。 データ系列の名前を指定します。
+          type:
+            - string
+        - id: index
+          description: 省略可能です。 追加する系列のインデックス値を指定します。 0 を起点とする番号になります。
+          type:
+            - number
+  - uid: 'excel!Excel.ChartSeriesCollection#context:member'
+    summary: オブジェクトに関連付けられている要求コンテキスト。 これにより、アドインのプロセスが Office ホストアプリケーションのプロセスに接続されます。
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartSeriesCollection#count:member'
+    summary: コレクション内にあるデータ系列の数を取得します。値の取得のみ可能です。
+    name: count
+    fullName: count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly count: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartSeriesCollection#getCount:member(1)'
+    summary: コレクション内にあるデータ系列の数を取得します。
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): ClientResult<number>;'
+      return:
+        type:
+          - 'excel!Excel.ChartSeriesCollection#getCount~0:complex'
+        description: ''
+  - uid: 'excel!Excel.ChartSeriesCollection#getItemAt:member(1)'
+    summary: コレクション内の位置に基づいてデータ系列を取得します。
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Excel.ChartSeries;'
+      return:
+        type:
+          - 'excel!Excel.ChartSeries:class'
+        description: ''
+      parameters:
+        - id: index
+          description: 取得するオブジェクトのインデックス値。 0 を起点とする番号になります。
+          type:
+            - number
+  - uid: 'excel!Excel.ChartSeriesCollection#items:member'
+    summary: このコレクション内に読み込まれた子アイテムを取得します。
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Excel.ChartSeries[];'
+      return:
+        type:
+          - 'excel!Excel.ChartSeriesCollection#items~0:complex'
+  - uid: 'excel!Excel.ChartSeriesCollection#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る`context.sync()`前に、を呼び出す必要があります。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ChartSeriesCollection;'
+      return:
+        type:
+          - 'excel!Excel.ChartSeriesCollection:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.ChartSeries:class'
+    name: ChartSeries
+    fullName: Excel.ChartSeries
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.ChartSeriesCollection#getCount~0:complex'
+    name: ClientResult<number>
+    fullName: Excel.ClientResult<number>
+    spec.typeScript:
+      - uid: 'excel!Excel.ClientResult:class'
+        name: ClientResult
+        fullName: Excel.ClientResult
+      - name: <number>
+        fullName: <number>
+  - uid: 'excel!Excel.ChartSeriesCollection#items~0:complex'
+    name: 'Excel.ChartSeries[]'
+    fullName: 'Excel.ChartSeries[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartSeries:class'
+        name: Excel.ChartSeries
+        fullName: Excel.ChartSeries
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.ChartSeriesCollection:class'
+    name: ChartSeriesCollection
+    fullName: Excel.ChartSeriesCollection
