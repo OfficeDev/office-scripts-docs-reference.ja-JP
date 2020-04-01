@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Shape:class'
-    summary: 'ワークシートの標準図形オブジェクトを表します。 図形とは、幾何学的な図形、線、図形のグループなどのことです。Shape オブジェクトモデルの詳細については、「 [Excel JAVASCRIPT API を使用して図形を操作](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-shapes)する」を参照してください。<!-- -->.'
+    summary: ワークシートの標準図形オブジェクトを表します。 図形とは、幾何学的な図形、線、図形のグループなどのことです。
     name: Excel.Shape
     fullName: Excel.Shape
     langs:
@@ -76,7 +76,7 @@ items:
         type:
           - string
   - uid: 'excel!Excel.Shape#connectionSiteCount:member'
-    summary: この図形の結合点の数を返します。 読み取り専用。
+    summary: この図形の結合点の数を返します。 読み取り専用です。
     name: connectionSiteCount
     fullName: connectionSiteCount
     langs:
@@ -150,7 +150,7 @@ items:
           }
           ```
   - uid: 'excel!Excel.Shape#fill:member'
-    summary: この図形の塗りつぶしの書式設定を返します。 読み取り専用。
+    summary: この図形の塗りつぶしの書式設定を返します。 読み取り専用です。
     name: fill
     fullName: fill
     langs:
@@ -648,7 +648,7 @@ items:
           type:
             - 'excel!Excel.ShapeScaleType:enum'
         - id: scaleFrom
-          description: 省略可能です。 図形を拡大縮小する場合、図形の位置を保持する部分を指定します。 省略すると、図形の左上隅の位置を保持します。
+          description: 省略可能。 図形を拡大縮小する場合、図形の位置を保持する部分を指定します。 省略すると、図形の左上隅の位置を保持します。
           type:
             - 'excel!Excel.ShapeScaleFrom:enum'
   - uid: 'excel!Excel.Shape#scaleHeight:member(2)'
@@ -674,7 +674,7 @@ items:
           type:
             - '"CurrentSize" | "OriginalSize"'
         - id: scaleFrom
-          description: 省略可能です。 図形を拡大縮小する場合、図形の位置を保持する部分を指定します。 省略すると、図形の左上隅の位置を保持します。
+          description: 省略可能。 図形を拡大縮小する場合、図形の位置を保持する部分を指定します。 省略すると、図形の左上隅の位置を保持します。
           type:
             - '"ScaleFromTopLeft" | "ScaleFromMiddle" | "ScaleFromBottomRight"'
   - uid: 'excel!Excel.Shape#scaleWidth:member(1)'
@@ -700,7 +700,7 @@ items:
           type:
             - 'excel!Excel.ShapeScaleType:enum'
         - id: scaleFrom
-          description: 省略可能です。 図形を拡大縮小する場合、図形の位置を保持する部分を指定します。 省略すると、図形の左上隅の位置を保持します。
+          description: 省略可能。 図形を拡大縮小する場合、図形の位置を保持する部分を指定します。 省略すると、図形の左上隅の位置を保持します。
           type:
             - 'excel!Excel.ShapeScaleFrom:enum'
   - uid: 'excel!Excel.Shape#scaleWidth:member(2)'
@@ -726,7 +726,7 @@ items:
           type:
             - '"CurrentSize" | "OriginalSize"'
         - id: scaleFrom
-          description: 省略可能です。 図形を拡大縮小する場合、図形の位置を保持する部分を指定します。 省略すると、図形の左上隅の位置を保持します。
+          description: 省略可能。 図形を拡大縮小する場合、図形の位置を保持する部分を指定します。 省略すると、図形の左上隅の位置を保持します。
           type:
             - '"ScaleFromTopLeft" | "ScaleFromMiddle" | "ScaleFromBottomRight"'
   - uid: 'excel!Excel.Shape#set:member(1)'
@@ -820,7 +820,7 @@ items:
         type:
           - number
   - uid: 'excel!Excel.Shape#type:member'
-    summary: この図形の種類を返します。 詳細については、Excel.ShapeType をご覧ください。 読み取り専用。
+    summary: この図形の種類を返します。 詳細については、Excel.ShapeType をご覧ください。 読み取り専用です。
     name: type
     fullName: type
     langs:

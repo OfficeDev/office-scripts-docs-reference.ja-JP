@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.PivotTable:class'
-    summary: 'Excel のピボットテーブルを表します。 ピボットテーブルオブジェクトモデルの詳細については、「 [Excel JAVASCRIPT API を使用してピボットテーブルを操作](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-pivottables)する」を参照してください。<!-- -->.'
+    summary: Excel のピボットテーブルを表します。
     name: Excel.PivotTable
     fullName: Excel.PivotTable
     langs:

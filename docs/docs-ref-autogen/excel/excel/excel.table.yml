@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Table:class'
-    summary: 'Excel の表を表します。 表オブジェクトモデルの詳細については、「 [Excel JAVASCRIPT API を使用してテーブルを操作](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables)する」を参照してください。<!-- -->.'
+    summary: Excel の表を表します。
     name: Excel.Table
     fullName: Excel.Table
     langs:
@@ -63,7 +63,7 @@ items:
           - void
         description: ''
   - uid: 'excel!Excel.Table#columns:member'
-    summary: テーブルに含まれるすべての列のコレクションを表します。 読み取り専用。
+    summary: テーブルに含まれるすべての列のコレクションを表します。 読み取り専用です。
     name: columns
     fullName: columns
     langs:
@@ -282,7 +282,7 @@ items:
           - void
         description: ''
   - uid: 'excel!Excel.Table#rows:member'
-    summary: テーブルに含まれるすべての行のコレクションを表します。 読み取り専用。
+    summary: テーブルに含まれるすべての行のコレクションを表します。 読み取り専用です。
     name: rows
     fullName: rows
     langs:
@@ -372,7 +372,7 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Table#sort:member'
-    summary: テーブル内の並べ替えを表します。 読み取り専用。
+    summary: テーブル内の並べ替えを表します。 読み取り専用です。
     name: sort
     fullName: sort
     langs:
