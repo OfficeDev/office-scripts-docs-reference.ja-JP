@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Chart:class'
-    summary: 'ブック内のグラフ オブジェクトを表します。 グラフオブジェクトモデルの詳細については、「 [Excel JAVASCRIPT API を使用してグラフを操作](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts)する」を参照してください。<!-- -->.'
+    summary: ブック内のグラフ オブジェクトを表します。
     name: Excel.Chart
     fullName: Excel.Chart
     langs:
@@ -58,7 +58,7 @@ items:
           - void
         description: ''
   - uid: 'excel!Excel.Chart#axes:member'
-    summary: グラフの軸を表します。 読み取り専用。
+    summary: グラフの軸を表します。 読み取り専用です。
     name: axes
     fullName: axes
     langs:
@@ -106,7 +106,7 @@ items:
         type:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.Chart#dataLabels:member'
-    summary: グラフのデータラベルを表します。 読み取り専用。
+    summary: グラフのデータラベルを表します。 読み取り専用です。
     name: dataLabels
     fullName: dataLabels
     langs:
@@ -143,7 +143,7 @@ items:
         type:
           - 'excel!Excel.Chart#displayBlanksAs~0:complex'
   - uid: 'excel!Excel.Chart#format:member'
-    summary: グラフ領域の書式設定プロパティをカプセル化します。 読み取り専用。
+    summary: グラフ領域の書式設定プロパティをカプセル化します。 読み取り専用です。
     name: format
     fullName: format
     langs:
@@ -219,7 +219,7 @@ items:
         type:
           - number
   - uid: 'excel!Excel.Chart#id:member'
-    summary: グラフの一意の ID。 読み取り専用。
+    summary: グラフの一意の ID。 読み取り専用です。
     name: id
     fullName: id
     langs:
@@ -243,7 +243,7 @@ items:
         type:
           - number
   - uid: 'excel!Excel.Chart#legend:member'
-    summary: グラフの凡例を表します。 読み取り専用。
+    summary: グラフの凡例を表します。 読み取り専用です。
     name: legend
     fullName: legend
     langs:

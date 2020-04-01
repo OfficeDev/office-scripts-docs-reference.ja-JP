@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Range:class'
-    summary: '範囲は、セル、行、列、セルのブロックなど、1つまたは複数の隣接するセルのセットを表します。API 全体で範囲を使用する方法の詳細については、「 [Excel JAVASCRIPT api を使用して範囲を操作](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges)する」および「 [excel javascript api を使用して範囲を操作する (詳細)](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges-advanced) 」を参照してください。<!-- -->.'
+    summary: 範囲は、1 つ以上の隣接するセル (セル、行、列、セルのブロックなど) のセットを表します。
     name: Excel.Range
     fullName: Excel.Range
     langs:
@@ -114,7 +114,7 @@ items:
       - 'excel!Excel.Range#width:member'
       - 'excel!Excel.Range#worksheet:member'
   - uid: 'excel!Excel.Range#address:member'
-    summary: 'A1 スタイルの範囲参照を表します。 Address 値にはシート参照が含まれます (例: "Sheet1!A1: B4 ") 読み取り専用。'
+    summary: 'A1 スタイルの範囲参照を表します。 Address 値にはシート参照が含まれます (例: "Sheet1!A1: B4 ") 読み取り専用です。'
     name: address
     fullName: address
     langs:
@@ -126,7 +126,7 @@ items:
         type:
           - string
   - uid: 'excel!Excel.Range#addressLocal:member'
-    summary: ユーザーの言語で指定された範囲の範囲参照を表します。 読み取り専用。
+    summary: ユーザーの言語で指定された範囲の範囲参照を表します。 読み取り専用です。
     name: addressLocal
     fullName: addressLocal
     langs:
@@ -264,7 +264,7 @@ items:
           type:
             - '"All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"'
   - uid: 'excel!Excel.Range#columnCount:member'
-    summary: 範囲に含まれる列の合計数を表します。 読み取り専用。
+    summary: 範囲に含まれる列の合計数を表します。 読み取り専用です。
     name: columnCount
     fullName: columnCount
     langs:
@@ -300,7 +300,7 @@ items:
         type:
           - number
   - uid: 'excel!Excel.Range#conditionalFormats:member'
-    summary: 範囲に交差する ConditionalFormats のコレクションです。 読み取り専用。
+    summary: 範囲に交差する ConditionalFormats のコレクションです。 読み取り専用です。
     name: conditionalFormats
     fullName: conditionalFormats
     langs:
@@ -590,7 +590,7 @@ items:
           - void
         description: ''
   - uid: 'excel!Excel.Range#format:member'
-    summary: Format オブジェクト (範囲のフォント、塗りつぶし、罫線、配置などのプロパティをカプセル化するオブジェクト) を返します。 読み取り専用。
+    summary: Format オブジェクト (範囲のフォント、塗りつぶし、罫線、配置などのプロパティをカプセル化するオブジェクト) を返します。 読み取り専用です。
     name: format
     fullName: format
     langs:
@@ -1447,7 +1447,7 @@ items:
           type:
             - '"ByRows" | "ByColumns"'
   - uid: 'excel!Excel.Range#height:member'
-    summary: 100% ズームの場合の、範囲の上端から範囲の下端までの距離を、ポイント単位で返します。  読み取り専用。
+    summary: 100% ズームの場合の、範囲の上端から範囲の下端までの距離を、ポイント単位で返します。  読み取り専用です。
     name: height
     fullName: height
     langs:
@@ -1586,7 +1586,7 @@ items:
           type:
             - '"Down" | "Right"'
   - uid: 'excel!Excel.Range#isEntireColumn:member'
-    summary: 現在の範囲が列全体であるかどうかを表します。 読み取り専用。
+    summary: 現在の範囲が列全体であるかどうかを表します。 読み取り専用です。
     name: isEntireColumn
     fullName: isEntireColumn
     langs:
@@ -1598,7 +1598,7 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Range#isEntireRow:member'
-    summary: 現在の範囲が行全体であるかどうかを表します。 読み取り専用。
+    summary: 現在の範囲が行全体であるかどうかを表します。 読み取り専用です。
     name: isEntireRow
     fullName: isEntireRow
     langs:
@@ -1610,7 +1610,7 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Range#left:member'
-    summary: 100% ズームの場合の、ワークシートの左端から範囲の左端までの距離を、ポイント単位で返します。  読み取り専用。
+    summary: 100% ズームの場合の、ワークシートの左端から範囲の左端までの距離を、ポイント単位で返します。  読み取り専用です。
     name: left
     fullName: left
     langs:
@@ -1803,7 +1803,7 @@ items:
           type:
             - 'excel!Excel.ReplaceCriteria:interface'
   - uid: 'excel!Excel.Range#rowCount:member'
-    summary: 範囲に含まれる行の合計数を返します。 読み取り専用。
+    summary: 範囲に含まれる行の合計数を返します。 読み取り専用です。
     name: rowCount
     fullName: rowCount
     langs:
@@ -1827,7 +1827,7 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Range#rowIndex:member'
-    summary: 範囲に含まれる最初のセルの行番号を返します。 0 を起点とする番号になります。 読み取り専用。
+    summary: 範囲に含まれる最初のセルの行番号を返します。 0 を起点とする番号になります。 読み取り専用です。
     name: rowIndex
     fullName: rowIndex
     langs:
@@ -2174,7 +2174,7 @@ items:
           }
           ```
   - uid: 'excel!Excel.Range#text:member'
-    summary: '指定した範囲のテキスト値。 テキスト値は、セルの幅には依存しません。 Excel \# UI で行われた符号置換は、API によって返されるテキスト値には影響しません。 読み取り専用。'
+    summary: '指定した範囲のテキスト値。 テキスト値は、セルの幅には依存しません。 Excel \# UI で行われた符号置換は、API によって返されるテキスト値には影響しません。 読み取り専用です。'
     name: text
     fullName: text
     langs:
@@ -2302,7 +2302,7 @@ items:
         type:
           - 'any[][]'
   - uid: 'excel!Excel.Range#valueTypes:member'
-    summary: 各セルのデータの種類を表します。 読み取り専用。
+    summary: 各セルのデータの種類を表します。 読み取り専用です。
     name: valueTypes
     fullName: valueTypes
     langs:

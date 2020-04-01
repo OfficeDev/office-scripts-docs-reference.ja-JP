@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Workbook:class'
-    summary: 'Workbook は、ワークシート、テーブル、範囲などの関連するブックオブジェクトを含む最上位レベルのオブジェクトです。ブックオブジェクトモデルの詳細については、「 [Excel JAVASCRIPT API を使用してブックを操作](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks)する」を参照してください。<!-- -->.'
+    summary: Workbook は、ワークシート、テーブル、範囲などの関連するブック オブジェクトを含む最上位オブジェクトです。
     name: Excel.Workbook
     fullName: Excel.Workbook
     langs:
@@ -49,7 +49,7 @@ items:
       - 'excel!Excel.Workbook#usePrecisionAsDisplayed:member'
       - 'excel!Excel.Workbook#worksheets:member'
   - uid: 'excel!Excel.Workbook#application:member'
-    summary: このブックを含む Excel アプリケーションインスタンスを表します。 読み取り専用。
+    summary: このブックを含む Excel アプリケーションインスタンスを表します。 読み取り専用です。
     name: application
     fullName: application
     langs:
@@ -73,7 +73,7 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Workbook#bindings:member'
-    summary: ブックの一部であるバインドのコレクションを表します。 読み取り専用。
+    summary: ブックの一部であるバインドのコレクションを表します。 読み取り専用です。
     name: bindings
     fullName: bindings
     langs:
@@ -109,7 +109,7 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Workbook#comments:member'
-    summary: ブックに関連付けられているコメントの集まりを表します。 読み取り専用。
+    summary: ブックに関連付けられているコメントの集まりを表します。 読み取り専用です。
     name: comments
     fullName: comments
     langs:
@@ -133,7 +133,7 @@ items:
         type:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.Workbook#customXmlParts:member'
-    summary: このブックに格納されているカスタム XML パーツのコレクションを表します。 読み取り専用。
+    summary: このブックに格納されているカスタム XML パーツのコレクションを表します。 読み取り専用です。
     name: customXmlParts
     fullName: customXmlParts
     langs:
@@ -145,7 +145,7 @@ items:
         type:
           - 'excel!Excel.CustomXmlPartCollection:class'
   - uid: 'excel!Excel.Workbook#dataConnections:member'
-    summary: ブック内のすべてのデータ接続を表します。 読み取り専用。
+    summary: ブック内のすべてのデータ接続を表します。 読み取り専用です。
     name: dataConnections
     fullName: dataConnections
     langs:
@@ -157,7 +157,7 @@ items:
         type:
           - 'excel!Excel.DataConnectionCollection:class'
   - uid: 'excel!Excel.Workbook#functions:member'
-    summary: 計算に使用できるワークシート関数のコレクションを表します。 読み取り専用。
+    summary: 計算に使用できるワークシート関数のコレクションを表します。 読み取り専用です。
     name: functions
     fullName: functions
     langs:
@@ -358,7 +358,7 @@ items:
                           expand?: string;
                       }
   - uid: 'excel!Excel.Workbook#name:member'
-    summary: ブックの名前を取得します。 読み取り専用。
+    summary: ブックの名前を取得します。 読み取り専用です。
     name: name
     fullName: name
     langs:
@@ -370,7 +370,7 @@ items:
         type:
           - string
   - uid: 'excel!Excel.Workbook#names:member'
-    summary: ブック スコープの名前付き項目 (名前付き範囲と名前付き定数) のコレクションを表します。 読み取り専用。
+    summary: ブック スコープの名前付き項目 (名前付き範囲と名前付き定数) のコレクションを表します。 読み取り専用です。
     name: names
     fullName: names
     langs:
@@ -382,7 +382,7 @@ items:
         type:
           - 'excel!Excel.NamedItemCollection:class'
   - uid: 'excel!Excel.Workbook#pivotTables:member'
-    summary: ブックに関連付けられているピボットテーブルのコレクションを表します。 読み取り専用。
+    summary: ブックに関連付けられているピボットテーブルのコレクションを表します。 読み取り専用です。
     name: pivotTables
     fullName: pivotTables
     langs:
@@ -394,7 +394,7 @@ items:
         type:
           - 'excel!Excel.PivotTableCollection:class'
   - uid: 'excel!Excel.Workbook#pivotTableStyles:member'
-    summary: ブックに関連付けられている PivotTableStyle のコレクションを表します。 読み取り専用。
+    summary: ブックに関連付けられている PivotTableStyle のコレクションを表します。 読み取り専用です。
     name: pivotTableStyles
     fullName: pivotTableStyles
     langs:
@@ -418,7 +418,7 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Workbook#properties:member'
-    summary: ブックのプロパティを取得します。 読み取り専用。
+    summary: ブックのプロパティを取得します。 読み取り専用です。
     name: properties
     fullName: properties
     langs:
@@ -461,7 +461,7 @@ items:
           }
           ```
   - uid: 'excel!Excel.Workbook#protection:member'
-    summary: ブックの workbookProtection オブジェクトを返します。 読み取り専用。
+    summary: ブックの workbookProtection オブジェクトを返します。 読み取り専用です。
     name: protection
     fullName: protection
     langs:
@@ -473,7 +473,7 @@ items:
         type:
           - 'excel!Excel.WorkbookProtection:class'
   - uid: 'excel!Excel.Workbook#readOnly:member'
-    summary: true の場合、ブックが読み取り専用モードで開かれます。 読み取り専用。
+    summary: true の場合、ブックが読み取り専用モードで開かれます。 読み取り専用です。
     name: readOnly
     fullName: readOnly
     langs:
@@ -527,7 +527,7 @@ items:
         type:
           - 'excel!Excel.SlicerCollection:class'
   - uid: 'excel!Excel.Workbook#slicerStyles:member'
-    summary: ブックに関連付けられている SlicerStyle のコレクションを表します。 読み取り専用。
+    summary: ブックに関連付けられている SlicerStyle のコレクションを表します。 読み取り専用です。
     name: slicerStyles
     fullName: slicerStyles
     langs:
@@ -578,7 +578,7 @@ items:
           }
           ```
   - uid: 'excel!Excel.Workbook#tables:member'
-    summary: ブックに関連付けられているテーブルのコレクションを表します。 読み取り専用。
+    summary: ブックに関連付けられているテーブルのコレクションを表します。 読み取り専用です。
     name: tables
     fullName: tables
     langs:
@@ -590,7 +590,7 @@ items:
         type:
           - 'excel!Excel.TableCollection:class'
   - uid: 'excel!Excel.Workbook#tableStyles:member'
-    summary: ブックに関連付けられている TableStyle のコレクションを表します。 読み取り専用。
+    summary: ブックに関連付けられている TableStyle のコレクションを表します。 読み取り専用です。
     name: tableStyles
     fullName: tableStyles
     langs:
@@ -602,7 +602,7 @@ items:
         type:
           - 'excel!Excel.TableStyleCollection:class'
   - uid: 'excel!Excel.Workbook#timelineStyles:member'
-    summary: ブックに関連付けられている TimelineStyle のコレクションを表します。 読み取り専用。
+    summary: ブックに関連付けられている TimelineStyle のコレクションを表します。 読み取り専用です。
     name: timelineStyles
     fullName: timelineStyles
     langs:
