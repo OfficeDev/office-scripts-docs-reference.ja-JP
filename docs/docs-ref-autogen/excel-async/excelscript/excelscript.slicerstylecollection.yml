@@ -1,0 +1,118 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.SlicerStyleCollection:interface'
+    summary: SlicerStyle オブジェクトのコレクションを表します。
+    name: Excel.SlicerStyleCollection
+    fullName: Excel.SlicerStyleCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.SlicerStyleCollection#add:member(1)'
+      - 'excel!Excel.SlicerStyleCollection#getDefault:member(1)'
+      - 'excel!Excel.SlicerStyleCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.SlicerStyleCollection#load:member(1)'
+      - 'excel!Excel.SlicerStyleCollection#setDefault:member(1)'
+  - uid: 'excel!Excel.SlicerStyleCollection#add:member(1)'
+    summary: 指定された名前で空の SlicerStyle を作成します。
+    name: 'add(name, makeUniqueName)'
+    fullName: 'add(name, makeUniqueName)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(name: string, makeUniqueName?: boolean): SlicerStyle;'
+      return:
+        type:
+          - 'excel!Excel.SlicerStyle:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: 新しい SlicerStyle の一意の名前。 名前が既に使用されている場合は、無効な引数の例外がスローされます。
+          type:
+            - string
+        - id: makeUniqueName
+          description: 省略可能。既定値は false です。 場合は true を指定すると、必要に応じて、一意の番号を付けることができます。
+          type:
+            - boolean
+  - uid: 'excel!Excel.SlicerStyleCollection#getDefault:member(1)'
+    summary: 親オブジェクトのスコープに対する既定の SlicerStyle を取得します。
+    name: getDefault()
+    fullName: getDefault()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDefault(): SlicerStyle;'
+      return:
+        type:
+          - 'excel!Excel.SlicerStyle:interface'
+        description: ''
+  - uid: 'excel!Excel.SlicerStyleCollection#getItemOrNullObject:member(1)'
+    summary: 名前で SlicerStyle を取得します。 SlicerStyle が存在しない場合は、null オブジェクトを返します。
+    name: getItemOrNullObject(name)
+    fullName: getItemOrNullObject(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(name: string): SlicerStyle;'
+      return:
+        type:
+          - 'excel!Excel.SlicerStyle:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: 取得する SlicerStyle の名前。
+          type:
+            - string
+  - uid: 'excel!Excel.SlicerStyleCollection#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.SlicerStyleCollection#setDefault:member(1)'
+    summary: 親オブジェクトのスコープで使用する既定の SlicerStyle を設定します。
+    name: setDefault(newDefaultStyle)
+    fullName: setDefault(newDefaultStyle)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setDefault(newDefaultStyle: SlicerStyle | string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: newDefaultStyle
+          description: 新しい既定値にする必要がある、SlicerStyle オブジェクトの SlicerStyle オブジェクトまたは名前。
+          type:
+            - 'excel!Excel.SlicerStyleCollection#setDefault~0:complex'
+references:
+  - uid: 'excel!Excel.SlicerStyle:interface'
+    name: SlicerStyle
+    fullName: Excel.SlicerStyle
+  - uid: 'excel!Excel.SlicerStyleCollection#setDefault~0:complex'
+    name: SlicerStyle | string
+    fullName: Excel.SlicerStyle | string
+    spec.typeScript:
+      - uid: 'excel!Excel.SlicerStyle:interface'
+        name: SlicerStyle
+        fullName: Excel.SlicerStyle
+      - name: ' | string'
+        fullName: ' | string'

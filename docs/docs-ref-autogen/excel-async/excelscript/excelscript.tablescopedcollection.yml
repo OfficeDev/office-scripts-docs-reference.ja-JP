@@ -1,0 +1,67 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.TableScopedCollection:interface'
+    summary: 表のスコープが設定されたコレクションを表します。 表ごとに、左上隅がアンカー位置と見なされ、表は上から下、左から右に並べ替えられます。
+    name: Excel.TableScopedCollection
+    fullName: Excel.TableScopedCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.TableScopedCollection#getFirst:member(1)'
+      - 'excel!Excel.TableScopedCollection#getItem:member(1)'
+      - 'excel!Excel.TableScopedCollection#load:member(1)'
+  - uid: 'excel!Excel.TableScopedCollection#getFirst:member(1)'
+    summary: コレクション内の最初のテーブルを取得します。 一番上の左のテーブルがコレクション内で最初のテーブルになるように、コレクションのテーブルが上から下へ、左から右への順で並べ替えられます。
+    name: getFirst()
+    fullName: getFirst()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFirst(): Table;'
+      return:
+        type:
+          - 'excel!Excel.Table:interface'
+        description: ''
+  - uid: 'excel!Excel.TableScopedCollection#getItem:member(1)'
+    summary: 名前または ID を使用してテーブルを取得します。
+    name: getItem(key)
+    fullName: getItem(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: string): Table;'
+      return:
+        type:
+          - 'excel!Excel.Table:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: 取得するテーブルの名前または ID。
+          type:
+            - string
+  - uid: 'excel!Excel.TableScopedCollection#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.Table:interface'
+    name: Table
+    fullName: Excel.Table

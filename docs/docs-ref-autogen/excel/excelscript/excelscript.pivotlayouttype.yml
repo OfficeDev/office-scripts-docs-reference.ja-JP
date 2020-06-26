@@ -1,0 +1,34 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.PivotLayoutType:enum'
+    name: ExcelScript.PivotLayoutType
+    fullName: ExcelScript.PivotLayoutType
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.PivotLayoutType.compact:member'
+      - 'ExcelScript!ExcelScript.PivotLayoutType.outline:member'
+      - 'ExcelScript!ExcelScript.PivotLayoutType.tabular:member'
+  - uid: 'ExcelScript!ExcelScript.PivotLayoutType.compact:member'
+    summary: 同じ列の次のフィールドのラベルを含む、水平方向に圧縮されたフォーム。
+    name: compact
+    fullName: compact
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.PivotLayoutType.outline:member'
+    summary: 内側のフィールドのアイテムは、外部フィールドのアイテムと同じ行にあり、小計は常に下にあります。
+    name: outline
+    fullName: outline
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.PivotLayoutType.tabular:member'
+    summary: 内側のフィールドのアイテムは、常に、外部フィールドのアイテムを基準に新しい行になります。
+    name: tabular
+    fullName: tabular
+    langs:
+      - typeScript
+    type: field

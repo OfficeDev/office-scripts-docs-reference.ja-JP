@@ -1,0 +1,85 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.WorksheetProtection:interface'
+    summary: シート オブジェクトの保護を表します。
+    name: ExcelScript.WorksheetProtection
+    fullName: ExcelScript.WorksheetProtection
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.WorksheetProtection#getOptions:member(1)'
+      - 'ExcelScript!ExcelScript.WorksheetProtection#getProtected:member(1)'
+      - 'ExcelScript!ExcelScript.WorksheetProtection#protect:member(1)'
+      - 'ExcelScript!ExcelScript.WorksheetProtection#unprotect:member(1)'
+  - uid: 'ExcelScript!ExcelScript.WorksheetProtection#getOptions:member(1)'
+    summary: ワークシートの保護オプションを指定します。
+    name: getOptions()
+    fullName: getOptions()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getOptions(): WorksheetProtectionOptions;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.WorksheetProtectionOptions:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.WorksheetProtection#getProtected:member(1)'
+    summary: ワークシートが保護されているかどうかを指定します。
+    name: getProtected()
+    fullName: getProtected()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getProtected(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.WorksheetProtection#protect:member(1)'
+    summary: ワークシートを保護します。 ワークシートが既に保護されている場合は、失敗します。
+    name: 'protect(options, password)'
+    fullName: 'protect(options, password)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'protect(options?: WorksheetProtectionOptions, password?: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: 省略可能です。 シートの保護のオプション。
+          type:
+            - 'ExcelScript!ExcelScript.WorksheetProtectionOptions:interface'
+        - id: password
+          description: 省略可能です。 シート保護のパスワードを入力します。
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.WorksheetProtection#unprotect:member(1)'
+    summary: ワークシートの保護を解除します。
+    name: unprotect(password)
+    fullName: unprotect(password)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'unprotect(password?: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: password
+          description: シートの保護パスワード。
+          type:
+            - string
+references:
+  - uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions:interface'
+    name: WorksheetProtectionOptions
+    fullName: ExcelScript.WorksheetProtectionOptions

@@ -1,0 +1,41 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Icon:interface'
+    summary: セルのアイコンを表します。
+    name: Excel.Icon
+    fullName: Excel.Icon
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Icon#index:member'
+      - 'excel!Excel.Icon#set:member'
+  - uid: 'excel!Excel.Icon#index:member'
+    summary: 指定したセット内のアイコンのインデックスを指定します。
+    name: index
+    fullName: index
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'index: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Icon#set:member'
+    summary: アイコンが含まれるセットを指定します。
+    name: set
+    fullName: set
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'set: IconSet;'
+      return:
+        type:
+          - 'excel!Excel.IconSet:enum'
+references:
+  - uid: 'excel!Excel.IconSet:enum'
+    name: IconSet
+    fullName: Excel.IconSet

@@ -1,0 +1,130 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType:enum'
+    name: ExcelScript.SpecialCellValueType
+    fullName: ExcelScript.SpecialCellValueType
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.SpecialCellValueType.all:member'
+      - 'ExcelScript!ExcelScript.SpecialCellValueType.errors:member'
+      - 'ExcelScript!ExcelScript.SpecialCellValueType.errorsLogical:member'
+      - 'ExcelScript!ExcelScript.SpecialCellValueType.errorsLogicalNumber:member'
+      - 'ExcelScript!ExcelScript.SpecialCellValueType.errorsLogicalText:member'
+      - 'ExcelScript!ExcelScript.SpecialCellValueType.errorsNumbers:member'
+      - 'ExcelScript!ExcelScript.SpecialCellValueType.errorsNumberText:member'
+      - 'ExcelScript!ExcelScript.SpecialCellValueType.errorsText:member'
+      - 'ExcelScript!ExcelScript.SpecialCellValueType.logical:member'
+      - 'ExcelScript!ExcelScript.SpecialCellValueType.logicalNumbers:member'
+      - 'ExcelScript!ExcelScript.SpecialCellValueType.logicalNumbersText:member'
+      - 'ExcelScript!ExcelScript.SpecialCellValueType.logicalText:member'
+      - 'ExcelScript!ExcelScript.SpecialCellValueType.numbers:member'
+      - 'ExcelScript!ExcelScript.SpecialCellValueType.numbersText:member'
+      - 'ExcelScript!ExcelScript.SpecialCellValueType.text:member'
+  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.all:member'
+    summary: エラー、true/false、数値、または文字列値を含むセル。
+    name: all
+    fullName: all
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errors:member'
+    summary: エラーが発生したセル。
+    name: errors
+    fullName: errors
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsLogical:member'
+    summary: エラーが発生したセル、または true/false 値。
+    name: errorsLogical
+    fullName: errorsLogical
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsLogicalNumber:member'
+    summary: エラーが発生したセル (true/false、または数値) を指定します。
+    name: errorsLogicalNumber
+    fullName: errorsLogicalNumber
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsLogicalText:member'
+    summary: エラーが発生したセル、true/false、または文字列値。
+    name: errorsLogicalText
+    fullName: errorsLogicalText
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsNumbers:member'
+    summary: エラーが発生したセル、または数値を指定します。
+    name: errorsNumbers
+    fullName: errorsNumbers
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsNumberText:member'
+    summary: エラー、数値、または文字列値を含むセル。
+    name: errorsNumberText
+    fullName: errorsNumberText
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsText:member'
+    summary: エラーが発生したセル、または文字列値。
+    name: errorsText
+    fullName: errorsText
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.logical:member'
+    summary: True/false 値を持つセル。
+    name: logical
+    fullName: logical
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.logicalNumbers:member'
+    summary: True/false が設定されているセルまたは数値を指定します。
+    name: logicalNumbers
+    fullName: logicalNumbers
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.logicalNumbersText:member'
+    summary: True/false、数値、または文字列値を持つセル。
+    name: logicalNumbersText
+    fullName: logicalNumbersText
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.logicalText:member'
+    summary: True/false が設定されているセル、または文字列値。
+    name: logicalText
+    fullName: logicalText
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.numbers:member'
+    summary: 数値が指定されているセル
+    name: numbers
+    fullName: numbers
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.numbersText:member'
+    summary: 数値または文字列値を含むセル。
+    name: numbersText
+    fullName: numbersText
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.text:member'
+    summary: 文字列値を持つセル。
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: field

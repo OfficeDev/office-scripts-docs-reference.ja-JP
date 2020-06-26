@@ -1,0 +1,65 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.PresetCriteriaConditionalFormat:interface'
+    summary: 既定の抽出条件の条件付き書式 (average、average、error、および noerror を含む) を表します。
+    name: ExcelScript.PresetCriteriaConditionalFormat
+    fullName: ExcelScript.PresetCriteriaConditionalFormat
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.PresetCriteriaConditionalFormat#getFormat:member(1)'
+      - 'ExcelScript!ExcelScript.PresetCriteriaConditionalFormat#getRule:member(1)'
+      - 'ExcelScript!ExcelScript.PresetCriteriaConditionalFormat#setRule:member(1)'
+  - uid: 'ExcelScript!ExcelScript.PresetCriteriaConditionalFormat#getFormat:member(1)'
+    summary: 書式設定オブジェクトを返し、条件付き書式のフォント、塗りつぶし、罫線などのプロパティをカプセル化します。
+    name: getFormat()
+    fullName: getFormat()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFormat(): ConditionalRangeFormat;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ConditionalRangeFormat:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PresetCriteriaConditionalFormat#getRule:member(1)'
+    summary: 条件付き書式のルール。
+    name: getRule()
+    fullName: getRule()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRule(): ConditionalPresetCriteriaRule;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ConditionalPresetCriteriaRule:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PresetCriteriaConditionalFormat#setRule:member(1)'
+    summary: 条件付き書式のルール。
+    name: setRule(rule)
+    fullName: setRule(rule)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setRule(rule: ConditionalPresetCriteriaRule): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: rule
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ConditionalPresetCriteriaRule:interface'
+references:
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat:interface'
+    name: ConditionalRangeFormat
+    fullName: ExcelScript.ConditionalRangeFormat
+  - uid: 'ExcelScript!ExcelScript.ConditionalPresetCriteriaRule:interface'
+    name: ConditionalPresetCriteriaRule
+    fullName: ExcelScript.ConditionalPresetCriteriaRule

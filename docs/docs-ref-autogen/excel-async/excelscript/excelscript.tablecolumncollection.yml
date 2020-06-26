@@ -1,0 +1,53 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.TableColumnCollection:interface'
+    summary: 表の一部であるすべての列のコレクションを表します。
+    name: Excel.TableColumnCollection
+    fullName: Excel.TableColumnCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.TableColumnCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.TableColumnCollection#load:member(1)'
+  - uid: 'excel!Excel.TableColumnCollection#getItemOrNullObject:member(1)'
+    summary: 名前または ID によって、列オブジェクトを取得します。 列が存在しない場合は null オブジェクトを返します。
+    name: getItemOrNullObject(key)
+    fullName: getItemOrNullObject(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(key: number | string): TableColumn;'
+      return:
+        type:
+          - 'excel!Excel.TableColumn:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: 列名または ID。
+          type:
+            - number | string
+  - uid: 'excel!Excel.TableColumnCollection#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.TableColumn:interface'
+    name: TableColumn
+    fullName: Excel.TableColumn

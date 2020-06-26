@@ -1,0 +1,621 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.PivotTable:interface'
+    summary: 'Excel のピボットテーブルを表します。 ピボットテーブルオブジェクトモデルの詳細については、「 [Excel JAVASCRIPT API を使用してピボットテーブルを操作](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-pivottables)する」を参照してください。<!-- -->.'
+    name: ExcelScript.PivotTable
+    fullName: ExcelScript.PivotTable
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.PivotTable#addColumnHierarchy:member(1)'
+      - 'ExcelScript!ExcelScript.PivotTable#addDataHierarchy:member(1)'
+      - 'ExcelScript!ExcelScript.PivotTable#addFilterHierarchy:member(1)'
+      - 'ExcelScript!ExcelScript.PivotTable#addRowHierarchy:member(1)'
+      - 'ExcelScript!ExcelScript.PivotTable#delete:member(1)'
+      - 'ExcelScript!ExcelScript.PivotTable#getColumnHierarchies:member(1)'
+      - 'ExcelScript!ExcelScript.PivotTable#getColumnHierarchy:member(1)'
+      - 'ExcelScript!ExcelScript.PivotTable#getDataHierarchies:member(1)'
+      - 'ExcelScript!ExcelScript.PivotTable#getDataHierarchy:member(1)'
+      - 'ExcelScript!ExcelScript.PivotTable#getEnableDataValueEditing:member(1)'
+      - 'ExcelScript!ExcelScript.PivotTable#getFilterHierarchies:member(1)'
+      - 'ExcelScript!ExcelScript.PivotTable#getFilterHierarchy:member(1)'
+      - 'ExcelScript!ExcelScript.PivotTable#getHierarchies:member(1)'
+      - 'ExcelScript!ExcelScript.PivotTable#getHierarchy:member(1)'
+      - 'ExcelScript!ExcelScript.PivotTable#getId:member(1)'
+      - 'ExcelScript!ExcelScript.PivotTable#getLayout:member(1)'
+      - 'ExcelScript!ExcelScript.PivotTable#getName:member(1)'
+      - 'ExcelScript!ExcelScript.PivotTable#getRowHierarchies:member(1)'
+      - 'ExcelScript!ExcelScript.PivotTable#getRowHierarchy:member(1)'
+      - 'ExcelScript!ExcelScript.PivotTable#getUseCustomSortLists:member(1)'
+      - 'ExcelScript!ExcelScript.PivotTable#getWorksheet:member(1)'
+      - 'ExcelScript!ExcelScript.PivotTable#refresh:member(1)'
+      - 'ExcelScript!ExcelScript.PivotTable#removeColumnHierarchy:member(1)'
+      - 'ExcelScript!ExcelScript.PivotTable#removeDataHierarchy:member(1)'
+      - 'ExcelScript!ExcelScript.PivotTable#removeFilterHierarchy:member(1)'
+      - 'ExcelScript!ExcelScript.PivotTable#removeRowHierarchy:member(1)'
+      - 'ExcelScript!ExcelScript.PivotTable#setEnableDataValueEditing:member(1)'
+      - 'ExcelScript!ExcelScript.PivotTable#setName:member(1)'
+      - 'ExcelScript!ExcelScript.PivotTable#setUseCustomSortLists:member(1)'
+  - uid: 'ExcelScript!ExcelScript.PivotTable#addColumnHierarchy:member(1)'
+    summary: 現在の軸にピボット階層を追加します。 階層が行、列、またはフィルター軸の他の場所に存在する場合は、その場所から削除されます。
+    name: addColumnHierarchy(pivotHierarchy)
+    fullName: addColumnHierarchy(pivotHierarchy)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        addColumnHierarchy(
+                    pivotHierarchy: PivotHierarchy
+                ): RowColumnPivotHierarchy;
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.RowColumnPivotHierarchy:interface'
+        description: ''
+      parameters:
+        - id: pivotHierarchy
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.PivotHierarchy:interface'
+  - uid: 'ExcelScript!ExcelScript.PivotTable#addDataHierarchy:member(1)'
+    summary: 現在の軸にピボット階層を追加します。
+    name: addDataHierarchy(pivotHierarchy)
+    fullName: addDataHierarchy(pivotHierarchy)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addDataHierarchy(pivotHierarchy: PivotHierarchy): DataPivotHierarchy;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.DataPivotHierarchy:interface'
+        description: ''
+      parameters:
+        - id: pivotHierarchy
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.PivotHierarchy:interface'
+  - uid: 'ExcelScript!ExcelScript.PivotTable#addFilterHierarchy:member(1)'
+    summary: 現在の軸にピボット階層を追加します。 階層が行、列、またはフィルター軸の他の場所に存在する場合は、その場所から削除されます。
+    name: addFilterHierarchy(pivotHierarchy)
+    fullName: addFilterHierarchy(pivotHierarchy)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        addFilterHierarchy(
+                    pivotHierarchy: PivotHierarchy
+                ): FilterPivotHierarchy;
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.FilterPivotHierarchy:interface'
+        description: ''
+      parameters:
+        - id: pivotHierarchy
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.PivotHierarchy:interface'
+  - uid: 'ExcelScript!ExcelScript.PivotTable#addRowHierarchy:member(1)'
+    summary: 現在の軸にピボット階層を追加します。 階層が行、列、またはフィルター軸の他の場所に存在する場合は、その場所から削除されます。
+    name: addRowHierarchy(pivotHierarchy)
+    fullName: addRowHierarchy(pivotHierarchy)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        addRowHierarchy(
+                    pivotHierarchy: PivotHierarchy
+                ): RowColumnPivotHierarchy;
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.RowColumnPivotHierarchy:interface'
+        description: ''
+      parameters:
+        - id: pivotHierarchy
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.PivotHierarchy:interface'
+  - uid: 'ExcelScript!ExcelScript.PivotTable#delete:member(1)'
+    summary: ピボットテーブルを削除します。
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PivotTable#getColumnHierarchies:member(1)'
+    summary: ピボットテーブルの列ピボット階層。
+    name: getColumnHierarchies()
+    fullName: getColumnHierarchies()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getColumnHierarchies(): RowColumnPivotHierarchy[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PivotTable#getColumnHierarchies~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PivotTable#getColumnHierarchy:member(1)'
+    summary: 名前に基づいて RowColumnPivotHierarchy を取得します。 RowColumnPivotHierarchy が存在しない場合は null オブジェクトを返します。
+    name: getColumnHierarchy(name)
+    fullName: getColumnHierarchy(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getColumnHierarchy(name: string): RowColumnPivotHierarchy | undefined;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PivotTable#getColumnHierarchy~0:complex'
+        description: ''
+      parameters:
+        - id: name
+          description: 取得する RowColumnPivotHierarchy の名前。
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.PivotTable#getDataHierarchies:member(1)'
+    summary: ピボットテーブルのデータ ピボット階層。
+    name: getDataHierarchies()
+    fullName: getDataHierarchies()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDataHierarchies(): DataPivotHierarchy[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PivotTable#getDataHierarchies~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PivotTable#getDataHierarchy:member(1)'
+    summary: 名前に基づいて DataPivotHierarchy を取得します。 DataPivotHierarchy が存在しない場合は null オブジェクトを返します。
+    name: getDataHierarchy(name)
+    fullName: getDataHierarchy(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDataHierarchy(name: string): DataPivotHierarchy | undefined;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PivotTable#getDataHierarchy~0:complex'
+        description: ''
+      parameters:
+        - id: name
+          description: 取得する DataPivotHierarchy の名前。
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.PivotTable#getEnableDataValueEditing:member(1)'
+    summary: ピボットテーブルで、ユーザーがデータ本文の値を編集できるようにするかどうかを指定します。
+    name: getEnableDataValueEditing()
+    fullName: getEnableDataValueEditing()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getEnableDataValueEditing(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PivotTable#getFilterHierarchies:member(1)'
+    summary: ピボットテーブルのフィルター ピボット階層。
+    name: getFilterHierarchies()
+    fullName: getFilterHierarchies()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFilterHierarchies(): FilterPivotHierarchy[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PivotTable#getFilterHierarchies~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PivotTable#getFilterHierarchy:member(1)'
+    summary: 名前に基づいて FilterPivotHierarchy を取得します。 FilterPivotHierarchy が存在しない場合は null オブジェクトを返します。
+    name: getFilterHierarchy(name)
+    fullName: getFilterHierarchy(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFilterHierarchy(name: string): FilterPivotHierarchy | undefined;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PivotTable#getFilterHierarchy~0:complex'
+        description: ''
+      parameters:
+        - id: name
+          description: 取得する FilterPivotHierarchy の名前。
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.PivotTable#getHierarchies:member(1)'
+    summary: ピボットテーブルのピボット階層。
+    name: getHierarchies()
+    fullName: getHierarchies()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getHierarchies(): PivotHierarchy[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PivotTable#getHierarchies~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PivotTable#getHierarchy:member(1)'
+    summary: 名前に基づいて PivotHierarchy を取得します。 PivotHierarchy が存在しない場合は null オブジェクトを返します。
+    name: getHierarchy(name)
+    fullName: getHierarchy(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getHierarchy(name: string): PivotHierarchy | undefined;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PivotTable#getHierarchy~0:complex'
+        description: ''
+      parameters:
+        - id: name
+          description: 取得する PivotHierarchy の名前。
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.PivotTable#getId:member(1)'
+    summary: ピボットテーブルの ID。
+    name: getId()
+    fullName: getId()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getId(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PivotTable#getLayout:member(1)'
+    summary: ピボットテーブルのレイアウトとビジュアル構造を記述する PivotLayout。
+    name: getLayout()
+    fullName: getLayout()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLayout(): PivotLayout;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PivotLayout:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PivotTable#getName:member(1)'
+    summary: ピボットテーブルの名前。
+    name: getName()
+    fullName: getName()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PivotTable#getRowHierarchies:member(1)'
+    summary: ピボットテーブルの行ピボット階層。
+    name: getRowHierarchies()
+    fullName: getRowHierarchies()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRowHierarchies(): RowColumnPivotHierarchy[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PivotTable#getRowHierarchies~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PivotTable#getRowHierarchy:member(1)'
+    summary: 名前に基づいて RowColumnPivotHierarchy を取得します。 RowColumnPivotHierarchy が存在しない場合は null オブジェクトを返します。
+    name: getRowHierarchy(name)
+    fullName: getRowHierarchy(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRowHierarchy(name: string): RowColumnPivotHierarchy | undefined;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PivotTable#getRowHierarchy~0:complex'
+        description: ''
+      parameters:
+        - id: name
+          description: 取得する RowColumnPivotHierarchy の名前。
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.PivotTable#getUseCustomSortLists:member(1)'
+    summary: 並べ替えの際に、ピボットテーブルでカスタムリストを使用するかどうかを指定します。
+    name: getUseCustomSortLists()
+    fullName: getUseCustomSortLists()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getUseCustomSortLists(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PivotTable#getWorksheet:member(1)'
+    summary: 現在のピボットテーブルを含んでいるワークシート。
+    name: getWorksheet()
+    fullName: getWorksheet()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getWorksheet(): Worksheet;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Worksheet:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PivotTable#refresh:member(1)'
+    summary: ピボットテーブルを更新します。
+    name: refresh()
+    fullName: refresh()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'refresh(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PivotTable#removeColumnHierarchy:member(1)'
+    summary: 現在の軸からピボット階層を削除します。
+    name: removeColumnHierarchy(rowColumnPivotHierarchy)
+    fullName: removeColumnHierarchy(rowColumnPivotHierarchy)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        removeColumnHierarchy(
+                    rowColumnPivotHierarchy: RowColumnPivotHierarchy
+                ): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: rowColumnPivotHierarchy
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.RowColumnPivotHierarchy:interface'
+  - uid: 'ExcelScript!ExcelScript.PivotTable#removeDataHierarchy:member(1)'
+    summary: 現在の軸からピボット階層を削除します。
+    name: removeDataHierarchy(DataPivotHierarchy)
+    fullName: removeDataHierarchy(DataPivotHierarchy)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'removeDataHierarchy(DataPivotHierarchy: DataPivotHierarchy): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: DataPivotHierarchy
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.DataPivotHierarchy:interface'
+  - uid: 'ExcelScript!ExcelScript.PivotTable#removeFilterHierarchy:member(1)'
+    summary: 現在の軸からピボット階層を削除します。
+    name: removeFilterHierarchy(filterPivotHierarchy)
+    fullName: removeFilterHierarchy(filterPivotHierarchy)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'removeFilterHierarchy(filterPivotHierarchy: FilterPivotHierarchy): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: filterPivotHierarchy
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.FilterPivotHierarchy:interface'
+  - uid: 'ExcelScript!ExcelScript.PivotTable#removeRowHierarchy:member(1)'
+    summary: 現在の軸からピボット階層を削除します。
+    name: removeRowHierarchy(rowColumnPivotHierarchy)
+    fullName: removeRowHierarchy(rowColumnPivotHierarchy)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        removeRowHierarchy(
+                    rowColumnPivotHierarchy: RowColumnPivotHierarchy
+                ): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: rowColumnPivotHierarchy
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.RowColumnPivotHierarchy:interface'
+  - uid: 'ExcelScript!ExcelScript.PivotTable#setEnableDataValueEditing:member(1)'
+    summary: ピボットテーブルで、ユーザーがデータ本文の値を編集できるようにするかどうかを指定します。
+    name: setEnableDataValueEditing(enableDataValueEditing)
+    fullName: setEnableDataValueEditing(enableDataValueEditing)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setEnableDataValueEditing(enableDataValueEditing: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: enableDataValueEditing
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.PivotTable#setName:member(1)'
+    summary: ピボットテーブルの名前。
+    name: setName(name)
+    fullName: setName(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setName(name: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.PivotTable#setUseCustomSortLists:member(1)'
+    summary: 並べ替えの際に、ピボットテーブルでカスタムリストを使用するかどうかを指定します。
+    name: setUseCustomSortLists(useCustomSortLists)
+    fullName: setUseCustomSortLists(useCustomSortLists)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setUseCustomSortLists(useCustomSortLists: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: useCustomSortLists
+          description: ''
+          type:
+            - boolean
+references:
+  - uid: 'ExcelScript!ExcelScript.RowColumnPivotHierarchy:interface'
+    name: RowColumnPivotHierarchy
+    fullName: ExcelScript.RowColumnPivotHierarchy
+  - uid: 'ExcelScript!ExcelScript.PivotHierarchy:interface'
+    name: PivotHierarchy
+    fullName: ExcelScript.PivotHierarchy
+  - uid: 'ExcelScript!ExcelScript.DataPivotHierarchy:interface'
+    name: DataPivotHierarchy
+    fullName: ExcelScript.DataPivotHierarchy
+  - uid: 'ExcelScript!ExcelScript.FilterPivotHierarchy:interface'
+    name: FilterPivotHierarchy
+    fullName: ExcelScript.FilterPivotHierarchy
+  - uid: 'ExcelScript!ExcelScript.PivotTable#getColumnHierarchies~0:complex'
+    name: 'RowColumnPivotHierarchy[]'
+    fullName: 'ExcelScript.RowColumnPivotHierarchy[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.RowColumnPivotHierarchy:interface'
+        name: RowColumnPivotHierarchy
+        fullName: ExcelScript.RowColumnPivotHierarchy
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.PivotTable#getColumnHierarchy~0:complex'
+    name: RowColumnPivotHierarchy | undefined
+    fullName: ExcelScript.RowColumnPivotHierarchy | undefined
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.RowColumnPivotHierarchy:interface'
+        name: RowColumnPivotHierarchy
+        fullName: ExcelScript.RowColumnPivotHierarchy
+      - name: ' | undefined'
+        fullName: ' | undefined'
+  - uid: 'ExcelScript!ExcelScript.PivotTable#getDataHierarchies~0:complex'
+    name: 'DataPivotHierarchy[]'
+    fullName: 'ExcelScript.DataPivotHierarchy[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.DataPivotHierarchy:interface'
+        name: DataPivotHierarchy
+        fullName: ExcelScript.DataPivotHierarchy
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.PivotTable#getDataHierarchy~0:complex'
+    name: DataPivotHierarchy | undefined
+    fullName: ExcelScript.DataPivotHierarchy | undefined
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.DataPivotHierarchy:interface'
+        name: DataPivotHierarchy
+        fullName: ExcelScript.DataPivotHierarchy
+      - name: ' | undefined'
+        fullName: ' | undefined'
+  - uid: 'ExcelScript!ExcelScript.PivotTable#getFilterHierarchies~0:complex'
+    name: 'FilterPivotHierarchy[]'
+    fullName: 'ExcelScript.FilterPivotHierarchy[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.FilterPivotHierarchy:interface'
+        name: FilterPivotHierarchy
+        fullName: ExcelScript.FilterPivotHierarchy
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.PivotTable#getFilterHierarchy~0:complex'
+    name: FilterPivotHierarchy | undefined
+    fullName: ExcelScript.FilterPivotHierarchy | undefined
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.FilterPivotHierarchy:interface'
+        name: FilterPivotHierarchy
+        fullName: ExcelScript.FilterPivotHierarchy
+      - name: ' | undefined'
+        fullName: ' | undefined'
+  - uid: 'ExcelScript!ExcelScript.PivotTable#getHierarchies~0:complex'
+    name: 'PivotHierarchy[]'
+    fullName: 'ExcelScript.PivotHierarchy[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.PivotHierarchy:interface'
+        name: PivotHierarchy
+        fullName: ExcelScript.PivotHierarchy
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.PivotTable#getHierarchy~0:complex'
+    name: PivotHierarchy | undefined
+    fullName: ExcelScript.PivotHierarchy | undefined
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.PivotHierarchy:interface'
+        name: PivotHierarchy
+        fullName: ExcelScript.PivotHierarchy
+      - name: ' | undefined'
+        fullName: ' | undefined'
+  - uid: 'ExcelScript!ExcelScript.PivotLayout:interface'
+    name: PivotLayout
+    fullName: ExcelScript.PivotLayout
+  - uid: 'ExcelScript!ExcelScript.PivotTable#getRowHierarchies~0:complex'
+    name: 'RowColumnPivotHierarchy[]'
+    fullName: 'ExcelScript.RowColumnPivotHierarchy[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.RowColumnPivotHierarchy:interface'
+        name: RowColumnPivotHierarchy
+        fullName: ExcelScript.RowColumnPivotHierarchy
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.PivotTable#getRowHierarchy~0:complex'
+    name: RowColumnPivotHierarchy | undefined
+    fullName: ExcelScript.RowColumnPivotHierarchy | undefined
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.RowColumnPivotHierarchy:interface'
+        name: RowColumnPivotHierarchy
+        fullName: ExcelScript.RowColumnPivotHierarchy
+      - name: ' | undefined'
+        fullName: ' | undefined'
+  - uid: 'ExcelScript!ExcelScript.Worksheet:interface'
+    name: Worksheet
+    fullName: ExcelScript.Worksheet

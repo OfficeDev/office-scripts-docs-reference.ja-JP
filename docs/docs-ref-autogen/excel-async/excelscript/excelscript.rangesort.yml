@@ -1,0 +1,88 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.RangeSort:interface'
+    summary: Range オブジェクトの並べ替え操作を管理します。
+    name: Excel.RangeSort
+    fullName: Excel.RangeSort
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.RangeSort#apply:member(1)'
+      - 'excel!Excel.RangeSort#load:member(1)'
+  - uid: 'excel!Excel.RangeSort#apply:member(1)'
+    summary: 並べ替え操作を実行します。
+    name: 'apply(fields, matchCase, hasHeaders, orientation, method)'
+    fullName: 'apply(fields, matchCase, hasHeaders, orientation, method)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        apply(
+                    fields: SortField[],
+                    matchCase?: boolean,
+                    hasHeaders?: boolean,
+                    orientation?: SortOrientation,
+                    method?: SortMethod
+                ): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: fields
+          description: 並べ替えに使用する条件の一覧。
+          type:
+            - 'excel!Excel.RangeSort#apply~0:complex'
+        - id: matchCase
+          description: 省略可能です。 大文字小文字の区別が文字列の順序に影響を与えるかどうか。
+          type:
+            - boolean
+        - id: hasHeaders
+          description: 省略可能。 範囲にヘッダーがあるかどうか。
+          type:
+            - boolean
+        - id: orientation
+          description: 省略可能です。 操作が行と列のどちらの並べ替えかを示します。
+          type:
+            - 'excel!Excel.SortOrientation:enum'
+        - id: method
+          description: 省略可能。 中国語文字に使用される順序付けの方法です。
+          type:
+            - 'excel!Excel.SortMethod:enum'
+  - uid: 'excel!Excel.RangeSort#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.RangeSort#apply~0:complex'
+    name: 'SortField[]'
+    fullName: 'Excel.SortField[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.SortField:interface'
+        name: SortField
+        fullName: Excel.SortField
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.SortOrientation:enum'
+    name: SortOrientation
+    fullName: Excel.SortOrientation
+  - uid: 'excel!Excel.SortMethod:enum'
+    name: SortMethod
+    fullName: Excel.SortMethod

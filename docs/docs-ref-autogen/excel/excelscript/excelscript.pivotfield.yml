@@ -1,0 +1,253 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.PivotField:interface'
+    summary: Excel のピボットフィールドを表します。
+    name: ExcelScript.PivotField
+    fullName: ExcelScript.PivotField
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.PivotField#getId:member(1)'
+      - 'ExcelScript!ExcelScript.PivotField#getItems:member(1)'
+      - 'ExcelScript!ExcelScript.PivotField#getName:member(1)'
+      - 'ExcelScript!ExcelScript.PivotField#getPivotItem:member(1)'
+      - 'ExcelScript!ExcelScript.PivotField#getShowAllItems:member(1)'
+      - 'ExcelScript!ExcelScript.PivotField#getSubtotals:member(1)'
+      - 'ExcelScript!ExcelScript.PivotField#setName:member(1)'
+      - 'ExcelScript!ExcelScript.PivotField#setShowAllItems:member(1)'
+      - 'ExcelScript!ExcelScript.PivotField#setSubtotals:member(1)'
+      - 'ExcelScript!ExcelScript.PivotField#sortByLabels:member(1)'
+      - 'ExcelScript!ExcelScript.PivotField#sortByValues:member(1)'
+  - uid: 'ExcelScript!ExcelScript.PivotField#getId:member(1)'
+    summary: PivotField の ID。
+    name: getId()
+    fullName: getId()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getId(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PivotField#getItems:member(1)'
+    summary: PivotField に関連付けられているピボット フィールドを返します。
+    name: getItems()
+    fullName: getItems()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItems(): PivotItem[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PivotField#getItems~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PivotField#getName:member(1)'
+    summary: PivotField の名前。
+    name: getName()
+    fullName: getName()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PivotField#getPivotItem:member(1)'
+    summary: 名前によって PivotItem を取得します。 PivotItem が存在しない場合は、null オブジェクトを返します。
+    name: getPivotItem(name)
+    fullName: getPivotItem(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPivotItem(name: string): PivotItem | undefined;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PivotField#getPivotItem~0:complex'
+        description: ''
+      parameters:
+        - id: name
+          description: 取得する PivotItem の名前を指定します。
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.PivotField#getShowAllItems:member(1)'
+    summary: PivotField のすべての項目を表示するかどうかを指定します。
+    name: getShowAllItems()
+    fullName: getShowAllItems()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getShowAllItems(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PivotField#getSubtotals:member(1)'
+    summary: PivotField の小計。
+    name: getSubtotals()
+    fullName: getSubtotals()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSubtotals(): Subtotals;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Subtotals:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PivotField#setName:member(1)'
+    summary: PivotField の名前。
+    name: setName(name)
+    fullName: setName(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setName(name: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.PivotField#setShowAllItems:member(1)'
+    summary: PivotField のすべての項目を表示するかどうかを指定します。
+    name: setShowAllItems(showAllItems)
+    fullName: setShowAllItems(showAllItems)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setShowAllItems(showAllItems: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: showAllItems
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.PivotField#setSubtotals:member(1)'
+    summary: PivotField の小計。
+    name: setSubtotals(subtotals)
+    fullName: setSubtotals(subtotals)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setSubtotals(subtotals: Subtotals): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: subtotals
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.Subtotals:interface'
+  - uid: 'ExcelScript!ExcelScript.PivotField#sortByLabels:member(1)'
+    summary: PivotField を並べ替えます。 DataPivotHierarchy を指定すると、そのピボット階層に基づいて並べ替えが適用されます。指定しない場合、ピボット フィールド自体が並べ替えの基準になります。
+    name: sortByLabels(sortBy)
+    fullName: sortByLabels(sortBy)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'sortByLabels(sortBy: SortBy): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: sortBy
+          description: 並べ替えを昇順または降順のどちらで実行するかを指定します。
+          type:
+            - 'ExcelScript!ExcelScript.SortBy:enum'
+  - uid: 'ExcelScript!ExcelScript.PivotField#sortByValues:member(1)'
+    summary: 与えられた範囲で、指定された値に基づいて PivotField を並べ替えます。 範囲では、同じ DataPivotHierarchy の複数の値がある場合に、並べ替えに使用する特定の値を定義します。
+    name: 'sortByValues(sortBy, valuesHierarchy, pivotItemScope)'
+    fullName: 'sortByValues(sortBy, valuesHierarchy, pivotItemScope)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        sortByValues(
+                    sortBy: SortBy,
+                    valuesHierarchy: DataPivotHierarchy,
+                    pivotItemScope?: Array<PivotItem | string>
+                ): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: sortBy
+          description: 並べ替えを昇順または降順のどちらで実行するかを指定します。
+          type:
+            - 'ExcelScript!ExcelScript.SortBy:enum'
+        - id: valuesHierarchy
+          description: 並べ替えに使用するデータ軸の値階層を指定します。
+          type:
+            - 'ExcelScript!ExcelScript.DataPivotHierarchy:interface'
+        - id: pivotItemScope
+          description: 並べ替えの範囲として使用するアイテムを指定します。 これらは、並べ替えの基準となる行または列を構成するアイテムになります。 PivotItem の代わりに文字列を使用する場合、文字列は PivotItem の ID を表します。 並べ替えの基準となるデータ階層以外のアイテムが軸上にない場合、この値は空になることがあります。
+          type:
+            - 'ExcelScript!ExcelScript.PivotField#sortByValues~0:complex'
+references:
+  - uid: 'ExcelScript!ExcelScript.PivotField#getItems~0:complex'
+    name: 'PivotItem[]'
+    fullName: 'ExcelScript.PivotItem[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.PivotItem:interface'
+        name: PivotItem
+        fullName: ExcelScript.PivotItem
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.PivotField#getPivotItem~0:complex'
+    name: PivotItem | undefined
+    fullName: ExcelScript.PivotItem | undefined
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.PivotItem:interface'
+        name: PivotItem
+        fullName: ExcelScript.PivotItem
+      - name: ' | undefined'
+        fullName: ' | undefined'
+  - uid: 'ExcelScript!ExcelScript.Subtotals:interface'
+    name: Subtotals
+    fullName: ExcelScript.Subtotals
+  - uid: 'ExcelScript!ExcelScript.SortBy:enum'
+    name: SortBy
+    fullName: ExcelScript.SortBy
+  - uid: 'ExcelScript!ExcelScript.DataPivotHierarchy:interface'
+    name: DataPivotHierarchy
+    fullName: ExcelScript.DataPivotHierarchy
+  - uid: 'ExcelScript!ExcelScript.PivotField#sortByValues~0:complex'
+    name: Array<PivotItem | string>
+    fullName: Array<ExcelScript.PivotItem | string>
+    spec.typeScript:
+      - uid: '!Array:interface'
+        name: Array
+        fullName: Array
+      - name: <
+        fullName: <
+      - uid: 'ExcelScript!ExcelScript.PivotItem:interface'
+        name: PivotItem
+        fullName: ExcelScript.PivotItem
+      - name: |2-
+           | string>
+                  
+        fullName: |2-
+           | string>

@@ -1,0 +1,30 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.RangeViewCollection:interface'
+    summary: RangeView オブジェクトのコレクションを表します。
+    name: Excel.RangeViewCollection
+    fullName: Excel.RangeViewCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.RangeViewCollection#load:member(1)'
+  - uid: 'excel!Excel.RangeViewCollection#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'

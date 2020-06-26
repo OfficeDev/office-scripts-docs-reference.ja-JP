@@ -1,0 +1,41 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ConditionalDataBarRule:interface'
+    summary: データバーのルールの種類を表します。
+    name: Excel.ConditionalDataBarRule
+    fullName: Excel.ConditionalDataBarRule
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ConditionalDataBarRule#formula:member'
+      - 'excel!Excel.ConditionalDataBarRule#type:member'
+  - uid: 'excel!Excel.ConditionalDataBarRule#formula:member'
+    summary: databar のルールを評価するために必要な場合、数式。
+    name: formula
+    fullName: formula
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formula?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ConditionalDataBarRule#type:member'
+    summary: Databar のルールの種類。
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: ConditionalFormatRuleType;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalFormatRuleType:enum'
+references:
+  - uid: 'excel!Excel.ConditionalFormatRuleType:enum'
+    name: ConditionalFormatRuleType
+    fullName: Excel.ConditionalFormatRuleType

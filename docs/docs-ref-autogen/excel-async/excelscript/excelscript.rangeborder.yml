@@ -1,0 +1,105 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.RangeBorder:interface'
+    summary: オブジェクトの輪郭を表します。
+    name: Excel.RangeBorder
+    fullName: Excel.RangeBorder
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.RangeBorder#color:member'
+      - 'excel!Excel.RangeBorder#load:member(1)'
+      - 'excel!Excel.RangeBorder#sideIndex:member'
+      - 'excel!Excel.RangeBorder#style:member'
+      - 'excel!Excel.RangeBorder#tintAndShade:member'
+      - 'excel!Excel.RangeBorder#weight:member'
+  - uid: 'excel!Excel.RangeBorder#color:member'
+    summary: '境界線の色を表す HTML カラーコード \# (例: "FFA500")、または名前付きの html 色 (例: "RRGGBB") です。'
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.RangeBorder#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.RangeBorder#sideIndex:member'
+    summary: 罫線の特定の辺を表す定数値。 詳細については、「Excel BorderIndex」を参照してください。
+    name: sideIndex
+    fullName: sideIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly sideIndex: BorderIndex;'
+      return:
+        type:
+          - 'excel!Excel.BorderIndex:enum'
+  - uid: 'excel!Excel.RangeBorder#style:member'
+    summary: 罫線の線スタイルを指定する、線スタイル定数のいずれか 1 つ。 詳細については、「Excel BorderLineStyle」を参照してください。
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style: BorderLineStyle;'
+      return:
+        type:
+          - 'excel!Excel.BorderLineStyle:enum'
+  - uid: 'excel!Excel.RangeBorder#tintAndShade:member'
+    summary: 範囲の境界線の色を明るくまたは暗くする double を指定します。値は、-1 (最も暗い) から 1 (最も明るい) までの範囲で、元の色は0になります。 Null 値は、境界線に均等な tintAndShade 設定がないことを示します。
+    name: tintAndShade
+    fullName: tintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tintAndShade: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.RangeBorder#weight:member'
+    summary: 範囲周辺の罫線の太さを指定します。 詳細については、「Excel BorderWeight」を参照してください。
+    name: weight
+    fullName: weight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'weight: BorderWeight;'
+      return:
+        type:
+          - 'excel!Excel.BorderWeight:enum'
+references:
+  - uid: 'excel!Excel.BorderIndex:enum'
+    name: BorderIndex
+    fullName: Excel.BorderIndex
+  - uid: 'excel!Excel.BorderLineStyle:enum'
+    name: BorderLineStyle
+    fullName: Excel.BorderLineStyle
+  - uid: 'excel!Excel.BorderWeight:enum'
+    name: BorderWeight
+    fullName: Excel.BorderWeight

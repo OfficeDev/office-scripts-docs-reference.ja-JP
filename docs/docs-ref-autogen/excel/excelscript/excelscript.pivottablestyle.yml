@@ -1,0 +1,90 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.PivotTableStyle:interface'
+    summary: ピボットテーブルのスタイルを表します。これは、ピボットテーブル領域でスタイル要素を定義します。
+    name: ExcelScript.PivotTableStyle
+    fullName: ExcelScript.PivotTableStyle
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.PivotTableStyle#delete:member(1)'
+      - 'ExcelScript!ExcelScript.PivotTableStyle#duplicate:member(1)'
+      - 'ExcelScript!ExcelScript.PivotTableStyle#getName:member(1)'
+      - 'ExcelScript!ExcelScript.PivotTableStyle#getReadOnly:member(1)'
+      - 'ExcelScript!ExcelScript.PivotTableStyle#setName:member(1)'
+  - uid: 'ExcelScript!ExcelScript.PivotTableStyle#delete:member(1)'
+    summary: PivotTableStyle を削除します。
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PivotTableStyle#duplicate:member(1)'
+    summary: すべてのスタイル要素のコピーでこの PivotTableStyle の複製を作成します。
+    name: duplicate()
+    fullName: duplicate()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'duplicate(): PivotTableStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PivotTableStyle:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PivotTableStyle#getName:member(1)'
+    summary: PivotTableStyle の名前を取得します。
+    name: getName()
+    fullName: getName()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PivotTableStyle#getReadOnly:member(1)'
+    summary: この PivotTableStyle オブジェクトが読み取り専用であるかどうかを指定します。
+    name: getReadOnly()
+    fullName: getReadOnly()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getReadOnly(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PivotTableStyle#setName:member(1)'
+    summary: PivotTableStyle の名前を取得します。
+    name: setName(name)
+    fullName: setName(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setName(name: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+references:
+  - uid: 'ExcelScript!ExcelScript.PivotTableStyle:interface'
+    name: PivotTableStyle
+    fullName: ExcelScript.PivotTableStyle

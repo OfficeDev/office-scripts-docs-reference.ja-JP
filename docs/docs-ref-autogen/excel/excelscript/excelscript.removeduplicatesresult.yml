@@ -1,0 +1,39 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.RemoveDuplicatesResult:interface'
+    summary: 範囲内の removeDuplicates 削除メソッドからの結果を表します。
+    name: ExcelScript.RemoveDuplicatesResult
+    fullName: ExcelScript.RemoveDuplicatesResult
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.RemoveDuplicatesResult#getRemoved:member(1)'
+      - 'ExcelScript!ExcelScript.RemoveDuplicatesResult#getUniqueRemaining:member(1)'
+  - uid: 'ExcelScript!ExcelScript.RemoveDuplicatesResult#getRemoved:member(1)'
+    summary: 操作によって削除された重複行の数。
+    name: getRemoved()
+    fullName: getRemoved()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRemoved(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RemoveDuplicatesResult#getUniqueRemaining:member(1)'
+    summary: 結果として生じた範囲に存在する残りの一意の行の数。
+    name: getUniqueRemaining()
+    fullName: getUniqueRemaining()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getUniqueRemaining(): number;'
+      return:
+        type:
+          - number
+        description: ''

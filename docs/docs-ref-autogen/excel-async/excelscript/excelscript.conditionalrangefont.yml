@@ -1,0 +1,113 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ConditionalRangeFont:interface'
+    summary: このオブジェクトは、オブジェクトのフォントの属性 (フォントスタイル、色など) を表します。
+    name: Excel.ConditionalRangeFont
+    fullName: Excel.ConditionalRangeFont
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ConditionalRangeFont#bold:member'
+      - 'excel!Excel.ConditionalRangeFont#clear:member(1)'
+      - 'excel!Excel.ConditionalRangeFont#color:member'
+      - 'excel!Excel.ConditionalRangeFont#italic:member'
+      - 'excel!Excel.ConditionalRangeFont#load:member(1)'
+      - 'excel!Excel.ConditionalRangeFont#strikethrough:member'
+      - 'excel!Excel.ConditionalRangeFont#underline:member'
+  - uid: 'excel!Excel.ConditionalRangeFont#bold:member'
+    summary: フォントを太字にするかどうかを指定します。
+    name: bold
+    fullName: bold
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bold: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ConditionalRangeFont#clear:member(1)'
+    summary: フォントの書式設定をリセットします。
+    name: clear()
+    fullName: clear()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.ConditionalRangeFont#color:member'
+    summary: テキストの色の HTML カラーコード表現 (たとえば、 \# ff0000 はは赤を表します)。
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ConditionalRangeFont#italic:member'
+    summary: フォントを斜体にするかどうかを指定します。
+    name: italic
+    fullName: italic
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'italic: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ConditionalRangeFont#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ConditionalRangeFont#strikethrough:member'
+    summary: フォントの取り消し線の状態を指定します。
+    name: strikethrough
+    fullName: strikethrough
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'strikethrough: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ConditionalRangeFont#underline:member'
+    summary: フォントに適用する下線の種類を設定します。 詳細については、「Excel の Conditionalrangefont過小認識」を参照してください。
+    name: underline
+    fullName: underline
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'underline: ConditionalRangeFontUnderlineStyle;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeFontUnderlineStyle:enum'
+references:
+  - uid: 'excel!Excel.ConditionalRangeFontUnderlineStyle:enum'
+    name: ConditionalRangeFontUnderlineStyle
+    fullName: Excel.ConditionalRangeFontUnderlineStyle

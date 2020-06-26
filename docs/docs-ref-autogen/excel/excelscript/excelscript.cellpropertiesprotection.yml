@@ -1,0 +1,37 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesProtection:interface'
+    summary: 'のプロパティを表します。 `format.protection``getCellProperties`<!-- -->, `getRowProperties`<!-- -->、 `getColumnProperties` または `format.protection` の入力パラメーター`setCellProperties`<!-- -->, `setRowProperties`<!-- -->そして`setColumnProperties`<!-- -->.'
+    name: ExcelScript.CellPropertiesProtection
+    fullName: ExcelScript.CellPropertiesProtection
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.CellPropertiesProtection#formulaHidden:member'
+      - 'ExcelScript!ExcelScript.CellPropertiesProtection#locked:member'
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesProtection#formulaHidden:member'
+    summary: '`format.protection.formulaHidden` プロパティを表します。'
+    name: formulaHidden
+    fullName: formulaHidden
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formulaHidden?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesProtection#locked:member'
+    summary: '`format.protection.locked` プロパティを表します。'
+    name: locked
+    fullName: locked
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'locked?: boolean;'
+      return:
+        type:
+          - boolean

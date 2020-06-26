@@ -1,0 +1,37 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.WorksheetSearchCriteria:interface'
+    summary: 使用するワークシートの検索条件を表します。
+    name: ExcelScript.WorksheetSearchCriteria
+    fullName: ExcelScript.WorksheetSearchCriteria
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.WorksheetSearchCriteria#completeMatch:member'
+      - 'ExcelScript!ExcelScript.WorksheetSearchCriteria#matchCase:member'
+  - uid: 'ExcelScript!ExcelScript.WorksheetSearchCriteria#completeMatch:member'
+    summary: 一致する必要があるか、完全か一部であるかを指定します。 完全一致は、セルの内容全体に一致します。 部分一致は、セルのコンテンツ内の部分文字列に一致します (たとえば、 `cat` 部分的に一致 `caterpillar` し、`scatter`<!-- -->). 既定値は false (部分一致) です。
+    name: completeMatch
+    fullName: completeMatch
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'completeMatch?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.WorksheetSearchCriteria#matchCase:member'
+    summary: 一致が大文字と小文字を区別するかどうかを指定します。 既定値は false (区別しない) です。
+    name: matchCase
+    fullName: matchCase
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'matchCase?: boolean;'
+      return:
+        type:
+          - boolean

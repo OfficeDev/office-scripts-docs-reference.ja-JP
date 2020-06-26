@@ -1,0 +1,57 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartSeriesCollection:interface'
+    summary: グラフ系列のコレクションを表します。
+    name: Excel.ChartSeriesCollection
+    fullName: Excel.ChartSeriesCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartSeriesCollection#add:member(1)'
+      - 'excel!Excel.ChartSeriesCollection#load:member(1)'
+  - uid: 'excel!Excel.ChartSeriesCollection#add:member(1)'
+    summary: コレクションに新しい系列を追加します。 新たに追加された系列は、値を設定するか x 軸の値/バブルサイズを (グラフの種類に応じて) 表示されるまで表示されません。
+    name: 'add(name, index)'
+    fullName: 'add(name, index)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(name?: string, index?: number): ChartSeries;'
+      return:
+        type:
+          - 'excel!Excel.ChartSeries:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: 省略可能です。 データ系列の名前を指定します。
+          type:
+            - string
+        - id: index
+          description: 省略可能です。 追加する系列のインデックス値を指定します。 0 を起点とする番号になります。
+          type:
+            - number
+  - uid: 'excel!Excel.ChartSeriesCollection#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.ChartSeries:interface'
+    name: ChartSeries
+    fullName: Excel.ChartSeries
