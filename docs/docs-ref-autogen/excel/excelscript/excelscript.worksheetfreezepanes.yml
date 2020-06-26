@@ -1,0 +1,108 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes:interface'
+    name: ExcelScript.WorksheetFreezePanes
+    fullName: ExcelScript.WorksheetFreezePanes
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeAt:member(1)'
+      - 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeColumns:member(1)'
+      - 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeRows:member(1)'
+      - 'ExcelScript!ExcelScript.WorksheetFreezePanes#getLocation:member(1)'
+      - 'ExcelScript!ExcelScript.WorksheetFreezePanes#unfreeze:member(1)'
+  - uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeAt:member(1)'
+    summary: アクティブなワークシート ビューに固定セルを設定します。 指定される範囲は、最上位および左端のウィンドウで固定されるセルに対応します。
+    name: freezeAt(frozenRange)
+    fullName: freezeAt(frozenRange)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'freezeAt(frozenRange: Range | string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: frozenRange
+          description: 固定するセルを表す範囲、または固定されていないすべてのウィンドウを削除する場合は null。
+          type:
+            - 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeAt~0:complex'
+  - uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeColumns:member(1)'
+    summary: ワークシートの最初の列 (複数可) を所定の場所に固定します。
+    name: freezeColumns(count)
+    fullName: freezeColumns(count)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'freezeColumns(count?: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: count
+          description: 固定する列の数 (省略可能)、またはすべての列を固定解除するゼロ
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeRows:member(1)'
+    summary: ワークシートの最初の行 (複数可) を所定の場所に固定します。
+    name: freezeRows(count)
+    fullName: freezeRows(count)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'freezeRows(count?: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: count
+          description: 固定する行数 (省略可能)、またはすべての行を固定解除するためのゼロ
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes#getLocation:member(1)'
+    summary: アクティブなワークシート ビュー内の固定セルを記述する範囲を取得します。 固定範囲は、上端と左端のウィンドウ枠で固定されているセルに対応します。 ペインが固定されていない場合は、null オブジェクトを返します。
+    name: getLocation()
+    fullName: getLocation()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLocation(): Range;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Range:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes#unfreeze:member(1)'
+    summary: ワークシートからすべての固定ウィンドウを削除します。
+    name: unfreeze()
+    fullName: unfreeze()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'unfreeze(): void;'
+      return:
+        type:
+          - void
+        description: ''
+references:
+  - uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeAt~0:complex'
+    name: Range | string
+    fullName: ExcelScript.Range | string
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Range:interface'
+        name: Range
+        fullName: ExcelScript.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'ExcelScript!ExcelScript.Range:interface'
+    name: Range
+    fullName: ExcelScript.Range

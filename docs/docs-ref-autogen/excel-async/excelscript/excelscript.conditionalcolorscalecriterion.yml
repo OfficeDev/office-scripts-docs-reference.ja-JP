@@ -1,0 +1,54 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ConditionalColorScaleCriterion:interface'
+    summary: 種類、値、および色を含むカラースケール条件を表します。
+    name: Excel.ConditionalColorScaleCriterion
+    fullName: Excel.ConditionalColorScaleCriterion
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ConditionalColorScaleCriterion#color:member'
+      - 'excel!Excel.ConditionalColorScaleCriterion#formula:member'
+      - 'excel!Excel.ConditionalColorScaleCriterion#type:member'
+  - uid: 'excel!Excel.ConditionalColorScaleCriterion#color:member'
+    summary: 色スケールの色の HTML カラーコード表現 (たとえば、 \# ff0000 はは赤を表します)。
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ConditionalColorScaleCriterion#formula:member'
+    summary: 数値、数式、(型が LowestValue の場合は) null。
+    name: formula
+    fullName: formula
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formula?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ConditionalColorScaleCriterion#type:member'
+    summary: 条件式の基準となる条件式を指定します。
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: ConditionalFormatColorCriterionType;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalFormatColorCriterionType:enum'
+references:
+  - uid: 'excel!Excel.ConditionalFormatColorCriterionType:enum'
+    name: ConditionalFormatColorCriterionType
+    fullName: Excel.ConditionalFormatColorCriterionType

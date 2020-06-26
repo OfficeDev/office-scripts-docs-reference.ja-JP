@@ -1,0 +1,196 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.AutoFilter:interface'
+    summary: オートフィルターオブジェクトを表します。 オートフィルターは、Excel の列の値を、セルの内容に基づいて特定のフィルターに変換します。
+    name: Excel.AutoFilter
+    fullName: Excel.AutoFilter
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.AutoFilter#apply:member(1)'
+      - 'excel!Excel.AutoFilter#clearCriteria:member(1)'
+      - 'excel!Excel.AutoFilter#criteria:member'
+      - 'excel!Excel.AutoFilter#enabled:member'
+      - 'excel!Excel.AutoFilter#getRangeOrNullObject:member(1)'
+      - 'excel!Excel.AutoFilter#isDataFiltered:member'
+      - 'excel!Excel.AutoFilter#load:member(1)'
+      - 'excel!Excel.AutoFilter#reapply:member(1)'
+      - 'excel!Excel.AutoFilter#remove:member(1)'
+  - uid: 'excel!Excel.AutoFilter#apply:member(1)'
+    summary: 範囲にオートフィルターを適用します。 列インデックスやフィルター条件が指定されている場合、列にフィルターを適用します。
+    name: 'apply(range, columnIndex, criteria)'
+    fullName: 'apply(range, columnIndex, criteria)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        apply(
+                    range: Range | string,
+                    columnIndex?: number,
+                    criteria?: FilterCriteria
+                ): void;
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getActiveWorksheet();
+              let farmData = sheet.getUsedRange();
+
+              // This filter will only show the rows with the top 25% of values in column 3.
+              sheet.autoFilter.apply(farmData, 3, { criterion1: "25", filterOn: Excel.FilterOn.topPercent });
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: range
+          description: オートフィルターが適用される範囲を指定します。
+          type:
+            - 'excel!Excel.AutoFilter#apply~0:complex'
+        - id: columnIndex
+          description: オートフィルターが適用される0から始まる列インデックス。
+          type:
+            - number
+        - id: criteria
+          description: フィルター条件を選択します。
+          type:
+            - 'excel!Excel.FilterCriteria:interface'
+  - uid: 'excel!Excel.AutoFilter#clearCriteria:member(1)'
+    summary: オートフィルターのフィルター条件がクリアされます。
+    name: clearCriteria()
+    fullName: clearCriteria()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clearCriteria(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.AutoFilter#criteria:member'
+    summary: オートフィルターが適用された範囲のすべてのフィルター条件を保持する配列です。
+    name: criteria
+    fullName: criteria
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly criteria: FilterCriteria[];'
+      return:
+        type:
+          - 'excel!Excel.AutoFilter#criteria~0:complex'
+  - uid: 'excel!Excel.AutoFilter#enabled:member'
+    summary: オートフィルターを有効にするかどうかを指定します。
+    name: enabled
+    fullName: enabled
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly enabled: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.AutoFilter#getRangeOrNullObject:member(1)'
+    summary: オートフィルターが適用される範囲を表す Range オブジェクトを返します。 オートフィルターに関連付けられた Range オブジェクトがない場合、このメソッドは null オブジェクトを返します。
+    name: getRangeOrNullObject()
+    fullName: getRangeOrNullObject()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRangeOrNullObject(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
+  - uid: 'excel!Excel.AutoFilter#isDataFiltered:member'
+    summary: オートフィルターにフィルター条件を適用するかどうかを指定します。
+    name: isDataFiltered
+    fullName: isDataFiltered
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly isDataFiltered: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.AutoFilter#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.AutoFilter#reapply:member(1)'
+    summary: その範囲で現在指定されている Autofilter オブジェクトを適用します。
+    name: reapply()
+    fullName: reapply()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'reapply(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.AutoFilter#remove:member(1)'
+    summary: 範囲の AutoFilter を削除します。
+    name: remove()
+    fullName: remove()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'remove(): void;'
+      return:
+        type:
+          - void
+        description: ''
+references:
+  - uid: 'excel!Excel.AutoFilter#apply~0:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:interface'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.FilterCriteria:interface'
+    name: FilterCriteria
+    fullName: Excel.FilterCriteria
+  - uid: 'excel!Excel.AutoFilter#criteria~0:complex'
+    name: 'FilterCriteria[]'
+    fullName: 'Excel.FilterCriteria[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.FilterCriteria:interface'
+        name: FilterCriteria
+        fullName: Excel.FilterCriteria
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Range:interface'
+    name: Range
+    fullName: Excel.Range

@@ -1,0 +1,66 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.NamedItemArrayValues:interface'
+    summary: 名前付きのアイテムの値と型を含むオブジェクトを表します。
+    name: Excel.NamedItemArrayValues
+    fullName: Excel.NamedItemArrayValues
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.NamedItemArrayValues#load:member(1)'
+      - 'excel!Excel.NamedItemArrayValues#types:member'
+      - 'excel!Excel.NamedItemArrayValues#values:member'
+  - uid: 'excel!Excel.NamedItemArrayValues#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.NamedItemArrayValues#types:member'
+    summary: 名前付きアイテムの配列内の各アイテムの型を表します。
+    name: types
+    fullName: types
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly types: RangeValueType[][];'
+      return:
+        type:
+          - 'excel!Excel.NamedItemArrayValues#types~0:complex'
+  - uid: 'excel!Excel.NamedItemArrayValues#values:member'
+    summary: 名前付きアイテムの配列に含まれる各アイテムの値を表します。読み取り専用。
+    name: values
+    fullName: values
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly values: any[][];'
+      return:
+        type:
+          - 'any[][]'
+references:
+  - uid: 'excel!Excel.NamedItemArrayValues#types~0:complex'
+    name: 'RangeValueType[][]'
+    fullName: 'Excel.RangeValueType[][]'
+    spec.typeScript:
+      - uid: 'excel!Excel.RangeValueType:enum'
+        name: RangeValueType
+        fullName: Excel.RangeValueType
+      - name: '[][]'
+        fullName: '[][]'

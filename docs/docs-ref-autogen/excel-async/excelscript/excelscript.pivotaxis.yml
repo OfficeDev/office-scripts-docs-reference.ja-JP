@@ -1,0 +1,56 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.PivotAxis:enum'
+    summary: PivotItems の取得元の軸を表します。
+    name: Excel.PivotAxis
+    fullName: Excel.PivotAxis
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!Excel.PivotAxis.column:member'
+      - 'excel!Excel.PivotAxis.data:member'
+      - 'excel!Excel.PivotAxis.filter:member'
+      - 'excel!Excel.PivotAxis.row:member'
+      - 'excel!Excel.PivotAxis.unknown:member'
+  - uid: 'excel!Excel.PivotAxis.column:member'
+    summary: 列の軸を示します。
+    name: column
+    fullName: column
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"column"'
+  - uid: 'excel!Excel.PivotAxis.data:member'
+    summary: データ軸を示します。
+    name: data
+    fullName: data
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"data"'
+  - uid: 'excel!Excel.PivotAxis.filter:member'
+    summary: フィルター軸。
+    name: filter
+    fullName: filter
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"filter"'
+  - uid: 'excel!Excel.PivotAxis.row:member'
+    summary: 行の軸を示します。
+    name: row
+    fullName: row
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"row"'
+  - uid: 'excel!Excel.PivotAxis.unknown:member'
+    summary: 軸または地域が不明であるか、サポートされていません。
+    name: unknown
+    fullName: unknown
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"unknown"'

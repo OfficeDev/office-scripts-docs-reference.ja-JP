@@ -1,0 +1,216 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat:interface'
+    summary: Shape オブジェクトの線の書式設定を表します。 画像と幾何学的な図形の場合、線の書式は図形の枠線を表します。
+    name: ExcelScript.ShapeLineFormat
+    fullName: ExcelScript.ShapeLineFormat
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ShapeLineFormat#getColor:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeLineFormat#getDashStyle:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeLineFormat#getStyle:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeLineFormat#getTransparency:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeLineFormat#getVisible:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeLineFormat#getWeight:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeLineFormat#setColor:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeLineFormat#setDashStyle:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeLineFormat#setStyle:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeLineFormat#setTransparency:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeLineFormat#setVisible:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeLineFormat#setWeight:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#getColor:member(1)'
+    summary: 'フォームの \# RRGGBB ("FFA500" など) または名前付きの html 色 (例: "オレンジ") の線の色を html 色形式で表します。'
+    name: getColor()
+    fullName: getColor()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getColor(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#getDashStyle:member(1)'
+    summary: 図形の線スタイルを表します。 線が非表示の場合、または破線のスタイルが一定ではない場合は、null を返します。 詳細については、Excel.ShapeLineStyle をご覧ください。
+    name: getDashStyle()
+    fullName: getDashStyle()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDashStyle(): ShapeLineDashStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ShapeLineDashStyle:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#getStyle:member(1)'
+    summary: 図形の線スタイルを表します。 線が非表示の場合、またはスタイルが一定ではない場合は、null を返します。 詳細については、Excel.ShapeLineStyle をご覧ください。
+    name: getStyle()
+    fullName: getStyle()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getStyle(): ShapeLineStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ShapeLineStyle:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#getTransparency:member(1)'
+    summary: 指定された線の透明度を示す 0.0 (不透明) から 1.0 (透明) までの値を表します。 図形の透明度が一定ではない場合は、null を返します。
+    name: getTransparency()
+    fullName: getTransparency()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTransparency(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#getVisible:member(1)'
+    summary: Shape 要素の線の書式を表示するかどうかを指定します。 図形の可視性が一定ではない場合は、null を返します。
+    name: getVisible()
+    fullName: getVisible()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getVisible(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#getWeight:member(1)'
+    summary: 線の太さ (ポイント数) を表します。 線が非表示の場合、または線の太さが一定ではない場合は、null を返します。
+    name: getWeight()
+    fullName: getWeight()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getWeight(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#setColor:member(1)'
+    summary: 'フォームの \# RRGGBB ("FFA500" など) または名前付きの html 色 (例: "オレンジ") の線の色を html 色形式で表します。'
+    name: setColor(color)
+    fullName: setColor(color)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setColor(color: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: color
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#setDashStyle:member(1)'
+    summary: 図形の線スタイルを表します。 線が非表示の場合、または破線のスタイルが一定ではない場合は、null を返します。 詳細については、Excel.ShapeLineStyle をご覧ください。
+    name: setDashStyle(dashStyle)
+    fullName: setDashStyle(dashStyle)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setDashStyle(dashStyle: ShapeLineDashStyle): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: dashStyle
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ShapeLineDashStyle:enum'
+  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#setStyle:member(1)'
+    summary: 図形の線スタイルを表します。 線が非表示の場合、またはスタイルが一定ではない場合は、null を返します。 詳細については、Excel.ShapeLineStyle をご覧ください。
+    name: setStyle(style)
+    fullName: setStyle(style)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setStyle(style: ShapeLineStyle): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: style
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ShapeLineStyle:enum'
+  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#setTransparency:member(1)'
+    summary: 指定された線の透明度を示す 0.0 (不透明) から 1.0 (透明) までの値を表します。 図形の透明度が一定ではない場合は、null を返します。
+    name: setTransparency(transparency)
+    fullName: setTransparency(transparency)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setTransparency(transparency: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: transparency
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#setVisible:member(1)'
+    summary: Shape 要素の線の書式を表示するかどうかを指定します。 図形の可視性が一定ではない場合は、null を返します。
+    name: setVisible(visible)
+    fullName: setVisible(visible)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setVisible(visible: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: visible
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#setWeight:member(1)'
+    summary: 線の太さ (ポイント数) を表します。 線が非表示の場合、または線の太さが一定ではない場合は、null を返します。
+    name: setWeight(weight)
+    fullName: setWeight(weight)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setWeight(weight: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: weight
+          description: ''
+          type:
+            - number
+references:
+  - uid: 'ExcelScript!ExcelScript.ShapeLineDashStyle:enum'
+    name: ShapeLineDashStyle
+    fullName: ExcelScript.ShapeLineDashStyle
+  - uid: 'ExcelScript!ExcelScript.ShapeLineStyle:enum'
+    name: ShapeLineStyle
+    fullName: ExcelScript.ShapeLineStyle

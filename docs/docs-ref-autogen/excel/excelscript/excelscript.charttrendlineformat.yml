@@ -1,0 +1,29 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartTrendlineFormat:interface'
+    summary: グラフの近似曲線の書式プロパティを表します。
+    name: ExcelScript.ChartTrendlineFormat
+    fullName: ExcelScript.ChartTrendlineFormat
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartTrendlineFormat#getLine:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ChartTrendlineFormat#getLine:member(1)'
+    summary: グラフの線の書式設定を表します。
+    name: getLine()
+    fullName: getLine()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLine(): ChartLineFormat;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartLineFormat:interface'
+        description: ''
+references:
+  - uid: 'ExcelScript!ExcelScript.ChartLineFormat:interface'
+    name: ChartLineFormat
+    fullName: ExcelScript.ChartLineFormat

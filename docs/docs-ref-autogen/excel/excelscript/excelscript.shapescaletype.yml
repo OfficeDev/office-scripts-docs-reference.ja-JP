@@ -1,0 +1,25 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ShapeScaleType:enum'
+    summary: 図形を元のサイズに対して拡大または縮小するかを指定します。
+    name: ExcelScript.ShapeScaleType
+    fullName: ExcelScript.ShapeScaleType
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ShapeScaleType.currentSize:member'
+      - 'ExcelScript!ExcelScript.ShapeScaleType.originalSize:member'
+  - uid: 'ExcelScript!ExcelScript.ShapeScaleType.currentSize:member'
+    name: currentSize
+    fullName: currentSize
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShapeScaleType.originalSize:member'
+    name: originalSize
+    fullName: originalSize
+    langs:
+      - typeScript
+    type: field

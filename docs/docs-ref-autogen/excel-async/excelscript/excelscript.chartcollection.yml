@@ -1,0 +1,94 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartCollection:interface'
+    summary: ワークシート上のすべてのグラフ オブジェクトのコレクション。
+    name: Excel.ChartCollection
+    fullName: Excel.ChartCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartCollection#add:member(1)'
+      - 'excel!Excel.ChartCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.ChartCollection#load:member(1)'
+  - uid: 'excel!Excel.ChartCollection#add:member(1)'
+    summary: 新しいグラフを作成します。
+    name: 'add(type, sourceData, seriesBy)'
+    fullName: 'add(type, sourceData, seriesBy)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        add(
+                    type: ChartType,
+                    sourceData: Range,
+                    seriesBy?: ChartSeriesBy
+                ): Chart;
+      return:
+        type:
+          - 'excel!Excel.Chart:interface'
+        description: ''
+      parameters:
+        - id: type
+          description: グラフの種類を表します。 詳細については、「ChartType」を参照してください。
+          type:
+            - 'excel!Excel.ChartType:enum'
+        - id: sourceData
+          description: データ ソースに対応する Range オブジェクトです。
+          type:
+            - 'excel!Excel.Range:interface'
+        - id: seriesBy
+          description: 省略可能。 列や行がグラフのデータ系列として使用される方法を指定します。 詳細については、「Excel Chart系列」を参照してください。
+          type:
+            - 'excel!Excel.ChartSeriesBy:enum'
+  - uid: 'excel!Excel.ChartCollection#getItemOrNullObject:member(1)'
+    summary: グラフ名を使用してグラフを取得します。 同じ名前の複数のグラフがある場合は、最初の 1 つが返されます。 グラフが存在しない場合は、null オブジェクトが返されます。
+    name: getItemOrNullObject(name)
+    fullName: getItemOrNullObject(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(name: string): Chart;'
+      return:
+        type:
+          - 'excel!Excel.Chart:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: 取得するグラフの名前。
+          type:
+            - string
+  - uid: 'excel!Excel.ChartCollection#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.Chart:interface'
+    name: Chart
+    fullName: Excel.Chart
+  - uid: 'excel!Excel.ChartType:enum'
+    name: ChartType
+    fullName: Excel.ChartType
+  - uid: 'excel!Excel.Range:interface'
+    name: Range
+    fullName: Excel.Range
+  - uid: 'excel!Excel.ChartSeriesBy:enum'
+    name: ChartSeriesBy
+    fullName: Excel.ChartSeriesBy

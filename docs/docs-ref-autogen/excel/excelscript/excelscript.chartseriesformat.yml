@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesFormat:interface'
+    summary: グラフ系列の書式設定プロパティをカプセル化します。
+    name: ExcelScript.ChartSeriesFormat
+    fullName: ExcelScript.ChartSeriesFormat
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartSeriesFormat#getFill:member(1)'
+      - 'ExcelScript!ExcelScript.ChartSeriesFormat#getLine:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesFormat#getFill:member(1)'
+    summary: 背景の書式設定情報を含むグラフ系列の塗りつぶしの書式を表します。
+    name: getFill()
+    fullName: getFill()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFill(): ChartFill;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartFill:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesFormat#getLine:member(1)'
+    summary: 線の書式設定を表します。
+    name: getLine()
+    fullName: getLine()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLine(): ChartLineFormat;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartLineFormat:interface'
+        description: ''
+references:
+  - uid: 'ExcelScript!ExcelScript.ChartFill:interface'
+    name: ChartFill
+    fullName: ExcelScript.ChartFill
+  - uid: 'ExcelScript!ExcelScript.ChartLineFormat:interface'
+    name: ChartLineFormat
+    fullName: ExcelScript.ChartLineFormat

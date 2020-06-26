@@ -1,0 +1,253 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat:interface'
+    summary: Excel の条件付きデータバーの種類を表します。
+    name: ExcelScript.DataBarConditionalFormat
+    fullName: ExcelScript.DataBarConditionalFormat
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.DataBarConditionalFormat#getAxisColor:member(1)'
+      - 'ExcelScript!ExcelScript.DataBarConditionalFormat#getAxisFormat:member(1)'
+      - 'ExcelScript!ExcelScript.DataBarConditionalFormat#getBarDirection:member(1)'
+      - 'ExcelScript!ExcelScript.DataBarConditionalFormat#getLowerBoundRule:member(1)'
+      - 'ExcelScript!ExcelScript.DataBarConditionalFormat#getNegativeFormat:member(1)'
+      - 'ExcelScript!ExcelScript.DataBarConditionalFormat#getPositiveFormat:member(1)'
+      - 'ExcelScript!ExcelScript.DataBarConditionalFormat#getShowDataBarOnly:member(1)'
+      - 'ExcelScript!ExcelScript.DataBarConditionalFormat#getUpperBoundRule:member(1)'
+      - 'ExcelScript!ExcelScript.DataBarConditionalFormat#setAxisColor:member(1)'
+      - 'ExcelScript!ExcelScript.DataBarConditionalFormat#setAxisFormat:member(1)'
+      - 'ExcelScript!ExcelScript.DataBarConditionalFormat#setBarDirection:member(1)'
+      - 'ExcelScript!ExcelScript.DataBarConditionalFormat#setLowerBoundRule:member(1)'
+      - 'ExcelScript!ExcelScript.DataBarConditionalFormat#setShowDataBarOnly:member(1)'
+      - 'ExcelScript!ExcelScript.DataBarConditionalFormat#setUpperBoundRule:member(1)'
+  - uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat#getAxisColor:member(1)'
+    summary: 'フォーム RRGGBB (例: "FFA500") の軸線の色を表す HTML カラーコード、 \# または名前付きの html 色 (例: 「オレンジ」)。 軸が存在しない場合または設定されていない場合は、"" (空の文字列)。'
+    name: getAxisColor()
+    fullName: getAxisColor()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAxisColor(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat#getAxisFormat:member(1)'
+    summary: Excel データバーの軸をどのように判別するかを表します。
+    name: getAxisFormat()
+    fullName: getAxisFormat()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAxisFormat(): ConditionalDataBarAxisFormat;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ConditionalDataBarAxisFormat:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat#getBarDirection:member(1)'
+    summary: データバーのグラフィックスの基準となる方向を指定します。
+    name: getBarDirection()
+    fullName: getBarDirection()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getBarDirection(): ConditionalDataBarDirection;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ConditionalDataBarDirection:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat#getLowerBoundRule:member(1)'
+    summary: 'データ バーの下限値 (および該当する場合はその計算方法) を構成するルール。 `ConditionalDataBarRule`オブジェクトは JSON オブジェクトとして設定する必要があります ( `x.lowerBoundRule = {...}` の代わりに使用します)。`x.lowerBoundRule.formula = ...`<!-- -->).'
+    name: getLowerBoundRule()
+    fullName: getLowerBoundRule()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLowerBoundRule(): ConditionalDataBarRule;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ConditionalDataBarRule:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat#getNegativeFormat:member(1)'
+    summary: Excel データバーの軸の左側にあるすべての値の表現。
+    name: getNegativeFormat()
+    fullName: getNegativeFormat()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNegativeFormat(): ConditionalDataBarNegativeFormat;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat#getPositiveFormat:member(1)'
+    summary: Excel データバーの軸の右側にあるすべての値の表現。
+    name: getPositiveFormat()
+    fullName: getPositiveFormat()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPositiveFormat(): ConditionalDataBarPositiveFormat;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat#getShowDataBarOnly:member(1)'
+    summary: true の場合、データ バーが適用されているセルの値を非表示にします。
+    name: getShowDataBarOnly()
+    fullName: getShowDataBarOnly()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getShowDataBarOnly(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat#getUpperBoundRule:member(1)'
+    summary: 'データ バーの上限値 (および該当する場合はその計算方法) を構成するルール。 `ConditionalDataBarRule`オブジェクトは JSON オブジェクトとして設定する必要があります ( `x.upperBoundRule = {...}` の代わりに使用します)。`x.upperBoundRule.formula = ...`<!-- -->).'
+    name: getUpperBoundRule()
+    fullName: getUpperBoundRule()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getUpperBoundRule(): ConditionalDataBarRule;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ConditionalDataBarRule:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat#setAxisColor:member(1)'
+    summary: 'フォーム RRGGBB (例: "FFA500") の軸線の色を表す HTML カラーコード、 \# または名前付きの html 色 (例: 「オレンジ」)。 軸が存在しない場合または設定されていない場合は、"" (空の文字列)。'
+    name: setAxisColor(axisColor)
+    fullName: setAxisColor(axisColor)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setAxisColor(axisColor: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: axisColor
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat#setAxisFormat:member(1)'
+    summary: Excel データバーの軸をどのように判別するかを表します。
+    name: setAxisFormat(axisFormat)
+    fullName: setAxisFormat(axisFormat)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setAxisFormat(axisFormat: ConditionalDataBarAxisFormat): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: axisFormat
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ConditionalDataBarAxisFormat:enum'
+  - uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat#setBarDirection:member(1)'
+    summary: データバーのグラフィックスの基準となる方向を指定します。
+    name: setBarDirection(barDirection)
+    fullName: setBarDirection(barDirection)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setBarDirection(barDirection: ConditionalDataBarDirection): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: barDirection
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ConditionalDataBarDirection:enum'
+  - uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat#setLowerBoundRule:member(1)'
+    summary: 'データ バーの下限値 (および該当する場合はその計算方法) を構成するルール。 `ConditionalDataBarRule`オブジェクトは JSON オブジェクトとして設定する必要があります ( `x.lowerBoundRule = {...}` の代わりに使用します)。`x.lowerBoundRule.formula = ...`<!-- -->).'
+    name: setLowerBoundRule(lowerBoundRule)
+    fullName: setLowerBoundRule(lowerBoundRule)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setLowerBoundRule(lowerBoundRule: ConditionalDataBarRule): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: lowerBoundRule
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ConditionalDataBarRule:interface'
+  - uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat#setShowDataBarOnly:member(1)'
+    summary: true の場合、データ バーが適用されているセルの値を非表示にします。
+    name: setShowDataBarOnly(showDataBarOnly)
+    fullName: setShowDataBarOnly(showDataBarOnly)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setShowDataBarOnly(showDataBarOnly: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: showDataBarOnly
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat#setUpperBoundRule:member(1)'
+    summary: 'データ バーの上限値 (および該当する場合はその計算方法) を構成するルール。 `ConditionalDataBarRule`オブジェクトは JSON オブジェクトとして設定する必要があります ( `x.upperBoundRule = {...}` の代わりに使用します)。`x.upperBoundRule.formula = ...`<!-- -->).'
+    name: setUpperBoundRule(upperBoundRule)
+    fullName: setUpperBoundRule(upperBoundRule)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setUpperBoundRule(upperBoundRule: ConditionalDataBarRule): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: upperBoundRule
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ConditionalDataBarRule:interface'
+references:
+  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarAxisFormat:enum'
+    name: ConditionalDataBarAxisFormat
+    fullName: ExcelScript.ConditionalDataBarAxisFormat
+  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarDirection:enum'
+    name: ConditionalDataBarDirection
+    fullName: ExcelScript.ConditionalDataBarDirection
+  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarRule:interface'
+    name: ConditionalDataBarRule
+    fullName: ExcelScript.ConditionalDataBarRule
+  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat:interface'
+    name: ConditionalDataBarNegativeFormat
+    fullName: ExcelScript.ConditionalDataBarNegativeFormat
+  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat:interface'
+    name: ConditionalDataBarPositiveFormat
+    fullName: ExcelScript.ConditionalDataBarPositiveFormat

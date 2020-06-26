@@ -1,0 +1,515 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.RangeAreas:interface'
+    summary: 'RangeAreas は、同じワークシート内の1つまたは複数の四角形の範囲のコレクションを表します。 Discontinguous 範囲を使用する方法については、「 [Excel アドインで複数の範囲を同時に操作](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-multiple-ranges)する」を参照してください。<!-- -->.'
+    name: Excel.RangeAreas
+    fullName: Excel.RangeAreas
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.RangeAreas#address:member'
+      - 'excel!Excel.RangeAreas#addressLocal:member'
+      - 'excel!Excel.RangeAreas#areaCount:member'
+      - 'excel!Excel.RangeAreas#areas:member'
+      - 'excel!Excel.RangeAreas#calculate:member(1)'
+      - 'excel!Excel.RangeAreas#cellCount:member'
+      - 'excel!Excel.RangeAreas#clear:member(1)'
+      - 'excel!Excel.RangeAreas#conditionalFormats:member'
+      - 'excel!Excel.RangeAreas#convertDataTypeToText:member(1)'
+      - 'excel!Excel.RangeAreas#convertToLinkedDataType:member(1)'
+      - 'excel!Excel.RangeAreas#copyFrom:member(1)'
+      - 'excel!Excel.RangeAreas#dataValidation:member'
+      - 'excel!Excel.RangeAreas#format:member'
+      - 'excel!Excel.RangeAreas#getEntireColumn:member(1)'
+      - 'excel!Excel.RangeAreas#getEntireRow:member(1)'
+      - 'excel!Excel.RangeAreas#getIntersectionOrNullObject:member(1)'
+      - 'excel!Excel.RangeAreas#getOffsetRangeAreas:member(1)'
+      - 'excel!Excel.RangeAreas#getSpecialCellsOrNullObject:member(1)'
+      - 'excel!Excel.RangeAreas#getUsedRangeAreasOrNullObject:member(1)'
+      - 'excel!Excel.RangeAreas#isEntireColumn:member'
+      - 'excel!Excel.RangeAreas#isEntireRow:member'
+      - 'excel!Excel.RangeAreas#load:member(1)'
+      - 'excel!Excel.RangeAreas#setDirty:member(1)'
+      - 'excel!Excel.RangeAreas#style:member'
+      - 'excel!Excel.RangeAreas#worksheet:member'
+  - uid: 'excel!Excel.RangeAreas#address:member'
+    summary: 'RangeAreas 参照を A1 形式で返します。 Address 値には、セルの各長方形ブロックのワークシート名が格納されます (例: "Sheet1!A1: B4、Sheet1!D1: D4 ")。'
+    name: address
+    fullName: address
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly address: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.RangeAreas#addressLocal:member'
+    summary: ユーザーロケールの RangeAreas 参照を返します。
+    name: addressLocal
+    fullName: addressLocal
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly addressLocal: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.RangeAreas#areaCount:member'
+    summary: この RangeAreas オブジェクトを構成する長方形範囲の数を返します。
+    name: areaCount
+    fullName: areaCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly areaCount: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.RangeAreas#areas:member'
+    summary: この RangeAreas オブジェクトを構成する長方形範囲の集まりを返します。
+    name: areas
+    fullName: areas
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly areas: RangeCollection;'
+      return:
+        type:
+          - 'excel!Excel.RangeCollection:interface'
+  - uid: 'excel!Excel.RangeAreas#calculate:member(1)'
+    summary: RangeAreas のすべてのセルを計算します。
+    name: calculate()
+    fullName: calculate()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'calculate(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.RangeAreas#cellCount:member'
+    summary: 'RangeAreas オブジェクトのセル数を返します。すべての個別長方形範囲のセル数が合計されます。 セル数が 2^31-1 (2,147,483,647) を超える場合、-1 を返します。'
+    name: cellCount
+    fullName: cellCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly cellCount: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.RangeAreas#clear:member(1)'
+    summary: この RangeAreas オブジェクトを構成する各領域で値、フォーマット、塗りつぶし、罫線などを消去します。
+    name: clear(applyTo)
+    fullName: clear(applyTo)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(applyTo?: ClearApplyTo): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: applyTo
+          description: 省略可能。 クリア操作の種類を決定します。 詳細については、「Excel. ClearApplyTo」を参照してください。 既定値は "すべて" です。
+          type:
+            - 'excel!Excel.ClearApplyTo:enum'
+  - uid: 'excel!Excel.RangeAreas#conditionalFormats:member'
+    summary: この RangeAreas オブジェクトのセルと交差する ConditionalFormats の集まりを返します。
+    name: conditionalFormats
+    fullName: conditionalFormats
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly conditionalFormats: ConditionalFormatCollection;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalFormatCollection:interface'
+  - uid: 'excel!Excel.RangeAreas#convertDataTypeToText:member(1)'
+    summary: RangeAreas 内でデータ型を含むすべてのセルをテキストに変換します。
+    name: convertDataTypeToText()
+    fullName: convertDataTypeToText()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'convertDataTypeToText(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.RangeAreas#convertToLinkedDataType:member(1)'
+    summary: RangeAreas 内のすべてのセルをリンク付きデータ型に変換します。
+    name: 'convertToLinkedDataType(serviceID, languageCulture)'
+    fullName: 'convertToLinkedDataType(serviceID, languageCulture)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        convertToLinkedDataType(
+                    serviceID: number,
+                    languageCulture: string
+                ): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: serviceID
+          description: データのクエリに使用されるサービス ID。
+          type:
+            - number
+        - id: languageCulture
+          description: サービスを照会する言語カルチャ。
+          type:
+            - string
+  - uid: 'excel!Excel.RangeAreas#copyFrom:member(1)'
+    summary: ソース範囲または RangeAreas から現在の RangeAreas にセル データまたは書式設定をコピーします。 コピー先の rangeAreas のサイズは、ソース範囲または RangeAreas とは異なる場合があります。 転送先は、ソースよりも小さい場合は自動的に展開されます。
+    name: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
+    fullName: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        copyFrom(
+                    sourceRange: Range | RangeAreas | string,
+                    copyType?: RangeCopyType,
+                    skipBlanks?: boolean,
+                    transpose?: boolean
+                ): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: sourceRange
+          description: コピー元の範囲または RangeAreas を指定します。 ソース範囲に複数の範囲がある場合は、四角形の範囲から完全な行または列を削除することによって、そのフォームを作成できます。
+          type:
+            - 'excel!Excel.RangeAreas#copyFrom~0:complex'
+        - id: copyType
+          description: コピーするセルのデータまたは書式の種類を指定します。 既定値は "すべて" です。
+          type:
+            - 'excel!Excel.RangeCopyType:enum'
+        - id: skipBlanks
+          description: True の場合は、元の範囲または RangeAreas の空白セルをスキップします。 既定値は false です。
+          type:
+            - boolean
+        - id: transpose
+          description: True を指定すると、移動先の範囲内のセルが転置されます。 既定値は false です。
+          type:
+            - boolean
+  - uid: 'excel!Excel.RangeAreas#dataValidation:member'
+    summary: RangeAreas の全範囲に対して dataValidation オブジェクトを返します。
+    name: dataValidation
+    fullName: dataValidation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly dataValidation: DataValidation;'
+      return:
+        type:
+          - 'excel!Excel.DataValidation:interface'
+  - uid: 'excel!Excel.RangeAreas#format:member'
+    summary: Rangeformat オブジェクト内のすべての範囲のフォント、塗りつぶし、罫線、配置、その他のプロパティをカプセル化して、RangeFormat オブジェクトを返します。
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: RangeFormat;'
+      return:
+        type:
+          - 'excel!Excel.RangeFormat:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+
+              let sheet = context.workbook.worksheets.getActiveWorksheet();
+              let usedRange = sheet.getUsedRange();
+
+              // Find the ranges with formulas.
+              let formulaRanges = usedRange.getSpecialCells("Formulas");
+              formulaRanges.format.fill.color = "lightgreen";
+
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.RangeAreas#getEntireColumn:member(1)'
+    summary: 'RangeAreas の列全体を表す RangeAreas オブジェクトを返します (たとえば、現在の RangeAreas がセル "B4:E11, H2" を表す場合、列 "B:E, H:H" を表す RangeAreas が返されます)。'
+    name: getEntireColumn()
+    fullName: getEntireColumn()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getEntireColumn(): RangeAreas;'
+      return:
+        type:
+          - 'excel!Excel.RangeAreas:interface'
+        description: ''
+  - uid: 'excel!Excel.RangeAreas#getEntireRow:member(1)'
+    summary: 'RangeAreas の行全体を表す RangeAreas オブジェクトを返します (たとえば、現在の RangeAreas がセル "B4:E11" を表す場合、行 "4:11" を表す RangeAreas が返されます)。'
+    name: getEntireRow()
+    fullName: getEntireRow()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getEntireRow(): RangeAreas;'
+      return:
+        type:
+          - 'excel!Excel.RangeAreas:interface'
+        description: ''
+  - uid: 'excel!Excel.RangeAreas#getIntersectionOrNullObject:member(1)'
+    summary: 指定した範囲または RangeAreas の交差を表す RangeAreas オブジェクトを返します。 交差が見つからない場合、null オブジェクトが返されます。
+    name: getIntersectionOrNullObject(anotherRange)
+    fullName: getIntersectionOrNullObject(anotherRange)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        getIntersectionOrNullObject(
+                    anotherRange: Range | RangeAreas | string
+                ): RangeAreas;
+      return:
+        type:
+          - 'excel!Excel.RangeAreas:interface'
+        description: ''
+      parameters:
+        - id: anotherRange
+          description: 積集合を決定するために使用される範囲、RangeAreas、または address。
+          type:
+            - 'excel!Excel.RangeAreas#getIntersectionOrNullObject~0:complex'
+  - uid: 'excel!Excel.RangeAreas#getOffsetRangeAreas:member(1)'
+    summary: 特定の行と列のオフセットによってシフトされる RangeAreas オブジェクトを返します。 返される RangeAreas のディメンションは元のオブジェクトと一致します。 結果の RangeAreas がワークシート グリッドの境界線の外にはみ出る場合、エラーがスローされます。
+    name: 'getOffsetRangeAreas(rowOffset, columnOffset)'
+    fullName: 'getOffsetRangeAreas(rowOffset, columnOffset)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        getOffsetRangeAreas(
+                    rowOffset: number,
+                    columnOffset: number
+                ): RangeAreas;
+      return:
+        type:
+          - 'excel!Excel.RangeAreas:interface'
+        description: ''
+      parameters:
+        - id: rowOffset
+          description: RangeAreas がオフセットされる行の数 (正、負、または 0)。 正の値は下方向、負の値は上方向のオフセットを表します。
+          type:
+            - number
+        - id: columnOffset
+          description: RangeAreas がオフセットされる列の数 (正、負、または 0)。 正の値は右方向、負の値は左方向のオフセットを表します。
+          type:
+            - number
+  - uid: 'excel!Excel.RangeAreas#getSpecialCellsOrNullObject:member(1)'
+    summary: 指定された型と値に一致するすべてのセルを表す RangeAreas オブジェクトを返します。 条件に一致する特別なセルが見つからない場合、null オブジェクトを返します。
+    name: 'getSpecialCellsOrNullObject(cellType, cellValueType)'
+    fullName: 'getSpecialCellsOrNullObject(cellType, cellValueType)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        getSpecialCellsOrNullObject(
+                    cellType: SpecialCellType,
+                    cellValueType?: SpecialCellValueType
+                ): RangeAreas;
+      return:
+        type:
+          - 'excel!Excel.RangeAreas:interface'
+        description: ''
+      parameters:
+        - id: cellType
+          description: 含めるセルの種類を指定します。
+          type:
+            - 'excel!Excel.SpecialCellType:enum'
+        - id: cellValueType
+          description: CellType が定数または数式の場合は、この引数を使用して、結果に含めるセルの種類を決定します。 これらの値は、組み合わせて複数の型を返すことができます。 この引数を省略すると、すべての定数および数式が対象になります。
+          type:
+            - 'excel!Excel.SpecialCellValueType:enum'
+  - uid: 'excel!Excel.RangeAreas#getUsedRangeAreasOrNullObject:member(1)'
+    summary: RangeAreas オブジェクトの個別の長方形範囲の全使用済み領域を構成する使用済み RangeAreas を返します。 RangeAreas 内に使用されているセルがない場合は、null オブジェクトが返されます。
+    name: getUsedRangeAreasOrNullObject(valuesOnly)
+    fullName: getUsedRangeAreasOrNullObject(valuesOnly)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getUsedRangeAreasOrNullObject(valuesOnly?: boolean): RangeAreas;'
+      return:
+        type:
+          - 'excel!Excel.RangeAreas:interface'
+        description: ''
+      parameters:
+        - id: valuesOnly
+          description: 値が指定されたセルのみを使用しているセルとしてのみを考慮するかどうか。
+          type:
+            - boolean
+  - uid: 'excel!Excel.RangeAreas#isEntireColumn:member'
+    summary: 'この RangeAreas オブジェクトのすべての範囲が列全体を表すかどうかを指定します (例: "a:"、"Q: Z" など)。'
+    name: isEntireColumn
+    fullName: isEntireColumn
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly isEntireColumn: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.RangeAreas#isEntireRow:member'
+    summary: 'この RangeAreas オブジェクトのすべての範囲が行全体を表すかどうかを指定します (例: "1:3, 5:7")。'
+    name: isEntireRow
+    fullName: isEntireRow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly isEntireRow: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.RangeAreas#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.RangeAreas#setDirty:member(1)'
+    summary: 次の再計算が発生したときに再計算する RangeAreas を設定します。
+    name: setDirty()
+    fullName: setDirty()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setDirty(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.RangeAreas#style:member'
+    summary: この RangeAreas オブジェクトの全範囲のスタイルを表します。 セルのスタイルに不整合がある場合は、null が返されます。 ユーザー設定のスタイルの場合は、スタイル名が返されます。 組み込みのスタイルの場合、BuiltInStyle 列挙内の値を表す文字列が返されます。
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.RangeAreas#worksheet:member'
+    summary: 現在の RangeAreas のワークシートを返します。
+    name: worksheet
+    fullName: worksheet
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly worksheet: Worksheet;'
+      return:
+        type:
+          - 'excel!Excel.Worksheet:interface'
+references:
+  - uid: 'excel!Excel.RangeCollection:interface'
+    name: RangeCollection
+    fullName: Excel.RangeCollection
+  - uid: 'excel!Excel.ClearApplyTo:enum'
+    name: ClearApplyTo
+    fullName: Excel.ClearApplyTo
+  - uid: 'excel!Excel.ConditionalFormatCollection:interface'
+    name: ConditionalFormatCollection
+    fullName: Excel.ConditionalFormatCollection
+  - uid: 'excel!Excel.RangeAreas#copyFrom~0:complex'
+    name: Range | RangeAreas | string
+    fullName: Excel.Range | Excel.RangeAreas | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:interface'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | '
+        fullName: ' | '
+      - uid: 'excel!Excel.RangeAreas:interface'
+        name: RangeAreas
+        fullName: Excel.RangeAreas
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.RangeCopyType:enum'
+    name: RangeCopyType
+    fullName: Excel.RangeCopyType
+  - uid: 'excel!Excel.DataValidation:interface'
+    name: DataValidation
+    fullName: Excel.DataValidation
+  - uid: 'excel!Excel.RangeFormat:interface'
+    name: RangeFormat
+    fullName: Excel.RangeFormat
+  - uid: 'excel!Excel.RangeAreas:interface'
+    name: RangeAreas
+    fullName: Excel.RangeAreas
+  - uid: 'excel!Excel.RangeAreas#getIntersectionOrNullObject~0:complex'
+    name: Range | RangeAreas | string
+    fullName: Excel.Range | Excel.RangeAreas | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:interface'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | '
+        fullName: ' | '
+      - uid: 'excel!Excel.RangeAreas:interface'
+        name: RangeAreas
+        fullName: Excel.RangeAreas
+      - name: |2-
+           | string
+                  
+        fullName: |2-
+           | string
+                  
+  - uid: 'excel!Excel.SpecialCellType:enum'
+    name: SpecialCellType
+    fullName: Excel.SpecialCellType
+  - uid: 'excel!Excel.SpecialCellValueType:enum'
+    name: SpecialCellValueType
+    fullName: Excel.SpecialCellValueType
+  - uid: 'excel!Excel.Worksheet:interface'
+    name: Worksheet
+    fullName: Excel.Worksheet

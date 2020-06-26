@@ -1,0 +1,184 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.WorksheetCollection:interface'
+    summary: ブックの一部であるワークシート オブジェクトのコレクションを表します。
+    name: Excel.WorksheetCollection
+    fullName: Excel.WorksheetCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.WorksheetCollection#add:member(1)'
+      - 'excel!Excel.WorksheetCollection#getActiveWorksheet:member(1)'
+      - 'excel!Excel.WorksheetCollection#getFirst:member(1)'
+      - 'excel!Excel.WorksheetCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.WorksheetCollection#getLast:member(1)'
+      - 'excel!Excel.WorksheetCollection#load:member(1)'
+  - uid: 'excel!Excel.WorksheetCollection#add:member(1)'
+    summary: 'Adds a new worksheet to the workbook. The worksheet will be added at the end of existing worksheets. If you wish to activate the newly added worksheet, call ".activate() on it.'
+    name: add(name)
+    fullName: add(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(name?: string): Worksheet;'
+      return:
+        type:
+          - 'excel!Excel.Worksheet:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: 'Optional. The name of the worksheet to be added. If specified, name should be unqiue. If not specified, Excel determines the name of the new worksheet.'
+          type:
+            - string
+  - uid: 'excel!Excel.WorksheetCollection#getActiveWorksheet:member(1)'
+    summary: ブックの、現在作業中のワークシートを取得します。
+    name: getActiveWorksheet()
+    fullName: getActiveWorksheet()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getActiveWorksheet(): Worksheet;'
+      return:
+        type:
+          - 'excel!Excel.Worksheet:interface'
+        description: ''
+  - uid: 'excel!Excel.WorksheetCollection#getFirst:member(1)'
+    summary: コレクション内の最初のワークシートを取得します。
+    name: getFirst(visibleOnly)
+    fullName: getFirst(visibleOnly)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFirst(visibleOnly?: boolean): Worksheet;'
+      return:
+        type:
+          - 'excel!Excel.Worksheet:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheets = context.workbook.worksheets;
+
+              // We don't want to include the default worksheet that was created
+              // when the workbook was created, so our "firstSheet" will be the one
+              // after the literal first. Note chaining of navigation methods.
+              let firstSheet = sheets.getFirst().getNext();
+              let lastSheet = sheets.getLast();
+              let firstTaxRateRange = firstSheet.getRange("B2");
+              let lastTaxRateRange = lastSheet.getRange("B2");
+
+              firstSheet.load("name");
+              lastSheet.load("name");
+              firstTaxRateRange.load("text");
+              lastTaxRateRange.load("text");
+
+              await context.sync();
+
+              let firstYear = firstSheet.name.substr(5, 4);
+              let lastYear = lastSheet.name.substr(5, 4);
+              console.log(`Tax Rate change from ${firstYear} to ${lastYear}`, `Tax rate for ${firstYear}: ${firstTaxRateRange.text[0][0]}\nTax rate for ${lastYear}: ${lastTaxRateRange.text[0][0]}`)
+
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: visibleOnly
+          description: 省略可能です。 True の場合は、表示されているワークシートのみを考慮し、非表示のワークシートについてはスキップします。
+          type:
+            - boolean
+  - uid: 'excel!Excel.WorksheetCollection#getItemOrNullObject:member(1)'
+    summary: 名前または ID を使用して、ワークシート オブジェクトを取得します。 ワークシートが存在しない場合は null オブジェクトを返します。
+    name: getItemOrNullObject(key)
+    fullName: getItemOrNullObject(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(key: string): Worksheet;'
+      return:
+        type:
+          - 'excel!Excel.Worksheet:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: ワークシートの名前または ID。
+          type:
+            - string
+  - uid: 'excel!Excel.WorksheetCollection#getLast:member(1)'
+    summary: コレクション内の最後のワークシートを取得します。
+    name: getLast(visibleOnly)
+    fullName: getLast(visibleOnly)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLast(visibleOnly?: boolean): Worksheet;'
+      return:
+        type:
+          - 'excel!Excel.Worksheet:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheets = context.workbook.worksheets;
+
+              // We don't want to include the default worksheet that was created
+              // when the workbook was created, so our "firstSheet" will be the one
+              // after the literal first. Note chaining of navigation methods.
+              let firstSheet = sheets.getFirst().getNext();
+              let lastSheet = sheets.getLast();
+              let firstTaxRateRange = firstSheet.getRange("B2");
+              let lastTaxRateRange = lastSheet.getRange("B2");
+
+              firstSheet.load("name");
+              lastSheet.load("name");
+              firstTaxRateRange.load("text");
+              lastTaxRateRange.load("text");
+
+              await context.sync();
+
+              let firstYear = firstSheet.name.substr(5, 4);
+              let lastYear = lastSheet.name.substr(5, 4);
+              console.log(`Tax Rate change from ${firstYear} to ${lastYear}`, `Tax rate for ${firstYear}: ${firstTaxRateRange.text[0][0]}\nTax rate for ${lastYear}: ${lastTaxRateRange.text[0][0]}`)
+
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: visibleOnly
+          description: 省略可能です。 True の場合は、表示されているワークシートのみを考慮し、非表示のワークシートについてはスキップします。
+          type:
+            - boolean
+  - uid: 'excel!Excel.WorksheetCollection#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.Worksheet:interface'
+    name: Worksheet
+    fullName: Excel.Worksheet

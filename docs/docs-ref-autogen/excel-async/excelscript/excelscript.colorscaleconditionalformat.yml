@@ -1,0 +1,81 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ColorScaleConditionalFormat:interface'
+    summary: 条件付き書式の ColorScale 条件を表します。
+    name: Excel.ColorScaleConditionalFormat
+    fullName: Excel.ColorScaleConditionalFormat
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ColorScaleConditionalFormat#criteria:member'
+      - 'excel!Excel.ColorScaleConditionalFormat#load:member(1)'
+      - 'excel!Excel.ColorScaleConditionalFormat#threeColorScale:member'
+  - uid: 'excel!Excel.ColorScaleConditionalFormat#criteria:member'
+    summary: カラースケールの基準。 2ポイントのカラースケールを使用している場合、中点はオプションです。
+    name: criteria
+    fullName: criteria
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'criteria: ConditionalColorScaleCriteria;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalColorScaleCriteria:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Sample");
+              let range = sheet.getRange("B2:M5");
+              let conditionalFormat = range.conditionalFormats
+                  .add(Excel.ConditionalFormatType.colorScale);
+              let criteria = {
+                  minimum: { formula: null, type: Excel.ConditionalFormatColorCriterionType.lowestValue, color: "blue" },
+                  midpoint: { formula: "50", type: Excel.ConditionalFormatColorCriterionType.percent, color: "yellow" },
+                  maximum: { formula: null, type: Excel.ConditionalFormatColorCriterionType.highestValue, color: "red" }
+              };
+              conditionalFormat.colorScale.criteria = criteria;
+
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.ColorScaleConditionalFormat#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ColorScaleConditionalFormat#threeColorScale:member'
+    summary: True の場合、カラースケールには3つのポイント (最小、中点、最大) が設定されます。それ以外の場合は、2つ (最小、最大) が設定されます。
+    name: threeColorScale
+    fullName: threeColorScale
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly threeColorScale: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.ConditionalColorScaleCriteria:interface'
+    name: ConditionalColorScaleCriteria
+    fullName: Excel.ConditionalColorScaleCriteria

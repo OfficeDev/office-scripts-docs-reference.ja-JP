@@ -1,0 +1,105 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartErrorBars:interface'
+    summary: このオブジェクトは、グラフの誤差範囲の属性を表します。
+    name: Excel.ChartErrorBars
+    fullName: Excel.ChartErrorBars
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartErrorBars#endStyleCap:member'
+      - 'excel!Excel.ChartErrorBars#format:member'
+      - 'excel!Excel.ChartErrorBars#include:member'
+      - 'excel!Excel.ChartErrorBars#load:member(1)'
+      - 'excel!Excel.ChartErrorBars#type:member'
+      - 'excel!Excel.ChartErrorBars#visible:member'
+  - uid: 'excel!Excel.ChartErrorBars#endStyleCap:member'
+    summary: 誤差範囲に終了スタイルキャップがあるかどうかを指定します。
+    name: endStyleCap
+    fullName: endStyleCap
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'endStyleCap: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartErrorBars#format:member'
+    summary: 誤差範囲の書式の種類を指定します。
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: ChartErrorBarsFormat;'
+      return:
+        type:
+          - 'excel!Excel.ChartErrorBarsFormat:interface'
+  - uid: 'excel!Excel.ChartErrorBars#include:member'
+    summary: 誤差範囲のどの部分を含めるかを指定します。
+    name: include
+    fullName: include
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'include: ChartErrorBarsInclude;'
+      return:
+        type:
+          - 'excel!Excel.ChartErrorBarsInclude:enum'
+  - uid: 'excel!Excel.ChartErrorBars#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartErrorBars#type:member'
+    summary: 誤差範囲でマークされている範囲の種類。
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: ChartErrorBarsType;'
+      return:
+        type:
+          - 'excel!Excel.ChartErrorBarsType:enum'
+  - uid: 'excel!Excel.ChartErrorBars#visible:member'
+    summary: 誤差範囲を表示するかどうかを指定します。
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.ChartErrorBarsFormat:interface'
+    name: ChartErrorBarsFormat
+    fullName: Excel.ChartErrorBarsFormat
+  - uid: 'excel!Excel.ChartErrorBarsInclude:enum'
+    name: ChartErrorBarsInclude
+    fullName: Excel.ChartErrorBarsInclude
+  - uid: 'excel!Excel.ChartErrorBarsType:enum'
+    name: ChartErrorBarsType
+    fullName: Excel.ChartErrorBarsType

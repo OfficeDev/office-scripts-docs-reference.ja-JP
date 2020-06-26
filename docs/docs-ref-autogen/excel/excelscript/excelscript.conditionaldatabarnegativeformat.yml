@@ -1,0 +1,143 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat:interface'
+    summary: データバーの負の側の条件付き書式の DataBar 形式を表します。
+    name: ExcelScript.ConditionalDataBarNegativeFormat
+    fullName: ExcelScript.ConditionalDataBarNegativeFormat
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getBorderColor:member(1)'
+      - 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getFillColor:member(1)'
+      - 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getMatchPositiveBorderColor:member(1)'
+      - 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getMatchPositiveFillColor:member(1)'
+      - 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setBorderColor:member(1)'
+      - 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setFillColor:member(1)'
+      - 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setMatchPositiveBorderColor:member(1)'
+      - 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setMatchPositiveFillColor:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getBorderColor:member(1)'
+    summary: '境界線の色を表す HTML カラーコード \# (例: "FFA500")、または名前付きの html 色 (例: "RRGGBB") です。 境界線が表示または設定されていない場合は、"Empty String"。'
+    name: getBorderColor()
+    fullName: getBorderColor()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getBorderColor(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getFillColor:member(1)'
+    summary: '塗りつぶし色を表す HTML カラーコード \# ("FFA500" など)、または名前付きの html 色 (例: "RRGGBB")。'
+    name: getFillColor()
+    fullName: getFillColor()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFillColor(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getMatchPositiveBorderColor:member(1)'
+    summary: 負の DataBar の境界線の色が正の DataBar と同じかどうかを指定します。
+    name: getMatchPositiveBorderColor()
+    fullName: getMatchPositiveBorderColor()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getMatchPositiveBorderColor(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getMatchPositiveFillColor:member(1)'
+    summary: 負の DataBar の塗りつぶし色が正の DataBar と同じであるかどうかを指定します。
+    name: getMatchPositiveFillColor()
+    fullName: getMatchPositiveFillColor()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getMatchPositiveFillColor(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setBorderColor:member(1)'
+    summary: '境界線の色を表す HTML カラーコード \# (例: "FFA500")、または名前付きの html 色 (例: "RRGGBB") です。 境界線が表示または設定されていない場合は、"Empty String"。'
+    name: setBorderColor(borderColor)
+    fullName: setBorderColor(borderColor)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setBorderColor(borderColor: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: borderColor
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setFillColor:member(1)'
+    summary: '塗りつぶし色を表す HTML カラーコード \# ("FFA500" など)、または名前付きの html 色 (例: "RRGGBB")。'
+    name: setFillColor(fillColor)
+    fullName: setFillColor(fillColor)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setFillColor(fillColor: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: fillColor
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setMatchPositiveBorderColor:member(1)'
+    summary: 負の DataBar の境界線の色が正の DataBar と同じかどうかを指定します。
+    name: setMatchPositiveBorderColor(matchPositiveBorderColor)
+    fullName: setMatchPositiveBorderColor(matchPositiveBorderColor)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setMatchPositiveBorderColor(matchPositiveBorderColor: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: matchPositiveBorderColor
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setMatchPositiveFillColor:member(1)'
+    summary: 負の DataBar の塗りつぶし色が正の DataBar と同じであるかどうかを指定します。
+    name: setMatchPositiveFillColor(matchPositiveFillColor)
+    fullName: setMatchPositiveFillColor(matchPositiveFillColor)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setMatchPositiveFillColor(matchPositiveFillColor: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: matchPositiveFillColor
+          description: ''
+          type:
+            - boolean

@@ -1,0 +1,328 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Line:interface'
+    summary: ワークシート内の行を表します。 対応する Shape オブジェクトを取得するには、`Line.shape`<!-- -->.
+    name: Excel.Line
+    fullName: Excel.Line
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Line#beginArrowheadLength:member'
+      - 'excel!Excel.Line#beginArrowheadStyle:member'
+      - 'excel!Excel.Line#beginArrowheadWidth:member'
+      - 'excel!Excel.Line#beginConnectedSite:member'
+      - 'excel!Excel.Line#connectBeginShape:member(1)'
+      - 'excel!Excel.Line#connectEndShape:member(1)'
+      - 'excel!Excel.Line#connectorType:member'
+      - 'excel!Excel.Line#disconnectBeginShape:member(1)'
+      - 'excel!Excel.Line#disconnectEndShape:member(1)'
+      - 'excel!Excel.Line#endArrowheadLength:member'
+      - 'excel!Excel.Line#endArrowheadStyle:member'
+      - 'excel!Excel.Line#endArrowheadWidth:member'
+      - 'excel!Excel.Line#endConnectedSite:member'
+      - 'excel!Excel.Line#id:member'
+      - 'excel!Excel.Line#isBeginConnected:member'
+      - 'excel!Excel.Line#isEndConnected:member'
+      - 'excel!Excel.Line#load:member(1)'
+  - uid: 'excel!Excel.Line#beginArrowheadLength:member'
+    summary: 指定された線の始点の矢印の長さを表します。
+    name: beginArrowheadLength
+    fullName: beginArrowheadLength
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'beginArrowheadLength: ArrowheadLength;'
+      return:
+        type:
+          - 'excel!Excel.ArrowheadLength:enum'
+  - uid: 'excel!Excel.Line#beginArrowheadStyle:member'
+    summary: 指定された線の始点の矢印のスタイルを表します。
+    name: beginArrowheadStyle
+    fullName: beginArrowheadStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'beginArrowheadStyle: ArrowheadStyle;'
+      return:
+        type:
+          - 'excel!Excel.ArrowheadStyle:enum'
+  - uid: 'excel!Excel.Line#beginArrowheadWidth:member'
+    summary: 指定された線の始点の矢印の幅を表します。
+    name: beginArrowheadWidth
+    fullName: beginArrowheadWidth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'beginArrowheadWidth: ArrowheadWidth;'
+      return:
+        type:
+          - 'excel!Excel.ArrowheadWidth:enum'
+  - uid: 'excel!Excel.Line#beginConnectedSite:member'
+    summary: コネクタの始点が接続されている結合点を表します。 線の始点がどの図形にも接続されていない場合は、null を返します。
+    name: beginConnectedSite
+    fullName: beginConnectedSite
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly beginConnectedSite: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Line#connectBeginShape:member(1)'
+    summary: 指定されたコネクタの始点を指定された図形に接続します。
+    name: 'connectBeginShape(shape, connectionSite)'
+    fullName: 'connectBeginShape(shape, connectionSite)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'connectBeginShape(shape: Shape, connectionSite: number): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+              let line = shapes.getItem("StraightLine").line;
+              line.connectBeginShape(shapes.getItem("Left"), 2);
+              line.connectEndShape(shapes.getItem("Right"), 0);
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: shape
+          description: 接続する図形を示します。
+          type:
+            - 'excel!Excel.Shape:interface'
+        - id: connectionSite
+          description: コネクタの始点が接続される図形の接続サイトです。 指定した図形の 0 (両端を含む) と、指定した図形の接続サイト数 (排他) の間の整数である必要があります。
+          type:
+            - number
+  - uid: 'excel!Excel.Line#connectEndShape:member(1)'
+    summary: 指定されたコネクタの終点を指定された図形に接続します。
+    name: 'connectEndShape(shape, connectionSite)'
+    fullName: 'connectEndShape(shape, connectionSite)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'connectEndShape(shape: Shape, connectionSite: number): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+              let line = shapes.getItem("StraightLine").line;
+              line.connectBeginShape(shapes.getItem("Left"), 2);
+              line.connectEndShape(shapes.getItem("Right"), 0);
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: shape
+          description: 接続する図形を示します。
+          type:
+            - 'excel!Excel.Shape:interface'
+        - id: connectionSite
+          description: コネクタの終点が接続されている図形の接続サイトを指定します。 指定した図形の 0 (両端を含む) と、指定した図形の接続サイト数 (排他) の間の整数である必要があります。
+          type:
+            - number
+  - uid: 'excel!Excel.Line#connectorType:member'
+    summary: 線のコネクタの種類を表します。
+    name: connectorType
+    fullName: connectorType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'connectorType: ConnectorType;'
+      return:
+        type:
+          - 'excel!Excel.ConnectorType:enum'
+  - uid: 'excel!Excel.Line#disconnectBeginShape:member(1)'
+    summary: 指定されたコネクタの始点を図形から切り離します。
+    name: disconnectBeginShape()
+    fullName: disconnectBeginShape()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'disconnectBeginShape(): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+              let line = shapes.getItem("StraightLine").line;
+              line.disconnectBeginShape();
+              line.disconnectEndShape();
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.Line#disconnectEndShape:member(1)'
+    summary: 指定されたコネクタの終点を図形から切り離します。
+    name: disconnectEndShape()
+    fullName: disconnectEndShape()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'disconnectEndShape(): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+              let line = shapes.getItem("StraightLine").line;
+              line.disconnectBeginShape();
+              line.disconnectEndShape();
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.Line#endArrowheadLength:member'
+    summary: 指定された線の終点の矢印の長さを表します。
+    name: endArrowheadLength
+    fullName: endArrowheadLength
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'endArrowheadLength: ArrowheadLength;'
+      return:
+        type:
+          - 'excel!Excel.ArrowheadLength:enum'
+  - uid: 'excel!Excel.Line#endArrowheadStyle:member'
+    summary: 指定された線の終点の矢印のスタイルを表します。
+    name: endArrowheadStyle
+    fullName: endArrowheadStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'endArrowheadStyle: ArrowheadStyle;'
+      return:
+        type:
+          - 'excel!Excel.ArrowheadStyle:enum'
+  - uid: 'excel!Excel.Line#endArrowheadWidth:member'
+    summary: 指定された線の終点の矢印の幅を表します。
+    name: endArrowheadWidth
+    fullName: endArrowheadWidth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'endArrowheadWidth: ArrowheadWidth;'
+      return:
+        type:
+          - 'excel!Excel.ArrowheadWidth:enum'
+  - uid: 'excel!Excel.Line#endConnectedSite:member'
+    summary: コネクタの終点が接続されている結合点を表します。 線の終点がどの図形にも接続されていない場合は、null を返します。
+    name: endConnectedSite
+    fullName: endConnectedSite
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly endConnectedSite: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Line#id:member'
+    summary: 図形の識別子を指定します。
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Line#isBeginConnected:member'
+    summary: 指定した線の始点が図形に接続されているかどうかを指定します。
+    name: isBeginConnected
+    fullName: isBeginConnected
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly isBeginConnected: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Line#isEndConnected:member'
+    summary: 指定した線の終点が図形に接続されているかどうかを指定します。
+    name: isEndConnected
+    fullName: isEndConnected
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly isEndConnected: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Line#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.ArrowheadLength:enum'
+    name: ArrowheadLength
+    fullName: Excel.ArrowheadLength
+  - uid: 'excel!Excel.ArrowheadStyle:enum'
+    name: ArrowheadStyle
+    fullName: Excel.ArrowheadStyle
+  - uid: 'excel!Excel.ArrowheadWidth:enum'
+    name: ArrowheadWidth
+    fullName: Excel.ArrowheadWidth
+  - uid: 'excel!Excel.Shape:interface'
+    name: Shape
+    fullName: Excel.Shape
+  - uid: 'excel!Excel.ConnectorType:enum'
+    name: ConnectorType
+    fullName: Excel.ConnectorType

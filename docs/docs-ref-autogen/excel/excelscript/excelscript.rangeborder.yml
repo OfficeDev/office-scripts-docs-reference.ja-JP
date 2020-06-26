@@ -1,0 +1,167 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.RangeBorder:interface'
+    summary: オブジェクトの輪郭を表します。
+    name: ExcelScript.RangeBorder
+    fullName: ExcelScript.RangeBorder
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.RangeBorder#getColor:member(1)'
+      - 'ExcelScript!ExcelScript.RangeBorder#getSideIndex:member(1)'
+      - 'ExcelScript!ExcelScript.RangeBorder#getStyle:member(1)'
+      - 'ExcelScript!ExcelScript.RangeBorder#getTintAndShade:member(1)'
+      - 'ExcelScript!ExcelScript.RangeBorder#getWeight:member(1)'
+      - 'ExcelScript!ExcelScript.RangeBorder#setColor:member(1)'
+      - 'ExcelScript!ExcelScript.RangeBorder#setStyle:member(1)'
+      - 'ExcelScript!ExcelScript.RangeBorder#setTintAndShade:member(1)'
+      - 'ExcelScript!ExcelScript.RangeBorder#setWeight:member(1)'
+  - uid: 'ExcelScript!ExcelScript.RangeBorder#getColor:member(1)'
+    summary: '境界線の色を表す HTML カラーコード \# (例: "FFA500")、または名前付きの html 色 (例: "RRGGBB") です。'
+    name: getColor()
+    fullName: getColor()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getColor(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeBorder#getSideIndex:member(1)'
+    summary: 罫線の特定の辺を表す定数値。 詳細については、「Excel BorderIndex」を参照してください。
+    name: getSideIndex()
+    fullName: getSideIndex()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSideIndex(): BorderIndex;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.BorderIndex:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeBorder#getStyle:member(1)'
+    summary: 罫線の線スタイルを指定する、線スタイル定数のいずれか 1 つ。 詳細については、「Excel BorderLineStyle」を参照してください。
+    name: getStyle()
+    fullName: getStyle()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getStyle(): BorderLineStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.BorderLineStyle:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeBorder#getTintAndShade:member(1)'
+    summary: 範囲の境界線の色を明るくまたは暗くする倍精度浮動小数点型 (double) の値を指定します。 値は、-1 (最も暗い) から 1 (最も明るい) までの範囲で、元の色は0になります。 Null 値は、境界線に均等な tintAndShade 設定がないことを示します。
+    name: getTintAndShade()
+    fullName: getTintAndShade()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTintAndShade(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeBorder#getWeight:member(1)'
+    summary: 範囲周辺の罫線の太さを指定します。 詳細については、「Excel BorderWeight」を参照してください。
+    name: getWeight()
+    fullName: getWeight()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getWeight(): BorderWeight;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.BorderWeight:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeBorder#setColor:member(1)'
+    summary: '境界線の色を表す HTML カラーコード \# (例: "FFA500")、または名前付きの html 色 (例: "RRGGBB") です。'
+    name: setColor(color)
+    fullName: setColor(color)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setColor(color: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: color
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.RangeBorder#setStyle:member(1)'
+    summary: 罫線の線スタイルを指定する、線スタイル定数のいずれか 1 つ。 詳細については、「Excel BorderLineStyle」を参照してください。
+    name: setStyle(style)
+    fullName: setStyle(style)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setStyle(style: BorderLineStyle): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: style
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.BorderLineStyle:enum'
+  - uid: 'ExcelScript!ExcelScript.RangeBorder#setTintAndShade:member(1)'
+    summary: 範囲の境界線の色を明るくまたは暗くする倍精度浮動小数点型 (double) の値を指定します。 値は、-1 (最も暗い) から 1 (最も明るい) までの範囲で、元の色は0になります。 Null 値は、境界線に均等な tintAndShade 設定がないことを示します。
+    name: setTintAndShade(tintAndShade)
+    fullName: setTintAndShade(tintAndShade)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setTintAndShade(tintAndShade: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: tintAndShade
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.RangeBorder#setWeight:member(1)'
+    summary: 範囲周辺の罫線の太さを指定します。 詳細については、「Excel BorderWeight」を参照してください。
+    name: setWeight(weight)
+    fullName: setWeight(weight)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setWeight(weight: BorderWeight): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: weight
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.BorderWeight:enum'
+references:
+  - uid: 'ExcelScript!ExcelScript.BorderIndex:enum'
+    name: BorderIndex
+    fullName: ExcelScript.BorderIndex
+  - uid: 'ExcelScript!ExcelScript.BorderLineStyle:enum'
+    name: BorderLineStyle
+    fullName: ExcelScript.BorderLineStyle
+  - uid: 'ExcelScript!ExcelScript.BorderWeight:enum'
+    name: BorderWeight
+    fullName: ExcelScript.BorderWeight

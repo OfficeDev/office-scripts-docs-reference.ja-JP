@@ -1,0 +1,29 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartErrorBarsFormat:interface'
+    summary: グラフの誤差範囲の書式設定プロパティをカプセル化します。
+    name: ExcelScript.ChartErrorBarsFormat
+    fullName: ExcelScript.ChartErrorBarsFormat
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartErrorBarsFormat#getLine:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ChartErrorBarsFormat#getLine:member(1)'
+    summary: グラフの線の書式設定を表します。
+    name: getLine()
+    fullName: getLine()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLine(): ChartLineFormat;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartLineFormat:interface'
+        description: ''
+references:
+  - uid: 'ExcelScript!ExcelScript.ChartLineFormat:interface'
+    name: ChartLineFormat
+    fullName: ExcelScript.ChartLineFormat

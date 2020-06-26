@@ -1,0 +1,39 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ShapeZOrder:enum'
+    summary: 他の図形を基準として、図形を移動する位置を Z オーダーで指定します。
+    name: ExcelScript.ShapeZOrder
+    fullName: ExcelScript.ShapeZOrder
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ShapeZOrder.bringForward:member'
+      - 'ExcelScript!ExcelScript.ShapeZOrder.bringToFront:member'
+      - 'ExcelScript!ExcelScript.ShapeZOrder.sendBackward:member'
+      - 'ExcelScript!ExcelScript.ShapeZOrder.sendToBack:member'
+  - uid: 'ExcelScript!ExcelScript.ShapeZOrder.bringForward:member'
+    name: bringForward
+    fullName: bringForward
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShapeZOrder.bringToFront:member'
+    name: bringToFront
+    fullName: bringToFront
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShapeZOrder.sendBackward:member'
+    name: sendBackward
+    fullName: sendBackward
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShapeZOrder.sendToBack:member'
+    name: sendToBack
+    fullName: sendToBack
+    langs:
+      - typeScript
+    type: field

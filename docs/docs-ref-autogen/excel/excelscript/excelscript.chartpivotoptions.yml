@@ -1,0 +1,146 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartPivotOptions:interface'
+    summary: ピボット グラフのオプションをカプセル化します。
+    name: ExcelScript.ChartPivotOptions
+    fullName: ExcelScript.ChartPivotOptions
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartPivotOptions#getShowAxisFieldButtons:member(1)'
+      - 'ExcelScript!ExcelScript.ChartPivotOptions#getShowLegendFieldButtons:member(1)'
+      - 'ExcelScript!ExcelScript.ChartPivotOptions#getShowReportFilterFieldButtons:member(1)'
+      - 'ExcelScript!ExcelScript.ChartPivotOptions#getShowValueFieldButtons:member(1)'
+      - 'ExcelScript!ExcelScript.ChartPivotOptions#setShowAxisFieldButtons:member(1)'
+      - 'ExcelScript!ExcelScript.ChartPivotOptions#setShowLegendFieldButtons:member(1)'
+      - 'ExcelScript!ExcelScript.ChartPivotOptions#setShowReportFilterFieldButtons:member(1)'
+      - 'ExcelScript!ExcelScript.ChartPivotOptions#setShowValueFieldButtons:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ChartPivotOptions#getShowAxisFieldButtons:member(1)'
+    summary: 'ピボットグラフに軸フィールドボタンを表示するかどうかを指定します。 ShowAxisFieldButtons プロパティは、ピボットグラフを選択したときに有効になる [分析] タブの [フィールド ボタン] ボックスの一覧にある [軸フィールド ボタンを表示する] コマンドに対応します。'
+    name: getShowAxisFieldButtons()
+    fullName: getShowAxisFieldButtons()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getShowAxisFieldButtons(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartPivotOptions#getShowLegendFieldButtons:member(1)'
+    summary: ピボットグラフに凡例フィールドボタンを表示するかどうかを指定します。
+    name: getShowLegendFieldButtons()
+    fullName: getShowLegendFieldButtons()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getShowLegendFieldButtons(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartPivotOptions#getShowReportFilterFieldButtons:member(1)'
+    summary: ピボットグラフにレポートフィルターフィールドボタンを表示するかどうかを指定します。
+    name: getShowReportFilterFieldButtons()
+    fullName: getShowReportFilterFieldButtons()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getShowReportFilterFieldButtons(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartPivotOptions#getShowValueFieldButtons:member(1)'
+    summary: 'ピボットグラフに [値フィールドを表示する] ボタンを表示するかどうかを指定します。'
+    name: getShowValueFieldButtons()
+    fullName: getShowValueFieldButtons()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getShowValueFieldButtons(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartPivotOptions#setShowAxisFieldButtons:member(1)'
+    summary: 'ピボットグラフに軸フィールドボタンを表示するかどうかを指定します。 ShowAxisFieldButtons プロパティは、ピボットグラフを選択したときに有効になる [分析] タブの [フィールド ボタン] ボックスの一覧にある [軸フィールド ボタンを表示する] コマンドに対応します。'
+    name: setShowAxisFieldButtons(showAxisFieldButtons)
+    fullName: setShowAxisFieldButtons(showAxisFieldButtons)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setShowAxisFieldButtons(showAxisFieldButtons: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: showAxisFieldButtons
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.ChartPivotOptions#setShowLegendFieldButtons:member(1)'
+    summary: ピボットグラフに凡例フィールドボタンを表示するかどうかを指定します。
+    name: setShowLegendFieldButtons(showLegendFieldButtons)
+    fullName: setShowLegendFieldButtons(showLegendFieldButtons)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setShowLegendFieldButtons(showLegendFieldButtons: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: showLegendFieldButtons
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.ChartPivotOptions#setShowReportFilterFieldButtons:member(1)'
+    summary: ピボットグラフにレポートフィルターフィールドボタンを表示するかどうかを指定します。
+    name: setShowReportFilterFieldButtons(showReportFilterFieldButtons)
+    fullName: setShowReportFilterFieldButtons(showReportFilterFieldButtons)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        setShowReportFilterFieldButtons(
+                    showReportFilterFieldButtons: boolean
+                ): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: showReportFilterFieldButtons
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.ChartPivotOptions#setShowValueFieldButtons:member(1)'
+    summary: 'ピボットグラフに [値フィールドを表示する] ボタンを表示するかどうかを指定します。'
+    name: setShowValueFieldButtons(showValueFieldButtons)
+    fullName: setShowValueFieldButtons(showValueFieldButtons)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setShowValueFieldButtons(showValueFieldButtons: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: showValueFieldButtons
+          description: ''
+          type:
+            - boolean

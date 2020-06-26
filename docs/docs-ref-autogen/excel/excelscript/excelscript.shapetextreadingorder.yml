@@ -1,0 +1,25 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ShapeTextReadingOrder:enum'
+    summary: 図形内のテキストボックスの読み取り順序を指定します。
+    name: ExcelScript.ShapeTextReadingOrder
+    fullName: ExcelScript.ShapeTextReadingOrder
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ShapeTextReadingOrder.leftToRight:member'
+      - 'ExcelScript!ExcelScript.ShapeTextReadingOrder.rightToLeft:member'
+  - uid: 'ExcelScript!ExcelScript.ShapeTextReadingOrder.leftToRight:member'
+    name: leftToRight
+    fullName: leftToRight
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShapeTextReadingOrder.rightToLeft:member'
+    name: rightToLeft
+    fullName: rightToLeft
+    langs:
+      - typeScript
+    type: field

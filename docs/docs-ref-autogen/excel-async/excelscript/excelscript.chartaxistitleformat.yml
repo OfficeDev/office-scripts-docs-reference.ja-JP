@@ -1,0 +1,79 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartAxisTitleFormat:interface'
+    summary: グラフ軸のタイトルの書式設定を表します。
+    name: Excel.ChartAxisTitleFormat
+    fullName: Excel.ChartAxisTitleFormat
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartAxisTitleFormat#border:member'
+      - 'excel!Excel.ChartAxisTitleFormat#fill:member'
+      - 'excel!Excel.ChartAxisTitleFormat#font:member'
+      - 'excel!Excel.ChartAxisTitleFormat#load:member(1)'
+  - uid: 'excel!Excel.ChartAxisTitleFormat#border:member'
+    summary: グラフ軸のタイトルの枠線の書式を指定します。色、linestyle、および重みを含みます。
+    name: border
+    fullName: border
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly border: ChartBorder;'
+      return:
+        type:
+          - 'excel!Excel.ChartBorder:interface'
+  - uid: 'excel!Excel.ChartAxisTitleFormat#fill:member'
+    summary: グラフ軸のタイトルの塗りつぶしの書式を指定します。
+    name: fill
+    fullName: fill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly fill: ChartFill;'
+      return:
+        type:
+          - 'excel!Excel.ChartFill:interface'
+  - uid: 'excel!Excel.ChartAxisTitleFormat#font:member'
+    summary: グラフ軸のタイトルのフォントの属性 (フォント名、フォントサイズ、色など) をグラフ軸のタイトルオブジェクトとして指定します。
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly font: ChartFont;'
+      return:
+        type:
+          - 'excel!Excel.ChartFont:interface'
+  - uid: 'excel!Excel.ChartAxisTitleFormat#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.ChartBorder:interface'
+    name: ChartBorder
+    fullName: Excel.ChartBorder
+  - uid: 'excel!Excel.ChartFill:interface'
+    name: ChartFill
+    fullName: Excel.ChartFill
+  - uid: 'excel!Excel.ChartFont:interface'
+    name: ChartFont
+    fullName: Excel.ChartFont

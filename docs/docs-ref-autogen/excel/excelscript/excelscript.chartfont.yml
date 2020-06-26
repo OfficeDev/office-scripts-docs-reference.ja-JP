@@ -1,0 +1,213 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartFont:interface'
+    summary: このオブジェクトは、グラフ オブジェクトのフォント属性 (フォント名、フォント サイズ、色など) を表します。
+    name: ExcelScript.ChartFont
+    fullName: ExcelScript.ChartFont
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartFont#getBold:member(1)'
+      - 'ExcelScript!ExcelScript.ChartFont#getColor:member(1)'
+      - 'ExcelScript!ExcelScript.ChartFont#getItalic:member(1)'
+      - 'ExcelScript!ExcelScript.ChartFont#getName:member(1)'
+      - 'ExcelScript!ExcelScript.ChartFont#getSize:member(1)'
+      - 'ExcelScript!ExcelScript.ChartFont#getUnderline:member(1)'
+      - 'ExcelScript!ExcelScript.ChartFont#setBold:member(1)'
+      - 'ExcelScript!ExcelScript.ChartFont#setColor:member(1)'
+      - 'ExcelScript!ExcelScript.ChartFont#setItalic:member(1)'
+      - 'ExcelScript!ExcelScript.ChartFont#setName:member(1)'
+      - 'ExcelScript!ExcelScript.ChartFont#setSize:member(1)'
+      - 'ExcelScript!ExcelScript.ChartFont#setUnderline:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ChartFont#getBold:member(1)'
+    summary: フォントの太字の状態を表します。
+    name: getBold()
+    fullName: getBold()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getBold(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartFont#getColor:member(1)'
+    summary: テキストの色の HTML カラーコード表現 (たとえば、 \# ff0000 はは赤を表します)。
+    name: getColor()
+    fullName: getColor()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getColor(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartFont#getItalic:member(1)'
+    summary: フォントの斜体の状態を表します。
+    name: getItalic()
+    fullName: getItalic()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItalic(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartFont#getName:member(1)'
+    summary: 'フォント名 (例: "Calibri")'
+    name: getName()
+    fullName: getName()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartFont#getSize:member(1)'
+    summary: フォントのサイズ (たとえば、11)
+    name: getSize()
+    fullName: getSize()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSize(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartFont#getUnderline:member(1)'
+    summary: フォントに適用する下線の種類。 詳細については、「Excel のグラフ」を参照してください。
+    name: getUnderline()
+    fullName: getUnderline()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getUnderline(): ChartUnderlineStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartUnderlineStyle:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartFont#setBold:member(1)'
+    summary: フォントの太字の状態を表します。
+    name: setBold(bold)
+    fullName: setBold(bold)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setBold(bold: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: bold
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.ChartFont#setColor:member(1)'
+    summary: テキストの色の HTML カラーコード表現 (たとえば、 \# ff0000 はは赤を表します)。
+    name: setColor(color)
+    fullName: setColor(color)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setColor(color: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: color
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.ChartFont#setItalic:member(1)'
+    summary: フォントの斜体の状態を表します。
+    name: setItalic(italic)
+    fullName: setItalic(italic)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setItalic(italic: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: italic
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.ChartFont#setName:member(1)'
+    summary: 'フォント名 (例: "Calibri")'
+    name: setName(name)
+    fullName: setName(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setName(name: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.ChartFont#setSize:member(1)'
+    summary: フォントのサイズ (たとえば、11)
+    name: setSize(size)
+    fullName: setSize(size)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setSize(size: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: size
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.ChartFont#setUnderline:member(1)'
+    summary: フォントに適用する下線の種類。 詳細については、「Excel のグラフ」を参照してください。
+    name: setUnderline(underline)
+    fullName: setUnderline(underline)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setUnderline(underline: ChartUnderlineStyle): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: underline
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ChartUnderlineStyle:enum'
+references:
+  - uid: 'ExcelScript!ExcelScript.ChartUnderlineStyle:enum'
+    name: ChartUnderlineStyle
+    fullName: ExcelScript.ChartUnderlineStyle

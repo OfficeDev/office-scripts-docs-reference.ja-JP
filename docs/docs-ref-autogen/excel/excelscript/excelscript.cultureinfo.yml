@@ -1,0 +1,43 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.CultureInfo:interface'
+    summary: 現在のシステムのカルチャ設定に基づく情報を提供します。 これには、カルチャ名、数値形式、およびその他のカルチャに依存する設定が含まれます。
+    name: ExcelScript.CultureInfo
+    fullName: ExcelScript.CultureInfo
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.CultureInfo#getName:member(1)'
+      - 'ExcelScript!ExcelScript.CultureInfo#getNumberFormat:member(1)'
+  - uid: 'ExcelScript!ExcelScript.CultureInfo#getName:member(1)'
+    summary: 'カルチャ名を languagecode2-country/regioncode2 の形式で取得します (例: "zh-cn-cn" または "en-us")。 これは、現在のシステム設定に基づいています。'
+    name: getName()
+    fullName: getName()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.CultureInfo#getNumberFormat:member(1)'
+    summary: 数字を表示するためのカルチャに適した形式を定義します。 これは、現在のシステムのカルチャ設定に基づいています。
+    name: getNumberFormat()
+    fullName: getNumberFormat()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNumberFormat(): NumberFormatInfo;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.NumberFormatInfo:interface'
+        description: ''
+references:
+  - uid: 'ExcelScript!ExcelScript.NumberFormatInfo:interface'
+    name: NumberFormatInfo
+    fullName: ExcelScript.NumberFormatInfo

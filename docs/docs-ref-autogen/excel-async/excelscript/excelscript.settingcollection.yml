@@ -1,0 +1,121 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.SettingCollection:interface'
+    summary: ブックの一部であるキーと値のペア設定オブジェクトのコレクションを表します。 範囲は、ファイルとアドイン (タスクペインまたはコンテンツ) の組み合わせに制限されます。
+    name: Excel.SettingCollection
+    fullName: Excel.SettingCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.SettingCollection#add:member(1)'
+      - 'excel!Excel.SettingCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.SettingCollection#load:member(1)'
+  - uid: 'excel!Excel.SettingCollection#add:member(1)'
+    summary: 指定した設定をブックに設定または追加します。
+    name: 'add(key, value)'
+    fullName: 'add(key, value)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        add(
+                    key: string,
+                    value: string | number | boolean | Date | Array<any> | any
+                ): Setting;
+      return:
+        type:
+          - 'excel!Excel.Setting:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: 新しい設定のキーです。
+          type:
+            - string
+        - id: value
+          description: 新しい設定の値です。
+          type:
+            - 'excel!Excel.SettingCollection#add~0:complex'
+  - uid: 'excel!Excel.SettingCollection#getItemOrNullObject:member(1)'
+    summary: キーから Setting エントリを取得します。 Setting が存在しない場合は null オブジェクトを返します。
+    name: getItemOrNullObject(key)
+    fullName: getItemOrNullObject(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(key: string): Setting;'
+      return:
+        type:
+          - 'excel!Excel.Setting:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let settings = context.workbook.settings;
+              let needsReview = settings.getItem("NeedsReview");
+              needsReview.delete();
+              needsReview = settings.getItemOrNullObject("NeedsReview");
+
+              await context.sync();
+
+              if (needsReview.isNullObject) {
+                  console.log("The setting has been deleted");
+              } else {
+                  console.log("The setting was not deleted");
+              }
+
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: key
+          description: 設定のキーです。
+          type:
+            - string
+  - uid: 'excel!Excel.SettingCollection#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.Setting:interface'
+    name: Setting
+    fullName: Excel.Setting
+  - uid: 'excel!Excel.SettingCollection#add~0:complex'
+    name: string | number | boolean | Date | Array<any> | any
+    fullName: string | number | boolean | Date | Array<any> | any
+    spec.typeScript:
+      - name: 'string | number | boolean | '
+        fullName: 'string | number | boolean | '
+      - uid: '!Date:interface'
+        name: Date
+        fullName: Date
+      - name: ' | '
+        fullName: ' | '
+      - uid: '!Array:interface'
+        name: Array
+        fullName: Array
+      - name: |-
+          <any> | any
+                  
+        fullName: |-
+          <any> | any
