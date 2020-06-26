@@ -1,0 +1,41 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ConditionalTextComparisonRule:interface'
+    summary: セル値の条件付き書式ルールを表します。
+    name: ExcelScript.ConditionalTextComparisonRule
+    fullName: ExcelScript.ConditionalTextComparisonRule
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ConditionalTextComparisonRule#operator:member'
+      - 'ExcelScript!ExcelScript.ConditionalTextComparisonRule#text:member'
+  - uid: 'ExcelScript!ExcelScript.ConditionalTextComparisonRule#operator:member'
+    summary: テキスト条件付き書式の演算子を指定します。
+    name: operator
+    fullName: operator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'operator: ConditionalTextOperator;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ConditionalTextOperator:enum'
+  - uid: 'ExcelScript!ExcelScript.ConditionalTextComparisonRule#text:member'
+    summary: 条件付き書式のテキスト値。
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'text: string;'
+      return:
+        type:
+          - string
+references:
+  - uid: 'ExcelScript!ExcelScript.ConditionalTextOperator:enum'
+    name: ConditionalTextOperator
+    fullName: ExcelScript.ConditionalTextOperator

@@ -1,0 +1,67 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert:interface'
+    summary: データの入力規則のエラー通知のプロパティを表します。
+    name: ExcelScript.DataValidationErrorAlert
+    fullName: ExcelScript.DataValidationErrorAlert
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.DataValidationErrorAlert#message:member'
+      - 'ExcelScript!ExcelScript.DataValidationErrorAlert#showAlert:member'
+      - 'ExcelScript!ExcelScript.DataValidationErrorAlert#style:member'
+      - 'ExcelScript!ExcelScript.DataValidationErrorAlert#title:member'
+  - uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#message:member'
+    summary: エラー警告メッセージを表します。
+    name: message
+    fullName: message
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'message: string;'
+      return:
+        type:
+          - string
+  - uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#showAlert:member'
+    summary: ユーザーが無効なデータを入力したときにエラー通知ダイアログを表示するかどうかを指定します。 既定値は true です。
+    name: showAlert
+    fullName: showAlert
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showAlert: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#style:member'
+    summary: データの入力規則の警告の種類。詳細については、「Excel. DataValidationAlertStyle」を参照してください。
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style: DataValidationAlertStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.DataValidationAlertStyle:enum'
+  - uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#title:member'
+    summary: エラー警告ダイアログのタイトルを表します。
+    name: title
+    fullName: title
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'title: string;'
+      return:
+        type:
+          - string
+references:
+  - uid: 'ExcelScript!ExcelScript.DataValidationAlertStyle:enum'
+    name: DataValidationAlertStyle
+    fullName: ExcelScript.DataValidationAlertStyle

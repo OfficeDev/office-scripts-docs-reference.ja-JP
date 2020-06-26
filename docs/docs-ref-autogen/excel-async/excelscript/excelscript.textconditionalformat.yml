@@ -1,0 +1,97 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.TextConditionalFormat:interface'
+    summary: 特定のテキスト条件付き書式を表します。
+    name: Excel.TextConditionalFormat
+    fullName: Excel.TextConditionalFormat
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.TextConditionalFormat#format:member'
+      - 'excel!Excel.TextConditionalFormat#load:member(1)'
+      - 'excel!Excel.TextConditionalFormat#rule:member'
+  - uid: 'excel!Excel.TextConditionalFormat#format:member'
+    summary: 書式設定オブジェクトを返し、条件付き書式のフォント、塗りつぶし、罫線などのプロパティをカプセル化します。
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: ConditionalRangeFormat;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeFormat:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Sample");
+              let range = sheet.getRange("B16:D18");
+              let conditionalFormat = range.conditionalFormats
+                  .add(Excel.ConditionalFormatType.containsText);
+              conditionalFormat.textComparison.format.font.color = "red";
+              conditionalFormat.textComparison.rule = { operator: Excel.ConditionalTextOperator.contains, text: "Delayed" };
+
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.TextConditionalFormat#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.TextConditionalFormat#rule:member'
+    summary: 条件付き書式のルール。
+    name: rule
+    fullName: rule
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rule: ConditionalTextComparisonRule;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalTextComparisonRule:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Sample");
+              let range = sheet.getRange("B16:D18");
+              let conditionalFormat = range.conditionalFormats
+                  .add(Excel.ConditionalFormatType.containsText);
+              conditionalFormat.textComparison.format.font.color = "red";
+              conditionalFormat.textComparison.rule = { operator: Excel.ConditionalTextOperator.contains, text: "Delayed" };
+
+              await context.sync();
+          }
+          ```
+references:
+  - uid: 'excel!Excel.ConditionalRangeFormat:interface'
+    name: ConditionalRangeFormat
+    fullName: Excel.ConditionalRangeFormat
+  - uid: 'excel!Excel.ConditionalTextComparisonRule:interface'
+    name: ConditionalTextComparisonRule
+    fullName: Excel.ConditionalTextComparisonRule

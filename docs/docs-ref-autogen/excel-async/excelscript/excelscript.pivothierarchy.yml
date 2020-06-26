@@ -1,0 +1,73 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.PivotHierarchy:interface'
+    summary: Excel の PivotHierarchy を表します。
+    name: Excel.PivotHierarchy
+    fullName: Excel.PivotHierarchy
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.PivotHierarchy#fields:member'
+      - 'excel!Excel.PivotHierarchy#id:member'
+      - 'excel!Excel.PivotHierarchy#load:member(1)'
+      - 'excel!Excel.PivotHierarchy#name:member'
+  - uid: 'excel!Excel.PivotHierarchy#fields:member'
+    summary: PivotHierarchy に関連付けられているピボット フィールドを返します。
+    name: fields
+    fullName: fields
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly fields: PivotFieldCollection;'
+      return:
+        type:
+          - 'excel!Excel.PivotFieldCollection:interface'
+  - uid: 'excel!Excel.PivotHierarchy#id:member'
+    summary: PivotHierarchy の ID。
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.PivotHierarchy#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.PivotHierarchy#name:member'
+    summary: PivotHierarchy の名前。
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+references:
+  - uid: 'excel!Excel.PivotFieldCollection:interface'
+    name: PivotFieldCollection
+    fullName: Excel.PivotFieldCollection

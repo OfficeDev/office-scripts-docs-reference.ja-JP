@@ -1,0 +1,139 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation:enum'
+    summary: ShowAs は、データピボットフィールドの計算関数です。
+    name: ExcelScript.ShowAsCalculation
+    fullName: ExcelScript.ShowAsCalculation
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ShowAsCalculation.differenceFrom:member'
+      - 'ExcelScript!ExcelScript.ShowAsCalculation.index:member'
+      - 'ExcelScript!ExcelScript.ShowAsCalculation.none:member'
+      - 'ExcelScript!ExcelScript.ShowAsCalculation.percentDifferenceFrom:member'
+      - 'ExcelScript!ExcelScript.ShowAsCalculation.percentOf:member'
+      - 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfColumnTotal:member'
+      - 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfGrandTotal:member'
+      - 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentColumnTotal:member'
+      - 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentRowTotal:member'
+      - 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentTotal:member'
+      - 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfRowTotal:member'
+      - 'ExcelScript!ExcelScript.ShowAsCalculation.percentRunningTotal:member'
+      - 'ExcelScript!ExcelScript.ShowAsCalculation.rankAscending:member'
+      - 'ExcelScript!ExcelScript.ShowAsCalculation.rankDecending:member'
+      - 'ExcelScript!ExcelScript.ShowAsCalculation.runningTotal:member'
+      - 'ExcelScript!ExcelScript.ShowAsCalculation.unknown:member'
+  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.differenceFrom:member'
+    summary: 指定された基本フィールドと基本アイテムとの違い。
+    name: differenceFrom
+    fullName: differenceFrom
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.index:member'
+    summary: 値を次のように計算します。 ((セルの値) x (総計) x (総計) x (総列合計))
+    name: index
+    fullName: index
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.none:member'
+    summary: 計算は適用されません。
+    name: none
+    fullName: none
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentDifferenceFrom:member'
+    summary: 指定された基本フィールドと基本アイテムとの違い。
+    name: percentDifferenceFrom
+    fullName: percentDifferenceFrom
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOf:member'
+    summary: 指定した基準フィールドおよび基準アイテムのパーセント。
+    name: percentOf
+    fullName: percentOf
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfColumnTotal:member'
+    summary: 列合計のパーセント。
+    name: percentOfColumnTotal
+    fullName: percentOfColumnTotal
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfGrandTotal:member'
+    summary: 総計のパーセント。
+    name: percentOfGrandTotal
+    fullName: percentOfGrandTotal
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentColumnTotal:member'
+    summary: 指定した基準フィールドの列合計のパーセント。
+    name: percentOfParentColumnTotal
+    fullName: percentOfParentColumnTotal
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentRowTotal:member'
+    summary: 指定された基準フィールドの行合計のパーセント。
+    name: percentOfParentRowTotal
+    fullName: percentOfParentRowTotal
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentTotal:member'
+    summary: 指定した基準フィールドの総計のパーセント。
+    name: percentOfParentTotal
+    fullName: percentOfParentTotal
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfRowTotal:member'
+    summary: 行合計のパーセント。
+    name: percentOfRowTotal
+    fullName: percentOfRowTotal
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentRunningTotal:member'
+    summary: 指定した基準フィールドの合計の実行率。
+    name: percentRunningTotal
+    fullName: percentRunningTotal
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.rankAscending:member'
+    summary: 指定した基本フィールドの昇順のランク。
+    name: rankAscending
+    fullName: rankAscending
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.rankDecending:member'
+    summary: 指定した基準フィールドの降順のランク。
+    name: rankDecending
+    fullName: rankDecending
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.runningTotal:member'
+    summary: 指定した基準フィールドの合計を実行します。
+    name: runningTotal
+    fullName: runningTotal
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.unknown:member'
+    summary: 計算が不明であるか、サポートされていません。
+    name: unknown
+    fullName: unknown
+    langs:
+      - typeScript
+    type: field

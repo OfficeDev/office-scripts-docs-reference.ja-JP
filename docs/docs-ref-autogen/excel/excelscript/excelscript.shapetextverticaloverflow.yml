@@ -1,0 +1,35 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow:enum'
+    summary: 図形内のレイアウト枠の垂直オーバーフローを指定します。
+    name: ExcelScript.ShapeTextVerticalOverflow
+    fullName: ExcelScript.ShapeTextVerticalOverflow
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.clip:member'
+      - 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.ellipsis:member'
+      - 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.overflow:member'
+  - uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.clip:member'
+    summary: 垂直方向のレイアウト枠内に収まらないテキストを非表示にします。
+    name: clip
+    fullName: clip
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.ellipsis:member'
+    summary: 垂直方向のレイアウト枠内に収まらないテキストを非表示にし、表示されるテキストの終わりに省略記号 (...) を追加します。
+    name: ellipsis
+    fullName: ellipsis
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.overflow:member'
+    summary: テキストはレイアウト枠を垂直方向にはみ出すことができます (テキストの配置によって、上、下、または両方からはみ出します)。
+    name: overflow
+    fullName: overflow
+    langs:
+      - typeScript
+    type: field

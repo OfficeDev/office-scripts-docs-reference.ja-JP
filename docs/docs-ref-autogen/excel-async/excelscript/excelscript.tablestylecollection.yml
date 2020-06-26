@@ -1,0 +1,118 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.TableStyleCollection:interface'
+    summary: TableStyles のコレクションを表します。
+    name: Excel.TableStyleCollection
+    fullName: Excel.TableStyleCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.TableStyleCollection#add:member(1)'
+      - 'excel!Excel.TableStyleCollection#getDefault:member(1)'
+      - 'excel!Excel.TableStyleCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.TableStyleCollection#load:member(1)'
+      - 'excel!Excel.TableStyleCollection#setDefault:member(1)'
+  - uid: 'excel!Excel.TableStyleCollection#add:member(1)'
+    summary: 指定された名前で空の TableStyle を作成します。
+    name: 'add(name, makeUniqueName)'
+    fullName: 'add(name, makeUniqueName)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(name: string, makeUniqueName?: boolean): TableStyle;'
+      return:
+        type:
+          - 'excel!Excel.TableStyle:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: 新しい TableStyle の一意の名前。 名前が既に使用されている場合は、無効な引数の例外がスローされます。
+          type:
+            - string
+        - id: makeUniqueName
+          description: 省略可能。既定値は false です。 場合は true を指定すると、必要に応じて、一意の番号を付けることができます。
+          type:
+            - boolean
+  - uid: 'excel!Excel.TableStyleCollection#getDefault:member(1)'
+    summary: 親オブジェクトのスコープに対する既定の TableStyle を取得します。
+    name: getDefault()
+    fullName: getDefault()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDefault(): TableStyle;'
+      return:
+        type:
+          - 'excel!Excel.TableStyle:interface'
+        description: ''
+  - uid: 'excel!Excel.TableStyleCollection#getItemOrNullObject:member(1)'
+    summary: 名前で TableStyle を取得します。 TableStyle が存在しない場合は、null オブジェクトを返します。
+    name: getItemOrNullObject(name)
+    fullName: getItemOrNullObject(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(name: string): TableStyle;'
+      return:
+        type:
+          - 'excel!Excel.TableStyle:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: 取得する TableStyle の名前。
+          type:
+            - string
+  - uid: 'excel!Excel.TableStyleCollection#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.TableStyleCollection#setDefault:member(1)'
+    summary: 親オブジェクトのスコープで使用する既定の TableStyle を設定します。
+    name: setDefault(newDefaultStyle)
+    fullName: setDefault(newDefaultStyle)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setDefault(newDefaultStyle: TableStyle | string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: newDefaultStyle
+          description: 新しい既定値にする必要がある、TableStyle オブジェクトの TableStyle オブジェクトまたは名前。
+          type:
+            - 'excel!Excel.TableStyleCollection#setDefault~0:complex'
+references:
+  - uid: 'excel!Excel.TableStyle:interface'
+    name: TableStyle
+    fullName: Excel.TableStyle
+  - uid: 'excel!Excel.TableStyleCollection#setDefault~0:complex'
+    name: TableStyle | string
+    fullName: Excel.TableStyle | string
+    spec.typeScript:
+      - uid: 'excel!Excel.TableStyle:interface'
+        name: TableStyle
+        fullName: Excel.TableStyle
+      - name: ' | string'
+        fullName: ' | string'

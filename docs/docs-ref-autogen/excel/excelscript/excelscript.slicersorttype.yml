@@ -1,0 +1,35 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.SlicerSortType:enum'
+    summary: スライサーの sortBy API の並べ替え動作を指定します。
+    name: ExcelScript.SlicerSortType
+    fullName: ExcelScript.SlicerSortType
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.SlicerSortType.ascending:member'
+      - 'ExcelScript!ExcelScript.SlicerSortType.dataSourceOrder:member'
+      - 'ExcelScript!ExcelScript.SlicerSortType.descending:member'
+  - uid: 'ExcelScript!ExcelScript.SlicerSortType.ascending:member'
+    summary: アイテムキャプションの昇順でスライサーアイテムを並べ替えます。
+    name: ascending
+    fullName: ascending
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SlicerSortType.dataSourceOrder:member'
+    summary: データソースによって提供される順序でスライサーアイテムを並べ替えます。
+    name: dataSourceOrder
+    fullName: dataSourceOrder
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SlicerSortType.descending:member'
+    summary: アイテムキャプションを基準にして、スライサーアイテムを降順に並べ替えます。
+    name: descending
+    fullName: descending
+    langs:
+      - typeScript
+    type: field

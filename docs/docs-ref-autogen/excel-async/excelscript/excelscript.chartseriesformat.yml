@@ -1,0 +1,63 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartSeriesFormat:interface'
+    summary: グラフ系列の書式設定プロパティをカプセル化します。
+    name: Excel.ChartSeriesFormat
+    fullName: Excel.ChartSeriesFormat
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartSeriesFormat#fill:member'
+      - 'excel!Excel.ChartSeriesFormat#line:member'
+      - 'excel!Excel.ChartSeriesFormat#load:member(1)'
+  - uid: 'excel!Excel.ChartSeriesFormat#fill:member'
+    summary: 背景の書式設定情報を含むグラフ系列の塗りつぶしの書式を表します。
+    name: fill
+    fullName: fill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly fill: ChartFill;'
+      return:
+        type:
+          - 'excel!Excel.ChartFill:interface'
+  - uid: 'excel!Excel.ChartSeriesFormat#line:member'
+    summary: 線の書式設定を表します。
+    name: line
+    fullName: line
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly line: ChartLineFormat;'
+      return:
+        type:
+          - 'excel!Excel.ChartLineFormat:interface'
+  - uid: 'excel!Excel.ChartSeriesFormat#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.ChartFill:interface'
+    name: ChartFill
+    fullName: Excel.ChartFill
+  - uid: 'excel!Excel.ChartLineFormat:interface'
+    name: ChartLineFormat
+    fullName: Excel.ChartLineFormat

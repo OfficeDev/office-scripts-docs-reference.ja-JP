@@ -1,0 +1,32 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartParentLabelStrategy:enum'
+    summary: グラフ系列のレイアウトの親ラベル戦略を表します。 これは、ツリーマップグラフにのみ適用されます。
+    name: ExcelScript.ChartParentLabelStrategy
+    fullName: ExcelScript.ChartParentLabelStrategy
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartParentLabelStrategy.banner:member'
+      - 'ExcelScript!ExcelScript.ChartParentLabelStrategy.none:member'
+      - 'ExcelScript!ExcelScript.ChartParentLabelStrategy.overlapping:member'
+  - uid: 'ExcelScript!ExcelScript.ChartParentLabelStrategy.banner:member'
+    name: banner
+    fullName: banner
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartParentLabelStrategy.none:member'
+    name: none
+    fullName: none
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartParentLabelStrategy.overlapping:member'
+    name: overlapping
+    fullName: overlapping
+    langs:
+      - typeScript
+    type: field

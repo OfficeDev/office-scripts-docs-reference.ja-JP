@@ -1,0 +1,118 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.TimelineStyleCollection:interface'
+    summary: TimelineStyles のコレクションを表します。
+    name: Excel.TimelineStyleCollection
+    fullName: Excel.TimelineStyleCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.TimelineStyleCollection#add:member(1)'
+      - 'excel!Excel.TimelineStyleCollection#getDefault:member(1)'
+      - 'excel!Excel.TimelineStyleCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.TimelineStyleCollection#load:member(1)'
+      - 'excel!Excel.TimelineStyleCollection#setDefault:member(1)'
+  - uid: 'excel!Excel.TimelineStyleCollection#add:member(1)'
+    summary: 指定された名前で空の TimelineStyle を作成します。
+    name: 'add(name, makeUniqueName)'
+    fullName: 'add(name, makeUniqueName)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(name: string, makeUniqueName?: boolean): TimelineStyle;'
+      return:
+        type:
+          - 'excel!Excel.TimelineStyle:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: 新しい TimelineStyle の一意の名前。 名前が既に使用されている場合は、無効な引数の例外がスローされます。
+          type:
+            - string
+        - id: makeUniqueName
+          description: 省略可能。既定値は false です。 場合は true を指定すると、必要に応じて、一意の番号を付けることができます。
+          type:
+            - boolean
+  - uid: 'excel!Excel.TimelineStyleCollection#getDefault:member(1)'
+    summary: 親オブジェクトのスコープに対する既定の TimelineStyle を取得します。
+    name: getDefault()
+    fullName: getDefault()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDefault(): TimelineStyle;'
+      return:
+        type:
+          - 'excel!Excel.TimelineStyle:interface'
+        description: ''
+  - uid: 'excel!Excel.TimelineStyleCollection#getItemOrNullObject:member(1)'
+    summary: 名前で TimelineStyle を取得します。 TimelineStyle が存在しない場合は、null オブジェクトを返します。
+    name: getItemOrNullObject(name)
+    fullName: getItemOrNullObject(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(name: string): TimelineStyle;'
+      return:
+        type:
+          - 'excel!Excel.TimelineStyle:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: 取得する TimelineStyle の名前。
+          type:
+            - string
+  - uid: 'excel!Excel.TimelineStyleCollection#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.TimelineStyleCollection#setDefault:member(1)'
+    summary: 親オブジェクトのスコープで使用する既定の TimelineStyle を設定します。
+    name: setDefault(newDefaultStyle)
+    fullName: setDefault(newDefaultStyle)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setDefault(newDefaultStyle: TimelineStyle | string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: newDefaultStyle
+          description: 新しい既定値にする必要がある、TimelineStyle オブジェクトの TimelineStyle オブジェクトまたは名前。
+          type:
+            - 'excel!Excel.TimelineStyleCollection#setDefault~0:complex'
+references:
+  - uid: 'excel!Excel.TimelineStyle:interface'
+    name: TimelineStyle
+    fullName: Excel.TimelineStyle
+  - uid: 'excel!Excel.TimelineStyleCollection#setDefault~0:complex'
+    name: TimelineStyle | string
+    fullName: Excel.TimelineStyle | string
+    spec.typeScript:
+      - uid: 'excel!Excel.TimelineStyle:interface'
+        name: TimelineStyle
+        fullName: Excel.TimelineStyle
+      - name: ' | string'
+        fullName: ' | string'

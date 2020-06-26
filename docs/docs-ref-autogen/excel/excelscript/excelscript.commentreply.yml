@@ -1,0 +1,224 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.CommentReply:interface'
+    summary: ブック内のコメントの返信を表します。
+    name: ExcelScript.CommentReply
+    fullName: ExcelScript.CommentReply
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.CommentReply#delete:member(1)'
+      - 'ExcelScript!ExcelScript.CommentReply#getAuthorEmail:member(1)'
+      - 'ExcelScript!ExcelScript.CommentReply#getAuthorName:member(1)'
+      - 'ExcelScript!ExcelScript.CommentReply#getContent:member(1)'
+      - 'ExcelScript!ExcelScript.CommentReply#getCreationDate:member(1)'
+      - 'ExcelScript!ExcelScript.CommentReply#getId:member(1)'
+      - 'ExcelScript!ExcelScript.CommentReply#getLocation:member(1)'
+      - 'ExcelScript!ExcelScript.CommentReply#getMentions:member(1)'
+      - 'ExcelScript!ExcelScript.CommentReply#getParentComment:member(1)'
+      - 'ExcelScript!ExcelScript.CommentReply#getResolved:member(1)'
+      - 'ExcelScript!ExcelScript.CommentReply#getRichContent:member(1)'
+      - 'ExcelScript!ExcelScript.CommentReply#setContent:member(1)'
+      - 'ExcelScript!ExcelScript.CommentReply#updateMentions:member(1)'
+  - uid: 'ExcelScript!ExcelScript.CommentReply#delete:member(1)'
+    summary: コメント返信を削除します。
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.CommentReply#getAuthorEmail:member(1)'
+    summary: コメント返信作成者のメール アドレスを取得します。
+    name: getAuthorEmail()
+    fullName: getAuthorEmail()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAuthorEmail(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.CommentReply#getAuthorName:member(1)'
+    summary: コメント返信作成者の名前を取得します。
+    name: getAuthorName()
+    fullName: getAuthorName()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAuthorName(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.CommentReply#getContent:member(1)'
+    summary: コメントの返信のコンテンツ。 文字列はテキスト形式です。
+    name: getContent()
+    fullName: getContent()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getContent(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.CommentReply#getCreationDate:member(1)'
+    summary: コメント返信の作成日時を取得します。
+    name: getCreationDate()
+    fullName: getCreationDate()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCreationDate(): Date;'
+      return:
+        type:
+          - '!Date:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.CommentReply#getId:member(1)'
+    summary: コメントの返信識別子を指定します。
+    name: getId()
+    fullName: getId()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getId(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.CommentReply#getLocation:member(1)'
+    summary: このコメントの返信があるセルを取得します。
+    name: getLocation()
+    fullName: getLocation()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLocation(): Range;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Range:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.CommentReply#getMentions:member(1)'
+    summary: コメントに記載されているエンティティ (ユーザーなど)。
+    name: getMentions()
+    fullName: getMentions()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getMentions(): CommentMention[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.CommentReply#getMentions~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.CommentReply#getParentComment:member(1)'
+    summary: この返信の親コメントを取得します。
+    name: getParentComment()
+    fullName: getParentComment()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getParentComment(): Comment;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Comment:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.CommentReply#getResolved:member(1)'
+    summary: コメントの返信状態。 値 "true" は、応答が解決された状態であることを意味します。
+    name: getResolved()
+    fullName: getResolved()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getResolved(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.CommentReply#getRichContent:member(1)'
+    summary: リッチコメントの内容 (コメント内のメンションなど)。 この文字列は、エンドユーザーに表示されることを意図したものではありません。 アドインでは、リッチコメントコンテンツを解析するためにのみ使用する必要があります。
+    name: getRichContent()
+    fullName: getRichContent()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRichContent(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.CommentReply#setContent:member(1)'
+    summary: コメントの返信のコンテンツ。 文字列はテキスト形式です。
+    name: setContent(content)
+    fullName: setContent(content)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setContent(content: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: content
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.CommentReply#updateMentions:member(1)'
+    summary: 特別に書式設定された文字列とメンションの一覧を使用して、コメントの内容を更新します。
+    name: updateMentions(contentWithMentions)
+    fullName: updateMentions(contentWithMentions)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'updateMentions(contentWithMentions: CommentRichContent): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: contentWithMentions
+          description: コメントの内容を示します。 これには、特別に書式設定された文字列と、Excel で表示されるときに文字列に解析されるメンションの一覧が含まれています。
+          type:
+            - 'ExcelScript!ExcelScript.CommentRichContent:interface'
+references:
+  - uid: '!Date:interface'
+    name: Date
+  - uid: 'ExcelScript!ExcelScript.Range:interface'
+    name: Range
+    fullName: ExcelScript.Range
+  - uid: 'ExcelScript!ExcelScript.CommentReply#getMentions~0:complex'
+    name: 'CommentMention[]'
+    fullName: 'ExcelScript.CommentMention[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.CommentMention:interface'
+        name: CommentMention
+        fullName: ExcelScript.CommentMention
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.Comment:interface'
+    name: Comment
+    fullName: ExcelScript.Comment
+  - uid: 'ExcelScript!ExcelScript.CommentRichContent:interface'
+    name: CommentRichContent
+    fullName: ExcelScript.CommentRichContent

@@ -1,0 +1,168 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.TableSort:interface'
+    summary: Table オブジェクトの並べ替え操作を管理します。
+    name: Excel.TableSort
+    fullName: Excel.TableSort
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.TableSort#apply:member(1)'
+      - 'excel!Excel.TableSort#clear:member(1)'
+      - 'excel!Excel.TableSort#fields:member'
+      - 'excel!Excel.TableSort#load:member(1)'
+      - 'excel!Excel.TableSort#matchCase:member'
+      - 'excel!Excel.TableSort#method:member'
+      - 'excel!Excel.TableSort#reapply:member(1)'
+  - uid: 'excel!Excel.TableSort#apply:member(1)'
+    summary: 並べ替え操作を実行します。
+    name: 'apply(fields, matchCase, method)'
+    fullName: 'apply(fields, matchCase, method)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        apply(
+                    fields: SortField[],
+                    matchCase?: boolean,
+                    method?: SortMethod
+                ): void;
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>例
+
+          ```javascript
+          // Get the current worksheet.
+          let workbook = context.workbook;
+          let worksheets = workbook.worksheets;
+          let selectedSheet = worksheets.getActiveWorksheet();
+
+          // Create a table with the used cells.
+          let usedRange = selectedSheet.getUsedRange();
+          let newTable = selectedSheet.tables.add(usedRange, true);
+
+          // Sort the table using the first column.
+          newTable.sort.apply([{ key: 0, ascending: true }]);
+          ```
+      parameters:
+        - id: fields
+          description: 並べ替えに使用する条件の一覧。
+          type:
+            - 'excel!Excel.TableSort#apply~0:complex'
+        - id: matchCase
+          description: 省略可能。 大文字小文字の区別が文字列の順序に影響を与えるかどうか。
+          type:
+            - boolean
+        - id: method
+          description: 省略可能。 中国語文字に使用される順序付けの方法です。
+          type:
+            - 'excel!Excel.SortMethod:enum'
+  - uid: 'excel!Excel.TableSort#clear:member(1)'
+    summary: 'Clears the sorting that is currently on the table. While this doesn''t modify the table''s ordering, it clears the state of the header buttons.'
+    name: clear()
+    fullName: clear()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.TableSort#fields:member'
+    summary: テーブルの最後の並べ替えに使用する現在の条件を指定します。
+    name: fields
+    fullName: fields
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly fields: SortField[];'
+      return:
+        type:
+          - 'excel!Excel.TableSort#fields~0:complex'
+  - uid: 'excel!Excel.TableSort#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.TableSort#matchCase:member'
+    summary: 大文字と小文字の区別が表の最後の並べ替えに影響するかどうかを指定します。
+    name: matchCase
+    fullName: matchCase
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly matchCase: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.TableSort#method:member'
+    summary: テーブルの並べ替えで最後に使用した中国語文字の順序付け方法を表します。
+    name: method
+    fullName: method
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly method: SortMethod;'
+      return:
+        type:
+          - 'excel!Excel.SortMethod:enum'
+  - uid: 'excel!Excel.TableSort#reapply:member(1)'
+    summary: テーブルに、現在の並べ替えパラメーターを再適用します。
+    name: reapply()
+    fullName: reapply()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'reapply(): void;'
+      return:
+        type:
+          - void
+        description: ''
+references:
+  - uid: 'excel!Excel.TableSort#apply~0:complex'
+    name: 'SortField[]'
+    fullName: 'Excel.SortField[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.SortField:interface'
+        name: SortField
+        fullName: Excel.SortField
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.SortMethod:enum'
+    name: SortMethod
+    fullName: Excel.SortMethod
+  - uid: 'excel!Excel.TableSort#fields~0:complex'
+    name: 'SortField[]'
+    fullName: 'Excel.SortField[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.SortField:interface'
+        name: SortField
+        fullName: Excel.SortField
+      - name: '[]'
+        fullName: '[]'

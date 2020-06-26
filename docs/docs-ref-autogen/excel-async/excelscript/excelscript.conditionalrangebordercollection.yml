@@ -1,0 +1,108 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection:interface'
+    summary: 範囲の境界線を構成する複数の境界線オブジェクトを表します。
+    name: Excel.ConditionalRangeBorderCollection
+    fullName: Excel.ConditionalRangeBorderCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ConditionalRangeBorderCollection#bottom:member'
+      - 'excel!Excel.ConditionalRangeBorderCollection#getItem:member(1)'
+      - 'excel!Excel.ConditionalRangeBorderCollection#left:member'
+      - 'excel!Excel.ConditionalRangeBorderCollection#load:member(1)'
+      - 'excel!Excel.ConditionalRangeBorderCollection#right:member'
+      - 'excel!Excel.ConditionalRangeBorderCollection#top:member'
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#bottom:member'
+    summary: 下罫線を取得します。
+    name: bottom
+    fullName: bottom
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly bottom: ConditionalRangeBorder;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeBorder:interface'
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#getItem:member(1)'
+    summary: オブジェクトの名前を使用して、境界線オブジェクトを取得します。
+    name: getItem(index)
+    fullName: getItem(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(index: ConditionalRangeBorderIndex): ConditionalRangeBorder;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeBorder:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: 取得する border オブジェクトのインデックス値を指定します。 詳細については、「Excel の ConditionalRangeBorderIndex」を参照してください。
+          type:
+            - 'excel!Excel.ConditionalRangeBorderIndex:enum'
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#left:member'
+    summary: 左罫線を取得します。
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly left: ConditionalRangeBorder;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeBorder:interface'
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#right:member'
+    summary: 右罫線を取得します。
+    name: right
+    fullName: right
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly right: ConditionalRangeBorder;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeBorder:interface'
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#top:member'
+    summary: 上罫線を取得します。
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly top: ConditionalRangeBorder;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeBorder:interface'
+references:
+  - uid: 'excel!Excel.ConditionalRangeBorder:interface'
+    name: ConditionalRangeBorder
+    fullName: Excel.ConditionalRangeBorder
+  - uid: 'excel!Excel.ConditionalRangeBorderIndex:enum'
+    name: ConditionalRangeBorderIndex
+    fullName: Excel.ConditionalRangeBorderIndex

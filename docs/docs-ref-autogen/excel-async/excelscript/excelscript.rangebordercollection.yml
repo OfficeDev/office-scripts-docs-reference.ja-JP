@@ -1,0 +1,69 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.RangeBorderCollection:interface'
+    summary: 範囲の境界線を構成する複数の境界線オブジェクトを表します。
+    name: Excel.RangeBorderCollection
+    fullName: Excel.RangeBorderCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.RangeBorderCollection#getItem:member(1)'
+      - 'excel!Excel.RangeBorderCollection#load:member(1)'
+      - 'excel!Excel.RangeBorderCollection#tintAndShade:member'
+  - uid: 'excel!Excel.RangeBorderCollection#getItem:member(1)'
+    summary: オブジェクトの名前を使用して、境界線オブジェクトを取得します。
+    name: getItem(index)
+    fullName: getItem(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(index: BorderIndex): RangeBorder;'
+      return:
+        type:
+          - 'excel!Excel.RangeBorder:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: 取得する border オブジェクトのインデックス値を指定します。 詳細については、「Excel BorderIndex」を参照してください。
+          type:
+            - 'excel!Excel.BorderIndex:enum'
+  - uid: 'excel!Excel.RangeBorderCollection#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.RangeBorderCollection#tintAndShade:member'
+    summary: 範囲の境界線の色を明るくまたは暗くする double を指定します。値は、-1 (最も暗い) から 1 (最も明るい) までの範囲で、元の色は0になります。 Null 値は、境界のコレクション全体に均一な tintAndShade が設定されていないことを示します。
+    name: tintAndShade
+    fullName: tintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tintAndShade: number;'
+      return:
+        type:
+          - number
+references:
+  - uid: 'excel!Excel.RangeBorder:interface'
+    name: RangeBorder
+    fullName: Excel.RangeBorder
+  - uid: 'excel!Excel.BorderIndex:enum'
+    name: BorderIndex
+    fullName: Excel.BorderIndex

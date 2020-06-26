@@ -1,0 +1,122 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Binding:interface'
+    summary: ブックで定義されている Office.js のバインディングを表します。
+    name: Excel.Binding
+    fullName: Excel.Binding
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Binding#delete:member(1)'
+      - 'excel!Excel.Binding#getRange:member(1)'
+      - 'excel!Excel.Binding#getTable:member(1)'
+      - 'excel!Excel.Binding#getText:member(1)'
+      - 'excel!Excel.Binding#id:member'
+      - 'excel!Excel.Binding#load:member(1)'
+      - 'excel!Excel.Binding#type:member'
+  - uid: 'excel!Excel.Binding#delete:member(1)'
+    summary: バインドを削除します。
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.Binding#getRange:member(1)'
+    summary: バインディングによって表される範囲を返します。 バインドが正しい型ではない場合、エラーがスローされます。
+    name: getRange()
+    fullName: getRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRange(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
+  - uid: 'excel!Excel.Binding#getTable:member(1)'
+    summary: バインドによって表されるテーブルを返します。 バインドが正しい型ではない場合、エラーがスローされます。
+    name: getTable()
+    fullName: getTable()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTable(): Table;'
+      return:
+        type:
+          - 'excel!Excel.Table:interface'
+        description: ''
+  - uid: 'excel!Excel.Binding#getText:member(1)'
+    summary: バインドによって表されるテキストを返します。 バインドが正しい型ではない場合、エラーがスローされます。
+    name: getText()
+    fullName: getText()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getText(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'excel!Excel.Binding#id:member'
+    summary: バインド識別子を表します。
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Binding#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.Binding#type:member'
+    summary: バインドの種類を返します。 詳細については、「Excel. BindingType」を参照してください。
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly type: BindingType;'
+      return:
+        type:
+          - 'excel!Excel.BindingType:enum'
+references:
+  - uid: 'excel!Excel.Range:interface'
+    name: Range
+    fullName: Excel.Range
+  - uid: 'excel!Excel.Table:interface'
+    name: Table
+    fullName: Excel.Table
+  - uid: 'excel!Excel.BindingType:enum'
+    name: BindingType
+    fullName: Excel.BindingType

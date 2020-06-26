@@ -1,0 +1,69 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.IterativeCalculation:interface'
+    summary: 反復計算の設定を表します。
+    name: Excel.IterativeCalculation
+    fullName: Excel.IterativeCalculation
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.IterativeCalculation#enabled:member'
+      - 'excel!Excel.IterativeCalculation#load:member(1)'
+      - 'excel!Excel.IterativeCalculation#maxChange:member'
+      - 'excel!Excel.IterativeCalculation#maxIteration:member'
+  - uid: 'excel!Excel.IterativeCalculation#enabled:member'
+    summary: Excel で反復計算を使用して循環参照を解決する場合、true となります。
+    name: enabled
+    fullName: enabled
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'enabled: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.IterativeCalculation#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.IterativeCalculation#maxChange:member'
+    summary: Excel が循環参照を解決するときの、各反復の最大変更量を指定します。
+    name: maxChange
+    fullName: maxChange
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'maxChange: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.IterativeCalculation#maxIteration:member'
+    summary: Excel で循環参照を解決するために使用できる最大反復回数を指定します。
+    name: maxIteration
+    fullName: maxIteration
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'maxIteration: number;'
+      return:
+        type:
+          - number

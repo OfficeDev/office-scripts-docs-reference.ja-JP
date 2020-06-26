@@ -1,0 +1,88 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ConditionalCellValueRule:interface'
+    summary: セル値の条件付き書式ルールを表します。
+    name: Excel.ConditionalCellValueRule
+    fullName: Excel.ConditionalCellValueRule
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ConditionalCellValueRule#formula1:member'
+      - 'excel!Excel.ConditionalCellValueRule#formula2:member'
+      - 'excel!Excel.ConditionalCellValueRule#operator:member'
+  - uid: 'excel!Excel.ConditionalCellValueRule#formula1:member'
+    summary: 条件付き書式ルールを評価するために必要な場合、数式。
+    name: formula1
+    fullName: formula1
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formula1: string;'
+      return:
+        type:
+          - string
+        description: |-
+
+
+          #### <a name="examples"></a>例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Sample");
+              let range = sheet.getRange("B21:E23");
+              let conditionalFormat = range.conditionalFormats
+                  .add(Excel.ConditionalFormatType.cellValue);
+              conditionalFormat.cellValue.format.font.color = "red";
+              conditionalFormat.cellValue.rule = { formula1: "=0", operator: "LessThan" };
+
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.ConditionalCellValueRule#formula2:member'
+    summary: 条件付き書式ルールを評価するために必要な場合、数式。
+    name: formula2
+    fullName: formula2
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formula2?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ConditionalCellValueRule#operator:member'
+    summary: セル値の条件付き書式の演算子。
+    name: operator
+    fullName: operator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'operator: ConditionalCellValueOperator;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalCellValueOperator:enum'
+        description: |-
+
+
+          #### <a name="examples"></a>例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Sample");
+              let range = sheet.getRange("B21:E23");
+              let conditionalFormat = range.conditionalFormats
+                  .add(Excel.ConditionalFormatType.cellValue);
+              conditionalFormat.cellValue.format.font.color = "red";
+              conditionalFormat.cellValue.rule = { formula1: "=0", operator: "LessThan" };
+
+              await context.sync();
+          }
+          ```
+references:
+  - uid: 'excel!Excel.ConditionalCellValueOperator:enum'
+    name: ConditionalCellValueOperator
+    fullName: Excel.ConditionalCellValueOperator

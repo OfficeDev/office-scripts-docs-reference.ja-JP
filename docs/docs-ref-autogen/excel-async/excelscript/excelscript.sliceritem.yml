@@ -1,0 +1,82 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.SlicerItem:interface'
+    summary: スライサーのスライサーアイテムを表します。
+    name: Excel.SlicerItem
+    fullName: Excel.SlicerItem
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.SlicerItem#hasData:member'
+      - 'excel!Excel.SlicerItem#isSelected:member'
+      - 'excel!Excel.SlicerItem#key:member'
+      - 'excel!Excel.SlicerItem#load:member(1)'
+      - 'excel!Excel.SlicerItem#name:member'
+  - uid: 'excel!Excel.SlicerItem#hasData:member'
+    summary: スライサー アイテムにデータが含まれている場合、true となります。
+    name: hasData
+    fullName: hasData
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly hasData: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.SlicerItem#isSelected:member'
+    summary: スライサー アイテムが選択されている場合、true となります。 この値を設定しても、他の SlicerItems の選択されている状態は消去されません。 既定では、スライサーアイテムが選択されているのが1つだけの場合、選択を解除すると、すべてのアイテムが選択されます。
+    name: isSelected
+    fullName: isSelected
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isSelected: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.SlicerItem#key:member'
+    summary: スライサー アイテムを表す一意の値を表します。
+    name: key
+    fullName: key
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly key: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.SlicerItem#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.SlicerItem#name:member'
+    summary: UI に表示されるタイトルを表します。
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly name: string;'
+      return:
+        type:
+          - string

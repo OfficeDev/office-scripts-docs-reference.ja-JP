@@ -1,0 +1,39 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.NumberFormatInfo:interface'
+    summary: 数字を表示するためのカルチャに適した形式を定義します。 これは、現在のシステムのカルチャ設定に基づいています。
+    name: ExcelScript.NumberFormatInfo
+    fullName: ExcelScript.NumberFormatInfo
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.NumberFormatInfo#getNumberDecimalSeparator:member(1)'
+      - 'ExcelScript!ExcelScript.NumberFormatInfo#getNumberGroupSeparator:member(1)'
+  - uid: 'ExcelScript!ExcelScript.NumberFormatInfo#getNumberDecimalSeparator:member(1)'
+    summary: 数値の小数点の記号として使用される文字列を取得します。 これは、現在のシステム設定に基づいています。
+    name: getNumberDecimalSeparator()
+    fullName: getNumberDecimalSeparator()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNumberDecimalSeparator(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.NumberFormatInfo#getNumberGroupSeparator:member(1)'
+    summary: 数値の小数点の左側にある数字のグループを区切るために使用される文字列を取得します。 これは、現在のシステム設定に基づいています。
+    name: getNumberGroupSeparator()
+    fullName: getNumberGroupSeparator()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNumberGroupSeparator(): string;'
+      return:
+        type:
+          - string
+        description: ''

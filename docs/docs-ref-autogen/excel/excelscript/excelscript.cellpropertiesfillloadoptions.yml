@@ -1,0 +1,76 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFillLoadOptions:interface'
+    summary: オブジェクトに読み込むプロパティを指定し `format.fill` ます。
+    name: ExcelScript.CellPropertiesFillLoadOptions
+    fullName: ExcelScript.CellPropertiesFillLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.CellPropertiesFillLoadOptions#color:member'
+      - 'ExcelScript!ExcelScript.CellPropertiesFillLoadOptions#pattern:member'
+      - 'ExcelScript!ExcelScript.CellPropertiesFillLoadOptions#patternColor:member'
+      - 'ExcelScript!ExcelScript.CellPropertiesFillLoadOptions#patternTintAndShade:member'
+      - 'ExcelScript!ExcelScript.CellPropertiesFillLoadOptions#tintAndShade:member'
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFillLoadOptions#color:member'
+    summary: プロパティを読み込むかどうかを指定し `color` ます。
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFillLoadOptions#pattern:member'
+    summary: プロパティを読み込むかどうかを指定し `pattern` ます。
+    name: pattern
+    fullName: pattern
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'pattern?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFillLoadOptions#patternColor:member'
+    summary: プロパティを読み込むかどうかを指定し `patternColor` ます。
+    name: patternColor
+    fullName: patternColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'patternColor?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFillLoadOptions#patternTintAndShade:member'
+    summary: プロパティを読み込むかどうかを指定し `patternTintAndShade` ます。
+    name: patternTintAndShade
+    fullName: patternTintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'patternTintAndShade?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFillLoadOptions#tintAndShade:member'
+    summary: プロパティを読み込むかどうかを指定し `tintAndShade` ます。
+    name: tintAndShade
+    fullName: tintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tintAndShade?: boolean;'
+      return:
+        type:
+          - boolean

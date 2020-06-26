@@ -1,0 +1,65 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.TextConditionalFormat:interface'
+    summary: 特定のテキスト条件付き書式を表します。
+    name: ExcelScript.TextConditionalFormat
+    fullName: ExcelScript.TextConditionalFormat
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.TextConditionalFormat#getFormat:member(1)'
+      - 'ExcelScript!ExcelScript.TextConditionalFormat#getRule:member(1)'
+      - 'ExcelScript!ExcelScript.TextConditionalFormat#setRule:member(1)'
+  - uid: 'ExcelScript!ExcelScript.TextConditionalFormat#getFormat:member(1)'
+    summary: 書式設定オブジェクトを返し、条件付き書式のフォント、塗りつぶし、罫線などのプロパティをカプセル化します。
+    name: getFormat()
+    fullName: getFormat()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFormat(): ConditionalRangeFormat;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ConditionalRangeFormat:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.TextConditionalFormat#getRule:member(1)'
+    summary: 条件付き書式のルール。
+    name: getRule()
+    fullName: getRule()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRule(): ConditionalTextComparisonRule;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ConditionalTextComparisonRule:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.TextConditionalFormat#setRule:member(1)'
+    summary: 条件付き書式のルール。
+    name: setRule(rule)
+    fullName: setRule(rule)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setRule(rule: ConditionalTextComparisonRule): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: rule
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ConditionalTextComparisonRule:interface'
+references:
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat:interface'
+    name: ConditionalRangeFormat
+    fullName: ExcelScript.ConditionalRangeFormat
+  - uid: 'ExcelScript!ExcelScript.ConditionalTextComparisonRule:interface'
+    name: ConditionalTextComparisonRule
+    fullName: ExcelScript.ConditionalTextComparisonRule

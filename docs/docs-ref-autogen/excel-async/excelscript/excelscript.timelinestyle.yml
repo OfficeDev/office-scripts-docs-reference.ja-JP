@@ -1,0 +1,88 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.TimelineStyle:interface'
+    summary: タイムラインの領域によってスタイル要素を定義するタイムラインスタイルを表します。
+    name: Excel.TimelineStyle
+    fullName: Excel.TimelineStyle
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.TimelineStyle#delete:member(1)'
+      - 'excel!Excel.TimelineStyle#duplicate:member(1)'
+      - 'excel!Excel.TimelineStyle#load:member(1)'
+      - 'excel!Excel.TimelineStyle#name:member'
+      - 'excel!Excel.TimelineStyle#readOnly:member'
+  - uid: 'excel!Excel.TimelineStyle#delete:member(1)'
+    summary: TableStyle を削除します。
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.TimelineStyle#duplicate:member(1)'
+    summary: すべてのスタイル要素のコピーでこの TimelineStyle の複製を作成します。
+    name: duplicate()
+    fullName: duplicate()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'duplicate(): TimelineStyle;'
+      return:
+        type:
+          - 'excel!Excel.TimelineStyle:interface'
+        description: ''
+  - uid: 'excel!Excel.TimelineStyle#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.TimelineStyle#name:member'
+    summary: TimelineStyle の名前を取得します。
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.TimelineStyle#readOnly:member'
+    summary: この TimelineStyle オブジェクトが読み取り専用であるかどうかを指定します。
+    name: readOnly
+    fullName: readOnly
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly readOnly: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.TimelineStyle:interface'
+    name: TimelineStyle
+    fullName: Excel.TimelineStyle

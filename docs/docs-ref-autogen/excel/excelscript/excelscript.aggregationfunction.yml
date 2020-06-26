@@ -1,0 +1,115 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.AggregationFunction:enum'
+    summary: データピボットフィールドの集計関数。
+    name: ExcelScript.AggregationFunction
+    fullName: ExcelScript.AggregationFunction
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.AggregationFunction.automatic:member'
+      - 'ExcelScript!ExcelScript.AggregationFunction.average:member'
+      - 'ExcelScript!ExcelScript.AggregationFunction.count:member'
+      - 'ExcelScript!ExcelScript.AggregationFunction.countNumbers:member'
+      - 'ExcelScript!ExcelScript.AggregationFunction.max:member'
+      - 'ExcelScript!ExcelScript.AggregationFunction.min:member'
+      - 'ExcelScript!ExcelScript.AggregationFunction.product:member'
+      - 'ExcelScript!ExcelScript.AggregationFunction.standardDeviation:member'
+      - 'ExcelScript!ExcelScript.AggregationFunction.standardDeviationP:member'
+      - 'ExcelScript!ExcelScript.AggregationFunction.sum:member'
+      - 'ExcelScript!ExcelScript.AggregationFunction.unknown:member'
+      - 'ExcelScript!ExcelScript.AggregationFunction.variance:member'
+      - 'ExcelScript!ExcelScript.AggregationFunction.varianceP:member'
+  - uid: 'ExcelScript!ExcelScript.AggregationFunction.automatic:member'
+    summary: Excel では、データ項目に基づいて集計が自動的に選択されます。
+    name: automatic
+    fullName: automatic
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.AggregationFunction.average:member'
+    summary: Average 関数に相当する、データの平均値を使用して集計します。
+    name: average
+    fullName: average
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.AggregationFunction.count:member'
+    summary: COUNTA 関数と同等の、データ内のアイテムのカウントを使用して集計します。
+    name: count
+    fullName: count
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.AggregationFunction.countNumbers:member'
+    summary: データ内の数値の個数を使用して集計し、COUNT 関数に相当します。
+    name: countNumbers
+    fullName: countNumbers
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.AggregationFunction.max:member'
+    summary: データの最大値を使用して集計し、MAX 関数に相当します。
+    name: max
+    fullName: max
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.AggregationFunction.min:member'
+    summary: データの最小値を使用して集計します。 MIN 関数に相当します。
+    name: min
+    fullName: min
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.AggregationFunction.product:member'
+    summary: PRODUCT 関数と同等の、データの製品を使用して集計します。
+    name: product
+    fullName: product
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.AggregationFunction.standardDeviation:member'
+    summary: データの標準偏差を使用して集計します。 STDEV 関数に相当します。
+    name: standardDeviation
+    fullName: standardDeviation
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.AggregationFunction.standardDeviationP:member'
+    summary: データの標準偏差を使用して集計します。 STDEVP 関数に相当します。
+    name: standardDeviationP
+    fullName: standardDeviationP
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.AggregationFunction.sum:member'
+    summary: データの合計を使用して集計し、SUM 関数に相当します。
+    name: sum
+    fullName: sum
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.AggregationFunction.unknown:member'
+    summary: 集計関数が不明であるか、サポートされていません。
+    name: unknown
+    fullName: unknown
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.AggregationFunction.variance:member'
+    summary: データの分散を使用して集計し、VAR 関数に相当します。
+    name: variance
+    fullName: variance
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.AggregationFunction.varianceP:member'
+    summary: データの分散を使用して集計し、VARP 関数に相当します。
+    name: varianceP
+    fullName: varianceP
+    langs:
+      - typeScript
+    type: field
