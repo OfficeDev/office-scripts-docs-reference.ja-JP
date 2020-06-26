@@ -1,0 +1,70 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.CellBorder:interface'
+    summary: 'で返される1つの境界線のプロパティを表します。`getCellProperties`<!-- -->, `getRowProperties`<!-- -->、 `getColumnProperties` またはの border プロパティの入力パラメーター`setCellProperties`<!-- -->, `setRowProperties`<!-- -->そして`setColumnProperties`<!-- -->.'
+    name: Excel.CellBorder
+    fullName: Excel.CellBorder
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.CellBorder#color:member'
+      - 'excel!Excel.CellBorder#style:member'
+      - 'excel!Excel.CellBorder#tintAndShade:member'
+      - 'excel!Excel.CellBorder#weight:member'
+  - uid: 'excel!Excel.CellBorder#color:member'
+    summary: 1 つの境界線の `color` プロパティを表します。
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.CellBorder#style:member'
+    summary: 1 つの境界線の `style` プロパティを表します。
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style?: BorderLineStyle;'
+      return:
+        type:
+          - 'excel!Excel.BorderLineStyle:enum'
+  - uid: 'excel!Excel.CellBorder#tintAndShade:member'
+    summary: 1 つの境界線の `tintAndShade` プロパティを表します。
+    name: tintAndShade
+    fullName: tintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tintAndShade?: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.CellBorder#weight:member'
+    summary: 1 つの境界線の `weight` プロパティを表します。
+    name: weight
+    fullName: weight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'weight?: BorderWeight;'
+      return:
+        type:
+          - 'excel!Excel.BorderWeight:enum'
+references:
+  - uid: 'excel!Excel.BorderLineStyle:enum'
+    name: BorderLineStyle
+    fullName: Excel.BorderLineStyle
+  - uid: 'excel!Excel.BorderWeight:enum'
+    name: BorderWeight
+    fullName: Excel.BorderWeight

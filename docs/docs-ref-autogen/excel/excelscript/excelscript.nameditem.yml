@@ -1,0 +1,221 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.NamedItem:interface'
+    summary: セルまたは値の範囲の定義済みの名前を表します。 名前には、プリミティブという名前のオブジェクト、range オブジェクト、または範囲への参照を指定できます。 このオブジェクトを使用して、名前に関連付けられた範囲オブジェクトを取得することができます。
+    name: ExcelScript.NamedItem
+    fullName: ExcelScript.NamedItem
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.NamedItem#delete:member(1)'
+      - 'ExcelScript!ExcelScript.NamedItem#getArrayValues:member(1)'
+      - 'ExcelScript!ExcelScript.NamedItem#getComment:member(1)'
+      - 'ExcelScript!ExcelScript.NamedItem#getFormula:member(1)'
+      - 'ExcelScript!ExcelScript.NamedItem#getName:member(1)'
+      - 'ExcelScript!ExcelScript.NamedItem#getRange:member(1)'
+      - 'ExcelScript!ExcelScript.NamedItem#getScope:member(1)'
+      - 'ExcelScript!ExcelScript.NamedItem#getType:member(1)'
+      - 'ExcelScript!ExcelScript.NamedItem#getValue:member(1)'
+      - 'ExcelScript!ExcelScript.NamedItem#getVisible:member(1)'
+      - 'ExcelScript!ExcelScript.NamedItem#setComment:member(1)'
+      - 'ExcelScript!ExcelScript.NamedItem#setFormula:member(1)'
+      - 'ExcelScript!ExcelScript.NamedItem#setVisible:member(1)'
+  - uid: 'ExcelScript!ExcelScript.NamedItem#delete:member(1)'
+    summary: 指定された名前を削除します。
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.NamedItem#getArrayValues:member(1)'
+    summary: 名前付きアイテムの値と型を含むオブジェクトを返します。
+    name: getArrayValues()
+    fullName: getArrayValues()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getArrayValues(): NamedItemArrayValues;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.NamedItemArrayValues:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.NamedItem#getComment:member(1)'
+    summary: この名前に関連付けられているコメントを指定します。
+    name: getComment()
+    fullName: getComment()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getComment(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.NamedItem#getFormula:member(1)'
+    summary: 名前付きアイテムの数式を指定します。 数式は常に '=' 記号で始まります。
+    name: getFormula()
+    fullName: getFormula()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFormula(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.NamedItem#getName:member(1)'
+    summary: オブジェクトの名前。
+    name: getName()
+    fullName: getName()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.NamedItem#getRange:member(1)'
+    summary: 名前に関連付けられている範囲オブジェクトを返します。 名前付きアイテムの型が範囲でない場合は、null オブジェクトを返します。
+    name: getRange()
+    fullName: getRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRange(): Range;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Range:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.NamedItem#getScope:member(1)'
+    summary: ブックまたは特定のワークシートに対して、名前をスコープ設定するかどうかを指定します。 可能な値は次のとおりです。ワークシート、ブック。
+    name: getScope()
+    fullName: getScope()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getScope(): NamedItemScope;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.NamedItemScope:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.NamedItem#getType:member(1)'
+    summary: 名前の数式によって返される値の型を指定します。 詳細については、「Excel. NamedItemType」を参照してください。
+    name: getType()
+    fullName: getType()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getType(): NamedItemType;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.NamedItemType:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.NamedItem#getValue:member(1)'
+    summary: 名前の数式で計算された値を表します。 名前付き範囲の場合は範囲のアドレスを返します。
+    name: getValue()
+    fullName: getValue()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getValue(): string | number;'
+      return:
+        type:
+          - string | number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.NamedItem#getVisible:member(1)'
+    summary: オブジェクトを表示するかどうかを指定します。
+    name: getVisible()
+    fullName: getVisible()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getVisible(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.NamedItem#setComment:member(1)'
+    summary: この名前に関連付けられているコメントを指定します。
+    name: setComment(comment)
+    fullName: setComment(comment)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setComment(comment: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: comment
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.NamedItem#setFormula:member(1)'
+    summary: 名前付きアイテムの数式を指定します。 数式は常に '=' 記号で始まります。
+    name: setFormula(formula)
+    fullName: setFormula(formula)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setFormula(formula: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: formula
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.NamedItem#setVisible:member(1)'
+    summary: オブジェクトを表示するかどうかを指定します。
+    name: setVisible(visible)
+    fullName: setVisible(visible)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setVisible(visible: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: visible
+          description: ''
+          type:
+            - boolean
+references:
+  - uid: 'ExcelScript!ExcelScript.NamedItemArrayValues:interface'
+    name: NamedItemArrayValues
+    fullName: ExcelScript.NamedItemArrayValues
+  - uid: 'ExcelScript!ExcelScript.Range:interface'
+    name: Range
+    fullName: ExcelScript.Range
+  - uid: 'ExcelScript!ExcelScript.NamedItemScope:enum'
+    name: NamedItemScope
+    fullName: ExcelScript.NamedItemScope
+  - uid: 'ExcelScript!ExcelScript.NamedItemType:enum'
+    name: NamedItemType
+    fullName: ExcelScript.NamedItemType

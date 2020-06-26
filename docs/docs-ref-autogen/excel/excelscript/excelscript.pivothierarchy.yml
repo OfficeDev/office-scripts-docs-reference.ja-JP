@@ -1,0 +1,110 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.PivotHierarchy:interface'
+    summary: Excel の PivotHierarchy を表します。
+    name: ExcelScript.PivotHierarchy
+    fullName: ExcelScript.PivotHierarchy
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.PivotHierarchy#getFields:member(1)'
+      - 'ExcelScript!ExcelScript.PivotHierarchy#getId:member(1)'
+      - 'ExcelScript!ExcelScript.PivotHierarchy#getName:member(1)'
+      - 'ExcelScript!ExcelScript.PivotHierarchy#getPivotField:member(1)'
+      - 'ExcelScript!ExcelScript.PivotHierarchy#setName:member(1)'
+  - uid: 'ExcelScript!ExcelScript.PivotHierarchy#getFields:member(1)'
+    summary: PivotHierarchy に関連付けられているピボット フィールドを返します。
+    name: getFields()
+    fullName: getFields()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFields(): PivotField[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PivotHierarchy#getFields~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PivotHierarchy#getId:member(1)'
+    summary: PivotHierarchy の ID。
+    name: getId()
+    fullName: getId()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getId(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PivotHierarchy#getName:member(1)'
+    summary: PivotHierarchy の名前。
+    name: getName()
+    fullName: getName()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PivotHierarchy#getPivotField:member(1)'
+    summary: 名前によってピボットフィールドを取得します。 PivotField が存在しない場合は、null オブジェクトが返されます。
+    name: getPivotField(name)
+    fullName: getPivotField(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPivotField(name: string): PivotField | undefined;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PivotHierarchy#getPivotField~0:complex'
+        description: ''
+      parameters:
+        - id: name
+          description: 取得する PivotField の名前。
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.PivotHierarchy#setName:member(1)'
+    summary: PivotHierarchy の名前。
+    name: setName(name)
+    fullName: setName(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setName(name: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+references:
+  - uid: 'ExcelScript!ExcelScript.PivotHierarchy#getFields~0:complex'
+    name: 'PivotField[]'
+    fullName: 'ExcelScript.PivotField[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.PivotField:interface'
+        name: PivotField
+        fullName: ExcelScript.PivotField
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.PivotHierarchy#getPivotField~0:complex'
+    name: PivotField | undefined
+    fullName: ExcelScript.PivotField | undefined
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.PivotField:interface'
+        name: PivotField
+        fullName: ExcelScript.PivotField
+      - name: ' | undefined'
+        fullName: ' | undefined'

@@ -1,0 +1,141 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions:interface'
+    summary: オブジェクトに読み込むプロパティを指定し `format.font` ます。
+    name: ExcelScript.CellPropertiesFontLoadOptions
+    fullName: ExcelScript.CellPropertiesFontLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#bold:member'
+      - 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#color:member'
+      - 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#italic:member'
+      - 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#name:member'
+      - 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#size:member'
+      - 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#strikethrough:member'
+      - 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#subscript:member'
+      - 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#superscript:member'
+      - 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#tintAndShade:member'
+      - 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#underline:member'
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#bold:member'
+    summary: プロパティに読み込むかどうかを指定し `bold` ます。
+    name: bold
+    fullName: bold
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bold?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#color:member'
+    summary: プロパティに読み込むかどうかを指定し `color` ます。
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#italic:member'
+    summary: プロパティに読み込むかどうかを指定し `italic` ます。
+    name: italic
+    fullName: italic
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'italic?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#name:member'
+    summary: プロパティに読み込むかどうかを指定し `name` ます。
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#size:member'
+    summary: プロパティに読み込むかどうかを指定し `size` ます。
+    name: size
+    fullName: size
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'size?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#strikethrough:member'
+    summary: プロパティに読み込むかどうかを指定し `strikethrough` ます。
+    name: strikethrough
+    fullName: strikethrough
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'strikethrough?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#subscript:member'
+    summary: プロパティに読み込むかどうかを指定し `subscript` ます。
+    name: subscript
+    fullName: subscript
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subscript?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#superscript:member'
+    summary: プロパティに読み込むかどうかを指定し `superscript` ます。
+    name: superscript
+    fullName: superscript
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'superscript?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#tintAndShade:member'
+    summary: プロパティに読み込むかどうかを指定し `tintAndShade` ます。
+    name: tintAndShade
+    fullName: tintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tintAndShade?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#underline:member'
+    summary: プロパティに読み込むかどうかを指定し `underline` ます。
+    name: underline
+    fullName: underline
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'underline?: boolean;'
+      return:
+        type:
+          - boolean

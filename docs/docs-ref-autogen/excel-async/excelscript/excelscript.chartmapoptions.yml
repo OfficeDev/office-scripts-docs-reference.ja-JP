@@ -1,0 +1,79 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartMapOptions:interface'
+    summary: 地域マップグラフのプロパティをカプセル化します。
+    name: Excel.ChartMapOptions
+    fullName: Excel.ChartMapOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartMapOptions#labelStrategy:member'
+      - 'excel!Excel.ChartMapOptions#level:member'
+      - 'excel!Excel.ChartMapOptions#load:member(1)'
+      - 'excel!Excel.ChartMapOptions#projectionType:member'
+  - uid: 'excel!Excel.ChartMapOptions#labelStrategy:member'
+    summary: 地域マップグラフの系列マップラベル戦略を指定します。
+    name: labelStrategy
+    fullName: labelStrategy
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'labelStrategy: ChartMapLabelStrategy;'
+      return:
+        type:
+          - 'excel!Excel.ChartMapLabelStrategy:enum'
+  - uid: 'excel!Excel.ChartMapOptions#level:member'
+    summary: 地域マップグラフの系列マッピングレベルを指定します。
+    name: level
+    fullName: level
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'level: ChartMapAreaLevel;'
+      return:
+        type:
+          - 'excel!Excel.ChartMapAreaLevel:enum'
+  - uid: 'excel!Excel.ChartMapOptions#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartMapOptions#projectionType:member'
+    summary: 地域マップグラフの系列の投影の種類を指定します。
+    name: projectionType
+    fullName: projectionType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'projectionType: ChartMapProjectionType;'
+      return:
+        type:
+          - 'excel!Excel.ChartMapProjectionType:enum'
+references:
+  - uid: 'excel!Excel.ChartMapLabelStrategy:enum'
+    name: ChartMapLabelStrategy
+    fullName: Excel.ChartMapLabelStrategy
+  - uid: 'excel!Excel.ChartMapAreaLevel:enum'
+    name: ChartMapAreaLevel
+    fullName: Excel.ChartMapAreaLevel
+  - uid: 'excel!Excel.ChartMapProjectionType:enum'
+    name: ChartMapProjectionType
+    fullName: Excel.ChartMapProjectionType

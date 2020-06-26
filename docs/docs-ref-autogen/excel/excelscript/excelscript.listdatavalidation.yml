@@ -1,0 +1,47 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ListDataValidation:interface'
+    summary: リストデータの入力規則の条件を表します。
+    name: ExcelScript.ListDataValidation
+    fullName: ExcelScript.ListDataValidation
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ListDataValidation#inCellDropDown:member'
+      - 'ExcelScript!ExcelScript.ListDataValidation#source:member'
+  - uid: 'ExcelScript!ExcelScript.ListDataValidation#inCellDropDown:member'
+    summary: セルのドロップダウンにリストを表示するかどうかを指定します。既定では true に設定されます。
+    name: inCellDropDown
+    fullName: inCellDropDown
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'inCellDropDown: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.ListDataValidation#source:member'
+    summary: データの入力規則のソース値を設定する場合は、Excel の Range オブジェクトとして渡すことができます。または、コンマで区切られた数値、boolean または日付を含む文字列を指定します。
+    name: source
+    fullName: source
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'source: string | Range;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ListDataValidation#source~0:complex'
+references:
+  - uid: 'ExcelScript!ExcelScript.ListDataValidation#source~0:complex'
+    name: string | Range
+    fullName: string | ExcelScript.Range
+    spec.typeScript:
+      - name: 'string | '
+        fullName: 'string | '
+      - uid: 'ExcelScript!ExcelScript.Range:interface'
+        name: Range
+        fullName: ExcelScript.Range
