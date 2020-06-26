@@ -1,0 +1,172 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup:interface'
+    name: ExcelScript.HeaderFooterGroup
+    fullName: ExcelScript.HeaderFooterGroup
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.HeaderFooterGroup#getDefaultForAllPages:member(1)'
+      - 'ExcelScript!ExcelScript.HeaderFooterGroup#getEvenPages:member(1)'
+      - 'ExcelScript!ExcelScript.HeaderFooterGroup#getFirstPage:member(1)'
+      - 'ExcelScript!ExcelScript.HeaderFooterGroup#getOddPages:member(1)'
+      - 'ExcelScript!ExcelScript.HeaderFooterGroup#getState:member(1)'
+      - 'ExcelScript!ExcelScript.HeaderFooterGroup#getUseSheetMargins:member(1)'
+      - 'ExcelScript!ExcelScript.HeaderFooterGroup#getUseSheetScale:member(1)'
+      - 'ExcelScript!ExcelScript.HeaderFooterGroup#setState:member(1)'
+      - 'ExcelScript!ExcelScript.HeaderFooterGroup#setUseSheetMargins:member(1)'
+      - 'ExcelScript!ExcelScript.HeaderFooterGroup#setUseSheetScale:member(1)'
+  - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#getDefaultForAllPages:member(1)'
+    summary: 偶数/奇数または最初のページが指定されていない場合にすべてのページに使用される汎用ヘッダー/フッター。
+    name: getDefaultForAllPages()
+    fullName: getDefaultForAllPages()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDefaultForAllPages(): HeaderFooter;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.HeaderFooter:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#getEvenPages:member(1)'
+    summary: 偶数ページに使用するヘッダー/フッター。奇数ページには奇数のヘッダー/フッターを指定する必要があります。
+    name: getEvenPages()
+    fullName: getEvenPages()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getEvenPages(): HeaderFooter;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.HeaderFooter:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#getFirstPage:member(1)'
+    summary: 最初のページに使用するヘッダー/フッター。その他すべてのページには汎用または偶数/奇数のヘッダー/フッターが使用されます。
+    name: getFirstPage()
+    fullName: getFirstPage()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFirstPage(): HeaderFooter;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.HeaderFooter:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#getOddPages:member(1)'
+    summary: 奇数ページに使用するヘッダー/フッター。偶数ページには偶数のヘッダー/フッターを指定する必要があります。
+    name: getOddPages()
+    fullName: getOddPages()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getOddPages(): HeaderFooter;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.HeaderFooter:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#getState:member(1)'
+    summary: どのヘッダー/フッターが設定されているか。 詳細については、Excel.HeaderFooterState をご覧ください。
+    name: getState()
+    fullName: getState()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getState(): HeaderFooterState;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.HeaderFooterState:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#getUseSheetMargins:member(1)'
+    summary: ワークシートのページ レイアウト オプションに設定されているページ余白に合わせてヘッダー/フッターの位置が調整されているかどうかを示すフラグを取得または設定します。
+    name: getUseSheetMargins()
+    fullName: getUseSheetMargins()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getUseSheetMargins(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#getUseSheetScale:member(1)'
+    summary: ワークシートのページ レイアウト オプションに設定されているページ パーセンテージ スケールによってヘッダー/フッターが調整されているかどうかを示すフラグを取得または設定します。
+    name: getUseSheetScale()
+    fullName: getUseSheetScale()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getUseSheetScale(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#setState:member(1)'
+    summary: どのヘッダー/フッターが設定されているか。 詳細については、Excel.HeaderFooterState をご覧ください。
+    name: setState(state)
+    fullName: setState(state)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setState(state: HeaderFooterState): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: state
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.HeaderFooterState:enum'
+  - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#setUseSheetMargins:member(1)'
+    summary: ワークシートのページ レイアウト オプションに設定されているページ余白に合わせてヘッダー/フッターの位置が調整されているかどうかを示すフラグを取得または設定します。
+    name: setUseSheetMargins(useSheetMargins)
+    fullName: setUseSheetMargins(useSheetMargins)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setUseSheetMargins(useSheetMargins: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: useSheetMargins
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#setUseSheetScale:member(1)'
+    summary: ワークシートのページ レイアウト オプションに設定されているページ パーセンテージ スケールによってヘッダー/フッターが調整されているかどうかを示すフラグを取得または設定します。
+    name: setUseSheetScale(useSheetScale)
+    fullName: setUseSheetScale(useSheetScale)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setUseSheetScale(useSheetScale: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: useSheetScale
+          description: ''
+          type:
+            - boolean
+references:
+  - uid: 'ExcelScript!ExcelScript.HeaderFooter:interface'
+    name: HeaderFooter
+    fullName: ExcelScript.HeaderFooter
+  - uid: 'ExcelScript!ExcelScript.HeaderFooterState:enum'
+    name: HeaderFooterState
+    fullName: ExcelScript.HeaderFooterState

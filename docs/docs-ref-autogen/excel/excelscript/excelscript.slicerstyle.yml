@@ -1,0 +1,90 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.SlicerStyle:interface'
+    summary: スライサーの領域ごとにスタイル要素を定義するスライサースタイルを表します。
+    name: ExcelScript.SlicerStyle
+    fullName: ExcelScript.SlicerStyle
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.SlicerStyle#delete:member(1)'
+      - 'ExcelScript!ExcelScript.SlicerStyle#duplicate:member(1)'
+      - 'ExcelScript!ExcelScript.SlicerStyle#getName:member(1)'
+      - 'ExcelScript!ExcelScript.SlicerStyle#getReadOnly:member(1)'
+      - 'ExcelScript!ExcelScript.SlicerStyle#setName:member(1)'
+  - uid: 'ExcelScript!ExcelScript.SlicerStyle#delete:member(1)'
+    summary: SlicerStyle を削除します。
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.SlicerStyle#duplicate:member(1)'
+    summary: すべてのスタイル要素のコピーでこの SlicerStyle の複製を作成します。
+    name: duplicate()
+    fullName: duplicate()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'duplicate(): SlicerStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.SlicerStyle:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.SlicerStyle#getName:member(1)'
+    summary: SlicerStyle の名前を取得します。
+    name: getName()
+    fullName: getName()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.SlicerStyle#getReadOnly:member(1)'
+    summary: この SlicerStyle オブジェクトが読み取り専用であるかどうかを指定します。
+    name: getReadOnly()
+    fullName: getReadOnly()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getReadOnly(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.SlicerStyle#setName:member(1)'
+    summary: SlicerStyle の名前を取得します。
+    name: setName(name)
+    fullName: setName(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setName(name: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+references:
+  - uid: 'ExcelScript!ExcelScript.SlicerStyle:interface'
+    name: SlicerStyle
+    fullName: ExcelScript.SlicerStyle

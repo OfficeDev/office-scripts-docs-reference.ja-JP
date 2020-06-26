@@ -1,0 +1,102 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartAxes:interface'
+    summary: グラフの軸を表します。
+    name: Excel.ChartAxes
+    fullName: Excel.ChartAxes
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartAxes#categoryAxis:member'
+      - 'excel!Excel.ChartAxes#getItem:member(1)'
+      - 'excel!Excel.ChartAxes#load:member(1)'
+      - 'excel!Excel.ChartAxes#seriesAxis:member'
+      - 'excel!Excel.ChartAxes#valueAxis:member'
+  - uid: 'excel!Excel.ChartAxes#categoryAxis:member'
+    summary: グラフの項目軸を表します。
+    name: categoryAxis
+    fullName: categoryAxis
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly categoryAxis: ChartAxis;'
+      return:
+        type:
+          - 'excel!Excel.ChartAxis:interface'
+  - uid: 'excel!Excel.ChartAxes#getItem:member(1)'
+    summary: 種類とグループで識別された特定の軸を返します。
+    name: 'getItem(type, group)'
+    fullName: 'getItem(type, group)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(type: ChartAxisType, group?: ChartAxisGroup): ChartAxis;'
+      return:
+        type:
+          - 'excel!Excel.ChartAxis:interface'
+        description: ''
+      parameters:
+        - id: type
+          description: 軸の種類を指定します。 詳細については、「ChartAxisType」を参照してください。
+          type:
+            - 'excel!Excel.ChartAxisType:enum'
+        - id: group
+          description: 省略可能です。 軸のグループを指定します。 詳細については、「ChartAxisGroup」を参照してください。
+          type:
+            - 'excel!Excel.ChartAxisGroup:enum'
+  - uid: 'excel!Excel.ChartAxes#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartAxes#seriesAxis:member'
+    summary: 3 次元グラフの系列軸を表します。
+    name: seriesAxis
+    fullName: seriesAxis
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly seriesAxis: ChartAxis;'
+      return:
+        type:
+          - 'excel!Excel.ChartAxis:interface'
+  - uid: 'excel!Excel.ChartAxes#valueAxis:member'
+    summary: 軸の数値軸を表します。
+    name: valueAxis
+    fullName: valueAxis
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly valueAxis: ChartAxis;'
+      return:
+        type:
+          - 'excel!Excel.ChartAxis:interface'
+references:
+  - uid: 'excel!Excel.ChartAxis:interface'
+    name: ChartAxis
+    fullName: Excel.ChartAxis
+  - uid: 'excel!Excel.ChartAxisType:enum'
+    name: ChartAxisType
+    fullName: Excel.ChartAxisType
+  - uid: 'excel!Excel.ChartAxisGroup:enum'
+    name: ChartAxisGroup
+    fullName: Excel.ChartAxisGroup

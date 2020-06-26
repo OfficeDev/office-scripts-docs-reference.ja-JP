@@ -1,0 +1,35 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.CalculationState:enum'
+    summary: Excel アプリケーション全体での計算の状態を表します。
+    name: ExcelScript.CalculationState
+    fullName: ExcelScript.CalculationState
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.CalculationState.calculating:member'
+      - 'ExcelScript!ExcelScript.CalculationState.done:member'
+      - 'ExcelScript!ExcelScript.CalculationState.pending:member'
+  - uid: 'ExcelScript!ExcelScript.CalculationState.calculating:member'
+    summary: 計算が進行中です。
+    name: calculating
+    fullName: calculating
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.CalculationState.done:member'
+    summary: 計算完了
+    name: done
+    fullName: done
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.CalculationState.pending:member'
+    summary: 計算を引き起こす変更が行われましたが、再計算はまだ実行されていません
+    name: pending
+    fullName: pending
+    langs:
+      - typeScript
+    type: field

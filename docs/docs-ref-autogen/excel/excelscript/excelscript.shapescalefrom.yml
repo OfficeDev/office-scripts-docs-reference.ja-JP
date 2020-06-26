@@ -1,0 +1,32 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ShapeScaleFrom:enum'
+    summary: 図形を拡大縮小する場合、図形の位置を保持する部分を指定します。
+    name: ExcelScript.ShapeScaleFrom
+    fullName: ExcelScript.ShapeScaleFrom
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ShapeScaleFrom.scaleFromBottomRight:member'
+      - 'ExcelScript!ExcelScript.ShapeScaleFrom.scaleFromMiddle:member'
+      - 'ExcelScript!ExcelScript.ShapeScaleFrom.scaleFromTopLeft:member'
+  - uid: 'ExcelScript!ExcelScript.ShapeScaleFrom.scaleFromBottomRight:member'
+    name: scaleFromBottomRight
+    fullName: scaleFromBottomRight
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShapeScaleFrom.scaleFromMiddle:member'
+    name: scaleFromMiddle
+    fullName: scaleFromMiddle
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShapeScaleFrom.scaleFromTopLeft:member'
+    name: scaleFromTopLeft
+    fullName: scaleFromTopLeft
+    langs:
+      - typeScript
+    type: field

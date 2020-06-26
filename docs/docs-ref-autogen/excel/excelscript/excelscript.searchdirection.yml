@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.SearchDirection:enum'
+    summary: 検索の方向を指定します。
+    name: ExcelScript.SearchDirection
+    fullName: ExcelScript.SearchDirection
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.SearchDirection.backwards:member'
+      - 'ExcelScript!ExcelScript.SearchDirection.forward:member'
+  - uid: 'ExcelScript!ExcelScript.SearchDirection.backwards:member'
+    summary: 逆の順序で検索します。
+    name: backwards
+    fullName: backwards
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SearchDirection.forward:member'
+    summary: 次の順序で検索します。
+    name: forward
+    fullName: forward
+    langs:
+      - typeScript
+    type: field

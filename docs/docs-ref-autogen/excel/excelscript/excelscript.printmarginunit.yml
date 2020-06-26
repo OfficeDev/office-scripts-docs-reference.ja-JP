@@ -1,0 +1,34 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.PrintMarginUnit:enum'
+    name: ExcelScript.PrintMarginUnit
+    fullName: ExcelScript.PrintMarginUnit
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.PrintMarginUnit.centimeters:member'
+      - 'ExcelScript!ExcelScript.PrintMarginUnit.inches:member'
+      - 'ExcelScript!ExcelScript.PrintMarginUnit.points:member'
+  - uid: 'ExcelScript!ExcelScript.PrintMarginUnit.centimeters:member'
+    summary: ページの余白をセンチメートルで指定します。
+    name: centimeters
+    fullName: centimeters
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.PrintMarginUnit.inches:member'
+    summary: ページの余白をインチ単位で指定します。
+    name: inches
+    fullName: inches
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.PrintMarginUnit.points:member'
+    summary: ページの余白をポイント単位で指定します。 ポイントは1/72 インチです。
+    name: points
+    fullName: points
+    langs:
+      - typeScript
+    type: field

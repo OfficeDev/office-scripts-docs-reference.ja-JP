@@ -1,0 +1,63 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.CellPropertiesBorderLoadOptions:interface'
+    summary: オブジェクトに読み込むプロパティを指定し `format.borders` ます。
+    name: Excel.CellPropertiesBorderLoadOptions
+    fullName: Excel.CellPropertiesBorderLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.CellPropertiesBorderLoadOptions#color:member'
+      - 'excel!Excel.CellPropertiesBorderLoadOptions#style:member'
+      - 'excel!Excel.CellPropertiesBorderLoadOptions#tintAndShade:member'
+      - 'excel!Excel.CellPropertiesBorderLoadOptions#weight:member'
+  - uid: 'excel!Excel.CellPropertiesBorderLoadOptions#color:member'
+    summary: プロパティに読み込むかどうかを指定し `color` ます。
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.CellPropertiesBorderLoadOptions#style:member'
+    summary: プロパティに読み込むかどうかを指定し `style` ます。
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.CellPropertiesBorderLoadOptions#tintAndShade:member'
+    summary: プロパティに読み込むかどうかを指定し `tintAndShade` ます。
+    name: tintAndShade
+    fullName: tintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tintAndShade?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.CellPropertiesBorderLoadOptions#weight:member'
+    summary: プロパティに読み込むかどうかを指定し `weight` ます。
+    name: weight
+    fullName: weight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'weight?: boolean;'
+      return:
+        type:
+          - boolean

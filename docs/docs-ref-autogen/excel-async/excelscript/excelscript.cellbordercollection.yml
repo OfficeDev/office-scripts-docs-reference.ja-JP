@@ -1,0 +1,119 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.CellBorderCollection:interface'
+    summary: 'のプロパティを表します。 `format.borders``getCellProperties`<!-- -->, `getRowProperties`<!-- -->、 `getColumnProperties` または `format.borders` の入力パラメーター`setCellProperties`<!-- -->, `setRowProperties`<!-- -->そして`setColumnProperties`<!-- -->.'
+    name: Excel.CellBorderCollection
+    fullName: Excel.CellBorderCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.CellBorderCollection#bottom:member'
+      - 'excel!Excel.CellBorderCollection#diagonalDown:member'
+      - 'excel!Excel.CellBorderCollection#diagonalUp:member'
+      - 'excel!Excel.CellBorderCollection#horizontal:member'
+      - 'excel!Excel.CellBorderCollection#left:member'
+      - 'excel!Excel.CellBorderCollection#right:member'
+      - 'excel!Excel.CellBorderCollection#top:member'
+      - 'excel!Excel.CellBorderCollection#vertical:member'
+  - uid: 'excel!Excel.CellBorderCollection#bottom:member'
+    summary: '`format.borders.bottom` プロパティを表します。'
+    name: bottom
+    fullName: bottom
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bottom?: CellBorder;'
+      return:
+        type:
+          - 'excel!Excel.CellBorder:interface'
+  - uid: 'excel!Excel.CellBorderCollection#diagonalDown:member'
+    summary: '`format.borders.diagonalDown` プロパティを表します。'
+    name: diagonalDown
+    fullName: diagonalDown
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'diagonalDown?: CellBorder;'
+      return:
+        type:
+          - 'excel!Excel.CellBorder:interface'
+  - uid: 'excel!Excel.CellBorderCollection#diagonalUp:member'
+    summary: '`format.borders.diagonalUp` プロパティを表します。'
+    name: diagonalUp
+    fullName: diagonalUp
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'diagonalUp?: CellBorder;'
+      return:
+        type:
+          - 'excel!Excel.CellBorder:interface'
+  - uid: 'excel!Excel.CellBorderCollection#horizontal:member'
+    summary: '`format.borders.horizontal` プロパティを表します。'
+    name: horizontal
+    fullName: horizontal
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'horizontal?: CellBorder;'
+      return:
+        type:
+          - 'excel!Excel.CellBorder:interface'
+  - uid: 'excel!Excel.CellBorderCollection#left:member'
+    summary: '`format.borders.left` プロパティを表します。'
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left?: CellBorder;'
+      return:
+        type:
+          - 'excel!Excel.CellBorder:interface'
+  - uid: 'excel!Excel.CellBorderCollection#right:member'
+    summary: '`format.borders.right` プロパティを表します。'
+    name: right
+    fullName: right
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'right?: CellBorder;'
+      return:
+        type:
+          - 'excel!Excel.CellBorder:interface'
+  - uid: 'excel!Excel.CellBorderCollection#top:member'
+    summary: '`format.borders.top` プロパティを表します。'
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top?: CellBorder;'
+      return:
+        type:
+          - 'excel!Excel.CellBorder:interface'
+  - uid: 'excel!Excel.CellBorderCollection#vertical:member'
+    summary: '`format.borders.vertical` プロパティを表します。'
+    name: vertical
+    fullName: vertical
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'vertical?: CellBorder;'
+      return:
+        type:
+          - 'excel!Excel.CellBorder:interface'
+references:
+  - uid: 'excel!Excel.CellBorder:interface'
+    name: CellBorder
+    fullName: Excel.CellBorder
