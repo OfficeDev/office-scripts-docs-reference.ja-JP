@@ -1,0 +1,63 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartAxisFormat:interface'
+    summary: グラフ軸の書式設定プロパティをカプセル化します。
+    name: ExcelScript.ChartAxisFormat
+    fullName: ExcelScript.ChartAxisFormat
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartAxisFormat#getFill:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxisFormat#getFont:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxisFormat#getLine:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ChartAxisFormat#getFill:member(1)'
+    summary: グラフの塗りつぶしの書式を指定します。
+    name: getFill()
+    fullName: getFill()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFill(): ChartFill;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartFill:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxisFormat#getFont:member(1)'
+    summary: グラフ軸要素のフォント属性 (フォント名、フォントサイズ、色など) を指定します。
+    name: getFont()
+    fullName: getFont()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFont(): ChartFont;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartFont:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxisFormat#getLine:member(1)'
+    summary: グラフの線の書式を指定します。
+    name: getLine()
+    fullName: getLine()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLine(): ChartLineFormat;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartLineFormat:interface'
+        description: ''
+references:
+  - uid: 'ExcelScript!ExcelScript.ChartFill:interface'
+    name: ChartFill
+    fullName: ExcelScript.ChartFill
+  - uid: 'ExcelScript!ExcelScript.ChartFont:interface'
+    name: ChartFont
+    fullName: ExcelScript.ChartFont
+  - uid: 'ExcelScript!ExcelScript.ChartLineFormat:interface'
+    name: ChartLineFormat
+    fullName: ExcelScript.ChartLineFormat

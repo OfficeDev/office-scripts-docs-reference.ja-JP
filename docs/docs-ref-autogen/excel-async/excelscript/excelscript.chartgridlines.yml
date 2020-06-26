@@ -1,0 +1,60 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartGridlines:interface'
+    summary: グラフの軸の目盛線または補助目盛線を表します。
+    name: Excel.ChartGridlines
+    fullName: Excel.ChartGridlines
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartGridlines#format:member'
+      - 'excel!Excel.ChartGridlines#load:member(1)'
+      - 'excel!Excel.ChartGridlines#visible:member'
+  - uid: 'excel!Excel.ChartGridlines#format:member'
+    summary: グラフの目盛線の書式設定を表します。
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: ChartGridlinesFormat;'
+      return:
+        type:
+          - 'excel!Excel.ChartGridlinesFormat:interface'
+  - uid: 'excel!Excel.ChartGridlines#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartGridlines#visible:member'
+    summary: 軸目盛線を表示するかどうかを指定します。
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.ChartGridlinesFormat:interface'
+    name: ChartGridlinesFormat
+    fullName: Excel.ChartGridlinesFormat

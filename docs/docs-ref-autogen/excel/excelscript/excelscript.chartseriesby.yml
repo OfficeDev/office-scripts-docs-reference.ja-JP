@@ -1,0 +1,33 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesBy:enum'
+    summary: '系列が行であるか列であるかを指定します。 デスクトップの場合、[自動] オプションを選択すると、データが行または列であるかどうかが自動的に推定されます。web 上の Excel では、"自動" は単に "列" を既定値にします。'
+    name: ExcelScript.ChartSeriesBy
+    fullName: ExcelScript.ChartSeriesBy
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartSeriesBy.auto:member'
+      - 'ExcelScript!ExcelScript.ChartSeriesBy.columns:member'
+      - 'ExcelScript!ExcelScript.ChartSeriesBy.rows:member'
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesBy.auto:member'
+    summary: 'デスクトップの場合、[自動] オプションを選択すると、データが行または列であるかどうかが自動的に推定されます。web 上の Excel では、"自動" は単に "列" を既定値にします。'
+    name: auto
+    fullName: auto
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesBy.columns:member'
+    name: columns
+    fullName: columns
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesBy.rows:member'
+    name: rows
+    fullName: rows
+    langs:
+      - typeScript
+    type: field
