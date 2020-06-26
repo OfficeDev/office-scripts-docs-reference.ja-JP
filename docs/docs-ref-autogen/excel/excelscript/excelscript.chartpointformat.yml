@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartPointFormat:interface'
+    summary: グラフのポイントのオブジェクトの書式設定を表します。
+    name: ExcelScript.ChartPointFormat
+    fullName: ExcelScript.ChartPointFormat
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartPointFormat#getBorder:member(1)'
+      - 'ExcelScript!ExcelScript.ChartPointFormat#getFill:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ChartPointFormat#getBorder:member(1)'
+    summary: 色、スタイル、および重みの情報を含むグラフデータポイントの罫線の書式を表します。
+    name: getBorder()
+    fullName: getBorder()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getBorder(): ChartBorder;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartBorder:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartPointFormat#getFill:member(1)'
+    summary: 背景の書式設定情報を含むグラフの塗りつぶしの書式を表します。
+    name: getFill()
+    fullName: getFill()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFill(): ChartFill;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartFill:interface'
+        description: ''
+references:
+  - uid: 'ExcelScript!ExcelScript.ChartBorder:interface'
+    name: ChartBorder
+    fullName: ExcelScript.ChartBorder
+  - uid: 'ExcelScript!ExcelScript.ChartFill:interface'
+    name: ChartFill
+    fullName: ExcelScript.ChartFill

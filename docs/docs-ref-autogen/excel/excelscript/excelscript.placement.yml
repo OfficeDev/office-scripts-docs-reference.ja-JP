@@ -1,0 +1,35 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.Placement:enum'
+    summary: オブジェクトがその基となるセルにアタッチされる方法を指定します。
+    name: ExcelScript.Placement
+    fullName: ExcelScript.Placement
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.Placement.absolute:member'
+      - 'ExcelScript!ExcelScript.Placement.oneCell:member'
+      - 'ExcelScript!ExcelScript.Placement.twoCell:member'
+  - uid: 'ExcelScript!ExcelScript.Placement.absolute:member'
+    summary: オブジェクトは自由にフリーの状態です。
+    name: absolute
+    fullName: absolute
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.Placement.oneCell:member'
+    summary: オブジェクトは、セルに移動し、サイズが変更されます。
+    name: oneCell
+    fullName: oneCell
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.Placement.twoCell:member'
+    summary: オブジェクトはセルと共に移動します。
+    name: twoCell
+    fullName: twoCell
+    langs:
+      - typeScript
+    type: field

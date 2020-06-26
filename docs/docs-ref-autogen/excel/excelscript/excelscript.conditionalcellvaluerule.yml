@@ -1,0 +1,54 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ConditionalCellValueRule:interface'
+    summary: セル値の条件付き書式ルールを表します。
+    name: ExcelScript.ConditionalCellValueRule
+    fullName: ExcelScript.ConditionalCellValueRule
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ConditionalCellValueRule#formula1:member'
+      - 'ExcelScript!ExcelScript.ConditionalCellValueRule#formula2:member'
+      - 'ExcelScript!ExcelScript.ConditionalCellValueRule#operator:member'
+  - uid: 'ExcelScript!ExcelScript.ConditionalCellValueRule#formula1:member'
+    summary: 条件付き書式ルールを評価するために必要な場合、数式。
+    name: formula1
+    fullName: formula1
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formula1: string;'
+      return:
+        type:
+          - string
+  - uid: 'ExcelScript!ExcelScript.ConditionalCellValueRule#formula2:member'
+    summary: 条件付き書式ルールを評価するために必要な場合、数式。
+    name: formula2
+    fullName: formula2
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formula2?: string;'
+      return:
+        type:
+          - string
+  - uid: 'ExcelScript!ExcelScript.ConditionalCellValueRule#operator:member'
+    summary: セル値の条件付き書式の演算子。
+    name: operator
+    fullName: operator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'operator: ConditionalCellValueOperator;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ConditionalCellValueOperator:enum'
+references:
+  - uid: 'ExcelScript!ExcelScript.ConditionalCellValueOperator:enum'
+    name: ConditionalCellValueOperator
+    fullName: ExcelScript.ConditionalCellValueOperator

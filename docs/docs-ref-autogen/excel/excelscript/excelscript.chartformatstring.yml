@@ -1,0 +1,29 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartFormatString:interface'
+    summary: ChartTitle オブジェクト、ChartAxisTitle オブジェクトなどのテキストを含むグラフ関連オブジェクト内のサブ文字列を表します。
+    name: ExcelScript.ChartFormatString
+    fullName: ExcelScript.ChartFormatString
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartFormatString#getFont:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ChartFormatString#getFont:member(1)'
+    summary: フォント名、フォントサイズ、色など、グラフの文字オブジェクトのフォントの属性を表します。
+    name: getFont()
+    fullName: getFont()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFont(): ChartFont;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartFont:interface'
+        description: ''
+references:
+  - uid: 'ExcelScript!ExcelScript.ChartFont:interface'
+    name: ChartFont
+    fullName: ExcelScript.ChartFont

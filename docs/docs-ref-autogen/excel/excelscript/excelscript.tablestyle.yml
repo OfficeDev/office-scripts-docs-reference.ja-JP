@@ -1,0 +1,90 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.TableStyle:interface'
+    summary: TableStyle を表します。これは、テーブルの領域ごとに style 要素を定義します。
+    name: ExcelScript.TableStyle
+    fullName: ExcelScript.TableStyle
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.TableStyle#delete:member(1)'
+      - 'ExcelScript!ExcelScript.TableStyle#duplicate:member(1)'
+      - 'ExcelScript!ExcelScript.TableStyle#getName:member(1)'
+      - 'ExcelScript!ExcelScript.TableStyle#getReadOnly:member(1)'
+      - 'ExcelScript!ExcelScript.TableStyle#setName:member(1)'
+  - uid: 'ExcelScript!ExcelScript.TableStyle#delete:member(1)'
+    summary: TableStyle を削除します。
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.TableStyle#duplicate:member(1)'
+    summary: すべてのスタイル要素のコピーでこの TableStyle の複製を作成します。
+    name: duplicate()
+    fullName: duplicate()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'duplicate(): TableStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.TableStyle:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.TableStyle#getName:member(1)'
+    summary: TableStyle の名前を取得します。
+    name: getName()
+    fullName: getName()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.TableStyle#getReadOnly:member(1)'
+    summary: この TableStyle オブジェクトが読み取り専用であるかどうかを指定します。
+    name: getReadOnly()
+    fullName: getReadOnly()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getReadOnly(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.TableStyle#setName:member(1)'
+    summary: TableStyle の名前を取得します。
+    name: setName(name)
+    fullName: setName(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setName(name: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+references:
+  - uid: 'ExcelScript!ExcelScript.TableStyle:interface'
+    name: TableStyle
+    fullName: ExcelScript.TableStyle

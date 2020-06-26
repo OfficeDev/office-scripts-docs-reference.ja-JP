@@ -1,0 +1,108 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartAreaFormat:interface'
+    summary: グラフ領域全体の書式設定プロパティをカプセル化します。
+    name: Excel.ChartAreaFormat
+    fullName: Excel.ChartAreaFormat
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartAreaFormat#border:member'
+      - 'excel!Excel.ChartAreaFormat#colorScheme:member'
+      - 'excel!Excel.ChartAreaFormat#fill:member'
+      - 'excel!Excel.ChartAreaFormat#font:member'
+      - 'excel!Excel.ChartAreaFormat#load:member(1)'
+      - 'excel!Excel.ChartAreaFormat#roundedCorners:member'
+  - uid: 'excel!Excel.ChartAreaFormat#border:member'
+    summary: グラフエリアの罫線の書式を表します。これには、色、linestyle、およびウエイトが含まれます。
+    name: border
+    fullName: border
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly border: ChartBorder;'
+      return:
+        type:
+          - 'excel!Excel.ChartBorder:interface'
+  - uid: 'excel!Excel.ChartAreaFormat#colorScheme:member'
+    summary: グラフの配色を指定します。
+    name: colorScheme
+    fullName: colorScheme
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'colorScheme: ChartColorScheme;'
+      return:
+        type:
+          - 'excel!Excel.ChartColorScheme:enum'
+  - uid: 'excel!Excel.ChartAreaFormat#fill:member'
+    summary: 背景の書式設定情報を含む、オブジェクトの塗りつぶしの書式を表します。
+    name: fill
+    fullName: fill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly fill: ChartFill;'
+      return:
+        type:
+          - 'excel!Excel.ChartFill:interface'
+  - uid: 'excel!Excel.ChartAreaFormat#font:member'
+    summary: 現在のオブジェクトのフォント属性 (フォント名、フォント サイズ、色など) を表します。
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly font: ChartFont;'
+      return:
+        type:
+          - 'excel!Excel.ChartFont:interface'
+  - uid: 'excel!Excel.ChartAreaFormat#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartAreaFormat#roundedCorners:member'
+    summary: グラフのグラフエリアに角を丸くするかどうかを指定します。
+    name: roundedCorners
+    fullName: roundedCorners
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'roundedCorners: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.ChartBorder:interface'
+    name: ChartBorder
+    fullName: Excel.ChartBorder
+  - uid: 'excel!Excel.ChartColorScheme:enum'
+    name: ChartColorScheme
+    fullName: Excel.ChartColorScheme
+  - uid: 'excel!Excel.ChartFill:interface'
+    name: ChartFill
+    fullName: Excel.ChartFill
+  - uid: 'excel!Excel.ChartFont:interface'
+    name: ChartFont
+    fullName: Excel.ChartFont

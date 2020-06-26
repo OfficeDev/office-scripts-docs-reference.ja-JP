@@ -1,0 +1,92 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Setting:interface'
+    summary: Setting は、ドキュメントに保持される設定のキーと値のペアを表します (アドインごとのファイルごと)。 これらのカスタムキーと値のペアを使用して、コンテンツアドインまたは作業ウィンドウアドインに必要な状態またはライフサイクル情報を格納できます。 設定はドキュメント内で保持されるため、ユーザー情報やパスワードなどの機密情報や保護された情報を格納する場所ではないことに注意してください。
+    name: Excel.Setting
+    fullName: Excel.Setting
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Setting#delete:member(1)'
+      - 'excel!Excel.Setting#key:member'
+      - 'excel!Excel.Setting#load:member(1)'
+      - 'excel!Excel.Setting#value:member'
+  - uid: 'excel!Excel.Setting#delete:member(1)'
+    summary: 設定を削除します。
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let settings = context.workbook.settings;
+              let needsReview = settings.getItem("NeedsReview");
+              needsReview.delete();
+              needsReview = settings.getItemOrNullObject("NeedsReview");
+
+              await context.sync();
+
+              if (needsReview.isNullObject) {
+                  console.log("The setting has been deleted");
+              } else {
+                  console.log("The setting was not deleted");
+              }
+
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.Setting#key:member'
+    summary: 設定の id を表すキー。
+    name: key
+    fullName: key
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly key: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Setting#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.Setting#value:member'
+    summary: この設定に格納されている値を表します。
+    name: value
+    fullName: value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'value: any;'
+      return:
+        type:
+          - any

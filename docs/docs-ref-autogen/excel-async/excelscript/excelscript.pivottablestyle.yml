@@ -1,0 +1,88 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.PivotTableStyle:interface'
+    summary: ピボットテーブルのスタイルを表します。これは、ピボットテーブル領域でスタイル要素を定義します。
+    name: Excel.PivotTableStyle
+    fullName: Excel.PivotTableStyle
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.PivotTableStyle#delete:member(1)'
+      - 'excel!Excel.PivotTableStyle#duplicate:member(1)'
+      - 'excel!Excel.PivotTableStyle#load:member(1)'
+      - 'excel!Excel.PivotTableStyle#name:member'
+      - 'excel!Excel.PivotTableStyle#readOnly:member'
+  - uid: 'excel!Excel.PivotTableStyle#delete:member(1)'
+    summary: PivotTableStyle を削除します。
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.PivotTableStyle#duplicate:member(1)'
+    summary: すべてのスタイル要素のコピーでこの PivotTableStyle の複製を作成します。
+    name: duplicate()
+    fullName: duplicate()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'duplicate(): PivotTableStyle;'
+      return:
+        type:
+          - 'excel!Excel.PivotTableStyle:interface'
+        description: ''
+  - uid: 'excel!Excel.PivotTableStyle#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.PivotTableStyle#name:member'
+    summary: PivotTableStyle の名前を取得します。
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.PivotTableStyle#readOnly:member'
+    summary: この PivotTableStyle オブジェクトが読み取り専用であるかどうかを指定します。
+    name: readOnly
+    fullName: readOnly
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly readOnly: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.PivotTableStyle:interface'
+    name: PivotTableStyle
+    fullName: Excel.PivotTableStyle

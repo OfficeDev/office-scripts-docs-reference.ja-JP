@@ -1,0 +1,26 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.PrintOrder:enum'
+    name: ExcelScript.PrintOrder
+    fullName: ExcelScript.PrintOrder
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.PrintOrder.downThenOver:member'
+      - 'ExcelScript!ExcelScript.PrintOrder.overThenDown:member'
+  - uid: 'ExcelScript!ExcelScript.PrintOrder.downThenOver:member'
+    summary: 反対側のページや右側のページのフィールドを処理する前に下の行を処理します。
+    name: downThenOver
+    fullName: downThenOver
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.PrintOrder.overThenDown:member'
+    summary: 下の行を処理する前に反対側のページや右側のページのフィールドを処理します。
+    name: overThenDown
+    fullName: overThenDown
+    langs:
+      - typeScript
+    type: field

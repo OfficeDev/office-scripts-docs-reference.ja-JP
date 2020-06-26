@@ -1,0 +1,87 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.CustomProperty:interface'
+    summary: ユーザー設定のプロパティを表します。
+    name: Excel.CustomProperty
+    fullName: Excel.CustomProperty
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.CustomProperty#delete:member(1)'
+      - 'excel!Excel.CustomProperty#key:member'
+      - 'excel!Excel.CustomProperty#load:member(1)'
+      - 'excel!Excel.CustomProperty#type:member'
+      - 'excel!Excel.CustomProperty#value:member'
+  - uid: 'excel!Excel.CustomProperty#delete:member(1)'
+    summary: カスタム プロパティを削除します。
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.CustomProperty#key:member'
+    summary: カスタムプロパティのキー。 このキーは、Excel の外部にある255文字までに制限されます (大きなキーは、他のプラットフォームでは自動的に255文字にトリミングされます)。
+    name: key
+    fullName: key
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly key: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.CustomProperty#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.CustomProperty#type:member'
+    summary: カスタムプロパティに使用される値の型。
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly type: DocumentPropertyType;'
+      return:
+        type:
+          - 'excel!Excel.DocumentPropertyType:enum'
+  - uid: 'excel!Excel.CustomProperty#value:member'
+    summary: カスタム プロパティの値を指定します。 この値は、Excel の外部にある255文字までに制限されています (他のプラットフォームでは、大きな値は自動的に255文字にトリミングされます)。
+    name: value
+    fullName: value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'value: any;'
+      return:
+        type:
+          - any
+references:
+  - uid: 'excel!Excel.DocumentPropertyType:enum'
+    name: DocumentPropertyType
+    fullName: Excel.DocumentPropertyType

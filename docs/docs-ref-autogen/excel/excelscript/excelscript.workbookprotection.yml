@@ -1,0 +1,63 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.WorkbookProtection:interface'
+    summary: ブックオブジェクトの保護を表します。
+    name: ExcelScript.WorkbookProtection
+    fullName: ExcelScript.WorkbookProtection
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.WorkbookProtection#getProtected:member(1)'
+      - 'ExcelScript!ExcelScript.WorkbookProtection#protect:member(1)'
+      - 'ExcelScript!ExcelScript.WorkbookProtection#unprotect:member(1)'
+  - uid: 'ExcelScript!ExcelScript.WorkbookProtection#getProtected:member(1)'
+    summary: ブックが保護されているかどうかを指定します。
+    name: getProtected()
+    fullName: getProtected()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getProtected(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.WorkbookProtection#protect:member(1)'
+    summary: ブックを保護します。 ブックが保護されている場合は失敗します。
+    name: protect(password)
+    fullName: protect(password)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'protect(password?: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: password
+          description: ブックの保護パスワード。
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.WorkbookProtection#unprotect:member(1)'
+    summary: ブックの保護を解除します。
+    name: unprotect(password)
+    fullName: unprotect(password)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'unprotect(password?: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: password
+          description: ブックの保護パスワード。
+          type:
+            - string

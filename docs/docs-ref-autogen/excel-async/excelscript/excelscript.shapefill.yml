@@ -1,0 +1,106 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ShapeFill:interface'
+    summary: Shape オブジェクトの塗りつぶしの書式設定を表します。
+    name: Excel.ShapeFill
+    fullName: Excel.ShapeFill
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ShapeFill#clear:member(1)'
+      - 'excel!Excel.ShapeFill#foregroundColor:member'
+      - 'excel!Excel.ShapeFill#load:member(1)'
+      - 'excel!Excel.ShapeFill#setSolidColor:member(1)'
+      - 'excel!Excel.ShapeFill#transparency:member'
+      - 'excel!Excel.ShapeFill#type:member'
+  - uid: 'excel!Excel.ShapeFill#clear:member(1)'
+    summary: この図形の塗りつぶしの書式設定をクリアします。
+    name: clear()
+    fullName: clear()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.ShapeFill#foregroundColor:member'
+    summary: 'フォームの \# RRGGBB ("FFA500" など) または名前付きの html 色 (例: "オレンジ") の、html 色形式での図形の塗りつぶしの前景色を表します。'
+    name: foregroundColor
+    fullName: foregroundColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'foregroundColor: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ShapeFill#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ShapeFill#setSolidColor:member(1)'
+    summary: 図形の塗りつぶしの書式設定を均一な色に設定します。 これにより、塗りつぶしの種類が "Solid" に変更されます。
+    name: setSolidColor(color)
+    fullName: setSolidColor(color)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setSolidColor(color: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: color
+          description: 'HTML 色形式の塗りつぶし色を表す文字列 ( \# "FFA500" など) または名前付きの html 色 (例: "RRGGBB") を表します。'
+          type:
+            - string
+  - uid: 'excel!Excel.ShapeFill#transparency:member'
+    summary: 塗りつぶしの透過性のパーセンテージを 0.0 (不透明) ~ 1.0 (透明) の値として指定します。 図形の種類が透明度をサポートしていない場合、または図形の塗りつぶしが一定ではない場合 (グラデーション塗りつぶしの種類など) は、null を返します。
+    name: transparency
+    fullName: transparency
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'transparency: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ShapeFill#type:member'
+    summary: 図形の塗りつぶしの種類を返します。 詳細については、Excel.ShapeFillType をご覧ください。
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly type: ShapeFillType;'
+      return:
+        type:
+          - 'excel!Excel.ShapeFillType:enum'
+references:
+  - uid: 'excel!Excel.ShapeFillType:enum'
+    name: ShapeFillType
+    fullName: Excel.ShapeFillType
