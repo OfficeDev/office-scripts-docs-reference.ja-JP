@@ -1,0 +1,53 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.GroupShapeCollection:interface'
+    summary: 図形グループ内の図形のコレクションを表します。
+    name: Excel.GroupShapeCollection
+    fullName: Excel.GroupShapeCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.GroupShapeCollection#getItem:member(1)'
+      - 'excel!Excel.GroupShapeCollection#load:member(1)'
+  - uid: 'excel!Excel.GroupShapeCollection#getItem:member(1)'
+    summary: 名前または ID を使用して図形を取得します。
+    name: getItem(key)
+    fullName: getItem(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: string): Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: 取得する図形の名前または ID を指定します。
+          type:
+            - string
+  - uid: 'excel!Excel.GroupShapeCollection#load:member(1)'
+    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.Shape:interface'
+    name: Shape
+    fullName: Excel.Shape

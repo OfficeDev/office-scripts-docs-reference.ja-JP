@@ -1,0 +1,43 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.Image:interface'
+    summary: ワークシート内のイメージを表します。 対応する Shape オブジェクトを取得するには、イメージの図形を使用します。
+    name: ExcelScript.Image
+    fullName: ExcelScript.Image
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.Image#getFormat:member(1)'
+      - 'ExcelScript!ExcelScript.Image#getId:member(1)'
+  - uid: 'ExcelScript!ExcelScript.Image#getFormat:member(1)'
+    summary: 画像の形式を返します。
+    name: getFormat()
+    fullName: getFormat()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFormat(): PictureFormat;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PictureFormat:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Image#getId:member(1)'
+    summary: Image オブジェクトの図形識別子を指定します。
+    name: getId()
+    fullName: getId()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getId(): string;'
+      return:
+        type:
+          - string
+        description: ''
+references:
+  - uid: 'ExcelScript!ExcelScript.PictureFormat:enum'
+    name: PictureFormat
+    fullName: ExcelScript.PictureFormat

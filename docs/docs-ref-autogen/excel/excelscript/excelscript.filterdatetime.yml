@@ -1,0 +1,41 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.FilterDatetime:interface'
+    summary: 値をフィルター処理するときに日付をフィルター処理する方法を表します。
+    name: ExcelScript.FilterDatetime
+    fullName: ExcelScript.FilterDatetime
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.FilterDatetime#date:member'
+      - 'ExcelScript!ExcelScript.FilterDatetime#specificity:member'
+  - uid: 'ExcelScript!ExcelScript.FilterDatetime#date:member'
+    summary: データのフィルター処理に使用する ISO8601 形式の日付です。
+    name: date
+    fullName: date
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'date: string;'
+      return:
+        type:
+          - string
+  - uid: 'ExcelScript!ExcelScript.FilterDatetime#specificity:member'
+    summary: データを保持するのに、日付をどの程度詳細に使用するか。 たとえば、date が 2005-04-02 で "month" に設定した場合、フィルター操作では 2005 年 4 月の日付データを含むすべての行が保持されます。
+    name: specificity
+    fullName: specificity
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'specificity: FilterDatetimeSpecificity;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.FilterDatetimeSpecificity:enum'
+references:
+  - uid: 'ExcelScript!ExcelScript.FilterDatetimeSpecificity:enum'
+    name: FilterDatetimeSpecificity
+    fullName: ExcelScript.FilterDatetimeSpecificity
