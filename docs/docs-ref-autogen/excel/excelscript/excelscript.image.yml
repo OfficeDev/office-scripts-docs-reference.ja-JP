@@ -11,6 +11,7 @@ items:
     children:
       - 'ExcelScript!ExcelScript.Image#getFormat:member(1)'
       - 'ExcelScript!ExcelScript.Image#getId:member(1)'
+      - 'ExcelScript!ExcelScript.Image#getShape:member(1)'
   - uid: 'ExcelScript!ExcelScript.Image#getFormat:member(1)'
     summary: 画像の形式を返します。
     name: getFormat()
@@ -37,7 +38,23 @@ items:
         type:
           - string
         description: ''
+  - uid: 'ExcelScript!ExcelScript.Image#getShape:member(1)'
+    summary: 画像に関連付けられた Shape オブジェクトを返します。
+    name: getShape()
+    fullName: getShape()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getShape(): Shape;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Shape:interface'
+        description: ''
 references:
   - uid: 'ExcelScript!ExcelScript.PictureFormat:enum'
     name: PictureFormat
     fullName: ExcelScript.PictureFormat
+  - uid: 'ExcelScript!ExcelScript.Shape:interface'
+    name: Shape
+    fullName: ExcelScript.Shape

@@ -11,6 +11,7 @@ items:
     children:
       - 'excel!Excel.ShapeGroup#id:member'
       - 'excel!Excel.ShapeGroup#load:member(1)'
+      - 'excel!Excel.ShapeGroup#shape:member'
       - 'excel!Excel.ShapeGroup#shapes:member'
       - 'excel!Excel.ShapeGroup#ungroup:member(1)'
   - uid: 'excel!Excel.ShapeGroup#id:member'
@@ -43,6 +44,18 @@ items:
           description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
           type:
             - 'string | string[]'
+  - uid: 'excel!Excel.ShapeGroup#shape:member'
+    summary: グループに関連付けられた Shape オブジェクトを返します。
+    name: shape
+    fullName: shape
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly shape: Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:interface'
   - uid: 'excel!Excel.ShapeGroup#shapes:member'
     summary: Shape オブジェクトのコレクションを返します。
     name: shapes
@@ -84,6 +97,9 @@ items:
           }
           ```
 references:
+  - uid: 'excel!Excel.Shape:interface'
+    name: Shape
+    fullName: Excel.Shape
   - uid: 'excel!Excel.GroupShapeCollection:interface'
     name: GroupShapeCollection
     fullName: Excel.GroupShapeCollection

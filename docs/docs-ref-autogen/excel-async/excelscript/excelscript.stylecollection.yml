@@ -10,7 +10,9 @@ items:
     package: excel!
     children:
       - 'excel!Excel.StyleCollection#add:member(1)'
+      - 'excel!Excel.StyleCollection#getCount:member(1)'
       - 'excel!Excel.StyleCollection#getItem:member(1)'
+      - 'excel!Excel.StyleCollection#getItemAt:member(1)'
       - 'excel!Excel.StyleCollection#load:member(1)'
   - uid: 'excel!Excel.StyleCollection#add:member(1)'
     summary: コレクションに新しいスタイルを追加します。
@@ -56,6 +58,19 @@ items:
           description: 追加するスタイルの名前を指定します。
           type:
             - string
+  - uid: 'excel!Excel.StyleCollection#getCount:member(1)'
+    summary: コレクション内のスタイルの数を取得します。
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
   - uid: 'excel!Excel.StyleCollection#getItem:member(1)'
     summary: 名前に基づいてスタイルを取得します。
     name: getItem(name)
@@ -100,6 +115,24 @@ items:
           description: 取得するスタイルの名前を指定します。
           type:
             - string
+  - uid: 'excel!Excel.StyleCollection#getItemAt:member(1)'
+    summary: コレクション内の位置に基づいてスタイルを取得します。
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Style;'
+      return:
+        type:
+          - 'excel!Excel.Style:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: 取得する style オブジェクトのインデックス値を指定します。 0 を起点とする番号になります。
+          type:
+            - number
   - uid: 'excel!Excel.StyleCollection#load:member(1)'
     summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
     name: load(propertyNames)

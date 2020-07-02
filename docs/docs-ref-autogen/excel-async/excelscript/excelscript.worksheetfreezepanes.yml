@@ -11,6 +11,7 @@ items:
       - 'excel!Excel.WorksheetFreezePanes#freezeAt:member(1)'
       - 'excel!Excel.WorksheetFreezePanes#freezeColumns:member(1)'
       - 'excel!Excel.WorksheetFreezePanes#freezeRows:member(1)'
+      - 'excel!Excel.WorksheetFreezePanes#getLocation:member(1)'
       - 'excel!Excel.WorksheetFreezePanes#getLocationOrNullObject:member(1)'
       - 'excel!Excel.WorksheetFreezePanes#load:member(1)'
       - 'excel!Excel.WorksheetFreezePanes#unfreeze:member(1)'
@@ -110,6 +111,19 @@ items:
           description: 固定する行数 (省略可能)、またはすべての行を固定解除するためのゼロ
           type:
             - number
+  - uid: 'excel!Excel.WorksheetFreezePanes#getLocation:member(1)'
+    summary: アクティブなワークシート ビュー内の固定セルを記述する範囲を取得します。 固定範囲は、上端と左端のウィンドウ枠で固定されているセルに対応します。
+    name: getLocation()
+    fullName: getLocation()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLocation(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
   - uid: 'excel!Excel.WorksheetFreezePanes#getLocationOrNullObject:member(1)'
     summary: アクティブなワークシート ビュー内の固定セルを記述する範囲を取得します。 固定範囲は、上端と左端のウィンドウ枠で固定されているセルに対応します。 ペインが固定されていない場合は、null オブジェクトを返します。
     name: getLocationOrNullObject()

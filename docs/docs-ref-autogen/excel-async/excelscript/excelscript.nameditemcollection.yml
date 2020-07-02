@@ -11,6 +11,8 @@ items:
     children:
       - 'excel!Excel.NamedItemCollection#add:member(1)'
       - 'excel!Excel.NamedItemCollection#addFormulaLocal:member(1)'
+      - 'excel!Excel.NamedItemCollection#getCount:member(1)'
+      - 'excel!Excel.NamedItemCollection#getItem:member(1)'
       - 'excel!Excel.NamedItemCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.NamedItemCollection#load:member(1)'
   - uid: 'excel!Excel.NamedItemCollection#add:member(1)'
@@ -88,6 +90,37 @@ items:
             - string
         - id: comment
           description: 省略可能です。 名前付きアイテムに関連付けられているコメント。
+          type:
+            - string
+  - uid: 'excel!Excel.NamedItemCollection#getCount:member(1)'
+    summary: コレクションに含まれる名前付きアイテムの数を取得します。
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.NamedItemCollection#getItem:member(1)'
+    summary: 名前を使用して、NamedItem オブジェクトを取得します。
+    name: getItem(name)
+    fullName: getItem(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(name: string): NamedItem;'
+      return:
+        type:
+          - 'excel!Excel.NamedItem:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: Nameditem 名。
           type:
             - string
   - uid: 'excel!Excel.NamedItemCollection#getItemOrNullObject:member(1)'

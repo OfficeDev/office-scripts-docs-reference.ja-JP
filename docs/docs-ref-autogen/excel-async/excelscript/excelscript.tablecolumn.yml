@@ -19,6 +19,7 @@ items:
       - 'excel!Excel.TableColumn#index:member'
       - 'excel!Excel.TableColumn#load:member(1)'
       - 'excel!Excel.TableColumn#name:member'
+      - 'excel!Excel.TableColumn#values:member'
   - uid: 'excel!Excel.TableColumn#delete:member(1)'
     summary: テーブルから列を削除します。
     name: delete()
@@ -150,6 +151,18 @@ items:
       return:
         type:
           - string
+  - uid: 'excel!Excel.TableColumn#values:member'
+    summary: 指定した範囲の Raw 値を表します。 返されるデータの型は、文字列、数値、ブール値のいずれかになります。 エラーが含まれているセルは、エラー文字列を返します。
+    name: values
+    fullName: values
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'values: any[][];'
+      return:
+        type:
+          - 'any[][]'
 references:
   - uid: 'excel!Excel.Filter:interface'
     name: Filter

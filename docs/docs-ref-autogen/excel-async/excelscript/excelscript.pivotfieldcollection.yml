@@ -9,8 +9,41 @@ items:
     type: interface
     package: excel!
     children:
+      - 'excel!Excel.PivotFieldCollection#getCount:member(1)'
+      - 'excel!Excel.PivotFieldCollection#getItem:member(1)'
       - 'excel!Excel.PivotFieldCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.PivotFieldCollection#load:member(1)'
+  - uid: 'excel!Excel.PivotFieldCollection#getCount:member(1)'
+    summary: コレクション内のピボットフィールドの数を取得します。
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.PivotFieldCollection#getItem:member(1)'
+    summary: 名前または id でピボットフィールドを取得します。
+    name: getItem(name)
+    fullName: getItem(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(name: string): PivotField;'
+      return:
+        type:
+          - 'excel!Excel.PivotField:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: 取得する PivotField の名前。
+          type:
+            - string
   - uid: 'excel!Excel.PivotFieldCollection#getItemOrNullObject:member(1)'
     summary: 名前によってピボットフィールドを取得します。 PivotField が存在しない場合は、null オブジェクトが返されます。
     name: getItemOrNullObject(name)

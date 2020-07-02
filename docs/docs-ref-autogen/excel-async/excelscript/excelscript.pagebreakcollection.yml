@@ -9,6 +9,8 @@ items:
     package: excel!
     children:
       - 'excel!Excel.PageBreakCollection#add:member(1)'
+      - 'excel!Excel.PageBreakCollection#getCount:member(1)'
+      - 'excel!Excel.PageBreakCollection#getItem:member(1)'
       - 'excel!Excel.PageBreakCollection#load:member(1)'
       - 'excel!Excel.PageBreakCollection#removePageBreaks:member(1)'
   - uid: 'excel!Excel.PageBreakCollection#add:member(1)'
@@ -40,6 +42,37 @@ items:
           description: 改ページが追加される直後のセル範囲を指定します。
           type:
             - 'excel!Excel.PageBreakCollection#add~0:complex'
+  - uid: 'excel!Excel.PageBreakCollection#getCount:member(1)'
+    summary: コレクション内の改ページの数を取得します。
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.PageBreakCollection#getItem:member(1)'
+    summary: インデックス経由で改ページ オブジェクトを取得します。
+    name: getItem(index)
+    fullName: getItem(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(index: number): PageBreak;'
+      return:
+        type:
+          - 'excel!Excel.PageBreak:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: 改ページのインデックスです。
+          type:
+            - number
   - uid: 'excel!Excel.PageBreakCollection#load:member(1)'
     summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
     name: load(propertyNames)

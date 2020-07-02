@@ -9,9 +9,23 @@ items:
     type: interface
     package: excel!
     children:
+      - 'excel!Excel.RangeBorderCollection#count:member'
       - 'excel!Excel.RangeBorderCollection#getItem:member(1)'
+      - 'excel!Excel.RangeBorderCollection#getItemAt:member(1)'
       - 'excel!Excel.RangeBorderCollection#load:member(1)'
       - 'excel!Excel.RangeBorderCollection#tintAndShade:member'
+  - uid: 'excel!Excel.RangeBorderCollection#count:member'
+    summary: コレクションに含まれる境界線オブジェクトの数。
+    name: count
+    fullName: count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly count: number;'
+      return:
+        type:
+          - number
   - uid: 'excel!Excel.RangeBorderCollection#getItem:member(1)'
     summary: オブジェクトの名前を使用して、境界線オブジェクトを取得します。
     name: getItem(index)
@@ -30,6 +44,24 @@ items:
           description: 取得する border オブジェクトのインデックス値を指定します。 詳細については、「Excel BorderIndex」を参照してください。
           type:
             - 'excel!Excel.BorderIndex:enum'
+  - uid: 'excel!Excel.RangeBorderCollection#getItemAt:member(1)'
+    summary: オブジェクトのインデックスを使用して、境界線オブジェクトを取得します。
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): RangeBorder;'
+      return:
+        type:
+          - 'excel!Excel.RangeBorder:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: 取得するオブジェクトのインデックス値。 0 を起点とする番号になります。
+          type:
+            - number
   - uid: 'excel!Excel.RangeBorderCollection#load:member(1)'
     summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
     name: load(propertyNames)

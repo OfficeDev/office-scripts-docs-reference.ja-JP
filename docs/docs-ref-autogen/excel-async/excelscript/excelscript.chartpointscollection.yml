@@ -9,7 +9,53 @@ items:
     type: interface
     package: excel!
     children:
+      - 'excel!Excel.ChartPointsCollection#count:member'
+      - 'excel!Excel.ChartPointsCollection#getCount:member(1)'
+      - 'excel!Excel.ChartPointsCollection#getItemAt:member(1)'
       - 'excel!Excel.ChartPointsCollection#load:member(1)'
+  - uid: 'excel!Excel.ChartPointsCollection#count:member'
+    summary: 系列に含まれるグラフのポイントの数を返します。
+    name: count
+    fullName: count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly count: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartPointsCollection#getCount:member(1)'
+    summary: 系列に含まれるグラフのポイントの数を返します。
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.ChartPointsCollection#getItemAt:member(1)'
+    summary: データ系列内の位置に基づくポイントを取得します。
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): ChartPoint;'
+      return:
+        type:
+          - 'excel!Excel.ChartPoint:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: 取得するオブジェクトのインデックス値。 0 を起点とする番号になります。
+          type:
+            - number
   - uid: 'excel!Excel.ChartPointsCollection#load:member(1)'
     summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
     name: load(propertyNames)
@@ -28,3 +74,7 @@ items:
           description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
           type:
             - 'string | string[]'
+references:
+  - uid: 'excel!Excel.ChartPoint:interface'
+    name: ChartPoint
+    fullName: Excel.ChartPoint

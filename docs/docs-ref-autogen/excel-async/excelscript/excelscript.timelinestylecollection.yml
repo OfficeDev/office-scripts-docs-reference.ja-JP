@@ -10,7 +10,9 @@ items:
     package: excel!
     children:
       - 'excel!Excel.TimelineStyleCollection#add:member(1)'
+      - 'excel!Excel.TimelineStyleCollection#getCount:member(1)'
       - 'excel!Excel.TimelineStyleCollection#getDefault:member(1)'
+      - 'excel!Excel.TimelineStyleCollection#getItem:member(1)'
       - 'excel!Excel.TimelineStyleCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.TimelineStyleCollection#load:member(1)'
       - 'excel!Excel.TimelineStyleCollection#setDefault:member(1)'
@@ -36,6 +38,19 @@ items:
           description: 省略可能。既定値は false です。 場合は true を指定すると、必要に応じて、一意の番号を付けることができます。
           type:
             - boolean
+  - uid: 'excel!Excel.TimelineStyleCollection#getCount:member(1)'
+    summary: コレクションに含まれるタイムライン スタイルの数を取得します。
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
   - uid: 'excel!Excel.TimelineStyleCollection#getDefault:member(1)'
     summary: 親オブジェクトのスコープに対する既定の TimelineStyle を取得します。
     name: getDefault()
@@ -49,6 +64,24 @@ items:
         type:
           - 'excel!Excel.TimelineStyle:interface'
         description: ''
+  - uid: 'excel!Excel.TimelineStyleCollection#getItem:member(1)'
+    summary: 名前で TimelineStyle を取得します。
+    name: getItem(name)
+    fullName: getItem(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(name: string): TimelineStyle;'
+      return:
+        type:
+          - 'excel!Excel.TimelineStyle:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: 取得する TimelineStyle の名前。
+          type:
+            - string
   - uid: 'excel!Excel.TimelineStyleCollection#getItemOrNullObject:member(1)'
     summary: 名前で TimelineStyle を取得します。 TimelineStyle が存在しない場合は、null オブジェクトを返します。
     name: getItemOrNullObject(name)

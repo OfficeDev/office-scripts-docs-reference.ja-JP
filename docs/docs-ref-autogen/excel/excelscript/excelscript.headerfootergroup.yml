@@ -71,7 +71,7 @@ items:
           - 'ExcelScript!ExcelScript.HeaderFooter:interface'
         description: ''
   - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#getState:member(1)'
-    summary: どのヘッダー/フッターが設定されているか。 詳細については、Excel.HeaderFooterState をご覧ください。
+    summary: ヘッダー/フッターが設定される状態。 詳細については、Excel.HeaderFooterState をご覧ください。
     name: getState()
     fullName: getState()
     langs:
@@ -110,7 +110,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#setState:member(1)'
-    summary: どのヘッダー/フッターが設定されているか。 詳細については、Excel.HeaderFooterState をご覧ください。
+    summary: ヘッダー/フッターが設定される状態。 詳細については、Excel.HeaderFooterState をご覧ください。
     name: setState(state)
     fullName: setState(state)
     langs:

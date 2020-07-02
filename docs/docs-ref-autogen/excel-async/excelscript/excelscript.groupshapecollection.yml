@@ -9,8 +9,42 @@ items:
     type: interface
     package: excel!
     children:
+      - 'excel!Excel.GroupShapeCollection#_GetItem:member(1)'
+      - 'excel!Excel.GroupShapeCollection#getCount:member(1)'
       - 'excel!Excel.GroupShapeCollection#getItem:member(1)'
+      - 'excel!Excel.GroupShapeCollection#getItemAt:member(1)'
       - 'excel!Excel.GroupShapeCollection#load:member(1)'
+  - uid: 'excel!Excel.GroupShapeCollection#_GetItem:member(1)'
+    summary: 図形 id で識別される図形を取得します。
+    name: _GetItem(shapeId)
+    fullName: _GetItem(shapeId)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: '_GetItem(shapeId: string): Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:interface'
+        description: ''
+      parameters:
+        - id: shapeId
+          description: 図形の識別子を示します。
+          type:
+            - string
+  - uid: 'excel!Excel.GroupShapeCollection#getCount:member(1)'
+    summary: 図形グループの図形の数を返します。
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
   - uid: 'excel!Excel.GroupShapeCollection#getItem:member(1)'
     summary: 名前または ID を使用して図形を取得します。
     name: getItem(key)
@@ -29,6 +63,24 @@ items:
           description: 取得する図形の名前または ID を指定します。
           type:
             - string
+  - uid: 'excel!Excel.GroupShapeCollection#getItemAt:member(1)'
+    summary: コレクション内の位置に基づいて図形を取得します。
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: 取得するオブジェクトの0から始まるインデックス値を指定します。
+          type:
+            - number
   - uid: 'excel!Excel.GroupShapeCollection#load:member(1)'
     summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
     name: load(propertyNames)
