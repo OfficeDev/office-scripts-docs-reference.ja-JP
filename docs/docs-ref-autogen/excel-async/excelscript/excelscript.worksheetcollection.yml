@@ -11,7 +11,9 @@ items:
     children:
       - 'excel!Excel.WorksheetCollection#add:member(1)'
       - 'excel!Excel.WorksheetCollection#getActiveWorksheet:member(1)'
+      - 'excel!Excel.WorksheetCollection#getCount:member(1)'
       - 'excel!Excel.WorksheetCollection#getFirst:member(1)'
+      - 'excel!Excel.WorksheetCollection#getItem:member(1)'
       - 'excel!Excel.WorksheetCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.WorksheetCollection#getLast:member(1)'
       - 'excel!Excel.WorksheetCollection#load:member(1)'
@@ -46,6 +48,24 @@ items:
         type:
           - 'excel!Excel.Worksheet:interface'
         description: ''
+  - uid: 'excel!Excel.WorksheetCollection#getCount:member(1)'
+    summary: コレクションに含まれるワークシートの数を取得します。
+    name: getCount(visibleOnly)
+    fullName: getCount(visibleOnly)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(visibleOnly?: boolean): number;'
+      return:
+        type:
+          - number
+        description: ''
+      parameters:
+        - id: visibleOnly
+          description: 省略可能です。 True の場合は、表示されているワークシートのみを考慮し、非表示のワークシートについてはスキップします。
+          type:
+            - boolean
   - uid: 'excel!Excel.WorksheetCollection#getFirst:member(1)'
     summary: コレクション内の最初のワークシートを取得します。
     name: getFirst(visibleOnly)
@@ -94,6 +114,24 @@ items:
           description: 省略可能です。 True の場合は、表示されているワークシートのみを考慮し、非表示のワークシートについてはスキップします。
           type:
             - boolean
+  - uid: 'excel!Excel.WorksheetCollection#getItem:member(1)'
+    summary: 名前または ID を使用して、ワークシート オブジェクトを取得します。
+    name: getItem(key)
+    fullName: getItem(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: string): Worksheet;'
+      return:
+        type:
+          - 'excel!Excel.Worksheet:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: ワークシートの名前または ID。
+          type:
+            - string
   - uid: 'excel!Excel.WorksheetCollection#getItemOrNullObject:member(1)'
     summary: 名前または ID を使用して、ワークシート オブジェクトを取得します。 ワークシートが存在しない場合は null オブジェクトを返します。
     name: getItemOrNullObject(key)

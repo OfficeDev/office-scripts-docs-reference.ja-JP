@@ -8,7 +8,40 @@ items:
     type: interface
     package: excel!
     children:
+      - 'excel!Excel.RangeCollection#getCount:member(1)'
+      - 'excel!Excel.RangeCollection#getItemAt:member(1)'
       - 'excel!Excel.RangeCollection#load:member(1)'
+  - uid: 'excel!Excel.RangeCollection#getCount:member(1)'
+    summary: RangeCollection 内の範囲数を返します。
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.RangeCollection#getItemAt:member(1)'
+    summary: RangeCollection 内のその位置に基づいて範囲オブジェクトを返します。
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: 取得する range オブジェクトのインデックス値を指定します。 0 を起点とする番号になります。
+          type:
+            - number
   - uid: 'excel!Excel.RangeCollection#load:member(1)'
     summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
     name: load(propertyNames)
@@ -27,3 +60,7 @@ items:
           description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
           type:
             - 'string | string[]'
+references:
+  - uid: 'excel!Excel.Range:interface'
+    name: Range
+    fullName: Excel.Range

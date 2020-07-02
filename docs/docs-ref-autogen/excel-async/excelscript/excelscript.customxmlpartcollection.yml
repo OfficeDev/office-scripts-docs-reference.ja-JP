@@ -10,6 +10,9 @@ items:
     package: excel!
     children:
       - 'excel!Excel.CustomXmlPartCollection#add:member(1)'
+      - 'excel!Excel.CustomXmlPartCollection#getByNamespace:member(1)'
+      - 'excel!Excel.CustomXmlPartCollection#getCount:member(1)'
+      - 'excel!Excel.CustomXmlPartCollection#getItem:member(1)'
       - 'excel!Excel.CustomXmlPartCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.CustomXmlPartCollection#load:member(1)'
   - uid: 'excel!Excel.CustomXmlPartCollection#add:member(1)'
@@ -55,6 +58,55 @@ items:
           description: XML コンテンツ。 有効な XML フラグメントである必要があります。
           type:
             - string
+  - uid: 'excel!Excel.CustomXmlPartCollection#getByNamespace:member(1)'
+    summary: 名前空間が指定した名前空間に一致する、カスタム XML パーツの新しい範囲のコレクションを取得します。
+    name: getByNamespace(namespaceUri)
+    fullName: getByNamespace(namespaceUri)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getByNamespace(namespaceUri: string): CustomXmlPartScopedCollection;'
+      return:
+        type:
+          - 'excel!Excel.CustomXmlPartScopedCollection:interface'
+        description: ''
+      parameters:
+        - id: namespaceUri
+          description: 'これは完全修飾スキーマ URI である必要があります。たとえば、" http://schemas.contoso.com/review/1.0 " などです。'
+          type:
+            - string
+  - uid: 'excel!Excel.CustomXmlPartCollection#getCount:member(1)'
+    summary: コレクションに含まれる CustomXml パーツの数を取得します。
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.CustomXmlPartCollection#getItem:member(1)'
+    summary: ID に基づいて、カスタム XML パーツを取得します。
+    name: getItem(id)
+    fullName: getItem(id)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(id: string): CustomXmlPart;'
+      return:
+        type:
+          - 'excel!Excel.CustomXmlPart:interface'
+        description: ''
+      parameters:
+        - id: id
+          description: 取得するオブジェクトの ID を指定します。
+          type:
+            - string
   - uid: 'excel!Excel.CustomXmlPartCollection#getItemOrNullObject:member(1)'
     summary: ID に基づいて、カスタム XML パーツを取得します。 CustomXmlPart が存在しない場合、返されるオブジェクトの isNull プロパティは true になります。
     name: getItemOrNullObject(id)
@@ -95,3 +147,6 @@ references:
   - uid: 'excel!Excel.CustomXmlPart:interface'
     name: CustomXmlPart
     fullName: Excel.CustomXmlPart
+  - uid: 'excel!Excel.CustomXmlPartScopedCollection:interface'
+    name: CustomXmlPartScopedCollection
+    fullName: Excel.CustomXmlPartScopedCollection

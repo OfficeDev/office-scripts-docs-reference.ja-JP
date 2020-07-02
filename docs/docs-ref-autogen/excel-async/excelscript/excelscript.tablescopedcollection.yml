@@ -9,9 +9,23 @@ items:
     type: interface
     package: excel!
     children:
+      - 'excel!Excel.TableScopedCollection#getCount:member(1)'
       - 'excel!Excel.TableScopedCollection#getFirst:member(1)'
       - 'excel!Excel.TableScopedCollection#getItem:member(1)'
       - 'excel!Excel.TableScopedCollection#load:member(1)'
+  - uid: 'excel!Excel.TableScopedCollection#getCount:member(1)'
+    summary: コレクションに含まれるテーブルの数を取得します。
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
   - uid: 'excel!Excel.TableScopedCollection#getFirst:member(1)'
     summary: コレクション内の最初のテーブルを取得します。 一番上の左のテーブルがコレクション内で最初のテーブルになるように、コレクションのテーブルが上から下へ、左から右への順で並べ替えられます。
     name: getFirst()

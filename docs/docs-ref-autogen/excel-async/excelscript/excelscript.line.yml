@@ -12,6 +12,7 @@ items:
       - 'excel!Excel.Line#beginArrowheadLength:member'
       - 'excel!Excel.Line#beginArrowheadStyle:member'
       - 'excel!Excel.Line#beginArrowheadWidth:member'
+      - 'excel!Excel.Line#beginConnectedShape:member'
       - 'excel!Excel.Line#beginConnectedSite:member'
       - 'excel!Excel.Line#connectBeginShape:member(1)'
       - 'excel!Excel.Line#connectEndShape:member(1)'
@@ -21,11 +22,13 @@ items:
       - 'excel!Excel.Line#endArrowheadLength:member'
       - 'excel!Excel.Line#endArrowheadStyle:member'
       - 'excel!Excel.Line#endArrowheadWidth:member'
+      - 'excel!Excel.Line#endConnectedShape:member'
       - 'excel!Excel.Line#endConnectedSite:member'
       - 'excel!Excel.Line#id:member'
       - 'excel!Excel.Line#isBeginConnected:member'
       - 'excel!Excel.Line#isEndConnected:member'
       - 'excel!Excel.Line#load:member(1)'
+      - 'excel!Excel.Line#shape:member'
   - uid: 'excel!Excel.Line#beginArrowheadLength:member'
     summary: 指定された線の始点の矢印の長さを表します。
     name: beginArrowheadLength
@@ -62,6 +65,18 @@ items:
       return:
         type:
           - 'excel!Excel.ArrowheadWidth:enum'
+  - uid: 'excel!Excel.Line#beginConnectedShape:member'
+    summary: 指定された線の始点が接続されている図形を表します。
+    name: beginConnectedShape
+    fullName: beginConnectedShape
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly beginConnectedShape: Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:interface'
   - uid: 'excel!Excel.Line#beginConnectedSite:member'
     summary: コネクタの始点が接続されている結合点を表します。 線の始点がどの図形にも接続されていない場合は、null を返します。
     name: beginConnectedSite
@@ -244,6 +259,18 @@ items:
       return:
         type:
           - 'excel!Excel.ArrowheadWidth:enum'
+  - uid: 'excel!Excel.Line#endConnectedShape:member'
+    summary: 指定された線の終点が接続されている図形を表します。
+    name: endConnectedShape
+    fullName: endConnectedShape
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly endConnectedShape: Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:interface'
   - uid: 'excel!Excel.Line#endConnectedSite:member'
     summary: コネクタの終点が接続されている結合点を表します。 線の終点がどの図形にも接続されていない場合は、null を返します。
     name: endConnectedSite
@@ -310,6 +337,18 @@ items:
           description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
           type:
             - 'string | string[]'
+  - uid: 'excel!Excel.Line#shape:member'
+    summary: 線に関連付けられた Shape オブジェクトを返します。
+    name: shape
+    fullName: shape
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly shape: Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:interface'
 references:
   - uid: 'excel!Excel.ArrowheadLength:enum'
     name: ArrowheadLength

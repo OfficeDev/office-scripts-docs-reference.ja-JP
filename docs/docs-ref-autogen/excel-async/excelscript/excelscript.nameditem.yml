@@ -13,6 +13,7 @@ items:
       - 'excel!Excel.NamedItem#comment:member'
       - 'excel!Excel.NamedItem#delete:member(1)'
       - 'excel!Excel.NamedItem#formula:member'
+      - 'excel!Excel.NamedItem#getRange:member(1)'
       - 'excel!Excel.NamedItem#getRangeOrNullObject:member(1)'
       - 'excel!Excel.NamedItem#load:member(1)'
       - 'excel!Excel.NamedItem#name:member'
@@ -20,6 +21,8 @@ items:
       - 'excel!Excel.NamedItem#type:member'
       - 'excel!Excel.NamedItem#value:member'
       - 'excel!Excel.NamedItem#visible:member'
+      - 'excel!Excel.NamedItem#worksheet:member'
+      - 'excel!Excel.NamedItem#worksheetOrNullObject:member'
   - uid: 'excel!Excel.NamedItem#arrayValues:member'
     summary: 名前付きアイテムの値と型を含むオブジェクトを返します。
     name: arrayValues
@@ -118,6 +121,19 @@ items:
               }
           }
           ```
+  - uid: 'excel!Excel.NamedItem#getRange:member(1)'
+    summary: 名前に関連付けられている範囲オブジェクトを返します。 名前付きアイテムの型が範囲でない場合、エラーをスローします。
+    name: getRange()
+    fullName: getRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRange(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
   - uid: 'excel!Excel.NamedItem#getRangeOrNullObject:member(1)'
     summary: 名前に関連付けられている範囲オブジェクトを返します。 名前付きアイテムの型が範囲でない場合は、null オブジェクトを返します。
     name: getRangeOrNullObject()
@@ -209,6 +225,30 @@ items:
       return:
         type:
           - boolean
+  - uid: 'excel!Excel.NamedItem#worksheet:member'
+    summary: 名前付きのアイテムの対象になるワークシートを返します。 アイテムのスコープがブックに設定されている場合は、エラーをスローします。
+    name: worksheet
+    fullName: worksheet
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly worksheet: Worksheet;'
+      return:
+        type:
+          - 'excel!Excel.Worksheet:interface'
+  - uid: 'excel!Excel.NamedItem#worksheetOrNullObject:member'
+    summary: 名前付きのアイテムの対象になるワークシートを返します。 アイテムがブックを対象にしている場合は、null オブジェクトを返します。
+    name: worksheetOrNullObject
+    fullName: worksheetOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly worksheetOrNullObject: Worksheet;'
+      return:
+        type:
+          - 'excel!Excel.Worksheet:interface'
 references:
   - uid: 'excel!Excel.NamedItemArrayValues:interface'
     name: NamedItemArrayValues
@@ -222,3 +262,6 @@ references:
   - uid: 'excel!Excel.NamedItemType:enum'
     name: NamedItemType
     fullName: Excel.NamedItemType
+  - uid: 'excel!Excel.Worksheet:interface'
+    name: Worksheet
+    fullName: Excel.Worksheet

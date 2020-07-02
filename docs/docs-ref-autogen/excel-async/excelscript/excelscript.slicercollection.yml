@@ -10,6 +10,9 @@ items:
     package: excel!
     children:
       - 'excel!Excel.SlicerCollection#add:member(1)'
+      - 'excel!Excel.SlicerCollection#getCount:member(1)'
+      - 'excel!Excel.SlicerCollection#getItem:member(1)'
+      - 'excel!Excel.SlicerCollection#getItemAt:member(1)'
       - 'excel!Excel.SlicerCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.SlicerCollection#load:member(1)'
   - uid: 'excel!Excel.SlicerCollection#add:member(1)'
@@ -58,6 +61,55 @@ items:
           description: 省略可能です。 新しいスライサーを作成するワークシートを指定します。 ワークシートオブジェクト、またはワークシートの名前/id を指定できます。 スライサーコレクションをワークシートから取得する場合は、このパラメーターを省略できます。
           type:
             - 'excel!Excel.SlicerCollection#add~2:complex'
+  - uid: 'excel!Excel.SlicerCollection#getCount:member(1)'
+    summary: コレクションに含まれるスライサーの数を返します。
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.SlicerCollection#getItem:member(1)'
+    summary: 名前または ID を使用してスライサー オブジェクトを取得します。
+    name: getItem(key)
+    fullName: getItem(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: string): Slicer;'
+      return:
+        type:
+          - 'excel!Excel.Slicer:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: スライサーの名前または id。
+          type:
+            - string
+  - uid: 'excel!Excel.SlicerCollection#getItemAt:member(1)'
+    summary: コレクション内の位置に基づいてスライサーを取得します。
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Slicer;'
+      return:
+        type:
+          - 'excel!Excel.Slicer:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: 取得するオブジェクトのインデックス値。 0 を起点とする番号になります。
+          type:
+            - number
   - uid: 'excel!Excel.SlicerCollection#getItemOrNullObject:member(1)'
     summary: 名前または ID に基づいてスライサーを取得します。スライサーが存在しない場合は null オブジェクトを返します。
     name: getItemOrNullObject(key)

@@ -12,6 +12,7 @@ items:
       - 'excel!Excel.Image#format:member'
       - 'excel!Excel.Image#id:member'
       - 'excel!Excel.Image#load:member(1)'
+      - 'excel!Excel.Image#shape:member'
   - uid: 'excel!Excel.Image#format:member'
     summary: 画像の形式を返します。
     name: format
@@ -70,7 +71,22 @@ items:
           description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
           type:
             - 'string | string[]'
+  - uid: 'excel!Excel.Image#shape:member'
+    summary: 画像に関連付けられた Shape オブジェクトを返します。
+    name: shape
+    fullName: shape
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly shape: Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:interface'
 references:
   - uid: 'excel!Excel.PictureFormat:enum'
     name: PictureFormat
     fullName: Excel.PictureFormat
+  - uid: 'excel!Excel.Shape:interface'
+    name: Shape
+    fullName: Excel.Shape

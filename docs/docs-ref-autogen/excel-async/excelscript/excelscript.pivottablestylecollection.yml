@@ -10,7 +10,9 @@ items:
     package: excel!
     children:
       - 'excel!Excel.PivotTableStyleCollection#add:member(1)'
+      - 'excel!Excel.PivotTableStyleCollection#getCount:member(1)'
       - 'excel!Excel.PivotTableStyleCollection#getDefault:member(1)'
+      - 'excel!Excel.PivotTableStyleCollection#getItem:member(1)'
       - 'excel!Excel.PivotTableStyleCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.PivotTableStyleCollection#load:member(1)'
       - 'excel!Excel.PivotTableStyleCollection#setDefault:member(1)'
@@ -36,6 +38,19 @@ items:
           description: 省略可能。既定値は false です。 場合は true を指定すると、必要に応じて、一意の番号を付けることができます。
           type:
             - boolean
+  - uid: 'excel!Excel.PivotTableStyleCollection#getCount:member(1)'
+    summary: コレクションに含まれる PivotTableStyle の数を取得します。
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
   - uid: 'excel!Excel.PivotTableStyleCollection#getDefault:member(1)'
     summary: 親オブジェクトのスコープに対する既定の PivotTableStyle を取得します。
     name: getDefault()
@@ -49,6 +64,24 @@ items:
         type:
           - 'excel!Excel.PivotTableStyle:interface'
         description: ''
+  - uid: 'excel!Excel.PivotTableStyleCollection#getItem:member(1)'
+    summary: 名前に基づいて PivotTableStyle を取得します。
+    name: getItem(name)
+    fullName: getItem(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(name: string): PivotTableStyle;'
+      return:
+        type:
+          - 'excel!Excel.PivotTableStyle:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: 取得する PivotTableStyle の名前。
+          type:
+            - string
   - uid: 'excel!Excel.PivotTableStyleCollection#getItemOrNullObject:member(1)'
     summary: 名前に基づいて PivotTableStyle を取得します。 PivotTableStyle が存在しない場合は、null オブジェクトを返します。
     name: getItemOrNullObject(name)

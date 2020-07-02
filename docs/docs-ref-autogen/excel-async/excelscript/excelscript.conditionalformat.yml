@@ -9,22 +9,43 @@ items:
     type: interface
     package: excel!
     children:
+      - 'excel!Excel.ConditionalFormat#cellValue:member'
       - 'excel!Excel.ConditionalFormat#cellValueOrNullObject:member'
+      - 'excel!Excel.ConditionalFormat#colorScale:member'
       - 'excel!Excel.ConditionalFormat#colorScaleOrNullObject:member'
+      - 'excel!Excel.ConditionalFormat#custom:member'
       - 'excel!Excel.ConditionalFormat#customOrNullObject:member'
+      - 'excel!Excel.ConditionalFormat#dataBar:member'
       - 'excel!Excel.ConditionalFormat#dataBarOrNullObject:member'
       - 'excel!Excel.ConditionalFormat#delete:member(1)'
+      - 'excel!Excel.ConditionalFormat#getRange:member(1)'
       - 'excel!Excel.ConditionalFormat#getRangeOrNullObject:member(1)'
       - 'excel!Excel.ConditionalFormat#getRanges:member(1)'
+      - 'excel!Excel.ConditionalFormat#iconSet:member'
       - 'excel!Excel.ConditionalFormat#iconSetOrNullObject:member'
       - 'excel!Excel.ConditionalFormat#id:member'
       - 'excel!Excel.ConditionalFormat#load:member(1)'
+      - 'excel!Excel.ConditionalFormat#preset:member'
       - 'excel!Excel.ConditionalFormat#presetOrNullObject:member'
       - 'excel!Excel.ConditionalFormat#priority:member'
       - 'excel!Excel.ConditionalFormat#stopIfTrue:member'
+      - 'excel!Excel.ConditionalFormat#textComparison:member'
       - 'excel!Excel.ConditionalFormat#textComparisonOrNullObject:member'
+      - 'excel!Excel.ConditionalFormat#topBottom:member'
       - 'excel!Excel.ConditionalFormat#topBottomOrNullObject:member'
       - 'excel!Excel.ConditionalFormat#type:member'
+  - uid: 'excel!Excel.ConditionalFormat#cellValue:member'
+    summary: 現在の条件付き書式が CellValue 型の場合は、セル値の条件付き書式プロパティを返します。 たとえば、5 ~ 10 の範囲のすべてのセルの書式を設定します。
+    name: cellValue
+    fullName: cellValue
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly cellValue: CellValueConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.CellValueConditionalFormat:interface'
   - uid: 'excel!Excel.ConditionalFormat#cellValueOrNullObject:member'
     summary: 現在の条件付き書式が CellValue 型の場合は、セル値の条件付き書式プロパティを返します。 たとえば、5 ~ 10 の範囲のすべてのセルの書式を設定します。
     name: cellValueOrNullObject
@@ -37,6 +58,18 @@ items:
       return:
         type:
           - 'excel!Excel.CellValueConditionalFormat:interface'
+  - uid: 'excel!Excel.ConditionalFormat#colorScale:member'
+    summary: 現在の条件付き書式が ColorScale 型の場合は、ColorScale 条件付き書式プロパティを返します。
+    name: colorScale
+    fullName: colorScale
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly colorScale: ColorScaleConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.ColorScaleConditionalFormat:interface'
   - uid: 'excel!Excel.ConditionalFormat#colorScaleOrNullObject:member'
     summary: 現在の条件付き書式が ColorScale 型の場合は、ColorScale 条件付き書式プロパティを返します。
     name: colorScaleOrNullObject
@@ -49,6 +82,18 @@ items:
       return:
         type:
           - 'excel!Excel.ColorScaleConditionalFormat:interface'
+  - uid: 'excel!Excel.ConditionalFormat#custom:member'
+    summary: 現在の条件付き書式がカスタム型の場合は、カスタムの条件付き書式プロパティを返します。
+    name: custom
+    fullName: custom
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly custom: CustomConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.CustomConditionalFormat:interface'
   - uid: 'excel!Excel.ConditionalFormat#customOrNullObject:member'
     summary: 現在の条件付き書式がカスタム型の場合は、カスタムの条件付き書式プロパティを返します。
     name: customOrNullObject
@@ -61,6 +106,18 @@ items:
       return:
         type:
           - 'excel!Excel.CustomConditionalFormat:interface'
+  - uid: 'excel!Excel.ConditionalFormat#dataBar:member'
+    summary: 現在の条件付き書式がデータバーの場合、データバーのプロパティを返します。
+    name: dataBar
+    fullName: dataBar
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly dataBar: DataBarConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.DataBarConditionalFormat:interface'
   - uid: 'excel!Excel.ConditionalFormat#dataBarOrNullObject:member'
     summary: 現在の条件付き書式がデータバーの場合、データバーのプロパティを返します。
     name: dataBarOrNullObject
@@ -85,6 +142,19 @@ items:
       return:
         type:
           - void
+        description: ''
+  - uid: 'excel!Excel.ConditionalFormat#getRange:member(1)'
+    summary: 条件付き書式が適用された範囲を返す。 複数の範囲に条件付き書式を適用すると、エラーがスローされます。
+    name: getRange()
+    fullName: getRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRange(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
         description: ''
   - uid: 'excel!Excel.ConditionalFormat#getRangeOrNullObject:member(1)'
     summary: Conditonal 書式が適用される範囲を返します。または、複数の範囲に条件付き書式が適用されている場合は、null オブジェクトを返します。
@@ -112,6 +182,18 @@ items:
         type:
           - 'excel!Excel.RangeAreas:interface'
         description: ''
+  - uid: 'excel!Excel.ConditionalFormat#iconSet:member'
+    summary: 現在の条件付き書式が IconSet 型の場合は、IconSet 条件付き書式プロパティを返します。
+    name: iconSet
+    fullName: iconSet
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly iconSet: IconSetConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.IconSetConditionalFormat:interface'
   - uid: 'excel!Excel.ConditionalFormat#iconSetOrNullObject:member'
     summary: 現在の条件付き書式が IconSet 型の場合は、IconSet 条件付き書式プロパティを返します。
     name: iconSetOrNullObject
@@ -154,6 +236,18 @@ items:
           description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
           type:
             - 'string | string[]'
+  - uid: 'excel!Excel.ConditionalFormat#preset:member'
+    summary: 事前設定の条件の条件付き書式を返します。 詳細については、「PresetCriteriaConditionalFormat」を参照してください。
+    name: preset
+    fullName: preset
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly preset: PresetCriteriaConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.PresetCriteriaConditionalFormat:interface'
   - uid: 'excel!Excel.ConditionalFormat#presetOrNullObject:member'
     summary: 事前設定の条件の条件付き書式を返します。 詳細については、「PresetCriteriaConditionalFormat」を参照してください。
     name: presetOrNullObject
@@ -190,6 +284,18 @@ items:
       return:
         type:
           - boolean
+  - uid: 'excel!Excel.ConditionalFormat#textComparison:member'
+    summary: 現在の条件付き書式がテキスト型の場合、特定のテキスト条件付き書式プロパティを返します。 たとえば、"Text" という単語に一致するセルの書式を設定します。
+    name: textComparison
+    fullName: textComparison
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly textComparison: TextConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.TextConditionalFormat:interface'
   - uid: 'excel!Excel.ConditionalFormat#textComparisonOrNullObject:member'
     summary: 現在の条件付き書式がテキスト型の場合、特定のテキスト条件付き書式プロパティを返します。 たとえば、"Text" という単語に一致するセルの書式を設定します。
     name: textComparisonOrNullObject
@@ -202,6 +308,18 @@ items:
       return:
         type:
           - 'excel!Excel.TextConditionalFormat:interface'
+  - uid: 'excel!Excel.ConditionalFormat#topBottom:member'
+    summary: 現在の条件付き書式が TopBottom 型の場合、上位/下位条件付き書式プロパティを返します。 たとえば、上位10% または下位10個のアイテムを書式設定します。
+    name: topBottom
+    fullName: topBottom
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly topBottom: TopBottomConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.TopBottomConditionalFormat:interface'
   - uid: 'excel!Excel.ConditionalFormat#topBottomOrNullObject:member'
     summary: 現在の条件付き書式が TopBottom 型の場合、上位/下位条件付き書式プロパティを返します。 たとえば、上位10% または下位10個のアイテムを書式設定します。
     name: topBottomOrNullObject

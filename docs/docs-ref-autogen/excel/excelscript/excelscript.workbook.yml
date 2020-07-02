@@ -19,7 +19,6 @@ items:
       - 'ExcelScript!ExcelScript.Workbook#addPivotTable:member(1)'
       - 'ExcelScript!ExcelScript.Workbook#addPivotTableStyle:member(1)'
       - 'ExcelScript!ExcelScript.Workbook#addPredefinedCellStyle:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#addSetting:member(1)'
       - 'ExcelScript!ExcelScript.Workbook#addSlicer:member(1)'
       - 'ExcelScript!ExcelScript.Workbook#addSlicerStyle:member(1)'
       - 'ExcelScript!ExcelScript.Workbook#addTable:member(1)'
@@ -41,6 +40,7 @@ items:
       - 'ExcelScript!ExcelScript.Workbook#getCommentByReplyId:member(1)'
       - 'ExcelScript!ExcelScript.Workbook#getComments:member(1)'
       - 'ExcelScript!ExcelScript.Workbook#getCustomXmlPart:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getCustomXmlPartByNamespace:member(1)'
       - 'ExcelScript!ExcelScript.Workbook#getCustomXmlParts:member(1)'
       - 'ExcelScript!ExcelScript.Workbook#getDefaultPivotTableStyle:member(1)'
       - 'ExcelScript!ExcelScript.Workbook#getDefaultSlicerStyle:member(1)'
@@ -64,8 +64,6 @@ items:
       - 'ExcelScript!ExcelScript.Workbook#getReadOnly:member(1)'
       - 'ExcelScript!ExcelScript.Workbook#getSelectedRange:member(1)'
       - 'ExcelScript!ExcelScript.Workbook#getSelectedRanges:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getSetting:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getSettings:member(1)'
       - 'ExcelScript!ExcelScript.Workbook#getSlicer:member(1)'
       - 'ExcelScript!ExcelScript.Workbook#getSlicers:member(1)'
       - 'ExcelScript!ExcelScript.Workbook#getSlicerStyle:member(1)'
@@ -358,32 +356,6 @@ items:
           description: 追加するスタイルの名前を指定します。
           type:
             - string
-  - uid: 'ExcelScript!ExcelScript.Workbook#addSetting:member(1)'
-    summary: 指定した設定をブックに設定または追加します。
-    name: 'addSetting(key, value)'
-    fullName: 'addSetting(key, value)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        addSetting(
-                    key: string,
-                    value: string | number | boolean | Date | Array<any> | any
-                ): Setting;
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Setting:interface'
-        description: ''
-      parameters:
-        - id: key
-          description: 新しい設定のキーです。
-          type:
-            - string
-        - id: value
-          description: 新しい設定の値です。
-          type:
-            - 'ExcelScript!ExcelScript.Workbook#addSetting~0:complex'
   - uid: 'ExcelScript!ExcelScript.Workbook#addSlicer:member(1)'
     summary: ブックに新しいスライサーを追加します。
     name: 'addSlicer(slicerSource, sourceField, slicerDestination)'
@@ -756,6 +728,24 @@ items:
           description: 取得するオブジェクトの ID を指定します。
           type:
             - string
+  - uid: 'ExcelScript!ExcelScript.Workbook#getCustomXmlPartByNamespace:member(1)'
+    summary: 名前空間が指定した名前空間に一致する、カスタム XML パーツの新しい範囲のコレクションを取得します。
+    name: getCustomXmlPartByNamespace(namespaceUri)
+    fullName: getCustomXmlPartByNamespace(namespaceUri)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCustomXmlPartByNamespace(namespaceUri: string): CustomXmlPart[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getCustomXmlPartByNamespace~0:complex'
+        description: ''
+      parameters:
+        - id: namespaceUri
+          description: 'これは完全修飾スキーマ URI である必要があります。たとえば、" http://schemas.contoso.com/review/1.0 " などです。'
+          type:
+            - string
   - uid: 'ExcelScript!ExcelScript.Workbook#getCustomXmlParts:member(1)'
     summary: このブックに格納されているカスタム XML パーツのコレクションを表します。
     name: getCustomXmlParts()
@@ -1084,37 +1074,6 @@ items:
       return:
         type:
           - 'ExcelScript!ExcelScript.RangeAreas:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Workbook#getSetting:member(1)'
-    summary: キーから Setting エントリを取得します。 Setting が存在しない場合は null オブジェクトを返します。
-    name: getSetting(key)
-    fullName: getSetting(key)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSetting(key: string): Setting | undefined;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Workbook#getSetting~0:complex'
-        description: ''
-      parameters:
-        - id: key
-          description: 設定のキーです。
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Workbook#getSettings:member(1)'
-    summary: ブックに関連付けられている Setting のコレクションを表します。
-    name: getSettings()
-    fullName: getSettings()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSettings(): Setting[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Workbook#getSettings~0:complex'
         description: ''
   - uid: 'ExcelScript!ExcelScript.Workbook#getSlicer:member(1)'
     summary: 名前または ID に基づいてスライサーを取得します。スライサーが存在しない場合は null オブジェクトを返します。
@@ -1556,29 +1515,6 @@ references:
   - uid: 'ExcelScript!ExcelScript.PivotTableStyle:interface'
     name: PivotTableStyle
     fullName: ExcelScript.PivotTableStyle
-  - uid: 'ExcelScript!ExcelScript.Setting:interface'
-    name: Setting
-    fullName: ExcelScript.Setting
-  - uid: 'ExcelScript!ExcelScript.Workbook#addSetting~0:complex'
-    name: string | number | boolean | Date | Array<any> | any
-    fullName: string | number | boolean | Date | Array<any> | any
-    spec.typeScript:
-      - name: 'string | number | boolean | '
-        fullName: 'string | number | boolean | '
-      - uid: '!Date:interface'
-        name: Date
-        fullName: Date
-      - name: ' | '
-        fullName: ' | '
-      - uid: '!Array:interface'
-        name: Array
-        fullName: Array
-      - name: |-
-          <any> | any
-                  
-        fullName: |-
-          <any> | any
-                  
   - uid: 'ExcelScript!ExcelScript.Slicer:interface'
     name: Slicer
     fullName: ExcelScript.Slicer
@@ -1697,6 +1633,15 @@ references:
         fullName: ExcelScript.CustomXmlPart
       - name: ' | undefined'
         fullName: ' | undefined'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getCustomXmlPartByNamespace~0:complex'
+    name: 'CustomXmlPart[]'
+    fullName: 'ExcelScript.CustomXmlPart[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.CustomXmlPart:interface'
+        name: CustomXmlPart
+        fullName: ExcelScript.CustomXmlPart
+      - name: '[]'
+        fullName: '[]'
   - uid: 'ExcelScript!ExcelScript.Workbook#getCustomXmlParts~0:complex'
     name: 'CustomXmlPart[]'
     fullName: 'ExcelScript.CustomXmlPart[]'
@@ -1781,24 +1726,6 @@ references:
   - uid: 'ExcelScript!ExcelScript.RangeAreas:interface'
     name: RangeAreas
     fullName: ExcelScript.RangeAreas
-  - uid: 'ExcelScript!ExcelScript.Workbook#getSetting~0:complex'
-    name: Setting | undefined
-    fullName: ExcelScript.Setting | undefined
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Setting:interface'
-        name: Setting
-        fullName: ExcelScript.Setting
-      - name: ' | undefined'
-        fullName: ' | undefined'
-  - uid: 'ExcelScript!ExcelScript.Workbook#getSettings~0:complex'
-    name: 'Setting[]'
-    fullName: 'ExcelScript.Setting[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Setting:interface'
-        name: Setting
-        fullName: ExcelScript.Setting
-      - name: '[]'
-        fullName: '[]'
   - uid: 'ExcelScript!ExcelScript.Workbook#getSlicer~0:complex'
     name: Slicer | undefined
     fullName: ExcelScript.Slicer | undefined

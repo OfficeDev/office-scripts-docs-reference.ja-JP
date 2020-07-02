@@ -11,6 +11,7 @@ items:
     children:
       - 'excel!Excel.DataValidation#clear:member(1)'
       - 'excel!Excel.DataValidation#errorAlert:member'
+      - 'excel!Excel.DataValidation#getInvalidCells:member(1)'
       - 'excel!Excel.DataValidation#getInvalidCellsOrNullObject:member(1)'
       - 'excel!Excel.DataValidation#ignoreBlanks:member'
       - 'excel!Excel.DataValidation#load:member(1)'
@@ -77,6 +78,19 @@ items:
               await context.sync();
           }
           ```
+  - uid: 'excel!Excel.DataValidation#getInvalidCells:member(1)'
+    summary: 1 つまたは複数の長方形範囲で構成され、無効なセル値を含む RangeAreas を返します。 すべてのセル値が有効な場合、この関数からは ItemNotFound エラーがスローされます。
+    name: getInvalidCells()
+    fullName: getInvalidCells()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getInvalidCells(): RangeAreas;'
+      return:
+        type:
+          - 'excel!Excel.RangeAreas:interface'
+        description: ''
   - uid: 'excel!Excel.DataValidation#getInvalidCellsOrNullObject:member(1)'
     summary: 1 つまたは複数の長方形範囲で構成され、無効なセル値を含む RangeAreas を返します。 すべてのセル値が有効な場合、この関数からは null が返されます。
     name: getInvalidCellsOrNullObject()

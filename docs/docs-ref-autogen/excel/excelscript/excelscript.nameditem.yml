@@ -19,6 +19,7 @@ items:
       - 'ExcelScript!ExcelScript.NamedItem#getType:member(1)'
       - 'ExcelScript!ExcelScript.NamedItem#getValue:member(1)'
       - 'ExcelScript!ExcelScript.NamedItem#getVisible:member(1)'
+      - 'ExcelScript!ExcelScript.NamedItem#getWorksheet:member(1)'
       - 'ExcelScript!ExcelScript.NamedItem#setComment:member(1)'
       - 'ExcelScript!ExcelScript.NamedItem#setFormula:member(1)'
       - 'ExcelScript!ExcelScript.NamedItem#setVisible:member(1)'
@@ -152,6 +153,19 @@ items:
         type:
           - boolean
         description: ''
+  - uid: 'ExcelScript!ExcelScript.NamedItem#getWorksheet:member(1)'
+    summary: 名前付きのアイテムの対象になるワークシートを返します。 アイテムがブックを対象にしている場合は、null オブジェクトを返します。
+    name: getWorksheet()
+    fullName: getWorksheet()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getWorksheet(): Worksheet | undefined;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.NamedItem#getWorksheet~0:complex'
+        description: ''
   - uid: 'ExcelScript!ExcelScript.NamedItem#setComment:member(1)'
     summary: この名前に関連付けられているコメントを指定します。
     name: setComment(comment)
@@ -219,3 +233,12 @@ references:
   - uid: 'ExcelScript!ExcelScript.NamedItemType:enum'
     name: NamedItemType
     fullName: ExcelScript.NamedItemType
+  - uid: 'ExcelScript!ExcelScript.NamedItem#getWorksheet~0:complex'
+    name: Worksheet | undefined
+    fullName: ExcelScript.Worksheet | undefined
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Worksheet:interface'
+        name: Worksheet
+        fullName: ExcelScript.Worksheet
+      - name: ' | undefined'
+        fullName: ' | undefined'

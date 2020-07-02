@@ -1,13 +1,13 @@
 ---
 title: Office スクリプト API リファレンス
 description: Office Scripts JavaScript Api の概要について説明します。
-ms.date: 06/17/2020
-ms.openlocfilehash: 5634d0e5f68464655054ad1c09eb7931e0da62d4
-ms.sourcegitcommit: 163b26a43411ad7f13a01237efe9b8d6de656b47
+ms.date: 06/29/2020
+ms.openlocfilehash: 7c4fe97ca35cfb442ebbf9db2e0b03b389185ae8
+ms.sourcegitcommit: 9c4c4c213a203e58c55eb3d84d7d92fa527f3eb8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "44884838"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45004732"
 ---
 # <a name="office-scripts-api-reference"></a>Office スクリプト API リファレンス
 
@@ -20,12 +20,12 @@ Office スクリプト API を使用すると、web 上の Excel で一般的な
 
 次の一覧は、Office Scripts オブジェクトモデルの基本事項を示しています。 これにより、共通のクラスと、それらが相互にどのように関係しているかがわかります。
 
-- [ブック](/javascript/api/office-scripts/excel/excelscript.workbook) には、1 つ以上の [ワークシート](/javascript/api/office-scripts/excel/excelscript.worksheet) が含まれます。
-- [ワークシート](/javascript/api/office-scripts/excel/excelscript.worksheet) では、[Range](/javascript/api/office-scripts/excel/excelscript.range) オブジェクトを介してセルにアクセスできます。
-- [Range](/javascript/api/office-scripts/excel/excelscript.range) は、連続したセルのグループを表します。
-- [Range](/javascript/api/office-scripts/excel/excelscript.range) は、[表](/javascript/api/office-scripts/excel/excelscript.table)、[グラフ](/javascript/api/office-scripts/excel/excelscript.chart)、[図形](/javascript/api/office-scripts/excel/excelscript.shape)、およびその他のデータ可視化や組織オブジェクトを作成して配置するために使用されます。
-- [ワークシート](/javascript/api/office-scripts/excel/excelscript.worksheet)には、個々のシートにあるオブジェクトが格納されている配列が含まれています。
-- ブックには、ブック全体に対するいくつかのデータオブジェクトの配列[が含まれ](/javascript/api/office-scripts/excel/excelscript.workbook)ています。
+- [ブック](/javascript/api/office-scripts/excelscript/excelscript.workbook) には、1 つ以上の [ワークシート](/javascript/api/office-scripts/excelscript/excelscript.worksheet) が含まれます。
+- [ワークシート](/javascript/api/office-scripts/excelscript/excelscript.worksheet) では、[Range](/javascript/api/office-scripts/excelscript/excelscript.range) オブジェクトを介してセルにアクセスできます。
+- [Range](/javascript/api/office-scripts/excelscript/excelscript.range) は、連続したセルのグループを表します。
+- [Range](/javascript/api/office-scripts/excelscript/excelscript.range) は、[表](/javascript/api/office-scripts/excelscript/excelscript.table)、[グラフ](/javascript/api/office-scripts/excelscript/excelscript.chart)、[図形](/javascript/api/office-scripts/excelscript/excelscript.shape)、およびその他のデータ可視化や組織オブジェクトを作成して配置するために使用されます。
+- [ワークシート](/javascript/api/office-scripts/excelscript/excelscript.worksheet)には、個々のシートにあるオブジェクトが格納されている配列が含まれています。
+- ブックには、ブック全体に対するいくつかのデータオブジェクトの配列[が含まれ](/javascript/api/office-scripts/excelscript/excelscript.workbook)ています。
 
 Office Scripts オブジェクトモデルの詳細については、「 [Office スクリプトの基礎知識](/office/dev/scripts/develop/scripting-fundamentals)」を参照してください。
 

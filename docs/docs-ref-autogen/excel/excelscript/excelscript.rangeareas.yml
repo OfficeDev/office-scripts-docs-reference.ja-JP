@@ -33,6 +33,7 @@ items:
       - 'ExcelScript!ExcelScript.RangeAreas#getOffsetRangeAreas:member(1)'
       - 'ExcelScript!ExcelScript.RangeAreas#getPredefinedCellStyle:member(1)'
       - 'ExcelScript!ExcelScript.RangeAreas#getSpecialCells:member(1)'
+      - 'ExcelScript!ExcelScript.RangeAreas#getTables:member(1)'
       - 'ExcelScript!ExcelScript.RangeAreas#getUsedRangeAreas:member(1)'
       - 'ExcelScript!ExcelScript.RangeAreas#getWorksheet:member(1)'
       - 'ExcelScript!ExcelScript.RangeAreas#setDirty:member(1)'
@@ -431,6 +432,24 @@ items:
           description: CellType が定数または数式の場合は、この引数を使用して、結果に含めるセルの種類を決定します。 これらの値は、組み合わせて複数の型を返すことができます。 この引数を省略すると、すべての定数および数式が対象になります。
           type:
             - 'ExcelScript!ExcelScript.SpecialCellValueType:enum'
+  - uid: 'ExcelScript!ExcelScript.RangeAreas#getTables:member(1)'
+    summary: この RangeAreas オブジェクトの範囲と重なるテーブルの集まりを範囲限定で返します。
+    name: getTables(fullyContained)
+    fullName: getTables(fullyContained)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTables(fullyContained?: boolean): Table[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.RangeAreas#getTables~0:complex'
+        description: ''
+      parameters:
+        - id: fullyContained
+          description: True の場合は、範囲範囲内に完全に含まれるテーブルのみを返します。 既定値は false です。
+          type:
+            - boolean
   - uid: 'ExcelScript!ExcelScript.RangeAreas#getUsedRangeAreas:member(1)'
     summary: RangeAreas オブジェクトの個別の長方形範囲の全使用済み領域を構成する使用済み RangeAreas を返します。 RangeAreas 内に使用されているセルがない場合は、null オブジェクトが返されます。
     name: getUsedRangeAreas(valuesOnly)
@@ -567,6 +586,15 @@ references:
   - uid: 'ExcelScript!ExcelScript.SpecialCellValueType:enum'
     name: SpecialCellValueType
     fullName: ExcelScript.SpecialCellValueType
+  - uid: 'ExcelScript!ExcelScript.RangeAreas#getTables~0:complex'
+    name: 'Table[]'
+    fullName: 'ExcelScript.Table[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Table:interface'
+        name: Table
+        fullName: ExcelScript.Table
+      - name: '[]'
+        fullName: '[]'
   - uid: 'ExcelScript!ExcelScript.Worksheet:interface'
     name: Worksheet
     fullName: ExcelScript.Worksheet

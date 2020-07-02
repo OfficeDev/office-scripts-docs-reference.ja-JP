@@ -9,10 +9,24 @@ items:
     type: interface
     package: ExcelScript!
     children:
+      - 'ExcelScript!ExcelScript.ShapeGroup#getGroupShape:member(1)'
       - 'ExcelScript!ExcelScript.ShapeGroup#getId:member(1)'
       - 'ExcelScript!ExcelScript.ShapeGroup#getShape:member(1)'
       - 'ExcelScript!ExcelScript.ShapeGroup#getShapes:member(1)'
       - 'ExcelScript!ExcelScript.ShapeGroup#ungroup:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ShapeGroup#getGroupShape:member(1)'
+    summary: グループに関連付けられた Shape オブジェクトを返します。
+    name: getGroupShape()
+    fullName: getGroupShape()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getGroupShape(): Shape;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Shape:interface'
+        description: ''
   - uid: 'ExcelScript!ExcelScript.ShapeGroup#getId:member(1)'
     summary: 図形の識別子を指定します。
     name: getId()

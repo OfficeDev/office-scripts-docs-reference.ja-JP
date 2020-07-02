@@ -10,7 +10,9 @@ items:
     package: excel!
     children:
       - 'excel!Excel.ConditionalRangeBorderCollection#bottom:member'
+      - 'excel!Excel.ConditionalRangeBorderCollection#count:member'
       - 'excel!Excel.ConditionalRangeBorderCollection#getItem:member(1)'
+      - 'excel!Excel.ConditionalRangeBorderCollection#getItemAt:member(1)'
       - 'excel!Excel.ConditionalRangeBorderCollection#left:member'
       - 'excel!Excel.ConditionalRangeBorderCollection#load:member(1)'
       - 'excel!Excel.ConditionalRangeBorderCollection#right:member'
@@ -27,6 +29,18 @@ items:
       return:
         type:
           - 'excel!Excel.ConditionalRangeBorder:interface'
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#count:member'
+    summary: コレクションに含まれる境界線オブジェクトの数。
+    name: count
+    fullName: count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly count: number;'
+      return:
+        type:
+          - number
   - uid: 'excel!Excel.ConditionalRangeBorderCollection#getItem:member(1)'
     summary: オブジェクトの名前を使用して、境界線オブジェクトを取得します。
     name: getItem(index)
@@ -45,6 +59,24 @@ items:
           description: 取得する border オブジェクトのインデックス値を指定します。 詳細については、「Excel の ConditionalRangeBorderIndex」を参照してください。
           type:
             - 'excel!Excel.ConditionalRangeBorderIndex:enum'
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#getItemAt:member(1)'
+    summary: オブジェクトのインデックスを使用して、境界線オブジェクトを取得します。
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): ConditionalRangeBorder;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeBorder:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: 取得するオブジェクトのインデックス値。 0 を起点とする番号になります。
+          type:
+            - number
   - uid: 'excel!Excel.ConditionalRangeBorderCollection#left:member'
     summary: 左罫線を取得します。
     name: left

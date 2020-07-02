@@ -11,7 +11,9 @@ items:
     children:
       - 'excel!Excel.ConditionalFormatCollection#add:member(1)'
       - 'excel!Excel.ConditionalFormatCollection#clearAll:member(1)'
+      - 'excel!Excel.ConditionalFormatCollection#getCount:member(1)'
       - 'excel!Excel.ConditionalFormatCollection#getItem:member(1)'
+      - 'excel!Excel.ConditionalFormatCollection#getItemAt:member(1)'
       - 'excel!Excel.ConditionalFormatCollection#load:member(1)'
   - uid: 'excel!Excel.ConditionalFormatCollection#add:member(1)'
     summary: 新しい条件付き書式をコレクションの先頭/最上位の優先度に追加します。
@@ -79,6 +81,19 @@ items:
               $(".conditional-formats").hide();
           }
           ```
+  - uid: 'excel!Excel.ConditionalFormatCollection#getCount:member(1)'
+    summary: ブック内の条件付き書式の数を返します。
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
   - uid: 'excel!Excel.ConditionalFormatCollection#getItem:member(1)'
     summary: 指定された ID に対応する条件付き書式を返します。
     name: getItem(id)
@@ -97,6 +112,24 @@ items:
           description: 条件付き書式の id を指定します。
           type:
             - string
+  - uid: 'excel!Excel.ConditionalFormatCollection#getItemAt:member(1)'
+    summary: 指定されたインデックスに条件付き書式を返します。
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): ConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalFormat:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: 取得する条件付き書式のインデックスを指定します。
+          type:
+            - number
   - uid: 'excel!Excel.ConditionalFormatCollection#load:member(1)'
     summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
     name: load(propertyNames)

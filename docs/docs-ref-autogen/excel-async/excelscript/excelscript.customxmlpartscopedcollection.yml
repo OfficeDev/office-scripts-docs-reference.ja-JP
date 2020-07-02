@@ -9,9 +9,43 @@ items:
     type: interface
     package: excel!
     children:
+      - 'excel!Excel.CustomXmlPartScopedCollection#getCount:member(1)'
+      - 'excel!Excel.CustomXmlPartScopedCollection#getItem:member(1)'
       - 'excel!Excel.CustomXmlPartScopedCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.CustomXmlPartScopedCollection#getOnlyItem:member(1)'
       - 'excel!Excel.CustomXmlPartScopedCollection#getOnlyItemOrNullObject:member(1)'
       - 'excel!Excel.CustomXmlPartScopedCollection#load:member(1)'
+  - uid: 'excel!Excel.CustomXmlPartScopedCollection#getCount:member(1)'
+    summary: コレクションに含まれる CustomXML パーツの数を取得します。
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.CustomXmlPartScopedCollection#getItem:member(1)'
+    summary: ID に基づいて、カスタム XML パーツを取得します。
+    name: getItem(id)
+    fullName: getItem(id)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(id: string): CustomXmlPart;'
+      return:
+        type:
+          - 'excel!Excel.CustomXmlPart:interface'
+        description: ''
+      parameters:
+        - id: id
+          description: 取得するオブジェクトの ID を指定します。
+          type:
+            - string
   - uid: 'excel!Excel.CustomXmlPartScopedCollection#getItemOrNullObject:member(1)'
     summary: ID に基づいて、カスタム XML パーツを取得します。 CustomXmlPart が存在しない場合、返されるオブジェクトの isNull プロパティは true になります。
     name: getItemOrNullObject(id)
@@ -63,6 +97,19 @@ items:
           description: 取得するオブジェクトの ID を指定します。
           type:
             - string
+  - uid: 'excel!Excel.CustomXmlPartScopedCollection#getOnlyItem:member(1)'
+    summary: コレクションに含まれる項目が 1 つだけの場合、このメソッドはその項目を返します。 それ以外の場合、このメソッドはエラーを生成します。
+    name: getOnlyItem()
+    fullName: getOnlyItem()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getOnlyItem(): CustomXmlPart;'
+      return:
+        type:
+          - 'excel!Excel.CustomXmlPart:interface'
+        description: ''
   - uid: 'excel!Excel.CustomXmlPartScopedCollection#getOnlyItemOrNullObject:member(1)'
     summary: コレクションに含まれる項目が 1 つだけの場合、このメソッドはその項目を返します。 それ以外の場合、このメソッドは Null を返します。
     name: getOnlyItemOrNullObject()

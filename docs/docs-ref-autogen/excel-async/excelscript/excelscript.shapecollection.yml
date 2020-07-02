@@ -9,13 +9,34 @@ items:
     type: interface
     package: excel!
     children:
+      - 'excel!Excel.ShapeCollection#_GetItem:member(1)'
       - 'excel!Excel.ShapeCollection#addGeometricShape:member(1)'
       - 'excel!Excel.ShapeCollection#addGroup:member(1)'
       - 'excel!Excel.ShapeCollection#addImage:member(1)'
       - 'excel!Excel.ShapeCollection#addLine:member(1)'
       - 'excel!Excel.ShapeCollection#addTextBox:member(1)'
+      - 'excel!Excel.ShapeCollection#getCount:member(1)'
       - 'excel!Excel.ShapeCollection#getItem:member(1)'
+      - 'excel!Excel.ShapeCollection#getItemAt:member(1)'
       - 'excel!Excel.ShapeCollection#load:member(1)'
+  - uid: 'excel!Excel.ShapeCollection#_GetItem:member(1)'
+    summary: 図形 id で識別される図形を取得します。
+    name: _GetItem(shapeId)
+    fullName: _GetItem(shapeId)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: '_GetItem(shapeId: string): Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:interface'
+        description: ''
+      parameters:
+        - id: shapeId
+          description: 図形の識別子を示します。
+          type:
+            - string
   - uid: 'excel!Excel.ShapeCollection#addGeometricShape:member(1)'
     summary: 幾何学的図形をワークシートに追加します。 新しい図形を表す Shape オブジェクトを返します。
     name: addGeometricShape(geometricShapeType)
@@ -212,6 +233,19 @@ items:
           description: '[作成済み] テキストボックスに表示されるテキストを表します。'
           type:
             - string
+  - uid: 'excel!Excel.ShapeCollection#getCount:member(1)'
+    summary: ワークシートの図形数を返します。
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
   - uid: 'excel!Excel.ShapeCollection#getItem:member(1)'
     summary: 名前または ID を使用して図形を取得します。
     name: getItem(key)
@@ -230,6 +264,24 @@ items:
           description: 取得する図形の名前または ID を指定します。
           type:
             - string
+  - uid: 'excel!Excel.ShapeCollection#getItemAt:member(1)'
+    summary: コレクション内の位置を使用して図形を取得します。
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: 取得する図形の0から始まるインデックスを指定します。
+          type:
+            - number
   - uid: 'excel!Excel.ShapeCollection#load:member(1)'
     summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
     name: load(propertyNames)

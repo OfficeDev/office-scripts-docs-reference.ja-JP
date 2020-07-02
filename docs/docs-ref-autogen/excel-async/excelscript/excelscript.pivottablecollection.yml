@@ -10,6 +10,8 @@ items:
     package: excel!
     children:
       - 'excel!Excel.PivotTableCollection#add:member(1)'
+      - 'excel!Excel.PivotTableCollection#getCount:member(1)'
+      - 'excel!Excel.PivotTableCollection#getItem:member(1)'
       - 'excel!Excel.PivotTableCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.PivotTableCollection#load:member(1)'
       - 'excel!Excel.PivotTableCollection#refreshAll:member(1)'
@@ -57,6 +59,37 @@ items:
           description: ピボットテーブル レポートの配置先範囲 (結果のレポートを配置するワークシートの範囲) の左上端のセルを指定します。
           type:
             - 'excel!Excel.PivotTableCollection#add~1:complex'
+  - uid: 'excel!Excel.PivotTableCollection#getCount:member(1)'
+    summary: コレクションに含まれるピボット テーブルの数を取得します。
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.PivotTableCollection#getItem:member(1)'
+    summary: 名前に基づいてピボットテーブルを取得します。
+    name: getItem(name)
+    fullName: getItem(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(name: string): PivotTable;'
+      return:
+        type:
+          - 'excel!Excel.PivotTable:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: 取得するピボットテーブルの名前。
+          type:
+            - string
   - uid: 'excel!Excel.PivotTableCollection#getItemOrNullObject:member(1)'
     summary: 名前を使用してピボットテーブルを取得します。 PivotTable が存在しない場合は null オブジェクトを返します。
     name: getItemOrNullObject(name)

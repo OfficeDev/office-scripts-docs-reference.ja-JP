@@ -16,8 +16,11 @@ items:
       - 'excel!Excel.PageLayout#draftMode:member'
       - 'excel!Excel.PageLayout#firstPageNumber:member'
       - 'excel!Excel.PageLayout#footerMargin:member'
+      - 'excel!Excel.PageLayout#getPrintArea:member(1)'
       - 'excel!Excel.PageLayout#getPrintAreaOrNullObject:member(1)'
+      - 'excel!Excel.PageLayout#getPrintTitleColumns:member(1)'
       - 'excel!Excel.PageLayout#getPrintTitleColumnsOrNullObject:member(1)'
+      - 'excel!Excel.PageLayout#getPrintTitleRows:member(1)'
       - 'excel!Excel.PageLayout#getPrintTitleRowsOrNullObject:member(1)'
       - 'excel!Excel.PageLayout#headerMargin:member'
       - 'excel!Excel.PageLayout#headersFooters:member'
@@ -147,6 +150,19 @@ items:
       return:
         type:
           - number
+  - uid: 'excel!Excel.PageLayout#getPrintArea:member(1)'
+    summary: ワークシートの印刷範囲を表し、1 つまたは複数の長方形範囲で構成される RangeAreas オブジェクトを取得します。 印刷範囲がない場合、ItemNotFound エラーがスローされます。
+    name: getPrintArea()
+    fullName: getPrintArea()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPrintArea(): RangeAreas;'
+      return:
+        type:
+          - 'excel!Excel.RangeAreas:interface'
+        description: ''
   - uid: 'excel!Excel.PageLayout#getPrintAreaOrNullObject:member(1)'
     summary: ワークシートの印刷範囲を表し、1 つまたは複数の長方形範囲で構成される RangeAreas オブジェクトを取得します。 印刷範囲がない場合、null オブジェクトが返されます。
     name: getPrintAreaOrNullObject()
@@ -160,6 +176,19 @@ items:
         type:
           - 'excel!Excel.RangeAreas:interface'
         description: ''
+  - uid: 'excel!Excel.PageLayout#getPrintTitleColumns:member(1)'
+    summary: タイトル列を表す範囲オブジェクトを取得します。
+    name: getPrintTitleColumns()
+    fullName: getPrintTitleColumns()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPrintTitleColumns(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
   - uid: 'excel!Excel.PageLayout#getPrintTitleColumnsOrNullObject:member(1)'
     summary: タイトル列を表す範囲オブジェクトを取得します。 設定されていない場合、null オブジェクトが返されます。
     name: getPrintTitleColumnsOrNullObject()
@@ -169,6 +198,19 @@ items:
     type: method
     syntax:
       content: 'getPrintTitleColumnsOrNullObject(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
+  - uid: 'excel!Excel.PageLayout#getPrintTitleRows:member(1)'
+    summary: タイトル行を表す範囲オブジェクトを取得します。
+    name: getPrintTitleRows()
+    fullName: getPrintTitleRows()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPrintTitleRows(): Range;'
       return:
         type:
           - 'excel!Excel.Range:interface'
