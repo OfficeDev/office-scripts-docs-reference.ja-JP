@@ -23,7 +23,19 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'add(type: ConditionalFormatType): ConditionalFormat;'
+      content: |-
+        add(
+                    type:
+                        | ConditionalFormatType
+                        | "Custom"
+                        | "DataBar"
+                        | "ColorScale"
+                        | "IconSet"
+                        | "TopBottom"
+                        | "PresetCriteria"
+                        | "ContainsText"
+                        | "CellValue"
+                ): ConditionalFormat;
       return:
         type:
           - 'excel!Excel.ConditionalFormat:interface'
@@ -52,7 +64,7 @@ items:
         - id: type
           description: 追加する条件付き書式の種類を指定します。 詳細については、「ConditionalFormatType」を参照してください。
           type:
-            - 'excel!Excel.ConditionalFormatType:enum'
+            - 'excel!Excel.ConditionalFormatCollection#add~0:complex'
   - uid: 'excel!Excel.ConditionalFormatCollection#clearAll:member(1)'
     summary: 現在指定している範囲でアクティブなすべての条件付き書式をクリアする。
     name: clearAll()
@@ -89,10 +101,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getCount(): number;'
+      content: 'getCount(): ClientResult<number>;'
       return:
         type:
-          - number
+          - 'excel!Excel.ConditionalFormatCollection#getCount~0:complex'
         description: ''
   - uid: 'excel!Excel.ConditionalFormatCollection#getItem:member(1)'
     summary: 指定された ID に対応する条件付き書式を返します。
@@ -152,6 +164,61 @@ references:
   - uid: 'excel!Excel.ConditionalFormat:interface'
     name: ConditionalFormat
     fullName: Excel.ConditionalFormat
-  - uid: 'excel!Excel.ConditionalFormatType:enum'
-    name: ConditionalFormatType
-    fullName: Excel.ConditionalFormatType
+  - uid: 'excel!Excel.ConditionalFormatCollection#add~0:complex'
+    name: |-
+      | ConditionalFormatType
+                      | "Custom"
+                      | "DataBar"
+                      | "ColorScale"
+                      | "IconSet"
+                      | "TopBottom"
+                      | "PresetCriteria"
+                      | "ContainsText"
+                      | "CellValue"
+    fullName: |-
+      | Excel.ConditionalFormatType
+                      | "Custom"
+                      | "DataBar"
+                      | "ColorScale"
+                      | "IconSet"
+                      | "TopBottom"
+                      | "PresetCriteria"
+                      | "ContainsText"
+                      | "CellValue"
+    spec.typeScript:
+      - name: '| '
+        fullName: '| '
+      - uid: 'excel!Excel.ConditionalFormatType:enum'
+        name: ConditionalFormatType
+        fullName: Excel.ConditionalFormatType
+      - name: |2-
+
+                          | "Custom"
+                          | "DataBar"
+                          | "ColorScale"
+                          | "IconSet"
+                          | "TopBottom"
+                          | "PresetCriteria"
+                          | "ContainsText"
+                          | "CellValue"
+                  
+        fullName: |2-
+
+                          | "Custom"
+                          | "DataBar"
+                          | "ColorScale"
+                          | "IconSet"
+                          | "TopBottom"
+                          | "PresetCriteria"
+                          | "ContainsText"
+                          | "CellValue"
+                  
+  - uid: 'excel!Excel.ConditionalFormatCollection#getCount~0:complex'
+    name: ClientResult<number>
+    fullName: Excel.ClientResult<number>
+    spec.typeScript:
+      - uid: 'excel!Excel.ClientResult:interface'
+        name: ClientResult
+        fullName: Excel.ClientResult
+      - name: <number>
+        fullName: <number>

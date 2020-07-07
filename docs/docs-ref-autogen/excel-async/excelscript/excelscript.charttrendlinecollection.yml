@@ -21,7 +21,17 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'add(type?: ChartTrendlineType): ChartTrendline;'
+      content: |-
+        add(
+                    type?:
+                        | ChartTrendlineType
+                        | "Linear"
+                        | "Exponential"
+                        | "Logarithmic"
+                        | "MovingAverage"
+                        | "Polynomial"
+                        | "Power"
+                ): ChartTrendline;
       return:
         type:
           - 'excel!Excel.ChartTrendline:interface'
@@ -46,7 +56,7 @@ items:
         - id: type
           description: 近似曲線の種類を指定します。 既定値は "Linear" です。 詳細については、「Excel ChartTrendline 曲線」を参照してください。
           type:
-            - 'excel!Excel.ChartTrendlineType:enum'
+            - 'excel!Excel.ChartTrendlineCollection#add~0:complex'
   - uid: 'excel!Excel.ChartTrendlineCollection#getCount:member(1)'
     summary: コレクションに含まれる近似曲線の数を返します。
     name: getCount()
@@ -55,10 +65,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getCount(): number;'
+      content: 'getCount(): ClientResult<number>;'
       return:
         type:
-          - number
+          - 'excel!Excel.ChartTrendlineCollection#getCount~0:complex'
         description: ''
   - uid: 'excel!Excel.ChartTrendlineCollection#getItem:member(1)'
     summary: インデックス (項目配列内の挿入順序) に基づいて trendline オブジェクトを取得します。
@@ -100,6 +110,53 @@ references:
   - uid: 'excel!Excel.ChartTrendline:interface'
     name: ChartTrendline
     fullName: Excel.ChartTrendline
-  - uid: 'excel!Excel.ChartTrendlineType:enum'
-    name: ChartTrendlineType
-    fullName: Excel.ChartTrendlineType
+  - uid: 'excel!Excel.ChartTrendlineCollection#add~0:complex'
+    name: |-
+      | ChartTrendlineType
+                      | "Linear"
+                      | "Exponential"
+                      | "Logarithmic"
+                      | "MovingAverage"
+                      | "Polynomial"
+                      | "Power"
+    fullName: |-
+      | Excel.ChartTrendlineType
+                      | "Linear"
+                      | "Exponential"
+                      | "Logarithmic"
+                      | "MovingAverage"
+                      | "Polynomial"
+                      | "Power"
+    spec.typeScript:
+      - name: '| '
+        fullName: '| '
+      - uid: 'excel!Excel.ChartTrendlineType:enum'
+        name: ChartTrendlineType
+        fullName: Excel.ChartTrendlineType
+      - name: |2-
+
+                          | "Linear"
+                          | "Exponential"
+                          | "Logarithmic"
+                          | "MovingAverage"
+                          | "Polynomial"
+                          | "Power"
+                  
+        fullName: |2-
+
+                          | "Linear"
+                          | "Exponential"
+                          | "Logarithmic"
+                          | "MovingAverage"
+                          | "Polynomial"
+                          | "Power"
+                  
+  - uid: 'excel!Excel.ChartTrendlineCollection#getCount~0:complex'
+    name: ClientResult<number>
+    fullName: Excel.ClientResult<number>
+    spec.typeScript:
+      - uid: 'excel!Excel.ClientResult:interface'
+        name: ClientResult
+        fullName: Excel.ClientResult
+      - name: <number>
+        fullName: <number>

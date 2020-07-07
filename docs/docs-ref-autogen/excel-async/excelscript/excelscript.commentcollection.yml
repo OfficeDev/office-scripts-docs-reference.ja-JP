@@ -28,7 +28,7 @@ items:
         add(
                     cellAddress: Range | string,
                     content: CommentRichContent | string,
-                    contentType?: ContentType
+                    contentType?: ContentType | "Plain" | "Mention"
                 ): Comment;
       return:
         type:
@@ -59,7 +59,7 @@ items:
         - id: contentType
           description: 省略可能です。 コメント内に含まれるコンテンツの種類。 既定値は enum です。`ContentType.Plain`<!-- -->.
           type:
-            - 'excel!Excel.ContentType:enum'
+            - 'excel!Excel.CommentCollection#add~2:complex'
   - uid: 'excel!Excel.CommentCollection#getCount:member(1)'
     summary: コレクションに含まれるコメントの数を取得します。
     name: getCount()
@@ -68,10 +68,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getCount(): number;'
+      content: 'getCount(): ClientResult<number>;'
       return:
         type:
-          - number
+          - 'excel!Excel.CommentCollection#getCount~0:complex'
         description: ''
   - uid: 'excel!Excel.CommentCollection#getItem:member(1)'
     summary: ID に基づいてコレクションからコメントを取得します。
@@ -185,9 +185,28 @@ references:
         fullName: Excel.CommentRichContent
       - name: ' | string'
         fullName: ' | string'
-  - uid: 'excel!Excel.ContentType:enum'
-    name: ContentType
-    fullName: Excel.ContentType
+  - uid: 'excel!Excel.CommentCollection#add~2:complex'
+    name: ContentType | "Plain" | "Mention"
+    fullName: Excel.ContentType | "Plain" | "Mention"
+    spec.typeScript:
+      - uid: 'excel!Excel.ContentType:enum'
+        name: ContentType
+        fullName: Excel.ContentType
+      - name: |2-
+           | "Plain" | "Mention"
+                  
+        fullName: |2-
+           | "Plain" | "Mention"
+                  
+  - uid: 'excel!Excel.CommentCollection#getCount~0:complex'
+    name: ClientResult<number>
+    fullName: Excel.ClientResult<number>
+    spec.typeScript:
+      - uid: 'excel!Excel.ClientResult:interface'
+        name: ClientResult
+        fullName: Excel.ClientResult
+      - name: <number>
+        fullName: <number>
   - uid: 'excel!Excel.CommentCollection#getItemByCell~0:complex'
     name: Range | string
     fullName: Excel.Range | string
