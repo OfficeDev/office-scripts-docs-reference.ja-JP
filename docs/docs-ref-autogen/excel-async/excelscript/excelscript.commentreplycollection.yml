@@ -25,7 +25,7 @@ items:
       content: |-
         add(
                     content: CommentRichContent | string,
-                    contentType?: ContentType
+                    contentType?: ContentType | "Plain" | "Mention"
                 ): CommentReply;
       return:
         type:
@@ -52,7 +52,7 @@ items:
         - id: contentType
           description: 省略可能です。 コメント内に含まれるコンテンツの種類。 既定値は enum です。`ContentType.Plain`<!-- -->.
           type:
-            - 'excel!Excel.ContentType:enum'
+            - 'excel!Excel.CommentReplyCollection#add~1:complex'
   - uid: 'excel!Excel.CommentReplyCollection#getCount:member(1)'
     summary: コレクションのコメント返信数を取得します。
     name: getCount()
@@ -61,10 +61,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getCount(): number;'
+      content: 'getCount(): ClientResult<number>;'
       return:
         type:
-          - number
+          - 'excel!Excel.CommentReplyCollection#getCount~0:complex'
         description: ''
   - uid: 'excel!Excel.CommentReplyCollection#getItem:member(1)'
     summary: その ID で識別されるコメント返信を返します。
@@ -133,6 +133,25 @@ references:
         fullName: Excel.CommentRichContent
       - name: ' | string'
         fullName: ' | string'
-  - uid: 'excel!Excel.ContentType:enum'
-    name: ContentType
-    fullName: Excel.ContentType
+  - uid: 'excel!Excel.CommentReplyCollection#add~1:complex'
+    name: ContentType | "Plain" | "Mention"
+    fullName: Excel.ContentType | "Plain" | "Mention"
+    spec.typeScript:
+      - uid: 'excel!Excel.ContentType:enum'
+        name: ContentType
+        fullName: Excel.ContentType
+      - name: |2-
+           | "Plain" | "Mention"
+                  
+        fullName: |2-
+           | "Plain" | "Mention"
+                  
+  - uid: 'excel!Excel.CommentReplyCollection#getCount~0:complex'
+    name: ClientResult<number>
+    fullName: Excel.ClientResult<number>
+    spec.typeScript:
+      - uid: 'excel!Excel.ClientResult:interface'
+        name: ClientResult
+        fullName: Excel.ClientResult
+      - name: <number>
+        fullName: <number>

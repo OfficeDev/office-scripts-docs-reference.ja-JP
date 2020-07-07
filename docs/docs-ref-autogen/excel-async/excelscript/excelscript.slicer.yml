@@ -94,10 +94,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getSelectedItems(): string[];'
+      content: 'getSelectedItems(): ClientResult<string[]>;'
       return:
         type:
-          - 'string[]'
+          - 'excel!Excel.Slicer#getSelectedItems~0:complex'
         description: ''
   - uid: 'excel!Excel.Slicer#height:member'
     summary: スライサーの高さ (ポイント数) を表します。 "引数が無効であるか、存在しないか、または形式が正しくありません。" という例外がスローされます。 負の値で設定した場合、または入力に0の場合は例外。
@@ -226,10 +226,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'sortBy: SlicerSortType;'
+      content: 'sortBy: SlicerSortType | "DataSourceOrder" | "Ascending" | "Descending";'
       return:
         type:
-          - 'excel!Excel.SlicerSortType:enum'
+          - 'excel!Excel.Slicer#sortBy~0:complex'
   - uid: 'excel!Excel.Slicer#style:member'
     summary: スライサー スタイルを表す定数値。 可能な値は次のとおりです。 "SlicerStyleLight1" は "SlicerStyleLight6"、"TableStyleOther1" ~ "TableStyleOther2"、"SlicerStyleDark1" ~ "SlicerStyleDark6" です。 ブックに存在するカスタムのユーザー定義スタイルも指定できます。
     name: style
@@ -291,12 +291,27 @@ items:
         type:
           - 'excel!Excel.Worksheet:interface'
 references:
+  - uid: 'excel!Excel.Slicer#getSelectedItems~0:complex'
+    name: 'ClientResult<string[]>'
+    fullName: 'Excel.ClientResult<string[]>'
+    spec.typeScript:
+      - uid: 'excel!Excel.ClientResult:interface'
+        name: ClientResult
+        fullName: Excel.ClientResult
+      - name: '<string[]>'
+        fullName: '<string[]>'
   - uid: 'excel!Excel.SlicerItemCollection:interface'
     name: SlicerItemCollection
     fullName: Excel.SlicerItemCollection
-  - uid: 'excel!Excel.SlicerSortType:enum'
-    name: SlicerSortType
-    fullName: Excel.SlicerSortType
+  - uid: 'excel!Excel.Slicer#sortBy~0:complex'
+    name: SlicerSortType | "DataSourceOrder" | "Ascending" | "Descending"
+    fullName: Excel.SlicerSortType | "DataSourceOrder" | "Ascending" | "Descending"
+    spec.typeScript:
+      - uid: 'excel!Excel.SlicerSortType:enum'
+        name: SlicerSortType
+        fullName: Excel.SlicerSortType
+      - name: ' | "DataSourceOrder" | "Ascending" | "Descending"'
+        fullName: ' | "DataSourceOrder" | "Ascending" | "Descending"'
   - uid: 'excel!Excel.Worksheet:interface'
     name: Worksheet
     fullName: Excel.Worksheet

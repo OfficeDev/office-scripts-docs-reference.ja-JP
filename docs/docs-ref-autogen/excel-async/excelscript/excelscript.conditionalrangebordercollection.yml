@@ -49,7 +49,15 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getItem(index: ConditionalRangeBorderIndex): ConditionalRangeBorder;'
+      content: |-
+        getItem(
+                    index:
+                        | ConditionalRangeBorderIndex
+                        | "EdgeTop"
+                        | "EdgeBottom"
+                        | "EdgeLeft"
+                        | "EdgeRight"
+                ): ConditionalRangeBorder;
       return:
         type:
           - 'excel!Excel.ConditionalRangeBorder:interface'
@@ -58,7 +66,7 @@ items:
         - id: index
           description: 取得する border オブジェクトのインデックス値を指定します。 詳細については、「Excel の ConditionalRangeBorderIndex」を参照してください。
           type:
-            - 'excel!Excel.ConditionalRangeBorderIndex:enum'
+            - 'excel!Excel.ConditionalRangeBorderCollection#getItem~0:complex'
   - uid: 'excel!Excel.ConditionalRangeBorderCollection#getItemAt:member(1)'
     summary: オブジェクトのインデックスを使用して、境界線オブジェクトを取得します。
     name: getItemAt(index)
@@ -135,6 +143,35 @@ references:
   - uid: 'excel!Excel.ConditionalRangeBorder:interface'
     name: ConditionalRangeBorder
     fullName: Excel.ConditionalRangeBorder
-  - uid: 'excel!Excel.ConditionalRangeBorderIndex:enum'
-    name: ConditionalRangeBorderIndex
-    fullName: Excel.ConditionalRangeBorderIndex
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#getItem~0:complex'
+    name: |-
+      | ConditionalRangeBorderIndex
+                      | "EdgeTop"
+                      | "EdgeBottom"
+                      | "EdgeLeft"
+                      | "EdgeRight"
+    fullName: |-
+      | Excel.ConditionalRangeBorderIndex
+                      | "EdgeTop"
+                      | "EdgeBottom"
+                      | "EdgeLeft"
+                      | "EdgeRight"
+    spec.typeScript:
+      - name: '| '
+        fullName: '| '
+      - uid: 'excel!Excel.ConditionalRangeBorderIndex:enum'
+        name: ConditionalRangeBorderIndex
+        fullName: Excel.ConditionalRangeBorderIndex
+      - name: |2-
+
+                          | "EdgeTop"
+                          | "EdgeBottom"
+                          | "EdgeLeft"
+                          | "EdgeRight"
+                  
+        fullName: |2-
+
+                          | "EdgeTop"
+                          | "EdgeBottom"
+                          | "EdgeLeft"
+                          | "EdgeRight"

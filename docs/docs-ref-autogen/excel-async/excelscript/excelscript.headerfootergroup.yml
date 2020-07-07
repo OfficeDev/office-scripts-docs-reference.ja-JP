@@ -90,10 +90,16 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'state: HeaderFooterState;'
+      content: |-
+        state:
+                    | HeaderFooterState
+                    | "Default"
+                    | "FirstAndDefault"
+                    | "OddAndEven"
+                    | "FirstOddAndEven";
       return:
         type:
-          - 'excel!Excel.HeaderFooterState:enum'
+          - 'excel!Excel.HeaderFooterGroup#state~0:complex'
   - uid: 'excel!Excel.HeaderFooterGroup#useSheetMargins:member'
     summary: ワークシートのページ レイアウト オプションに設定されているページ余白に合わせてヘッダー/フッターの位置が調整されているかどうかを示すフラグを取得または設定します。
     name: useSheetMargins
@@ -122,6 +128,34 @@ references:
   - uid: 'excel!Excel.HeaderFooter:interface'
     name: HeaderFooter
     fullName: Excel.HeaderFooter
-  - uid: 'excel!Excel.HeaderFooterState:enum'
-    name: HeaderFooterState
-    fullName: Excel.HeaderFooterState
+  - uid: 'excel!Excel.HeaderFooterGroup#state~0:complex'
+    name: |-
+      | HeaderFooterState
+                  | "Default"
+                  | "FirstAndDefault"
+                  | "OddAndEven"
+                  | "FirstOddAndEven"
+    fullName: |-
+      | Excel.HeaderFooterState
+                  | "Default"
+                  | "FirstAndDefault"
+                  | "OddAndEven"
+                  | "FirstOddAndEven"
+    spec.typeScript:
+      - name: '| '
+        fullName: '| '
+      - uid: 'excel!Excel.HeaderFooterState:enum'
+        name: HeaderFooterState
+        fullName: Excel.HeaderFooterState
+      - name: |2-
+
+                      | "Default"
+                      | "FirstAndDefault"
+                      | "OddAndEven"
+                      | "FirstOddAndEven"
+        fullName: |2-
+
+                      | "Default"
+                      | "FirstAndDefault"
+                      | "OddAndEven"
+                      | "FirstOddAndEven"

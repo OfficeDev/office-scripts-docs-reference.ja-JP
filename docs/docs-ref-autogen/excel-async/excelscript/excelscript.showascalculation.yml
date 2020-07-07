@@ -32,7 +32,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"differenceFrom"'
+    numericValue: '"DifferenceFrom"'
   - uid: 'excel!Excel.ShowAsCalculation.index:member'
     summary: 値を次のように計算します。 ((セルの値) x (総計) x (総計) x (総列合計))
     name: index
@@ -40,7 +40,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"index"'
+    numericValue: '"Index"'
   - uid: 'excel!Excel.ShowAsCalculation.none:member'
     summary: 計算は適用されません。
     name: none
@@ -48,7 +48,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"none"'
+    numericValue: '"None"'
   - uid: 'excel!Excel.ShowAsCalculation.percentDifferenceFrom:member'
     summary: 指定された基本フィールドと基本アイテムとの違い。
     name: percentDifferenceFrom
@@ -56,7 +56,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"percentDifferenceFrom"'
+    numericValue: '"PercentDifferenceFrom"'
   - uid: 'excel!Excel.ShowAsCalculation.percentOf:member'
     summary: 指定した基準フィールドおよび基準アイテムのパーセント。
     name: percentOf
@@ -64,7 +64,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"percentOf"'
+    numericValue: '"PercentOf"'
   - uid: 'excel!Excel.ShowAsCalculation.percentOfColumnTotal:member'
     summary: 列合計のパーセント。
     name: percentOfColumnTotal
@@ -72,7 +72,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"percentOfColumnTotal"'
+    numericValue: '"PercentOfColumnTotal"'
   - uid: 'excel!Excel.ShowAsCalculation.percentOfGrandTotal:member'
     summary: 総計のパーセント。
     name: percentOfGrandTotal
@@ -80,7 +80,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"percentOfGrandTotal"'
+    numericValue: '"PercentOfGrandTotal"'
   - uid: 'excel!Excel.ShowAsCalculation.percentOfParentColumnTotal:member'
     summary: 指定した基準フィールドの列合計のパーセント。
     name: percentOfParentColumnTotal
@@ -88,7 +88,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"percentOfParentColumnTotal"'
+    numericValue: '"PercentOfParentColumnTotal"'
   - uid: 'excel!Excel.ShowAsCalculation.percentOfParentRowTotal:member'
     summary: 指定された基準フィールドの行合計のパーセント。
     name: percentOfParentRowTotal
@@ -96,7 +96,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"percentOfParentRowTotal"'
+    numericValue: '"PercentOfParentRowTotal"'
   - uid: 'excel!Excel.ShowAsCalculation.percentOfParentTotal:member'
     summary: 指定した基準フィールドの総計のパーセント。
     name: percentOfParentTotal
@@ -104,7 +104,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"percentOfParentTotal"'
+    numericValue: '"PercentOfParentTotal"'
   - uid: 'excel!Excel.ShowAsCalculation.percentOfRowTotal:member'
     summary: 行合計のパーセント。
     name: percentOfRowTotal
@@ -112,7 +112,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"percentOfRowTotal"'
+    numericValue: '"PercentOfRowTotal"'
   - uid: 'excel!Excel.ShowAsCalculation.percentRunningTotal:member'
     summary: 指定した基準フィールドの合計の実行率。
     name: percentRunningTotal
@@ -120,7 +120,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"percentRunningTotal"'
+    numericValue: '"PercentRunningTotal"'
   - uid: 'excel!Excel.ShowAsCalculation.rankAscending:member'
     summary: 指定した基本フィールドの昇順のランク。
     name: rankAscending
@@ -128,7 +128,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"rankAscending"'
+    numericValue: '"RankAscending"'
   - uid: 'excel!Excel.ShowAsCalculation.rankDecending:member'
     summary: 指定した基準フィールドの降順のランク。
     name: rankDecending
@@ -136,7 +136,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"rankDecending"'
+    numericValue: '"RankDecending"'
   - uid: 'excel!Excel.ShowAsCalculation.runningTotal:member'
     summary: 指定した基準フィールドの合計を実行します。
     name: runningTotal
@@ -144,7 +144,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"runningTotal"'
+    numericValue: '"RunningTotal"'
   - uid: 'excel!Excel.ShowAsCalculation.unknown:member'
     summary: 計算が不明であるか、サポートされていません。
     name: unknown
@@ -152,4 +152,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"unknown"'
+    numericValue: '"Unknown"'

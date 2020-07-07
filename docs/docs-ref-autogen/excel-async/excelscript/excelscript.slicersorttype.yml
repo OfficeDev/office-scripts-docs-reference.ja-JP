@@ -19,7 +19,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"ascending"'
+    numericValue: '"Ascending"'
   - uid: 'excel!Excel.SlicerSortType.dataSourceOrder:member'
     summary: データソースによって提供される順序でスライサーアイテムを並べ替えます。
     name: dataSourceOrder
@@ -27,7 +27,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"dataSourceOrder"'
+    numericValue: '"DataSourceOrder"'
   - uid: 'excel!Excel.SlicerSortType.descending:member'
     summary: アイテムキャプションを基準にして、スライサーアイテムを降順に並べ替えます。
     name: descending
@@ -35,4 +35,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"descending"'
+    numericValue: '"Descending"'

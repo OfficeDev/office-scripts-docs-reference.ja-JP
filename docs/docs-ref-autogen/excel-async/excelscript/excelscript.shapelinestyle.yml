@@ -21,7 +21,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"single"'
+    numericValue: '"Single"'
   - uid: 'excel!Excel.ShapeLineStyle.thickBetweenThin:member'
     summary: 両側を細い線にはさまれた太い線。
     name: thickBetweenThin
@@ -29,7 +29,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"thickBetweenThin"'
+    numericValue: '"ThickBetweenThin"'
   - uid: 'excel!Excel.ShapeLineStyle.thickThin:member'
     summary: 細い線の横に太い線。 水平線の場合、太い線は細い線の上になります。 垂直線の場合、太い線は細い線の左側になります。
     name: thickThin
@@ -37,7 +37,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"thickThin"'
+    numericValue: '"ThickThin"'
   - uid: 'excel!Excel.ShapeLineStyle.thinThick:member'
     summary: 細い線の横に太い線。 水平線の場合、太い線は細い線の下になります。 垂直線の場合、太い線は細い線の右になります。
     name: thinThick
@@ -45,7 +45,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"thinThick"'
+    numericValue: '"ThinThick"'
   - uid: 'excel!Excel.ShapeLineStyle.thinThin:member'
     summary: 2 本の細い線。
     name: thinThin
@@ -53,4 +53,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"thinThin"'
+    numericValue: '"ThinThin"'
