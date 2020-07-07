@@ -29,7 +29,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"automatic"'
+    numericValue: '"Automatic"'
   - uid: 'excel!Excel.AggregationFunction.average:member'
     summary: Average 関数に相当する、データの平均値を使用して集計します。
     name: average
@@ -37,7 +37,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"average"'
+    numericValue: '"Average"'
   - uid: 'excel!Excel.AggregationFunction.count:member'
     summary: COUNTA 関数と同等の、データ内のアイテムのカウントを使用して集計します。
     name: count
@@ -45,7 +45,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"count"'
+    numericValue: '"Count"'
   - uid: 'excel!Excel.AggregationFunction.countNumbers:member'
     summary: データ内の数値の個数を使用して集計し、COUNT 関数に相当します。
     name: countNumbers
@@ -53,7 +53,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"countNumbers"'
+    numericValue: '"CountNumbers"'
   - uid: 'excel!Excel.AggregationFunction.max:member'
     summary: データの最大値を使用して集計し、MAX 関数に相当します。
     name: max
@@ -61,7 +61,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"max"'
+    numericValue: '"Max"'
   - uid: 'excel!Excel.AggregationFunction.min:member'
     summary: データの最小値を使用して集計します。 MIN 関数に相当します。
     name: min
@@ -69,7 +69,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"min"'
+    numericValue: '"Min"'
   - uid: 'excel!Excel.AggregationFunction.product:member'
     summary: PRODUCT 関数と同等の、データの製品を使用して集計します。
     name: product
@@ -77,7 +77,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"product"'
+    numericValue: '"Product"'
   - uid: 'excel!Excel.AggregationFunction.standardDeviation:member'
     summary: データの標準偏差を使用して集計します。 STDEV 関数に相当します。
     name: standardDeviation
@@ -85,7 +85,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"standardDeviation"'
+    numericValue: '"StandardDeviation"'
   - uid: 'excel!Excel.AggregationFunction.standardDeviationP:member'
     summary: データの標準偏差を使用して集計します。 STDEVP 関数に相当します。
     name: standardDeviationP
@@ -93,7 +93,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"standardDeviationP"'
+    numericValue: '"StandardDeviationP"'
   - uid: 'excel!Excel.AggregationFunction.sum:member'
     summary: データの合計を使用して集計し、SUM 関数に相当します。
     name: sum
@@ -101,7 +101,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"sum"'
+    numericValue: '"Sum"'
   - uid: 'excel!Excel.AggregationFunction.unknown:member'
     summary: 集計関数が不明であるか、サポートされていません。
     name: unknown
@@ -109,7 +109,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"unknown"'
+    numericValue: '"Unknown"'
   - uid: 'excel!Excel.AggregationFunction.variance:member'
     summary: データの分散を使用して集計し、VAR 関数に相当します。
     name: variance
@@ -117,7 +117,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"variance"'
+    numericValue: '"Variance"'
   - uid: 'excel!Excel.AggregationFunction.varianceP:member'
     summary: データの分散を使用して集計し、VARP 関数に相当します。
     name: varianceP
@@ -125,4 +125,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"varianceP"'
+    numericValue: '"VarianceP"'

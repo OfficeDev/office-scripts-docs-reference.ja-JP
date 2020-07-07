@@ -18,7 +18,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"endSheet"'
+    numericValue: '"EndSheet"'
   - uid: 'excel!Excel.PrintComments.inPlace:member'
     summary: コメントは、ワークシートの挿入された位置に印刷されます。
     name: inPlace
@@ -26,7 +26,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"inPlace"'
+    numericValue: '"InPlace"'
   - uid: 'excel!Excel.PrintComments.noComments:member'
     summary: コメントは印刷されません。
     name: noComments
@@ -34,4 +34,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"noComments"'
+    numericValue: '"NoComments"'

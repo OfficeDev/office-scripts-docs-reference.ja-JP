@@ -18,7 +18,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"none"'
+    numericValue: '"None"'
   - uid: 'excel!Excel.ProtectionSelectionMode.normal:member'
     summary: すべてのセルに対して選択が許可されます。
     name: normal
@@ -26,7 +26,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"normal"'
+    numericValue: '"Normal"'
   - uid: 'excel!Excel.ProtectionSelectionMode.unlocked:member'
     summary: 選択範囲は、ロックされていないセルに対してのみ使用できます。
     name: unlocked
@@ -34,4 +34,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"unlocked"'
+    numericValue: '"Unlocked"'

@@ -17,7 +17,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"downThenOver"'
+    numericValue: '"DownThenOver"'
   - uid: 'excel!Excel.PrintOrder.overThenDown:member'
     summary: 下の行を処理する前に反対側のページや右側のページのフィールドを処理します。
     name: overThenDown
@@ -25,4 +25,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"overThenDown"'
+    numericValue: '"OverThenDown"'

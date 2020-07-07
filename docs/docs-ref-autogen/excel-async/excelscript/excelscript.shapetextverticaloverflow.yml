@@ -19,7 +19,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"clip"'
+    numericValue: '"Clip"'
   - uid: 'excel!Excel.ShapeTextVerticalOverflow.ellipsis:member'
     summary: 垂直方向のレイアウト枠内に収まらないテキストを非表示にし、表示されるテキストの終わりに省略記号 (...) を追加します。
     name: ellipsis
@@ -27,7 +27,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"ellipsis"'
+    numericValue: '"Ellipsis"'
   - uid: 'excel!Excel.ShapeTextVerticalOverflow.overflow:member'
     summary: テキストはレイアウト枠を垂直方向にはみ出すことができます (テキストの配置によって、上、下、または両方からはみ出します)。
     name: overflow
@@ -35,4 +35,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"overflow"'
+    numericValue: '"Overflow"'

@@ -70,10 +70,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getCount(): number;'
+      content: 'getCount(): ClientResult<number>;'
       return:
         type:
-          - number
+          - 'excel!Excel.TableRowCollection#getCount~0:complex'
         description: ''
   - uid: 'excel!Excel.TableRowCollection#getItemAt:member(1)'
     summary: |-
@@ -151,3 +151,13 @@ references:
                           | boolean
                           | string
                           | number
+                  
+  - uid: 'excel!Excel.TableRowCollection#getCount~0:complex'
+    name: ClientResult<number>
+    fullName: Excel.ClientResult<number>
+    spec.typeScript:
+      - uid: 'excel!Excel.ClientResult:interface'
+        name: ClientResult
+        fullName: Excel.ClientResult
+      - name: <number>
+        fullName: <number>

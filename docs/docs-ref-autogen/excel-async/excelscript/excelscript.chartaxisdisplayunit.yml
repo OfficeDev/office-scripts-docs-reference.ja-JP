@@ -26,7 +26,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"billions"'
+    numericValue: '"Billions"'
   - uid: 'excel!Excel.ChartAxisDisplayUnit.custom:member'
     summary: これにより、カスタム値の単位で軸が設定されます。
     name: custom
@@ -34,7 +34,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"custom"'
+    numericValue: '"Custom"'
   - uid: 'excel!Excel.ChartAxisDisplayUnit.hundredMillions:member'
     summary: これにより、100万数の単位で軸が設定されます。
     name: hundredMillions
@@ -42,7 +42,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"hundredMillions"'
+    numericValue: '"HundredMillions"'
   - uid: 'excel!Excel.ChartAxisDisplayUnit.hundreds:member'
     summary: これは、100百単位で軸を設定します。
     name: hundreds
@@ -50,7 +50,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"hundreds"'
+    numericValue: '"Hundreds"'
   - uid: 'excel!Excel.ChartAxisDisplayUnit.hundredThousands:member'
     summary: これにより、100万単位の軸が設定されます。
     name: hundredThousands
@@ -58,7 +58,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"hundredThousands"'
+    numericValue: '"HundredThousands"'
   - uid: 'excel!Excel.ChartAxisDisplayUnit.millions:member'
     summary: これにより、軸は百万単位で設定されます。
     name: millions
@@ -66,7 +66,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"millions"'
+    numericValue: '"Millions"'
   - uid: 'excel!Excel.ChartAxisDisplayUnit.none:member'
     summary: 既定のオプションです。 これにより、表示単位が軸にリセットされ、出荷単位ラベルが非表示になります。
     name: none
@@ -74,7 +74,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"none"'
+    numericValue: '"None"'
   - uid: 'excel!Excel.ChartAxisDisplayUnit.tenMillions:member'
     summary: これにより、軸は十数百万単位で設定されます。
     name: tenMillions
@@ -82,7 +82,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"tenMillions"'
+    numericValue: '"TenMillions"'
   - uid: 'excel!Excel.ChartAxisDisplayUnit.tenThousands:member'
     summary: これにより、軸は10万単位で設定されます。
     name: tenThousands
@@ -90,7 +90,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"tenThousands"'
+    numericValue: '"TenThousands"'
   - uid: 'excel!Excel.ChartAxisDisplayUnit.thousands:member'
     summary: これにより、軸は1000単位で設定されます。
     name: thousands
@@ -98,7 +98,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"thousands"'
+    numericValue: '"Thousands"'
   - uid: 'excel!Excel.ChartAxisDisplayUnit.trillions:member'
     summary: これにより、trillions の単位で軸が設定されます。
     name: trillions
@@ -106,4 +106,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"trillions"'
+    numericValue: '"Trillions"'

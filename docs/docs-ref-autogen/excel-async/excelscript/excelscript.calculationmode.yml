@@ -18,7 +18,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"automatic"'
+    numericValue: '"Automatic"'
   - uid: 'excel!Excel.CalculationMode.automaticExceptTables:member'
     summary: 数式がデータテーブルに含まれていない限り、関連するデータが変更されるたびに、新しい数式の結果を計算します。
     name: automaticExceptTables
@@ -26,7 +26,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"automaticExceptTables"'
+    numericValue: '"AutomaticExceptTables"'
   - uid: 'excel!Excel.CalculationMode.manual:member'
     summary: 計算は、ユーザーまたはアドインが要求したときにのみ発生します。
     name: manual
@@ -34,4 +34,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"manual"'
+    numericValue: '"Manual"'

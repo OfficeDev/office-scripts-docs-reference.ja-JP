@@ -18,7 +18,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"context"'
+    numericValue: '"Context"'
   - uid: 'excel!Excel.ReadingOrder.leftToRight:member'
     summary: 左から右への読み取り順序
     name: leftToRight
@@ -26,7 +26,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"leftToRight"'
+    numericValue: '"LeftToRight"'
   - uid: 'excel!Excel.ReadingOrder.rightToLeft:member'
     summary: 右から左への読み取り順序
     name: rightToLeft
@@ -34,4 +34,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"rightToLeft"'
+    numericValue: '"RightToLeft"'

@@ -18,7 +18,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"compact"'
+    numericValue: '"Compact"'
   - uid: 'excel!Excel.PivotLayoutType.outline:member'
     summary: 内側のフィールドのアイテムは、外部フィールドのアイテムと同じ行にあり、小計は常に下にあります。
     name: outline
@@ -26,7 +26,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"outline"'
+    numericValue: '"Outline"'
   - uid: 'excel!Excel.PivotLayoutType.tabular:member'
     summary: 内側のフィールドのアイテムは、常に、外部フィールドのアイテムを基準に新しい行になります。
     name: tabular
@@ -34,4 +34,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"tabular"'
+    numericValue: '"Tabular"'

@@ -57,10 +57,17 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'horizontalAlignment: ChartTextHorizontalAlignment;'
+      content: |-
+        horizontalAlignment:
+                    | ChartTextHorizontalAlignment
+                    | "Center"
+                    | "Left"
+                    | "Right"
+                    | "Justify"
+                    | "Distributed";
       return:
         type:
-          - 'excel!Excel.ChartTextHorizontalAlignment:enum'
+          - 'excel!Excel.ChartDataLabels#horizontalAlignment~0:complex'
   - uid: 'excel!Excel.ChartDataLabels#linkNumberFormat:member'
     summary: 数値の表示形式をセルにリンクするかどうかを指定します。 true の場合、セルで数値形式が変更されるとラベルでも数値形式が変更されます。
     name: linkNumberFormat
@@ -111,10 +118,24 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'position: ChartDataLabelPosition;'
+      content: |-
+        position:
+                    | ChartDataLabelPosition
+                    | "Invalid"
+                    | "None"
+                    | "Center"
+                    | "InsideEnd"
+                    | "InsideBase"
+                    | "OutsideEnd"
+                    | "Left"
+                    | "Right"
+                    | "Top"
+                    | "Bottom"
+                    | "BestFit"
+                    | "Callout";
       return:
         type:
-          - 'excel!Excel.ChartDataLabelPosition:enum'
+          - 'excel!Excel.ChartDataLabels#position~0:complex'
   - uid: 'excel!Excel.ChartDataLabels#separator:member'
     summary: グラフのデータ ラベルに使用される区切り文字を表す文字列を設定します。
     name: separator
@@ -219,20 +240,151 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'verticalAlignment: ChartTextVerticalAlignment;'
+      content: |-
+        verticalAlignment:
+                    | ChartTextVerticalAlignment
+                    | "Center"
+                    | "Bottom"
+                    | "Top"
+                    | "Justify"
+                    | "Distributed";
       return:
         type:
-          - 'excel!Excel.ChartTextVerticalAlignment:enum'
+          - 'excel!Excel.ChartDataLabels#verticalAlignment~0:complex'
 references:
   - uid: 'excel!Excel.ChartDataLabelFormat:interface'
     name: ChartDataLabelFormat
     fullName: Excel.ChartDataLabelFormat
-  - uid: 'excel!Excel.ChartTextHorizontalAlignment:enum'
-    name: ChartTextHorizontalAlignment
-    fullName: Excel.ChartTextHorizontalAlignment
-  - uid: 'excel!Excel.ChartDataLabelPosition:enum'
-    name: ChartDataLabelPosition
-    fullName: Excel.ChartDataLabelPosition
-  - uid: 'excel!Excel.ChartTextVerticalAlignment:enum'
-    name: ChartTextVerticalAlignment
-    fullName: Excel.ChartTextVerticalAlignment
+  - uid: 'excel!Excel.ChartDataLabels#horizontalAlignment~0:complex'
+    name: |-
+      | ChartTextHorizontalAlignment
+                  | "Center"
+                  | "Left"
+                  | "Right"
+                  | "Justify"
+                  | "Distributed"
+    fullName: |-
+      | Excel.ChartTextHorizontalAlignment
+                  | "Center"
+                  | "Left"
+                  | "Right"
+                  | "Justify"
+                  | "Distributed"
+    spec.typeScript:
+      - name: '| '
+        fullName: '| '
+      - uid: 'excel!Excel.ChartTextHorizontalAlignment:enum'
+        name: ChartTextHorizontalAlignment
+        fullName: Excel.ChartTextHorizontalAlignment
+      - name: |2-
+
+                      | "Center"
+                      | "Left"
+                      | "Right"
+                      | "Justify"
+                      | "Distributed"
+        fullName: |2-
+
+                      | "Center"
+                      | "Left"
+                      | "Right"
+                      | "Justify"
+                      | "Distributed"
+  - uid: 'excel!Excel.ChartDataLabels#position~0:complex'
+    name: |-
+      | ChartDataLabelPosition
+                  | "Invalid"
+                  | "None"
+                  | "Center"
+                  | "InsideEnd"
+                  | "InsideBase"
+                  | "OutsideEnd"
+                  | "Left"
+                  | "Right"
+                  | "Top"
+                  | "Bottom"
+                  | "BestFit"
+                  | "Callout"
+    fullName: |-
+      | Excel.ChartDataLabelPosition
+                  | "Invalid"
+                  | "None"
+                  | "Center"
+                  | "InsideEnd"
+                  | "InsideBase"
+                  | "OutsideEnd"
+                  | "Left"
+                  | "Right"
+                  | "Top"
+                  | "Bottom"
+                  | "BestFit"
+                  | "Callout"
+    spec.typeScript:
+      - name: '| '
+        fullName: '| '
+      - uid: 'excel!Excel.ChartDataLabelPosition:enum'
+        name: ChartDataLabelPosition
+        fullName: Excel.ChartDataLabelPosition
+      - name: |2-
+
+                      | "Invalid"
+                      | "None"
+                      | "Center"
+                      | "InsideEnd"
+                      | "InsideBase"
+                      | "OutsideEnd"
+                      | "Left"
+                      | "Right"
+                      | "Top"
+                      | "Bottom"
+                      | "BestFit"
+                      | "Callout"
+        fullName: |2-
+
+                      | "Invalid"
+                      | "None"
+                      | "Center"
+                      | "InsideEnd"
+                      | "InsideBase"
+                      | "OutsideEnd"
+                      | "Left"
+                      | "Right"
+                      | "Top"
+                      | "Bottom"
+                      | "BestFit"
+                      | "Callout"
+  - uid: 'excel!Excel.ChartDataLabels#verticalAlignment~0:complex'
+    name: |-
+      | ChartTextVerticalAlignment
+                  | "Center"
+                  | "Bottom"
+                  | "Top"
+                  | "Justify"
+                  | "Distributed"
+    fullName: |-
+      | Excel.ChartTextVerticalAlignment
+                  | "Center"
+                  | "Bottom"
+                  | "Top"
+                  | "Justify"
+                  | "Distributed"
+    spec.typeScript:
+      - name: '| '
+        fullName: '| '
+      - uid: 'excel!Excel.ChartTextVerticalAlignment:enum'
+        name: ChartTextVerticalAlignment
+        fullName: Excel.ChartTextVerticalAlignment
+      - name: |2-
+
+                      | "Center"
+                      | "Bottom"
+                      | "Top"
+                      | "Justify"
+                      | "Distributed"
+        fullName: |2-
+
+                      | "Center"
+                      | "Bottom"
+                      | "Top"
+                      | "Justify"
+                      | "Distributed"
