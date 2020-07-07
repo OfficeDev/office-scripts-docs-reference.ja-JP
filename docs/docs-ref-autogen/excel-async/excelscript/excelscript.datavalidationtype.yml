@@ -26,7 +26,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"custom"'
+    numericValue: '"Custom"'
   - uid: 'excel!Excel.DataValidationType.date:member'
     summary: 日付データ入力規則の種類
     name: date
@@ -34,7 +34,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"date"'
+    numericValue: '"Date"'
   - uid: 'excel!Excel.DataValidationType.decimal:member'
     summary: Decimal データ入力規則
     name: decimal
@@ -42,7 +42,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"decimal"'
+    numericValue: '"Decimal"'
   - uid: 'excel!Excel.DataValidationType.inconsistent:member'
     summary: 不整合は、範囲のデータ検証が一貫していない (異なるセルに異なるルールがある) ことを意味します。
     name: inconsistent
@@ -50,7 +50,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"inconsistent"'
+    numericValue: '"Inconsistent"'
   - uid: 'excel!Excel.DataValidationType.list:member'
     summary: リストデータ入力規則の種類
     name: list
@@ -58,7 +58,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"list"'
+    numericValue: '"List"'
   - uid: 'excel!Excel.DataValidationType.mixedCriteria:member'
     summary: MixedCriteria は、範囲にデータの入力規則があり、一部のセルには含まれないことを意味します。
     name: mixedCriteria
@@ -66,7 +66,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"mixedCriteria"'
+    numericValue: '"MixedCriteria"'
   - uid: 'excel!Excel.DataValidationType.none:member'
     summary: None は、任意の値を許可することを意味するので、範囲にデータの入力規則はありません。
     name: none
@@ -74,7 +74,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"none"'
+    numericValue: '"None"'
   - uid: 'excel!Excel.DataValidationType.textLength:member'
     summary: テキスト長データ入力規則の種類
     name: textLength
@@ -82,7 +82,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"textLength"'
+    numericValue: '"TextLength"'
   - uid: 'excel!Excel.DataValidationType.time:member'
     summary: 時間データの入力規則の種類
     name: time
@@ -90,7 +90,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"time"'
+    numericValue: '"Time"'
   - uid: 'excel!Excel.DataValidationType.wholeNumber:member'
     summary: 整数型のデータ入力規則
     name: wholeNumber
@@ -98,4 +98,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"wholeNumber"'
+    numericValue: '"WholeNumber"'

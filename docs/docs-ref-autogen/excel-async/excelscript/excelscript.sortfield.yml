@@ -48,10 +48,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'dataOption?: SortDataOption;'
+      content: 'dataOption?: SortDataOption | "Normal" | "TextAsNumber";'
       return:
         type:
-          - 'excel!Excel.SortDataOption:enum'
+          - 'excel!Excel.SortField#dataOption~0:complex'
   - uid: 'excel!Excel.SortField#icon:member'
     summary: セルのアイコンに並べ替えが適用されている場合に、条件の対象となるアイコンを指定します。
     name: icon
@@ -84,10 +84,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'sortOn?: SortOn;'
+      content: 'sortOn?: SortOn | "Value" | "CellColor" | "FontColor" | "Icon";'
       return:
         type:
-          - 'excel!Excel.SortOn:enum'
+          - 'excel!Excel.SortField#sortOn~0:complex'
   - uid: 'excel!Excel.SortField#subField:member'
     summary: 並べ替えの対象となるリッチ値のターゲットプロパティ名であるサブフィールドを指定します。
     name: subField
@@ -101,12 +101,24 @@ items:
         type:
           - string
 references:
-  - uid: 'excel!Excel.SortDataOption:enum'
-    name: SortDataOption
-    fullName: Excel.SortDataOption
+  - uid: 'excel!Excel.SortField#dataOption~0:complex'
+    name: SortDataOption | "Normal" | "TextAsNumber"
+    fullName: Excel.SortDataOption | "Normal" | "TextAsNumber"
+    spec.typeScript:
+      - uid: 'excel!Excel.SortDataOption:enum'
+        name: SortDataOption
+        fullName: Excel.SortDataOption
+      - name: ' | "Normal" | "TextAsNumber"'
+        fullName: ' | "Normal" | "TextAsNumber"'
   - uid: 'excel!Excel.Icon:interface'
     name: Icon
     fullName: Excel.Icon
-  - uid: 'excel!Excel.SortOn:enum'
-    name: SortOn
-    fullName: Excel.SortOn
+  - uid: 'excel!Excel.SortField#sortOn~0:complex'
+    name: SortOn | "Value" | "CellColor" | "FontColor" | "Icon"
+    fullName: Excel.SortOn | "Value" | "CellColor" | "FontColor" | "Icon"
+    spec.typeScript:
+      - uid: 'excel!Excel.SortOn:enum'
+        name: SortOn
+        fullName: Excel.SortOn
+      - name: ' | "Value" | "CellColor" | "FontColor" | "Icon"'
+        fullName: ' | "Value" | "CellColor" | "FontColor" | "Icon"'

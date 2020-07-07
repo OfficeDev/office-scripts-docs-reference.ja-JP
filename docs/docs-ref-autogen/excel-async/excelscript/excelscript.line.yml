@@ -37,10 +37,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'beginArrowheadLength: ArrowheadLength;'
+      content: 'beginArrowheadLength: ArrowheadLength | "Short" | "Medium" | "Long";'
       return:
         type:
-          - 'excel!Excel.ArrowheadLength:enum'
+          - 'excel!Excel.Line#beginArrowheadLength~0:complex'
   - uid: 'excel!Excel.Line#beginArrowheadStyle:member'
     summary: 指定された線の始点の矢印のスタイルを表します。
     name: beginArrowheadStyle
@@ -49,10 +49,18 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'beginArrowheadStyle: ArrowheadStyle;'
+      content: |-
+        beginArrowheadStyle:
+                    | ArrowheadStyle
+                    | "None"
+                    | "Triangle"
+                    | "Stealth"
+                    | "Diamond"
+                    | "Oval"
+                    | "Open";
       return:
         type:
-          - 'excel!Excel.ArrowheadStyle:enum'
+          - 'excel!Excel.Line#beginArrowheadStyle~0:complex'
   - uid: 'excel!Excel.Line#beginArrowheadWidth:member'
     summary: 指定された線の始点の矢印の幅を表します。
     name: beginArrowheadWidth
@@ -61,10 +69,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'beginArrowheadWidth: ArrowheadWidth;'
+      content: 'beginArrowheadWidth: ArrowheadWidth | "Narrow" | "Medium" | "Wide";'
       return:
         type:
-          - 'excel!Excel.ArrowheadWidth:enum'
+          - 'excel!Excel.Line#beginArrowheadWidth~0:complex'
   - uid: 'excel!Excel.Line#beginConnectedShape:member'
     summary: 指定された線の始点が接続されている図形を表します。
     name: beginConnectedShape
@@ -167,10 +175,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'connectorType: ConnectorType;'
+      content: 'connectorType: ConnectorType | "Straight" | "Elbow" | "Curve";'
       return:
         type:
-          - 'excel!Excel.ConnectorType:enum'
+          - 'excel!Excel.Line#connectorType~0:complex'
   - uid: 'excel!Excel.Line#disconnectBeginShape:member(1)'
     summary: 指定されたコネクタの始点を図形から切り離します。
     name: disconnectBeginShape()
@@ -231,10 +239,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'endArrowheadLength: ArrowheadLength;'
+      content: 'endArrowheadLength: ArrowheadLength | "Short" | "Medium" | "Long";'
       return:
         type:
-          - 'excel!Excel.ArrowheadLength:enum'
+          - 'excel!Excel.Line#endArrowheadLength~0:complex'
   - uid: 'excel!Excel.Line#endArrowheadStyle:member'
     summary: 指定された線の終点の矢印のスタイルを表します。
     name: endArrowheadStyle
@@ -243,10 +251,18 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'endArrowheadStyle: ArrowheadStyle;'
+      content: |-
+        endArrowheadStyle:
+                    | ArrowheadStyle
+                    | "None"
+                    | "Triangle"
+                    | "Stealth"
+                    | "Diamond"
+                    | "Oval"
+                    | "Open";
       return:
         type:
-          - 'excel!Excel.ArrowheadStyle:enum'
+          - 'excel!Excel.Line#endArrowheadStyle~0:complex'
   - uid: 'excel!Excel.Line#endArrowheadWidth:member'
     summary: 指定された線の終点の矢印の幅を表します。
     name: endArrowheadWidth
@@ -255,10 +271,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'endArrowheadWidth: ArrowheadWidth;'
+      content: 'endArrowheadWidth: ArrowheadWidth | "Narrow" | "Medium" | "Wide";'
       return:
         type:
-          - 'excel!Excel.ArrowheadWidth:enum'
+          - 'excel!Excel.Line#endArrowheadWidth~0:complex'
   - uid: 'excel!Excel.Line#endConnectedShape:member'
     summary: 指定された線の終点が接続されている図形を表します。
     name: endConnectedShape
@@ -350,18 +366,129 @@ items:
         type:
           - 'excel!Excel.Shape:interface'
 references:
-  - uid: 'excel!Excel.ArrowheadLength:enum'
-    name: ArrowheadLength
-    fullName: Excel.ArrowheadLength
-  - uid: 'excel!Excel.ArrowheadStyle:enum'
-    name: ArrowheadStyle
-    fullName: Excel.ArrowheadStyle
-  - uid: 'excel!Excel.ArrowheadWidth:enum'
-    name: ArrowheadWidth
-    fullName: Excel.ArrowheadWidth
+  - uid: 'excel!Excel.Line#beginArrowheadLength~0:complex'
+    name: ArrowheadLength | "Short" | "Medium" | "Long"
+    fullName: Excel.ArrowheadLength | "Short" | "Medium" | "Long"
+    spec.typeScript:
+      - uid: 'excel!Excel.ArrowheadLength:enum'
+        name: ArrowheadLength
+        fullName: Excel.ArrowheadLength
+      - name: ' | "Short" | "Medium" | "Long"'
+        fullName: ' | "Short" | "Medium" | "Long"'
+  - uid: 'excel!Excel.Line#beginArrowheadStyle~0:complex'
+    name: |-
+      | ArrowheadStyle
+                  | "None"
+                  | "Triangle"
+                  | "Stealth"
+                  | "Diamond"
+                  | "Oval"
+                  | "Open"
+    fullName: |-
+      | Excel.ArrowheadStyle
+                  | "None"
+                  | "Triangle"
+                  | "Stealth"
+                  | "Diamond"
+                  | "Oval"
+                  | "Open"
+    spec.typeScript:
+      - name: '| '
+        fullName: '| '
+      - uid: 'excel!Excel.ArrowheadStyle:enum'
+        name: ArrowheadStyle
+        fullName: Excel.ArrowheadStyle
+      - name: |2-
+
+                      | "None"
+                      | "Triangle"
+                      | "Stealth"
+                      | "Diamond"
+                      | "Oval"
+                      | "Open"
+        fullName: |2-
+
+                      | "None"
+                      | "Triangle"
+                      | "Stealth"
+                      | "Diamond"
+                      | "Oval"
+                      | "Open"
+  - uid: 'excel!Excel.Line#beginArrowheadWidth~0:complex'
+    name: ArrowheadWidth | "Narrow" | "Medium" | "Wide"
+    fullName: Excel.ArrowheadWidth | "Narrow" | "Medium" | "Wide"
+    spec.typeScript:
+      - uid: 'excel!Excel.ArrowheadWidth:enum'
+        name: ArrowheadWidth
+        fullName: Excel.ArrowheadWidth
+      - name: ' | "Narrow" | "Medium" | "Wide"'
+        fullName: ' | "Narrow" | "Medium" | "Wide"'
   - uid: 'excel!Excel.Shape:interface'
     name: Shape
     fullName: Excel.Shape
-  - uid: 'excel!Excel.ConnectorType:enum'
-    name: ConnectorType
-    fullName: Excel.ConnectorType
+  - uid: 'excel!Excel.Line#connectorType~0:complex'
+    name: ConnectorType | "Straight" | "Elbow" | "Curve"
+    fullName: Excel.ConnectorType | "Straight" | "Elbow" | "Curve"
+    spec.typeScript:
+      - uid: 'excel!Excel.ConnectorType:enum'
+        name: ConnectorType
+        fullName: Excel.ConnectorType
+      - name: ' | "Straight" | "Elbow" | "Curve"'
+        fullName: ' | "Straight" | "Elbow" | "Curve"'
+  - uid: 'excel!Excel.Line#endArrowheadLength~0:complex'
+    name: ArrowheadLength | "Short" | "Medium" | "Long"
+    fullName: Excel.ArrowheadLength | "Short" | "Medium" | "Long"
+    spec.typeScript:
+      - uid: 'excel!Excel.ArrowheadLength:enum'
+        name: ArrowheadLength
+        fullName: Excel.ArrowheadLength
+      - name: ' | "Short" | "Medium" | "Long"'
+        fullName: ' | "Short" | "Medium" | "Long"'
+  - uid: 'excel!Excel.Line#endArrowheadStyle~0:complex'
+    name: |-
+      | ArrowheadStyle
+                  | "None"
+                  | "Triangle"
+                  | "Stealth"
+                  | "Diamond"
+                  | "Oval"
+                  | "Open"
+    fullName: |-
+      | Excel.ArrowheadStyle
+                  | "None"
+                  | "Triangle"
+                  | "Stealth"
+                  | "Diamond"
+                  | "Oval"
+                  | "Open"
+    spec.typeScript:
+      - name: '| '
+        fullName: '| '
+      - uid: 'excel!Excel.ArrowheadStyle:enum'
+        name: ArrowheadStyle
+        fullName: Excel.ArrowheadStyle
+      - name: |2-
+
+                      | "None"
+                      | "Triangle"
+                      | "Stealth"
+                      | "Diamond"
+                      | "Oval"
+                      | "Open"
+        fullName: |2-
+
+                      | "None"
+                      | "Triangle"
+                      | "Stealth"
+                      | "Diamond"
+                      | "Oval"
+                      | "Open"
+  - uid: 'excel!Excel.Line#endArrowheadWidth~0:complex'
+    name: ArrowheadWidth | "Narrow" | "Medium" | "Wide"
+    fullName: Excel.ArrowheadWidth | "Narrow" | "Medium" | "Wide"
+    spec.typeScript:
+      - uid: 'excel!Excel.ArrowheadWidth:enum'
+        name: ArrowheadWidth
+        fullName: Excel.ArrowheadWidth
+      - name: ' | "Narrow" | "Medium" | "Wide"'
+        fullName: ' | "Narrow" | "Medium" | "Wide"'

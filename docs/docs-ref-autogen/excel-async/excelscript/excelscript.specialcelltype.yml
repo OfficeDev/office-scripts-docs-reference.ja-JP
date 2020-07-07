@@ -23,7 +23,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"blanks"'
+    numericValue: '"Blanks"'
   - uid: 'excel!Excel.SpecialCellType.conditionalFormats:member'
     summary: 条件付き書式が設定されるすべてのセル
     name: conditionalFormats
@@ -31,7 +31,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"conditionalFormats"'
+    numericValue: '"ConditionalFormats"'
   - uid: 'excel!Excel.SpecialCellType.constants:member'
     summary: 定数が含まれているセル
     name: constants
@@ -39,7 +39,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"constants"'
+    numericValue: '"Constants"'
   - uid: 'excel!Excel.SpecialCellType.dataValidations:member'
     summary: 条件の設定が含まれているセル
     name: dataValidations
@@ -47,7 +47,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"dataValidations"'
+    numericValue: '"DataValidations"'
   - uid: 'excel!Excel.SpecialCellType.formulas:member'
     summary: 数式が含まれているセル
     name: formulas
@@ -55,7 +55,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"formulas"'
+    numericValue: '"Formulas"'
   - uid: 'excel!Excel.SpecialCellType.sameConditionalFormat:member'
     summary: 範囲内の最初のセルと同じ条件付き書式を持つセル。
     name: sameConditionalFormat
@@ -63,7 +63,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"sameConditionalFormat"'
+    numericValue: '"SameConditionalFormat"'
   - uid: 'excel!Excel.SpecialCellType.sameDataValidation:member'
     summary: 範囲内の最初のセルと同じデータの入力規則の条件を持つセル。
     name: sameDataValidation
@@ -71,7 +71,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"sameDataValidation"'
+    numericValue: '"SameDataValidation"'
   - uid: 'excel!Excel.SpecialCellType.visible:member'
     summary: 表示されているセル
     name: visible
@@ -79,4 +79,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"visible"'
+    numericValue: '"Visible"'

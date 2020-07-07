@@ -28,7 +28,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"fillCopy"'
+    numericValue: '"FillCopy"'
   - uid: 'excel!Excel.AutoFillType.fillDays:member'
     summary: 状況に応じて、月の日付または曜日のどちらかにパターンを基づいた日付の "FillSeries" のバージョン。
     name: fillDays
@@ -36,7 +36,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"fillDays"'
+    numericValue: '"FillDays"'
   - uid: 'excel!Excel.AutoFillType.fillDefault:member'
     summary: 隣接するセルに、選択されたデータをデータとして設定します。
     name: fillDefault
@@ -44,7 +44,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"fillDefault"'
+    numericValue: '"FillDefault"'
   - uid: 'excel!Excel.AutoFillType.fillFormats:member'
     summary: 隣接するセルに、選択した数式を挿入します。
     name: fillFormats
@@ -52,7 +52,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"fillFormats"'
+    numericValue: '"FillFormats"'
   - uid: 'excel!Excel.AutoFillType.fillMonths:member'
     summary: 月のパターンをベースとする日付の "FillSeries" のバージョン。
     name: fillMonths
@@ -60,7 +60,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"fillMonths"'
+    numericValue: '"FillMonths"'
   - uid: 'excel!Excel.AutoFillType.fillSeries:member'
     summary: 隣接するセルに、コピーしたセルのパターンに従ったデータを設定します。
     name: fillSeries
@@ -68,7 +68,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"fillSeries"'
+    numericValue: '"FillSeries"'
   - uid: 'excel!Excel.AutoFillType.fillValues:member'
     summary: 隣接するセルに選択した値を設定します。
     name: fillValues
@@ -76,7 +76,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"fillValues"'
+    numericValue: '"FillValues"'
   - uid: 'excel!Excel.AutoFillType.fillWeekdays:member'
     summary: 曜日のパターンを基準とした日付の "FillSeries" のバージョン。曜日のみが含まれます。
     name: fillWeekdays
@@ -84,7 +84,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"fillWeekdays"'
+    numericValue: '"FillWeekdays"'
   - uid: 'excel!Excel.AutoFillType.fillYears:member'
     summary: 年のパターンをベースにした日付の "FillSeries" のバージョン。
     name: fillYears
@@ -92,7 +92,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"fillYears"'
+    numericValue: '"FillYears"'
   - uid: 'excel!Excel.AutoFillType.flashFill:member'
     summary: Excel の FlashFill 機能を使用して、隣接するセルを設定します。
     name: flashFill
@@ -100,7 +100,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"flashFill"'
+    numericValue: '"FlashFill"'
   - uid: 'excel!Excel.AutoFillType.growthTrend:member'
     summary: 拡張傾向モデルに従って隣接するセルの値を入力する数値の "FillSeries" のバージョン。
     name: growthTrend
@@ -108,7 +108,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"growthTrend"'
+    numericValue: '"GrowthTrend"'
   - uid: 'excel!Excel.AutoFillType.linearTrend:member'
     summary: 線形傾向モデルに従って隣接するセルの値を入力する数値の "FillSeries" のバージョン。
     name: linearTrend
@@ -116,4 +116,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"linearTrend"'
+    numericValue: '"LinearTrend"'

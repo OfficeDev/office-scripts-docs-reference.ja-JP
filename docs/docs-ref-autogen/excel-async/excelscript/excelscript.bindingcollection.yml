@@ -29,7 +29,7 @@ items:
       content: |-
         add(
                     range: Range | string,
-                    bindingType: BindingType,
+                    bindingType: BindingType | "Range" | "Table" | "Text",
                     id: string
                 ): Binding;
       return:
@@ -44,7 +44,7 @@ items:
         - id: bindingType
           description: バインドの種類。 「Excel. BindingType」を参照してください。
           type:
-            - 'excel!Excel.BindingType:enum'
+            - 'excel!Excel.BindingCollection#add~1:complex'
         - id: id
           description: バインドの名前です。
           type:
@@ -60,7 +60,7 @@ items:
       content: |-
         addFromNamedItem(
                     name: string,
-                    bindingType: BindingType,
+                    bindingType: BindingType | "Range" | "Table" | "Text",
                     id: string
                 ): Binding;
       return:
@@ -75,7 +75,7 @@ items:
         - id: bindingType
           description: バインドの種類。 「Excel. BindingType」を参照してください。
           type:
-            - 'excel!Excel.BindingType:enum'
+            - 'excel!Excel.BindingCollection#addFromNamedItem~0:complex'
         - id: id
           description: バインドの名前です。
           type:
@@ -88,7 +88,11 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'addFromSelection(bindingType: BindingType, id: string): Binding;'
+      content: |-
+        addFromSelection(
+                    bindingType: BindingType | "Range" | "Table" | "Text",
+                    id: string
+                ): Binding;
       return:
         type:
           - 'excel!Excel.Binding:interface'
@@ -97,7 +101,7 @@ items:
         - id: bindingType
           description: バインドの種類。 「Excel. BindingType」を参照してください。
           type:
-            - 'excel!Excel.BindingType:enum'
+            - 'excel!Excel.BindingCollection#addFromSelection~0:complex'
         - id: id
           description: バインドの名前です。
           type:
@@ -122,10 +126,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getCount(): number;'
+      content: 'getCount(): ClientResult<number>;'
       return:
         type:
-          - number
+          - 'excel!Excel.BindingCollection#getCount~0:complex'
         description: ''
   - uid: 'excel!Excel.BindingCollection#getItem:member(1)'
     summary: ID を使用してバインド オブジェクトを取得します。
@@ -212,6 +216,39 @@ references:
         fullName: Excel.Range
       - name: ' | string'
         fullName: ' | string'
-  - uid: 'excel!Excel.BindingType:enum'
-    name: BindingType
-    fullName: Excel.BindingType
+  - uid: 'excel!Excel.BindingCollection#add~1:complex'
+    name: BindingType | "Range" | "Table" | "Text"
+    fullName: Excel.BindingType | "Range" | "Table" | "Text"
+    spec.typeScript:
+      - uid: 'excel!Excel.BindingType:enum'
+        name: BindingType
+        fullName: Excel.BindingType
+      - name: ' | "Range" | "Table" | "Text"'
+        fullName: ' | "Range" | "Table" | "Text"'
+  - uid: 'excel!Excel.BindingCollection#addFromNamedItem~0:complex'
+    name: BindingType | "Range" | "Table" | "Text"
+    fullName: Excel.BindingType | "Range" | "Table" | "Text"
+    spec.typeScript:
+      - uid: 'excel!Excel.BindingType:enum'
+        name: BindingType
+        fullName: Excel.BindingType
+      - name: ' | "Range" | "Table" | "Text"'
+        fullName: ' | "Range" | "Table" | "Text"'
+  - uid: 'excel!Excel.BindingCollection#addFromSelection~0:complex'
+    name: BindingType | "Range" | "Table" | "Text"
+    fullName: Excel.BindingType | "Range" | "Table" | "Text"
+    spec.typeScript:
+      - uid: 'excel!Excel.BindingType:enum'
+        name: BindingType
+        fullName: Excel.BindingType
+      - name: ' | "Range" | "Table" | "Text"'
+        fullName: ' | "Range" | "Table" | "Text"'
+  - uid: 'excel!Excel.BindingCollection#getCount~0:complex'
+    name: ClientResult<number>
+    fullName: Excel.ClientResult<number>
+    spec.typeScript:
+      - uid: 'excel!Excel.ClientResult:interface'
+        name: ClientResult
+        fullName: Excel.ClientResult
+      - name: <number>
+        fullName: <number>

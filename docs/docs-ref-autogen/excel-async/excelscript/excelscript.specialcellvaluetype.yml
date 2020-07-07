@@ -30,7 +30,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"all"'
+    numericValue: '"All"'
   - uid: 'excel!Excel.SpecialCellValueType.errors:member'
     summary: エラーが発生したセル。
     name: errors
@@ -38,7 +38,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"errors"'
+    numericValue: '"Errors"'
   - uid: 'excel!Excel.SpecialCellValueType.errorsLogical:member'
     summary: エラーが発生したセル、または true/false 値。
     name: errorsLogical
@@ -46,7 +46,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"errorsLogical"'
+    numericValue: '"ErrorsLogical"'
   - uid: 'excel!Excel.SpecialCellValueType.errorsLogicalNumber:member'
     summary: エラーが発生したセル (true/false、または数値) を指定します。
     name: errorsLogicalNumber
@@ -54,7 +54,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"errorsLogicalNumber"'
+    numericValue: '"ErrorsLogicalNumber"'
   - uid: 'excel!Excel.SpecialCellValueType.errorsLogicalText:member'
     summary: エラーが発生したセル、true/false、または文字列値。
     name: errorsLogicalText
@@ -62,7 +62,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"errorsLogicalText"'
+    numericValue: '"ErrorsLogicalText"'
   - uid: 'excel!Excel.SpecialCellValueType.errorsNumbers:member'
     summary: エラーが発生したセル、または数値を指定します。
     name: errorsNumbers
@@ -70,7 +70,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"errorsNumbers"'
+    numericValue: '"ErrorsNumbers"'
   - uid: 'excel!Excel.SpecialCellValueType.errorsNumberText:member'
     summary: エラー、数値、または文字列値を含むセル。
     name: errorsNumberText
@@ -78,7 +78,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"errorsNumberText"'
+    numericValue: '"ErrorsNumberText"'
   - uid: 'excel!Excel.SpecialCellValueType.errorsText:member'
     summary: エラーが発生したセル、または文字列値。
     name: errorsText
@@ -86,7 +86,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"errorsText"'
+    numericValue: '"ErrorsText"'
   - uid: 'excel!Excel.SpecialCellValueType.logical:member'
     summary: True/false 値を持つセル。
     name: logical
@@ -94,7 +94,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"logical"'
+    numericValue: '"Logical"'
   - uid: 'excel!Excel.SpecialCellValueType.logicalNumbers:member'
     summary: True/false が設定されているセルまたは数値を指定します。
     name: logicalNumbers
@@ -102,7 +102,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"logicalNumbers"'
+    numericValue: '"LogicalNumbers"'
   - uid: 'excel!Excel.SpecialCellValueType.logicalNumbersText:member'
     summary: True/false、数値、または文字列値を持つセル。
     name: logicalNumbersText
@@ -110,7 +110,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"logicalNumbersText"'
+    numericValue: '"LogicalNumbersText"'
   - uid: 'excel!Excel.SpecialCellValueType.logicalText:member'
     summary: True/false が設定されているセル、または文字列値。
     name: logicalText
@@ -118,7 +118,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"logicalText"'
+    numericValue: '"LogicalText"'
   - uid: 'excel!Excel.SpecialCellValueType.numbers:member'
     summary: 数値が指定されているセル
     name: numbers
@@ -126,7 +126,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"numbers"'
+    numericValue: '"Numbers"'
   - uid: 'excel!Excel.SpecialCellValueType.numbersText:member'
     summary: 数値または文字列値を含むセル。
     name: numbersText
@@ -134,7 +134,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"numbersText"'
+    numericValue: '"NumbersText"'
   - uid: 'excel!Excel.SpecialCellValueType.text:member'
     summary: 文字列値を持つセル。
     name: text
@@ -142,4 +142,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"text"'
+    numericValue: '"Text"'

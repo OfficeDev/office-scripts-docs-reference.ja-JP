@@ -18,7 +18,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"full"'
+    numericValue: '"Full"'
   - uid: 'excel!Excel.CalculationType.fullRebuild:member'
     summary: 完全な依存関係チェーンが再構築され、すべてのセルがダーティとしてマークされてから再計算されます。
     name: fullRebuild
@@ -26,7 +26,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"fullRebuild"'
+    numericValue: '"FullRebuild"'
   - uid: 'excel!Excel.CalculationType.recalculate:member'
     summary: Excel によってダーティのマークが付けられたすべてのセル (揮発性データと変更されたデータの参照先、およびプログラムによりダーティのマークが付けられたセル) を再計算します。
     name: recalculate
@@ -34,4 +34,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"recalculate"'
+    numericValue: '"Recalculate"'
