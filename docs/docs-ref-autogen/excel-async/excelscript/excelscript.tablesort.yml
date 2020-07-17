@@ -65,7 +65,7 @@ items:
           type:
             - 'excel!Excel.TableSort#apply~1:complex'
   - uid: 'excel!Excel.TableSort#clear:member(1)'
-    summary: 'Clears the sorting that is currently on the table. While this doesn''t modify the table''s ordering, it clears the state of the header buttons.'
+    summary: テーブルに現在設定されている並べ替えをクリアします。これにより表の順序が変更されることはありませんが、ヘッダーのボタンの状態がクリアされます。
     name: clear()
     fullName: clear()
     langs:

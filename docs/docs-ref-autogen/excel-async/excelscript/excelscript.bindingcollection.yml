@@ -38,7 +38,7 @@ items:
         description: ''
       parameters:
         - id: range
-          description: 'Range to bind the binding to. May be an Excel Range object, or a string. If string, must contain the full address, including the sheet name'
+          description: バインドをバインドする範囲です。Excel Range オブジェクト、または文字列である場合があります。文字列の場合は、シート名を含む完全なアドレスが含まれている必要があります
           type:
             - 'excel!Excel.BindingCollection#add~0:complex'
         - id: bindingType

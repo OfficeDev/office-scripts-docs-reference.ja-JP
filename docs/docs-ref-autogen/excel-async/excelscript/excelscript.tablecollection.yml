@@ -17,7 +17,7 @@ items:
       - 'excel!Excel.TableCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.TableCollection#load:member(1)'
   - uid: 'excel!Excel.TableCollection#add:member(1)'
-    summary: 'Create a new table. The range object or source address determines the worksheet under which the table will be added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another table), an error will be thrown.'
+    summary: 新しいテーブルを作成します。範囲オブジェクトまたはソース アドレスにより、テーブルが追加されるワークシートが判断されます。テーブルが追加できない場合 (たとえば、アドレスが無効な場合や、テーブルが別のテーブルと重複している場合) は、エラーがスローされます。
     name: 'add(address, hasHeaders)'
     fullName: 'add(address, hasHeaders)'
     langs:
@@ -35,7 +35,7 @@ items:
           type:
             - 'excel!Excel.TableCollection#add~0:complex'
         - id: hasHeaders
-          description: 'Boolean value that indicates whether the data being imported has column labels. If the source does not contain headers (i.e,. when this property set to false), Excel will automatically generate header shifting the data down by one row.'
+          description: インポートされたデータに列ラベルがあるかどうかを示すブール値。ソースにヘッダーが含まれていない場合 (このプロパティが false に設定されている場合)、Excel はデータを下方向に 1 行シフトして、自動的にヘッダーを生成します。
           type:
             - boolean
   - uid: 'excel!Excel.TableCollection#count:member'

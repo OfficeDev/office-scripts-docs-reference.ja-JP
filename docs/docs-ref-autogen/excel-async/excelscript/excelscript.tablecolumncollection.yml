@@ -40,7 +40,7 @@ items:
         description: ''
       parameters:
         - id: index
-          description: 'Optional. Specifies the relative position of the new column. If null or -1, the addition happens at the end. Columns with a higher index will be shifted to the side. Zero-indexed.'
+          description: 省略可能。新しい列の相対位置を指定します。null または -1 の場合、最後に追加が行われます。上位のインデックスを持つ列は横にシフトされます。0 を起点とする番号になります。
           type:
             - number
         - id: values
