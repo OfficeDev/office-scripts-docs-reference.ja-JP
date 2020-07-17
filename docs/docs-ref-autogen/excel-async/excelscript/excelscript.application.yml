@@ -147,7 +147,7 @@ items:
           type:
             - 'string | string[]'
   - uid: 'excel!Excel.Application#suspendApiCalculationUntilNextSync:member(1)'
-    summary: 'Suspends calculation until the next "context.sync()" is called. Once set, it is the developer''s responsibility to re-calc the workbook, to ensure that any dependencies are propagated.'
+    summary: 次の "context.sync()" が呼び出されるまで、計算を中断します。設定されると、依存関係が確実に伝達されるようにブックを再計算するのは開発者の責任です。
     name: suspendApiCalculationUntilNextSync()
     fullName: suspendApiCalculationUntilNextSync()
     langs:

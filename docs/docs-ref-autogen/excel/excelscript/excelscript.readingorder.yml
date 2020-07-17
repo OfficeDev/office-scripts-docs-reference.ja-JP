@@ -12,7 +12,7 @@ items:
       - 'ExcelScript!ExcelScript.ReadingOrder.leftToRight:member'
       - 'ExcelScript!ExcelScript.ReadingOrder.rightToLeft:member'
   - uid: 'ExcelScript!ExcelScript.ReadingOrder.context:member'
-    summary: 'Reading order is determined by the language of the first character entered. If a right-to-left language character is entered first, reading order is right to left. If a left-to-right language character is entered first, reading order is left to right.'
+    summary: 読みの順序は入力された最初の文字の言語によって決まります。右から左に記述する言語が最初に入力された場合、読みの順序は右から左になります。左から右に記述する言語が最初に入力された場合、読みの順序は左から右になります。
     name: context
     fullName: context
     langs:

@@ -448,7 +448,7 @@ items:
         description: ''
       parameters:
         - id: startCell
-          description: 'The start cell. This is where the chart will be moved to. The start cell is the top-left or top-right cell, depending on the user''s right-to-left display settings.'
+          description: 開始セル。これは、グラフの移動先です。開始セルは、ユーザーの右から左への表示の設定に応じて、左上のセルか、右上のセルとなります。
           type:
             - 'excel!Excel.Chart#setPosition~0:complex'
         - id: endCell
