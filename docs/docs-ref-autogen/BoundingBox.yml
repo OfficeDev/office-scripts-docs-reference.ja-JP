@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-atlas-javscript-sdk.BoundingBox
+    name: BoundingBox
+    fullName: BoundingBox
+    children:
+      - azure-atlas-javscript-sdk.BoundingBox.Array
+      - azure-atlas-javscript-sdk.BoundingBox.constructor
+    langs:
+      - typeScript
+    type: class
+    summary: GeoJSON 境界ボックスの定義。
+    extends:
+      name: Array<number>
+  - uid: azure-atlas-javscript-sdk.BoundingBox.Array
+    name: Array
+    fullName: Array
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: static ArrayConstructor Array
+      return:
+        type:
+          - ArrayConstructor
+  - uid: azure-atlas-javscript-sdk.BoundingBox.constructor
+    name: BoundingBox
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: 境界ボックスを構築します。
+    syntax:
+      content: 'new BoundingBox(southwestPosition: Position, northeastPosition: Position)'
+      parameters:
+        - id: southwestPosition
+          type:
+            - '@azure-atlas-javscript-sdk.Position'
+          description: 境界ボックスの southwestern の位置を指定します。
+        - id: northeastPosition
+          type:
+            - '@azure-atlas-javscript-sdk.Position'
+          description: |
+            境界ボックスの northeastern の位置を指定します。
