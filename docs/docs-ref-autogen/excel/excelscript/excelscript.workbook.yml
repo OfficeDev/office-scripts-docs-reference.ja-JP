@@ -198,7 +198,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Workbook#addComment~1:complex'
         - id: contentType
-          description: 省略可能です。 コメント内に含まれるコンテンツの種類。 既定値は enum です。`ContentType.Plain`<!-- -->.
+          description: 省略可能。 コメント内に含まれるコンテンツの種類。 既定値は enum です。`ContentType.Plain`<!-- -->.
           type:
             - 'ExcelScript!ExcelScript.ContentType:enum'
   - uid: 'ExcelScript!ExcelScript.Workbook#addCustomXmlPart:member(1)'
@@ -247,7 +247,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Workbook#addNamedItem~0:complex'
         - id: comment
-          description: 省略可能です。 名前付きアイテムに関連付けられているコメント。
+          description: 省略可能。 名前付きアイテムに関連付けられているコメント。
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.Workbook#addNamedItemFormulaLocal:member(1)'
@@ -278,7 +278,7 @@ items:
           type:
             - string
         - id: comment
-          description: 省略可能です。 名前付きアイテムに関連付けられているコメント。
+          description: 省略可能。 名前付きアイテムに関連付けられているコメント。
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.Workbook#addPivotTable:member(1)'
@@ -384,7 +384,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Workbook#addSlicer~1:complex'
         - id: slicerDestination
-          description: 省略可能です。 新しいスライサーを作成するワークシートを指定します。 ワークシートオブジェクト、またはワークシートの名前/id を指定できます。 スライサーコレクションをワークシートから取得する場合は、このパラメーターを省略できます。
+          description: 省略可能。 新しいスライサーを作成するワークシートを指定します。 ワークシートオブジェクト、またはワークシートの名前/id を指定できます。 スライサーコレクションをワークシートから取得する場合は、このパラメーターを省略できます。
           type:
             - 'ExcelScript!ExcelScript.Workbook#addSlicer~2:complex'
   - uid: 'ExcelScript!ExcelScript.Workbook#addSlicerStyle:member(1)'
@@ -826,7 +826,7 @@ items:
         description: ''
       parameters:
         - id: visibleOnly
-          description: 省略可能です。 True の場合は、表示されているワークシートのみを考慮し、非表示のワークシートについてはスキップします。
+          description: 省略可能。 True の場合は、表示されているワークシートのみを考慮し、非表示のワークシートについてはスキップします。
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.Workbook#getIsDirty:member(1)'
@@ -857,7 +857,7 @@ items:
         description: ''
       parameters:
         - id: visibleOnly
-          description: 省略可能です。 True の場合は、表示されているワークシートのみを考慮し、非表示のワークシートについてはスキップします。
+          description: 省略可能。 True の場合は、表示されているワークシートのみを考慮し、非表示のワークシートについてはスキップします。
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.Workbook#getName:member(1)'
@@ -1273,7 +1273,27 @@ items:
       return:
         type:
           - 'ExcelScript!ExcelScript.Workbook#getWorksheets~0:complex'
-        description: ''
+        description: |-
+
+
+          #### <a name="examples"></a>例
+
+          ```javascript
+          /**
+           * This script logs the names of all the worksheets in the workbook.
+           */
+          function main(workbook: ExcelScript.Workbook) {
+            // Get all the worksheets in the workbook. 
+            let sheets = workbook.getWorksheets();
+
+            // Get a list of all the worksheet names.
+            let names = sheets.map ((sheet) => sheet.getName());
+
+            // Write in the console all the worksheet names and the total count.
+            console.log(names);
+            console.log(`Total worksheets inside of this workbook: ${sheets.length}`);
+          }
+          ```
   - uid: 'ExcelScript!ExcelScript.Workbook#refreshAllDataConnections:member(1)'
     summary: すべてのデータ接続を更新します。
     name: refreshAllDataConnections()
