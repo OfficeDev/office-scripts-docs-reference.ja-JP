@@ -14,7 +14,6 @@ items:
       - 'ExcelScript!ExcelScript.RangeAreas#clear:member(1)'
       - 'ExcelScript!ExcelScript.RangeAreas#clearAllConditionalFormats:member(1)'
       - 'ExcelScript!ExcelScript.RangeAreas#convertDataTypeToText:member(1)'
-      - 'ExcelScript!ExcelScript.RangeAreas#convertToLinkedDataType:member(1)'
       - 'ExcelScript!ExcelScript.RangeAreas#copyFrom:member(1)'
       - 'ExcelScript!ExcelScript.RangeAreas#getAddress:member(1)'
       - 'ExcelScript!ExcelScript.RangeAreas#getAddressLocal:member(1)'
@@ -113,32 +112,6 @@ items:
         type:
           - void
         description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeAreas#convertToLinkedDataType:member(1)'
-    summary: RangeAreas 内のすべてのセルをリンク付きデータ型に変換します。
-    name: 'convertToLinkedDataType(serviceID, languageCulture)'
-    fullName: 'convertToLinkedDataType(serviceID, languageCulture)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        convertToLinkedDataType(
-                    serviceID: number,
-                    languageCulture: string
-                ): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: serviceID
-          description: データのクエリに使用されるサービス ID。
-          type:
-            - number
-        - id: languageCulture
-          description: サービスを照会する言語カルチャ。
-          type:
-            - string
   - uid: 'ExcelScript!ExcelScript.RangeAreas#copyFrom:member(1)'
     summary: ソース範囲または RangeAreas から現在の RangeAreas にセル データまたは書式設定をコピーします。 コピー先の rangeAreas のサイズは、ソース範囲または RangeAreas とは異なる場合があります。 転送先は、ソースよりも小さい場合は自動的に展開されます。
     name: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
