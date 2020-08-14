@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.CellPropertiesFill:interface'
-    summary: 'のプロパティを表します。 `format.fill``getCellProperties`<!-- -->, `getRowProperties`<!-- -->、 `getColumnProperties` または `format.fill` の入力パラメーター`setCellProperties`<!-- -->, `setRowProperties`<!-- -->そして`setColumnProperties`<!-- -->.'
+    summary: 'のプロパティを表します。 `format.fill``getCellProperties`<!-- -->, `getRowProperties`<!-- -->、 `getColumnProperties` または `format.fill` の入力パラメーター `setCellProperties`<!-- -->, `setRowProperties`<!-- -->そして `setColumnProperties`<!-- -->.'
     name: ExcelScript.CellPropertiesFill
     fullName: ExcelScript.CellPropertiesFill
     langs:

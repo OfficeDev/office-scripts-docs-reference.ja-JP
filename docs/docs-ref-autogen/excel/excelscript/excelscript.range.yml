@@ -15,7 +15,6 @@ items:
       - 'ExcelScript!ExcelScript.Range#clear:member(1)'
       - 'ExcelScript!ExcelScript.Range#clearAllConditionalFormats:member(1)'
       - 'ExcelScript!ExcelScript.Range#convertDataTypeToText:member(1)'
-      - 'ExcelScript!ExcelScript.Range#convertToLinkedDataType:member(1)'
       - 'ExcelScript!ExcelScript.Range#copyFrom:member(1)'
       - 'ExcelScript!ExcelScript.Range#delete:member(1)'
       - 'ExcelScript!ExcelScript.Range#find:member(1)'
@@ -260,32 +259,6 @@ items:
         type:
           - void
         description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#convertToLinkedDataType:member(1)'
-    summary: ワークシート内で範囲セルをリンク付きデータ型に変換します。
-    name: 'convertToLinkedDataType(serviceID, languageCulture)'
-    fullName: 'convertToLinkedDataType(serviceID, languageCulture)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        convertToLinkedDataType(
-                    serviceID: number,
-                    languageCulture: string
-                ): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: serviceID
-          description: データのクエリに使用されるサービス ID。
-          type:
-            - number
-        - id: languageCulture
-          description: サービスを照会する言語カルチャ。
-          type:
-            - string
   - uid: 'ExcelScript!ExcelScript.Range#copyFrom:member(1)'
     summary: ソース範囲または RangeAreas から現在の範囲にセル データまたは書式設定をコピーします。 コピー先の範囲は、元の範囲または RangeAreas のサイズと異なる場合があります。 転送先は、ソースよりも小さい場合は自動的に展開されます。
     name: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
@@ -1991,7 +1964,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.Range#setValue:member(1)'
-    summary: 指定された範囲の生の値を設定します。 設定されるデータは、string、number、または boolean 型の場合があります。 `null`値は無視されます (Excel で設定または上書きされません)。 範囲に複数のセルが含まれている場合は、指定範囲の各セルが入力データで更新されます。
+    summary: 指定された範囲の生の値を設定します。 設定されるデータは、string、number、または boolean 型の場合があります。 `null` 値は無視されます (Excel で設定または上書きされません)。 範囲に複数のセルが含まれている場合は、指定範囲の各セルが入力データで更新されます。
     name: setValue(value)
     fullName: setValue(value)
     langs:
