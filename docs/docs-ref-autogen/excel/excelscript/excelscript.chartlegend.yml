@@ -93,7 +93,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartLegend#getPosition:member(1)'
-    summary: グラフの凡例の位置を指定します。 詳細については、「ChartLegendPosition」を参照してください。
+    summary: グラフの凡例の位置を指定します。 詳細については、「ExcelScript」を参照してください。
     name: getPosition()
     fullName: getPosition()
     langs:
@@ -212,7 +212,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.ChartLegend#setPosition:member(1)'
-    summary: グラフの凡例の位置を指定します。 詳細については、「ChartLegendPosition」を参照してください。
+    summary: グラフの凡例の位置を指定します。 詳細については、「ExcelScript」を参照してください。
     name: setPosition(position)
     fullName: setPosition(position)
     langs:

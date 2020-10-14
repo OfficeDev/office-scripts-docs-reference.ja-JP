@@ -87,7 +87,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ShapeFont#getUnderline:member(1)'
-    summary: フォントに適用する下線の種類。 TextRange に下線スタイルの異なるテキストが含まれている場合、null を返します。 詳細については、Excel.ShapeFontUnderlineStyle をご覧ください。
+    summary: フォントに適用する下線の種類。 TextRange に下線スタイルの異なるテキストが含まれている場合、null を返します。 詳細については、「ExcelScript. Offefont過小 Linestyle」を参照してください。
     name: getUnderline()
     fullName: getUnderline()
     langs:
@@ -190,7 +190,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ShapeFont#setUnderline:member(1)'
-    summary: フォントに適用する下線の種類。 TextRange に下線スタイルの異なるテキストが含まれている場合、null を返します。 詳細については、Excel.ShapeFontUnderlineStyle をご覧ください。
+    summary: フォントに適用する下線の種類。 TextRange に下線スタイルの異なるテキストが含まれている場合、null を返します。 詳細については、「ExcelScript. Offefont過小 Linestyle」を参照してください。
     name: setUnderline(underline)
     fullName: setUnderline(underline)
     langs:

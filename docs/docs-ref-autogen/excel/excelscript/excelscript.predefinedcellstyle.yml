@@ -146,7 +146,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getHorizontalAlignment:member(1)'
-    summary: スタイルでの水平方向の配置を表します。 詳細については、「Excel の配置」を参照してください。
+    summary: スタイルでの水平方向の配置を表します。 詳細については、「ExcelScript.」を参照してください。
     name: getHorizontalAlignment()
     fullName: getHorizontalAlignment()
     langs:
@@ -316,11 +316,11 @@ items:
         description: ''
       parameters:
         - id: index
-          description: 取得する border オブジェクトのインデックス値を指定します。 詳細については、「Excel BorderIndex」を参照してください。
+          description: 取得する border オブジェクトのインデックス値を指定します。 詳細については、「ExcelScript. BorderIndex」を参照してください。
           type:
             - 'ExcelScript!ExcelScript.BorderIndex:enum'
   - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getRangeBorderTintAndShade:member(1)'
-    summary: 範囲の罫線の色を明るくまたは暗くする倍精度浮動小数点型 (double) の値を指定します。 値は、-1 (最も暗い) から 1 (最も明るい) までの範囲で、元の色は0になります。 Null 値は、境界のコレクション全体に均一な tintAndShade が設定されていないことを示します。
+    summary: 範囲の境界線の色を明るくまたは暗くする double を指定します。値は、-1 (最も暗い) から 1 (最も明るい) までの範囲で、元の色は0になります。 Null 値は、境界のコレクション全体に均一な tintAndShade が設定されていないことを示します。
     name: getRangeBorderTintAndShade()
     fullName: getRangeBorderTintAndShade()
     langs:
@@ -372,7 +372,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getVerticalAlignment:member(1)'
-    summary: スタイルの垂直方向の配置を指定します。 詳細については、「Excel の配置」を参照してください。
+    summary: スタイルの垂直方向の配置を指定します。 詳細については、「ExcelScript. 縦書きの配置」を参照してください。
     name: getVerticalAlignment()
     fullName: getVerticalAlignment()
     langs:
@@ -434,7 +434,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setHorizontalAlignment:member(1)'
-    summary: スタイルでの水平方向の配置を表します。 詳細については、「Excel の配置」を参照してください。
+    summary: スタイルでの水平方向の配置を表します。 詳細については、「ExcelScript.」を参照してください。
     name: setHorizontalAlignment(horizontalAlignment)
     fullName: setHorizontalAlignment(horizontalAlignment)
     langs:
@@ -632,7 +632,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setRangeBorderTintAndShade:member(1)'
-    summary: 範囲の罫線の色を明るくまたは暗くする倍精度浮動小数点型 (double) の値を指定します。 値は、-1 (最も暗い) から 1 (最も明るい) までの範囲で、元の色は0になります。 Null 値は、境界のコレクション全体に均一な tintAndShade が設定されていないことを示します。
+    summary: 範囲の境界線の色を明るくまたは暗くする double を指定します。値は、-1 (最も暗い) から 1 (最も明るい) までの範囲で、元の色は0になります。 Null 値は、境界のコレクション全体に均一な tintAndShade が設定されていないことを示します。
     name: setRangeBorderTintAndShade(rangeBorderTintAndShade)
     fullName: setRangeBorderTintAndShade(rangeBorderTintAndShade)
     langs:
@@ -704,7 +704,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setVerticalAlignment:member(1)'
-    summary: スタイルの垂直方向の配置を指定します。 詳細については、「Excel の配置」を参照してください。
+    summary: スタイルの垂直方向の配置を指定します。 詳細については、「ExcelScript. 縦書きの配置」を参照してください。
     name: setVerticalAlignment(verticalAlignment)
     fullName: setVerticalAlignment(verticalAlignment)
     langs:

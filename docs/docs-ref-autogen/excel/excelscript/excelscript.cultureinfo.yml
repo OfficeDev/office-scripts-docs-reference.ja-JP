@@ -9,8 +9,22 @@ items:
     type: interface
     package: ExcelScript!
     children:
+      - 'ExcelScript!ExcelScript.CultureInfo#getDatetimeFormat:member(1)'
       - 'ExcelScript!ExcelScript.CultureInfo#getName:member(1)'
       - 'ExcelScript!ExcelScript.CultureInfo#getNumberFormat:member(1)'
+  - uid: 'ExcelScript!ExcelScript.CultureInfo#getDatetimeFormat:member(1)'
+    summary: 日付と時刻を表示するためのカルチャに適した形式を定義します。 これは、現在のシステムのカルチャ設定に基づいています。
+    name: getDatetimeFormat()
+    fullName: getDatetimeFormat()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDatetimeFormat(): DatetimeFormatInfo;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.DatetimeFormatInfo:interface'
+        description: ''
   - uid: 'ExcelScript!ExcelScript.CultureInfo#getName:member(1)'
     summary: 'カルチャ名を languagecode2-country/regioncode2 の形式で取得します (例: "zh-cn-cn" または "en-us")。 これは、現在のシステム設定に基づいています。'
     name: getName()
@@ -38,6 +52,9 @@ items:
           - 'ExcelScript!ExcelScript.NumberFormatInfo:interface'
         description: ''
 references:
+  - uid: 'ExcelScript!ExcelScript.DatetimeFormatInfo:interface'
+    name: DatetimeFormatInfo
+    fullName: ExcelScript.DatetimeFormatInfo
   - uid: 'ExcelScript!ExcelScript.NumberFormatInfo:interface'
     name: NumberFormatInfo
     fullName: ExcelScript.NumberFormatInfo

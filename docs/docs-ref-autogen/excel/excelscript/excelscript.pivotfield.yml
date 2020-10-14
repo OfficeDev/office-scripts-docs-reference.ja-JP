@@ -9,17 +9,84 @@ items:
     type: interface
     package: ExcelScript!
     children:
+      - 'ExcelScript!ExcelScript.PivotField#applyFilter:member(1)'
+      - 'ExcelScript!ExcelScript.PivotField#clearAllFilters:member(1)'
+      - 'ExcelScript!ExcelScript.PivotField#clearFilter:member(1)'
+      - 'ExcelScript!ExcelScript.PivotField#getFilters:member(1)'
       - 'ExcelScript!ExcelScript.PivotField#getId:member(1)'
       - 'ExcelScript!ExcelScript.PivotField#getItems:member(1)'
       - 'ExcelScript!ExcelScript.PivotField#getName:member(1)'
       - 'ExcelScript!ExcelScript.PivotField#getPivotItem:member(1)'
       - 'ExcelScript!ExcelScript.PivotField#getShowAllItems:member(1)'
       - 'ExcelScript!ExcelScript.PivotField#getSubtotals:member(1)'
+      - 'ExcelScript!ExcelScript.PivotField#isFiltered:member(1)'
       - 'ExcelScript!ExcelScript.PivotField#setName:member(1)'
       - 'ExcelScript!ExcelScript.PivotField#setShowAllItems:member(1)'
       - 'ExcelScript!ExcelScript.PivotField#setSubtotals:member(1)'
       - 'ExcelScript!ExcelScript.PivotField#sortByLabels:member(1)'
       - 'ExcelScript!ExcelScript.PivotField#sortByValues:member(1)'
+  - uid: 'ExcelScript!ExcelScript.PivotField#applyFilter:member(1)'
+    summary: 1つまたは複数のフィールドの現在の PivotFilters を設定し、フィールドに適用します。 指定したフィルターが無効であるか、適用できない場合は、例外がスローされます。
+    name: applyFilter(filter)
+    fullName: applyFilter(filter)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'applyFilter(filter: PivotFilters): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: filter
+          description: 構成された特定の PivotFilter または複数の構成されたフィルターを含む PivotFilters インターフェイス。
+          type:
+            - 'ExcelScript!ExcelScript.PivotFilters:interface'
+  - uid: 'ExcelScript!ExcelScript.PivotField#clearAllFilters:member(1)'
+    summary: すべてのフィールドフィルターのすべての条件をクリアします。 これにより、そのフィールドのアクティブなフィルター処理がすべて削除されます。
+    name: clearAllFilters()
+    fullName: clearAllFilters()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clearAllFilters(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PivotField#clearFilter:member(1)'
+    summary: 指定した種類のフィールドのフィルターから、すべての既存の条件を削除します (現在適用されている場合)。
+    name: clearFilter(filterType)
+    fullName: clearFilter(filterType)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clearFilter(filterType: PivotFilterType): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: filterType
+          description: すべての条件をクリアするフィールドのフィルターの種類を指定します。
+          type:
+            - 'ExcelScript!ExcelScript.PivotFilterType:enum'
+  - uid: 'ExcelScript!ExcelScript.PivotField#getFilters:member(1)'
+    summary: フィールドに現在適用されているすべてのフィルターを取得します。
+    name: getFilters()
+    fullName: getFilters()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFilters(): PivotFilters;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PivotFilters:interface'
+        description: ''
   - uid: 'ExcelScript!ExcelScript.PivotField#getId:member(1)'
     summary: PivotField の ID。
     name: getId()
@@ -103,6 +170,24 @@ items:
         type:
           - 'ExcelScript!ExcelScript.Subtotals:interface'
         description: ''
+  - uid: 'ExcelScript!ExcelScript.PivotField#isFiltered:member(1)'
+    summary: フィールドに適用されているフィルターがあるかどうかを確認します。
+    name: isFiltered(filterType)
+    fullName: isFiltered(filterType)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'isFiltered(filterType?: PivotFilterType): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+      parameters:
+        - id: filterType
+          description: 確認するフィルターの種類を示します。 型が指定されていない場合、このメソッドはフィルターが適用されているかどうかを確認します。
+          type:
+            - 'ExcelScript!ExcelScript.PivotFilterType:enum'
   - uid: 'ExcelScript!ExcelScript.PivotField#setName:member(1)'
     summary: PivotField の名前。
     name: setName(name)
@@ -207,6 +292,12 @@ items:
           type:
             - 'ExcelScript!ExcelScript.PivotField#sortByValues~0:complex'
 references:
+  - uid: 'ExcelScript!ExcelScript.PivotFilters:interface'
+    name: PivotFilters
+    fullName: ExcelScript.PivotFilters
+  - uid: 'ExcelScript!ExcelScript.PivotFilterType:enum'
+    name: PivotFilterType
+    fullName: ExcelScript.PivotFilterType
   - uid: 'ExcelScript!ExcelScript.PivotField#getItems~0:complex'
     name: 'PivotItem[]'
     fullName: 'ExcelScript.PivotItem[]'

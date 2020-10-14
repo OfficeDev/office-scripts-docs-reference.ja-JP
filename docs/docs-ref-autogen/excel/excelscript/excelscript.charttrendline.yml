@@ -83,7 +83,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartTrendline#getIntercept:member(1)'
-    summary: 近似曲線の切片の値を表します。 数値または空の文字列を設定できます (値を自動的に設定する場合)。 戻り値は常に数値です。
+    summary: 近似曲線の切片値を指定します。
     name: getIntercept()
     fullName: getIntercept()
     langs:
@@ -223,7 +223,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartTrendline#setIntercept:member(1)'
-    summary: 近似曲線の切片の値を表します。 数値または空の文字列を設定できます (値を自動的に設定する場合)。 戻り値は常に数値です。
+    summary: 近似曲線の切片値を指定します。
     name: setIntercept(intercept)
     fullName: setIntercept(intercept)
     langs:

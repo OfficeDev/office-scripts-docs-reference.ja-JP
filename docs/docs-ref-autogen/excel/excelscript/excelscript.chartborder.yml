@@ -43,7 +43,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartBorder#getLineStyle:member(1)'
-    summary: 罫線のスタイルを表します。 詳細については、「Excel の ChartLineStyle」を参照してください。
+    summary: 罫線のスタイルを表します。 詳細については、「ExcelScript. ChartLineStyle」を参照してください。
     name: getLineStyle()
     fullName: getLineStyle()
     langs:
@@ -87,7 +87,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.ChartBorder#setLineStyle:member(1)'
-    summary: 罫線のスタイルを表します。 詳細については、「Excel の ChartLineStyle」を参照してください。
+    summary: 罫線のスタイルを表します。 詳細については、「ExcelScript. ChartLineStyle」を参照してください。
     name: setLineStyle(lineStyle)
     fullName: setLineStyle(lineStyle)
     langs:

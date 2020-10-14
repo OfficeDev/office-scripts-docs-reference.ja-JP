@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.Workbook:interface'
-    summary: 'Workbook は、ワークシート、テーブル、範囲などの関連するブックオブジェクトを含む最上位レベルのオブジェクトです。ブックオブジェクトモデルの詳細については、「 [Excel JAVASCRIPT API を使用してブックを操作](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks)する」を参照してください。<!-- -->.'
+    summary: Workbook は、ワークシート、テーブル、範囲などの関連するブック オブジェクトを含む最上位オブジェクトです。
     name: ExcelScript.Workbook
     fullName: ExcelScript.Workbook
     langs:
@@ -110,7 +110,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Workbook#addBinding~0:complex'
         - id: bindingType
-          description: バインドの種類。 「Excel. BindingType」を参照してください。
+          description: バインドの種類。 「ExcelScript. BindingType」を参照してください。
           type:
             - 'ExcelScript!ExcelScript.BindingType:enum'
         - id: id
@@ -141,7 +141,7 @@ items:
           type:
             - string
         - id: bindingType
-          description: バインドの種類。 「Excel. BindingType」を参照してください。
+          description: バインドの種類。 「ExcelScript. BindingType」を参照してください。
           type:
             - 'ExcelScript!ExcelScript.BindingType:enum'
         - id: id
@@ -163,7 +163,7 @@ items:
         description: ''
       parameters:
         - id: bindingType
-          description: バインドの種類。 「Excel. BindingType」を参照してください。
+          description: バインドの種類。 「ExcelScript. BindingType」を参照してください。
           type:
             - 'ExcelScript!ExcelScript.BindingType:enum'
         - id: id
@@ -198,7 +198,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Workbook#addComment~1:complex'
         - id: contentType
-          description: 省略可能。 コメント内に含まれるコンテンツの種類。 既定値は enum です。`ContentType.Plain`<!-- -->.
+          description: 省略可能。 コメント内に含まれるコンテンツの種類。 既定値は enum です。 `ContentType.Plain`<!-- -->.
           type:
             - 'ExcelScript!ExcelScript.ContentType:enum'
   - uid: 'ExcelScript!ExcelScript.Workbook#addCustomXmlPart:member(1)'

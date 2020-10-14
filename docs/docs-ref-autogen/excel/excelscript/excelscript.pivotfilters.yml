@@ -1,0 +1,76 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.PivotFilters:interface'
+    summary: 特定の PivotField に現在適用されているすべての PivotFilters を表すインターフェイス。
+    name: ExcelScript.PivotFilters
+    fullName: ExcelScript.PivotFilters
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.PivotFilters#dateFilter:member'
+      - 'ExcelScript!ExcelScript.PivotFilters#labelFilter:member'
+      - 'ExcelScript!ExcelScript.PivotFilters#manualFilter:member'
+      - 'ExcelScript!ExcelScript.PivotFilters#valueFilter:member'
+  - uid: 'ExcelScript!ExcelScript.PivotFilters#dateFilter:member'
+    summary: ピボットフィールドの現在適用されている日付フィルター。 何も適用されていない場合は、Null を返します。
+    name: dateFilter
+    fullName: dateFilter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dateFilter?: PivotDateFilter;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PivotDateFilter:interface'
+  - uid: 'ExcelScript!ExcelScript.PivotFilters#labelFilter:member'
+    summary: ピボットフィールドの現在適用されているラベルフィルター。 何も適用されていない場合は、Null を返します。
+    name: labelFilter
+    fullName: labelFilter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'labelFilter?: PivotLabelFilter;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PivotLabelFilter:interface'
+  - uid: 'ExcelScript!ExcelScript.PivotFilters#manualFilter:member'
+    summary: ピボットフィールドの現在適用されている手動フィルター。 何も適用されていない場合は、Null を返します。
+    name: manualFilter
+    fullName: manualFilter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'manualFilter?: PivotManualFilter;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PivotManualFilter:interface'
+  - uid: 'ExcelScript!ExcelScript.PivotFilters#valueFilter:member'
+    summary: ピボットフィールドの現在適用されている値フィルター。 何も適用されていない場合は、Null を返します。
+    name: valueFilter
+    fullName: valueFilter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'valueFilter?: PivotValueFilter;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PivotValueFilter:interface'
+references:
+  - uid: 'ExcelScript!ExcelScript.PivotDateFilter:interface'
+    name: PivotDateFilter
+    fullName: ExcelScript.PivotDateFilter
+  - uid: 'ExcelScript!ExcelScript.PivotLabelFilter:interface'
+    name: PivotLabelFilter
+    fullName: ExcelScript.PivotLabelFilter
+  - uid: 'ExcelScript!ExcelScript.PivotManualFilter:interface'
+    name: PivotManualFilter
+    fullName: ExcelScript.PivotManualFilter
+  - uid: 'ExcelScript!ExcelScript.PivotValueFilter:interface'
+    name: PivotValueFilter
+    fullName: ExcelScript.PivotValueFilter

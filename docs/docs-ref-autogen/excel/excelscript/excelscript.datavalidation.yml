@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.DataValidation:interface'
-    summary: '現在の範囲に適用されるデータの入力規則を表します。 データ検証オブジェクトモデルの詳細については、「 [Excel 範囲へのデータ検証の追加](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-data-validation)」を参照してください。<!-- -->.'
+    summary: 現在の範囲に適用されるデータの入力規則を表します。
     name: ExcelScript.DataValidation
     fullName: ExcelScript.DataValidation
     langs:
@@ -100,7 +100,7 @@ items:
           - 'ExcelScript!ExcelScript.DataValidationRule:interface'
         description: ''
   - uid: 'ExcelScript!ExcelScript.DataValidation#getType:member(1)'
-    summary: データの入力規則の種類。詳細については、Excel.DataValidationType を参照してください。
+    summary: データ入力規則の種類。詳細については、「ExcelScript. DataValidationType」を参照してください。
     name: getType()
     fullName: getType()
     langs:

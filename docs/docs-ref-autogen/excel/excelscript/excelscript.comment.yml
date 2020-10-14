@@ -15,6 +15,7 @@ items:
       - 'ExcelScript!ExcelScript.Comment#getAuthorName:member(1)'
       - 'ExcelScript!ExcelScript.Comment#getCommentReply:member(1)'
       - 'ExcelScript!ExcelScript.Comment#getContent:member(1)'
+      - 'ExcelScript!ExcelScript.Comment#getContentType:member(1)'
       - 'ExcelScript!ExcelScript.Comment#getCreationDate:member(1)'
       - 'ExcelScript!ExcelScript.Comment#getId:member(1)'
       - 'ExcelScript!ExcelScript.Comment#getLocation:member(1)'
@@ -48,7 +49,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Comment#addCommentReply~0:complex'
         - id: contentType
-          description: 省略可能です。 コメント内に含まれるコンテンツの種類。 既定値は enum です。`ContentType.Plain`<!-- -->.
+          description: 省略可能。 コメント内に含まれるコンテンツの種類。 既定値は enum です。 `ContentType.Plain`<!-- -->.
           type:
             - 'ExcelScript!ExcelScript.ContentType:enum'
   - uid: 'ExcelScript!ExcelScript.Comment#delete:member(1)'
@@ -120,6 +121,19 @@ items:
       return:
         type:
           - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Comment#getContentType:member(1)'
+    summary: コメントのコンテンツタイプを取得します。
+    name: getContentType()
+    fullName: getContentType()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getContentType(): ContentType;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ContentType:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.Comment#getCreationDate:member(1)'
     summary: コメントの作成日時を取得します。 コメントがメモから変換されている場合、コメントには作成日時がないため、null が返されます。

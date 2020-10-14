@@ -230,7 +230,7 @@ items:
         description: ''
       parameters:
         - id: values
-          description: 表示する値のリスト。 文字列の配列、または Excel の FilterDateTime オブジェクトの配列を指定する必要があります。
+          description: 表示する値のリスト。 これは、文字列の配列または ExcelScript オブジェクトの配列である必要があります。
           type:
             - 'ExcelScript!ExcelScript.Filter#applyValuesFilter~0:complex'
   - uid: 'ExcelScript!ExcelScript.Filter#clear:member(1)'

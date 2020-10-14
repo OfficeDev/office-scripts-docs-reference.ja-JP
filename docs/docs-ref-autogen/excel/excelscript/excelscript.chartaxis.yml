@@ -79,7 +79,7 @@ items:
       - 'ExcelScript!ExcelScript.ChartAxis#setTickMarkSpacing:member(1)'
       - 'ExcelScript!ExcelScript.ChartAxis#setVisible:member(1)'
   - uid: 'ExcelScript!ExcelScript.ChartAxis#getAlignment:member(1)'
-    summary: 指定された軸の目盛ラベルの配置を指定します。 詳細については、「ChartTextHorizontalAlignment」を参照してください。
+    summary: 指定された軸の目盛ラベルの配置を指定します。 詳細については、「ExcelScript」を参照してください。
     name: getAlignment()
     fullName: getAlignment()
     langs:
@@ -92,7 +92,7 @@ items:
           - 'ExcelScript!ExcelScript.ChartTickLabelAlignment:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartAxis#getAxisGroup:member(1)'
-    summary: 指定した軸のグループを指定します。 詳細については、「ChartAxisGroup」を参照してください。
+    summary: 指定した軸のグループを指定します。 詳細については、「ExcelScript」を参照してください。
     name: getAxisGroup()
     fullName: getAxisGroup()
     langs:
@@ -144,7 +144,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartAxis#getDisplayUnit:member(1)'
-    summary: 軸の表示単位を表します。 詳細については、「ChartAxisDisplayUnit」を参照してください。
+    summary: 軸の表示単位を表します。 詳細については、「ExcelScript」を参照してください。
     name: getDisplayUnit()
     fullName: getDisplayUnit()
     langs:
@@ -248,7 +248,7 @@ items:
           - 'ExcelScript!ExcelScript.ChartGridlines:interface'
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartAxis#getMajorTickMark:member(1)'
-    summary: 指定した軸の目盛の種類を指定します。 詳細については、「ChartAxisTickMark」を参照してください。
+    summary: 指定した軸の目盛の種類を指定します。 詳細については、「ExcelScript」を参照してください。
     name: getMajorTickMark()
     fullName: getMajorTickMark()
     langs:
@@ -274,7 +274,7 @@ items:
           - 'ExcelScript!ExcelScript.ChartAxisTimeUnit:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartAxis#getMajorUnit:member(1)'
-    summary: 2 つの大きい目盛の間隔を表します。 数値の値または空の文字列を設定できます。 戻り値は常に数値です。
+    summary: 2つの目盛の間隔を指定します。
     name: getMajorUnit()
     fullName: getMajorUnit()
     langs:
@@ -287,7 +287,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartAxis#getMaximum:member(1)'
-    summary: 数値軸の最大値を表します。 数値の値または空の文字列を設定できます (軸の値が自動の場合)。 戻り値は常に数値です。
+    summary: 数値軸の最大値を指定します。
     name: getMaximum()
     fullName: getMaximum()
     langs:
@@ -300,7 +300,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartAxis#getMinimum:member(1)'
-    summary: 数値軸の最小値を表します。 数値の値または空の文字列を設定できます (軸の値が自動の場合)。 戻り値は常に数値です。
+    summary: 数値軸の最小値を指定します。
     name: getMinimum()
     fullName: getMinimum()
     langs:
@@ -326,7 +326,7 @@ items:
           - 'ExcelScript!ExcelScript.ChartGridlines:interface'
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartAxis#getMinorTickMark:member(1)'
-    summary: 指定した軸の補助目盛の種類を指定します。 詳細については、「ChartAxisTickMark」を参照してください。
+    summary: 指定した軸の補助目盛の種類を指定します。 詳細については、「ExcelScript」を参照してください。
     name: getMinorTickMark()
     fullName: getMinorTickMark()
     langs:
@@ -352,7 +352,7 @@ items:
           - 'ExcelScript!ExcelScript.ChartAxisTimeUnit:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartAxis#getMinorUnit:member(1)'
-    summary: 2 つの小さい目盛の間隔を表します。 数値の値または空の文字列を設定できます (軸の値が自動の場合)。 戻り値は常に数値です。
+    summary: 2つの補助目盛の間隔を指定します。
     name: getMinorUnit()
     fullName: getMinorUnit()
     langs:
@@ -404,7 +404,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartAxis#getPosition:member(1)'
-    summary: 指定した軸と他の軸との交差位置を指定します。 詳細については、「ChartAxisPosition」を参照してください。
+    summary: 指定した軸と他の軸との交差位置を指定します。 詳細については、「ExcelScript」を参照してください。
     name: getPosition()
     fullName: getPosition()
     langs:
@@ -443,7 +443,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartAxis#getScaleType:member(1)'
-    summary: 数値軸の目盛の種類を指定します。 詳細については、「ChartAxisScaleType」を参照してください。
+    summary: 数値軸の目盛の種類を指定します。 詳細については、「ExcelScript」を参照してください。
     name: getScaleType()
     fullName: getScaleType()
     langs:
@@ -482,7 +482,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartAxis#getTickLabelPosition:member(1)'
-    summary: 指定された軸の目盛ラベルの位置を指定します。 詳細については、「ChartAxisTickLabelPosition」を参照してください。
+    summary: 指定された軸の目盛ラベルの位置を指定します。 詳細については、「ExcelScript」を参照してください。
     name: getTickLabelPosition()
     fullName: getTickLabelPosition()
     langs:
@@ -495,7 +495,7 @@ items:
           - 'ExcelScript!ExcelScript.ChartAxisTickLabelPosition:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartAxis#getTickLabelSpacing:member(1)'
-    summary: 目盛ラベル間の項目または系列の数を指定します。 1 から 31999 の範囲内で値を設定できます。自動的に設定する場合は、空の文字列にします。 戻り値は常に数値です。
+    summary: 目盛ラベル間の項目または系列の数を指定します。 1 から 31999 の値を指定できます。
     name: getTickLabelSpacing()
     fullName: getTickLabelSpacing()
     langs:
@@ -547,7 +547,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartAxis#getType:member(1)'
-    summary: 軸の種類を指定します。 詳細については、「ChartAxisType」を参照してください。
+    summary: 軸の種類を指定します。 詳細については、「ExcelScript」を参照してください。
     name: getType()
     fullName: getType()
     langs:
@@ -586,7 +586,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartAxis#setAlignment:member(1)'
-    summary: 指定された軸の目盛ラベルの配置を指定します。 詳細については、「ChartTextHorizontalAlignment」を参照してください。
+    summary: 指定された軸の目盛ラベルの配置を指定します。 詳細については、「ExcelScript」を参照してください。
     name: setAlignment(alignment)
     fullName: setAlignment(alignment)
     langs:
@@ -676,7 +676,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartAxis#setDisplayUnit:member(1)'
-    summary: 軸の表示単位を表します。 詳細については、「ChartAxisDisplayUnit」を参照してください。
+    summary: 軸の表示単位を表します。 詳細については、「ExcelScript」を参照してください。
     name: setDisplayUnit(displayUnit)
     fullName: setDisplayUnit(displayUnit)
     langs:
@@ -748,7 +748,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartAxis#setMajorTickMark:member(1)'
-    summary: 指定した軸の目盛の種類を指定します。 詳細については、「ChartAxisTickMark」を参照してください。
+    summary: 指定した軸の目盛の種類を指定します。 詳細については、「ExcelScript」を参照してください。
     name: setMajorTickMark(majorTickMark)
     fullName: setMajorTickMark(majorTickMark)
     langs:
@@ -784,7 +784,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.ChartAxisTimeUnit:enum'
   - uid: 'ExcelScript!ExcelScript.ChartAxis#setMajorUnit:member(1)'
-    summary: 2 つの大きい目盛の間隔を表します。 数値の値または空の文字列を設定できます。 戻り値は常に数値です。
+    summary: 2つの目盛の間隔を指定します。
     name: setMajorUnit(majorUnit)
     fullName: setMajorUnit(majorUnit)
     langs:
@@ -802,7 +802,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartAxis#setMaximum:member(1)'
-    summary: 数値軸の最大値を表します。 数値の値または空の文字列を設定できます (軸の値が自動の場合)。 戻り値は常に数値です。
+    summary: 数値軸の最大値を指定します。
     name: setMaximum(maximum)
     fullName: setMaximum(maximum)
     langs:
@@ -820,7 +820,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartAxis#setMinimum:member(1)'
-    summary: 数値軸の最小値を表します。 数値の値または空の文字列を設定できます (軸の値が自動の場合)。 戻り値は常に数値です。
+    summary: 数値軸の最小値を指定します。
     name: setMinimum(minimum)
     fullName: setMinimum(minimum)
     langs:
@@ -838,7 +838,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartAxis#setMinorTickMark:member(1)'
-    summary: 指定した軸の補助目盛の種類を指定します。 詳細については、「ChartAxisTickMark」を参照してください。
+    summary: 指定した軸の補助目盛の種類を指定します。 詳細については、「ExcelScript」を参照してください。
     name: setMinorTickMark(minorTickMark)
     fullName: setMinorTickMark(minorTickMark)
     langs:
@@ -874,7 +874,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.ChartAxisTimeUnit:enum'
   - uid: 'ExcelScript!ExcelScript.ChartAxis#setMinorUnit:member(1)'
-    summary: 2 つの小さい目盛の間隔を表します。 数値の値または空の文字列を設定できます (軸の値が自動の場合)。 戻り値は常に数値です。
+    summary: 2つの補助目盛の間隔を指定します。
     name: setMinorUnit(minorUnit)
     fullName: setMinorUnit(minorUnit)
     langs:
@@ -946,7 +946,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartAxis#setPosition:member(1)'
-    summary: 指定した軸と他の軸との交差位置を指定します。 詳細については、「ChartAxisPosition」を参照してください。
+    summary: 指定した軸と他の軸との交差位置を指定します。 詳細については、「ExcelScript」を参照してください。
     name: setPosition(position)
     fullName: setPosition(position)
     langs:
@@ -1000,7 +1000,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.ChartAxis#setScaleType:member(1)'
-    summary: 数値軸の目盛の種類を指定します。 詳細については、「ChartAxisScaleType」を参照してください。
+    summary: 数値軸の目盛の種類を指定します。 詳細については、「ExcelScript」を参照してください。
     name: setScaleType(scaleType)
     fullName: setScaleType(scaleType)
     langs:
@@ -1054,7 +1054,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartAxis#setTickLabelPosition:member(1)'
-    summary: 指定された軸の目盛ラベルの位置を指定します。 詳細については、「ChartAxisTickLabelPosition」を参照してください。
+    summary: 指定された軸の目盛ラベルの位置を指定します。 詳細については、「ExcelScript」を参照してください。
     name: setTickLabelPosition(tickLabelPosition)
     fullName: setTickLabelPosition(tickLabelPosition)
     langs:
@@ -1075,7 +1075,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.ChartAxisTickLabelPosition:enum'
   - uid: 'ExcelScript!ExcelScript.ChartAxis#setTickLabelSpacing:member(1)'
-    summary: 目盛ラベル間の項目または系列の数を指定します。 1 から 31999 の範囲内で値を設定できます。自動的に設定する場合は、空の文字列にします。 戻り値は常に数値です。
+    summary: 目盛ラベル間の項目または系列の数を指定します。 1 から 31999 の値を指定できます。
     name: setTickLabelSpacing(tickLabelSpacing)
     fullName: setTickLabelSpacing(tickLabelSpacing)
     langs:

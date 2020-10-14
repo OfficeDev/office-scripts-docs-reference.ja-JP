@@ -47,7 +47,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeFill#getPattern:member(1)'
-    summary: 範囲のパターンを指定します。 詳細については、Excel.FillPattern をご覧ください。 LinearGradient と RectangularGradient はサポートされていません。 Null 値は、範囲全体に均一なパターンが設定されていないことを示します。
+    summary: 範囲のパターンを指定します。 詳細については、「ExcelScript. FillPattern」を参照してください。 LinearGradient と RectangularGradient はサポートされていません。 Null 値は、範囲全体に均一なパターンが設定されていないことを示します。
     name: getPattern()
     fullName: getPattern()
     langs:
@@ -73,7 +73,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeFill#getPatternTintAndShade:member(1)'
-    summary: 範囲の塗りつぶしのパターンの色を明るくまたは暗くする倍精度浮動小数点型 (double) の値を指定します。 値は、-1 (最も暗い) から 1 (最も明るい) までの範囲で、元の色は0になります。 パターン tintAndShades が一様でない場合は、null が返されます。
+    summary: 範囲の塗りつぶしに対してパターンの色を明るくまたは暗くする double を指定します。値は、-1 (最も暗い) から 1 (最も明るい) までの範囲で、元の色は0になります。 パターン tintAndShades が一様でない場合は、null が返されます。
     name: getPatternTintAndShade()
     fullName: getPatternTintAndShade()
     langs:
@@ -117,7 +117,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.RangeFill#setPattern:member(1)'
-    summary: 範囲のパターンを指定します。 詳細については、Excel.FillPattern をご覧ください。 LinearGradient と RectangularGradient はサポートされていません。 Null 値は、範囲全体に均一なパターンが設定されていないことを示します。
+    summary: 範囲のパターンを指定します。 詳細については、「ExcelScript. FillPattern」を参照してください。 LinearGradient と RectangularGradient はサポートされていません。 Null 値は、範囲全体に均一なパターンが設定されていないことを示します。
     name: setPattern(pattern)
     fullName: setPattern(pattern)
     langs:
@@ -153,7 +153,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.RangeFill#setPatternTintAndShade:member(1)'
-    summary: 範囲の塗りつぶしのパターンの色を明るくまたは暗くする倍精度浮動小数点型 (double) の値を指定します。 値は、-1 (最も暗い) から 1 (最も明るい) までの範囲で、元の色は0になります。 パターン tintAndShades が一様でない場合は、null が返されます。
+    summary: 範囲の塗りつぶしに対してパターンの色を明るくまたは暗くする double を指定します。値は、-1 (最も暗い) から 1 (最も明るい) までの範囲で、元の色は0になります。 パターン tintAndShades が一様でない場合は、null が返されます。
     name: setPatternTintAndShade(patternTintAndShade)
     fullName: setPatternTintAndShade(patternTintAndShade)
     langs:

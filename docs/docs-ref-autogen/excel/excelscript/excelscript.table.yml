@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.Table:interface'
-    summary: 'Excel の表を表します。 表オブジェクトモデルの詳細については、「 [Excel JAVASCRIPT API を使用してテーブルを操作](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables)する」を参照してください。<!-- -->.'
+    summary: Excel の表を表します。
     name: ExcelScript.Table
     fullName: ExcelScript.Table
     langs:
@@ -30,6 +30,7 @@ items:
       - 'ExcelScript!ExcelScript.Table#getPredefinedTableStyle:member(1)'
       - 'ExcelScript!ExcelScript.Table#getRange:member(1)'
       - 'ExcelScript!ExcelScript.Table#getRangeBetweenHeaderAndTotal:member(1)'
+      - 'ExcelScript!ExcelScript.Table#getRowCount:member(1)'
       - 'ExcelScript!ExcelScript.Table#getShowBandedColumns:member(1)'
       - 'ExcelScript!ExcelScript.Table#getShowBandedRows:member(1)'
       - 'ExcelScript!ExcelScript.Table#getShowFilterButton:member(1)'
@@ -330,10 +331,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.Table#getName:member(1)'
-    summary: |-
-      テーブルの名前。
-
-      表のセット名は、「 [Excel テーブルの名前を変更](https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114)する」の記事で指定されているガイドラインに従う必要があります。
+    summary: テーブルの名前。
     name: getName()
     fullName: getName()
     langs:
@@ -383,6 +381,19 @@ items:
       return:
         type:
           - 'ExcelScript!ExcelScript.Range:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Table#getRowCount:member(1)'
+    summary: 表の行数を取得します。
+    name: getRowCount()
+    fullName: getRowCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRowCount(): number;'
+      return:
+        type:
+          - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.Table#getShowBandedColumns:member(1)'
     summary: 列が、表を見やすくするために、奇数列の強調表示と異なる方法で表示される縞模様の書式を表示するかどうかを指定します。
@@ -538,10 +549,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.Table#setName:member(1)'
-    summary: |-
-      テーブルの名前。
-
-      表のセット名は、「 [Excel テーブルの名前を変更](https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114)する」の記事で指定されているガイドラインに従う必要があります。
+    summary: テーブルの名前。
     name: setName(name)
     fullName: setName(name)
     langs:

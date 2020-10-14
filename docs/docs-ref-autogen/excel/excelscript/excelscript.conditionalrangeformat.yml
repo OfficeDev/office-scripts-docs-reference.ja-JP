@@ -50,7 +50,7 @@ items:
         description: ''
       parameters:
         - id: index
-          description: 取得する border オブジェクトのインデックス値を指定します。 詳細については、「Excel の ConditionalRangeBorderIndex」を参照してください。
+          description: 取得する border オブジェクトのインデックス値を指定します。 詳細については、「ExcelScript Borderindex」を参照してください。
           type:
             - 'ExcelScript!ExcelScript.ConditionalRangeBorderIndex:enum'
   - uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorderBottom:member(1)'

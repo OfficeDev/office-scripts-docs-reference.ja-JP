@@ -1,0 +1,80 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.PivotLabelFilter:interface'
+    summary: ピボットフィールドに適用するラベルフィルターの構成可能なテンプレート。 は、 `condition` フィルターを操作するために設定する必要のある条件を定義します。
+    name: ExcelScript.PivotLabelFilter
+    fullName: ExcelScript.PivotLabelFilter
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.PivotLabelFilter#condition:member'
+      - 'ExcelScript!ExcelScript.PivotLabelFilter#exclusive:member'
+      - 'ExcelScript!ExcelScript.PivotLabelFilter#lowerBound:member'
+      - 'ExcelScript!ExcelScript.PivotLabelFilter#substring:member'
+      - 'ExcelScript!ExcelScript.PivotLabelFilter#upperBound:member'
+  - uid: 'ExcelScript!ExcelScript.PivotLabelFilter#condition:member'
+    summary: 必要なフィルター条件を定義するフィルターの条件を指定します。
+    name: condition
+    fullName: condition
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'condition: LabelFilterCondition;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.LabelFilterCondition:enum'
+  - uid: 'ExcelScript!ExcelScript.PivotLabelFilter#exclusive:member'
+    summary: True の場合、フィルターは条件に一致するアイテムを *除外* します。 既定では false (条件に一致するアイテムを含むフィルター)。
+    name: exclusive
+    fullName: exclusive
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'exclusive?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.PivotLabelFilter#lowerBound:member'
+    summary: 'フィルター条件間の範囲の下限。 注: 数値文字列は、他の数値文字列と比較する場合、数値として処理されます。'
+    name: lowerBound
+    fullName: lowerBound
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'lowerBound?: string;'
+      return:
+        type:
+          - string
+  - uid: 'ExcelScript!ExcelScript.PivotLabelFilter#substring:member'
+    summary: 'に使用されるサブ文字列 `BeginsWith`<!-- -->, `EndsWith`<!-- -->、および `Contains` フィルター条件。'
+    name: substring
+    fullName: substring
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'substring?: string;'
+      return:
+        type:
+          - string
+  - uid: 'ExcelScript!ExcelScript.PivotLabelFilter#upperBound:member'
+    summary: 'フィルター条件の間の範囲の上限を指定します。 注: 数値文字列は、他の数値文字列と比較する場合、数値として処理されます。'
+    name: upperBound
+    fullName: upperBound
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'upperBound?: string;'
+      return:
+        type:
+          - string
+references:
+  - uid: 'ExcelScript!ExcelScript.LabelFilterCondition:enum'
+    name: LabelFilterCondition
+    fullName: ExcelScript.LabelFilterCondition

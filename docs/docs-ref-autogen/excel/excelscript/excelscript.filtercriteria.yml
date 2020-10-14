@@ -58,7 +58,7 @@ items:
         type:
           - string
   - uid: 'ExcelScript!ExcelScript.FilterCriteria#dynamicCriteria:member'
-    summary: この列に適用するために設定された、Excel の DynamicFilterCriteria の動的な抽出条件。 "動的" フィルターで使用されます。
+    summary: この列に適用するために、Excelfiltercriteria の動的な抽出条件を設定します。 "動的" フィルターで使用されます。
     name: dynamicCriteria
     fullName: dynamicCriteria
     langs:

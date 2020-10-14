@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.Shape:interface'
-    summary: 'ワークシートの標準図形オブジェクトを表します。 図形とは、幾何学的な図形、線、図形のグループなどのことです。Shape オブジェクトモデルの詳細については、「 [Excel JAVASCRIPT API を使用して図形を操作](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-shapes)する」を参照してください。<!-- -->.'
+    summary: ワークシートの標準図形オブジェクトを表します。 図形とは、幾何学的な図形、線、図形のグループなどのことです。
     name: ExcelScript.Shape
     fullName: ExcelScript.Shape
     langs:
@@ -113,7 +113,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.Shape#getAsImage:member(1)'
-    summary: '図形を画像に変換し、base 64 でエンコードされた文字列として画像を返します。 DPI は 96 です。 サポートされている形式は、`Excel.PictureFormat.BMP`<!-- -->, `Excel.PictureFormat.PNG`<!-- -->, `Excel.PictureFormat.JPEG`<!-- -->そして`Excel.PictureFormat.GIF`<!-- -->.'
+    summary: '図形を画像に変換し、base 64 でエンコードされた文字列として画像を返します。 DPI は 96 です。 サポートされている形式は、 `ExcelScript.PictureFormat.BMP`<!-- -->, `ExcelScript.PictureFormat.PNG`<!-- -->, `ExcelScript.PictureFormat.JPEG`<!-- -->そして `ExcelScript.PictureFormat.GIF`<!-- -->.'
     name: getAsImage(format)
     fullName: getAsImage(format)
     langs:
@@ -170,7 +170,7 @@ items:
           - 'ExcelScript!ExcelScript.GeometricShape:interface'
         description: ''
   - uid: 'ExcelScript!ExcelScript.Shape#getGeometricShapeType:member(1)'
-    summary: この幾何学図形の図形の種類を指定します。 詳細については、Excel.GeometricShapeType をご覧ください。 図形の種類が "GeometricShape" ではない場合は、null を返します。
+    summary: この幾何学図形の図形の種類を指定します。 詳細については、「ExcelScript」を参照してください。 図形の種類が "GeometricShape" ではない場合は、null を返します。
     name: getGeometricShapeType()
     fullName: getGeometricShapeType()
     langs:
@@ -378,7 +378,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.Shape#getType:member(1)'
-    summary: この図形の種類を返します。 詳細については、Excel.ShapeType をご覧ください。
+    summary: この図形の種類を返します。 詳細については、「ExcelScript」を参照してください。
     name: getType()
     fullName: getType()
     langs:
@@ -511,7 +511,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.ShapeScaleType:enum'
         - id: scaleFrom
-          description: 省略可能です。 図形を拡大縮小する場合、図形の位置を保持する部分を指定します。 省略すると、図形の左上隅の位置を保持します。
+          description: 省略可能。 図形を拡大縮小する場合、図形の位置を保持する部分を指定します。 省略すると、図形の左上隅の位置を保持します。
           type:
             - 'ExcelScript!ExcelScript.ShapeScaleFrom:enum'
   - uid: 'ExcelScript!ExcelScript.Shape#scaleWidth:member(1)'
@@ -542,7 +542,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.ShapeScaleType:enum'
         - id: scaleFrom
-          description: 省略可能です。 図形を拡大縮小する場合、図形の位置を保持する部分を指定します。 省略すると、図形の左上隅の位置を保持します。
+          description: 省略可能。 図形を拡大縮小する場合、図形の位置を保持する部分を指定します。 省略すると、図形の左上隅の位置を保持します。
           type:
             - 'ExcelScript!ExcelScript.ShapeScaleFrom:enum'
   - uid: 'ExcelScript!ExcelScript.Shape#setAltTextDescription:member(1)'
@@ -582,7 +582,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.Shape#setGeometricShapeType:member(1)'
-    summary: この幾何学図形の図形の種類を指定します。 詳細については、Excel.GeometricShapeType をご覧ください。 図形の種類が "GeometricShape" ではない場合は、null を返します。
+    summary: この幾何学図形の図形の種類を指定します。 詳細については、「ExcelScript」を参照してください。 図形の種類が "GeometricShape" ではない場合は、null を返します。
     name: setGeometricShapeType(geometricShapeType)
     fullName: setGeometricShapeType(geometricShapeType)
     langs:
@@ -776,7 +776,7 @@ items:
         description: ''
       parameters:
         - id: position
-          description: 他の図形を基準にして z オーダーのスタック内の図形を移動する位置を指定します。 詳細については、「Excel のスナップショット注文」を参照してください。
+          description: 他の図形を基準にして z オーダーのスタック内の図形を移動する位置を指定します。 詳細については、「ExcelScript Order」を参照してください。
           type:
             - 'ExcelScript!ExcelScript.ShapeZOrder:enum'
 references:

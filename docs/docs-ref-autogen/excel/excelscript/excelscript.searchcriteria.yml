@@ -13,7 +13,7 @@ items:
       - 'ExcelScript!ExcelScript.SearchCriteria#matchCase:member'
       - 'ExcelScript!ExcelScript.SearchCriteria#searchDirection:member'
   - uid: 'ExcelScript!ExcelScript.SearchCriteria#completeMatch:member'
-    summary: 一致する必要があるか、完全か一部であるかを指定します。 完全一致は、セルの内容全体に一致します。 部分一致は、セルのコンテンツ内の部分文字列に一致します (たとえば、 `cat` 部分的に一致 `caterpillar` し、`scatter`<!-- -->). 既定値は false (部分一致) です。
+    summary: 一致する必要があるか、完全か一部であるかを指定します。 完全一致は、セルの内容全体に一致します。 部分一致は、セルのコンテンツ内の部分文字列に一致します (たとえば、 `cat` 部分的に一致 `caterpillar` し、 `scatter`<!-- -->). 既定値は false (部分一致) です。
     name: completeMatch
     fullName: completeMatch
     langs:
@@ -37,7 +37,7 @@ items:
         type:
           - boolean
   - uid: 'ExcelScript!ExcelScript.SearchCriteria#searchDirection:member'
-    summary: 検索の方向を指定します。 既定値は前方向です。 Excel.SearchDirection をご覧ください。
+    summary: 検索の方向を指定します。 既定値は前方向です。 「ExcelScript. SearchDirection」を参照してください。
     name: searchDirection
     fullName: searchDirection
     langs:

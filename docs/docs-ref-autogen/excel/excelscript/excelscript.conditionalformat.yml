@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.ConditionalFormat:interface'
-    summary: '条件付き書式の範囲、形式、ルール、およびその他のプロパティをカプセル化するオブジェクト。 条件付き書式のオブジェクトモデルの詳細については、「 [Excel 範囲に条件付き書式を適用する](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-conditional-formatting)」を参照してください。<!-- -->.'
+    summary: 条件付き書式の範囲、形式、ルール、およびその他のプロパティをカプセル化するオブジェクト。
     name: ExcelScript.ConditionalFormat
     fullName: ExcelScript.ConditionalFormat
     langs:
@@ -118,7 +118,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getPreset:member(1)'
-    summary: 事前設定の条件の条件付き書式を返します。 詳細については、「PresetCriteriaConditionalFormat」を参照してください。
+    summary: 事前設定の条件の条件付き書式を返します。 詳細については、「ExcelScript」を参照してください。
     name: getPreset()
     fullName: getPreset()
     langs:

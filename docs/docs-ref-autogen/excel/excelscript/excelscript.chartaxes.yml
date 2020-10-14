@@ -41,11 +41,11 @@ items:
         description: ''
       parameters:
         - id: type
-          description: 軸の種類を指定します。 詳細については、「ChartAxisType」を参照してください。
+          description: 軸の種類を指定します。 詳細については、「ExcelScript」を参照してください。
           type:
             - 'ExcelScript!ExcelScript.ChartAxisType:enum'
         - id: group
-          description: 省略可能です。 軸のグループを指定します。 詳細については、「ChartAxisGroup」を参照してください。
+          description: 省略可能。 軸のグループを指定します。 詳細については、「ExcelScript」を参照してください。
           type:
             - 'ExcelScript!ExcelScript.ChartAxisGroup:enum'
   - uid: 'ExcelScript!ExcelScript.ChartAxes#getSeriesAxis:member(1)'
