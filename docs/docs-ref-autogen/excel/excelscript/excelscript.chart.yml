@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.Chart:interface'
-    summary: 'ブック内のグラフ オブジェクトを表します。 グラフオブジェクトモデルの詳細については、「 [Excel JAVASCRIPT API を使用してグラフを操作](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts)する」を参照してください。<!-- -->.'
+    summary: ブック内のグラフ オブジェクトを表します。
     name: ExcelScript.Chart
     fullName: ExcelScript.Chart
     langs:
@@ -81,11 +81,11 @@ items:
         description: ''
       parameters:
         - id: name
-          description: 省略可能です。 データ系列の名前を指定します。
+          description: 省略可能。 データ系列の名前を指定します。
           type:
             - string
         - id: index
-          description: 省略可能です。 追加する系列のインデックス値を指定します。 0 を起点とする番号になります。
+          description: 省略可能。 追加する系列のインデックス値を指定します。 0 を起点とする番号になります。
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.Chart#delete:member(1)'
@@ -128,7 +128,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.Chart#getChartType:member(1)'
-    summary: グラフの種類を指定します。 詳細については、「ChartType」を参照してください。
+    summary: グラフの種類を指定します。 詳細については、「ExcelScript」を参照してください。
     name: getChartType()
     fullName: getChartType()
     langs:
@@ -463,7 +463,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.Chart#setChartType:member(1)'
-    summary: グラフの種類を指定します。 詳細については、「ChartType」を参照してください。
+    summary: グラフの種類を指定します。 詳細については、「ExcelScript」を参照してください。
     name: setChartType(chartType)
     fullName: setChartType(chartType)
     langs:
@@ -499,7 +499,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Range:interface'
         - id: seriesBy
-          description: 列や行がグラフのデータ系列として使用される方法を指定します。 Auto (既定)、行、列のいずれかをすることができます。 詳細については、「Excel Chart系列」を参照してください。
+          description: 列や行がグラフのデータ系列として使用される方法を指定します。 Auto (既定)、行、列のいずれかをすることができます。 詳細については、「ExcelScript Chart」を参照してください。
           type:
             - 'ExcelScript!ExcelScript.ChartSeriesBy:enum'
   - uid: 'ExcelScript!ExcelScript.Chart#setDisplayBlanksAs:member(1)'

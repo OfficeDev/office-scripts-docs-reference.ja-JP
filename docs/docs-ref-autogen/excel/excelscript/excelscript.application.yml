@@ -34,7 +34,7 @@ items:
         description: ''
       parameters:
         - id: calculationType
-          description: 使用する計算の種類を指定します。 詳細については、「Excel の種類」を参照してください。
+          description: 使用する計算の種類を指定します。 詳細については、「ExcelScript Type」を参照してください。
           type:
             - 'ExcelScript!ExcelScript.CalculationType:enum'
   - uid: 'ExcelScript!ExcelScript.Application#getCalculationEngineVersion:member(1)'
@@ -51,7 +51,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.Application#getCalculationMode:member(1)'
-    summary: CalculationMode の定数によって定義されている、ブックで使用されている計算モードを返します。 可能な値は次のとおりです。`Automatic`<!-- -->、Excel は再計算を制御します。`AutomaticExceptTables`<!-- -->、Excel は再計算を制御しますが、テーブル内の変更は無視します。`Manual`<!-- -->、ユーザーが要求すると、計算が行われます。
+    summary: CalculationMode の定数によって定義されている、ブックで使用されている計算モードを返します。 可能な値は次のとおりです。 `Automatic`<!-- -->、Excel は再計算を制御します。 `AutomaticExceptTables`<!-- -->、Excel は再計算を制御しますが、テーブル内の変更は無視します。 `Manual`<!-- -->、ユーザーが要求すると、計算が行われます。
     name: getCalculationMode()
     fullName: getCalculationMode()
     langs:
@@ -64,7 +64,7 @@ items:
           - 'ExcelScript!ExcelScript.CalculationMode:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.Application#getCalculationState:member(1)'
-    summary: アプリケーションの計算の状態を返します。 詳細については、Excel.CalculationState をご覧ください。
+    summary: アプリケーションの計算の状態を返します。 詳細については、「ExcelScript State」を参照してください。
     name: getCalculationState()
     fullName: getCalculationState()
     langs:
@@ -142,7 +142,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.Application#setCalculationMode:member(1)'
-    summary: CalculationMode の定数によって定義されている、ブックで使用されている計算モードを返します。 可能な値は次のとおりです。`Automatic`<!-- -->、Excel は再計算を制御します。`AutomaticExceptTables`<!-- -->、Excel は再計算を制御しますが、テーブル内の変更は無視します。`Manual`<!-- -->、ユーザーが要求すると、計算が行われます。
+    summary: CalculationMode の定数によって定義されている、ブックで使用されている計算モードを返します。 可能な値は次のとおりです。 `Automatic`<!-- -->、Excel は再計算を制御します。 `AutomaticExceptTables`<!-- -->、Excel は再計算を制御しますが、テーブル内の変更は無視します。 `Manual`<!-- -->、ユーザーが要求すると、計算が行われます。
     name: setCalculationMode(calculationMode)
     fullName: setCalculationMode(calculationMode)
     langs:

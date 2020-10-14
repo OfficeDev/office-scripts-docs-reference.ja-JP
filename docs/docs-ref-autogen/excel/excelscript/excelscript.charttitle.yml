@@ -100,7 +100,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartTitle#getPosition:member(1)'
-    summary: グラフ タイトルの位置を表します。 詳細については、「Excel Charttitle Position」を参照してください。
+    summary: グラフ タイトルの位置を表します。 詳細については、「ExcelScript. Charttitle Position」を参照してください。
     name: getPosition()
     fullName: getPosition()
     langs:
@@ -187,7 +187,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartTitle#getVerticalAlignment:member(1)'
-    summary: グラフタイトルの垂直方向の配置を指定します。 詳細については、「Excel Charttext縦書きの配置」を参照してください。
+    summary: グラフタイトルの垂直方向の配置を指定します。 詳細については、「ExcelScript. Charttext縦書きの配置」を参照してください。
     name: getVerticalAlignment()
     fullName: getVerticalAlignment()
     langs:
@@ -301,7 +301,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.ChartTitle#setPosition:member(1)'
-    summary: グラフ タイトルの位置を表します。 詳細については、「Excel Charttitle Position」を参照してください。
+    summary: グラフ タイトルの位置を表します。 詳細については、「ExcelScript. Charttitle Position」を参照してください。
     name: setPosition(position)
     fullName: setPosition(position)
     langs:
@@ -391,7 +391,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartTitle#setVerticalAlignment:member(1)'
-    summary: グラフタイトルの垂直方向の配置を指定します。 詳細については、「Excel Charttext縦書きの配置」を参照してください。
+    summary: グラフタイトルの垂直方向の配置を指定します。 詳細については、「ExcelScript. Charttext縦書きの配置」を参照してください。
     name: setVerticalAlignment(verticalAlignment)
     fullName: setVerticalAlignment(verticalAlignment)
     langs:

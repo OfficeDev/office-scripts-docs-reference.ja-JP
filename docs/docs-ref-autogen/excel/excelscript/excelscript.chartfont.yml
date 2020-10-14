@@ -87,7 +87,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartFont#getUnderline:member(1)'
-    summary: フォントに適用する下線の種類。 詳細については、「Excel のグラフ」を参照してください。
+    summary: フォントに適用する下線の種類。 詳細については、「ExcelScript. Chart過小 Linestyle」を参照してください。
     name: getUnderline()
     fullName: getUnderline()
     langs:
@@ -190,7 +190,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartFont#setUnderline:member(1)'
-    summary: フォントに適用する下線の種類。 詳細については、「Excel のグラフ」を参照してください。
+    summary: フォントに適用する下線の種類。 詳細については、「ExcelScript. Chart過小 Linestyle」を参照してください。
     name: setUnderline(underline)
     fullName: setUnderline(underline)
     langs:

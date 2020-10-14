@@ -86,7 +86,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.ConditionalRangeFont#getUnderline:member(1)'
-    summary: フォントに適用する下線の種類を設定します。 詳細については、「Excel の Conditionalrangefont過小認識」を参照してください。
+    summary: フォントに適用する下線の種類を設定します。 詳細については、「ExcelScript Efont過小 Linestyle」を参照してください。
     name: getUnderline()
     fullName: getUnderline()
     langs:
@@ -171,7 +171,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.ConditionalRangeFont#setUnderline:member(1)'
-    summary: フォントに適用する下線の種類を設定します。 詳細については、「Excel の Conditionalrangefont過小認識」を参照してください。
+    summary: フォントに適用する下線の種類を設定します。 詳細については、「ExcelScript Efont過小 Linestyle」を参照してください。
     name: setUnderline(underline)
     fullName: setUnderline(underline)
     langs:

@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.RangeAreas:interface'
-    summary: 'RangeAreas は、同じワークシート内の1つまたは複数の四角形の範囲のコレクションを表します。 Discontinguous 範囲を使用する方法については、「 [Excel アドインで複数の範囲を同時に操作](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-multiple-ranges)する」を参照してください。<!-- -->.'
+    summary: RangeAreas は、同じワークシート内の1つまたは複数の四角形の範囲のコレクションを表します。
     name: ExcelScript.RangeAreas
     fullName: ExcelScript.RangeAreas
     langs:
@@ -52,7 +52,7 @@ items:
         description: ''
       parameters:
         - id: type
-          description: 追加する条件付き書式の種類を指定します。 詳細については、「ConditionalFormatType」を参照してください。
+          description: 追加する条件付き書式の種類を指定します。 詳細については、「ExcelScript」を参照してください。
           type:
             - 'ExcelScript!ExcelScript.ConditionalFormatType:enum'
   - uid: 'ExcelScript!ExcelScript.RangeAreas#calculate:member(1)'
@@ -83,7 +83,7 @@ items:
         description: ''
       parameters:
         - id: applyTo
-          description: 省略可能。 クリア操作の種類を決定します。 詳細については、「Excel. ClearApplyTo」を参照してください。 既定値は "すべて" です。
+          description: 省略可能。 クリア操作の種類を決定します。 詳細については、「ExcelScript. ClearApplyTo を参照してください。 既定値は "すべて" です。
           type:
             - 'ExcelScript!ExcelScript.ClearApplyTo:enum'
   - uid: 'ExcelScript!ExcelScript.RangeAreas#clearAllConditionalFormats:member(1)'

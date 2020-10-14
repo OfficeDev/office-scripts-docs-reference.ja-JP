@@ -18,6 +18,7 @@ items:
       - 'ExcelScript!ExcelScript.ChartSeries#getChartTrendline:member(1)'
       - 'ExcelScript!ExcelScript.ChartSeries#getChartType:member(1)'
       - 'ExcelScript!ExcelScript.ChartSeries#getDataLabels:member(1)'
+      - 'ExcelScript!ExcelScript.ChartSeries#getDimensionValues:member(1)'
       - 'ExcelScript!ExcelScript.ChartSeries#getDoughnutHoleSize:member(1)'
       - 'ExcelScript!ExcelScript.ChartSeries#getExplosion:member(1)'
       - 'ExcelScript!ExcelScript.ChartSeries#getFiltered:member(1)'
@@ -113,7 +114,7 @@ items:
         description: ''
       parameters:
         - id: type
-          description: 近似曲線の種類を指定します。 既定値は "Linear" です。 詳細については、「Excel ChartTrendline 曲線」を参照してください。
+          description: 近似曲線の種類を指定します。 既定値は "Linear" です。 詳細については、「ExcelScript. ChartTrendline 曲線」を参照してください。
           type:
             - 'ExcelScript!ExcelScript.ChartTrendlineType:enum'
   - uid: 'ExcelScript!ExcelScript.ChartSeries#delete:member(1)'
@@ -200,7 +201,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartSeries#getChartType:member(1)'
-    summary: グラフ系列の種類を表します。 詳細については、「ChartType」を参照してください。
+    summary: グラフ系列の種類を表します。 詳細については、「ExcelScript」を参照してください。
     name: getChartType()
     fullName: getChartType()
     langs:
@@ -225,6 +226,24 @@ items:
         type:
           - 'ExcelScript!ExcelScript.ChartDataLabels:interface'
         description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartSeries#getDimensionValues:member(1)'
+    summary: グラフの系列の1つの次元から値を取得します。 指定できるのは、指定された次元と、グラフ系列に対するデータのマッピング方法によって異なります。
+    name: getDimensionValues(dimension)
+    fullName: getDimensionValues(dimension)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDimensionValues(dimension: ChartSeriesDimension): string[];'
+      return:
+        type:
+          - 'string[]'
+        description: ''
+      parameters:
+        - id: dimension
+          description: データが格納されている軸の次元
+          type:
+            - 'ExcelScript!ExcelScript.ChartSeriesDimension:enum'
   - uid: 'ExcelScript!ExcelScript.ChartSeries#getDoughnutHoleSize:member(1)'
     summary: グラフ系列のドーナツの穴の大きさを表します。 ドーナツ グラフと doughnutExploded グラフでのみ有効です。 無効なグラフで無効な引数の例外をスローします。
     name: getDoughnutHoleSize()
@@ -525,7 +544,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartSeries#getMarkerStyle:member(1)'
-    summary: グラフ系列のマーカーのスタイルを指定します。 詳細については、「ChartMarkerStyle」を参照してください。
+    summary: グラフ系列のマーカーのスタイルを指定します。 詳細については、「ExcelScript」を参照してください。
     name: getMarkerStyle()
     fullName: getMarkerStyle()
     langs:
@@ -538,7 +557,7 @@ items:
           - 'ExcelScript!ExcelScript.ChartMarkerStyle:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartSeries#getName:member(1)'
-    summary: グラフの系列の名前を指定します。
+    summary: グラフの系列の名前を指定します。 名前の長さは、255文字を超えることはできません。
     name: getName()
     fullName: getName()
     langs:
@@ -800,7 +819,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Range:interface'
   - uid: 'ExcelScript!ExcelScript.ChartSeries#setChartType:member(1)'
-    summary: グラフ系列の種類を表します。 詳細については、「ChartType」を参照してください。
+    summary: グラフ系列の種類を表します。 詳細については、「ExcelScript」を参照してください。
     name: setChartType(chartType)
     fullName: setChartType(chartType)
     langs:
@@ -1205,7 +1224,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartSeries#setMarkerStyle:member(1)'
-    summary: グラフ系列のマーカーのスタイルを指定します。 詳細については、「ChartMarkerStyle」を参照してください。
+    summary: グラフ系列のマーカーのスタイルを指定します。 詳細については、「ExcelScript」を参照してください。
     name: setMarkerStyle(markerStyle)
     fullName: setMarkerStyle(markerStyle)
     langs:
@@ -1223,7 +1242,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.ChartMarkerStyle:enum'
   - uid: 'ExcelScript!ExcelScript.ChartSeries#setName:member(1)'
-    summary: グラフの系列の名前を指定します。
+    summary: グラフの系列の名前を指定します。 名前の長さは、255文字を超えることはできません。
     name: setName(name)
     fullName: setName(name)
     langs:
@@ -1499,6 +1518,9 @@ references:
   - uid: 'ExcelScript!ExcelScript.ChartDataLabels:interface'
     name: ChartDataLabels
     fullName: ExcelScript.ChartDataLabels
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension:enum'
+    name: ChartSeriesDimension
+    fullName: ExcelScript.ChartSeriesDimension
   - uid: 'ExcelScript!ExcelScript.ChartSeriesFormat:interface'
     name: ChartSeriesFormat
     fullName: ExcelScript.ChartSeriesFormat

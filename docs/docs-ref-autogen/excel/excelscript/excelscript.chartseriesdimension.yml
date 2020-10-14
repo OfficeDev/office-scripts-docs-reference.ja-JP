@@ -1,0 +1,51 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension:enum'
+    summary: グラフの系列から値を取得するときの次元を表します。
+    name: ExcelScript.ChartSeriesDimension
+    fullName: ExcelScript.ChartSeriesDimension
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartSeriesDimension.bubbleSizes:member'
+      - 'ExcelScript!ExcelScript.ChartSeriesDimension.categories:member'
+      - 'ExcelScript!ExcelScript.ChartSeriesDimension.values:member'
+      - 'ExcelScript!ExcelScript.ChartSeriesDimension.xvalues:member'
+      - 'ExcelScript!ExcelScript.ChartSeriesDimension.yvalues:member'
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.bubbleSizes:member'
+    summary: バブルチャートのバブルサイズのグラフ系列軸。
+    name: bubbleSizes
+    fullName: bubbleSizes
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.categories:member'
+    summary: カテゴリのグラフ系列軸。
+    name: categories
+    fullName: categories
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.values:member'
+    summary: 値のグラフ系列軸。
+    name: values
+    fullName: values
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.xvalues:member'
+    summary: 散布図とバブルチャートの x 軸の値のグラフ系列軸。
+    name: xvalues
+    fullName: xvalues
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.yvalues:member'
+    summary: 散布図とバブルチャートの y 軸の値のグラフ系列軸。
+    name: yvalues
+    fullName: yvalues
+    langs:
+      - typeScript
+    type: field

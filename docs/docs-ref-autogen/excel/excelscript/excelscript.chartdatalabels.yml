@@ -65,7 +65,7 @@ items:
           - 'ExcelScript!ExcelScript.ChartDataLabelFormat:interface'
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartDataLabels#getHorizontalAlignment:member(1)'
-    summary: グラフのデータラベルの水平方向の配置を指定します。 詳細については、「ChartTextHorizontalAlignment」を参照してください。 このプロパティは、データラベルの TextOrientation が0の場合にのみ有効です。
+    summary: グラフのデータラベルの水平方向の配置を指定します。 詳細については、「ExcelScript」を参照してください。 このプロパティは、データラベルの TextOrientation が0の場合にのみ有効です。
     name: getHorizontalAlignment()
     fullName: getHorizontalAlignment()
     langs:
@@ -104,7 +104,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartDataLabels#getPosition:member(1)'
-    summary: データ ラベルの位置を表す DataLabelPosition 値。 詳細については、「ChartDataLabelPosition」を参照してください。
+    summary: データ ラベルの位置を表す DataLabelPosition 値。 詳細については、「ExcelScript」を参照してください。
     name: getPosition()
     fullName: getPosition()
     langs:
@@ -221,7 +221,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartDataLabels#getVerticalAlignment:member(1)'
-    summary: グラフのデータ ラベルの垂直方向の配置を表します。 詳細については、「Excel Charttext縦書きの配置」を参照してください。 このプロパティは、データラベルの TextOrientation が-90、90、または180の場合にのみ有効です。
+    summary: グラフのデータ ラベルの垂直方向の配置を表します。 詳細については、「ExcelScript. Charttext縦書きの配置」を参照してください。 このプロパティは、データラベルの TextOrientation が-90、90、または180の場合にのみ有効です。
     name: getVerticalAlignment()
     fullName: getVerticalAlignment()
     langs:
@@ -252,7 +252,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.ChartDataLabels#setHorizontalAlignment:member(1)'
-    summary: グラフのデータラベルの水平方向の配置を指定します。 詳細については、「ChartTextHorizontalAlignment」を参照してください。 このプロパティは、データラベルの TextOrientation が0の場合にのみ有効です。
+    summary: グラフのデータラベルの水平方向の配置を指定します。 詳細については、「ExcelScript」を参照してください。 このプロパティは、データラベルの TextOrientation が0の場合にのみ有効です。
     name: setHorizontalAlignment(horizontalAlignment)
     fullName: setHorizontalAlignment(horizontalAlignment)
     langs:
@@ -309,7 +309,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.ChartDataLabels#setPosition:member(1)'
-    summary: データ ラベルの位置を表す DataLabelPosition 値。 詳細については、「ChartDataLabelPosition」を参照してください。
+    summary: データ ラベルの位置を表す DataLabelPosition 値。 詳細については、「ExcelScript」を参照してください。
     name: setPosition(position)
     fullName: setPosition(position)
     langs:
@@ -471,7 +471,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartDataLabels#setVerticalAlignment:member(1)'
-    summary: グラフのデータ ラベルの垂直方向の配置を表します。 詳細については、「Excel Charttext縦書きの配置」を参照してください。 このプロパティは、データラベルの TextOrientation が-90、90、または180の場合にのみ有効です。
+    summary: グラフのデータ ラベルの垂直方向の配置を表します。 詳細については、「ExcelScript. Charttext縦書きの配置」を参照してください。 このプロパティは、データラベルの TextOrientation が-90、90、または180の場合にのみ有効です。
     name: setVerticalAlignment(verticalAlignment)
     fullName: setVerticalAlignment(verticalAlignment)
     langs:

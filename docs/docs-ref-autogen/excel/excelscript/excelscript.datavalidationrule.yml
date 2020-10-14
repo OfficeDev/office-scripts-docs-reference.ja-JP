@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.DataValidationRule:interface'
-    summary: データの入力規則には、さまざまな種類のデータ検証が含まれています。 これらのうちの1つは、Excel の DataValidationType に従って一度にのみ使用できます。
+    summary: データの入力規則には、さまざまな種類のデータ検証が含まれています。 これらのうちの1つは、ExcelScript の種類に応じて、一度にのみ使用できます。
     name: ExcelScript.DataValidationRule
     fullName: ExcelScript.DataValidationRule
     langs:

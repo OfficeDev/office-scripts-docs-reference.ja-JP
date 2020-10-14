@@ -32,7 +32,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeBorder#getSideIndex:member(1)'
-    summary: 罫線の特定の辺を表す定数値。 詳細については、「Excel BorderIndex」を参照してください。
+    summary: 罫線の特定の辺を表す定数値。 詳細については、「ExcelScript. BorderIndex」を参照してください。
     name: getSideIndex()
     fullName: getSideIndex()
     langs:
@@ -45,7 +45,7 @@ items:
           - 'ExcelScript!ExcelScript.BorderIndex:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeBorder#getStyle:member(1)'
-    summary: 罫線の線スタイルを指定する、線スタイル定数のいずれか 1 つ。 詳細については、「Excel BorderLineStyle」を参照してください。
+    summary: 罫線の線スタイルを指定する、線スタイル定数のいずれか 1 つ。 詳細については、「ExcelScript. BorderLineStyle」を参照してください。
     name: getStyle()
     fullName: getStyle()
     langs:
@@ -58,7 +58,7 @@ items:
           - 'ExcelScript!ExcelScript.BorderLineStyle:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeBorder#getTintAndShade:member(1)'
-    summary: 範囲の境界線の色を明るくまたは暗くする倍精度浮動小数点型 (double) の値を指定します。 値は、-1 (最も暗い) から 1 (最も明るい) までの範囲で、元の色は0になります。 Null 値は、境界線に均等な tintAndShade 設定がないことを示します。
+    summary: 範囲の境界線の色を明るくまたは暗くする double を指定します。値は、-1 (最も暗い) から 1 (最も明るい) までの範囲で、元の色は0になります。 Null 値は、境界線に均等な tintAndShade 設定がないことを示します。
     name: getTintAndShade()
     fullName: getTintAndShade()
     langs:
@@ -71,7 +71,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeBorder#getWeight:member(1)'
-    summary: 範囲周辺の罫線の太さを指定します。 詳細については、「Excel BorderWeight」を参照してください。
+    summary: 範囲周辺の罫線の太さを指定します。 詳細については、「ExcelScript BorderWeight」を参照してください。
     name: getWeight()
     fullName: getWeight()
     langs:
@@ -102,7 +102,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.RangeBorder#setStyle:member(1)'
-    summary: 罫線の線スタイルを指定する、線スタイル定数のいずれか 1 つ。 詳細については、「Excel BorderLineStyle」を参照してください。
+    summary: 罫線の線スタイルを指定する、線スタイル定数のいずれか 1 つ。 詳細については、「ExcelScript. BorderLineStyle」を参照してください。
     name: setStyle(style)
     fullName: setStyle(style)
     langs:
@@ -120,7 +120,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.BorderLineStyle:enum'
   - uid: 'ExcelScript!ExcelScript.RangeBorder#setTintAndShade:member(1)'
-    summary: 範囲の境界線の色を明るくまたは暗くする倍精度浮動小数点型 (double) の値を指定します。 値は、-1 (最も暗い) から 1 (最も明るい) までの範囲で、元の色は0になります。 Null 値は、境界線に均等な tintAndShade 設定がないことを示します。
+    summary: 範囲の境界線の色を明るくまたは暗くする double を指定します。値は、-1 (最も暗い) から 1 (最も明るい) までの範囲で、元の色は0になります。 Null 値は、境界線に均等な tintAndShade 設定がないことを示します。
     name: setTintAndShade(tintAndShade)
     fullName: setTintAndShade(tintAndShade)
     langs:
@@ -138,7 +138,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.RangeBorder#setWeight:member(1)'
-    summary: 範囲周辺の罫線の太さを指定します。 詳細については、「Excel BorderWeight」を参照してください。
+    summary: 範囲周辺の罫線の太さを指定します。 詳細については、「ExcelScript BorderWeight」を参照してください。
     name: setWeight(weight)
     fullName: setWeight(weight)
     langs:

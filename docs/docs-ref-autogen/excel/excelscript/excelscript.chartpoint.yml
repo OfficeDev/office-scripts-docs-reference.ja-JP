@@ -101,7 +101,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartPoint#getMarkerStyle:member(1)'
-    summary: データ ポイントのマーカー スタイルを表します。 詳細については、「ChartMarkerStyle」を参照してください。
+    summary: データ ポイントのマーカー スタイルを表します。 詳細については、「ExcelScript」を参照してください。
     name: getMarkerStyle()
     fullName: getMarkerStyle()
     langs:
@@ -199,7 +199,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartPoint#setMarkerStyle:member(1)'
-    summary: データ ポイントのマーカー スタイルを表します。 詳細については、「ChartMarkerStyle」を参照してください。
+    summary: データ ポイントのマーカー スタイルを表します。 詳細については、「ExcelScript」を参照してください。
     name: setMarkerStyle(markerStyle)
     fullName: setMarkerStyle(markerStyle)
     langs:

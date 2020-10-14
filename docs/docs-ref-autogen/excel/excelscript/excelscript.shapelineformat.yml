@@ -35,7 +35,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#getDashStyle:member(1)'
-    summary: 図形の線スタイルを表します。 線が非表示の場合、または破線のスタイルが一定ではない場合は、null を返します。 詳細については、Excel.ShapeLineStyle をご覧ください。
+    summary: 図形の線スタイルを表します。 線が非表示の場合、または破線のスタイルが一定ではない場合は、null を返します。 詳細については、「ExcelScript」を参照してください。
     name: getDashStyle()
     fullName: getDashStyle()
     langs:
@@ -48,7 +48,7 @@ items:
           - 'ExcelScript!ExcelScript.ShapeLineDashStyle:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#getStyle:member(1)'
-    summary: 図形の線スタイルを表します。 線が非表示の場合、またはスタイルが一定ではない場合は、null を返します。 詳細については、Excel.ShapeLineStyle をご覧ください。
+    summary: 図形の線スタイルを表します。 線が非表示の場合、またはスタイルが一定ではない場合は、null を返します。 詳細については、「ExcelScript」を参照してください。
     name: getStyle()
     fullName: getStyle()
     langs:
@@ -118,7 +118,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#setDashStyle:member(1)'
-    summary: 図形の線スタイルを表します。 線が非表示の場合、または破線のスタイルが一定ではない場合は、null を返します。 詳細については、Excel.ShapeLineStyle をご覧ください。
+    summary: 図形の線スタイルを表します。 線が非表示の場合、または破線のスタイルが一定ではない場合は、null を返します。 詳細については、「ExcelScript」を参照してください。
     name: setDashStyle(dashStyle)
     fullName: setDashStyle(dashStyle)
     langs:
@@ -136,7 +136,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.ShapeLineDashStyle:enum'
   - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#setStyle:member(1)'
-    summary: 図形の線スタイルを表します。 線が非表示の場合、またはスタイルが一定ではない場合は、null を返します。 詳細については、Excel.ShapeLineStyle をご覧ください。
+    summary: 図形の線スタイルを表します。 線が非表示の場合、またはスタイルが一定ではない場合は、null を返します。 詳細については、「ExcelScript」を参照してください。
     name: setStyle(style)
     fullName: setStyle(style)
     langs:

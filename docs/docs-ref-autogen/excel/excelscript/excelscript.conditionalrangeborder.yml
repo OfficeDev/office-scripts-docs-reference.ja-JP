@@ -28,7 +28,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.ConditionalRangeBorder#getSideIndex:member(1)'
-    summary: 罫線の特定の辺を表す定数値。 詳細については、「Excel の ConditionalRangeBorderIndex」を参照してください。
+    summary: 罫線の特定の辺を表す定数値。 詳細については、「ExcelScript Borderindex」を参照してください。
     name: getSideIndex()
     fullName: getSideIndex()
     langs:
@@ -41,7 +41,7 @@ items:
           - 'ExcelScript!ExcelScript.ConditionalRangeBorderIndex:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.ConditionalRangeBorder#getStyle:member(1)'
-    summary: 罫線の線スタイルを指定する、線スタイル定数のいずれか 1 つ。 詳細については、「Excel BorderLineStyle」を参照してください。
+    summary: 罫線の線スタイルを指定する、線スタイル定数のいずれか 1 つ。 詳細については、「ExcelScript. BorderLineStyle」を参照してください。
     name: getStyle()
     fullName: getStyle()
     langs:
@@ -72,7 +72,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.ConditionalRangeBorder#setStyle:member(1)'
-    summary: 罫線の線スタイルを指定する、線スタイル定数のいずれか 1 つ。 詳細については、「Excel BorderLineStyle」を参照してください。
+    summary: 罫線の線スタイルを指定する、線スタイル定数のいずれか 1 つ。 詳細については、「ExcelScript. BorderLineStyle」を参照してください。
     name: setStyle(style)
     fullName: setStyle(style)
     langs:

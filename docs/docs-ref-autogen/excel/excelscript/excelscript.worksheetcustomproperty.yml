@@ -1,0 +1,72 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty:interface'
+    summary: ワークシートレベルのカスタムプロパティを表します。
+    name: ExcelScript.WorksheetCustomProperty
+    fullName: ExcelScript.WorksheetCustomProperty
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.WorksheetCustomProperty#delete:member(1)'
+      - 'ExcelScript!ExcelScript.WorksheetCustomProperty#getKey:member(1)'
+      - 'ExcelScript!ExcelScript.WorksheetCustomProperty#getValue:member(1)'
+      - 'ExcelScript!ExcelScript.WorksheetCustomProperty#setValue:member(1)'
+  - uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty#delete:member(1)'
+    summary: カスタム プロパティを削除します。
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty#getKey:member(1)'
+    summary: カスタム プロパティのキーを取得します。 カスタムプロパティのキーは大文字と小文字を区別しません。 キーは255文字に制限されています (大きい値を指定すると、"InvalidArgument" エラーがスローされます)。
+    name: getKey()
+    fullName: getKey()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getKey(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty#getValue:member(1)'
+    summary: カスタム プロパティの値を取得または設定します。
+    name: getValue()
+    fullName: getValue()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getValue(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty#setValue:member(1)'
+    summary: カスタム プロパティの値を取得または設定します。
+    name: setValue(value)
+    fullName: setValue(value)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setValue(value: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: value
+          description: ''
+          type:
+            - string

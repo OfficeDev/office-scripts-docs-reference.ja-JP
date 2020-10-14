@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.Worksheet:interface'
-    summary: 'Excel のワークシートは、セルのグリッドです。 データ、表、グラフなどを含めることができます。ワークシートオブジェクトモデルの詳細については、「 [Excel JAVASCRIPT API を使用してワークシートを操作](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets)する」を参照してください。<!-- -->.'
+    summary: Excel のワークシートは、セルのグリッドです。 データ、表、グラフなどを含めることができます。
     name: ExcelScript.Worksheet
     fullName: ExcelScript.Worksheet
     langs:
@@ -24,6 +24,7 @@ items:
       - 'ExcelScript!ExcelScript.Worksheet#addTable:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#addTextBox:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#addVerticalPageBreak:member(1)'
+      - 'ExcelScript!ExcelScript.Worksheet#addWorksheetCustomProperty:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#calculate:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#copy:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#delete:member(1)'
@@ -36,6 +37,7 @@ items:
       - 'ExcelScript!ExcelScript.Worksheet#getCommentByCell:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#getCommentByReplyId:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#getComments:member(1)'
+      - 'ExcelScript!ExcelScript.Worksheet#getCustomProperties:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#getEnableCalculation:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#getFreezePanes:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#getHorizontalPageBreaks:member(1)'
@@ -67,6 +69,7 @@ items:
       - 'ExcelScript!ExcelScript.Worksheet#getUsedRange:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#getVerticalPageBreaks:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#getVisibility:member(1)'
+      - 'ExcelScript!ExcelScript.Worksheet#getWorksheetCustomProperty:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#refreshAllPivotTables:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#removeAllHorizontalPageBreaks:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#removeAllVerticalPageBreaks:member(1)'
@@ -113,7 +116,7 @@ items:
         description: ''
       parameters:
         - id: type
-          description: グラフの種類を表します。 詳細については、「ChartType」を参照してください。
+          description: グラフの種類を表します。 詳細については、「ExcelScript」を参照してください。
           type:
             - 'ExcelScript!ExcelScript.ChartType:enum'
         - id: sourceData
@@ -121,7 +124,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Range:interface'
         - id: seriesBy
-          description: 省略可能。 列や行がグラフのデータ系列として使用される方法を指定します。 詳細については、「Excel Chart系列」を参照してください。
+          description: 省略可能。 列や行がグラフのデータ系列として使用される方法を指定します。 詳細については、「ExcelScript Chart」を参照してください。
           type:
             - 'ExcelScript!ExcelScript.ChartSeriesBy:enum'
   - uid: 'ExcelScript!ExcelScript.Worksheet#addComment:member(1)'
@@ -152,7 +155,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Worksheet#addComment~1:complex'
         - id: contentType
-          description: 省略可能。 コメント内に含まれるコンテンツの種類。 既定値は enum です。`ContentType.Plain`<!-- -->.
+          description: 省略可能。 コメント内に含まれるコンテンツの種類。 既定値は enum です。 `ContentType.Plain`<!-- -->.
           type:
             - 'ExcelScript!ExcelScript.ContentType:enum'
   - uid: 'ExcelScript!ExcelScript.Worksheet#addGeometricShape:member(1)'
@@ -170,7 +173,7 @@ items:
         description: ''
       parameters:
         - id: geometricShapeType
-          description: ジオメトリック図形の種類を表します。 詳細については、Excel.GeometricShapeType をご覧ください。
+          description: ジオメトリック図形の種類を表します。 詳細については、「ExcelScript」を参照してください。
           type:
             - 'ExcelScript!ExcelScript.GeometricShapeType:enum'
   - uid: 'ExcelScript!ExcelScript.Worksheet#addGroup:member(1)'
@@ -265,7 +268,7 @@ items:
           type:
             - number
         - id: connectorType
-          description: コネクタの種類を表します。 詳細については、「ConnectorType」を参照してください。
+          description: コネクタの種類を表します。 詳細については、「ExcelScript」を参照してください。
           type:
             - 'ExcelScript!ExcelScript.ConnectorType:enum'
   - uid: 'ExcelScript!ExcelScript.Worksheet#addNamedItem:member(1)'
@@ -470,6 +473,32 @@ items:
           description: 改ページが追加される直後のセル範囲を指定します。
           type:
             - 'ExcelScript!ExcelScript.Worksheet#addVerticalPageBreak~0:complex'
+  - uid: 'ExcelScript!ExcelScript.Worksheet#addWorksheetCustomProperty:member(1)'
+    summary: 指定したキーに対応する新しいカスタムプロパティを追加します。 これにより、既存のカスタムプロパティがそのキーで上書きされます。
+    name: 'addWorksheetCustomProperty(key, value)'
+    fullName: 'addWorksheetCustomProperty(key, value)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        addWorksheetCustomProperty(
+                    key: string,
+                    value: string
+                ): WorksheetCustomProperty;
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.WorksheetCustomProperty:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: カスタムプロパティオブジェクトを識別するキー。 大文字と小文字は区別されません。キーは255文字に制限されています (大きい値を指定すると、"InvalidArgument" エラーがスローされます)。
+          type:
+            - string
+        - id: value
+          description: このカスタムプロパティの値。
+          type:
+            - string
   - uid: 'ExcelScript!ExcelScript.Worksheet#calculate:member(1)'
     summary: ワークシート上のすべてのセルを計算します。
     name: calculate(markAllDirty)
@@ -697,6 +726,19 @@ items:
       return:
         type:
           - 'ExcelScript!ExcelScript.Worksheet#getComments~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Worksheet#getCustomProperties:member(1)'
+    summary: ワークシートレベルのカスタムプロパティのコレクションを取得します。
+    name: getCustomProperties()
+    fullName: getCustomProperties()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCustomProperties(): WorksheetCustomProperty[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Worksheet#getCustomProperties~0:complex'
         description: ''
   - uid: 'ExcelScript!ExcelScript.Worksheet#getEnableCalculation:member(1)'
     summary: Excel が必要に応じてワークシートを再計算する必要があるかどうかを指定します。 True の場合、Excel は必要に応じてワークシートを再計算します。 False の場合、Excel はシートを再計算しません。
@@ -1215,6 +1257,27 @@ items:
         type:
           - 'ExcelScript!ExcelScript.SheetVisibility:enum'
         description: ''
+  - uid: 'ExcelScript!ExcelScript.Worksheet#getWorksheetCustomProperty:member(1)'
+    summary: キーを使用してカスタム プロパティ オブジェクトを取得します。大文字と小文字は区別されません。 カスタムプロパティが存在しない場合は、null オブジェクトを返します。
+    name: getWorksheetCustomProperty(key)
+    fullName: getWorksheetCustomProperty(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        getWorksheetCustomProperty(
+                    key: string
+                ): WorksheetCustomProperty | undefined;
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Worksheet#getWorksheetCustomProperty~0:complex'
+        description: ''
+      parameters:
+        - id: key
+          description: カスタムプロパティオブジェクトを識別するキー。 大文字と小文字は区別されません。
+          type:
+            - string
   - uid: 'ExcelScript!ExcelScript.Worksheet#refreshAllPivotTables:member(1)'
     summary: コレクション内のすべてのピボットテーブルを更新します。
     name: refreshAllPivotTables()
@@ -1643,6 +1706,9 @@ references:
         fullName: ExcelScript.Range
       - name: ' | string'
         fullName: ' | string'
+  - uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty:interface'
+    name: WorksheetCustomProperty
+    fullName: ExcelScript.WorksheetCustomProperty
   - uid: 'ExcelScript!ExcelScript.Worksheet:interface'
     name: Worksheet
     fullName: ExcelScript.Worksheet
@@ -1692,6 +1758,15 @@ references:
       - uid: 'ExcelScript!ExcelScript.Comment:interface'
         name: Comment
         fullName: ExcelScript.Comment
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.Worksheet#getCustomProperties~0:complex'
+    name: 'WorksheetCustomProperty[]'
+    fullName: 'ExcelScript.WorksheetCustomProperty[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty:interface'
+        name: WorksheetCustomProperty
+        fullName: ExcelScript.WorksheetCustomProperty
       - name: '[]'
         fullName: '[]'
   - uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes:interface'
@@ -1805,6 +1880,15 @@ references:
   - uid: 'ExcelScript!ExcelScript.SheetVisibility:enum'
     name: SheetVisibility
     fullName: ExcelScript.SheetVisibility
+  - uid: 'ExcelScript!ExcelScript.Worksheet#getWorksheetCustomProperty~0:complex'
+    name: WorksheetCustomProperty | undefined
+    fullName: ExcelScript.WorksheetCustomProperty | undefined
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty:interface'
+        name: WorksheetCustomProperty
+        fullName: ExcelScript.WorksheetCustomProperty
+      - name: ' | undefined'
+        fullName: ' | undefined'
   - uid: 'ExcelScript!ExcelScript.ReplaceCriteria:interface'
     name: ReplaceCriteria
     fullName: ExcelScript.ReplaceCriteria

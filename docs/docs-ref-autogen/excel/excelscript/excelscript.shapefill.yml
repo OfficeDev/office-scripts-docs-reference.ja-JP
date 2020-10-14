@@ -56,7 +56,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ShapeFill#getType:member(1)'
-    summary: 図形の塗りつぶしの種類を返します。 詳細については、Excel.ShapeFillType をご覧ください。
+    summary: 図形の塗りつぶしの種類を返します。 詳細については、「ExcelScript」を参照してください。
     name: getType()
     fullName: getType()
     langs:

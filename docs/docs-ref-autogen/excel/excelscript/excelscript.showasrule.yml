@@ -36,7 +36,7 @@ items:
         type:
           - 'ExcelScript!ExcelScript.PivotItem:interface'
   - uid: 'ExcelScript!ExcelScript.ShowAsRule#calculation:member'
-    summary: データ ピボット フィールドに使用する ShowAs 計算。 詳細については、「Excel ShowAsCalculation」を参照してください。
+    summary: データ ピボット フィールドに使用する ShowAs 計算。 詳細については、「ExcelScript. ShowAsCalculation」を参照してください。
     name: calculation
     fullName: calculation
     langs:

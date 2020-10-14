@@ -115,7 +115,7 @@ items:
           - 'ExcelScript!ExcelScript.NamedItemScope:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.NamedItem#getType:member(1)'
-    summary: 名前の数式によって返される値の型を指定します。 詳細については、「Excel. NamedItemType」を参照してください。
+    summary: 名前の数式によって返される値の型を指定します。 詳細については、「ExcelScript. NamedItemType」を参照してください。
     name: getType()
     fullName: getType()
     langs:

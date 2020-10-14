@@ -81,7 +81,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.Binding#getType:member(1)'
-    summary: バインドの種類を返します。 詳細については、「Excel. BindingType」を参照してください。
+    summary: バインドの種類を返します。 詳細については、「ExcelScript. BindingType」を参照してください。
     name: getType()
     fullName: getType()
     langs:

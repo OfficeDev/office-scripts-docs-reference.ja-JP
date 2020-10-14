@@ -1,0 +1,35 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.TopBottomSelectionType:enum'
+    summary: 上位/下位フィルターの単純な列挙体を使用して、上位 N または下位 N パーセント、数値、または値の合計でフィルター処理するかどうかを選択します。
+    name: ExcelScript.TopBottomSelectionType
+    fullName: ExcelScript.TopBottomSelectionType
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.TopBottomSelectionType.items:member'
+      - 'ExcelScript!ExcelScript.TopBottomSelectionType.percent:member'
+      - 'ExcelScript!ExcelScript.TopBottomSelectionType.sum:member'
+  - uid: 'ExcelScript!ExcelScript.TopBottomSelectionType.items:member'
+    summary: 選択された値によって測定された上位/下位 N 個のアイテムをフィルター処理します。
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.TopBottomSelectionType.percent:member'
+    summary: 選択された値で計測されるアイテムの上位/下位 N% にフィルターを適用します。
+    name: percent
+    fullName: percent
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.TopBottomSelectionType.sum:member'
+    summary: 選択した値で計測された上位/下位 N 合計をフィルター処理します。
+    name: sum
+    fullName: sum
+    langs:
+      - typeScript
+    type: field

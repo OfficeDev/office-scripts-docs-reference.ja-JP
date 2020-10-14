@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.PivotTable:interface'
-    summary: 'Excel のピボットテーブルを表します。 ピボットテーブルオブジェクトモデルの詳細については、「 [Excel JAVASCRIPT API を使用してピボットテーブルを操作](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-pivottables)する」を参照してください。<!-- -->.'
+    summary: Excel のピボットテーブルを表します。
     name: ExcelScript.PivotTable
     fullName: ExcelScript.PivotTable
     langs:
@@ -14,6 +14,7 @@ items:
       - 'ExcelScript!ExcelScript.PivotTable#addFilterHierarchy:member(1)'
       - 'ExcelScript!ExcelScript.PivotTable#addRowHierarchy:member(1)'
       - 'ExcelScript!ExcelScript.PivotTable#delete:member(1)'
+      - 'ExcelScript!ExcelScript.PivotTable#getAllowMultipleFiltersPerField:member(1)'
       - 'ExcelScript!ExcelScript.PivotTable#getColumnHierarchies:member(1)'
       - 'ExcelScript!ExcelScript.PivotTable#getColumnHierarchy:member(1)'
       - 'ExcelScript!ExcelScript.PivotTable#getDataHierarchies:member(1)'
@@ -35,6 +36,7 @@ items:
       - 'ExcelScript!ExcelScript.PivotTable#removeDataHierarchy:member(1)'
       - 'ExcelScript!ExcelScript.PivotTable#removeFilterHierarchy:member(1)'
       - 'ExcelScript!ExcelScript.PivotTable#removeRowHierarchy:member(1)'
+      - 'ExcelScript!ExcelScript.PivotTable#setAllowMultipleFiltersPerField:member(1)'
       - 'ExcelScript!ExcelScript.PivotTable#setEnableDataValueEditing:member(1)'
       - 'ExcelScript!ExcelScript.PivotTable#setName:member(1)'
       - 'ExcelScript!ExcelScript.PivotTable#setUseCustomSortLists:member(1)'
@@ -131,6 +133,19 @@ items:
       return:
         type:
           - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PivotTable#getAllowMultipleFiltersPerField:member(1)'
+    summary: ピボットテーブルで、テーブル内の特定の PivotField に対して複数の PivotFilters を適用できるかどうかを指定します。
+    name: getAllowMultipleFiltersPerField()
+    fullName: getAllowMultipleFiltersPerField()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAllowMultipleFiltersPerField(): boolean;'
+      return:
+        type:
+          - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.PivotTable#getColumnHierarchies:member(1)'
     summary: ピボットテーブルの列ピボット階層。
@@ -456,6 +471,27 @@ items:
           description: ''
           type:
             - 'ExcelScript!ExcelScript.RowColumnPivotHierarchy:interface'
+  - uid: 'ExcelScript!ExcelScript.PivotTable#setAllowMultipleFiltersPerField:member(1)'
+    summary: ピボットテーブルで、テーブル内の特定の PivotField に対して複数の PivotFilters を適用できるかどうかを指定します。
+    name: setAllowMultipleFiltersPerField(allowMultipleFiltersPerField)
+    fullName: setAllowMultipleFiltersPerField(allowMultipleFiltersPerField)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        setAllowMultipleFiltersPerField(
+                    allowMultipleFiltersPerField: boolean
+                ): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: allowMultipleFiltersPerField
+          description: ''
+          type:
+            - boolean
   - uid: 'ExcelScript!ExcelScript.PivotTable#setEnableDataValueEditing:member(1)'
     summary: ピボットテーブルで、ユーザーがデータ本文の値を編集できるようにするかどうかを指定します。
     name: setEnableDataValueEditing(enableDataValueEditing)
