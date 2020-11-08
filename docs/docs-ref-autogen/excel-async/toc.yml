@@ -6,11 +6,11 @@ items:
       - name: Excel
         uid: excel!
         items:
-          - name: 体
+          - name: Enums
             uid: ''
             items:
               - &ref_0
-                name: 集約 Ationfunction
+                name: AggregationFunction
                 uid: 'excel!Excel.AggregationFunction:enum'
               - &ref_1
                 name: ArrowheadLength
@@ -88,7 +88,7 @@ items:
                 name: ChartDataLabelPosition
                 uid: 'excel!Excel.ChartDataLabelPosition:enum'
               - &ref_26
-                name: Chartdisplay空白 Sas
+                name: ChartDisplayBlanksAs
                 uid: 'excel!Excel.ChartDisplayBlanksAs:enum'
               - &ref_27
                 name: ChartErrorBarsInclude
@@ -130,7 +130,7 @@ items:
                 name: ChartPlotBy
                 uid: 'excel!Excel.ChartPlotBy:enum'
               - &ref_40
-                name: Chart系列 By
+                name: ChartSeriesBy
                 uid: 'excel!Excel.ChartSeriesBy:enum'
               - &ref_41
                 name: ChartSplitType
@@ -139,13 +139,13 @@ items:
                 name: ChartTextHorizontalAlignment
                 uid: 'excel!Excel.ChartTextHorizontalAlignment:enum'
               - &ref_43
-                name: Charttext垂直配置
+                name: ChartTextVerticalAlignment
                 uid: 'excel!Excel.ChartTextVerticalAlignment:enum'
               - &ref_44
                 name: ChartTickLabelAlignment
                 uid: 'excel!Excel.ChartTickLabelAlignment:enum'
               - &ref_45
-                name: Charttitle の位置
+                name: ChartTitlePosition
                 uid: 'excel!Excel.ChartTitlePosition:enum'
               - &ref_46
                 name: ChartTrendlineType
@@ -154,7 +154,7 @@ items:
                 name: ChartType
                 uid: 'excel!Excel.ChartType:enum'
               - &ref_48
-                name: Chartアンダー Linestyle
+                name: ChartUnderlineStyle
                 uid: 'excel!Excel.ChartUnderlineStyle:enum'
               - &ref_49
                 name: ClearApplyTo
@@ -163,13 +163,13 @@ items:
                 name: ConditionalCellValueOperator
                 uid: 'excel!Excel.ConditionalCellValueOperator:enum'
               - &ref_51
-                name: Conditionalて Ar軸形式
+                name: ConditionalDataBarAxisFormat
                 uid: 'excel!Excel.ConditionalDataBarAxisFormat:enum'
               - &ref_52
-                name: Conditional/Ardirection
+                name: ConditionalDataBarDirection
                 uid: 'excel!Excel.ConditionalDataBarDirection:enum'
               - &ref_53
-                name: Conditionalformatcolorた Ontype
+                name: ConditionalFormatColorCriterionType
                 uid: 'excel!Excel.ConditionalFormatColorCriterionType:enum'
               - &ref_54
                 name: ConditionalFormatDirection
@@ -178,7 +178,7 @@ items:
                 name: ConditionalFormatIconRuleType
                 uid: 'excel!Excel.ConditionalFormatIconRuleType:enum'
               - &ref_56
-                name: Conditionalpresetcriteriarule
+                name: ConditionalFormatPresetCriterion
                 uid: 'excel!Excel.ConditionalFormatPresetCriterion:enum'
               - &ref_57
                 name: ConditionalFormatRuleType
@@ -196,7 +196,7 @@ items:
                 name: ConditionalRangeBorderLineStyle
                 uid: 'excel!Excel.ConditionalRangeBorderLineStyle:enum'
               - &ref_62
-                name: Conditionalrangefont過小 Linestyle
+                name: ConditionalRangeFontUnderlineStyle
                 uid: 'excel!Excel.ConditionalRangeFontUnderlineStyle:enum'
               - &ref_63
                 name: ConditionalTextOperator
@@ -229,7 +229,7 @@ items:
                 name: DynamicFilterCriteria
                 uid: 'excel!Excel.DynamicFilterCriteria:enum'
               - &ref_73
-                name: 'Fillpattern]'
+                name: FillPattern
                 uid: 'excel!Excel.FillPattern:enum'
               - &ref_74
                 name: FilterDatetimeSpecificity
@@ -244,10 +244,10 @@ items:
                 name: GeometricShapeType
                 uid: 'excel!Excel.GeometricShapeType:enum'
               - &ref_78
-                name: GroupOption
+                name: Groupop
                 uid: 'excel!Excel.GroupOption:enum'
               - &ref_79
-                name: Headerフッターの状態
+                name: HeaderFooterState
                 uid: 'excel!Excel.HeaderFooterState:enum'
               - &ref_80
                 name: HorizontalAlignment
@@ -274,7 +274,7 @@ items:
                 name: PageOrientation
                 uid: 'excel!Excel.PageOrientation:enum'
               - &ref_88
-                name: 用紙の種類
+                name: PaperType
                 uid: 'excel!Excel.PaperType:enum'
               - &ref_89
                 name: PictureFormat
@@ -283,7 +283,7 @@ items:
                 name: PivotAxis
                 uid: 'excel!Excel.PivotAxis:enum'
               - &ref_91
-                name: Pivotfiltertop下端の条件
+                name: PivotFilterTopBottomCriterion
                 uid: 'excel!Excel.PivotFilterTopBottomCriterion:enum'
               - &ref_92
                 name: PivotLayoutType
@@ -295,7 +295,7 @@ items:
                 name: PrintComments
                 uid: 'excel!Excel.PrintComments:enum'
               - &ref_95
-                name: プリンター Rortype
+                name: PrintErrorType
                 uid: 'excel!Excel.PrintErrorType:enum'
               - &ref_96
                 name: PrintMarginUnit
@@ -310,7 +310,7 @@ items:
                 name: RangeCopyType
                 uid: 'excel!Excel.RangeCopyType:enum'
               - &ref_100
-                name: Rangeアンダー Linestyle
+                name: RangeUnderlineStyle
                 uid: 'excel!Excel.RangeUnderlineStyle:enum'
               - &ref_101
                 name: RangeValueType
@@ -322,13 +322,13 @@ items:
                 name: SearchDirection
                 uid: 'excel!Excel.SearchDirection:enum'
               - &ref_104
-                name: 図形の Autosize
+                name: ShapeAutoSize
                 uid: 'excel!Excel.ShapeAutoSize:enum'
               - &ref_105
                 name: ShapeFillType
                 uid: 'excel!Excel.ShapeFillType:enum'
               - &ref_106
-                name: Offefont過小の Linestyle
+                name: ShapeFontUnderlineStyle
                 uid: 'excel!Excel.ShapeFontUnderlineStyle:enum'
               - &ref_107
                 name: ShapeLineDashStyle
@@ -394,7 +394,7 @@ items:
                 name: SpecialCellType
                 uid: 'excel!Excel.SpecialCellType:enum'
               - &ref_128
-                name: 特殊セル Valuetype
+                name: SpecialCellValueType
                 uid: 'excel!Excel.SpecialCellValueType:enum'
               - &ref_129
                 name: SubtotalLocationType
@@ -403,16 +403,16 @@ items:
                 name: VerticalAlignment
                 uid: 'excel!Excel.VerticalAlignment:enum'
               - &ref_131
-                name: ワークシート Positiontype
+                name: WorksheetPositionType
                 uid: 'excel!Excel.WorksheetPositionType:enum'
           - *ref_0
-          - name: アプリケーション
+          - name: Application
             uid: 'excel!Excel.Application:interface'
           - *ref_1
           - *ref_2
           - *ref_3
           - *ref_4
-          - name: オートフィルター
+          - name: AutoFilter
             uid: 'excel!Excel.AutoFilter:interface'
           - name: BasicDataValidation
             uid: 'excel!Excel.BasicDataValidation:interface'
@@ -446,7 +446,7 @@ items:
             uid: 'excel!Excel.CellPropertiesProtection:interface'
           - name: CellValueConditionalFormat
             uid: 'excel!Excel.CellValueConditionalFormat:interface'
-          - name: グラフ
+          - name: Chart
             uid: 'excel!Excel.Chart:interface'
           - name: ChartAreaFormat
             uid: 'excel!Excel.ChartAreaFormat:interface'
@@ -555,7 +555,7 @@ items:
           - name: ChartTitleFormat
             uid: 'excel!Excel.ChartTitleFormat:interface'
           - *ref_45
-          - name: ChartTrendline 曲線
+          - name: ChartTrendline
             uid: 'excel!Excel.ChartTrendline:interface'
           - name: ChartTrendlineCollection
             uid: 'excel!Excel.ChartTrendlineCollection:interface'
@@ -573,11 +573,11 @@ items:
             uid: 'excel!Excel.ClientResult:interface'
           - name: ColorScaleConditionalFormat
             uid: 'excel!Excel.ColorScaleConditionalFormat:interface'
-          - name: コメント
+          - name: Comment
             uid: 'excel!Excel.Comment:interface'
           - name: CommentCollection
             uid: 'excel!Excel.CommentCollection:interface'
-          - name: コメントについて
+          - name: CommentMention
             uid: 'excel!Excel.CommentMention:interface'
           - name: CommentReply
             uid: 'excel!Excel.CommentReply:interface'
@@ -598,7 +598,7 @@ items:
             uid: 'excel!Excel.ConditionalDataBarNegativeFormat:interface'
           - name: ConditionalDataBarPositiveFormat
             uid: 'excel!Excel.ConditionalDataBarPositiveFormat:interface'
-          - name: Conditionalの配列
+          - name: ConditionalDataBarRule
             uid: 'excel!Excel.ConditionalDataBarRule:interface'
           - name: ConditionalFormat
             uid: 'excel!Excel.ConditionalFormat:interface'
@@ -654,7 +654,7 @@ items:
             uid: 'excel!Excel.CustomXmlPartCollection:interface'
           - name: CustomXmlPartScopedCollection
             uid: 'excel!Excel.CustomXmlPartScopedCollection:interface'
-          - name: '[ファイル]'
+          - name: DataBarConditionalFormat
             uid: 'excel!Excel.DataBarConditionalFormat:interface'
           - name: DataConnectionCollection
             uid: 'excel!Excel.DataConnectionCollection:interface'
@@ -681,7 +681,7 @@ items:
           - *ref_71
           - *ref_72
           - *ref_73
-          - name: フィルター
+          - name: Filter
             uid: 'excel!Excel.Filter:interface'
           - name: FilterCriteria
             uid: 'excel!Excel.FilterCriteria:interface'
@@ -713,13 +713,13 @@ items:
           - *ref_81
           - name: IconSetConditionalFormat
             uid: 'excel!Excel.IconSetConditionalFormat:interface'
-          - name: イメージ
+          - name: Image
             uid: 'excel!Excel.Image:interface'
           - *ref_82
           - *ref_83
           - name: IterativeCalculation
             uid: 'excel!Excel.IterativeCalculation:interface'
-          - name: 線
+          - name: Line
             uid: 'excel!Excel.Line:interface'
           - *ref_84
           - name: ListDataValidation
@@ -764,7 +764,7 @@ items:
           - name: PivotLayout
             uid: 'excel!Excel.PivotLayout:interface'
           - *ref_92
-          - name: ピボットテーブル
+          - name: PivotTable
             uid: 'excel!Excel.PivotTable:interface'
           - name: PivotTableCollection
             uid: 'excel!Excel.PivotTableCollection:interface'
@@ -797,7 +797,7 @@ items:
             uid: 'excel!Excel.RangeFill:interface'
           - name: RangeFont
             uid: 'excel!Excel.RangeFont:interface'
-          - name: 範囲の形式
+          - name: RangeFormat
             uid: 'excel!Excel.RangeFormat:interface'
           - name: RangeHyperlink
             uid: 'excel!Excel.RangeHyperlink:interface'
@@ -825,7 +825,7 @@ items:
           - name: SearchCriteria
             uid: 'excel!Excel.SearchCriteria:interface'
           - *ref_103
-          - name: 設定
+          - name: Setting
             uid: 'excel!Excel.Setting:interface'
           - name: SettingCollection
             uid: 'excel!Excel.SettingCollection:interface'
@@ -860,7 +860,7 @@ items:
           - *ref_120
           - name: ShowAsRule
             uid: 'excel!Excel.ShowAsRule:interface'
-          - name: スライサー
+          - name: Slicer
             uid: 'excel!Excel.Slicer:interface'
           - name: SlicerCollection
             uid: 'excel!Excel.SlicerCollection:interface'

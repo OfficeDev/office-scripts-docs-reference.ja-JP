@@ -6,11 +6,11 @@ items:
       - name: ExcelScript
         uid: ExcelScript!
         items:
-          - name: 体
+          - name: Enums
             uid: ''
             items:
               - &ref_0
-                name: 集約 Ationfunction
+                name: AggregationFunction
                 uid: 'ExcelScript!ExcelScript.AggregationFunction:enum'
               - &ref_1
                 name: ArrowheadLength
@@ -88,7 +88,7 @@ items:
                 name: ChartDataLabelPosition
                 uid: 'ExcelScript!ExcelScript.ChartDataLabelPosition:enum'
               - &ref_26
-                name: Chartdisplay空白 Sas
+                name: ChartDisplayBlanksAs
                 uid: 'ExcelScript!ExcelScript.ChartDisplayBlanksAs:enum'
               - &ref_27
                 name: ChartErrorBarsInclude
@@ -130,10 +130,10 @@ items:
                 name: ChartPlotBy
                 uid: 'ExcelScript!ExcelScript.ChartPlotBy:enum'
               - &ref_40
-                name: Chart系列 By
+                name: ChartSeriesBy
                 uid: 'ExcelScript!ExcelScript.ChartSeriesBy:enum'
               - &ref_41
-                name: Chart系列ディメンション
+                name: ChartSeriesDimension
                 uid: 'ExcelScript!ExcelScript.ChartSeriesDimension:enum'
               - &ref_42
                 name: ChartSplitType
@@ -142,13 +142,13 @@ items:
                 name: ChartTextHorizontalAlignment
                 uid: 'ExcelScript!ExcelScript.ChartTextHorizontalAlignment:enum'
               - &ref_44
-                name: Charttext垂直配置
+                name: ChartTextVerticalAlignment
                 uid: 'ExcelScript!ExcelScript.ChartTextVerticalAlignment:enum'
               - &ref_45
                 name: ChartTickLabelAlignment
                 uid: 'ExcelScript!ExcelScript.ChartTickLabelAlignment:enum'
               - &ref_46
-                name: Charttitle の位置
+                name: ChartTitlePosition
                 uid: 'ExcelScript!ExcelScript.ChartTitlePosition:enum'
               - &ref_47
                 name: ChartTrendlineType
@@ -157,7 +157,7 @@ items:
                 name: ChartType
                 uid: 'ExcelScript!ExcelScript.ChartType:enum'
               - &ref_49
-                name: Chartアンダー Linestyle
+                name: ChartUnderlineStyle
                 uid: 'ExcelScript!ExcelScript.ChartUnderlineStyle:enum'
               - &ref_50
                 name: ClearApplyTo
@@ -166,13 +166,13 @@ items:
                 name: ConditionalCellValueOperator
                 uid: 'ExcelScript!ExcelScript.ConditionalCellValueOperator:enum'
               - &ref_52
-                name: Conditionalて Ar軸形式
+                name: ConditionalDataBarAxisFormat
                 uid: 'ExcelScript!ExcelScript.ConditionalDataBarAxisFormat:enum'
               - &ref_53
-                name: Conditional/Ardirection
+                name: ConditionalDataBarDirection
                 uid: 'ExcelScript!ExcelScript.ConditionalDataBarDirection:enum'
               - &ref_54
-                name: Conditionalformatcolorた Ontype
+                name: ConditionalFormatColorCriterionType
                 uid: 'ExcelScript!ExcelScript.ConditionalFormatColorCriterionType:enum'
               - &ref_55
                 name: ConditionalFormatDirection
@@ -181,7 +181,7 @@ items:
                 name: ConditionalFormatIconRuleType
                 uid: 'ExcelScript!ExcelScript.ConditionalFormatIconRuleType:enum'
               - &ref_57
-                name: Conditionalpresetcriteriarule
+                name: ConditionalFormatPresetCriterion
                 uid: 'ExcelScript!ExcelScript.ConditionalFormatPresetCriterion:enum'
               - &ref_58
                 name: ConditionalFormatRuleType
@@ -199,7 +199,7 @@ items:
                 name: ConditionalRangeBorderLineStyle
                 uid: 'ExcelScript!ExcelScript.ConditionalRangeBorderLineStyle:enum'
               - &ref_63
-                name: Conditionalrangefont過小 Linestyle
+                name: ConditionalRangeFontUnderlineStyle
                 uid: 'ExcelScript!ExcelScript.ConditionalRangeFontUnderlineStyle:enum'
               - &ref_64
                 name: ConditionalTextOperator
@@ -235,7 +235,7 @@ items:
                 name: DynamicFilterCriteria
                 uid: 'ExcelScript!ExcelScript.DynamicFilterCriteria:enum'
               - &ref_75
-                name: 'Fillpattern]'
+                name: FillPattern
                 uid: 'ExcelScript!ExcelScript.FillPattern:enum'
               - &ref_76
                 name: FilterDatetimeSpecificity
@@ -250,10 +250,10 @@ items:
                 name: GeometricShapeType
                 uid: 'ExcelScript!ExcelScript.GeometricShapeType:enum'
               - &ref_80
-                name: GroupOption
+                name: Groupop
                 uid: 'ExcelScript!ExcelScript.GroupOption:enum'
               - &ref_81
-                name: Headerフッターの状態
+                name: HeaderFooterState
                 uid: 'ExcelScript!ExcelScript.HeaderFooterState:enum'
               - &ref_82
                 name: HorizontalAlignment
@@ -280,13 +280,13 @@ items:
                 name: NamedItemType
                 uid: 'ExcelScript!ExcelScript.NamedItemType:enum'
               - &ref_90
-                name: 番号 Formatcategory
+                name: NumberFormatCategory
                 uid: 'ExcelScript!ExcelScript.NumberFormatCategory:enum'
               - &ref_91
                 name: PageOrientation
                 uid: 'ExcelScript!ExcelScript.PageOrientation:enum'
               - &ref_92
-                name: 用紙の種類
+                name: PaperType
                 uid: 'ExcelScript!ExcelScript.PaperType:enum'
               - &ref_93
                 name: PictureFormat
@@ -295,7 +295,7 @@ items:
                 name: PivotAxis
                 uid: 'ExcelScript!ExcelScript.PivotAxis:enum'
               - &ref_95
-                name: Pivotfiltertop下端の条件
+                name: PivotFilterTopBottomCriterion
                 uid: 'ExcelScript!ExcelScript.PivotFilterTopBottomCriterion:enum'
               - &ref_96
                 name: PivotFilterType
@@ -310,7 +310,7 @@ items:
                 name: PrintComments
                 uid: 'ExcelScript!ExcelScript.PrintComments:enum'
               - &ref_100
-                name: プリンター Rortype
+                name: PrintErrorType
                 uid: 'ExcelScript!ExcelScript.PrintErrorType:enum'
               - &ref_101
                 name: PrintMarginUnit
@@ -325,7 +325,7 @@ items:
                 name: RangeCopyType
                 uid: 'ExcelScript!ExcelScript.RangeCopyType:enum'
               - &ref_105
-                name: Rangeアンダー Linestyle
+                name: RangeUnderlineStyle
                 uid: 'ExcelScript!ExcelScript.RangeUnderlineStyle:enum'
               - &ref_106
                 name: RangeValueType
@@ -337,13 +337,13 @@ items:
                 name: SearchDirection
                 uid: 'ExcelScript!ExcelScript.SearchDirection:enum'
               - &ref_109
-                name: 図形の Autosize
+                name: ShapeAutoSize
                 uid: 'ExcelScript!ExcelScript.ShapeAutoSize:enum'
               - &ref_110
                 name: ShapeFillType
                 uid: 'ExcelScript!ExcelScript.ShapeFillType:enum'
               - &ref_111
-                name: Offefont過小の Linestyle
+                name: ShapeFontUnderlineStyle
                 uid: 'ExcelScript!ExcelScript.ShapeFontUnderlineStyle:enum'
               - &ref_112
                 name: ShapeLineDashStyle
@@ -409,7 +409,7 @@ items:
                 name: SpecialCellType
                 uid: 'ExcelScript!ExcelScript.SpecialCellType:enum'
               - &ref_133
-                name: 特殊セル Valuetype
+                name: SpecialCellValueType
                 uid: 'ExcelScript!ExcelScript.SpecialCellValueType:enum'
               - &ref_134
                 name: SubtotalLocationType
@@ -424,16 +424,16 @@ items:
                 name: VerticalAlignment
                 uid: 'ExcelScript!ExcelScript.VerticalAlignment:enum'
               - &ref_138
-                name: ワークシート Positiontype
+                name: WorksheetPositionType
                 uid: 'ExcelScript!ExcelScript.WorksheetPositionType:enum'
           - *ref_0
-          - name: アプリケーション
+          - name: Application
             uid: 'ExcelScript!ExcelScript.Application:interface'
           - *ref_1
           - *ref_2
           - *ref_3
           - *ref_4
-          - name: オートフィルター
+          - name: AutoFilter
             uid: 'ExcelScript!ExcelScript.AutoFilter:interface'
           - name: BasicDataValidation
             uid: 'ExcelScript!ExcelScript.BasicDataValidation:interface'
@@ -465,7 +465,7 @@ items:
             uid: 'ExcelScript!ExcelScript.CellPropertiesProtection:interface'
           - name: CellValueConditionalFormat
             uid: 'ExcelScript!ExcelScript.CellValueConditionalFormat:interface'
-          - name: グラフ
+          - name: Chart
             uid: 'ExcelScript!ExcelScript.Chart:interface'
           - name: ChartAreaFormat
             uid: 'ExcelScript!ExcelScript.ChartAreaFormat:interface'
@@ -567,7 +567,7 @@ items:
           - name: ChartTitleFormat
             uid: 'ExcelScript!ExcelScript.ChartTitleFormat:interface'
           - *ref_46
-          - name: ChartTrendline 曲線
+          - name: ChartTrendline
             uid: 'ExcelScript!ExcelScript.ChartTrendline:interface'
           - name: ChartTrendlineFormat
             uid: 'ExcelScript!ExcelScript.ChartTrendlineFormat:interface'
@@ -581,9 +581,9 @@ items:
           - *ref_50
           - name: ColorScaleConditionalFormat
             uid: 'ExcelScript!ExcelScript.ColorScaleConditionalFormat:interface'
-          - name: コメント
+          - name: Comment
             uid: 'ExcelScript!ExcelScript.Comment:interface'
-          - name: コメントについて
+          - name: CommentMention
             uid: 'ExcelScript!ExcelScript.CommentMention:interface'
           - name: CommentReply
             uid: 'ExcelScript!ExcelScript.CommentReply:interface'
@@ -602,7 +602,7 @@ items:
             uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat:interface'
           - name: ConditionalDataBarPositiveFormat
             uid: 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat:interface'
-          - name: Conditionalの配列
+          - name: ConditionalDataBarRule
             uid: 'ExcelScript!ExcelScript.ConditionalDataBarRule:interface'
           - name: ConditionalFormat
             uid: 'ExcelScript!ExcelScript.ConditionalFormat:interface'
@@ -648,7 +648,7 @@ items:
             uid: 'ExcelScript!ExcelScript.CustomProperty:interface'
           - name: CustomXmlPart
             uid: 'ExcelScript!ExcelScript.CustomXmlPart:interface'
-          - name: '[ファイル]'
+          - name: DataBarConditionalFormat
             uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat:interface'
           - name: DataPivotHierarchy
             uid: 'ExcelScript!ExcelScript.DataPivotHierarchy:interface'
@@ -674,7 +674,7 @@ items:
           - *ref_73
           - *ref_74
           - *ref_75
-          - name: フィルター
+          - name: Filter
             uid: 'ExcelScript!ExcelScript.Filter:interface'
           - name: FilterCriteria
             uid: 'ExcelScript!ExcelScript.FilterCriteria:interface'
@@ -702,14 +702,14 @@ items:
           - *ref_83
           - name: IconSetConditionalFormat
             uid: 'ExcelScript!ExcelScript.IconSetConditionalFormat:interface'
-          - name: イメージ
+          - name: Image
             uid: 'ExcelScript!ExcelScript.Image:interface'
           - *ref_84
           - *ref_85
           - name: IterativeCalculation
             uid: 'ExcelScript!ExcelScript.IterativeCalculation:interface'
           - *ref_86
-          - name: 線
+          - name: Line
             uid: 'ExcelScript!ExcelScript.Line:interface'
           - *ref_87
           - name: ListDataValidation
@@ -754,14 +754,14 @@ items:
           - *ref_97
           - name: PivotManualFilter
             uid: 'ExcelScript!ExcelScript.PivotManualFilter:interface'
-          - name: ピボットテーブル
+          - name: PivotTable
             uid: 'ExcelScript!ExcelScript.PivotTable:interface'
           - name: PivotTableStyle
             uid: 'ExcelScript!ExcelScript.PivotTableStyle:interface'
           - name: PivotValueFilter
             uid: 'ExcelScript!ExcelScript.PivotValueFilter:interface'
           - *ref_98
-          - name: 事前未定義 Cellstyle
+          - name: PredefinedCellStyle
             uid: 'ExcelScript!ExcelScript.PredefinedCellStyle:interface'
           - name: PresetCriteriaConditionalFormat
             uid: 'ExcelScript!ExcelScript.PresetCriteriaConditionalFormat:interface'
@@ -770,7 +770,7 @@ items:
           - *ref_101
           - *ref_102
           - *ref_103
-          - name: 範囲
+          - name: Range
             uid: 'ExcelScript!ExcelScript.Range:interface'
           - name: RangeAreas
             uid: 'ExcelScript!ExcelScript.RangeAreas:interface'
@@ -781,7 +781,7 @@ items:
             uid: 'ExcelScript!ExcelScript.RangeFill:interface'
           - name: RangeFont
             uid: 'ExcelScript!ExcelScript.RangeFont:interface'
-          - name: 範囲の形式
+          - name: RangeFormat
             uid: 'ExcelScript!ExcelScript.RangeFormat:interface'
           - name: RangeHyperlink
             uid: 'ExcelScript!ExcelScript.RangeHyperlink:interface'
@@ -832,7 +832,7 @@ items:
           - *ref_125
           - name: ShowAsRule
             uid: 'ExcelScript!ExcelScript.ShowAsRule:interface'
-          - name: スライサー
+          - name: Slicer
             uid: 'ExcelScript!ExcelScript.Slicer:interface'
           - name: SlicerItem
             uid: 'ExcelScript!ExcelScript.SlicerItem:interface'
@@ -872,7 +872,7 @@ items:
           - *ref_135
           - *ref_136
           - *ref_137
-          - name: ブック
+          - name: Workbook
             uid: 'ExcelScript!ExcelScript.Workbook:interface'
           - name: WorkbookProtection
             uid: 'ExcelScript!ExcelScript.WorkbookProtection:interface'
@@ -880,7 +880,7 @@ items:
             uid: 'ExcelScript!ExcelScript.WorkbookRangeAreas:interface'
           - name: Worksheet
             uid: 'ExcelScript!ExcelScript.Worksheet:interface'
-          - name: ワークシート Customproperty
+          - name: WorksheetCustomProperty
             uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty:interface'
           - name: WorksheetFreezePanes
             uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes:interface'
