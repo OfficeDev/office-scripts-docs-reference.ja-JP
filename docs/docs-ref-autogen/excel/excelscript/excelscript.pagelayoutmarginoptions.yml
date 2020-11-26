@@ -1,89 +1,90 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.PageLayoutMarginOptions:interface'
-    summary: ページレイアウトの余白のオプションを表します。
-    name: ExcelScript.PageLayoutMarginOptions
-    fullName: ExcelScript.PageLayoutMarginOptions
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.PageLayoutMarginOptions#bottom:member'
-      - 'ExcelScript!ExcelScript.PageLayoutMarginOptions#footer:member'
-      - 'ExcelScript!ExcelScript.PageLayoutMarginOptions#header:member'
-      - 'ExcelScript!ExcelScript.PageLayoutMarginOptions#left:member'
-      - 'ExcelScript!ExcelScript.PageLayoutMarginOptions#right:member'
-      - 'ExcelScript!ExcelScript.PageLayoutMarginOptions#top:member'
-  - uid: 'ExcelScript!ExcelScript.PageLayoutMarginOptions#bottom:member'
-    summary: 印刷に使用するために指定した単位で、ページレイアウトの下余白を指定します。
-    name: bottom
-    fullName: bottom
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'bottom?: number;'
-      return:
-        type:
-          - number
-  - uid: 'ExcelScript!ExcelScript.PageLayoutMarginOptions#footer:member'
-    summary: 印刷に使用する指定された単位でのページレイアウトのフッターの余白を指定します。
-    name: footer
-    fullName: footer
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'footer?: number;'
-      return:
-        type:
-          - number
-  - uid: 'ExcelScript!ExcelScript.PageLayoutMarginOptions#header:member'
-    summary: 印刷に使用する指定された単位でのページレイアウトのヘッダーの余白を指定します。
-    name: header
-    fullName: header
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'header?: number;'
-      return:
-        type:
-          - number
-  - uid: 'ExcelScript!ExcelScript.PageLayoutMarginOptions#left:member'
-    summary: 印刷に使用する指定された単位で、ページレイアウトの左余白を指定します。
-    name: left
-    fullName: left
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'left?: number;'
-      return:
-        type:
-          - number
-  - uid: 'ExcelScript!ExcelScript.PageLayoutMarginOptions#right:member'
-    summary: 印刷に使用する指定された単位でページレイアウトの右余白を指定します。
-    name: right
-    fullName: right
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'right?: number;'
-      return:
-        type:
-          - number
-  - uid: 'ExcelScript!ExcelScript.PageLayoutMarginOptions#top:member'
-    summary: 印刷に使用する指定された単位でのページレイアウトの上余白を指定します。
-    name: top
-    fullName: top
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'top?: number;'
-      return:
-        type:
-          - number
+### YamlMime:TSType
+name: ExcelScript.PageLayoutMarginOptions
+uid: ExcelScript!ExcelScript.PageLayoutMarginOptions:interface
+package: ExcelScript!
+fullName: ExcelScript.PageLayoutMarginOptions
+summary: ページレイアウトの余白のオプションを表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: bottom
+  uid: ExcelScript!ExcelScript.PageLayoutMarginOptions#bottom:member
+  package: ExcelScript!
+  fullName: bottom
+  summary: 印刷に使用するために指定した単位で、ページレイアウトの下余白を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'bottom?: number;'
+    return:
+      type: number
+- name: footer
+  uid: ExcelScript!ExcelScript.PageLayoutMarginOptions#footer:member
+  package: ExcelScript!
+  fullName: footer
+  summary: 印刷に使用する指定された単位でのページレイアウトのフッターの余白を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'footer?: number;'
+    return:
+      type: number
+- name: header
+  uid: ExcelScript!ExcelScript.PageLayoutMarginOptions#header:member
+  package: ExcelScript!
+  fullName: header
+  summary: 印刷に使用する指定された単位でのページレイアウトのヘッダーの余白を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'header?: number;'
+    return:
+      type: number
+- name: left
+  uid: ExcelScript!ExcelScript.PageLayoutMarginOptions#left:member
+  package: ExcelScript!
+  fullName: left
+  summary: 印刷に使用する指定された単位で、ページレイアウトの左余白を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'left?: number;'
+    return:
+      type: number
+- name: right
+  uid: ExcelScript!ExcelScript.PageLayoutMarginOptions#right:member
+  package: ExcelScript!
+  fullName: right
+  summary: 印刷に使用する指定された単位でページレイアウトの右余白を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'right?: number;'
+    return:
+      type: number
+- name: top
+  uid: ExcelScript!ExcelScript.PageLayoutMarginOptions#top:member
+  package: ExcelScript!
+  fullName: top
+  summary: 印刷に使用する指定された単位でのページレイアウトの上余白を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'top?: number;'
+    return:
+      type: number
+metadata:
+  ms.openlocfilehash: 3cd60d73c21b4ed612a6cd7b470c5e26f961056d
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415287"

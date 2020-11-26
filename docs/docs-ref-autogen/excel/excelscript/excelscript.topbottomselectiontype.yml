@@ -1,35 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.TopBottomSelectionType:enum'
-    summary: 上位/下位フィルターの単純な列挙体を使用して、上位 N または下位 N パーセント、数値、または値の合計でフィルター処理するかどうかを選択します。
-    name: ExcelScript.TopBottomSelectionType
-    fullName: ExcelScript.TopBottomSelectionType
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.TopBottomSelectionType.items:member'
-      - 'ExcelScript!ExcelScript.TopBottomSelectionType.percent:member'
-      - 'ExcelScript!ExcelScript.TopBottomSelectionType.sum:member'
-  - uid: 'ExcelScript!ExcelScript.TopBottomSelectionType.items:member'
-    summary: 選択された値によって測定された上位/下位 N 個のアイテムをフィルター処理します。
-    name: items
-    fullName: items
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.TopBottomSelectionType.percent:member'
-    summary: 選択された値で計測されるアイテムの上位/下位 N% にフィルターを適用します。
-    name: percent
-    fullName: percent
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.TopBottomSelectionType.sum:member'
-    summary: 選択した値で計測された上位/下位 N 合計をフィルター処理します。
-    name: sum
-    fullName: sum
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.TopBottomSelectionType
+uid: ExcelScript!ExcelScript.TopBottomSelectionType:enum
+package: ExcelScript!
+fullName: ExcelScript.TopBottomSelectionType
+summary: 上位/下位フィルターの単純な列挙体を使用して、上位 N または下位 N パーセント、数値、または値の合計でフィルター処理するかどうかを選択します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: items
+  uid: ExcelScript!ExcelScript.TopBottomSelectionType.items:member
+  package: ExcelScript!
+  summary: 選択された値によって測定された上位/下位 N 個のアイテムをフィルター処理します。
+- name: percent
+  uid: ExcelScript!ExcelScript.TopBottomSelectionType.percent:member
+  package: ExcelScript!
+  summary: 選択された値で計測されるアイテムの上位/下位 N% にフィルターを適用します。
+- name: sum
+  uid: ExcelScript!ExcelScript.TopBottomSelectionType.sum:member
+  package: ExcelScript!
+  summary: 選択した値で計測された上位/下位 N 合計をフィルター処理します。
+metadata:
+  ms.openlocfilehash: 4772398cc7e7f7f89cef3dcb6148c47eab247ce4
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415170"

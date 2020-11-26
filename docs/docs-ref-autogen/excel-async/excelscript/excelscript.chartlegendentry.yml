@@ -1,108 +1,108 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartLegendEntry:interface'
-    summary: LegendEntryCollection の legendEntry を表します。
-    name: Excel.ChartLegendEntry
-    fullName: Excel.ChartLegendEntry
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.ChartLegendEntry#height:member'
-      - 'excel!Excel.ChartLegendEntry#index:member'
-      - 'excel!Excel.ChartLegendEntry#left:member'
-      - 'excel!Excel.ChartLegendEntry#load:member(1)'
-      - 'excel!Excel.ChartLegendEntry#top:member'
-      - 'excel!Excel.ChartLegendEntry#visible:member'
-      - 'excel!Excel.ChartLegendEntry#width:member'
-  - uid: 'excel!Excel.ChartLegendEntry#height:member'
-    summary: グラフの凡例の legendEntry の高さを指定します。
-    name: height
-    fullName: height
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly height: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ChartLegendEntry#index:member'
-    summary: グラフの凡例の legendEntry のインデックスを指定します。
-    name: index
-    fullName: index
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly index: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ChartLegendEntry#left:member'
-    summary: グラフの legendEntry の左側を指定します。
-    name: left
-    fullName: left
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly left: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ChartLegendEntry#load:member(1)'
-    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.ChartLegendEntry#top:member'
-    summary: グラフの legendEntry の上部を指定します。
-    name: top
-    fullName: top
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly top: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ChartLegendEntry#visible:member'
-    summary: グラフの凡例エントリを表示するかどうかを表します。
-    name: visible
-    fullName: visible
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'visible: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.ChartLegendEntry#width:member'
-    summary: グラフの凡例に表示される凡例エントリの幅を表します。
-    name: width
-    fullName: width
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly width: number;'
-      return:
-        type:
-          - number
+### YamlMime:TSType
+name: Excel.ChartLegendEntry
+uid: excel!Excel.ChartLegendEntry:interface
+package: excel!
+fullName: Excel.ChartLegendEntry
+summary: LegendEntryCollection の legendEntry を表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: height
+  uid: excel!Excel.ChartLegendEntry#height:member
+  package: excel!
+  fullName: height
+  summary: グラフの凡例の legendEntry の高さを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly height: number;'
+    return:
+      type: number
+- name: index
+  uid: excel!Excel.ChartLegendEntry#index:member
+  package: excel!
+  fullName: index
+  summary: グラフの凡例の legendEntry のインデックスを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly index: number;'
+    return:
+      type: number
+- name: left
+  uid: excel!Excel.ChartLegendEntry#left:member
+  package: excel!
+  fullName: left
+  summary: グラフの legendEntry の左側を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly left: number;'
+    return:
+      type: number
+- name: top
+  uid: excel!Excel.ChartLegendEntry#top:member
+  package: excel!
+  fullName: top
+  summary: グラフの legendEntry の上部を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly top: number;'
+    return:
+      type: number
+- name: visible
+  uid: excel!Excel.ChartLegendEntry#visible:member
+  package: excel!
+  fullName: visible
+  summary: グラフの凡例エントリを表示するかどうかを表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'visible: boolean;'
+    return:
+      type: boolean
+- name: width
+  uid: excel!Excel.ChartLegendEntry#width:member
+  package: excel!
+  fullName: width
+  summary: グラフの凡例に表示される凡例エントリの幅を表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly width: number;'
+    return:
+      type: number
+methods:
+- name: load(propertyNames)
+  uid: excel!Excel.ChartLegendEntry#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: オブジェクトの指定されたプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、`context.sync()` を呼び出す必要があります。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: d299196eb6f59b66ae44afcb78d2982324d2388d
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49414972"

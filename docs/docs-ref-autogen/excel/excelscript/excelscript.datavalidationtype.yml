@@ -1,91 +1,57 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.DataValidationType:enum'
-    summary: データの入力規則の種類の列挙を表します。
-    name: ExcelScript.DataValidationType
-    fullName: ExcelScript.DataValidationType
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.DataValidationType.custom:member'
-      - 'ExcelScript!ExcelScript.DataValidationType.date:member'
-      - 'ExcelScript!ExcelScript.DataValidationType.decimal:member'
-      - 'ExcelScript!ExcelScript.DataValidationType.inconsistent:member'
-      - 'ExcelScript!ExcelScript.DataValidationType.list:member'
-      - 'ExcelScript!ExcelScript.DataValidationType.mixedCriteria:member'
-      - 'ExcelScript!ExcelScript.DataValidationType.none:member'
-      - 'ExcelScript!ExcelScript.DataValidationType.textLength:member'
-      - 'ExcelScript!ExcelScript.DataValidationType.time:member'
-      - 'ExcelScript!ExcelScript.DataValidationType.wholeNumber:member'
-  - uid: 'ExcelScript!ExcelScript.DataValidationType.custom:member'
-    summary: カスタムデータ入力規則の種類
-    name: custom
-    fullName: custom
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.DataValidationType.date:member'
-    summary: 日付データ入力規則の種類
-    name: date
-    fullName: date
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.DataValidationType.decimal:member'
-    summary: Decimal データ入力規則
-    name: decimal
-    fullName: decimal
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.DataValidationType.inconsistent:member'
-    summary: 不整合は、範囲のデータ検証が一貫していない (異なるセルに異なるルールがある) ことを意味します。
-    name: inconsistent
-    fullName: inconsistent
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.DataValidationType.list:member'
-    summary: リストデータ入力規則の種類
-    name: list
-    fullName: list
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.DataValidationType.mixedCriteria:member'
-    summary: MixedCriteria は、範囲にデータの入力規則があり、一部のセルには含まれないことを意味します。
-    name: mixedCriteria
-    fullName: mixedCriteria
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.DataValidationType.none:member'
-    summary: None は、任意の値を許可することを意味するので、範囲にデータの入力規則はありません。
-    name: none
-    fullName: none
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.DataValidationType.textLength:member'
-    summary: テキスト長データ入力規則の種類
-    name: textLength
-    fullName: textLength
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.DataValidationType.time:member'
-    summary: 時間データの入力規則の種類
-    name: time
-    fullName: time
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.DataValidationType.wholeNumber:member'
-    summary: 整数型のデータ入力規則
-    name: wholeNumber
-    fullName: wholeNumber
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.DataValidationType
+uid: ExcelScript!ExcelScript.DataValidationType:enum
+package: ExcelScript!
+fullName: ExcelScript.DataValidationType
+summary: データの入力規則の種類の列挙を表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: custom
+  uid: ExcelScript!ExcelScript.DataValidationType.custom:member
+  package: ExcelScript!
+  summary: カスタムデータ入力規則の種類
+- name: date
+  uid: ExcelScript!ExcelScript.DataValidationType.date:member
+  package: ExcelScript!
+  summary: 日付データ入力規則の種類
+- name: decimal
+  uid: ExcelScript!ExcelScript.DataValidationType.decimal:member
+  package: ExcelScript!
+  summary: Decimal データ入力規則
+- name: inconsistent
+  uid: ExcelScript!ExcelScript.DataValidationType.inconsistent:member
+  package: ExcelScript!
+  summary: 不整合は、範囲のデータ検証が一貫していない (異なるセルに異なるルールがある) ことを意味します。
+- name: list
+  uid: ExcelScript!ExcelScript.DataValidationType.list:member
+  package: ExcelScript!
+  summary: リストデータ入力規則の種類
+- name: mixedCriteria
+  uid: ExcelScript!ExcelScript.DataValidationType.mixedCriteria:member
+  package: ExcelScript!
+  summary: MixedCriteria は、範囲にデータの入力規則があり、一部のセルには含まれないことを意味します。
+- name: none
+  uid: ExcelScript!ExcelScript.DataValidationType.none:member
+  package: ExcelScript!
+  summary: None は、任意の値を許可することを意味するので、範囲にデータの入力規則はありません。
+- name: textLength
+  uid: ExcelScript!ExcelScript.DataValidationType.textLength:member
+  package: ExcelScript!
+  summary: テキスト長データ入力規則の種類
+- name: time
+  uid: ExcelScript!ExcelScript.DataValidationType.time:member
+  package: ExcelScript!
+  summary: 時間データの入力規則の種類
+- name: wholeNumber
+  uid: ExcelScript!ExcelScript.DataValidationType.wholeNumber:member
+  package: ExcelScript!
+  summary: 整数型のデータ入力規則
+metadata:
+  ms.openlocfilehash: a8c45f27ff01ae3d2cdd162b58f74388bdb1484a
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415457"

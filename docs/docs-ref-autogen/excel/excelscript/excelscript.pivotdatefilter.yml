@@ -1,96 +1,90 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.PivotDateFilter:interface'
-    summary: ピボットフィールドに適用する日付フィルターの構成可能なテンプレート。 は、 `condition` フィルターを操作するために設定する必要のある条件を定義します。
-    name: ExcelScript.PivotDateFilter
-    fullName: ExcelScript.PivotDateFilter
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.PivotDateFilter#comparator:member'
-      - 'ExcelScript!ExcelScript.PivotDateFilter#condition:member'
-      - 'ExcelScript!ExcelScript.PivotDateFilter#exclusive:member'
-      - 'ExcelScript!ExcelScript.PivotDateFilter#lowerBound:member'
-      - 'ExcelScript!ExcelScript.PivotDateFilter#upperBound:member'
-      - 'ExcelScript!ExcelScript.PivotDateFilter#wholeDays:member'
-  - uid: 'ExcelScript!ExcelScript.PivotDateFilter#comparator:member'
-    summary: 比較演算子は、他の値を比較する静的な値です。 比較の種類は、条件によって定義されます。
-    name: comparator
-    fullName: comparator
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'comparator?: FilterDatetime;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.FilterDatetime:interface'
-  - uid: 'ExcelScript!ExcelScript.PivotDateFilter#condition:member'
-    summary: 必要なフィルター条件を定義するフィルターの条件を指定します。
-    name: condition
-    fullName: condition
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'condition: DateFilterCondition;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.DateFilterCondition:enum'
-  - uid: 'ExcelScript!ExcelScript.PivotDateFilter#exclusive:member'
-    summary: True の場合、フィルターは条件に一致するアイテムを *除外* します。 既定では false (条件に一致するアイテムを含むフィルター)。
-    name: exclusive
-    fullName: exclusive
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'exclusive?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.PivotDateFilter#lowerBound:member'
-    summary: フィルター条件の範囲の下限を指定し `Between` ます。
-    name: lowerBound
-    fullName: lowerBound
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'lowerBound?: FilterDatetime;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.FilterDatetime:interface'
-  - uid: 'ExcelScript!ExcelScript.PivotDateFilter#upperBound:member'
-    summary: フィルター条件の範囲の上限を指定し `Between` ます。
-    name: upperBound
-    fullName: upperBound
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'upperBound?: FilterDatetime;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.FilterDatetime:interface'
-  - uid: 'ExcelScript!ExcelScript.PivotDateFilter#wholeDays:member'
-    summary: '`Equals` の場合<!-- -->, `Before`<!-- -->, `After`<!-- -->、および `Between` フィルター条件は、比較を日単位で行う必要があるかどうかを示します。'
-    name: wholeDays
-    fullName: wholeDays
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'wholeDays?: boolean;'
-      return:
-        type:
-          - boolean
-references:
-  - uid: 'ExcelScript!ExcelScript.FilterDatetime:interface'
-    name: FilterDatetime
-    fullName: ExcelScript.FilterDatetime
-  - uid: 'ExcelScript!ExcelScript.DateFilterCondition:enum'
-    name: DateFilterCondition
-    fullName: ExcelScript.DateFilterCondition
+### YamlMime:TSType
+name: ExcelScript.PivotDateFilter
+uid: ExcelScript!ExcelScript.PivotDateFilter:interface
+package: ExcelScript!
+fullName: ExcelScript.PivotDateFilter
+summary: ピボットフィールドに適用する日付フィルターの構成可能なテンプレート。 は、 `condition` フィルターを操作するために設定する必要のある条件を定義します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: comparator
+  uid: ExcelScript!ExcelScript.PivotDateFilter#comparator:member
+  package: ExcelScript!
+  fullName: comparator
+  summary: 比較演算子は、他の値を比較する静的な値です。 比較の種類は、条件によって定義されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'comparator?: FilterDatetime;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.FilterDatetime:interface" />
+- name: condition
+  uid: ExcelScript!ExcelScript.PivotDateFilter#condition:member
+  package: ExcelScript!
+  fullName: condition
+  summary: 必要なフィルター条件を定義するフィルターの条件を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'condition: DateFilterCondition;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.DateFilterCondition:enum" />
+- name: exclusive
+  uid: ExcelScript!ExcelScript.PivotDateFilter#exclusive:member
+  package: ExcelScript!
+  fullName: exclusive
+  summary: True の場合、フィルターは条件に一致するアイテムを *除外* します。 既定では false (条件に一致するアイテムを含むフィルター)。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'exclusive?: boolean;'
+    return:
+      type: boolean
+- name: lowerBound
+  uid: ExcelScript!ExcelScript.PivotDateFilter#lowerBound:member
+  package: ExcelScript!
+  fullName: lowerBound
+  summary: フィルター条件の範囲の下限を指定し `Between` ます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'lowerBound?: FilterDatetime;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.FilterDatetime:interface" />
+- name: upperBound
+  uid: ExcelScript!ExcelScript.PivotDateFilter#upperBound:member
+  package: ExcelScript!
+  fullName: upperBound
+  summary: フィルター条件の範囲の上限を指定し `Between` ます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'upperBound?: FilterDatetime;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.FilterDatetime:interface" />
+- name: wholeDays
+  uid: ExcelScript!ExcelScript.PivotDateFilter#wholeDays:member
+  package: ExcelScript!
+  fullName: wholeDays
+  summary: '`Equals` の場合<!-- -->, `Before`<!-- -->, `After`<!-- -->、および `Between` フィルター条件は、比較を日単位で行う必要があるかどうかを示します。'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'wholeDays?: boolean;'
+    return:
+      type: boolean
+metadata:
+  ms.openlocfilehash: 50b2f14b12d33ae4786ce8fd4838d8c8ade4a3bd
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415275"

@@ -1,32 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ConditionalIconCriterionOperator:enum'
-    summary: 各アイコンの条件の演算子を表します。
-    name: ExcelScript.ConditionalIconCriterionOperator
-    fullName: ExcelScript.ConditionalIconCriterionOperator
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ConditionalIconCriterionOperator.greaterThan:member'
-      - 'ExcelScript!ExcelScript.ConditionalIconCriterionOperator.greaterThanOrEqual:member'
-      - 'ExcelScript!ExcelScript.ConditionalIconCriterionOperator.invalid:member'
-  - uid: 'ExcelScript!ExcelScript.ConditionalIconCriterionOperator.greaterThan:member'
-    name: greaterThan
-    fullName: greaterThan
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ConditionalIconCriterionOperator.greaterThanOrEqual:member'
-    name: greaterThanOrEqual
-    fullName: greaterThanOrEqual
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ConditionalIconCriterionOperator.invalid:member'
-    name: invalid
-    fullName: invalid
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.ConditionalIconCriterionOperator
+uid: ExcelScript!ExcelScript.ConditionalIconCriterionOperator:enum
+package: ExcelScript!
+fullName: ExcelScript.ConditionalIconCriterionOperator
+summary: 各アイコンの条件の演算子を表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: greaterThan
+  uid: ExcelScript!ExcelScript.ConditionalIconCriterionOperator.greaterThan:member
+  package: ExcelScript!
+  summary: ''
+- name: greaterThanOrEqual
+  uid: ExcelScript!ExcelScript.ConditionalIconCriterionOperator.greaterThanOrEqual:member
+  package: ExcelScript!
+  summary: ''
+- name: invalid
+  uid: ExcelScript!ExcelScript.ConditionalIconCriterionOperator.invalid:member
+  package: ExcelScript!
+  summary: ''
+metadata:
+  ms.openlocfilehash: ea40b4785d9b1d8dd45a30cc93e03230618e22a6
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415786"

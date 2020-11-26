@@ -1,34 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ArrowheadWidth:enum'
-    name: Excel.ArrowheadWidth
-    fullName: Excel.ArrowheadWidth
-    langs:
-      - typeScript
-    type: enum
-    package: excel!
-    children:
-      - 'excel!Excel.ArrowheadWidth.medium:member'
-      - 'excel!Excel.ArrowheadWidth.narrow:member'
-      - 'excel!Excel.ArrowheadWidth.wide:member'
-  - uid: 'excel!Excel.ArrowheadWidth.medium:member'
-    name: medium
-    fullName: medium
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Medium"'
-  - uid: 'excel!Excel.ArrowheadWidth.narrow:member'
-    name: narrow
-    fullName: narrow
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Narrow"'
-  - uid: 'excel!Excel.ArrowheadWidth.wide:member'
-    name: wide
-    fullName: wide
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Wide"'
+### YamlMime:TSEnum
+name: Excel.ArrowheadWidth
+uid: excel!Excel.ArrowheadWidth:enum
+package: excel!
+fullName: Excel.ArrowheadWidth
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: medium
+  uid: excel!Excel.ArrowheadWidth.medium:member
+  package: excel!
+  summary: ''
+- name: narrow
+  uid: excel!Excel.ArrowheadWidth.narrow:member
+  package: excel!
+  summary: ''
+- name: wide
+  uid: excel!Excel.ArrowheadWidth.wide:member
+  package: excel!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 9cddc64ab1235a47ceae256602bef25e9874c40a
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49413906"

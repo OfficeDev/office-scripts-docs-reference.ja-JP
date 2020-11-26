@@ -1,51 +1,37 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.PivotFilterType:enum'
-    summary: PivotField のフィルターの種類を表す単純な列挙。
-    name: ExcelScript.PivotFilterType
-    fullName: ExcelScript.PivotFilterType
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.PivotFilterType.date:member'
-      - 'ExcelScript!ExcelScript.PivotFilterType.label:member'
-      - 'ExcelScript!ExcelScript.PivotFilterType.manual:member'
-      - 'ExcelScript!ExcelScript.PivotFilterType.unknown:member'
-      - 'ExcelScript!ExcelScript.PivotFilterType.value:member'
-  - uid: 'ExcelScript!ExcelScript.PivotFilterType.date:member'
-    summary: 'PivotItems は、ラベルの代わりに日付を使用してフィルター処理します。 注: PivotField には、同時にラベルフィルターと日付フィルターを適用することはできません。'
-    name: date
-    fullName: date
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.PivotFilterType.label:member'
-    summary: 'ラベルに基づいて PivotItems をフィルター処理します。 注: PivotField には、同時にラベルフィルターと日付フィルターを適用することはできません。'
-    name: label
-    fullName: label
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.PivotFilterType.manual:member'
-    summary: 手動で選択した PivotItems をピボットテーブルからフィルター処理します。
-    name: manual
-    fullName: manual
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.PivotFilterType.unknown:member'
-    summary: PivotFilterType が不明であるか、サポートされていません。
-    name: unknown
-    fullName: unknown
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.PivotFilterType.value:member'
-    summary: DataPivotHierarchy に関して、PivotItem の値に基づいてフィルター処理を行います。
-    name: value
-    fullName: value
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.PivotFilterType
+uid: ExcelScript!ExcelScript.PivotFilterType:enum
+package: ExcelScript!
+fullName: ExcelScript.PivotFilterType
+summary: PivotField のフィルターの種類を表す単純な列挙。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: date
+  uid: ExcelScript!ExcelScript.PivotFilterType.date:member
+  package: ExcelScript!
+  summary: 'PivotItems は、ラベルの代わりに日付を使用してフィルター処理します。 注: PivotField には、同時にラベルフィルターと日付フィルターを適用することはできません。'
+- name: label
+  uid: ExcelScript!ExcelScript.PivotFilterType.label:member
+  package: ExcelScript!
+  summary: 'ラベルに基づいて PivotItems をフィルター処理します。 注: PivotField には、同時にラベルフィルターと日付フィルターを適用することはできません。'
+- name: manual
+  uid: ExcelScript!ExcelScript.PivotFilterType.manual:member
+  package: ExcelScript!
+  summary: 手動で選択した PivotItems をピボットテーブルからフィルター処理します。
+- name: unknown
+  uid: ExcelScript!ExcelScript.PivotFilterType.unknown:member
+  package: ExcelScript!
+  summary: PivotFilterType が不明であるか、サポートされていません。
+- name: value
+  uid: ExcelScript!ExcelScript.PivotFilterType.value:member
+  package: ExcelScript!
+  summary: DataPivotHierarchy に関して、PivotItem の値に基づいてフィルター処理を行います。
+metadata:
+  ms.openlocfilehash: 3c8b99c254d001d641d6a9cb6ae7de55c404b69a
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415247"

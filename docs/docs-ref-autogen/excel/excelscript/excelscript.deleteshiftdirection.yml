@@ -1,24 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.DeleteShiftDirection:enum'
-    name: ExcelScript.DeleteShiftDirection
-    fullName: ExcelScript.DeleteShiftDirection
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.DeleteShiftDirection.left:member'
-      - 'ExcelScript!ExcelScript.DeleteShiftDirection.up:member'
-  - uid: 'ExcelScript!ExcelScript.DeleteShiftDirection.left:member'
-    name: left
-    fullName: left
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.DeleteShiftDirection.up:member'
-    name: up
-    fullName: up
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.DeleteShiftDirection
+uid: ExcelScript!ExcelScript.DeleteShiftDirection:enum
+package: ExcelScript!
+fullName: ExcelScript.DeleteShiftDirection
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: left
+  uid: ExcelScript!ExcelScript.DeleteShiftDirection.left:member
+  package: ExcelScript!
+  summary: ''
+- name: up
+  uid: ExcelScript!ExcelScript.DeleteShiftDirection.up:member
+  package: ExcelScript!
+  summary: ''
+metadata:
+  ms.openlocfilehash: efcb3da2843feebb79f90d7c030aa42ab809b0de
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415422"

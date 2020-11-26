@@ -1,34 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.PivotLayoutType:enum'
-    name: ExcelScript.PivotLayoutType
-    fullName: ExcelScript.PivotLayoutType
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.PivotLayoutType.compact:member'
-      - 'ExcelScript!ExcelScript.PivotLayoutType.outline:member'
-      - 'ExcelScript!ExcelScript.PivotLayoutType.tabular:member'
-  - uid: 'ExcelScript!ExcelScript.PivotLayoutType.compact:member'
-    summary: 同じ列の次のフィールドのラベルを含む、水平方向に圧縮されたフォーム。
-    name: compact
-    fullName: compact
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.PivotLayoutType.outline:member'
-    summary: 内側のフィールドのアイテムは、外部フィールドのアイテムと同じ行にあり、小計は常に下にあります。
-    name: outline
-    fullName: outline
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.PivotLayoutType.tabular:member'
-    summary: 内側のフィールドのアイテムは、常に、外部フィールドのアイテムを基準に新しい行になります。
-    name: tabular
-    fullName: tabular
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.PivotLayoutType
+uid: ExcelScript!ExcelScript.PivotLayoutType:enum
+package: ExcelScript!
+fullName: ExcelScript.PivotLayoutType
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: compact
+  uid: ExcelScript!ExcelScript.PivotLayoutType.compact:member
+  package: ExcelScript!
+  summary: 同じ列の次のフィールドのラベルを含む、水平方向に圧縮されたフォーム。
+- name: outline
+  uid: ExcelScript!ExcelScript.PivotLayoutType.outline:member
+  package: ExcelScript!
+  summary: 内側のフィールドのアイテムは、外部フィールドのアイテムと同じ行にあり、小計は常に下にあります。
+- name: tabular
+  uid: ExcelScript!ExcelScript.PivotLayoutType.tabular:member
+  package: ExcelScript!
+  summary: 内側のフィールドのアイテムは、常に、外部フィールドのアイテムを基準に新しい行になります。
+metadata:
+  ms.openlocfilehash: 2c698c1cea3b728857723dbdd00474d8723b9569
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415177"

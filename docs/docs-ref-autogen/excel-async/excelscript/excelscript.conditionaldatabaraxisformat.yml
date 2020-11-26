@@ -1,35 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ConditionalDataBarAxisFormat:enum'
-    summary: データバーの軸の書式設定オプションを表します。
-    name: Excel.ConditionalDataBarAxisFormat
-    fullName: Excel.ConditionalDataBarAxisFormat
-    langs:
-      - typeScript
-    type: enum
-    package: excel!
-    children:
-      - 'excel!Excel.ConditionalDataBarAxisFormat.automatic:member'
-      - 'excel!Excel.ConditionalDataBarAxisFormat.cellMidPoint:member'
-      - 'excel!Excel.ConditionalDataBarAxisFormat.none:member'
-  - uid: 'excel!Excel.ConditionalDataBarAxisFormat.automatic:member'
-    name: automatic
-    fullName: automatic
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Automatic"'
-  - uid: 'excel!Excel.ConditionalDataBarAxisFormat.cellMidPoint:member'
-    name: cellMidPoint
-    fullName: cellMidPoint
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"CellMidPoint"'
-  - uid: 'excel!Excel.ConditionalDataBarAxisFormat.none:member'
-    name: none
-    fullName: none
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"None"'
+### YamlMime:TSEnum
+name: Excel.ConditionalDataBarAxisFormat
+uid: excel!Excel.ConditionalDataBarAxisFormat:enum
+package: excel!
+fullName: Excel.ConditionalDataBarAxisFormat
+summary: データバーの軸の書式設定オプションを表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: automatic
+  uid: excel!Excel.ConditionalDataBarAxisFormat.automatic:member
+  package: excel!
+  summary: ''
+- name: cellMidPoint
+  uid: excel!Excel.ConditionalDataBarAxisFormat.cellMidPoint:member
+  package: excel!
+  summary: ''
+- name: none
+  uid: excel!Excel.ConditionalDataBarAxisFormat.none:member
+  package: excel!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 1e8f2c46c39a04026fbeb6dd48e28b62dcd37471
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49414294"

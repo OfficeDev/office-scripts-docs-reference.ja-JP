@@ -1,47 +1,48 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartFormatString:interface'
-    summary: ChartTitle オブジェクト、ChartAxisTitle オブジェクトなどのテキストを含むグラフ関連オブジェクト内のサブ文字列を表します。
-    name: Excel.ChartFormatString
-    fullName: Excel.ChartFormatString
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.ChartFormatString#font:member'
-      - 'excel!Excel.ChartFormatString#load:member(1)'
-  - uid: 'excel!Excel.ChartFormatString#font:member'
-    summary: フォント名、フォントサイズ、色など、グラフの文字オブジェクトのフォントの属性を表します。
-    name: font
-    fullName: font
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly font: ChartFont;'
-      return:
-        type:
-          - 'excel!Excel.ChartFont:interface'
-  - uid: 'excel!Excel.ChartFormatString#load:member(1)'
-    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
-          type:
-            - 'string | string[]'
-references:
-  - uid: 'excel!Excel.ChartFont:interface'
-    name: ChartFont
-    fullName: Excel.ChartFont
+### YamlMime:TSType
+name: Excel.ChartFormatString
+uid: excel!Excel.ChartFormatString:interface
+package: excel!
+fullName: Excel.ChartFormatString
+summary: ChartTitle オブジェクト、ChartAxisTitle オブジェクトなどのテキストを含むグラフ関連オブジェクト内のサブ文字列を表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: font
+  uid: excel!Excel.ChartFormatString#font:member
+  package: excel!
+  fullName: font
+  summary: フォント名、フォントサイズ、色など、グラフの文字オブジェクトのフォントの属性を表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly font: ChartFont;'
+    return:
+      type: <xref uid="excel!Excel.ChartFont:interface" />
+methods:
+- name: load(propertyNames)
+  uid: excel!Excel.ChartFormatString#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: オブジェクトの指定されたプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、`context.sync()` を呼び出す必要があります。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 91ce38cd735cb376d2946e60ab415b2284354214
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49414993"

@@ -1,32 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.DataValidationAlertStyle:enum'
-    summary: データの入力規則のエラーの通知のスタイルを表します。 既定値は "Stop" です。
-    name: ExcelScript.DataValidationAlertStyle
-    fullName: ExcelScript.DataValidationAlertStyle
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.DataValidationAlertStyle.information:member'
-      - 'ExcelScript!ExcelScript.DataValidationAlertStyle.stop:member'
-      - 'ExcelScript!ExcelScript.DataValidationAlertStyle.warning:member'
-  - uid: 'ExcelScript!ExcelScript.DataValidationAlertStyle.information:member'
-    name: information
-    fullName: information
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.DataValidationAlertStyle.stop:member'
-    name: stop
-    fullName: stop
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.DataValidationAlertStyle.warning:member'
-    name: warning
-    fullName: warning
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.DataValidationAlertStyle
+uid: ExcelScript!ExcelScript.DataValidationAlertStyle:enum
+package: ExcelScript!
+fullName: ExcelScript.DataValidationAlertStyle
+summary: データの入力規則のエラーの通知のスタイルを表します。 既定値は "Stop" です。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: information
+  uid: ExcelScript!ExcelScript.DataValidationAlertStyle.information:member
+  package: ExcelScript!
+  summary: ''
+- name: stop
+  uid: ExcelScript!ExcelScript.DataValidationAlertStyle.stop:member
+  package: ExcelScript!
+  summary: ''
+- name: warning
+  uid: ExcelScript!ExcelScript.DataValidationAlertStyle.warning:member
+  package: ExcelScript!
+  summary: ''
+metadata:
+  ms.openlocfilehash: c35f438f37072025e91ac3f1abd5f4b66a835307
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415555"

@@ -1,291 +1,204 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Application:interface'
-    summary: ブックを管理する Excel アプリケーションを表します。
-    name: Excel.Application
-    fullName: Excel.Application
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.Application#calculate:member(1)'
-      - 'excel!Excel.Application#calculationEngineVersion:member'
-      - 'excel!Excel.Application#calculationMode:member'
-      - 'excel!Excel.Application#calculationState:member'
-      - 'excel!Excel.Application#cultureInfo:member'
-      - 'excel!Excel.Application#decimalSeparator:member'
-      - 'excel!Excel.Application#iterativeCalculation:member'
-      - 'excel!Excel.Application#load:member(1)'
-      - 'excel!Excel.Application#suspendApiCalculationUntilNextSync:member(1)'
-      - 'excel!Excel.Application#suspendScreenUpdatingUntilNextSync:member(1)'
-      - 'excel!Excel.Application#thousandsSeparator:member'
-      - 'excel!Excel.Application#useSystemSeparators:member'
-  - uid: 'excel!Excel.Application#calculate:member(1)'
-    summary: Excel で現在開いているすべてのブックを再計算します。
-    name: calculate(calculationType)
-    fullName: calculate(calculationType)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        calculate(
-                    calculationType:
-                        | CalculationType
-                        | "Recalculate"
-                        | "Full"
-                        | "FullRebuild"
-                ): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: calculationType
-          description: 使用する計算の種類を指定します。 詳細については、「Excel の種類」を参照してください。
-          type:
-            - 'excel!Excel.Application#calculate~0:complex'
-  - uid: 'excel!Excel.Application#calculationEngineVersion:member'
-    summary: 最後の完全な再計算に使用した Excel 計算エンジンのバージョンを返します。
-    name: calculationEngineVersion
-    fullName: calculationEngineVersion
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly calculationEngineVersion: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.Application#calculationMode:member'
-    summary: CalculationMode の定数によって定義されている、ブックで使用されている計算モードを返します。 可能な値は次のとおりです。`Automatic`<!-- -->、Excel は再計算を制御します。`AutomaticExceptTables`<!-- -->、Excel は再計算を制御しますが、テーブル内の変更は無視します。`Manual`<!-- -->、ユーザーが要求すると、計算が行われます。
-    name: calculationMode
-    fullName: calculationMode
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: |-
-        calculationMode:
-                    | CalculationMode
+### YamlMime:TSType
+name: Excel.Application
+uid: excel!Excel.Application:interface
+package: excel!
+fullName: Excel.Application
+summary: ブックを管理する Excel アプリケーションを表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: calculationEngineVersion
+  uid: excel!Excel.Application#calculationEngineVersion:member
+  package: excel!
+  fullName: calculationEngineVersion
+  summary: 最後の完全な再計算に使用した Excel 計算エンジンのバージョンを返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly calculationEngineVersion: number;'
+    return:
+      type: number
+- name: calculationMode
+  uid: excel!Excel.Application#calculationMode:member
+  package: excel!
+  fullName: calculationMode
+  summary: CalculationMode の定数によって定義されている、ブックで使用されている計算モードを返します。 可能な値は次のとおりです。 `Automatic`<!-- -->、Excel は再計算を制御します。 `AutomaticExceptTables`<!-- -->、Excel は再計算を制御しますが、テーブル内の変更は無視します。 `Manual`<!-- -->、ユーザーが要求すると、計算が行われます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      calculationMode:
+                  | CalculationMode
+                  | "Automatic"
+                  | "AutomaticExceptTables"
+                  | "Manual";
+    return:
+      type: >-
+        | <xref uid="excel!Excel.CalculationMode:enum" />
                     | "Automatic"
                     | "AutomaticExceptTables"
-                    | "Manual";
-      return:
-        type:
-          - 'excel!Excel.Application#calculationMode~0:complex'
-  - uid: 'excel!Excel.Application#calculationState:member'
-    summary: アプリケーションの計算の状態を返します。 詳細については、Excel.CalculationState をご覧ください。
-    name: calculationState
-    fullName: calculationState
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: |-
-        readonly calculationState:
-                    | CalculationState
+                    | "Manual"
+- name: calculationState
+  uid: excel!Excel.Application#calculationState:member
+  package: excel!
+  fullName: calculationState
+  summary: アプリケーションの計算の状態を返します。 詳細については、Excel.CalculationState をご覧ください。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      readonly calculationState:
+                  | CalculationState
+                  | "Done"
+                  | "Calculating"
+                  | "Pending";
+    return:
+      type: >-
+        | <xref uid="excel!Excel.CalculationState:enum" />
                     | "Done"
                     | "Calculating"
-                    | "Pending";
-      return:
-        type:
-          - 'excel!Excel.Application#calculationState~0:complex'
-  - uid: 'excel!Excel.Application#cultureInfo:member'
-    summary: 現在のシステムのカルチャ設定に基づく情報を提供します。 これには、カルチャ名、数値形式、およびその他のカルチャに依存する設定が含まれます。
-    name: cultureInfo
-    fullName: cultureInfo
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly cultureInfo: CultureInfo;'
-      return:
-        type:
-          - 'excel!Excel.CultureInfo:interface'
-  - uid: 'excel!Excel.Application#decimalSeparator:member'
-    summary: 数値の小数点の記号として使用される文字列を取得します。 これは、Excel のローカル設定に基づいています。
-    name: decimalSeparator
-    fullName: decimalSeparator
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly decimalSeparator: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.Application#iterativeCalculation:member'
-    summary: 反復計算の設定を返します。 Windows と Mac の Excel では、設定は Excel アプリケーションに適用されます。 Web 上の Excel およびその他のプラットフォームでは、設定は作業中のブックに適用されます。
-    name: iterativeCalculation
-    fullName: iterativeCalculation
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly iterativeCalculation: IterativeCalculation;'
-      return:
-        type:
-          - 'excel!Excel.IterativeCalculation:interface'
-  - uid: 'excel!Excel.Application#load:member(1)'
-    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.Application#suspendApiCalculationUntilNextSync:member(1)'
-    summary: 次の "context.sync()" が呼び出されるまで、計算を中断します。設定されると、依存関係が確実に伝達されるようにブックを再計算するのは開発者の責任です。
-    name: suspendApiCalculationUntilNextSync()
-    fullName: suspendApiCalculationUntilNextSync()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'suspendApiCalculationUntilNextSync(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.Application#suspendScreenUpdatingUntilNextSync:member(1)'
-    summary: |-
-      次の呼び出しが呼び出されるまで、画面の更新 `context.sync()` を中断します。
-
-      **注**: 繰り返し呼び出さない `suspendScreenUpdatingUntilNextSync` でください (ループの場合など)。 呼び出しが繰り返し行われると、Excel ウィンドウがちらつくようになります。
-    name: suspendScreenUpdatingUntilNextSync()
-    fullName: suspendScreenUpdatingUntilNextSync()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'suspendScreenUpdatingUntilNextSync(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.Application#thousandsSeparator:member'
-    summary: 数値の小数点の左側にある数字のグループを区切るために使用される文字列を取得します。 これは、Excel のローカル設定に基づいています。
-    name: thousandsSeparator
-    fullName: thousandsSeparator
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly thousandsSeparator: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.Application#useSystemSeparators:member'
-    summary: Excel のシステム区切り記号を有効にするかどうかを指定します。 システムの区切り記号には、小数点の記号と桁区切り記号が含まれます。
-    name: useSystemSeparators
-    fullName: useSystemSeparators
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly useSystemSeparators: boolean;'
-      return:
-        type:
-          - boolean
-references:
-  - uid: 'excel!Excel.Application#calculate~0:complex'
-    name: |-
-      | CalculationType
+                    | "Pending"
+- name: cultureInfo
+  uid: excel!Excel.Application#cultureInfo:member
+  package: excel!
+  fullName: cultureInfo
+  summary: 現在のシステムのカルチャ設定に基づく情報を提供します。 これには、カルチャ名、数値形式、およびその他のカルチャに依存する設定が含まれます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly cultureInfo: CultureInfo;'
+    return:
+      type: <xref uid="excel!Excel.CultureInfo:interface" />
+- name: decimalSeparator
+  uid: excel!Excel.Application#decimalSeparator:member
+  package: excel!
+  fullName: decimalSeparator
+  summary: 数値の小数点の記号として使用される文字列を取得します。 これは、Excel のローカル設定に基づいています。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly decimalSeparator: string;'
+    return:
+      type: string
+- name: iterativeCalculation
+  uid: excel!Excel.Application#iterativeCalculation:member
+  package: excel!
+  fullName: iterativeCalculation
+  summary: 反復計算の設定を返します。 Windows と Mac の Excel では、設定は Excel アプリケーションに適用されます。 Web 上の Excel およびその他のプラットフォームでは、設定は作業中のブックに適用されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly iterativeCalculation: IterativeCalculation;'
+    return:
+      type: <xref uid="excel!Excel.IterativeCalculation:interface" />
+- name: thousandsSeparator
+  uid: excel!Excel.Application#thousandsSeparator:member
+  package: excel!
+  fullName: thousandsSeparator
+  summary: 数値の小数点の左側にある数字のグループを区切るために使用される文字列を取得します。 これは、Excel のローカル設定に基づいています。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly thousandsSeparator: string;'
+    return:
+      type: string
+- name: useSystemSeparators
+  uid: excel!Excel.Application#useSystemSeparators:member
+  package: excel!
+  fullName: useSystemSeparators
+  summary: Excel のシステム区切り記号を有効にするかどうかを指定します。 システムの区切り記号には、小数点の記号と桁区切り記号が含まれます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly useSystemSeparators: boolean;'
+    return:
+      type: boolean
+methods:
+- name: calculate(calculationType)
+  uid: excel!Excel.Application#calculate:member(1)
+  package: excel!
+  fullName: calculate(calculationType)
+  summary: Excel で現在開いているすべてのブックを再計算します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      calculate(
+                  calculationType:
+                      | CalculationType
                       | "Recalculate"
                       | "Full"
                       | "FullRebuild"
-    fullName: |-
-      | Excel.CalculationType
-                      | "Recalculate"
-                      | "Full"
-                      | "FullRebuild"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.CalculationType:enum'
-        name: CalculationType
-        fullName: Excel.CalculationType
-      - name: |2-
+              ): void;
+    parameters:
+    - id: calculationType
+      description: 使用する計算の種類を指定します。 詳細については、「Excel の種類」を参照してください。
+      type: "| <xref uid=\"excel!Excel.CalculationType:enum\" />\n                | \"Recalculate\"\n                | \"Full\"\n                | \"FullRebuild\"\n        "
+    return:
+      type: void
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.Application#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: オブジェクトの指定されたプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、`context.sync()` を呼び出す必要があります。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+- name: suspendApiCalculationUntilNextSync()
+  uid: excel!Excel.Application#suspendApiCalculationUntilNextSync:member(1)
+  package: excel!
+  fullName: suspendApiCalculationUntilNextSync()
+  summary: 次の "context.sync()" が呼び出されるまで、計算を中断します。設定されると、依存関係が確実に伝達されるようにブックを再計算するのは開発者の責任です。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'suspendApiCalculationUntilNextSync(): void;'
+    return:
+      type: void
+      description: ''
+- name: suspendScreenUpdatingUntilNextSync()
+  uid: excel!Excel.Application#suspendScreenUpdatingUntilNextSync:member(1)
+  package: excel!
+  fullName: suspendScreenUpdatingUntilNextSync()
+  summary: >-
+    次の呼び出しが呼び出されるまで、画面の更新 `context.sync()` を中断します。
 
-                          | "Recalculate"
-                          | "Full"
-                          | "FullRebuild"
-                  
-        fullName: |2-
 
-                          | "Recalculate"
-                          | "Full"
-                          | "FullRebuild"
-                  
-  - uid: 'excel!Excel.Application#calculationMode~0:complex'
-    name: |-
-      | CalculationMode
-                  | "Automatic"
-                  | "AutomaticExceptTables"
-                  | "Manual"
-    fullName: |-
-      | Excel.CalculationMode
-                  | "Automatic"
-                  | "AutomaticExceptTables"
-                  | "Manual"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.CalculationMode:enum'
-        name: CalculationMode
-        fullName: Excel.CalculationMode
-      - name: |2-
-
-                      | "Automatic"
-                      | "AutomaticExceptTables"
-                      | "Manual"
-        fullName: |2-
-
-                      | "Automatic"
-                      | "AutomaticExceptTables"
-                      | "Manual"
-  - uid: 'excel!Excel.Application#calculationState~0:complex'
-    name: |-
-      | CalculationState
-                  | "Done"
-                  | "Calculating"
-                  | "Pending"
-    fullName: |-
-      | Excel.CalculationState
-                  | "Done"
-                  | "Calculating"
-                  | "Pending"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.CalculationState:enum'
-        name: CalculationState
-        fullName: Excel.CalculationState
-      - name: |2-
-
-                      | "Done"
-                      | "Calculating"
-                      | "Pending"
-        fullName: |2-
-
-                      | "Done"
-                      | "Calculating"
-                      | "Pending"
-  - uid: 'excel!Excel.CultureInfo:interface'
-    name: CultureInfo
-    fullName: Excel.CultureInfo
-  - uid: 'excel!Excel.IterativeCalculation:interface'
-    name: IterativeCalculation
-    fullName: Excel.IterativeCalculation
+    **注**: 繰り返し呼び出さない `suspendScreenUpdatingUntilNextSync` でください (ループの場合など)。 呼び出しが繰り返し行われると、Excel ウィンドウがちらつくようになります。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'suspendScreenUpdatingUntilNextSync(): void;'
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: ebedb8b1b7c0a22547a6ad13f9bf194a9846d7cb
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49414556"

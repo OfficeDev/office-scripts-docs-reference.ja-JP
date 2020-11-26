@@ -1,69 +1,72 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ConditionalDataBarPositiveFormat:interface'
-    summary: データバーの正の側の条件付き書式 DataBar 形式を表します。
-    name: Excel.ConditionalDataBarPositiveFormat
-    fullName: Excel.ConditionalDataBarPositiveFormat
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.ConditionalDataBarPositiveFormat#borderColor:member'
-      - 'excel!Excel.ConditionalDataBarPositiveFormat#fillColor:member'
-      - 'excel!Excel.ConditionalDataBarPositiveFormat#gradientFill:member'
-      - 'excel!Excel.ConditionalDataBarPositiveFormat#load:member(1)'
-  - uid: 'excel!Excel.ConditionalDataBarPositiveFormat#borderColor:member'
-    summary: '境界線の色を表す HTML カラーコード \# (例: "FFA500")、または名前付きの html 色 (例: "RRGGBB") です。 境界線が表示または設定されていない場合は、"" (空の文字列)。'
-    name: borderColor
-    fullName: borderColor
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'borderColor: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.ConditionalDataBarPositiveFormat#fillColor:member'
-    summary: '塗りつぶし色を表す HTML カラーコード \# ("FFA500" など)、または名前付きの html 色 (例: "RRGGBB")。'
-    name: fillColor
-    fullName: fillColor
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'fillColor: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.ConditionalDataBarPositiveFormat#gradientFill:member'
-    summary: DataBar にグラデーションがあるかどうかを指定します。
-    name: gradientFill
-    fullName: gradientFill
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'gradientFill: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.ConditionalDataBarPositiveFormat#load:member(1)'
-    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
-          type:
-            - 'string | string[]'
+### YamlMime:TSType
+name: Excel.ConditionalDataBarPositiveFormat
+uid: excel!Excel.ConditionalDataBarPositiveFormat:interface
+package: excel!
+fullName: Excel.ConditionalDataBarPositiveFormat
+summary: データバーの正の側の条件付き書式 DataBar 形式を表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: borderColor
+  uid: excel!Excel.ConditionalDataBarPositiveFormat#borderColor:member
+  package: excel!
+  fullName: borderColor
+  summary: '境界線の色を表す HTML カラーコード \# (例: "FFA500")、または名前付きの html 色 (例: "RRGGBB") です。 境界線が表示または設定されていない場合は、"" (空の文字列)。'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'borderColor: string;'
+    return:
+      type: string
+- name: fillColor
+  uid: excel!Excel.ConditionalDataBarPositiveFormat#fillColor:member
+  package: excel!
+  fullName: fillColor
+  summary: '塗りつぶし色を表す HTML カラーコード \# ("FFA500" など)、または名前付きの html 色 (例: "RRGGBB")。'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'fillColor: string;'
+    return:
+      type: string
+- name: gradientFill
+  uid: excel!Excel.ConditionalDataBarPositiveFormat#gradientFill:member
+  package: excel!
+  fullName: gradientFill
+  summary: DataBar にグラデーションがあるかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'gradientFill: boolean;'
+    return:
+      type: boolean
+methods:
+- name: load(propertyNames)
+  uid: excel!Excel.ConditionalDataBarPositiveFormat#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: オブジェクトの指定されたプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、`context.sync()` を呼び出す必要があります。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 74f0473302929b2b7c6dd8de269f323adbb2b8c0
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49414629"

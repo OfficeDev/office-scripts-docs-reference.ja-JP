@@ -1,115 +1,102 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.DataValidationRule:interface'
-    summary: データの入力規則には、さまざまな種類のデータ検証が含まれています。 これらのうちの1つは、ExcelScript の種類に応じて、一度にのみ使用できます。
-    name: ExcelScript.DataValidationRule
-    fullName: ExcelScript.DataValidationRule
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.DataValidationRule#custom:member'
-      - 'ExcelScript!ExcelScript.DataValidationRule#date:member'
-      - 'ExcelScript!ExcelScript.DataValidationRule#decimal:member'
-      - 'ExcelScript!ExcelScript.DataValidationRule#list:member'
-      - 'ExcelScript!ExcelScript.DataValidationRule#textLength:member'
-      - 'ExcelScript!ExcelScript.DataValidationRule#time:member'
-      - 'ExcelScript!ExcelScript.DataValidationRule#wholeNumber:member'
-  - uid: 'ExcelScript!ExcelScript.DataValidationRule#custom:member'
-    summary: データ検証条件のカスタム数式。
-    name: custom
-    fullName: custom
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'custom?: CustomDataValidation;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.CustomDataValidation:interface'
-  - uid: 'ExcelScript!ExcelScript.DataValidationRule#date:member'
-    summary: 日付のデータ検証条件。
-    name: date
-    fullName: date
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'date?: DateTimeDataValidation;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.DateTimeDataValidation:interface'
-  - uid: 'ExcelScript!ExcelScript.DataValidationRule#decimal:member'
-    summary: 10 進数のデータ検証条件。
-    name: decimal
-    fullName: decimal
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'decimal?: BasicDataValidation;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.BasicDataValidation:interface'
-  - uid: 'ExcelScript!ExcelScript.DataValidationRule#list:member'
-    summary: リストのデータ検証条件。
-    name: list
-    fullName: list
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'list?: ListDataValidation;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ListDataValidation:interface'
-  - uid: 'ExcelScript!ExcelScript.DataValidationRule#textLength:member'
-    summary: テキスト長のデータ検証条件。
-    name: textLength
-    fullName: textLength
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'textLength?: BasicDataValidation;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.BasicDataValidation:interface'
-  - uid: 'ExcelScript!ExcelScript.DataValidationRule#time:member'
-    summary: 時刻のデータ検証条件。
-    name: time
-    fullName: time
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'time?: DateTimeDataValidation;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.DateTimeDataValidation:interface'
-  - uid: 'ExcelScript!ExcelScript.DataValidationRule#wholeNumber:member'
-    summary: 整数のデータ検証条件。
-    name: wholeNumber
-    fullName: wholeNumber
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'wholeNumber?: BasicDataValidation;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.BasicDataValidation:interface'
-references:
-  - uid: 'ExcelScript!ExcelScript.CustomDataValidation:interface'
-    name: CustomDataValidation
-    fullName: ExcelScript.CustomDataValidation
-  - uid: 'ExcelScript!ExcelScript.DateTimeDataValidation:interface'
-    name: DateTimeDataValidation
-    fullName: ExcelScript.DateTimeDataValidation
-  - uid: 'ExcelScript!ExcelScript.BasicDataValidation:interface'
-    name: BasicDataValidation
-    fullName: ExcelScript.BasicDataValidation
-  - uid: 'ExcelScript!ExcelScript.ListDataValidation:interface'
-    name: ListDataValidation
-    fullName: ExcelScript.ListDataValidation
+### YamlMime:TSType
+name: ExcelScript.DataValidationRule
+uid: ExcelScript!ExcelScript.DataValidationRule:interface
+package: ExcelScript!
+fullName: ExcelScript.DataValidationRule
+summary: データの入力規則には、さまざまな種類のデータ検証が含まれています。 これらのうちの1つは、ExcelScript の種類に応じて、一度にのみ使用できます。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: custom
+  uid: ExcelScript!ExcelScript.DataValidationRule#custom:member
+  package: ExcelScript!
+  fullName: custom
+  summary: データ検証条件のカスタム数式。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'custom?: CustomDataValidation;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.CustomDataValidation:interface" />
+- name: date
+  uid: ExcelScript!ExcelScript.DataValidationRule#date:member
+  package: ExcelScript!
+  fullName: date
+  summary: 日付のデータ検証条件。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'date?: DateTimeDataValidation;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.DateTimeDataValidation:interface" />
+- name: decimal
+  uid: ExcelScript!ExcelScript.DataValidationRule#decimal:member
+  package: ExcelScript!
+  fullName: decimal
+  summary: 10 進数のデータ検証条件。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'decimal?: BasicDataValidation;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.BasicDataValidation:interface" />
+- name: list
+  uid: ExcelScript!ExcelScript.DataValidationRule#list:member
+  package: ExcelScript!
+  fullName: list
+  summary: リストのデータ検証条件。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'list?: ListDataValidation;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ListDataValidation:interface" />
+- name: textLength
+  uid: ExcelScript!ExcelScript.DataValidationRule#textLength:member
+  package: ExcelScript!
+  fullName: textLength
+  summary: テキスト長のデータ検証条件。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'textLength?: BasicDataValidation;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.BasicDataValidation:interface" />
+- name: time
+  uid: ExcelScript!ExcelScript.DataValidationRule#time:member
+  package: ExcelScript!
+  fullName: time
+  summary: 時刻のデータ検証条件。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'time?: DateTimeDataValidation;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.DateTimeDataValidation:interface" />
+- name: wholeNumber
+  uid: ExcelScript!ExcelScript.DataValidationRule#wholeNumber:member
+  package: ExcelScript!
+  fullName: wholeNumber
+  summary: 整数のデータ検証条件。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'wholeNumber?: BasicDataValidation;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.BasicDataValidation:interface" />
+metadata:
+  ms.openlocfilehash: 06c10b581e27d5f81cb480765f4307b769ef0b2e
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415506"

@@ -1,41 +1,42 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ConditionalTopBottomRule:interface'
-    summary: 上位/下位の条件付き書式のルールを表します。
-    name: ExcelScript.ConditionalTopBottomRule
-    fullName: ExcelScript.ConditionalTopBottomRule
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ConditionalTopBottomRule#rank:member'
-      - 'ExcelScript!ExcelScript.ConditionalTopBottomRule#type:member'
-  - uid: 'ExcelScript!ExcelScript.ConditionalTopBottomRule#rank:member'
-    summary: 数値のランクに対する 1 から 1000、またはパーセントのランクに対する 1 から 100 のランク。
-    name: rank
-    fullName: rank
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'rank: number;'
-      return:
-        type:
-          - number
-  - uid: 'ExcelScript!ExcelScript.ConditionalTopBottomRule#type:member'
-    summary: 上位または下位のランクに基づいて値を書式設定します。
-    name: type
-    fullName: type
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'type: ConditionalTopBottomCriterionType;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ConditionalTopBottomCriterionType:enum'
-references:
-  - uid: 'ExcelScript!ExcelScript.ConditionalTopBottomCriterionType:enum'
-    name: ConditionalTopBottomCriterionType
-    fullName: ExcelScript.ConditionalTopBottomCriterionType
+### YamlMime:TSType
+name: ExcelScript.ConditionalTopBottomRule
+uid: ExcelScript!ExcelScript.ConditionalTopBottomRule:interface
+package: ExcelScript!
+fullName: ExcelScript.ConditionalTopBottomRule
+summary: 上位/下位の条件付き書式のルールを表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: rank
+  uid: ExcelScript!ExcelScript.ConditionalTopBottomRule#rank:member
+  package: ExcelScript!
+  fullName: rank
+  summary: 数値のランクに対する 1 から 1000、またはパーセントのランクに対する 1 から 100 のランク。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'rank: number;'
+    return:
+      type: number
+- name: type
+  uid: ExcelScript!ExcelScript.ConditionalTopBottomRule#type:member
+  package: ExcelScript!
+  fullName: type
+  summary: 上位または下位のランクに基づいて値を書式設定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'type: ConditionalTopBottomCriterionType;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ConditionalTopBottomCriterionType:enum" />
+metadata:
+  ms.openlocfilehash: d46779df9dfc53561b864c95907f33d387ab25e3
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415716"
