@@ -1,198 +1,127 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.SlicerCollection:interface'
-    summary: ブックまたはワークシート上のすべてのスライサーオブジェクトのコレクションを表します。
-    name: Excel.SlicerCollection
-    fullName: Excel.SlicerCollection
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.SlicerCollection#add:member(1)'
-      - 'excel!Excel.SlicerCollection#getCount:member(1)'
-      - 'excel!Excel.SlicerCollection#getItem:member(1)'
-      - 'excel!Excel.SlicerCollection#getItemAt:member(1)'
-      - 'excel!Excel.SlicerCollection#getItemOrNullObject:member(1)'
-      - 'excel!Excel.SlicerCollection#load:member(1)'
-  - uid: 'excel!Excel.SlicerCollection#add:member(1)'
-    summary: ブックに新しいスライサーを追加します。
-    name: 'add(slicerSource, sourceField, slicerDestination)'
-    fullName: 'add(slicerSource, sourceField, slicerDestination)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        add(
-                    slicerSource: string | PivotTable | Table,
-                    sourceField: string | PivotField | number | TableColumn,
-                    slicerDestination?: string | Worksheet
-                ): Slicer;
-      return:
-        type:
-          - 'excel!Excel.Slicer:interface'
-        description: |-
-
-
-          #### <a name="examples"></a>例
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getItem("Pivot");
-              let slicer = sheet.slicers.add(
-                  "Farm Sales", /* The slicer data source. For PivotTables, this can be the PivotTable object reference or name. */
-                  "Type" /* The field in the data source to filter by. For PivotTables, this can be a PivotField object reference or ID. */
-              );
-              slicer.name = "Fruit Slicer";
-              await context.sync();
-          }
-          ```
-      parameters:
-        - id: slicerSource
-          description: 新しいスライサーの基となるデータソース。 PivotTable オブジェクト、Table オブジェクト、または文字列を指定できます。 PivotTable オブジェクトが渡されると、データソースは PivotTable オブジェクトのソースになります。 Table オブジェクトが渡されると、データソースは Table オブジェクトになります。 文字列が渡されると、PivotTable/Table の名前または id として解釈されます。
-          type:
-            - 'excel!Excel.SlicerCollection#add~0:complex'
-        - id: sourceField
-          description: フィルター処理の対象となるデータソース内のフィールド。 PivotField オブジェクト、TableColumn オブジェクト、PivotField の id、または TableColumn の id または名前を指定できます。
-          type:
-            - 'excel!Excel.SlicerCollection#add~1:complex'
-        - id: slicerDestination
-          description: 省略可能です。 新しいスライサーを作成するワークシートを指定します。 ワークシートオブジェクト、またはワークシートの名前/id を指定できます。 スライサーコレクションをワークシートから取得する場合は、このパラメーターを省略できます。
-          type:
-            - 'excel!Excel.SlicerCollection#add~2:complex'
-  - uid: 'excel!Excel.SlicerCollection#getCount:member(1)'
-    summary: コレクションに含まれるスライサーの数を返します。
-    name: getCount()
-    fullName: getCount()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCount(): ClientResult<number>;'
-      return:
-        type:
-          - 'excel!Excel.SlicerCollection#getCount~0:complex'
-        description: ''
-  - uid: 'excel!Excel.SlicerCollection#getItem:member(1)'
-    summary: 名前または ID を使用してスライサー オブジェクトを取得します。
-    name: getItem(key)
-    fullName: getItem(key)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItem(key: string): Slicer;'
-      return:
-        type:
-          - 'excel!Excel.Slicer:interface'
-        description: ''
-      parameters:
-        - id: key
-          description: スライサーの名前または id。
-          type:
-            - string
-  - uid: 'excel!Excel.SlicerCollection#getItemAt:member(1)'
-    summary: コレクション内の位置に基づいてスライサーを取得します。
-    name: getItemAt(index)
-    fullName: getItemAt(index)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItemAt(index: number): Slicer;'
-      return:
-        type:
-          - 'excel!Excel.Slicer:interface'
-        description: ''
-      parameters:
-        - id: index
-          description: 取得するオブジェクトのインデックス値。 0 を起点とする番号になります。
-          type:
-            - number
-  - uid: 'excel!Excel.SlicerCollection#getItemOrNullObject:member(1)'
-    summary: 名前または ID に基づいてスライサーを取得します。スライサーが存在しない場合は null オブジェクトを返します。
-    name: getItemOrNullObject(key)
-    fullName: getItemOrNullObject(key)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItemOrNullObject(key: string): Slicer;'
-      return:
-        type:
-          - 'excel!Excel.Slicer:interface'
-        description: ''
-      parameters:
-        - id: key
-          description: 取得するスライサーの名前または Id。
-          type:
-            - string
-  - uid: 'excel!Excel.SlicerCollection#load:member(1)'
-    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
-          type:
-            - 'string | string[]'
-references:
-  - uid: 'excel!Excel.Slicer:interface'
-    name: Slicer
-    fullName: Excel.Slicer
-  - uid: 'excel!Excel.SlicerCollection#add~0:complex'
-    name: string | PivotTable | Table
-    fullName: string | Excel.PivotTable | Excel.Table
-    spec.typeScript:
-      - name: 'string | '
-        fullName: 'string | '
-      - uid: 'excel!Excel.PivotTable:interface'
-        name: PivotTable
-        fullName: Excel.PivotTable
-      - name: ' | '
-        fullName: ' | '
-      - uid: 'excel!Excel.Table:interface'
-        name: Table
-        fullName: Excel.Table
-  - uid: 'excel!Excel.SlicerCollection#add~1:complex'
-    name: string | PivotField | number | TableColumn
-    fullName: string | Excel.PivotField | number | Excel.TableColumn
-    spec.typeScript:
-      - name: 'string | '
-        fullName: 'string | '
-      - uid: 'excel!Excel.PivotField:interface'
-        name: PivotField
-        fullName: Excel.PivotField
-      - name: ' | number | '
-        fullName: ' | number | '
-      - uid: 'excel!Excel.TableColumn:interface'
-        name: TableColumn
-        fullName: Excel.TableColumn
-  - uid: 'excel!Excel.SlicerCollection#add~2:complex'
-    name: string | Worksheet
-    fullName: string | Excel.Worksheet
-    spec.typeScript:
-      - name: 'string | '
-        fullName: 'string | '
-      - uid: 'excel!Excel.Worksheet:interface'
-        name: Worksheet
-        fullName: Excel.Worksheet
-  - uid: 'excel!Excel.SlicerCollection#getCount~0:complex'
-    name: ClientResult<number>
-    fullName: Excel.ClientResult<number>
-    spec.typeScript:
-      - uid: 'excel!Excel.ClientResult:interface'
-        name: ClientResult
-        fullName: Excel.ClientResult
-      - name: <number>
-        fullName: <number>
+### YamlMime:TSType
+name: Excel.SlicerCollection
+uid: excel!Excel.SlicerCollection:interface
+package: excel!
+fullName: Excel.SlicerCollection
+summary: ブックまたはワークシート上のすべてのスライサーオブジェクトのコレクションを表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: add(slicerSource, sourceField, slicerDestination)
+  uid: excel!Excel.SlicerCollection#add:member(1)
+  package: excel!
+  fullName: add(slicerSource, sourceField, slicerDestination)
+  summary: ブックに新しいスライサーを追加します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      add(
+                  slicerSource: string | PivotTable | Table,
+                  sourceField: string | PivotField | number | TableColumn,
+                  slicerDestination?: string | Worksheet
+              ): Slicer;
+    parameters:
+    - id: slicerSource
+      description: 新しいスライサーの基となるデータソース。 PivotTable オブジェクト、Table オブジェクト、または文字列を指定できます。 PivotTable オブジェクトが渡されると、データソースは PivotTable オブジェクトのソースになります。 Table オブジェクトが渡されると、データソースは Table オブジェクトになります。 文字列が渡されると、PivotTable/Table の名前または id として解釈されます。
+      type: string | <xref uid="excel!Excel.PivotTable:interface" /> | <xref uid="excel!Excel.Table:interface" />
+    - id: sourceField
+      description: フィルター処理の対象となるデータソース内のフィールド。 PivotField オブジェクト、TableColumn オブジェクト、PivotField の id、または TableColumn の id または名前を指定できます。
+      type: string | <xref uid="excel!Excel.PivotField:interface" /> | number | <xref uid="excel!Excel.TableColumn:interface" />
+    - id: slicerDestination
+      description: 省略可能。 新しいスライサーを作成するワークシートを指定します。 ワークシートオブジェクト、またはワークシートの名前/id を指定できます。 スライサーコレクションをワークシートから取得する場合は、このパラメーターを省略できます。
+      type: string | <xref uid="excel!Excel.Worksheet:interface" />
+    return:
+      type: <xref uid="excel!Excel.Slicer:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getItem(\"Pivot\");\n    let slicer = sheet.slicers.add(\n        \"Farm Sales\", /* The slicer data source. For PivotTables, this can be the PivotTable object reference or name. */\n        \"Type\" /* The field in the data source to filter by. For PivotTables, this can be a PivotField object reference or ID. */\n    );\n    slicer.name = \"Fruit Slicer\";\n    await context.sync();\n}\n```"
+- name: getCount()
+  uid: excel!Excel.SlicerCollection#getCount:member(1)
+  package: excel!
+  fullName: getCount()
+  summary: コレクションに含まれるスライサーの数を返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCount(): ClientResult<number>;'
+    return:
+      type: <xref uid="excel!Excel.ClientResult:interface" />&lt;number&gt;
+      description: ''
+- name: getItem(key)
+  uid: excel!Excel.SlicerCollection#getItem:member(1)
+  package: excel!
+  fullName: getItem(key)
+  summary: 名前または ID を使用してスライサー オブジェクトを取得します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getItem(key: string): Slicer;'
+    parameters:
+    - id: key
+      description: スライサーの名前または id。
+      type: string
+    return:
+      type: <xref uid="excel!Excel.Slicer:interface" />
+      description: ''
+- name: getItemAt(index)
+  uid: excel!Excel.SlicerCollection#getItemAt:member(1)
+  package: excel!
+  fullName: getItemAt(index)
+  summary: コレクション内の位置に基づいてスライサーを取得します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getItemAt(index: number): Slicer;'
+    parameters:
+    - id: index
+      description: 取得するオブジェクトのインデックス値。 0 を起点とする番号になります。
+      type: number
+    return:
+      type: <xref uid="excel!Excel.Slicer:interface" />
+      description: ''
+- name: getItemOrNullObject(key)
+  uid: excel!Excel.SlicerCollection#getItemOrNullObject:member(1)
+  package: excel!
+  fullName: getItemOrNullObject(key)
+  summary: 名前または ID に基づいてスライサーを取得します。スライサーが存在しない場合は null オブジェクトを返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getItemOrNullObject(key: string): Slicer;'
+    parameters:
+    - id: key
+      description: 取得するスライサーの名前または Id。
+      type: string
+    return:
+      type: <xref uid="excel!Excel.Slicer:interface" />
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.SlicerCollection#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: オブジェクトの指定されたプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、`context.sync()` を呼び出す必要があります。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 16f0f2674a5c30a3563a7c7ea618d2917d4525f5
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412882"

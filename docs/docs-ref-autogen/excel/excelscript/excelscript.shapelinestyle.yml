@@ -1,51 +1,37 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ShapeLineStyle:enum'
-    summary: 線のスタイルを示します。
-    name: ExcelScript.ShapeLineStyle
-    fullName: ExcelScript.ShapeLineStyle
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ShapeLineStyle.single:member'
-      - 'ExcelScript!ExcelScript.ShapeLineStyle.thickBetweenThin:member'
-      - 'ExcelScript!ExcelScript.ShapeLineStyle.thickThin:member'
-      - 'ExcelScript!ExcelScript.ShapeLineStyle.thinThick:member'
-      - 'ExcelScript!ExcelScript.ShapeLineStyle.thinThin:member'
-  - uid: 'ExcelScript!ExcelScript.ShapeLineStyle.single:member'
-    summary: 一重線を指定します。
-    name: single
-    fullName: single
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShapeLineStyle.thickBetweenThin:member'
-    summary: 両側を細い線にはさまれた太い線。
-    name: thickBetweenThin
-    fullName: thickBetweenThin
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShapeLineStyle.thickThin:member'
-    summary: 細い線の横に太い線。 水平線の場合、太い線は細い線の上になります。 垂直線の場合、太い線は細い線の左側になります。
-    name: thickThin
-    fullName: thickThin
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShapeLineStyle.thinThick:member'
-    summary: 細い線の横に太い線。 水平線の場合、太い線は細い線の下になります。 垂直線の場合、太い線は細い線の右になります。
-    name: thinThick
-    fullName: thinThick
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShapeLineStyle.thinThin:member'
-    summary: 2 本の細い線。
-    name: thinThin
-    fullName: thinThin
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.ShapeLineStyle
+uid: ExcelScript!ExcelScript.ShapeLineStyle:enum
+package: ExcelScript!
+fullName: ExcelScript.ShapeLineStyle
+summary: 線のスタイルを示します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: single
+  uid: ExcelScript!ExcelScript.ShapeLineStyle.single:member
+  package: ExcelScript!
+  summary: 一重線を指定します。
+- name: thickBetweenThin
+  uid: ExcelScript!ExcelScript.ShapeLineStyle.thickBetweenThin:member
+  package: ExcelScript!
+  summary: 両側を細い線にはさまれた太い線。
+- name: thickThin
+  uid: ExcelScript!ExcelScript.ShapeLineStyle.thickThin:member
+  package: ExcelScript!
+  summary: 細い線の横に太い線。 水平線の場合、太い線は細い線の上になります。 垂直線の場合、太い線は細い線の左側になります。
+- name: thinThick
+  uid: ExcelScript!ExcelScript.ShapeLineStyle.thinThick:member
+  package: ExcelScript!
+  summary: 細い線の横に太い線。 水平線の場合、太い線は細い線の下になります。 垂直線の場合、太い線は細い線の右になります。
+- name: thinThin
+  uid: ExcelScript!ExcelScript.ShapeLineStyle.thinThin:member
+  package: ExcelScript!
+  summary: 2 本の細い線。
+metadata:
+  ms.openlocfilehash: b3b5d5a888b7055f50e0ae080eff50a898717a93
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49411748"

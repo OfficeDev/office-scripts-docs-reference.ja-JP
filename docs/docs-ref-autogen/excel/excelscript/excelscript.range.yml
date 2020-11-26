@@ -1,2375 +1,1728 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.Range:interface'
-    summary: 範囲は、1 つ以上の隣接するセル (セル、行、列、セルのブロックなど) のセットを表します。
-    name: ExcelScript.Range
-    fullName: ExcelScript.Range
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.Range#addConditionalFormat:member(1)'
-      - 'ExcelScript!ExcelScript.Range#autoFill:member(1)'
-      - 'ExcelScript!ExcelScript.Range#calculate:member(1)'
-      - 'ExcelScript!ExcelScript.Range#clear:member(1)'
-      - 'ExcelScript!ExcelScript.Range#clearAllConditionalFormats:member(1)'
-      - 'ExcelScript!ExcelScript.Range#convertDataTypeToText:member(1)'
-      - 'ExcelScript!ExcelScript.Range#copyFrom:member(1)'
-      - 'ExcelScript!ExcelScript.Range#delete:member(1)'
-      - 'ExcelScript!ExcelScript.Range#find:member(1)'
-      - 'ExcelScript!ExcelScript.Range#flashFill:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getAbsoluteResizedRange:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getAddress:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getAddressLocal:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getBoundingRect:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getCell:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getCellCount:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getColumn:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getColumnCount:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getColumnHidden:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getColumnIndex:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getColumnsAfter:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getColumnsBefore:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getConditionalFormat:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getConditionalFormats:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getDataValidation:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getDirectPrecedents:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getEntireColumn:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getEntireRow:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getFormat:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getFormula:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getFormulaLocal:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getFormulaR1C1:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getFormulas:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getFormulasLocal:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getFormulasR1C1:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getHasSpill:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getHeight:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getHidden:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getHyperlink:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getImage:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getIntersection:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getIsEntireColumn:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getIsEntireRow:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getLastCell:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getLastColumn:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getLastRow:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getLeft:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getLinkedDataTypeState:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getLinkedDataTypeStates:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getMergedAreas:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getNumberFormat:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getNumberFormatCategories:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getNumberFormatLocal:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getNumberFormats:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getNumberFormatsLocal:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getOffsetRange:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getPivotTables:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getPredefinedCellStyle:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getResizedRange:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getRow:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getRowCount:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getRowHidden:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getRowIndex:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getRowsAbove:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getRowsBelow:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getSavedAsArray:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getSort:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getSpecialCells:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getSpillingToRange:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getSpillParent:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getSurroundingRegion:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getTables:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getText:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getTexts:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getTop:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getUsedRange:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getValue:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getValues:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getValueType:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getValueTypes:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getVisibleView:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getWidth:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getWorksheet:member(1)'
-      - 'ExcelScript!ExcelScript.Range#group:member(1)'
-      - 'ExcelScript!ExcelScript.Range#hideGroupDetails:member(1)'
-      - 'ExcelScript!ExcelScript.Range#insert:member(1)'
-      - 'ExcelScript!ExcelScript.Range#merge:member(1)'
-      - 'ExcelScript!ExcelScript.Range#moveTo:member(1)'
-      - 'ExcelScript!ExcelScript.Range#removeDuplicates:member(1)'
-      - 'ExcelScript!ExcelScript.Range#replaceAll:member(1)'
-      - 'ExcelScript!ExcelScript.Range#select:member(1)'
-      - 'ExcelScript!ExcelScript.Range#setColumnHidden:member(1)'
-      - 'ExcelScript!ExcelScript.Range#setDirty:member(1)'
-      - 'ExcelScript!ExcelScript.Range#setFormula:member(1)'
-      - 'ExcelScript!ExcelScript.Range#setFormulaLocal:member(1)'
-      - 'ExcelScript!ExcelScript.Range#setFormulaR1C1:member(1)'
-      - 'ExcelScript!ExcelScript.Range#setFormulas:member(1)'
-      - 'ExcelScript!ExcelScript.Range#setFormulasLocal:member(1)'
-      - 'ExcelScript!ExcelScript.Range#setFormulasR1C1:member(1)'
-      - 'ExcelScript!ExcelScript.Range#setHyperlink:member(1)'
-      - 'ExcelScript!ExcelScript.Range#setNumberFormat:member(1)'
-      - 'ExcelScript!ExcelScript.Range#setNumberFormatLocal:member(1)'
-      - 'ExcelScript!ExcelScript.Range#setNumberFormats:member(1)'
-      - 'ExcelScript!ExcelScript.Range#setNumberFormatsLocal:member(1)'
-      - 'ExcelScript!ExcelScript.Range#setPredefinedCellStyle:member(1)'
-      - 'ExcelScript!ExcelScript.Range#setRowHidden:member(1)'
-      - 'ExcelScript!ExcelScript.Range#setValue:member(1)'
-      - 'ExcelScript!ExcelScript.Range#setValues:member(1)'
-      - 'ExcelScript!ExcelScript.Range#showCard:member(1)'
-      - 'ExcelScript!ExcelScript.Range#showGroupDetails:member(1)'
-      - 'ExcelScript!ExcelScript.Range#ungroup:member(1)'
-      - 'ExcelScript!ExcelScript.Range#unmerge:member(1)'
-  - uid: 'ExcelScript!ExcelScript.Range#addConditionalFormat:member(1)'
-    summary: 新しい条件付き書式をコレクションの先頭/最上位の優先度に追加します。
-    name: addConditionalFormat(type)
-    fullName: addConditionalFormat(type)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'addConditionalFormat(type: ConditionalFormatType): ConditionalFormat;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ConditionalFormat:interface'
-        description: |-
-
-
-          #### <a name="examples"></a>例
-
-          ```javascript
-          /**
-           * This sample applies conditional formatting to the currently used range in the worksheet. 
-           * The conditional formatting is a green fill for the top 10% of values.
-           */
-          function main(workbook: ExcelScript.Workbook) {
-            // Get the current worksheet.
-            let selectedSheet = workbook.getActiveWorksheet();
-
-            // Get the used range in the worksheet.
-            let range = selectedSheet.getUsedRange();
-
-            // Set the fill color to green for the top 10% of values in the range.
-            let conditionalFormat = range.addConditionalFormat(ExcelScript.ConditionalFormatType.topBottom)
-            conditionalFormat.getTopBottom().getFormat().getFill().setColor("green");
-            conditionalFormat.getTopBottom().setRule({
-              rank: 10, // The percentage threshold.
-              type: ExcelScript.ConditionalTopBottomCriterionType.topPercent // The type of the top/bottom condition.
-            });
-          }
-          ```
-      parameters:
-        - id: type
-          description: 追加する条件付き書式の種類を指定します。 詳細については、「ExcelScript」を参照してください。
-          type:
-            - 'ExcelScript!ExcelScript.ConditionalFormatType:enum'
-  - uid: 'ExcelScript!ExcelScript.Range#autoFill:member(1)'
-    summary: 指定したオートフィルロジックを使用して、現在の範囲から移動先の範囲に範囲を埋めます。 変換先の範囲は null にすることも、ソースを水平方向または垂直方向に拡張することもできます。 連続していない範囲はサポートされていません。
-    name: 'autoFill(destinationRange, autoFillType)'
-    fullName: 'autoFill(destinationRange, autoFillType)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        autoFill(
-                    destinationRange?: Range | string,
-                    autoFillType?: AutoFillType
-                ): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: destinationRange
-          description: オートフィルの対象となるセル範囲を指定します。 引数 destination に null を指定すると、周囲のセル (UI の範囲の塗りつぶしハンドルをダブルクリックしたときの動作) に基づいてデータが入力されます。
-          type:
-            - 'ExcelScript!ExcelScript.Range#autoFill~0:complex'
-        - id: autoFillType
-          description: オートフィルの種類を示します。 現在の範囲の内容に基づいて、移動先の範囲をどのように塗りつぶすかを指定します。 既定値は "FillDefault" です。
-          type:
-            - 'ExcelScript!ExcelScript.AutoFillType:enum'
-  - uid: 'ExcelScript!ExcelScript.Range#calculate:member(1)'
-    summary: ワークシート上のセルの範囲を計算します。
-    name: calculate()
-    fullName: calculate()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'calculate(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#clear:member(1)'
-    summary: 範囲の値、書式、塗りつぶし、罫線などをクリアします。
-    name: clear(applyTo)
-    fullName: clear(applyTo)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'clear(applyTo?: ClearApplyTo): void;'
-      return:
-        type:
-          - void
-        description: |-
-
-
-          #### <a name="examples"></a>例
-
-          ```javascript
-          /**
-           * This script removes all the formatting from the selected range.
-           */
-          function main(workbook: ExcelScript.Workbook) {
-            // Get the selected range.
-            let range = workbook.getSelectedRange();
-
-            // Clear all the formatting in that range.
-            range.clear(ExcelScript.ClearApplyTo.formats);
-          }
-          ```
-      parameters:
-        - id: applyTo
-          description: 省略可能。 クリア操作の種類を決定します。 詳細については、「ExcelScript. ClearApplyTo を参照してください。
-          type:
-            - 'ExcelScript!ExcelScript.ClearApplyTo:enum'
-  - uid: 'ExcelScript!ExcelScript.Range#clearAllConditionalFormats:member(1)'
-    summary: 現在指定している範囲でアクティブなすべての条件付き書式をクリアする。
-    name: clearAllConditionalFormats()
-    fullName: clearAllConditionalFormats()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'clearAllConditionalFormats(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#convertDataTypeToText:member(1)'
-    summary: データ型を含む範囲セルをテキストに変換します。
-    name: convertDataTypeToText()
-    fullName: convertDataTypeToText()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'convertDataTypeToText(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#copyFrom:member(1)'
-    summary: ソース範囲または RangeAreas から現在の範囲にセル データまたは書式設定をコピーします。 コピー先の範囲は、元の範囲または RangeAreas のサイズと異なる場合があります。 転送先は、ソースよりも小さい場合は自動的に展開されます。
-    name: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
-    fullName: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        copyFrom(
-                    sourceRange: Range | RangeAreas | string,
-                    copyType?: RangeCopyType,
-                    skipBlanks?: boolean,
-                    transpose?: boolean
-                ): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: sourceRange
-          description: コピー元の範囲または RangeAreas を指定します。 ソース範囲に複数の範囲がある場合は、四角形の範囲から完全な行または列を削除することによって、そのフォームを作成できるようにする必要があります。
-          type:
-            - 'ExcelScript!ExcelScript.Range#copyFrom~0:complex'
-        - id: copyType
-          description: コピーするセルのデータまたは書式の種類を指定します。 既定値は "すべて" です。
-          type:
-            - 'ExcelScript!ExcelScript.RangeCopyType:enum'
-        - id: skipBlanks
-          description: True の場合は、ソース範囲の空白セルをスキップします。 既定値は false です。
-          type:
-            - boolean
-        - id: transpose
-          description: True を指定すると、貼り付け先の範囲内のセルが転置されます。 既定値は false です。
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.Range#delete:member(1)'
-    summary: 範囲に関連付けられているセルを削除します。
-    name: delete(shift)
-    fullName: delete(shift)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'delete(shift: DeleteShiftDirection): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: shift
-          description: セルをシフトする方向を指定します。 詳細については、「ExcelScript」を参照してください。
-          type:
-            - 'ExcelScript!ExcelScript.DeleteShiftDirection:enum'
-  - uid: 'ExcelScript!ExcelScript.Range#find:member(1)'
-    summary: 指定された条件に基づいて指定された文字列を見つけます。 現在の範囲が1つのセルより大きい場合は、検索はその範囲に制限されます。それ以外の場合は、シート全体がそのセルの後に表示されます。 一致しない場合、この関数は null オブジェクトを返します。
-    name: 'find(text, criteria)'
-    fullName: 'find(text, criteria)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'find(text: string, criteria: SearchCriteria): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-      parameters:
-        - id: text
-          description: 検索する文字列を指定します。
-          type:
-            - string
-        - id: criteria
-          description: 検索の方向、検索をセル全体に一致させる必要があるかどうか、または大文字と小文字を区別するかどうかを含む、追加の検索条件。
-          type:
-            - 'ExcelScript!ExcelScript.SearchCriteria:interface'
-  - uid: 'ExcelScript!ExcelScript.Range#flashFill:member(1)'
-    summary: 現在の範囲に対してフラッシュ フィルを実行します。フラッシュ フィルでは、パターンを感知して自動的にデータが設定されるので、範囲は単一列範囲で、かつパターンを検出できるように周囲にデータが存在する必要があります。
-    name: flashFill()
-    fullName: flashFill()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'flashFill(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getAbsoluteResizedRange:member(1)'
-    summary: 現在の Range オブジェクトと左上のセルが同じで、指定した数の行と列を含む Range オブジェクトを取得します。
-    name: 'getAbsoluteResizedRange(numRows, numColumns)'
-    fullName: 'getAbsoluteResizedRange(numRows, numColumns)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getAbsoluteResizedRange(numRows: number, numColumns: number): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-      parameters:
-        - id: numRows
-          description: 新しい範囲サイズの行数を指定します。
-          type:
-            - number
-        - id: numColumns
-          description: 新しい範囲のサイズの列数を指定します。
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.Range#getAddress:member(1)'
-    summary: 'セル範囲の参照を A1 形式で指定します。 Address 値にはシート参照が含まれます (例: "Sheet1!A1: B4 ")'
-    name: getAddress()
-    fullName: getAddress()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getAddress(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getAddressLocal:member(1)'
-    summary: ユーザーの言語で指定された範囲の範囲参照を指定します。
-    name: getAddressLocal()
-    fullName: getAddressLocal()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getAddressLocal(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getBoundingRect:member(1)'
-    summary: '指定した範囲を包含する、最小の Range オブジェクトを取得します。 たとえば、"B2:C5" と "D10:E15" の GetBoundingRect は、"B2:E15" になります。'
-    name: getBoundingRect(anotherRange)
-    fullName: getBoundingRect(anotherRange)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getBoundingRect(anotherRange: Range | string): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-      parameters:
-        - id: anotherRange
-          description: Range オブジェクト、アドレスまたは範囲名。
-          type:
-            - 'ExcelScript!ExcelScript.Range#getBoundingRect~0:complex'
-  - uid: 'ExcelScript!ExcelScript.Range#getCell:member(1)'
-    summary: 行と列の番号に基づいて、1 つのセルを含んだ範囲オブジェクトを取得します。 ワークシートのグリッド内に収まるセルは、親の範囲の境界の外側にある場合があります。 返されるセルは、範囲の左上のセルを基準に配置されます。
-    name: 'getCell(row, column)'
-    fullName: 'getCell(row, column)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCell(row: number, column: number): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-      parameters:
-        - id: row
-          description: 取得するセルの行番号。 0 を起点とする番号になります。
-          type:
-            - number
-        - id: column
-          description: 取得セルの列番号。 0 を起点とする番号になります。
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.Range#getCellCount:member(1)'
-    summary: '範囲内のセルの数を指定します。 セルの数が 2^31-1 (2,147,483,647) を超えると、この API は -1 を返します。'
-    name: getCellCount()
-    fullName: getCellCount()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCellCount(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getColumn:member(1)'
-    summary: 範囲に含まれる列を 1 つ取得します。
-    name: getColumn(column)
-    fullName: getColumn(column)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getColumn(column: number): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-      parameters:
-        - id: column
-          description: 取得する範囲の列番号。 0 を起点とする番号になります。
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.Range#getColumnCount:member(1)'
-    summary: 範囲内の列の合計数を指定します。
-    name: getColumnCount()
-    fullName: getColumnCount()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getColumnCount(): number;'
-      return:
-        type:
-          - number
-        description: |-
-
-
-          #### <a name="examples"></a>例
-
-          ```javascript
-          /**
-           * This sample provides the count of negative numbers that are present
-           * in the used range of the current worksheet.
-           */
-          function main(workbook: ExcelScript.Workbook) {
-            // Get the working range.
-            let usedRange = workbook.getActiveWorksheet().getUsedRange();
-            let rowCount = usedRange.getRowCount();
-            let columnCount = usedRange.getColumnCount();
-
-            // Save the values locally to avoid repeatedly asking the workbook.
-            let usedRangeValues = usedRange.getValues();
-
-            // Start the negative number counter.
-            let negativeCount = 0;
-
-            // Iterate over the entire range looking for negative numbers.
-            for (let i = 0; i < rowCount; i++) {
-              for (let j = 0; j < columnCount; j++) {
-                if (usedRangeValues[i][j] < 0) {
-                  negativeCount++;
-                }
-              }
-            }
-
-            // Log the negative number count to the console.
-            console.log(negativeCount);
-          }
-          ```
-  - uid: 'ExcelScript!ExcelScript.Range#getColumnHidden:member(1)'
-    summary: 現在の範囲のすべての列が非表示になっているかどうかを表します。
-    name: getColumnHidden()
-    fullName: getColumnHidden()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getColumnHidden(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getColumnIndex:member(1)'
-    summary: 範囲内の最初のセルの列番号を指定します。 0 を起点とする番号になります。
-    name: getColumnIndex()
-    fullName: getColumnIndex()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getColumnIndex(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getColumnsAfter:member(1)'
-    summary: 現在の Range オブジェクトの右にある特定の列数を取得します。
-    name: getColumnsAfter(count)
-    fullName: getColumnsAfter(count)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getColumnsAfter(count?: number): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-      parameters:
-        - id: count
-          description: 省略可能。結果の範囲に含める列の数です。通常、正の数値を使用して現在の範囲外に範囲を作成します。負の数値を使用して、現在の範囲内に範囲を作成することもできます。既定値は 1 です。
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.Range#getColumnsBefore:member(1)'
-    summary: 現在の Range オブジェクトの左にある特定の列数を取得します。
-    name: getColumnsBefore(count)
-    fullName: getColumnsBefore(count)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getColumnsBefore(count?: number): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-      parameters:
-        - id: count
-          description: 省略可能。結果の範囲に含める列の数です。通常、正の数値を使用して現在の範囲外に範囲を作成します。負の数値を使用して、現在の範囲内に範囲を作成することもできます。既定値は 1 です。
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.Range#getConditionalFormat:member(1)'
-    summary: 指定された ID に対応する条件付き書式を返します。
-    name: getConditionalFormat(id)
-    fullName: getConditionalFormat(id)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getConditionalFormat(id: string): ConditionalFormat;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ConditionalFormat:interface'
-        description: ''
-      parameters:
-        - id: id
-          description: 条件付き書式の id を指定します。
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Range#getConditionalFormats:member(1)'
-    summary: 範囲と交差する ConditionalFormats のコレクションです。
-    name: getConditionalFormats()
-    fullName: getConditionalFormats()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getConditionalFormats(): ConditionalFormat[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range#getConditionalFormats~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getDataValidation:member(1)'
-    summary: dataValidation オブジェクトを返します。
-    name: getDataValidation()
-    fullName: getDataValidation()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getDataValidation(): DataValidation;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.DataValidation:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getDirectPrecedents:member(1)'
-    summary: 同じワークシートまたは複数のワークシート内のセルのすべての直接の参照元を含む範囲を表す WorkbookRangeAreas オブジェクトを返します。
-    name: getDirectPrecedents()
-    fullName: getDirectPrecedents()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getDirectPrecedents(): WorkbookRangeAreas;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.WorkbookRangeAreas:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getEntireColumn:member(1)'
-    summary: '範囲の列全体を表すオブジェクトを取得します (たとえば、現在の範囲がセル "B4: E11" を表している場合 `getEntireColumn` は、"B: E" という列を表す範囲)。'
-    name: getEntireColumn()
-    fullName: getEntireColumn()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getEntireColumn(): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getEntireRow:member(1)'
-    summary: '範囲の行全体を表すオブジェクトを取得します (たとえば、現在の範囲がセル "B4: E11" を表している場合 `GetEntireRow` は、行 "4:11" を表す範囲になります)。'
-    name: getEntireRow()
-    fullName: getEntireRow()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getEntireRow(): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getFormat:member(1)'
-    summary: Format オブジェクト (範囲のフォント、塗りつぶし、罫線、配置などのプロパティをカプセル化するオブジェクト) を返します。
-    name: getFormat()
-    fullName: getFormat()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFormat(): RangeFormat;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.RangeFormat:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getFormula:member(1)'
-    summary: セルの数式を A1 形式の表記で表します。 範囲に複数のセルが含まれている場合、最初のセル (0 の行インデックスと列インデックスが0で表されます) からデータが返されます。
-    name: getFormula()
-    fullName: getFormula()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFormula(): string;'
-      return:
-        type:
-          - string
-        description: |-
-
-
-          #### <a name="examples"></a>例
-
-          ```javascript
-          /*
-           * This script sets a cell's formula, 
-           * then displays how Excel stores the cell's formula and value separately.
-           */
-          function main(workbook: ExcelScript.Workbook) {
-            let selectedSheet = workbook.getActiveWorksheet();
-
-            // Set A1 to 2.
-            let a1 = selectedSheet.getRange("A1");
-            a1.setValue(2);
-
-            // Set B1 to the formula =(2*A1), which should equal 4.
-            let b1 = selectedSheet.getRange("B1")
-            b1.setFormula("=(2*A1)");
-
-            // Log the current results for `getFormula` and `getValue` at B1.
-            console.log(`B1 - Formula: ${b1.getFormula()} | Value: ${b1.getValue()}`);
-          }
-          ```
-  - uid: 'ExcelScript!ExcelScript.Range#getFormulaLocal:member(1)'
-    summary: 'ユーザーの言語と書式設定ロケールで、A1 形式の表記法でセルの数式を表します。 たとえば、英語の数式 "=SUM(A1, 1.5)" は、ドイツ語では "=SUMME(A1; 1,5)" になります。 範囲に複数のセルが含まれている場合、最初のセル (0 の行インデックスと列インデックスが0で表されます) からデータが返されます。'
-    name: getFormulaLocal()
-    fullName: getFormulaLocal()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFormulaLocal(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getFormulaR1C1:member(1)'
-    summary: セルの数式を R1C1 形式の表記で表します。 範囲に複数のセルが含まれている場合、最初のセル (0 の行インデックスと列インデックスが0で表されます) からデータが返されます。
-    name: getFormulaR1C1()
-    fullName: getFormulaR1C1()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFormulaR1C1(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getFormulas:member(1)'
-    summary: A1 スタイル表記の数式を表します。 セルに数式が含まれていない場合は、その値が返されます。
-    name: getFormulas()
-    fullName: getFormulas()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFormulas(): string[][];'
-      return:
-        type:
-          - 'string[][]'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getFormulasLocal:member(1)'
-    summary: 'ユーザーの言語と数値書式ロケールで、A1 スタイル表記の数式を表します。 たとえば、英語の数式 "=SUM(A1, 1.5)" は、ドイツ語では "=SUMME(A1; 1,5)" になります。 セルに数式が含まれていない場合は、その値が返されます。'
-    name: getFormulasLocal()
-    fullName: getFormulasLocal()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFormulasLocal(): string[][];'
-      return:
-        type:
-          - 'string[][]'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getFormulasR1C1:member(1)'
-    summary: R1C1 スタイル表記の数式を表します。 セルに数式が含まれていない場合は、その値が返されます。
-    name: getFormulasR1C1()
-    fullName: getFormulasR1C1()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFormulasR1C1(): string[][];'
-      return:
-        type:
-          - 'string[][]'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getHasSpill:member(1)'
-    summary: すべてのセルにスピル ボーダーがあるかどうかを表します。 すべてのセルにスピル枠がある場合は true を返し、すべてのセルにスピル境界線がない場合は false を返します。 範囲内の罫線を左右に左右しないセルがある場合は、null を返します。
-    name: getHasSpill()
-    fullName: getHasSpill()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getHasSpill(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getHeight:member(1)'
-    summary: '100% ズームの場合の、範囲の上端から範囲の下端までの距離を、ポイント単位で返します。 '
-    name: getHeight()
-    fullName: getHeight()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getHeight(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getHidden:member(1)'
-    summary: 現在の範囲のすべてのセルが非表示になっているかどうかを表します。
-    name: getHidden()
-    fullName: getHidden()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getHidden(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getHyperlink:member(1)'
-    summary: 現在の範囲のハイパーリンクを表します。
-    name: getHyperlink()
-    fullName: getHyperlink()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getHyperlink(): RangeHyperlink;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.RangeHyperlink:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getImage:member(1)'
-    summary: '範囲を base64 でエンコードされた png 画像としてレンダリングします。 **重要**: 現在、この API は Excel for Mac ではサポートされていません。 \[ \# \] 現在の https://github.com/OfficeDev/office-js/issues/235) 状態については、「officedev/Office-js の問題235」を参照してください。'
-    name: getImage()
-    fullName: getImage()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getImage(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getIntersection:member(1)'
-    summary: 指定した範囲の長方形の交差を表す範囲オブジェクトを取得します。 交差部分が見つからない場合は、null オブジェクトを返します。
-    name: getIntersection(anotherRange)
-    fullName: getIntersection(anotherRange)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getIntersection(anotherRange: Range | string): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-      parameters:
-        - id: anotherRange
-          description: 範囲の交差を判断するために使用される、Range オブジェクトまたは Range アドレス。
-          type:
-            - 'ExcelScript!ExcelScript.Range#getIntersection~0:complex'
-  - uid: 'ExcelScript!ExcelScript.Range#getIsEntireColumn:member(1)'
-    summary: 現在の範囲が列全体であるかどうかを表します。
-    name: getIsEntireColumn()
-    fullName: getIsEntireColumn()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getIsEntireColumn(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getIsEntireRow:member(1)'
-    summary: 現在の範囲が行全体であるかどうかを表します。
-    name: getIsEntireRow()
-    fullName: getIsEntireRow()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getIsEntireRow(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getLastCell:member(1)'
-    summary: '範囲内の最後のセルを取得します。 たとえば、"B2:D5" の最後のセルは "D5" になります。'
-    name: getLastCell()
-    fullName: getLastCell()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getLastCell(): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getLastColumn:member(1)'
-    summary: '範囲内の最後の列を取得します。 たとえば、"B2:D5" の最後の列は "D2:D5" になります。'
-    name: getLastColumn()
-    fullName: getLastColumn()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getLastColumn(): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getLastRow:member(1)'
-    summary: '範囲内の最後の行を取得します。 たとえば、"B2:D5" の最後の行は "B5:D5" になります。'
-    name: getLastRow()
-    fullName: getLastRow()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getLastRow(): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getLeft:member(1)'
-    summary: '100% ズームの場合の、ワークシートの左端から範囲の左端までの距離を、ポイント単位で返します。 '
-    name: getLeft()
-    fullName: getLeft()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getLeft(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getLinkedDataTypeState:member(1)'
-    summary: セルのデータ型の状態を表します。
-    name: getLinkedDataTypeState()
-    fullName: getLinkedDataTypeState()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getLinkedDataTypeState(): LinkedDataTypeState;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.LinkedDataTypeState:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getLinkedDataTypeStates:member(1)'
-    summary: 各セルのデータ型の状態を表します。
-    name: getLinkedDataTypeStates()
-    fullName: getLinkedDataTypeStates()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getLinkedDataTypeStates(): LinkedDataTypeState[][];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range#getLinkedDataTypeStates~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getMergedAreas:member(1)'
-    summary: この範囲内の結合領域を表す RangeAreas オブジェクトを返します。 この範囲内のマージされた領域の数が512を超える場合、API は結果を返すことに失敗します。
-    name: getMergedAreas()
-    fullName: getMergedAreas()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getMergedAreas(): RangeAreas;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.RangeAreas:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getNumberFormat:member(1)'
-    summary: 指定されたセル範囲の Excel の数値書式コードを表します。 範囲に複数のセルが含まれている場合、最初のセル (0 の行インデックスと列インデックスが0で表されます) からデータが返されます。
-    name: getNumberFormat()
-    fullName: getNumberFormat()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getNumberFormat(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getNumberFormatCategories:member(1)'
-    summary: 各セルの数値形式のカテゴリを表します。
-    name: getNumberFormatCategories()
-    fullName: getNumberFormatCategories()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getNumberFormatCategories(): NumberFormatCategory[][];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range#getNumberFormatCategories~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getNumberFormatLocal:member(1)'
-    summary: ユーザーの言語設定に基づいて、指定されたセル範囲の Excel の数値書式コードを表します。 Excel では、プロパティを取得または設定するときに、言語や書式の強制変換は実行されません `numberFormatLocal` 。 返されるテキストには、システム設定で指定された言語に基づいてローカルに書式設定された文字列が使用されます。 範囲に複数のセルが含まれている場合、最初のセル (0 の行インデックスと列インデックスが0で表されます) からデータが返されます。
-    name: getNumberFormatLocal()
-    fullName: getNumberFormatLocal()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getNumberFormatLocal(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getNumberFormats:member(1)'
-    summary: 指定された範囲の Excel の数値書式コードを表します。
-    name: getNumberFormats()
-    fullName: getNumberFormats()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getNumberFormats(): string[][];'
-      return:
-        type:
-          - 'string[][]'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getNumberFormatsLocal:member(1)'
-    summary: ユーザーの言語設定に基づいて、指定された範囲の Excel の数値書式コードを表します。 Excel では、プロパティを取得または設定するときに、言語や書式の強制変換は実行されません `numberFormatLocal` 。 返されるテキストには、システム設定で指定された言語に基づいてローカルに書式設定された文字列が使用されます。
-    name: getNumberFormatsLocal()
-    fullName: getNumberFormatsLocal()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getNumberFormatsLocal(): string[][];'
-      return:
-        type:
-          - 'string[][]'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getOffsetRange:member(1)'
-    summary: 指定した範囲からのオフセットで範囲を表すオブジェクトを取得します。返される範囲のディメンションは、この範囲と一致します。結果の範囲がワークシートのグリッドの境界線の外にはみ出る場合は、エラーがスローされます。
-    name: 'getOffsetRange(rowOffset, columnOffset)'
-    fullName: 'getOffsetRange(rowOffset, columnOffset)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getOffsetRange(rowOffset: number, columnOffset: number): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: |-
-
-
-          #### <a name="examples"></a>例
-
-          ```javascript
-          /**
-           * This script gets adjacent cells using relative references.
-           * Note that if the active cell is on the top row, part of the script fails, 
-           * because it references the cell above the currently selected one.
-           */
-          function main(workbook: ExcelScript.Workbook) {
-            // Get the currently active cell in the workbook.
-            let activeCell = workbook.getActiveCell();
-            console.log(`The active cell's address is: ${activeCell.getAddress()}`);
-
-            // Get the cell to the right of the active cell and set its value and color.
-            let rightCell = activeCell.getOffsetRange(0,1);
-            rightCell.setValue("Right cell");
-            console.log(`The right cell's address is: ${rightCell.getAddress()}`);
-            rightCell.getFormat().getFont().setColor("Magenta");
-            rightCell.getFormat().getFill().setColor("Cyan");
-
-            // Get the cell to the above of the active cell and set its value and color.
-            // Note that this operation will fail if the active cell is in the top row.
-            let aboveCell = activeCell.getOffsetRange(-1, 0);
-            aboveCell.setValue("Above cell");
-            console.log(`The above cell's address is: ${aboveCell.getAddress()}`);
-            aboveCell.getFormat().getFont().setColor("White");
-            aboveCell.getFormat().getFill().setColor("Black");
-          }
-          ```
-      parameters:
-        - id: rowOffset
-          description: 範囲をオフセットする行数 (正、負、または 0)。正の値は下方向へのオフセットです。また、負の値は上方向へのオフセットです。
-          type:
-            - number
-        - id: columnOffset
-          description: 範囲をオフセットする列数 (正、負、または 0)。正の値は右方向へのオフセットです。また、負の値は左方向へのオフセットです。
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.Range#getPivotTables:member(1)'
-    summary: 範囲に重なっているピボットテーブルのスコープ設定されたコレクションを取得します。
-    name: getPivotTables(fullyContained)
-    fullName: getPivotTables(fullyContained)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPivotTables(fullyContained?: boolean): PivotTable[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range#getPivotTables~0:complex'
-        description: ''
-      parameters:
-        - id: fullyContained
-          description: True の場合は、範囲範囲内に完全に含まれるピボットテーブルのみを返します。 既定値は false です。
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.Range#getPredefinedCellStyle:member(1)'
-    summary: 現在の範囲のスタイルを表します。 セルのスタイルに不整合がある場合は、null が返されます。 ユーザー設定のスタイルの場合は、スタイル名が返されます。 組み込みのスタイルの場合、BuiltInStyle 列挙内の値を表す文字列が返されます。
-    name: getPredefinedCellStyle()
-    fullName: getPredefinedCellStyle()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPredefinedCellStyle(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getResizedRange:member(1)'
-    summary: 現在の Range オブジェクトに似た (ただし、右下隅がいくつかの行と列で拡張 (または縮小) されている) Range オブジェクトを取得します。
-    name: 'getResizedRange(deltaRows, deltaColumns)'
-    fullName: 'getResizedRange(deltaRows, deltaColumns)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getResizedRange(deltaRows: number, deltaColumns: number): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: |-
-
-
-          #### <a name="examples"></a>例
-
-          ```javascript
-          /**
-           * This script copies the formatting in the active cell to the neighboring cells.
-           * Note that this script only works when the active cell isn't on an edge of the worksheet.
-           */
-          function main(workbook: ExcelScript.Workbook) {
-            // Get the active cell.
-            let activeCell = workbook.getActiveCell();
-
-            // Get the cell that's one row above and one column to the left of the active cell.
-            let cornerCell = activeCell.getOffsetRange(-1,-1);
-
-            // Get a range that includes all the cells surrounding the active cell.
-            let surroundingRange = cornerCell.getResizedRange(2, 2)
-
-            // Copy the formatting from the active cell to the new range.
-            surroundingRange.copyFrom(
-              activeCell, /* The source range. */
-              ExcelScript.RangeCopyType.formats /* What to copy. */
-              );
-          }
-          ```
-      parameters:
-        - id: deltaRows
-          description: 現在の範囲を基準にして、右下隅を拡張する行の数です。範囲を拡張するには正の数値、または範囲を縮小するには負の数値を使用します。
-          type:
-            - number
-        - id: deltaColumns
-          description: 現在の範囲を基準にして、右下隅を展開する列数を指定します。 範囲を拡張するには正の数値、または範囲を縮小するには負の数値を使用します。
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.Range#getRow:member(1)'
-    summary: 範囲に含まれている行を 1 つ取得します。
-    name: getRow(row)
-    fullName: getRow(row)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRow(row: number): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-      parameters:
-        - id: row
-          description: 取得する範囲の行番号。 0 を起点とする番号になります。
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.Range#getRowCount:member(1)'
-    summary: 範囲に含まれる行の合計数を返します。
-    name: getRowCount()
-    fullName: getRowCount()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRowCount(): number;'
-      return:
-        type:
-          - number
-        description: |-
-
-
-          #### <a name="examples"></a>例
-
-          ```javascript
-          /**
-           * This sample provides the count of negative numbers that are present
-           * in the used range of the current worksheet.
-           */
-          function main(workbook: ExcelScript.Workbook) {
-            // Get the working range.
-            let usedRange = workbook.getActiveWorksheet().getUsedRange();
-            let rowCount = usedRange.getRowCount();
-            let columnCount = usedRange.getColumnCount();
-
-            // Save the values locally to avoid repeatedly asking the workbook.
-            let usedRangeValues = usedRange.getValues();
-
-            // Start the negative number counter.
-            let negativeCount = 0;
-
-            // Iterate over the entire range looking for negative numbers.
-            for (let i = 0; i < rowCount; i++) {
-              for (let j = 0; j < columnCount; j++) {
-                if (usedRangeValues[i][j] < 0) {
-                  negativeCount++;
-                }
-              }
-            }
-
-            // Log the negative number count to the console.
-            console.log(negativeCount);
-          }
-          ```
-  - uid: 'ExcelScript!ExcelScript.Range#getRowHidden:member(1)'
-    summary: 現在の範囲のすべての行が非表示になっているかどうかを表します。
-    name: getRowHidden()
-    fullName: getRowHidden()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRowHidden(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getRowIndex:member(1)'
-    summary: 範囲に含まれる最初のセルの行番号を返します。 0 を起点とする番号になります。
-    name: getRowIndex()
-    fullName: getRowIndex()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRowIndex(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getRowsAbove:member(1)'
-    summary: 現在の Range オブジェクトの上にある特定の行数を取得します。
-    name: getRowsAbove(count)
-    fullName: getRowsAbove(count)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRowsAbove(count?: number): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-      parameters:
-        - id: count
-          description: 省略可能。結果の範囲に含める行の数です。通常、正の数値を使用して現在の範囲外に範囲を作成します。負の数値を使用して、現在の範囲内に範囲を作成することもできます。既定値は 1 です。
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.Range#getRowsBelow:member(1)'
-    summary: 現在の Range オブジェクトの下にある特定の行数を取得します。
-    name: getRowsBelow(count)
-    fullName: getRowsBelow(count)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRowsBelow(count?: number): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-      parameters:
-        - id: count
-          description: 省略可能。結果の範囲に含める行の数です。通常、正の数値を使用して現在の範囲外に範囲を作成します。負の数値を使用して、現在の範囲内に範囲を作成することもできます。既定値は 1 です。
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.Range#getSavedAsArray:member(1)'
-    summary: すべてのセルが配列数式として保存されるかどうかを表します。 すべてのセルが配列数式として保存される場合は true を返し、すべてのセルが配列数式として保存されない場合は false を返します。 一部のセルが配列数式として保存される場合は null を返し、それ以外の場合は null を返します。
-    name: getSavedAsArray()
-    fullName: getSavedAsArray()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSavedAsArray(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getSort:member(1)'
-    summary: 現在の範囲について、範囲の並べ替えを表します。
-    name: getSort()
-    fullName: getSort()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSort(): RangeSort;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.RangeSort:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getSpecialCells:member(1)'
-    summary: 指定された型と値に一致するすべてのセルを表し、1 つまたは複数の範囲を構成する RangeAreas オブジェクトを取得します。 特別なセルが見つからない場合は、null オブジェクトが返されます。
-    name: 'getSpecialCells(cellType, cellValueType)'
-    fullName: 'getSpecialCells(cellType, cellValueType)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        getSpecialCells(
-                    cellType: SpecialCellType,
-                    cellValueType?: SpecialCellValueType
-                ): RangeAreas;
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.RangeAreas:interface'
-        description: ''
-      parameters:
-        - id: cellType
-          description: 含めるセルの種類を指定します。
-          type:
-            - 'ExcelScript!ExcelScript.SpecialCellType:enum'
-        - id: cellValueType
-          description: CellType が定数または数式の場合は、この引数を使用して、結果に含めるセルの種類を決定します。 これらの値は、組み合わせて複数の型を返すことができます。 この引数を省略すると、すべての定数および数式が対象になります。
-          type:
-            - 'ExcelScript!ExcelScript.SpecialCellValueType:enum'
-  - uid: 'ExcelScript!ExcelScript.Range#getSpillingToRange:member(1)'
-    summary: アンカー セルで呼び出されたとき、スピル範囲を含む範囲オブジェクトを取得します。 指定範囲がアンカーセルでない場合、またはスピル範囲が見つからない場合は、null オブジェクトが返されます。
-    name: getSpillingToRange()
-    fullName: getSpillingToRange()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSpillingToRange(): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getSpillParent:member(1)'
-    summary: スピルするセルのアンカー セルを含む範囲オブジェクトを取得します。 スピルセルが指定されていない場合、または複数のセルが指定されている場合は、null オブジェクトが返されます。
-    name: getSpillParent()
-    fullName: getSpillParent()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSpillParent(): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getSurroundingRegion:member(1)'
-    summary: 指定された範囲の左上のセルを囲む領域を表す Range オブジェクトを返します。 周囲の領域は、この範囲に相対の空白の行と空白の列の任意の組み合わせで囲まれた範囲です。
-    name: getSurroundingRegion()
-    fullName: getSurroundingRegion()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSurroundingRegion(): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getTables:member(1)'
-    summary: 範囲と重なるテーブルの集まりを範囲限定で取得します。
-    name: getTables(fullyContained)
-    fullName: getTables(fullyContained)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTables(fullyContained?: boolean): Table[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range#getTables~0:complex'
-        description: ''
-      parameters:
-        - id: fullyContained
-          description: True の場合は、範囲範囲内に完全に含まれるテーブルのみを返します。 既定値は false です。
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.Range#getText:member(1)'
-    summary: 指定された範囲のテキスト値を表します。 テキスト値は、セルの幅には依存しません。 \#EXCEL UI で行われた符号置換は、API によって返されるテキスト値には影響しません。 範囲に複数のセルが含まれている場合、最初のセル (0 の行インデックスと列インデックスが0で表されます) からデータが返されます。
-    name: getText()
-    fullName: getText()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getText(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getTexts:member(1)'
-    summary: 指定した範囲のテキスト値。 テキスト値は、セルの幅には依存しません。 \#EXCEL UI で行われた符号置換は、API によって返されるテキスト値には影響しません。
-    name: getTexts()
-    fullName: getTexts()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTexts(): string[][];'
-      return:
-        type:
-          - 'string[][]'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getTop:member(1)'
-    summary: '100% ズームの場合の、ワークシートの上端から範囲の上端までの距離を、ポイント単位で返します。 '
-    name: getTop()
-    fullName: getTop()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTop(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getUsedRange:member(1)'
-    summary: 指定した範囲オブジェクトのうち使用されている範囲を返します。範囲内に使用済みのセルがない場合、この関数は null オブジェクトを返します。
-    name: getUsedRange(valuesOnly)
-    fullName: getUsedRange(valuesOnly)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getUsedRange(valuesOnly?: boolean): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-      parameters:
-        - id: valuesOnly
-          description: 値の入っているセルのみを使用セルと見なします。
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.Range#getValue:member(1)'
-    summary: 指定された範囲の生の値を表します。 返されるデータの型は、文字列、数値、ブール値のいずれかになります。 エラーが含まれているセルは、エラー文字列を返します。 範囲に複数のセルが含まれている場合、最初のセル (0 の行インデックスと列インデックスが0で表されます) からデータが返されます。
-    name: getValue()
-    fullName: getValue()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getValue(): any;'
-      return:
-        type:
-          - any
-        description: |-
-
-
-          #### <a name="examples"></a>例
-
-          ```javascript
-          /**
-           * This sample reads the value of A1 and prints it to the console.
-           */
-          function main(workbook: ExcelScript.Workbook) {
-            // Get the current worksheet.
-            let selectedSheet = workbook.getActiveWorksheet();
-
-            // Get the value of cell A1.
-            let range = selectedSheet.getRange("A1");
-            
-            // Print the value of A1.
-            console.log(range.getValue());
-          }
-          ```
-  - uid: 'ExcelScript!ExcelScript.Range#getValues:member(1)'
-    summary: 指定した範囲の Raw 値を表します。 返されるデータの型は、文字列、数値、ブール値のいずれかになります。 エラーが含まれているセルは、エラー文字列を返します。
-    name: getValues()
-    fullName: getValues()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getValues(): any[][];'
-      return:
-        type:
-          - 'any[][]'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getValueType:member(1)'
-    summary: セル内のデータの種類を表します。 範囲に複数のセルが含まれている場合、最初のセル (0 の行インデックスと列インデックスが0で表されます) からデータが返されます。
-    name: getValueType()
-    fullName: getValueType()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getValueType(): RangeValueType;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.RangeValueType:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getValueTypes:member(1)'
-    summary: 各セルのデータの種類を指定します。
-    name: getValueTypes()
-    fullName: getValueTypes()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getValueTypes(): RangeValueType[][];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range#getValueTypes~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getVisibleView:member(1)'
-    summary: 現在の範囲の表示されている行を表します。
-    name: getVisibleView()
-    fullName: getVisibleView()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getVisibleView(): RangeView;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.RangeView:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getWidth:member(1)'
-    summary: '100% ズームの場合の、範囲の左端から範囲の右端までの距離を、ポイント単位で返します。 '
-    name: getWidth()
-    fullName: getWidth()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getWidth(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getWorksheet:member(1)'
-    summary: 現在の範囲を含んでいるワークシート。
-    name: getWorksheet()
-    fullName: getWorksheet()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getWorksheet(): Worksheet;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Worksheet:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#group:member(1)'
-    summary: アウトラインの列と行をグループ化します。
-    name: group(groupOption)
-    fullName: group(groupOption)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'group(groupOption: GroupOption): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: groupOption
-          description: 行または列によって範囲をグループ化する方法を指定します。 `InvalidArgument`グループのオプションが範囲のまたはプロパティと異なる場合、エラーがスローされます `isEntireRow` `isEntireColumn` (つまり、true で、 `range.isEntireRow` `groupOption` "bycolumns" または True で、 `range.isEntireColumn` `groupOption` "bycolumns")。
-          type:
-            - 'ExcelScript!ExcelScript.GroupOption:enum'
-  - uid: 'ExcelScript!ExcelScript.Range#hideGroupDetails:member(1)'
-    summary: 行または列グループの詳細を非表示にします。
-    name: hideGroupDetails(groupOption)
-    fullName: hideGroupDetails(groupOption)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'hideGroupDetails(groupOption: GroupOption): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: groupOption
-          description: グループ化された行または列のグループ化の詳細を非表示にするかどうかを指定します。
-          type:
-            - 'ExcelScript!ExcelScript.GroupOption:enum'
-  - uid: 'ExcelScript!ExcelScript.Range#insert:member(1)'
-    summary: この範囲を占めるセルまたはセルの範囲をワークシートに挿入し、領域を空けるために他のセルをシフトします。この時点で空き領域に位置する、新しい Range オブジェクトが返されます。
-    name: insert(shift)
-    fullName: insert(shift)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'insert(shift: InsertShiftDirection): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-      parameters:
-        - id: shift
-          description: セルをシフトする方向を指定します。 詳細については、「ExcelScript」を参照してください。
-          type:
-            - 'ExcelScript!ExcelScript.InsertShiftDirection:enum'
-  - uid: 'ExcelScript!ExcelScript.Range#merge:member(1)'
-    summary: 範囲内のセルをワークシートの 1 つの領域に結合します。
-    name: merge(across)
-    fullName: merge(across)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'merge(across?: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: across
-          description: 省略可能。 指定した範囲のセルを行ごとに結合して、行ごとに別のセルを作成する場合は True に設定します。 既定値は False です。
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.Range#moveTo:member(1)'
-    summary: セルの値、書式設定、および数式を現在の範囲から移動先の範囲に移動し、そのセルの古い情報を置き換えます。 移動先の範囲は、現在の範囲よりも小さい場合は自動的に展開されます。 元の範囲の領域の外にある、移動先の範囲内のすべてのセルが変更されることはありません。
-    name: moveTo(destinationRange)
-    fullName: moveTo(destinationRange)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'moveTo(destinationRange: Range | string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: destinationRange
-          description: destinationRange この範囲内の情報の移動先となる範囲を指定します。
-          type:
-            - 'ExcelScript!ExcelScript.Range#moveTo~0:complex'
-  - uid: 'ExcelScript!ExcelScript.Range#removeDuplicates:member(1)'
-    summary: 列によって指定される範囲から重複する値を削除します。
-    name: 'removeDuplicates(columns, includesHeader)'
-    fullName: 'removeDuplicates(columns, includesHeader)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        removeDuplicates(
-                    columns: number[],
-                    includesHeader: boolean
-                ): RemoveDuplicatesResult;
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.RemoveDuplicatesResult:interface'
-        description: ''
-      parameters:
-        - id: columns
-          description: 重複が含まれる可能性がある範囲内の列。 少なくとも1つの列を指定する必要があります。 0 を起点とする番号になります。
-          type:
-            - 'number[]'
-        - id: includesHeader
-          description: True の場合は、入力データにヘッダーが含まれています。 既定値は false です。
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.Range#replaceAll:member(1)'
-    summary: 現在の範囲内で、指定された条件に基づき、指定された文字列を検索し、置換します。
-    name: 'replaceAll(text, replacement, criteria)'
-    fullName: 'replaceAll(text, replacement, criteria)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        replaceAll(
-                    text: string,
-                    replacement: string,
-                    criteria: ReplaceCriteria
-                ): number;
-      return:
-        type:
-          - number
-        description: ''
-      parameters:
-        - id: text
-          description: 検索する文字列を指定します。
-          type:
-            - string
-        - id: replacement
-          description: 元のと置き換える文字列。
-          type:
-            - string
-        - id: criteria
-          description: 置換条件を追加します。
-          type:
-            - 'ExcelScript!ExcelScript.ReplaceCriteria:interface'
-  - uid: 'ExcelScript!ExcelScript.Range#select:member(1)'
-    summary: Excel UI で指定した範囲を選択します。
-    name: select()
-    fullName: select()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'select(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#setColumnHidden:member(1)'
-    summary: 現在の範囲のすべての列が非表示になっているかどうかを表します。
-    name: setColumnHidden(columnHidden)
-    fullName: setColumnHidden(columnHidden)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setColumnHidden(columnHidden: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: columnHidden
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.Range#setDirty:member(1)'
-    summary: 次の再計算が発生したときに再計算する範囲を設定します。
-    name: setDirty()
-    fullName: setDirty()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setDirty(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#setFormula:member(1)'
-    summary: セルの数式を A1 形式の表記に設定します。 範囲に複数のセルが含まれている場合は、指定範囲の各セルが入力データで更新されます。
-    name: setFormula(formula)
-    fullName: setFormula(formula)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setFormula(formula: string): void;'
-      return:
-        type:
-          - void
-        description: |-
-
-
-          #### <a name="examples"></a>例
-
-          ```javascript
-          /*
-           * This script sets a cell's formula, 
-           * then displays how Excel stores the cell's formula and value separately.
-           */
-          function main(workbook: ExcelScript.Workbook) {
-            let selectedSheet = workbook.getActiveWorksheet();
-
-            // Set A1 to 2.
-            let a1 = selectedSheet.getRange("A1");
-            a1.setValue(2);
-
-            // Set B1 to the formula =(2*A1), which should equal 4.
-            let b1 = selectedSheet.getRange("B1")
-            b1.setFormula("=(2*A1)");
-
-            // Log the current results for `getFormula` and `getValue` at B1.
-            console.log(`B1 - Formula: ${b1.getFormula()} | Value: ${b1.getValue()}`);
-          }
-          ```
-      parameters:
-        - id: formula
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Range#setFormulaLocal:member(1)'
-    summary: 'ユーザーの言語と書式設定ロケールで、セルの数式を A1 形式の表記で設定します。 たとえば、英語の数式 "=SUM(A1, 1.5)" は、ドイツ語では "=SUMME(A1; 1,5)" になります。 範囲に複数のセルが含まれている場合は、指定範囲の各セルが入力データで更新されます。'
-    name: setFormulaLocal(formulaLocal)
-    fullName: setFormulaLocal(formulaLocal)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setFormulaLocal(formulaLocal: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: formulaLocal
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Range#setFormulaR1C1:member(1)'
-    summary: セルの数式を R1C1 形式の表記で設定します。 範囲に複数のセルが含まれている場合は、指定範囲の各セルが入力データで更新されます。
-    name: setFormulaR1C1(formulaR1C1)
-    fullName: setFormulaR1C1(formulaR1C1)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setFormulaR1C1(formulaR1C1: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: formulaR1C1
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Range#setFormulas:member(1)'
-    summary: A1 スタイル表記の数式を表します。 セルに数式が含まれていない場合は、その値が返されます。
-    name: setFormulas(formulas)
-    fullName: setFormulas(formulas)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setFormulas(formulas: string[][]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: formulas
-          description: ''
-          type:
-            - 'string[][]'
-  - uid: 'ExcelScript!ExcelScript.Range#setFormulasLocal:member(1)'
-    summary: 'ユーザーの言語と数値書式ロケールで、A1 スタイル表記の数式を表します。 たとえば、英語の数式 "=SUM(A1, 1.5)" は、ドイツ語では "=SUMME(A1; 1,5)" になります。 セルに数式が含まれていない場合は、その値が返されます。'
-    name: setFormulasLocal(formulasLocal)
-    fullName: setFormulasLocal(formulasLocal)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setFormulasLocal(formulasLocal: string[][]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: formulasLocal
-          description: ''
-          type:
-            - 'string[][]'
-  - uid: 'ExcelScript!ExcelScript.Range#setFormulasR1C1:member(1)'
-    summary: R1C1 スタイル表記の数式を表します。 セルに数式が含まれていない場合は、その値が返されます。
-    name: setFormulasR1C1(formulasR1C1)
-    fullName: setFormulasR1C1(formulasR1C1)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setFormulasR1C1(formulasR1C1: string[][]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: formulasR1C1
-          description: ''
-          type:
-            - 'string[][]'
-  - uid: 'ExcelScript!ExcelScript.Range#setHyperlink:member(1)'
-    summary: 現在の範囲のハイパーリンクを表します。
-    name: setHyperlink(hyperlink)
-    fullName: setHyperlink(hyperlink)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setHyperlink(hyperlink: RangeHyperlink): void;'
-      return:
-        type:
-          - void
-        description: |-
-
-
-          #### <a name="examples"></a>例
-
-          ```javascript
-          /** 
-           * This script inserts a hyperlink to the first cell of the last worksheet in the workbook.
-           */
-          function main(workbook: ExcelScript.Workbook) {
-            // Get the active cell.
-            let cell = workbook.getActiveCell();
-
-            // Get the last worksheet in the workbook.
-            // Note that this might be the current sheet if there's only one worksheet.
-            let lastSheet = workbook.getLastWorksheet();
-
-            // Get sheet name. 
-            let linkedSheetName = lastSheet.getName();
-            console.log(`Setting hyperlink of ${cell.getAddress()} to the ${linkedSheetName} sheet's A1 cell`);
-
-            // Set the text for the hyperlink.
-            let value = `Click to go to: ${linkedSheetName}`;
-
-            // Create the hyperlink using that cell's value.
-            cell.setHyperlink({
-              textToDisplay: value.toString(),
-              screenTip: `Navigate to ${linkedSheetName}`,
-              documentReference: `${linkedSheetName}!A1`
-            });
-          }
-          ```
-      parameters:
-        - id: hyperlink
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.RangeHyperlink:interface'
-  - uid: 'ExcelScript!ExcelScript.Range#setNumberFormat:member(1)'
-    summary: 指定されたセル範囲に Excel の数値書式コードを設定します。 範囲に複数のセルが含まれている場合は、指定範囲の各セルが入力データで更新されます。
-    name: setNumberFormat(numberFormat)
-    fullName: setNumberFormat(numberFormat)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setNumberFormat(numberFormat: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: numberFormat
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Range#setNumberFormatLocal:member(1)'
-    summary: ユーザーの言語設定に基づいて、指定されたセル範囲の Excel の数値書式コードを設定します。 Excel では、プロパティを取得または設定するときに、言語や書式の強制変換は実行されません `numberFormatLocal` 。 返されるテキストには、システム設定で指定された言語に基づいてローカルに書式設定された文字列が使用されます。 範囲に複数のセルが含まれている場合は、指定範囲の各セルが入力データで更新されます。
-    name: setNumberFormatLocal(numberFormatLocal)
-    fullName: setNumberFormatLocal(numberFormatLocal)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setNumberFormatLocal(numberFormatLocal: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: numberFormatLocal
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Range#setNumberFormats:member(1)'
-    summary: 指定された範囲の Excel の数値書式コードを表します。
-    name: setNumberFormats(numberFormats)
-    fullName: setNumberFormats(numberFormats)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setNumberFormats(numberFormats: string[][]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: numberFormats
-          description: ''
-          type:
-            - 'string[][]'
-  - uid: 'ExcelScript!ExcelScript.Range#setNumberFormatsLocal:member(1)'
-    summary: ユーザーの言語設定に基づいて、指定された範囲の Excel の数値書式コードを表します。 Excel では、プロパティを取得または設定するときに、言語や書式の強制変換は実行されません `numberFormatLocal` 。 返されるテキストには、システム設定で指定された言語に基づいてローカルに書式設定された文字列が使用されます。
-    name: setNumberFormatsLocal(numberFormatsLocal)
-    fullName: setNumberFormatsLocal(numberFormatsLocal)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setNumberFormatsLocal(numberFormatsLocal: string[][]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: numberFormatsLocal
-          description: ''
-          type:
-            - 'string[][]'
-  - uid: 'ExcelScript!ExcelScript.Range#setPredefinedCellStyle:member(1)'
-    summary: 現在の範囲のスタイルを表します。 セルのスタイルに不整合がある場合は、null が返されます。 ユーザー設定のスタイルの場合は、スタイル名が返されます。 組み込みのスタイルの場合、BuiltInStyle 列挙内の値を表す文字列が返されます。
-    name: setPredefinedCellStyle(predefinedCellStyle)
-    fullName: setPredefinedCellStyle(predefinedCellStyle)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setPredefinedCellStyle(predefinedCellStyle: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: predefinedCellStyle
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Range#setRowHidden:member(1)'
-    summary: 現在の範囲のすべての行が非表示になっているかどうかを表します。
-    name: setRowHidden(rowHidden)
-    fullName: setRowHidden(rowHidden)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setRowHidden(rowHidden: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: rowHidden
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.Range#setValue:member(1)'
-    summary: 指定された範囲の生の値を設定します。 設定されるデータは、string、number、または boolean 型の場合があります。 `null` 値は無視されます (Excel で設定または上書きされません)。 範囲に複数のセルが含まれている場合は、指定範囲の各セルが入力データで更新されます。
-    name: setValue(value)
-    fullName: setValue(value)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setValue(value: any): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: value
-          description: ''
-          type:
-            - any
-  - uid: 'ExcelScript!ExcelScript.Range#setValues:member(1)'
-    summary: 指定した範囲の Raw 値を表します。 返されるデータの型は、文字列、数値、ブール値のいずれかになります。 エラーが含まれているセルは、エラー文字列を返します。
-    name: setValues(values)
-    fullName: setValues(values)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setValues(values: any[][]): void;'
-      return:
-        type:
-          - void
-        description: |-
-
-
-          #### <a name="examples"></a>例
-
-          ```javascript
-          /**
-           * This sample inserts some pre-loaded data into a range.
-           * It also shows how to get a range that fits the data.
-           */
-           function main(workbook: ExcelScript.Workbook) {
-             // Get the active cell.
-             let currentCell = workbook.getActiveCell();
-             
-             // Calculate the range needed to fit the given data.
-             let targetRange = currentCell.getResizedRange(DATA.length - 1, DATA[0].length - 1);
-
-             // Set range values to the data.
-             targetRange.setValues(DATA);
-
-             // Autofit the columns so the worksheet is readable. 
-             targetRange.getFormat().autofitColumns();
-           }
-
-           /* 
-            * This sample's data is in a static 2-dimensional array.
-            * You could also get the input from other ranges or sources.
-            * Note that each row must have the same number of columns to be valid. 
-            */
-           const DATA = [
-             ['Date', 'Salesperson', 'Product', 'Amount']
-             , ['3/2/2020', 'Anne', 'Pizza', '$1400']
-             , ['3/2/2020', 'Mariya', 'Pizza', '$1700']
-             , ['3/7/2020', 'Mark', 'Sandwiches', '$1010']
-             , ['3/24/2020', 'Anne', 'Pizza', '$750']
-             , ['3/28/2020', 'Mark', 'Salads', '$510']
-             , ['4/17/2020', 'Laura', 'Salads', '$900']
-             , ['4/17/2020', 'Mariya', 'Salads', '$1600']
-             , ['4/28/2020', 'Laura', 'Sandwiches', '$680']
-           ];
-          ```
-      parameters:
-        - id: values
-          description: ''
-          type:
-            - 'any[][]'
-  - uid: 'ExcelScript!ExcelScript.Range#showCard:member(1)'
-    summary: アクティブ セルに多数の値が含まれる場合、そのセルのカードを表示します。
-    name: showCard()
-    fullName: showCard()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'showCard(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#showGroupDetails:member(1)'
-    summary: 行または列グループの詳細を表示します。
-    name: showGroupDetails(groupOption)
-    fullName: showGroupDetails(groupOption)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'showGroupDetails(groupOption: GroupOption): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: groupOption
-          description: グループ化された行またはグループ化された列の詳細を表示するかどうかを指定します。
-          type:
-            - 'ExcelScript!ExcelScript.GroupOption:enum'
-  - uid: 'ExcelScript!ExcelScript.Range#ungroup:member(1)'
-    summary: アウトラインの列と行のグループ化を解除します。
-    name: ungroup(groupOption)
-    fullName: ungroup(groupOption)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'ungroup(groupOption: GroupOption): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: groupOption
-          description: 行または列によって範囲をグループ解除する方法を指定します。
-          type:
-            - 'ExcelScript!ExcelScript.GroupOption:enum'
-  - uid: 'ExcelScript!ExcelScript.Range#unmerge:member(1)'
-    summary: 範囲内のセルを結合解除して別々のセルにします。
-    name: unmerge()
-    fullName: unmerge()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'unmerge(): void;'
-      return:
-        type:
-          - void
-        description: ''
-references:
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat:interface'
-    name: ConditionalFormat
-    fullName: ExcelScript.ConditionalFormat
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormatType:enum'
-    name: ConditionalFormatType
-    fullName: ExcelScript.ConditionalFormatType
-  - uid: 'ExcelScript!ExcelScript.Range#autoFill~0:complex'
-    name: Range | string
-    fullName: ExcelScript.Range | string
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Range:interface'
-        name: Range
-        fullName: ExcelScript.Range
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'ExcelScript!ExcelScript.AutoFillType:enum'
-    name: AutoFillType
-    fullName: ExcelScript.AutoFillType
-  - uid: 'ExcelScript!ExcelScript.ClearApplyTo:enum'
-    name: ClearApplyTo
-    fullName: ExcelScript.ClearApplyTo
-  - uid: 'ExcelScript!ExcelScript.Range#copyFrom~0:complex'
-    name: Range | RangeAreas | string
-    fullName: ExcelScript.Range | ExcelScript.RangeAreas | string
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Range:interface'
-        name: Range
-        fullName: ExcelScript.Range
-      - name: ' | '
-        fullName: ' | '
-      - uid: 'ExcelScript!ExcelScript.RangeAreas:interface'
-        name: RangeAreas
-        fullName: ExcelScript.RangeAreas
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'ExcelScript!ExcelScript.RangeCopyType:enum'
-    name: RangeCopyType
-    fullName: ExcelScript.RangeCopyType
-  - uid: 'ExcelScript!ExcelScript.DeleteShiftDirection:enum'
-    name: DeleteShiftDirection
-    fullName: ExcelScript.DeleteShiftDirection
-  - uid: 'ExcelScript!ExcelScript.Range:interface'
-    name: Range
-    fullName: ExcelScript.Range
-  - uid: 'ExcelScript!ExcelScript.SearchCriteria:interface'
-    name: SearchCriteria
-    fullName: ExcelScript.SearchCriteria
-  - uid: 'ExcelScript!ExcelScript.Range#getBoundingRect~0:complex'
-    name: Range | string
-    fullName: ExcelScript.Range | string
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Range:interface'
-        name: Range
-        fullName: ExcelScript.Range
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'ExcelScript!ExcelScript.Range#getConditionalFormats~0:complex'
-    name: 'ConditionalFormat[]'
-    fullName: 'ExcelScript.ConditionalFormat[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.ConditionalFormat:interface'
-        name: ConditionalFormat
-        fullName: ExcelScript.ConditionalFormat
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.DataValidation:interface'
-    name: DataValidation
-    fullName: ExcelScript.DataValidation
-  - uid: 'ExcelScript!ExcelScript.WorkbookRangeAreas:interface'
-    name: WorkbookRangeAreas
-    fullName: ExcelScript.WorkbookRangeAreas
-  - uid: 'ExcelScript!ExcelScript.RangeFormat:interface'
-    name: RangeFormat
-    fullName: ExcelScript.RangeFormat
-  - uid: 'ExcelScript!ExcelScript.RangeHyperlink:interface'
-    name: RangeHyperlink
-    fullName: ExcelScript.RangeHyperlink
-  - uid: 'ExcelScript!ExcelScript.Range#getIntersection~0:complex'
-    name: Range | string
-    fullName: ExcelScript.Range | string
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Range:interface'
-        name: Range
-        fullName: ExcelScript.Range
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'ExcelScript!ExcelScript.LinkedDataTypeState:enum'
-    name: LinkedDataTypeState
-    fullName: ExcelScript.LinkedDataTypeState
-  - uid: 'ExcelScript!ExcelScript.Range#getLinkedDataTypeStates~0:complex'
-    name: 'LinkedDataTypeState[][]'
-    fullName: 'ExcelScript.LinkedDataTypeState[][]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.LinkedDataTypeState:enum'
-        name: LinkedDataTypeState
-        fullName: ExcelScript.LinkedDataTypeState
-      - name: '[][]'
-        fullName: '[][]'
-  - uid: 'ExcelScript!ExcelScript.RangeAreas:interface'
-    name: RangeAreas
-    fullName: ExcelScript.RangeAreas
-  - uid: 'ExcelScript!ExcelScript.Range#getNumberFormatCategories~0:complex'
-    name: 'NumberFormatCategory[][]'
-    fullName: 'ExcelScript.NumberFormatCategory[][]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.NumberFormatCategory:enum'
-        name: NumberFormatCategory
-        fullName: ExcelScript.NumberFormatCategory
-      - name: '[][]'
-        fullName: '[][]'
-  - uid: 'ExcelScript!ExcelScript.Range#getPivotTables~0:complex'
-    name: 'PivotTable[]'
-    fullName: 'ExcelScript.PivotTable[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.PivotTable:interface'
-        name: PivotTable
-        fullName: ExcelScript.PivotTable
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.RangeSort:interface'
-    name: RangeSort
-    fullName: ExcelScript.RangeSort
-  - uid: 'ExcelScript!ExcelScript.SpecialCellType:enum'
-    name: SpecialCellType
-    fullName: ExcelScript.SpecialCellType
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType:enum'
-    name: SpecialCellValueType
-    fullName: ExcelScript.SpecialCellValueType
-  - uid: 'ExcelScript!ExcelScript.Range#getTables~0:complex'
-    name: 'Table[]'
-    fullName: 'ExcelScript.Table[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Table:interface'
-        name: Table
-        fullName: ExcelScript.Table
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.RangeValueType:enum'
-    name: RangeValueType
-    fullName: ExcelScript.RangeValueType
-  - uid: 'ExcelScript!ExcelScript.Range#getValueTypes~0:complex'
-    name: 'RangeValueType[][]'
-    fullName: 'ExcelScript.RangeValueType[][]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.RangeValueType:enum'
-        name: RangeValueType
-        fullName: ExcelScript.RangeValueType
-      - name: '[][]'
-        fullName: '[][]'
-  - uid: 'ExcelScript!ExcelScript.RangeView:interface'
-    name: RangeView
-    fullName: ExcelScript.RangeView
-  - uid: 'ExcelScript!ExcelScript.Worksheet:interface'
-    name: Worksheet
-    fullName: ExcelScript.Worksheet
-  - uid: 'ExcelScript!ExcelScript.GroupOption:enum'
-    name: GroupOption
-    fullName: ExcelScript.GroupOption
-  - uid: 'ExcelScript!ExcelScript.InsertShiftDirection:enum'
-    name: InsertShiftDirection
-    fullName: ExcelScript.InsertShiftDirection
-  - uid: 'ExcelScript!ExcelScript.Range#moveTo~0:complex'
-    name: Range | string
-    fullName: ExcelScript.Range | string
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Range:interface'
-        name: Range
-        fullName: ExcelScript.Range
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'ExcelScript!ExcelScript.RemoveDuplicatesResult:interface'
-    name: RemoveDuplicatesResult
-    fullName: ExcelScript.RemoveDuplicatesResult
-  - uid: 'ExcelScript!ExcelScript.ReplaceCriteria:interface'
-    name: ReplaceCriteria
-    fullName: ExcelScript.ReplaceCriteria
+### YamlMime:TSType
+name: ExcelScript.Range
+uid: ExcelScript!ExcelScript.Range:interface
+package: ExcelScript!
+fullName: ExcelScript.Range
+summary: 範囲は、1 つ以上の隣接するセル (セル、行、列、セルのブロックなど) のセットを表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: addConditionalFormat(type)
+  uid: ExcelScript!ExcelScript.Range#addConditionalFormat:member(1)
+  package: ExcelScript!
+  fullName: addConditionalFormat(type)
+  summary: 新しい条件付き書式をコレクションの先頭/最上位の優先度に追加します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'addConditionalFormat(type: ConditionalFormatType): ConditionalFormat;'
+    parameters:
+    - id: type
+      description: 追加する条件付き書式の種類を指定します。 詳細については、「ExcelScript」を参照してください。
+      type: <xref uid="ExcelScript!ExcelScript.ConditionalFormatType:enum" />
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ConditionalFormat:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```javascript\n/**\n * This sample applies conditional formatting to the currently used range in the worksheet. \n * The conditional formatting is a green fill for the top 10% of values.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Get the used range in the worksheet.\n  let range = selectedSheet.getUsedRange();\n\n  // Set the fill color to green for the top 10% of values in the range.\n  let conditionalFormat = range.addConditionalFormat(ExcelScript.ConditionalFormatType.topBottom)\n  conditionalFormat.getTopBottom().getFormat().getFill().setColor(\"green\");\n  conditionalFormat.getTopBottom().setRule({\n    rank: 10, // The percentage threshold.\n    type: ExcelScript.ConditionalTopBottomCriterionType.topPercent // The type of the top/bottom condition.\n  });\n}\n```"
+- name: autoFill(destinationRange, autoFillType)
+  uid: ExcelScript!ExcelScript.Range#autoFill:member(1)
+  package: ExcelScript!
+  fullName: autoFill(destinationRange, autoFillType)
+  summary: 指定したオートフィルロジックを使用して、現在の範囲から移動先の範囲に範囲を埋めます。 変換先の範囲は null にすることも、ソースを水平方向または垂直方向に拡張することもできます。 連続していない範囲はサポートされていません。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      autoFill(
+                  destinationRange?: Range | string,
+                  autoFillType?: AutoFillType
+              ): void;
+    parameters:
+    - id: destinationRange
+      description: オートフィルの対象となるセル範囲を指定します。 引数 destination に null を指定すると、周囲のセル (UI の範囲の塗りつぶしハンドルをダブルクリックしたときの動作) に基づいてデータが入力されます。
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
+    - id: autoFillType
+      description: オートフィルの種類を示します。 現在の範囲の内容に基づいて、移動先の範囲をどのように塗りつぶすかを指定します。 既定値は "FillDefault" です。
+      type: <xref uid="ExcelScript!ExcelScript.AutoFillType:enum" />
+    return:
+      type: void
+      description: ''
+- name: calculate()
+  uid: ExcelScript!ExcelScript.Range#calculate:member(1)
+  package: ExcelScript!
+  fullName: calculate()
+  summary: ワークシート上のセルの範囲を計算します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'calculate(): void;'
+    return:
+      type: void
+      description: ''
+- name: clear(applyTo)
+  uid: ExcelScript!ExcelScript.Range#clear:member(1)
+  package: ExcelScript!
+  fullName: clear(applyTo)
+  summary: 範囲の値、書式、塗りつぶし、罫線などをクリアします。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'clear(applyTo?: ClearApplyTo): void;'
+    parameters:
+    - id: applyTo
+      description: 省略可能。 クリア操作の種類を決定します。 詳細については、「ExcelScript. ClearApplyTo を参照してください。
+      type: <xref uid="ExcelScript!ExcelScript.ClearApplyTo:enum" />
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```javascript\n/**\n * This script removes all the formatting from the selected range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the selected range.\n  let range = workbook.getSelectedRange();\n\n  // Clear all the formatting in that range.\n  range.clear(ExcelScript.ClearApplyTo.formats);\n}\n```"
+- name: clearAllConditionalFormats()
+  uid: ExcelScript!ExcelScript.Range#clearAllConditionalFormats:member(1)
+  package: ExcelScript!
+  fullName: clearAllConditionalFormats()
+  summary: 現在指定している範囲でアクティブなすべての条件付き書式をクリアする。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'clearAllConditionalFormats(): void;'
+    return:
+      type: void
+      description: ''
+- name: convertDataTypeToText()
+  uid: ExcelScript!ExcelScript.Range#convertDataTypeToText:member(1)
+  package: ExcelScript!
+  fullName: convertDataTypeToText()
+  summary: データ型を含む範囲セルをテキストに変換します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'convertDataTypeToText(): void;'
+    return:
+      type: void
+      description: ''
+- name: copyFrom(sourceRange, copyType, skipBlanks, transpose)
+  uid: ExcelScript!ExcelScript.Range#copyFrom:member(1)
+  package: ExcelScript!
+  fullName: copyFrom(sourceRange, copyType, skipBlanks, transpose)
+  summary: ソース範囲または RangeAreas から現在の範囲にセル データまたは書式設定をコピーします。 コピー先の範囲は、元の範囲または RangeAreas のサイズと異なる場合があります。 転送先は、ソースよりも小さい場合は自動的に展開されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      copyFrom(
+                  sourceRange: Range | RangeAreas | string,
+                  copyType?: RangeCopyType,
+                  skipBlanks?: boolean,
+                  transpose?: boolean
+              ): void;
+    parameters:
+    - id: sourceRange
+      description: コピー元の範囲または RangeAreas を指定します。 ソース範囲に複数の範囲がある場合は、四角形の範囲から完全な行または列を削除することによって、そのフォームを作成できるようにする必要があります。
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" /> | string
+    - id: copyType
+      description: コピーするセルのデータまたは書式の種類を指定します。 既定値は "すべて" です。
+      type: <xref uid="ExcelScript!ExcelScript.RangeCopyType:enum" />
+    - id: skipBlanks
+      description: True の場合は、ソース範囲の空白セルをスキップします。 既定値は false です。
+      type: boolean
+    - id: transpose
+      description: True を指定すると、貼り付け先の範囲内のセルが転置されます。 既定値は false です。
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: delete(shift)
+  uid: ExcelScript!ExcelScript.Range#delete:member(1)
+  package: ExcelScript!
+  fullName: delete(shift)
+  summary: 範囲に関連付けられているセルを削除します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(shift: DeleteShiftDirection): void;'
+    parameters:
+    - id: shift
+      description: セルをシフトする方向を指定します。 詳細については、「ExcelScript」を参照してください。
+      type: <xref uid="ExcelScript!ExcelScript.DeleteShiftDirection:enum" />
+    return:
+      type: void
+      description: ''
+- name: find(text, criteria)
+  uid: ExcelScript!ExcelScript.Range#find:member(1)
+  package: ExcelScript!
+  fullName: find(text, criteria)
+  summary: 指定された条件に基づいて指定された文字列を見つけます。 現在の範囲が1つのセルより大きい場合は、検索はその範囲に制限されます。それ以外の場合は、シート全体がそのセルの後に表示されます。 一致しない場合、この関数は null オブジェクトを返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'find(text: string, criteria: SearchCriteria): Range;'
+    parameters:
+    - id: text
+      description: 検索する文字列を指定します。
+      type: string
+    - id: criteria
+      description: 検索の方向、検索をセル全体に一致させる必要があるかどうか、または大文字と小文字を区別するかどうかを含む、追加の検索条件。
+      type: <xref uid="ExcelScript!ExcelScript.SearchCriteria:interface" />
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: flashFill()
+  uid: ExcelScript!ExcelScript.Range#flashFill:member(1)
+  package: ExcelScript!
+  fullName: flashFill()
+  summary: 現在の範囲に対してフラッシュ フィルを実行します。フラッシュ フィルでは、パターンを感知して自動的にデータが設定されるので、範囲は単一列範囲で、かつパターンを検出できるように周囲にデータが存在する必要があります。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'flashFill(): void;'
+    return:
+      type: void
+      description: ''
+- name: getAbsoluteResizedRange(numRows, numColumns)
+  uid: ExcelScript!ExcelScript.Range#getAbsoluteResizedRange:member(1)
+  package: ExcelScript!
+  fullName: getAbsoluteResizedRange(numRows, numColumns)
+  summary: 現在の Range オブジェクトと左上のセルが同じで、指定した数の行と列を含む Range オブジェクトを取得します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getAbsoluteResizedRange(numRows: number, numColumns: number): Range;'
+    parameters:
+    - id: numRows
+      description: 新しい範囲サイズの行数を指定します。
+      type: number
+    - id: numColumns
+      description: 新しい範囲のサイズの列数を指定します。
+      type: number
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getAddress()
+  uid: ExcelScript!ExcelScript.Range#getAddress:member(1)
+  package: ExcelScript!
+  fullName: getAddress()
+  summary: 'セル範囲の参照を A1 形式で指定します。 Address 値にはシート参照が含まれます (例: "Sheet1!A1: B4 ")'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getAddress(): string;'
+    return:
+      type: string
+      description: ''
+- name: getAddressLocal()
+  uid: ExcelScript!ExcelScript.Range#getAddressLocal:member(1)
+  package: ExcelScript!
+  fullName: getAddressLocal()
+  summary: ユーザーの言語で指定された範囲の範囲参照を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getAddressLocal(): string;'
+    return:
+      type: string
+      description: ''
+- name: getBoundingRect(anotherRange)
+  uid: ExcelScript!ExcelScript.Range#getBoundingRect:member(1)
+  package: ExcelScript!
+  fullName: getBoundingRect(anotherRange)
+  summary: 指定した範囲を包含する、最小の Range オブジェクトを取得します。 たとえば、"B2:C5" と "D10:E15" の GetBoundingRect は、"B2:E15" になります。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getBoundingRect(anotherRange: Range | string): Range;'
+    parameters:
+    - id: anotherRange
+      description: Range オブジェクト、アドレスまたは範囲名。
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getCell(row, column)
+  uid: ExcelScript!ExcelScript.Range#getCell:member(1)
+  package: ExcelScript!
+  fullName: getCell(row, column)
+  summary: 行と列の番号に基づいて、1 つのセルを含んだ範囲オブジェクトを取得します。 ワークシートのグリッド内に収まるセルは、親の範囲の境界の外側にある場合があります。 返されるセルは、範囲の左上のセルを基準に配置されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCell(row: number, column: number): Range;'
+    parameters:
+    - id: row
+      description: 取得するセルの行番号。 0 を起点とする番号になります。
+      type: number
+    - id: column
+      description: 取得セルの列番号。 0 を起点とする番号になります。
+      type: number
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getCellCount()
+  uid: ExcelScript!ExcelScript.Range#getCellCount:member(1)
+  package: ExcelScript!
+  fullName: getCellCount()
+  summary: 範囲内のセルの数を指定します。 セルの数が 2^31-1 (2,147,483,647) を超えると、この API は -1 を返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCellCount(): number;'
+    return:
+      type: number
+      description: ''
+- name: getColumn(column)
+  uid: ExcelScript!ExcelScript.Range#getColumn:member(1)
+  package: ExcelScript!
+  fullName: getColumn(column)
+  summary: 範囲に含まれる列を 1 つ取得します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getColumn(column: number): Range;'
+    parameters:
+    - id: column
+      description: 取得する範囲の列番号。 0 を起点とする番号になります。
+      type: number
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getColumnCount()
+  uid: ExcelScript!ExcelScript.Range#getColumnCount:member(1)
+  package: ExcelScript!
+  fullName: getColumnCount()
+  summary: 範囲内の列の合計数を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getColumnCount(): number;'
+    return:
+      type: number
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```javascript\n/**\n * This sample provides the count of negative numbers that are present\n * in the used range of the current worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the working range.\n  let usedRange = workbook.getActiveWorksheet().getUsedRange();\n  let rowCount = usedRange.getRowCount();\n  let columnCount = usedRange.getColumnCount();\n\n  // Save the values locally to avoid repeatedly asking the workbook.\n  let usedRangeValues = usedRange.getValues();\n\n  // Start the negative number counter.\n  let negativeCount = 0;\n\n  // Iterate over the entire range looking for negative numbers.\n  for (let i = 0; i < rowCount; i++) {\n    for (let j = 0; j < columnCount; j++) {\n      if (usedRangeValues[i][j] < 0) {\n        negativeCount++;\n      }\n    }\n  }\n\n  // Log the negative number count to the console.\n  console.log(negativeCount);\n}\n```"
+- name: getColumnHidden()
+  uid: ExcelScript!ExcelScript.Range#getColumnHidden:member(1)
+  package: ExcelScript!
+  fullName: getColumnHidden()
+  summary: 現在の範囲のすべての列が非表示になっているかどうかを表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getColumnHidden(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getColumnIndex()
+  uid: ExcelScript!ExcelScript.Range#getColumnIndex:member(1)
+  package: ExcelScript!
+  fullName: getColumnIndex()
+  summary: 範囲内の最初のセルの列番号を指定します。 0 を起点とする番号になります。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getColumnIndex(): number;'
+    return:
+      type: number
+      description: ''
+- name: getColumnsAfter(count)
+  uid: ExcelScript!ExcelScript.Range#getColumnsAfter:member(1)
+  package: ExcelScript!
+  fullName: getColumnsAfter(count)
+  summary: 現在の Range オブジェクトの右にある特定の列数を取得します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getColumnsAfter(count?: number): Range;'
+    parameters:
+    - id: count
+      description: 省略可能。結果の範囲に含める列の数です。通常、正の数値を使用して現在の範囲外に範囲を作成します。負の数値を使用して、現在の範囲内に範囲を作成することもできます。既定値は 1 です。
+      type: number
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getColumnsBefore(count)
+  uid: ExcelScript!ExcelScript.Range#getColumnsBefore:member(1)
+  package: ExcelScript!
+  fullName: getColumnsBefore(count)
+  summary: 現在の Range オブジェクトの左にある特定の列数を取得します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getColumnsBefore(count?: number): Range;'
+    parameters:
+    - id: count
+      description: 省略可能。結果の範囲に含める列の数です。通常、正の数値を使用して現在の範囲外に範囲を作成します。負の数値を使用して、現在の範囲内に範囲を作成することもできます。既定値は 1 です。
+      type: number
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getConditionalFormat(id)
+  uid: ExcelScript!ExcelScript.Range#getConditionalFormat:member(1)
+  package: ExcelScript!
+  fullName: getConditionalFormat(id)
+  summary: 指定された ID に対応する条件付き書式を返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getConditionalFormat(id: string): ConditionalFormat;'
+    parameters:
+    - id: id
+      description: 条件付き書式の id を指定します。
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ConditionalFormat:interface" />
+      description: ''
+- name: getConditionalFormats()
+  uid: ExcelScript!ExcelScript.Range#getConditionalFormats:member(1)
+  package: ExcelScript!
+  fullName: getConditionalFormats()
+  summary: 範囲と交差する ConditionalFormats のコレクションです。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getConditionalFormats(): ConditionalFormat[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ConditionalFormat:interface" />[]
+      description: ''
+- name: getDataValidation()
+  uid: ExcelScript!ExcelScript.Range#getDataValidation:member(1)
+  package: ExcelScript!
+  fullName: getDataValidation()
+  summary: dataValidation オブジェクトを返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getDataValidation(): DataValidation;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.DataValidation:interface" />
+      description: ''
+- name: getDirectPrecedents()
+  uid: ExcelScript!ExcelScript.Range#getDirectPrecedents:member(1)
+  package: ExcelScript!
+  fullName: getDirectPrecedents()
+  summary: 同じワークシートまたは複数のワークシート内のセルのすべての直接の参照元を含む範囲を表す WorkbookRangeAreas オブジェクトを返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getDirectPrecedents(): WorkbookRangeAreas;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.WorkbookRangeAreas:interface" />
+      description: ''
+- name: getEntireColumn()
+  uid: ExcelScript!ExcelScript.Range#getEntireColumn:member(1)
+  package: ExcelScript!
+  fullName: getEntireColumn()
+  summary: '範囲の列全体を表すオブジェクトを取得します (たとえば、現在の範囲がセル "B4: E11" を表している場合 `getEntireColumn` は、"B: E" という列を表す範囲)。'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getEntireColumn(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getEntireRow()
+  uid: ExcelScript!ExcelScript.Range#getEntireRow:member(1)
+  package: ExcelScript!
+  fullName: getEntireRow()
+  summary: '範囲の行全体を表すオブジェクトを取得します (たとえば、現在の範囲がセル "B4: E11" を表している場合 `GetEntireRow` は、行 "4:11" を表す範囲になります)。'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getEntireRow(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getFormat()
+  uid: ExcelScript!ExcelScript.Range#getFormat:member(1)
+  package: ExcelScript!
+  fullName: getFormat()
+  summary: Format オブジェクト (範囲のフォント、塗りつぶし、罫線、配置などのプロパティをカプセル化するオブジェクト) を返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFormat(): RangeFormat;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeFormat:interface" />
+      description: ''
+- name: getFormula()
+  uid: ExcelScript!ExcelScript.Range#getFormula:member(1)
+  package: ExcelScript!
+  fullName: getFormula()
+  summary: セルの数式を A1 形式の表記で表します。 範囲に複数のセルが含まれている場合、最初のセル (0 の行インデックスと列インデックスが0で表されます) からデータが返されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFormula(): string;'
+    return:
+      type: string
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```javascript\n/*\n * This script sets a cell's formula, \n * then displays how Excel stores the cell's formula and value separately.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Set A1 to 2.\n  let a1 = selectedSheet.getRange(\"A1\");\n  a1.setValue(2);\n\n  // Set B1 to the formula =(2*A1), which should equal 4.\n  let b1 = selectedSheet.getRange(\"B1\")\n  b1.setFormula(\"=(2*A1)\");\n\n  // Log the current results for `getFormula` and `getValue` at B1.\n  console.log(`B1 - Formula: ${b1.getFormula()} | Value: ${b1.getValue()}`);\n}\n```"
+- name: getFormulaLocal()
+  uid: ExcelScript!ExcelScript.Range#getFormulaLocal:member(1)
+  package: ExcelScript!
+  fullName: getFormulaLocal()
+  summary: ユーザーの言語と書式設定ロケールで、A1 形式の表記法でセルの数式を表します。 たとえば、英語の数式 "=SUM(A1, 1.5)" は、ドイツ語では "=SUMME(A1; 1,5)" になります。 範囲に複数のセルが含まれている場合、最初のセル (0 の行インデックスと列インデックスが0で表されます) からデータが返されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFormulaLocal(): string;'
+    return:
+      type: string
+      description: ''
+- name: getFormulaR1C1()
+  uid: ExcelScript!ExcelScript.Range#getFormulaR1C1:member(1)
+  package: ExcelScript!
+  fullName: getFormulaR1C1()
+  summary: セルの数式を R1C1 形式の表記で表します。 範囲に複数のセルが含まれている場合、最初のセル (0 の行インデックスと列インデックスが0で表されます) からデータが返されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFormulaR1C1(): string;'
+    return:
+      type: string
+      description: ''
+- name: getFormulas()
+  uid: ExcelScript!ExcelScript.Range#getFormulas:member(1)
+  package: ExcelScript!
+  fullName: getFormulas()
+  summary: A1 スタイル表記の数式を表します。 セルに数式が含まれていない場合は、その値が返されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFormulas(): string[][];'
+    return:
+      type: string[][]
+      description: ''
+- name: getFormulasLocal()
+  uid: ExcelScript!ExcelScript.Range#getFormulasLocal:member(1)
+  package: ExcelScript!
+  fullName: getFormulasLocal()
+  summary: ユーザーの言語と数値書式ロケールで、A1 スタイル表記の数式を表します。 たとえば、英語の数式 "=SUM(A1, 1.5)" は、ドイツ語では "=SUMME(A1; 1,5)" になります。 セルに数式が含まれていない場合は、その値が返されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFormulasLocal(): string[][];'
+    return:
+      type: string[][]
+      description: ''
+- name: getFormulasR1C1()
+  uid: ExcelScript!ExcelScript.Range#getFormulasR1C1:member(1)
+  package: ExcelScript!
+  fullName: getFormulasR1C1()
+  summary: R1C1 スタイル表記の数式を表します。 セルに数式が含まれていない場合は、その値が返されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFormulasR1C1(): string[][];'
+    return:
+      type: string[][]
+      description: ''
+- name: getHasSpill()
+  uid: ExcelScript!ExcelScript.Range#getHasSpill:member(1)
+  package: ExcelScript!
+  fullName: getHasSpill()
+  summary: すべてのセルにスピル ボーダーがあるかどうかを表します。 すべてのセルにスピル枠がある場合は true を返し、すべてのセルにスピル境界線がない場合は false を返します。 範囲内の罫線を左右に左右しないセルがある場合は、null を返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getHasSpill(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getHeight()
+  uid: ExcelScript!ExcelScript.Range#getHeight:member(1)
+  package: ExcelScript!
+  fullName: getHeight()
+  summary: '100% ズームの場合の、範囲の上端から範囲の下端までの距離を、ポイント単位で返します。 '
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getHeight(): number;'
+    return:
+      type: number
+      description: ''
+- name: getHidden()
+  uid: ExcelScript!ExcelScript.Range#getHidden:member(1)
+  package: ExcelScript!
+  fullName: getHidden()
+  summary: 現在の範囲のすべてのセルが非表示になっているかどうかを表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getHidden(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getHyperlink()
+  uid: ExcelScript!ExcelScript.Range#getHyperlink:member(1)
+  package: ExcelScript!
+  fullName: getHyperlink()
+  summary: 現在の範囲のハイパーリンクを表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getHyperlink(): RangeHyperlink;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeHyperlink:interface" />
+      description: ''
+- name: getImage()
+  uid: ExcelScript!ExcelScript.Range#getImage:member(1)
+  package: ExcelScript!
+  fullName: getImage()
+  summary: '範囲を base64 でエンコードされた png 画像としてレンダリングします。 **重要**: 現在、この API は Excel for Mac ではサポートされていません。 \[ \# \] 現在の https://github.com/OfficeDev/office-js/issues/235) 状態については、「officedev/Office-js の問題235」を参照してください。'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getImage(): string;'
+    return:
+      type: string
+      description: ''
+- name: getIntersection(anotherRange)
+  uid: ExcelScript!ExcelScript.Range#getIntersection:member(1)
+  package: ExcelScript!
+  fullName: getIntersection(anotherRange)
+  summary: 指定した範囲の長方形の交差を表す範囲オブジェクトを取得します。 交差部分が見つからない場合は、null オブジェクトを返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getIntersection(anotherRange: Range | string): Range;'
+    parameters:
+    - id: anotherRange
+      description: 範囲の交差を判断するために使用される、Range オブジェクトまたは Range アドレス。
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getIsEntireColumn()
+  uid: ExcelScript!ExcelScript.Range#getIsEntireColumn:member(1)
+  package: ExcelScript!
+  fullName: getIsEntireColumn()
+  summary: 現在の範囲が列全体であるかどうかを表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getIsEntireColumn(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getIsEntireRow()
+  uid: ExcelScript!ExcelScript.Range#getIsEntireRow:member(1)
+  package: ExcelScript!
+  fullName: getIsEntireRow()
+  summary: 現在の範囲が行全体であるかどうかを表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getIsEntireRow(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getLastCell()
+  uid: ExcelScript!ExcelScript.Range#getLastCell:member(1)
+  package: ExcelScript!
+  fullName: getLastCell()
+  summary: 範囲内の最後のセルを取得します。 たとえば、"B2:D5" の最後のセルは "D5" になります。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLastCell(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getLastColumn()
+  uid: ExcelScript!ExcelScript.Range#getLastColumn:member(1)
+  package: ExcelScript!
+  fullName: getLastColumn()
+  summary: 範囲内の最後の列を取得します。 たとえば、"B2:D5" の最後の列は "D2:D5" になります。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLastColumn(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getLastRow()
+  uid: ExcelScript!ExcelScript.Range#getLastRow:member(1)
+  package: ExcelScript!
+  fullName: getLastRow()
+  summary: 範囲内の最後の行を取得します。 たとえば、"B2:D5" の最後の行は "B5:D5" になります。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLastRow(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getLeft()
+  uid: ExcelScript!ExcelScript.Range#getLeft:member(1)
+  package: ExcelScript!
+  fullName: getLeft()
+  summary: '100% ズームの場合の、ワークシートの左端から範囲の左端までの距離を、ポイント単位で返します。 '
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLeft(): number;'
+    return:
+      type: number
+      description: ''
+- name: getLinkedDataTypeState()
+  uid: ExcelScript!ExcelScript.Range#getLinkedDataTypeState:member(1)
+  package: ExcelScript!
+  fullName: getLinkedDataTypeState()
+  summary: セルのデータ型の状態を表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLinkedDataTypeState(): LinkedDataTypeState;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.LinkedDataTypeState:enum" />
+      description: ''
+- name: getLinkedDataTypeStates()
+  uid: ExcelScript!ExcelScript.Range#getLinkedDataTypeStates:member(1)
+  package: ExcelScript!
+  fullName: getLinkedDataTypeStates()
+  summary: 各セルのデータ型の状態を表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLinkedDataTypeStates(): LinkedDataTypeState[][];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.LinkedDataTypeState:enum" />[][]
+      description: ''
+- name: getMergedAreas()
+  uid: ExcelScript!ExcelScript.Range#getMergedAreas:member(1)
+  package: ExcelScript!
+  fullName: getMergedAreas()
+  summary: この範囲内の結合領域を表す RangeAreas オブジェクトを返します。 この範囲内のマージされた領域の数が512を超える場合、API は結果を返すことに失敗します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getMergedAreas(): RangeAreas;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
+      description: ''
+- name: getNumberFormat()
+  uid: ExcelScript!ExcelScript.Range#getNumberFormat:member(1)
+  package: ExcelScript!
+  fullName: getNumberFormat()
+  summary: 指定されたセル範囲の Excel の数値書式コードを表します。 範囲に複数のセルが含まれている場合、最初のセル (0 の行インデックスと列インデックスが0で表されます) からデータが返されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getNumberFormat(): string;'
+    return:
+      type: string
+      description: ''
+- name: getNumberFormatCategories()
+  uid: ExcelScript!ExcelScript.Range#getNumberFormatCategories:member(1)
+  package: ExcelScript!
+  fullName: getNumberFormatCategories()
+  summary: 各セルの数値形式のカテゴリを表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getNumberFormatCategories(): NumberFormatCategory[][];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NumberFormatCategory:enum" />[][]
+      description: ''
+- name: getNumberFormatLocal()
+  uid: ExcelScript!ExcelScript.Range#getNumberFormatLocal:member(1)
+  package: ExcelScript!
+  fullName: getNumberFormatLocal()
+  summary: ユーザーの言語設定に基づいて、指定されたセル範囲の Excel の数値書式コードを表します。 Excel では、プロパティを取得または設定するときに、言語や書式の強制変換は実行されません `numberFormatLocal` 。 返されるテキストには、システム設定で指定された言語に基づいてローカルに書式設定された文字列が使用されます。 範囲に複数のセルが含まれている場合、最初のセル (0 の行インデックスと列インデックスが0で表されます) からデータが返されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getNumberFormatLocal(): string;'
+    return:
+      type: string
+      description: ''
+- name: getNumberFormats()
+  uid: ExcelScript!ExcelScript.Range#getNumberFormats:member(1)
+  package: ExcelScript!
+  fullName: getNumberFormats()
+  summary: 指定された範囲の Excel の数値書式コードを表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getNumberFormats(): string[][];'
+    return:
+      type: string[][]
+      description: ''
+- name: getNumberFormatsLocal()
+  uid: ExcelScript!ExcelScript.Range#getNumberFormatsLocal:member(1)
+  package: ExcelScript!
+  fullName: getNumberFormatsLocal()
+  summary: ユーザーの言語設定に基づいて、指定された範囲の Excel の数値書式コードを表します。 Excel では、プロパティを取得または設定するときに、言語や書式の強制変換は実行されません `numberFormatLocal` 。 返されるテキストには、システム設定で指定された言語に基づいてローカルに書式設定された文字列が使用されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getNumberFormatsLocal(): string[][];'
+    return:
+      type: string[][]
+      description: ''
+- name: getOffsetRange(rowOffset, columnOffset)
+  uid: ExcelScript!ExcelScript.Range#getOffsetRange:member(1)
+  package: ExcelScript!
+  fullName: getOffsetRange(rowOffset, columnOffset)
+  summary: 指定した範囲からのオフセットで範囲を表すオブジェクトを取得します。返される範囲のディメンションは、この範囲と一致します。結果の範囲がワークシートのグリッドの境界線の外にはみ出る場合は、エラーがスローされます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getOffsetRange(rowOffset: number, columnOffset: number): Range;'
+    parameters:
+    - id: rowOffset
+      description: 範囲をオフセットする行数 (正、負、または 0)。正の値は下方向へのオフセットです。また、負の値は上方向へのオフセットです。
+      type: number
+    - id: columnOffset
+      description: 範囲をオフセットする列数 (正、負、または 0)。正の値は右方向へのオフセットです。また、負の値は左方向へのオフセットです。
+      type: number
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```javascript\n/**\n * This script gets adjacent cells using relative references.\n * Note that if the active cell is on the top row, part of the script fails, \n * because it references the cell above the currently selected one.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the currently active cell in the workbook.\n  let activeCell = workbook.getActiveCell();\n  console.log(`The active cell's address is: ${activeCell.getAddress()}`);\n\n  // Get the cell to the right of the active cell and set its value and color.\n  let rightCell = activeCell.getOffsetRange(0,1);\n  rightCell.setValue(\"Right cell\");\n  console.log(`The right cell's address is: ${rightCell.getAddress()}`);\n  rightCell.getFormat().getFont().setColor(\"Magenta\");\n  rightCell.getFormat().getFill().setColor(\"Cyan\");\n\n  // Get the cell to the above of the active cell and set its value and color.\n  // Note that this operation will fail if the active cell is in the top row.\n  let aboveCell = activeCell.getOffsetRange(-1, 0);\n  aboveCell.setValue(\"Above cell\");\n  console.log(`The above cell's address is: ${aboveCell.getAddress()}`);\n  aboveCell.getFormat().getFont().setColor(\"White\");\n  aboveCell.getFormat().getFill().setColor(\"Black\");\n}\n```"
+- name: getPivotTables(fullyContained)
+  uid: ExcelScript!ExcelScript.Range#getPivotTables:member(1)
+  package: ExcelScript!
+  fullName: getPivotTables(fullyContained)
+  summary: 範囲に重なっているピボットテーブルのスコープ設定されたコレクションを取得します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPivotTables(fullyContained?: boolean): PivotTable[];'
+    parameters:
+    - id: fullyContained
+      description: True の場合は、範囲範囲内に完全に含まれるピボットテーブルのみを返します。 既定値は false です。
+      type: boolean
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PivotTable:interface" />[]
+      description: ''
+- name: getPredefinedCellStyle()
+  uid: ExcelScript!ExcelScript.Range#getPredefinedCellStyle:member(1)
+  package: ExcelScript!
+  fullName: getPredefinedCellStyle()
+  summary: 現在の範囲のスタイルを表します。 セルのスタイルに不整合がある場合は、null が返されます。 ユーザー設定のスタイルの場合は、スタイル名が返されます。 組み込みのスタイルの場合、BuiltInStyle 列挙内の値を表す文字列が返されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPredefinedCellStyle(): string;'
+    return:
+      type: string
+      description: ''
+- name: getResizedRange(deltaRows, deltaColumns)
+  uid: ExcelScript!ExcelScript.Range#getResizedRange:member(1)
+  package: ExcelScript!
+  fullName: getResizedRange(deltaRows, deltaColumns)
+  summary: 現在の Range オブジェクトに似た (ただし、右下隅がいくつかの行と列で拡張 (または縮小) されている) Range オブジェクトを取得します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getResizedRange(deltaRows: number, deltaColumns: number): Range;'
+    parameters:
+    - id: deltaRows
+      description: 現在の範囲を基準にして、右下隅を拡張する行の数です。範囲を拡張するには正の数値、または範囲を縮小するには負の数値を使用します。
+      type: number
+    - id: deltaColumns
+      description: 現在の範囲を基準にして、右下隅を展開する列数を指定します。 範囲を拡張するには正の数値、または範囲を縮小するには負の数値を使用します。
+      type: number
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```javascript\n/**\n * This script copies the formatting in the active cell to the neighboring cells.\n * Note that this script only works when the active cell isn't on an edge of the worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the active cell.\n  let activeCell = workbook.getActiveCell();\n\n  // Get the cell that's one row above and one column to the left of the active cell.\n  let cornerCell = activeCell.getOffsetRange(-1,-1);\n\n  // Get a range that includes all the cells surrounding the active cell.\n  let surroundingRange = cornerCell.getResizedRange(2, 2)\n\n  // Copy the formatting from the active cell to the new range.\n  surroundingRange.copyFrom(\n    activeCell, /* The source range. */\n    ExcelScript.RangeCopyType.formats /* What to copy. */\n    );\n}\n```"
+- name: getRow(row)
+  uid: ExcelScript!ExcelScript.Range#getRow:member(1)
+  package: ExcelScript!
+  fullName: getRow(row)
+  summary: 範囲に含まれている行を 1 つ取得します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRow(row: number): Range;'
+    parameters:
+    - id: row
+      description: 取得する範囲の行番号。 0 を起点とする番号になります。
+      type: number
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getRowCount()
+  uid: ExcelScript!ExcelScript.Range#getRowCount:member(1)
+  package: ExcelScript!
+  fullName: getRowCount()
+  summary: 範囲に含まれる行の合計数を返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRowCount(): number;'
+    return:
+      type: number
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```javascript\n/**\n * This sample provides the count of negative numbers that are present\n * in the used range of the current worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the working range.\n  let usedRange = workbook.getActiveWorksheet().getUsedRange();\n  let rowCount = usedRange.getRowCount();\n  let columnCount = usedRange.getColumnCount();\n\n  // Save the values locally to avoid repeatedly asking the workbook.\n  let usedRangeValues = usedRange.getValues();\n\n  // Start the negative number counter.\n  let negativeCount = 0;\n\n  // Iterate over the entire range looking for negative numbers.\n  for (let i = 0; i < rowCount; i++) {\n    for (let j = 0; j < columnCount; j++) {\n      if (usedRangeValues[i][j] < 0) {\n        negativeCount++;\n      }\n    }\n  }\n\n  // Log the negative number count to the console.\n  console.log(negativeCount);\n}\n```"
+- name: getRowHidden()
+  uid: ExcelScript!ExcelScript.Range#getRowHidden:member(1)
+  package: ExcelScript!
+  fullName: getRowHidden()
+  summary: 現在の範囲のすべての行が非表示になっているかどうかを表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRowHidden(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getRowIndex()
+  uid: ExcelScript!ExcelScript.Range#getRowIndex:member(1)
+  package: ExcelScript!
+  fullName: getRowIndex()
+  summary: 範囲に含まれる最初のセルの行番号を返します。 0 を起点とする番号になります。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRowIndex(): number;'
+    return:
+      type: number
+      description: ''
+- name: getRowsAbove(count)
+  uid: ExcelScript!ExcelScript.Range#getRowsAbove:member(1)
+  package: ExcelScript!
+  fullName: getRowsAbove(count)
+  summary: 現在の Range オブジェクトの上にある特定の行数を取得します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRowsAbove(count?: number): Range;'
+    parameters:
+    - id: count
+      description: 省略可能。結果の範囲に含める行の数です。通常、正の数値を使用して現在の範囲外に範囲を作成します。負の数値を使用して、現在の範囲内に範囲を作成することもできます。既定値は 1 です。
+      type: number
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getRowsBelow(count)
+  uid: ExcelScript!ExcelScript.Range#getRowsBelow:member(1)
+  package: ExcelScript!
+  fullName: getRowsBelow(count)
+  summary: 現在の Range オブジェクトの下にある特定の行数を取得します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRowsBelow(count?: number): Range;'
+    parameters:
+    - id: count
+      description: 省略可能。結果の範囲に含める行の数です。通常、正の数値を使用して現在の範囲外に範囲を作成します。負の数値を使用して、現在の範囲内に範囲を作成することもできます。既定値は 1 です。
+      type: number
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getSavedAsArray()
+  uid: ExcelScript!ExcelScript.Range#getSavedAsArray:member(1)
+  package: ExcelScript!
+  fullName: getSavedAsArray()
+  summary: すべてのセルが配列数式として保存されるかどうかを表します。 すべてのセルが配列数式として保存される場合は true を返し、すべてのセルが配列数式として保存されない場合は false を返します。 一部のセルが配列数式として保存される場合は null を返し、それ以外の場合は null を返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getSavedAsArray(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getSort()
+  uid: ExcelScript!ExcelScript.Range#getSort:member(1)
+  package: ExcelScript!
+  fullName: getSort()
+  summary: 現在の範囲について、範囲の並べ替えを表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getSort(): RangeSort;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeSort:interface" />
+      description: ''
+- name: getSpecialCells(cellType, cellValueType)
+  uid: ExcelScript!ExcelScript.Range#getSpecialCells:member(1)
+  package: ExcelScript!
+  fullName: getSpecialCells(cellType, cellValueType)
+  summary: 指定された型と値に一致するすべてのセルを表し、1 つまたは複数の範囲を構成する RangeAreas オブジェクトを取得します。 特別なセルが見つからない場合は、null オブジェクトが返されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      getSpecialCells(
+                  cellType: SpecialCellType,
+                  cellValueType?: SpecialCellValueType
+              ): RangeAreas;
+    parameters:
+    - id: cellType
+      description: 含めるセルの種類を指定します。
+      type: <xref uid="ExcelScript!ExcelScript.SpecialCellType:enum" />
+    - id: cellValueType
+      description: CellType が定数または数式の場合は、この引数を使用して、結果に含めるセルの種類を決定します。 これらの値は、組み合わせて複数の型を返すことができます。 この引数を省略すると、すべての定数および数式が対象になります。
+      type: <xref uid="ExcelScript!ExcelScript.SpecialCellValueType:enum" />
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
+      description: ''
+- name: getSpillingToRange()
+  uid: ExcelScript!ExcelScript.Range#getSpillingToRange:member(1)
+  package: ExcelScript!
+  fullName: getSpillingToRange()
+  summary: アンカー セルで呼び出されたとき、スピル範囲を含む範囲オブジェクトを取得します。 指定範囲がアンカーセルでない場合、またはスピル範囲が見つからない場合は、null オブジェクトが返されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getSpillingToRange(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getSpillParent()
+  uid: ExcelScript!ExcelScript.Range#getSpillParent:member(1)
+  package: ExcelScript!
+  fullName: getSpillParent()
+  summary: スピルするセルのアンカー セルを含む範囲オブジェクトを取得します。 スピルセルが指定されていない場合、または複数のセルが指定されている場合は、null オブジェクトが返されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getSpillParent(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getSurroundingRegion()
+  uid: ExcelScript!ExcelScript.Range#getSurroundingRegion:member(1)
+  package: ExcelScript!
+  fullName: getSurroundingRegion()
+  summary: 指定された範囲の左上のセルを囲む領域を表す Range オブジェクトを返します。 周囲の領域は、この範囲に相対の空白の行と空白の列の任意の組み合わせで囲まれた範囲です。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getSurroundingRegion(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getTables(fullyContained)
+  uid: ExcelScript!ExcelScript.Range#getTables:member(1)
+  package: ExcelScript!
+  fullName: getTables(fullyContained)
+  summary: 範囲と重なるテーブルの集まりを範囲限定で取得します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTables(fullyContained?: boolean): Table[];'
+    parameters:
+    - id: fullyContained
+      description: True の場合は、範囲範囲内に完全に含まれるテーブルのみを返します。 既定値は false です。
+      type: boolean
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Table:interface" />[]
+      description: ''
+- name: getText()
+  uid: ExcelScript!ExcelScript.Range#getText:member(1)
+  package: ExcelScript!
+  fullName: getText()
+  summary: 指定された範囲のテキスト値を表します。 テキスト値は、セルの幅には依存しません。 \#EXCEL UI で行われた符号置換は、API によって返されるテキスト値には影響しません。 範囲に複数のセルが含まれている場合、最初のセル (0 の行インデックスと列インデックスが0で表されます) からデータが返されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getText(): string;'
+    return:
+      type: string
+      description: ''
+- name: getTexts()
+  uid: ExcelScript!ExcelScript.Range#getTexts:member(1)
+  package: ExcelScript!
+  fullName: getTexts()
+  summary: 指定した範囲のテキスト値。 テキスト値は、セルの幅には依存しません。 \#EXCEL UI で行われた符号置換は、API によって返されるテキスト値には影響しません。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTexts(): string[][];'
+    return:
+      type: string[][]
+      description: ''
+- name: getTop()
+  uid: ExcelScript!ExcelScript.Range#getTop:member(1)
+  package: ExcelScript!
+  fullName: getTop()
+  summary: '100% ズームの場合の、ワークシートの上端から範囲の上端までの距離を、ポイント単位で返します。 '
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTop(): number;'
+    return:
+      type: number
+      description: ''
+- name: getUsedRange(valuesOnly)
+  uid: ExcelScript!ExcelScript.Range#getUsedRange:member(1)
+  package: ExcelScript!
+  fullName: getUsedRange(valuesOnly)
+  summary: 指定した範囲オブジェクトのうち使用されている範囲を返します。範囲内に使用済みのセルがない場合、この関数は null オブジェクトを返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getUsedRange(valuesOnly?: boolean): Range;'
+    parameters:
+    - id: valuesOnly
+      description: 値の入っているセルのみを使用セルと見なします。
+      type: boolean
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getValue()
+  uid: ExcelScript!ExcelScript.Range#getValue:member(1)
+  package: ExcelScript!
+  fullName: getValue()
+  summary: 指定された範囲の生の値を表します。 返されるデータの型は、文字列、数値、ブール値のいずれかになります。 エラーが含まれているセルは、エラー文字列を返します。 範囲に複数のセルが含まれている場合、最初のセル (0 の行インデックスと列インデックスが0で表されます) からデータが返されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getValue(): any;'
+    return:
+      type: any
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```javascript\n/**\n * This sample reads the value of A1 and prints it to the console.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Get the value of cell A1.\n  let range = selectedSheet.getRange(\"A1\");\n  \n  // Print the value of A1.\n  console.log(range.getValue());\n}\n```"
+- name: getValues()
+  uid: ExcelScript!ExcelScript.Range#getValues:member(1)
+  package: ExcelScript!
+  fullName: getValues()
+  summary: 指定した範囲の Raw 値を表します。 返されるデータの型は、文字列、数値、ブール値のいずれかになります。 エラーが含まれているセルは、エラー文字列を返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getValues(): any[][];'
+    return:
+      type: any[][]
+      description: ''
+- name: getValueType()
+  uid: ExcelScript!ExcelScript.Range#getValueType:member(1)
+  package: ExcelScript!
+  fullName: getValueType()
+  summary: セル内のデータの種類を表します。 範囲に複数のセルが含まれている場合、最初のセル (0 の行インデックスと列インデックスが0で表されます) からデータが返されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getValueType(): RangeValueType;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeValueType:enum" />
+      description: ''
+- name: getValueTypes()
+  uid: ExcelScript!ExcelScript.Range#getValueTypes:member(1)
+  package: ExcelScript!
+  fullName: getValueTypes()
+  summary: 各セルのデータの種類を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getValueTypes(): RangeValueType[][];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeValueType:enum" />[][]
+      description: ''
+- name: getVisibleView()
+  uid: ExcelScript!ExcelScript.Range#getVisibleView:member(1)
+  package: ExcelScript!
+  fullName: getVisibleView()
+  summary: 現在の範囲の表示されている行を表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getVisibleView(): RangeView;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeView:interface" />
+      description: ''
+- name: getWidth()
+  uid: ExcelScript!ExcelScript.Range#getWidth:member(1)
+  package: ExcelScript!
+  fullName: getWidth()
+  summary: '100% ズームの場合の、範囲の左端から範囲の右端までの距離を、ポイント単位で返します。 '
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getWidth(): number;'
+    return:
+      type: number
+      description: ''
+- name: getWorksheet()
+  uid: ExcelScript!ExcelScript.Range#getWorksheet:member(1)
+  package: ExcelScript!
+  fullName: getWorksheet()
+  summary: 現在の範囲を含んでいるワークシート。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getWorksheet(): Worksheet;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
+      description: ''
+- name: group(groupOption)
+  uid: ExcelScript!ExcelScript.Range#group:member(1)
+  package: ExcelScript!
+  fullName: group(groupOption)
+  summary: アウトラインの列と行をグループ化します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'group(groupOption: GroupOption): void;'
+    parameters:
+    - id: groupOption
+      description: 行または列によって範囲をグループ化する方法を指定します。 `InvalidArgument`グループのオプションが範囲のまたはプロパティと異なる場合、エラーがスローされます `isEntireRow` `isEntireColumn` (つまり、true で、 `range.isEntireRow` `groupOption` "bycolumns" または True で、 `range.isEntireColumn` `groupOption` "bycolumns")。
+      type: <xref uid="ExcelScript!ExcelScript.GroupOption:enum" />
+    return:
+      type: void
+      description: ''
+- name: hideGroupDetails(groupOption)
+  uid: ExcelScript!ExcelScript.Range#hideGroupDetails:member(1)
+  package: ExcelScript!
+  fullName: hideGroupDetails(groupOption)
+  summary: 行または列グループの詳細を非表示にします。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'hideGroupDetails(groupOption: GroupOption): void;'
+    parameters:
+    - id: groupOption
+      description: グループ化された行または列のグループ化の詳細を非表示にするかどうかを指定します。
+      type: <xref uid="ExcelScript!ExcelScript.GroupOption:enum" />
+    return:
+      type: void
+      description: ''
+- name: insert(shift)
+  uid: ExcelScript!ExcelScript.Range#insert:member(1)
+  package: ExcelScript!
+  fullName: insert(shift)
+  summary: この範囲を占めるセルまたはセルの範囲をワークシートに挿入し、領域を空けるために他のセルをシフトします。この時点で空き領域に位置する、新しい Range オブジェクトが返されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'insert(shift: InsertShiftDirection): Range;'
+    parameters:
+    - id: shift
+      description: セルをシフトする方向を指定します。 詳細については、「ExcelScript」を参照してください。
+      type: <xref uid="ExcelScript!ExcelScript.InsertShiftDirection:enum" />
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: merge(across)
+  uid: ExcelScript!ExcelScript.Range#merge:member(1)
+  package: ExcelScript!
+  fullName: merge(across)
+  summary: 範囲内のセルをワークシートの 1 つの領域に結合します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'merge(across?: boolean): void;'
+    parameters:
+    - id: across
+      description: 省略可能。 指定した範囲のセルを行ごとに結合して、行ごとに別のセルを作成する場合は True に設定します。 既定値は False です。
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: moveTo(destinationRange)
+  uid: ExcelScript!ExcelScript.Range#moveTo:member(1)
+  package: ExcelScript!
+  fullName: moveTo(destinationRange)
+  summary: セルの値、書式設定、および数式を現在の範囲から移動先の範囲に移動し、そのセルの古い情報を置き換えます。 移動先の範囲は、現在の範囲よりも小さい場合は自動的に展開されます。 元の範囲の領域の外にある、移動先の範囲内のすべてのセルが変更されることはありません。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'moveTo(destinationRange: Range | string): void;'
+    parameters:
+    - id: destinationRange
+      description: destinationRange この範囲内の情報の移動先となる範囲を指定します。
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
+    return:
+      type: void
+      description: ''
+- name: removeDuplicates(columns, includesHeader)
+  uid: ExcelScript!ExcelScript.Range#removeDuplicates:member(1)
+  package: ExcelScript!
+  fullName: removeDuplicates(columns, includesHeader)
+  summary: 列によって指定される範囲から重複する値を削除します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      removeDuplicates(
+                  columns: number[],
+                  includesHeader: boolean
+              ): RemoveDuplicatesResult;
+    parameters:
+    - id: columns
+      description: 重複が含まれる可能性がある範囲内の列。 少なくとも1つの列を指定する必要があります。 0 を起点とする番号になります。
+      type: number[]
+    - id: includesHeader
+      description: True の場合は、入力データにヘッダーが含まれています。 既定値は false です。
+      type: boolean
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RemoveDuplicatesResult:interface" />
+      description: ''
+- name: replaceAll(text, replacement, criteria)
+  uid: ExcelScript!ExcelScript.Range#replaceAll:member(1)
+  package: ExcelScript!
+  fullName: replaceAll(text, replacement, criteria)
+  summary: 現在の範囲内で、指定された条件に基づき、指定された文字列を検索し、置換します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      replaceAll(
+                  text: string,
+                  replacement: string,
+                  criteria: ReplaceCriteria
+              ): number;
+    parameters:
+    - id: text
+      description: 検索する文字列を指定します。
+      type: string
+    - id: replacement
+      description: 元のと置き換える文字列。
+      type: string
+    - id: criteria
+      description: 置換条件を追加します。
+      type: <xref uid="ExcelScript!ExcelScript.ReplaceCriteria:interface" />
+    return:
+      type: number
+      description: ''
+- name: select()
+  uid: ExcelScript!ExcelScript.Range#select:member(1)
+  package: ExcelScript!
+  fullName: select()
+  summary: Excel UI で指定した範囲を選択します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'select(): void;'
+    return:
+      type: void
+      description: ''
+- name: setColumnHidden(columnHidden)
+  uid: ExcelScript!ExcelScript.Range#setColumnHidden:member(1)
+  package: ExcelScript!
+  fullName: setColumnHidden(columnHidden)
+  summary: 現在の範囲のすべての列が非表示になっているかどうかを表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setColumnHidden(columnHidden: boolean): void;'
+    parameters:
+    - id: columnHidden
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setDirty()
+  uid: ExcelScript!ExcelScript.Range#setDirty:member(1)
+  package: ExcelScript!
+  fullName: setDirty()
+  summary: 次の再計算が発生したときに再計算する範囲を設定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setDirty(): void;'
+    return:
+      type: void
+      description: ''
+- name: setFormula(formula)
+  uid: ExcelScript!ExcelScript.Range#setFormula:member(1)
+  package: ExcelScript!
+  fullName: setFormula(formula)
+  summary: セルの数式を A1 形式の表記に設定します。 範囲に複数のセルが含まれている場合は、指定範囲の各セルが入力データで更新されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setFormula(formula: string): void;'
+    parameters:
+    - id: formula
+      description: ''
+      type: string
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```javascript\n/*\n * This script sets a cell's formula, \n * then displays how Excel stores the cell's formula and value separately.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Set A1 to 2.\n  let a1 = selectedSheet.getRange(\"A1\");\n  a1.setValue(2);\n\n  // Set B1 to the formula =(2*A1), which should equal 4.\n  let b1 = selectedSheet.getRange(\"B1\")\n  b1.setFormula(\"=(2*A1)\");\n\n  // Log the current results for `getFormula` and `getValue` at B1.\n  console.log(`B1 - Formula: ${b1.getFormula()} | Value: ${b1.getValue()}`);\n}\n```"
+- name: setFormulaLocal(formulaLocal)
+  uid: ExcelScript!ExcelScript.Range#setFormulaLocal:member(1)
+  package: ExcelScript!
+  fullName: setFormulaLocal(formulaLocal)
+  summary: ユーザーの言語と書式設定ロケールで、セルの数式を A1 形式の表記で設定します。 たとえば、英語の数式 "=SUM(A1, 1.5)" は、ドイツ語では "=SUMME(A1; 1,5)" になります。 範囲に複数のセルが含まれている場合は、指定範囲の各セルが入力データで更新されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setFormulaLocal(formulaLocal: string): void;'
+    parameters:
+    - id: formulaLocal
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setFormulaR1C1(formulaR1C1)
+  uid: ExcelScript!ExcelScript.Range#setFormulaR1C1:member(1)
+  package: ExcelScript!
+  fullName: setFormulaR1C1(formulaR1C1)
+  summary: セルの数式を R1C1 形式の表記で設定します。 範囲に複数のセルが含まれている場合は、指定範囲の各セルが入力データで更新されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setFormulaR1C1(formulaR1C1: string): void;'
+    parameters:
+    - id: formulaR1C1
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setFormulas(formulas)
+  uid: ExcelScript!ExcelScript.Range#setFormulas:member(1)
+  package: ExcelScript!
+  fullName: setFormulas(formulas)
+  summary: A1 スタイル表記の数式を表します。 セルに数式が含まれていない場合は、その値が返されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setFormulas(formulas: string[][]): void;'
+    parameters:
+    - id: formulas
+      description: ''
+      type: string[][]
+    return:
+      type: void
+      description: ''
+- name: setFormulasLocal(formulasLocal)
+  uid: ExcelScript!ExcelScript.Range#setFormulasLocal:member(1)
+  package: ExcelScript!
+  fullName: setFormulasLocal(formulasLocal)
+  summary: ユーザーの言語と数値書式ロケールで、A1 スタイル表記の数式を表します。 たとえば、英語の数式 "=SUM(A1, 1.5)" は、ドイツ語では "=SUMME(A1; 1,5)" になります。 セルに数式が含まれていない場合は、その値が返されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setFormulasLocal(formulasLocal: string[][]): void;'
+    parameters:
+    - id: formulasLocal
+      description: ''
+      type: string[][]
+    return:
+      type: void
+      description: ''
+- name: setFormulasR1C1(formulasR1C1)
+  uid: ExcelScript!ExcelScript.Range#setFormulasR1C1:member(1)
+  package: ExcelScript!
+  fullName: setFormulasR1C1(formulasR1C1)
+  summary: R1C1 スタイル表記の数式を表します。 セルに数式が含まれていない場合は、その値が返されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setFormulasR1C1(formulasR1C1: string[][]): void;'
+    parameters:
+    - id: formulasR1C1
+      description: ''
+      type: string[][]
+    return:
+      type: void
+      description: ''
+- name: setHyperlink(hyperlink)
+  uid: ExcelScript!ExcelScript.Range#setHyperlink:member(1)
+  package: ExcelScript!
+  fullName: setHyperlink(hyperlink)
+  summary: 現在の範囲のハイパーリンクを表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setHyperlink(hyperlink: RangeHyperlink): void;'
+    parameters:
+    - id: hyperlink
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.RangeHyperlink:interface" />
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```javascript\n/** \n * This script inserts a hyperlink to the first cell of the last worksheet in the workbook.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the active cell.\n  let cell = workbook.getActiveCell();\n\n  // Get the last worksheet in the workbook.\n  // Note that this might be the current sheet if there's only one worksheet.\n  let lastSheet = workbook.getLastWorksheet();\n\n  // Get sheet name. \n  let linkedSheetName = lastSheet.getName();\n  console.log(`Setting hyperlink of ${cell.getAddress()} to the ${linkedSheetName} sheet's A1 cell`);\n\n  // Set the text for the hyperlink.\n  let value = `Click to go to: ${linkedSheetName}`;\n\n  // Create the hyperlink using that cell's value.\n  cell.setHyperlink({\n    textToDisplay: value.toString(),\n    screenTip: `Navigate to ${linkedSheetName}`,\n    documentReference: `${linkedSheetName}!A1`\n  });\n}\n```"
+- name: setNumberFormat(numberFormat)
+  uid: ExcelScript!ExcelScript.Range#setNumberFormat:member(1)
+  package: ExcelScript!
+  fullName: setNumberFormat(numberFormat)
+  summary: 指定されたセル範囲に Excel の数値書式コードを設定します。 範囲に複数のセルが含まれている場合は、指定範囲の各セルが入力データで更新されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setNumberFormat(numberFormat: string): void;'
+    parameters:
+    - id: numberFormat
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setNumberFormatLocal(numberFormatLocal)
+  uid: ExcelScript!ExcelScript.Range#setNumberFormatLocal:member(1)
+  package: ExcelScript!
+  fullName: setNumberFormatLocal(numberFormatLocal)
+  summary: ユーザーの言語設定に基づいて、指定されたセル範囲の Excel の数値書式コードを設定します。 Excel では、プロパティを取得または設定するときに、言語や書式の強制変換は実行されません `numberFormatLocal` 。 返されるテキストには、システム設定で指定された言語に基づいてローカルに書式設定された文字列が使用されます。 範囲に複数のセルが含まれている場合は、指定範囲の各セルが入力データで更新されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setNumberFormatLocal(numberFormatLocal: string): void;'
+    parameters:
+    - id: numberFormatLocal
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setNumberFormats(numberFormats)
+  uid: ExcelScript!ExcelScript.Range#setNumberFormats:member(1)
+  package: ExcelScript!
+  fullName: setNumberFormats(numberFormats)
+  summary: 指定された範囲の Excel の数値書式コードを表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setNumberFormats(numberFormats: string[][]): void;'
+    parameters:
+    - id: numberFormats
+      description: ''
+      type: string[][]
+    return:
+      type: void
+      description: ''
+- name: setNumberFormatsLocal(numberFormatsLocal)
+  uid: ExcelScript!ExcelScript.Range#setNumberFormatsLocal:member(1)
+  package: ExcelScript!
+  fullName: setNumberFormatsLocal(numberFormatsLocal)
+  summary: ユーザーの言語設定に基づいて、指定された範囲の Excel の数値書式コードを表します。 Excel では、プロパティを取得または設定するときに、言語や書式の強制変換は実行されません `numberFormatLocal` 。 返されるテキストには、システム設定で指定された言語に基づいてローカルに書式設定された文字列が使用されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setNumberFormatsLocal(numberFormatsLocal: string[][]): void;'
+    parameters:
+    - id: numberFormatsLocal
+      description: ''
+      type: string[][]
+    return:
+      type: void
+      description: ''
+- name: setPredefinedCellStyle(predefinedCellStyle)
+  uid: ExcelScript!ExcelScript.Range#setPredefinedCellStyle:member(1)
+  package: ExcelScript!
+  fullName: setPredefinedCellStyle(predefinedCellStyle)
+  summary: 現在の範囲のスタイルを表します。 セルのスタイルに不整合がある場合は、null が返されます。 ユーザー設定のスタイルの場合は、スタイル名が返されます。 組み込みのスタイルの場合、BuiltInStyle 列挙内の値を表す文字列が返されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setPredefinedCellStyle(predefinedCellStyle: string): void;'
+    parameters:
+    - id: predefinedCellStyle
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setRowHidden(rowHidden)
+  uid: ExcelScript!ExcelScript.Range#setRowHidden:member(1)
+  package: ExcelScript!
+  fullName: setRowHidden(rowHidden)
+  summary: 現在の範囲のすべての行が非表示になっているかどうかを表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setRowHidden(rowHidden: boolean): void;'
+    parameters:
+    - id: rowHidden
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setValue(value)
+  uid: ExcelScript!ExcelScript.Range#setValue:member(1)
+  package: ExcelScript!
+  fullName: setValue(value)
+  summary: 指定された範囲の生の値を設定します。 設定されるデータは、string、number、または boolean 型の場合があります。 `null` 値は無視されます (Excel で設定または上書きされません)。 範囲に複数のセルが含まれている場合は、指定範囲の各セルが入力データで更新されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setValue(value: any): void;'
+    parameters:
+    - id: value
+      description: ''
+      type: any
+    return:
+      type: void
+      description: ''
+- name: setValues(values)
+  uid: ExcelScript!ExcelScript.Range#setValues:member(1)
+  package: ExcelScript!
+  fullName: setValues(values)
+  summary: 指定した範囲の Raw 値を表します。 返されるデータの型は、文字列、数値、ブール値のいずれかになります。 エラーが含まれているセルは、エラー文字列を返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setValues(values: any[][]): void;'
+    parameters:
+    - id: values
+      description: ''
+      type: any[][]
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```javascript\n/**\n * This sample inserts some pre-loaded data into a range.\n * It also shows how to get a range that fits the data.\n */\n function main(workbook: ExcelScript.Workbook) {\n   // Get the active cell.\n   let currentCell = workbook.getActiveCell();\n   \n   // Calculate the range needed to fit the given data.\n   let targetRange = currentCell.getResizedRange(DATA.length - 1, DATA[0].length - 1);\n\n   // Set range values to the data.\n   targetRange.setValues(DATA);\n\n   // Autofit the columns so the worksheet is readable. \n   targetRange.getFormat().autofitColumns();\n }\n\n /* \n  * This sample's data is in a static 2-dimensional array.\n  * You could also get the input from other ranges or sources.\n  * Note that each row must have the same number of columns to be valid. \n  */\n const DATA = [\n   ['Date', 'Salesperson', 'Product', 'Amount']\n   , ['3/2/2020', 'Anne', 'Pizza', '$1400']\n   , ['3/2/2020', 'Mariya', 'Pizza', '$1700']\n   , ['3/7/2020', 'Mark', 'Sandwiches', '$1010']\n   , ['3/24/2020', 'Anne', 'Pizza', '$750']\n   , ['3/28/2020', 'Mark', 'Salads', '$510']\n   , ['4/17/2020', 'Laura', 'Salads', '$900']\n   , ['4/17/2020', 'Mariya', 'Salads', '$1600']\n   , ['4/28/2020', 'Laura', 'Sandwiches', '$680']\n ];\n```"
+- name: showCard()
+  uid: ExcelScript!ExcelScript.Range#showCard:member(1)
+  package: ExcelScript!
+  fullName: showCard()
+  summary: アクティブ セルに多数の値が含まれる場合、そのセルのカードを表示します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'showCard(): void;'
+    return:
+      type: void
+      description: ''
+- name: showGroupDetails(groupOption)
+  uid: ExcelScript!ExcelScript.Range#showGroupDetails:member(1)
+  package: ExcelScript!
+  fullName: showGroupDetails(groupOption)
+  summary: 行または列グループの詳細を表示します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'showGroupDetails(groupOption: GroupOption): void;'
+    parameters:
+    - id: groupOption
+      description: グループ化された行またはグループ化された列の詳細を表示するかどうかを指定します。
+      type: <xref uid="ExcelScript!ExcelScript.GroupOption:enum" />
+    return:
+      type: void
+      description: ''
+- name: ungroup(groupOption)
+  uid: ExcelScript!ExcelScript.Range#ungroup:member(1)
+  package: ExcelScript!
+  fullName: ungroup(groupOption)
+  summary: アウトラインの列と行のグループ化を解除します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'ungroup(groupOption: GroupOption): void;'
+    parameters:
+    - id: groupOption
+      description: 行または列によって範囲をグループ解除する方法を指定します。
+      type: <xref uid="ExcelScript!ExcelScript.GroupOption:enum" />
+    return:
+      type: void
+      description: ''
+- name: unmerge()
+  uid: ExcelScript!ExcelScript.Range#unmerge:member(1)
+  package: ExcelScript!
+  fullName: unmerge()
+  summary: 範囲内のセルを結合解除して別々のセルにします。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'unmerge(): void;'
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 652e22f246ce965e2c606f78abb8a457c478431d
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412023"

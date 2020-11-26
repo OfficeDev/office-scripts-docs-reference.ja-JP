@@ -1,35 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.Placement:enum'
-    summary: オブジェクトがその基となるセルにアタッチされる方法を指定します。
-    name: ExcelScript.Placement
-    fullName: ExcelScript.Placement
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.Placement.absolute:member'
-      - 'ExcelScript!ExcelScript.Placement.oneCell:member'
-      - 'ExcelScript!ExcelScript.Placement.twoCell:member'
-  - uid: 'ExcelScript!ExcelScript.Placement.absolute:member'
-    summary: オブジェクトは自由にフリーの状態です。
-    name: absolute
-    fullName: absolute
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.Placement.oneCell:member'
-    summary: オブジェクトは、セルに移動し、サイズが変更されます。
-    name: oneCell
-    fullName: oneCell
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.Placement.twoCell:member'
-    summary: オブジェクトはセルと共に移動します。
-    name: twoCell
-    fullName: twoCell
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.Placement
+uid: ExcelScript!ExcelScript.Placement:enum
+package: ExcelScript!
+fullName: ExcelScript.Placement
+summary: オブジェクトがその基となるセルにアタッチされる方法を指定します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: absolute
+  uid: ExcelScript!ExcelScript.Placement.absolute:member
+  package: ExcelScript!
+  summary: オブジェクトは自由にフリーの状態です。
+- name: oneCell
+  uid: ExcelScript!ExcelScript.Placement.oneCell:member
+  package: ExcelScript!
+  summary: オブジェクトは、セルに移動し、サイズが変更されます。
+- name: twoCell
+  uid: ExcelScript!ExcelScript.Placement.twoCell:member
+  package: ExcelScript!
+  summary: オブジェクトはセルと共に移動します。
+metadata:
+  ms.openlocfilehash: bed1f80265c46b02b792cd5f423cc864dc1c7d76
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412049"

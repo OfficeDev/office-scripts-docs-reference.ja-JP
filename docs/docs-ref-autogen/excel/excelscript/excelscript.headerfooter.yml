@@ -1,208 +1,198 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.HeaderFooter:interface'
-    name: ExcelScript.HeaderFooter
-    fullName: ExcelScript.HeaderFooter
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.HeaderFooter#getCenterFooter:member(1)'
-      - 'ExcelScript!ExcelScript.HeaderFooter#getCenterHeader:member(1)'
-      - 'ExcelScript!ExcelScript.HeaderFooter#getLeftFooter:member(1)'
-      - 'ExcelScript!ExcelScript.HeaderFooter#getLeftHeader:member(1)'
-      - 'ExcelScript!ExcelScript.HeaderFooter#getRightFooter:member(1)'
-      - 'ExcelScript!ExcelScript.HeaderFooter#getRightHeader:member(1)'
-      - 'ExcelScript!ExcelScript.HeaderFooter#setCenterFooter:member(1)'
-      - 'ExcelScript!ExcelScript.HeaderFooter#setCenterHeader:member(1)'
-      - 'ExcelScript!ExcelScript.HeaderFooter#setLeftFooter:member(1)'
-      - 'ExcelScript!ExcelScript.HeaderFooter#setLeftHeader:member(1)'
-      - 'ExcelScript!ExcelScript.HeaderFooter#setRightFooter:member(1)'
-      - 'ExcelScript!ExcelScript.HeaderFooter#setRightHeader:member(1)'
-  - uid: 'ExcelScript!ExcelScript.HeaderFooter#getCenterFooter:member(1)'
-    summary: 'ワークシートの中央のフッター。 フォントの書式を適用したり、変数の値を挿入したりするには、ここで指定した書式コードを使用 https://msdn.microsoft.com/library/bb225426.aspx します。'
-    name: getCenterFooter()
-    fullName: getCenterFooter()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCenterFooter(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.HeaderFooter#getCenterHeader:member(1)'
-    summary: 'ワークシートの中央ヘッダー。 フォントの書式を適用したり、変数の値を挿入したりするには、ここで指定した書式コードを使用 https://msdn.microsoft.com/library/bb225426.aspx します。'
-    name: getCenterHeader()
-    fullName: getCenterHeader()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCenterHeader(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.HeaderFooter#getLeftFooter:member(1)'
-    summary: 'ワークシートの左フッターを示します。 フォントの書式を適用したり、変数の値を挿入したりするには、ここで指定した書式コードを使用 https://msdn.microsoft.com/library/bb225426.aspx します。'
-    name: getLeftFooter()
-    fullName: getLeftFooter()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getLeftFooter(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.HeaderFooter#getLeftHeader:member(1)'
-    summary: 'ワークシートの左のヘッダーを示します。 フォントの書式を適用したり、変数の値を挿入したりするには、ここで指定した書式コードを使用 https://msdn.microsoft.com/library/bb225426.aspx します。'
-    name: getLeftHeader()
-    fullName: getLeftHeader()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getLeftHeader(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.HeaderFooter#getRightFooter:member(1)'
-    summary: 'ワークシートの右フッター。 フォントの書式を適用したり、変数の値を挿入したりするには、ここで指定した書式コードを使用 https://msdn.microsoft.com/library/bb225426.aspx します。'
-    name: getRightFooter()
-    fullName: getRightFooter()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRightFooter(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.HeaderFooter#getRightHeader:member(1)'
-    summary: 'ワークシートの右ヘッダー。 フォントの書式を適用したり、変数の値を挿入したりするには、ここで指定した書式コードを使用 https://msdn.microsoft.com/library/bb225426.aspx します。'
-    name: getRightHeader()
-    fullName: getRightHeader()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRightHeader(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.HeaderFooter#setCenterFooter:member(1)'
-    summary: 'ワークシートの中央のフッター。 フォントの書式を適用したり、変数の値を挿入したりするには、ここで指定した書式コードを使用 https://msdn.microsoft.com/library/bb225426.aspx します。'
-    name: setCenterFooter(centerFooter)
-    fullName: setCenterFooter(centerFooter)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setCenterFooter(centerFooter: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: centerFooter
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.HeaderFooter#setCenterHeader:member(1)'
-    summary: 'ワークシートの中央ヘッダー。 フォントの書式を適用したり、変数の値を挿入したりするには、ここで指定した書式コードを使用 https://msdn.microsoft.com/library/bb225426.aspx します。'
-    name: setCenterHeader(centerHeader)
-    fullName: setCenterHeader(centerHeader)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setCenterHeader(centerHeader: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: centerHeader
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.HeaderFooter#setLeftFooter:member(1)'
-    summary: 'ワークシートの左フッターを示します。 フォントの書式を適用したり、変数の値を挿入したりするには、ここで指定した書式コードを使用 https://msdn.microsoft.com/library/bb225426.aspx します。'
-    name: setLeftFooter(leftFooter)
-    fullName: setLeftFooter(leftFooter)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setLeftFooter(leftFooter: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: leftFooter
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.HeaderFooter#setLeftHeader:member(1)'
-    summary: 'ワークシートの左のヘッダーを示します。 フォントの書式を適用したり、変数の値を挿入したりするには、ここで指定した書式コードを使用 https://msdn.microsoft.com/library/bb225426.aspx します。'
-    name: setLeftHeader(leftHeader)
-    fullName: setLeftHeader(leftHeader)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setLeftHeader(leftHeader: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: leftHeader
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.HeaderFooter#setRightFooter:member(1)'
-    summary: 'ワークシートの右フッター。 フォントの書式を適用したり、変数の値を挿入したりするには、ここで指定した書式コードを使用 https://msdn.microsoft.com/library/bb225426.aspx します。'
-    name: setRightFooter(rightFooter)
-    fullName: setRightFooter(rightFooter)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setRightFooter(rightFooter: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: rightFooter
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.HeaderFooter#setRightHeader:member(1)'
-    summary: 'ワークシートの右ヘッダー。 フォントの書式を適用したり、変数の値を挿入したりするには、ここで指定した書式コードを使用 https://msdn.microsoft.com/library/bb225426.aspx します。'
-    name: setRightHeader(rightHeader)
-    fullName: setRightHeader(rightHeader)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setRightHeader(rightHeader: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: rightHeader
-          description: ''
-          type:
-            - string
+### YamlMime:TSType
+name: ExcelScript.HeaderFooter
+uid: ExcelScript!ExcelScript.HeaderFooter:interface
+package: ExcelScript!
+fullName: ExcelScript.HeaderFooter
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getCenterFooter()
+  uid: ExcelScript!ExcelScript.HeaderFooter#getCenterFooter:member(1)
+  package: ExcelScript!
+  fullName: getCenterFooter()
+  summary: ワークシートの中央のフッター。 フォントの書式を適用したり、変数の値を挿入したりするには、ここで指定した書式コードを使用 https://msdn.microsoft.com/library/bb225426.aspx します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCenterFooter(): string;'
+    return:
+      type: string
+      description: ''
+- name: getCenterHeader()
+  uid: ExcelScript!ExcelScript.HeaderFooter#getCenterHeader:member(1)
+  package: ExcelScript!
+  fullName: getCenterHeader()
+  summary: ワークシートの中央ヘッダー。 フォントの書式を適用したり、変数の値を挿入したりするには、ここで指定した書式コードを使用 https://msdn.microsoft.com/library/bb225426.aspx します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCenterHeader(): string;'
+    return:
+      type: string
+      description: ''
+- name: getLeftFooter()
+  uid: ExcelScript!ExcelScript.HeaderFooter#getLeftFooter:member(1)
+  package: ExcelScript!
+  fullName: getLeftFooter()
+  summary: ワークシートの左フッターを示します。 フォントの書式を適用したり、変数の値を挿入したりするには、ここで指定した書式コードを使用 https://msdn.microsoft.com/library/bb225426.aspx します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLeftFooter(): string;'
+    return:
+      type: string
+      description: ''
+- name: getLeftHeader()
+  uid: ExcelScript!ExcelScript.HeaderFooter#getLeftHeader:member(1)
+  package: ExcelScript!
+  fullName: getLeftHeader()
+  summary: ワークシートの左のヘッダーを示します。 フォントの書式を適用したり、変数の値を挿入したりするには、ここで指定した書式コードを使用 https://msdn.microsoft.com/library/bb225426.aspx します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLeftHeader(): string;'
+    return:
+      type: string
+      description: ''
+- name: getRightFooter()
+  uid: ExcelScript!ExcelScript.HeaderFooter#getRightFooter:member(1)
+  package: ExcelScript!
+  fullName: getRightFooter()
+  summary: ワークシートの右フッター。 フォントの書式を適用したり、変数の値を挿入したりするには、ここで指定した書式コードを使用 https://msdn.microsoft.com/library/bb225426.aspx します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRightFooter(): string;'
+    return:
+      type: string
+      description: ''
+- name: getRightHeader()
+  uid: ExcelScript!ExcelScript.HeaderFooter#getRightHeader:member(1)
+  package: ExcelScript!
+  fullName: getRightHeader()
+  summary: ワークシートの右ヘッダー。 フォントの書式を適用したり、変数の値を挿入したりするには、ここで指定した書式コードを使用 https://msdn.microsoft.com/library/bb225426.aspx します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRightHeader(): string;'
+    return:
+      type: string
+      description: ''
+- name: setCenterFooter(centerFooter)
+  uid: ExcelScript!ExcelScript.HeaderFooter#setCenterFooter:member(1)
+  package: ExcelScript!
+  fullName: setCenterFooter(centerFooter)
+  summary: ワークシートの中央のフッター。 フォントの書式を適用したり、変数の値を挿入したりするには、ここで指定した書式コードを使用 https://msdn.microsoft.com/library/bb225426.aspx します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setCenterFooter(centerFooter: string): void;'
+    parameters:
+    - id: centerFooter
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setCenterHeader(centerHeader)
+  uid: ExcelScript!ExcelScript.HeaderFooter#setCenterHeader:member(1)
+  package: ExcelScript!
+  fullName: setCenterHeader(centerHeader)
+  summary: ワークシートの中央ヘッダー。 フォントの書式を適用したり、変数の値を挿入したりするには、ここで指定した書式コードを使用 https://msdn.microsoft.com/library/bb225426.aspx します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setCenterHeader(centerHeader: string): void;'
+    parameters:
+    - id: centerHeader
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setLeftFooter(leftFooter)
+  uid: ExcelScript!ExcelScript.HeaderFooter#setLeftFooter:member(1)
+  package: ExcelScript!
+  fullName: setLeftFooter(leftFooter)
+  summary: ワークシートの左フッターを示します。 フォントの書式を適用したり、変数の値を挿入したりするには、ここで指定した書式コードを使用 https://msdn.microsoft.com/library/bb225426.aspx します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setLeftFooter(leftFooter: string): void;'
+    parameters:
+    - id: leftFooter
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setLeftHeader(leftHeader)
+  uid: ExcelScript!ExcelScript.HeaderFooter#setLeftHeader:member(1)
+  package: ExcelScript!
+  fullName: setLeftHeader(leftHeader)
+  summary: ワークシートの左のヘッダーを示します。 フォントの書式を適用したり、変数の値を挿入したりするには、ここで指定した書式コードを使用 https://msdn.microsoft.com/library/bb225426.aspx します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setLeftHeader(leftHeader: string): void;'
+    parameters:
+    - id: leftHeader
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setRightFooter(rightFooter)
+  uid: ExcelScript!ExcelScript.HeaderFooter#setRightFooter:member(1)
+  package: ExcelScript!
+  fullName: setRightFooter(rightFooter)
+  summary: ワークシートの右フッター。 フォントの書式を適用したり、変数の値を挿入したりするには、ここで指定した書式コードを使用 https://msdn.microsoft.com/library/bb225426.aspx します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setRightFooter(rightFooter: string): void;'
+    parameters:
+    - id: rightFooter
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setRightHeader(rightHeader)
+  uid: ExcelScript!ExcelScript.HeaderFooter#setRightHeader:member(1)
+  package: ExcelScript!
+  fullName: setRightHeader(rightHeader)
+  summary: ワークシートの右ヘッダー。 フォントの書式を適用したり、変数の値を挿入したりするには、ここで指定した書式コードを使用 https://msdn.microsoft.com/library/bb225426.aspx します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setRightHeader(rightHeader: string): void;'
+    parameters:
+    - id: rightHeader
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 6faa4ebc12652555ddfa4821a2414e91ab197ae7
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412434"

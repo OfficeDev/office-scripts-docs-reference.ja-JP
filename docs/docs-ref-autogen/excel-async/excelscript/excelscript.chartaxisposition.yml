@@ -1,42 +1,33 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartAxisPosition:enum'
-    name: Excel.ChartAxisPosition
-    fullName: Excel.ChartAxisPosition
-    langs:
-      - typeScript
-    type: enum
-    package: excel!
-    children:
-      - 'excel!Excel.ChartAxisPosition.automatic:member'
-      - 'excel!Excel.ChartAxisPosition.custom:member'
-      - 'excel!Excel.ChartAxisPosition.maximum:member'
-      - 'excel!Excel.ChartAxisPosition.minimum:member'
-  - uid: 'excel!Excel.ChartAxisPosition.automatic:member'
-    name: automatic
-    fullName: automatic
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Automatic"'
-  - uid: 'excel!Excel.ChartAxisPosition.custom:member'
-    name: custom
-    fullName: custom
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Custom"'
-  - uid: 'excel!Excel.ChartAxisPosition.maximum:member'
-    name: maximum
-    fullName: maximum
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Maximum"'
-  - uid: 'excel!Excel.ChartAxisPosition.minimum:member'
-    name: minimum
-    fullName: minimum
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Minimum"'
+### YamlMime:TSEnum
+name: Excel.ChartAxisPosition
+uid: excel!Excel.ChartAxisPosition:enum
+package: excel!
+fullName: Excel.ChartAxisPosition
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: automatic
+  uid: excel!Excel.ChartAxisPosition.automatic:member
+  package: excel!
+  summary: ''
+- name: custom
+  uid: excel!Excel.ChartAxisPosition.custom:member
+  package: excel!
+  summary: ''
+- name: maximum
+  uid: excel!Excel.ChartAxisPosition.maximum:member
+  package: excel!
+  summary: ''
+- name: minimum
+  uid: excel!Excel.ChartAxisPosition.minimum:member
+  package: excel!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 1c53256f71a101ea324805c05ae8d4df6adacbc2
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49413728"

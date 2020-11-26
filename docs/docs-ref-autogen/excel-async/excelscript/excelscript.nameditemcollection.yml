@@ -1,183 +1,138 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.NamedItemCollection:interface'
-    summary: ブックまたはワークシートの一部であるすべての NamedItem オブジェクトのコレクションです。これに到達した方法によって異なります。
-    name: Excel.NamedItemCollection
-    fullName: Excel.NamedItemCollection
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.NamedItemCollection#add:member(1)'
-      - 'excel!Excel.NamedItemCollection#addFormulaLocal:member(1)'
-      - 'excel!Excel.NamedItemCollection#getCount:member(1)'
-      - 'excel!Excel.NamedItemCollection#getItem:member(1)'
-      - 'excel!Excel.NamedItemCollection#getItemOrNullObject:member(1)'
-      - 'excel!Excel.NamedItemCollection#load:member(1)'
-  - uid: 'excel!Excel.NamedItemCollection#add:member(1)'
-    summary: 指定のスコープのコレクションに新しい名前を追加します。
-    name: 'add(name, reference, comment)'
-    fullName: 'add(name, reference, comment)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        add(
-                    name: string,
-                    reference: Range | string,
-                    comment?: string
-                ): NamedItem;
-      return:
-        type:
-          - 'excel!Excel.NamedItem:interface'
-        description: |-
-
-
-          #### <a name="examples"></a>例
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getItem("Sample");
-              let headerRange = sheet.getRange("A1:D1");
-
-              sheet.names.add("ExpensesHeader", headerRange);
-              let namedItems = sheet.names.load("name, type");
-
-              await context.sync();
-          }
-          ```
-      parameters:
-        - id: name
-          description: 名前付きの項目の名前。
-          type:
-            - string
-        - id: reference
-          description: 名前が参照する数式または範囲。
-          type:
-            - 'excel!Excel.NamedItemCollection#add~0:complex'
-        - id: comment
-          description: 省略可能です。 名前付きアイテムに関連付けられているコメント。
-          type:
-            - string
-  - uid: 'excel!Excel.NamedItemCollection#addFormulaLocal:member(1)'
-    summary: ユーザーのロケールを数式に使用して、指定のスコープのコレクションに新しい名前を追加します。
-    name: 'addFormulaLocal(name, formula, comment)'
-    fullName: 'addFormulaLocal(name, formula, comment)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        addFormulaLocal(
-                    name: string,
-                    formula: string,
-                    comment?: string
-                ): NamedItem;
-      return:
-        type:
-          - 'excel!Excel.NamedItem:interface'
-        description: ''
-      parameters:
-        - id: name
-          description: 名前付きアイテムの "名前"。
-          type:
-            - string
-        - id: formula
-          description: 名前が参照するユーザーのロケールの数式。
-          type:
-            - string
-        - id: comment
-          description: 省略可能です。 名前付きアイテムに関連付けられているコメント。
-          type:
-            - string
-  - uid: 'excel!Excel.NamedItemCollection#getCount:member(1)'
-    summary: コレクションに含まれる名前付きアイテムの数を取得します。
-    name: getCount()
-    fullName: getCount()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCount(): ClientResult<number>;'
-      return:
-        type:
-          - 'excel!Excel.NamedItemCollection#getCount~0:complex'
-        description: ''
-  - uid: 'excel!Excel.NamedItemCollection#getItem:member(1)'
-    summary: 名前を使用して、NamedItem オブジェクトを取得します。
-    name: getItem(name)
-    fullName: getItem(name)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItem(name: string): NamedItem;'
-      return:
-        type:
-          - 'excel!Excel.NamedItem:interface'
-        description: ''
-      parameters:
-        - id: name
-          description: Nameditem 名。
-          type:
-            - string
-  - uid: 'excel!Excel.NamedItemCollection#getItemOrNullObject:member(1)'
-    summary: 名前を使用して、NamedItem オブジェクトを取得します。 nameditem オブジェクトが存在しない場合は null オブジェクトを返します。
-    name: getItemOrNullObject(name)
-    fullName: getItemOrNullObject(name)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItemOrNullObject(name: string): NamedItem;'
-      return:
-        type:
-          - 'excel!Excel.NamedItem:interface'
-        description: ''
-      parameters:
-        - id: name
-          description: Nameditem 名。
-          type:
-            - string
-  - uid: 'excel!Excel.NamedItemCollection#load:member(1)'
-    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
-          type:
-            - 'string | string[]'
-references:
-  - uid: 'excel!Excel.NamedItem:interface'
-    name: NamedItem
-    fullName: Excel.NamedItem
-  - uid: 'excel!Excel.NamedItemCollection#add~0:complex'
-    name: Range | string
-    fullName: Excel.Range | string
-    spec.typeScript:
-      - uid: 'excel!Excel.Range:interface'
-        name: Range
-        fullName: Excel.Range
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'excel!Excel.NamedItemCollection#getCount~0:complex'
-    name: ClientResult<number>
-    fullName: Excel.ClientResult<number>
-    spec.typeScript:
-      - uid: 'excel!Excel.ClientResult:interface'
-        name: ClientResult
-        fullName: Excel.ClientResult
-      - name: <number>
-        fullName: <number>
+### YamlMime:TSType
+name: Excel.NamedItemCollection
+uid: excel!Excel.NamedItemCollection:interface
+package: excel!
+fullName: Excel.NamedItemCollection
+summary: ブックまたはワークシートの一部であるすべての NamedItem オブジェクトのコレクションです。これに到達した方法によって異なります。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: add(name, reference, comment)
+  uid: excel!Excel.NamedItemCollection#add:member(1)
+  package: excel!
+  fullName: add(name, reference, comment)
+  summary: 指定のスコープのコレクションに新しい名前を追加します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      add(
+                  name: string,
+                  reference: Range | string,
+                  comment?: string
+              ): NamedItem;
+    parameters:
+    - id: name
+      description: 名前付きの項目の名前。
+      type: string
+    - id: reference
+      description: 名前が参照する数式または範囲。
+      type: <xref uid="excel!Excel.Range:interface" /> | string
+    - id: comment
+      description: 省略可能。 名前付きアイテムに関連付けられているコメント。
+      type: string
+    return:
+      type: <xref uid="excel!Excel.NamedItem:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getItem(\"Sample\");\n    let headerRange = sheet.getRange(\"A1:D1\");\n\n    sheet.names.add(\"ExpensesHeader\", headerRange);\n    let namedItems = sheet.names.load(\"name, type\");\n\n    await context.sync();\n}\n```"
+- name: addFormulaLocal(name, formula, comment)
+  uid: excel!Excel.NamedItemCollection#addFormulaLocal:member(1)
+  package: excel!
+  fullName: addFormulaLocal(name, formula, comment)
+  summary: ユーザーのロケールを数式に使用して、指定のスコープのコレクションに新しい名前を追加します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      addFormulaLocal(
+                  name: string,
+                  formula: string,
+                  comment?: string
+              ): NamedItem;
+    parameters:
+    - id: name
+      description: 名前付きアイテムの "名前"。
+      type: string
+    - id: formula
+      description: 名前が参照するユーザーのロケールの数式。
+      type: string
+    - id: comment
+      description: 省略可能。 名前付きアイテムに関連付けられているコメント。
+      type: string
+    return:
+      type: <xref uid="excel!Excel.NamedItem:interface" />
+      description: ''
+- name: getCount()
+  uid: excel!Excel.NamedItemCollection#getCount:member(1)
+  package: excel!
+  fullName: getCount()
+  summary: コレクションに含まれる名前付きアイテムの数を取得します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCount(): ClientResult<number>;'
+    return:
+      type: <xref uid="excel!Excel.ClientResult:interface" />&lt;number&gt;
+      description: ''
+- name: getItem(name)
+  uid: excel!Excel.NamedItemCollection#getItem:member(1)
+  package: excel!
+  fullName: getItem(name)
+  summary: 名前を使用して、NamedItem オブジェクトを取得します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getItem(name: string): NamedItem;'
+    parameters:
+    - id: name
+      description: Nameditem 名。
+      type: string
+    return:
+      type: <xref uid="excel!Excel.NamedItem:interface" />
+      description: ''
+- name: getItemOrNullObject(name)
+  uid: excel!Excel.NamedItemCollection#getItemOrNullObject:member(1)
+  package: excel!
+  fullName: getItemOrNullObject(name)
+  summary: 名前を使用して、NamedItem オブジェクトを取得します。 nameditem オブジェクトが存在しない場合は null オブジェクトを返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getItemOrNullObject(name: string): NamedItem;'
+    parameters:
+    - id: name
+      description: Nameditem 名。
+      type: string
+    return:
+      type: <xref uid="excel!Excel.NamedItem:interface" />
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.NamedItemCollection#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: オブジェクトの指定されたプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、`context.sync()` を呼び出す必要があります。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 447868fa7b4f50f4dc407b286cd22d4b487163c3
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49413476"

@@ -1,56 +1,37 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.PivotAxis:enum'
-    summary: PivotItems の取得元の軸を表します。
-    name: Excel.PivotAxis
-    fullName: Excel.PivotAxis
-    langs:
-      - typeScript
-    type: enum
-    package: excel!
-    children:
-      - 'excel!Excel.PivotAxis.column:member'
-      - 'excel!Excel.PivotAxis.data:member'
-      - 'excel!Excel.PivotAxis.filter:member'
-      - 'excel!Excel.PivotAxis.row:member'
-      - 'excel!Excel.PivotAxis.unknown:member'
-  - uid: 'excel!Excel.PivotAxis.column:member'
-    summary: 列の軸を示します。
-    name: column
-    fullName: column
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Column"'
-  - uid: 'excel!Excel.PivotAxis.data:member'
-    summary: データ軸を示します。
-    name: data
-    fullName: data
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Data"'
-  - uid: 'excel!Excel.PivotAxis.filter:member'
-    summary: フィルター軸。
-    name: filter
-    fullName: filter
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Filter"'
-  - uid: 'excel!Excel.PivotAxis.row:member'
-    summary: 行の軸を示します。
-    name: row
-    fullName: row
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Row"'
-  - uid: 'excel!Excel.PivotAxis.unknown:member'
-    summary: 軸または地域が不明であるか、サポートされていません。
-    name: unknown
-    fullName: unknown
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Unknown"'
+### YamlMime:TSEnum
+name: Excel.PivotAxis
+uid: excel!Excel.PivotAxis:enum
+package: excel!
+fullName: Excel.PivotAxis
+summary: PivotItems の取得元の軸を表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: column
+  uid: excel!Excel.PivotAxis.column:member
+  package: excel!
+  summary: 列の軸を示します。
+- name: data
+  uid: excel!Excel.PivotAxis.data:member
+  package: excel!
+  summary: データ軸を示します。
+- name: filter
+  uid: excel!Excel.PivotAxis.filter:member
+  package: excel!
+  summary: フィルター軸。
+- name: row
+  uid: excel!Excel.PivotAxis.row:member
+  package: excel!
+  summary: 行の軸を示します。
+- name: unknown
+  uid: excel!Excel.PivotAxis.unknown:member
+  package: excel!
+  summary: 軸または地域が不明であるか、サポートされていません。
+metadata:
+  ms.openlocfilehash: 839736e21ec467c39a9c5c95cdd98072f8fe0576
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49413434"

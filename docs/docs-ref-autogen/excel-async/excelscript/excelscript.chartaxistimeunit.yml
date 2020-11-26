@@ -1,35 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartAxisTimeUnit:enum'
-    summary: グラフ軸とデータ系列の時間の単位を指定します。
-    name: Excel.ChartAxisTimeUnit
-    fullName: Excel.ChartAxisTimeUnit
-    langs:
-      - typeScript
-    type: enum
-    package: excel!
-    children:
-      - 'excel!Excel.ChartAxisTimeUnit.days:member'
-      - 'excel!Excel.ChartAxisTimeUnit.months:member'
-      - 'excel!Excel.ChartAxisTimeUnit.years:member'
-  - uid: 'excel!Excel.ChartAxisTimeUnit.days:member'
-    name: days
-    fullName: days
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Days"'
-  - uid: 'excel!Excel.ChartAxisTimeUnit.months:member'
-    name: months
-    fullName: months
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Months"'
-  - uid: 'excel!Excel.ChartAxisTimeUnit.years:member'
-    name: years
-    fullName: years
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Years"'
+### YamlMime:TSEnum
+name: Excel.ChartAxisTimeUnit
+uid: excel!Excel.ChartAxisTimeUnit:enum
+package: excel!
+fullName: Excel.ChartAxisTimeUnit
+summary: グラフ軸とデータ系列の時間の単位を指定します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: days
+  uid: excel!Excel.ChartAxisTimeUnit.days:member
+  package: excel!
+  summary: ''
+- name: months
+  uid: excel!Excel.ChartAxisTimeUnit.months:member
+  package: excel!
+  summary: ''
+- name: years
+  uid: excel!Excel.ChartAxisTimeUnit.years:member
+  package: excel!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 457e6aea2025a1880af05121d07c6d9feac3287f
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49413714"

@@ -1,49 +1,44 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.NamedItemArrayValues:interface'
-    summary: 名前付きのアイテムの値と型を含むオブジェクトを表します。
-    name: ExcelScript.NamedItemArrayValues
-    fullName: ExcelScript.NamedItemArrayValues
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.NamedItemArrayValues#getTypes:member(1)'
-      - 'ExcelScript!ExcelScript.NamedItemArrayValues#getValues:member(1)'
-  - uid: 'ExcelScript!ExcelScript.NamedItemArrayValues#getTypes:member(1)'
-    summary: 名前付きアイテムの配列内の各アイテムの型を表します。
-    name: getTypes()
-    fullName: getTypes()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTypes(): RangeValueType[][];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.NamedItemArrayValues#getTypes~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.NamedItemArrayValues#getValues:member(1)'
-    summary: 名前付きアイテムの配列に含まれる各アイテムの値を表します。読み取り専用。
-    name: getValues()
-    fullName: getValues()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getValues(): any[][];'
-      return:
-        type:
-          - 'any[][]'
-        description: ''
-references:
-  - uid: 'ExcelScript!ExcelScript.NamedItemArrayValues#getTypes~0:complex'
-    name: 'RangeValueType[][]'
-    fullName: 'ExcelScript.RangeValueType[][]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.RangeValueType:enum'
-        name: RangeValueType
-        fullName: ExcelScript.RangeValueType
-      - name: '[][]'
-        fullName: '[][]'
+### YamlMime:TSType
+name: ExcelScript.NamedItemArrayValues
+uid: ExcelScript!ExcelScript.NamedItemArrayValues:interface
+package: ExcelScript!
+fullName: ExcelScript.NamedItemArrayValues
+summary: 名前付きのアイテムの値と型を含むオブジェクトを表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getTypes()
+  uid: ExcelScript!ExcelScript.NamedItemArrayValues#getTypes:member(1)
+  package: ExcelScript!
+  fullName: getTypes()
+  summary: 名前付きアイテムの配列内の各アイテムの型を表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTypes(): RangeValueType[][];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeValueType:enum" />[][]
+      description: ''
+- name: getValues()
+  uid: ExcelScript!ExcelScript.NamedItemArrayValues#getValues:member(1)
+  package: ExcelScript!
+  fullName: getValues()
+  summary: 名前付きアイテムの配列に含まれる各アイテムの値を表します。読み取り専用。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getValues(): any[][];'
+    return:
+      type: any[][]
+      description: ''
+metadata:
+  ms.openlocfilehash: 50104be01299ac48e4f093cc3eacb8cc95295da7
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412210"

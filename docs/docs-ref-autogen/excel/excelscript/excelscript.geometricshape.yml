@@ -1,25 +1,31 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.GeometricShape:interface'
-    summary: ワークシート内の幾何学的な図形を表します。 ジオメトリック図形には、四角形、ブロック矢印、数式記号、フローチャートアイテム、スター、バナー、吹き出し、または Excel のその他の基本的な図形を使用できます。
-    name: ExcelScript.GeometricShape
-    fullName: ExcelScript.GeometricShape
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.GeometricShape#getId:member(1)'
-  - uid: 'ExcelScript!ExcelScript.GeometricShape#getId:member(1)'
-    summary: 図形 ID を返します。
-    name: getId()
-    fullName: getId()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getId(): string;'
-      return:
-        type:
-          - string
-        description: ''
+### YamlMime:TSType
+name: ExcelScript.GeometricShape
+uid: ExcelScript!ExcelScript.GeometricShape:interface
+package: ExcelScript!
+fullName: ExcelScript.GeometricShape
+summary: ワークシート内の幾何学的な図形を表します。 ジオメトリック図形には、四角形、ブロック矢印、数式記号、フローチャートアイテム、スター、バナー、吹き出し、または Excel のその他の基本的な図形を使用できます。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getId()
+  uid: ExcelScript!ExcelScript.GeometricShape#getId:member(1)
+  package: ExcelScript!
+  fullName: getId()
+  summary: 図形 ID を返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getId(): string;'
+    return:
+      type: string
+      description: ''
+metadata:
+  ms.openlocfilehash: cf8298436ba13df23d8be7bfd41aee7612240f70
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412462"

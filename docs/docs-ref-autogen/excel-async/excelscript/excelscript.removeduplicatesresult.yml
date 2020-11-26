@@ -1,74 +1,61 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.RemoveDuplicatesResult:interface'
-    summary: 範囲内の removeDuplicates 削除メソッドからの結果を表します。
-    name: Excel.RemoveDuplicatesResult
-    fullName: Excel.RemoveDuplicatesResult
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.RemoveDuplicatesResult#load:member(1)'
-      - 'excel!Excel.RemoveDuplicatesResult#removed:member'
-      - 'excel!Excel.RemoveDuplicatesResult#uniqueRemaining:member'
-  - uid: 'excel!Excel.RemoveDuplicatesResult#load:member(1)'
-    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.RemoveDuplicatesResult#removed:member'
-    summary: 操作によって削除された重複行の数。
-    name: removed
-    fullName: removed
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly removed: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.RemoveDuplicatesResult#uniqueRemaining:member'
-    summary: 結果として生じた範囲に存在する残りの一意の行の数。
-    name: uniqueRemaining
-    fullName: uniqueRemaining
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly uniqueRemaining: number;'
-      return:
-        type:
-          - number
-        description: |-
-
-
-          #### <a name="examples"></a>例
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getItem("Sample");
-              let range = sheet.getRange("B2:D11");
-
-              let deleteResult = range.removeDuplicates([0],true);    
-              deleteResult.load();    
-              await context.sync();
-
-              console.log(deleteResult.removed + " entries with duplicate names removed.");
-              console.log(deleteResult.uniqueRemaining + " entries with unique names remain in the range.");
-          }
-          ```
+### YamlMime:TSType
+name: Excel.RemoveDuplicatesResult
+uid: excel!Excel.RemoveDuplicatesResult:interface
+package: excel!
+fullName: Excel.RemoveDuplicatesResult
+summary: 範囲内の removeDuplicates 削除メソッドからの結果を表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: removed
+  uid: excel!Excel.RemoveDuplicatesResult#removed:member
+  package: excel!
+  fullName: removed
+  summary: 操作によって削除された重複行の数。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly removed: number;'
+    return:
+      type: number
+- name: uniqueRemaining
+  uid: excel!Excel.RemoveDuplicatesResult#uniqueRemaining:member
+  package: excel!
+  fullName: uniqueRemaining
+  summary: 結果として生じた範囲に存在する残りの一意の行の数。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly uniqueRemaining: number;'
+    return:
+      type: number
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getItem(\"Sample\");\n    let range = sheet.getRange(\"B2:D11\");\n\n    let deleteResult = range.removeDuplicates([0],true);    \n    deleteResult.load();    \n    await context.sync();\n\n    console.log(deleteResult.removed + \" entries with duplicate names removed.\");\n    console.log(deleteResult.uniqueRemaining + \" entries with unique names remain in the range.\");\n}\n```"
+methods:
+- name: load(propertyNames)
+  uid: excel!Excel.RemoveDuplicatesResult#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: オブジェクトの指定されたプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、`context.sync()` を呼び出す必要があります。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: b700e54311e2b2caa7044b061cbd4bd6f40588ac
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49413161"

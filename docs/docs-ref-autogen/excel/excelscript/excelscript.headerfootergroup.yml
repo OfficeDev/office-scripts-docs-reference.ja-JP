@@ -1,172 +1,160 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup:interface'
-    name: ExcelScript.HeaderFooterGroup
-    fullName: ExcelScript.HeaderFooterGroup
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.HeaderFooterGroup#getDefaultForAllPages:member(1)'
-      - 'ExcelScript!ExcelScript.HeaderFooterGroup#getEvenPages:member(1)'
-      - 'ExcelScript!ExcelScript.HeaderFooterGroup#getFirstPage:member(1)'
-      - 'ExcelScript!ExcelScript.HeaderFooterGroup#getOddPages:member(1)'
-      - 'ExcelScript!ExcelScript.HeaderFooterGroup#getState:member(1)'
-      - 'ExcelScript!ExcelScript.HeaderFooterGroup#getUseSheetMargins:member(1)'
-      - 'ExcelScript!ExcelScript.HeaderFooterGroup#getUseSheetScale:member(1)'
-      - 'ExcelScript!ExcelScript.HeaderFooterGroup#setState:member(1)'
-      - 'ExcelScript!ExcelScript.HeaderFooterGroup#setUseSheetMargins:member(1)'
-      - 'ExcelScript!ExcelScript.HeaderFooterGroup#setUseSheetScale:member(1)'
-  - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#getDefaultForAllPages:member(1)'
-    summary: 偶数/奇数または最初のページが指定されていない場合にすべてのページに使用される汎用ヘッダー/フッター。
-    name: getDefaultForAllPages()
-    fullName: getDefaultForAllPages()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getDefaultForAllPages(): HeaderFooter;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.HeaderFooter:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#getEvenPages:member(1)'
-    summary: 偶数ページに使用するヘッダー/フッター。奇数ページには奇数のヘッダー/フッターを指定する必要があります。
-    name: getEvenPages()
-    fullName: getEvenPages()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getEvenPages(): HeaderFooter;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.HeaderFooter:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#getFirstPage:member(1)'
-    summary: 最初のページに使用するヘッダー/フッター。その他すべてのページには汎用または偶数/奇数のヘッダー/フッターが使用されます。
-    name: getFirstPage()
-    fullName: getFirstPage()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFirstPage(): HeaderFooter;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.HeaderFooter:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#getOddPages:member(1)'
-    summary: 奇数ページに使用するヘッダー/フッター。偶数ページには偶数のヘッダー/フッターを指定する必要があります。
-    name: getOddPages()
-    fullName: getOddPages()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getOddPages(): HeaderFooter;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.HeaderFooter:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#getState:member(1)'
-    summary: ヘッダー/フッターが設定される状態。 詳細については、「ExcelScript. HeaderFooterState」を参照してください。
-    name: getState()
-    fullName: getState()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getState(): HeaderFooterState;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.HeaderFooterState:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#getUseSheetMargins:member(1)'
-    summary: ワークシートのページ レイアウト オプションに設定されているページ余白に合わせてヘッダー/フッターの位置が調整されているかどうかを示すフラグを取得または設定します。
-    name: getUseSheetMargins()
-    fullName: getUseSheetMargins()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getUseSheetMargins(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#getUseSheetScale:member(1)'
-    summary: ワークシートのページ レイアウト オプションに設定されているページ パーセンテージ スケールによってヘッダー/フッターが調整されているかどうかを示すフラグを取得または設定します。
-    name: getUseSheetScale()
-    fullName: getUseSheetScale()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getUseSheetScale(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#setState:member(1)'
-    summary: ヘッダー/フッターが設定される状態。 詳細については、「ExcelScript. HeaderFooterState」を参照してください。
-    name: setState(state)
-    fullName: setState(state)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setState(state: HeaderFooterState): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: state
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.HeaderFooterState:enum'
-  - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#setUseSheetMargins:member(1)'
-    summary: ワークシートのページ レイアウト オプションに設定されているページ余白に合わせてヘッダー/フッターの位置が調整されているかどうかを示すフラグを取得または設定します。
-    name: setUseSheetMargins(useSheetMargins)
-    fullName: setUseSheetMargins(useSheetMargins)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setUseSheetMargins(useSheetMargins: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: useSheetMargins
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#setUseSheetScale:member(1)'
-    summary: ワークシートのページ レイアウト オプションに設定されているページ パーセンテージ スケールによってヘッダー/フッターが調整されているかどうかを示すフラグを取得または設定します。
-    name: setUseSheetScale(useSheetScale)
-    fullName: setUseSheetScale(useSheetScale)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setUseSheetScale(useSheetScale: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: useSheetScale
-          description: ''
-          type:
-            - boolean
-references:
-  - uid: 'ExcelScript!ExcelScript.HeaderFooter:interface'
-    name: HeaderFooter
-    fullName: ExcelScript.HeaderFooter
-  - uid: 'ExcelScript!ExcelScript.HeaderFooterState:enum'
-    name: HeaderFooterState
-    fullName: ExcelScript.HeaderFooterState
+### YamlMime:TSType
+name: ExcelScript.HeaderFooterGroup
+uid: ExcelScript!ExcelScript.HeaderFooterGroup:interface
+package: ExcelScript!
+fullName: ExcelScript.HeaderFooterGroup
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getDefaultForAllPages()
+  uid: ExcelScript!ExcelScript.HeaderFooterGroup#getDefaultForAllPages:member(1)
+  package: ExcelScript!
+  fullName: getDefaultForAllPages()
+  summary: 偶数/奇数または最初のページが指定されていない場合にすべてのページに使用される汎用ヘッダー/フッター。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getDefaultForAllPages(): HeaderFooter;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.HeaderFooter:interface" />
+      description: ''
+- name: getEvenPages()
+  uid: ExcelScript!ExcelScript.HeaderFooterGroup#getEvenPages:member(1)
+  package: ExcelScript!
+  fullName: getEvenPages()
+  summary: 偶数ページに使用するヘッダー/フッター。奇数ページには奇数のヘッダー/フッターを指定する必要があります。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getEvenPages(): HeaderFooter;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.HeaderFooter:interface" />
+      description: ''
+- name: getFirstPage()
+  uid: ExcelScript!ExcelScript.HeaderFooterGroup#getFirstPage:member(1)
+  package: ExcelScript!
+  fullName: getFirstPage()
+  summary: 最初のページに使用するヘッダー/フッター。その他すべてのページには汎用または偶数/奇数のヘッダー/フッターが使用されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFirstPage(): HeaderFooter;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.HeaderFooter:interface" />
+      description: ''
+- name: getOddPages()
+  uid: ExcelScript!ExcelScript.HeaderFooterGroup#getOddPages:member(1)
+  package: ExcelScript!
+  fullName: getOddPages()
+  summary: 奇数ページに使用するヘッダー/フッター。偶数ページには偶数のヘッダー/フッターを指定する必要があります。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getOddPages(): HeaderFooter;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.HeaderFooter:interface" />
+      description: ''
+- name: getState()
+  uid: ExcelScript!ExcelScript.HeaderFooterGroup#getState:member(1)
+  package: ExcelScript!
+  fullName: getState()
+  summary: ヘッダー/フッターが設定される状態。 詳細については、「ExcelScript. HeaderFooterState」を参照してください。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getState(): HeaderFooterState;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.HeaderFooterState:enum" />
+      description: ''
+- name: getUseSheetMargins()
+  uid: ExcelScript!ExcelScript.HeaderFooterGroup#getUseSheetMargins:member(1)
+  package: ExcelScript!
+  fullName: getUseSheetMargins()
+  summary: ワークシートのページ レイアウト オプションに設定されているページ余白に合わせてヘッダー/フッターの位置が調整されているかどうかを示すフラグを取得または設定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getUseSheetMargins(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getUseSheetScale()
+  uid: ExcelScript!ExcelScript.HeaderFooterGroup#getUseSheetScale:member(1)
+  package: ExcelScript!
+  fullName: getUseSheetScale()
+  summary: ワークシートのページ レイアウト オプションに設定されているページ パーセンテージ スケールによってヘッダー/フッターが調整されているかどうかを示すフラグを取得または設定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getUseSheetScale(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: setState(state)
+  uid: ExcelScript!ExcelScript.HeaderFooterGroup#setState:member(1)
+  package: ExcelScript!
+  fullName: setState(state)
+  summary: ヘッダー/フッターが設定される状態。 詳細については、「ExcelScript. HeaderFooterState」を参照してください。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setState(state: HeaderFooterState): void;'
+    parameters:
+    - id: state
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.HeaderFooterState:enum" />
+    return:
+      type: void
+      description: ''
+- name: setUseSheetMargins(useSheetMargins)
+  uid: ExcelScript!ExcelScript.HeaderFooterGroup#setUseSheetMargins:member(1)
+  package: ExcelScript!
+  fullName: setUseSheetMargins(useSheetMargins)
+  summary: ワークシートのページ レイアウト オプションに設定されているページ余白に合わせてヘッダー/フッターの位置が調整されているかどうかを示すフラグを取得または設定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setUseSheetMargins(useSheetMargins: boolean): void;'
+    parameters:
+    - id: useSheetMargins
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setUseSheetScale(useSheetScale)
+  uid: ExcelScript!ExcelScript.HeaderFooterGroup#setUseSheetScale:member(1)
+  package: ExcelScript!
+  fullName: setUseSheetScale(useSheetScale)
+  summary: ワークシートのページ レイアウト オプションに設定されているページ パーセンテージ スケールによってヘッダー/フッターが調整されているかどうかを示すフラグを取得または設定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setUseSheetScale(useSheetScale: boolean): void;'
+    parameters:
+    - id: useSheetScale
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 71e09d8afcb0e5bc03f61d0b33deaf1c8ae71fa0
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412378"

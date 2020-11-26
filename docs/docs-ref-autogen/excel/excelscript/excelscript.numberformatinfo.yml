@@ -1,39 +1,44 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.NumberFormatInfo:interface'
-    summary: 数字を表示するためのカルチャに適した形式を定義します。 これは、現在のシステムのカルチャ設定に基づいています。
-    name: ExcelScript.NumberFormatInfo
-    fullName: ExcelScript.NumberFormatInfo
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.NumberFormatInfo#getNumberDecimalSeparator:member(1)'
-      - 'ExcelScript!ExcelScript.NumberFormatInfo#getNumberGroupSeparator:member(1)'
-  - uid: 'ExcelScript!ExcelScript.NumberFormatInfo#getNumberDecimalSeparator:member(1)'
-    summary: 数値の小数点の記号として使用される文字列を取得します。 これは、現在のシステム設定に基づいています。
-    name: getNumberDecimalSeparator()
-    fullName: getNumberDecimalSeparator()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getNumberDecimalSeparator(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.NumberFormatInfo#getNumberGroupSeparator:member(1)'
-    summary: 数値の小数点の左側にある数字のグループを区切るために使用される文字列を取得します。 これは、現在のシステム設定に基づいています。
-    name: getNumberGroupSeparator()
-    fullName: getNumberGroupSeparator()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getNumberGroupSeparator(): string;'
-      return:
-        type:
-          - string
-        description: ''
+### YamlMime:TSType
+name: ExcelScript.NumberFormatInfo
+uid: ExcelScript!ExcelScript.NumberFormatInfo:interface
+package: ExcelScript!
+fullName: ExcelScript.NumberFormatInfo
+summary: 数字を表示するためのカルチャに適した形式を定義します。 これは、現在のシステムのカルチャ設定に基づいています。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getNumberDecimalSeparator()
+  uid: ExcelScript!ExcelScript.NumberFormatInfo#getNumberDecimalSeparator:member(1)
+  package: ExcelScript!
+  fullName: getNumberDecimalSeparator()
+  summary: 数値の小数点の記号として使用される文字列を取得します。 これは、現在のシステム設定に基づいています。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getNumberDecimalSeparator(): string;'
+    return:
+      type: string
+      description: ''
+- name: getNumberGroupSeparator()
+  uid: ExcelScript!ExcelScript.NumberFormatInfo#getNumberGroupSeparator:member(1)
+  package: ExcelScript!
+  fullName: getNumberGroupSeparator()
+  summary: 数値の小数点の左側にある数字のグループを区切るために使用される文字列を取得します。 これは、現在のシステム設定に基づいています。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getNumberGroupSeparator(): string;'
+    return:
+      type: string
+      description: ''
+metadata:
+  ms.openlocfilehash: 1fcd1c48e99ecf014cfbef77d2a8cfb2dd79ba55
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412196"
