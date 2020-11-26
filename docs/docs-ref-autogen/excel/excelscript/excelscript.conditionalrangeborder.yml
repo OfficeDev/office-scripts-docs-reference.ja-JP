@@ -1,98 +1,91 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ConditionalRangeBorder:interface'
-    summary: オブジェクトの輪郭を表します。
-    name: ExcelScript.ConditionalRangeBorder
-    fullName: ExcelScript.ConditionalRangeBorder
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ConditionalRangeBorder#getColor:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalRangeBorder#getSideIndex:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalRangeBorder#getStyle:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalRangeBorder#setColor:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalRangeBorder#setStyle:member(1)'
-  - uid: 'ExcelScript!ExcelScript.ConditionalRangeBorder#getColor:member(1)'
-    summary: '境界線の色を表す HTML カラーコード \# (例: "FFA500")、または名前付きの html 色 (例: "RRGGBB") です。'
-    name: getColor()
-    fullName: getColor()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getColor(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalRangeBorder#getSideIndex:member(1)'
-    summary: 罫線の特定の辺を表す定数値。 詳細については、「ExcelScript Borderindex」を参照してください。
-    name: getSideIndex()
-    fullName: getSideIndex()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSideIndex(): ConditionalRangeBorderIndex;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ConditionalRangeBorderIndex:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalRangeBorder#getStyle:member(1)'
-    summary: 罫線の線スタイルを指定する、線スタイル定数のいずれか 1 つ。 詳細については、「ExcelScript. BorderLineStyle」を参照してください。
-    name: getStyle()
-    fullName: getStyle()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getStyle(): ConditionalRangeBorderLineStyle;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ConditionalRangeBorderLineStyle:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalRangeBorder#setColor:member(1)'
-    summary: '境界線の色を表す HTML カラーコード \# (例: "FFA500")、または名前付きの html 色 (例: "RRGGBB") です。'
-    name: setColor(color)
-    fullName: setColor(color)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setColor(color: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: color
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.ConditionalRangeBorder#setStyle:member(1)'
-    summary: 罫線の線スタイルを指定する、線スタイル定数のいずれか 1 つ。 詳細については、「ExcelScript. BorderLineStyle」を参照してください。
-    name: setStyle(style)
-    fullName: setStyle(style)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setStyle(style: ConditionalRangeBorderLineStyle): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: style
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ConditionalRangeBorderLineStyle:enum'
-references:
-  - uid: 'ExcelScript!ExcelScript.ConditionalRangeBorderIndex:enum'
-    name: ConditionalRangeBorderIndex
-    fullName: ExcelScript.ConditionalRangeBorderIndex
-  - uid: 'ExcelScript!ExcelScript.ConditionalRangeBorderLineStyle:enum'
-    name: ConditionalRangeBorderLineStyle
-    fullName: ExcelScript.ConditionalRangeBorderLineStyle
+### YamlMime:TSType
+name: ExcelScript.ConditionalRangeBorder
+uid: ExcelScript!ExcelScript.ConditionalRangeBorder:interface
+package: ExcelScript!
+fullName: ExcelScript.ConditionalRangeBorder
+summary: オブジェクトの輪郭を表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getColor()
+  uid: ExcelScript!ExcelScript.ConditionalRangeBorder#getColor:member(1)
+  package: ExcelScript!
+  fullName: getColor()
+  summary: '境界線の色を表す HTML カラーコード \# (例: "FFA500")、または名前付きの html 色 (例: "RRGGBB") です。'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getColor(): string;'
+    return:
+      type: string
+      description: ''
+- name: getSideIndex()
+  uid: ExcelScript!ExcelScript.ConditionalRangeBorder#getSideIndex:member(1)
+  package: ExcelScript!
+  fullName: getSideIndex()
+  summary: 罫線の特定の辺を表す定数値。 詳細については、「ExcelScript Borderindex」を参照してください。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getSideIndex(): ConditionalRangeBorderIndex;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeBorderIndex:enum" />
+      description: ''
+- name: getStyle()
+  uid: ExcelScript!ExcelScript.ConditionalRangeBorder#getStyle:member(1)
+  package: ExcelScript!
+  fullName: getStyle()
+  summary: 罫線の線スタイルを指定する、線スタイル定数のいずれか 1 つ。 詳細については、「ExcelScript. BorderLineStyle」を参照してください。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getStyle(): ConditionalRangeBorderLineStyle;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeBorderLineStyle:enum" />
+      description: ''
+- name: setColor(color)
+  uid: ExcelScript!ExcelScript.ConditionalRangeBorder#setColor:member(1)
+  package: ExcelScript!
+  fullName: setColor(color)
+  summary: '境界線の色を表す HTML カラーコード \# (例: "FFA500")、または名前付きの html 色 (例: "RRGGBB") です。'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setColor(color: string): void;'
+    parameters:
+    - id: color
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setStyle(style)
+  uid: ExcelScript!ExcelScript.ConditionalRangeBorder#setStyle:member(1)
+  package: ExcelScript!
+  fullName: setStyle(style)
+  summary: 罫線の線スタイルを指定する、線スタイル定数のいずれか 1 つ。 詳細については、「ExcelScript. BorderLineStyle」を参照してください。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setStyle(style: ConditionalRangeBorderLineStyle): void;'
+    parameters:
+    - id: style
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeBorderLineStyle:enum" />
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: f69bde73ba0bcd58d6e28ed06cfbc7bd76c098b6
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415765"

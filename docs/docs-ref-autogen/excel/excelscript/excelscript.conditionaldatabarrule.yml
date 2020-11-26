@@ -1,41 +1,42 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarRule:interface'
-    summary: データバーのルールの種類を表します。
-    name: ExcelScript.ConditionalDataBarRule
-    fullName: ExcelScript.ConditionalDataBarRule
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ConditionalDataBarRule#formula:member'
-      - 'ExcelScript!ExcelScript.ConditionalDataBarRule#type:member'
-  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarRule#formula:member'
-    summary: databar のルールを評価するために必要な場合、数式。
-    name: formula
-    fullName: formula
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'formula?: string;'
-      return:
-        type:
-          - string
-  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarRule#type:member'
-    summary: Databar のルールの種類。
-    name: type
-    fullName: type
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'type: ConditionalFormatRuleType;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ConditionalFormatRuleType:enum'
-references:
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormatRuleType:enum'
-    name: ConditionalFormatRuleType
-    fullName: ExcelScript.ConditionalFormatRuleType
+### YamlMime:TSType
+name: ExcelScript.ConditionalDataBarRule
+uid: ExcelScript!ExcelScript.ConditionalDataBarRule:interface
+package: ExcelScript!
+fullName: ExcelScript.ConditionalDataBarRule
+summary: データバーのルールの種類を表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: formula
+  uid: ExcelScript!ExcelScript.ConditionalDataBarRule#formula:member
+  package: ExcelScript!
+  fullName: formula
+  summary: databar のルールを評価するために必要な場合、数式。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'formula?: string;'
+    return:
+      type: string
+- name: type
+  uid: ExcelScript!ExcelScript.ConditionalDataBarRule#type:member
+  package: ExcelScript!
+  fullName: type
+  summary: Databar のルールの種類。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'type: ConditionalFormatRuleType;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ConditionalFormatRuleType:enum" />
+metadata:
+  ms.openlocfilehash: ff4a94bef89608675513912330c1f46d94efaeca
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415912"

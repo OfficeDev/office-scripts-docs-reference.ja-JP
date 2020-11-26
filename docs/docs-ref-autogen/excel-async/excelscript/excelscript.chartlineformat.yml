@@ -1,55 +1,52 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartLineFormat:interface'
-    summary: 直線要素の書式設定オプションをカプセル化します。
-    name: Excel.ChartLineFormat
-    fullName: Excel.ChartLineFormat
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.ChartLineFormat#clear:member(1)'
-      - 'excel!Excel.ChartLineFormat#color:member'
-      - 'excel!Excel.ChartLineFormat#lineStyle:member'
-      - 'excel!Excel.ChartLineFormat#load:member(1)'
-      - 'excel!Excel.ChartLineFormat#weight:member'
-  - uid: 'excel!Excel.ChartLineFormat#clear:member(1)'
-    summary: グラフ要素の線の書式をクリアします。
-    name: clear()
-    fullName: clear()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'clear(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.ChartLineFormat#color:member'
-    summary: グラフの線の色を表す HTML カラー コード。
-    name: color
-    fullName: color
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'color: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.ChartLineFormat#lineStyle:member'
-    summary: 線のスタイルを表します。 詳細については、「Excel の ChartLineStyle」を参照してください。
-    name: lineStyle
-    fullName: lineStyle
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: |-
-        lineStyle:
-                    | ChartLineStyle
+### YamlMime:TSType
+name: Excel.ChartLineFormat
+uid: excel!Excel.ChartLineFormat:interface
+package: excel!
+fullName: Excel.ChartLineFormat
+summary: 直線要素の書式設定オプションをカプセル化します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: color
+  uid: excel!Excel.ChartLineFormat#color:member
+  package: excel!
+  fullName: color
+  summary: グラフの線の色を表す HTML カラー コード。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'color: string;'
+    return:
+      type: string
+- name: lineStyle
+  uid: excel!Excel.ChartLineFormat#lineStyle:member
+  package: excel!
+  fullName: lineStyle
+  summary: 線のスタイルを表します。 詳細については、「Excel の ChartLineStyle」を参照してください。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      lineStyle:
+                  | ChartLineStyle
+                  | "None"
+                  | "Continuous"
+                  | "Dash"
+                  | "DashDot"
+                  | "DashDotDot"
+                  | "Dot"
+                  | "Grey25"
+                  | "Grey50"
+                  | "Grey75"
+                  | "Automatic"
+                  | "RoundDot";
+    return:
+      type: >-
+        | <xref uid="excel!Excel.ChartLineStyle:enum" />
                     | "None"
                     | "Continuous"
                     | "Dash"
@@ -60,97 +57,54 @@ items:
                     | "Grey50"
                     | "Grey75"
                     | "Automatic"
-                    | "RoundDot";
-      return:
-        type:
-          - 'excel!Excel.ChartLineFormat#lineStyle~0:complex'
-  - uid: 'excel!Excel.ChartLineFormat#load:member(1)'
-    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.ChartLineFormat#weight:member'
-    summary: 線の太さ (ポイント数) を表します。
-    name: weight
-    fullName: weight
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'weight: number;'
-      return:
-        type:
-          - number
-references:
-  - uid: 'excel!Excel.ChartLineFormat#lineStyle~0:complex'
-    name: |-
-      | ChartLineStyle
-                  | "None"
-                  | "Continuous"
-                  | "Dash"
-                  | "DashDot"
-                  | "DashDotDot"
-                  | "Dot"
-                  | "Grey25"
-                  | "Grey50"
-                  | "Grey75"
-                  | "Automatic"
-                  | "RoundDot"
-    fullName: |-
-      | Excel.ChartLineStyle
-                  | "None"
-                  | "Continuous"
-                  | "Dash"
-                  | "DashDot"
-                  | "DashDotDot"
-                  | "Dot"
-                  | "Grey25"
-                  | "Grey50"
-                  | "Grey75"
-                  | "Automatic"
-                  | "RoundDot"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.ChartLineStyle:enum'
-        name: ChartLineStyle
-        fullName: Excel.ChartLineStyle
-      - name: |2-
-
-                      | "None"
-                      | "Continuous"
-                      | "Dash"
-                      | "DashDot"
-                      | "DashDotDot"
-                      | "Dot"
-                      | "Grey25"
-                      | "Grey50"
-                      | "Grey75"
-                      | "Automatic"
-                      | "RoundDot"
-        fullName: |2-
-
-                      | "None"
-                      | "Continuous"
-                      | "Dash"
-                      | "DashDot"
-                      | "DashDotDot"
-                      | "Dot"
-                      | "Grey25"
-                      | "Grey50"
-                      | "Grey75"
-                      | "Automatic"
-                      | "RoundDot"
+                    | "RoundDot"
+- name: weight
+  uid: excel!Excel.ChartLineFormat#weight:member
+  package: excel!
+  fullName: weight
+  summary: 線の太さ (ポイント数) を表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'weight: number;'
+    return:
+      type: number
+methods:
+- name: clear()
+  uid: excel!Excel.ChartLineFormat#clear:member(1)
+  package: excel!
+  fullName: clear()
+  summary: グラフ要素の線の書式をクリアします。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'clear(): void;'
+    return:
+      type: void
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.ChartLineFormat#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: オブジェクトの指定されたプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、`context.sync()` を呼び出す必要があります。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: ae00506a648fab09cdb429291a0bc67a674fa189
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49414902"

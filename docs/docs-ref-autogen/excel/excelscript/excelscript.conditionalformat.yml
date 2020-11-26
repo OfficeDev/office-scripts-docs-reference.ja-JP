@@ -1,341 +1,247 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat:interface'
-    summary: 条件付き書式の範囲、形式、ルール、およびその他のプロパティをカプセル化するオブジェクト。
-    name: ExcelScript.ConditionalFormat
-    fullName: ExcelScript.ConditionalFormat
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ConditionalFormat#delete:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalFormat#getCellValue:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalFormat#getColorScale:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalFormat#getCustom:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalFormat#getDataBar:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalFormat#getIconSet:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalFormat#getId:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalFormat#getPreset:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalFormat#getPriority:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalFormat#getRange:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalFormat#getRanges:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalFormat#getStopIfTrue:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalFormat#getTextComparison:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalFormat#getTopBottom:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalFormat#getType:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalFormat#setPriority:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalFormat#setStopIfTrue:member(1)'
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#delete:member(1)'
-    summary: この条件付き書式を削除します。
-    name: delete()
-    fullName: delete()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'delete(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getCellValue:member(1)'
-    summary: 現在の条件付き書式が CellValue 型の場合は、セル値の条件付き書式プロパティを返します。 たとえば、5 ~ 10 の範囲のすべてのセルの書式を設定します。
-    name: getCellValue()
-    fullName: getCellValue()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCellValue(): CellValueConditionalFormat | undefined;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ConditionalFormat#getCellValue~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getColorScale:member(1)'
-    summary: 現在の条件付き書式が ColorScale 型の場合は、ColorScale 条件付き書式プロパティを返します。
-    name: getColorScale()
-    fullName: getColorScale()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getColorScale(): ColorScaleConditionalFormat | undefined;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ConditionalFormat#getColorScale~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getCustom:member(1)'
-    summary: 現在の条件付き書式がカスタム型の場合は、カスタムの条件付き書式プロパティを返します。
-    name: getCustom()
-    fullName: getCustom()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCustom(): CustomConditionalFormat | undefined;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ConditionalFormat#getCustom~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getDataBar:member(1)'
-    summary: 現在の条件付き書式がデータバーの場合、データバーのプロパティを返します。
-    name: getDataBar()
-    fullName: getDataBar()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getDataBar(): DataBarConditionalFormat | undefined;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ConditionalFormat#getDataBar~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getIconSet:member(1)'
-    summary: 現在の条件付き書式が IconSet 型の場合は、IconSet 条件付き書式プロパティを返します。
-    name: getIconSet()
-    fullName: getIconSet()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getIconSet(): IconSetConditionalFormat | undefined;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ConditionalFormat#getIconSet~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getId:member(1)'
-    summary: 現在の ConditionalFormatCollection 内での条件付き書式の優先順位。
-    name: getId()
-    fullName: getId()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getId(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getPreset:member(1)'
-    summary: 事前設定の条件の条件付き書式を返します。 詳細については、「ExcelScript」を参照してください。
-    name: getPreset()
-    fullName: getPreset()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPreset(): PresetCriteriaConditionalFormat | undefined;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ConditionalFormat#getPreset~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getPriority:member(1)'
-    summary: この条件付き書式が現在存在している条件付き書式コレクション内の優先度 (またはインデックス)。 これを変更すると、他の条件付き書式の優先度も変更され、連続した優先順位を使用できるようになります。 最背面から開始するには、負の優先順位を使用します。 範囲よりも大きい優先度が取得され、最大値 (負の場合は負の値) に設定されます。 また、優先度を変更する場合は、変更を加える必要がある場合は、新しい優先度の場所でオブジェクトの新しいコピーを取得し直す必要があることにも注意してください。
-    name: getPriority()
-    fullName: getPriority()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPriority(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getRange:member(1)'
-    summary: Conditonal 書式が適用される範囲を返します。または、複数の範囲に条件付き書式が適用されている場合は、null オブジェクトを返します。
-    name: getRange()
-    fullName: getRange()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRange(): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getRanges:member(1)'
-    summary: 1 つまたは複数の長方形範囲で構成され、条件付き書式が適用された RangeAreas を返します。
-    name: getRanges()
-    fullName: getRanges()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRanges(): RangeAreas;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.RangeAreas:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getStopIfTrue:member(1)'
-    summary: この条件付き書式の条件が満たされた場合、優先順位の低い書式はそのセルに影響を及ぼしません。 このような stop Iftrue の概念が存在しないため、(a) を使用する場合は、(a)
-    name: getStopIfTrue()
-    fullName: getStopIfTrue()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getStopIfTrue(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getTextComparison:member(1)'
-    summary: 現在の条件付き書式がテキスト型の場合、特定のテキスト条件付き書式プロパティを返します。 たとえば、"Text" という単語に一致するセルの書式を設定します。
-    name: getTextComparison()
-    fullName: getTextComparison()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTextComparison(): TextConditionalFormat | undefined;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ConditionalFormat#getTextComparison~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getTopBottom:member(1)'
-    summary: 現在の条件付き書式が TopBottom 型の場合、上位/下位条件付き書式プロパティを返します。 たとえば、上位10% または下位10個のアイテムを書式設定します。
-    name: getTopBottom()
-    fullName: getTopBottom()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTopBottom(): TopBottomConditionalFormat | undefined;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ConditionalFormat#getTopBottom~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getType:member(1)'
-    summary: 条件付き書式の種類を指定します。 一度に設定できるのは1つだけです。
-    name: getType()
-    fullName: getType()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getType(): ConditionalFormatType;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ConditionalFormatType:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#setPriority:member(1)'
-    summary: この条件付き書式が現在存在している条件付き書式コレクション内の優先度 (またはインデックス)。 これを変更すると、他の条件付き書式の優先度も変更され、連続した優先順位を使用できるようになります。 最背面から開始するには、負の優先順位を使用します。 範囲よりも大きい優先度が取得され、最大値 (負の場合は負の値) に設定されます。 また、優先度を変更する場合は、変更を加える必要がある場合は、新しい優先度の場所でオブジェクトの新しいコピーを取得し直す必要があることにも注意してください。
-    name: setPriority(priority)
-    fullName: setPriority(priority)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setPriority(priority: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: priority
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#setStopIfTrue:member(1)'
-    summary: この条件付き書式の条件が満たされた場合、優先順位の低い書式はそのセルに影響を及ぼしません。 このような stop Iftrue の概念が存在しないため、(a) を使用する場合は、(a)
-    name: setStopIfTrue(stopIfTrue)
-    fullName: setStopIfTrue(stopIfTrue)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setStopIfTrue(stopIfTrue: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: stopIfTrue
-          description: ''
-          type:
-            - boolean
-references:
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getCellValue~0:complex'
-    name: CellValueConditionalFormat | undefined
-    fullName: ExcelScript.CellValueConditionalFormat | undefined
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.CellValueConditionalFormat:interface'
-        name: CellValueConditionalFormat
-        fullName: ExcelScript.CellValueConditionalFormat
-      - name: ' | undefined'
-        fullName: ' | undefined'
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getColorScale~0:complex'
-    name: ColorScaleConditionalFormat | undefined
-    fullName: ExcelScript.ColorScaleConditionalFormat | undefined
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.ColorScaleConditionalFormat:interface'
-        name: ColorScaleConditionalFormat
-        fullName: ExcelScript.ColorScaleConditionalFormat
-      - name: ' | undefined'
-        fullName: ' | undefined'
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getCustom~0:complex'
-    name: CustomConditionalFormat | undefined
-    fullName: ExcelScript.CustomConditionalFormat | undefined
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.CustomConditionalFormat:interface'
-        name: CustomConditionalFormat
-        fullName: ExcelScript.CustomConditionalFormat
-      - name: ' | undefined'
-        fullName: ' | undefined'
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getDataBar~0:complex'
-    name: DataBarConditionalFormat | undefined
-    fullName: ExcelScript.DataBarConditionalFormat | undefined
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat:interface'
-        name: DataBarConditionalFormat
-        fullName: ExcelScript.DataBarConditionalFormat
-      - name: ' | undefined'
-        fullName: ' | undefined'
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getIconSet~0:complex'
-    name: IconSetConditionalFormat | undefined
-    fullName: ExcelScript.IconSetConditionalFormat | undefined
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.IconSetConditionalFormat:interface'
-        name: IconSetConditionalFormat
-        fullName: ExcelScript.IconSetConditionalFormat
-      - name: ' | undefined'
-        fullName: ' | undefined'
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getPreset~0:complex'
-    name: PresetCriteriaConditionalFormat | undefined
-    fullName: ExcelScript.PresetCriteriaConditionalFormat | undefined
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.PresetCriteriaConditionalFormat:interface'
-        name: PresetCriteriaConditionalFormat
-        fullName: ExcelScript.PresetCriteriaConditionalFormat
-      - name: ' | undefined'
-        fullName: ' | undefined'
-  - uid: 'ExcelScript!ExcelScript.Range:interface'
-    name: Range
-    fullName: ExcelScript.Range
-  - uid: 'ExcelScript!ExcelScript.RangeAreas:interface'
-    name: RangeAreas
-    fullName: ExcelScript.RangeAreas
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getTextComparison~0:complex'
-    name: TextConditionalFormat | undefined
-    fullName: ExcelScript.TextConditionalFormat | undefined
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.TextConditionalFormat:interface'
-        name: TextConditionalFormat
-        fullName: ExcelScript.TextConditionalFormat
-      - name: ' | undefined'
-        fullName: ' | undefined'
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getTopBottom~0:complex'
-    name: TopBottomConditionalFormat | undefined
-    fullName: ExcelScript.TopBottomConditionalFormat | undefined
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.TopBottomConditionalFormat:interface'
-        name: TopBottomConditionalFormat
-        fullName: ExcelScript.TopBottomConditionalFormat
-      - name: ' | undefined'
-        fullName: ' | undefined'
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormatType:enum'
-    name: ConditionalFormatType
-    fullName: ExcelScript.ConditionalFormatType
+### YamlMime:TSType
+name: ExcelScript.ConditionalFormat
+uid: ExcelScript!ExcelScript.ConditionalFormat:interface
+package: ExcelScript!
+fullName: ExcelScript.ConditionalFormat
+summary: 条件付き書式の範囲、形式、ルール、およびその他のプロパティをカプセル化するオブジェクト。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: delete()
+  uid: ExcelScript!ExcelScript.ConditionalFormat#delete:member(1)
+  package: ExcelScript!
+  fullName: delete()
+  summary: この条件付き書式を削除します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(): void;'
+    return:
+      type: void
+      description: ''
+- name: getCellValue()
+  uid: ExcelScript!ExcelScript.ConditionalFormat#getCellValue:member(1)
+  package: ExcelScript!
+  fullName: getCellValue()
+  summary: 現在の条件付き書式が CellValue 型の場合は、セル値の条件付き書式プロパティを返します。 たとえば、5 ~ 10 の範囲のすべてのセルの書式を設定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCellValue(): CellValueConditionalFormat | undefined;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.CellValueConditionalFormat:interface" /> | undefined
+      description: ''
+- name: getColorScale()
+  uid: ExcelScript!ExcelScript.ConditionalFormat#getColorScale:member(1)
+  package: ExcelScript!
+  fullName: getColorScale()
+  summary: 現在の条件付き書式が ColorScale 型の場合は、ColorScale 条件付き書式プロパティを返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getColorScale(): ColorScaleConditionalFormat | undefined;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ColorScaleConditionalFormat:interface" /> | undefined
+      description: ''
+- name: getCustom()
+  uid: ExcelScript!ExcelScript.ConditionalFormat#getCustom:member(1)
+  package: ExcelScript!
+  fullName: getCustom()
+  summary: 現在の条件付き書式がカスタム型の場合は、カスタムの条件付き書式プロパティを返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCustom(): CustomConditionalFormat | undefined;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.CustomConditionalFormat:interface" /> | undefined
+      description: ''
+- name: getDataBar()
+  uid: ExcelScript!ExcelScript.ConditionalFormat#getDataBar:member(1)
+  package: ExcelScript!
+  fullName: getDataBar()
+  summary: 現在の条件付き書式がデータバーの場合、データバーのプロパティを返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getDataBar(): DataBarConditionalFormat | undefined;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.DataBarConditionalFormat:interface" /> | undefined
+      description: ''
+- name: getIconSet()
+  uid: ExcelScript!ExcelScript.ConditionalFormat#getIconSet:member(1)
+  package: ExcelScript!
+  fullName: getIconSet()
+  summary: 現在の条件付き書式が IconSet 型の場合は、IconSet 条件付き書式プロパティを返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getIconSet(): IconSetConditionalFormat | undefined;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.IconSetConditionalFormat:interface" /> | undefined
+      description: ''
+- name: getId()
+  uid: ExcelScript!ExcelScript.ConditionalFormat#getId:member(1)
+  package: ExcelScript!
+  fullName: getId()
+  summary: 現在の ConditionalFormatCollection 内での条件付き書式の優先順位。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getId(): string;'
+    return:
+      type: string
+      description: ''
+- name: getPreset()
+  uid: ExcelScript!ExcelScript.ConditionalFormat#getPreset:member(1)
+  package: ExcelScript!
+  fullName: getPreset()
+  summary: 事前設定の条件の条件付き書式を返します。 詳細については、「ExcelScript」を参照してください。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPreset(): PresetCriteriaConditionalFormat | undefined;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PresetCriteriaConditionalFormat:interface" /> | undefined
+      description: ''
+- name: getPriority()
+  uid: ExcelScript!ExcelScript.ConditionalFormat#getPriority:member(1)
+  package: ExcelScript!
+  fullName: getPriority()
+  summary: この条件付き書式が現在存在している条件付き書式コレクション内の優先度 (またはインデックス)。 これを変更すると、他の条件付き書式の優先度も変更され、連続した優先順位を使用できるようになります。 最背面から開始するには、負の優先順位を使用します。 範囲よりも大きい優先度が取得され、最大値 (負の場合は負の値) に設定されます。 また、優先度を変更する場合は、変更を加える必要がある場合は、新しい優先度の場所でオブジェクトの新しいコピーを取得し直す必要があることにも注意してください。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPriority(): number;'
+    return:
+      type: number
+      description: ''
+- name: getRange()
+  uid: ExcelScript!ExcelScript.ConditionalFormat#getRange:member(1)
+  package: ExcelScript!
+  fullName: getRange()
+  summary: Conditonal 書式が適用される範囲を返します。または、複数の範囲に条件付き書式が適用されている場合は、null オブジェクトを返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRange(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getRanges()
+  uid: ExcelScript!ExcelScript.ConditionalFormat#getRanges:member(1)
+  package: ExcelScript!
+  fullName: getRanges()
+  summary: 1 つまたは複数の長方形範囲で構成され、条件付き書式が適用された RangeAreas を返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRanges(): RangeAreas;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
+      description: ''
+- name: getStopIfTrue()
+  uid: ExcelScript!ExcelScript.ConditionalFormat#getStopIfTrue:member(1)
+  package: ExcelScript!
+  fullName: getStopIfTrue()
+  summary: この条件付き書式の条件が満たされた場合、優先順位の低い書式はそのセルに影響を及ぼしません。 このような stop Iftrue の概念が存在しないため、(a) を使用する場合は、(a)
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getStopIfTrue(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getTextComparison()
+  uid: ExcelScript!ExcelScript.ConditionalFormat#getTextComparison:member(1)
+  package: ExcelScript!
+  fullName: getTextComparison()
+  summary: 現在の条件付き書式がテキスト型の場合、特定のテキスト条件付き書式プロパティを返します。 たとえば、"Text" という単語に一致するセルの書式を設定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTextComparison(): TextConditionalFormat | undefined;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.TextConditionalFormat:interface" /> | undefined
+      description: ''
+- name: getTopBottom()
+  uid: ExcelScript!ExcelScript.ConditionalFormat#getTopBottom:member(1)
+  package: ExcelScript!
+  fullName: getTopBottom()
+  summary: 現在の条件付き書式が TopBottom 型の場合、上位/下位条件付き書式プロパティを返します。 たとえば、上位10% または下位10個のアイテムを書式設定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTopBottom(): TopBottomConditionalFormat | undefined;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.TopBottomConditionalFormat:interface" /> | undefined
+      description: ''
+- name: getType()
+  uid: ExcelScript!ExcelScript.ConditionalFormat#getType:member(1)
+  package: ExcelScript!
+  fullName: getType()
+  summary: 条件付き書式の種類を指定します。 一度に設定できるのは1つだけです。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getType(): ConditionalFormatType;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ConditionalFormatType:enum" />
+      description: ''
+- name: setPriority(priority)
+  uid: ExcelScript!ExcelScript.ConditionalFormat#setPriority:member(1)
+  package: ExcelScript!
+  fullName: setPriority(priority)
+  summary: この条件付き書式が現在存在している条件付き書式コレクション内の優先度 (またはインデックス)。 これを変更すると、他の条件付き書式の優先度も変更され、連続した優先順位を使用できるようになります。 最背面から開始するには、負の優先順位を使用します。 範囲よりも大きい優先度が取得され、最大値 (負の場合は負の値) に設定されます。 また、優先度を変更する場合は、変更を加える必要がある場合は、新しい優先度の場所でオブジェクトの新しいコピーを取得し直す必要があることにも注意してください。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setPriority(priority: number): void;'
+    parameters:
+    - id: priority
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setStopIfTrue(stopIfTrue)
+  uid: ExcelScript!ExcelScript.ConditionalFormat#setStopIfTrue:member(1)
+  package: ExcelScript!
+  fullName: setStopIfTrue(stopIfTrue)
+  summary: この条件付き書式の条件が満たされた場合、優先順位の低い書式はそのセルに影響を及ぼしません。 このような stop Iftrue の概念が存在しないため、(a) を使用する場合は、(a)
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setStopIfTrue(stopIfTrue: boolean): void;'
+    parameters:
+    - id: stopIfTrue
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: feaf6283a35e8ddcbf05ec4ed806dfb460ffc46b
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415884"

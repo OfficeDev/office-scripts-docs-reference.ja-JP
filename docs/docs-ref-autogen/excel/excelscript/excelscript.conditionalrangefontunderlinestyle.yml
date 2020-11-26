@@ -1,31 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFontUnderlineStyle:enum'
-    name: ExcelScript.ConditionalRangeFontUnderlineStyle
-    fullName: ExcelScript.ConditionalRangeFontUnderlineStyle
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ConditionalRangeFontUnderlineStyle.double:member'
-      - 'ExcelScript!ExcelScript.ConditionalRangeFontUnderlineStyle.none:member'
-      - 'ExcelScript!ExcelScript.ConditionalRangeFontUnderlineStyle.single:member'
-  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFontUnderlineStyle.double:member'
-    name: double
-    fullName: double
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFontUnderlineStyle.none:member'
-    name: none
-    fullName: none
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFontUnderlineStyle.single:member'
-    name: single
-    fullName: single
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.ConditionalRangeFontUnderlineStyle
+uid: ExcelScript!ExcelScript.ConditionalRangeFontUnderlineStyle:enum
+package: ExcelScript!
+fullName: ExcelScript.ConditionalRangeFontUnderlineStyle
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: double
+  uid: ExcelScript!ExcelScript.ConditionalRangeFontUnderlineStyle.double:member
+  package: ExcelScript!
+  summary: ''
+- name: none
+  uid: ExcelScript!ExcelScript.ConditionalRangeFontUnderlineStyle.none:member
+  package: ExcelScript!
+  summary: ''
+- name: single
+  uid: ExcelScript!ExcelScript.ConditionalRangeFontUnderlineStyle.single:member
+  package: ExcelScript!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 1a32f39b5744c839ececd75817441d2f655c72bb
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415744"

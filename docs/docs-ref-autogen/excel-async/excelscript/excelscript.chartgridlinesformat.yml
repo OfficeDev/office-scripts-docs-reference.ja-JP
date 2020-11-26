@@ -1,47 +1,48 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartGridlinesFormat:interface'
-    summary: グラフの目盛線の書式設定プロパティをカプセル化します。
-    name: Excel.ChartGridlinesFormat
-    fullName: Excel.ChartGridlinesFormat
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.ChartGridlinesFormat#line:member'
-      - 'excel!Excel.ChartGridlinesFormat#load:member(1)'
-  - uid: 'excel!Excel.ChartGridlinesFormat#line:member'
-    summary: グラフの線の書式設定を表します。
-    name: line
-    fullName: line
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly line: ChartLineFormat;'
-      return:
-        type:
-          - 'excel!Excel.ChartLineFormat:interface'
-  - uid: 'excel!Excel.ChartGridlinesFormat#load:member(1)'
-    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
-          type:
-            - 'string | string[]'
-references:
-  - uid: 'excel!Excel.ChartLineFormat:interface'
-    name: ChartLineFormat
-    fullName: Excel.ChartLineFormat
+### YamlMime:TSType
+name: Excel.ChartGridlinesFormat
+uid: excel!Excel.ChartGridlinesFormat:interface
+package: excel!
+fullName: Excel.ChartGridlinesFormat
+summary: グラフの目盛線の書式設定プロパティをカプセル化します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: line
+  uid: excel!Excel.ChartGridlinesFormat#line:member
+  package: excel!
+  fullName: line
+  summary: グラフの線の書式設定を表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly line: ChartLineFormat;'
+    return:
+      type: <xref uid="excel!Excel.ChartLineFormat:interface" />
+methods:
+- name: load(propertyNames)
+  uid: excel!Excel.ChartGridlinesFormat#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: オブジェクトの指定されたプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、`context.sync()` を呼び出す必要があります。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 490aa056ec61a5f6a2228b1c106cc6651dfc1d8d
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49414979"

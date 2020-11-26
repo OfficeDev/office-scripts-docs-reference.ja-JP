@@ -1,58 +1,41 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.PictureFormat:enum'
-    summary: 画像の形式を指定します。
-    name: ExcelScript.PictureFormat
-    fullName: ExcelScript.PictureFormat
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.PictureFormat.bmp:member'
-      - 'ExcelScript!ExcelScript.PictureFormat.gif:member'
-      - 'ExcelScript!ExcelScript.PictureFormat.jpeg:member'
-      - 'ExcelScript!ExcelScript.PictureFormat.png:member'
-      - 'ExcelScript!ExcelScript.PictureFormat.svg:member'
-      - 'ExcelScript!ExcelScript.PictureFormat.unknown:member'
-  - uid: 'ExcelScript!ExcelScript.PictureFormat.bmp:member'
-    summary: ビットマップ画像。
-    name: bmp
-    fullName: bmp
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.PictureFormat.gif:member'
-    summary: グラフィックス交換形式
-    name: gif
-    fullName: gif
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.PictureFormat.jpeg:member'
-    summary: 共同写真エキスパートグループ。
-    name: jpeg
-    fullName: jpeg
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.PictureFormat.png:member'
-    summary: ポータブルネットワークグラフィックス。
-    name: png
-    fullName: png
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.PictureFormat.svg:member'
-    summary: スケーラブルベクターグラフィックス。
-    name: svg
-    fullName: svg
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.PictureFormat.unknown:member'
-    name: unknown
-    fullName: unknown
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.PictureFormat
+uid: ExcelScript!ExcelScript.PictureFormat:enum
+package: ExcelScript!
+fullName: ExcelScript.PictureFormat
+summary: 画像の形式を指定します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: bmp
+  uid: ExcelScript!ExcelScript.PictureFormat.bmp:member
+  package: ExcelScript!
+  summary: ビットマップ画像。
+- name: gif
+  uid: ExcelScript!ExcelScript.PictureFormat.gif:member
+  package: ExcelScript!
+  summary: グラフィックス交換形式
+- name: jpeg
+  uid: ExcelScript!ExcelScript.PictureFormat.jpeg:member
+  package: ExcelScript!
+  summary: 共同写真エキスパートグループ。
+- name: png
+  uid: ExcelScript!ExcelScript.PictureFormat.png:member
+  package: ExcelScript!
+  summary: ポータブルネットワークグラフィックス。
+- name: svg
+  uid: ExcelScript!ExcelScript.PictureFormat.svg:member
+  package: ExcelScript!
+  summary: スケーラブルベクターグラフィックス。
+- name: unknown
+  uid: ExcelScript!ExcelScript.PictureFormat.unknown:member
+  package: ExcelScript!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 17f4104923cd1c1d008f67c9e2b2b4190ea26dcf
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415268"

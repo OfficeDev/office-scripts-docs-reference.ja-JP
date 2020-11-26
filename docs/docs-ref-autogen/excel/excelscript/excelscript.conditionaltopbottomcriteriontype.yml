@@ -1,46 +1,37 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ConditionalTopBottomCriterionType:enum'
-    summary: 上/下の平均条件付き書式の種類の条件を表します。
-    name: ExcelScript.ConditionalTopBottomCriterionType
-    fullName: ExcelScript.ConditionalTopBottomCriterionType
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ConditionalTopBottomCriterionType.bottomItems:member'
-      - 'ExcelScript!ExcelScript.ConditionalTopBottomCriterionType.bottomPercent:member'
-      - 'ExcelScript!ExcelScript.ConditionalTopBottomCriterionType.invalid:member'
-      - 'ExcelScript!ExcelScript.ConditionalTopBottomCriterionType.topItems:member'
-      - 'ExcelScript!ExcelScript.ConditionalTopBottomCriterionType.topPercent:member'
-  - uid: 'ExcelScript!ExcelScript.ConditionalTopBottomCriterionType.bottomItems:member'
-    name: bottomItems
-    fullName: bottomItems
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ConditionalTopBottomCriterionType.bottomPercent:member'
-    name: bottomPercent
-    fullName: bottomPercent
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ConditionalTopBottomCriterionType.invalid:member'
-    name: invalid
-    fullName: invalid
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ConditionalTopBottomCriterionType.topItems:member'
-    name: topItems
-    fullName: topItems
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ConditionalTopBottomCriterionType.topPercent:member'
-    name: topPercent
-    fullName: topPercent
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.ConditionalTopBottomCriterionType
+uid: ExcelScript!ExcelScript.ConditionalTopBottomCriterionType:enum
+package: ExcelScript!
+fullName: ExcelScript.ConditionalTopBottomCriterionType
+summary: 上/下の平均条件付き書式の種類の条件を表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: bottomItems
+  uid: ExcelScript!ExcelScript.ConditionalTopBottomCriterionType.bottomItems:member
+  package: ExcelScript!
+  summary: ''
+- name: bottomPercent
+  uid: ExcelScript!ExcelScript.ConditionalTopBottomCriterionType.bottomPercent:member
+  package: ExcelScript!
+  summary: ''
+- name: invalid
+  uid: ExcelScript!ExcelScript.ConditionalTopBottomCriterionType.invalid:member
+  package: ExcelScript!
+  summary: ''
+- name: topItems
+  uid: ExcelScript!ExcelScript.ConditionalTopBottomCriterionType.topItems:member
+  package: ExcelScript!
+  summary: ''
+- name: topPercent
+  uid: ExcelScript!ExcelScript.ConditionalTopBottomCriterionType.topPercent:member
+  package: ExcelScript!
+  summary: ''
+metadata:
+  ms.openlocfilehash: ec51de97641ac5b510fb4118b118de61f6545129
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415695"

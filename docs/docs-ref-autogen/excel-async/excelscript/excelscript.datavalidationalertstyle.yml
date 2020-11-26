@@ -1,35 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.DataValidationAlertStyle:enum'
-    summary: データの入力規則のエラーの通知のスタイルを表します。 既定値は "Stop" です。
-    name: Excel.DataValidationAlertStyle
-    fullName: Excel.DataValidationAlertStyle
-    langs:
-      - typeScript
-    type: enum
-    package: excel!
-    children:
-      - 'excel!Excel.DataValidationAlertStyle.information:member'
-      - 'excel!Excel.DataValidationAlertStyle.stop:member'
-      - 'excel!Excel.DataValidationAlertStyle.warning:member'
-  - uid: 'excel!Excel.DataValidationAlertStyle.information:member'
-    name: information
-    fullName: information
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Information"'
-  - uid: 'excel!Excel.DataValidationAlertStyle.stop:member'
-    name: stop
-    fullName: stop
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Stop"'
-  - uid: 'excel!Excel.DataValidationAlertStyle.warning:member'
-    name: warning
-    fullName: warning
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Warning"'
+### YamlMime:TSEnum
+name: Excel.DataValidationAlertStyle
+uid: excel!Excel.DataValidationAlertStyle:enum
+package: excel!
+fullName: Excel.DataValidationAlertStyle
+summary: データの入力規則のエラーの通知のスタイルを表します。 既定値は "Stop" です。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: information
+  uid: excel!Excel.DataValidationAlertStyle.information:member
+  package: excel!
+  summary: ''
+- name: stop
+  uid: excel!Excel.DataValidationAlertStyle.stop:member
+  package: excel!
+  summary: ''
+- name: warning
+  uid: excel!Excel.DataValidationAlertStyle.warning:member
+  package: excel!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 3c5332b391c54cefd178c218c4000144caf93adf
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49414021"

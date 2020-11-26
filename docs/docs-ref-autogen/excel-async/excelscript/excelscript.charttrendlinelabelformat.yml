@@ -1,79 +1,72 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartTrendlineLabelFormat:interface'
-    summary: グラフの近似曲線ラベルの書式設定プロパティをカプセル化します。
-    name: Excel.ChartTrendlineLabelFormat
-    fullName: Excel.ChartTrendlineLabelFormat
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.ChartTrendlineLabelFormat#border:member'
-      - 'excel!Excel.ChartTrendlineLabelFormat#fill:member'
-      - 'excel!Excel.ChartTrendlineLabelFormat#font:member'
-      - 'excel!Excel.ChartTrendlineLabelFormat#load:member(1)'
-  - uid: 'excel!Excel.ChartTrendlineLabelFormat#border:member'
-    summary: 色、linestyle、およびウエイトを含む罫線の書式を指定します。
-    name: border
-    fullName: border
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly border: ChartBorder;'
-      return:
-        type:
-          - 'excel!Excel.ChartBorder:interface'
-  - uid: 'excel!Excel.ChartTrendlineLabelFormat#fill:member'
-    summary: 現在のグラフの近似曲線ラベルの塗りつぶし書式を指定します。
-    name: fill
-    fullName: fill
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly fill: ChartFill;'
-      return:
-        type:
-          - 'excel!Excel.ChartFill:interface'
-  - uid: 'excel!Excel.ChartTrendlineLabelFormat#font:member'
-    summary: グラフの近似曲線ラベルのフォント属性 (フォント名、フォントサイズ、色など) を指定します。
-    name: font
-    fullName: font
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly font: ChartFont;'
-      return:
-        type:
-          - 'excel!Excel.ChartFont:interface'
-  - uid: 'excel!Excel.ChartTrendlineLabelFormat#load:member(1)'
-    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
-          type:
-            - 'string | string[]'
-references:
-  - uid: 'excel!Excel.ChartBorder:interface'
-    name: ChartBorder
-    fullName: Excel.ChartBorder
-  - uid: 'excel!Excel.ChartFill:interface'
-    name: ChartFill
-    fullName: Excel.ChartFill
-  - uid: 'excel!Excel.ChartFont:interface'
-    name: ChartFont
-    fullName: Excel.ChartFont
+### YamlMime:TSType
+name: Excel.ChartTrendlineLabelFormat
+uid: excel!Excel.ChartTrendlineLabelFormat:interface
+package: excel!
+fullName: Excel.ChartTrendlineLabelFormat
+summary: グラフの近似曲線ラベルの書式設定プロパティをカプセル化します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: border
+  uid: excel!Excel.ChartTrendlineLabelFormat#border:member
+  package: excel!
+  fullName: border
+  summary: 色、linestyle、およびウエイトを含む罫線の書式を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly border: ChartBorder;'
+    return:
+      type: <xref uid="excel!Excel.ChartBorder:interface" />
+- name: fill
+  uid: excel!Excel.ChartTrendlineLabelFormat#fill:member
+  package: excel!
+  fullName: fill
+  summary: 現在のグラフの近似曲線ラベルの塗りつぶし書式を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly fill: ChartFill;'
+    return:
+      type: <xref uid="excel!Excel.ChartFill:interface" />
+- name: font
+  uid: excel!Excel.ChartTrendlineLabelFormat#font:member
+  package: excel!
+  fullName: font
+  summary: グラフの近似曲線ラベルのフォント属性 (フォント名、フォントサイズ、色など) を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly font: ChartFont;'
+    return:
+      type: <xref uid="excel!Excel.ChartFont:interface" />
+methods:
+- name: load(propertyNames)
+  uid: excel!Excel.ChartTrendlineLabelFormat#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: オブジェクトの指定されたプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、`context.sync()` を呼び出す必要があります。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 93aac8a6cb6c5858f1efa9f78c832031d5b58df6
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49414769"

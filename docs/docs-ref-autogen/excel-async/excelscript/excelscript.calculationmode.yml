@@ -1,37 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.CalculationMode:enum'
-    name: Excel.CalculationMode
-    fullName: Excel.CalculationMode
-    langs:
-      - typeScript
-    type: enum
-    package: excel!
-    children:
-      - 'excel!Excel.CalculationMode.automatic:member'
-      - 'excel!Excel.CalculationMode.automaticExceptTables:member'
-      - 'excel!Excel.CalculationMode.manual:member'
-  - uid: 'excel!Excel.CalculationMode.automatic:member'
-    summary: Excel で、関連するデータが変更されるたびに新しい数式の結果が計算される既定の再計算動作。
-    name: automatic
-    fullName: automatic
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Automatic"'
-  - uid: 'excel!Excel.CalculationMode.automaticExceptTables:member'
-    summary: 数式がデータテーブルに含まれていない限り、関連するデータが変更されるたびに、新しい数式の結果を計算します。
-    name: automaticExceptTables
-    fullName: automaticExceptTables
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"AutomaticExceptTables"'
-  - uid: 'excel!Excel.CalculationMode.manual:member'
-    summary: 計算は、ユーザーまたはアドインが要求したときにのみ発生します。
-    name: manual
-    fullName: manual
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Manual"'
+### YamlMime:TSEnum
+name: Excel.CalculationMode
+uid: excel!Excel.CalculationMode:enum
+package: excel!
+fullName: Excel.CalculationMode
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: automatic
+  uid: excel!Excel.CalculationMode.automatic:member
+  package: excel!
+  summary: Excel で、関連するデータが変更されるたびに新しい数式の結果が計算される既定の再計算動作。
+- name: automaticExceptTables
+  uid: excel!Excel.CalculationMode.automaticExceptTables:member
+  package: excel!
+  summary: 数式がデータテーブルに含まれていない限り、関連するデータが変更されるたびに、新しい数式の結果を計算します。
+- name: manual
+  uid: excel!Excel.CalculationMode.manual:member
+  package: excel!
+  summary: 計算は、ユーザーまたはアドインが要求したときにのみ発生します。
+metadata:
+  ms.openlocfilehash: 039d1e22c000baae0e15e788c8df68173ebf984d
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49414434"

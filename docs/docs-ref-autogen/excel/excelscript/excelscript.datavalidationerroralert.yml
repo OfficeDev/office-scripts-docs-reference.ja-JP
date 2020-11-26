@@ -1,67 +1,66 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert:interface'
-    summary: データの入力規則のエラー通知のプロパティを表します。
-    name: ExcelScript.DataValidationErrorAlert
-    fullName: ExcelScript.DataValidationErrorAlert
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.DataValidationErrorAlert#message:member'
-      - 'ExcelScript!ExcelScript.DataValidationErrorAlert#showAlert:member'
-      - 'ExcelScript!ExcelScript.DataValidationErrorAlert#style:member'
-      - 'ExcelScript!ExcelScript.DataValidationErrorAlert#title:member'
-  - uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#message:member'
-    summary: エラー警告メッセージを表します。
-    name: message
-    fullName: message
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'message: string;'
-      return:
-        type:
-          - string
-  - uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#showAlert:member'
-    summary: ユーザーが無効なデータを入力したときにエラー通知ダイアログを表示するかどうかを指定します。 既定値は true です。
-    name: showAlert
-    fullName: showAlert
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'showAlert: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#style:member'
-    summary: データの入力規則の警告の種類。詳細については、「ExcelScript. DataValidationAlertStyle」を参照してください。
-    name: style
-    fullName: style
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'style: DataValidationAlertStyle;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.DataValidationAlertStyle:enum'
-  - uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#title:member'
-    summary: エラー警告ダイアログのタイトルを表します。
-    name: title
-    fullName: title
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'title: string;'
-      return:
-        type:
-          - string
-references:
-  - uid: 'ExcelScript!ExcelScript.DataValidationAlertStyle:enum'
-    name: DataValidationAlertStyle
-    fullName: ExcelScript.DataValidationAlertStyle
+### YamlMime:TSType
+name: ExcelScript.DataValidationErrorAlert
+uid: ExcelScript!ExcelScript.DataValidationErrorAlert:interface
+package: ExcelScript!
+fullName: ExcelScript.DataValidationErrorAlert
+summary: データの入力規則のエラー通知のプロパティを表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: message
+  uid: ExcelScript!ExcelScript.DataValidationErrorAlert#message:member
+  package: ExcelScript!
+  fullName: message
+  summary: エラー警告メッセージを表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'message: string;'
+    return:
+      type: string
+- name: showAlert
+  uid: ExcelScript!ExcelScript.DataValidationErrorAlert#showAlert:member
+  package: ExcelScript!
+  fullName: showAlert
+  summary: ユーザーが無効なデータを入力したときにエラー通知ダイアログを表示するかどうかを指定します。 既定値は true です。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'showAlert: boolean;'
+    return:
+      type: boolean
+- name: style
+  uid: ExcelScript!ExcelScript.DataValidationErrorAlert#style:member
+  package: ExcelScript!
+  fullName: style
+  summary: データの入力規則の警告の種類。詳細については、「ExcelScript. DataValidationAlertStyle」を参照してください。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'style: DataValidationAlertStyle;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.DataValidationAlertStyle:enum" />
+- name: title
+  uid: ExcelScript!ExcelScript.DataValidationErrorAlert#title:member
+  package: ExcelScript!
+  fullName: title
+  summary: エラー警告ダイアログのタイトルを表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'title: string;'
+    return:
+      type: string
+metadata:
+  ms.openlocfilehash: 03292fc7608c01c280e7eb5e22dc9fe5bb89f659
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415548"

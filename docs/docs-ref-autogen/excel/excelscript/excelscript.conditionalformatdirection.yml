@@ -1,25 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormatDirection:enum'
-    summary: 選択範囲の方向を表します。
-    name: ExcelScript.ConditionalFormatDirection
-    fullName: ExcelScript.ConditionalFormatDirection
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ConditionalFormatDirection.bottom:member'
-      - 'ExcelScript!ExcelScript.ConditionalFormatDirection.top:member'
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormatDirection.bottom:member'
-    name: bottom
-    fullName: bottom
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormatDirection.top:member'
-    name: top
-    fullName: top
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.ConditionalFormatDirection
+uid: ExcelScript!ExcelScript.ConditionalFormatDirection:enum
+package: ExcelScript!
+fullName: ExcelScript.ConditionalFormatDirection
+summary: 選択範囲の方向を表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: bottom
+  uid: ExcelScript!ExcelScript.ConditionalFormatDirection.bottom:member
+  package: ExcelScript!
+  summary: ''
+- name: top
+  uid: ExcelScript!ExcelScript.ConditionalFormatDirection.top:member
+  package: ExcelScript!
+  summary: ''
+metadata:
+  ms.openlocfilehash: aedb0eae13335f1d54bafa70ffaf6b35ea9ed711
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415856"

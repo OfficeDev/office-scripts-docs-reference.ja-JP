@@ -1,192 +1,180 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.DocumentProperties:interface'
-    summary: ブックのプロパティを表します。
-    name: Excel.DocumentProperties
-    fullName: Excel.DocumentProperties
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.DocumentProperties#author:member'
-      - 'excel!Excel.DocumentProperties#category:member'
-      - 'excel!Excel.DocumentProperties#comments:member'
-      - 'excel!Excel.DocumentProperties#company:member'
-      - 'excel!Excel.DocumentProperties#creationDate:member'
-      - 'excel!Excel.DocumentProperties#custom:member'
-      - 'excel!Excel.DocumentProperties#keywords:member'
-      - 'excel!Excel.DocumentProperties#lastAuthor:member'
-      - 'excel!Excel.DocumentProperties#load:member(1)'
-      - 'excel!Excel.DocumentProperties#manager:member'
-      - 'excel!Excel.DocumentProperties#revisionNumber:member'
-      - 'excel!Excel.DocumentProperties#subject:member'
-      - 'excel!Excel.DocumentProperties#title:member'
-  - uid: 'excel!Excel.DocumentProperties#author:member'
-    summary: ブックの作成者を示します。
-    name: author
-    fullName: author
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'author: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.DocumentProperties#category:member'
-    summary: ブックのカテゴリ。
-    name: category
-    fullName: category
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'category: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.DocumentProperties#comments:member'
-    summary: ブックのコメントを示します。
-    name: comments
-    fullName: comments
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'comments: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.DocumentProperties#company:member'
-    summary: ブックの会社。
-    name: company
-    fullName: company
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'company: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.DocumentProperties#creationDate:member'
-    summary: ブックの作成日を取得します。 読み取り専用です。
-    name: creationDate
-    fullName: creationDate
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly creationDate: Date;'
-      return:
-        type:
-          - '!Date:interface'
-  - uid: 'excel!Excel.DocumentProperties#custom:member'
-    summary: ブックのカスタム プロパティのコレクションを取得します。 読み取り専用です。
-    name: custom
-    fullName: custom
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly custom: CustomPropertyCollection;'
-      return:
-        type:
-          - 'excel!Excel.CustomPropertyCollection:interface'
-  - uid: 'excel!Excel.DocumentProperties#keywords:member'
-    summary: ブックのキーワード。
-    name: keywords
-    fullName: keywords
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'keywords: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.DocumentProperties#lastAuthor:member'
-    summary: ブックの最後の作成者を取得します。 読み取り専用です。
-    name: lastAuthor
-    fullName: lastAuthor
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly lastAuthor: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.DocumentProperties#load:member(1)'
-    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.DocumentProperties#manager:member'
-    summary: ブックのマネージャー。
-    name: manager
-    fullName: manager
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'manager: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.DocumentProperties#revisionNumber:member'
-    summary: ブックのリビジョン番号を取得します。 読み取り専用です。
-    name: revisionNumber
-    fullName: revisionNumber
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'revisionNumber: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.DocumentProperties#subject:member'
-    summary: ブックの件名を示します。
-    name: subject
-    fullName: subject
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'subject: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.DocumentProperties#title:member'
-    summary: ブックのタイトルを示します。
-    name: title
-    fullName: title
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'title: string;'
-      return:
-        type:
-          - string
-references:
-  - uid: '!Date:interface'
-    name: Date
-  - uid: 'excel!Excel.CustomPropertyCollection:interface'
-    name: CustomPropertyCollection
-    fullName: Excel.CustomPropertyCollection
+### YamlMime:TSType
+name: Excel.DocumentProperties
+uid: excel!Excel.DocumentProperties:interface
+package: excel!
+fullName: Excel.DocumentProperties
+summary: ブックのプロパティを表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: author
+  uid: excel!Excel.DocumentProperties#author:member
+  package: excel!
+  fullName: author
+  summary: ブックの作成者を示します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'author: string;'
+    return:
+      type: string
+- name: category
+  uid: excel!Excel.DocumentProperties#category:member
+  package: excel!
+  fullName: category
+  summary: ブックのカテゴリ。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'category: string;'
+    return:
+      type: string
+- name: comments
+  uid: excel!Excel.DocumentProperties#comments:member
+  package: excel!
+  fullName: comments
+  summary: ブックのコメントを示します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'comments: string;'
+    return:
+      type: string
+- name: company
+  uid: excel!Excel.DocumentProperties#company:member
+  package: excel!
+  fullName: company
+  summary: ブックの会社。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'company: string;'
+    return:
+      type: string
+- name: creationDate
+  uid: excel!Excel.DocumentProperties#creationDate:member
+  package: excel!
+  fullName: creationDate
+  summary: ブックの作成日を取得します。 読み取り専用です。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly creationDate: Date;'
+    return:
+      type: Date
+- name: custom
+  uid: excel!Excel.DocumentProperties#custom:member
+  package: excel!
+  fullName: custom
+  summary: ブックのカスタム プロパティのコレクションを取得します。 読み取り専用です。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly custom: CustomPropertyCollection;'
+    return:
+      type: <xref uid="excel!Excel.CustomPropertyCollection:interface" />
+- name: keywords
+  uid: excel!Excel.DocumentProperties#keywords:member
+  package: excel!
+  fullName: keywords
+  summary: ブックのキーワード。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'keywords: string;'
+    return:
+      type: string
+- name: lastAuthor
+  uid: excel!Excel.DocumentProperties#lastAuthor:member
+  package: excel!
+  fullName: lastAuthor
+  summary: ブックの最後の作成者を取得します。 読み取り専用です。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly lastAuthor: string;'
+    return:
+      type: string
+- name: manager
+  uid: excel!Excel.DocumentProperties#manager:member
+  package: excel!
+  fullName: manager
+  summary: ブックのマネージャー。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'manager: string;'
+    return:
+      type: string
+- name: revisionNumber
+  uid: excel!Excel.DocumentProperties#revisionNumber:member
+  package: excel!
+  fullName: revisionNumber
+  summary: ブックのリビジョン番号を取得します。 読み取り専用です。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'revisionNumber: number;'
+    return:
+      type: number
+- name: subject
+  uid: excel!Excel.DocumentProperties#subject:member
+  package: excel!
+  fullName: subject
+  summary: ブックの件名を示します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'subject: string;'
+    return:
+      type: string
+- name: title
+  uid: excel!Excel.DocumentProperties#title:member
+  package: excel!
+  fullName: title
+  summary: ブックのタイトルを示します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'title: string;'
+    return:
+      type: string
+methods:
+- name: load(propertyNames)
+  uid: excel!Excel.DocumentProperties#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: オブジェクトの指定されたプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、`context.sync()` を呼び出す必要があります。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 2d41d203f9a632249e966f0289a7e0bbe376d407
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49413944"

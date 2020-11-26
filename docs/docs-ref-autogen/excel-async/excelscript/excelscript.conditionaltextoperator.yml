@@ -1,51 +1,37 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ConditionalTextOperator:enum'
-    summary: テキスト条件付き書式の種類の演算子を表します。
-    name: Excel.ConditionalTextOperator
-    fullName: Excel.ConditionalTextOperator
-    langs:
-      - typeScript
-    type: enum
-    package: excel!
-    children:
-      - 'excel!Excel.ConditionalTextOperator.beginsWith:member'
-      - 'excel!Excel.ConditionalTextOperator.contains:member'
-      - 'excel!Excel.ConditionalTextOperator.endsWith:member'
-      - 'excel!Excel.ConditionalTextOperator.invalid:member'
-      - 'excel!Excel.ConditionalTextOperator.notContains:member'
-  - uid: 'excel!Excel.ConditionalTextOperator.beginsWith:member'
-    name: beginsWith
-    fullName: beginsWith
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"BeginsWith"'
-  - uid: 'excel!Excel.ConditionalTextOperator.contains:member'
-    name: contains
-    fullName: contains
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Contains"'
-  - uid: 'excel!Excel.ConditionalTextOperator.endsWith:member'
-    name: endsWith
-    fullName: endsWith
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"EndsWith"'
-  - uid: 'excel!Excel.ConditionalTextOperator.invalid:member'
-    name: invalid
-    fullName: invalid
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Invalid"'
-  - uid: 'excel!Excel.ConditionalTextOperator.notContains:member'
-    name: notContains
-    fullName: notContains
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"NotContains"'
+### YamlMime:TSEnum
+name: Excel.ConditionalTextOperator
+uid: excel!Excel.ConditionalTextOperator:enum
+package: excel!
+fullName: Excel.ConditionalTextOperator
+summary: テキスト条件付き書式の種類の演算子を表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: beginsWith
+  uid: excel!Excel.ConditionalTextOperator.beginsWith:member
+  package: excel!
+  summary: ''
+- name: contains
+  uid: excel!Excel.ConditionalTextOperator.contains:member
+  package: excel!
+  summary: ''
+- name: endsWith
+  uid: excel!Excel.ConditionalTextOperator.endsWith:member
+  package: excel!
+  summary: ''
+- name: invalid
+  uid: excel!Excel.ConditionalTextOperator.invalid:member
+  package: excel!
+  summary: ''
+- name: notContains
+  uid: excel!Excel.ConditionalTextOperator.notContains:member
+  package: excel!
+  summary: ''
+metadata:
+  ms.openlocfilehash: b711caab1a2cc395212e0d1539411dcfa816a9be
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49414154"

@@ -1,42 +1,33 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.BorderWeight:enum'
-    name: Excel.BorderWeight
-    fullName: Excel.BorderWeight
-    langs:
-      - typeScript
-    type: enum
-    package: excel!
-    children:
-      - 'excel!Excel.BorderWeight.hairline:member'
-      - 'excel!Excel.BorderWeight.medium:member'
-      - 'excel!Excel.BorderWeight.thick:member'
-      - 'excel!Excel.BorderWeight.thin:member'
-  - uid: 'excel!Excel.BorderWeight.hairline:member'
-    name: hairline
-    fullName: hairline
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Hairline"'
-  - uid: 'excel!Excel.BorderWeight.medium:member'
-    name: medium
-    fullName: medium
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Medium"'
-  - uid: 'excel!Excel.BorderWeight.thick:member'
-    name: thick
-    fullName: thick
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Thick"'
-  - uid: 'excel!Excel.BorderWeight.thin:member'
-    name: thin
-    fullName: thin
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Thin"'
+### YamlMime:TSEnum
+name: Excel.BorderWeight
+uid: excel!Excel.BorderWeight:enum
+package: excel!
+fullName: Excel.BorderWeight
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: hairline
+  uid: excel!Excel.BorderWeight.hairline:member
+  package: excel!
+  summary: ''
+- name: medium
+  uid: excel!Excel.BorderWeight.medium:member
+  package: excel!
+  summary: ''
+- name: thick
+  uid: excel!Excel.BorderWeight.thick:member
+  package: excel!
+  summary: ''
+- name: thin
+  uid: excel!Excel.BorderWeight.thin:member
+  package: excel!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 6d7ca85aae75f0cdc7cc1cc311ba63108226ee29
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49414441"

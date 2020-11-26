@@ -1,28 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ContentType:enum'
-    name: Excel.ContentType
-    fullName: Excel.ContentType
-    langs:
-      - typeScript
-    type: enum
-    package: excel!
-    children:
-      - 'excel!Excel.ContentType.mention:member'
-      - 'excel!Excel.ContentType.plain:member'
-  - uid: 'excel!Excel.ContentType.mention:member'
-    summary: メンションを含むコンテンツをコメントにします。
-    name: mention
-    fullName: mention
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Mention"'
-  - uid: 'excel!Excel.ContentType.plain:member'
-    summary: コメントの内容の形式を指定します。
-    name: plain
-    fullName: plain
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Plain"'
+### YamlMime:TSEnum
+name: Excel.ContentType
+uid: excel!Excel.ContentType:enum
+package: excel!
+fullName: Excel.ContentType
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: mention
+  uid: excel!Excel.ContentType.mention:member
+  package: excel!
+  summary: メンションを含むコンテンツをコメントにします。
+- name: plain
+  uid: excel!Excel.ContentType.plain:member
+  package: excel!
+  summary: コメントの内容の形式を指定します。
+metadata:
+  ms.openlocfilehash: 113824d96744287981b01d4d3bbc92004c3b36a5
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49414140"

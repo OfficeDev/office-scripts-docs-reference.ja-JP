@@ -1,24 +1,30 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.CustomDataValidation:interface'
-    summary: ユーザー設定のデータの入力規則の条件を表します。
-    name: ExcelScript.CustomDataValidation
-    fullName: ExcelScript.CustomDataValidation
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.CustomDataValidation#formula:member'
-  - uid: 'ExcelScript!ExcelScript.CustomDataValidation#formula:member'
-    summary: ユーザーの入力規則のカスタム数式。 これにより、重複を防止したり、セル範囲内の合計を制限したりする特別な入力ルールが作成されます。
-    name: formula
-    fullName: formula
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'formula: string;'
-      return:
-        type:
-          - string
+### YamlMime:TSType
+name: ExcelScript.CustomDataValidation
+uid: ExcelScript!ExcelScript.CustomDataValidation:interface
+package: ExcelScript!
+fullName: ExcelScript.CustomDataValidation
+summary: ユーザー設定のデータの入力規則の条件を表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: formula
+  uid: ExcelScript!ExcelScript.CustomDataValidation#formula:member
+  package: ExcelScript!
+  fullName: formula
+  summary: ユーザーの入力規則のカスタム数式。 これにより、重複を防止したり、セル範囲内の合計を制限したりする特別な入力ルールが作成されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'formula: string;'
+    return:
+      type: string
+metadata:
+  ms.openlocfilehash: 00ca951e7f8db10335c4f605a4b8d1e9a44d1a0a
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415639"

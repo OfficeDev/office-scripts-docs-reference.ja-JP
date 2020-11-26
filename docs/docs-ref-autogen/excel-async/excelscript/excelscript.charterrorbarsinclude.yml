@@ -1,35 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartErrorBarsInclude:enum'
-    summary: エラーバーのどの部分を含めるかを表します。
-    name: Excel.ChartErrorBarsInclude
-    fullName: Excel.ChartErrorBarsInclude
-    langs:
-      - typeScript
-    type: enum
-    package: excel!
-    children:
-      - 'excel!Excel.ChartErrorBarsInclude.both:member'
-      - 'excel!Excel.ChartErrorBarsInclude.minusValues:member'
-      - 'excel!Excel.ChartErrorBarsInclude.plusValues:member'
-  - uid: 'excel!Excel.ChartErrorBarsInclude.both:member'
-    name: both
-    fullName: both
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Both"'
-  - uid: 'excel!Excel.ChartErrorBarsInclude.minusValues:member'
-    name: minusValues
-    fullName: minusValues
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"MinusValues"'
-  - uid: 'excel!Excel.ChartErrorBarsInclude.plusValues:member'
-    name: plusValues
-    fullName: plusValues
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"PlusValues"'
+### YamlMime:TSEnum
+name: Excel.ChartErrorBarsInclude
+uid: excel!Excel.ChartErrorBarsInclude:enum
+package: excel!
+fullName: Excel.ChartErrorBarsInclude
+summary: エラーバーのどの部分を含めるかを表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: both
+  uid: excel!Excel.ChartErrorBarsInclude.both:member
+  package: excel!
+  summary: ''
+- name: minusValues
+  uid: excel!Excel.ChartErrorBarsInclude.minusValues:member
+  package: excel!
+  summary: ''
+- name: plusValues
+  uid: excel!Excel.ChartErrorBarsInclude.plusValues:member
+  package: excel!
+  summary: ''
+metadata:
+  ms.openlocfilehash: f28bd3461bb17c8d8e0039967f23fa8f4d1c0aa9
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415007"
