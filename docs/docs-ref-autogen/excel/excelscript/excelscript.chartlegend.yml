@@ -1,319 +1,284 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ChartLegend:interface'
-    summary: グラフに凡例を表します。
-    name: ExcelScript.ChartLegend
-    fullName: ExcelScript.ChartLegend
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ChartLegend#getFormat:member(1)'
-      - 'ExcelScript!ExcelScript.ChartLegend#getHeight:member(1)'
-      - 'ExcelScript!ExcelScript.ChartLegend#getLeft:member(1)'
-      - 'ExcelScript!ExcelScript.ChartLegend#getLegendEntries:member(1)'
-      - 'ExcelScript!ExcelScript.ChartLegend#getOverlay:member(1)'
-      - 'ExcelScript!ExcelScript.ChartLegend#getPosition:member(1)'
-      - 'ExcelScript!ExcelScript.ChartLegend#getShowShadow:member(1)'
-      - 'ExcelScript!ExcelScript.ChartLegend#getTop:member(1)'
-      - 'ExcelScript!ExcelScript.ChartLegend#getVisible:member(1)'
-      - 'ExcelScript!ExcelScript.ChartLegend#getWidth:member(1)'
-      - 'ExcelScript!ExcelScript.ChartLegend#setHeight:member(1)'
-      - 'ExcelScript!ExcelScript.ChartLegend#setLeft:member(1)'
-      - 'ExcelScript!ExcelScript.ChartLegend#setOverlay:member(1)'
-      - 'ExcelScript!ExcelScript.ChartLegend#setPosition:member(1)'
-      - 'ExcelScript!ExcelScript.ChartLegend#setShowShadow:member(1)'
-      - 'ExcelScript!ExcelScript.ChartLegend#setTop:member(1)'
-      - 'ExcelScript!ExcelScript.ChartLegend#setVisible:member(1)'
-      - 'ExcelScript!ExcelScript.ChartLegend#setWidth:member(1)'
-  - uid: 'ExcelScript!ExcelScript.ChartLegend#getFormat:member(1)'
-    summary: 塗りつぶしとフォントの書式設定を含む、グラフの凡例の書式設定を表します。
-    name: getFormat()
-    fullName: getFormat()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFormat(): ChartLegendFormat;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartLegendFormat:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartLegend#getHeight:member(1)'
-    summary: グラフの凡例の高さをポイント単位で指定します。 凡例が表示されていない場合は Null。
-    name: getHeight()
-    fullName: getHeight()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getHeight(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartLegend#getLeft:member(1)'
-    summary: グラフの凡例の左のポイントを指定します。 凡例が表示されていない場合は Null。
-    name: getLeft()
-    fullName: getLeft()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getLeft(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartLegend#getLegendEntries:member(1)'
-    summary: 凡例に含まれる凡例エントリのコレクションを表します。
-    name: getLegendEntries()
-    fullName: getLegendEntries()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getLegendEntries(): ChartLegendEntry[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartLegend#getLegendEntries~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartLegend#getOverlay:member(1)'
-    summary: グラフの凡例をグラフのメイン本文と重ねて表示するかどうかを指定します。
-    name: getOverlay()
-    fullName: getOverlay()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getOverlay(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartLegend#getPosition:member(1)'
-    summary: グラフの凡例の位置を指定します。 詳細については、「ExcelScript」を参照してください。
-    name: getPosition()
-    fullName: getPosition()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPosition(): ChartLegendPosition;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartLegendPosition:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartLegend#getShowShadow:member(1)'
-    summary: 凡例をグラフ上に影付きにするかどうかを指定します。
-    name: getShowShadow()
-    fullName: getShowShadow()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getShowShadow(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartLegend#getTop:member(1)'
-    summary: グラフの凡例の上端を指定します。
-    name: getTop()
-    fullName: getTop()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTop(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartLegend#getVisible:member(1)'
-    summary: ChartLegend を表示するかどうかを指定します。
-    name: getVisible()
-    fullName: getVisible()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getVisible(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartLegend#getWidth:member(1)'
-    summary: グラフの凡例の幅をポイント単位で指定します。 凡例が表示されていない場合は Null。
-    name: getWidth()
-    fullName: getWidth()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getWidth(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartLegend#setHeight:member(1)'
-    summary: グラフの凡例の高さをポイント単位で指定します。 凡例が表示されていない場合は Null。
-    name: setHeight(height)
-    fullName: setHeight(height)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setHeight(height: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: height
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.ChartLegend#setLeft:member(1)'
-    summary: グラフの凡例の左のポイントを指定します。 凡例が表示されていない場合は Null。
-    name: setLeft(left)
-    fullName: setLeft(left)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setLeft(left: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: left
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.ChartLegend#setOverlay:member(1)'
-    summary: グラフの凡例をグラフのメイン本文と重ねて表示するかどうかを指定します。
-    name: setOverlay(overlay)
-    fullName: setOverlay(overlay)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setOverlay(overlay: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: overlay
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.ChartLegend#setPosition:member(1)'
-    summary: グラフの凡例の位置を指定します。 詳細については、「ExcelScript」を参照してください。
-    name: setPosition(position)
-    fullName: setPosition(position)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setPosition(position: ChartLegendPosition): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: position
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ChartLegendPosition:enum'
-  - uid: 'ExcelScript!ExcelScript.ChartLegend#setShowShadow:member(1)'
-    summary: 凡例をグラフ上に影付きにするかどうかを指定します。
-    name: setShowShadow(showShadow)
-    fullName: setShowShadow(showShadow)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setShowShadow(showShadow: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: showShadow
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.ChartLegend#setTop:member(1)'
-    summary: グラフの凡例の上端を指定します。
-    name: setTop(top)
-    fullName: setTop(top)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setTop(top: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: top
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.ChartLegend#setVisible:member(1)'
-    summary: ChartLegend を表示するかどうかを指定します。
-    name: setVisible(visible)
-    fullName: setVisible(visible)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setVisible(visible: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: visible
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.ChartLegend#setWidth:member(1)'
-    summary: グラフの凡例の幅をポイント単位で指定します。 凡例が表示されていない場合は Null。
-    name: setWidth(width)
-    fullName: setWidth(width)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setWidth(width: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: width
-          description: ''
-          type:
-            - number
-references:
-  - uid: 'ExcelScript!ExcelScript.ChartLegendFormat:interface'
-    name: ChartLegendFormat
-    fullName: ExcelScript.ChartLegendFormat
-  - uid: 'ExcelScript!ExcelScript.ChartLegend#getLegendEntries~0:complex'
-    name: 'ChartLegendEntry[]'
-    fullName: 'ExcelScript.ChartLegendEntry[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.ChartLegendEntry:interface'
-        name: ChartLegendEntry
-        fullName: ExcelScript.ChartLegendEntry
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.ChartLegendPosition:enum'
-    name: ChartLegendPosition
-    fullName: ExcelScript.ChartLegendPosition
+### YamlMime:TSType
+name: ExcelScript.ChartLegend
+uid: ExcelScript!ExcelScript.ChartLegend:interface
+package: ExcelScript!
+fullName: ExcelScript.ChartLegend
+summary: グラフに凡例を表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getFormat()
+  uid: ExcelScript!ExcelScript.ChartLegend#getFormat:member(1)
+  package: ExcelScript!
+  fullName: getFormat()
+  summary: 塗りつぶしとフォントの書式設定を含む、グラフの凡例の書式設定を表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFormat(): ChartLegendFormat;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartLegendFormat:interface" />
+      description: ''
+- name: getHeight()
+  uid: ExcelScript!ExcelScript.ChartLegend#getHeight:member(1)
+  package: ExcelScript!
+  fullName: getHeight()
+  summary: グラフの凡例の高さをポイント単位で指定します。 凡例が表示されていない場合は Null。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getHeight(): number;'
+    return:
+      type: number
+      description: ''
+- name: getLeft()
+  uid: ExcelScript!ExcelScript.ChartLegend#getLeft:member(1)
+  package: ExcelScript!
+  fullName: getLeft()
+  summary: グラフの凡例の左のポイントを指定します。 凡例が表示されていない場合は Null。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLeft(): number;'
+    return:
+      type: number
+      description: ''
+- name: getLegendEntries()
+  uid: ExcelScript!ExcelScript.ChartLegend#getLegendEntries:member(1)
+  package: ExcelScript!
+  fullName: getLegendEntries()
+  summary: 凡例に含まれる凡例エントリのコレクションを表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLegendEntries(): ChartLegendEntry[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartLegendEntry:interface" />[]
+      description: ''
+- name: getOverlay()
+  uid: ExcelScript!ExcelScript.ChartLegend#getOverlay:member(1)
+  package: ExcelScript!
+  fullName: getOverlay()
+  summary: グラフの凡例をグラフのメイン本文と重ねて表示するかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getOverlay(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getPosition()
+  uid: ExcelScript!ExcelScript.ChartLegend#getPosition:member(1)
+  package: ExcelScript!
+  fullName: getPosition()
+  summary: グラフの凡例の位置を指定します。 詳細については、「ExcelScript」を参照してください。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPosition(): ChartLegendPosition;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartLegendPosition:enum" />
+      description: ''
+- name: getShowShadow()
+  uid: ExcelScript!ExcelScript.ChartLegend#getShowShadow:member(1)
+  package: ExcelScript!
+  fullName: getShowShadow()
+  summary: 凡例をグラフ上に影付きにするかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getShowShadow(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getTop()
+  uid: ExcelScript!ExcelScript.ChartLegend#getTop:member(1)
+  package: ExcelScript!
+  fullName: getTop()
+  summary: グラフの凡例の上端を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTop(): number;'
+    return:
+      type: number
+      description: ''
+- name: getVisible()
+  uid: ExcelScript!ExcelScript.ChartLegend#getVisible:member(1)
+  package: ExcelScript!
+  fullName: getVisible()
+  summary: ChartLegend を表示するかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getVisible(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getWidth()
+  uid: ExcelScript!ExcelScript.ChartLegend#getWidth:member(1)
+  package: ExcelScript!
+  fullName: getWidth()
+  summary: グラフの凡例の幅をポイント単位で指定します。 凡例が表示されていない場合は Null。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getWidth(): number;'
+    return:
+      type: number
+      description: ''
+- name: setHeight(height)
+  uid: ExcelScript!ExcelScript.ChartLegend#setHeight:member(1)
+  package: ExcelScript!
+  fullName: setHeight(height)
+  summary: グラフの凡例の高さをポイント単位で指定します。 凡例が表示されていない場合は Null。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setHeight(height: number): void;'
+    parameters:
+    - id: height
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setLeft(left)
+  uid: ExcelScript!ExcelScript.ChartLegend#setLeft:member(1)
+  package: ExcelScript!
+  fullName: setLeft(left)
+  summary: グラフの凡例の左のポイントを指定します。 凡例が表示されていない場合は Null。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setLeft(left: number): void;'
+    parameters:
+    - id: left
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setOverlay(overlay)
+  uid: ExcelScript!ExcelScript.ChartLegend#setOverlay:member(1)
+  package: ExcelScript!
+  fullName: setOverlay(overlay)
+  summary: グラフの凡例をグラフのメイン本文と重ねて表示するかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setOverlay(overlay: boolean): void;'
+    parameters:
+    - id: overlay
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setPosition(position)
+  uid: ExcelScript!ExcelScript.ChartLegend#setPosition:member(1)
+  package: ExcelScript!
+  fullName: setPosition(position)
+  summary: グラフの凡例の位置を指定します。 詳細については、「ExcelScript」を参照してください。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setPosition(position: ChartLegendPosition): void;'
+    parameters:
+    - id: position
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ChartLegendPosition:enum" />
+    return:
+      type: void
+      description: ''
+- name: setShowShadow(showShadow)
+  uid: ExcelScript!ExcelScript.ChartLegend#setShowShadow:member(1)
+  package: ExcelScript!
+  fullName: setShowShadow(showShadow)
+  summary: 凡例をグラフ上に影付きにするかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setShowShadow(showShadow: boolean): void;'
+    parameters:
+    - id: showShadow
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setTop(top)
+  uid: ExcelScript!ExcelScript.ChartLegend#setTop:member(1)
+  package: ExcelScript!
+  fullName: setTop(top)
+  summary: グラフの凡例の上端を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setTop(top: number): void;'
+    parameters:
+    - id: top
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setVisible(visible)
+  uid: ExcelScript!ExcelScript.ChartLegend#setVisible:member(1)
+  package: ExcelScript!
+  fullName: setVisible(visible)
+  summary: ChartLegend を表示するかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setVisible(visible: boolean): void;'
+    parameters:
+    - id: visible
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setWidth(width)
+  uid: ExcelScript!ExcelScript.ChartLegend#setWidth:member(1)
+  package: ExcelScript!
+  fullName: setWidth(width)
+  summary: グラフの凡例の幅をポイント単位で指定します。 凡例が表示されていない場合は Null。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setWidth(width: number): void;'
+    parameters:
+    - id: width
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: a9523d4791f4725323ac5527c5bcc708f2922d8e
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49419783"

@@ -1,43 +1,33 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ShapeZOrder:enum'
-    summary: 他の図形を基準として、図形を移動する位置を Z オーダーで指定します。
-    name: Excel.ShapeZOrder
-    fullName: Excel.ShapeZOrder
-    langs:
-      - typeScript
-    type: enum
-    package: excel!
-    children:
-      - 'excel!Excel.ShapeZOrder.bringForward:member'
-      - 'excel!Excel.ShapeZOrder.bringToFront:member'
-      - 'excel!Excel.ShapeZOrder.sendBackward:member'
-      - 'excel!Excel.ShapeZOrder.sendToBack:member'
-  - uid: 'excel!Excel.ShapeZOrder.bringForward:member'
-    name: bringForward
-    fullName: bringForward
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"BringForward"'
-  - uid: 'excel!Excel.ShapeZOrder.bringToFront:member'
-    name: bringToFront
-    fullName: bringToFront
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"BringToFront"'
-  - uid: 'excel!Excel.ShapeZOrder.sendBackward:member'
-    name: sendBackward
-    fullName: sendBackward
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"SendBackward"'
-  - uid: 'excel!Excel.ShapeZOrder.sendToBack:member'
-    name: sendToBack
-    fullName: sendToBack
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"SendToBack"'
+### YamlMime:TSEnum
+name: Excel.ShapeZOrder
+uid: excel!Excel.ShapeZOrder:enum
+package: excel!
+fullName: Excel.ShapeZOrder
+summary: 他の図形を基準として、図形を移動する位置を Z オーダーで指定します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: bringForward
+  uid: excel!Excel.ShapeZOrder.bringForward:member
+  package: excel!
+  summary: ''
+- name: bringToFront
+  uid: excel!Excel.ShapeZOrder.bringToFront:member
+  package: excel!
+  summary: ''
+- name: sendBackward
+  uid: excel!Excel.ShapeZOrder.sendBackward:member
+  package: excel!
+  summary: ''
+- name: sendToBack
+  uid: excel!Excel.ShapeZOrder.sendToBack:member
+  package: excel!
+  summary: ''
+metadata:
+  ms.openlocfilehash: f15a95d59245765896631c8a797029e13703edd7
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49418439"

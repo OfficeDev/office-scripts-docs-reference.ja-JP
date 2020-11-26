@@ -1,29 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.SortBy:enum'
-    summary: 並べ替えの方向を表します。
-    name: Excel.SortBy
-    fullName: Excel.SortBy
-    langs:
-      - typeScript
-    type: enum
-    package: excel!
-    children:
-      - 'excel!Excel.SortBy.ascending:member'
-      - 'excel!Excel.SortBy.descending:member'
-  - uid: 'excel!Excel.SortBy.ascending:member'
-    summary: 昇順で並べ替えます。 最小から最大、または A から Z まで。
-    name: ascending
-    fullName: ascending
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Ascending"'
-  - uid: 'excel!Excel.SortBy.descending:member'
-    summary: 降順の並べ替え。 最大から最小、または Z から A へ。
-    name: descending
-    fullName: descending
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Descending"'
+### YamlMime:TSEnum
+name: Excel.SortBy
+uid: excel!Excel.SortBy:enum
+package: excel!
+fullName: Excel.SortBy
+summary: 並べ替えの方向を表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: ascending
+  uid: excel!Excel.SortBy.ascending:member
+  package: excel!
+  summary: 昇順で並べ替えます。 最小から最大、または A から Z まで。
+- name: descending
+  uid: excel!Excel.SortBy.descending:member
+  package: excel!
+  summary: 降順の並べ替え。 最大から最小、または Z から A へ。
+metadata:
+  ms.openlocfilehash: 42e9b274b6b8706ce2d4d78bfc0f7bccaaf06f86
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49418374"

@@ -1,54 +1,54 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ConditionalColorScaleCriterion:interface'
-    summary: 種類、値、および色を含むカラースケール条件を表します。
-    name: ExcelScript.ConditionalColorScaleCriterion
-    fullName: ExcelScript.ConditionalColorScaleCriterion
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ConditionalColorScaleCriterion#color:member'
-      - 'ExcelScript!ExcelScript.ConditionalColorScaleCriterion#formula:member'
-      - 'ExcelScript!ExcelScript.ConditionalColorScaleCriterion#type:member'
-  - uid: 'ExcelScript!ExcelScript.ConditionalColorScaleCriterion#color:member'
-    summary: 色スケールの色の HTML カラーコード表現 (たとえば、 \# ff0000 はは赤を表します)。
-    name: color
-    fullName: color
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'color?: string;'
-      return:
-        type:
-          - string
-  - uid: 'ExcelScript!ExcelScript.ConditionalColorScaleCriterion#formula:member'
-    summary: 数値、数式、(型が LowestValue の場合は) null。
-    name: formula
-    fullName: formula
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'formula?: string;'
-      return:
-        type:
-          - string
-  - uid: 'ExcelScript!ExcelScript.ConditionalColorScaleCriterion#type:member'
-    summary: 条件式の基準となる条件式を指定します。
-    name: type
-    fullName: type
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'type: ConditionalFormatColorCriterionType;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ConditionalFormatColorCriterionType:enum'
-references:
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormatColorCriterionType:enum'
-    name: ConditionalFormatColorCriterionType
-    fullName: ExcelScript.ConditionalFormatColorCriterionType
+### YamlMime:TSType
+name: ExcelScript.ConditionalColorScaleCriterion
+uid: ExcelScript!ExcelScript.ConditionalColorScaleCriterion:interface
+package: ExcelScript!
+fullName: ExcelScript.ConditionalColorScaleCriterion
+summary: 種類、値、および色を含むカラースケール条件を表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: color
+  uid: ExcelScript!ExcelScript.ConditionalColorScaleCriterion#color:member
+  package: ExcelScript!
+  fullName: color
+  summary: 色スケールの色の HTML カラーコード表現 (たとえば、 \# ff0000 はは赤を表します)。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'color?: string;'
+    return:
+      type: string
+- name: formula
+  uid: ExcelScript!ExcelScript.ConditionalColorScaleCriterion#formula:member
+  package: ExcelScript!
+  fullName: formula
+  summary: 数値、数式、(型が LowestValue の場合は) null。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'formula?: string;'
+    return:
+      type: string
+- name: type
+  uid: ExcelScript!ExcelScript.ConditionalColorScaleCriterion#type:member
+  package: ExcelScript!
+  fullName: type
+  summary: 条件式の基準となる条件式を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'type: ConditionalFormatColorCriterionType;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ConditionalFormatColorCriterionType:enum" />
+metadata:
+  ms.openlocfilehash: 25bac1cb6537ddbb319c9a9371c7e8dbcfd0ba2b
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49419489"

@@ -1,167 +1,162 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.Subtotals:interface'
-    summary: ピボットフィールドの小計。
-    name: ExcelScript.Subtotals
-    fullName: ExcelScript.Subtotals
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.Subtotals#automatic:member'
-      - 'ExcelScript!ExcelScript.Subtotals#average:member'
-      - 'ExcelScript!ExcelScript.Subtotals#count:member'
-      - 'ExcelScript!ExcelScript.Subtotals#countNumbers:member'
-      - 'ExcelScript!ExcelScript.Subtotals#max:member'
-      - 'ExcelScript!ExcelScript.Subtotals#min:member'
-      - 'ExcelScript!ExcelScript.Subtotals#product:member'
-      - 'ExcelScript!ExcelScript.Subtotals#standardDeviation:member'
-      - 'ExcelScript!ExcelScript.Subtotals#standardDeviationP:member'
-      - 'ExcelScript!ExcelScript.Subtotals#sum:member'
-      - 'ExcelScript!ExcelScript.Subtotals#variance:member'
-      - 'ExcelScript!ExcelScript.Subtotals#varianceP:member'
-  - uid: 'ExcelScript!ExcelScript.Subtotals#automatic:member'
-    summary: automatic が true に設定されている場合、小計を設定する際に、他の値はすべて無視されます。
-    name: automatic
-    fullName: automatic
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'automatic?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.Subtotals#average:member'
-    summary: Average
-    name: average
-    fullName: average
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'average?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.Subtotals#count:member'
-    summary: Count
-    name: count
-    fullName: count
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'count?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.Subtotals#countNumbers:member'
-    summary: CountNumbers
-    name: countNumbers
-    fullName: countNumbers
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'countNumbers?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.Subtotals#max:member'
-    summary: Max
-    name: max
-    fullName: max
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'max?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.Subtotals#min:member'
-    summary: Min
-    name: min
-    fullName: min
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'min?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.Subtotals#product:member'
-    summary: 製品
-    name: product
-    fullName: product
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'product?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.Subtotals#standardDeviation:member'
-    summary: StandardDeviation
-    name: standardDeviation
-    fullName: standardDeviation
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'standardDeviation?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.Subtotals#standardDeviationP:member'
-    summary: StandardDeviationP
-    name: standardDeviationP
-    fullName: standardDeviationP
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'standardDeviationP?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.Subtotals#sum:member'
-    summary: Sum
-    name: sum
-    fullName: sum
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'sum?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.Subtotals#variance:member'
-    summary: Var
-    name: variance
-    fullName: variance
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'variance?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.Subtotals#varianceP:member'
-    summary: VarianceP
-    name: varianceP
-    fullName: varianceP
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'varianceP?: boolean;'
-      return:
-        type:
-          - boolean
+### YamlMime:TSType
+name: ExcelScript.Subtotals
+uid: ExcelScript!ExcelScript.Subtotals:interface
+package: ExcelScript!
+fullName: ExcelScript.Subtotals
+summary: ピボットフィールドの小計。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: automatic
+  uid: ExcelScript!ExcelScript.Subtotals#automatic:member
+  package: ExcelScript!
+  fullName: automatic
+  summary: automatic が true に設定されている場合、小計を設定する際に、他の値はすべて無視されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'automatic?: boolean;'
+    return:
+      type: boolean
+- name: average
+  uid: ExcelScript!ExcelScript.Subtotals#average:member
+  package: ExcelScript!
+  fullName: average
+  summary: Average
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'average?: boolean;'
+    return:
+      type: boolean
+- name: count
+  uid: ExcelScript!ExcelScript.Subtotals#count:member
+  package: ExcelScript!
+  fullName: count
+  summary: カウント
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'count?: boolean;'
+    return:
+      type: boolean
+- name: countNumbers
+  uid: ExcelScript!ExcelScript.Subtotals#countNumbers:member
+  package: ExcelScript!
+  fullName: countNumbers
+  summary: CountNumbers
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'countNumbers?: boolean;'
+    return:
+      type: boolean
+- name: max
+  uid: ExcelScript!ExcelScript.Subtotals#max:member
+  package: ExcelScript!
+  fullName: max
+  summary: Max
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'max?: boolean;'
+    return:
+      type: boolean
+- name: min
+  uid: ExcelScript!ExcelScript.Subtotals#min:member
+  package: ExcelScript!
+  fullName: min
+  summary: Min
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'min?: boolean;'
+    return:
+      type: boolean
+- name: product
+  uid: ExcelScript!ExcelScript.Subtotals#product:member
+  package: ExcelScript!
+  fullName: product
+  summary: 製品
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'product?: boolean;'
+    return:
+      type: boolean
+- name: standardDeviation
+  uid: ExcelScript!ExcelScript.Subtotals#standardDeviation:member
+  package: ExcelScript!
+  fullName: standardDeviation
+  summary: StandardDeviation
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'standardDeviation?: boolean;'
+    return:
+      type: boolean
+- name: standardDeviationP
+  uid: ExcelScript!ExcelScript.Subtotals#standardDeviationP:member
+  package: ExcelScript!
+  fullName: standardDeviationP
+  summary: StandardDeviationP
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'standardDeviationP?: boolean;'
+    return:
+      type: boolean
+- name: sum
+  uid: ExcelScript!ExcelScript.Subtotals#sum:member
+  package: ExcelScript!
+  fullName: sum
+  summary: Sum
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'sum?: boolean;'
+    return:
+      type: boolean
+- name: variance
+  uid: ExcelScript!ExcelScript.Subtotals#variance:member
+  package: ExcelScript!
+  fullName: variance
+  summary: Var
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'variance?: boolean;'
+    return:
+      type: boolean
+- name: varianceP
+  uid: ExcelScript!ExcelScript.Subtotals#varianceP:member
+  package: ExcelScript!
+  fullName: varianceP
+  summary: VarianceP
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'varianceP?: boolean;'
+    return:
+      type: boolean
+metadata:
+  ms.openlocfilehash: c75a609fc36f6b00544f4d9437c9c149bcb64848
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49419328"

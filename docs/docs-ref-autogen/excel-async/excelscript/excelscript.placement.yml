@@ -1,38 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Placement:enum'
-    summary: オブジェクトがその基となるセルにアタッチされる方法を指定します。
-    name: Excel.Placement
-    fullName: Excel.Placement
-    langs:
-      - typeScript
-    type: enum
-    package: excel!
-    children:
-      - 'excel!Excel.Placement.absolute:member'
-      - 'excel!Excel.Placement.oneCell:member'
-      - 'excel!Excel.Placement.twoCell:member'
-  - uid: 'excel!Excel.Placement.absolute:member'
-    summary: オブジェクトは自由にフリーの状態です。
-    name: absolute
-    fullName: absolute
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Absolute"'
-  - uid: 'excel!Excel.Placement.oneCell:member'
-    summary: オブジェクトは、セルに移動し、サイズが変更されます。
-    name: oneCell
-    fullName: oneCell
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"OneCell"'
-  - uid: 'excel!Excel.Placement.twoCell:member'
-    summary: オブジェクトはセルと共に移動します。
-    name: twoCell
-    fullName: twoCell
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"TwoCell"'
+### YamlMime:TSEnum
+name: Excel.Placement
+uid: excel!Excel.Placement:enum
+package: excel!
+fullName: Excel.Placement
+summary: オブジェクトがその基となるセルにアタッチされる方法を指定します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: absolute
+  uid: excel!Excel.Placement.absolute:member
+  package: excel!
+  summary: オブジェクトは自由にフリーの状態です。
+- name: oneCell
+  uid: excel!Excel.Placement.oneCell:member
+  package: excel!
+  summary: オブジェクトは、セルに移動し、サイズが変更されます。
+- name: twoCell
+  uid: excel!Excel.Placement.twoCell:member
+  package: excel!
+  summary: オブジェクトはセルと共に移動します。
+metadata:
+  ms.openlocfilehash: 7eb3e236a015e7b6daf96f755dbba063c7823bfc
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49418808"

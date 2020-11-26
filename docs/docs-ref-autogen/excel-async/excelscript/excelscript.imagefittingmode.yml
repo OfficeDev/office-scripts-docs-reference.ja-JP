@@ -1,34 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ImageFittingMode:enum'
-    name: Excel.ImageFittingMode
-    fullName: Excel.ImageFittingMode
-    langs:
-      - typeScript
-    type: enum
-    package: excel!
-    children:
-      - 'excel!Excel.ImageFittingMode.fill:member'
-      - 'excel!Excel.ImageFittingMode.fit:member'
-      - 'excel!Excel.ImageFittingMode.fitAndCenter:member'
-  - uid: 'excel!Excel.ImageFittingMode.fill:member'
-    name: fill
-    fullName: fill
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Fill"'
-  - uid: 'excel!Excel.ImageFittingMode.fit:member'
-    name: fit
-    fullName: fit
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Fit"'
-  - uid: 'excel!Excel.ImageFittingMode.fitAndCenter:member'
-    name: fitAndCenter
-    fullName: fitAndCenter
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"FitAndCenter"'
+### YamlMime:TSEnum
+name: Excel.ImageFittingMode
+uid: excel!Excel.ImageFittingMode:enum
+package: excel!
+fullName: Excel.ImageFittingMode
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: fill
+  uid: excel!Excel.ImageFittingMode.fill:member
+  package: excel!
+  summary: ''
+- name: fit
+  uid: excel!Excel.ImageFittingMode.fit:member
+  package: excel!
+  summary: ''
+- name: fitAndCenter
+  uid: excel!Excel.ImageFittingMode.fitAndCenter:member
+  package: excel!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 0aa1762d524ad0f1d22106d085bf6e3d9e8af459
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49419342"

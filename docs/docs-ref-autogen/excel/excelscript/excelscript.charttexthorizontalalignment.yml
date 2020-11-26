@@ -1,46 +1,37 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ChartTextHorizontalAlignment:enum'
-    summary: 指定したオブジェクトの水平方向の配置を表します。
-    name: ExcelScript.ChartTextHorizontalAlignment
-    fullName: ExcelScript.ChartTextHorizontalAlignment
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ChartTextHorizontalAlignment.center:member'
-      - 'ExcelScript!ExcelScript.ChartTextHorizontalAlignment.distributed:member'
-      - 'ExcelScript!ExcelScript.ChartTextHorizontalAlignment.justify:member'
-      - 'ExcelScript!ExcelScript.ChartTextHorizontalAlignment.left:member'
-      - 'ExcelScript!ExcelScript.ChartTextHorizontalAlignment.right:member'
-  - uid: 'ExcelScript!ExcelScript.ChartTextHorizontalAlignment.center:member'
-    name: center
-    fullName: center
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartTextHorizontalAlignment.distributed:member'
-    name: distributed
-    fullName: distributed
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartTextHorizontalAlignment.justify:member'
-    name: justify
-    fullName: justify
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartTextHorizontalAlignment.left:member'
-    name: left
-    fullName: left
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartTextHorizontalAlignment.right:member'
-    name: right
-    fullName: right
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.ChartTextHorizontalAlignment
+uid: ExcelScript!ExcelScript.ChartTextHorizontalAlignment:enum
+package: ExcelScript!
+fullName: ExcelScript.ChartTextHorizontalAlignment
+summary: 指定したオブジェクトの水平方向の配置を表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: center
+  uid: ExcelScript!ExcelScript.ChartTextHorizontalAlignment.center:member
+  package: ExcelScript!
+  summary: ''
+- name: distributed
+  uid: ExcelScript!ExcelScript.ChartTextHorizontalAlignment.distributed:member
+  package: ExcelScript!
+  summary: ''
+- name: justify
+  uid: ExcelScript!ExcelScript.ChartTextHorizontalAlignment.justify:member
+  package: ExcelScript!
+  summary: ''
+- name: left
+  uid: ExcelScript!ExcelScript.ChartTextHorizontalAlignment.left:member
+  package: ExcelScript!
+  summary: ''
+- name: right
+  uid: ExcelScript!ExcelScript.ChartTextHorizontalAlignment.right:member
+  package: ExcelScript!
+  summary: ''
+metadata:
+  ms.openlocfilehash: a2561cdd529c2f5cd76e9f842a7c7fc2ef501fed
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49419545"

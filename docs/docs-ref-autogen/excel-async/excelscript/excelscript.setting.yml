@@ -1,92 +1,73 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Setting:interface'
-    summary: Setting は、ドキュメントに保持される設定のキーと値のペアを表します (アドインごとのファイルごと)。 これらのカスタムキーと値のペアを使用して、コンテンツアドインまたは作業ウィンドウアドインに必要な状態またはライフサイクル情報を格納できます。 設定はドキュメント内で保持されるため、ユーザー情報やパスワードなどの機密情報や保護された情報を格納する場所ではないことに注意してください。
-    name: Excel.Setting
-    fullName: Excel.Setting
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.Setting#delete:member(1)'
-      - 'excel!Excel.Setting#key:member'
-      - 'excel!Excel.Setting#load:member(1)'
-      - 'excel!Excel.Setting#value:member'
-  - uid: 'excel!Excel.Setting#delete:member(1)'
-    summary: 設定を削除します。
-    name: delete()
-    fullName: delete()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'delete(): void;'
-      return:
-        type:
-          - void
-        description: |-
-
-
-          #### <a name="examples"></a>例
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let settings = context.workbook.settings;
-              let needsReview = settings.getItem("NeedsReview");
-              needsReview.delete();
-              needsReview = settings.getItemOrNullObject("NeedsReview");
-
-              await context.sync();
-
-              if (needsReview.isNullObject) {
-                  console.log("The setting has been deleted");
-              } else {
-                  console.log("The setting was not deleted");
-              }
-
-              await context.sync();
-          }
-          ```
-  - uid: 'excel!Excel.Setting#key:member'
-    summary: 設定の id を表すキー。
-    name: key
-    fullName: key
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly key: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.Setting#load:member(1)'
-    summary: オブジェクトの指定されたプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、`context.sync()` を呼び出す必要があります。
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.Setting#value:member'
-    summary: この設定に格納されている値を表します。
-    name: value
-    fullName: value
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'value: any;'
-      return:
-        type:
-          - any
+### YamlMime:TSType
+name: Excel.Setting
+uid: excel!Excel.Setting:interface
+package: excel!
+fullName: Excel.Setting
+summary: Setting は、ドキュメントに保持される設定のキーと値のペアを表します (アドインごとのファイルごと)。 これらのカスタムキーと値のペアを使用して、コンテンツアドインまたは作業ウィンドウアドインに必要な状態またはライフサイクル情報を格納できます。 設定はドキュメント内で保持されるため、ユーザー情報やパスワードなどの機密情報や保護された情報を格納する場所ではないことに注意してください。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: key
+  uid: excel!Excel.Setting#key:member
+  package: excel!
+  fullName: key
+  summary: 設定の id を表すキー。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly key: string;'
+    return:
+      type: string
+- name: value
+  uid: excel!Excel.Setting#value:member
+  package: excel!
+  fullName: value
+  summary: この設定に格納されている値を表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'value: any;'
+    return:
+      type: any
+methods:
+- name: delete()
+  uid: excel!Excel.Setting#delete:member(1)
+  package: excel!
+  fullName: delete()
+  summary: 設定を削除します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(): void;'
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let settings = context.workbook.settings;\n    let needsReview = settings.getItem(\"NeedsReview\");\n    needsReview.delete();\n    needsReview = settings.getItemOrNullObject(\"NeedsReview\");\n\n    await context.sync();\n\n    if (needsReview.isNullObject) {\n        console.log(\"The setting has been deleted\");\n    } else {\n        console.log(\"The setting was not deleted\");\n    }\n\n    await context.sync();\n}\n```"
+- name: load(propertyNames)
+  uid: excel!Excel.Setting#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: オブジェクトの指定されたプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、`context.sync()` を呼び出す必要があります。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 17ed929a92515909deef248b1e608997fc1e8153
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49418612"

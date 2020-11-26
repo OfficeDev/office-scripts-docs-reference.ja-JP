@@ -1,136 +1,88 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Image:interface'
-    summary: ワークシート内のイメージを表します。 対応する Shape オブジェクトを取得するには、イメージの図形を使用します。
-    name: Excel.Image
-    fullName: Excel.Image
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.Image#format:member'
-      - 'excel!Excel.Image#id:member'
-      - 'excel!Excel.Image#load:member(1)'
-      - 'excel!Excel.Image#shape:member'
-  - uid: 'excel!Excel.Image#format:member'
-    summary: 画像の形式を返します。
-    name: format
-    fullName: format
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: |-
-        readonly format:
-                    | PictureFormat
+### YamlMime:TSType
+name: Excel.Image
+uid: excel!Excel.Image:interface
+package: excel!
+fullName: Excel.Image
+summary: ワークシート内のイメージを表します。 対応する Shape オブジェクトを取得するには、イメージの図形を使用します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: format
+  uid: excel!Excel.Image#format:member
+  package: excel!
+  fullName: format
+  summary: 画像の形式を返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      readonly format:
+                  | PictureFormat
+                  | "Unknown"
+                  | "Bmp"
+                  | "Jpeg"
+                  | "Gif"
+                  | "Png"
+                  | "Svg";
+    return:
+      type: >-
+        | <xref uid="excel!Excel.PictureFormat:enum" />
                     | "Unknown"
                     | "Bmp"
                     | "Jpeg"
                     | "Gif"
                     | "Png"
-                    | "Svg";
-      return:
-        type:
-          - 'excel!Excel.Image#format~0:complex'
-        description: |-
-
-
-          #### <a name="examples"></a>例
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getItem("Shapes");
-              let image = sheet.shapes.getItem("Image").image;
-              image.load("format");
-              await context.sync();
-
-              console.log("The image's format is: " + image.format);
-              await context.sync();
-          }
-          ```
-  - uid: 'excel!Excel.Image#id:member'
-    summary: Image オブジェクトの図形識別子を指定します。
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly id: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.Image#load:member(1)'
-    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.Image#shape:member'
-    summary: 画像に関連付けられた Shape オブジェクトを返します。
-    name: shape
-    fullName: shape
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly shape: Shape;'
-      return:
-        type:
-          - 'excel!Excel.Shape:interface'
-references:
-  - uid: 'excel!Excel.Image#format~0:complex'
-    name: |-
-      | PictureFormat
-                  | "Unknown"
-                  | "Bmp"
-                  | "Jpeg"
-                  | "Gif"
-                  | "Png"
-                  | "Svg"
-    fullName: |-
-      | Excel.PictureFormat
-                  | "Unknown"
-                  | "Bmp"
-                  | "Jpeg"
-                  | "Gif"
-                  | "Png"
-                  | "Svg"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.PictureFormat:enum'
-        name: PictureFormat
-        fullName: Excel.PictureFormat
-      - name: |2-
-
-                      | "Unknown"
-                      | "Bmp"
-                      | "Jpeg"
-                      | "Gif"
-                      | "Png"
-                      | "Svg"
-        fullName: |2-
-
-                      | "Unknown"
-                      | "Bmp"
-                      | "Jpeg"
-                      | "Gif"
-                      | "Png"
-                      | "Svg"
-  - uid: 'excel!Excel.Shape:interface'
-    name: Shape
-    fullName: Excel.Shape
+                    | "Svg"
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getItem(\"Shapes\");\n    let image = sheet.shapes.getItem(\"Image\").image;\n    image.load(\"format\");\n    await context.sync();\n\n    console.log(\"The image's format is: \" + image.format);\n    await context.sync();\n}\n```"
+- name: id
+  uid: excel!Excel.Image#id:member
+  package: excel!
+  fullName: id
+  summary: Image オブジェクトの図形識別子を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly id: string;'
+    return:
+      type: string
+- name: shape
+  uid: excel!Excel.Image#shape:member
+  package: excel!
+  fullName: shape
+  summary: 画像に関連付けられた Shape オブジェクトを返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly shape: Shape;'
+    return:
+      type: <xref uid="excel!Excel.Shape:interface" />
+methods:
+- name: load(propertyNames)
+  uid: excel!Excel.Image#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: オブジェクトの指定されたプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、`context.sync()` を呼び出す必要があります。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 178634e6313c6a9a14dad95a502fcd3c1337a302
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49419085"

@@ -1,129 +1,87 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.IconSetConditionalFormat:interface'
-    summary: 条件付き書式の IconSet 条件を表します。
-    name: Excel.IconSetConditionalFormat
-    fullName: Excel.IconSetConditionalFormat
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.IconSetConditionalFormat#criteria:member'
-      - 'excel!Excel.IconSetConditionalFormat#load:member(1)'
-      - 'excel!Excel.IconSetConditionalFormat#reverseIconOrder:member'
-      - 'excel!Excel.IconSetConditionalFormat#showIconOnly:member'
-      - 'excel!Excel.IconSetConditionalFormat#style:member'
-  - uid: 'excel!Excel.IconSetConditionalFormat#criteria:member'
-    summary: ルールの条件および IconSets の配列と、条件付きアイコンのユーザー設定のアイコン。 最初の条件では、カスタムアイコンのみを変更できることに注意してください。設定すると、type、formula、および operator は無視されます。
-    name: criteria
-    fullName: criteria
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'criteria: ConditionalIconCriterion[];'
-      return:
-        type:
-          - 'excel!Excel.IconSetConditionalFormat#criteria~0:complex'
-        description: |-
-
-
-          #### <a name="examples"></a>例
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getItem("Sample");
-              let range = sheet.getRange("B8:E13");
-              let conditionalFormat = range.conditionalFormats
-                  .add(Excel.ConditionalFormatType.iconSet);
-              let iconSetCF = conditionalFormat.iconSet;
-              iconSetCF.style = Excel.IconSet.threeTriangles;
-
-              /*
-                  The iconSetCF.criteria array is automatically prepopulated with
-                  criterion elements whose properties have been given default settings.
-                  You can't write to each property of a criterion directly. Instead,
-                  replace the whole criteria object.
-
-                  With a "three*" icon set style, such as "threeTriangles", the third
-                  element in the criteria array (criteria[2]) defines the "top" icon;
-                  e.g., a green triangle. The second (criteria[1]) defines the "middle"
-                  icon, The first (criteria[0]) defines the "low" icon, but it
-                  can often be left empty as this method does below, because every
-                  cell that does not match the other two criteria always gets the low
-                  icon.            
-              */
-              iconSetCF.criteria = [
-                  {} as any,
-                  {
-                      type: Excel.ConditionalFormatIconRuleType.number,
-                      operator: Excel.ConditionalIconCriterionOperator.greaterThanOrEqual,
-                      formula: "=700"
-                  },
-                  {
-                      type: Excel.ConditionalFormatIconRuleType.number,
-                      operator: Excel.ConditionalIconCriterionOperator.greaterThanOrEqual,
-                      formula: "=1000",
-                  }
-              ];
-
-              await context.sync();
-          }
-          ```
-  - uid: 'excel!Excel.IconSetConditionalFormat#load:member(1)'
-    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.IconSetConditionalFormat#reverseIconOrder:member'
-    summary: True の場合は、IconSet のアイコンオーダーを逆にします。 カスタムアイコンが使用されている場合は、これを設定できないことに注意してください。
-    name: reverseIconOrder
-    fullName: reverseIconOrder
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'reverseIconOrder: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.IconSetConditionalFormat#showIconOnly:member'
-    summary: true の場合、値は非表示にされて、アイコンのみが表示されます。
-    name: showIconOnly
-    fullName: showIconOnly
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'showIconOnly: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.IconSetConditionalFormat#style:member'
-    summary: 設定すると、条件付き書式の IconSet オプションが表示されます。
-    name: style
-    fullName: style
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: |-
-        style:
-                    | IconSet
+### YamlMime:TSType
+name: Excel.IconSetConditionalFormat
+uid: excel!Excel.IconSetConditionalFormat:interface
+package: excel!
+fullName: Excel.IconSetConditionalFormat
+summary: 条件付き書式の IconSet 条件を表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: criteria
+  uid: excel!Excel.IconSetConditionalFormat#criteria:member
+  package: excel!
+  fullName: criteria
+  summary: ルールの条件および IconSets の配列と、条件付きアイコンのユーザー設定のアイコン。 最初の条件では、カスタムアイコンのみを変更できることに注意してください。設定すると、type、formula、および operator は無視されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'criteria: ConditionalIconCriterion[];'
+    return:
+      type: <xref uid="excel!Excel.ConditionalIconCriterion:interface" />[]
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getItem(\"Sample\");\n    let range = sheet.getRange(\"B8:E13\");\n    let conditionalFormat = range.conditionalFormats\n        .add(Excel.ConditionalFormatType.iconSet);\n    let iconSetCF = conditionalFormat.iconSet;\n    iconSetCF.style = Excel.IconSet.threeTriangles;\n\n    /*\n        The iconSetCF.criteria array is automatically prepopulated with\n        criterion elements whose properties have been given default settings.\n        You can't write to each property of a criterion directly. Instead,\n        replace the whole criteria object.\n\n        With a \"three*\" icon set style, such as \"threeTriangles\", the third\n        element in the criteria array (criteria[2]) defines the \"top\" icon;\n        e.g., a green triangle. The second (criteria[1]) defines the \"middle\"\n        icon, The first (criteria[0]) defines the \"low\" icon, but it\n        can often be left empty as this method does below, because every\n        cell that does not match the other two criteria always gets the low\n        icon.            \n    */\n    iconSetCF.criteria = [\n        {} as any,\n        {\n            type: Excel.ConditionalFormatIconRuleType.number,\n            operator: Excel.ConditionalIconCriterionOperator.greaterThanOrEqual,\n            formula: \"=700\"\n        },\n        {\n            type: Excel.ConditionalFormatIconRuleType.number,\n            operator: Excel.ConditionalIconCriterionOperator.greaterThanOrEqual,\n            formula: \"=1000\",\n        }\n    ];\n\n    await context.sync();\n}\n```"
+- name: reverseIconOrder
+  uid: excel!Excel.IconSetConditionalFormat#reverseIconOrder:member
+  package: excel!
+  fullName: reverseIconOrder
+  summary: True の場合は、IconSet のアイコンオーダーを逆にします。 カスタムアイコンが使用されている場合は、これを設定できないことに注意してください。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'reverseIconOrder: boolean;'
+    return:
+      type: boolean
+- name: showIconOnly
+  uid: excel!Excel.IconSetConditionalFormat#showIconOnly:member
+  package: excel!
+  fullName: showIconOnly
+  summary: true の場合、値は非表示にされて、アイコンのみが表示されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'showIconOnly: boolean;'
+    return:
+      type: boolean
+- name: style
+  uid: excel!Excel.IconSetConditionalFormat#style:member
+  package: excel!
+  fullName: style
+  summary: 設定すると、条件付き書式の IconSet オプションが表示されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      style:
+                  | IconSet
+                  | "Invalid"
+                  | "ThreeArrows"
+                  | "ThreeArrowsGray"
+                  | "ThreeFlags"
+                  | "ThreeTrafficLights1"
+                  | "ThreeTrafficLights2"
+                  | "ThreeSigns"
+                  | "ThreeSymbols"
+                  | "ThreeSymbols2"
+                  | "FourArrows"
+                  | "FourArrowsGray"
+                  | "FourRedToBlack"
+                  | "FourRating"
+                  | "FourTrafficLights"
+                  | "FiveArrows"
+                  | "FiveArrowsGray"
+                  | "FiveRating"
+                  | "FiveQuarters"
+                  | "ThreeStars"
+                  | "ThreeTriangles"
+                  | "FiveBoxes";
+    return:
+      type: >-
+        | <xref uid="excel!Excel.IconSet:enum" />
                     | "Invalid"
                     | "ThreeArrows"
                     | "ThreeArrowsGray"
@@ -144,161 +102,30 @@ items:
                     | "FiveQuarters"
                     | "ThreeStars"
                     | "ThreeTriangles"
-                    | "FiveBoxes";
-      return:
-        type:
-          - 'excel!Excel.IconSetConditionalFormat#style~0:complex'
-        description: |-
-
-
-          #### <a name="examples"></a>例
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getItem("Sample");
-              let range = sheet.getRange("B8:E13");
-              let conditionalFormat = range.conditionalFormats
-                  .add(Excel.ConditionalFormatType.iconSet);
-              let iconSetCF = conditionalFormat.iconSet;
-              iconSetCF.style = Excel.IconSet.threeTriangles;
-
-              /*
-                  The iconSetCF.criteria array is automatically prepopulated with
-                  criterion elements whose properties have been given default settings.
-                  You can't write to each property of a criterion directly. Instead,
-                  replace the whole criteria object.
-
-                  With a "three*" icon set style, such as "threeTriangles", the third
-                  element in the criteria array (criteria[2]) defines the "top" icon;
-                  e.g., a green triangle. The second (criteria[1]) defines the "middle"
-                  icon, The first (criteria[0]) defines the "low" icon, but it
-                  can often be left empty as this method does below, because every
-                  cell that does not match the other two criteria always gets the low
-                  icon.            
-              */
-              iconSetCF.criteria = [
-                  {} as any,
-                  {
-                      type: Excel.ConditionalFormatIconRuleType.number,
-                      operator: Excel.ConditionalIconCriterionOperator.greaterThanOrEqual,
-                      formula: "=700"
-                  },
-                  {
-                      type: Excel.ConditionalFormatIconRuleType.number,
-                      operator: Excel.ConditionalIconCriterionOperator.greaterThanOrEqual,
-                      formula: "=1000",
-                  }
-              ];
-
-              await context.sync();
-          }
-          ```
-references:
-  - uid: 'excel!Excel.IconSetConditionalFormat#criteria~0:complex'
-    name: 'ConditionalIconCriterion[]'
-    fullName: 'Excel.ConditionalIconCriterion[]'
-    spec.typeScript:
-      - uid: 'excel!Excel.ConditionalIconCriterion:interface'
-        name: ConditionalIconCriterion
-        fullName: Excel.ConditionalIconCriterion
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'excel!Excel.IconSetConditionalFormat#style~0:complex'
-    name: |-
-      | IconSet
-                  | "Invalid"
-                  | "ThreeArrows"
-                  | "ThreeArrowsGray"
-                  | "ThreeFlags"
-                  | "ThreeTrafficLights1"
-                  | "ThreeTrafficLights2"
-                  | "ThreeSigns"
-                  | "ThreeSymbols"
-                  | "ThreeSymbols2"
-                  | "FourArrows"
-                  | "FourArrowsGray"
-                  | "FourRedToBlack"
-                  | "FourRating"
-                  | "FourTrafficLights"
-                  | "FiveArrows"
-                  | "FiveArrowsGray"
-                  | "FiveRating"
-                  | "FiveQuarters"
-                  | "ThreeStars"
-                  | "ThreeTriangles"
-                  | "FiveBoxes"
-    fullName: |-
-      | Excel.IconSet
-                  | "Invalid"
-                  | "ThreeArrows"
-                  | "ThreeArrowsGray"
-                  | "ThreeFlags"
-                  | "ThreeTrafficLights1"
-                  | "ThreeTrafficLights2"
-                  | "ThreeSigns"
-                  | "ThreeSymbols"
-                  | "ThreeSymbols2"
-                  | "FourArrows"
-                  | "FourArrowsGray"
-                  | "FourRedToBlack"
-                  | "FourRating"
-                  | "FourTrafficLights"
-                  | "FiveArrows"
-                  | "FiveArrowsGray"
-                  | "FiveRating"
-                  | "FiveQuarters"
-                  | "ThreeStars"
-                  | "ThreeTriangles"
-                  | "FiveBoxes"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.IconSet:enum'
-        name: IconSet
-        fullName: Excel.IconSet
-      - name: |2-
-
-                      | "Invalid"
-                      | "ThreeArrows"
-                      | "ThreeArrowsGray"
-                      | "ThreeFlags"
-                      | "ThreeTrafficLights1"
-                      | "ThreeTrafficLights2"
-                      | "ThreeSigns"
-                      | "ThreeSymbols"
-                      | "ThreeSymbols2"
-                      | "FourArrows"
-                      | "FourArrowsGray"
-                      | "FourRedToBlack"
-                      | "FourRating"
-                      | "FourTrafficLights"
-                      | "FiveArrows"
-                      | "FiveArrowsGray"
-                      | "FiveRating"
-                      | "FiveQuarters"
-                      | "ThreeStars"
-                      | "ThreeTriangles"
-                      | "FiveBoxes"
-        fullName: |2-
-
-                      | "Invalid"
-                      | "ThreeArrows"
-                      | "ThreeArrowsGray"
-                      | "ThreeFlags"
-                      | "ThreeTrafficLights1"
-                      | "ThreeTrafficLights2"
-                      | "ThreeSigns"
-                      | "ThreeSymbols"
-                      | "ThreeSymbols2"
-                      | "FourArrows"
-                      | "FourArrowsGray"
-                      | "FourRedToBlack"
-                      | "FourRating"
-                      | "FourTrafficLights"
-                      | "FiveArrows"
-                      | "FiveArrowsGray"
-                      | "FiveRating"
-                      | "FiveQuarters"
-                      | "ThreeStars"
-                      | "ThreeTriangles"
-                      | "FiveBoxes"
+                    | "FiveBoxes"
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getItem(\"Sample\");\n    let range = sheet.getRange(\"B8:E13\");\n    let conditionalFormat = range.conditionalFormats\n        .add(Excel.ConditionalFormatType.iconSet);\n    let iconSetCF = conditionalFormat.iconSet;\n    iconSetCF.style = Excel.IconSet.threeTriangles;\n\n    /*\n        The iconSetCF.criteria array is automatically prepopulated with\n        criterion elements whose properties have been given default settings.\n        You can't write to each property of a criterion directly. Instead,\n        replace the whole criteria object.\n\n        With a \"three*\" icon set style, such as \"threeTriangles\", the third\n        element in the criteria array (criteria[2]) defines the \"top\" icon;\n        e.g., a green triangle. The second (criteria[1]) defines the \"middle\"\n        icon, The first (criteria[0]) defines the \"low\" icon, but it\n        can often be left empty as this method does below, because every\n        cell that does not match the other two criteria always gets the low\n        icon.            \n    */\n    iconSetCF.criteria = [\n        {} as any,\n        {\n            type: Excel.ConditionalFormatIconRuleType.number,\n            operator: Excel.ConditionalIconCriterionOperator.greaterThanOrEqual,\n            formula: \"=700\"\n        },\n        {\n            type: Excel.ConditionalFormatIconRuleType.number,\n            operator: Excel.ConditionalIconCriterionOperator.greaterThanOrEqual,\n            formula: \"=1000\",\n        }\n    ];\n\n    await context.sync();\n}\n```"
+methods:
+- name: load(propertyNames)
+  uid: excel!Excel.IconSetConditionalFormat#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: オブジェクトの指定されたプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、`context.sync()` を呼び出す必要があります。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 53aece057dc71a479d02ce323f6cba2a6b5eba76
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49419349"

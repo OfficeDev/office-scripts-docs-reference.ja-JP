@@ -1,28 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.GroupOption:enum'
-    name: Excel.GroupOption
-    fullName: Excel.GroupOption
-    langs:
-      - typeScript
-    type: enum
-    package: excel!
-    children:
-      - 'excel!Excel.GroupOption.byColumns:member'
-      - 'excel!Excel.GroupOption.byRows:member'
-  - uid: 'excel!Excel.GroupOption.byColumns:member'
-    summary: 列ごとにグループ化します。
-    name: byColumns
-    fullName: byColumns
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ByColumns"'
-  - uid: 'excel!Excel.GroupOption.byRows:member'
-    summary: 行ごとにグループ化します。
-    name: byRows
-    fullName: byRows
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"ByRows"'
+### YamlMime:TSEnum
+name: Excel.GroupOption
+uid: excel!Excel.GroupOption:enum
+package: excel!
+fullName: Excel.GroupOption
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: byColumns
+  uid: excel!Excel.GroupOption.byColumns:member
+  package: excel!
+  summary: 列ごとにグループ化します。
+- name: byRows
+  uid: excel!Excel.GroupOption.byRows:member
+  package: excel!
+  summary: 行ごとにグループ化します。
+metadata:
+  ms.openlocfilehash: d2174d1dbe89df054d08d9402bda26689683ea30
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49419185"

@@ -1,666 +1,603 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabel:interface'
-    summary: グラフのポイントのデータラベルを表します。
-    name: ExcelScript.ChartDataLabel
-    fullName: ExcelScript.ChartDataLabel
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ChartDataLabel#getAutoText:member(1)'
-      - 'ExcelScript!ExcelScript.ChartDataLabel#getFormat:member(1)'
-      - 'ExcelScript!ExcelScript.ChartDataLabel#getFormula:member(1)'
-      - 'ExcelScript!ExcelScript.ChartDataLabel#getHeight:member(1)'
-      - 'ExcelScript!ExcelScript.ChartDataLabel#getHorizontalAlignment:member(1)'
-      - 'ExcelScript!ExcelScript.ChartDataLabel#getLeft:member(1)'
-      - 'ExcelScript!ExcelScript.ChartDataLabel#getLinkNumberFormat:member(1)'
-      - 'ExcelScript!ExcelScript.ChartDataLabel#getNumberFormat:member(1)'
-      - 'ExcelScript!ExcelScript.ChartDataLabel#getPosition:member(1)'
-      - 'ExcelScript!ExcelScript.ChartDataLabel#getSeparator:member(1)'
-      - 'ExcelScript!ExcelScript.ChartDataLabel#getShowBubbleSize:member(1)'
-      - 'ExcelScript!ExcelScript.ChartDataLabel#getShowCategoryName:member(1)'
-      - 'ExcelScript!ExcelScript.ChartDataLabel#getShowLegendKey:member(1)'
-      - 'ExcelScript!ExcelScript.ChartDataLabel#getShowPercentage:member(1)'
-      - 'ExcelScript!ExcelScript.ChartDataLabel#getShowSeriesName:member(1)'
-      - 'ExcelScript!ExcelScript.ChartDataLabel#getShowValue:member(1)'
-      - 'ExcelScript!ExcelScript.ChartDataLabel#getText:member(1)'
-      - 'ExcelScript!ExcelScript.ChartDataLabel#getTextOrientation:member(1)'
-      - 'ExcelScript!ExcelScript.ChartDataLabel#getTop:member(1)'
-      - 'ExcelScript!ExcelScript.ChartDataLabel#getVerticalAlignment:member(1)'
-      - 'ExcelScript!ExcelScript.ChartDataLabel#getWidth:member(1)'
-      - 'ExcelScript!ExcelScript.ChartDataLabel#setAutoText:member(1)'
-      - 'ExcelScript!ExcelScript.ChartDataLabel#setFormula:member(1)'
-      - 'ExcelScript!ExcelScript.ChartDataLabel#setHorizontalAlignment:member(1)'
-      - 'ExcelScript!ExcelScript.ChartDataLabel#setLeft:member(1)'
-      - 'ExcelScript!ExcelScript.ChartDataLabel#setLinkNumberFormat:member(1)'
-      - 'ExcelScript!ExcelScript.ChartDataLabel#setNumberFormat:member(1)'
-      - 'ExcelScript!ExcelScript.ChartDataLabel#setPosition:member(1)'
-      - 'ExcelScript!ExcelScript.ChartDataLabel#setSeparator:member(1)'
-      - 'ExcelScript!ExcelScript.ChartDataLabel#setShowBubbleSize:member(1)'
-      - 'ExcelScript!ExcelScript.ChartDataLabel#setShowCategoryName:member(1)'
-      - 'ExcelScript!ExcelScript.ChartDataLabel#setShowLegendKey:member(1)'
-      - 'ExcelScript!ExcelScript.ChartDataLabel#setShowPercentage:member(1)'
-      - 'ExcelScript!ExcelScript.ChartDataLabel#setShowSeriesName:member(1)'
-      - 'ExcelScript!ExcelScript.ChartDataLabel#setShowValue:member(1)'
-      - 'ExcelScript!ExcelScript.ChartDataLabel#setText:member(1)'
-      - 'ExcelScript!ExcelScript.ChartDataLabel#setTextOrientation:member(1)'
-      - 'ExcelScript!ExcelScript.ChartDataLabel#setTop:member(1)'
-      - 'ExcelScript!ExcelScript.ChartDataLabel#setVerticalAlignment:member(1)'
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabel#getAutoText:member(1)'
-    summary: データラベルがコンテキストに基づいて適切なテキストを自動的に生成するかどうかを指定します。
-    name: getAutoText()
-    fullName: getAutoText()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getAutoText(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabel#getFormat:member(1)'
-    summary: グラフのデータ ラベルの書式設定を表します。
-    name: getFormat()
-    fullName: getFormat()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFormat(): ChartDataLabelFormat;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartDataLabelFormat:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabel#getFormula:member(1)'
-    summary: A1 スタイルの表記法を使用するグラフのデータ ラベルの数式を表す文字列値。
-    name: getFormula()
-    fullName: getFormula()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFormula(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabel#getHeight:member(1)'
-    summary: グラフのデータ ラベルの高さ (ポイント数) を返します。 グラフのデータ ラベルが表示されない場合は null 値となります。
-    name: getHeight()
-    fullName: getHeight()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getHeight(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabel#getHorizontalAlignment:member(1)'
-    summary: グラフのデータ ラベルの水平方向の配置を表します。 詳細については、「ExcelScript」を参照してください。 このプロパティは、データラベルの TextOrientation が-90、90、または180の場合にのみ有効です。
-    name: getHorizontalAlignment()
-    fullName: getHorizontalAlignment()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getHorizontalAlignment(): ChartTextHorizontalAlignment;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartTextHorizontalAlignment:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabel#getLeft:member(1)'
-    summary: グラフのデータ ラベルの左端からグラフ エリアの左端までの距離 (ポイント数) を表します。 グラフのデータ ラベルが表示されない場合は null 値となります。
-    name: getLeft()
-    fullName: getLeft()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getLeft(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabel#getLinkNumberFormat:member(1)'
-    summary: 数値の表示形式をセルにリンクするかどうかを指定します (セル内の値が変更されたときにラベルの表示形式が変わるようにします)。
-    name: getLinkNumberFormat()
-    fullName: getLinkNumberFormat()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getLinkNumberFormat(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabel#getNumberFormat:member(1)'
-    summary: データ ラベルの書式コードを表す文字列値。
-    name: getNumberFormat()
-    fullName: getNumberFormat()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getNumberFormat(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabel#getPosition:member(1)'
-    summary: データ ラベルの位置を表す DataLabelPosition 値。 詳細については、「ExcelScript」を参照してください。
-    name: getPosition()
-    fullName: getPosition()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPosition(): ChartDataLabelPosition;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartDataLabelPosition:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabel#getSeparator:member(1)'
-    summary: グラフのデータ ラベルに使用される区切り文字を表す文字列。
-    name: getSeparator()
-    fullName: getSeparator()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSeparator(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabel#getShowBubbleSize:member(1)'
-    summary: データラベルのバブルサイズを表示するかどうかを指定します。
-    name: getShowBubbleSize()
-    fullName: getShowBubbleSize()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getShowBubbleSize(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabel#getShowCategoryName:member(1)'
-    summary: データラベルのカテゴリ名を表示するかどうかを指定します。
-    name: getShowCategoryName()
-    fullName: getShowCategoryName()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getShowCategoryName(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabel#getShowLegendKey:member(1)'
-    summary: データラベルの凡例マーカーを表示するかどうかを指定します。
-    name: getShowLegendKey()
-    fullName: getShowLegendKey()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getShowLegendKey(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabel#getShowPercentage:member(1)'
-    summary: データラベルのパーセンテージを表示するかどうかを指定します。
-    name: getShowPercentage()
-    fullName: getShowPercentage()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getShowPercentage(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabel#getShowSeriesName:member(1)'
-    summary: データラベルの系列名を表示するかどうかを指定します。
-    name: getShowSeriesName()
-    fullName: getShowSeriesName()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getShowSeriesName(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabel#getShowValue:member(1)'
-    summary: データラベルの値を表示するかどうかを指定します。
-    name: getShowValue()
-    fullName: getShowValue()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getShowValue(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabel#getText:member(1)'
-    summary: グラフのデータ ラベルのテキストを表す文字列。
-    name: getText()
-    fullName: getText()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getText(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabel#getTextOrientation:member(1)'
-    summary: グラフのデータラベルに対して、テキストの方向を指定する角度を表します。 この値は、-90 ~ 90 の整数、または垂直方向のテキストの整数の180のいずれかである必要があります。
-    name: getTextOrientation()
-    fullName: getTextOrientation()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTextOrientation(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabel#getTop:member(1)'
-    summary: グラフのデータ ラベルの上端からグラフ エリアの上端までの距離 (ポイント数) を表します。 グラフのデータ ラベルが表示されない場合は null 値となります。
-    name: getTop()
-    fullName: getTop()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTop(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabel#getVerticalAlignment:member(1)'
-    summary: グラフのデータ ラベルの垂直方向の配置を表します。 詳細については、「ExcelScript. Charttext縦書きの配置」を参照してください。 このプロパティは、データラベルの TextOrientation が0の場合にのみ有効です。
-    name: getVerticalAlignment()
-    fullName: getVerticalAlignment()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getVerticalAlignment(): ChartTextVerticalAlignment;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartTextVerticalAlignment:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabel#getWidth:member(1)'
-    summary: グラフのデータ ラベルの幅 (ポイント数) を返します。 グラフのデータ ラベルが表示されない場合は null 値となります。
-    name: getWidth()
-    fullName: getWidth()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getWidth(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabel#setAutoText:member(1)'
-    summary: データラベルがコンテキストに基づいて適切なテキストを自動的に生成するかどうかを指定します。
-    name: setAutoText(autoText)
-    fullName: setAutoText(autoText)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setAutoText(autoText: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: autoText
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabel#setFormula:member(1)'
-    summary: A1 スタイルの表記法を使用するグラフのデータ ラベルの数式を表す文字列値。
-    name: setFormula(formula)
-    fullName: setFormula(formula)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setFormula(formula: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: formula
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabel#setHorizontalAlignment:member(1)'
-    summary: グラフのデータ ラベルの水平方向の配置を表します。 詳細については、「ExcelScript」を参照してください。 このプロパティは、データラベルの TextOrientation が-90、90、または180の場合にのみ有効です。
-    name: setHorizontalAlignment(horizontalAlignment)
-    fullName: setHorizontalAlignment(horizontalAlignment)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        setHorizontalAlignment(
-                    horizontalAlignment: ChartTextHorizontalAlignment
-                ): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: horizontalAlignment
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ChartTextHorizontalAlignment:enum'
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabel#setLeft:member(1)'
-    summary: グラフのデータ ラベルの左端からグラフ エリアの左端までの距離 (ポイント数) を表します。 グラフのデータ ラベルが表示されない場合は null 値となります。
-    name: setLeft(left)
-    fullName: setLeft(left)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setLeft(left: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: left
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabel#setLinkNumberFormat:member(1)'
-    summary: 数値の表示形式をセルにリンクするかどうかを指定します (セル内の値が変更されたときにラベルの表示形式が変わるようにします)。
-    name: setLinkNumberFormat(linkNumberFormat)
-    fullName: setLinkNumberFormat(linkNumberFormat)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setLinkNumberFormat(linkNumberFormat: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: linkNumberFormat
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabel#setNumberFormat:member(1)'
-    summary: データ ラベルの書式コードを表す文字列値。
-    name: setNumberFormat(numberFormat)
-    fullName: setNumberFormat(numberFormat)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setNumberFormat(numberFormat: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: numberFormat
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabel#setPosition:member(1)'
-    summary: データ ラベルの位置を表す DataLabelPosition 値。 詳細については、「ExcelScript」を参照してください。
-    name: setPosition(position)
-    fullName: setPosition(position)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setPosition(position: ChartDataLabelPosition): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: position
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ChartDataLabelPosition:enum'
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabel#setSeparator:member(1)'
-    summary: グラフのデータ ラベルに使用される区切り文字を表す文字列。
-    name: setSeparator(separator)
-    fullName: setSeparator(separator)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setSeparator(separator: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: separator
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabel#setShowBubbleSize:member(1)'
-    summary: データラベルのバブルサイズを表示するかどうかを指定します。
-    name: setShowBubbleSize(showBubbleSize)
-    fullName: setShowBubbleSize(showBubbleSize)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setShowBubbleSize(showBubbleSize: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: showBubbleSize
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabel#setShowCategoryName:member(1)'
-    summary: データラベルのカテゴリ名を表示するかどうかを指定します。
-    name: setShowCategoryName(showCategoryName)
-    fullName: setShowCategoryName(showCategoryName)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setShowCategoryName(showCategoryName: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: showCategoryName
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabel#setShowLegendKey:member(1)'
-    summary: データラベルの凡例マーカーを表示するかどうかを指定します。
-    name: setShowLegendKey(showLegendKey)
-    fullName: setShowLegendKey(showLegendKey)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setShowLegendKey(showLegendKey: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: showLegendKey
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabel#setShowPercentage:member(1)'
-    summary: データラベルのパーセンテージを表示するかどうかを指定します。
-    name: setShowPercentage(showPercentage)
-    fullName: setShowPercentage(showPercentage)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setShowPercentage(showPercentage: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: showPercentage
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabel#setShowSeriesName:member(1)'
-    summary: データラベルの系列名を表示するかどうかを指定します。
-    name: setShowSeriesName(showSeriesName)
-    fullName: setShowSeriesName(showSeriesName)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setShowSeriesName(showSeriesName: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: showSeriesName
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabel#setShowValue:member(1)'
-    summary: データラベルの値を表示するかどうかを指定します。
-    name: setShowValue(showValue)
-    fullName: setShowValue(showValue)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setShowValue(showValue: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: showValue
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabel#setText:member(1)'
-    summary: グラフのデータ ラベルのテキストを表す文字列。
-    name: setText(text)
-    fullName: setText(text)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setText(text: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: text
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabel#setTextOrientation:member(1)'
-    summary: グラフのデータラベルに対して、テキストの方向を指定する角度を表します。 この値は、-90 ~ 90 の整数、または垂直方向のテキストの整数の180のいずれかである必要があります。
-    name: setTextOrientation(textOrientation)
-    fullName: setTextOrientation(textOrientation)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setTextOrientation(textOrientation: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: textOrientation
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabel#setTop:member(1)'
-    summary: グラフのデータ ラベルの上端からグラフ エリアの上端までの距離 (ポイント数) を表します。 グラフのデータ ラベルが表示されない場合は null 値となります。
-    name: setTop(top)
-    fullName: setTop(top)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setTop(top: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: top
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabel#setVerticalAlignment:member(1)'
-    summary: グラフのデータ ラベルの垂直方向の配置を表します。 詳細については、「ExcelScript. Charttext縦書きの配置」を参照してください。 このプロパティは、データラベルの TextOrientation が0の場合にのみ有効です。
-    name: setVerticalAlignment(verticalAlignment)
-    fullName: setVerticalAlignment(verticalAlignment)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        setVerticalAlignment(
-                    verticalAlignment: ChartTextVerticalAlignment
-                ): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: verticalAlignment
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ChartTextVerticalAlignment:enum'
-references:
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabelFormat:interface'
-    name: ChartDataLabelFormat
-    fullName: ExcelScript.ChartDataLabelFormat
-  - uid: 'ExcelScript!ExcelScript.ChartTextHorizontalAlignment:enum'
-    name: ChartTextHorizontalAlignment
-    fullName: ExcelScript.ChartTextHorizontalAlignment
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabelPosition:enum'
-    name: ChartDataLabelPosition
-    fullName: ExcelScript.ChartDataLabelPosition
-  - uid: 'ExcelScript!ExcelScript.ChartTextVerticalAlignment:enum'
-    name: ChartTextVerticalAlignment
-    fullName: ExcelScript.ChartTextVerticalAlignment
+### YamlMime:TSType
+name: ExcelScript.ChartDataLabel
+uid: ExcelScript!ExcelScript.ChartDataLabel:interface
+package: ExcelScript!
+fullName: ExcelScript.ChartDataLabel
+summary: グラフのポイントのデータラベルを表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getAutoText()
+  uid: ExcelScript!ExcelScript.ChartDataLabel#getAutoText:member(1)
+  package: ExcelScript!
+  fullName: getAutoText()
+  summary: データラベルがコンテキストに基づいて適切なテキストを自動的に生成するかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getAutoText(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getFormat()
+  uid: ExcelScript!ExcelScript.ChartDataLabel#getFormat:member(1)
+  package: ExcelScript!
+  fullName: getFormat()
+  summary: グラフのデータ ラベルの書式設定を表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFormat(): ChartDataLabelFormat;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartDataLabelFormat:interface" />
+      description: ''
+- name: getFormula()
+  uid: ExcelScript!ExcelScript.ChartDataLabel#getFormula:member(1)
+  package: ExcelScript!
+  fullName: getFormula()
+  summary: A1 スタイルの表記法を使用するグラフのデータ ラベルの数式を表す文字列値。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFormula(): string;'
+    return:
+      type: string
+      description: ''
+- name: getHeight()
+  uid: ExcelScript!ExcelScript.ChartDataLabel#getHeight:member(1)
+  package: ExcelScript!
+  fullName: getHeight()
+  summary: グラフのデータ ラベルの高さ (ポイント数) を返します。 グラフのデータ ラベルが表示されない場合は null 値となります。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getHeight(): number;'
+    return:
+      type: number
+      description: ''
+- name: getHorizontalAlignment()
+  uid: ExcelScript!ExcelScript.ChartDataLabel#getHorizontalAlignment:member(1)
+  package: ExcelScript!
+  fullName: getHorizontalAlignment()
+  summary: グラフのデータ ラベルの水平方向の配置を表します。 詳細については、「ExcelScript」を参照してください。 このプロパティは、データラベルの TextOrientation が-90、90、または180の場合にのみ有効です。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getHorizontalAlignment(): ChartTextHorizontalAlignment;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartTextHorizontalAlignment:enum" />
+      description: ''
+- name: getLeft()
+  uid: ExcelScript!ExcelScript.ChartDataLabel#getLeft:member(1)
+  package: ExcelScript!
+  fullName: getLeft()
+  summary: グラフのデータ ラベルの左端からグラフ エリアの左端までの距離 (ポイント数) を表します。 グラフのデータ ラベルが表示されない場合は null 値となります。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLeft(): number;'
+    return:
+      type: number
+      description: ''
+- name: getLinkNumberFormat()
+  uid: ExcelScript!ExcelScript.ChartDataLabel#getLinkNumberFormat:member(1)
+  package: ExcelScript!
+  fullName: getLinkNumberFormat()
+  summary: 数値の表示形式をセルにリンクするかどうかを指定します (セル内の値が変更されたときにラベルの表示形式が変わるようにします)。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLinkNumberFormat(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getNumberFormat()
+  uid: ExcelScript!ExcelScript.ChartDataLabel#getNumberFormat:member(1)
+  package: ExcelScript!
+  fullName: getNumberFormat()
+  summary: データ ラベルの書式コードを表す文字列値。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getNumberFormat(): string;'
+    return:
+      type: string
+      description: ''
+- name: getPosition()
+  uid: ExcelScript!ExcelScript.ChartDataLabel#getPosition:member(1)
+  package: ExcelScript!
+  fullName: getPosition()
+  summary: データ ラベルの位置を表す DataLabelPosition 値。 詳細については、「ExcelScript」を参照してください。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPosition(): ChartDataLabelPosition;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartDataLabelPosition:enum" />
+      description: ''
+- name: getSeparator()
+  uid: ExcelScript!ExcelScript.ChartDataLabel#getSeparator:member(1)
+  package: ExcelScript!
+  fullName: getSeparator()
+  summary: グラフのデータ ラベルに使用される区切り文字を表す文字列。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getSeparator(): string;'
+    return:
+      type: string
+      description: ''
+- name: getShowBubbleSize()
+  uid: ExcelScript!ExcelScript.ChartDataLabel#getShowBubbleSize:member(1)
+  package: ExcelScript!
+  fullName: getShowBubbleSize()
+  summary: データラベルのバブルサイズを表示するかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getShowBubbleSize(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getShowCategoryName()
+  uid: ExcelScript!ExcelScript.ChartDataLabel#getShowCategoryName:member(1)
+  package: ExcelScript!
+  fullName: getShowCategoryName()
+  summary: データラベルのカテゴリ名を表示するかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getShowCategoryName(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getShowLegendKey()
+  uid: ExcelScript!ExcelScript.ChartDataLabel#getShowLegendKey:member(1)
+  package: ExcelScript!
+  fullName: getShowLegendKey()
+  summary: データラベルの凡例マーカーを表示するかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getShowLegendKey(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getShowPercentage()
+  uid: ExcelScript!ExcelScript.ChartDataLabel#getShowPercentage:member(1)
+  package: ExcelScript!
+  fullName: getShowPercentage()
+  summary: データラベルのパーセンテージを表示するかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getShowPercentage(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getShowSeriesName()
+  uid: ExcelScript!ExcelScript.ChartDataLabel#getShowSeriesName:member(1)
+  package: ExcelScript!
+  fullName: getShowSeriesName()
+  summary: データラベルの系列名を表示するかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getShowSeriesName(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getShowValue()
+  uid: ExcelScript!ExcelScript.ChartDataLabel#getShowValue:member(1)
+  package: ExcelScript!
+  fullName: getShowValue()
+  summary: データラベルの値を表示するかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getShowValue(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getText()
+  uid: ExcelScript!ExcelScript.ChartDataLabel#getText:member(1)
+  package: ExcelScript!
+  fullName: getText()
+  summary: グラフのデータ ラベルのテキストを表す文字列。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getText(): string;'
+    return:
+      type: string
+      description: ''
+- name: getTextOrientation()
+  uid: ExcelScript!ExcelScript.ChartDataLabel#getTextOrientation:member(1)
+  package: ExcelScript!
+  fullName: getTextOrientation()
+  summary: グラフのデータラベルに対して、テキストの方向を指定する角度を表します。 この値は、-90 ~ 90 の整数、または垂直方向のテキストの整数の180のいずれかである必要があります。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTextOrientation(): number;'
+    return:
+      type: number
+      description: ''
+- name: getTop()
+  uid: ExcelScript!ExcelScript.ChartDataLabel#getTop:member(1)
+  package: ExcelScript!
+  fullName: getTop()
+  summary: グラフのデータ ラベルの上端からグラフ エリアの上端までの距離 (ポイント数) を表します。 グラフのデータ ラベルが表示されない場合は null 値となります。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTop(): number;'
+    return:
+      type: number
+      description: ''
+- name: getVerticalAlignment()
+  uid: ExcelScript!ExcelScript.ChartDataLabel#getVerticalAlignment:member(1)
+  package: ExcelScript!
+  fullName: getVerticalAlignment()
+  summary: グラフのデータ ラベルの垂直方向の配置を表します。 詳細については、「ExcelScript. Charttext縦書きの配置」を参照してください。 このプロパティは、データラベルの TextOrientation が0の場合にのみ有効です。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getVerticalAlignment(): ChartTextVerticalAlignment;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartTextVerticalAlignment:enum" />
+      description: ''
+- name: getWidth()
+  uid: ExcelScript!ExcelScript.ChartDataLabel#getWidth:member(1)
+  package: ExcelScript!
+  fullName: getWidth()
+  summary: グラフのデータ ラベルの幅 (ポイント数) を返します。 グラフのデータ ラベルが表示されない場合は null 値となります。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getWidth(): number;'
+    return:
+      type: number
+      description: ''
+- name: setAutoText(autoText)
+  uid: ExcelScript!ExcelScript.ChartDataLabel#setAutoText:member(1)
+  package: ExcelScript!
+  fullName: setAutoText(autoText)
+  summary: データラベルがコンテキストに基づいて適切なテキストを自動的に生成するかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setAutoText(autoText: boolean): void;'
+    parameters:
+    - id: autoText
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setFormula(formula)
+  uid: ExcelScript!ExcelScript.ChartDataLabel#setFormula:member(1)
+  package: ExcelScript!
+  fullName: setFormula(formula)
+  summary: A1 スタイルの表記法を使用するグラフのデータ ラベルの数式を表す文字列値。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setFormula(formula: string): void;'
+    parameters:
+    - id: formula
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setHorizontalAlignment(horizontalAlignment)
+  uid: ExcelScript!ExcelScript.ChartDataLabel#setHorizontalAlignment:member(1)
+  package: ExcelScript!
+  fullName: setHorizontalAlignment(horizontalAlignment)
+  summary: グラフのデータ ラベルの水平方向の配置を表します。 詳細については、「ExcelScript」を参照してください。 このプロパティは、データラベルの TextOrientation が-90、90、または180の場合にのみ有効です。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      setHorizontalAlignment(
+                  horizontalAlignment: ChartTextHorizontalAlignment
+              ): void;
+    parameters:
+    - id: horizontalAlignment
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ChartTextHorizontalAlignment:enum" />
+    return:
+      type: void
+      description: ''
+- name: setLeft(left)
+  uid: ExcelScript!ExcelScript.ChartDataLabel#setLeft:member(1)
+  package: ExcelScript!
+  fullName: setLeft(left)
+  summary: グラフのデータ ラベルの左端からグラフ エリアの左端までの距離 (ポイント数) を表します。 グラフのデータ ラベルが表示されない場合は null 値となります。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setLeft(left: number): void;'
+    parameters:
+    - id: left
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setLinkNumberFormat(linkNumberFormat)
+  uid: ExcelScript!ExcelScript.ChartDataLabel#setLinkNumberFormat:member(1)
+  package: ExcelScript!
+  fullName: setLinkNumberFormat(linkNumberFormat)
+  summary: 数値の表示形式をセルにリンクするかどうかを指定します (セル内の値が変更されたときにラベルの表示形式が変わるようにします)。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setLinkNumberFormat(linkNumberFormat: boolean): void;'
+    parameters:
+    - id: linkNumberFormat
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setNumberFormat(numberFormat)
+  uid: ExcelScript!ExcelScript.ChartDataLabel#setNumberFormat:member(1)
+  package: ExcelScript!
+  fullName: setNumberFormat(numberFormat)
+  summary: データ ラベルの書式コードを表す文字列値。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setNumberFormat(numberFormat: string): void;'
+    parameters:
+    - id: numberFormat
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setPosition(position)
+  uid: ExcelScript!ExcelScript.ChartDataLabel#setPosition:member(1)
+  package: ExcelScript!
+  fullName: setPosition(position)
+  summary: データ ラベルの位置を表す DataLabelPosition 値。 詳細については、「ExcelScript」を参照してください。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setPosition(position: ChartDataLabelPosition): void;'
+    parameters:
+    - id: position
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ChartDataLabelPosition:enum" />
+    return:
+      type: void
+      description: ''
+- name: setSeparator(separator)
+  uid: ExcelScript!ExcelScript.ChartDataLabel#setSeparator:member(1)
+  package: ExcelScript!
+  fullName: setSeparator(separator)
+  summary: グラフのデータ ラベルに使用される区切り文字を表す文字列。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setSeparator(separator: string): void;'
+    parameters:
+    - id: separator
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setShowBubbleSize(showBubbleSize)
+  uid: ExcelScript!ExcelScript.ChartDataLabel#setShowBubbleSize:member(1)
+  package: ExcelScript!
+  fullName: setShowBubbleSize(showBubbleSize)
+  summary: データラベルのバブルサイズを表示するかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setShowBubbleSize(showBubbleSize: boolean): void;'
+    parameters:
+    - id: showBubbleSize
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setShowCategoryName(showCategoryName)
+  uid: ExcelScript!ExcelScript.ChartDataLabel#setShowCategoryName:member(1)
+  package: ExcelScript!
+  fullName: setShowCategoryName(showCategoryName)
+  summary: データラベルのカテゴリ名を表示するかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setShowCategoryName(showCategoryName: boolean): void;'
+    parameters:
+    - id: showCategoryName
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setShowLegendKey(showLegendKey)
+  uid: ExcelScript!ExcelScript.ChartDataLabel#setShowLegendKey:member(1)
+  package: ExcelScript!
+  fullName: setShowLegendKey(showLegendKey)
+  summary: データラベルの凡例マーカーを表示するかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setShowLegendKey(showLegendKey: boolean): void;'
+    parameters:
+    - id: showLegendKey
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setShowPercentage(showPercentage)
+  uid: ExcelScript!ExcelScript.ChartDataLabel#setShowPercentage:member(1)
+  package: ExcelScript!
+  fullName: setShowPercentage(showPercentage)
+  summary: データラベルのパーセンテージを表示するかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setShowPercentage(showPercentage: boolean): void;'
+    parameters:
+    - id: showPercentage
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setShowSeriesName(showSeriesName)
+  uid: ExcelScript!ExcelScript.ChartDataLabel#setShowSeriesName:member(1)
+  package: ExcelScript!
+  fullName: setShowSeriesName(showSeriesName)
+  summary: データラベルの系列名を表示するかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setShowSeriesName(showSeriesName: boolean): void;'
+    parameters:
+    - id: showSeriesName
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setShowValue(showValue)
+  uid: ExcelScript!ExcelScript.ChartDataLabel#setShowValue:member(1)
+  package: ExcelScript!
+  fullName: setShowValue(showValue)
+  summary: データラベルの値を表示するかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setShowValue(showValue: boolean): void;'
+    parameters:
+    - id: showValue
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setText(text)
+  uid: ExcelScript!ExcelScript.ChartDataLabel#setText:member(1)
+  package: ExcelScript!
+  fullName: setText(text)
+  summary: グラフのデータ ラベルのテキストを表す文字列。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setText(text: string): void;'
+    parameters:
+    - id: text
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setTextOrientation(textOrientation)
+  uid: ExcelScript!ExcelScript.ChartDataLabel#setTextOrientation:member(1)
+  package: ExcelScript!
+  fullName: setTextOrientation(textOrientation)
+  summary: グラフのデータラベルに対して、テキストの方向を指定する角度を表します。 この値は、-90 ~ 90 の整数、または垂直方向のテキストの整数の180のいずれかである必要があります。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setTextOrientation(textOrientation: number): void;'
+    parameters:
+    - id: textOrientation
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setTop(top)
+  uid: ExcelScript!ExcelScript.ChartDataLabel#setTop:member(1)
+  package: ExcelScript!
+  fullName: setTop(top)
+  summary: グラフのデータ ラベルの上端からグラフ エリアの上端までの距離 (ポイント数) を表します。 グラフのデータ ラベルが表示されない場合は null 値となります。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setTop(top: number): void;'
+    parameters:
+    - id: top
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setVerticalAlignment(verticalAlignment)
+  uid: ExcelScript!ExcelScript.ChartDataLabel#setVerticalAlignment:member(1)
+  package: ExcelScript!
+  fullName: setVerticalAlignment(verticalAlignment)
+  summary: グラフのデータ ラベルの垂直方向の配置を表します。 詳細については、「ExcelScript. Charttext縦書きの配置」を参照してください。 このプロパティは、データラベルの TextOrientation が0の場合にのみ有効です。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      setVerticalAlignment(
+                  verticalAlignment: ChartTextVerticalAlignment
+              ): void;
+    parameters:
+    - id: verticalAlignment
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ChartTextVerticalAlignment:enum" />
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: e9e4ee0ef279f72e3112389ba5580f4d07a52649
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49419972"

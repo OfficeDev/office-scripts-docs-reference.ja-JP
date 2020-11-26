@@ -1,26 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.SortDataOption:enum'
-    name: Excel.SortDataOption
-    fullName: Excel.SortDataOption
-    langs:
-      - typeScript
-    type: enum
-    package: excel!
-    children:
-      - 'excel!Excel.SortDataOption.normal:member'
-      - 'excel!Excel.SortDataOption.textAsNumber:member'
-  - uid: 'excel!Excel.SortDataOption.normal:member'
-    name: normal
-    fullName: normal
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Normal"'
-  - uid: 'excel!Excel.SortDataOption.textAsNumber:member'
-    name: textAsNumber
-    fullName: textAsNumber
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"TextAsNumber"'
+### YamlMime:TSEnum
+name: Excel.SortDataOption
+uid: excel!Excel.SortDataOption:enum
+package: excel!
+fullName: Excel.SortDataOption
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: normal
+  uid: excel!Excel.SortDataOption.normal:member
+  package: excel!
+  summary: ''
+- name: textAsNumber
+  uid: excel!Excel.SortDataOption.textAsNumber:member
+  package: excel!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 9dcd99280c065e55507f5c365b110ca694d688ca
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49418367"

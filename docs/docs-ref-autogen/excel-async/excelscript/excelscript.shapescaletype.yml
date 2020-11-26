@@ -1,27 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ShapeScaleType:enum'
-    summary: 図形を元のサイズに対して拡大または縮小するかを指定します。
-    name: Excel.ShapeScaleType
-    fullName: Excel.ShapeScaleType
-    langs:
-      - typeScript
-    type: enum
-    package: excel!
-    children:
-      - 'excel!Excel.ShapeScaleType.currentSize:member'
-      - 'excel!Excel.ShapeScaleType.originalSize:member'
-  - uid: 'excel!Excel.ShapeScaleType.currentSize:member'
-    name: currentSize
-    fullName: currentSize
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"CurrentSize"'
-  - uid: 'excel!Excel.ShapeScaleType.originalSize:member'
-    name: originalSize
-    fullName: originalSize
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"OriginalSize"'
+### YamlMime:TSEnum
+name: Excel.ShapeScaleType
+uid: excel!Excel.ShapeScaleType:enum
+package: excel!
+fullName: Excel.ShapeScaleType
+summary: 図形を元のサイズに対して拡大または縮小するかを指定します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: currentSize
+  uid: excel!Excel.ShapeScaleType.currentSize:member
+  package: excel!
+  summary: ''
+- name: originalSize
+  uid: excel!Excel.ShapeScaleType.originalSize:member
+  package: excel!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 53598599878155bc894bd55b2c477171440e9eba
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49418514"
