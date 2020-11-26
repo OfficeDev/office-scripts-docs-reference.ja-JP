@@ -1,42 +1,33 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.HeaderFooterState:enum'
-    name: ExcelScript.HeaderFooterState
-    fullName: ExcelScript.HeaderFooterState
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.HeaderFooterState.default:member'
-      - 'ExcelScript!ExcelScript.HeaderFooterState.firstAndDefault:member'
-      - 'ExcelScript!ExcelScript.HeaderFooterState.firstOddAndEven:member'
-      - 'ExcelScript!ExcelScript.HeaderFooterState.oddAndEven:member'
-  - uid: 'ExcelScript!ExcelScript.HeaderFooterState.default:member'
-    summary: 印刷されるページには、一般的なヘッダー/フッターが1つだけ使用されます。
-    name: default
-    fullName: default
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.HeaderFooterState.firstAndDefault:member'
-    summary: 先頭ページのヘッダー/フッターと、他のすべてのページで使用される一般的なヘッダー/フッターがあります。
-    name: firstAndDefault
-    fullName: firstAndDefault
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.HeaderFooterState.firstOddAndEven:member'
-    summary: 先頭ページのヘッダー/フッターが1つある場合は、奇数ページと偶数ページに別のヘッダー/フッターがあります。
-    name: firstOddAndEven
-    fullName: firstOddAndEven
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.HeaderFooterState.oddAndEven:member'
-    summary: 奇数ページと偶数ページに異なるヘッダー/フッターがあります。
-    name: oddAndEven
-    fullName: oddAndEven
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.HeaderFooterState
+uid: ExcelScript!ExcelScript.HeaderFooterState:enum
+package: ExcelScript!
+fullName: ExcelScript.HeaderFooterState
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: default
+  uid: ExcelScript!ExcelScript.HeaderFooterState.default:member
+  package: ExcelScript!
+  summary: 印刷されるページには、一般的なヘッダー/フッターが1つだけ使用されます。
+- name: firstAndDefault
+  uid: ExcelScript!ExcelScript.HeaderFooterState.firstAndDefault:member
+  package: ExcelScript!
+  summary: 先頭ページのヘッダー/フッターと、他のすべてのページで使用される一般的なヘッダー/フッターがあります。
+- name: firstOddAndEven
+  uid: ExcelScript!ExcelScript.HeaderFooterState.firstOddAndEven:member
+  package: ExcelScript!
+  summary: 先頭ページのヘッダー/フッターが1つある場合は、奇数ページと偶数ページに別のヘッダー/フッターがあります。
+- name: oddAndEven
+  uid: ExcelScript!ExcelScript.HeaderFooterState.oddAndEven:member
+  package: ExcelScript!
+  summary: 奇数ページと偶数ページに異なるヘッダー/フッターがあります。
+metadata:
+  ms.openlocfilehash: c8340881b74c9fb1761bbe3721c6031136668e3b
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412345"

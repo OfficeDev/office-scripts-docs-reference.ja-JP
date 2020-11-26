@@ -1,35 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow:enum'
-    summary: 図形内のレイアウト枠の垂直オーバーフローを指定します。
-    name: ExcelScript.ShapeTextVerticalOverflow
-    fullName: ExcelScript.ShapeTextVerticalOverflow
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.clip:member'
-      - 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.ellipsis:member'
-      - 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.overflow:member'
-  - uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.clip:member'
-    summary: 垂直方向のレイアウト枠内に収まらないテキストを非表示にします。
-    name: clip
-    fullName: clip
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.ellipsis:member'
-    summary: 垂直方向のレイアウト枠内に収まらないテキストを非表示にし、表示されるテキストの終わりに省略記号 (...) を追加します。
-    name: ellipsis
-    fullName: ellipsis
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.overflow:member'
-    summary: テキストはレイアウト枠を垂直方向にはみ出すことができます (テキストの配置によって、上、下、または両方からはみ出します)。
-    name: overflow
-    fullName: overflow
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.ShapeTextVerticalOverflow
+uid: ExcelScript!ExcelScript.ShapeTextVerticalOverflow:enum
+package: ExcelScript!
+fullName: ExcelScript.ShapeTextVerticalOverflow
+summary: 図形内のレイアウト枠の垂直オーバーフローを指定します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: clip
+  uid: ExcelScript!ExcelScript.ShapeTextVerticalOverflow.clip:member
+  package: ExcelScript!
+  summary: 垂直方向のレイアウト枠内に収まらないテキストを非表示にします。
+- name: ellipsis
+  uid: ExcelScript!ExcelScript.ShapeTextVerticalOverflow.ellipsis:member
+  package: ExcelScript!
+  summary: 垂直方向のレイアウト枠内に収まらないテキストを非表示にし、表示されるテキストの終わりに省略記号 (...) を追加します。
+- name: overflow
+  uid: ExcelScript!ExcelScript.ShapeTextVerticalOverflow.overflow:member
+  package: ExcelScript!
+  summary: テキストはレイアウト枠を垂直方向にはみ出すことができます (テキストの配置によって、上、下、または両方からはみ出します)。
+metadata:
+  ms.openlocfilehash: e52155ed38292cb461911c22ce5173e88217f3b5
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49411776"

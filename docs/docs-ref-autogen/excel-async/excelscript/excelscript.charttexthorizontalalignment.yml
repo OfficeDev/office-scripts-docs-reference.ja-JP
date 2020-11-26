@@ -1,51 +1,37 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartTextHorizontalAlignment:enum'
-    summary: 指定したオブジェクトの水平方向の配置を表します。
-    name: Excel.ChartTextHorizontalAlignment
-    fullName: Excel.ChartTextHorizontalAlignment
-    langs:
-      - typeScript
-    type: enum
-    package: excel!
-    children:
-      - 'excel!Excel.ChartTextHorizontalAlignment.center:member'
-      - 'excel!Excel.ChartTextHorizontalAlignment.distributed:member'
-      - 'excel!Excel.ChartTextHorizontalAlignment.justify:member'
-      - 'excel!Excel.ChartTextHorizontalAlignment.left:member'
-      - 'excel!Excel.ChartTextHorizontalAlignment.right:member'
-  - uid: 'excel!Excel.ChartTextHorizontalAlignment.center:member'
-    name: center
-    fullName: center
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Center"'
-  - uid: 'excel!Excel.ChartTextHorizontalAlignment.distributed:member'
-    name: distributed
-    fullName: distributed
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Distributed"'
-  - uid: 'excel!Excel.ChartTextHorizontalAlignment.justify:member'
-    name: justify
-    fullName: justify
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Justify"'
-  - uid: 'excel!Excel.ChartTextHorizontalAlignment.left:member'
-    name: left
-    fullName: left
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Left"'
-  - uid: 'excel!Excel.ChartTextHorizontalAlignment.right:member'
-    name: right
-    fullName: right
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Right"'
+### YamlMime:TSEnum
+name: Excel.ChartTextHorizontalAlignment
+uid: excel!Excel.ChartTextHorizontalAlignment:enum
+package: excel!
+fullName: Excel.ChartTextHorizontalAlignment
+summary: 指定したオブジェクトの水平方向の配置を表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: center
+  uid: excel!Excel.ChartTextHorizontalAlignment.center:member
+  package: excel!
+  summary: ''
+- name: distributed
+  uid: excel!Excel.ChartTextHorizontalAlignment.distributed:member
+  package: excel!
+  summary: ''
+- name: justify
+  uid: excel!Excel.ChartTextHorizontalAlignment.justify:member
+  package: excel!
+  summary: ''
+- name: left
+  uid: excel!Excel.ChartTextHorizontalAlignment.left:member
+  package: excel!
+  summary: ''
+- name: right
+  uid: excel!Excel.ChartTextHorizontalAlignment.right:member
+  package: excel!
+  summary: ''
+metadata:
+  ms.openlocfilehash: a7026479b8d08e6d61d168b670c3b5dfc107fbe0
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49413595"

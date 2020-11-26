@@ -1,51 +1,37 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ShapeType:enum'
-    summary: 図形の種類を指定します。
-    name: Excel.ShapeType
-    fullName: Excel.ShapeType
-    langs:
-      - typeScript
-    type: enum
-    package: excel!
-    children:
-      - 'excel!Excel.ShapeType.geometricShape:member'
-      - 'excel!Excel.ShapeType.group:member'
-      - 'excel!Excel.ShapeType.image:member'
-      - 'excel!Excel.ShapeType.line:member'
-      - 'excel!Excel.ShapeType.unsupported:member'
-  - uid: 'excel!Excel.ShapeType.geometricShape:member'
-    name: geometricShape
-    fullName: geometricShape
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GeometricShape"'
-  - uid: 'excel!Excel.ShapeType.group:member'
-    name: group
-    fullName: group
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Group"'
-  - uid: 'excel!Excel.ShapeType.image:member'
-    name: image
-    fullName: image
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Image"'
-  - uid: 'excel!Excel.ShapeType.line:member'
-    name: line
-    fullName: line
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Line"'
-  - uid: 'excel!Excel.ShapeType.unsupported:member'
-    name: unsupported
-    fullName: unsupported
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Unsupported"'
+### YamlMime:TSEnum
+name: Excel.ShapeType
+uid: excel!Excel.ShapeType:enum
+package: excel!
+fullName: Excel.ShapeType
+summary: 図形の種類を指定します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: geometricShape
+  uid: excel!Excel.ShapeType.geometricShape:member
+  package: excel!
+  summary: ''
+- name: group
+  uid: excel!Excel.ShapeType.group:member
+  package: excel!
+  summary: ''
+- name: image
+  uid: excel!Excel.ShapeType.image:member
+  package: excel!
+  summary: ''
+- name: line
+  uid: excel!Excel.ShapeType.line:member
+  package: excel!
+  summary: ''
+- name: unsupported
+  uid: excel!Excel.ShapeType.unsupported:member
+  package: excel!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 5bfd24e9b2751e7a4af29da2d643f1224214663e
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412917"

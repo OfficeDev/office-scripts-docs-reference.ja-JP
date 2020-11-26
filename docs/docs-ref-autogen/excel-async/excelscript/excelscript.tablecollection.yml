@@ -1,159 +1,132 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.TableCollection:interface'
-    summary: ブックまたはワークシートの一部として含まれる、すべてのテーブルのコレクションを、到達方法に応じて表します。
-    name: Excel.TableCollection
-    fullName: Excel.TableCollection
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.TableCollection#add:member(1)'
-      - 'excel!Excel.TableCollection#count:member'
-      - 'excel!Excel.TableCollection#getCount:member(1)'
-      - 'excel!Excel.TableCollection#getItem:member(1)'
-      - 'excel!Excel.TableCollection#getItemAt:member(1)'
-      - 'excel!Excel.TableCollection#getItemOrNullObject:member(1)'
-      - 'excel!Excel.TableCollection#load:member(1)'
-  - uid: 'excel!Excel.TableCollection#add:member(1)'
-    summary: 新しいテーブルを作成します。範囲オブジェクトまたはソース アドレスにより、テーブルが追加されるワークシートが判断されます。テーブルが追加できない場合 (たとえば、アドレスが無効な場合や、テーブルが別のテーブルと重複している場合) は、エラーがスローされます。
-    name: 'add(address, hasHeaders)'
-    fullName: 'add(address, hasHeaders)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'add(address: Range | string, hasHeaders: boolean): Table;'
-      return:
-        type:
-          - 'excel!Excel.Table:interface'
-        description: ''
-      parameters:
-        - id: address
-          description: Range オブジェクト、あるいはデータ ソースを表す範囲の文字列アドレスまたは名前。 アドレスにシート名が含まれていない場合は、現在作業中のシートが使用されます。
-          type:
-            - 'excel!Excel.TableCollection#add~0:complex'
-        - id: hasHeaders
-          description: インポートされたデータに列ラベルがあるかどうかを示すブール値。ソースにヘッダーが含まれていない場合 (このプロパティが false に設定されている場合)、Excel はデータを下方向に 1 行シフトして、自動的にヘッダーを生成します。
-          type:
-            - boolean
-  - uid: 'excel!Excel.TableCollection#count:member'
-    summary: ブックに含まれるテーブルの数を返します。
-    name: count
-    fullName: count
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly count: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.TableCollection#getCount:member(1)'
-    summary: コレクションに含まれるテーブルの数を取得します。
-    name: getCount()
-    fullName: getCount()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCount(): ClientResult<number>;'
-      return:
-        type:
-          - 'excel!Excel.TableCollection#getCount~0:complex'
-        description: ''
-  - uid: 'excel!Excel.TableCollection#getItem:member(1)'
-    summary: 名前または ID を使用してテーブルを取得します。
-    name: getItem(key)
-    fullName: getItem(key)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItem(key: string): Table;'
-      return:
-        type:
-          - 'excel!Excel.Table:interface'
-        description: ''
-      parameters:
-        - id: key
-          description: 取得するテーブルの名前または ID。
-          type:
-            - string
-  - uid: 'excel!Excel.TableCollection#getItemAt:member(1)'
-    summary: コレクション内の位置に基づいてテーブルを取得します。
-    name: getItemAt(index)
-    fullName: getItemAt(index)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItemAt(index: number): Table;'
-      return:
-        type:
-          - 'excel!Excel.Table:interface'
-        description: ''
-      parameters:
-        - id: index
-          description: 取得するオブジェクトのインデックス値。 0 を起点とする番号になります。
-          type:
-            - number
-  - uid: 'excel!Excel.TableCollection#getItemOrNullObject:member(1)'
-    summary: 名前または ID でテーブルを取得します。 テーブルが存在しない場合は null オブジェクトを返します。
-    name: getItemOrNullObject(key)
-    fullName: getItemOrNullObject(key)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItemOrNullObject(key: string): Table;'
-      return:
-        type:
-          - 'excel!Excel.Table:interface'
-        description: ''
-      parameters:
-        - id: key
-          description: 取得するテーブルの名前または ID。
-          type:
-            - string
-  - uid: 'excel!Excel.TableCollection#load:member(1)'
-    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
-          type:
-            - 'string | string[]'
-references:
-  - uid: 'excel!Excel.Table:interface'
-    name: Table
-    fullName: Excel.Table
-  - uid: 'excel!Excel.TableCollection#add~0:complex'
-    name: Range | string
-    fullName: Excel.Range | string
-    spec.typeScript:
-      - uid: 'excel!Excel.Range:interface'
-        name: Range
-        fullName: Excel.Range
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'excel!Excel.TableCollection#getCount~0:complex'
-    name: ClientResult<number>
-    fullName: Excel.ClientResult<number>
-    spec.typeScript:
-      - uid: 'excel!Excel.ClientResult:interface'
-        name: ClientResult
-        fullName: Excel.ClientResult
-      - name: <number>
-        fullName: <number>
+### YamlMime:TSType
+name: Excel.TableCollection
+uid: excel!Excel.TableCollection:interface
+package: excel!
+fullName: Excel.TableCollection
+summary: ブックまたはワークシートの一部として含まれる、すべてのテーブルのコレクションを、到達方法に応じて表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: count
+  uid: excel!Excel.TableCollection#count:member
+  package: excel!
+  fullName: count
+  summary: ブックに含まれるテーブルの数を返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly count: number;'
+    return:
+      type: number
+methods:
+- name: add(address, hasHeaders)
+  uid: excel!Excel.TableCollection#add:member(1)
+  package: excel!
+  fullName: add(address, hasHeaders)
+  summary: 新しいテーブルを作成します。範囲オブジェクトまたはソース アドレスにより、テーブルが追加されるワークシートが判断されます。テーブルが追加できない場合 (たとえば、アドレスが無効な場合や、テーブルが別のテーブルと重複している場合) は、エラーがスローされます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'add(address: Range | string, hasHeaders: boolean): Table;'
+    parameters:
+    - id: address
+      description: Range オブジェクト、あるいはデータ ソースを表す範囲の文字列アドレスまたは名前。 アドレスにシート名が含まれていない場合は、現在作業中のシートが使用されます。
+      type: <xref uid="excel!Excel.Range:interface" /> | string
+    - id: hasHeaders
+      description: インポートされたデータに列ラベルがあるかどうかを示すブール値。ソースにヘッダーが含まれていない場合 (このプロパティが false に設定されている場合)、Excel はデータを下方向に 1 行シフトして、自動的にヘッダーを生成します。
+      type: boolean
+    return:
+      type: <xref uid="excel!Excel.Table:interface" />
+      description: ''
+- name: getCount()
+  uid: excel!Excel.TableCollection#getCount:member(1)
+  package: excel!
+  fullName: getCount()
+  summary: コレクションに含まれるテーブルの数を取得します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCount(): ClientResult<number>;'
+    return:
+      type: <xref uid="excel!Excel.ClientResult:interface" />&lt;number&gt;
+      description: ''
+- name: getItem(key)
+  uid: excel!Excel.TableCollection#getItem:member(1)
+  package: excel!
+  fullName: getItem(key)
+  summary: 名前または ID を使用してテーブルを取得します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getItem(key: string): Table;'
+    parameters:
+    - id: key
+      description: 取得するテーブルの名前または ID。
+      type: string
+    return:
+      type: <xref uid="excel!Excel.Table:interface" />
+      description: ''
+- name: getItemAt(index)
+  uid: excel!Excel.TableCollection#getItemAt:member(1)
+  package: excel!
+  fullName: getItemAt(index)
+  summary: コレクション内の位置に基づいてテーブルを取得します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getItemAt(index: number): Table;'
+    parameters:
+    - id: index
+      description: 取得するオブジェクトのインデックス値。 0 を起点とする番号になります。
+      type: number
+    return:
+      type: <xref uid="excel!Excel.Table:interface" />
+      description: ''
+- name: getItemOrNullObject(key)
+  uid: excel!Excel.TableCollection#getItemOrNullObject:member(1)
+  package: excel!
+  fullName: getItemOrNullObject(key)
+  summary: 名前または ID でテーブルを取得します。 テーブルが存在しない場合は null オブジェクトを返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getItemOrNullObject(key: string): Table;'
+    parameters:
+    - id: key
+      description: 取得するテーブルの名前または ID。
+      type: string
+    return:
+      type: <xref uid="excel!Excel.Table:interface" />
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.TableCollection#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: オブジェクトの指定されたプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、`context.sync()` を呼び出す必要があります。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: aac3d225eae7ec797fd01e903cc32f635f9a1912
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412749"

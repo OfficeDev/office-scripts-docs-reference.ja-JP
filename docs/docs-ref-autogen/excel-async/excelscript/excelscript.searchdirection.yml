@@ -1,29 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.SearchDirection:enum'
-    summary: 検索の方向を指定します。
-    name: Excel.SearchDirection
-    fullName: Excel.SearchDirection
-    langs:
-      - typeScript
-    type: enum
-    package: excel!
-    children:
-      - 'excel!Excel.SearchDirection.backwards:member'
-      - 'excel!Excel.SearchDirection.forward:member'
-  - uid: 'excel!Excel.SearchDirection.backwards:member'
-    summary: 逆の順序で検索します。
-    name: backwards
-    fullName: backwards
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Backwards"'
-  - uid: 'excel!Excel.SearchDirection.forward:member'
-    summary: 次の順序で検索します。
-    name: forward
-    fullName: forward
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Forward"'
+### YamlMime:TSEnum
+name: Excel.SearchDirection
+uid: excel!Excel.SearchDirection:enum
+package: excel!
+fullName: Excel.SearchDirection
+summary: 検索の方向を指定します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: backwards
+  uid: excel!Excel.SearchDirection.backwards:member
+  package: excel!
+  summary: 逆の順序で検索します。
+- name: forward
+  uid: excel!Excel.SearchDirection.forward:member
+  package: excel!
+  summary: 次の順序で検索します。
+metadata:
+  ms.openlocfilehash: d1533ac2fef70948bead471a86c3bb45f08d053f
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49413084"

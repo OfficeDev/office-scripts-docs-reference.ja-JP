@@ -1,39 +1,44 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.RemoveDuplicatesResult:interface'
-    summary: 範囲内の removeDuplicates 削除メソッドからの結果を表します。
-    name: ExcelScript.RemoveDuplicatesResult
-    fullName: ExcelScript.RemoveDuplicatesResult
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.RemoveDuplicatesResult#getRemoved:member(1)'
-      - 'ExcelScript!ExcelScript.RemoveDuplicatesResult#getUniqueRemaining:member(1)'
-  - uid: 'ExcelScript!ExcelScript.RemoveDuplicatesResult#getRemoved:member(1)'
-    summary: 操作によって削除された重複行の数。
-    name: getRemoved()
-    fullName: getRemoved()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRemoved(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RemoveDuplicatesResult#getUniqueRemaining:member(1)'
-    summary: 結果として生じた範囲に存在する残りの一意の行の数。
-    name: getUniqueRemaining()
-    fullName: getUniqueRemaining()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getUniqueRemaining(): number;'
-      return:
-        type:
-          - number
-        description: ''
+### YamlMime:TSType
+name: ExcelScript.RemoveDuplicatesResult
+uid: ExcelScript!ExcelScript.RemoveDuplicatesResult:interface
+package: ExcelScript!
+fullName: ExcelScript.RemoveDuplicatesResult
+summary: 範囲内の removeDuplicates 削除メソッドからの結果を表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getRemoved()
+  uid: ExcelScript!ExcelScript.RemoveDuplicatesResult#getRemoved:member(1)
+  package: ExcelScript!
+  fullName: getRemoved()
+  summary: 操作によって削除された重複行の数。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRemoved(): number;'
+    return:
+      type: number
+      description: ''
+- name: getUniqueRemaining()
+  uid: ExcelScript!ExcelScript.RemoveDuplicatesResult#getUniqueRemaining:member(1)
+  package: ExcelScript!
+  fullName: getUniqueRemaining()
+  summary: 結果として生じた範囲に存在する残りの一意の行の数。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getUniqueRemaining(): number;'
+    return:
+      type: number
+      description: ''
+metadata:
+  ms.openlocfilehash: 1b7a861288171b4c69d9ed8f0cc1089cabf14c16
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49411888"

@@ -1,51 +1,37 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ShapeTextVerticalAlignment:enum'
-    summary: 図形内のレイアウト枠の垂直方向の配置を指定します。
-    name: Excel.ShapeTextVerticalAlignment
-    fullName: Excel.ShapeTextVerticalAlignment
-    langs:
-      - typeScript
-    type: enum
-    package: excel!
-    children:
-      - 'excel!Excel.ShapeTextVerticalAlignment.bottom:member'
-      - 'excel!Excel.ShapeTextVerticalAlignment.distributed:member'
-      - 'excel!Excel.ShapeTextVerticalAlignment.justified:member'
-      - 'excel!Excel.ShapeTextVerticalAlignment.middle:member'
-      - 'excel!Excel.ShapeTextVerticalAlignment.top:member'
-  - uid: 'excel!Excel.ShapeTextVerticalAlignment.bottom:member'
-    name: bottom
-    fullName: bottom
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Bottom"'
-  - uid: 'excel!Excel.ShapeTextVerticalAlignment.distributed:member'
-    name: distributed
-    fullName: distributed
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Distributed"'
-  - uid: 'excel!Excel.ShapeTextVerticalAlignment.justified:member'
-    name: justified
-    fullName: justified
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Justified"'
-  - uid: 'excel!Excel.ShapeTextVerticalAlignment.middle:member'
-    name: middle
-    fullName: middle
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Middle"'
-  - uid: 'excel!Excel.ShapeTextVerticalAlignment.top:member'
-    name: top
-    fullName: top
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Top"'
+### YamlMime:TSEnum
+name: Excel.ShapeTextVerticalAlignment
+uid: excel!Excel.ShapeTextVerticalAlignment:enum
+package: excel!
+fullName: Excel.ShapeTextVerticalAlignment
+summary: 図形内のレイアウト枠の垂直方向の配置を指定します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: bottom
+  uid: excel!Excel.ShapeTextVerticalAlignment.bottom:member
+  package: excel!
+  summary: ''
+- name: distributed
+  uid: excel!Excel.ShapeTextVerticalAlignment.distributed:member
+  package: excel!
+  summary: ''
+- name: justified
+  uid: excel!Excel.ShapeTextVerticalAlignment.justified:member
+  package: excel!
+  summary: ''
+- name: middle
+  uid: excel!Excel.ShapeTextVerticalAlignment.middle:member
+  package: excel!
+  summary: ''
+- name: top
+  uid: excel!Excel.ShapeTextVerticalAlignment.top:member
+  package: excel!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 6c7d040eceab88d6213220ca7de2e6d18ab3e35b
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412959"

@@ -1,77 +1,78 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.FormatProtection:interface'
-    summary: 範囲オブジェクトの書式保護を表します。
-    name: ExcelScript.FormatProtection
-    fullName: ExcelScript.FormatProtection
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.FormatProtection#getFormulaHidden:member(1)'
-      - 'ExcelScript!ExcelScript.FormatProtection#getLocked:member(1)'
-      - 'ExcelScript!ExcelScript.FormatProtection#setFormulaHidden:member(1)'
-      - 'ExcelScript!ExcelScript.FormatProtection#setLocked:member(1)'
-  - uid: 'ExcelScript!ExcelScript.FormatProtection#getFormulaHidden:member(1)'
-    summary: Excel で範囲内のセルの数式を非表示にするかどうかを指定します。 null 値は、範囲全体に一様な数式非表示設定がないことを表します。
-    name: getFormulaHidden()
-    fullName: getFormulaHidden()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFormulaHidden(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.FormatProtection#getLocked:member(1)'
-    summary: Excel でオブジェクトのセルをロックするかどうかを指定します。 null 値は、範囲全体に一様なロック設定がないことを表します。
-    name: getLocked()
-    fullName: getLocked()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getLocked(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.FormatProtection#setFormulaHidden:member(1)'
-    summary: Excel で範囲内のセルの数式を非表示にするかどうかを指定します。 null 値は、範囲全体に一様な数式非表示設定がないことを表します。
-    name: setFormulaHidden(formulaHidden)
-    fullName: setFormulaHidden(formulaHidden)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setFormulaHidden(formulaHidden: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: formulaHidden
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.FormatProtection#setLocked:member(1)'
-    summary: Excel でオブジェクトのセルをロックするかどうかを指定します。 null 値は、範囲全体に一様なロック設定がないことを表します。
-    name: setLocked(locked)
-    fullName: setLocked(locked)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setLocked(locked: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: locked
-          description: ''
-          type:
-            - boolean
+### YamlMime:TSType
+name: ExcelScript.FormatProtection
+uid: ExcelScript!ExcelScript.FormatProtection:interface
+package: ExcelScript!
+fullName: ExcelScript.FormatProtection
+summary: 範囲オブジェクトの書式保護を表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getFormulaHidden()
+  uid: ExcelScript!ExcelScript.FormatProtection#getFormulaHidden:member(1)
+  package: ExcelScript!
+  fullName: getFormulaHidden()
+  summary: Excel で範囲内のセルの数式を非表示にするかどうかを指定します。 null 値は、範囲全体に一様な数式非表示設定がないことを表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFormulaHidden(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getLocked()
+  uid: ExcelScript!ExcelScript.FormatProtection#getLocked:member(1)
+  package: ExcelScript!
+  fullName: getLocked()
+  summary: Excel でオブジェクトのセルをロックするかどうかを指定します。 null 値は、範囲全体に一様なロック設定がないことを表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLocked(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: setFormulaHidden(formulaHidden)
+  uid: ExcelScript!ExcelScript.FormatProtection#setFormulaHidden:member(1)
+  package: ExcelScript!
+  fullName: setFormulaHidden(formulaHidden)
+  summary: Excel で範囲内のセルの数式を非表示にするかどうかを指定します。 null 値は、範囲全体に一様な数式非表示設定がないことを表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setFormulaHidden(formulaHidden: boolean): void;'
+    parameters:
+    - id: formulaHidden
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setLocked(locked)
+  uid: ExcelScript!ExcelScript.FormatProtection#setLocked:member(1)
+  package: ExcelScript!
+  fullName: setLocked(locked)
+  summary: Excel でオブジェクトのセルをロックするかどうかを指定します。 null 値は、範囲全体に一様なロック設定がないことを表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setLocked(locked: boolean): void;'
+    parameters:
+    - id: locked
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 91b7c8a1aebc842baacb87ae53c768d1cb0a097f
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412469"

@@ -1,59 +1,41 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ShapeFillType:enum'
-    summary: 図形の塗りつぶしの種類を指定します。
-    name: ExcelScript.ShapeFillType
-    fullName: ExcelScript.ShapeFillType
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ShapeFillType.gradient:member'
-      - 'ExcelScript!ExcelScript.ShapeFillType.mixed:member'
-      - 'ExcelScript!ExcelScript.ShapeFillType.noFill:member'
-      - 'ExcelScript!ExcelScript.ShapeFillType.pattern:member'
-      - 'ExcelScript!ExcelScript.ShapeFillType.pictureAndTexture:member'
-      - 'ExcelScript!ExcelScript.ShapeFillType.solid:member'
-  - uid: 'ExcelScript!ExcelScript.ShapeFillType.gradient:member'
-    summary: 塗りつぶし (グラデーション)
-    name: gradient
-    fullName: gradient
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShapeFillType.mixed:member'
-    summary: 塗りつぶし (混在)
-    name: mixed
-    fullName: mixed
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShapeFillType.noFill:member'
-    summary: 塗りつぶしなし
-    name: noFill
-    fullName: noFill
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShapeFillType.pattern:member'
-    summary: パターンの塗りつぶし
-    name: pattern
-    fullName: pattern
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShapeFillType.pictureAndTexture:member'
-    summary: 図とテクスチャの塗りつぶし
-    name: pictureAndTexture
-    fullName: pictureAndTexture
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShapeFillType.solid:member'
-    summary: 塗りつぶし (単色)
-    name: solid
-    fullName: solid
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.ShapeFillType
+uid: ExcelScript!ExcelScript.ShapeFillType:enum
+package: ExcelScript!
+fullName: ExcelScript.ShapeFillType
+summary: 図形の塗りつぶしの種類を指定します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: gradient
+  uid: ExcelScript!ExcelScript.ShapeFillType.gradient:member
+  package: ExcelScript!
+  summary: 塗りつぶし (グラデーション)
+- name: mixed
+  uid: ExcelScript!ExcelScript.ShapeFillType.mixed:member
+  package: ExcelScript!
+  summary: 塗りつぶし (混在)
+- name: noFill
+  uid: ExcelScript!ExcelScript.ShapeFillType.noFill:member
+  package: ExcelScript!
+  summary: 塗りつぶしなし
+- name: pattern
+  uid: ExcelScript!ExcelScript.ShapeFillType.pattern:member
+  package: ExcelScript!
+  summary: パターンの塗りつぶし
+- name: pictureAndTexture
+  uid: ExcelScript!ExcelScript.ShapeFillType.pictureAndTexture:member
+  package: ExcelScript!
+  summary: 図とテクスチャの塗りつぶし
+- name: solid
+  uid: ExcelScript!ExcelScript.ShapeFillType.solid:member
+  package: ExcelScript!
+  summary: 塗りつぶし (単色)
+metadata:
+  ms.openlocfilehash: 45fe6ba829de5ab95a7aaa2fb1bb37750f649038
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49411797"

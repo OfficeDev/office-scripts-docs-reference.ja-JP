@@ -1,90 +1,87 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.TimelineStyle:interface'
-    summary: タイムラインの領域によってスタイル要素を定義するタイムラインスタイルを表します。
-    name: ExcelScript.TimelineStyle
-    fullName: ExcelScript.TimelineStyle
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.TimelineStyle#delete:member(1)'
-      - 'ExcelScript!ExcelScript.TimelineStyle#duplicate:member(1)'
-      - 'ExcelScript!ExcelScript.TimelineStyle#getName:member(1)'
-      - 'ExcelScript!ExcelScript.TimelineStyle#getReadOnly:member(1)'
-      - 'ExcelScript!ExcelScript.TimelineStyle#setName:member(1)'
-  - uid: 'ExcelScript!ExcelScript.TimelineStyle#delete:member(1)'
-    summary: TableStyle を削除します。
-    name: delete()
-    fullName: delete()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'delete(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.TimelineStyle#duplicate:member(1)'
-    summary: すべてのスタイル要素のコピーでこの TimelineStyle の複製を作成します。
-    name: duplicate()
-    fullName: duplicate()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'duplicate(): TimelineStyle;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.TimelineStyle:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.TimelineStyle#getName:member(1)'
-    summary: TimelineStyle の名前を取得します。
-    name: getName()
-    fullName: getName()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getName(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.TimelineStyle#getReadOnly:member(1)'
-    summary: この TimelineStyle オブジェクトが読み取り専用であるかどうかを指定します。
-    name: getReadOnly()
-    fullName: getReadOnly()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getReadOnly(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.TimelineStyle#setName:member(1)'
-    summary: TimelineStyle の名前を取得します。
-    name: setName(name)
-    fullName: setName(name)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setName(name: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: name
-          description: ''
-          type:
-            - string
-references:
-  - uid: 'ExcelScript!ExcelScript.TimelineStyle:interface'
-    name: TimelineStyle
-    fullName: ExcelScript.TimelineStyle
+### YamlMime:TSType
+name: ExcelScript.TimelineStyle
+uid: ExcelScript!ExcelScript.TimelineStyle:interface
+package: ExcelScript!
+fullName: ExcelScript.TimelineStyle
+summary: タイムラインの領域によってスタイル要素を定義するタイムラインスタイルを表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: delete()
+  uid: ExcelScript!ExcelScript.TimelineStyle#delete:member(1)
+  package: ExcelScript!
+  fullName: delete()
+  summary: TableStyle を削除します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(): void;'
+    return:
+      type: void
+      description: ''
+- name: duplicate()
+  uid: ExcelScript!ExcelScript.TimelineStyle#duplicate:member(1)
+  package: ExcelScript!
+  fullName: duplicate()
+  summary: すべてのスタイル要素のコピーでこの TimelineStyle の複製を作成します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'duplicate(): TimelineStyle;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.TimelineStyle:interface" />
+      description: ''
+- name: getName()
+  uid: ExcelScript!ExcelScript.TimelineStyle#getName:member(1)
+  package: ExcelScript!
+  fullName: getName()
+  summary: TimelineStyle の名前を取得します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getName(): string;'
+    return:
+      type: string
+      description: ''
+- name: getReadOnly()
+  uid: ExcelScript!ExcelScript.TimelineStyle#getReadOnly:member(1)
+  package: ExcelScript!
+  fullName: getReadOnly()
+  summary: この TimelineStyle オブジェクトが読み取り専用であるかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getReadOnly(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: setName(name)
+  uid: ExcelScript!ExcelScript.TimelineStyle#setName:member(1)
+  package: ExcelScript!
+  fullName: setName(name)
+  summary: TimelineStyle の名前を取得します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setName(name: string): void;'
+    parameters:
+    - id: name
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: a4d97d4186cb7205120ef385bc86dc38baaccdd3
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49411734"
