@@ -1,51 +1,37 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartErrorBarsType:enum'
-    summary: 誤差範囲の範囲の種類を表します。
-    name: Excel.ChartErrorBarsType
-    fullName: Excel.ChartErrorBarsType
-    langs:
-      - typeScript
-    type: enum
-    package: excel!
-    children:
-      - 'excel!Excel.ChartErrorBarsType.custom:member'
-      - 'excel!Excel.ChartErrorBarsType.fixedValue:member'
-      - 'excel!Excel.ChartErrorBarsType.percent:member'
-      - 'excel!Excel.ChartErrorBarsType.stDev:member'
-      - 'excel!Excel.ChartErrorBarsType.stError:member'
-  - uid: 'excel!Excel.ChartErrorBarsType.custom:member'
-    name: custom
-    fullName: custom
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Custom"'
-  - uid: 'excel!Excel.ChartErrorBarsType.fixedValue:member'
-    name: fixedValue
-    fullName: fixedValue
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"FixedValue"'
-  - uid: 'excel!Excel.ChartErrorBarsType.percent:member'
-    name: percent
-    fullName: percent
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Percent"'
-  - uid: 'excel!Excel.ChartErrorBarsType.stDev:member'
-    name: stDev
-    fullName: stDev
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"StDev"'
-  - uid: 'excel!Excel.ChartErrorBarsType.stError:member'
-    name: stError
-    fullName: stError
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"StError"'
+### YamlMime:TSEnum
+name: Excel.ChartErrorBarsType
+uid: excel!Excel.ChartErrorBarsType:enum
+package: excel!
+fullName: Excel.ChartErrorBarsType
+summary: 誤差範囲の範囲の種類を表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: custom
+  uid: excel!Excel.ChartErrorBarsType.custom:member
+  package: excel!
+  summary: ''
+- name: fixedValue
+  uid: excel!Excel.ChartErrorBarsType.fixedValue:member
+  package: excel!
+  summary: ''
+- name: percent
+  uid: excel!Excel.ChartErrorBarsType.percent:member
+  package: excel!
+  summary: ''
+- name: stDev
+  uid: excel!Excel.ChartErrorBarsType.stDev:member
+  package: excel!
+  summary: ''
+- name: stError
+  uid: excel!Excel.ChartErrorBarsType.stError:member
+  package: excel!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 24f8340c1e7755314dcab0ad8bbdaefbac0ee9e9
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49417590"

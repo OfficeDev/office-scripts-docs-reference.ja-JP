@@ -1,46 +1,44 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ChartPlotAreaFormat:interface'
-    summary: グラフの plotArea の書式プロパティを表します。
-    name: ExcelScript.ChartPlotAreaFormat
-    fullName: ExcelScript.ChartPlotAreaFormat
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ChartPlotAreaFormat#getBorder:member(1)'
-      - 'ExcelScript!ExcelScript.ChartPlotAreaFormat#getFill:member(1)'
-  - uid: 'ExcelScript!ExcelScript.ChartPlotAreaFormat#getBorder:member(1)'
-    summary: グラフ plotArea の罫線の属性を指定します。
-    name: getBorder()
-    fullName: getBorder()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getBorder(): ChartBorder;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartBorder:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartPlotAreaFormat#getFill:member(1)'
-    summary: 背景の書式設定情報を含むオブジェクトの塗りつぶしの書式を指定します。
-    name: getFill()
-    fullName: getFill()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFill(): ChartFill;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartFill:interface'
-        description: ''
-references:
-  - uid: 'ExcelScript!ExcelScript.ChartBorder:interface'
-    name: ChartBorder
-    fullName: ExcelScript.ChartBorder
-  - uid: 'ExcelScript!ExcelScript.ChartFill:interface'
-    name: ChartFill
-    fullName: ExcelScript.ChartFill
+### YamlMime:TSType
+name: ExcelScript.ChartPlotAreaFormat
+uid: ExcelScript!ExcelScript.ChartPlotAreaFormat:interface
+package: ExcelScript!
+fullName: ExcelScript.ChartPlotAreaFormat
+summary: グラフの plotArea の書式プロパティを表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getBorder()
+  uid: ExcelScript!ExcelScript.ChartPlotAreaFormat#getBorder:member(1)
+  package: ExcelScript!
+  fullName: getBorder()
+  summary: グラフ plotArea の罫線の属性を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getBorder(): ChartBorder;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartBorder:interface" />
+      description: ''
+- name: getFill()
+  uid: ExcelScript!ExcelScript.ChartPlotAreaFormat#getFill:member(1)
+  package: ExcelScript!
+  fullName: getFill()
+  summary: 背景の書式設定情報を含むオブジェクトの塗りつぶしの書式を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFill(): ChartFill;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartFill:interface" />
+      description: ''
+metadata:
+  ms.openlocfilehash: b6992c45251b55c0b3d0329b1e1d29e21bfdf566
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49416118"

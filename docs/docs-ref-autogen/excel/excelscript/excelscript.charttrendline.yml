@@ -1,360 +1,327 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ChartTrendline:interface'
-    summary: このオブジェクトは、グラフの近似曲線オブジェクトの属性を表します。
-    name: ExcelScript.ChartTrendline
-    fullName: ExcelScript.ChartTrendline
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ChartTrendline#delete:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTrendline#getBackwardPeriod:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTrendline#getFormat:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTrendline#getForwardPeriod:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTrendline#getIntercept:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTrendline#getLabel:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTrendline#getMovingAveragePeriod:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTrendline#getName:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTrendline#getPolynomialOrder:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTrendline#getShowEquation:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTrendline#getShowRSquared:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTrendline#getType:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTrendline#setBackwardPeriod:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTrendline#setForwardPeriod:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTrendline#setIntercept:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTrendline#setMovingAveragePeriod:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTrendline#setName:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTrendline#setPolynomialOrder:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTrendline#setShowEquation:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTrendline#setShowRSquared:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTrendline#setType:member(1)'
-  - uid: 'ExcelScript!ExcelScript.ChartTrendline#delete:member(1)'
-    summary: trendline オブジェクトを削除します。
-    name: delete()
-    fullName: delete()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'delete(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartTrendline#getBackwardPeriod:member(1)'
-    summary: 近似曲線を後方へ拡張するときの区間数を表します。
-    name: getBackwardPeriod()
-    fullName: getBackwardPeriod()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getBackwardPeriod(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartTrendline#getFormat:member(1)'
-    summary: グラフの近似曲線の書式設定を表します。
-    name: getFormat()
-    fullName: getFormat()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFormat(): ChartTrendlineFormat;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartTrendlineFormat:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartTrendline#getForwardPeriod:member(1)'
-    summary: 近似曲線を前方へ拡張するときの区間数を表します。
-    name: getForwardPeriod()
-    fullName: getForwardPeriod()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getForwardPeriod(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartTrendline#getIntercept:member(1)'
-    summary: 近似曲線の切片値を指定します。
-    name: getIntercept()
-    fullName: getIntercept()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getIntercept(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartTrendline#getLabel:member(1)'
-    summary: グラフの近似曲線のラベルを表します。
-    name: getLabel()
-    fullName: getLabel()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getLabel(): ChartTrendlineLabel;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartTrendlineLabel:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartTrendline#getMovingAveragePeriod:member(1)'
-    summary: グラフの近似曲線の期間を表します。 MovingAverage 型の近似曲線にのみ適用されます。
-    name: getMovingAveragePeriod()
-    fullName: getMovingAveragePeriod()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getMovingAveragePeriod(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartTrendline#getName:member(1)'
-    summary: 近似曲線の名前を表します。 文字列値または null 値 (値を自動的に設定する場合) に設定できます。 戻り値は常に文字列です。
-    name: getName()
-    fullName: getName()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getName(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartTrendline#getPolynomialOrder:member(1)'
-    summary: グラフの近似曲線の順序を表します。 多項式型の近似曲線にのみ適用されます。
-    name: getPolynomialOrder()
-    fullName: getPolynomialOrder()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPolynomialOrder(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartTrendline#getShowEquation:member(1)'
-    summary: true の場合、グラフに近似曲線の数式が表示されます。
-    name: getShowEquation()
-    fullName: getShowEquation()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getShowEquation(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartTrendline#getShowRSquared:member(1)'
-    summary: true の場合、グラフに近似曲線の R-2 乗値が表示されます。
-    name: getShowRSquared()
-    fullName: getShowRSquared()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getShowRSquared(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartTrendline#getType:member(1)'
-    summary: グラフの近似曲線の種類を表します。
-    name: getType()
-    fullName: getType()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getType(): ChartTrendlineType;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartTrendlineType:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartTrendline#setBackwardPeriod:member(1)'
-    summary: 近似曲線を後方へ拡張するときの区間数を表します。
-    name: setBackwardPeriod(backwardPeriod)
-    fullName: setBackwardPeriod(backwardPeriod)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setBackwardPeriod(backwardPeriod: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: backwardPeriod
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.ChartTrendline#setForwardPeriod:member(1)'
-    summary: 近似曲線を前方へ拡張するときの区間数を表します。
-    name: setForwardPeriod(forwardPeriod)
-    fullName: setForwardPeriod(forwardPeriod)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setForwardPeriod(forwardPeriod: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: forwardPeriod
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.ChartTrendline#setIntercept:member(1)'
-    summary: 近似曲線の切片値を指定します。
-    name: setIntercept(intercept)
-    fullName: setIntercept(intercept)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setIntercept(intercept: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: intercept
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.ChartTrendline#setMovingAveragePeriod:member(1)'
-    summary: グラフの近似曲線の期間を表します。 MovingAverage 型の近似曲線にのみ適用されます。
-    name: setMovingAveragePeriod(movingAveragePeriod)
-    fullName: setMovingAveragePeriod(movingAveragePeriod)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setMovingAveragePeriod(movingAveragePeriod: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: movingAveragePeriod
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.ChartTrendline#setName:member(1)'
-    summary: 近似曲線の名前を表します。 文字列値または null 値 (値を自動的に設定する場合) に設定できます。 戻り値は常に文字列です。
-    name: setName(name)
-    fullName: setName(name)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setName(name: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: name
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.ChartTrendline#setPolynomialOrder:member(1)'
-    summary: グラフの近似曲線の順序を表します。 多項式型の近似曲線にのみ適用されます。
-    name: setPolynomialOrder(polynomialOrder)
-    fullName: setPolynomialOrder(polynomialOrder)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setPolynomialOrder(polynomialOrder: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: polynomialOrder
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.ChartTrendline#setShowEquation:member(1)'
-    summary: true の場合、グラフに近似曲線の数式が表示されます。
-    name: setShowEquation(showEquation)
-    fullName: setShowEquation(showEquation)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setShowEquation(showEquation: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: showEquation
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.ChartTrendline#setShowRSquared:member(1)'
-    summary: true の場合、グラフに近似曲線の R-2 乗値が表示されます。
-    name: setShowRSquared(showRSquared)
-    fullName: setShowRSquared(showRSquared)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setShowRSquared(showRSquared: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: showRSquared
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.ChartTrendline#setType:member(1)'
-    summary: グラフの近似曲線の種類を表します。
-    name: setType(type)
-    fullName: setType(type)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setType(type: ChartTrendlineType): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: type
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ChartTrendlineType:enum'
-references:
-  - uid: 'ExcelScript!ExcelScript.ChartTrendlineFormat:interface'
-    name: ChartTrendlineFormat
-    fullName: ExcelScript.ChartTrendlineFormat
-  - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel:interface'
-    name: ChartTrendlineLabel
-    fullName: ExcelScript.ChartTrendlineLabel
-  - uid: 'ExcelScript!ExcelScript.ChartTrendlineType:enum'
-    name: ChartTrendlineType
-    fullName: ExcelScript.ChartTrendlineType
+### YamlMime:TSType
+name: ExcelScript.ChartTrendline
+uid: ExcelScript!ExcelScript.ChartTrendline:interface
+package: ExcelScript!
+fullName: ExcelScript.ChartTrendline
+summary: このオブジェクトは、グラフの近似曲線オブジェクトの属性を表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: delete()
+  uid: ExcelScript!ExcelScript.ChartTrendline#delete:member(1)
+  package: ExcelScript!
+  fullName: delete()
+  summary: trendline オブジェクトを削除します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(): void;'
+    return:
+      type: void
+      description: ''
+- name: getBackwardPeriod()
+  uid: ExcelScript!ExcelScript.ChartTrendline#getBackwardPeriod:member(1)
+  package: ExcelScript!
+  fullName: getBackwardPeriod()
+  summary: 近似曲線を後方へ拡張するときの区間数を表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getBackwardPeriod(): number;'
+    return:
+      type: number
+      description: ''
+- name: getFormat()
+  uid: ExcelScript!ExcelScript.ChartTrendline#getFormat:member(1)
+  package: ExcelScript!
+  fullName: getFormat()
+  summary: グラフの近似曲線の書式設定を表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFormat(): ChartTrendlineFormat;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartTrendlineFormat:interface" />
+      description: ''
+- name: getForwardPeriod()
+  uid: ExcelScript!ExcelScript.ChartTrendline#getForwardPeriod:member(1)
+  package: ExcelScript!
+  fullName: getForwardPeriod()
+  summary: 近似曲線を前方へ拡張するときの区間数を表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getForwardPeriod(): number;'
+    return:
+      type: number
+      description: ''
+- name: getIntercept()
+  uid: ExcelScript!ExcelScript.ChartTrendline#getIntercept:member(1)
+  package: ExcelScript!
+  fullName: getIntercept()
+  summary: 近似曲線の切片値を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getIntercept(): number;'
+    return:
+      type: number
+      description: ''
+- name: getLabel()
+  uid: ExcelScript!ExcelScript.ChartTrendline#getLabel:member(1)
+  package: ExcelScript!
+  fullName: getLabel()
+  summary: グラフの近似曲線のラベルを表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLabel(): ChartTrendlineLabel;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartTrendlineLabel:interface" />
+      description: ''
+- name: getMovingAveragePeriod()
+  uid: ExcelScript!ExcelScript.ChartTrendline#getMovingAveragePeriod:member(1)
+  package: ExcelScript!
+  fullName: getMovingAveragePeriod()
+  summary: グラフの近似曲線の期間を表します。 MovingAverage 型の近似曲線にのみ適用されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getMovingAveragePeriod(): number;'
+    return:
+      type: number
+      description: ''
+- name: getName()
+  uid: ExcelScript!ExcelScript.ChartTrendline#getName:member(1)
+  package: ExcelScript!
+  fullName: getName()
+  summary: 近似曲線の名前を表します。 文字列値または null 値 (値を自動的に設定する場合) に設定できます。 戻り値は常に文字列です。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getName(): string;'
+    return:
+      type: string
+      description: ''
+- name: getPolynomialOrder()
+  uid: ExcelScript!ExcelScript.ChartTrendline#getPolynomialOrder:member(1)
+  package: ExcelScript!
+  fullName: getPolynomialOrder()
+  summary: グラフの近似曲線の順序を表します。 多項式型の近似曲線にのみ適用されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPolynomialOrder(): number;'
+    return:
+      type: number
+      description: ''
+- name: getShowEquation()
+  uid: ExcelScript!ExcelScript.ChartTrendline#getShowEquation:member(1)
+  package: ExcelScript!
+  fullName: getShowEquation()
+  summary: true の場合、グラフに近似曲線の数式が表示されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getShowEquation(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getShowRSquared()
+  uid: ExcelScript!ExcelScript.ChartTrendline#getShowRSquared:member(1)
+  package: ExcelScript!
+  fullName: getShowRSquared()
+  summary: true の場合、グラフに近似曲線の R-2 乗値が表示されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getShowRSquared(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getType()
+  uid: ExcelScript!ExcelScript.ChartTrendline#getType:member(1)
+  package: ExcelScript!
+  fullName: getType()
+  summary: グラフの近似曲線の種類を表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getType(): ChartTrendlineType;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartTrendlineType:enum" />
+      description: ''
+- name: setBackwardPeriod(backwardPeriod)
+  uid: ExcelScript!ExcelScript.ChartTrendline#setBackwardPeriod:member(1)
+  package: ExcelScript!
+  fullName: setBackwardPeriod(backwardPeriod)
+  summary: 近似曲線を後方へ拡張するときの区間数を表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setBackwardPeriod(backwardPeriod: number): void;'
+    parameters:
+    - id: backwardPeriod
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setForwardPeriod(forwardPeriod)
+  uid: ExcelScript!ExcelScript.ChartTrendline#setForwardPeriod:member(1)
+  package: ExcelScript!
+  fullName: setForwardPeriod(forwardPeriod)
+  summary: 近似曲線を前方へ拡張するときの区間数を表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setForwardPeriod(forwardPeriod: number): void;'
+    parameters:
+    - id: forwardPeriod
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setIntercept(intercept)
+  uid: ExcelScript!ExcelScript.ChartTrendline#setIntercept:member(1)
+  package: ExcelScript!
+  fullName: setIntercept(intercept)
+  summary: 近似曲線の切片値を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setIntercept(intercept: number): void;'
+    parameters:
+    - id: intercept
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setMovingAveragePeriod(movingAveragePeriod)
+  uid: ExcelScript!ExcelScript.ChartTrendline#setMovingAveragePeriod:member(1)
+  package: ExcelScript!
+  fullName: setMovingAveragePeriod(movingAveragePeriod)
+  summary: グラフの近似曲線の期間を表します。 MovingAverage 型の近似曲線にのみ適用されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setMovingAveragePeriod(movingAveragePeriod: number): void;'
+    parameters:
+    - id: movingAveragePeriod
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setName(name)
+  uid: ExcelScript!ExcelScript.ChartTrendline#setName:member(1)
+  package: ExcelScript!
+  fullName: setName(name)
+  summary: 近似曲線の名前を表します。 文字列値または null 値 (値を自動的に設定する場合) に設定できます。 戻り値は常に文字列です。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setName(name: string): void;'
+    parameters:
+    - id: name
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setPolynomialOrder(polynomialOrder)
+  uid: ExcelScript!ExcelScript.ChartTrendline#setPolynomialOrder:member(1)
+  package: ExcelScript!
+  fullName: setPolynomialOrder(polynomialOrder)
+  summary: グラフの近似曲線の順序を表します。 多項式型の近似曲線にのみ適用されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setPolynomialOrder(polynomialOrder: number): void;'
+    parameters:
+    - id: polynomialOrder
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setShowEquation(showEquation)
+  uid: ExcelScript!ExcelScript.ChartTrendline#setShowEquation:member(1)
+  package: ExcelScript!
+  fullName: setShowEquation(showEquation)
+  summary: true の場合、グラフに近似曲線の数式が表示されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setShowEquation(showEquation: boolean): void;'
+    parameters:
+    - id: showEquation
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setShowRSquared(showRSquared)
+  uid: ExcelScript!ExcelScript.ChartTrendline#setShowRSquared:member(1)
+  package: ExcelScript!
+  fullName: setShowRSquared(showRSquared)
+  summary: true の場合、グラフに近似曲線の R-2 乗値が表示されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setShowRSquared(showRSquared: boolean): void;'
+    parameters:
+    - id: showRSquared
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setType(type)
+  uid: ExcelScript!ExcelScript.ChartTrendline#setType:member(1)
+  package: ExcelScript!
+  fullName: setType(type)
+  summary: グラフの近似曲線の種類を表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setType(type: ChartTrendlineType): void;'
+    parameters:
+    - id: type
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ChartTrendlineType:enum" />
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: f529a31774e6430cd11a32826f876b48d7c3c43c
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49416003"

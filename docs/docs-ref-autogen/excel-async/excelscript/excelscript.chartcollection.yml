@@ -1,33 +1,130 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartCollection:interface'
-    summary: ワークシート上のすべてのグラフ オブジェクトのコレクション。
-    name: Excel.ChartCollection
-    fullName: Excel.ChartCollection
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.ChartCollection#add:member(1)'
-      - 'excel!Excel.ChartCollection#count:member'
-      - 'excel!Excel.ChartCollection#getCount:member(1)'
-      - 'excel!Excel.ChartCollection#getItem:member(1)'
-      - 'excel!Excel.ChartCollection#getItemAt:member(1)'
-      - 'excel!Excel.ChartCollection#getItemOrNullObject:member(1)'
-      - 'excel!Excel.ChartCollection#load:member(1)'
-  - uid: 'excel!Excel.ChartCollection#add:member(1)'
-    summary: 新しいグラフを作成します。
-    name: 'add(type, sourceData, seriesBy)'
-    fullName: 'add(type, sourceData, seriesBy)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        add(
-                    type:
-                        | ChartType
+### YamlMime:TSType
+name: Excel.ChartCollection
+uid: excel!Excel.ChartCollection:interface
+package: excel!
+fullName: Excel.ChartCollection
+summary: ワークシート上のすべてのグラフ オブジェクトのコレクション。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: count
+  uid: excel!Excel.ChartCollection#count:member
+  package: excel!
+  fullName: count
+  summary: ワークシート上のグラフの数を返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly count: number;'
+    return:
+      type: number
+methods:
+- name: add(type, sourceData, seriesBy)
+  uid: excel!Excel.ChartCollection#add:member(1)
+  package: excel!
+  fullName: add(type, sourceData, seriesBy)
+  summary: 新しいグラフを作成します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      add(
+                  type:
+                      | ChartType
+                      | "Invalid"
+                      | "ColumnClustered"
+                      | "ColumnStacked"
+                      | "ColumnStacked100"
+                      | "3DColumnClustered"
+                      | "3DColumnStacked"
+                      | "3DColumnStacked100"
+                      | "BarClustered"
+                      | "BarStacked"
+                      | "BarStacked100"
+                      | "3DBarClustered"
+                      | "3DBarStacked"
+                      | "3DBarStacked100"
+                      | "LineStacked"
+                      | "LineStacked100"
+                      | "LineMarkers"
+                      | "LineMarkersStacked"
+                      | "LineMarkersStacked100"
+                      | "PieOfPie"
+                      | "PieExploded"
+                      | "3DPieExploded"
+                      | "BarOfPie"
+                      | "XyscatterSmooth"
+                      | "XyscatterSmoothNoMarkers"
+                      | "XyscatterLines"
+                      | "XyscatterLinesNoMarkers"
+                      | "AreaStacked"
+                      | "AreaStacked100"
+                      | "3DAreaStacked"
+                      | "3DAreaStacked100"
+                      | "DoughnutExploded"
+                      | "RadarMarkers"
+                      | "RadarFilled"
+                      | "Surface"
+                      | "SurfaceWireframe"
+                      | "SurfaceTopView"
+                      | "SurfaceTopViewWireframe"
+                      | "Bubble"
+                      | "Bubble3DEffect"
+                      | "StockHLC"
+                      | "StockOHLC"
+                      | "StockVHLC"
+                      | "StockVOHLC"
+                      | "CylinderColClustered"
+                      | "CylinderColStacked"
+                      | "CylinderColStacked100"
+                      | "CylinderBarClustered"
+                      | "CylinderBarStacked"
+                      | "CylinderBarStacked100"
+                      | "CylinderCol"
+                      | "ConeColClustered"
+                      | "ConeColStacked"
+                      | "ConeColStacked100"
+                      | "ConeBarClustered"
+                      | "ConeBarStacked"
+                      | "ConeBarStacked100"
+                      | "ConeCol"
+                      | "PyramidColClustered"
+                      | "PyramidColStacked"
+                      | "PyramidColStacked100"
+                      | "PyramidBarClustered"
+                      | "PyramidBarStacked"
+                      | "PyramidBarStacked100"
+                      | "PyramidCol"
+                      | "3DColumn"
+                      | "Line"
+                      | "3DLine"
+                      | "3DPie"
+                      | "Pie"
+                      | "Xyscatter"
+                      | "3DArea"
+                      | "Area"
+                      | "Doughnut"
+                      | "Radar"
+                      | "Histogram"
+                      | "Boxwhisker"
+                      | "Pareto"
+                      | "RegionMap"
+                      | "Treemap"
+                      | "Waterfall"
+                      | "Sunburst"
+                      | "Funnel",
+                  sourceData: Range,
+                  seriesBy?: ChartSeriesBy | "Auto" | "Columns" | "Rows"
+              ): Chart;
+    parameters:
+    - id: type
+      description: グラフの種類を表します。 詳細については、「ChartType」を参照してください。
+      type: >-
+        | <xref uid="excel!Excel.ChartType:enum" />
                         | "Invalid"
                         | "ColumnClustered"
                         | "ColumnStacked"
@@ -109,493 +206,101 @@ items:
                         | "Treemap"
                         | "Waterfall"
                         | "Sunburst"
-                        | "Funnel",
-                    sourceData: Range,
-                    seriesBy?: ChartSeriesBy | "Auto" | "Columns" | "Rows"
-                ): Chart;
-      return:
-        type:
-          - 'excel!Excel.Chart:interface'
-        description: ''
-      parameters:
-        - id: type
-          description: グラフの種類を表します。 詳細については、「ChartType」を参照してください。
-          type:
-            - 'excel!Excel.ChartCollection#add~0:complex'
-        - id: sourceData
-          description: データ ソースに対応する Range オブジェクトです。
-          type:
-            - 'excel!Excel.Range:interface'
-        - id: seriesBy
-          description: 省略可能。 列や行がグラフのデータ系列として使用される方法を指定します。 詳細については、「Excel Chart系列」を参照してください。
-          type:
-            - 'excel!Excel.ChartCollection#add~1:complex'
-  - uid: 'excel!Excel.ChartCollection#count:member'
-    summary: ワークシート上のグラフの数を返します。
-    name: count
-    fullName: count
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly count: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ChartCollection#getCount:member(1)'
-    summary: ワークシート上のグラフの数を返します。
-    name: getCount()
-    fullName: getCount()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCount(): ClientResult<number>;'
-      return:
-        type:
-          - 'excel!Excel.ChartCollection#getCount~0:complex'
-        description: ''
-  - uid: 'excel!Excel.ChartCollection#getItem:member(1)'
-    summary: グラフ名を使用してグラフを取得します。 同じ名前の複数のグラフがある場合は、最初の 1 つが返されます。
-    name: getItem(name)
-    fullName: getItem(name)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItem(name: string): Chart;'
-      return:
-        type:
-          - 'excel!Excel.Chart:interface'
-        description: ''
-      parameters:
-        - id: name
-          description: 取得するグラフの名前。
-          type:
-            - string
-  - uid: 'excel!Excel.ChartCollection#getItemAt:member(1)'
-    summary: コレクション内での位置を基にグラフを取得します。
-    name: getItemAt(index)
-    fullName: getItemAt(index)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItemAt(index: number): Chart;'
-      return:
-        type:
-          - 'excel!Excel.Chart:interface'
-        description: ''
-      parameters:
-        - id: index
-          description: 取得するオブジェクトのインデックス値。 0 を起点とする番号になります。
-          type:
-            - number
-  - uid: 'excel!Excel.ChartCollection#getItemOrNullObject:member(1)'
-    summary: グラフ名を使用してグラフを取得します。 同じ名前の複数のグラフがある場合は、最初の 1 つが返されます。 グラフが存在しない場合は、null オブジェクトが返されます。
-    name: getItemOrNullObject(name)
-    fullName: getItemOrNullObject(name)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItemOrNullObject(name: string): Chart;'
-      return:
-        type:
-          - 'excel!Excel.Chart:interface'
-        description: ''
-      parameters:
-        - id: name
-          description: 取得するグラフの名前。
-          type:
-            - string
-  - uid: 'excel!Excel.ChartCollection#load:member(1)'
-    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
-          type:
-            - 'string | string[]'
-references:
-  - uid: 'excel!Excel.Chart:interface'
-    name: Chart
-    fullName: Excel.Chart
-  - uid: 'excel!Excel.ChartCollection#add~0:complex'
-    name: |-
-      | ChartType
-                      | "Invalid"
-                      | "ColumnClustered"
-                      | "ColumnStacked"
-                      | "ColumnStacked100"
-                      | "3DColumnClustered"
-                      | "3DColumnStacked"
-                      | "3DColumnStacked100"
-                      | "BarClustered"
-                      | "BarStacked"
-                      | "BarStacked100"
-                      | "3DBarClustered"
-                      | "3DBarStacked"
-                      | "3DBarStacked100"
-                      | "LineStacked"
-                      | "LineStacked100"
-                      | "LineMarkers"
-                      | "LineMarkersStacked"
-                      | "LineMarkersStacked100"
-                      | "PieOfPie"
-                      | "PieExploded"
-                      | "3DPieExploded"
-                      | "BarOfPie"
-                      | "XyscatterSmooth"
-                      | "XyscatterSmoothNoMarkers"
-                      | "XyscatterLines"
-                      | "XyscatterLinesNoMarkers"
-                      | "AreaStacked"
-                      | "AreaStacked100"
-                      | "3DAreaStacked"
-                      | "3DAreaStacked100"
-                      | "DoughnutExploded"
-                      | "RadarMarkers"
-                      | "RadarFilled"
-                      | "Surface"
-                      | "SurfaceWireframe"
-                      | "SurfaceTopView"
-                      | "SurfaceTopViewWireframe"
-                      | "Bubble"
-                      | "Bubble3DEffect"
-                      | "StockHLC"
-                      | "StockOHLC"
-                      | "StockVHLC"
-                      | "StockVOHLC"
-                      | "CylinderColClustered"
-                      | "CylinderColStacked"
-                      | "CylinderColStacked100"
-                      | "CylinderBarClustered"
-                      | "CylinderBarStacked"
-                      | "CylinderBarStacked100"
-                      | "CylinderCol"
-                      | "ConeColClustered"
-                      | "ConeColStacked"
-                      | "ConeColStacked100"
-                      | "ConeBarClustered"
-                      | "ConeBarStacked"
-                      | "ConeBarStacked100"
-                      | "ConeCol"
-                      | "PyramidColClustered"
-                      | "PyramidColStacked"
-                      | "PyramidColStacked100"
-                      | "PyramidBarClustered"
-                      | "PyramidBarStacked"
-                      | "PyramidBarStacked100"
-                      | "PyramidCol"
-                      | "3DColumn"
-                      | "Line"
-                      | "3DLine"
-                      | "3DPie"
-                      | "Pie"
-                      | "Xyscatter"
-                      | "3DArea"
-                      | "Area"
-                      | "Doughnut"
-                      | "Radar"
-                      | "Histogram"
-                      | "Boxwhisker"
-                      | "Pareto"
-                      | "RegionMap"
-                      | "Treemap"
-                      | "Waterfall"
-                      | "Sunburst"
-                      | "Funnel"
-    fullName: |-
-      | Excel.ChartType
-                      | "Invalid"
-                      | "ColumnClustered"
-                      | "ColumnStacked"
-                      | "ColumnStacked100"
-                      | "3DColumnClustered"
-                      | "3DColumnStacked"
-                      | "3DColumnStacked100"
-                      | "BarClustered"
-                      | "BarStacked"
-                      | "BarStacked100"
-                      | "3DBarClustered"
-                      | "3DBarStacked"
-                      | "3DBarStacked100"
-                      | "LineStacked"
-                      | "LineStacked100"
-                      | "LineMarkers"
-                      | "LineMarkersStacked"
-                      | "LineMarkersStacked100"
-                      | "PieOfPie"
-                      | "PieExploded"
-                      | "3DPieExploded"
-                      | "BarOfPie"
-                      | "XyscatterSmooth"
-                      | "XyscatterSmoothNoMarkers"
-                      | "XyscatterLines"
-                      | "XyscatterLinesNoMarkers"
-                      | "AreaStacked"
-                      | "AreaStacked100"
-                      | "3DAreaStacked"
-                      | "3DAreaStacked100"
-                      | "DoughnutExploded"
-                      | "RadarMarkers"
-                      | "RadarFilled"
-                      | "Surface"
-                      | "SurfaceWireframe"
-                      | "SurfaceTopView"
-                      | "SurfaceTopViewWireframe"
-                      | "Bubble"
-                      | "Bubble3DEffect"
-                      | "StockHLC"
-                      | "StockOHLC"
-                      | "StockVHLC"
-                      | "StockVOHLC"
-                      | "CylinderColClustered"
-                      | "CylinderColStacked"
-                      | "CylinderColStacked100"
-                      | "CylinderBarClustered"
-                      | "CylinderBarStacked"
-                      | "CylinderBarStacked100"
-                      | "CylinderCol"
-                      | "ConeColClustered"
-                      | "ConeColStacked"
-                      | "ConeColStacked100"
-                      | "ConeBarClustered"
-                      | "ConeBarStacked"
-                      | "ConeBarStacked100"
-                      | "ConeCol"
-                      | "PyramidColClustered"
-                      | "PyramidColStacked"
-                      | "PyramidColStacked100"
-                      | "PyramidBarClustered"
-                      | "PyramidBarStacked"
-                      | "PyramidBarStacked100"
-                      | "PyramidCol"
-                      | "3DColumn"
-                      | "Line"
-                      | "3DLine"
-                      | "3DPie"
-                      | "Pie"
-                      | "Xyscatter"
-                      | "3DArea"
-                      | "Area"
-                      | "Doughnut"
-                      | "Radar"
-                      | "Histogram"
-                      | "Boxwhisker"
-                      | "Pareto"
-                      | "RegionMap"
-                      | "Treemap"
-                      | "Waterfall"
-                      | "Sunburst"
-                      | "Funnel"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.ChartType:enum'
-        name: ChartType
-        fullName: Excel.ChartType
-      - name: |2-
-
-                          | "Invalid"
-                          | "ColumnClustered"
-                          | "ColumnStacked"
-                          | "ColumnStacked100"
-                          | "3DColumnClustered"
-                          | "3DColumnStacked"
-                          | "3DColumnStacked100"
-                          | "BarClustered"
-                          | "BarStacked"
-                          | "BarStacked100"
-                          | "3DBarClustered"
-                          | "3DBarStacked"
-                          | "3DBarStacked100"
-                          | "LineStacked"
-                          | "LineStacked100"
-                          | "LineMarkers"
-                          | "LineMarkersStacked"
-                          | "LineMarkersStacked100"
-                          | "PieOfPie"
-                          | "PieExploded"
-                          | "3DPieExploded"
-                          | "BarOfPie"
-                          | "XyscatterSmooth"
-                          | "XyscatterSmoothNoMarkers"
-                          | "XyscatterLines"
-                          | "XyscatterLinesNoMarkers"
-                          | "AreaStacked"
-                          | "AreaStacked100"
-                          | "3DAreaStacked"
-                          | "3DAreaStacked100"
-                          | "DoughnutExploded"
-                          | "RadarMarkers"
-                          | "RadarFilled"
-                          | "Surface"
-                          | "SurfaceWireframe"
-                          | "SurfaceTopView"
-                          | "SurfaceTopViewWireframe"
-                          | "Bubble"
-                          | "Bubble3DEffect"
-                          | "StockHLC"
-                          | "StockOHLC"
-                          | "StockVHLC"
-                          | "StockVOHLC"
-                          | "CylinderColClustered"
-                          | "CylinderColStacked"
-                          | "CylinderColStacked100"
-                          | "CylinderBarClustered"
-                          | "CylinderBarStacked"
-                          | "CylinderBarStacked100"
-                          | "CylinderCol"
-                          | "ConeColClustered"
-                          | "ConeColStacked"
-                          | "ConeColStacked100"
-                          | "ConeBarClustered"
-                          | "ConeBarStacked"
-                          | "ConeBarStacked100"
-                          | "ConeCol"
-                          | "PyramidColClustered"
-                          | "PyramidColStacked"
-                          | "PyramidColStacked100"
-                          | "PyramidBarClustered"
-                          | "PyramidBarStacked"
-                          | "PyramidBarStacked100"
-                          | "PyramidCol"
-                          | "3DColumn"
-                          | "Line"
-                          | "3DLine"
-                          | "3DPie"
-                          | "Pie"
-                          | "Xyscatter"
-                          | "3DArea"
-                          | "Area"
-                          | "Doughnut"
-                          | "Radar"
-                          | "Histogram"
-                          | "Boxwhisker"
-                          | "Pareto"
-                          | "RegionMap"
-                          | "Treemap"
-                          | "Waterfall"
-                          | "Sunburst"
-                          | "Funnel"
-        fullName: |2-
-
-                          | "Invalid"
-                          | "ColumnClustered"
-                          | "ColumnStacked"
-                          | "ColumnStacked100"
-                          | "3DColumnClustered"
-                          | "3DColumnStacked"
-                          | "3DColumnStacked100"
-                          | "BarClustered"
-                          | "BarStacked"
-                          | "BarStacked100"
-                          | "3DBarClustered"
-                          | "3DBarStacked"
-                          | "3DBarStacked100"
-                          | "LineStacked"
-                          | "LineStacked100"
-                          | "LineMarkers"
-                          | "LineMarkersStacked"
-                          | "LineMarkersStacked100"
-                          | "PieOfPie"
-                          | "PieExploded"
-                          | "3DPieExploded"
-                          | "BarOfPie"
-                          | "XyscatterSmooth"
-                          | "XyscatterSmoothNoMarkers"
-                          | "XyscatterLines"
-                          | "XyscatterLinesNoMarkers"
-                          | "AreaStacked"
-                          | "AreaStacked100"
-                          | "3DAreaStacked"
-                          | "3DAreaStacked100"
-                          | "DoughnutExploded"
-                          | "RadarMarkers"
-                          | "RadarFilled"
-                          | "Surface"
-                          | "SurfaceWireframe"
-                          | "SurfaceTopView"
-                          | "SurfaceTopViewWireframe"
-                          | "Bubble"
-                          | "Bubble3DEffect"
-                          | "StockHLC"
-                          | "StockOHLC"
-                          | "StockVHLC"
-                          | "StockVOHLC"
-                          | "CylinderColClustered"
-                          | "CylinderColStacked"
-                          | "CylinderColStacked100"
-                          | "CylinderBarClustered"
-                          | "CylinderBarStacked"
-                          | "CylinderBarStacked100"
-                          | "CylinderCol"
-                          | "ConeColClustered"
-                          | "ConeColStacked"
-                          | "ConeColStacked100"
-                          | "ConeBarClustered"
-                          | "ConeBarStacked"
-                          | "ConeBarStacked100"
-                          | "ConeCol"
-                          | "PyramidColClustered"
-                          | "PyramidColStacked"
-                          | "PyramidColStacked100"
-                          | "PyramidBarClustered"
-                          | "PyramidBarStacked"
-                          | "PyramidBarStacked100"
-                          | "PyramidCol"
-                          | "3DColumn"
-                          | "Line"
-                          | "3DLine"
-                          | "3DPie"
-                          | "Pie"
-                          | "Xyscatter"
-                          | "3DArea"
-                          | "Area"
-                          | "Doughnut"
-                          | "Radar"
-                          | "Histogram"
-                          | "Boxwhisker"
-                          | "Pareto"
-                          | "RegionMap"
-                          | "Treemap"
-                          | "Waterfall"
-                          | "Sunburst"
-                          | "Funnel"
-  - uid: 'excel!Excel.Range:interface'
-    name: Range
-    fullName: Excel.Range
-  - uid: 'excel!Excel.ChartCollection#add~1:complex'
-    name: ChartSeriesBy | "Auto" | "Columns" | "Rows"
-    fullName: Excel.ChartSeriesBy | "Auto" | "Columns" | "Rows"
-    spec.typeScript:
-      - uid: 'excel!Excel.ChartSeriesBy:enum'
-        name: ChartSeriesBy
-        fullName: Excel.ChartSeriesBy
-      - name: |2-
-           | "Auto" | "Columns" | "Rows"
-                  
-        fullName: |2-
-           | "Auto" | "Columns" | "Rows"
-                  
-  - uid: 'excel!Excel.ChartCollection#getCount~0:complex'
-    name: ClientResult<number>
-    fullName: Excel.ClientResult<number>
-    spec.typeScript:
-      - uid: 'excel!Excel.ClientResult:interface'
-        name: ClientResult
-        fullName: Excel.ClientResult
-      - name: <number>
-        fullName: <number>
+                        | "Funnel"
+    - id: sourceData
+      description: データ ソースに対応する Range オブジェクトです。
+      type: <xref uid="excel!Excel.Range:interface" />
+    - id: seriesBy
+      description: 省略可能。 列や行がグラフのデータ系列として使用される方法を指定します。 詳細については、「Excel Chart系列」を参照してください。
+      type: "<xref uid=\"excel!Excel.ChartSeriesBy:enum\" /> | \"Auto\" | \"Columns\" | \"Rows\"\n        "
+    return:
+      type: <xref uid="excel!Excel.Chart:interface" />
+      description: ''
+- name: getCount()
+  uid: excel!Excel.ChartCollection#getCount:member(1)
+  package: excel!
+  fullName: getCount()
+  summary: ワークシート上のグラフの数を返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCount(): ClientResult<number>;'
+    return:
+      type: <xref uid="excel!Excel.ClientResult:interface" />&lt;number&gt;
+      description: ''
+- name: getItem(name)
+  uid: excel!Excel.ChartCollection#getItem:member(1)
+  package: excel!
+  fullName: getItem(name)
+  summary: グラフ名を使用してグラフを取得します。 同じ名前の複数のグラフがある場合は、最初の 1 つが返されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getItem(name: string): Chart;'
+    parameters:
+    - id: name
+      description: 取得するグラフの名前。
+      type: string
+    return:
+      type: <xref uid="excel!Excel.Chart:interface" />
+      description: ''
+- name: getItemAt(index)
+  uid: excel!Excel.ChartCollection#getItemAt:member(1)
+  package: excel!
+  fullName: getItemAt(index)
+  summary: コレクション内での位置を基にグラフを取得します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getItemAt(index: number): Chart;'
+    parameters:
+    - id: index
+      description: 取得するオブジェクトのインデックス値。 0 を起点とする番号になります。
+      type: number
+    return:
+      type: <xref uid="excel!Excel.Chart:interface" />
+      description: ''
+- name: getItemOrNullObject(name)
+  uid: excel!Excel.ChartCollection#getItemOrNullObject:member(1)
+  package: excel!
+  fullName: getItemOrNullObject(name)
+  summary: グラフ名を使用してグラフを取得します。 同じ名前の複数のグラフがある場合は、最初の 1 つが返されます。 グラフが存在しない場合は、null オブジェクトが返されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getItemOrNullObject(name: string): Chart;'
+    parameters:
+    - id: name
+      description: 取得するグラフの名前。
+      type: string
+    return:
+      type: <xref uid="excel!Excel.Chart:interface" />
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.ChartCollection#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: オブジェクトの指定されたプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、`context.sync()` を呼び出す必要があります。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: b1bcd314063b4f2d029431cd051a5b282afcee78
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49417688"

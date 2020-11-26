@@ -1,35 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ConditionalIconCriterionOperator:enum'
-    summary: 各アイコンの条件の演算子を表します。
-    name: Excel.ConditionalIconCriterionOperator
-    fullName: Excel.ConditionalIconCriterionOperator
-    langs:
-      - typeScript
-    type: enum
-    package: excel!
-    children:
-      - 'excel!Excel.ConditionalIconCriterionOperator.greaterThan:member'
-      - 'excel!Excel.ConditionalIconCriterionOperator.greaterThanOrEqual:member'
-      - 'excel!Excel.ConditionalIconCriterionOperator.invalid:member'
-  - uid: 'excel!Excel.ConditionalIconCriterionOperator.greaterThan:member'
-    name: greaterThan
-    fullName: greaterThan
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GreaterThan"'
-  - uid: 'excel!Excel.ConditionalIconCriterionOperator.greaterThanOrEqual:member'
-    name: greaterThanOrEqual
-    fullName: greaterThanOrEqual
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"GreaterThanOrEqual"'
-  - uid: 'excel!Excel.ConditionalIconCriterionOperator.invalid:member'
-    name: invalid
-    fullName: invalid
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Invalid"'
+### YamlMime:TSEnum
+name: Excel.ConditionalIconCriterionOperator
+uid: excel!Excel.ConditionalIconCriterionOperator:enum
+package: excel!
+fullName: Excel.ConditionalIconCriterionOperator
+summary: 各アイコンの条件の演算子を表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: greaterThan
+  uid: excel!Excel.ConditionalIconCriterionOperator.greaterThan:member
+  package: excel!
+  summary: ''
+- name: greaterThanOrEqual
+  uid: excel!Excel.ConditionalIconCriterionOperator.greaterThanOrEqual:member
+  package: excel!
+  summary: ''
+- name: invalid
+  uid: excel!Excel.ConditionalIconCriterionOperator.invalid:member
+  package: excel!
+  summary: ''
+metadata:
+  ms.openlocfilehash: c96918454ca67870a105778efe8398bd09a30786
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49416485"

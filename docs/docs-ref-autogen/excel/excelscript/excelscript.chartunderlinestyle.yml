@@ -1,24 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ChartUnderlineStyle:enum'
-    name: ExcelScript.ChartUnderlineStyle
-    fullName: ExcelScript.ChartUnderlineStyle
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ChartUnderlineStyle.none:member'
-      - 'ExcelScript!ExcelScript.ChartUnderlineStyle.single:member'
-  - uid: 'ExcelScript!ExcelScript.ChartUnderlineStyle.none:member'
-    name: none
-    fullName: none
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartUnderlineStyle.single:member'
-    name: single
-    fullName: single
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.ChartUnderlineStyle
+uid: ExcelScript!ExcelScript.ChartUnderlineStyle:enum
+package: ExcelScript!
+fullName: ExcelScript.ChartUnderlineStyle
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: none
+  uid: ExcelScript!ExcelScript.ChartUnderlineStyle.none:member
+  package: ExcelScript!
+  summary: ''
+- name: single
+  uid: ExcelScript!ExcelScript.ChartUnderlineStyle.single:member
+  package: ExcelScript!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 7e228558c6e4b8d465a7c05d5b2d911e41b2e4fa
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49416828"

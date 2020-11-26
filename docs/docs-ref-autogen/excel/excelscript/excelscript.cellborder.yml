@@ -1,70 +1,66 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.CellBorder:interface'
-    summary: 'で返される1つの境界線のプロパティを表します。`getCellProperties`<!-- -->, `getRowProperties`<!-- -->、 `getColumnProperties` またはの border プロパティの入力パラメーター`setCellProperties`<!-- -->, `setRowProperties`<!-- -->そして`setColumnProperties`<!-- -->.'
-    name: ExcelScript.CellBorder
-    fullName: ExcelScript.CellBorder
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.CellBorder#color:member'
-      - 'ExcelScript!ExcelScript.CellBorder#style:member'
-      - 'ExcelScript!ExcelScript.CellBorder#tintAndShade:member'
-      - 'ExcelScript!ExcelScript.CellBorder#weight:member'
-  - uid: 'ExcelScript!ExcelScript.CellBorder#color:member'
-    summary: 1 つの境界線の `color` プロパティを表します。
-    name: color
-    fullName: color
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'color?: string;'
-      return:
-        type:
-          - string
-  - uid: 'ExcelScript!ExcelScript.CellBorder#style:member'
-    summary: 1 つの境界線の `style` プロパティを表します。
-    name: style
-    fullName: style
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'style?: BorderLineStyle;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.BorderLineStyle:enum'
-  - uid: 'ExcelScript!ExcelScript.CellBorder#tintAndShade:member'
-    summary: 1 つの境界線の `tintAndShade` プロパティを表します。
-    name: tintAndShade
-    fullName: tintAndShade
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'tintAndShade?: number;'
-      return:
-        type:
-          - number
-  - uid: 'ExcelScript!ExcelScript.CellBorder#weight:member'
-    summary: 1 つの境界線の `weight` プロパティを表します。
-    name: weight
-    fullName: weight
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'weight?: BorderWeight;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.BorderWeight:enum'
-references:
-  - uid: 'ExcelScript!ExcelScript.BorderLineStyle:enum'
-    name: BorderLineStyle
-    fullName: ExcelScript.BorderLineStyle
-  - uid: 'ExcelScript!ExcelScript.BorderWeight:enum'
-    name: BorderWeight
-    fullName: ExcelScript.BorderWeight
+### YamlMime:TSType
+name: ExcelScript.CellBorder
+uid: ExcelScript!ExcelScript.CellBorder:interface
+package: ExcelScript!
+fullName: ExcelScript.CellBorder
+summary: で返される1つの境界線のプロパティを表します。 `getCellProperties`<!-- -->, `getRowProperties`<!-- -->、 `getColumnProperties` またはの border プロパティの入力パラメーター `setCellProperties`<!-- -->, `setRowProperties`<!-- -->そして `setColumnProperties`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: color
+  uid: ExcelScript!ExcelScript.CellBorder#color:member
+  package: ExcelScript!
+  fullName: color
+  summary: 1 つの境界線の `color` プロパティを表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'color?: string;'
+    return:
+      type: string
+- name: style
+  uid: ExcelScript!ExcelScript.CellBorder#style:member
+  package: ExcelScript!
+  fullName: style
+  summary: 1 つの境界線の `style` プロパティを表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'style?: BorderLineStyle;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.BorderLineStyle:enum" />
+- name: tintAndShade
+  uid: ExcelScript!ExcelScript.CellBorder#tintAndShade:member
+  package: ExcelScript!
+  fullName: tintAndShade
+  summary: 1 つの境界線の `tintAndShade` プロパティを表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'tintAndShade?: number;'
+    return:
+      type: number
+- name: weight
+  uid: ExcelScript!ExcelScript.CellBorder#weight:member
+  package: ExcelScript!
+  fullName: weight
+  summary: 1 つの境界線の `weight` プロパティを表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'weight?: BorderWeight;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.BorderWeight:enum" />
+metadata:
+  ms.openlocfilehash: 5892c241cee81f97e1b52001d2d8cbb02d03f295
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49417185"

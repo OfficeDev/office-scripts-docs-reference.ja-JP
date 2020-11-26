@@ -1,46 +1,37 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ChartTitlePosition:enum'
-    summary: グラフ タイトルの位置を表します。
-    name: ExcelScript.ChartTitlePosition
-    fullName: ExcelScript.ChartTitlePosition
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ChartTitlePosition.automatic:member'
-      - 'ExcelScript!ExcelScript.ChartTitlePosition.bottom:member'
-      - 'ExcelScript!ExcelScript.ChartTitlePosition.left:member'
-      - 'ExcelScript!ExcelScript.ChartTitlePosition.right:member'
-      - 'ExcelScript!ExcelScript.ChartTitlePosition.top:member'
-  - uid: 'ExcelScript!ExcelScript.ChartTitlePosition.automatic:member'
-    name: automatic
-    fullName: automatic
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartTitlePosition.bottom:member'
-    name: bottom
-    fullName: bottom
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartTitlePosition.left:member'
-    name: left
-    fullName: left
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartTitlePosition.right:member'
-    name: right
-    fullName: right
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartTitlePosition.top:member'
-    name: top
-    fullName: top
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.ChartTitlePosition
+uid: ExcelScript!ExcelScript.ChartTitlePosition:enum
+package: ExcelScript!
+fullName: ExcelScript.ChartTitlePosition
+summary: グラフ タイトルの位置を表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: automatic
+  uid: ExcelScript!ExcelScript.ChartTitlePosition.automatic:member
+  package: ExcelScript!
+  summary: ''
+- name: bottom
+  uid: ExcelScript!ExcelScript.ChartTitlePosition.bottom:member
+  package: ExcelScript!
+  summary: ''
+- name: left
+  uid: ExcelScript!ExcelScript.ChartTitlePosition.left:member
+  package: ExcelScript!
+  summary: ''
+- name: right
+  uid: ExcelScript!ExcelScript.ChartTitlePosition.right:member
+  package: ExcelScript!
+  summary: ''
+- name: top
+  uid: ExcelScript!ExcelScript.ChartTitlePosition.top:member
+  package: ExcelScript!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 60f21cfbe32e2282c56f8e7a002eec0f27a9e95c
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49416849"

@@ -1,34 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.CalculationMode:enum'
-    name: ExcelScript.CalculationMode
-    fullName: ExcelScript.CalculationMode
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.CalculationMode.automatic:member'
-      - 'ExcelScript!ExcelScript.CalculationMode.automaticExceptTables:member'
-      - 'ExcelScript!ExcelScript.CalculationMode.manual:member'
-  - uid: 'ExcelScript!ExcelScript.CalculationMode.automatic:member'
-    summary: Excel で、関連するデータが変更されるたびに新しい数式の結果が計算される既定の再計算動作。
-    name: automatic
-    fullName: automatic
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.CalculationMode.automaticExceptTables:member'
-    summary: 数式がデータテーブルに含まれていない限り、関連するデータが変更されるたびに、新しい数式の結果を計算します。
-    name: automaticExceptTables
-    fullName: automaticExceptTables
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.CalculationMode.manual:member'
-    summary: 計算は、ユーザーまたはアドインが要求したときにのみ発生します。
-    name: manual
-    fullName: manual
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.CalculationMode
+uid: ExcelScript!ExcelScript.CalculationMode:enum
+package: ExcelScript!
+fullName: ExcelScript.CalculationMode
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: automatic
+  uid: ExcelScript!ExcelScript.CalculationMode.automatic:member
+  package: ExcelScript!
+  summary: Excel で、関連するデータが変更されるたびに新しい数式の結果が計算される既定の再計算動作。
+- name: automaticExceptTables
+  uid: ExcelScript!ExcelScript.CalculationMode.automaticExceptTables:member
+  package: ExcelScript!
+  summary: 数式がデータテーブルに含まれていない限り、関連するデータが変更されるたびに、新しい数式の結果を計算します。
+- name: manual
+  uid: ExcelScript!ExcelScript.CalculationMode.manual:member
+  package: ExcelScript!
+  summary: 計算は、ユーザーまたはアドインが要求したときにのみ発生します。
+metadata:
+  ms.openlocfilehash: 21802549487f1e9e5b59b90c31094a5d2cdfc0c5
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49417227"

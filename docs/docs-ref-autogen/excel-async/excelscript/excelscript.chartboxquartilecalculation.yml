@@ -1,27 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartBoxQuartileCalculation:enum'
-    summary: グラフ系列のレイアウトの四分位数の計算の種類を表します。 箱ひげ図にのみ適用されます。
-    name: Excel.ChartBoxQuartileCalculation
-    fullName: Excel.ChartBoxQuartileCalculation
-    langs:
-      - typeScript
-    type: enum
-    package: excel!
-    children:
-      - 'excel!Excel.ChartBoxQuartileCalculation.exclusive:member'
-      - 'excel!Excel.ChartBoxQuartileCalculation.inclusive:member'
-  - uid: 'excel!Excel.ChartBoxQuartileCalculation.exclusive:member'
-    name: exclusive
-    fullName: exclusive
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Exclusive"'
-  - uid: 'excel!Excel.ChartBoxQuartileCalculation.inclusive:member'
-    name: inclusive
-    fullName: inclusive
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Inclusive"'
+### YamlMime:TSEnum
+name: Excel.ChartBoxQuartileCalculation
+uid: excel!Excel.ChartBoxQuartileCalculation:enum
+package: excel!
+fullName: Excel.ChartBoxQuartileCalculation
+summary: グラフ系列のレイアウトの四分位数の計算の種類を表します。 箱ひげ図にのみ適用されます。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: exclusive
+  uid: excel!Excel.ChartBoxQuartileCalculation.exclusive:member
+  package: excel!
+  summary: ''
+- name: inclusive
+  uid: excel!Excel.ChartBoxQuartileCalculation.inclusive:member
+  package: excel!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 495e2610dac4e6330ba1e7112e93e1f307cf8475
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49417842"

@@ -1,26 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartAxisScaleType:enum'
-    name: Excel.ChartAxisScaleType
-    fullName: Excel.ChartAxisScaleType
-    langs:
-      - typeScript
-    type: enum
-    package: excel!
-    children:
-      - 'excel!Excel.ChartAxisScaleType.linear:member'
-      - 'excel!Excel.ChartAxisScaleType.logarithmic:member'
-  - uid: 'excel!Excel.ChartAxisScaleType.linear:member'
-    name: linear
-    fullName: linear
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Linear"'
-  - uid: 'excel!Excel.ChartAxisScaleType.logarithmic:member'
-    name: logarithmic
-    fullName: logarithmic
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Logarithmic"'
+### YamlMime:TSEnum
+name: Excel.ChartAxisScaleType
+uid: excel!Excel.ChartAxisScaleType:enum
+package: excel!
+fullName: Excel.ChartAxisScaleType
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: linear
+  uid: excel!Excel.ChartAxisScaleType.linear:member
+  package: excel!
+  summary: ''
+- name: logarithmic
+  uid: excel!Excel.ChartAxisScaleType.logarithmic:member
+  package: excel!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 8a5736dd391e5fadc77763ae138187debd639a83
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49417681"

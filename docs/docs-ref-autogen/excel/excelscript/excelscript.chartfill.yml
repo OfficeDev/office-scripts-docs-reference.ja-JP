@@ -1,44 +1,48 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ChartFill:interface'
-    summary: グラフ要素の塗りつぶしの書式設定を表します。
-    name: ExcelScript.ChartFill
-    fullName: ExcelScript.ChartFill
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ChartFill#clear:member(1)'
-      - 'ExcelScript!ExcelScript.ChartFill#setSolidColor:member(1)'
-  - uid: 'ExcelScript!ExcelScript.ChartFill#clear:member(1)'
-    summary: グラフ要素の塗りつぶしの色をクリアします。
-    name: clear()
-    fullName: clear()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'clear(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartFill#setSolidColor:member(1)'
-    summary: グラフ要素の塗りつぶしの書式設定を均一な色に設定します。
-    name: setSolidColor(color)
-    fullName: setSolidColor(color)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setSolidColor(color: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: color
-          description: '背景の色を表す HTML カラーコード。フォーム \# RRGGBB (例: "FFA500")、または名前付きの html 色 (例: 「オレンジ」)。'
-          type:
-            - string
+### YamlMime:TSType
+name: ExcelScript.ChartFill
+uid: ExcelScript!ExcelScript.ChartFill:interface
+package: ExcelScript!
+fullName: ExcelScript.ChartFill
+summary: グラフ要素の塗りつぶしの書式設定を表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: clear()
+  uid: ExcelScript!ExcelScript.ChartFill#clear:member(1)
+  package: ExcelScript!
+  fullName: clear()
+  summary: グラフ要素の塗りつぶしの色をクリアします。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'clear(): void;'
+    return:
+      type: void
+      description: ''
+- name: setSolidColor(color)
+  uid: ExcelScript!ExcelScript.ChartFill#setSolidColor:member(1)
+  package: ExcelScript!
+  fullName: setSolidColor(color)
+  summary: グラフ要素の塗りつぶしの書式設定を均一な色に設定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setSolidColor(color: string): void;'
+    parameters:
+    - id: color
+      description: '背景の色を表す HTML カラーコード。フォーム \# RRGGBB (例: "FFA500")、または名前付きの html 色 (例: 「オレンジ」)。'
+      type: string
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: d33b09062079157785b412603d9f36f7736e6d92
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49416891"

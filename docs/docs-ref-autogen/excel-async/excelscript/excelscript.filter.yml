@@ -1,341 +1,136 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Filter:interface'
-    summary: テーブルの列のフィルター処理を管理します。
-    name: Excel.Filter
-    fullName: Excel.Filter
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.Filter#apply:member(1)'
-      - 'excel!Excel.Filter#applyBottomItemsFilter:member(1)'
-      - 'excel!Excel.Filter#applyBottomPercentFilter:member(1)'
-      - 'excel!Excel.Filter#applyCellColorFilter:member(1)'
-      - 'excel!Excel.Filter#applyCustomFilter:member(1)'
-      - 'excel!Excel.Filter#applyDynamicFilter:member(1)'
-      - 'excel!Excel.Filter#applyFontColorFilter:member(1)'
-      - 'excel!Excel.Filter#applyIconFilter:member(1)'
-      - 'excel!Excel.Filter#applyTopItemsFilter:member(1)'
-      - 'excel!Excel.Filter#applyTopPercentFilter:member(1)'
-      - 'excel!Excel.Filter#applyValuesFilter:member(1)'
-      - 'excel!Excel.Filter#clear:member(1)'
-      - 'excel!Excel.Filter#criteria:member'
-      - 'excel!Excel.Filter#load:member(1)'
-  - uid: 'excel!Excel.Filter#apply:member(1)'
-    summary: 指定の列に、指定したフィルター条件を適用します。
-    name: apply(criteria)
-    fullName: apply(criteria)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'apply(criteria: FilterCriteria): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: criteria
-          description: 適用する基準。
-          type:
-            - 'excel!Excel.FilterCriteria:interface'
-  - uid: 'excel!Excel.Filter#applyBottomItemsFilter:member(1)'
-    summary: 指定した数の要素の列に "下位アイテム" フィルターを適用します。
-    name: applyBottomItemsFilter(count)
-    fullName: applyBottomItemsFilter(count)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'applyBottomItemsFilter(count: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: count
-          description: 表示する下位からの要素の数。
-          type:
-            - number
-  - uid: 'excel!Excel.Filter#applyBottomPercentFilter:member(1)'
-    summary: 指定した割合の要素の列に "下位パーセント" フィルターを適用します。
-    name: applyBottomPercentFilter(percent)
-    fullName: applyBottomPercentFilter(percent)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'applyBottomPercentFilter(percent: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: percent
-          description: 表示する下位からの要素のパーセンテージ。
-          type:
-            - number
-  - uid: 'excel!Excel.Filter#applyCellColorFilter:member(1)'
-    summary: 指定した色の列に "セルの色" フィルターを適用します。
-    name: applyCellColorFilter(color)
-    fullName: applyCellColorFilter(color)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'applyCellColorFilter(color: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: color
-          description: 表示するセルの背景色です。
-          type:
-            - string
-  - uid: 'excel!Excel.Filter#applyCustomFilter:member(1)'
-    summary: 指定した抽出条件の文字列の列に "アイコン" フィルターを適用します。
-    name: 'applyCustomFilter(criteria1, criteria2, oper)'
-    fullName: 'applyCustomFilter(criteria1, criteria2, oper)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        applyCustomFilter(
-                    criteria1: string,
-                    criteria2?: string,
-                    oper?: FilterOperator | "And" | "Or"
-                ): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: criteria1
-          description: 最初の条件の文字列です。
-          type:
-            - string
-        - id: criteria2
-          description: 省略可能。 2 つ目の条件の文字列です。
-          type:
-            - string
-        - id: oper
-          description: 省略可能。 2 つの条件を結合する方法を記述する演算子です。
-          type:
-            - 'excel!Excel.Filter#applyCustomFilter~0:complex'
-  - uid: 'excel!Excel.Filter#applyDynamicFilter:member(1)'
-    summary: 列に "動的" フィルターを適用します。
-    name: applyDynamicFilter(criteria)
-    fullName: applyDynamicFilter(criteria)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        applyDynamicFilter(
-                    criteria:
-                        | DynamicFilterCriteria
-                        | "Unknown"
-                        | "AboveAverage"
-                        | "AllDatesInPeriodApril"
-                        | "AllDatesInPeriodAugust"
-                        | "AllDatesInPeriodDecember"
-                        | "AllDatesInPeriodFebruray"
-                        | "AllDatesInPeriodJanuary"
-                        | "AllDatesInPeriodJuly"
-                        | "AllDatesInPeriodJune"
-                        | "AllDatesInPeriodMarch"
-                        | "AllDatesInPeriodMay"
-                        | "AllDatesInPeriodNovember"
-                        | "AllDatesInPeriodOctober"
-                        | "AllDatesInPeriodQuarter1"
-                        | "AllDatesInPeriodQuarter2"
-                        | "AllDatesInPeriodQuarter3"
-                        | "AllDatesInPeriodQuarter4"
-                        | "AllDatesInPeriodSeptember"
-                        | "BelowAverage"
-                        | "LastMonth"
-                        | "LastQuarter"
-                        | "LastWeek"
-                        | "LastYear"
-                        | "NextMonth"
-                        | "NextQuarter"
-                        | "NextWeek"
-                        | "NextYear"
-                        | "ThisMonth"
-                        | "ThisQuarter"
-                        | "ThisWeek"
-                        | "ThisYear"
-                        | "Today"
-                        | "Tomorrow"
-                        | "YearToDate"
-                        | "Yesterday"
-                ): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: criteria
-          description: 適用する動的な条件。
-          type:
-            - 'excel!Excel.Filter#applyDynamicFilter~0:complex'
-  - uid: 'excel!Excel.Filter#applyFontColorFilter:member(1)'
-    summary: 指定した色の列に "フォントの色" フィルターを適用します。
-    name: applyFontColorFilter(color)
-    fullName: applyFontColorFilter(color)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'applyFontColorFilter(color: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: color
-          description: 表示するセルのフォントの色です。
-          type:
-            - string
-  - uid: 'excel!Excel.Filter#applyIconFilter:member(1)'
-    summary: 指定したアイコンの列に "アイコン" フィルターを適用します。
-    name: applyIconFilter(icon)
-    fullName: applyIconFilter(icon)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'applyIconFilter(icon: Icon): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: icon
-          description: 表示するセルのアイコンです。
-          type:
-            - 'excel!Excel.Icon:interface'
-  - uid: 'excel!Excel.Filter#applyTopItemsFilter:member(1)'
-    summary: 指定した数の要素の列に "上位アイテム" フィルターを適用します。
-    name: applyTopItemsFilter(count)
-    fullName: applyTopItemsFilter(count)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'applyTopItemsFilter(count: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: count
-          description: 表示する上位からの要素の数。
-          type:
-            - number
-  - uid: 'excel!Excel.Filter#applyTopPercentFilter:member(1)'
-    summary: 指定した割合の要素の列に "上位パーセント" フィルターを適用します。
-    name: applyTopPercentFilter(percent)
-    fullName: applyTopPercentFilter(percent)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'applyTopPercentFilter(percent: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: percent
-          description: 表示する上位からの要素のパーセンテージ。
-          type:
-            - number
-  - uid: 'excel!Excel.Filter#applyValuesFilter:member(1)'
-    summary: 指定した値の列に "値" フィルターを適用します。
-    name: applyValuesFilter(values)
-    fullName: applyValuesFilter(values)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'applyValuesFilter(values: Array<string | FilterDatetime>): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: values
-          description: 表示する値のリスト。 文字列の配列、または Excel の FilterDateTime オブジェクトの配列を指定する必要があります。
-          type:
-            - 'excel!Excel.Filter#applyValuesFilter~0:complex'
-  - uid: 'excel!Excel.Filter#clear:member(1)'
-    summary: 指定した列に適用されているフィルターをクリアします。
-    name: clear()
-    fullName: clear()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'clear(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.Filter#criteria:member'
-    summary: 指定した列に現在適用されているフィルターです。
-    name: criteria
-    fullName: criteria
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly criteria: FilterCriteria;'
-      return:
-        type:
-          - 'excel!Excel.FilterCriteria:interface'
-  - uid: 'excel!Excel.Filter#load:member(1)'
-    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
-          type:
-            - 'string | string[]'
-references:
-  - uid: 'excel!Excel.FilterCriteria:interface'
-    name: FilterCriteria
-    fullName: Excel.FilterCriteria
-  - uid: 'excel!Excel.Filter#applyCustomFilter~0:complex'
-    name: FilterOperator | "And" | "Or"
-    fullName: Excel.FilterOperator | "And" | "Or"
-    spec.typeScript:
-      - uid: 'excel!Excel.FilterOperator:enum'
-        name: FilterOperator
-        fullName: Excel.FilterOperator
-      - name: |2-
-           | "And" | "Or"
-                  
-        fullName: |2-
-           | "And" | "Or"
-                  
-  - uid: 'excel!Excel.Filter#applyDynamicFilter~0:complex'
-    name: |-
-      | DynamicFilterCriteria
+### YamlMime:TSType
+name: Excel.Filter
+uid: excel!Excel.Filter:interface
+package: excel!
+fullName: Excel.Filter
+summary: テーブルの列のフィルター処理を管理します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: criteria
+  uid: excel!Excel.Filter#criteria:member
+  package: excel!
+  fullName: criteria
+  summary: 指定した列に現在適用されているフィルターです。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly criteria: FilterCriteria;'
+    return:
+      type: <xref uid="excel!Excel.FilterCriteria:interface" />
+methods:
+- name: apply(criteria)
+  uid: excel!Excel.Filter#apply:member(1)
+  package: excel!
+  fullName: apply(criteria)
+  summary: 指定の列に、指定したフィルター条件を適用します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'apply(criteria: FilterCriteria): void;'
+    parameters:
+    - id: criteria
+      description: 適用する基準。
+      type: <xref uid="excel!Excel.FilterCriteria:interface" />
+    return:
+      type: void
+      description: ''
+- name: applyBottomItemsFilter(count)
+  uid: excel!Excel.Filter#applyBottomItemsFilter:member(1)
+  package: excel!
+  fullName: applyBottomItemsFilter(count)
+  summary: 指定した数の要素の列に "下位アイテム" フィルターを適用します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'applyBottomItemsFilter(count: number): void;'
+    parameters:
+    - id: count
+      description: 表示する下位からの要素の数。
+      type: number
+    return:
+      type: void
+      description: ''
+- name: applyBottomPercentFilter(percent)
+  uid: excel!Excel.Filter#applyBottomPercentFilter:member(1)
+  package: excel!
+  fullName: applyBottomPercentFilter(percent)
+  summary: 指定した割合の要素の列に "下位パーセント" フィルターを適用します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'applyBottomPercentFilter(percent: number): void;'
+    parameters:
+    - id: percent
+      description: 表示する下位からの要素のパーセンテージ。
+      type: number
+    return:
+      type: void
+      description: ''
+- name: applyCellColorFilter(color)
+  uid: excel!Excel.Filter#applyCellColorFilter:member(1)
+  package: excel!
+  fullName: applyCellColorFilter(color)
+  summary: 指定した色の列に "セルの色" フィルターを適用します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'applyCellColorFilter(color: string): void;'
+    parameters:
+    - id: color
+      description: 表示するセルの背景色です。
+      type: string
+    return:
+      type: void
+      description: ''
+- name: applyCustomFilter(criteria1, criteria2, oper)
+  uid: excel!Excel.Filter#applyCustomFilter:member(1)
+  package: excel!
+  fullName: applyCustomFilter(criteria1, criteria2, oper)
+  summary: 指定した抽出条件の文字列の列に "アイコン" フィルターを適用します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      applyCustomFilter(
+                  criteria1: string,
+                  criteria2?: string,
+                  oper?: FilterOperator | "And" | "Or"
+              ): void;
+    parameters:
+    - id: criteria1
+      description: 最初の条件の文字列です。
+      type: string
+    - id: criteria2
+      description: 省略可能。 2 つ目の条件の文字列です。
+      type: string
+    - id: oper
+      description: 省略可能。 2 つの条件を結合する方法を記述する演算子です。
+      type: "<xref uid=\"excel!Excel.FilterOperator:enum\" /> | \"And\" | \"Or\"\n        "
+    return:
+      type: void
+      description: ''
+- name: applyDynamicFilter(criteria)
+  uid: excel!Excel.Filter#applyDynamicFilter:member(1)
+  package: excel!
+  fullName: applyDynamicFilter(criteria)
+  summary: 列に "動的" フィルターを適用します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      applyDynamicFilter(
+                  criteria:
+                      | DynamicFilterCriteria
                       | "Unknown"
                       | "AboveAverage"
                       | "AllDatesInPeriodApril"
@@ -371,139 +166,133 @@ references:
                       | "Tomorrow"
                       | "YearToDate"
                       | "Yesterday"
-    fullName: |-
-      | Excel.DynamicFilterCriteria
-                      | "Unknown"
-                      | "AboveAverage"
-                      | "AllDatesInPeriodApril"
-                      | "AllDatesInPeriodAugust"
-                      | "AllDatesInPeriodDecember"
-                      | "AllDatesInPeriodFebruray"
-                      | "AllDatesInPeriodJanuary"
-                      | "AllDatesInPeriodJuly"
-                      | "AllDatesInPeriodJune"
-                      | "AllDatesInPeriodMarch"
-                      | "AllDatesInPeriodMay"
-                      | "AllDatesInPeriodNovember"
-                      | "AllDatesInPeriodOctober"
-                      | "AllDatesInPeriodQuarter1"
-                      | "AllDatesInPeriodQuarter2"
-                      | "AllDatesInPeriodQuarter3"
-                      | "AllDatesInPeriodQuarter4"
-                      | "AllDatesInPeriodSeptember"
-                      | "BelowAverage"
-                      | "LastMonth"
-                      | "LastQuarter"
-                      | "LastWeek"
-                      | "LastYear"
-                      | "NextMonth"
-                      | "NextQuarter"
-                      | "NextWeek"
-                      | "NextYear"
-                      | "ThisMonth"
-                      | "ThisQuarter"
-                      | "ThisWeek"
-                      | "ThisYear"
-                      | "Today"
-                      | "Tomorrow"
-                      | "YearToDate"
-                      | "Yesterday"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.DynamicFilterCriteria:enum'
-        name: DynamicFilterCriteria
-        fullName: Excel.DynamicFilterCriteria
-      - name: |2-
-
-                          | "Unknown"
-                          | "AboveAverage"
-                          | "AllDatesInPeriodApril"
-                          | "AllDatesInPeriodAugust"
-                          | "AllDatesInPeriodDecember"
-                          | "AllDatesInPeriodFebruray"
-                          | "AllDatesInPeriodJanuary"
-                          | "AllDatesInPeriodJuly"
-                          | "AllDatesInPeriodJune"
-                          | "AllDatesInPeriodMarch"
-                          | "AllDatesInPeriodMay"
-                          | "AllDatesInPeriodNovember"
-                          | "AllDatesInPeriodOctober"
-                          | "AllDatesInPeriodQuarter1"
-                          | "AllDatesInPeriodQuarter2"
-                          | "AllDatesInPeriodQuarter3"
-                          | "AllDatesInPeriodQuarter4"
-                          | "AllDatesInPeriodSeptember"
-                          | "BelowAverage"
-                          | "LastMonth"
-                          | "LastQuarter"
-                          | "LastWeek"
-                          | "LastYear"
-                          | "NextMonth"
-                          | "NextQuarter"
-                          | "NextWeek"
-                          | "NextYear"
-                          | "ThisMonth"
-                          | "ThisQuarter"
-                          | "ThisWeek"
-                          | "ThisYear"
-                          | "Today"
-                          | "Tomorrow"
-                          | "YearToDate"
-                          | "Yesterday"
-                  
-        fullName: |2-
-
-                          | "Unknown"
-                          | "AboveAverage"
-                          | "AllDatesInPeriodApril"
-                          | "AllDatesInPeriodAugust"
-                          | "AllDatesInPeriodDecember"
-                          | "AllDatesInPeriodFebruray"
-                          | "AllDatesInPeriodJanuary"
-                          | "AllDatesInPeriodJuly"
-                          | "AllDatesInPeriodJune"
-                          | "AllDatesInPeriodMarch"
-                          | "AllDatesInPeriodMay"
-                          | "AllDatesInPeriodNovember"
-                          | "AllDatesInPeriodOctober"
-                          | "AllDatesInPeriodQuarter1"
-                          | "AllDatesInPeriodQuarter2"
-                          | "AllDatesInPeriodQuarter3"
-                          | "AllDatesInPeriodQuarter4"
-                          | "AllDatesInPeriodSeptember"
-                          | "BelowAverage"
-                          | "LastMonth"
-                          | "LastQuarter"
-                          | "LastWeek"
-                          | "LastYear"
-                          | "NextMonth"
-                          | "NextQuarter"
-                          | "NextWeek"
-                          | "NextYear"
-                          | "ThisMonth"
-                          | "ThisQuarter"
-                          | "ThisWeek"
-                          | "ThisYear"
-                          | "Today"
-                          | "Tomorrow"
-                          | "YearToDate"
-                          | "Yesterday"
-                  
-  - uid: 'excel!Excel.Icon:interface'
-    name: Icon
-    fullName: Excel.Icon
-  - uid: 'excel!Excel.Filter#applyValuesFilter~0:complex'
-    name: Array<string | FilterDatetime>
-    fullName: Array<string | Excel.FilterDatetime>
-    spec.typeScript:
-      - uid: '!Array:interface'
-        name: Array
-        fullName: Array
-      - name: '<string | '
-        fullName: '<string | '
-      - uid: 'excel!Excel.FilterDatetime:interface'
-        name: FilterDatetime
-        fullName: Excel.FilterDatetime
-      - name: '>'
-        fullName: '>'
+              ): void;
+    parameters:
+    - id: criteria
+      description: 適用する動的な条件。
+      type: "| <xref uid=\"excel!Excel.DynamicFilterCriteria:enum\" />\n                | \"Unknown\"\n                | \"AboveAverage\"\n                | \"AllDatesInPeriodApril\"\n                | \"AllDatesInPeriodAugust\"\n                | \"AllDatesInPeriodDecember\"\n                | \"AllDatesInPeriodFebruray\"\n                | \"AllDatesInPeriodJanuary\"\n                | \"AllDatesInPeriodJuly\"\n                | \"AllDatesInPeriodJune\"\n                | \"AllDatesInPeriodMarch\"\n                | \"AllDatesInPeriodMay\"\n                | \"AllDatesInPeriodNovember\"\n                | \"AllDatesInPeriodOctober\"\n                | \"AllDatesInPeriodQuarter1\"\n                | \"AllDatesInPeriodQuarter2\"\n                | \"AllDatesInPeriodQuarter3\"\n                | \"AllDatesInPeriodQuarter4\"\n                | \"AllDatesInPeriodSeptember\"\n                | \"BelowAverage\"\n                | \"LastMonth\"\n                | \"LastQuarter\"\n                | \"LastWeek\"\n                | \"LastYear\"\n                | \"NextMonth\"\n                | \"NextQuarter\"\n                | \"NextWeek\"\n                | \"NextYear\"\n                | \"ThisMonth\"\n                | \"ThisQuarter\"\n                | \"ThisWeek\"\n                | \"ThisYear\"\n                | \"Today\"\n                | \"Tomorrow\"\n                | \"YearToDate\"\n                | \"Yesterday\"\n        "
+    return:
+      type: void
+      description: ''
+- name: applyFontColorFilter(color)
+  uid: excel!Excel.Filter#applyFontColorFilter:member(1)
+  package: excel!
+  fullName: applyFontColorFilter(color)
+  summary: 指定した色の列に "フォントの色" フィルターを適用します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'applyFontColorFilter(color: string): void;'
+    parameters:
+    - id: color
+      description: 表示するセルのフォントの色です。
+      type: string
+    return:
+      type: void
+      description: ''
+- name: applyIconFilter(icon)
+  uid: excel!Excel.Filter#applyIconFilter:member(1)
+  package: excel!
+  fullName: applyIconFilter(icon)
+  summary: 指定したアイコンの列に "アイコン" フィルターを適用します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'applyIconFilter(icon: Icon): void;'
+    parameters:
+    - id: icon
+      description: 表示するセルのアイコンです。
+      type: <xref uid="excel!Excel.Icon:interface" />
+    return:
+      type: void
+      description: ''
+- name: applyTopItemsFilter(count)
+  uid: excel!Excel.Filter#applyTopItemsFilter:member(1)
+  package: excel!
+  fullName: applyTopItemsFilter(count)
+  summary: 指定した数の要素の列に "上位アイテム" フィルターを適用します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'applyTopItemsFilter(count: number): void;'
+    parameters:
+    - id: count
+      description: 表示する上位からの要素の数。
+      type: number
+    return:
+      type: void
+      description: ''
+- name: applyTopPercentFilter(percent)
+  uid: excel!Excel.Filter#applyTopPercentFilter:member(1)
+  package: excel!
+  fullName: applyTopPercentFilter(percent)
+  summary: 指定した割合の要素の列に "上位パーセント" フィルターを適用します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'applyTopPercentFilter(percent: number): void;'
+    parameters:
+    - id: percent
+      description: 表示する上位からの要素のパーセンテージ。
+      type: number
+    return:
+      type: void
+      description: ''
+- name: applyValuesFilter(values)
+  uid: excel!Excel.Filter#applyValuesFilter:member(1)
+  package: excel!
+  fullName: applyValuesFilter(values)
+  summary: 指定した値の列に "値" フィルターを適用します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'applyValuesFilter(values: Array<string | FilterDatetime>): void;'
+    parameters:
+    - id: values
+      description: 表示する値のリスト。 文字列の配列、または Excel の FilterDateTime オブジェクトの配列を指定する必要があります。
+      type: Array&lt;string | <xref uid="excel!Excel.FilterDatetime:interface" />&gt;
+    return:
+      type: void
+      description: ''
+- name: clear()
+  uid: excel!Excel.Filter#clear:member(1)
+  package: excel!
+  fullName: clear()
+  summary: 指定した列に適用されているフィルターをクリアします。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'clear(): void;'
+    return:
+      type: void
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.Filter#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: オブジェクトの指定されたプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、`context.sync()` を呼び出す必要があります。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 222e4c9942375731c8ec1e012ea06c957bd857a0
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49417954"

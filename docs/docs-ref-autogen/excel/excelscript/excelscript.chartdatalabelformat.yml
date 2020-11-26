@@ -1,63 +1,57 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabelFormat:interface'
-    summary: グラフのデータ ラベルの書式設定プロパティをカプセル化します。
-    name: ExcelScript.ChartDataLabelFormat
-    fullName: ExcelScript.ChartDataLabelFormat
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ChartDataLabelFormat#getBorder:member(1)'
-      - 'ExcelScript!ExcelScript.ChartDataLabelFormat#getFill:member(1)'
-      - 'ExcelScript!ExcelScript.ChartDataLabelFormat#getFont:member(1)'
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabelFormat#getBorder:member(1)'
-    summary: グラフの罫線の書式設定 (色、線のスタイル、線の太さなど) を表します。
-    name: getBorder()
-    fullName: getBorder()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getBorder(): ChartBorder;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartBorder:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabelFormat#getFill:member(1)'
-    summary: 現在のグラフのデータ ラベルの塗りつぶしの書式を表します。
-    name: getFill()
-    fullName: getFill()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFill(): ChartFill;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartFill:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabelFormat#getFont:member(1)'
-    summary: グラフのデータ ラベルのフォント属性 (フォント名、フォント サイズ、色など) を表します。
-    name: getFont()
-    fullName: getFont()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFont(): ChartFont;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartFont:interface'
-        description: ''
-references:
-  - uid: 'ExcelScript!ExcelScript.ChartBorder:interface'
-    name: ChartBorder
-    fullName: ExcelScript.ChartBorder
-  - uid: 'ExcelScript!ExcelScript.ChartFill:interface'
-    name: ChartFill
-    fullName: ExcelScript.ChartFill
-  - uid: 'ExcelScript!ExcelScript.ChartFont:interface'
-    name: ChartFont
-    fullName: ExcelScript.ChartFont
+### YamlMime:TSType
+name: ExcelScript.ChartDataLabelFormat
+uid: ExcelScript!ExcelScript.ChartDataLabelFormat:interface
+package: ExcelScript!
+fullName: ExcelScript.ChartDataLabelFormat
+summary: グラフのデータ ラベルの書式設定プロパティをカプセル化します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getBorder()
+  uid: ExcelScript!ExcelScript.ChartDataLabelFormat#getBorder:member(1)
+  package: ExcelScript!
+  fullName: getBorder()
+  summary: グラフの罫線の書式設定 (色、線のスタイル、線の太さなど) を表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getBorder(): ChartBorder;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartBorder:interface" />
+      description: ''
+- name: getFill()
+  uid: ExcelScript!ExcelScript.ChartDataLabelFormat#getFill:member(1)
+  package: ExcelScript!
+  fullName: getFill()
+  summary: 現在のグラフのデータ ラベルの塗りつぶしの書式を表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFill(): ChartFill;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartFill:interface" />
+      description: ''
+- name: getFont()
+  uid: ExcelScript!ExcelScript.ChartDataLabelFormat#getFont:member(1)
+  package: ExcelScript!
+  fullName: getFont()
+  summary: グラフのデータ ラベルのフォント属性 (フォント名、フォント サイズ、色など) を表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFont(): ChartFont;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartFont:interface" />
+      description: ''
+metadata:
+  ms.openlocfilehash: 501c1c739325039d2c64c8389423749a8ce3f3b7
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49416961"

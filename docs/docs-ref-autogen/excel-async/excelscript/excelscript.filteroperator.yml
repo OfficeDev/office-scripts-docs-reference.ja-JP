@@ -1,26 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.FilterOperator:enum'
-    name: Excel.FilterOperator
-    fullName: Excel.FilterOperator
-    langs:
-      - typeScript
-    type: enum
-    package: excel!
-    children:
-      - 'excel!Excel.FilterOperator.and:member'
-      - 'excel!Excel.FilterOperator.or:member'
-  - uid: 'excel!Excel.FilterOperator.and:member'
-    name: and
-    fullName: and
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"And"'
-  - uid: 'excel!Excel.FilterOperator.or:member'
-    name: or
-    fullName: or
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Or"'
+### YamlMime:TSEnum
+name: Excel.FilterOperator
+uid: excel!Excel.FilterOperator:enum
+package: excel!
+fullName: Excel.FilterOperator
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: and
+  uid: excel!Excel.FilterOperator.and:member
+  package: excel!
+  summary: ''
+- name: or
+  uid: excel!Excel.FilterOperator.or:member
+  package: excel!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 2c034300d87bc4e69c57b39cbe194ed0eecb58b5
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49416170"
