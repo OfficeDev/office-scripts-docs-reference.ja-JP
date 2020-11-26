@@ -1,447 +1,400 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ChartTitle:interface'
-    summary: グラフのグラフ タイトルのオブジェクトを表します。
-    name: ExcelScript.ChartTitle
-    fullName: ExcelScript.ChartTitle
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ChartTitle#getFormat:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#getHeight:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#getHorizontalAlignment:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#getLeft:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#getOverlay:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#getPosition:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#getShowShadow:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#getSubstring:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#getText:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#getTextOrientation:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#getTop:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#getVerticalAlignment:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#getVisible:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#getWidth:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#setFormula:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#setHorizontalAlignment:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#setLeft:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#setOverlay:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#setPosition:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#setShowShadow:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#setText:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#setTextOrientation:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#setTop:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#setVerticalAlignment:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTitle#setVisible:member(1)'
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#getFormat:member(1)'
-    summary: 塗りつぶしとフォントの書式設定を含む、グラフタイトルの書式設定を表します。
-    name: getFormat()
-    fullName: getFormat()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFormat(): ChartTitleFormat;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartTitleFormat:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#getHeight:member(1)'
-    summary: グラフ タイトルの高さ (ポイント数) を返します。 グラフのタイトルが表示されていない場合は Null。
-    name: getHeight()
-    fullName: getHeight()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getHeight(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#getHorizontalAlignment:member(1)'
-    summary: グラフタイトルの水平方向の配置を指定します。
-    name: getHorizontalAlignment()
-    fullName: getHorizontalAlignment()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getHorizontalAlignment(): ChartTextHorizontalAlignment;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartTextHorizontalAlignment:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#getLeft:member(1)'
-    summary: グラフタイトルの左端からグラフエリアの左端までの距離をポイント単位で指定します。 グラフのタイトルが表示されていない場合は Null。
-    name: getLeft()
-    fullName: getLeft()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getLeft(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#getOverlay:member(1)'
-    summary: グラフタイトルがグラフを重ねて表示するかどうかを指定します。
-    name: getOverlay()
-    fullName: getOverlay()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getOverlay(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#getPosition:member(1)'
-    summary: グラフ タイトルの位置を表します。 詳細については、「ExcelScript. Charttitle Position」を参照してください。
-    name: getPosition()
-    fullName: getPosition()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPosition(): ChartTitlePosition;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartTitlePosition:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#getShowShadow:member(1)'
-    summary: グラフ タイトルが影付きにされるかどうかを指定するブール値を表します。
-    name: getShowShadow()
-    fullName: getShowShadow()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getShowShadow(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#getSubstring:member(1)'
-    summary: グラフタイトルのサブ文字列を取得します。 改行 '<!-- -->\\<!-- -->n ' は1文字もカウントします。
-    name: 'getSubstring(start, length)'
-    fullName: 'getSubstring(start, length)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSubstring(start: number, length: number): ChartFormatString;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartFormatString:interface'
-        description: ''
-      parameters:
-        - id: start
-          description: 取得するサブ文字列の開始位置を指定します。 Position は0から始まります。
-          type:
-            - number
-        - id: length
-          description: 取得するサブ文字列の長さ。
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#getText:member(1)'
-    summary: グラフのタイトルテキストを指定します。
-    name: getText()
-    fullName: getText()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getText(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#getTextOrientation:member(1)'
-    summary: グラフタイトルのテキストを表示する角度を指定します。 この値は、-90 ~ 90 の整数、または垂直方向のテキストの整数の180のいずれかである必要があります。
-    name: getTextOrientation()
-    fullName: getTextOrientation()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTextOrientation(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#getTop:member(1)'
-    summary: グラフタイトルの上端からグラフエリアの上端までの距離をポイント単位で指定します。 グラフのタイトルが表示されていない場合は Null。
-    name: getTop()
-    fullName: getTop()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTop(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#getVerticalAlignment:member(1)'
-    summary: グラフタイトルの垂直方向の配置を指定します。 詳細については、「ExcelScript. Charttext縦書きの配置」を参照してください。
-    name: getVerticalAlignment()
-    fullName: getVerticalAlignment()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getVerticalAlignment(): ChartTextVerticalAlignment;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartTextVerticalAlignment:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#getVisible:member(1)'
-    summary: グラフのタイトルが shape.visibile かどうかを指定します。
-    name: getVisible()
-    fullName: getVisible()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getVisible(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#getWidth:member(1)'
-    summary: グラフのタイトルの幅をポイント単位で指定します。 グラフのタイトルが表示されていない場合は Null。
-    name: getWidth()
-    fullName: getWidth()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getWidth(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#setFormula:member(1)'
-    summary: A1 スタイルの表記法を使用するグラフ タイトルの数式を表す文字列値を設定します。
-    name: setFormula(formula)
-    fullName: setFormula(formula)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setFormula(formula: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: formula
-          description: 設定する数式を表す文字列型 (string) の値を指定します。
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#setHorizontalAlignment:member(1)'
-    summary: グラフタイトルの水平方向の配置を指定します。
-    name: setHorizontalAlignment(horizontalAlignment)
-    fullName: setHorizontalAlignment(horizontalAlignment)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        setHorizontalAlignment(
-                    horizontalAlignment: ChartTextHorizontalAlignment
-                ): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: horizontalAlignment
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ChartTextHorizontalAlignment:enum'
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#setLeft:member(1)'
-    summary: グラフタイトルの左端からグラフエリアの左端までの距離をポイント単位で指定します。 グラフのタイトルが表示されていない場合は Null。
-    name: setLeft(left)
-    fullName: setLeft(left)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setLeft(left: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: left
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#setOverlay:member(1)'
-    summary: グラフタイトルがグラフを重ねて表示するかどうかを指定します。
-    name: setOverlay(overlay)
-    fullName: setOverlay(overlay)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setOverlay(overlay: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: overlay
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#setPosition:member(1)'
-    summary: グラフ タイトルの位置を表します。 詳細については、「ExcelScript. Charttitle Position」を参照してください。
-    name: setPosition(position)
-    fullName: setPosition(position)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setPosition(position: ChartTitlePosition): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: position
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ChartTitlePosition:enum'
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#setShowShadow:member(1)'
-    summary: グラフ タイトルが影付きにされるかどうかを指定するブール値を表します。
-    name: setShowShadow(showShadow)
-    fullName: setShowShadow(showShadow)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setShowShadow(showShadow: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: showShadow
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#setText:member(1)'
-    summary: グラフのタイトルテキストを指定します。
-    name: setText(text)
-    fullName: setText(text)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setText(text: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: text
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#setTextOrientation:member(1)'
-    summary: グラフタイトルのテキストを表示する角度を指定します。 この値は、-90 ~ 90 の整数、または垂直方向のテキストの整数の180のいずれかである必要があります。
-    name: setTextOrientation(textOrientation)
-    fullName: setTextOrientation(textOrientation)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setTextOrientation(textOrientation: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: textOrientation
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#setTop:member(1)'
-    summary: グラフタイトルの上端からグラフエリアの上端までの距離をポイント単位で指定します。 グラフのタイトルが表示されていない場合は Null。
-    name: setTop(top)
-    fullName: setTop(top)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setTop(top: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: top
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#setVerticalAlignment:member(1)'
-    summary: グラフタイトルの垂直方向の配置を指定します。 詳細については、「ExcelScript. Charttext縦書きの配置」を参照してください。
-    name: setVerticalAlignment(verticalAlignment)
-    fullName: setVerticalAlignment(verticalAlignment)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        setVerticalAlignment(
-                    verticalAlignment: ChartTextVerticalAlignment
-                ): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: verticalAlignment
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ChartTextVerticalAlignment:enum'
-  - uid: 'ExcelScript!ExcelScript.ChartTitle#setVisible:member(1)'
-    summary: グラフのタイトルが shape.visibile かどうかを指定します。
-    name: setVisible(visible)
-    fullName: setVisible(visible)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setVisible(visible: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: visible
-          description: ''
-          type:
-            - boolean
-references:
-  - uid: 'ExcelScript!ExcelScript.ChartTitleFormat:interface'
-    name: ChartTitleFormat
-    fullName: ExcelScript.ChartTitleFormat
-  - uid: 'ExcelScript!ExcelScript.ChartTextHorizontalAlignment:enum'
-    name: ChartTextHorizontalAlignment
-    fullName: ExcelScript.ChartTextHorizontalAlignment
-  - uid: 'ExcelScript!ExcelScript.ChartTitlePosition:enum'
-    name: ChartTitlePosition
-    fullName: ExcelScript.ChartTitlePosition
-  - uid: 'ExcelScript!ExcelScript.ChartFormatString:interface'
-    name: ChartFormatString
-    fullName: ExcelScript.ChartFormatString
-  - uid: 'ExcelScript!ExcelScript.ChartTextVerticalAlignment:enum'
-    name: ChartTextVerticalAlignment
-    fullName: ExcelScript.ChartTextVerticalAlignment
+### YamlMime:TSType
+name: ExcelScript.ChartTitle
+uid: ExcelScript!ExcelScript.ChartTitle:interface
+package: ExcelScript!
+fullName: ExcelScript.ChartTitle
+summary: グラフのグラフ タイトルのオブジェクトを表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getFormat()
+  uid: ExcelScript!ExcelScript.ChartTitle#getFormat:member(1)
+  package: ExcelScript!
+  fullName: getFormat()
+  summary: 塗りつぶしとフォントの書式設定を含む、グラフタイトルの書式設定を表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFormat(): ChartTitleFormat;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartTitleFormat:interface" />
+      description: ''
+- name: getHeight()
+  uid: ExcelScript!ExcelScript.ChartTitle#getHeight:member(1)
+  package: ExcelScript!
+  fullName: getHeight()
+  summary: グラフ タイトルの高さ (ポイント数) を返します。 グラフのタイトルが表示されていない場合は Null。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getHeight(): number;'
+    return:
+      type: number
+      description: ''
+- name: getHorizontalAlignment()
+  uid: ExcelScript!ExcelScript.ChartTitle#getHorizontalAlignment:member(1)
+  package: ExcelScript!
+  fullName: getHorizontalAlignment()
+  summary: グラフタイトルの水平方向の配置を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getHorizontalAlignment(): ChartTextHorizontalAlignment;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartTextHorizontalAlignment:enum" />
+      description: ''
+- name: getLeft()
+  uid: ExcelScript!ExcelScript.ChartTitle#getLeft:member(1)
+  package: ExcelScript!
+  fullName: getLeft()
+  summary: グラフタイトルの左端からグラフエリアの左端までの距離をポイント単位で指定します。 グラフのタイトルが表示されていない場合は Null。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLeft(): number;'
+    return:
+      type: number
+      description: ''
+- name: getOverlay()
+  uid: ExcelScript!ExcelScript.ChartTitle#getOverlay:member(1)
+  package: ExcelScript!
+  fullName: getOverlay()
+  summary: グラフタイトルがグラフを重ねて表示するかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getOverlay(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getPosition()
+  uid: ExcelScript!ExcelScript.ChartTitle#getPosition:member(1)
+  package: ExcelScript!
+  fullName: getPosition()
+  summary: グラフ タイトルの位置を表します。 詳細については、「ExcelScript. Charttitle Position」を参照してください。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPosition(): ChartTitlePosition;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartTitlePosition:enum" />
+      description: ''
+- name: getShowShadow()
+  uid: ExcelScript!ExcelScript.ChartTitle#getShowShadow:member(1)
+  package: ExcelScript!
+  fullName: getShowShadow()
+  summary: グラフ タイトルが影付きにされるかどうかを指定するブール値を表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getShowShadow(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getSubstring(start, length)
+  uid: ExcelScript!ExcelScript.ChartTitle#getSubstring:member(1)
+  package: ExcelScript!
+  fullName: getSubstring(start, length)
+  summary: グラフタイトルのサブ文字列を取得します。 改行 '<!-- -->\\<!-- -->n ' は1文字もカウントします。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getSubstring(start: number, length: number): ChartFormatString;'
+    parameters:
+    - id: start
+      description: 取得するサブ文字列の開始位置を指定します。 Position は0から始まります。
+      type: number
+    - id: length
+      description: 取得するサブ文字列の長さ。
+      type: number
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartFormatString:interface" />
+      description: ''
+- name: getText()
+  uid: ExcelScript!ExcelScript.ChartTitle#getText:member(1)
+  package: ExcelScript!
+  fullName: getText()
+  summary: グラフのタイトルテキストを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getText(): string;'
+    return:
+      type: string
+      description: ''
+- name: getTextOrientation()
+  uid: ExcelScript!ExcelScript.ChartTitle#getTextOrientation:member(1)
+  package: ExcelScript!
+  fullName: getTextOrientation()
+  summary: グラフタイトルのテキストを表示する角度を指定します。 この値は、-90 ~ 90 の整数、または垂直方向のテキストの整数の180のいずれかである必要があります。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTextOrientation(): number;'
+    return:
+      type: number
+      description: ''
+- name: getTop()
+  uid: ExcelScript!ExcelScript.ChartTitle#getTop:member(1)
+  package: ExcelScript!
+  fullName: getTop()
+  summary: グラフタイトルの上端からグラフエリアの上端までの距離をポイント単位で指定します。 グラフのタイトルが表示されていない場合は Null。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTop(): number;'
+    return:
+      type: number
+      description: ''
+- name: getVerticalAlignment()
+  uid: ExcelScript!ExcelScript.ChartTitle#getVerticalAlignment:member(1)
+  package: ExcelScript!
+  fullName: getVerticalAlignment()
+  summary: グラフタイトルの垂直方向の配置を指定します。 詳細については、「ExcelScript. Charttext縦書きの配置」を参照してください。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getVerticalAlignment(): ChartTextVerticalAlignment;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartTextVerticalAlignment:enum" />
+      description: ''
+- name: getVisible()
+  uid: ExcelScript!ExcelScript.ChartTitle#getVisible:member(1)
+  package: ExcelScript!
+  fullName: getVisible()
+  summary: グラフのタイトルが shape.visibile かどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getVisible(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getWidth()
+  uid: ExcelScript!ExcelScript.ChartTitle#getWidth:member(1)
+  package: ExcelScript!
+  fullName: getWidth()
+  summary: グラフのタイトルの幅をポイント単位で指定します。 グラフのタイトルが表示されていない場合は Null。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getWidth(): number;'
+    return:
+      type: number
+      description: ''
+- name: setFormula(formula)
+  uid: ExcelScript!ExcelScript.ChartTitle#setFormula:member(1)
+  package: ExcelScript!
+  fullName: setFormula(formula)
+  summary: A1 スタイルの表記法を使用するグラフ タイトルの数式を表す文字列値を設定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setFormula(formula: string): void;'
+    parameters:
+    - id: formula
+      description: 設定する数式を表す文字列型 (string) の値を指定します。
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setHorizontalAlignment(horizontalAlignment)
+  uid: ExcelScript!ExcelScript.ChartTitle#setHorizontalAlignment:member(1)
+  package: ExcelScript!
+  fullName: setHorizontalAlignment(horizontalAlignment)
+  summary: グラフタイトルの水平方向の配置を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      setHorizontalAlignment(
+                  horizontalAlignment: ChartTextHorizontalAlignment
+              ): void;
+    parameters:
+    - id: horizontalAlignment
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ChartTextHorizontalAlignment:enum" />
+    return:
+      type: void
+      description: ''
+- name: setLeft(left)
+  uid: ExcelScript!ExcelScript.ChartTitle#setLeft:member(1)
+  package: ExcelScript!
+  fullName: setLeft(left)
+  summary: グラフタイトルの左端からグラフエリアの左端までの距離をポイント単位で指定します。 グラフのタイトルが表示されていない場合は Null。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setLeft(left: number): void;'
+    parameters:
+    - id: left
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setOverlay(overlay)
+  uid: ExcelScript!ExcelScript.ChartTitle#setOverlay:member(1)
+  package: ExcelScript!
+  fullName: setOverlay(overlay)
+  summary: グラフタイトルがグラフを重ねて表示するかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setOverlay(overlay: boolean): void;'
+    parameters:
+    - id: overlay
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setPosition(position)
+  uid: ExcelScript!ExcelScript.ChartTitle#setPosition:member(1)
+  package: ExcelScript!
+  fullName: setPosition(position)
+  summary: グラフ タイトルの位置を表します。 詳細については、「ExcelScript. Charttitle Position」を参照してください。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setPosition(position: ChartTitlePosition): void;'
+    parameters:
+    - id: position
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ChartTitlePosition:enum" />
+    return:
+      type: void
+      description: ''
+- name: setShowShadow(showShadow)
+  uid: ExcelScript!ExcelScript.ChartTitle#setShowShadow:member(1)
+  package: ExcelScript!
+  fullName: setShowShadow(showShadow)
+  summary: グラフ タイトルが影付きにされるかどうかを指定するブール値を表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setShowShadow(showShadow: boolean): void;'
+    parameters:
+    - id: showShadow
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setText(text)
+  uid: ExcelScript!ExcelScript.ChartTitle#setText:member(1)
+  package: ExcelScript!
+  fullName: setText(text)
+  summary: グラフのタイトルテキストを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setText(text: string): void;'
+    parameters:
+    - id: text
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setTextOrientation(textOrientation)
+  uid: ExcelScript!ExcelScript.ChartTitle#setTextOrientation:member(1)
+  package: ExcelScript!
+  fullName: setTextOrientation(textOrientation)
+  summary: グラフタイトルのテキストを表示する角度を指定します。 この値は、-90 ~ 90 の整数、または垂直方向のテキストの整数の180のいずれかである必要があります。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setTextOrientation(textOrientation: number): void;'
+    parameters:
+    - id: textOrientation
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setTop(top)
+  uid: ExcelScript!ExcelScript.ChartTitle#setTop:member(1)
+  package: ExcelScript!
+  fullName: setTop(top)
+  summary: グラフタイトルの上端からグラフエリアの上端までの距離をポイント単位で指定します。 グラフのタイトルが表示されていない場合は Null。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setTop(top: number): void;'
+    parameters:
+    - id: top
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setVerticalAlignment(verticalAlignment)
+  uid: ExcelScript!ExcelScript.ChartTitle#setVerticalAlignment:member(1)
+  package: ExcelScript!
+  fullName: setVerticalAlignment(verticalAlignment)
+  summary: グラフタイトルの垂直方向の配置を指定します。 詳細については、「ExcelScript. Charttext縦書きの配置」を参照してください。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      setVerticalAlignment(
+                  verticalAlignment: ChartTextVerticalAlignment
+              ): void;
+    parameters:
+    - id: verticalAlignment
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ChartTextVerticalAlignment:enum" />
+    return:
+      type: void
+      description: ''
+- name: setVisible(visible)
+  uid: ExcelScript!ExcelScript.ChartTitle#setVisible:member(1)
+  package: ExcelScript!
+  fullName: setVisible(visible)
+  summary: グラフのタイトルが shape.visibile かどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setVisible(visible: boolean): void;'
+    parameters:
+    - id: visible
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 068cdd5d4997a8dcbd9b8aa9c66996f10ec1078f
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49416863"

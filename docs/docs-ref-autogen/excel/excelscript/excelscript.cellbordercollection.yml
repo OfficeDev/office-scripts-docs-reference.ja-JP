@@ -1,119 +1,114 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.CellBorderCollection:interface'
-    summary: 'のプロパティを表します。 `format.borders``getCellProperties`<!-- -->, `getRowProperties`<!-- -->、 `getColumnProperties` または `format.borders` の入力パラメーター`setCellProperties`<!-- -->, `setRowProperties`<!-- -->そして`setColumnProperties`<!-- -->.'
-    name: ExcelScript.CellBorderCollection
-    fullName: ExcelScript.CellBorderCollection
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.CellBorderCollection#bottom:member'
-      - 'ExcelScript!ExcelScript.CellBorderCollection#diagonalDown:member'
-      - 'ExcelScript!ExcelScript.CellBorderCollection#diagonalUp:member'
-      - 'ExcelScript!ExcelScript.CellBorderCollection#horizontal:member'
-      - 'ExcelScript!ExcelScript.CellBorderCollection#left:member'
-      - 'ExcelScript!ExcelScript.CellBorderCollection#right:member'
-      - 'ExcelScript!ExcelScript.CellBorderCollection#top:member'
-      - 'ExcelScript!ExcelScript.CellBorderCollection#vertical:member'
-  - uid: 'ExcelScript!ExcelScript.CellBorderCollection#bottom:member'
-    summary: '`format.borders.bottom` プロパティを表します。'
-    name: bottom
-    fullName: bottom
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'bottom?: CellBorder;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.CellBorder:interface'
-  - uid: 'ExcelScript!ExcelScript.CellBorderCollection#diagonalDown:member'
-    summary: '`format.borders.diagonalDown` プロパティを表します。'
-    name: diagonalDown
-    fullName: diagonalDown
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'diagonalDown?: CellBorder;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.CellBorder:interface'
-  - uid: 'ExcelScript!ExcelScript.CellBorderCollection#diagonalUp:member'
-    summary: '`format.borders.diagonalUp` プロパティを表します。'
-    name: diagonalUp
-    fullName: diagonalUp
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'diagonalUp?: CellBorder;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.CellBorder:interface'
-  - uid: 'ExcelScript!ExcelScript.CellBorderCollection#horizontal:member'
-    summary: '`format.borders.horizontal` プロパティを表します。'
-    name: horizontal
-    fullName: horizontal
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'horizontal?: CellBorder;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.CellBorder:interface'
-  - uid: 'ExcelScript!ExcelScript.CellBorderCollection#left:member'
-    summary: '`format.borders.left` プロパティを表します。'
-    name: left
-    fullName: left
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'left?: CellBorder;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.CellBorder:interface'
-  - uid: 'ExcelScript!ExcelScript.CellBorderCollection#right:member'
-    summary: '`format.borders.right` プロパティを表します。'
-    name: right
-    fullName: right
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'right?: CellBorder;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.CellBorder:interface'
-  - uid: 'ExcelScript!ExcelScript.CellBorderCollection#top:member'
-    summary: '`format.borders.top` プロパティを表します。'
-    name: top
-    fullName: top
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'top?: CellBorder;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.CellBorder:interface'
-  - uid: 'ExcelScript!ExcelScript.CellBorderCollection#vertical:member'
-    summary: '`format.borders.vertical` プロパティを表します。'
-    name: vertical
-    fullName: vertical
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'vertical?: CellBorder;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.CellBorder:interface'
-references:
-  - uid: 'ExcelScript!ExcelScript.CellBorder:interface'
-    name: CellBorder
-    fullName: ExcelScript.CellBorder
+### YamlMime:TSType
+name: ExcelScript.CellBorderCollection
+uid: ExcelScript!ExcelScript.CellBorderCollection:interface
+package: ExcelScript!
+fullName: ExcelScript.CellBorderCollection
+summary: のプロパティを表します。 `format.borders``getCellProperties`<!-- -->, `getRowProperties`<!-- -->、 `getColumnProperties` または `format.borders` の入力パラメーター `setCellProperties`<!-- -->, `setRowProperties`<!-- -->そして `setColumnProperties`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: bottom
+  uid: ExcelScript!ExcelScript.CellBorderCollection#bottom:member
+  package: ExcelScript!
+  fullName: bottom
+  summary: '`format.borders.bottom` プロパティを表します。'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'bottom?: CellBorder;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.CellBorder:interface" />
+- name: diagonalDown
+  uid: ExcelScript!ExcelScript.CellBorderCollection#diagonalDown:member
+  package: ExcelScript!
+  fullName: diagonalDown
+  summary: '`format.borders.diagonalDown` プロパティを表します。'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'diagonalDown?: CellBorder;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.CellBorder:interface" />
+- name: diagonalUp
+  uid: ExcelScript!ExcelScript.CellBorderCollection#diagonalUp:member
+  package: ExcelScript!
+  fullName: diagonalUp
+  summary: '`format.borders.diagonalUp` プロパティを表します。'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'diagonalUp?: CellBorder;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.CellBorder:interface" />
+- name: horizontal
+  uid: ExcelScript!ExcelScript.CellBorderCollection#horizontal:member
+  package: ExcelScript!
+  fullName: horizontal
+  summary: '`format.borders.horizontal` プロパティを表します。'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'horizontal?: CellBorder;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.CellBorder:interface" />
+- name: left
+  uid: ExcelScript!ExcelScript.CellBorderCollection#left:member
+  package: ExcelScript!
+  fullName: left
+  summary: '`format.borders.left` プロパティを表します。'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'left?: CellBorder;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.CellBorder:interface" />
+- name: right
+  uid: ExcelScript!ExcelScript.CellBorderCollection#right:member
+  package: ExcelScript!
+  fullName: right
+  summary: '`format.borders.right` プロパティを表します。'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'right?: CellBorder;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.CellBorder:interface" />
+- name: top
+  uid: ExcelScript!ExcelScript.CellBorderCollection#top:member
+  package: ExcelScript!
+  fullName: top
+  summary: '`format.borders.top` プロパティを表します。'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'top?: CellBorder;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.CellBorder:interface" />
+- name: vertical
+  uid: ExcelScript!ExcelScript.CellBorderCollection#vertical:member
+  package: ExcelScript!
+  fullName: vertical
+  summary: '`format.borders.vertical` プロパティを表します。'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'vertical?: CellBorder;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.CellBorder:interface" />
+metadata:
+  ms.openlocfilehash: 3d2dd1ddcda3070dc678ca01b9cabf7599a3cab5
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49417171"

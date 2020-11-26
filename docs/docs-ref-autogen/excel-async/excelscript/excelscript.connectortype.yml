@@ -1,34 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ConnectorType:enum'
-    name: Excel.ConnectorType
-    fullName: Excel.ConnectorType
-    langs:
-      - typeScript
-    type: enum
-    package: excel!
-    children:
-      - 'excel!Excel.ConnectorType.curve:member'
-      - 'excel!Excel.ConnectorType.elbow:member'
-      - 'excel!Excel.ConnectorType.straight:member'
-  - uid: 'excel!Excel.ConnectorType.curve:member'
-    name: curve
-    fullName: curve
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Curve"'
-  - uid: 'excel!Excel.ConnectorType.elbow:member'
-    name: elbow
-    fullName: elbow
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Elbow"'
-  - uid: 'excel!Excel.ConnectorType.straight:member'
-    name: straight
-    fullName: straight
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Straight"'
+### YamlMime:TSEnum
+name: Excel.ConnectorType
+uid: excel!Excel.ConnectorType:enum
+package: excel!
+fullName: Excel.ConnectorType
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: curve
+  uid: excel!Excel.ConnectorType.curve:member
+  package: excel!
+  summary: ''
+- name: elbow
+  uid: excel!Excel.ConnectorType.elbow:member
+  package: excel!
+  summary: ''
+- name: straight
+  uid: excel!Excel.ConnectorType.straight:member
+  package: excel!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 5d66fefbcc04ed67e7e2da9a361b49a5b702eda3
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49416394"

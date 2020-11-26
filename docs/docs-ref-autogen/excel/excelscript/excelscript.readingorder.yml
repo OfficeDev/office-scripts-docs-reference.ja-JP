@@ -1,34 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ReadingOrder:enum'
-    name: ExcelScript.ReadingOrder
-    fullName: ExcelScript.ReadingOrder
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ReadingOrder.context:member'
-      - 'ExcelScript!ExcelScript.ReadingOrder.leftToRight:member'
-      - 'ExcelScript!ExcelScript.ReadingOrder.rightToLeft:member'
-  - uid: 'ExcelScript!ExcelScript.ReadingOrder.context:member'
-    summary: 読みの順序は入力された最初の文字の言語によって決まります。右から左に記述する言語が最初に入力された場合、読みの順序は右から左になります。左から右に記述する言語が最初に入力された場合、読みの順序は左から右になります。
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ReadingOrder.leftToRight:member'
-    summary: 左から右への読み取り順序
-    name: leftToRight
-    fullName: leftToRight
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ReadingOrder.rightToLeft:member'
-    summary: 右から左への読み取り順序
-    name: rightToLeft
-    fullName: rightToLeft
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.ReadingOrder
+uid: ExcelScript!ExcelScript.ReadingOrder:enum
+package: ExcelScript!
+fullName: ExcelScript.ReadingOrder
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: context
+  uid: ExcelScript!ExcelScript.ReadingOrder.context:member
+  package: ExcelScript!
+  summary: 読みの順序は入力された最初の文字の言語によって決まります。右から左に記述する言語が最初に入力された場合、読みの順序は右から左になります。左から右に記述する言語が最初に入力された場合、読みの順序は左から右になります。
+- name: leftToRight
+  uid: ExcelScript!ExcelScript.ReadingOrder.leftToRight:member
+  package: ExcelScript!
+  summary: 左から右への読み取り順序
+- name: rightToLeft
+  uid: ExcelScript!ExcelScript.ReadingOrder.rightToLeft:member
+  package: ExcelScript!
+  summary: 右から左への読み取り順序
+metadata:
+  ms.openlocfilehash: 391ae0ad91303544e478b18cf04e6fcfbee4cec3
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49416562"

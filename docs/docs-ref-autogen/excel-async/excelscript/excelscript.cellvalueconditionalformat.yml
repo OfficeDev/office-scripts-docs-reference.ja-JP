@@ -1,97 +1,62 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.CellValueConditionalFormat:interface'
-    summary: セル値の条件付き書式を表します。
-    name: Excel.CellValueConditionalFormat
-    fullName: Excel.CellValueConditionalFormat
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.CellValueConditionalFormat#format:member'
-      - 'excel!Excel.CellValueConditionalFormat#load:member(1)'
-      - 'excel!Excel.CellValueConditionalFormat#rule:member'
-  - uid: 'excel!Excel.CellValueConditionalFormat#format:member'
-    summary: 書式設定オブジェクトを返し、条件付き書式のフォント、塗りつぶし、罫線などのプロパティをカプセル化します。
-    name: format
-    fullName: format
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly format: ConditionalRangeFormat;'
-      return:
-        type:
-          - 'excel!Excel.ConditionalRangeFormat:interface'
-        description: |-
-
-
-          #### <a name="examples"></a>例
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getItem("Sample");
-              let range = sheet.getRange("B21:E23");
-              let conditionalFormat = range.conditionalFormats
-                  .add(Excel.ConditionalFormatType.cellValue);
-              conditionalFormat.cellValue.format.font.color = "red";
-              conditionalFormat.cellValue.rule = { formula1: "=0", operator: "LessThan" };
-
-              await context.sync();
-          }
-          ```
-  - uid: 'excel!Excel.CellValueConditionalFormat#load:member(1)'
-    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.CellValueConditionalFormat#rule:member'
-    summary: この条件付き書式で Rule オブジェクトを指定します。
-    name: rule
-    fullName: rule
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'rule: ConditionalCellValueRule;'
-      return:
-        type:
-          - 'excel!Excel.ConditionalCellValueRule:interface'
-        description: |-
-
-
-          #### <a name="examples"></a>例
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getItem("Sample");
-              let range = sheet.getRange("B21:E23");
-              let conditionalFormat = range.conditionalFormats
-                  .add(Excel.ConditionalFormatType.cellValue);
-              conditionalFormat.cellValue.format.font.color = "red";
-              conditionalFormat.cellValue.rule = { formula1: "=0", operator: "LessThan" };
-
-              await context.sync();
-          }
-          ```
-references:
-  - uid: 'excel!Excel.ConditionalRangeFormat:interface'
-    name: ConditionalRangeFormat
-    fullName: Excel.ConditionalRangeFormat
-  - uid: 'excel!Excel.ConditionalCellValueRule:interface'
-    name: ConditionalCellValueRule
-    fullName: Excel.ConditionalCellValueRule
+### YamlMime:TSType
+name: Excel.CellValueConditionalFormat
+uid: excel!Excel.CellValueConditionalFormat:interface
+package: excel!
+fullName: Excel.CellValueConditionalFormat
+summary: セル値の条件付き書式を表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: format
+  uid: excel!Excel.CellValueConditionalFormat#format:member
+  package: excel!
+  fullName: format
+  summary: 書式設定オブジェクトを返し、条件付き書式のフォント、塗りつぶし、罫線などのプロパティをカプセル化します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly format: ConditionalRangeFormat;'
+    return:
+      type: <xref uid="excel!Excel.ConditionalRangeFormat:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getItem(\"Sample\");\n    let range = sheet.getRange(\"B21:E23\");\n    let conditionalFormat = range.conditionalFormats\n        .add(Excel.ConditionalFormatType.cellValue);\n    conditionalFormat.cellValue.format.font.color = \"red\";\n    conditionalFormat.cellValue.rule = { formula1: \"=0\", operator: \"LessThan\" };\n\n    await context.sync();\n}\n```"
+- name: rule
+  uid: excel!Excel.CellValueConditionalFormat#rule:member
+  package: excel!
+  fullName: rule
+  summary: この条件付き書式で Rule オブジェクトを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'rule: ConditionalCellValueRule;'
+    return:
+      type: <xref uid="excel!Excel.ConditionalCellValueRule:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getItem(\"Sample\");\n    let range = sheet.getRange(\"B21:E23\");\n    let conditionalFormat = range.conditionalFormats\n        .add(Excel.ConditionalFormatType.cellValue);\n    conditionalFormat.cellValue.format.font.color = \"red\";\n    conditionalFormat.cellValue.rule = { formula1: \"=0\", operator: \"LessThan\" };\n\n    await context.sync();\n}\n```"
+methods:
+- name: load(propertyNames)
+  uid: excel!Excel.CellValueConditionalFormat#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: オブジェクトの指定されたプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、`context.sync()` を呼び出す必要があります。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: a5c09a48692c846514b959a9a7099557bf8a464e
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49417779"

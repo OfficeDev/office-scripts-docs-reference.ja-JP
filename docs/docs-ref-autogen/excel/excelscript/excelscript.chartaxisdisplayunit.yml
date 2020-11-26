@@ -1,98 +1,61 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit:enum'
-    name: ExcelScript.ChartAxisDisplayUnit
-    fullName: ExcelScript.ChartAxisDisplayUnit
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.billions:member'
-      - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.custom:member'
-      - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundredMillions:member'
-      - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundreds:member'
-      - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundredThousands:member'
-      - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.millions:member'
-      - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.none:member'
-      - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.tenMillions:member'
-      - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.tenThousands:member'
-      - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.thousands:member'
-      - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.trillions:member'
-  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.billions:member'
-    summary: これにより、軸は十億単位で設定されます。
-    name: billions
-    fullName: billions
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.custom:member'
-    summary: これにより、カスタム値の単位で軸が設定されます。
-    name: custom
-    fullName: custom
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundredMillions:member'
-    summary: これにより、100万数の単位で軸が設定されます。
-    name: hundredMillions
-    fullName: hundredMillions
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundreds:member'
-    summary: これは、100百単位で軸を設定します。
-    name: hundreds
-    fullName: hundreds
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundredThousands:member'
-    summary: これにより、100万単位の軸が設定されます。
-    name: hundredThousands
-    fullName: hundredThousands
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.millions:member'
-    summary: これにより、軸は百万単位で設定されます。
-    name: millions
-    fullName: millions
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.none:member'
-    summary: 既定のオプションです。 これにより、表示単位が軸にリセットされ、出荷単位ラベルが非表示になります。
-    name: none
-    fullName: none
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.tenMillions:member'
-    summary: これにより、軸は十数百万単位で設定されます。
-    name: tenMillions
-    fullName: tenMillions
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.tenThousands:member'
-    summary: これにより、軸は10万単位で設定されます。
-    name: tenThousands
-    fullName: tenThousands
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.thousands:member'
-    summary: これにより、軸は1000単位で設定されます。
-    name: thousands
-    fullName: thousands
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.trillions:member'
-    summary: これにより、trillions の単位で軸が設定されます。
-    name: trillions
-    fullName: trillions
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.ChartAxisDisplayUnit
+uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit:enum
+package: ExcelScript!
+fullName: ExcelScript.ChartAxisDisplayUnit
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: billions
+  uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.billions:member
+  package: ExcelScript!
+  summary: これにより、軸は十億単位で設定されます。
+- name: custom
+  uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.custom:member
+  package: ExcelScript!
+  summary: これにより、カスタム値の単位で軸が設定されます。
+- name: hundredMillions
+  uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundredMillions:member
+  package: ExcelScript!
+  summary: これにより、100万数の単位で軸が設定されます。
+- name: hundreds
+  uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundreds:member
+  package: ExcelScript!
+  summary: これは、100百単位で軸を設定します。
+- name: hundredThousands
+  uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundredThousands:member
+  package: ExcelScript!
+  summary: これにより、100万単位の軸が設定されます。
+- name: millions
+  uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.millions:member
+  package: ExcelScript!
+  summary: これにより、軸は百万単位で設定されます。
+- name: none
+  uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.none:member
+  package: ExcelScript!
+  summary: 既定のオプションです。 これにより、表示単位が軸にリセットされ、出荷単位ラベルが非表示になります。
+- name: tenMillions
+  uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.tenMillions:member
+  package: ExcelScript!
+  summary: これにより、軸は十数百万単位で設定されます。
+- name: tenThousands
+  uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.tenThousands:member
+  package: ExcelScript!
+  summary: これにより、軸は10万単位で設定されます。
+- name: thousands
+  uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.thousands:member
+  package: ExcelScript!
+  summary: これにより、軸は1000単位で設定されます。
+- name: trillions
+  uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.trillions:member
+  package: ExcelScript!
+  summary: これにより、trillions の単位で軸が設定されます。
+metadata:
+  ms.openlocfilehash: ce73f608460520b055d6e811a4691fc16517df76
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49417087"

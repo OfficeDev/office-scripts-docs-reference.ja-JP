@@ -1,63 +1,66 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.RangeHyperlink:interface'
-    summary: ハイパーリンク (XHL) オブジェクトを取得/設定するために必要な文字列を表します。
-    name: ExcelScript.RangeHyperlink
-    fullName: ExcelScript.RangeHyperlink
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.RangeHyperlink#address:member'
-      - 'ExcelScript!ExcelScript.RangeHyperlink#documentReference:member'
-      - 'ExcelScript!ExcelScript.RangeHyperlink#screenTip:member'
-      - 'ExcelScript!ExcelScript.RangeHyperlink#textToDisplay:member'
-  - uid: 'ExcelScript!ExcelScript.RangeHyperlink#address:member'
-    summary: ハイパーリンクの URL ターゲットを表します。
-    name: address
-    fullName: address
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'address?: string;'
-      return:
-        type:
-          - string
-  - uid: 'ExcelScript!ExcelScript.RangeHyperlink#documentReference:member'
-    summary: ハイパーリンクのドキュメント参照先を表します。
-    name: documentReference
-    fullName: documentReference
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'documentReference?: string;'
-      return:
-        type:
-          - string
-  - uid: 'ExcelScript!ExcelScript.RangeHyperlink#screenTip:member'
-    summary: ハイパーリンクの上にカーソルを合わせると表示される文字列を表します。
-    name: screenTip
-    fullName: screenTip
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'screenTip?: string;'
-      return:
-        type:
-          - string
-  - uid: 'ExcelScript!ExcelScript.RangeHyperlink#textToDisplay:member'
-    summary: 該当する範囲内の左上端のセルに表示される文字列を表します。
-    name: textToDisplay
-    fullName: textToDisplay
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'textToDisplay?: string;'
-      return:
-        type:
-          - string
+### YamlMime:TSType
+name: ExcelScript.RangeHyperlink
+uid: ExcelScript!ExcelScript.RangeHyperlink:interface
+package: ExcelScript!
+fullName: ExcelScript.RangeHyperlink
+summary: ハイパーリンク (XHL) オブジェクトを取得/設定するために必要な文字列を表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: address
+  uid: ExcelScript!ExcelScript.RangeHyperlink#address:member
+  package: ExcelScript!
+  fullName: address
+  summary: ハイパーリンクの URL ターゲットを表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'address?: string;'
+    return:
+      type: string
+- name: documentReference
+  uid: ExcelScript!ExcelScript.RangeHyperlink#documentReference:member
+  package: ExcelScript!
+  fullName: documentReference
+  summary: ハイパーリンクのドキュメント参照先を表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'documentReference?: string;'
+    return:
+      type: string
+- name: screenTip
+  uid: ExcelScript!ExcelScript.RangeHyperlink#screenTip:member
+  package: ExcelScript!
+  fullName: screenTip
+  summary: ハイパーリンクの上にカーソルを合わせると表示される文字列を表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'screenTip?: string;'
+    return:
+      type: string
+- name: textToDisplay
+  uid: ExcelScript!ExcelScript.RangeHyperlink#textToDisplay:member
+  package: ExcelScript!
+  fullName: textToDisplay
+  summary: 該当する範囲内の左上端のセルに表示される文字列を表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'textToDisplay?: string;'
+    return:
+      type: string
+metadata:
+  ms.openlocfilehash: 8ff934a57f355a4480ae8c939e77b1f07a7b6c3e
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49416597"

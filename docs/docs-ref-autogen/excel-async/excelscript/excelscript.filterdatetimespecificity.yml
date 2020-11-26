@@ -1,58 +1,41 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.FilterDatetimeSpecificity:enum'
-    name: Excel.FilterDatetimeSpecificity
-    fullName: Excel.FilterDatetimeSpecificity
-    langs:
-      - typeScript
-    type: enum
-    package: excel!
-    children:
-      - 'excel!Excel.FilterDatetimeSpecificity.day:member'
-      - 'excel!Excel.FilterDatetimeSpecificity.hour:member'
-      - 'excel!Excel.FilterDatetimeSpecificity.minute:member'
-      - 'excel!Excel.FilterDatetimeSpecificity.month:member'
-      - 'excel!Excel.FilterDatetimeSpecificity.second:member'
-      - 'excel!Excel.FilterDatetimeSpecificity.year:member'
-  - uid: 'excel!Excel.FilterDatetimeSpecificity.day:member'
-    name: day
-    fullName: day
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Day"'
-  - uid: 'excel!Excel.FilterDatetimeSpecificity.hour:member'
-    name: hour
-    fullName: hour
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Hour"'
-  - uid: 'excel!Excel.FilterDatetimeSpecificity.minute:member'
-    name: minute
-    fullName: minute
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Minute"'
-  - uid: 'excel!Excel.FilterDatetimeSpecificity.month:member'
-    name: month
-    fullName: month
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Month"'
-  - uid: 'excel!Excel.FilterDatetimeSpecificity.second:member'
-    name: second
-    fullName: second
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Second"'
-  - uid: 'excel!Excel.FilterDatetimeSpecificity.year:member'
-    name: year
-    fullName: year
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Year"'
+### YamlMime:TSEnum
+name: Excel.FilterDatetimeSpecificity
+uid: excel!Excel.FilterDatetimeSpecificity:enum
+package: excel!
+fullName: Excel.FilterDatetimeSpecificity
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: day
+  uid: excel!Excel.FilterDatetimeSpecificity.day:member
+  package: excel!
+  summary: ''
+- name: hour
+  uid: excel!Excel.FilterDatetimeSpecificity.hour:member
+  package: excel!
+  summary: ''
+- name: minute
+  uid: excel!Excel.FilterDatetimeSpecificity.minute:member
+  package: excel!
+  summary: ''
+- name: month
+  uid: excel!Excel.FilterDatetimeSpecificity.month:member
+  package: excel!
+  summary: ''
+- name: second
+  uid: excel!Excel.FilterDatetimeSpecificity.second:member
+  package: excel!
+  summary: ''
+- name: year
+  uid: excel!Excel.FilterDatetimeSpecificity.year:member
+  package: excel!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 2620a4f7868e25de70a25ae8a349e37cd57f178c
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49416198"

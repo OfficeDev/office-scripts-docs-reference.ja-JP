@@ -1,26 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.DeleteShiftDirection:enum'
-    name: Excel.DeleteShiftDirection
-    fullName: Excel.DeleteShiftDirection
-    langs:
-      - typeScript
-    type: enum
-    package: excel!
-    children:
-      - 'excel!Excel.DeleteShiftDirection.left:member'
-      - 'excel!Excel.DeleteShiftDirection.up:member'
-  - uid: 'excel!Excel.DeleteShiftDirection.left:member'
-    name: left
-    fullName: left
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Left"'
-  - uid: 'excel!Excel.DeleteShiftDirection.up:member'
-    name: up
-    fullName: up
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Up"'
+### YamlMime:TSEnum
+name: Excel.DeleteShiftDirection
+uid: excel!Excel.DeleteShiftDirection:enum
+package: excel!
+fullName: Excel.DeleteShiftDirection
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: left
+  uid: excel!Excel.DeleteShiftDirection.left:member
+  package: excel!
+  summary: ''
+- name: up
+  uid: excel!Excel.DeleteShiftDirection.up:member
+  package: excel!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 258e45c979114c1ee048ad8af77e5e02c9c7070d
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49417982"

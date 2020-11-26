@@ -1,38 +1,33 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ChartAxisTickMark:enum'
-    name: ExcelScript.ChartAxisTickMark
-    fullName: ExcelScript.ChartAxisTickMark
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ChartAxisTickMark.cross:member'
-      - 'ExcelScript!ExcelScript.ChartAxisTickMark.inside:member'
-      - 'ExcelScript!ExcelScript.ChartAxisTickMark.none:member'
-      - 'ExcelScript!ExcelScript.ChartAxisTickMark.outside:member'
-  - uid: 'ExcelScript!ExcelScript.ChartAxisTickMark.cross:member'
-    name: cross
-    fullName: cross
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartAxisTickMark.inside:member'
-    name: inside
-    fullName: inside
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartAxisTickMark.none:member'
-    name: none
-    fullName: none
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartAxisTickMark.outside:member'
-    name: outside
-    fullName: outside
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.ChartAxisTickMark
+uid: ExcelScript!ExcelScript.ChartAxisTickMark:enum
+package: ExcelScript!
+fullName: ExcelScript.ChartAxisTickMark
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: cross
+  uid: ExcelScript!ExcelScript.ChartAxisTickMark.cross:member
+  package: ExcelScript!
+  summary: ''
+- name: inside
+  uid: ExcelScript!ExcelScript.ChartAxisTickMark.inside:member
+  package: ExcelScript!
+  summary: ''
+- name: none
+  uid: ExcelScript!ExcelScript.ChartAxisTickMark.none:member
+  package: ExcelScript!
+  summary: ''
+- name: outside
+  uid: ExcelScript!ExcelScript.ChartAxisTickMark.outside:member
+  package: ExcelScript!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 2a3ad5a28ff12387e0b02d85cb5befd55b17e5c8
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49417031"

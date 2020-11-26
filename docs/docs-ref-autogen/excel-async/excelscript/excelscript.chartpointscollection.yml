@@ -1,89 +1,78 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartPointsCollection:interface'
-    summary: グラフ内の系列内のすべてのグラフのポイントのコレクションです。
-    name: Excel.ChartPointsCollection
-    fullName: Excel.ChartPointsCollection
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.ChartPointsCollection#count:member'
-      - 'excel!Excel.ChartPointsCollection#getCount:member(1)'
-      - 'excel!Excel.ChartPointsCollection#getItemAt:member(1)'
-      - 'excel!Excel.ChartPointsCollection#load:member(1)'
-  - uid: 'excel!Excel.ChartPointsCollection#count:member'
-    summary: 系列に含まれるグラフのポイントの数を返します。
-    name: count
-    fullName: count
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly count: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ChartPointsCollection#getCount:member(1)'
-    summary: 系列に含まれるグラフのポイントの数を返します。
-    name: getCount()
-    fullName: getCount()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCount(): ClientResult<number>;'
-      return:
-        type:
-          - 'excel!Excel.ChartPointsCollection#getCount~0:complex'
-        description: ''
-  - uid: 'excel!Excel.ChartPointsCollection#getItemAt:member(1)'
-    summary: データ系列内の位置に基づくポイントを取得します。
-    name: getItemAt(index)
-    fullName: getItemAt(index)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItemAt(index: number): ChartPoint;'
-      return:
-        type:
-          - 'excel!Excel.ChartPoint:interface'
-        description: ''
-      parameters:
-        - id: index
-          description: 取得するオブジェクトのインデックス値。 0 を起点とする番号になります。
-          type:
-            - number
-  - uid: 'excel!Excel.ChartPointsCollection#load:member(1)'
-    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
-          type:
-            - 'string | string[]'
-references:
-  - uid: 'excel!Excel.ChartPointsCollection#getCount~0:complex'
-    name: ClientResult<number>
-    fullName: Excel.ClientResult<number>
-    spec.typeScript:
-      - uid: 'excel!Excel.ClientResult:interface'
-        name: ClientResult
-        fullName: Excel.ClientResult
-      - name: <number>
-        fullName: <number>
-  - uid: 'excel!Excel.ChartPoint:interface'
-    name: ChartPoint
-    fullName: Excel.ChartPoint
+### YamlMime:TSType
+name: Excel.ChartPointsCollection
+uid: excel!Excel.ChartPointsCollection:interface
+package: excel!
+fullName: Excel.ChartPointsCollection
+summary: グラフ内の系列内のすべてのグラフのポイントのコレクションです。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: count
+  uid: excel!Excel.ChartPointsCollection#count:member
+  package: excel!
+  fullName: count
+  summary: 系列に含まれるグラフのポイントの数を返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly count: number;'
+    return:
+      type: number
+methods:
+- name: getCount()
+  uid: excel!Excel.ChartPointsCollection#getCount:member(1)
+  package: excel!
+  fullName: getCount()
+  summary: 系列に含まれるグラフのポイントの数を返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCount(): ClientResult<number>;'
+    return:
+      type: <xref uid="excel!Excel.ClientResult:interface" />&lt;number&gt;
+      description: ''
+- name: getItemAt(index)
+  uid: excel!Excel.ChartPointsCollection#getItemAt:member(1)
+  package: excel!
+  fullName: getItemAt(index)
+  summary: データ系列内の位置に基づくポイントを取得します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getItemAt(index: number): ChartPoint;'
+    parameters:
+    - id: index
+      description: 取得するオブジェクトのインデックス値。 0 を起点とする番号になります。
+      type: number
+    return:
+      type: <xref uid="excel!Excel.ChartPoint:interface" />
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.ChartPointsCollection#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: オブジェクトの指定されたプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、`context.sync()` を呼び出す必要があります。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: b291a4ac851e09695ee48ba26a9814f1adf5dd14
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49417415"

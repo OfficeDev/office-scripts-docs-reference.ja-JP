@@ -1,132 +1,115 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.CustomPropertyCollection:interface'
-    summary: CustomProperty オブジェクトのコレクションが含まれています。
-    name: Excel.CustomPropertyCollection
-    fullName: Excel.CustomPropertyCollection
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.CustomPropertyCollection#add:member(1)'
-      - 'excel!Excel.CustomPropertyCollection#deleteAll:member(1)'
-      - 'excel!Excel.CustomPropertyCollection#getCount:member(1)'
-      - 'excel!Excel.CustomPropertyCollection#getItem:member(1)'
-      - 'excel!Excel.CustomPropertyCollection#getItemOrNullObject:member(1)'
-      - 'excel!Excel.CustomPropertyCollection#load:member(1)'
-  - uid: 'excel!Excel.CustomPropertyCollection#add:member(1)'
-    summary: 新しいカスタム プロパティを作成、または既存のカスタム プロパティを設定します。
-    name: 'add(key, value)'
-    fullName: 'add(key, value)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'add(key: string, value: any): CustomProperty;'
-      return:
-        type:
-          - 'excel!Excel.CustomProperty:interface'
-        description: ''
-      parameters:
-        - id: key
-          description: 必須。 カスタムプロパティのキー。大文字と小文字は区別されません。 このキーは、Excel の外部にある255文字までに制限されます (大きなキーは、他のプラットフォームでは自動的に255文字にトリミングされます)。
-          type:
-            - string
-        - id: value
-          description: 必須。 カスタムプロパティの値。 この値は、Excel の外部にある255文字までに制限されています (他のプラットフォームでは、大きな値は自動的に255文字にトリミングされます)。
-          type:
-            - any
-  - uid: 'excel!Excel.CustomPropertyCollection#deleteAll:member(1)'
-    summary: このコレクション内のすべてのカスタム プロパティを削除します。
-    name: deleteAll()
-    fullName: deleteAll()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'deleteAll(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.CustomPropertyCollection#getCount:member(1)'
-    summary: カスタム プロパティの数を取得します。
-    name: getCount()
-    fullName: getCount()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCount(): ClientResult<number>;'
-      return:
-        type:
-          - 'excel!Excel.CustomPropertyCollection#getCount~0:complex'
-        description: ''
-  - uid: 'excel!Excel.CustomPropertyCollection#getItem:member(1)'
-    summary: キーを使用してカスタム プロパティ オブジェクトを取得します。大文字と小文字は区別されません。 カスタムプロパティが存在しない場合にスローされます。
-    name: getItem(key)
-    fullName: getItem(key)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItem(key: string): CustomProperty;'
-      return:
-        type:
-          - 'excel!Excel.CustomProperty:interface'
-        description: ''
-      parameters:
-        - id: key
-          description: カスタムプロパティオブジェクトを識別するキー。
-          type:
-            - string
-  - uid: 'excel!Excel.CustomPropertyCollection#getItemOrNullObject:member(1)'
-    summary: キーを使用してカスタム プロパティ オブジェクトを取得します。大文字と小文字は区別されません。 カスタムプロパティが存在しない場合は、null オブジェクトを返します。
-    name: getItemOrNullObject(key)
-    fullName: getItemOrNullObject(key)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItemOrNullObject(key: string): CustomProperty;'
-      return:
-        type:
-          - 'excel!Excel.CustomProperty:interface'
-        description: ''
-      parameters:
-        - id: key
-          description: 必須。 カスタムプロパティオブジェクトを識別するキー。
-          type:
-            - string
-  - uid: 'excel!Excel.CustomPropertyCollection#load:member(1)'
-    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
-          type:
-            - 'string | string[]'
-references:
-  - uid: 'excel!Excel.CustomProperty:interface'
-    name: CustomProperty
-    fullName: Excel.CustomProperty
-  - uid: 'excel!Excel.CustomPropertyCollection#getCount~0:complex'
-    name: ClientResult<number>
-    fullName: Excel.ClientResult<number>
-    spec.typeScript:
-      - uid: 'excel!Excel.ClientResult:interface'
-        name: ClientResult
-        fullName: Excel.ClientResult
-      - name: <number>
-        fullName: <number>
+### YamlMime:TSType
+name: Excel.CustomPropertyCollection
+uid: excel!Excel.CustomPropertyCollection:interface
+package: excel!
+fullName: Excel.CustomPropertyCollection
+summary: CustomProperty オブジェクトのコレクションが含まれています。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: add(key, value)
+  uid: excel!Excel.CustomPropertyCollection#add:member(1)
+  package: excel!
+  fullName: add(key, value)
+  summary: 新しいカスタム プロパティを作成、または既存のカスタム プロパティを設定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'add(key: string, value: any): CustomProperty;'
+    parameters:
+    - id: key
+      description: 必須です。 カスタムプロパティのキー。大文字と小文字は区別されません。 このキーは、Excel の外部にある255文字までに制限されます (大きなキーは、他のプラットフォームでは自動的に255文字にトリミングされます)。
+      type: string
+    - id: value
+      description: 必須です。 カスタムプロパティの値。 この値は、Excel の外部にある255文字までに制限されています (他のプラットフォームでは、大きな値は自動的に255文字にトリミングされます)。
+      type: any
+    return:
+      type: <xref uid="excel!Excel.CustomProperty:interface" />
+      description: ''
+- name: deleteAll()
+  uid: excel!Excel.CustomPropertyCollection#deleteAll:member(1)
+  package: excel!
+  fullName: deleteAll()
+  summary: このコレクション内のすべてのカスタム プロパティを削除します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'deleteAll(): void;'
+    return:
+      type: void
+      description: ''
+- name: getCount()
+  uid: excel!Excel.CustomPropertyCollection#getCount:member(1)
+  package: excel!
+  fullName: getCount()
+  summary: カスタム プロパティの数を取得します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCount(): ClientResult<number>;'
+    return:
+      type: <xref uid="excel!Excel.ClientResult:interface" />&lt;number&gt;
+      description: ''
+- name: getItem(key)
+  uid: excel!Excel.CustomPropertyCollection#getItem:member(1)
+  package: excel!
+  fullName: getItem(key)
+  summary: キーを使用してカスタム プロパティ オブジェクトを取得します。大文字と小文字は区別されません。 カスタムプロパティが存在しない場合にスローされます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getItem(key: string): CustomProperty;'
+    parameters:
+    - id: key
+      description: カスタムプロパティオブジェクトを識別するキー。
+      type: string
+    return:
+      type: <xref uid="excel!Excel.CustomProperty:interface" />
+      description: ''
+- name: getItemOrNullObject(key)
+  uid: excel!Excel.CustomPropertyCollection#getItemOrNullObject:member(1)
+  package: excel!
+  fullName: getItemOrNullObject(key)
+  summary: キーを使用してカスタム プロパティ オブジェクトを取得します。大文字と小文字は区別されません。 カスタムプロパティが存在しない場合は、null オブジェクトを返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getItemOrNullObject(key: string): CustomProperty;'
+    parameters:
+    - id: key
+      description: 必須です。 カスタムプロパティオブジェクトを識別するキー。
+      type: string
+    return:
+      type: <xref uid="excel!Excel.CustomProperty:interface" />
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.CustomPropertyCollection#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: オブジェクトの指定されたプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、`context.sync()` を呼び出す必要があります。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 43032a7b03ba0ae75c6e527876ccef5e12e4e2ce
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49416345"

@@ -1,132 +1,117 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ChartAreaFormat:interface'
-    summary: グラフ領域全体の書式設定プロパティをカプセル化します。
-    name: ExcelScript.ChartAreaFormat
-    fullName: ExcelScript.ChartAreaFormat
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ChartAreaFormat#getBorder:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAreaFormat#getColorScheme:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAreaFormat#getFill:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAreaFormat#getFont:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAreaFormat#getRoundedCorners:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAreaFormat#setColorScheme:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAreaFormat#setRoundedCorners:member(1)'
-  - uid: 'ExcelScript!ExcelScript.ChartAreaFormat#getBorder:member(1)'
-    summary: グラフエリアの罫線の書式を表します。これには、色、linestyle、およびウエイトが含まれます。
-    name: getBorder()
-    fullName: getBorder()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getBorder(): ChartBorder;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartBorder:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAreaFormat#getColorScheme:member(1)'
-    summary: グラフの配色を指定します。
-    name: getColorScheme()
-    fullName: getColorScheme()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getColorScheme(): ChartColorScheme;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartColorScheme:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAreaFormat#getFill:member(1)'
-    summary: 背景の書式設定情報を含む、オブジェクトの塗りつぶしの書式を表します。
-    name: getFill()
-    fullName: getFill()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFill(): ChartFill;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartFill:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAreaFormat#getFont:member(1)'
-    summary: 現在のオブジェクトのフォント属性 (フォント名、フォント サイズ、色など) を表します。
-    name: getFont()
-    fullName: getFont()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFont(): ChartFont;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartFont:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAreaFormat#getRoundedCorners:member(1)'
-    summary: グラフのグラフエリアに角を丸くするかどうかを指定します。
-    name: getRoundedCorners()
-    fullName: getRoundedCorners()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRoundedCorners(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAreaFormat#setColorScheme:member(1)'
-    summary: グラフの配色を指定します。
-    name: setColorScheme(colorScheme)
-    fullName: setColorScheme(colorScheme)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setColorScheme(colorScheme: ChartColorScheme): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: colorScheme
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ChartColorScheme:enum'
-  - uid: 'ExcelScript!ExcelScript.ChartAreaFormat#setRoundedCorners:member(1)'
-    summary: グラフのグラフエリアに角を丸くするかどうかを指定します。
-    name: setRoundedCorners(roundedCorners)
-    fullName: setRoundedCorners(roundedCorners)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setRoundedCorners(roundedCorners: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: roundedCorners
-          description: ''
-          type:
-            - boolean
-references:
-  - uid: 'ExcelScript!ExcelScript.ChartBorder:interface'
-    name: ChartBorder
-    fullName: ExcelScript.ChartBorder
-  - uid: 'ExcelScript!ExcelScript.ChartColorScheme:enum'
-    name: ChartColorScheme
-    fullName: ExcelScript.ChartColorScheme
-  - uid: 'ExcelScript!ExcelScript.ChartFill:interface'
-    name: ChartFill
-    fullName: ExcelScript.ChartFill
-  - uid: 'ExcelScript!ExcelScript.ChartFont:interface'
-    name: ChartFont
-    fullName: ExcelScript.ChartFont
+### YamlMime:TSType
+name: ExcelScript.ChartAreaFormat
+uid: ExcelScript!ExcelScript.ChartAreaFormat:interface
+package: ExcelScript!
+fullName: ExcelScript.ChartAreaFormat
+summary: グラフ領域全体の書式設定プロパティをカプセル化します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getBorder()
+  uid: ExcelScript!ExcelScript.ChartAreaFormat#getBorder:member(1)
+  package: ExcelScript!
+  fullName: getBorder()
+  summary: グラフエリアの罫線の書式を表します。これには、色、linestyle、およびウエイトが含まれます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getBorder(): ChartBorder;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartBorder:interface" />
+      description: ''
+- name: getColorScheme()
+  uid: ExcelScript!ExcelScript.ChartAreaFormat#getColorScheme:member(1)
+  package: ExcelScript!
+  fullName: getColorScheme()
+  summary: グラフの配色を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getColorScheme(): ChartColorScheme;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartColorScheme:enum" />
+      description: ''
+- name: getFill()
+  uid: ExcelScript!ExcelScript.ChartAreaFormat#getFill:member(1)
+  package: ExcelScript!
+  fullName: getFill()
+  summary: 背景の書式設定情報を含む、オブジェクトの塗りつぶしの書式を表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFill(): ChartFill;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartFill:interface" />
+      description: ''
+- name: getFont()
+  uid: ExcelScript!ExcelScript.ChartAreaFormat#getFont:member(1)
+  package: ExcelScript!
+  fullName: getFont()
+  summary: 現在のオブジェクトのフォント属性 (フォント名、フォント サイズ、色など) を表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFont(): ChartFont;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartFont:interface" />
+      description: ''
+- name: getRoundedCorners()
+  uid: ExcelScript!ExcelScript.ChartAreaFormat#getRoundedCorners:member(1)
+  package: ExcelScript!
+  fullName: getRoundedCorners()
+  summary: グラフのグラフエリアに角を丸くするかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRoundedCorners(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: setColorScheme(colorScheme)
+  uid: ExcelScript!ExcelScript.ChartAreaFormat#setColorScheme:member(1)
+  package: ExcelScript!
+  fullName: setColorScheme(colorScheme)
+  summary: グラフの配色を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setColorScheme(colorScheme: ChartColorScheme): void;'
+    parameters:
+    - id: colorScheme
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ChartColorScheme:enum" />
+    return:
+      type: void
+      description: ''
+- name: setRoundedCorners(roundedCorners)
+  uid: ExcelScript!ExcelScript.ChartAreaFormat#setRoundedCorners:member(1)
+  package: ExcelScript!
+  fullName: setRoundedCorners(roundedCorners)
+  summary: グラフのグラフエリアに角を丸くするかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setRoundedCorners(roundedCorners: boolean): void;'
+    parameters:
+    - id: roundedCorners
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 6894650c0e66dcdef8411a1877aa0f7eb2d96c06
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49417108"

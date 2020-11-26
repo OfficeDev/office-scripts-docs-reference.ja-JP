@@ -1,573 +1,451 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.RangeAreas:interface'
-    summary: RangeAreas は、同じワークシート内の1つまたは複数の四角形の範囲のコレクションを表します。
-    name: ExcelScript.RangeAreas
-    fullName: ExcelScript.RangeAreas
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.RangeAreas#addConditionalFormat:member(1)'
-      - 'ExcelScript!ExcelScript.RangeAreas#calculate:member(1)'
-      - 'ExcelScript!ExcelScript.RangeAreas#clear:member(1)'
-      - 'ExcelScript!ExcelScript.RangeAreas#clearAllConditionalFormats:member(1)'
-      - 'ExcelScript!ExcelScript.RangeAreas#convertDataTypeToText:member(1)'
-      - 'ExcelScript!ExcelScript.RangeAreas#copyFrom:member(1)'
-      - 'ExcelScript!ExcelScript.RangeAreas#getAddress:member(1)'
-      - 'ExcelScript!ExcelScript.RangeAreas#getAddressLocal:member(1)'
-      - 'ExcelScript!ExcelScript.RangeAreas#getAreaCount:member(1)'
-      - 'ExcelScript!ExcelScript.RangeAreas#getAreas:member(1)'
-      - 'ExcelScript!ExcelScript.RangeAreas#getCellCount:member(1)'
-      - 'ExcelScript!ExcelScript.RangeAreas#getConditionalFormat:member(1)'
-      - 'ExcelScript!ExcelScript.RangeAreas#getConditionalFormats:member(1)'
-      - 'ExcelScript!ExcelScript.RangeAreas#getDataValidation:member(1)'
-      - 'ExcelScript!ExcelScript.RangeAreas#getEntireColumn:member(1)'
-      - 'ExcelScript!ExcelScript.RangeAreas#getEntireRow:member(1)'
-      - 'ExcelScript!ExcelScript.RangeAreas#getFormat:member(1)'
-      - 'ExcelScript!ExcelScript.RangeAreas#getIntersection:member(1)'
-      - 'ExcelScript!ExcelScript.RangeAreas#getIsEntireColumn:member(1)'
-      - 'ExcelScript!ExcelScript.RangeAreas#getIsEntireRow:member(1)'
-      - 'ExcelScript!ExcelScript.RangeAreas#getOffsetRangeAreas:member(1)'
-      - 'ExcelScript!ExcelScript.RangeAreas#getPredefinedCellStyle:member(1)'
-      - 'ExcelScript!ExcelScript.RangeAreas#getSpecialCells:member(1)'
-      - 'ExcelScript!ExcelScript.RangeAreas#getTables:member(1)'
-      - 'ExcelScript!ExcelScript.RangeAreas#getUsedRangeAreas:member(1)'
-      - 'ExcelScript!ExcelScript.RangeAreas#getWorksheet:member(1)'
-      - 'ExcelScript!ExcelScript.RangeAreas#setDirty:member(1)'
-      - 'ExcelScript!ExcelScript.RangeAreas#setPredefinedCellStyle:member(1)'
-  - uid: 'ExcelScript!ExcelScript.RangeAreas#addConditionalFormat:member(1)'
-    summary: 新しい条件付き書式をコレクションの先頭/最上位の優先度に追加します。
-    name: addConditionalFormat(type)
-    fullName: addConditionalFormat(type)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'addConditionalFormat(type: ConditionalFormatType): ConditionalFormat;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ConditionalFormat:interface'
-        description: ''
-      parameters:
-        - id: type
-          description: 追加する条件付き書式の種類を指定します。 詳細については、「ExcelScript」を参照してください。
-          type:
-            - 'ExcelScript!ExcelScript.ConditionalFormatType:enum'
-  - uid: 'ExcelScript!ExcelScript.RangeAreas#calculate:member(1)'
-    summary: RangeAreas のすべてのセルを計算します。
-    name: calculate()
-    fullName: calculate()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'calculate(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeAreas#clear:member(1)'
-    summary: この RangeAreas オブジェクトを構成する各領域で値、フォーマット、塗りつぶし、罫線などを消去します。
-    name: clear(applyTo)
-    fullName: clear(applyTo)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'clear(applyTo?: ClearApplyTo): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: applyTo
-          description: 省略可能。 クリア操作の種類を決定します。 詳細については、「ExcelScript. ClearApplyTo を参照してください。 既定値は "すべて" です。
-          type:
-            - 'ExcelScript!ExcelScript.ClearApplyTo:enum'
-  - uid: 'ExcelScript!ExcelScript.RangeAreas#clearAllConditionalFormats:member(1)'
-    summary: 現在指定している範囲でアクティブなすべての条件付き書式をクリアする。
-    name: clearAllConditionalFormats()
-    fullName: clearAllConditionalFormats()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'clearAllConditionalFormats(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeAreas#convertDataTypeToText:member(1)'
-    summary: RangeAreas 内でデータ型を含むすべてのセルをテキストに変換します。
-    name: convertDataTypeToText()
-    fullName: convertDataTypeToText()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'convertDataTypeToText(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeAreas#copyFrom:member(1)'
-    summary: ソース範囲または RangeAreas から現在の RangeAreas にセル データまたは書式設定をコピーします。 コピー先の rangeAreas のサイズは、ソース範囲または RangeAreas とは異なる場合があります。 転送先は、ソースよりも小さい場合は自動的に展開されます。
-    name: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
-    fullName: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        copyFrom(
-                    sourceRange: Range | RangeAreas | string,
-                    copyType?: RangeCopyType,
-                    skipBlanks?: boolean,
-                    transpose?: boolean
-                ): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: sourceRange
-          description: コピー元の範囲または RangeAreas を指定します。 ソース範囲に複数の範囲がある場合は、四角形の範囲から完全な行または列を削除することによって、そのフォームを作成できます。
-          type:
-            - 'ExcelScript!ExcelScript.RangeAreas#copyFrom~0:complex'
-        - id: copyType
-          description: コピーするセルのデータまたは書式の種類を指定します。 既定値は "すべて" です。
-          type:
-            - 'ExcelScript!ExcelScript.RangeCopyType:enum'
-        - id: skipBlanks
-          description: True の場合は、元の範囲または RangeAreas の空白セルをスキップします。 既定値は false です。
-          type:
-            - boolean
-        - id: transpose
-          description: True を指定すると、移動先の範囲内のセルが転置されます。 既定値は false です。
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.RangeAreas#getAddress:member(1)'
-    summary: 'RangeAreas 参照を A1 形式で返します。 Address 値には、セルの各長方形ブロックのワークシート名が格納されます (例: "Sheet1!A1: B4、Sheet1!D1: D4 ")。'
-    name: getAddress()
-    fullName: getAddress()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getAddress(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeAreas#getAddressLocal:member(1)'
-    summary: ユーザーロケールの RangeAreas 参照を返します。
-    name: getAddressLocal()
-    fullName: getAddressLocal()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getAddressLocal(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeAreas#getAreaCount:member(1)'
-    summary: この RangeAreas オブジェクトを構成する長方形範囲の数を返します。
-    name: getAreaCount()
-    fullName: getAreaCount()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getAreaCount(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeAreas#getAreas:member(1)'
-    summary: この RangeAreas オブジェクトを構成する長方形範囲の集まりを返します。
-    name: getAreas()
-    fullName: getAreas()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getAreas(): Range[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.RangeAreas#getAreas~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeAreas#getCellCount:member(1)'
-    summary: 'RangeAreas オブジェクトのセル数を返します。すべての個別長方形範囲のセル数が合計されます。 セル数が 2^31-1 (2,147,483,647) を超える場合、-1 を返します。'
-    name: getCellCount()
-    fullName: getCellCount()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCellCount(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeAreas#getConditionalFormat:member(1)'
-    summary: 指定された ID に対応する条件付き書式を返します。
-    name: getConditionalFormat(id)
-    fullName: getConditionalFormat(id)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getConditionalFormat(id: string): ConditionalFormat;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ConditionalFormat:interface'
-        description: ''
-      parameters:
-        - id: id
-          description: 条件付き書式の id を指定します。
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.RangeAreas#getConditionalFormats:member(1)'
-    summary: この RangeAreas オブジェクトのセルと交差する ConditionalFormats の集まりを返します。
-    name: getConditionalFormats()
-    fullName: getConditionalFormats()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getConditionalFormats(): ConditionalFormat[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.RangeAreas#getConditionalFormats~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeAreas#getDataValidation:member(1)'
-    summary: RangeAreas の全範囲に対して dataValidation オブジェクトを返します。
-    name: getDataValidation()
-    fullName: getDataValidation()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getDataValidation(): DataValidation;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.DataValidation:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeAreas#getEntireColumn:member(1)'
-    summary: 'RangeAreas の列全体を表す RangeAreas オブジェクトを返します (たとえば、現在の RangeAreas がセル "B4:E11, H2" を表す場合、列 "B:E, H:H" を表す RangeAreas が返されます)。'
-    name: getEntireColumn()
-    fullName: getEntireColumn()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getEntireColumn(): RangeAreas;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.RangeAreas:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeAreas#getEntireRow:member(1)'
-    summary: 'RangeAreas の行全体を表す RangeAreas オブジェクトを返します (たとえば、現在の RangeAreas がセル "B4:E11" を表す場合、行 "4:11" を表す RangeAreas が返されます)。'
-    name: getEntireRow()
-    fullName: getEntireRow()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getEntireRow(): RangeAreas;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.RangeAreas:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeAreas#getFormat:member(1)'
-    summary: Rangeformat オブジェクト内のすべての範囲のフォント、塗りつぶし、罫線、配置、その他のプロパティをカプセル化して、RangeFormat オブジェクトを返します。
-    name: getFormat()
-    fullName: getFormat()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFormat(): RangeFormat;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.RangeFormat:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeAreas#getIntersection:member(1)'
-    summary: 指定した範囲または RangeAreas の交差を表す RangeAreas オブジェクトを返します。 交差が見つからない場合、null オブジェクトが返されます。
-    name: getIntersection(anotherRange)
-    fullName: getIntersection(anotherRange)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getIntersection(anotherRange: Range | RangeAreas | string): RangeAreas;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.RangeAreas:interface'
-        description: ''
-      parameters:
-        - id: anotherRange
-          description: 積集合を決定するために使用される範囲、RangeAreas、または address。
-          type:
-            - 'ExcelScript!ExcelScript.RangeAreas#getIntersection~0:complex'
-  - uid: 'ExcelScript!ExcelScript.RangeAreas#getIsEntireColumn:member(1)'
-    summary: 'この RangeAreas オブジェクトのすべての範囲が列全体を表すかどうかを指定します (例: "a:"、"Q: Z" など)。'
-    name: getIsEntireColumn()
-    fullName: getIsEntireColumn()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getIsEntireColumn(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeAreas#getIsEntireRow:member(1)'
-    summary: 'この RangeAreas オブジェクトのすべての範囲が行全体を表すかどうかを指定します (例: "1:3, 5:7")。'
-    name: getIsEntireRow()
-    fullName: getIsEntireRow()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getIsEntireRow(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeAreas#getOffsetRangeAreas:member(1)'
-    summary: 特定の行と列のオフセットによってシフトされる RangeAreas オブジェクトを返します。 返される RangeAreas のディメンションは元のオブジェクトと一致します。 結果の RangeAreas がワークシート グリッドの境界線の外にはみ出る場合、エラーがスローされます。
-    name: 'getOffsetRangeAreas(rowOffset, columnOffset)'
-    fullName: 'getOffsetRangeAreas(rowOffset, columnOffset)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        getOffsetRangeAreas(
-                    rowOffset: number,
-                    columnOffset: number
-                ): RangeAreas;
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.RangeAreas:interface'
-        description: ''
-      parameters:
-        - id: rowOffset
-          description: RangeAreas がオフセットされる行の数 (正、負、または 0)。 正の値は下方向、負の値は上方向のオフセットを表します。
-          type:
-            - number
-        - id: columnOffset
-          description: RangeAreas がオフセットされる列の数 (正、負、または 0)。 正の値は右方向、負の値は左方向のオフセットを表します。
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.RangeAreas#getPredefinedCellStyle:member(1)'
-    summary: この RangeAreas オブジェクトの全範囲のスタイルを表します。 セルのスタイルに不整合がある場合は、null が返されます。 ユーザー設定のスタイルの場合は、スタイル名が返されます。 組み込みのスタイルの場合、BuiltInStyle 列挙内の値を表す文字列が返されます。
-    name: getPredefinedCellStyle()
-    fullName: getPredefinedCellStyle()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPredefinedCellStyle(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeAreas#getSpecialCells:member(1)'
-    summary: 指定された型と値に一致するすべてのセルを表す RangeAreas オブジェクトを返します。 条件に一致する特別なセルが見つからない場合、null オブジェクトを返します。
-    name: 'getSpecialCells(cellType, cellValueType)'
-    fullName: 'getSpecialCells(cellType, cellValueType)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        getSpecialCells(
-                    cellType: SpecialCellType,
-                    cellValueType?: SpecialCellValueType
-                ): RangeAreas;
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.RangeAreas:interface'
-        description: ''
-      parameters:
-        - id: cellType
-          description: 含めるセルの種類を指定します。
-          type:
-            - 'ExcelScript!ExcelScript.SpecialCellType:enum'
-        - id: cellValueType
-          description: CellType が定数または数式の場合は、この引数を使用して、結果に含めるセルの種類を決定します。 これらの値は、組み合わせて複数の型を返すことができます。 この引数を省略すると、すべての定数および数式が対象になります。
-          type:
-            - 'ExcelScript!ExcelScript.SpecialCellValueType:enum'
-  - uid: 'ExcelScript!ExcelScript.RangeAreas#getTables:member(1)'
-    summary: この RangeAreas オブジェクトの範囲と重なるテーブルの集まりを範囲限定で返します。
-    name: getTables(fullyContained)
-    fullName: getTables(fullyContained)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTables(fullyContained?: boolean): Table[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.RangeAreas#getTables~0:complex'
-        description: ''
-      parameters:
-        - id: fullyContained
-          description: True の場合は、範囲範囲内に完全に含まれるテーブルのみを返します。 既定値は false です。
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.RangeAreas#getUsedRangeAreas:member(1)'
-    summary: RangeAreas オブジェクトの個別の長方形範囲の全使用済み領域を構成する使用済み RangeAreas を返します。 RangeAreas 内に使用されているセルがない場合は、null オブジェクトが返されます。
-    name: getUsedRangeAreas(valuesOnly)
-    fullName: getUsedRangeAreas(valuesOnly)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getUsedRangeAreas(valuesOnly?: boolean): RangeAreas;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.RangeAreas:interface'
-        description: ''
-      parameters:
-        - id: valuesOnly
-          description: 値が指定されたセルのみを使用しているセルとしてのみを考慮するかどうか。
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.RangeAreas#getWorksheet:member(1)'
-    summary: 現在の RangeAreas のワークシートを返します。
-    name: getWorksheet()
-    fullName: getWorksheet()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getWorksheet(): Worksheet;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Worksheet:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeAreas#setDirty:member(1)'
-    summary: 次の再計算が発生したときに再計算する RangeAreas を設定します。
-    name: setDirty()
-    fullName: setDirty()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setDirty(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeAreas#setPredefinedCellStyle:member(1)'
-    summary: この RangeAreas オブジェクトの全範囲のスタイルを表します。 セルのスタイルに不整合がある場合は、null が返されます。 ユーザー設定のスタイルの場合は、スタイル名が返されます。 組み込みのスタイルの場合、BuiltInStyle 列挙内の値を表す文字列が返されます。
-    name: setPredefinedCellStyle(predefinedCellStyle)
-    fullName: setPredefinedCellStyle(predefinedCellStyle)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setPredefinedCellStyle(predefinedCellStyle: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: predefinedCellStyle
-          description: ''
-          type:
-            - string
-references:
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat:interface'
-    name: ConditionalFormat
-    fullName: ExcelScript.ConditionalFormat
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormatType:enum'
-    name: ConditionalFormatType
-    fullName: ExcelScript.ConditionalFormatType
-  - uid: 'ExcelScript!ExcelScript.ClearApplyTo:enum'
-    name: ClearApplyTo
-    fullName: ExcelScript.ClearApplyTo
-  - uid: 'ExcelScript!ExcelScript.RangeAreas#copyFrom~0:complex'
-    name: Range | RangeAreas | string
-    fullName: ExcelScript.Range | ExcelScript.RangeAreas | string
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Range:interface'
-        name: Range
-        fullName: ExcelScript.Range
-      - name: ' | '
-        fullName: ' | '
-      - uid: 'ExcelScript!ExcelScript.RangeAreas:interface'
-        name: RangeAreas
-        fullName: ExcelScript.RangeAreas
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'ExcelScript!ExcelScript.RangeCopyType:enum'
-    name: RangeCopyType
-    fullName: ExcelScript.RangeCopyType
-  - uid: 'ExcelScript!ExcelScript.RangeAreas#getAreas~0:complex'
-    name: 'Range[]'
-    fullName: 'ExcelScript.Range[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Range:interface'
-        name: Range
-        fullName: ExcelScript.Range
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.RangeAreas#getConditionalFormats~0:complex'
-    name: 'ConditionalFormat[]'
-    fullName: 'ExcelScript.ConditionalFormat[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.ConditionalFormat:interface'
-        name: ConditionalFormat
-        fullName: ExcelScript.ConditionalFormat
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.DataValidation:interface'
-    name: DataValidation
-    fullName: ExcelScript.DataValidation
-  - uid: 'ExcelScript!ExcelScript.RangeAreas:interface'
-    name: RangeAreas
-    fullName: ExcelScript.RangeAreas
-  - uid: 'ExcelScript!ExcelScript.RangeFormat:interface'
-    name: RangeFormat
-    fullName: ExcelScript.RangeFormat
-  - uid: 'ExcelScript!ExcelScript.RangeAreas#getIntersection~0:complex'
-    name: Range | RangeAreas | string
-    fullName: ExcelScript.Range | ExcelScript.RangeAreas | string
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Range:interface'
-        name: Range
-        fullName: ExcelScript.Range
-      - name: ' | '
-        fullName: ' | '
-      - uid: 'ExcelScript!ExcelScript.RangeAreas:interface'
-        name: RangeAreas
-        fullName: ExcelScript.RangeAreas
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'ExcelScript!ExcelScript.SpecialCellType:enum'
-    name: SpecialCellType
-    fullName: ExcelScript.SpecialCellType
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType:enum'
-    name: SpecialCellValueType
-    fullName: ExcelScript.SpecialCellValueType
-  - uid: 'ExcelScript!ExcelScript.RangeAreas#getTables~0:complex'
-    name: 'Table[]'
-    fullName: 'ExcelScript.Table[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Table:interface'
-        name: Table
-        fullName: ExcelScript.Table
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.Worksheet:interface'
-    name: Worksheet
-    fullName: ExcelScript.Worksheet
+### YamlMime:TSType
+name: ExcelScript.RangeAreas
+uid: ExcelScript!ExcelScript.RangeAreas:interface
+package: ExcelScript!
+fullName: ExcelScript.RangeAreas
+summary: RangeAreas は、同じワークシート内の1つまたは複数の四角形の範囲のコレクションを表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: addConditionalFormat(type)
+  uid: ExcelScript!ExcelScript.RangeAreas#addConditionalFormat:member(1)
+  package: ExcelScript!
+  fullName: addConditionalFormat(type)
+  summary: 新しい条件付き書式をコレクションの先頭/最上位の優先度に追加します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'addConditionalFormat(type: ConditionalFormatType): ConditionalFormat;'
+    parameters:
+    - id: type
+      description: 追加する条件付き書式の種類を指定します。 詳細については、「ExcelScript」を参照してください。
+      type: <xref uid="ExcelScript!ExcelScript.ConditionalFormatType:enum" />
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ConditionalFormat:interface" />
+      description: ''
+- name: calculate()
+  uid: ExcelScript!ExcelScript.RangeAreas#calculate:member(1)
+  package: ExcelScript!
+  fullName: calculate()
+  summary: RangeAreas のすべてのセルを計算します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'calculate(): void;'
+    return:
+      type: void
+      description: ''
+- name: clear(applyTo)
+  uid: ExcelScript!ExcelScript.RangeAreas#clear:member(1)
+  package: ExcelScript!
+  fullName: clear(applyTo)
+  summary: この RangeAreas オブジェクトを構成する各領域で値、フォーマット、塗りつぶし、罫線などを消去します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'clear(applyTo?: ClearApplyTo): void;'
+    parameters:
+    - id: applyTo
+      description: 省略可能。 クリア操作の種類を決定します。 詳細については、「ExcelScript. ClearApplyTo を参照してください。 既定値は "すべて" です。
+      type: <xref uid="ExcelScript!ExcelScript.ClearApplyTo:enum" />
+    return:
+      type: void
+      description: ''
+- name: clearAllConditionalFormats()
+  uid: ExcelScript!ExcelScript.RangeAreas#clearAllConditionalFormats:member(1)
+  package: ExcelScript!
+  fullName: clearAllConditionalFormats()
+  summary: 現在指定している範囲でアクティブなすべての条件付き書式をクリアする。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'clearAllConditionalFormats(): void;'
+    return:
+      type: void
+      description: ''
+- name: convertDataTypeToText()
+  uid: ExcelScript!ExcelScript.RangeAreas#convertDataTypeToText:member(1)
+  package: ExcelScript!
+  fullName: convertDataTypeToText()
+  summary: RangeAreas 内でデータ型を含むすべてのセルをテキストに変換します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'convertDataTypeToText(): void;'
+    return:
+      type: void
+      description: ''
+- name: copyFrom(sourceRange, copyType, skipBlanks, transpose)
+  uid: ExcelScript!ExcelScript.RangeAreas#copyFrom:member(1)
+  package: ExcelScript!
+  fullName: copyFrom(sourceRange, copyType, skipBlanks, transpose)
+  summary: ソース範囲または RangeAreas から現在の RangeAreas にセル データまたは書式設定をコピーします。 コピー先の rangeAreas のサイズは、ソース範囲または RangeAreas とは異なる場合があります。 転送先は、ソースよりも小さい場合は自動的に展開されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      copyFrom(
+                  sourceRange: Range | RangeAreas | string,
+                  copyType?: RangeCopyType,
+                  skipBlanks?: boolean,
+                  transpose?: boolean
+              ): void;
+    parameters:
+    - id: sourceRange
+      description: コピー元の範囲または RangeAreas を指定します。 ソース範囲に複数の範囲がある場合は、四角形の範囲から完全な行または列を削除することによって、そのフォームを作成できます。
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" /> | string
+    - id: copyType
+      description: コピーするセルのデータまたは書式の種類を指定します。 既定値は "すべて" です。
+      type: <xref uid="ExcelScript!ExcelScript.RangeCopyType:enum" />
+    - id: skipBlanks
+      description: True の場合は、元の範囲または RangeAreas の空白セルをスキップします。 既定値は false です。
+      type: boolean
+    - id: transpose
+      description: True を指定すると、移動先の範囲内のセルが転置されます。 既定値は false です。
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: getAddress()
+  uid: ExcelScript!ExcelScript.RangeAreas#getAddress:member(1)
+  package: ExcelScript!
+  fullName: getAddress()
+  summary: 'RangeAreas 参照を A1 形式で返します。 Address 値には、セルの各長方形ブロックのワークシート名が格納されます (例: "Sheet1!A1: B4、Sheet1!D1: D4 ")。'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getAddress(): string;'
+    return:
+      type: string
+      description: ''
+- name: getAddressLocal()
+  uid: ExcelScript!ExcelScript.RangeAreas#getAddressLocal:member(1)
+  package: ExcelScript!
+  fullName: getAddressLocal()
+  summary: ユーザーロケールの RangeAreas 参照を返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getAddressLocal(): string;'
+    return:
+      type: string
+      description: ''
+- name: getAreaCount()
+  uid: ExcelScript!ExcelScript.RangeAreas#getAreaCount:member(1)
+  package: ExcelScript!
+  fullName: getAreaCount()
+  summary: この RangeAreas オブジェクトを構成する長方形範囲の数を返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getAreaCount(): number;'
+    return:
+      type: number
+      description: ''
+- name: getAreas()
+  uid: ExcelScript!ExcelScript.RangeAreas#getAreas:member(1)
+  package: ExcelScript!
+  fullName: getAreas()
+  summary: この RangeAreas オブジェクトを構成する長方形範囲の集まりを返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getAreas(): Range[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />[]
+      description: ''
+- name: getCellCount()
+  uid: ExcelScript!ExcelScript.RangeAreas#getCellCount:member(1)
+  package: ExcelScript!
+  fullName: getCellCount()
+  summary: RangeAreas オブジェクトのセル数を返します。すべての個別長方形範囲のセル数が合計されます。 セル数が 2^31-1 (2,147,483,647) を超える場合、-1 を返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCellCount(): number;'
+    return:
+      type: number
+      description: ''
+- name: getConditionalFormat(id)
+  uid: ExcelScript!ExcelScript.RangeAreas#getConditionalFormat:member(1)
+  package: ExcelScript!
+  fullName: getConditionalFormat(id)
+  summary: 指定された ID に対応する条件付き書式を返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getConditionalFormat(id: string): ConditionalFormat;'
+    parameters:
+    - id: id
+      description: 条件付き書式の id を指定します。
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ConditionalFormat:interface" />
+      description: ''
+- name: getConditionalFormats()
+  uid: ExcelScript!ExcelScript.RangeAreas#getConditionalFormats:member(1)
+  package: ExcelScript!
+  fullName: getConditionalFormats()
+  summary: この RangeAreas オブジェクトのセルと交差する ConditionalFormats の集まりを返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getConditionalFormats(): ConditionalFormat[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ConditionalFormat:interface" />[]
+      description: ''
+- name: getDataValidation()
+  uid: ExcelScript!ExcelScript.RangeAreas#getDataValidation:member(1)
+  package: ExcelScript!
+  fullName: getDataValidation()
+  summary: RangeAreas の全範囲に対して dataValidation オブジェクトを返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getDataValidation(): DataValidation;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.DataValidation:interface" />
+      description: ''
+- name: getEntireColumn()
+  uid: ExcelScript!ExcelScript.RangeAreas#getEntireColumn:member(1)
+  package: ExcelScript!
+  fullName: getEntireColumn()
+  summary: RangeAreas の列全体を表す RangeAreas オブジェクトを返します (たとえば、現在の RangeAreas がセル "B4:E11, H2" を表す場合、列 "B:E, H:H" を表す RangeAreas が返されます)。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getEntireColumn(): RangeAreas;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
+      description: ''
+- name: getEntireRow()
+  uid: ExcelScript!ExcelScript.RangeAreas#getEntireRow:member(1)
+  package: ExcelScript!
+  fullName: getEntireRow()
+  summary: RangeAreas の行全体を表す RangeAreas オブジェクトを返します (たとえば、現在の RangeAreas がセル "B4:E11" を表す場合、行 "4:11" を表す RangeAreas が返されます)。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getEntireRow(): RangeAreas;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
+      description: ''
+- name: getFormat()
+  uid: ExcelScript!ExcelScript.RangeAreas#getFormat:member(1)
+  package: ExcelScript!
+  fullName: getFormat()
+  summary: Rangeformat オブジェクト内のすべての範囲のフォント、塗りつぶし、罫線、配置、その他のプロパティをカプセル化して、RangeFormat オブジェクトを返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFormat(): RangeFormat;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeFormat:interface" />
+      description: ''
+- name: getIntersection(anotherRange)
+  uid: ExcelScript!ExcelScript.RangeAreas#getIntersection:member(1)
+  package: ExcelScript!
+  fullName: getIntersection(anotherRange)
+  summary: 指定した範囲または RangeAreas の交差を表す RangeAreas オブジェクトを返します。 交差が見つからない場合、null オブジェクトが返されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getIntersection(anotherRange: Range | RangeAreas | string): RangeAreas;'
+    parameters:
+    - id: anotherRange
+      description: 積集合を決定するために使用される範囲、RangeAreas、または address。
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" /> | string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
+      description: ''
+- name: getIsEntireColumn()
+  uid: ExcelScript!ExcelScript.RangeAreas#getIsEntireColumn:member(1)
+  package: ExcelScript!
+  fullName: getIsEntireColumn()
+  summary: 'この RangeAreas オブジェクトのすべての範囲が列全体を表すかどうかを指定します (例: "a:"、"Q: Z" など)。'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getIsEntireColumn(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getIsEntireRow()
+  uid: ExcelScript!ExcelScript.RangeAreas#getIsEntireRow:member(1)
+  package: ExcelScript!
+  fullName: getIsEntireRow()
+  summary: 'この RangeAreas オブジェクトのすべての範囲が行全体を表すかどうかを指定します (例: "1:3, 5:7")。'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getIsEntireRow(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getOffsetRangeAreas(rowOffset, columnOffset)
+  uid: ExcelScript!ExcelScript.RangeAreas#getOffsetRangeAreas:member(1)
+  package: ExcelScript!
+  fullName: getOffsetRangeAreas(rowOffset, columnOffset)
+  summary: 特定の行と列のオフセットによってシフトされる RangeAreas オブジェクトを返します。 返される RangeAreas のディメンションは元のオブジェクトと一致します。 結果の RangeAreas がワークシート グリッドの境界線の外にはみ出る場合、エラーがスローされます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      getOffsetRangeAreas(
+                  rowOffset: number,
+                  columnOffset: number
+              ): RangeAreas;
+    parameters:
+    - id: rowOffset
+      description: RangeAreas がオフセットされる行の数 (正、負、または 0)。 正の値は下方向、負の値は上方向のオフセットを表します。
+      type: number
+    - id: columnOffset
+      description: RangeAreas がオフセットされる列の数 (正、負、または 0)。 正の値は右方向、負の値は左方向のオフセットを表します。
+      type: number
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
+      description: ''
+- name: getPredefinedCellStyle()
+  uid: ExcelScript!ExcelScript.RangeAreas#getPredefinedCellStyle:member(1)
+  package: ExcelScript!
+  fullName: getPredefinedCellStyle()
+  summary: この RangeAreas オブジェクトの全範囲のスタイルを表します。 セルのスタイルに不整合がある場合は、null が返されます。 ユーザー設定のスタイルの場合は、スタイル名が返されます。 組み込みのスタイルの場合、BuiltInStyle 列挙内の値を表す文字列が返されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPredefinedCellStyle(): string;'
+    return:
+      type: string
+      description: ''
+- name: getSpecialCells(cellType, cellValueType)
+  uid: ExcelScript!ExcelScript.RangeAreas#getSpecialCells:member(1)
+  package: ExcelScript!
+  fullName: getSpecialCells(cellType, cellValueType)
+  summary: 指定された型と値に一致するすべてのセルを表す RangeAreas オブジェクトを返します。 条件に一致する特別なセルが見つからない場合、null オブジェクトを返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      getSpecialCells(
+                  cellType: SpecialCellType,
+                  cellValueType?: SpecialCellValueType
+              ): RangeAreas;
+    parameters:
+    - id: cellType
+      description: 含めるセルの種類を指定します。
+      type: <xref uid="ExcelScript!ExcelScript.SpecialCellType:enum" />
+    - id: cellValueType
+      description: CellType が定数または数式の場合は、この引数を使用して、結果に含めるセルの種類を決定します。 これらの値は、組み合わせて複数の型を返すことができます。 この引数を省略すると、すべての定数および数式が対象になります。
+      type: <xref uid="ExcelScript!ExcelScript.SpecialCellValueType:enum" />
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
+      description: ''
+- name: getTables(fullyContained)
+  uid: ExcelScript!ExcelScript.RangeAreas#getTables:member(1)
+  package: ExcelScript!
+  fullName: getTables(fullyContained)
+  summary: この RangeAreas オブジェクトの範囲と重なるテーブルの集まりを範囲限定で返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTables(fullyContained?: boolean): Table[];'
+    parameters:
+    - id: fullyContained
+      description: True の場合は、範囲範囲内に完全に含まれるテーブルのみを返します。 既定値は false です。
+      type: boolean
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Table:interface" />[]
+      description: ''
+- name: getUsedRangeAreas(valuesOnly)
+  uid: ExcelScript!ExcelScript.RangeAreas#getUsedRangeAreas:member(1)
+  package: ExcelScript!
+  fullName: getUsedRangeAreas(valuesOnly)
+  summary: RangeAreas オブジェクトの個別の長方形範囲の全使用済み領域を構成する使用済み RangeAreas を返します。 RangeAreas 内に使用されているセルがない場合は、null オブジェクトが返されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getUsedRangeAreas(valuesOnly?: boolean): RangeAreas;'
+    parameters:
+    - id: valuesOnly
+      description: 値が指定されたセルのみを使用しているセルとしてのみを考慮するかどうか。
+      type: boolean
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
+      description: ''
+- name: getWorksheet()
+  uid: ExcelScript!ExcelScript.RangeAreas#getWorksheet:member(1)
+  package: ExcelScript!
+  fullName: getWorksheet()
+  summary: 現在の RangeAreas のワークシートを返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getWorksheet(): Worksheet;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
+      description: ''
+- name: setDirty()
+  uid: ExcelScript!ExcelScript.RangeAreas#setDirty:member(1)
+  package: ExcelScript!
+  fullName: setDirty()
+  summary: 次の再計算が発生したときに再計算する RangeAreas を設定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setDirty(): void;'
+    return:
+      type: void
+      description: ''
+- name: setPredefinedCellStyle(predefinedCellStyle)
+  uid: ExcelScript!ExcelScript.RangeAreas#setPredefinedCellStyle:member(1)
+  package: ExcelScript!
+  fullName: setPredefinedCellStyle(predefinedCellStyle)
+  summary: この RangeAreas オブジェクトの全範囲のスタイルを表します。 セルのスタイルに不整合がある場合は、null が返されます。 ユーザー設定のスタイルの場合は、スタイル名が返されます。 組み込みのスタイルの場合、BuiltInStyle 列挙内の値を表す文字列が返されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setPredefinedCellStyle(predefinedCellStyle: string): void;'
+    parameters:
+    - id: predefinedCellStyle
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: c32fbe6396b0e5ae78ec78536f827a98e1b2c360
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49416646"
