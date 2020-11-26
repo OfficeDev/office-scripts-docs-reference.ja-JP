@@ -1,24 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.SortDataOption:enum'
-    name: ExcelScript.SortDataOption
-    fullName: ExcelScript.SortDataOption
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.SortDataOption.normal:member'
-      - 'ExcelScript!ExcelScript.SortDataOption.textAsNumber:member'
-  - uid: 'ExcelScript!ExcelScript.SortDataOption.normal:member'
-    name: normal
-    fullName: normal
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SortDataOption.textAsNumber:member'
-    name: textAsNumber
-    fullName: textAsNumber
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.SortDataOption
+uid: ExcelScript!ExcelScript.SortDataOption:enum
+package: ExcelScript!
+fullName: ExcelScript.SortDataOption
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: normal
+  uid: ExcelScript!ExcelScript.SortDataOption.normal:member
+  package: ExcelScript!
+  summary: ''
+- name: textAsNumber
+  uid: ExcelScript!ExcelScript.SortDataOption.textAsNumber:member
+  package: ExcelScript!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 94d7382e902d633a01ba378e0372253e9d9f687f
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49420392"

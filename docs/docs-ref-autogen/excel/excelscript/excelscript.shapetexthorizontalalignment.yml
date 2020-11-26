@@ -1,60 +1,45 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ShapeTextHorizontalAlignment:enum'
-    summary: 図形内のレイアウト枠の水平方向の配置を指定します。
-    name: ExcelScript.ShapeTextHorizontalAlignment
-    fullName: ExcelScript.ShapeTextHorizontalAlignment
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ShapeTextHorizontalAlignment.center:member'
-      - 'ExcelScript!ExcelScript.ShapeTextHorizontalAlignment.distributed:member'
-      - 'ExcelScript!ExcelScript.ShapeTextHorizontalAlignment.justify:member'
-      - 'ExcelScript!ExcelScript.ShapeTextHorizontalAlignment.justifyLow:member'
-      - 'ExcelScript!ExcelScript.ShapeTextHorizontalAlignment.left:member'
-      - 'ExcelScript!ExcelScript.ShapeTextHorizontalAlignment.right:member'
-      - 'ExcelScript!ExcelScript.ShapeTextHorizontalAlignment.thaiDistributed:member'
-  - uid: 'ExcelScript!ExcelScript.ShapeTextHorizontalAlignment.center:member'
-    name: center
-    fullName: center
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShapeTextHorizontalAlignment.distributed:member'
-    name: distributed
-    fullName: distributed
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShapeTextHorizontalAlignment.justify:member'
-    name: justify
-    fullName: justify
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShapeTextHorizontalAlignment.justifyLow:member'
-    name: justifyLow
-    fullName: justifyLow
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShapeTextHorizontalAlignment.left:member'
-    name: left
-    fullName: left
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShapeTextHorizontalAlignment.right:member'
-    name: right
-    fullName: right
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShapeTextHorizontalAlignment.thaiDistributed:member'
-    name: thaiDistributed
-    fullName: thaiDistributed
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.ShapeTextHorizontalAlignment
+uid: ExcelScript!ExcelScript.ShapeTextHorizontalAlignment:enum
+package: ExcelScript!
+fullName: ExcelScript.ShapeTextHorizontalAlignment
+summary: 図形内のレイアウト枠の水平方向の配置を指定します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: center
+  uid: ExcelScript!ExcelScript.ShapeTextHorizontalAlignment.center:member
+  package: ExcelScript!
+  summary: ''
+- name: distributed
+  uid: ExcelScript!ExcelScript.ShapeTextHorizontalAlignment.distributed:member
+  package: ExcelScript!
+  summary: ''
+- name: justify
+  uid: ExcelScript!ExcelScript.ShapeTextHorizontalAlignment.justify:member
+  package: ExcelScript!
+  summary: ''
+- name: justifyLow
+  uid: ExcelScript!ExcelScript.ShapeTextHorizontalAlignment.justifyLow:member
+  package: ExcelScript!
+  summary: ''
+- name: left
+  uid: ExcelScript!ExcelScript.ShapeTextHorizontalAlignment.left:member
+  package: ExcelScript!
+  summary: ''
+- name: right
+  uid: ExcelScript!ExcelScript.ShapeTextHorizontalAlignment.right:member
+  package: ExcelScript!
+  summary: ''
+- name: thaiDistributed
+  uid: ExcelScript!ExcelScript.ShapeTextHorizontalAlignment.thaiDistributed:member
+  package: ExcelScript!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 3ca414609a24d2bd772f16fa47b6a1e4aeaf5d77
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49420616"

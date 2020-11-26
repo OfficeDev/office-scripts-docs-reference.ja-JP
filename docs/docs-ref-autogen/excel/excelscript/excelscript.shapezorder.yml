@@ -1,39 +1,33 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ShapeZOrder:enum'
-    summary: 他の図形を基準として、図形を移動する位置を Z オーダーで指定します。
-    name: ExcelScript.ShapeZOrder
-    fullName: ExcelScript.ShapeZOrder
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ShapeZOrder.bringForward:member'
-      - 'ExcelScript!ExcelScript.ShapeZOrder.bringToFront:member'
-      - 'ExcelScript!ExcelScript.ShapeZOrder.sendBackward:member'
-      - 'ExcelScript!ExcelScript.ShapeZOrder.sendToBack:member'
-  - uid: 'ExcelScript!ExcelScript.ShapeZOrder.bringForward:member'
-    name: bringForward
-    fullName: bringForward
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShapeZOrder.bringToFront:member'
-    name: bringToFront
-    fullName: bringToFront
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShapeZOrder.sendBackward:member'
-    name: sendBackward
-    fullName: sendBackward
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShapeZOrder.sendToBack:member'
-    name: sendToBack
-    fullName: sendToBack
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.ShapeZOrder
+uid: ExcelScript!ExcelScript.ShapeZOrder:enum
+package: ExcelScript!
+fullName: ExcelScript.ShapeZOrder
+summary: 他の図形を基準として、図形を移動する位置を Z オーダーで指定します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: bringForward
+  uid: ExcelScript!ExcelScript.ShapeZOrder.bringForward:member
+  package: ExcelScript!
+  summary: ''
+- name: bringToFront
+  uid: ExcelScript!ExcelScript.ShapeZOrder.bringToFront:member
+  package: ExcelScript!
+  summary: ''
+- name: sendBackward
+  uid: ExcelScript!ExcelScript.ShapeZOrder.sendBackward:member
+  package: ExcelScript!
+  summary: ''
+- name: sendToBack
+  uid: ExcelScript!ExcelScript.ShapeZOrder.sendToBack:member
+  package: ExcelScript!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 2c4b4cff96696d70fbbceae8a434fe0ab1166dcc
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49420525"

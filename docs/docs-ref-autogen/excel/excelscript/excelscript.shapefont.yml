@@ -1,213 +1,198 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ShapeFont:interface'
-    summary: 図形の TextRange オブジェクトのフォント名、フォントサイズ、色などのフォント属性を表します。
-    name: ExcelScript.ShapeFont
-    fullName: ExcelScript.ShapeFont
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ShapeFont#getBold:member(1)'
-      - 'ExcelScript!ExcelScript.ShapeFont#getColor:member(1)'
-      - 'ExcelScript!ExcelScript.ShapeFont#getItalic:member(1)'
-      - 'ExcelScript!ExcelScript.ShapeFont#getName:member(1)'
-      - 'ExcelScript!ExcelScript.ShapeFont#getSize:member(1)'
-      - 'ExcelScript!ExcelScript.ShapeFont#getUnderline:member(1)'
-      - 'ExcelScript!ExcelScript.ShapeFont#setBold:member(1)'
-      - 'ExcelScript!ExcelScript.ShapeFont#setColor:member(1)'
-      - 'ExcelScript!ExcelScript.ShapeFont#setItalic:member(1)'
-      - 'ExcelScript!ExcelScript.ShapeFont#setName:member(1)'
-      - 'ExcelScript!ExcelScript.ShapeFont#setSize:member(1)'
-      - 'ExcelScript!ExcelScript.ShapeFont#setUnderline:member(1)'
-  - uid: 'ExcelScript!ExcelScript.ShapeFont#getBold:member(1)'
-    summary: フォントの太字の状態を表します。 TextRange に太字テキストと太字ではないテキストの両方が含まれている場合、null を返します。
-    name: getBold()
-    fullName: getBold()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getBold(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ShapeFont#getColor:member(1)'
-    summary: 'テキストの色の HTML カラーコード表現 (例: " \# ff0000 は" は赤) を表します。 TextRange に色の異なるテキストが含まれている場合、null を返します。'
-    name: getColor()
-    fullName: getColor()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getColor(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ShapeFont#getItalic:member(1)'
-    summary: フォントの斜体の状態を表します。 TextRange に斜体テキストと斜体ではないテキストの両方が含まれている場合、null を返します。
-    name: getItalic()
-    fullName: getItalic()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItalic(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ShapeFont#getName:member(1)'
-    summary: フォント名 ("Calibri" など) を表します。 テキストが複雑なスクリプトか東アジアの言語の場合、それに対応するフォント名です。それ以外の場合は、ラテン フォントの名前です。
-    name: getName()
-    fullName: getName()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getName(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ShapeFont#getSize:member(1)'
-    summary: 'フォントサイズをポイント単位 (例:11) を表します。 TextRange にサイズの異なるテキストが含まれている場合、null を返します。'
-    name: getSize()
-    fullName: getSize()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSize(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ShapeFont#getUnderline:member(1)'
-    summary: フォントに適用する下線の種類。 TextRange に下線スタイルの異なるテキストが含まれている場合、null を返します。 詳細については、「ExcelScript. Offefont過小 Linestyle」を参照してください。
-    name: getUnderline()
-    fullName: getUnderline()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getUnderline(): ShapeFontUnderlineStyle;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ShapeFontUnderlineStyle:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ShapeFont#setBold:member(1)'
-    summary: フォントの太字の状態を表します。 TextRange に太字テキストと太字ではないテキストの両方が含まれている場合、null を返します。
-    name: setBold(bold)
-    fullName: setBold(bold)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setBold(bold: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: bold
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.ShapeFont#setColor:member(1)'
-    summary: 'テキストの色の HTML カラーコード表現 (例: " \# ff0000 は" は赤) を表します。 TextRange に色の異なるテキストが含まれている場合、null を返します。'
-    name: setColor(color)
-    fullName: setColor(color)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setColor(color: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: color
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.ShapeFont#setItalic:member(1)'
-    summary: フォントの斜体の状態を表します。 TextRange に斜体テキストと斜体ではないテキストの両方が含まれている場合、null を返します。
-    name: setItalic(italic)
-    fullName: setItalic(italic)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setItalic(italic: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: italic
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.ShapeFont#setName:member(1)'
-    summary: フォント名 ("Calibri" など) を表します。 テキストが複雑なスクリプトか東アジアの言語の場合、それに対応するフォント名です。それ以外の場合は、ラテン フォントの名前です。
-    name: setName(name)
-    fullName: setName(name)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setName(name: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: name
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.ShapeFont#setSize:member(1)'
-    summary: 'フォントサイズをポイント単位 (例:11) を表します。 TextRange にサイズの異なるテキストが含まれている場合、null を返します。'
-    name: setSize(size)
-    fullName: setSize(size)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setSize(size: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: size
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.ShapeFont#setUnderline:member(1)'
-    summary: フォントに適用する下線の種類。 TextRange に下線スタイルの異なるテキストが含まれている場合、null を返します。 詳細については、「ExcelScript. Offefont過小 Linestyle」を参照してください。
-    name: setUnderline(underline)
-    fullName: setUnderline(underline)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setUnderline(underline: ShapeFontUnderlineStyle): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: underline
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ShapeFontUnderlineStyle:enum'
-references:
-  - uid: 'ExcelScript!ExcelScript.ShapeFontUnderlineStyle:enum'
-    name: ShapeFontUnderlineStyle
-    fullName: ExcelScript.ShapeFontUnderlineStyle
+### YamlMime:TSType
+name: ExcelScript.ShapeFont
+uid: ExcelScript!ExcelScript.ShapeFont:interface
+package: ExcelScript!
+fullName: ExcelScript.ShapeFont
+summary: 図形の TextRange オブジェクトのフォント名、フォントサイズ、色などのフォント属性を表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getBold()
+  uid: ExcelScript!ExcelScript.ShapeFont#getBold:member(1)
+  package: ExcelScript!
+  fullName: getBold()
+  summary: フォントの太字の状態を表します。 TextRange に太字テキストと太字ではないテキストの両方が含まれている場合、null を返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getBold(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getColor()
+  uid: ExcelScript!ExcelScript.ShapeFont#getColor:member(1)
+  package: ExcelScript!
+  fullName: getColor()
+  summary: 'テキストの色の HTML カラーコード表現 (例: " \# ff0000 は" は赤) を表します。 TextRange に色の異なるテキストが含まれている場合、null を返します。'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getColor(): string;'
+    return:
+      type: string
+      description: ''
+- name: getItalic()
+  uid: ExcelScript!ExcelScript.ShapeFont#getItalic:member(1)
+  package: ExcelScript!
+  fullName: getItalic()
+  summary: フォントの斜体の状態を表します。 TextRange に斜体テキストと斜体ではないテキストの両方が含まれている場合、null を返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getItalic(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getName()
+  uid: ExcelScript!ExcelScript.ShapeFont#getName:member(1)
+  package: ExcelScript!
+  fullName: getName()
+  summary: フォント名 ("Calibri" など) を表します。 テキストが複雑なスクリプトか東アジアの言語の場合、それに対応するフォント名です。それ以外の場合は、ラテン フォントの名前です。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getName(): string;'
+    return:
+      type: string
+      description: ''
+- name: getSize()
+  uid: ExcelScript!ExcelScript.ShapeFont#getSize:member(1)
+  package: ExcelScript!
+  fullName: getSize()
+  summary: フォントサイズをポイント単位 (例:11) を表します。 TextRange にサイズの異なるテキストが含まれている場合、null を返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getSize(): number;'
+    return:
+      type: number
+      description: ''
+- name: getUnderline()
+  uid: ExcelScript!ExcelScript.ShapeFont#getUnderline:member(1)
+  package: ExcelScript!
+  fullName: getUnderline()
+  summary: フォントに適用する下線の種類。 TextRange に下線スタイルの異なるテキストが含まれている場合、null を返します。 詳細については、「ExcelScript. Offefont過小 Linestyle」を参照してください。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getUnderline(): ShapeFontUnderlineStyle;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ShapeFontUnderlineStyle:enum" />
+      description: ''
+- name: setBold(bold)
+  uid: ExcelScript!ExcelScript.ShapeFont#setBold:member(1)
+  package: ExcelScript!
+  fullName: setBold(bold)
+  summary: フォントの太字の状態を表します。 TextRange に太字テキストと太字ではないテキストの両方が含まれている場合、null を返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setBold(bold: boolean): void;'
+    parameters:
+    - id: bold
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setColor(color)
+  uid: ExcelScript!ExcelScript.ShapeFont#setColor:member(1)
+  package: ExcelScript!
+  fullName: setColor(color)
+  summary: 'テキストの色の HTML カラーコード表現 (例: " \# ff0000 は" は赤) を表します。 TextRange に色の異なるテキストが含まれている場合、null を返します。'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setColor(color: string): void;'
+    parameters:
+    - id: color
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setItalic(italic)
+  uid: ExcelScript!ExcelScript.ShapeFont#setItalic:member(1)
+  package: ExcelScript!
+  fullName: setItalic(italic)
+  summary: フォントの斜体の状態を表します。 TextRange に斜体テキストと斜体ではないテキストの両方が含まれている場合、null を返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setItalic(italic: boolean): void;'
+    parameters:
+    - id: italic
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setName(name)
+  uid: ExcelScript!ExcelScript.ShapeFont#setName:member(1)
+  package: ExcelScript!
+  fullName: setName(name)
+  summary: フォント名 ("Calibri" など) を表します。 テキストが複雑なスクリプトか東アジアの言語の場合、それに対応するフォント名です。それ以外の場合は、ラテン フォントの名前です。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setName(name: string): void;'
+    parameters:
+    - id: name
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setSize(size)
+  uid: ExcelScript!ExcelScript.ShapeFont#setSize:member(1)
+  package: ExcelScript!
+  fullName: setSize(size)
+  summary: フォントサイズをポイント単位 (例:11) を表します。 TextRange にサイズの異なるテキストが含まれている場合、null を返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setSize(size: number): void;'
+    parameters:
+    - id: size
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setUnderline(underline)
+  uid: ExcelScript!ExcelScript.ShapeFont#setUnderline:member(1)
+  package: ExcelScript!
+  fullName: setUnderline(underline)
+  summary: フォントに適用する下線の種類。 TextRange に下線スタイルの異なるテキストが含まれている場合、null を返します。 詳細については、「ExcelScript. Offefont過小 Linestyle」を参照してください。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setUnderline(underline: ShapeFontUnderlineStyle): void;'
+    parameters:
+    - id: underline
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ShapeFontUnderlineStyle:enum" />
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 6b66c4e96e389d47663061a6e517e950dca9b0d2
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49420651"

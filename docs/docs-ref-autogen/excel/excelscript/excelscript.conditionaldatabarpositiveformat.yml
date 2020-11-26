@@ -1,110 +1,108 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat:interface'
-    summary: データバーの正の側の条件付き書式 DataBar 形式を表します。
-    name: ExcelScript.ConditionalDataBarPositiveFormat
-    fullName: ExcelScript.ConditionalDataBarPositiveFormat
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#getBorderColor:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#getFillColor:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#getGradientFill:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#setBorderColor:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#setFillColor:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#setGradientFill:member(1)'
-  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#getBorderColor:member(1)'
-    summary: '境界線の色を表す HTML カラーコード \# (例: "FFA500")、または名前付きの html 色 (例: "RRGGBB") です。 境界線が表示または設定されていない場合は、"" (空の文字列)。'
-    name: getBorderColor()
-    fullName: getBorderColor()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getBorderColor(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#getFillColor:member(1)'
-    summary: '塗りつぶし色を表す HTML カラーコード \# ("FFA500" など)、または名前付きの html 色 (例: "RRGGBB")。'
-    name: getFillColor()
-    fullName: getFillColor()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFillColor(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#getGradientFill:member(1)'
-    summary: DataBar にグラデーションがあるかどうかを指定します。
-    name: getGradientFill()
-    fullName: getGradientFill()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getGradientFill(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#setBorderColor:member(1)'
-    summary: '境界線の色を表す HTML カラーコード \# (例: "FFA500")、または名前付きの html 色 (例: "RRGGBB") です。 境界線が表示または設定されていない場合は、"" (空の文字列)。'
-    name: setBorderColor(borderColor)
-    fullName: setBorderColor(borderColor)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setBorderColor(borderColor: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: borderColor
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#setFillColor:member(1)'
-    summary: '塗りつぶし色を表す HTML カラーコード \# ("FFA500" など)、または名前付きの html 色 (例: "RRGGBB")。'
-    name: setFillColor(fillColor)
-    fullName: setFillColor(fillColor)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setFillColor(fillColor: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: fillColor
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#setGradientFill:member(1)'
-    summary: DataBar にグラデーションがあるかどうかを指定します。
-    name: setGradientFill(gradientFill)
-    fullName: setGradientFill(gradientFill)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setGradientFill(gradientFill: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: gradientFill
-          description: ''
-          type:
-            - boolean
+### YamlMime:TSType
+name: ExcelScript.ConditionalDataBarPositiveFormat
+uid: ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat:interface
+package: ExcelScript!
+fullName: ExcelScript.ConditionalDataBarPositiveFormat
+summary: データバーの正の側の条件付き書式 DataBar 形式を表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getBorderColor()
+  uid: ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#getBorderColor:member(1)
+  package: ExcelScript!
+  fullName: getBorderColor()
+  summary: '境界線の色を表す HTML カラーコード \# (例: "FFA500")、または名前付きの html 色 (例: "RRGGBB") です。 境界線が表示または設定されていない場合は、"" (空の文字列)。'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getBorderColor(): string;'
+    return:
+      type: string
+      description: ''
+- name: getFillColor()
+  uid: ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#getFillColor:member(1)
+  package: ExcelScript!
+  fullName: getFillColor()
+  summary: '塗りつぶし色を表す HTML カラーコード \# ("FFA500" など)、または名前付きの html 色 (例: "RRGGBB")。'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFillColor(): string;'
+    return:
+      type: string
+      description: ''
+- name: getGradientFill()
+  uid: ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#getGradientFill:member(1)
+  package: ExcelScript!
+  fullName: getGradientFill()
+  summary: DataBar にグラデーションがあるかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getGradientFill(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: setBorderColor(borderColor)
+  uid: ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#setBorderColor:member(1)
+  package: ExcelScript!
+  fullName: setBorderColor(borderColor)
+  summary: '境界線の色を表す HTML カラーコード \# (例: "FFA500")、または名前付きの html 色 (例: "RRGGBB") です。 境界線が表示または設定されていない場合は、"" (空の文字列)。'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setBorderColor(borderColor: string): void;'
+    parameters:
+    - id: borderColor
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setFillColor(fillColor)
+  uid: ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#setFillColor:member(1)
+  package: ExcelScript!
+  fullName: setFillColor(fillColor)
+  summary: '塗りつぶし色を表す HTML カラーコード \# ("FFA500" など)、または名前付きの html 色 (例: "RRGGBB")。'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setFillColor(fillColor: string): void;'
+    parameters:
+    - id: fillColor
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setGradientFill(gradientFill)
+  uid: ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#setGradientFill:member(1)
+  package: ExcelScript!
+  fullName: setGradientFill(gradientFill)
+  summary: DataBar にグラデーションがあるかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setGradientFill(gradientFill: boolean): void;'
+    parameters:
+    - id: gradientFill
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: e2477aab79cb1074e976aa71eb0748a362c1cda3
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49420686"

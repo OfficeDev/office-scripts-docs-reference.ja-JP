@@ -1,86 +1,77 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ChartAxes:interface'
-    summary: グラフの軸を表します。
-    name: ExcelScript.ChartAxes
-    fullName: ExcelScript.ChartAxes
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ChartAxes#getCategoryAxis:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxes#getChartAxis:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxes#getSeriesAxis:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxes#getValueAxis:member(1)'
-  - uid: 'ExcelScript!ExcelScript.ChartAxes#getCategoryAxis:member(1)'
-    summary: グラフの項目軸を表します。
-    name: getCategoryAxis()
-    fullName: getCategoryAxis()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCategoryAxis(): ChartAxis;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartAxis:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxes#getChartAxis:member(1)'
-    summary: 種類とグループで識別された特定の軸を返します。
-    name: 'getChartAxis(type, group)'
-    fullName: 'getChartAxis(type, group)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getChartAxis(type: ChartAxisType, group?: ChartAxisGroup): ChartAxis;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartAxis:interface'
-        description: ''
-      parameters:
-        - id: type
-          description: 軸の種類を指定します。 詳細については、「ExcelScript」を参照してください。
-          type:
-            - 'ExcelScript!ExcelScript.ChartAxisType:enum'
-        - id: group
-          description: 省略可能。 軸のグループを指定します。 詳細については、「ExcelScript」を参照してください。
-          type:
-            - 'ExcelScript!ExcelScript.ChartAxisGroup:enum'
-  - uid: 'ExcelScript!ExcelScript.ChartAxes#getSeriesAxis:member(1)'
-    summary: 3 次元グラフの系列軸を表します。
-    name: getSeriesAxis()
-    fullName: getSeriesAxis()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSeriesAxis(): ChartAxis;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartAxis:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxes#getValueAxis:member(1)'
-    summary: 軸の数値軸を表します。
-    name: getValueAxis()
-    fullName: getValueAxis()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getValueAxis(): ChartAxis;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartAxis:interface'
-        description: ''
-references:
-  - uid: 'ExcelScript!ExcelScript.ChartAxis:interface'
-    name: ChartAxis
-    fullName: ExcelScript.ChartAxis
-  - uid: 'ExcelScript!ExcelScript.ChartAxisType:enum'
-    name: ChartAxisType
-    fullName: ExcelScript.ChartAxisType
-  - uid: 'ExcelScript!ExcelScript.ChartAxisGroup:enum'
-    name: ChartAxisGroup
-    fullName: ExcelScript.ChartAxisGroup
+### YamlMime:TSType
+name: ExcelScript.ChartAxes
+uid: ExcelScript!ExcelScript.ChartAxes:interface
+package: ExcelScript!
+fullName: ExcelScript.ChartAxes
+summary: グラフの軸を表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getCategoryAxis()
+  uid: ExcelScript!ExcelScript.ChartAxes#getCategoryAxis:member(1)
+  package: ExcelScript!
+  fullName: getCategoryAxis()
+  summary: グラフの項目軸を表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCategoryAxis(): ChartAxis;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartAxis:interface" />
+      description: ''
+- name: getChartAxis(type, group)
+  uid: ExcelScript!ExcelScript.ChartAxes#getChartAxis:member(1)
+  package: ExcelScript!
+  fullName: getChartAxis(type, group)
+  summary: 種類とグループで識別された特定の軸を返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getChartAxis(type: ChartAxisType, group?: ChartAxisGroup): ChartAxis;'
+    parameters:
+    - id: type
+      description: 軸の種類を指定します。 詳細については、「ExcelScript」を参照してください。
+      type: <xref uid="ExcelScript!ExcelScript.ChartAxisType:enum" />
+    - id: group
+      description: 省略可能。 軸のグループを指定します。 詳細については、「ExcelScript」を参照してください。
+      type: <xref uid="ExcelScript!ExcelScript.ChartAxisGroup:enum" />
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartAxis:interface" />
+      description: ''
+- name: getSeriesAxis()
+  uid: ExcelScript!ExcelScript.ChartAxes#getSeriesAxis:member(1)
+  package: ExcelScript!
+  fullName: getSeriesAxis()
+  summary: 3 次元グラフの系列軸を表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getSeriesAxis(): ChartAxis;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartAxis:interface" />
+      description: ''
+- name: getValueAxis()
+  uid: ExcelScript!ExcelScript.ChartAxes#getValueAxis:member(1)
+  package: ExcelScript!
+  fullName: getValueAxis()
+  summary: 軸の数値軸を表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getValueAxis(): ChartAxis;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartAxis:interface" />
+      description: ''
+metadata:
+  ms.openlocfilehash: 5228c8107a7d138be68485c568f89a67578a44dd
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49420112"
