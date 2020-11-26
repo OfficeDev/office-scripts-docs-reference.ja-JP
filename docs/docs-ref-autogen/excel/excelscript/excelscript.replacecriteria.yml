@@ -1,37 +1,42 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ReplaceCriteria:interface'
-    summary: 使用する置換条件を表します。
-    name: ExcelScript.ReplaceCriteria
-    fullName: ExcelScript.ReplaceCriteria
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ReplaceCriteria#completeMatch:member'
-      - 'ExcelScript!ExcelScript.ReplaceCriteria#matchCase:member'
-  - uid: 'ExcelScript!ExcelScript.ReplaceCriteria#completeMatch:member'
-    summary: 一致する必要があるか、完全か一部であるかを指定します。 完全一致は、セルの内容全体に一致します。 部分一致は、セルのコンテンツ内の部分文字列に一致します (たとえば、 `cat` 部分的に一致 `caterpillar` し、`scatter`<!-- -->). 既定値は false (部分一致) です。
-    name: completeMatch
-    fullName: completeMatch
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'completeMatch?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.ReplaceCriteria#matchCase:member'
-    summary: 一致が大文字と小文字を区別するかどうかを指定します。 既定値は false (区別しない) です。
-    name: matchCase
-    fullName: matchCase
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'matchCase?: boolean;'
-      return:
-        type:
-          - boolean
+### YamlMime:TSType
+name: ExcelScript.ReplaceCriteria
+uid: ExcelScript!ExcelScript.ReplaceCriteria:interface
+package: ExcelScript!
+fullName: ExcelScript.ReplaceCriteria
+summary: 使用する置換条件を表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: completeMatch
+  uid: ExcelScript!ExcelScript.ReplaceCriteria#completeMatch:member
+  package: ExcelScript!
+  fullName: completeMatch
+  summary: 一致する必要があるか、完全か一部であるかを指定します。 完全一致は、セルの内容全体に一致します。 部分一致は、セルのコンテンツ内の部分文字列に一致します (たとえば、 `cat` 部分的に一致 `caterpillar` し、 `scatter`<!-- -->). 既定値は false (部分一致) です。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'completeMatch?: boolean;'
+    return:
+      type: boolean
+- name: matchCase
+  uid: ExcelScript!ExcelScript.ReplaceCriteria#matchCase:member
+  package: ExcelScript!
+  fullName: matchCase
+  summary: 一致が大文字と小文字を区別するかどうかを指定します。 既定値は false (区別しない) です。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'matchCase?: boolean;'
+    return:
+      type: boolean
+metadata:
+  ms.openlocfilehash: 1894a4f11b497b0f71859489023b1c3d69e3e0d6
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49420679"

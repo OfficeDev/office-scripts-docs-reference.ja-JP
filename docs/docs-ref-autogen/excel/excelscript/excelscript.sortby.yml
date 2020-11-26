@@ -1,27 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.SortBy:enum'
-    summary: 並べ替えの方向を表します。
-    name: ExcelScript.SortBy
-    fullName: ExcelScript.SortBy
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.SortBy.ascending:member'
-      - 'ExcelScript!ExcelScript.SortBy.descending:member'
-  - uid: 'ExcelScript!ExcelScript.SortBy.ascending:member'
-    summary: 昇順で並べ替えます。 最小から最大、または A から Z まで。
-    name: ascending
-    fullName: ascending
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SortBy.descending:member'
-    summary: 降順の並べ替え。 最大から最小、または Z から A へ。
-    name: descending
-    fullName: descending
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.SortBy
+uid: ExcelScript!ExcelScript.SortBy:enum
+package: ExcelScript!
+fullName: ExcelScript.SortBy
+summary: 並べ替えの方向を表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: ascending
+  uid: ExcelScript!ExcelScript.SortBy.ascending:member
+  package: ExcelScript!
+  summary: 昇順で並べ替えます。 最小から最大、または A から Z まで。
+- name: descending
+  uid: ExcelScript!ExcelScript.SortBy.descending:member
+  package: ExcelScript!
+  summary: 降順の並べ替え。 最大から最小、または Z から A へ。
+metadata:
+  ms.openlocfilehash: ac1f6680ff327f4fedd3b7521ebd3a130bd4f077
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49420441"

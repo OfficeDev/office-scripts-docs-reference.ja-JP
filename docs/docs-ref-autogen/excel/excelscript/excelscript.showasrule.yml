@@ -1,59 +1,54 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ShowAsRule:interface'
-    name: ExcelScript.ShowAsRule
-    fullName: ExcelScript.ShowAsRule
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ShowAsRule#baseField:member'
-      - 'ExcelScript!ExcelScript.ShowAsRule#baseItem:member'
-      - 'ExcelScript!ExcelScript.ShowAsRule#calculation:member'
-  - uid: 'ExcelScript!ExcelScript.ShowAsRule#baseField:member'
-    summary: ShowAsCalculation 型に基づき、該当する場合は ShowAs 計算の基準となるベース ピボット フィールド。それ以外の場合は null 値です。
-    name: baseField
-    fullName: baseField
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'baseField?: PivotField;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.PivotField:interface'
-  - uid: 'ExcelScript!ExcelScript.ShowAsRule#baseItem:member'
-    summary: ShowAsCalculation 型に基づき、該当する場合は ShowAs 計算の基準となるベース項目。それ以外の場合は null 値です。
-    name: baseItem
-    fullName: baseItem
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'baseItem?: PivotItem;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.PivotItem:interface'
-  - uid: 'ExcelScript!ExcelScript.ShowAsRule#calculation:member'
-    summary: データ ピボット フィールドに使用する ShowAs 計算。 詳細については、「ExcelScript. ShowAsCalculation」を参照してください。
-    name: calculation
-    fullName: calculation
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'calculation: ShowAsCalculation;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ShowAsCalculation:enum'
-references:
-  - uid: 'ExcelScript!ExcelScript.PivotField:interface'
-    name: PivotField
-    fullName: ExcelScript.PivotField
-  - uid: 'ExcelScript!ExcelScript.PivotItem:interface'
-    name: PivotItem
-    fullName: ExcelScript.PivotItem
-  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation:enum'
-    name: ShowAsCalculation
-    fullName: ExcelScript.ShowAsCalculation
+### YamlMime:TSType
+name: ExcelScript.ShowAsRule
+uid: ExcelScript!ExcelScript.ShowAsRule:interface
+package: ExcelScript!
+fullName: ExcelScript.ShowAsRule
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: baseField
+  uid: ExcelScript!ExcelScript.ShowAsRule#baseField:member
+  package: ExcelScript!
+  fullName: baseField
+  summary: ShowAsCalculation 型に基づき、該当する場合は ShowAs 計算の基準となるベース ピボット フィールド。それ以外の場合は null 値です。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'baseField?: PivotField;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PivotField:interface" />
+- name: baseItem
+  uid: ExcelScript!ExcelScript.ShowAsRule#baseItem:member
+  package: ExcelScript!
+  fullName: baseItem
+  summary: ShowAsCalculation 型に基づき、該当する場合は ShowAs 計算の基準となるベース項目。それ以外の場合は null 値です。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'baseItem?: PivotItem;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PivotItem:interface" />
+- name: calculation
+  uid: ExcelScript!ExcelScript.ShowAsRule#calculation:member
+  package: ExcelScript!
+  fullName: calculation
+  summary: データ ピボット フィールドに使用する ShowAs 計算。 詳細については、「ExcelScript. ShowAsCalculation」を参照してください。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'calculation: ShowAsCalculation;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ShowAsCalculation:enum" />
+metadata:
+  ms.openlocfilehash: 67e05ceac6ff56dc434ee1679fc237c15216c871
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49420504"

@@ -1,728 +1,622 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.Table:interface'
-    summary: Excel の表を表します。
-    name: ExcelScript.Table
-    fullName: ExcelScript.Table
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.Table#addColumn:member(1)'
-      - 'ExcelScript!ExcelScript.Table#addRow:member(1)'
-      - 'ExcelScript!ExcelScript.Table#addRows:member(1)'
-      - 'ExcelScript!ExcelScript.Table#clearFilters:member(1)'
-      - 'ExcelScript!ExcelScript.Table#convertToRange:member(1)'
-      - 'ExcelScript!ExcelScript.Table#delete:member(1)'
-      - 'ExcelScript!ExcelScript.Table#deleteRowsAt:member(1)'
-      - 'ExcelScript!ExcelScript.Table#getAutoFilter:member(1)'
-      - 'ExcelScript!ExcelScript.Table#getColumn:member(1)'
-      - 'ExcelScript!ExcelScript.Table#getColumnById:member(1)'
-      - 'ExcelScript!ExcelScript.Table#getColumnByName:member(1)'
-      - 'ExcelScript!ExcelScript.Table#getColumns:member(1)'
-      - 'ExcelScript!ExcelScript.Table#getHeaderRowRange:member(1)'
-      - 'ExcelScript!ExcelScript.Table#getHighlightFirstColumn:member(1)'
-      - 'ExcelScript!ExcelScript.Table#getHighlightLastColumn:member(1)'
-      - 'ExcelScript!ExcelScript.Table#getId:member(1)'
-      - 'ExcelScript!ExcelScript.Table#getLegacyId:member(1)'
-      - 'ExcelScript!ExcelScript.Table#getName:member(1)'
-      - 'ExcelScript!ExcelScript.Table#getPredefinedTableStyle:member(1)'
-      - 'ExcelScript!ExcelScript.Table#getRange:member(1)'
-      - 'ExcelScript!ExcelScript.Table#getRangeBetweenHeaderAndTotal:member(1)'
-      - 'ExcelScript!ExcelScript.Table#getRowCount:member(1)'
-      - 'ExcelScript!ExcelScript.Table#getShowBandedColumns:member(1)'
-      - 'ExcelScript!ExcelScript.Table#getShowBandedRows:member(1)'
-      - 'ExcelScript!ExcelScript.Table#getShowFilterButton:member(1)'
-      - 'ExcelScript!ExcelScript.Table#getShowHeaders:member(1)'
-      - 'ExcelScript!ExcelScript.Table#getShowTotals:member(1)'
-      - 'ExcelScript!ExcelScript.Table#getSort:member(1)'
-      - 'ExcelScript!ExcelScript.Table#getTotalRowRange:member(1)'
-      - 'ExcelScript!ExcelScript.Table#getWorksheet:member(1)'
-      - 'ExcelScript!ExcelScript.Table#reapplyFilters:member(1)'
-      - 'ExcelScript!ExcelScript.Table#setHighlightFirstColumn:member(1)'
-      - 'ExcelScript!ExcelScript.Table#setHighlightLastColumn:member(1)'
-      - 'ExcelScript!ExcelScript.Table#setName:member(1)'
-      - 'ExcelScript!ExcelScript.Table#setPredefinedTableStyle:member(1)'
-      - 'ExcelScript!ExcelScript.Table#setShowBandedColumns:member(1)'
-      - 'ExcelScript!ExcelScript.Table#setShowBandedRows:member(1)'
-      - 'ExcelScript!ExcelScript.Table#setShowFilterButton:member(1)'
-      - 'ExcelScript!ExcelScript.Table#setShowHeaders:member(1)'
-      - 'ExcelScript!ExcelScript.Table#setShowTotals:member(1)'
-  - uid: 'ExcelScript!ExcelScript.Table#addColumn:member(1)'
-    summary: テーブルに新しい列を追加します。
-    name: 'addColumn(index, values, name)'
-    fullName: 'addColumn(index, values, name)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        addColumn(
-                    index?: number,
-                    values?: (boolean | string | number)[],
-                    name?: string
-                ): TableColumn;
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.TableColumn:interface'
-        description: ''
-      parameters:
-        - id: index
-          description: 省略可能。新しい列の相対位置を指定します。null または -1 の場合、最後に追加が行われます。上位のインデックスを持つ列は横にシフトされます。0 を起点とする番号になります。
-          type:
-            - number
-        - id: values
-          description: 省略可能。 表の列の書式設定されていない値の1次元配列。
-          type:
-            - '(boolean | string | number)[]'
-        - id: name
-          description: 省略可能。 新しい列の名前を指定します。 null の場合は既定の名前が使用されます。
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Table#addRow:member(1)'
-    summary: 表に行を1つ追加します。
-    name: 'addRow(index, values)'
-    fullName: 'addRow(index, values)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'addRow(index?: number, values?: (boolean | string | number)[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: index
-          description: 省略可能。新しい行の相対位置を指定します。null または -1 の場合、最後に追加が行われます。挿入した行の下のすべての行が下方向にシフトします。0 を起点とする番号になります。
-          type:
-            - number
-        - id: values
-          description: 省略可能。 表の行の書式設定されていない値の1次元配列。
-          type:
-            - '(boolean | string | number)[]'
-  - uid: 'ExcelScript!ExcelScript.Table#addRows:member(1)'
-    summary: テーブルに 1 つ以上の行を追加します。
-    name: 'addRows(index, values)'
-    fullName: 'addRows(index, values)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'addRows(index?: number, values?: (boolean | string | number)[][]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: index
-          description: 省略可能。新しい行の相対位置を指定します。null または -1 の場合、最後に追加が行われます。挿入した行の下のすべての行が下方向にシフトします。0 を起点とする番号になります。
-          type:
-            - number
-        - id: values
-          description: 省略可能。 テーブルの行の書式設定されていない値の 2 次元の配列。
-          type:
-            - '(boolean | string | number)[][]'
-  - uid: 'ExcelScript!ExcelScript.Table#clearFilters:member(1)'
-    summary: 現在テーブルに適用されているすべてのフィルターをクリアします。
-    name: clearFilters()
-    fullName: clearFilters()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'clearFilters(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Table#convertToRange:member(1)'
-    summary: テーブルを通常の範囲のセルに変換します。 すべてのデータが保持されます。
-    name: convertToRange()
-    fullName: convertToRange()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'convertToRange(): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Table#delete:member(1)'
-    summary: テーブルを削除します。
-    name: delete()
-    fullName: delete()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'delete(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Table#deleteRowsAt:member(1)'
-    summary: 指定したインデックス位置にある、指定した数の行を削除します。
-    name: 'deleteRowsAt(index, count)'
-    fullName: 'deleteRowsAt(index, count)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'deleteRowsAt(index: number, count?: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: index
-          description: '削除する行のインデックス値を指定します。 注意: 行のインデックスは、削除に使用する値を決定した時点から移動した可能性があります。'
-          type:
-            - number
-        - id: count
-          description: 削除する行の数を指定します。 既定では、1つの行が削除されます。
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.Table#getAutoFilter:member(1)'
-    summary: テーブルの AutoFilter オブジェクトを表します。
-    name: getAutoFilter()
-    fullName: getAutoFilter()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getAutoFilter(): AutoFilter;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.AutoFilter:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Table#getColumn:member(1)'
-    summary: 名前または ID によって、列オブジェクトを取得します。 列が存在しない場合は null オブジェクトを返します。
-    name: getColumn(key)
-    fullName: getColumn(key)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getColumn(key: number | string): TableColumn | undefined;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Table#getColumn~0:complex'
-        description: ''
-      parameters:
-        - id: key
-          description: 列名または ID。
-          type:
-            - number | string
-  - uid: 'ExcelScript!ExcelScript.Table#getColumnById:member(1)'
-    summary: ID で column オブジェクトを取得します。 列が存在しない場合は、undefined を返します。
-    name: getColumnById(key)
-    fullName: getColumnById(key)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getColumnById(key: number): TableColumn | undefined;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Table#getColumnById~0:complex'
-        description: ''
-      parameters:
-        - id: key
-          description: 列 ID。
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.Table#getColumnByName:member(1)'
-    summary: 名前によって column オブジェクトを取得します。 列が存在しない場合は、undefined を返します。
-    name: getColumnByName(key)
-    fullName: getColumnByName(key)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getColumnByName(key: string): TableColumn | undefined;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Table#getColumnByName~0:complex'
-        description: ''
-      parameters:
-        - id: key
-          description: 列名を指定します。
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Table#getColumns:member(1)'
-    summary: テーブルに含まれるすべての列のコレクションを表します。
-    name: getColumns()
-    fullName: getColumns()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getColumns(): TableColumn[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Table#getColumns~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Table#getHeaderRowRange:member(1)'
-    summary: テーブルのヘッダー行に関連付けられた範囲オブジェクトを取得します。
-    name: getHeaderRowRange()
-    fullName: getHeaderRowRange()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getHeaderRowRange(): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Table#getHighlightFirstColumn:member(1)'
-    summary: 最初の列に特別な書式設定が含まれているかどうかを指定します。
-    name: getHighlightFirstColumn()
-    fullName: getHighlightFirstColumn()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getHighlightFirstColumn(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Table#getHighlightLastColumn:member(1)'
-    summary: 最後の列に特別な書式設定が含まれているかどうかを指定します。
-    name: getHighlightLastColumn()
-    fullName: getHighlightLastColumn()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getHighlightLastColumn(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Table#getId:member(1)'
-    summary: 指定されたブックのテーブルを一意に識別する値を返します。 識別子の値は、テーブルの名前が変更された場合も変わりません。
-    name: getId()
-    fullName: getId()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getId(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Table#getLegacyId:member(1)'
-    summary: 数値 id を返します。
-    name: getLegacyId()
-    fullName: getLegacyId()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getLegacyId(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Table#getName:member(1)'
-    summary: テーブルの名前。
-    name: getName()
-    fullName: getName()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getName(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Table#getPredefinedTableStyle:member(1)'
-    summary: テーブル スタイルを表す定数値。 可能な値は次のとおりです。 "TableStyleLight1" は "TableStyleLight21"、"TableStyleMedium1" ~ "TableStyleMedium28"、"TableStyleDark1" ~ "TableStyleDark11" です。 ブックに存在するカスタムのユーザー定義スタイルも指定できます。
-    name: getPredefinedTableStyle()
-    fullName: getPredefinedTableStyle()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPredefinedTableStyle(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Table#getRange:member(1)'
-    summary: テーブル全体に関連付けられた範囲オブジェクトを取得します。
-    name: getRange()
-    fullName: getRange()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRange(): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Table#getRangeBetweenHeaderAndTotal:member(1)'
-    summary: テーブルのデータ本体に関連付けられた範囲オブジェクトを取得します。
-    name: getRangeBetweenHeaderAndTotal()
-    fullName: getRangeBetweenHeaderAndTotal()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRangeBetweenHeaderAndTotal(): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Table#getRowCount:member(1)'
-    summary: 表の行数を取得します。
-    name: getRowCount()
-    fullName: getRowCount()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRowCount(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Table#getShowBandedColumns:member(1)'
-    summary: 列が、表を見やすくするために、奇数列の強調表示と異なる方法で表示される縞模様の書式を表示するかどうかを指定します。
-    name: getShowBandedColumns()
-    fullName: getShowBandedColumns()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getShowBandedColumns(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Table#getShowBandedRows:member(1)'
-    summary: 表を見やすくするために、奇数行の強調表示に使用する縞模様の書式を行に表示するかどうかを指定します。
-    name: getShowBandedRows()
-    fullName: getShowBandedRows()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getShowBandedRows(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Table#getShowFilterButton:member(1)'
-    summary: フィルターボタンを各列ヘッダーの上部に表示するかどうかを指定します。 これは、テーブルにヘッダー行が含まれている場合のみ設定できます。
-    name: getShowFilterButton()
-    fullName: getShowFilterButton()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getShowFilterButton(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Table#getShowHeaders:member(1)'
-    summary: ヘッダー行を表示するかどうかを指定します。 この値によって、ヘッダー行の表示または削除を設定できます。
-    name: getShowHeaders()
-    fullName: getShowHeaders()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getShowHeaders(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Table#getShowTotals:member(1)'
-    summary: 合計行を表示するかどうかを指定します。 この値によって、集計行の表示または削除を設定できます。
-    name: getShowTotals()
-    fullName: getShowTotals()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getShowTotals(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Table#getSort:member(1)'
-    summary: テーブル内の並べ替えを表します。
-    name: getSort()
-    fullName: getSort()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSort(): TableSort;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.TableSort:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Table#getTotalRowRange:member(1)'
-    summary: テーブルの集計行に関連付けられた範囲オブジェクトを取得します。
-    name: getTotalRowRange()
-    fullName: getTotalRowRange()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTotalRowRange(): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Table#getWorksheet:member(1)'
-    summary: 現在のテーブルを含んでいるワークシート。
-    name: getWorksheet()
-    fullName: getWorksheet()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getWorksheet(): Worksheet;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Worksheet:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Table#reapplyFilters:member(1)'
-    summary: 現在テーブルにあるすべてのフィルターを再適用します。
-    name: reapplyFilters()
-    fullName: reapplyFilters()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'reapplyFilters(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Table#setHighlightFirstColumn:member(1)'
-    summary: 最初の列に特別な書式設定が含まれているかどうかを指定します。
-    name: setHighlightFirstColumn(highlightFirstColumn)
-    fullName: setHighlightFirstColumn(highlightFirstColumn)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setHighlightFirstColumn(highlightFirstColumn: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: highlightFirstColumn
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.Table#setHighlightLastColumn:member(1)'
-    summary: 最後の列に特別な書式設定が含まれているかどうかを指定します。
-    name: setHighlightLastColumn(highlightLastColumn)
-    fullName: setHighlightLastColumn(highlightLastColumn)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setHighlightLastColumn(highlightLastColumn: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: highlightLastColumn
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.Table#setName:member(1)'
-    summary: テーブルの名前。
-    name: setName(name)
-    fullName: setName(name)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setName(name: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: name
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Table#setPredefinedTableStyle:member(1)'
-    summary: テーブル スタイルを表す定数値。 可能な値は次のとおりです。 "TableStyleLight1" は "TableStyleLight21"、"TableStyleMedium1" ~ "TableStyleMedium28"、"TableStyleDark1" ~ "TableStyleDark11" です。 ブックに存在するカスタムのユーザー定義スタイルも指定できます。
-    name: setPredefinedTableStyle(predefinedTableStyle)
-    fullName: setPredefinedTableStyle(predefinedTableStyle)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setPredefinedTableStyle(predefinedTableStyle: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: predefinedTableStyle
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Table#setShowBandedColumns:member(1)'
-    summary: 列が、表を見やすくするために、奇数列の強調表示と異なる方法で表示される縞模様の書式を表示するかどうかを指定します。
-    name: setShowBandedColumns(showBandedColumns)
-    fullName: setShowBandedColumns(showBandedColumns)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setShowBandedColumns(showBandedColumns: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: showBandedColumns
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.Table#setShowBandedRows:member(1)'
-    summary: 表を見やすくするために、奇数行の強調表示に使用する縞模様の書式を行に表示するかどうかを指定します。
-    name: setShowBandedRows(showBandedRows)
-    fullName: setShowBandedRows(showBandedRows)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setShowBandedRows(showBandedRows: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: showBandedRows
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.Table#setShowFilterButton:member(1)'
-    summary: フィルターボタンを各列ヘッダーの上部に表示するかどうかを指定します。 これは、テーブルにヘッダー行が含まれている場合のみ設定できます。
-    name: setShowFilterButton(showFilterButton)
-    fullName: setShowFilterButton(showFilterButton)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setShowFilterButton(showFilterButton: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: showFilterButton
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.Table#setShowHeaders:member(1)'
-    summary: ヘッダー行を表示するかどうかを指定します。 この値によって、ヘッダー行の表示または削除を設定できます。
-    name: setShowHeaders(showHeaders)
-    fullName: setShowHeaders(showHeaders)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setShowHeaders(showHeaders: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: showHeaders
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.Table#setShowTotals:member(1)'
-    summary: 合計行を表示するかどうかを指定します。 この値によって、集計行の表示または削除を設定できます。
-    name: setShowTotals(showTotals)
-    fullName: setShowTotals(showTotals)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setShowTotals(showTotals: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: showTotals
-          description: ''
-          type:
-            - boolean
-references:
-  - uid: 'ExcelScript!ExcelScript.TableColumn:interface'
-    name: TableColumn
-    fullName: ExcelScript.TableColumn
-  - uid: 'ExcelScript!ExcelScript.Range:interface'
-    name: Range
-    fullName: ExcelScript.Range
-  - uid: 'ExcelScript!ExcelScript.AutoFilter:interface'
-    name: AutoFilter
-    fullName: ExcelScript.AutoFilter
-  - uid: 'ExcelScript!ExcelScript.Table#getColumn~0:complex'
-    name: TableColumn | undefined
-    fullName: ExcelScript.TableColumn | undefined
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.TableColumn:interface'
-        name: TableColumn
-        fullName: ExcelScript.TableColumn
-      - name: ' | undefined'
-        fullName: ' | undefined'
-  - uid: 'ExcelScript!ExcelScript.Table#getColumnById~0:complex'
-    name: TableColumn | undefined
-    fullName: ExcelScript.TableColumn | undefined
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.TableColumn:interface'
-        name: TableColumn
-        fullName: ExcelScript.TableColumn
-      - name: ' | undefined'
-        fullName: ' | undefined'
-  - uid: 'ExcelScript!ExcelScript.Table#getColumnByName~0:complex'
-    name: TableColumn | undefined
-    fullName: ExcelScript.TableColumn | undefined
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.TableColumn:interface'
-        name: TableColumn
-        fullName: ExcelScript.TableColumn
-      - name: ' | undefined'
-        fullName: ' | undefined'
-  - uid: 'ExcelScript!ExcelScript.Table#getColumns~0:complex'
-    name: 'TableColumn[]'
-    fullName: 'ExcelScript.TableColumn[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.TableColumn:interface'
-        name: TableColumn
-        fullName: ExcelScript.TableColumn
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.TableSort:interface'
-    name: TableSort
-    fullName: ExcelScript.TableSort
-  - uid: 'ExcelScript!ExcelScript.Worksheet:interface'
-    name: Worksheet
-    fullName: ExcelScript.Worksheet
+### YamlMime:TSType
+name: ExcelScript.Table
+uid: ExcelScript!ExcelScript.Table:interface
+package: ExcelScript!
+fullName: ExcelScript.Table
+summary: Excel の表を表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: addColumn(index, values, name)
+  uid: ExcelScript!ExcelScript.Table#addColumn:member(1)
+  package: ExcelScript!
+  fullName: addColumn(index, values, name)
+  summary: テーブルに新しい列を追加します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      addColumn(
+                  index?: number,
+                  values?: (boolean | string | number)[],
+                  name?: string
+              ): TableColumn;
+    parameters:
+    - id: index
+      description: 省略可能。新しい列の相対位置を指定します。null または -1 の場合、最後に追加が行われます。上位のインデックスを持つ列は横にシフトされます。0 を起点とする番号になります。
+      type: number
+    - id: values
+      description: 省略可能。 表の列の書式設定されていない値の1次元配列。
+      type: (boolean | string | number)[]
+    - id: name
+      description: 省略可能。 新しい列の名前を指定します。 null の場合は既定の名前が使用されます。
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.TableColumn:interface" />
+      description: ''
+- name: addRow(index, values)
+  uid: ExcelScript!ExcelScript.Table#addRow:member(1)
+  package: ExcelScript!
+  fullName: addRow(index, values)
+  summary: 表に行を1つ追加します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'addRow(index?: number, values?: (boolean | string | number)[]): void;'
+    parameters:
+    - id: index
+      description: 省略可能。新しい行の相対位置を指定します。null または -1 の場合、最後に追加が行われます。挿入した行の下のすべての行が下方向にシフトします。0 を起点とする番号になります。
+      type: number
+    - id: values
+      description: 省略可能。 表の行の書式設定されていない値の1次元配列。
+      type: (boolean | string | number)[]
+    return:
+      type: void
+      description: ''
+- name: addRows(index, values)
+  uid: ExcelScript!ExcelScript.Table#addRows:member(1)
+  package: ExcelScript!
+  fullName: addRows(index, values)
+  summary: テーブルに 1 つ以上の行を追加します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'addRows(index?: number, values?: (boolean | string | number)[][]): void;'
+    parameters:
+    - id: index
+      description: 省略可能。新しい行の相対位置を指定します。null または -1 の場合、最後に追加が行われます。挿入した行の下のすべての行が下方向にシフトします。0 を起点とする番号になります。
+      type: number
+    - id: values
+      description: 省略可能。 テーブルの行の書式設定されていない値の 2 次元の配列。
+      type: (boolean | string | number)[][]
+    return:
+      type: void
+      description: ''
+- name: clearFilters()
+  uid: ExcelScript!ExcelScript.Table#clearFilters:member(1)
+  package: ExcelScript!
+  fullName: clearFilters()
+  summary: 現在テーブルに適用されているすべてのフィルターをクリアします。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'clearFilters(): void;'
+    return:
+      type: void
+      description: ''
+- name: convertToRange()
+  uid: ExcelScript!ExcelScript.Table#convertToRange:member(1)
+  package: ExcelScript!
+  fullName: convertToRange()
+  summary: テーブルを通常の範囲のセルに変換します。 すべてのデータが保持されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'convertToRange(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: delete()
+  uid: ExcelScript!ExcelScript.Table#delete:member(1)
+  package: ExcelScript!
+  fullName: delete()
+  summary: テーブルを削除します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(): void;'
+    return:
+      type: void
+      description: ''
+- name: deleteRowsAt(index, count)
+  uid: ExcelScript!ExcelScript.Table#deleteRowsAt:member(1)
+  package: ExcelScript!
+  fullName: deleteRowsAt(index, count)
+  summary: 指定したインデックス位置にある、指定した数の行を削除します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'deleteRowsAt(index: number, count?: number): void;'
+    parameters:
+    - id: index
+      description: '削除する行のインデックス値を指定します。 注意: 行のインデックスは、削除に使用する値を決定した時点から移動した可能性があります。'
+      type: number
+    - id: count
+      description: 削除する行の数を指定します。 既定では、1つの行が削除されます。
+      type: number
+    return:
+      type: void
+      description: ''
+- name: getAutoFilter()
+  uid: ExcelScript!ExcelScript.Table#getAutoFilter:member(1)
+  package: ExcelScript!
+  fullName: getAutoFilter()
+  summary: テーブルの AutoFilter オブジェクトを表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getAutoFilter(): AutoFilter;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.AutoFilter:interface" />
+      description: ''
+- name: getColumn(key)
+  uid: ExcelScript!ExcelScript.Table#getColumn:member(1)
+  package: ExcelScript!
+  fullName: getColumn(key)
+  summary: 名前または ID によって、列オブジェクトを取得します。 列が存在しない場合は null オブジェクトを返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getColumn(key: number | string): TableColumn | undefined;'
+    parameters:
+    - id: key
+      description: 列名または ID。
+      type: number | string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.TableColumn:interface" /> | undefined
+      description: ''
+- name: getColumnById(key)
+  uid: ExcelScript!ExcelScript.Table#getColumnById:member(1)
+  package: ExcelScript!
+  fullName: getColumnById(key)
+  summary: ID で column オブジェクトを取得します。 列が存在しない場合は、undefined を返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getColumnById(key: number): TableColumn | undefined;'
+    parameters:
+    - id: key
+      description: 列 ID。
+      type: number
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.TableColumn:interface" /> | undefined
+      description: ''
+- name: getColumnByName(key)
+  uid: ExcelScript!ExcelScript.Table#getColumnByName:member(1)
+  package: ExcelScript!
+  fullName: getColumnByName(key)
+  summary: 名前によって column オブジェクトを取得します。 列が存在しない場合は、undefined を返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getColumnByName(key: string): TableColumn | undefined;'
+    parameters:
+    - id: key
+      description: 列名を指定します。
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.TableColumn:interface" /> | undefined
+      description: ''
+- name: getColumns()
+  uid: ExcelScript!ExcelScript.Table#getColumns:member(1)
+  package: ExcelScript!
+  fullName: getColumns()
+  summary: テーブルに含まれるすべての列のコレクションを表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getColumns(): TableColumn[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.TableColumn:interface" />[]
+      description: ''
+- name: getHeaderRowRange()
+  uid: ExcelScript!ExcelScript.Table#getHeaderRowRange:member(1)
+  package: ExcelScript!
+  fullName: getHeaderRowRange()
+  summary: テーブルのヘッダー行に関連付けられた範囲オブジェクトを取得します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getHeaderRowRange(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getHighlightFirstColumn()
+  uid: ExcelScript!ExcelScript.Table#getHighlightFirstColumn:member(1)
+  package: ExcelScript!
+  fullName: getHighlightFirstColumn()
+  summary: 最初の列に特別な書式設定が含まれているかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getHighlightFirstColumn(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getHighlightLastColumn()
+  uid: ExcelScript!ExcelScript.Table#getHighlightLastColumn:member(1)
+  package: ExcelScript!
+  fullName: getHighlightLastColumn()
+  summary: 最後の列に特別な書式設定が含まれているかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getHighlightLastColumn(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getId()
+  uid: ExcelScript!ExcelScript.Table#getId:member(1)
+  package: ExcelScript!
+  fullName: getId()
+  summary: 指定されたブックのテーブルを一意に識別する値を返します。 識別子の値は、テーブルの名前が変更された場合も変わりません。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getId(): string;'
+    return:
+      type: string
+      description: ''
+- name: getLegacyId()
+  uid: ExcelScript!ExcelScript.Table#getLegacyId:member(1)
+  package: ExcelScript!
+  fullName: getLegacyId()
+  summary: 数値 id を返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLegacyId(): string;'
+    return:
+      type: string
+      description: ''
+- name: getName()
+  uid: ExcelScript!ExcelScript.Table#getName:member(1)
+  package: ExcelScript!
+  fullName: getName()
+  summary: テーブルの名前。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getName(): string;'
+    return:
+      type: string
+      description: ''
+- name: getPredefinedTableStyle()
+  uid: ExcelScript!ExcelScript.Table#getPredefinedTableStyle:member(1)
+  package: ExcelScript!
+  fullName: getPredefinedTableStyle()
+  summary: テーブル スタイルを表す定数値。 可能な値は次のとおりです。 "TableStyleLight1" は "TableStyleLight21"、"TableStyleMedium1" ~ "TableStyleMedium28"、"TableStyleDark1" ~ "TableStyleDark11" です。 ブックに存在するカスタムのユーザー定義スタイルも指定できます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPredefinedTableStyle(): string;'
+    return:
+      type: string
+      description: ''
+- name: getRange()
+  uid: ExcelScript!ExcelScript.Table#getRange:member(1)
+  package: ExcelScript!
+  fullName: getRange()
+  summary: テーブル全体に関連付けられた範囲オブジェクトを取得します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRange(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getRangeBetweenHeaderAndTotal()
+  uid: ExcelScript!ExcelScript.Table#getRangeBetweenHeaderAndTotal:member(1)
+  package: ExcelScript!
+  fullName: getRangeBetweenHeaderAndTotal()
+  summary: テーブルのデータ本体に関連付けられた範囲オブジェクトを取得します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRangeBetweenHeaderAndTotal(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getRowCount()
+  uid: ExcelScript!ExcelScript.Table#getRowCount:member(1)
+  package: ExcelScript!
+  fullName: getRowCount()
+  summary: 表の行数を取得します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRowCount(): number;'
+    return:
+      type: number
+      description: ''
+- name: getShowBandedColumns()
+  uid: ExcelScript!ExcelScript.Table#getShowBandedColumns:member(1)
+  package: ExcelScript!
+  fullName: getShowBandedColumns()
+  summary: 列が、表を見やすくするために、奇数列の強調表示と異なる方法で表示される縞模様の書式を表示するかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getShowBandedColumns(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getShowBandedRows()
+  uid: ExcelScript!ExcelScript.Table#getShowBandedRows:member(1)
+  package: ExcelScript!
+  fullName: getShowBandedRows()
+  summary: 表を見やすくするために、奇数行の強調表示に使用する縞模様の書式を行に表示するかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getShowBandedRows(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getShowFilterButton()
+  uid: ExcelScript!ExcelScript.Table#getShowFilterButton:member(1)
+  package: ExcelScript!
+  fullName: getShowFilterButton()
+  summary: フィルターボタンを各列ヘッダーの上部に表示するかどうかを指定します。 これは、テーブルにヘッダー行が含まれている場合のみ設定できます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getShowFilterButton(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getShowHeaders()
+  uid: ExcelScript!ExcelScript.Table#getShowHeaders:member(1)
+  package: ExcelScript!
+  fullName: getShowHeaders()
+  summary: ヘッダー行を表示するかどうかを指定します。 この値によって、ヘッダー行の表示または削除を設定できます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getShowHeaders(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getShowTotals()
+  uid: ExcelScript!ExcelScript.Table#getShowTotals:member(1)
+  package: ExcelScript!
+  fullName: getShowTotals()
+  summary: 合計行を表示するかどうかを指定します。 この値によって、集計行の表示または削除を設定できます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getShowTotals(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getSort()
+  uid: ExcelScript!ExcelScript.Table#getSort:member(1)
+  package: ExcelScript!
+  fullName: getSort()
+  summary: テーブル内の並べ替えを表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getSort(): TableSort;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.TableSort:interface" />
+      description: ''
+- name: getTotalRowRange()
+  uid: ExcelScript!ExcelScript.Table#getTotalRowRange:member(1)
+  package: ExcelScript!
+  fullName: getTotalRowRange()
+  summary: テーブルの集計行に関連付けられた範囲オブジェクトを取得します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTotalRowRange(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getWorksheet()
+  uid: ExcelScript!ExcelScript.Table#getWorksheet:member(1)
+  package: ExcelScript!
+  fullName: getWorksheet()
+  summary: 現在のテーブルを含んでいるワークシート。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getWorksheet(): Worksheet;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
+      description: ''
+- name: reapplyFilters()
+  uid: ExcelScript!ExcelScript.Table#reapplyFilters:member(1)
+  package: ExcelScript!
+  fullName: reapplyFilters()
+  summary: 現在テーブルにあるすべてのフィルターを再適用します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'reapplyFilters(): void;'
+    return:
+      type: void
+      description: ''
+- name: setHighlightFirstColumn(highlightFirstColumn)
+  uid: ExcelScript!ExcelScript.Table#setHighlightFirstColumn:member(1)
+  package: ExcelScript!
+  fullName: setHighlightFirstColumn(highlightFirstColumn)
+  summary: 最初の列に特別な書式設定が含まれているかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setHighlightFirstColumn(highlightFirstColumn: boolean): void;'
+    parameters:
+    - id: highlightFirstColumn
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setHighlightLastColumn(highlightLastColumn)
+  uid: ExcelScript!ExcelScript.Table#setHighlightLastColumn:member(1)
+  package: ExcelScript!
+  fullName: setHighlightLastColumn(highlightLastColumn)
+  summary: 最後の列に特別な書式設定が含まれているかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setHighlightLastColumn(highlightLastColumn: boolean): void;'
+    parameters:
+    - id: highlightLastColumn
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setName(name)
+  uid: ExcelScript!ExcelScript.Table#setName:member(1)
+  package: ExcelScript!
+  fullName: setName(name)
+  summary: テーブルの名前。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setName(name: string): void;'
+    parameters:
+    - id: name
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setPredefinedTableStyle(predefinedTableStyle)
+  uid: ExcelScript!ExcelScript.Table#setPredefinedTableStyle:member(1)
+  package: ExcelScript!
+  fullName: setPredefinedTableStyle(predefinedTableStyle)
+  summary: テーブル スタイルを表す定数値。 可能な値は次のとおりです。 "TableStyleLight1" は "TableStyleLight21"、"TableStyleMedium1" ~ "TableStyleMedium28"、"TableStyleDark1" ~ "TableStyleDark11" です。 ブックに存在するカスタムのユーザー定義スタイルも指定できます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setPredefinedTableStyle(predefinedTableStyle: string): void;'
+    parameters:
+    - id: predefinedTableStyle
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setShowBandedColumns(showBandedColumns)
+  uid: ExcelScript!ExcelScript.Table#setShowBandedColumns:member(1)
+  package: ExcelScript!
+  fullName: setShowBandedColumns(showBandedColumns)
+  summary: 列が、表を見やすくするために、奇数列の強調表示と異なる方法で表示される縞模様の書式を表示するかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setShowBandedColumns(showBandedColumns: boolean): void;'
+    parameters:
+    - id: showBandedColumns
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setShowBandedRows(showBandedRows)
+  uid: ExcelScript!ExcelScript.Table#setShowBandedRows:member(1)
+  package: ExcelScript!
+  fullName: setShowBandedRows(showBandedRows)
+  summary: 表を見やすくするために、奇数行の強調表示に使用する縞模様の書式を行に表示するかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setShowBandedRows(showBandedRows: boolean): void;'
+    parameters:
+    - id: showBandedRows
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setShowFilterButton(showFilterButton)
+  uid: ExcelScript!ExcelScript.Table#setShowFilterButton:member(1)
+  package: ExcelScript!
+  fullName: setShowFilterButton(showFilterButton)
+  summary: フィルターボタンを各列ヘッダーの上部に表示するかどうかを指定します。 これは、テーブルにヘッダー行が含まれている場合のみ設定できます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setShowFilterButton(showFilterButton: boolean): void;'
+    parameters:
+    - id: showFilterButton
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setShowHeaders(showHeaders)
+  uid: ExcelScript!ExcelScript.Table#setShowHeaders:member(1)
+  package: ExcelScript!
+  fullName: setShowHeaders(showHeaders)
+  summary: ヘッダー行を表示するかどうかを指定します。 この値によって、ヘッダー行の表示または削除を設定できます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setShowHeaders(showHeaders: boolean): void;'
+    parameters:
+    - id: showHeaders
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setShowTotals(showTotals)
+  uid: ExcelScript!ExcelScript.Table#setShowTotals:member(1)
+  package: ExcelScript!
+  fullName: setShowTotals(showTotals)
+  summary: 合計行を表示するかどうかを指定します。 この値によって、集計行の表示または削除を設定できます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setShowTotals(showTotals: boolean): void;'
+    parameters:
+    - id: showTotals
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: fcf4f090e5ad499d6a7500fa1e290efc08e7a5a2
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49420322"

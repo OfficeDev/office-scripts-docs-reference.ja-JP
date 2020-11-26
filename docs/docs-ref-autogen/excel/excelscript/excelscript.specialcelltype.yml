@@ -1,74 +1,49 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.SpecialCellType:enum'
-    name: ExcelScript.SpecialCellType
-    fullName: ExcelScript.SpecialCellType
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.SpecialCellType.blanks:member'
-      - 'ExcelScript!ExcelScript.SpecialCellType.conditionalFormats:member'
-      - 'ExcelScript!ExcelScript.SpecialCellType.constants:member'
-      - 'ExcelScript!ExcelScript.SpecialCellType.dataValidations:member'
-      - 'ExcelScript!ExcelScript.SpecialCellType.formulas:member'
-      - 'ExcelScript!ExcelScript.SpecialCellType.sameConditionalFormat:member'
-      - 'ExcelScript!ExcelScript.SpecialCellType.sameDataValidation:member'
-      - 'ExcelScript!ExcelScript.SpecialCellType.visible:member'
-  - uid: 'ExcelScript!ExcelScript.SpecialCellType.blanks:member'
-    summary: コンテンツのないセル
-    name: blanks
-    fullName: blanks
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellType.conditionalFormats:member'
-    summary: 条件付き書式が設定されるすべてのセル
-    name: conditionalFormats
-    fullName: conditionalFormats
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellType.constants:member'
-    summary: 定数が含まれているセル
-    name: constants
-    fullName: constants
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellType.dataValidations:member'
-    summary: 条件の設定が含まれているセル
-    name: dataValidations
-    fullName: dataValidations
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellType.formulas:member'
-    summary: 数式が含まれているセル
-    name: formulas
-    fullName: formulas
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellType.sameConditionalFormat:member'
-    summary: 範囲内の最初のセルと同じ条件付き書式を持つセル。
-    name: sameConditionalFormat
-    fullName: sameConditionalFormat
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellType.sameDataValidation:member'
-    summary: 範囲内の最初のセルと同じデータの入力規則の条件を持つセル。
-    name: sameDataValidation
-    fullName: sameDataValidation
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellType.visible:member'
-    summary: 表示されているセル
-    name: visible
-    fullName: visible
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.SpecialCellType
+uid: ExcelScript!ExcelScript.SpecialCellType:enum
+package: ExcelScript!
+fullName: ExcelScript.SpecialCellType
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: blanks
+  uid: ExcelScript!ExcelScript.SpecialCellType.blanks:member
+  package: ExcelScript!
+  summary: コンテンツのないセル
+- name: conditionalFormats
+  uid: ExcelScript!ExcelScript.SpecialCellType.conditionalFormats:member
+  package: ExcelScript!
+  summary: 条件付き書式が設定されるすべてのセル
+- name: constants
+  uid: ExcelScript!ExcelScript.SpecialCellType.constants:member
+  package: ExcelScript!
+  summary: 定数が含まれているセル
+- name: dataValidations
+  uid: ExcelScript!ExcelScript.SpecialCellType.dataValidations:member
+  package: ExcelScript!
+  summary: 条件の設定が含まれているセル
+- name: formulas
+  uid: ExcelScript!ExcelScript.SpecialCellType.formulas:member
+  package: ExcelScript!
+  summary: 数式が含まれているセル
+- name: sameConditionalFormat
+  uid: ExcelScript!ExcelScript.SpecialCellType.sameConditionalFormat:member
+  package: ExcelScript!
+  summary: 範囲内の最初のセルと同じ条件付き書式を持つセル。
+- name: sameDataValidation
+  uid: ExcelScript!ExcelScript.SpecialCellType.sameDataValidation:member
+  package: ExcelScript!
+  summary: 範囲内の最初のセルと同じデータの入力規則の条件を持つセル。
+- name: visible
+  uid: ExcelScript!ExcelScript.SpecialCellType.visible:member
+  package: ExcelScript!
+  summary: 表示されているセル
+metadata:
+  ms.openlocfilehash: e267008031fc63a772a4410ae996daf5b1352f86
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49420350"

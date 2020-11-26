@@ -1,32 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ShapeScaleFrom:enum'
-    summary: 図形を拡大縮小する場合、図形の位置を保持する部分を指定します。
-    name: ExcelScript.ShapeScaleFrom
-    fullName: ExcelScript.ShapeScaleFrom
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ShapeScaleFrom.scaleFromBottomRight:member'
-      - 'ExcelScript!ExcelScript.ShapeScaleFrom.scaleFromMiddle:member'
-      - 'ExcelScript!ExcelScript.ShapeScaleFrom.scaleFromTopLeft:member'
-  - uid: 'ExcelScript!ExcelScript.ShapeScaleFrom.scaleFromBottomRight:member'
-    name: scaleFromBottomRight
-    fullName: scaleFromBottomRight
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShapeScaleFrom.scaleFromMiddle:member'
-    name: scaleFromMiddle
-    fullName: scaleFromMiddle
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShapeScaleFrom.scaleFromTopLeft:member'
-    name: scaleFromTopLeft
-    fullName: scaleFromTopLeft
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.ShapeScaleFrom
+uid: ExcelScript!ExcelScript.ShapeScaleFrom:enum
+package: ExcelScript!
+fullName: ExcelScript.ShapeScaleFrom
+summary: 図形を拡大縮小する場合、図形の位置を保持する部分を指定します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: scaleFromBottomRight
+  uid: ExcelScript!ExcelScript.ShapeScaleFrom.scaleFromBottomRight:member
+  package: ExcelScript!
+  summary: ''
+- name: scaleFromMiddle
+  uid: ExcelScript!ExcelScript.ShapeScaleFrom.scaleFromMiddle:member
+  package: ExcelScript!
+  summary: ''
+- name: scaleFromTopLeft
+  uid: ExcelScript!ExcelScript.ShapeScaleFrom.scaleFromTopLeft:member
+  package: ExcelScript!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 6d94c141c4695d625a00ee426e2a6d6964cb7ab7
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49420623"

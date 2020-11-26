@@ -1,46 +1,37 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ShapeType:enum'
-    summary: 図形の種類を指定します。
-    name: ExcelScript.ShapeType
-    fullName: ExcelScript.ShapeType
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ShapeType.geometricShape:member'
-      - 'ExcelScript!ExcelScript.ShapeType.group:member'
-      - 'ExcelScript!ExcelScript.ShapeType.image:member'
-      - 'ExcelScript!ExcelScript.ShapeType.line:member'
-      - 'ExcelScript!ExcelScript.ShapeType.unsupported:member'
-  - uid: 'ExcelScript!ExcelScript.ShapeType.geometricShape:member'
-    name: geometricShape
-    fullName: geometricShape
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShapeType.group:member'
-    name: group
-    fullName: group
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShapeType.image:member'
-    name: image
-    fullName: image
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShapeType.line:member'
-    name: line
-    fullName: line
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShapeType.unsupported:member'
-    name: unsupported
-    fullName: unsupported
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.ShapeType
+uid: ExcelScript!ExcelScript.ShapeType:enum
+package: ExcelScript!
+fullName: ExcelScript.ShapeType
+summary: 図形の種類を指定します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: geometricShape
+  uid: ExcelScript!ExcelScript.ShapeType.geometricShape:member
+  package: ExcelScript!
+  summary: ''
+- name: group
+  uid: ExcelScript!ExcelScript.ShapeType.group:member
+  package: ExcelScript!
+  summary: ''
+- name: image
+  uid: ExcelScript!ExcelScript.ShapeType.image:member
+  package: ExcelScript!
+  summary: ''
+- name: line
+  uid: ExcelScript!ExcelScript.ShapeType.line:member
+  package: ExcelScript!
+  summary: ''
+- name: unsupported
+  uid: ExcelScript!ExcelScript.ShapeType.unsupported:member
+  package: ExcelScript!
+  summary: ''
+metadata:
+  ms.openlocfilehash: af8d6e8b41b2d05cf96c4452b1649899823b5760
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49420532"
