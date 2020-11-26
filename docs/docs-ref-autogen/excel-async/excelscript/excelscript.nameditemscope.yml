@@ -1,26 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.NamedItemScope:enum'
-    name: Excel.NamedItemScope
-    fullName: Excel.NamedItemScope
-    langs:
-      - typeScript
-    type: enum
-    package: excel!
-    children:
-      - 'excel!Excel.NamedItemScope.workbook:member'
-      - 'excel!Excel.NamedItemScope.worksheet:member'
-  - uid: 'excel!Excel.NamedItemScope.workbook:member'
-    name: workbook
-    fullName: workbook
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Workbook"'
-  - uid: 'excel!Excel.NamedItemScope.worksheet:member'
-    name: worksheet
-    fullName: worksheet
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Worksheet"'
+### YamlMime:TSEnum
+name: Excel.NamedItemScope
+uid: excel!Excel.NamedItemScope:enum
+package: excel!
+fullName: Excel.NamedItemScope
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: workbook
+  uid: excel!Excel.NamedItemScope.workbook:member
+  package: excel!
+  summary: ''
+- name: worksheet
+  uid: excel!Excel.NamedItemScope.worksheet:member
+  package: excel!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 6cf814c5858729a944b5ed1cc367a78c83fb727c
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49418983"

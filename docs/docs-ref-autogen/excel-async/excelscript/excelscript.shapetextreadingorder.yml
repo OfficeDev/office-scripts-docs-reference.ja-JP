@@ -1,27 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ShapeTextReadingOrder:enum'
-    summary: 図形内のテキストボックスの読み取り順序を指定します。
-    name: Excel.ShapeTextReadingOrder
-    fullName: Excel.ShapeTextReadingOrder
-    langs:
-      - typeScript
-    type: enum
-    package: excel!
-    children:
-      - 'excel!Excel.ShapeTextReadingOrder.leftToRight:member'
-      - 'excel!Excel.ShapeTextReadingOrder.rightToLeft:member'
-  - uid: 'excel!Excel.ShapeTextReadingOrder.leftToRight:member'
-    name: leftToRight
-    fullName: leftToRight
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"LeftToRight"'
-  - uid: 'excel!Excel.ShapeTextReadingOrder.rightToLeft:member'
-    name: rightToLeft
-    fullName: rightToLeft
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"RightToLeft"'
+### YamlMime:TSEnum
+name: Excel.ShapeTextReadingOrder
+uid: excel!Excel.ShapeTextReadingOrder:enum
+package: excel!
+fullName: Excel.ShapeTextReadingOrder
+summary: 図形内のテキストボックスの読み取り順序を指定します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: leftToRight
+  uid: excel!Excel.ShapeTextReadingOrder.leftToRight:member
+  package: excel!
+  summary: ''
+- name: rightToLeft
+  uid: excel!Excel.ShapeTextReadingOrder.rightToLeft:member
+  package: excel!
+  summary: ''
+metadata:
+  ms.openlocfilehash: de1b969b53793f41382235181e4bbe7c07533d57
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49418500"

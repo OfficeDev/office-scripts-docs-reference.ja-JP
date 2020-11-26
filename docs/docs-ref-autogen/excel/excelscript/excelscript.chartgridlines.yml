@@ -1,62 +1,61 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ChartGridlines:interface'
-    summary: グラフの軸の目盛線または補助目盛線を表します。
-    name: ExcelScript.ChartGridlines
-    fullName: ExcelScript.ChartGridlines
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ChartGridlines#getFormat:member(1)'
-      - 'ExcelScript!ExcelScript.ChartGridlines#getVisible:member(1)'
-      - 'ExcelScript!ExcelScript.ChartGridlines#setVisible:member(1)'
-  - uid: 'ExcelScript!ExcelScript.ChartGridlines#getFormat:member(1)'
-    summary: グラフの目盛線の書式設定を表します。
-    name: getFormat()
-    fullName: getFormat()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFormat(): ChartGridlinesFormat;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartGridlinesFormat:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartGridlines#getVisible:member(1)'
-    summary: 軸目盛線を表示するかどうかを指定します。
-    name: getVisible()
-    fullName: getVisible()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getVisible(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartGridlines#setVisible:member(1)'
-    summary: 軸目盛線を表示するかどうかを指定します。
-    name: setVisible(visible)
-    fullName: setVisible(visible)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setVisible(visible: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: visible
-          description: ''
-          type:
-            - boolean
-references:
-  - uid: 'ExcelScript!ExcelScript.ChartGridlinesFormat:interface'
-    name: ChartGridlinesFormat
-    fullName: ExcelScript.ChartGridlinesFormat
+### YamlMime:TSType
+name: ExcelScript.ChartGridlines
+uid: ExcelScript!ExcelScript.ChartGridlines:interface
+package: ExcelScript!
+fullName: ExcelScript.ChartGridlines
+summary: グラフの軸の目盛線または補助目盛線を表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getFormat()
+  uid: ExcelScript!ExcelScript.ChartGridlines#getFormat:member(1)
+  package: ExcelScript!
+  fullName: getFormat()
+  summary: グラフの目盛線の書式設定を表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFormat(): ChartGridlinesFormat;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartGridlinesFormat:interface" />
+      description: ''
+- name: getVisible()
+  uid: ExcelScript!ExcelScript.ChartGridlines#getVisible:member(1)
+  package: ExcelScript!
+  fullName: getVisible()
+  summary: 軸目盛線を表示するかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getVisible(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: setVisible(visible)
+  uid: ExcelScript!ExcelScript.ChartGridlines#setVisible:member(1)
+  package: ExcelScript!
+  fullName: setVisible(visible)
+  summary: 軸目盛線を表示するかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setVisible(visible: boolean): void;'
+    parameters:
+    - id: visible
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 81ec22aa839c012149c0b7facd8ffc69b417b398
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49419804"

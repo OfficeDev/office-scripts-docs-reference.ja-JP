@@ -1,32 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ChartParentLabelStrategy:enum'
-    summary: グラフ系列のレイアウトの親ラベル戦略を表します。 これは、ツリーマップグラフにのみ適用されます。
-    name: ExcelScript.ChartParentLabelStrategy
-    fullName: ExcelScript.ChartParentLabelStrategy
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ChartParentLabelStrategy.banner:member'
-      - 'ExcelScript!ExcelScript.ChartParentLabelStrategy.none:member'
-      - 'ExcelScript!ExcelScript.ChartParentLabelStrategy.overlapping:member'
-  - uid: 'ExcelScript!ExcelScript.ChartParentLabelStrategy.banner:member'
-    name: banner
-    fullName: banner
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartParentLabelStrategy.none:member'
-    name: none
-    fullName: none
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartParentLabelStrategy.overlapping:member'
-    name: overlapping
-    fullName: overlapping
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.ChartParentLabelStrategy
+uid: ExcelScript!ExcelScript.ChartParentLabelStrategy:enum
+package: ExcelScript!
+fullName: ExcelScript.ChartParentLabelStrategy
+summary: グラフ系列のレイアウトの親ラベル戦略を表します。 これは、ツリーマップグラフにのみ適用されます。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: banner
+  uid: ExcelScript!ExcelScript.ChartParentLabelStrategy.banner:member
+  package: ExcelScript!
+  summary: ''
+- name: none
+  uid: ExcelScript!ExcelScript.ChartParentLabelStrategy.none:member
+  package: ExcelScript!
+  summary: ''
+- name: overlapping
+  uid: ExcelScript!ExcelScript.ChartParentLabelStrategy.overlapping:member
+  package: ExcelScript!
+  summary: ''
+metadata:
+  ms.openlocfilehash: a21cd9e1a44a4f3d5ae330981c47592031e9fe14
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49419650"

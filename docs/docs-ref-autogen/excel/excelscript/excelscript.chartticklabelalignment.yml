@@ -1,31 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ChartTickLabelAlignment:enum'
-    name: ExcelScript.ChartTickLabelAlignment
-    fullName: ExcelScript.ChartTickLabelAlignment
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ChartTickLabelAlignment.center:member'
-      - 'ExcelScript!ExcelScript.ChartTickLabelAlignment.left:member'
-      - 'ExcelScript!ExcelScript.ChartTickLabelAlignment.right:member'
-  - uid: 'ExcelScript!ExcelScript.ChartTickLabelAlignment.center:member'
-    name: center
-    fullName: center
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartTickLabelAlignment.left:member'
-    name: left
-    fullName: left
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartTickLabelAlignment.right:member'
-    name: right
-    fullName: right
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.ChartTickLabelAlignment
+uid: ExcelScript!ExcelScript.ChartTickLabelAlignment:enum
+package: ExcelScript!
+fullName: ExcelScript.ChartTickLabelAlignment
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: center
+  uid: ExcelScript!ExcelScript.ChartTickLabelAlignment.center:member
+  package: ExcelScript!
+  summary: ''
+- name: left
+  uid: ExcelScript!ExcelScript.ChartTickLabelAlignment.left:member
+  package: ExcelScript!
+  summary: ''
+- name: right
+  uid: ExcelScript!ExcelScript.ChartTickLabelAlignment.right:member
+  package: ExcelScript!
+  summary: ''
+metadata:
+  ms.openlocfilehash: d56336a17b97607267c6757890ddfbc550deaa96
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49419531"

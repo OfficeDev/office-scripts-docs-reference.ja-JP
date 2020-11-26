@@ -1,38 +1,33 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ConditionalRangeBorderIndex:enum'
-    name: ExcelScript.ConditionalRangeBorderIndex
-    fullName: ExcelScript.ConditionalRangeBorderIndex
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ConditionalRangeBorderIndex.edgeBottom:member'
-      - 'ExcelScript!ExcelScript.ConditionalRangeBorderIndex.edgeLeft:member'
-      - 'ExcelScript!ExcelScript.ConditionalRangeBorderIndex.edgeRight:member'
-      - 'ExcelScript!ExcelScript.ConditionalRangeBorderIndex.edgeTop:member'
-  - uid: 'ExcelScript!ExcelScript.ConditionalRangeBorderIndex.edgeBottom:member'
-    name: edgeBottom
-    fullName: edgeBottom
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ConditionalRangeBorderIndex.edgeLeft:member'
-    name: edgeLeft
-    fullName: edgeLeft
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ConditionalRangeBorderIndex.edgeRight:member'
-    name: edgeRight
-    fullName: edgeRight
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ConditionalRangeBorderIndex.edgeTop:member'
-    name: edgeTop
-    fullName: edgeTop
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.ConditionalRangeBorderIndex
+uid: ExcelScript!ExcelScript.ConditionalRangeBorderIndex:enum
+package: ExcelScript!
+fullName: ExcelScript.ConditionalRangeBorderIndex
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: edgeBottom
+  uid: ExcelScript!ExcelScript.ConditionalRangeBorderIndex.edgeBottom:member
+  package: ExcelScript!
+  summary: ''
+- name: edgeLeft
+  uid: ExcelScript!ExcelScript.ConditionalRangeBorderIndex.edgeLeft:member
+  package: ExcelScript!
+  summary: ''
+- name: edgeRight
+  uid: ExcelScript!ExcelScript.ConditionalRangeBorderIndex.edgeRight:member
+  package: ExcelScript!
+  summary: ''
+- name: edgeTop
+  uid: ExcelScript!ExcelScript.ConditionalRangeBorderIndex.edgeTop:member
+  package: ExcelScript!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 57df5314dd53aef882d7eba5a4bd127edca5d2b9
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49419405"

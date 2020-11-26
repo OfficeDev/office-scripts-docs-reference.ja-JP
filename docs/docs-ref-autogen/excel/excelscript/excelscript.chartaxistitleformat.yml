@@ -1,63 +1,57 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ChartAxisTitleFormat:interface'
-    summary: グラフ軸のタイトルの書式設定を表します。
-    name: ExcelScript.ChartAxisTitleFormat
-    fullName: ExcelScript.ChartAxisTitleFormat
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ChartAxisTitleFormat#getBorder:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxisTitleFormat#getFill:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxisTitleFormat#getFont:member(1)'
-  - uid: 'ExcelScript!ExcelScript.ChartAxisTitleFormat#getBorder:member(1)'
-    summary: グラフ軸のタイトルの枠線の書式を指定します。色、linestyle、および重みを含みます。
-    name: getBorder()
-    fullName: getBorder()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getBorder(): ChartBorder;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartBorder:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxisTitleFormat#getFill:member(1)'
-    summary: グラフ軸のタイトルの塗りつぶしの書式を指定します。
-    name: getFill()
-    fullName: getFill()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFill(): ChartFill;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartFill:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxisTitleFormat#getFont:member(1)'
-    summary: グラフ軸のタイトルのフォントの属性 (フォント名、フォントサイズ、色など) をグラフ軸のタイトルオブジェクトとして指定します。
-    name: getFont()
-    fullName: getFont()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFont(): ChartFont;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartFont:interface'
-        description: ''
-references:
-  - uid: 'ExcelScript!ExcelScript.ChartBorder:interface'
-    name: ChartBorder
-    fullName: ExcelScript.ChartBorder
-  - uid: 'ExcelScript!ExcelScript.ChartFill:interface'
-    name: ChartFill
-    fullName: ExcelScript.ChartFill
-  - uid: 'ExcelScript!ExcelScript.ChartFont:interface'
-    name: ChartFont
-    fullName: ExcelScript.ChartFont
+### YamlMime:TSType
+name: ExcelScript.ChartAxisTitleFormat
+uid: ExcelScript!ExcelScript.ChartAxisTitleFormat:interface
+package: ExcelScript!
+fullName: ExcelScript.ChartAxisTitleFormat
+summary: グラフ軸のタイトルの書式設定を表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getBorder()
+  uid: ExcelScript!ExcelScript.ChartAxisTitleFormat#getBorder:member(1)
+  package: ExcelScript!
+  fullName: getBorder()
+  summary: グラフ軸のタイトルの枠線の書式を指定します。色、linestyle、および重みを含みます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getBorder(): ChartBorder;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartBorder:interface" />
+      description: ''
+- name: getFill()
+  uid: ExcelScript!ExcelScript.ChartAxisTitleFormat#getFill:member(1)
+  package: ExcelScript!
+  fullName: getFill()
+  summary: グラフ軸のタイトルの塗りつぶしの書式を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFill(): ChartFill;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartFill:interface" />
+      description: ''
+- name: getFont()
+  uid: ExcelScript!ExcelScript.ChartAxisTitleFormat#getFont:member(1)
+  package: ExcelScript!
+  fullName: getFont()
+  summary: グラフ軸のタイトルのフォントの属性 (フォント名、フォントサイズ、色など) をグラフ軸のタイトルオブジェクトとして指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFont(): ChartFont;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartFont:interface" />
+      description: ''
+metadata:
+  ms.openlocfilehash: aa3d5e5f80de2db848dd49faa79439f0a0490d45
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49420063"

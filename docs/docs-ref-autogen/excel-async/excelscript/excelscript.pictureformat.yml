@@ -1,64 +1,41 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.PictureFormat:enum'
-    summary: 画像の形式を指定します。
-    name: Excel.PictureFormat
-    fullName: Excel.PictureFormat
-    langs:
-      - typeScript
-    type: enum
-    package: excel!
-    children:
-      - 'excel!Excel.PictureFormat.bmp:member'
-      - 'excel!Excel.PictureFormat.gif:member'
-      - 'excel!Excel.PictureFormat.jpeg:member'
-      - 'excel!Excel.PictureFormat.png:member'
-      - 'excel!Excel.PictureFormat.svg:member'
-      - 'excel!Excel.PictureFormat.unknown:member'
-  - uid: 'excel!Excel.PictureFormat.bmp:member'
-    summary: ビットマップ画像。
-    name: bmp
-    fullName: bmp
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Bmp"'
-  - uid: 'excel!Excel.PictureFormat.gif:member'
-    summary: グラフィックス交換形式
-    name: gif
-    fullName: gif
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Gif"'
-  - uid: 'excel!Excel.PictureFormat.jpeg:member'
-    summary: 共同写真エキスパートグループ。
-    name: jpeg
-    fullName: jpeg
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Jpeg"'
-  - uid: 'excel!Excel.PictureFormat.png:member'
-    summary: ポータブルネットワークグラフィックス。
-    name: png
-    fullName: png
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Png"'
-  - uid: 'excel!Excel.PictureFormat.svg:member'
-    summary: スケーラブルベクターグラフィックス。
-    name: svg
-    fullName: svg
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Svg"'
-  - uid: 'excel!Excel.PictureFormat.unknown:member'
-    name: unknown
-    fullName: unknown
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Unknown"'
+### YamlMime:TSEnum
+name: Excel.PictureFormat
+uid: excel!Excel.PictureFormat:enum
+package: excel!
+fullName: Excel.PictureFormat
+summary: 画像の形式を指定します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: bmp
+  uid: excel!Excel.PictureFormat.bmp:member
+  package: excel!
+  summary: ビットマップ画像。
+- name: gif
+  uid: excel!Excel.PictureFormat.gif:member
+  package: excel!
+  summary: グラフィックス交換形式
+- name: jpeg
+  uid: excel!Excel.PictureFormat.jpeg:member
+  package: excel!
+  summary: 共同写真エキスパートグループ。
+- name: png
+  uid: excel!Excel.PictureFormat.png:member
+  package: excel!
+  summary: ポータブルネットワークグラフィックス。
+- name: svg
+  uid: excel!Excel.PictureFormat.svg:member
+  package: excel!
+  summary: スケーラブルベクターグラフィックス。
+- name: unknown
+  uid: excel!Excel.PictureFormat.unknown:member
+  package: excel!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 254cf034b3512cd5f5fbefb7e82b783653fee21d
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49418927"

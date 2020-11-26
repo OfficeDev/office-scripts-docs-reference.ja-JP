@@ -1,37 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ReadingOrder:enum'
-    name: Excel.ReadingOrder
-    fullName: Excel.ReadingOrder
-    langs:
-      - typeScript
-    type: enum
-    package: excel!
-    children:
-      - 'excel!Excel.ReadingOrder.context:member'
-      - 'excel!Excel.ReadingOrder.leftToRight:member'
-      - 'excel!Excel.ReadingOrder.rightToLeft:member'
-  - uid: 'excel!Excel.ReadingOrder.context:member'
-    summary: 読みの順序は入力された最初の文字の言語によって決まります。右から左に記述する言語が最初に入力された場合、読みの順序は右から左になります。左から右に記述する言語が最初に入力された場合、読みの順序は左から右になります。
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Context"'
-  - uid: 'excel!Excel.ReadingOrder.leftToRight:member'
-    summary: 左から右への読み取り順序
-    name: leftToRight
-    fullName: leftToRight
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"LeftToRight"'
-  - uid: 'excel!Excel.ReadingOrder.rightToLeft:member'
-    summary: 右から左への読み取り順序
-    name: rightToLeft
-    fullName: rightToLeft
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"RightToLeft"'
+### YamlMime:TSEnum
+name: Excel.ReadingOrder
+uid: excel!Excel.ReadingOrder:enum
+package: excel!
+fullName: Excel.ReadingOrder
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: context
+  uid: excel!Excel.ReadingOrder.context:member
+  package: excel!
+  summary: 読みの順序は入力された最初の文字の言語によって決まります。右から左に記述する言語が最初に入力された場合、読みの順序は右から左になります。左から右に記述する言語が最初に入力された場合、読みの順序は左から右になります。
+- name: leftToRight
+  uid: excel!Excel.ReadingOrder.leftToRight:member
+  package: excel!
+  summary: 左から右への読み取り順序
+- name: rightToLeft
+  uid: excel!Excel.ReadingOrder.rightToLeft:member
+  package: excel!
+  summary: 右から左への読み取り順序
+metadata:
+  ms.openlocfilehash: 04b866773dea46f4ae6cc6c0accf8de351004716
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49418668"

@@ -1,28 +1,30 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ConditionalPresetCriteriaRule:interface'
-    summary: 事前設定の条件の条件付き書式ルールを表します。
-    name: ExcelScript.ConditionalPresetCriteriaRule
-    fullName: ExcelScript.ConditionalPresetCriteriaRule
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ConditionalPresetCriteriaRule#criterion:member'
-  - uid: 'ExcelScript!ExcelScript.ConditionalPresetCriteriaRule#criterion:member'
-    summary: 条件付き書式の条件を指定します。
-    name: criterion
-    fullName: criterion
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'criterion: ConditionalFormatPresetCriterion;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ConditionalFormatPresetCriterion:enum'
-references:
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormatPresetCriterion:enum'
-    name: ConditionalFormatPresetCriterion
-    fullName: ExcelScript.ConditionalFormatPresetCriterion
+### YamlMime:TSType
+name: ExcelScript.ConditionalPresetCriteriaRule
+uid: ExcelScript!ExcelScript.ConditionalPresetCriteriaRule:interface
+package: ExcelScript!
+fullName: ExcelScript.ConditionalPresetCriteriaRule
+summary: 事前設定の条件の条件付き書式ルールを表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: criterion
+  uid: ExcelScript!ExcelScript.ConditionalPresetCriteriaRule#criterion:member
+  package: ExcelScript!
+  fullName: criterion
+  summary: 条件付き書式の条件を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'criterion: ConditionalFormatPresetCriterion;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ConditionalFormatPresetCriterion:enum" />
+metadata:
+  ms.openlocfilehash: bfc34039ea55133099e0689f124e27190d2fa7d3
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49419412"

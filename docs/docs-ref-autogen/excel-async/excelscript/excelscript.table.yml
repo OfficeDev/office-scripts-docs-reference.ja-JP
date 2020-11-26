@@ -1,390 +1,337 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Table:interface'
-    summary: 'Excel の表を表します。 表オブジェクトモデルの詳細については、「 [Excel JAVASCRIPT API を使用してテーブルを操作](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables)する」を参照してください。<!-- -->.'
-    name: Excel.Table
-    fullName: Excel.Table
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.Table#autoFilter:member'
-      - 'excel!Excel.Table#clearFilters:member(1)'
-      - 'excel!Excel.Table#columns:member'
-      - 'excel!Excel.Table#convertToRange:member(1)'
-      - 'excel!Excel.Table#delete:member(1)'
-      - 'excel!Excel.Table#getDataBodyRange:member(1)'
-      - 'excel!Excel.Table#getHeaderRowRange:member(1)'
-      - 'excel!Excel.Table#getRange:member(1)'
-      - 'excel!Excel.Table#getTotalRowRange:member(1)'
-      - 'excel!Excel.Table#highlightFirstColumn:member'
-      - 'excel!Excel.Table#highlightLastColumn:member'
-      - 'excel!Excel.Table#id:member'
-      - 'excel!Excel.Table#legacyId:member'
-      - 'excel!Excel.Table#load:member(1)'
-      - 'excel!Excel.Table#name:member'
-      - 'excel!Excel.Table#reapplyFilters:member(1)'
-      - 'excel!Excel.Table#rows:member'
-      - 'excel!Excel.Table#showBandedColumns:member'
-      - 'excel!Excel.Table#showBandedRows:member'
-      - 'excel!Excel.Table#showFilterButton:member'
-      - 'excel!Excel.Table#showHeaders:member'
-      - 'excel!Excel.Table#showTotals:member'
-      - 'excel!Excel.Table#sort:member'
-      - 'excel!Excel.Table#style:member'
-      - 'excel!Excel.Table#worksheet:member'
-  - uid: 'excel!Excel.Table#autoFilter:member'
-    summary: テーブルの AutoFilter オブジェクトを表します。
-    name: autoFilter
-    fullName: autoFilter
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly autoFilter: AutoFilter;'
-      return:
-        type:
-          - 'excel!Excel.AutoFilter:interface'
-  - uid: 'excel!Excel.Table#clearFilters:member(1)'
-    summary: 現在テーブルに適用されているすべてのフィルターをクリアします。
-    name: clearFilters()
-    fullName: clearFilters()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'clearFilters(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.Table#columns:member'
-    summary: テーブルに含まれるすべての列のコレクションを表します。
-    name: columns
-    fullName: columns
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly columns: TableColumnCollection;'
-      return:
-        type:
-          - 'excel!Excel.TableColumnCollection:interface'
-  - uid: 'excel!Excel.Table#convertToRange:member(1)'
-    summary: テーブルを通常の範囲のセルに変換します。 すべてのデータが保持されます。
-    name: convertToRange()
-    fullName: convertToRange()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'convertToRange(): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-  - uid: 'excel!Excel.Table#delete:member(1)'
-    summary: テーブルを削除します。
-    name: delete()
-    fullName: delete()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'delete(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.Table#getDataBodyRange:member(1)'
-    summary: テーブルのデータ本体に関連付けられた範囲オブジェクトを取得します。
-    name: getDataBodyRange()
-    fullName: getDataBodyRange()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getDataBodyRange(): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-  - uid: 'excel!Excel.Table#getHeaderRowRange:member(1)'
-    summary: テーブルのヘッダー行に関連付けられた範囲オブジェクトを取得します。
-    name: getHeaderRowRange()
-    fullName: getHeaderRowRange()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getHeaderRowRange(): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-  - uid: 'excel!Excel.Table#getRange:member(1)'
-    summary: テーブル全体に関連付けられた範囲オブジェクトを取得します。
-    name: getRange()
-    fullName: getRange()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRange(): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-  - uid: 'excel!Excel.Table#getTotalRowRange:member(1)'
-    summary: テーブルの集計行に関連付けられた範囲オブジェクトを取得します。
-    name: getTotalRowRange()
-    fullName: getTotalRowRange()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTotalRowRange(): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-  - uid: 'excel!Excel.Table#highlightFirstColumn:member'
-    summary: 最初の列に特別な書式設定が含まれているかどうかを指定します。
-    name: highlightFirstColumn
-    fullName: highlightFirstColumn
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'highlightFirstColumn: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Table#highlightLastColumn:member'
-    summary: 最後の列に特別な書式設定が含まれているかどうかを指定します。
-    name: highlightLastColumn
-    fullName: highlightLastColumn
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'highlightLastColumn: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Table#id:member'
-    summary: 指定されたブックのテーブルを一意に識別する値を返します。 識別子の値は、テーブルの名前が変更された場合も変わりません。
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly id: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.Table#legacyId:member'
-    summary: 数値 id を返します。
-    name: legacyId
-    fullName: legacyId
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly legacyId: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.Table#load:member(1)'
-    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.Table#name:member'
-    summary: |-
-      テーブルの名前。
-
-      表のセット名は、「 [Excel テーブルの名前を変更](https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114)する」の記事で指定されているガイドラインに従う必要があります。
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'name: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.Table#reapplyFilters:member(1)'
-    summary: 現在テーブルにあるすべてのフィルターを再適用します。
-    name: reapplyFilters()
-    fullName: reapplyFilters()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'reapplyFilters(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.Table#rows:member'
-    summary: テーブルに含まれるすべての行のコレクションを表します。
-    name: rows
-    fullName: rows
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly rows: TableRowCollection;'
-      return:
-        type:
-          - 'excel!Excel.TableRowCollection:interface'
-  - uid: 'excel!Excel.Table#showBandedColumns:member'
-    summary: 列が、表を見やすくするために、奇数列の強調表示と異なる方法で表示される縞模様の書式を表示するかどうかを指定します。
-    name: showBandedColumns
-    fullName: showBandedColumns
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'showBandedColumns: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Table#showBandedRows:member'
-    summary: 表を見やすくするために、奇数行の強調表示に使用する縞模様の書式を行に表示するかどうかを指定します。
-    name: showBandedRows
-    fullName: showBandedRows
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'showBandedRows: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Table#showFilterButton:member'
-    summary: フィルターボタンを各列ヘッダーの上部に表示するかどうかを指定します。 これは、テーブルにヘッダー行が含まれている場合のみ設定できます。
-    name: showFilterButton
-    fullName: showFilterButton
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'showFilterButton: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Table#showHeaders:member'
-    summary: ヘッダー行を表示するかどうかを指定します。 この値によって、ヘッダー行の表示または削除を設定できます。
-    name: showHeaders
-    fullName: showHeaders
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'showHeaders: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Table#showTotals:member'
-    summary: 合計行を表示するかどうかを指定します。 この値によって、集計行の表示または削除を設定できます。
-    name: showTotals
-    fullName: showTotals
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'showTotals: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Table#sort:member'
-    summary: テーブル内の並べ替えを表します。
-    name: sort
-    fullName: sort
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly sort: TableSort;'
-      return:
-        type:
-          - 'excel!Excel.TableSort:interface'
-        description: |-
+### YamlMime:TSType
+name: Excel.Table
+uid: excel!Excel.Table:interface
+package: excel!
+fullName: Excel.Table
+summary: Excel の表を表します。 表オブジェクトモデルの詳細については、「 [Excel JAVASCRIPT API を使用してテーブルを操作](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables)する」を参照してください。<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: autoFilter
+  uid: excel!Excel.Table#autoFilter:member
+  package: excel!
+  fullName: autoFilter
+  summary: テーブルの AutoFilter オブジェクトを表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly autoFilter: AutoFilter;'
+    return:
+      type: <xref uid="excel!Excel.AutoFilter:interface" />
+- name: columns
+  uid: excel!Excel.Table#columns:member
+  package: excel!
+  fullName: columns
+  summary: テーブルに含まれるすべての列のコレクションを表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly columns: TableColumnCollection;'
+    return:
+      type: <xref uid="excel!Excel.TableColumnCollection:interface" />
+- name: highlightFirstColumn
+  uid: excel!Excel.Table#highlightFirstColumn:member
+  package: excel!
+  fullName: highlightFirstColumn
+  summary: 最初の列に特別な書式設定が含まれているかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'highlightFirstColumn: boolean;'
+    return:
+      type: boolean
+- name: highlightLastColumn
+  uid: excel!Excel.Table#highlightLastColumn:member
+  package: excel!
+  fullName: highlightLastColumn
+  summary: 最後の列に特別な書式設定が含まれているかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'highlightLastColumn: boolean;'
+    return:
+      type: boolean
+- name: id
+  uid: excel!Excel.Table#id:member
+  package: excel!
+  fullName: id
+  summary: 指定されたブックのテーブルを一意に識別する値を返します。 識別子の値は、テーブルの名前が変更された場合も変わりません。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly id: string;'
+    return:
+      type: string
+- name: legacyId
+  uid: excel!Excel.Table#legacyId:member
+  package: excel!
+  fullName: legacyId
+  summary: 数値 id を返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly legacyId: string;'
+    return:
+      type: string
+- name: name
+  uid: excel!Excel.Table#name:member
+  package: excel!
+  fullName: name
+  summary: >-
+    テーブルの名前。
 
 
-          #### <a name="examples"></a>例
-
-          ```javascript
-          // Get the current worksheet.
-          let workbook = context.workbook;
-          let worksheets = workbook.worksheets;
-          let selectedSheet = worksheets.getActiveWorksheet();
-
-          // Create a table with the used cells.
-          let usedRange = selectedSheet.getUsedRange();
-          let newTable = selectedSheet.tables.add(usedRange, true);
-
-          // Sort the table using the first column.
-          newTable.sort.apply([{ key: 0, ascending: true }]);
-          ```
-  - uid: 'excel!Excel.Table#style:member'
-    summary: テーブル スタイルを表す定数値。 可能な値は次のとおりです。 "TableStyleLight1" は "TableStyleLight21"、"TableStyleMedium1" ~ "TableStyleMedium28"、"TableStyleDark1" ~ "TableStyleDark11" です。 ブックに存在するカスタムのユーザー定義スタイルも指定できます。
-    name: style
-    fullName: style
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'style: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.Table#worksheet:member'
-    summary: 現在のテーブルを含んでいるワークシート。
-    name: worksheet
-    fullName: worksheet
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly worksheet: Worksheet;'
-      return:
-        type:
-          - 'excel!Excel.Worksheet:interface'
-references:
-  - uid: 'excel!Excel.AutoFilter:interface'
-    name: AutoFilter
-    fullName: Excel.AutoFilter
-  - uid: 'excel!Excel.TableColumnCollection:interface'
-    name: TableColumnCollection
-    fullName: Excel.TableColumnCollection
-  - uid: 'excel!Excel.Range:interface'
-    name: Range
-    fullName: Excel.Range
-  - uid: 'excel!Excel.TableRowCollection:interface'
-    name: TableRowCollection
-    fullName: Excel.TableRowCollection
-  - uid: 'excel!Excel.TableSort:interface'
-    name: TableSort
-    fullName: Excel.TableSort
-  - uid: 'excel!Excel.Worksheet:interface'
-    name: Worksheet
-    fullName: Excel.Worksheet
+    表のセット名は、「 [Excel テーブルの名前を変更](https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114) する」の記事で指定されているガイドラインに従う必要があります。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'name: string;'
+    return:
+      type: string
+- name: rows
+  uid: excel!Excel.Table#rows:member
+  package: excel!
+  fullName: rows
+  summary: テーブルに含まれるすべての行のコレクションを表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly rows: TableRowCollection;'
+    return:
+      type: <xref uid="excel!Excel.TableRowCollection:interface" />
+- name: showBandedColumns
+  uid: excel!Excel.Table#showBandedColumns:member
+  package: excel!
+  fullName: showBandedColumns
+  summary: 列が、表を見やすくするために、奇数列の強調表示と異なる方法で表示される縞模様の書式を表示するかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'showBandedColumns: boolean;'
+    return:
+      type: boolean
+- name: showBandedRows
+  uid: excel!Excel.Table#showBandedRows:member
+  package: excel!
+  fullName: showBandedRows
+  summary: 表を見やすくするために、奇数行の強調表示に使用する縞模様の書式を行に表示するかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'showBandedRows: boolean;'
+    return:
+      type: boolean
+- name: showFilterButton
+  uid: excel!Excel.Table#showFilterButton:member
+  package: excel!
+  fullName: showFilterButton
+  summary: フィルターボタンを各列ヘッダーの上部に表示するかどうかを指定します。 これは、テーブルにヘッダー行が含まれている場合のみ設定できます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'showFilterButton: boolean;'
+    return:
+      type: boolean
+- name: showHeaders
+  uid: excel!Excel.Table#showHeaders:member
+  package: excel!
+  fullName: showHeaders
+  summary: ヘッダー行を表示するかどうかを指定します。 この値によって、ヘッダー行の表示または削除を設定できます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'showHeaders: boolean;'
+    return:
+      type: boolean
+- name: showTotals
+  uid: excel!Excel.Table#showTotals:member
+  package: excel!
+  fullName: showTotals
+  summary: 合計行を表示するかどうかを指定します。 この値によって、集計行の表示または削除を設定できます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'showTotals: boolean;'
+    return:
+      type: boolean
+- name: sort
+  uid: excel!Excel.Table#sort:member
+  package: excel!
+  fullName: sort
+  summary: テーブル内の並べ替えを表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly sort: TableSort;'
+    return:
+      type: <xref uid="excel!Excel.TableSort:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```javascript\n// Get the current worksheet.\nlet workbook = context.workbook;\nlet worksheets = workbook.worksheets;\nlet selectedSheet = worksheets.getActiveWorksheet();\n\n// Create a table with the used cells.\nlet usedRange = selectedSheet.getUsedRange();\nlet newTable = selectedSheet.tables.add(usedRange, true);\n\n// Sort the table using the first column.\nnewTable.sort.apply([{ key: 0, ascending: true }]);\n```"
+- name: style
+  uid: excel!Excel.Table#style:member
+  package: excel!
+  fullName: style
+  summary: テーブル スタイルを表す定数値。 可能な値は次のとおりです。 "TableStyleLight1" は "TableStyleLight21"、"TableStyleMedium1" ~ "TableStyleMedium28"、"TableStyleDark1" ~ "TableStyleDark11" です。 ブックに存在するカスタムのユーザー定義スタイルも指定できます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'style: string;'
+    return:
+      type: string
+- name: worksheet
+  uid: excel!Excel.Table#worksheet:member
+  package: excel!
+  fullName: worksheet
+  summary: 現在のテーブルを含んでいるワークシート。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly worksheet: Worksheet;'
+    return:
+      type: <xref uid="excel!Excel.Worksheet:interface" />
+methods:
+- name: clearFilters()
+  uid: excel!Excel.Table#clearFilters:member(1)
+  package: excel!
+  fullName: clearFilters()
+  summary: 現在テーブルに適用されているすべてのフィルターをクリアします。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'clearFilters(): void;'
+    return:
+      type: void
+      description: ''
+- name: convertToRange()
+  uid: excel!Excel.Table#convertToRange:member(1)
+  package: excel!
+  fullName: convertToRange()
+  summary: テーブルを通常の範囲のセルに変換します。 すべてのデータが保持されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'convertToRange(): Range;'
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: delete()
+  uid: excel!Excel.Table#delete:member(1)
+  package: excel!
+  fullName: delete()
+  summary: テーブルを削除します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(): void;'
+    return:
+      type: void
+      description: ''
+- name: getDataBodyRange()
+  uid: excel!Excel.Table#getDataBodyRange:member(1)
+  package: excel!
+  fullName: getDataBodyRange()
+  summary: テーブルのデータ本体に関連付けられた範囲オブジェクトを取得します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getDataBodyRange(): Range;'
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: getHeaderRowRange()
+  uid: excel!Excel.Table#getHeaderRowRange:member(1)
+  package: excel!
+  fullName: getHeaderRowRange()
+  summary: テーブルのヘッダー行に関連付けられた範囲オブジェクトを取得します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getHeaderRowRange(): Range;'
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: getRange()
+  uid: excel!Excel.Table#getRange:member(1)
+  package: excel!
+  fullName: getRange()
+  summary: テーブル全体に関連付けられた範囲オブジェクトを取得します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRange(): Range;'
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: getTotalRowRange()
+  uid: excel!Excel.Table#getTotalRowRange:member(1)
+  package: excel!
+  fullName: getTotalRowRange()
+  summary: テーブルの集計行に関連付けられた範囲オブジェクトを取得します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTotalRowRange(): Range;'
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.Table#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: オブジェクトの指定されたプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、`context.sync()` を呼び出す必要があります。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+- name: reapplyFilters()
+  uid: excel!Excel.Table#reapplyFilters:member(1)
+  package: excel!
+  fullName: reapplyFilters()
+  summary: 現在テーブルにあるすべてのフィルターを再適用します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'reapplyFilters(): void;'
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 370b9dd21e1a1ec95162f86893a794608e536870
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49418269"

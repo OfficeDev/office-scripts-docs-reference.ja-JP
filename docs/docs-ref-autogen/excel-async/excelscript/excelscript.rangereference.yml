@@ -1,24 +1,30 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.RangeReference:interface'
-    summary: 'SheetName の形式の文字列参照を表します。A1: B5、またはグローバルまたはローカルの名前付き範囲。'
-    name: Excel.RangeReference
-    fullName: Excel.RangeReference
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.RangeReference#address:member'
-  - uid: 'excel!Excel.RangeReference#address:member'
-    summary: '範囲のアドレスを指定します。たとえば、'' SheetName!A1: B5 ''。'
-    name: address
-    fullName: address
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'address: string;'
-      return:
-        type:
-          - string
+### YamlMime:TSType
+name: Excel.RangeReference
+uid: excel!Excel.RangeReference:interface
+package: excel!
+fullName: Excel.RangeReference
+summary: 'SheetName の形式の文字列参照を表します。A1: B5、またはグローバルまたはローカルの名前付き範囲。'
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: address
+  uid: excel!Excel.RangeReference#address:member
+  package: excel!
+  fullName: address
+  summary: "範囲のアドレスを指定します。たとえば、' SheetName!A1: B5 '。"
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'address: string;'
+    return:
+      type: string
+metadata:
+  ms.openlocfilehash: 67d41eb557fa8716658a532282bc612b87be55e9
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49418696"

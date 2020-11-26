@@ -1,228 +1,207 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ChartPoint:interface'
-    summary: グラフの系列のポイントを表します。
-    name: ExcelScript.ChartPoint
-    fullName: ExcelScript.ChartPoint
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ChartPoint#getDataLabel:member(1)'
-      - 'ExcelScript!ExcelScript.ChartPoint#getFormat:member(1)'
-      - 'ExcelScript!ExcelScript.ChartPoint#getHasDataLabel:member(1)'
-      - 'ExcelScript!ExcelScript.ChartPoint#getMarkerBackgroundColor:member(1)'
-      - 'ExcelScript!ExcelScript.ChartPoint#getMarkerForegroundColor:member(1)'
-      - 'ExcelScript!ExcelScript.ChartPoint#getMarkerSize:member(1)'
-      - 'ExcelScript!ExcelScript.ChartPoint#getMarkerStyle:member(1)'
-      - 'ExcelScript!ExcelScript.ChartPoint#getValue:member(1)'
-      - 'ExcelScript!ExcelScript.ChartPoint#setHasDataLabel:member(1)'
-      - 'ExcelScript!ExcelScript.ChartPoint#setMarkerBackgroundColor:member(1)'
-      - 'ExcelScript!ExcelScript.ChartPoint#setMarkerForegroundColor:member(1)'
-      - 'ExcelScript!ExcelScript.ChartPoint#setMarkerSize:member(1)'
-      - 'ExcelScript!ExcelScript.ChartPoint#setMarkerStyle:member(1)'
-  - uid: 'ExcelScript!ExcelScript.ChartPoint#getDataLabel:member(1)'
-    summary: グラフ データ ポイントのデータ ラベルを返します。
-    name: getDataLabel()
-    fullName: getDataLabel()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getDataLabel(): ChartDataLabel;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartDataLabel:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartPoint#getFormat:member(1)'
-    summary: グラフのポイントの書式設定プロパティをカプセル化します。
-    name: getFormat()
-    fullName: getFormat()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFormat(): ChartPointFormat;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartPointFormat:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartPoint#getHasDataLabel:member(1)'
-    summary: データポイントにデータラベルがあるかどうかを表します。 等高線グラフには適用されません。
-    name: getHasDataLabel()
-    fullName: getHasDataLabel()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getHasDataLabel(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartPoint#getMarkerBackgroundColor:member(1)'
-    summary: データポイントのマーカーの背景色の HTML カラーコード表現 (たとえば、 \# ff0000 はは赤を表します)。
-    name: getMarkerBackgroundColor()
-    fullName: getMarkerBackgroundColor()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getMarkerBackgroundColor(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartPoint#getMarkerForegroundColor:member(1)'
-    summary: 'データポイントのマーカーの前景色を HTML カラーコードで表現したものです (例: \# ff0000 はは赤を表します)。'
-    name: getMarkerForegroundColor()
-    fullName: getMarkerForegroundColor()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getMarkerForegroundColor(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartPoint#getMarkerSize:member(1)'
-    summary: データ ポイントのマーカー サイズを表します。
-    name: getMarkerSize()
-    fullName: getMarkerSize()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getMarkerSize(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartPoint#getMarkerStyle:member(1)'
-    summary: データ ポイントのマーカー スタイルを表します。 詳細については、「ExcelScript」を参照してください。
-    name: getMarkerStyle()
-    fullName: getMarkerStyle()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getMarkerStyle(): ChartMarkerStyle;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartMarkerStyle:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartPoint#getValue:member(1)'
-    summary: グラフのポイントの値を返します。
-    name: getValue()
-    fullName: getValue()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getValue(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartPoint#setHasDataLabel:member(1)'
-    summary: データポイントにデータラベルがあるかどうかを表します。 等高線グラフには適用されません。
-    name: setHasDataLabel(hasDataLabel)
-    fullName: setHasDataLabel(hasDataLabel)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setHasDataLabel(hasDataLabel: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: hasDataLabel
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.ChartPoint#setMarkerBackgroundColor:member(1)'
-    summary: データポイントのマーカーの背景色の HTML カラーコード表現 (たとえば、 \# ff0000 はは赤を表します)。
-    name: setMarkerBackgroundColor(markerBackgroundColor)
-    fullName: setMarkerBackgroundColor(markerBackgroundColor)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setMarkerBackgroundColor(markerBackgroundColor: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: markerBackgroundColor
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.ChartPoint#setMarkerForegroundColor:member(1)'
-    summary: 'データポイントのマーカーの前景色を HTML カラーコードで表現したものです (例: \# ff0000 はは赤を表します)。'
-    name: setMarkerForegroundColor(markerForegroundColor)
-    fullName: setMarkerForegroundColor(markerForegroundColor)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setMarkerForegroundColor(markerForegroundColor: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: markerForegroundColor
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.ChartPoint#setMarkerSize:member(1)'
-    summary: データ ポイントのマーカー サイズを表します。
-    name: setMarkerSize(markerSize)
-    fullName: setMarkerSize(markerSize)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setMarkerSize(markerSize: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: markerSize
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.ChartPoint#setMarkerStyle:member(1)'
-    summary: データ ポイントのマーカー スタイルを表します。 詳細については、「ExcelScript」を参照してください。
-    name: setMarkerStyle(markerStyle)
-    fullName: setMarkerStyle(markerStyle)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setMarkerStyle(markerStyle: ChartMarkerStyle): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: markerStyle
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ChartMarkerStyle:enum'
-references:
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabel:interface'
-    name: ChartDataLabel
-    fullName: ExcelScript.ChartDataLabel
-  - uid: 'ExcelScript!ExcelScript.ChartPointFormat:interface'
-    name: ChartPointFormat
-    fullName: ExcelScript.ChartPointFormat
-  - uid: 'ExcelScript!ExcelScript.ChartMarkerStyle:enum'
-    name: ChartMarkerStyle
-    fullName: ExcelScript.ChartMarkerStyle
+### YamlMime:TSType
+name: ExcelScript.ChartPoint
+uid: ExcelScript!ExcelScript.ChartPoint:interface
+package: ExcelScript!
+fullName: ExcelScript.ChartPoint
+summary: グラフの系列のポイントを表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getDataLabel()
+  uid: ExcelScript!ExcelScript.ChartPoint#getDataLabel:member(1)
+  package: ExcelScript!
+  fullName: getDataLabel()
+  summary: グラフ データ ポイントのデータ ラベルを返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getDataLabel(): ChartDataLabel;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartDataLabel:interface" />
+      description: ''
+- name: getFormat()
+  uid: ExcelScript!ExcelScript.ChartPoint#getFormat:member(1)
+  package: ExcelScript!
+  fullName: getFormat()
+  summary: グラフのポイントの書式設定プロパティをカプセル化します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFormat(): ChartPointFormat;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartPointFormat:interface" />
+      description: ''
+- name: getHasDataLabel()
+  uid: ExcelScript!ExcelScript.ChartPoint#getHasDataLabel:member(1)
+  package: ExcelScript!
+  fullName: getHasDataLabel()
+  summary: データポイントにデータラベルがあるかどうかを表します。 等高線グラフには適用されません。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getHasDataLabel(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getMarkerBackgroundColor()
+  uid: ExcelScript!ExcelScript.ChartPoint#getMarkerBackgroundColor:member(1)
+  package: ExcelScript!
+  fullName: getMarkerBackgroundColor()
+  summary: データポイントのマーカーの背景色の HTML カラーコード表現 (たとえば、 \# ff0000 はは赤を表します)。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getMarkerBackgroundColor(): string;'
+    return:
+      type: string
+      description: ''
+- name: getMarkerForegroundColor()
+  uid: ExcelScript!ExcelScript.ChartPoint#getMarkerForegroundColor:member(1)
+  package: ExcelScript!
+  fullName: getMarkerForegroundColor()
+  summary: 'データポイントのマーカーの前景色を HTML カラーコードで表現したものです (例: \# ff0000 はは赤を表します)。'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getMarkerForegroundColor(): string;'
+    return:
+      type: string
+      description: ''
+- name: getMarkerSize()
+  uid: ExcelScript!ExcelScript.ChartPoint#getMarkerSize:member(1)
+  package: ExcelScript!
+  fullName: getMarkerSize()
+  summary: データ ポイントのマーカー サイズを表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getMarkerSize(): number;'
+    return:
+      type: number
+      description: ''
+- name: getMarkerStyle()
+  uid: ExcelScript!ExcelScript.ChartPoint#getMarkerStyle:member(1)
+  package: ExcelScript!
+  fullName: getMarkerStyle()
+  summary: データ ポイントのマーカー スタイルを表します。 詳細については、「ExcelScript」を参照してください。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getMarkerStyle(): ChartMarkerStyle;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartMarkerStyle:enum" />
+      description: ''
+- name: getValue()
+  uid: ExcelScript!ExcelScript.ChartPoint#getValue:member(1)
+  package: ExcelScript!
+  fullName: getValue()
+  summary: グラフのポイントの値を返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getValue(): number;'
+    return:
+      type: number
+      description: ''
+- name: setHasDataLabel(hasDataLabel)
+  uid: ExcelScript!ExcelScript.ChartPoint#setHasDataLabel:member(1)
+  package: ExcelScript!
+  fullName: setHasDataLabel(hasDataLabel)
+  summary: データポイントにデータラベルがあるかどうかを表します。 等高線グラフには適用されません。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setHasDataLabel(hasDataLabel: boolean): void;'
+    parameters:
+    - id: hasDataLabel
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setMarkerBackgroundColor(markerBackgroundColor)
+  uid: ExcelScript!ExcelScript.ChartPoint#setMarkerBackgroundColor:member(1)
+  package: ExcelScript!
+  fullName: setMarkerBackgroundColor(markerBackgroundColor)
+  summary: データポイントのマーカーの背景色の HTML カラーコード表現 (たとえば、 \# ff0000 はは赤を表します)。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setMarkerBackgroundColor(markerBackgroundColor: string): void;'
+    parameters:
+    - id: markerBackgroundColor
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setMarkerForegroundColor(markerForegroundColor)
+  uid: ExcelScript!ExcelScript.ChartPoint#setMarkerForegroundColor:member(1)
+  package: ExcelScript!
+  fullName: setMarkerForegroundColor(markerForegroundColor)
+  summary: 'データポイントのマーカーの前景色を HTML カラーコードで表現したものです (例: \# ff0000 はは赤を表します)。'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setMarkerForegroundColor(markerForegroundColor: string): void;'
+    parameters:
+    - id: markerForegroundColor
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setMarkerSize(markerSize)
+  uid: ExcelScript!ExcelScript.ChartPoint#setMarkerSize:member(1)
+  package: ExcelScript!
+  fullName: setMarkerSize(markerSize)
+  summary: データ ポイントのマーカー サイズを表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setMarkerSize(markerSize: number): void;'
+    parameters:
+    - id: markerSize
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setMarkerStyle(markerStyle)
+  uid: ExcelScript!ExcelScript.ChartPoint#setMarkerStyle:member(1)
+  package: ExcelScript!
+  fullName: setMarkerStyle(markerStyle)
+  summary: データ ポイントのマーカー スタイルを表します。 詳細については、「ExcelScript」を参照してください。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setMarkerStyle(markerStyle: ChartMarkerStyle): void;'
+    parameters:
+    - id: markerStyle
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ChartMarkerStyle:enum" />
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: d11ca64902c23c50ed0f8ae592d26c935e90319d
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49419622"

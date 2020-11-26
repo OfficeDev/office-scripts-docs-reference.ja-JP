@@ -1,246 +1,228 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ChartBinOptions:interface'
-    summary: ヒストグラム図とパレート図のビンのオプションをカプセル化します。
-    name: ExcelScript.ChartBinOptions
-    fullName: ExcelScript.ChartBinOptions
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ChartBinOptions#getAllowOverflow:member(1)'
-      - 'ExcelScript!ExcelScript.ChartBinOptions#getAllowUnderflow:member(1)'
-      - 'ExcelScript!ExcelScript.ChartBinOptions#getCount:member(1)'
-      - 'ExcelScript!ExcelScript.ChartBinOptions#getOverflowValue:member(1)'
-      - 'ExcelScript!ExcelScript.ChartBinOptions#getType:member(1)'
-      - 'ExcelScript!ExcelScript.ChartBinOptions#getUnderflowValue:member(1)'
-      - 'ExcelScript!ExcelScript.ChartBinOptions#getWidth:member(1)'
-      - 'ExcelScript!ExcelScript.ChartBinOptions#setAllowOverflow:member(1)'
-      - 'ExcelScript!ExcelScript.ChartBinOptions#setAllowUnderflow:member(1)'
-      - 'ExcelScript!ExcelScript.ChartBinOptions#setCount:member(1)'
-      - 'ExcelScript!ExcelScript.ChartBinOptions#setOverflowValue:member(1)'
-      - 'ExcelScript!ExcelScript.ChartBinOptions#setType:member(1)'
-      - 'ExcelScript!ExcelScript.ChartBinOptions#setUnderflowValue:member(1)'
-      - 'ExcelScript!ExcelScript.ChartBinOptions#setWidth:member(1)'
-  - uid: 'ExcelScript!ExcelScript.ChartBinOptions#getAllowOverflow:member(1)'
-    summary: ヒストグラムグラフまたはパレート図で、bin のオーバーフローが有効になっているかどうかを指定します。
-    name: getAllowOverflow()
-    fullName: getAllowOverflow()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getAllowOverflow(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartBinOptions#getAllowUnderflow:member(1)'
-    summary: ヒストグラムグラフまたはパレート図で bin アンダーフローを有効にするかどうかを指定します。
-    name: getAllowUnderflow()
-    fullName: getAllowUnderflow()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getAllowUnderflow(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartBinOptions#getCount:member(1)'
-    summary: ヒストグラムチャートまたはパレート図のビン数を指定します。
-    name: getCount()
-    fullName: getCount()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCount(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartBinOptions#getOverflowValue:member(1)'
-    summary: ヒストグラムグラフまたはパレート図の bin オーバーフロー値を指定します。
-    name: getOverflowValue()
-    fullName: getOverflowValue()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getOverflowValue(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartBinOptions#getType:member(1)'
-    summary: ヒストグラムチャートまたはパレート図の bin の種類を指定します。
-    name: getType()
-    fullName: getType()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getType(): ChartBinType;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartBinType:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartBinOptions#getUnderflowValue:member(1)'
-    summary: ヒストグラムグラフまたはパレート図の bin のアンダーフローの値を指定します。
-    name: getUnderflowValue()
-    fullName: getUnderflowValue()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getUnderflowValue(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartBinOptions#getWidth:member(1)'
-    summary: ヒストグラムチャートまたはパレート図の bin の幅の値を指定します。
-    name: getWidth()
-    fullName: getWidth()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getWidth(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartBinOptions#setAllowOverflow:member(1)'
-    summary: ヒストグラムグラフまたはパレート図で、bin のオーバーフローが有効になっているかどうかを指定します。
-    name: setAllowOverflow(allowOverflow)
-    fullName: setAllowOverflow(allowOverflow)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setAllowOverflow(allowOverflow: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: allowOverflow
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.ChartBinOptions#setAllowUnderflow:member(1)'
-    summary: ヒストグラムグラフまたはパレート図で bin アンダーフローを有効にするかどうかを指定します。
-    name: setAllowUnderflow(allowUnderflow)
-    fullName: setAllowUnderflow(allowUnderflow)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setAllowUnderflow(allowUnderflow: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: allowUnderflow
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.ChartBinOptions#setCount:member(1)'
-    summary: ヒストグラムチャートまたはパレート図のビン数を指定します。
-    name: setCount(count)
-    fullName: setCount(count)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setCount(count: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: count
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.ChartBinOptions#setOverflowValue:member(1)'
-    summary: ヒストグラムグラフまたはパレート図の bin オーバーフロー値を指定します。
-    name: setOverflowValue(overflowValue)
-    fullName: setOverflowValue(overflowValue)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setOverflowValue(overflowValue: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: overflowValue
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.ChartBinOptions#setType:member(1)'
-    summary: ヒストグラムチャートまたはパレート図の bin の種類を指定します。
-    name: setType(type)
-    fullName: setType(type)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setType(type: ChartBinType): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: type
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ChartBinType:enum'
-  - uid: 'ExcelScript!ExcelScript.ChartBinOptions#setUnderflowValue:member(1)'
-    summary: ヒストグラムグラフまたはパレート図の bin のアンダーフローの値を指定します。
-    name: setUnderflowValue(underflowValue)
-    fullName: setUnderflowValue(underflowValue)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setUnderflowValue(underflowValue: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: underflowValue
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.ChartBinOptions#setWidth:member(1)'
-    summary: ヒストグラムチャートまたはパレート図の bin の幅の値を指定します。
-    name: setWidth(width)
-    fullName: setWidth(width)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setWidth(width: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: width
-          description: ''
-          type:
-            - number
-references:
-  - uid: 'ExcelScript!ExcelScript.ChartBinType:enum'
-    name: ChartBinType
-    fullName: ExcelScript.ChartBinType
+### YamlMime:TSType
+name: ExcelScript.ChartBinOptions
+uid: ExcelScript!ExcelScript.ChartBinOptions:interface
+package: ExcelScript!
+fullName: ExcelScript.ChartBinOptions
+summary: ヒストグラム図とパレート図のビンのオプションをカプセル化します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getAllowOverflow()
+  uid: ExcelScript!ExcelScript.ChartBinOptions#getAllowOverflow:member(1)
+  package: ExcelScript!
+  fullName: getAllowOverflow()
+  summary: ヒストグラムグラフまたはパレート図で、bin のオーバーフローが有効になっているかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getAllowOverflow(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getAllowUnderflow()
+  uid: ExcelScript!ExcelScript.ChartBinOptions#getAllowUnderflow:member(1)
+  package: ExcelScript!
+  fullName: getAllowUnderflow()
+  summary: ヒストグラムグラフまたはパレート図で bin アンダーフローを有効にするかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getAllowUnderflow(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getCount()
+  uid: ExcelScript!ExcelScript.ChartBinOptions#getCount:member(1)
+  package: ExcelScript!
+  fullName: getCount()
+  summary: ヒストグラムチャートまたはパレート図のビン数を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCount(): number;'
+    return:
+      type: number
+      description: ''
+- name: getOverflowValue()
+  uid: ExcelScript!ExcelScript.ChartBinOptions#getOverflowValue:member(1)
+  package: ExcelScript!
+  fullName: getOverflowValue()
+  summary: ヒストグラムグラフまたはパレート図の bin オーバーフロー値を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getOverflowValue(): number;'
+    return:
+      type: number
+      description: ''
+- name: getType()
+  uid: ExcelScript!ExcelScript.ChartBinOptions#getType:member(1)
+  package: ExcelScript!
+  fullName: getType()
+  summary: ヒストグラムチャートまたはパレート図の bin の種類を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getType(): ChartBinType;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartBinType:enum" />
+      description: ''
+- name: getUnderflowValue()
+  uid: ExcelScript!ExcelScript.ChartBinOptions#getUnderflowValue:member(1)
+  package: ExcelScript!
+  fullName: getUnderflowValue()
+  summary: ヒストグラムグラフまたはパレート図の bin のアンダーフローの値を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getUnderflowValue(): number;'
+    return:
+      type: number
+      description: ''
+- name: getWidth()
+  uid: ExcelScript!ExcelScript.ChartBinOptions#getWidth:member(1)
+  package: ExcelScript!
+  fullName: getWidth()
+  summary: ヒストグラムチャートまたはパレート図の bin の幅の値を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getWidth(): number;'
+    return:
+      type: number
+      description: ''
+- name: setAllowOverflow(allowOverflow)
+  uid: ExcelScript!ExcelScript.ChartBinOptions#setAllowOverflow:member(1)
+  package: ExcelScript!
+  fullName: setAllowOverflow(allowOverflow)
+  summary: ヒストグラムグラフまたはパレート図で、bin のオーバーフローが有効になっているかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setAllowOverflow(allowOverflow: boolean): void;'
+    parameters:
+    - id: allowOverflow
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setAllowUnderflow(allowUnderflow)
+  uid: ExcelScript!ExcelScript.ChartBinOptions#setAllowUnderflow:member(1)
+  package: ExcelScript!
+  fullName: setAllowUnderflow(allowUnderflow)
+  summary: ヒストグラムグラフまたはパレート図で bin アンダーフローを有効にするかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setAllowUnderflow(allowUnderflow: boolean): void;'
+    parameters:
+    - id: allowUnderflow
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setCount(count)
+  uid: ExcelScript!ExcelScript.ChartBinOptions#setCount:member(1)
+  package: ExcelScript!
+  fullName: setCount(count)
+  summary: ヒストグラムチャートまたはパレート図のビン数を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setCount(count: number): void;'
+    parameters:
+    - id: count
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setOverflowValue(overflowValue)
+  uid: ExcelScript!ExcelScript.ChartBinOptions#setOverflowValue:member(1)
+  package: ExcelScript!
+  fullName: setOverflowValue(overflowValue)
+  summary: ヒストグラムグラフまたはパレート図の bin オーバーフロー値を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setOverflowValue(overflowValue: number): void;'
+    parameters:
+    - id: overflowValue
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setType(type)
+  uid: ExcelScript!ExcelScript.ChartBinOptions#setType:member(1)
+  package: ExcelScript!
+  fullName: setType(type)
+  summary: ヒストグラムチャートまたはパレート図の bin の種類を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setType(type: ChartBinType): void;'
+    parameters:
+    - id: type
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ChartBinType:enum" />
+    return:
+      type: void
+      description: ''
+- name: setUnderflowValue(underflowValue)
+  uid: ExcelScript!ExcelScript.ChartBinOptions#setUnderflowValue:member(1)
+  package: ExcelScript!
+  fullName: setUnderflowValue(underflowValue)
+  summary: ヒストグラムグラフまたはパレート図の bin のアンダーフローの値を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setUnderflowValue(underflowValue: number): void;'
+    parameters:
+    - id: underflowValue
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setWidth(width)
+  uid: ExcelScript!ExcelScript.ChartBinOptions#setWidth:member(1)
+  package: ExcelScript!
+  fullName: setWidth(width)
+  summary: ヒストグラムチャートまたはパレート図の bin の幅の値を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setWidth(width: number): void;'
+    parameters:
+    - id: width
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 3fb71ab22614c4bce0481d7adb2a78c9cde4dcab
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49420049"

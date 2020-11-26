@@ -1,107 +1,85 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ValueFilterCondition:enum'
-    summary: 値フィルターを適用することによって許容されるすべての条件を表す列挙。 フィールドに適用される PivotFilter の種類を構成するために使用します。 `PivotFilter.exclusive` true に設定すると、これらの条件の多くを反転させることができます。
-    name: ExcelScript.ValueFilterCondition
-    fullName: ExcelScript.ValueFilterCondition
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ValueFilterCondition.between:member'
-      - 'ExcelScript!ExcelScript.ValueFilterCondition.bottomN:member'
-      - 'ExcelScript!ExcelScript.ValueFilterCondition.equals:member'
-      - 'ExcelScript!ExcelScript.ValueFilterCondition.greaterThan:member'
-      - 'ExcelScript!ExcelScript.ValueFilterCondition.greaterThanOrEqualTo:member'
-      - 'ExcelScript!ExcelScript.ValueFilterCondition.lessThan:member'
-      - 'ExcelScript!ExcelScript.ValueFilterCondition.lessThanOrEqualTo:member'
-      - 'ExcelScript!ExcelScript.ValueFilterCondition.topN:member'
-      - 'ExcelScript!ExcelScript.ValueFilterCondition.unknown:member'
-  - uid: 'ExcelScript!ExcelScript.ValueFilterCondition.between:member'
-    summary: |-
-      `lowerBound`And `upperBound` 条件。
+### YamlMime:TSEnum
+name: ExcelScript.ValueFilterCondition
+uid: ExcelScript!ExcelScript.ValueFilterCondition:enum
+package: ExcelScript!
+fullName: ExcelScript.ValueFilterCondition
+summary: 値フィルターを適用することによって許容されるすべての条件を表す列挙。 フィールドに適用される PivotFilter の種類を構成するために使用します。 `PivotFilter.exclusive` true に設定すると、これらの条件の多くを反転させることができます。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: between
+  uid: ExcelScript!ExcelScript.ValueFilterCondition.between:member
+  package: ExcelScript!
+  summary: >-
+    `lowerBound`And `upperBound` 条件。
 
-      必要な条件: {`value`<!-- -->, `lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->. オプションの条件: {`exclusive`<!-- -->}<!-- -->.
-    name: between
-    fullName: between
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ValueFilterCondition.bottomN:member'
-    summary: |-
-      下 N (`threshold`<!-- -->) \[ items、percent、 \] value カテゴリの合計。
 
-      必要な条件: {`value`<!-- -->, `threshold`<!-- -->, `selectionType`<!-- -->}<!-- -->.
-    name: bottomN
-    fullName: bottomN
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ValueFilterCondition.equals:member'
-    summary: |-
-      比較基準に等しい。
+    必要な条件: {`value`<!-- -->, `lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->. オプションの条件: {`exclusive`<!-- -->}<!-- -->.
+- name: bottomN
+  uid: ExcelScript!ExcelScript.ValueFilterCondition.bottomN:member
+  package: ExcelScript!
+  summary: >-
+    下 N (`threshold`<!-- -->) \[ items、percent、 \] value カテゴリの合計。
 
-      必要な条件: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->. オプションの条件: {`exclusive`<!-- -->}<!-- -->.
-    name: equals
-    fullName: equals
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ValueFilterCondition.greaterThan:member'
-    summary: |-
-      比較条件の値より大きい。
 
-      必要な条件: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
-    name: greaterThan
-    fullName: greaterThan
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ValueFilterCondition.greaterThanOrEqualTo:member'
-    summary: |-
-      比較基準と等しいかそれより大きい。
+    必要な条件: {`value`<!-- -->, `threshold`<!-- -->, `selectionType`<!-- -->}<!-- -->.
+- name: equals
+  uid: ExcelScript!ExcelScript.ValueFilterCondition.equals:member
+  package: ExcelScript!
+  summary: >-
+    比較基準に等しい。
 
-      必要な条件: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
-    name: greaterThanOrEqualTo
-    fullName: greaterThanOrEqualTo
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ValueFilterCondition.lessThan:member'
-    summary: |-
-      比較条件の値より小さい。
 
-      必要な条件: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
-    name: lessThan
-    fullName: lessThan
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ValueFilterCondition.lessThanOrEqualTo:member'
-    summary: |-
-      比較条件の値より小さいか等しい。
+    必要な条件: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->. オプションの条件: {`exclusive`<!-- -->}<!-- -->.
+- name: greaterThan
+  uid: ExcelScript!ExcelScript.ValueFilterCondition.greaterThan:member
+  package: ExcelScript!
+  summary: >-
+    比較条件の値より大きい。
 
-      必要な条件: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
-    name: lessThanOrEqualTo
-    fullName: lessThanOrEqualTo
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ValueFilterCondition.topN:member'
-    summary: |-
-      上から N (`threshold`<!-- -->) \[ items、percent、 \] value カテゴリの合計。
 
-      必要な条件: {`value`<!-- -->, `threshold`<!-- -->, `selectionType`<!-- -->}<!-- -->.
-    name: topN
-    fullName: topN
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ValueFilterCondition.unknown:member'
-    summary: ValueFilterCondition が不明であるか、サポートされていません。
-    name: unknown
-    fullName: unknown
-    langs:
-      - typeScript
-    type: field
+    必要な条件: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
+- name: greaterThanOrEqualTo
+  uid: ExcelScript!ExcelScript.ValueFilterCondition.greaterThanOrEqualTo:member
+  package: ExcelScript!
+  summary: >-
+    比較基準と等しいかそれより大きい。
+
+
+    必要な条件: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
+- name: lessThan
+  uid: ExcelScript!ExcelScript.ValueFilterCondition.lessThan:member
+  package: ExcelScript!
+  summary: >-
+    比較条件の値より小さい。
+
+
+    必要な条件: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
+- name: lessThanOrEqualTo
+  uid: ExcelScript!ExcelScript.ValueFilterCondition.lessThanOrEqualTo:member
+  package: ExcelScript!
+  summary: >-
+    比較条件の値より小さいか等しい。
+
+
+    必要な条件: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
+- name: topN
+  uid: ExcelScript!ExcelScript.ValueFilterCondition.topN:member
+  package: ExcelScript!
+  summary: >-
+    上から N (`threshold`<!-- -->) \[ items、percent、 \] value カテゴリの合計。
+
+
+    必要な条件: {`value`<!-- -->, `threshold`<!-- -->, `selectionType`<!-- -->}<!-- -->.
+- name: unknown
+  uid: ExcelScript!ExcelScript.ValueFilterCondition.unknown:member
+  package: ExcelScript!
+  summary: ValueFilterCondition が不明であるか、サポートされていません。
+metadata:
+  ms.openlocfilehash: 86a91b203d9222e4d89e13fa526d86faa06c1c84
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49419244"

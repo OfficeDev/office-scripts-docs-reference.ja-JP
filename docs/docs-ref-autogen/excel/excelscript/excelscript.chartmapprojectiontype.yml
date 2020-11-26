@@ -1,46 +1,37 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ChartMapProjectionType:enum'
-    summary: グラフの系列のレイアウトの地域投影の種類を表します。 これは地域マップグラフにのみ適用されます。
-    name: ExcelScript.ChartMapProjectionType
-    fullName: ExcelScript.ChartMapProjectionType
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ChartMapProjectionType.albers:member'
-      - 'ExcelScript!ExcelScript.ChartMapProjectionType.automatic:member'
-      - 'ExcelScript!ExcelScript.ChartMapProjectionType.mercator:member'
-      - 'ExcelScript!ExcelScript.ChartMapProjectionType.miller:member'
-      - 'ExcelScript!ExcelScript.ChartMapProjectionType.robinson:member'
-  - uid: 'ExcelScript!ExcelScript.ChartMapProjectionType.albers:member'
-    name: albers
-    fullName: albers
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartMapProjectionType.automatic:member'
-    name: automatic
-    fullName: automatic
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartMapProjectionType.mercator:member'
-    name: mercator
-    fullName: mercator
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartMapProjectionType.miller:member'
-    name: miller
-    fullName: miller
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartMapProjectionType.robinson:member'
-    name: robinson
-    fullName: robinson
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.ChartMapProjectionType
+uid: ExcelScript!ExcelScript.ChartMapProjectionType:enum
+package: ExcelScript!
+fullName: ExcelScript.ChartMapProjectionType
+summary: グラフの系列のレイアウトの地域投影の種類を表します。 これは地域マップグラフにのみ適用されます。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: albers
+  uid: ExcelScript!ExcelScript.ChartMapProjectionType.albers:member
+  package: ExcelScript!
+  summary: ''
+- name: automatic
+  uid: ExcelScript!ExcelScript.ChartMapProjectionType.automatic:member
+  package: ExcelScript!
+  summary: ''
+- name: mercator
+  uid: ExcelScript!ExcelScript.ChartMapProjectionType.mercator:member
+  package: ExcelScript!
+  summary: ''
+- name: miller
+  uid: ExcelScript!ExcelScript.ChartMapProjectionType.miller:member
+  package: ExcelScript!
+  summary: ''
+- name: robinson
+  uid: ExcelScript!ExcelScript.ChartMapProjectionType.robinson:member
+  package: ExcelScript!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 0a8e87d7222587f7a99b7ecbf7ec4b3c93c525b9
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49419657"

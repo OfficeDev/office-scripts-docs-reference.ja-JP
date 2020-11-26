@@ -1,194 +1,181 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFont:interface'
-    summary: このオブジェクトは、オブジェクトのフォントの属性 (フォントスタイル、色など) を表します。
-    name: ExcelScript.ConditionalRangeFont
-    fullName: ExcelScript.ConditionalRangeFont
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ConditionalRangeFont#clear:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalRangeFont#getBold:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalRangeFont#getColor:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalRangeFont#getItalic:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalRangeFont#getStrikethrough:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalRangeFont#getUnderline:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalRangeFont#setBold:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalRangeFont#setColor:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalRangeFont#setItalic:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalRangeFont#setStrikethrough:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalRangeFont#setUnderline:member(1)'
-  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFont#clear:member(1)'
-    summary: フォントの書式設定をリセットします。
-    name: clear()
-    fullName: clear()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'clear(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFont#getBold:member(1)'
-    summary: フォントを太字にするかどうかを指定します。
-    name: getBold()
-    fullName: getBold()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getBold(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFont#getColor:member(1)'
-    summary: テキストの色の HTML カラーコード表現 (たとえば、 \# ff0000 はは赤を表します)。
-    name: getColor()
-    fullName: getColor()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getColor(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFont#getItalic:member(1)'
-    summary: フォントを斜体にするかどうかを指定します。
-    name: getItalic()
-    fullName: getItalic()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItalic(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFont#getStrikethrough:member(1)'
-    summary: フォントの取り消し線の状態を指定します。
-    name: getStrikethrough()
-    fullName: getStrikethrough()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getStrikethrough(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFont#getUnderline:member(1)'
-    summary: フォントに適用する下線の種類を設定します。 詳細については、「ExcelScript Efont過小 Linestyle」を参照してください。
-    name: getUnderline()
-    fullName: getUnderline()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getUnderline(): ConditionalRangeFontUnderlineStyle;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ConditionalRangeFontUnderlineStyle:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFont#setBold:member(1)'
-    summary: フォントを太字にするかどうかを指定します。
-    name: setBold(bold)
-    fullName: setBold(bold)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setBold(bold: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: bold
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFont#setColor:member(1)'
-    summary: テキストの色の HTML カラーコード表現 (たとえば、 \# ff0000 はは赤を表します)。
-    name: setColor(color)
-    fullName: setColor(color)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setColor(color: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: color
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFont#setItalic:member(1)'
-    summary: フォントを斜体にするかどうかを指定します。
-    name: setItalic(italic)
-    fullName: setItalic(italic)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setItalic(italic: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: italic
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFont#setStrikethrough:member(1)'
-    summary: フォントの取り消し線の状態を指定します。
-    name: setStrikethrough(strikethrough)
-    fullName: setStrikethrough(strikethrough)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setStrikethrough(strikethrough: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: strikethrough
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFont#setUnderline:member(1)'
-    summary: フォントに適用する下線の種類を設定します。 詳細については、「ExcelScript Efont過小 Linestyle」を参照してください。
-    name: setUnderline(underline)
-    fullName: setUnderline(underline)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setUnderline(underline: ConditionalRangeFontUnderlineStyle): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: underline
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ConditionalRangeFontUnderlineStyle:enum'
-references:
-  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFontUnderlineStyle:enum'
-    name: ConditionalRangeFontUnderlineStyle
-    fullName: ExcelScript.ConditionalRangeFontUnderlineStyle
+### YamlMime:TSType
+name: ExcelScript.ConditionalRangeFont
+uid: ExcelScript!ExcelScript.ConditionalRangeFont:interface
+package: ExcelScript!
+fullName: ExcelScript.ConditionalRangeFont
+summary: このオブジェクトは、オブジェクトのフォントの属性 (フォントスタイル、色など) を表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: clear()
+  uid: ExcelScript!ExcelScript.ConditionalRangeFont#clear:member(1)
+  package: ExcelScript!
+  fullName: clear()
+  summary: フォントの書式設定をリセットします。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'clear(): void;'
+    return:
+      type: void
+      description: ''
+- name: getBold()
+  uid: ExcelScript!ExcelScript.ConditionalRangeFont#getBold:member(1)
+  package: ExcelScript!
+  fullName: getBold()
+  summary: フォントを太字にするかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getBold(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getColor()
+  uid: ExcelScript!ExcelScript.ConditionalRangeFont#getColor:member(1)
+  package: ExcelScript!
+  fullName: getColor()
+  summary: テキストの色の HTML カラーコード表現 (たとえば、 \# ff0000 はは赤を表します)。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getColor(): string;'
+    return:
+      type: string
+      description: ''
+- name: getItalic()
+  uid: ExcelScript!ExcelScript.ConditionalRangeFont#getItalic:member(1)
+  package: ExcelScript!
+  fullName: getItalic()
+  summary: フォントを斜体にするかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getItalic(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getStrikethrough()
+  uid: ExcelScript!ExcelScript.ConditionalRangeFont#getStrikethrough:member(1)
+  package: ExcelScript!
+  fullName: getStrikethrough()
+  summary: フォントの取り消し線の状態を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getStrikethrough(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getUnderline()
+  uid: ExcelScript!ExcelScript.ConditionalRangeFont#getUnderline:member(1)
+  package: ExcelScript!
+  fullName: getUnderline()
+  summary: フォントに適用する下線の種類を設定します。 詳細については、「ExcelScript Efont過小 Linestyle」を参照してください。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getUnderline(): ConditionalRangeFontUnderlineStyle;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeFontUnderlineStyle:enum" />
+      description: ''
+- name: setBold(bold)
+  uid: ExcelScript!ExcelScript.ConditionalRangeFont#setBold:member(1)
+  package: ExcelScript!
+  fullName: setBold(bold)
+  summary: フォントを太字にするかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setBold(bold: boolean): void;'
+    parameters:
+    - id: bold
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setColor(color)
+  uid: ExcelScript!ExcelScript.ConditionalRangeFont#setColor:member(1)
+  package: ExcelScript!
+  fullName: setColor(color)
+  summary: テキストの色の HTML カラーコード表現 (たとえば、 \# ff0000 はは赤を表します)。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setColor(color: string): void;'
+    parameters:
+    - id: color
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setItalic(italic)
+  uid: ExcelScript!ExcelScript.ConditionalRangeFont#setItalic:member(1)
+  package: ExcelScript!
+  fullName: setItalic(italic)
+  summary: フォントを斜体にするかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setItalic(italic: boolean): void;'
+    parameters:
+    - id: italic
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setStrikethrough(strikethrough)
+  uid: ExcelScript!ExcelScript.ConditionalRangeFont#setStrikethrough:member(1)
+  package: ExcelScript!
+  fullName: setStrikethrough(strikethrough)
+  summary: フォントの取り消し線の状態を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setStrikethrough(strikethrough: boolean): void;'
+    parameters:
+    - id: strikethrough
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setUnderline(underline)
+  uid: ExcelScript!ExcelScript.ConditionalRangeFont#setUnderline:member(1)
+  package: ExcelScript!
+  fullName: setUnderline(underline)
+  summary: フォントに適用する下線の種類を設定します。 詳細については、「ExcelScript Efont過小 Linestyle」を参照してください。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setUnderline(underline: ConditionalRangeFontUnderlineStyle): void;'
+    parameters:
+    - id: underline
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeFontUnderlineStyle:enum" />
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 4b59e433ac3535d4aa352158485d17289731760a
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49419370"

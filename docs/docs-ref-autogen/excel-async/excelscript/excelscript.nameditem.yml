@@ -1,322 +1,213 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.NamedItem:interface'
-    summary: セルまたは値の範囲の定義済みの名前を表します。 名前には、プリミティブという名前のオブジェクト、range オブジェクト、または範囲への参照を指定できます。 このオブジェクトを使用して、名前に関連付けられた範囲オブジェクトを取得することができます。
-    name: Excel.NamedItem
-    fullName: Excel.NamedItem
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.NamedItem#arrayValues:member'
-      - 'excel!Excel.NamedItem#comment:member'
-      - 'excel!Excel.NamedItem#delete:member(1)'
-      - 'excel!Excel.NamedItem#formula:member'
-      - 'excel!Excel.NamedItem#getRange:member(1)'
-      - 'excel!Excel.NamedItem#getRangeOrNullObject:member(1)'
-      - 'excel!Excel.NamedItem#load:member(1)'
-      - 'excel!Excel.NamedItem#name:member'
-      - 'excel!Excel.NamedItem#scope:member'
-      - 'excel!Excel.NamedItem#type:member'
-      - 'excel!Excel.NamedItem#value:member'
-      - 'excel!Excel.NamedItem#visible:member'
-      - 'excel!Excel.NamedItem#worksheet:member'
-      - 'excel!Excel.NamedItem#worksheetOrNullObject:member'
-  - uid: 'excel!Excel.NamedItem#arrayValues:member'
-    summary: 名前付きアイテムの値と型を含むオブジェクトを返します。
-    name: arrayValues
-    fullName: arrayValues
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly arrayValues: NamedItemArrayValues;'
-      return:
-        type:
-          - 'excel!Excel.NamedItemArrayValues:interface'
-  - uid: 'excel!Excel.NamedItem#comment:member'
-    summary: この名前に関連付けられているコメントを指定します。
-    name: comment
-    fullName: comment
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'comment: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.NamedItem#delete:member(1)'
-    summary: 指定された名前を削除します。
-    name: delete()
-    fullName: delete()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'delete(): void;'
-      return:
-        type:
-          - void
-        description: |-
-
-
-          #### <a name="examples"></a>例
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getItem("Sample");
-              let totalName = sheet.names.getItemOrNullObject("TotalAmount");
-              totalName.load();
-              await context.sync();
-
-              if (totalName.value) {
-                  totalName.delete();
-
-                  // Replace the named item (TotalAmount) with the actual formula for TotalAmount to avoid displaying #NAME in the cell.
-                  sheet.getRange("D11").values = [["=SUM(ExpensesTable[AMOUNT])"]];
-              } else {
-                  console.log("No named item created for the formula.");
-              }
-
-              await context.sync();
-          }
-          ```
-  - uid: 'excel!Excel.NamedItem#formula:member'
-    summary: 名前付きアイテムの数式を指定します。 数式は常に '=' 記号で始まります。
-    name: formula
-    fullName: formula
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'formula: any;'
-      return:
-        type:
-          - any
-        description: |-
-
-
-          #### <a name="examples"></a>例
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getItem("Sample");
-
-              // Get the named item
-              let myNamedItem = sheet.names.getItemOrNullObject("MyRange");
-              myNamedItem.load("name, formula");
-              await context.sync();
-
-              if (myNamedItem.isNullObject) {
-                  console.log(`There is no named item. Create it with "Add named item for a range" first.`);
-              } else {                    
-                  // Update named item to point to the second range
-                  myNamedItem.formula = "=Sample!$B$10:$D$14";
-                  sheet.getRange("B10:D14").select();
-                  await context.sync();
-
-                  console.log(`Just updated the named item "${myNamedItem.name}" -- it's now located here: ${myNamedItem.formula}`);
-              }
-          }
-          ```
-  - uid: 'excel!Excel.NamedItem#getRange:member(1)'
-    summary: 名前に関連付けられている範囲オブジェクトを返します。 名前付きアイテムの型が範囲でない場合、エラーをスローします。
-    name: getRange()
-    fullName: getRange()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRange(): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-  - uid: 'excel!Excel.NamedItem#getRangeOrNullObject:member(1)'
-    summary: 名前に関連付けられている範囲オブジェクトを返します。 名前付きアイテムの型が範囲でない場合は、null オブジェクトを返します。
-    name: getRangeOrNullObject()
-    fullName: getRangeOrNullObject()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRangeOrNullObject(): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-  - uid: 'excel!Excel.NamedItem#load:member(1)'
-    summary: オブジェクトの指定のプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、を呼び出す必要があり `context.sync()` ます。
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.NamedItem#name:member'
-    summary: オブジェクトの名前。
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly name: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.NamedItem#scope:member'
-    summary: ブックまたは特定のワークシートに対して、名前をスコープ設定するかどうかを指定します。 可能な値は次のとおりです。ワークシート、ブック。
-    name: scope
-    fullName: scope
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly scope: NamedItemScope | "Worksheet" | "Workbook";'
-      return:
-        type:
-          - 'excel!Excel.NamedItem#scope~0:complex'
-  - uid: 'excel!Excel.NamedItem#type:member'
-    summary: 名前の数式によって返される値の型を指定します。 詳細については、「Excel. NamedItemType」を参照してください。
-    name: type
-    fullName: type
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: |-
-        readonly type:
-                    | NamedItemType
+### YamlMime:TSType
+name: Excel.NamedItem
+uid: excel!Excel.NamedItem:interface
+package: excel!
+fullName: Excel.NamedItem
+summary: セルまたは値の範囲の定義済みの名前を表します。 名前には、プリミティブという名前のオブジェクト、range オブジェクト、または範囲への参照を指定できます。 このオブジェクトを使用して、名前に関連付けられた範囲オブジェクトを取得することができます。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: arrayValues
+  uid: excel!Excel.NamedItem#arrayValues:member
+  package: excel!
+  fullName: arrayValues
+  summary: 名前付きアイテムの値と型を含むオブジェクトを返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly arrayValues: NamedItemArrayValues;'
+    return:
+      type: <xref uid="excel!Excel.NamedItemArrayValues:interface" />
+- name: comment
+  uid: excel!Excel.NamedItem#comment:member
+  package: excel!
+  fullName: comment
+  summary: この名前に関連付けられているコメントを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'comment: string;'
+    return:
+      type: string
+- name: formula
+  uid: excel!Excel.NamedItem#formula:member
+  package: excel!
+  fullName: formula
+  summary: 名前付きアイテムの数式を指定します。 数式は常に '=' 記号で始まります。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'formula: any;'
+    return:
+      type: any
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getItem(\"Sample\");\n\n    // Get the named item\n    let myNamedItem = sheet.names.getItemOrNullObject(\"MyRange\");\n    myNamedItem.load(\"name, formula\");\n    await context.sync();\n\n    if (myNamedItem.isNullObject) {\n        console.log(`There is no named item. Create it with \"Add named item for a range\" first.`);\n    } else {                    \n        // Update named item to point to the second range\n        myNamedItem.formula = \"=Sample!$B$10:$D$14\";\n        sheet.getRange(\"B10:D14\").select();\n        await context.sync();\n\n        console.log(`Just updated the named item \"${myNamedItem.name}\" -- it's now located here: ${myNamedItem.formula}`);\n    }\n}\n```"
+- name: name
+  uid: excel!Excel.NamedItem#name:member
+  package: excel!
+  fullName: name
+  summary: オブジェクトの名前。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly name: string;'
+    return:
+      type: string
+- name: scope
+  uid: excel!Excel.NamedItem#scope:member
+  package: excel!
+  fullName: scope
+  summary: ブックまたは特定のワークシートに対して、名前をスコープ設定するかどうかを指定します。 可能な値は次のとおりです。ワークシート、ブック。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly scope: NamedItemScope | "Worksheet" | "Workbook";'
+    return:
+      type: <xref uid="excel!Excel.NamedItemScope:enum" /> | "Worksheet" | "Workbook"
+- name: type
+  uid: excel!Excel.NamedItem#type:member
+  package: excel!
+  fullName: type
+  summary: 名前の数式によって返される値の型を指定します。 詳細については、「Excel. NamedItemType」を参照してください。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      readonly type:
+                  | NamedItemType
+                  | "String"
+                  | "Integer"
+                  | "Double"
+                  | "Boolean"
+                  | "Range"
+                  | "Error"
+                  | "Array";
+    return:
+      type: >-
+        | <xref uid="excel!Excel.NamedItemType:enum" />
                     | "String"
                     | "Integer"
                     | "Double"
                     | "Boolean"
                     | "Range"
                     | "Error"
-                    | "Array";
-      return:
-        type:
-          - 'excel!Excel.NamedItem#type~0:complex'
-  - uid: 'excel!Excel.NamedItem#value:member'
-    summary: 名前の数式で計算された値を表します。 名前付き範囲の場合は範囲のアドレスを返します。
-    name: value
-    fullName: value
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly value: any;'
-      return:
-        type:
-          - any
-  - uid: 'excel!Excel.NamedItem#visible:member'
-    summary: オブジェクトを表示するかどうかを指定します。
-    name: visible
-    fullName: visible
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'visible: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.NamedItem#worksheet:member'
-    summary: 名前付きのアイテムの対象になるワークシートを返します。 アイテムのスコープがブックに設定されている場合は、エラーをスローします。
-    name: worksheet
-    fullName: worksheet
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly worksheet: Worksheet;'
-      return:
-        type:
-          - 'excel!Excel.Worksheet:interface'
-  - uid: 'excel!Excel.NamedItem#worksheetOrNullObject:member'
-    summary: 名前付きのアイテムの対象になるワークシートを返します。 アイテムがブックを対象にしている場合は、null オブジェクトを返します。
-    name: worksheetOrNullObject
-    fullName: worksheetOrNullObject
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly worksheetOrNullObject: Worksheet;'
-      return:
-        type:
-          - 'excel!Excel.Worksheet:interface'
-references:
-  - uid: 'excel!Excel.NamedItemArrayValues:interface'
-    name: NamedItemArrayValues
-    fullName: Excel.NamedItemArrayValues
-  - uid: 'excel!Excel.Range:interface'
-    name: Range
-    fullName: Excel.Range
-  - uid: 'excel!Excel.NamedItem#scope~0:complex'
-    name: NamedItemScope | "Worksheet" | "Workbook"
-    fullName: Excel.NamedItemScope | "Worksheet" | "Workbook"
-    spec.typeScript:
-      - uid: 'excel!Excel.NamedItemScope:enum'
-        name: NamedItemScope
-        fullName: Excel.NamedItemScope
-      - name: ' | "Worksheet" | "Workbook"'
-        fullName: ' | "Worksheet" | "Workbook"'
-  - uid: 'excel!Excel.NamedItem#type~0:complex'
-    name: |-
-      | NamedItemType
-                  | "String"
-                  | "Integer"
-                  | "Double"
-                  | "Boolean"
-                  | "Range"
-                  | "Error"
-                  | "Array"
-    fullName: |-
-      | Excel.NamedItemType
-                  | "String"
-                  | "Integer"
-                  | "Double"
-                  | "Boolean"
-                  | "Range"
-                  | "Error"
-                  | "Array"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.NamedItemType:enum'
-        name: NamedItemType
-        fullName: Excel.NamedItemType
-      - name: |2-
-
-                      | "String"
-                      | "Integer"
-                      | "Double"
-                      | "Boolean"
-                      | "Range"
-                      | "Error"
-                      | "Array"
-        fullName: |2-
-
-                      | "String"
-                      | "Integer"
-                      | "Double"
-                      | "Boolean"
-                      | "Range"
-                      | "Error"
-                      | "Array"
-  - uid: 'excel!Excel.Worksheet:interface'
-    name: Worksheet
-    fullName: Excel.Worksheet
+                    | "Array"
+- name: value
+  uid: excel!Excel.NamedItem#value:member
+  package: excel!
+  fullName: value
+  summary: 名前の数式で計算された値を表します。 名前付き範囲の場合は範囲のアドレスを返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly value: any;'
+    return:
+      type: any
+- name: visible
+  uid: excel!Excel.NamedItem#visible:member
+  package: excel!
+  fullName: visible
+  summary: オブジェクトを表示するかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'visible: boolean;'
+    return:
+      type: boolean
+- name: worksheet
+  uid: excel!Excel.NamedItem#worksheet:member
+  package: excel!
+  fullName: worksheet
+  summary: 名前付きのアイテムの対象になるワークシートを返します。 アイテムのスコープがブックに設定されている場合は、エラーをスローします。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly worksheet: Worksheet;'
+    return:
+      type: <xref uid="excel!Excel.Worksheet:interface" />
+- name: worksheetOrNullObject
+  uid: excel!Excel.NamedItem#worksheetOrNullObject:member
+  package: excel!
+  fullName: worksheetOrNullObject
+  summary: 名前付きのアイテムの対象になるワークシートを返します。 アイテムがブックを対象にしている場合は、null オブジェクトを返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly worksheetOrNullObject: Worksheet;'
+    return:
+      type: <xref uid="excel!Excel.Worksheet:interface" />
+methods:
+- name: delete()
+  uid: excel!Excel.NamedItem#delete:member(1)
+  package: excel!
+  fullName: delete()
+  summary: 指定された名前を削除します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(): void;'
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getItem(\"Sample\");\n    let totalName = sheet.names.getItemOrNullObject(\"TotalAmount\");\n    totalName.load();\n    await context.sync();\n\n    if (totalName.value) {\n        totalName.delete();\n\n        // Replace the named item (TotalAmount) with the actual formula for TotalAmount to avoid displaying #NAME in the cell.\n        sheet.getRange(\"D11\").values = [[\"=SUM(ExpensesTable[AMOUNT])\"]];\n    } else {\n        console.log(\"No named item created for the formula.\");\n    }\n\n    await context.sync();\n}\n```"
+- name: getRange()
+  uid: excel!Excel.NamedItem#getRange:member(1)
+  package: excel!
+  fullName: getRange()
+  summary: 名前に関連付けられている範囲オブジェクトを返します。 名前付きアイテムの型が範囲でない場合、エラーをスローします。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRange(): Range;'
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: getRangeOrNullObject()
+  uid: excel!Excel.NamedItem#getRangeOrNullObject:member(1)
+  package: excel!
+  fullName: getRangeOrNullObject()
+  summary: 名前に関連付けられている範囲オブジェクトを返します。 名前付きアイテムの型が範囲でない場合は、null オブジェクトを返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRangeOrNullObject(): Range;'
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.NamedItem#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: オブジェクトの指定されたプロパティを読み込むコマンドを待ち行列に入れます。 プロパティを読み取る前に、`context.sync()` を呼び出す必要があります。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: 読み込むプロパティを指定する、コンマで区切られた文字列または文字列の配列。
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 997de6c6512e3f455b29d74df0acc11e054a7739
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49419902"

@@ -1,26 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.PageOrientation:enum'
-    name: Excel.PageOrientation
-    fullName: Excel.PageOrientation
-    langs:
-      - typeScript
-    type: enum
-    package: excel!
-    children:
-      - 'excel!Excel.PageOrientation.landscape:member'
-      - 'excel!Excel.PageOrientation.portrait:member'
-  - uid: 'excel!Excel.PageOrientation.landscape:member'
-    name: landscape
-    fullName: landscape
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Landscape"'
-  - uid: 'excel!Excel.PageOrientation.portrait:member'
-    name: portrait
-    fullName: portrait
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Portrait"'
+### YamlMime:TSEnum
+name: Excel.PageOrientation
+uid: excel!Excel.PageOrientation:enum
+package: excel!
+fullName: Excel.PageOrientation
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: landscape
+  uid: excel!Excel.PageOrientation.landscape:member
+  package: excel!
+  summary: ''
+- name: portrait
+  uid: excel!Excel.PageOrientation.portrait:member
+  package: excel!
+  summary: ''
+metadata:
+  ms.openlocfilehash: c4d1f35f30d5b1f8f65fed285bac6b0ceedd160b
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49418952"
