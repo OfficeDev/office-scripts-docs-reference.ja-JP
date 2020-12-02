@@ -17,14 +17,15 @@
         "Conceptual": "Content",
         "ManagedReference": "Content",
         "RestApi": "Content",
-        "UniversalReference": "Content"
+        "UniversalReference": "Content",
+        "TSType": "content",
+        "TSPackage": "content",
+        "TSEnum": "content",
+        "TSTypeAlias": "content",
+        "ReferenceContainer": "content"
       },
       "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "customized_template_paths": [
-        "_dependentPackages/uref.plugins/content"
-      ]
-
+      "template_folder": "_themes"
     }
   ],
   "dependent_repositories": [
@@ -72,7 +73,9 @@
       "ConceptualTOCUrl": "/office/dev/scripts/toc.json"
     }
   ],
-  "notification_subscribers": ["mor-oitac-eng@rws.com"],
+  "notification_subscribers": [
+    "mor-oitac-eng@rws.com"
+  ],
   "branches_to_filter": [
     "live",
     "master-sxs"
