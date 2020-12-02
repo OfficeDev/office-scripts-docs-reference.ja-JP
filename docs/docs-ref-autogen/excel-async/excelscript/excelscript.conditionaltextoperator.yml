@@ -12,26 +12,31 @@ fields:
   uid: excel!Excel.ConditionalTextOperator.beginsWith:member
   package: excel!
   summary: ''
+  value: "\"BeginsWith\""
 - name: contains
   uid: excel!Excel.ConditionalTextOperator.contains:member
   package: excel!
   summary: ''
+  value: "\"Contains\""
 - name: endsWith
   uid: excel!Excel.ConditionalTextOperator.endsWith:member
   package: excel!
   summary: ''
+  value: "\"EndsWith\""
 - name: invalid
   uid: excel!Excel.ConditionalTextOperator.invalid:member
   package: excel!
   summary: ''
+  value: "\"Invalid\""
 - name: notContains
   uid: excel!Excel.ConditionalTextOperator.notContains:member
   package: excel!
   summary: ''
+  value: "\"NotContains\""
 metadata:
-  ms.openlocfilehash: b711caab1a2cc395212e0d1539411dcfa816a9be
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 1db28fea84e2085f629150684996985793b8aebd
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49414154"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49552830"

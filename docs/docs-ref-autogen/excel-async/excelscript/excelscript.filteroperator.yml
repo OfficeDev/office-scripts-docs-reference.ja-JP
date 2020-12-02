@@ -12,14 +12,16 @@ fields:
   uid: excel!Excel.FilterOperator.and:member
   package: excel!
   summary: ''
+  value: "\"And\""
 - name: or
   uid: excel!Excel.FilterOperator.or:member
   package: excel!
   summary: ''
+  value: "\"Or\""
 metadata:
-  ms.openlocfilehash: 2c034300d87bc4e69c57b39cbe194ed0eecb58b5
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: efc16c10730ab7756580bdce8a4b12b390090d5e
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416170"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49552655"

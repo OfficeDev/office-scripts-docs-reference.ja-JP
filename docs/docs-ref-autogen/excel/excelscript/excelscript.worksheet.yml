@@ -483,7 +483,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getChart:member(1)
   package: ExcelScript!
   fullName: getChart(name)
-  summary: グラフ名を使用してグラフを取得します。 同じ名前の複数のグラフがある場合は、最初の 1 つが返されます。 グラフが存在しない場合は、null オブジェクトが返されます。
+  summary: グラフ名を使用してグラフを取得します。 同じ名前の複数のグラフがある場合は、最初の 1 つが返されます。 グラフが存在しない場合、この関数は、プロパティが次の値に設定されたオブジェクトを返します。 `isNullObject``true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -655,7 +655,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getNamedItem:member(1)
   package: ExcelScript!
   fullName: getNamedItem(name)
-  summary: 名前を使用して、NamedItem オブジェクトを取得します。 nameditem オブジェクトが存在しない場合は null オブジェクトを返します。
+  summary: '`NamedItem`名前を使用してオブジェクトを取得します。 オブジェクトが存在しない場合、この関数は、プロパティが次の値に設定されたオブジェクトを返します。 `isNullObject``true`<!-- -->.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -685,7 +685,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getNext:member(1)
   package: ExcelScript!
   fullName: getNext(visibleOnly)
-  summary: これに続くワークシートを取得します。 このメソッドに続くワークシートがない場合、このメソッドは null オブジェクトを返します。
+  summary: これに続くワークシートを取得します。 このメソッドに続くワークシートがない場合、このメソッドは、そのプロパティが次の `isNullObject` ように設定されたオブジェクトを返します。 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -910,7 +910,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getSlicer:member(1)
   package: ExcelScript!
   fullName: getSlicer(key)
-  summary: 名前または ID に基づいてスライサーを取得します。スライサーが存在しない場合は null オブジェクトを返します。
+  summary: 名前または id を使用してスライサーを取得します。スライサーが存在しない場合、この関数は、プロパティが次の値に設定されたオブジェクトを返します。 `isNullObject``true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -979,7 +979,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getTable:member(1)
   package: ExcelScript!
   fullName: getTable(key)
-  summary: 名前または ID でテーブルを取得します。 テーブルが存在しない場合は null オブジェクトを返します。
+  summary: 名前または ID を使用してテーブルを取得します。 テーブルが存在しない場合、この関数は、プロパティが次の値に設定されたオブジェクトを返します。 `isNullObject``true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1009,7 +1009,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getUsedRange:member(1)
   package: ExcelScript!
   fullName: getUsedRange(valuesOnly)
-  summary: 使用範囲とは、値または書式設定が割り当たっているすべてのセルを包含する最小の範囲です。ワークシート全体が空白の場合、この関数は null オブジェクトを返します。
+  summary: ''
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1052,7 +1052,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getWorksheetCustomProperty:member(1)
   package: ExcelScript!
   fullName: getWorksheetCustomProperty(key)
-  summary: キーを使用してカスタム プロパティ オブジェクトを取得します。大文字と小文字は区別されません。 カスタムプロパティが存在しない場合は、null オブジェクトを返します。
+  summary: キーを使用してカスタム プロパティ オブジェクトを取得します。大文字と小文字は区別されません。 カスタムプロパティが存在しない場合、この関数は、プロパティが次の値に設定されたオブジェクトを返します。 `isNullObject``true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1292,9 +1292,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: c647b16d668a36d1fe00a7b6c3422e9cd1d9a5c7
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 76406c9a40bad3c850c09cdb198eabdad4a2b1c3
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415149"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554063"

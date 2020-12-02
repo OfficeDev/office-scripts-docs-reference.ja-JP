@@ -12,26 +12,31 @@ fields:
   uid: excel!Excel.ChartMapProjectionType.albers:member
   package: excel!
   summary: ''
+  value: "\"Albers\""
 - name: automatic
   uid: excel!Excel.ChartMapProjectionType.automatic:member
   package: excel!
   summary: ''
+  value: "\"Automatic\""
 - name: mercator
   uid: excel!Excel.ChartMapProjectionType.mercator:member
   package: excel!
   summary: ''
+  value: "\"Mercator\""
 - name: miller
   uid: excel!Excel.ChartMapProjectionType.miller:member
   package: excel!
   summary: ''
+  value: "\"Miller\""
 - name: robinson
   uid: excel!Excel.ChartMapProjectionType.robinson:member
   package: excel!
   summary: ''
+  value: "\"Robinson\""
 metadata:
-  ms.openlocfilehash: 945cf0b034f9dfa3f6bc154ec6fa2d659e9dbdc3
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 0526e9c656030f218145e8f16ed6afc4562a4e8d
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417478"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49553250"

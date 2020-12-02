@@ -12,34 +12,41 @@ fields:
   uid: excel!Excel.ShapeTextOrientation.eastAsianVertical:member
   package: excel!
   summary: ''
+  value: "\"EastAsianVertical\""
 - name: horizontal
   uid: excel!Excel.ShapeTextOrientation.horizontal:member
   package: excel!
   summary: ''
+  value: "\"Horizontal\""
 - name: mongolianVertical
   uid: excel!Excel.ShapeTextOrientation.mongolianVertical:member
   package: excel!
   summary: ''
+  value: "\"MongolianVertical\""
 - name: vertical
   uid: excel!Excel.ShapeTextOrientation.vertical:member
   package: excel!
   summary: ''
+  value: "\"Vertical\""
 - name: vertical270
   uid: excel!Excel.ShapeTextOrientation.vertical270:member
   package: excel!
   summary: ''
+  value: "\"Vertical270\""
 - name: wordArtVertical
   uid: excel!Excel.ShapeTextOrientation.wordArtVertical:member
   package: excel!
   summary: ''
+  value: "\"WordArtVertical\""
 - name: wordArtVerticalRTL
   uid: excel!Excel.ShapeTextOrientation.wordArtVerticalRTL:member
   package: excel!
   summary: ''
+  value: "\"WordArtVerticalRTL\""
 metadata:
-  ms.openlocfilehash: 972d68464f2386480980379f4ea6a184d80e25d1
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 5af39222b589d769ae000e14a70d5ef5b357f4d5
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412924"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49553921"

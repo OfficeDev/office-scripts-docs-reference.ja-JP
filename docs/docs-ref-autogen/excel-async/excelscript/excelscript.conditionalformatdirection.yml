@@ -12,14 +12,16 @@ fields:
   uid: excel!Excel.ConditionalFormatDirection.bottom:member
   package: excel!
   summary: ''
+  value: "\"Bottom\""
 - name: top
   uid: excel!Excel.ConditionalFormatDirection.top:member
   package: excel!
   summary: ''
+  value: "\"Top\""
 metadata:
-  ms.openlocfilehash: 4a797251d4b7006624186cb0eb09ab8d00df2191
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 89336099e1279c62fe86c6fc8057c64ce313fb15
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416548"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49552977"

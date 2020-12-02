@@ -12,18 +12,21 @@ fields:
   uid: excel!Excel.ChartErrorBarsInclude.both:member
   package: excel!
   summary: ''
+  value: "\"Both\""
 - name: minusValues
   uid: excel!Excel.ChartErrorBarsInclude.minusValues:member
   package: excel!
   summary: ''
+  value: "\"MinusValues\""
 - name: plusValues
   uid: excel!Excel.ChartErrorBarsInclude.plusValues:member
   package: excel!
   summary: ''
+  value: "\"PlusValues\""
 metadata:
-  ms.openlocfilehash: f28bd3461bb17c8d8e0039967f23fa8f4d1c0aa9
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: a167240cd980769da11ea3c5c94aa1e18b489490
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415007"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49553369"

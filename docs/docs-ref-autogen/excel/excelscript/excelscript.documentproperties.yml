@@ -124,7 +124,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getCustomProperty:member(1)
   package: ExcelScript!
   fullName: getCustomProperty(key)
-  summary: キーを使用してカスタム プロパティ オブジェクトを取得します。大文字と小文字は区別されません。 カスタムプロパティが存在しない場合は、null オブジェクトを返します。
+  summary: キーを使用してカスタム プロパティ オブジェクトを取得します。大文字と小文字は区別されません。 カスタムプロパティが存在しない場合、この関数は、プロパティが次の値に設定されたオブジェクトを返します。 `isNullObject``true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -369,9 +369,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: d16f7fd2e93078d4aca94a3637ea0378a7163798
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 5eab007d84d344b973beabd9d62c7753486d3895
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415415"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554654"

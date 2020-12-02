@@ -12,26 +12,31 @@ fields:
   uid: excel!Excel.ShapeType.geometricShape:member
   package: excel!
   summary: ''
+  value: "\"GeometricShape\""
 - name: group
   uid: excel!Excel.ShapeType.group:member
   package: excel!
   summary: ''
+  value: "\"Group\""
 - name: image
   uid: excel!Excel.ShapeType.image:member
   package: excel!
   summary: ''
+  value: "\"Image\""
 - name: line
   uid: excel!Excel.ShapeType.line:member
   package: excel!
   summary: ''
+  value: "\"Line\""
 - name: unsupported
   uid: excel!Excel.ShapeType.unsupported:member
   package: excel!
   summary: ''
+  value: "\"Unsupported\""
 metadata:
-  ms.openlocfilehash: 5bfd24e9b2751e7a4af29da2d643f1224214663e
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: f9d8d094df66160b99af9e88307bf41cb9811452
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412917"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49553851"

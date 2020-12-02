@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getSlicerItem:member(1)
   package: ExcelScript!
   fullName: getSlicerItem(key)
-  summary: そのキーまたは名前を使用してスライサー アイテムを取得します。 スライサー アイテムが存在しない場合は null オブジェクトを返します。
+  summary: そのキーまたは名前を使用してスライサー アイテムを取得します。 スライサーアイテムが存在しない場合、この関数は、プロパティが次の値に設定されたオブジェクトを返します。 `isNullObject``true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -375,9 +375,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 29a8897a0234b5f98f4f97495c4b94e62ba4d61e
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 4136caf5e44c73d4f4a4ef5d7379a80e370d5ef9
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420490"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554772"

@@ -12,18 +12,21 @@ fields:
   uid: excel!Excel.ConditionalRangeFontUnderlineStyle.double:member
   package: excel!
   summary: ''
+  value: "\"Double\""
 - name: none
   uid: excel!Excel.ConditionalRangeFontUnderlineStyle.none:member
   package: excel!
   summary: ''
+  value: "\"None\""
 - name: single
   uid: excel!Excel.ConditionalRangeFontUnderlineStyle.single:member
   package: excel!
   summary: ''
+  value: "\"Single\""
 metadata:
-  ms.openlocfilehash: 218b295ae1f2dd6058bb3d42ec8161b9d8cbd1ab
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 4601ae684078e70203836ae387ef0def02f3b48a
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416433"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49552847"

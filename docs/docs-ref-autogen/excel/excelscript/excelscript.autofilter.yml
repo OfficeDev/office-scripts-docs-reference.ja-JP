@@ -93,7 +93,7 @@ methods:
   uid: ExcelScript!ExcelScript.AutoFilter#getRange:member(1)
   package: ExcelScript!
   fullName: getRange()
-  summary: オートフィルターが適用される範囲を表す Range オブジェクトを返します。 オートフィルターに関連付けられた Range オブジェクトがない場合、このメソッドは null オブジェクトを返します。
+  summary: '`Range`適用する範囲を表すオブジェクトを返し `AutoFilter` ます。 `Range`に関連付けられたオブジェクトがない場合`AutoFilter`<!-- -->の場合、このメソッドは、プロパティが次の値に設定されたオブジェクトを返します。 `isNullObject``true`<!-- -->.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -129,9 +129,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 04782cf770a672d83c99ad823019460512cb8b07
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 1dbc1c191f25e138a30a64923da20b27f0f1d6d8
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49418094"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554668"

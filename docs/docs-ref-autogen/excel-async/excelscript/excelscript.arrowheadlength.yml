@@ -12,18 +12,21 @@ fields:
   uid: excel!Excel.ArrowheadLength.long:member
   package: excel!
   summary: ''
+  value: "\"Long\""
 - name: medium
   uid: excel!Excel.ArrowheadLength.medium:member
   package: excel!
   summary: ''
+  value: "\"Medium\""
 - name: short
   uid: excel!Excel.ArrowheadLength.short:member
   package: excel!
   summary: ''
+  value: "\"Short\""
 metadata:
-  ms.openlocfilehash: 61f47965ec214909299bf01272384f67a768beee
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: d2fb945c2fd92eff2b06de286b0f9390e509534a
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49413913"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554371"

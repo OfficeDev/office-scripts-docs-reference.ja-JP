@@ -12,18 +12,21 @@ fields:
   uid: excel!Excel.ArrowheadWidth.medium:member
   package: excel!
   summary: ''
+  value: "\"Medium\""
 - name: narrow
   uid: excel!Excel.ArrowheadWidth.narrow:member
   package: excel!
   summary: ''
+  value: "\"Narrow\""
 - name: wide
   uid: excel!Excel.ArrowheadWidth.wide:member
   package: excel!
   summary: ''
+  value: "\"Wide\""
 metadata:
-  ms.openlocfilehash: 9cddc64ab1235a47ceae256602bef25e9874c40a
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: bb4332fbaadf4502feb6566a280f3729254bbf1b
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49413906"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49553688"

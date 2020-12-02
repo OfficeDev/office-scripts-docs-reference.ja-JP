@@ -12,18 +12,21 @@ fields:
   uid: excel!Excel.CalculationState.calculating:member
   package: excel!
   summary: 計算が進行中です。
+  value: "\"Calculating\""
 - name: done
   uid: excel!Excel.CalculationState.done:member
   package: excel!
   summary: 計算完了
+  value: "\"Done\""
 - name: pending
   uid: excel!Excel.CalculationState.pending:member
   package: excel!
   summary: 計算を引き起こす変更が行われましたが、再計算はまだ実行されていません
+  value: "\"Pending\""
 metadata:
-  ms.openlocfilehash: 1c0bd5de4c8a007d5a4d575f215fe6702430fc56
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 41c7914656078d67a84b998d07c7d2a74f03d62d
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49413864"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49553565"

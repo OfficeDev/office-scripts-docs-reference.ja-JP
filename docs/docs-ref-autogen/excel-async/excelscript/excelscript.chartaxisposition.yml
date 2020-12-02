@@ -12,22 +12,26 @@ fields:
   uid: excel!Excel.ChartAxisPosition.automatic:member
   package: excel!
   summary: ''
+  value: "\"Automatic\""
 - name: custom
   uid: excel!Excel.ChartAxisPosition.custom:member
   package: excel!
   summary: ''
+  value: "\"Custom\""
 - name: maximum
   uid: excel!Excel.ChartAxisPosition.maximum:member
   package: excel!
   summary: ''
+  value: "\"Maximum\""
 - name: minimum
   uid: excel!Excel.ChartAxisPosition.minimum:member
   package: excel!
   summary: ''
+  value: "\"Minimum\""
 metadata:
-  ms.openlocfilehash: 1c53256f71a101ea324805c05ae8d4df6adacbc2
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 4b5433f470fcdd2127d4986ed57ff86e357e3d8b
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49413728"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49553532"

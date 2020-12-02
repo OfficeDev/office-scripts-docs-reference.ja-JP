@@ -12,14 +12,16 @@ fields:
   uid: excel!Excel.PrintOrder.downThenOver:member
   package: excel!
   summary: 反対側のページや右側のページのフィールドを処理する前に下の行を処理します。
+  value: "\"DownThenOver\""
 - name: overThenDown
   uid: excel!Excel.PrintOrder.overThenDown:member
   package: excel!
   summary: 下の行を処理する前に反対側のページや右側のページのフィールドを処理します。
+  value: "\"OverThenDown\""
 metadata:
-  ms.openlocfilehash: 724e91f49fa350419ad29ab3c4a159906e7e2676
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: c5a90e664b9cad5d6d33441dcf84f2bdb4472cb7
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49418794"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49553976"

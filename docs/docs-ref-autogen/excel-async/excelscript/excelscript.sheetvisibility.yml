@@ -12,18 +12,21 @@ fields:
   uid: excel!Excel.SheetVisibility.hidden:member
   package: excel!
   summary: ''
+  value: "\"Hidden\""
 - name: veryHidden
   uid: excel!Excel.SheetVisibility.veryHidden:member
   package: excel!
   summary: ''
+  value: "\"VeryHidden\""
 - name: visible
   uid: excel!Excel.SheetVisibility.visible:member
   package: excel!
   summary: ''
+  value: "\"Visible\""
 metadata:
-  ms.openlocfilehash: 127eb593c43e5d093cbec625a808a883e79c580e
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: d45607bde7b1445bb2d4421663efaa4c85dde7de
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412896"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49553858"

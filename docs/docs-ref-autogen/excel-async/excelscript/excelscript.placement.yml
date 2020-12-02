@@ -12,18 +12,21 @@ fields:
   uid: excel!Excel.Placement.absolute:member
   package: excel!
   summary: オブジェクトは自由にフリーの状態です。
+  value: "\"Absolute\""
 - name: oneCell
   uid: excel!Excel.Placement.oneCell:member
   package: excel!
   summary: オブジェクトは、セルに移動し、サイズが変更されます。
+  value: "\"OneCell\""
 - name: twoCell
   uid: excel!Excel.Placement.twoCell:member
   package: excel!
   summary: オブジェクトはセルと共に移動します。
+  value: "\"TwoCell\""
 metadata:
-  ms.openlocfilehash: 7eb3e236a015e7b6daf96f755dbba063c7823bfc
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 205bdf51fc3b8b32cc99f95b0fe0ea4af50f64e9
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49418808"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554343"

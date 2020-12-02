@@ -129,7 +129,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getColumnHierarchy:member(1)
   package: ExcelScript!
   fullName: getColumnHierarchy(name)
-  summary: 名前に基づいて RowColumnPivotHierarchy を取得します。 RowColumnPivotHierarchy が存在しない場合は null オブジェクトを返します。
+  summary: 名前に基づいて RowColumnPivotHierarchy を取得します。 RowColumnPivotHierarchy が存在しない場合、この関数は、プロパティが次の値に設定されたオブジェクトを返します。 `isNullObject``true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getDataHierarchy:member(1)
   package: ExcelScript!
   fullName: getDataHierarchy(name)
-  summary: 名前に基づいて DataPivotHierarchy を取得します。 DataPivotHierarchy が存在しない場合は null オブジェクトを返します。
+  summary: 名前に基づいて DataPivotHierarchy を取得します。 DataPivotHierarchy が存在しない場合、この関数は、プロパティが次の値に設定されたオブジェクトを返します。 `isNullObject``true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -202,7 +202,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getFilterHierarchy:member(1)
   package: ExcelScript!
   fullName: getFilterHierarchy(name)
-  summary: 名前に基づいて FilterPivotHierarchy を取得します。 FilterPivotHierarchy が存在しない場合は null オブジェクトを返します。
+  summary: 名前に基づいて FilterPivotHierarchy を取得します。 FilterPivotHierarchy が存在しない場合、この関数は、プロパティが次の値に設定されたオブジェクトを返します。 `isNullObject``true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -232,7 +232,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getHierarchy:member(1)
   package: ExcelScript!
   fullName: getHierarchy(name)
-  summary: 名前に基づいて PivotHierarchy を取得します。 PivotHierarchy が存在しない場合は null オブジェクトを返します。
+  summary: 名前に基づいて PivotHierarchy を取得します。 PivotHierarchy が存在しない場合、この関数は、プロパティが次の値に設定されたオブジェクトを返します。 `isNullObject``true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -301,7 +301,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getRowHierarchy:member(1)
   package: ExcelScript!
   fullName: getRowHierarchy(name)
-  summary: 名前に基づいて RowColumnPivotHierarchy を取得します。 RowColumnPivotHierarchy が存在しない場合は null オブジェクトを返します。
+  summary: 名前に基づいて RowColumnPivotHierarchy を取得します。 RowColumnPivotHierarchy が存在しない場合、この関数は、プロパティが次の値に設定されたオブジェクトを返します。 `isNullObject``true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -499,9 +499,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 6e6ae4214e6ddb923ba268f247c5088421dbac94
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: cae3d58cfae8798085df614005461abe574927ec
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416716"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554609"

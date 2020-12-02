@@ -12,14 +12,16 @@ fields:
   uid: excel!Excel.SortMethod.pinYin:member
   package: excel!
   summary: ''
+  value: "\"PinYin\""
 - name: strokeCount
   uid: excel!Excel.SortMethod.strokeCount:member
   package: excel!
   summary: ''
+  value: "\"StrokeCount\""
 metadata:
-  ms.openlocfilehash: c2e33d27adeee570d4d815b678f4061a83b2ff05
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 0594f7c95511dcaf51db70e5e16595b499c6b913
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412854"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554091"

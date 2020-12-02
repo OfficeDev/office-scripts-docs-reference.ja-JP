@@ -12,26 +12,31 @@ fields:
   uid: excel!Excel.ChartTextVerticalAlignment.bottom:member
   package: excel!
   summary: ''
+  value: "\"Bottom\""
 - name: center
   uid: excel!Excel.ChartTextVerticalAlignment.center:member
   package: excel!
   summary: ''
+  value: "\"Center\""
 - name: distributed
   uid: excel!Excel.ChartTextVerticalAlignment.distributed:member
   package: excel!
   summary: ''
+  value: "\"Distributed\""
 - name: justify
   uid: excel!Excel.ChartTextVerticalAlignment.justify:member
   package: excel!
   summary: ''
+  value: "\"Justify\""
 - name: top
   uid: excel!Excel.ChartTextVerticalAlignment.top:member
   package: excel!
   summary: ''
+  value: "\"Top\""
 metadata:
-  ms.openlocfilehash: bce328935545981de5162183da25600fddb8a77f
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 6287b7c0d7711f779b26c418921770468f5dace1
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417387"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49553131"

@@ -12,14 +12,16 @@ fields:
   uid: excel!Excel.GroupOption.byColumns:member
   package: excel!
   summary: 列ごとにグループ化します。
+  value: "\"ByColumns\""
 - name: byRows
   uid: excel!Excel.GroupOption.byRows:member
   package: excel!
   summary: 行ごとにグループ化します。
+  value: "\"ByRows\""
 metadata:
-  ms.openlocfilehash: d2174d1dbe89df054d08d9402bda26689683ea30
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: c4adcdcffcabeb1828ddd23802dc7392123befb4
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419185"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49552858"

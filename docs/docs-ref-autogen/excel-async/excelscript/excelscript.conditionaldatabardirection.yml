@@ -12,18 +12,21 @@ fields:
   uid: excel!Excel.ConditionalDataBarDirection.context:member
   package: excel!
   summary: ''
+  value: "\"Context\""
 - name: leftToRight
   uid: excel!Excel.ConditionalDataBarDirection.leftToRight:member
   package: excel!
   summary: ''
+  value: "\"LeftToRight\""
 - name: rightToLeft
   uid: excel!Excel.ConditionalDataBarDirection.rightToLeft:member
   package: excel!
   summary: ''
+  value: "\"RightToLeft\""
 metadata:
-  ms.openlocfilehash: 4c525fdb306713bbf3e47940d37612a8ecfd02bc
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 26898b4d9839c3661eb630a7807d9d75979d4778
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49414657"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49552991"

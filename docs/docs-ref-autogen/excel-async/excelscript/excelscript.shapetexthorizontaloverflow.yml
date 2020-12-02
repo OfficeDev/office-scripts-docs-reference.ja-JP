@@ -12,14 +12,16 @@ fields:
   uid: excel!Excel.ShapeTextHorizontalOverflow.clip:member
   package: excel!
   summary: ''
+  value: "\"Clip\""
 - name: overflow
   uid: excel!Excel.ShapeTextHorizontalOverflow.overflow:member
   package: excel!
   summary: ''
+  value: "\"Overflow\""
 metadata:
-  ms.openlocfilehash: 1b7a0b10bb9f158254f1d23ba5dc793f7ba19759
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: ca8679d1daa6aa6152da7867558b0482c3dc7507
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49418507"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554203"

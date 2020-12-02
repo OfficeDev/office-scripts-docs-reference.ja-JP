@@ -12,26 +12,31 @@ fields:
   uid: excel!Excel.DocumentPropertyType.boolean:member
   package: excel!
   summary: ''
+  value: "\"Boolean\""
 - name: date
   uid: excel!Excel.DocumentPropertyType.date:member
   package: excel!
   summary: ''
+  value: "\"Date\""
 - name: float
   uid: excel!Excel.DocumentPropertyType.float:member
   package: excel!
   summary: ''
+  value: "\"Float\""
 - name: number
   uid: excel!Excel.DocumentPropertyType.number:member
   package: excel!
   summary: ''
+  value: "\"Number\""
 - name: string
   uid: excel!Excel.DocumentPropertyType.string:member
   package: excel!
   summary: ''
+  value: "\"String\""
 metadata:
-  ms.openlocfilehash: 6f97f8e2306e8a308f0be5f150df00e89bf236de
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: f8161c320812204f583697536d2eb85ad2b343d2
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416240"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49552697"

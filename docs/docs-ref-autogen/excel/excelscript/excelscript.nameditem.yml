@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getRange:member(1)
   package: ExcelScript!
   fullName: getRange()
-  summary: 名前に関連付けられている範囲オブジェクトを返します。 名前付きアイテムの型が範囲でない場合は、null オブジェクトを返します。
+  summary: 名前に関連付けられている範囲オブジェクトを返します。 名前付きアイテムの型が範囲でない場合、この関数は、プロパティが次の値に設定されたオブジェクトを返します。 `isNullObject``true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getWorksheet:member(1)
   package: ExcelScript!
   fullName: getWorksheet()
-  summary: 名前付きのアイテムの対象になるワークシートを返します。 アイテムがブックを対象にしている場合は、null オブジェクトを返します。
+  summary: 名前付きアイテムのスコープが設定されているワークシートを返します。 代わりに、アイテムのスコープがブックに設定されている場合、この関数は、プロパティが次の値に設定されたオブジェクトを返します。 `isNullObject``true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -204,9 +204,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 00abdcecbb6352d4585620ff18b0df6b0e4b7d81
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 64b38b2371d79f40394f2bfb6db981b9f56f740b
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415359"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554758"

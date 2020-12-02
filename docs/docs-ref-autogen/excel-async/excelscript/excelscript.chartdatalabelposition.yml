@@ -12,54 +12,66 @@ fields:
   uid: excel!Excel.ChartDataLabelPosition.bestFit:member
   package: excel!
   summary: ''
+  value: "\"BestFit\""
 - name: bottom
   uid: excel!Excel.ChartDataLabelPosition.bottom:member
   package: excel!
   summary: ''
+  value: "\"Bottom\""
 - name: callout
   uid: excel!Excel.ChartDataLabelPosition.callout:member
   package: excel!
   summary: ''
+  value: "\"Callout\""
 - name: center
   uid: excel!Excel.ChartDataLabelPosition.center:member
   package: excel!
   summary: ''
+  value: "\"Center\""
 - name: insideBase
   uid: excel!Excel.ChartDataLabelPosition.insideBase:member
   package: excel!
   summary: ''
+  value: "\"InsideBase\""
 - name: insideEnd
   uid: excel!Excel.ChartDataLabelPosition.insideEnd:member
   package: excel!
   summary: ''
+  value: "\"InsideEnd\""
 - name: invalid
   uid: excel!Excel.ChartDataLabelPosition.invalid:member
   package: excel!
   summary: ''
+  value: "\"Invalid\""
 - name: left
   uid: excel!Excel.ChartDataLabelPosition.left:member
   package: excel!
   summary: ''
+  value: "\"Left\""
 - name: none
   uid: excel!Excel.ChartDataLabelPosition.none:member
   package: excel!
   summary: ''
+  value: "\"None\""
 - name: outsideEnd
   uid: excel!Excel.ChartDataLabelPosition.outsideEnd:member
   package: excel!
   summary: ''
+  value: "\"OutsideEnd\""
 - name: right
   uid: excel!Excel.ChartDataLabelPosition.right:member
   package: excel!
   summary: ''
+  value: "\"Right\""
 - name: top
   uid: excel!Excel.ChartDataLabelPosition.top:member
   package: excel!
   summary: ''
+  value: "\"Top\""
 metadata:
-  ms.openlocfilehash: 86a3ca7561be1c3c753139d7b45a860b50418ff1
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: bf6f7aba52e6a13f47ffa0edc23521bb71b68f9c
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417653"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49553362"

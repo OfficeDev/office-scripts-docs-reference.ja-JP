@@ -12,18 +12,21 @@ fields:
   uid: excel!Excel.ImageFittingMode.fill:member
   package: excel!
   summary: ''
+  value: "\"Fill\""
 - name: fit
   uid: excel!Excel.ImageFittingMode.fit:member
   package: excel!
   summary: ''
+  value: "\"Fit\""
 - name: fitAndCenter
   uid: excel!Excel.ImageFittingMode.fitAndCenter:member
   package: excel!
   summary: ''
+  value: "\"FitAndCenter\""
 metadata:
-  ms.openlocfilehash: 0aa1762d524ad0f1d22106d085bf6e3d9e8af459
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 396d444d521f523981e75f64accb865bc57ce80d
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419342"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49553687"

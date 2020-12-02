@@ -12,22 +12,26 @@ fields:
   uid: excel!Excel.PrintErrorType.asDisplayed:member
   package: excel!
   summary: ''
+  value: "\"AsDisplayed\""
 - name: blank
   uid: excel!Excel.PrintErrorType.blank:member
   package: excel!
   summary: ''
+  value: "\"Blank\""
 - name: dash
   uid: excel!Excel.PrintErrorType.dash:member
   package: excel!
   summary: ''
+  value: "\"Dash\""
 - name: notAvailable
   uid: excel!Excel.PrintErrorType.notAvailable:member
   package: excel!
   summary: ''
+  value: "\"NotAvailable\""
 metadata:
-  ms.openlocfilehash: e7cdf4d42157bc87be5862f5efa8cda8b5a8abff
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: ccac2b1c6a9d601e20f25f442b3fd74401b28f26
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49418815"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554399"

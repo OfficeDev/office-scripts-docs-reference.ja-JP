@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorkbookRangeAreas#getRangeAreasBySheet:member(1)
   package: ExcelScript!
   fullName: getRangeAreasBySheet(key)
-  summary: コレクション内のワークシートの名前または id に基づいて、RangeAreas オブジェクトを返します。 ワークシートが存在しない場合は null オブジェクトを返します。
+  summary: コレクション内のワークシートの名前または id に基づいて、RangeAreas オブジェクトを返します。 ワークシートが存在しない場合、この関数は、プロパティが次の値に設定されたオブジェクトを返します。 `isNullObject``true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -66,9 +66,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />[]
       description: ''
 metadata:
-  ms.openlocfilehash: 5a9a420a2442ca49d5134e53ae4b8f944c59f843
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 314209691b999d9cbfe9b31caec70a30bb490d93
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419223"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554751"

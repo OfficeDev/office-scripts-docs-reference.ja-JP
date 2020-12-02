@@ -12,34 +12,41 @@ fields:
   uid: excel!Excel.ConditionalFormatColorCriterionType.formula:member
   package: excel!
   summary: ''
+  value: "\"Formula\""
 - name: highestValue
   uid: excel!Excel.ConditionalFormatColorCriterionType.highestValue:member
   package: excel!
   summary: ''
+  value: "\"HighestValue\""
 - name: invalid
   uid: excel!Excel.ConditionalFormatColorCriterionType.invalid:member
   package: excel!
   summary: ''
+  value: "\"Invalid\""
 - name: lowestValue
   uid: excel!Excel.ConditionalFormatColorCriterionType.lowestValue:member
   package: excel!
   summary: ''
+  value: "\"LowestValue\""
 - name: number
   uid: excel!Excel.ConditionalFormatColorCriterionType.number:member
   package: excel!
   summary: ''
+  value: "\"Number\""
 - name: percent
   uid: excel!Excel.ConditionalFormatColorCriterionType.percent:member
   package: excel!
   summary: ''
+  value: "\"Percent\""
 - name: percentile
   uid: excel!Excel.ConditionalFormatColorCriterionType.percentile:member
   package: excel!
   summary: ''
+  value: "\"Percentile\""
 metadata:
-  ms.openlocfilehash: 2730a3802dd27e577a85b92430ca879bf5d95e77
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: da241d88f7c201ae8af27a629b83612a0fb309d7
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49414587"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49552984"
