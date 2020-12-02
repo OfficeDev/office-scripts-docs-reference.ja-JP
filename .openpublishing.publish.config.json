@@ -4,7 +4,7 @@
       "docset_name": "office-scripts-docs-reference",
       "build_source_folder": "docs",
       "build_output_subfolder": "office-scripts-docs-reference",
-      "locale": "ja-JP",
+      "locale": "ja-jp",
       "monikers": [],
       "moniker_ranges": [
         "office-scripts",
@@ -15,12 +15,10 @@
         "Conceptual": "Content",
         "ManagedReference": "Content",
         "RestApi": "Content",
-        "UniversalReference": "Content",
         "TSType": "content",
         "TSPackage": "content",
         "TSEnum": "content",
         "TSTypeAlias": "content",
-        "ReferenceContainer": "content"
       },
       "build_entry_point": "docs",
       "template_folder": "_themes",
@@ -28,7 +26,10 @@
         "docset_prebuild": [
           "_dependentPackages/CommonPlugins/tools/JoinTOC.ps1"
         ]
-      }
+      },
+      "customized_template_paths": [
+        "_dependentPackages/uref.plugins/content"
+      ]
     }
   ],
   "notification_subscribers": [
@@ -51,7 +52,7 @@
     },
     {
       "path_to_root": "_themes",
-      "url": "https://github.com/Microsoft/templates.docs.msft.ja-JP",
+      "url": "https://github.com/Microsoft/templates.docs.msft.ja-jp",
       "branch": "master",
       "branch_mapping": {}
     },
@@ -101,5 +102,8 @@
       "target_framework": "net45",
       "version": "latest"
     }
-  ]
+  ],
+  "docs_build_engine": {
+    "name": "docfx_v3"
+  }
 }
