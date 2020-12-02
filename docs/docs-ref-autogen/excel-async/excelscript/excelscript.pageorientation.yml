@@ -12,14 +12,16 @@ fields:
   uid: excel!Excel.PageOrientation.landscape:member
   package: excel!
   summary: ''
+  value: "\"Landscape\""
 - name: portrait
   uid: excel!Excel.PageOrientation.portrait:member
   package: excel!
   summary: ''
+  value: "\"Portrait\""
 metadata:
-  ms.openlocfilehash: c4d1f35f30d5b1f8f65fed285bac6b0ceedd160b
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: d1a5f25237be5fbf3a3adad2f80999766d1aff53
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49418952"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554476"

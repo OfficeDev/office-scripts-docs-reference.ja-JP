@@ -12,22 +12,26 @@ fields:
   uid: excel!Excel.ChartAxisType.category:member
   package: excel!
   summary: 軸は項目を表示します。
+  value: "\"Category\""
 - name: invalid
   uid: excel!Excel.ChartAxisType.invalid:member
   package: excel!
   summary: ''
+  value: "\"Invalid\""
 - name: series
   uid: excel!Excel.ChartAxisType.series:member
   package: excel!
   summary: 軸はデータ系列を表示します。
+  value: "\"Series\""
 - name: value
   uid: excel!Excel.ChartAxisType.value:member
   package: excel!
   summary: 軸は値を表示します。
+  value: "\"Value\""
 metadata:
-  ms.openlocfilehash: 1260ed7549ce3c4d0c002f49ad0e59f24b2e817c
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 93875c9076c3e7dc281e2acb92c5b1b199af8468
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415048"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49553418"

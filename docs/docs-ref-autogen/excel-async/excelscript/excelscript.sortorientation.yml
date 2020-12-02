@@ -12,14 +12,16 @@ fields:
   uid: excel!Excel.SortOrientation.columns:member
   package: excel!
   summary: ''
+  value: "\"Columns\""
 - name: rows
   uid: excel!Excel.SortOrientation.rows:member
   package: excel!
   summary: ''
+  value: "\"Rows\""
 metadata:
-  ms.openlocfilehash: ce7db001b8d07c05484c66a00ea05bcb73527986
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 1c447a4af4033c3ccb621ee68c9ac19540f955dd
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412847"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554084"

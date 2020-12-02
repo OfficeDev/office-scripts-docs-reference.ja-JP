@@ -12,18 +12,21 @@ fields:
   uid: excel!Excel.ChartAxisCategoryType.automatic:member
   package: excel!
   summary: Excel が軸の種類を制御します。
+  value: "\"Automatic\""
 - name: dateAxis
   uid: excel!Excel.ChartAxisCategoryType.dateAxis:member
   package: excel!
   summary: 軸は時系列軸上でデータをグループ化します。
+  value: "\"DateAxis\""
 - name: textAxis
   uid: excel!Excel.ChartAxisCategoryType.textAxis:member
   package: excel!
   summary: 軸は項目の任意のセットによってデータをグループ化します。
+  value: "\"TextAxis\""
 metadata:
-  ms.openlocfilehash: cfed6f00c724d8a9ee3d469bf2394e91d19ccd16
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: eb212796ba24a540cf32c24bce1728e268c8d5a1
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49413735"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49553544"

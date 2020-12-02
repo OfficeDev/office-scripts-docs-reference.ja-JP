@@ -12,14 +12,16 @@ fields:
   uid: excel!Excel.SearchDirection.backwards:member
   package: excel!
   summary: 逆の順序で検索します。
+  value: "\"Backwards\""
 - name: forward
   uid: excel!Excel.SearchDirection.forward:member
   package: excel!
   summary: 次の順序で検索します。
+  value: "\"Forward\""
 metadata:
-  ms.openlocfilehash: d1533ac2fef70948bead471a86c3bb45f08d053f
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 26d4caa94c3077eae53eb028763cdd8a1e9ffb21
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49413084"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49553970"

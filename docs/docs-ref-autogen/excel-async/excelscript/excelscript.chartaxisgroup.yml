@@ -12,14 +12,16 @@ fields:
   uid: excel!Excel.ChartAxisGroup.primary:member
   package: excel!
   summary: ''
+  value: "\"Primary\""
 - name: secondary
   uid: excel!Excel.ChartAxisGroup.secondary:member
   package: excel!
   summary: ''
+  value: "\"Secondary\""
 metadata:
-  ms.openlocfilehash: 93a0e4ee8cb692c72ee65e378f01bec1075391e9
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: ec0a8d6d102853d3951c8e98989240e04be1dd54
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417716"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49553523"

@@ -12,22 +12,26 @@ fields:
   uid: excel!Excel.SortOn.cellColor:member
   package: excel!
   summary: ''
+  value: "\"CellColor\""
 - name: fontColor
   uid: excel!Excel.SortOn.fontColor:member
   package: excel!
   summary: ''
+  value: "\"FontColor\""
 - name: icon
   uid: excel!Excel.SortOn.icon:member
   package: excel!
   summary: ''
+  value: "\"Icon\""
 - name: value
   uid: excel!Excel.SortOn.value:member
   package: excel!
   summary: ''
+  value: "\"Value\""
 metadata:
-  ms.openlocfilehash: c1f17d651d4240c6e60d12550f27b0b7150ffef0
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 1796afab449b81a7a31e1b578a445c6d60af16e1
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49418339"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49553844"

@@ -153,7 +153,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getColumn:member(1)
   package: ExcelScript!
   fullName: getColumn(key)
-  summary: 名前または ID によって、列オブジェクトを取得します。 列が存在しない場合は null オブジェクトを返します。
+  summary: 名前または ID を使用して列オブジェクトを取得します。 列が存在しない場合、この関数は、プロパティが次の値に設定されたオブジェクトを返します。 `isNullObject``true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -614,9 +614,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: fcf4f090e5ad499d6a7500fa1e290efc08e7a5a2
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: ecc5b6e0aacfab67e2748147c15fb32e2f7dbd59
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420322"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554744"

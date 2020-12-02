@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.RowColumnPivotHierarchy#getPivotField:member(1)
   package: ExcelScript!
   fullName: getPivotField(name)
-  summary: 名前によってピボットフィールドを取得します。 PivotField が存在しない場合は、null オブジェクトが返されます。
+  summary: 名前によってピボットフィールドを取得します。 PivotField が存在しない場合、この関数は、プロパティが次の値に設定されたオブジェクトを返します。 `isNullObject``true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -126,9 +126,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 4dd28fa5d6bb8e5b6e2d834b1342a99db6aed1a4
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 5a134274f2e2e795189bda817df67130072ea113
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49411895"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554532"

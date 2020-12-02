@@ -12,18 +12,21 @@ fields:
   uid: excel!Excel.ChartGradientStyleType.extremeValue:member
   package: excel!
   summary: ''
+  value: "\"ExtremeValue\""
 - name: number
   uid: excel!Excel.ChartGradientStyleType.number:member
   package: excel!
   summary: ''
+  value: "\"Number\""
 - name: percent
   uid: excel!Excel.ChartGradientStyleType.percent:member
   package: excel!
   summary: ''
+  value: "\"Percent\""
 metadata:
-  ms.openlocfilehash: 39452ce8cbe62f1a4ea1a6e87dad55d9b8b8ccb9
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: ccef78247135d5c5970b403aa717d7a9d24f8b3d
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49414986"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49553355"

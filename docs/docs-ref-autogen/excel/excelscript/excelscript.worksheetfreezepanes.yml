@@ -64,7 +64,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorksheetFreezePanes#getLocation:member(1)
   package: ExcelScript!
   fullName: getLocation()
-  summary: アクティブなワークシート ビュー内の固定セルを記述する範囲を取得します。 固定範囲は、上端と左端のウィンドウ枠で固定されているセルに対応します。 ペインが固定されていない場合は、null オブジェクトを返します。
+  summary: アクティブなワークシート ビュー内の固定セルを記述する範囲を取得します。 固定範囲は、上端と左端のウィンドウ枠で固定されているセルに対応します。 ペインが固定されていない場合、この関数は、プロパティが設定されたオブジェクトを返します。 `isNullObject``true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -87,9 +87,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: cade48ae302b683d6d94540cc1e3578af177091a
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 6e5fbac54802cd580aee48a168245ddc3f4bb59a
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415142"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554049"

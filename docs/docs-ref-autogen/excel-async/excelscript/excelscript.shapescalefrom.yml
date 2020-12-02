@@ -12,18 +12,21 @@ fields:
   uid: excel!Excel.ShapeScaleFrom.scaleFromBottomRight:member
   package: excel!
   summary: ''
+  value: "\"ScaleFromBottomRight\""
 - name: scaleFromMiddle
   uid: excel!Excel.ShapeScaleFrom.scaleFromMiddle:member
   package: excel!
   summary: ''
+  value: "\"ScaleFromMiddle\""
 - name: scaleFromTopLeft
   uid: excel!Excel.ShapeScaleFrom.scaleFromTopLeft:member
   package: excel!
   summary: ''
+  value: "\"ScaleFromTopLeft\""
 metadata:
-  ms.openlocfilehash: 3e461262f87dfb66523a06ce793e07a04727f819
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: b088767afce57e8a890bed2492fa8f0ad8e380aa
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49413011"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49553938"

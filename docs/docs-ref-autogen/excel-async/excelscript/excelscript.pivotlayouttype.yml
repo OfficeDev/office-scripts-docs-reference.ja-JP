@@ -12,18 +12,21 @@ fields:
   uid: excel!Excel.PivotLayoutType.compact:member
   package: excel!
   summary: 同じ列の次のフィールドのラベルを含む、水平方向に圧縮されたフォーム。
+  value: "\"Compact\""
 - name: outline
   uid: excel!Excel.PivotLayoutType.outline:member
   package: excel!
   summary: 内側のフィールドのアイテムは、外部フィールドのアイテムと同じ行にあり、小計は常に下にあります。
+  value: "\"Outline\""
 - name: tabular
   uid: excel!Excel.PivotLayoutType.tabular:member
   package: excel!
   summary: 内側のフィールドのアイテムは、常に、外部フィールドのアイテムを基準に新しい行になります。
+  value: "\"Tabular\""
 metadata:
-  ms.openlocfilehash: 8d1efe9874ceae2d6e3325bf4210f099b13b983d
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 5e9f5b3279253d6093a41f98dc05659da58c8129
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49418843"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554350"

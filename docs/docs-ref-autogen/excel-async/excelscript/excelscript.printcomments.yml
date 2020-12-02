@@ -12,18 +12,21 @@ fields:
   uid: excel!Excel.PrintComments.endSheet:member
   package: excel!
   summary: コメントは、ワークシートの末尾に印刷されます。
+  value: "\"EndSheet\""
 - name: inPlace
   uid: excel!Excel.PrintComments.inPlace:member
   package: excel!
   summary: コメントは、ワークシートの挿入された位置に印刷されます。
+  value: "\"InPlace\""
 - name: noComments
   uid: excel!Excel.PrintComments.noComments:member
   package: excel!
   summary: コメントは印刷されません。
+  value: "\"NoComments\""
 metadata:
-  ms.openlocfilehash: d1c92b51a1a87bfc5783fa2aaac1c8cb12fb1a80
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 63b11bea9f7a646647c4749cbcef3c55ba99f663
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419881"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554336"

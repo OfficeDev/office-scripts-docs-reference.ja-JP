@@ -12,14 +12,16 @@ fields:
   uid: excel!Excel.ChartGradientStyle.threePhaseColor:member
   package: excel!
   summary: ''
+  value: "\"ThreePhaseColor\""
 - name: twoPhaseColor
   uid: excel!Excel.ChartGradientStyle.twoPhaseColor:member
   package: excel!
   summary: ''
+  value: "\"TwoPhaseColor\""
 metadata:
-  ms.openlocfilehash: 74f0017a4e6e5a59128337be6b8c299020c64fd0
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 5e044038f31c1175470c2715398b734e570f9ee5
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417569"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49553376"

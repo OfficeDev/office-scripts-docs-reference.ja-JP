@@ -12,18 +12,21 @@ fields:
   uid: excel!Excel.ChartParentLabelStrategy.banner:member
   package: excel!
   summary: ''
+  value: "\"Banner\""
 - name: none
   uid: excel!Excel.ChartParentLabelStrategy.none:member
   package: excel!
   summary: ''
+  value: "\"None\""
 - name: overlapping
   uid: excel!Excel.ChartParentLabelStrategy.overlapping:member
   package: excel!
   summary: ''
+  value: "\"Overlapping\""
 metadata:
-  ms.openlocfilehash: 138540fd8683dec258030b3e70d9f00de630eb25
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 97edc219bc27f4436f69cbafa9a31df4871bc6d9
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417464"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49553236"

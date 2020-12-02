@@ -12,14 +12,16 @@ fields:
   uid: excel!Excel.DeleteShiftDirection.left:member
   package: excel!
   summary: ''
+  value: "\"Left\""
 - name: up
   uid: excel!Excel.DeleteShiftDirection.up:member
   package: excel!
   summary: ''
+  value: "\"Up\""
 metadata:
-  ms.openlocfilehash: 258e45c979114c1ee048ad8af77e5e02c9c7070d
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 62f8016d22e823c5c8fd2602bfafd803678a0060
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417982"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49552683"

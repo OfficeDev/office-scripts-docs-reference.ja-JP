@@ -12,26 +12,31 @@ fields:
   uid: excel!Excel.WorksheetPositionType.after:member
   package: excel!
   summary: ''
+  value: "\"After\""
 - name: before
   uid: excel!Excel.WorksheetPositionType.before:member
   package: excel!
   summary: ''
+  value: "\"Before\""
 - name: beginning
   uid: excel!Excel.WorksheetPositionType.beginning:member
   package: excel!
   summary: ''
+  value: "\"Beginning\""
 - name: end
   uid: excel!Excel.WorksheetPositionType.end:member
   package: excel!
   summary: ''
+  value: "\"End\""
 - name: none
   uid: excel!Excel.WorksheetPositionType.none:member
   package: excel!
   summary: ''
+  value: "\"None\""
 metadata:
-  ms.openlocfilehash: 581dc4553f1bef71e1ee7da6ddc84dc3cdfd27c1
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: c7031d95a4e36602cfdc75e85f5e77f2dd6dc15c
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412616"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49553795"

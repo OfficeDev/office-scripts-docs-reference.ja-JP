@@ -12,22 +12,26 @@ fields:
   uid: excel!Excel.ShapeZOrder.bringForward:member
   package: excel!
   summary: ''
+  value: "\"BringForward\""
 - name: bringToFront
   uid: excel!Excel.ShapeZOrder.bringToFront:member
   package: excel!
   summary: ''
+  value: "\"BringToFront\""
 - name: sendBackward
   uid: excel!Excel.ShapeZOrder.sendBackward:member
   package: excel!
   summary: ''
+  value: "\"SendBackward\""
 - name: sendToBack
   uid: excel!Excel.ShapeZOrder.sendToBack:member
   package: excel!
   summary: ''
+  value: "\"SendToBack\""
 metadata:
-  ms.openlocfilehash: f15a95d59245765896631c8a797029e13703edd7
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: ad95c3836a2cf9e7db9cef5051161f0918568fe3
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49418439"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554140"

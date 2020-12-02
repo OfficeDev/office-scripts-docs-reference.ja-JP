@@ -12,22 +12,26 @@ fields:
   uid: excel!Excel.ConditionalRangeBorderIndex.edgeBottom:member
   package: excel!
   summary: ''
+  value: "\"EdgeBottom\""
 - name: edgeLeft
   uid: excel!Excel.ConditionalRangeBorderIndex.edgeLeft:member
   package: excel!
   summary: ''
+  value: "\"EdgeLeft\""
 - name: edgeRight
   uid: excel!Excel.ConditionalRangeBorderIndex.edgeRight:member
   package: excel!
   summary: ''
+  value: "\"EdgeRight\""
 - name: edgeTop
   uid: excel!Excel.ConditionalRangeBorderIndex.edgeTop:member
   package: excel!
   summary: ''
+  value: "\"EdgeTop\""
 metadata:
-  ms.openlocfilehash: a643af1a64c39f57dfd13eaa3a63918e475bbdfb
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 8979c5bc4ce4789c53ac93fe9d56ceb2fc9abb25
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416457"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49552935"

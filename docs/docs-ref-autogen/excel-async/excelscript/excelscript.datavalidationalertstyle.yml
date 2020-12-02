@@ -12,18 +12,21 @@ fields:
   uid: excel!Excel.DataValidationAlertStyle.information:member
   package: excel!
   summary: ''
+  value: "\"Information\""
 - name: stop
   uid: excel!Excel.DataValidationAlertStyle.stop:member
   package: excel!
   summary: ''
+  value: "\"Stop\""
 - name: warning
   uid: excel!Excel.DataValidationAlertStyle.warning:member
   package: excel!
   summary: ''
+  value: "\"Warning\""
 metadata:
-  ms.openlocfilehash: 3c5332b391c54cefd178c218c4000144caf93adf
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: bfc22ddcf79cc225e48c330e5d53fbcaa31b3022
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49414021"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49552711"

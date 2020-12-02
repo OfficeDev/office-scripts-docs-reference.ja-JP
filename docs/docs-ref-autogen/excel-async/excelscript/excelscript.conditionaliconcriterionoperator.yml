@@ -12,18 +12,21 @@ fields:
   uid: excel!Excel.ConditionalIconCriterionOperator.greaterThan:member
   package: excel!
   summary: ''
+  value: "\"GreaterThan\""
 - name: greaterThanOrEqual
   uid: excel!Excel.ConditionalIconCriterionOperator.greaterThanOrEqual:member
   package: excel!
   summary: ''
+  value: "\"GreaterThanOrEqual\""
 - name: invalid
   uid: excel!Excel.ConditionalIconCriterionOperator.invalid:member
   package: excel!
   summary: ''
+  value: "\"Invalid\""
 metadata:
-  ms.openlocfilehash: c96918454ca67870a105778efe8398bd09a30786
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: f6f690059af787affcbf63b939d57306aaf43252
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416485"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49552942"

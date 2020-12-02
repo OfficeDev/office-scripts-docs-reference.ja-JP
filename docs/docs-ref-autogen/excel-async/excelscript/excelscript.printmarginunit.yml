@@ -12,18 +12,21 @@ fields:
   uid: excel!Excel.PrintMarginUnit.centimeters:member
   package: excel!
   summary: ページの余白をセンチメートルで指定します。
+  value: "\"Centimeters\""
 - name: inches
   uid: excel!Excel.PrintMarginUnit.inches:member
   package: excel!
   summary: ページの余白をインチ単位で指定します。
+  value: "\"Inches\""
 - name: points
   uid: excel!Excel.PrintMarginUnit.points:member
   package: excel!
   summary: ページの余白をポイント単位で指定します。 ポイントは1/72 インチです。
+  value: "\"Points\""
 metadata:
-  ms.openlocfilehash: 9f96f451702a9092d30f0d9a16f16275d8121f1d
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 9ffaa5601ac1537703fbe0d294fde8af88a28b80
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49413301"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554322"

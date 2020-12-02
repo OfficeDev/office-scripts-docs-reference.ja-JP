@@ -12,18 +12,21 @@ fields:
   uid: excel!Excel.SlicerSortType.ascending:member
   package: excel!
   summary: アイテムキャプションの昇順でスライサーアイテムを並べ替えます。
+  value: "\"Ascending\""
 - name: dataSourceOrder
   uid: excel!Excel.SlicerSortType.dataSourceOrder:member
   package: excel!
   summary: データソースによって提供される順序でスライサーアイテムを並べ替えます。
+  value: "\"DataSourceOrder\""
 - name: descending
   uid: excel!Excel.SlicerSortType.descending:member
   package: excel!
   summary: アイテムキャプションを基準にして、スライサーアイテムを降順に並べ替えます。
+  value: "\"Descending\""
 metadata:
-  ms.openlocfilehash: 1a46ee4b98fe8c87e65cf74cb5c5a6f74f08877b
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: b129b6077a54b97a10c7aa88199476b19db71658
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49418395"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554116"

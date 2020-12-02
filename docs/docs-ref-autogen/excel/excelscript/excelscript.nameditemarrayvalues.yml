@@ -31,14 +31,14 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getValues(): any[][];'
+    content: 'getValues(): (string | number | boolean)[][];'
     return:
-      type: any[][]
+      type: (string | number | boolean)[][]
       description: ''
 metadata:
-  ms.openlocfilehash: 50104be01299ac48e4f093cc3eacb8cc95295da7
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 3df4b339e499dad6a5e1bd1bc43586d0ca1d8ab9
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412210"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554640"

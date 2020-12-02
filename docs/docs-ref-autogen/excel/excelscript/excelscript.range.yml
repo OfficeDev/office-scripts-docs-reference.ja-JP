@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#find:member(1)
   package: ExcelScript!
   fullName: find(text, criteria)
-  summary: 指定された条件に基づいて指定された文字列を見つけます。 現在の範囲が1つのセルより大きい場合は、検索はその範囲に制限されます。それ以外の場合は、シート全体がそのセルの後に表示されます。 一致しない場合、この関数は null オブジェクトを返します。
+  summary: 指定された条件に基づいて指定された文字列を見つけます。 現在の範囲が1つのセルより大きい場合は、検索はその範囲に制限されます。それ以外の場合は、シート全体がそのセルの後に表示されます。 一致するものがない場合、この関数は、プロパティが次の値に設定されたオブジェクトを返します。 `isNullObject``true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -616,7 +616,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getIntersection:member(1)
   package: ExcelScript!
   fullName: getIntersection(anotherRange)
-  summary: 指定した範囲の長方形の交差を表す範囲オブジェクトを取得します。 交差部分が見つからない場合は、null オブジェクトを返します。
+  summary: 指定した範囲の長方形の交差を表す範囲オブジェクトを取得します。 積集合が見つからない場合、この関数は、プロパティが次の値に設定されたオブジェクトを返します。 `isNullObject``true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1001,7 +1001,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpecialCells:member(1)
   package: ExcelScript!
   fullName: getSpecialCells(cellType, cellValueType)
-  summary: 指定された型と値に一致するすべてのセルを表し、1 つまたは複数の範囲を構成する RangeAreas オブジェクトを取得します。 特別なセルが見つからない場合は、null オブジェクトが返されます。
+  summary: 指定された型と値に一致するすべてのセルを表し、1 つまたは複数の範囲を構成する RangeAreas オブジェクトを取得します。 特別なセルが見つからない場合、この関数は、プロパティが次の値に設定されたオブジェクトを返します。 `isNullObject``true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1025,7 +1025,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpillingToRange:member(1)
   package: ExcelScript!
   fullName: getSpillingToRange()
-  summary: アンカー セルで呼び出されたとき、スピル範囲を含む範囲オブジェクトを取得します。 指定範囲がアンカーセルでない場合、またはスピル範囲が見つからない場合は、null オブジェクトが返されます。
+  summary: アンカー セルで呼び出されたとき、スピル範囲を含む範囲オブジェクトを取得します。 範囲がアンカーセルでない場合、またはスピル範囲が見つからない場合、この関数は、プロパティが次の値に設定されたオブジェクトを返します。 `isNullObject``true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1038,7 +1038,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpillParent:member(1)
   package: ExcelScript!
   fullName: getSpillParent()
-  summary: スピルするセルのアンカー セルを含む範囲オブジェクトを取得します。 スピルセルが指定されていない場合、または複数のセルが指定されている場合は、null オブジェクトが返されます。
+  summary: 作業中のセルのアンカーセルを含む range オブジェクトを取得します。 この関数が、何もないセルまたは複数のセルを指定すると、そのプロパティが設定されたオブジェクトが返されます。 `isNullObject``true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1120,7 +1120,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getUsedRange:member(1)
   package: ExcelScript!
   fullName: getUsedRange(valuesOnly)
-  summary: 指定した範囲オブジェクトのうち使用されている範囲を返します。範囲内に使用済みのセルがない場合、この関数は null オブジェクトを返します。
+  summary: 指定した範囲オブジェクトのうち使用されている範囲を返します。 範囲内に使用されているセルがない場合、この関数は、プロパティが次の値に設定されたオブジェクトを返します。 `isNullObject``true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1142,9 +1142,9 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getValue(): any;'
+    content: 'getValue(): string | number | boolean;'
     return:
-      type: any
+      type: string | number | boolean
       description: "\n\n#### <a name=\"examples\"></a>例\n\n```javascript\n/**\n * This sample reads the value of A1 and prints it to the console.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Get the value of cell A1.\n  let range = selectedSheet.getRange(\"A1\");\n  \n  // Print the value of A1.\n  console.log(range.getValue());\n}\n```"
 - name: getValues()
   uid: ExcelScript!ExcelScript.Range#getValues:member(1)
@@ -1155,9 +1155,9 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getValues(): any[][];'
+    content: 'getValues(): (string | number | boolean)[][];'
     return:
-      type: any[][]
+      type: (string | number | boolean)[][]
       description: ''
 - name: getValueType()
   uid: ExcelScript!ExcelScript.Range#getValueType:member(1)
@@ -1651,11 +1651,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'setValues(values: any[][]): void;'
+    content: 'setValues(values: (string | number | boolean)[][]): void;'
     parameters:
     - id: values
       description: ''
-      type: any[][]
+      type: (string | number | boolean)[][]
     return:
       type: void
       description: "\n\n#### <a name=\"examples\"></a>例\n\n```javascript\n/**\n * This sample inserts some pre-loaded data into a range.\n * It also shows how to get a range that fits the data.\n */\n function main(workbook: ExcelScript.Workbook) {\n   // Get the active cell.\n   let currentCell = workbook.getActiveCell();\n   \n   // Calculate the range needed to fit the given data.\n   let targetRange = currentCell.getResizedRange(DATA.length - 1, DATA[0].length - 1);\n\n   // Set range values to the data.\n   targetRange.setValues(DATA);\n\n   // Autofit the columns so the worksheet is readable. \n   targetRange.getFormat().autofitColumns();\n }\n\n /* \n  * This sample's data is in a static 2-dimensional array.\n  * You could also get the input from other ranges or sources.\n  * Note that each row must have the same number of columns to be valid. \n  */\n const DATA = [\n   ['Date', 'Salesperson', 'Product', 'Amount']\n   , ['3/2/2020', 'Anne', 'Pizza', '$1400']\n   , ['3/2/2020', 'Mariya', 'Pizza', '$1700']\n   , ['3/7/2020', 'Mark', 'Sandwiches', '$1010']\n   , ['3/24/2020', 'Anne', 'Pizza', '$750']\n   , ['3/28/2020', 'Mark', 'Salads', '$510']\n   , ['4/17/2020', 'Laura', 'Salads', '$900']\n   , ['4/17/2020', 'Mariya', 'Salads', '$1600']\n   , ['4/28/2020', 'Laura', 'Sandwiches', '$680']\n ];\n```"
@@ -1720,9 +1720,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 652e22f246ce965e2c606f78abb8a457c478431d
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 2727f3b8ce8b578719e8f5496ee9c1a4cbe40a44
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412023"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554581"

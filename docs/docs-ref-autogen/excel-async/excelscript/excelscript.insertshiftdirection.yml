@@ -12,14 +12,16 @@ fields:
   uid: excel!Excel.InsertShiftDirection.down:member
   package: excel!
   summary: ''
+  value: "\"Down\""
 - name: right
   uid: excel!Excel.InsertShiftDirection.right:member
   package: excel!
   summary: ''
+  value: "\"Right\""
 metadata:
-  ms.openlocfilehash: 4b0e72abd54db7985dc9cddcd2dd2b1fba792f39
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 12b41e8226cbfe5ebf4669ad692eae828f5ba7da
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419095"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49552823"

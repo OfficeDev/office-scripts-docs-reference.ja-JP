@@ -12,14 +12,16 @@ fields:
   uid: excel!Excel.NamedItemScope.workbook:member
   package: excel!
   summary: ''
+  value: "\"Workbook\""
 - name: worksheet
   uid: excel!Excel.NamedItemScope.worksheet:member
   package: excel!
   summary: ''
+  value: "\"Worksheet\""
 metadata:
-  ms.openlocfilehash: 6cf814c5858729a944b5ed1cc367a78c83fb727c
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: b20fbcddc806a6f535f3ab8e2b374de29149bd05
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49418983"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49552802"

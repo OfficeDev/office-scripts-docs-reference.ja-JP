@@ -12,18 +12,21 @@ fields:
   uid: excel!Excel.ReadingOrder.context:member
   package: excel!
   summary: 読みの順序は入力された最初の文字の言語によって決まります。右から左に記述する言語が最初に入力された場合、読みの順序は右から左になります。左から右に記述する言語が最初に入力された場合、読みの順序は左から右になります。
+  value: "\"Context\""
 - name: leftToRight
   uid: excel!Excel.ReadingOrder.leftToRight:member
   package: excel!
   summary: 左から右への読み取り順序
+  value: "\"LeftToRight\""
 - name: rightToLeft
   uid: excel!Excel.ReadingOrder.rightToLeft:member
   package: excel!
   summary: 右から左への読み取り順序
+  value: "\"RightToLeft\""
 metadata:
-  ms.openlocfilehash: 04b866773dea46f4ae6cc6c0accf8de351004716
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: fd53fe7af6e6a01fa2192edc5252082824fd4e8e
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49418668"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554378"

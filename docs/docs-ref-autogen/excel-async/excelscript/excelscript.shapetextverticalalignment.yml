@@ -12,26 +12,31 @@ fields:
   uid: excel!Excel.ShapeTextVerticalAlignment.bottom:member
   package: excel!
   summary: ''
+  value: "\"Bottom\""
 - name: distributed
   uid: excel!Excel.ShapeTextVerticalAlignment.distributed:member
   package: excel!
   summary: ''
+  value: "\"Distributed\""
 - name: justified
   uid: excel!Excel.ShapeTextVerticalAlignment.justified:member
   package: excel!
   summary: ''
+  value: "\"Justified\""
 - name: middle
   uid: excel!Excel.ShapeTextVerticalAlignment.middle:member
   package: excel!
   summary: ''
+  value: "\"Middle\""
 - name: top
   uid: excel!Excel.ShapeTextVerticalAlignment.top:member
   package: excel!
   summary: ''
+  value: "\"Top\""
 metadata:
-  ms.openlocfilehash: 6c7d040eceab88d6213220ca7de2e6d18ab3e35b
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 3fc47f17a4c45e036a1e44a93f6a6fd9f4153f40
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412959"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49553922"

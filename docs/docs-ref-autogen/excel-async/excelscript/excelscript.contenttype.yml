@@ -12,14 +12,16 @@ fields:
   uid: excel!Excel.ContentType.mention:member
   package: excel!
   summary: メンションを含むコンテンツをコメントにします。
+  value: "\"Mention\""
 - name: plain
   uid: excel!Excel.ContentType.plain:member
   package: excel!
   summary: コメントの内容の形式を指定します。
+  value: "\"Plain\""
 metadata:
-  ms.openlocfilehash: 113824d96744287981b01d4d3bbc92004c3b36a5
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: f92d075a4469a04ae192b9ab298f457f4cefc6df
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49414140"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554525"

@@ -12,30 +12,36 @@ fields:
   uid: excel!Excel.PictureFormat.bmp:member
   package: excel!
   summary: ビットマップ画像。
+  value: "\"Bmp\""
 - name: gif
   uid: excel!Excel.PictureFormat.gif:member
   package: excel!
   summary: グラフィックス交換形式
+  value: "\"Gif\""
 - name: jpeg
   uid: excel!Excel.PictureFormat.jpeg:member
   package: excel!
   summary: 共同写真エキスパートグループ。
+  value: "\"Jpeg\""
 - name: png
   uid: excel!Excel.PictureFormat.png:member
   package: excel!
   summary: ポータブルネットワークグラフィックス。
+  value: "\"Png\""
 - name: svg
   uid: excel!Excel.PictureFormat.svg:member
   package: excel!
   summary: スケーラブルベクターグラフィックス。
+  value: "\"Svg\""
 - name: unknown
   uid: excel!Excel.PictureFormat.unknown:member
   package: excel!
   summary: ''
+  value: "\"Unknown\""
 metadata:
-  ms.openlocfilehash: 254cf034b3512cd5f5fbefb7e82b783653fee21d
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: a2d09f03bc3c6d8ea09370c12f3dfaaf3275c8f6
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49418927"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554364"

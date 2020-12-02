@@ -12,14 +12,16 @@ fields:
   uid: excel!Excel.ChartBoxQuartileCalculation.exclusive:member
   package: excel!
   summary: ''
+  value: "\"Exclusive\""
 - name: inclusive
   uid: excel!Excel.ChartBoxQuartileCalculation.inclusive:member
   package: excel!
   summary: ''
+  value: "\"Inclusive\""
 metadata:
-  ms.openlocfilehash: 495e2610dac4e6330ba1e7112e93e1f307cf8475
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 0df7ad1d5ef6354c0b3012b08bfcd56049fc3765
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417842"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49553404"

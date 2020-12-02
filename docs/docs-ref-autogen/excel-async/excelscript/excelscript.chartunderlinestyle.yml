@@ -12,14 +12,16 @@ fields:
   uid: excel!Excel.ChartUnderlineStyle.none:member
   package: excel!
   summary: ''
+  value: "\"None\""
 - name: single
   uid: excel!Excel.ChartUnderlineStyle.single:member
   package: excel!
   summary: ''
+  value: "\"Single\""
 metadata:
-  ms.openlocfilehash: 48f849143c72250633b9b69f7fc8dfc158271f18
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: f4d0562dfad41fddaa9e18d78282147fa6b0fea8
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49414378"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49553082"

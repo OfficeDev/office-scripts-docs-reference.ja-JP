@@ -12,34 +12,41 @@ fields:
   uid: excel!Excel.PivotFilterTopBottomCriterion.bottomItems:member
   package: excel!
   summary: ''
+  value: "\"BottomItems\""
 - name: bottomPercent
   uid: excel!Excel.PivotFilterTopBottomCriterion.bottomPercent:member
   package: excel!
   summary: ''
+  value: "\"BottomPercent\""
 - name: bottomSum
   uid: excel!Excel.PivotFilterTopBottomCriterion.bottomSum:member
   package: excel!
   summary: ''
+  value: "\"BottomSum\""
 - name: invalid
   uid: excel!Excel.PivotFilterTopBottomCriterion.invalid:member
   package: excel!
   summary: ''
+  value: "\"Invalid\""
 - name: topItems
   uid: excel!Excel.PivotFilterTopBottomCriterion.topItems:member
   package: excel!
   summary: ''
+  value: "\"TopItems\""
 - name: topPercent
   uid: excel!Excel.PivotFilterTopBottomCriterion.topPercent:member
   package: excel!
   summary: ''
+  value: "\"TopPercent\""
 - name: topSum
   uid: excel!Excel.PivotFilterTopBottomCriterion.topSum:member
   package: excel!
   summary: ''
+  value: "\"TopSum\""
 metadata:
-  ms.openlocfilehash: 48ff896242b1473f3d89defe210ef068bbdb30b2
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 7598d12d6da8b8f74bfa57444cbb92176edddadd
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49418920"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554413"
