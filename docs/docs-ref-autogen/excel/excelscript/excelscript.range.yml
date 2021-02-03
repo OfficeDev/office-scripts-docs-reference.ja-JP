@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#find:member(1)
   package: ExcelScript!
   fullName: find(text, criteria)
-  summary: 指定された条件に基づいて指定された文字列を見つけます。 現在の範囲が 1 つのセルより大きい場合、検索はその範囲に制限されます。それ以外の場合、検索はそのセルの後からシート全体をカバーします。 一致するオブジェクトがない場合、この関数はプロパティが次の値に設定された `isNullObject` オブジェクトを返します。 `true`<!-- -->.
+  summary: 指定された条件に基づいて指定された文字列を見つけます。 現在の範囲が 1 つのセルより大きい場合、検索はその範囲に限定されます。それ以外の場合、検索はそのセルの後からシート全体をカバーします。 一致するオブジェクトがない場合、この関数はプロパティが次の値に設定された `isNullObject` オブジェクトを返します。 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -212,7 +212,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getAddress:member(1)
   package: ExcelScript!
   fullName: getAddress()
-  summary: 範囲参照を A1 形式で指定します。 アドレス値には、シート参照 ("Sheet1!A1:B4")。
+  summary: 範囲の参照を A1 形式で指定します。 アドレス値には、シート参照 ("Sheet1!A1:B4")。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -395,7 +395,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getConditionalFormats:member(1)
   package: ExcelScript!
   fullName: getConditionalFormats()
-  summary: 範囲と交差する ConditionalFormats のコレクションです。
+  summary: 範囲を交差する ConditionalFormats のコレクション。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -772,6 +772,19 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.NumberFormatCategory:enum" />[][]
       description: ''
+- name: getNumberFormatCategory()
+  uid: ExcelScript!ExcelScript.Range#getNumberFormatCategory:member(1)
+  package: ExcelScript!
+  fullName: getNumberFormatCategory()
+  summary: 範囲内の最初のセルの数値書式カテゴリを指定します (行インデックス 0、列インデックス 0 で表されます)。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getNumberFormatCategory(): NumberFormatCategory;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NumberFormatCategory:enum" />
+      description: ''
 - name: getNumberFormatLocal()
   uid: ExcelScript!ExcelScript.Range#getNumberFormatLocal:member(1)
   package: ExcelScript!
@@ -1025,7 +1038,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpillingToRange:member(1)
   package: ExcelScript!
   fullName: getSpillingToRange()
-  summary: アンカー セルで呼び出されたとき、スピル範囲を含む範囲オブジェクトを取得します。 範囲がアンカー セルではないか、スピル範囲が見つからない場合、この関数はプロパティが次に設定されたオブジェクト `isNullObject` を返します。 `true`<!-- -->.
+  summary: アンカー セルで呼び出されたとき、スピル範囲を含む範囲オブジェクトを取得します。 範囲がアンカー セルではないか、スピル範囲が見つからない場合、この関数はプロパティが次の値に設定されたオブジェクト `isNullObject` を返します。 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1081,7 +1094,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getText:member(1)
   package: ExcelScript!
   fullName: getText()
-  summary: 指定した範囲のテキスト値を表します。 テキスト値は、セルの幅には依存しません。 \#Excel UI で行う符号の置換は、API によって返されるテキスト値には影響しません。 範囲に複数のセルが含まれている場合は、最初のセルのデータ (行インデックス 0、列インデックス 0 で表されます) が返されます。
+  summary: 指定された範囲のテキスト値を表します。 テキスト値は、セルの幅には依存しません。 \#Excel UI で行う符号の置換は、API によって返されるテキスト値には影響しません。 範囲に複数のセルが含まれている場合は、最初のセルのデータ (行インデックス 0、列インデックス 0 で表されます) が返されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1629,7 +1642,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setValue:member(1)
   package: ExcelScript!
   fullName: setValue(value)
-  summary: 指定した範囲の生の値を設定します。 設定するデータは、文字列型、数値型、またはブール型です。 `null` 値は無視されます (Excel では設定または上書きされません)。 範囲に複数のセルが含まれている場合、指定した範囲内の各セルが入力データで更新されます。
+  summary: 指定した範囲の生の値を設定します。 設定するデータは、文字列型、数値型、ブール型のデータになります。 `null` 値は無視されます (Excel では設定または上書きされません)。 範囲に複数のセルが含まれている場合、指定した範囲内の各セルが入力データで更新されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1720,9 +1733,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 8f16fa6c9b84bdd42fd68e8d9be7402164c40531
-  ms.sourcegitcommit: 2166f15e1168b1b453872c5840431e960dc909df
+  ms.openlocfilehash: 0f16a00124cd360f9a0ac72ab7a7bcf96af7930a
+  ms.sourcegitcommit: 2224b5a1c9da58cc58b310ccbdc0b58c63ab501b
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 01/08/2021
-  ms.locfileid: "49784458"
+  ms.lasthandoff: 02/03/2021
+  ms.locfileid: "50091816"
