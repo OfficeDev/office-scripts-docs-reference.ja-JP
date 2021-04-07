@@ -3,7 +3,7 @@ name: ExcelScript.RemoveDuplicatesResult
 uid: ExcelScript!ExcelScript.RemoveDuplicatesResult:interface
 package: ExcelScript!
 fullName: ExcelScript.RemoveDuplicatesResult
-summary: 範囲内の removeDuplicates 削除メソッドからの結果を表します。
+summary: 結果を表します。 `Range.removeDuplicates`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -36,9 +36,9 @@ methods:
       type: number
       description: ''
 metadata:
-  ms.openlocfilehash: 1b7a861288171b4c69d9ed8f0cc1089cabf14c16
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: dfde98d3f90317d1c43a5166f5b518d837b841aa
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49411888"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606138"

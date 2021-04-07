@@ -3,7 +3,7 @@ name: ExcelScript.ConditionalColorScaleCriterion
 uid: ExcelScript!ExcelScript.ConditionalColorScaleCriterion:interface
 package: ExcelScript!
 fullName: ExcelScript.ConditionalColorScaleCriterion
-summary: 種類、値、および色を含むカラースケール条件を表します。
+summary: 型、値、および色を含む色スケール基準を表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.ConditionalColorScaleCriterion#color:member
   package: ExcelScript!
   fullName: color
-  summary: 色スケールの色の HTML カラーコード表現 (たとえば、 \# ff0000 はは赤を表します)。
+  summary: カラー スケールの色の HTML カラー コード表現 \# (FF00000 は赤を表すなど)。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.ConditionalColorScaleCriterion#formula:member
   package: ExcelScript!
   fullName: formula
-  summary: 数値、数式、(型が LowestValue の場合は) null。
+  summary: 数値、数式、または `null` (if `type` is `lowestValue`<!-- -->).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.ConditionalColorScaleCriterion#type:member
   package: ExcelScript!
   fullName: type
-  summary: 条件式の基準となる条件式を指定します。
+  summary: 条件式の基準の基になる条件。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -46,9 +46,9 @@ properties:
     return:
       type: <xref uid="ExcelScript!ExcelScript.ConditionalFormatColorCriterionType:enum" />
 metadata:
-  ms.openlocfilehash: 25bac1cb6537ddbb319c9a9371c7e8dbcfd0ba2b
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 25ed1beb5905b9dc3fe38a118f5191b51cdfabcb
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419489"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607117"

@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeBorder#getColor:member(1)
   package: ExcelScript!
   fullName: getColor()
-  summary: '境界線の色を表す HTML カラーコード \# (例: "FFA500")、または名前付きの html 色 (例: "RRGGBB") です。'
+  summary: RRGGBB 形式 ("FFA500" など) の境界線の色を表す HTML カラー コード、または名前付き HTML 色 \# ("オレンジ色" など) を表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeBorder#getSideIndex:member(1)
   package: ExcelScript!
   fullName: getSideIndex()
-  summary: 罫線の特定の辺を表す定数値。 詳細については、「ExcelScript. BorderIndex」を参照してください。
+  summary: 罫線の特定の辺を表す定数値。 詳細は「`ExcelScript.BorderIndex`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeBorder#getStyle:member(1)
   package: ExcelScript!
   fullName: getStyle()
-  summary: 罫線の線スタイルを指定する、線スタイル定数のいずれか 1 つ。 詳細については、「ExcelScript. BorderLineStyle」を参照してください。
+  summary: 罫線の線スタイルを指定する、線スタイル定数のいずれか 1 つ。 詳細は「`ExcelScript.BorderLineStyle`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeBorder#getTintAndShade:member(1)
   package: ExcelScript!
   fullName: getTintAndShade()
-  summary: 範囲の境界線の色を明るくまたは暗くする double を指定します。値は、-1 (最も暗い) から 1 (最も明るい) までの範囲で、元の色は0になります。 Null 値は、境界線に均等な tintAndShade 設定がないことを示します。
+  summary: 範囲の境界線の色を明るくまたは暗くする倍数を指定します。値は -1 (最も暗い) ~ 1 (最も明るい) で、元の色の場合は 0 です。 値 `null` は、罫線に均一な設定が含めなかったかどうかを示 `tintAndShade` します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeBorder#getWeight:member(1)
   package: ExcelScript!
   fullName: getWeight()
-  summary: 範囲周辺の罫線の太さを指定します。 詳細については、「ExcelScript BorderWeight」を参照してください。
+  summary: 範囲周辺の罫線の太さを指定します。 詳細は「`ExcelScript.BorderWeight`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeBorder#setColor:member(1)
   package: ExcelScript!
   fullName: setColor(color)
-  summary: '境界線の色を表す HTML カラーコード \# (例: "FFA500")、または名前付きの html 色 (例: "RRGGBB") です。'
+  summary: RRGGBB 形式 ("FFA500" など) の境界線の色を表す HTML カラー コード、または名前付き HTML 色 \# ("オレンジ色" など) を表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -95,7 +95,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeBorder#setStyle:member(1)
   package: ExcelScript!
   fullName: setStyle(style)
-  summary: 罫線の線スタイルを指定する、線スタイル定数のいずれか 1 つ。 詳細については、「ExcelScript. BorderLineStyle」を参照してください。
+  summary: 罫線の線スタイルを指定する、線スタイル定数のいずれか 1 つ。 詳細は「`ExcelScript.BorderLineStyle`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -112,7 +112,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeBorder#setTintAndShade:member(1)
   package: ExcelScript!
   fullName: setTintAndShade(tintAndShade)
-  summary: 範囲の境界線の色を明るくまたは暗くする double を指定します。値は、-1 (最も暗い) から 1 (最も明るい) までの範囲で、元の色は0になります。 Null 値は、境界線に均等な tintAndShade 設定がないことを示します。
+  summary: 範囲の境界線の色を明るくまたは暗くする倍数を指定します。値は -1 (最も暗い) ~ 1 (最も明るい) で、元の色の場合は 0 です。 値 `null` は、罫線に均一な設定が含めなかったかどうかを示 `tintAndShade` します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -129,7 +129,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeBorder#setWeight:member(1)
   package: ExcelScript!
   fullName: setWeight(weight)
-  summary: 範囲周辺の罫線の太さを指定します。 詳細については、「ExcelScript BorderWeight」を参照してください。
+  summary: 範囲周辺の罫線の太さを指定します。 詳細は「`ExcelScript.BorderWeight`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,9 +143,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 5f8e2551cc91dde4ada9a6226243454c3213a1d6
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: c807283501f63bac9e10c3d2e16e3b91ea5be940
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49411958"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607180"

@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#getAutoFormat:member(1)
   package: ExcelScript!
   fullName: getAutoFormat()
-  summary: 書式設定が更新されたとき、またはフィールドが移動されたときに、書式設定が自動的に行われるかどうかを指定します。
+  summary: 書式設定が更新時またはフィールドの移動時に自動的に書式設定される場合を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -60,7 +60,7 @@ methods:
     content: 'getDataHierarchy(cell: Range | string): DataPivotHierarchy;'
     parameters:
     - id: cell
-      description: ピボットテーブルのデータ本文内の1つのセル。
+      description: ピボットテーブル データ本文内の 1 つのセル。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: <xref uid="ExcelScript!ExcelScript.DataPivotHierarchy:interface" />
@@ -69,7 +69,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#getEnableFieldList:member(1)
   package: ExcelScript!
   fullName: getEnableFieldList()
-  summary: フィールドリストを UI に表示できるかどうかを指定します。
+  summary: フィールド リストを UI に表示できる場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -108,7 +108,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#getPreserveFormatting:member(1)
   package: ExcelScript!
   fullName: getPreserveFormatting()
-  summary: ピボット、並べ替え、ページフィールドアイテムの変更などの操作によってレポートを更新または再計算するときに、書式設定を保持するかどうかを指定します。
+  summary: ピボット、並べ替え、ページ フィールド項目の変更などの操作によってレポートが更新または再計算される場合に書式設定を保持する場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -147,7 +147,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#getShowColumnGrandTotals:member(1)
   package: ExcelScript!
   fullName: getShowColumnGrandTotals()
-  summary: ピボットテーブルレポートに列の総計を表示するかどうかを指定します。
+  summary: ピボットテーブル レポートに列の総計が表示される場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -160,7 +160,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#getShowRowGrandTotals:member(1)
   package: ExcelScript!
   fullName: getShowRowGrandTotals()
-  summary: ピボットテーブルレポートで行の総計を表示するかどうかを指定します。
+  summary: ピボットテーブル レポートに行の総計が表示される場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -173,7 +173,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#getSubtotalLocation:member(1)
   package: ExcelScript!
   fullName: getSubtotalLocation()
-  summary: このプロパティは、ピボットテーブルのすべてのフィールドの SubtotalLocationType を示します。 フィールドによって状態が異なる場合は null 値になります。
+  summary: このプロパティは、ピボット `SubtotalLocationType` テーブルのすべてのフィールドを示します。 フィールドの状態が異なる場合は、次の値になります。 `null`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -186,7 +186,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#setAutoFormat:member(1)
   package: ExcelScript!
   fullName: setAutoFormat(autoFormat)
-  summary: 書式設定が更新されたとき、またはフィールドが移動されたときに、書式設定が自動的に行われるかどうかを指定します。
+  summary: 書式設定が更新時またはフィールドの移動時に自動的に書式設定される場合を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -211,10 +211,10 @@ methods:
     content: 'setAutoSortOnCell(cell: Range | string, sortBy: SortBy): void;'
     parameters:
     - id: cell
-      description: 1つのセルを使用して、自動並べ替えを適用する抽出条件を取得します。
+      description: オートソートを適用する条件を取得するために使用する 1 つのセル。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: sortBy
-      description: 並べ替えの方向を示します。
+      description: 並べ替えの方向。
       type: <xref uid="ExcelScript!ExcelScript.SortBy:enum" />
     return:
       type: void
@@ -223,7 +223,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#setEnableFieldList:member(1)
   package: ExcelScript!
   fullName: setEnableFieldList(enableFieldList)
-  summary: フィールドリストを UI に表示できるかどうかを指定します。
+  summary: フィールド リストを UI に表示できる場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -257,7 +257,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#setPreserveFormatting:member(1)
   package: ExcelScript!
   fullName: setPreserveFormatting(preserveFormatting)
-  summary: ピボット、並べ替え、ページフィールドアイテムの変更などの操作によってレポートを更新または再計算するときに、書式設定を保持するかどうかを指定します。
+  summary: ピボット、並べ替え、ページ フィールド項目の変更などの操作によってレポートが更新または再計算される場合に書式設定を保持する場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -274,7 +274,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#setShowColumnGrandTotals:member(1)
   package: ExcelScript!
   fullName: setShowColumnGrandTotals(showColumnGrandTotals)
-  summary: ピボットテーブルレポートに列の総計を表示するかどうかを指定します。
+  summary: ピボットテーブル レポートに列の総計が表示される場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -291,7 +291,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#setShowRowGrandTotals:member(1)
   package: ExcelScript!
   fullName: setShowRowGrandTotals(showRowGrandTotals)
-  summary: ピボットテーブルレポートで行の総計を表示するかどうかを指定します。
+  summary: ピボットテーブル レポートに行の総計が表示される場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -308,7 +308,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#setSubtotalLocation:member(1)
   package: ExcelScript!
   fullName: setSubtotalLocation(subtotalLocation)
-  summary: このプロパティは、ピボットテーブルのすべてのフィールドの SubtotalLocationType を示します。 フィールドによって状態が異なる場合は null 値になります。
+  summary: このプロパティは、ピボット `SubtotalLocationType` テーブルのすべてのフィールドを示します。 フィールドの状態が異なる場合は、次の値になります。 `null`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -322,9 +322,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: edb6b050eb6f004b74bf38c57764bf5292367016
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 4612183d3dca994b991b7f65659024e46fb06a13
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416737"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607194"

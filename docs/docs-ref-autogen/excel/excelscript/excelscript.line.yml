@@ -3,7 +3,7 @@ name: ExcelScript.Line
 uid: ExcelScript!ExcelScript.Line:interface
 package: ExcelScript!
 fullName: ExcelScript.Line
-summary: ワークシート内の行を表します。 対応する Shape オブジェクトを取得するには、 `Line.shape`<!-- -->.
+summary: ワークシート内の行を表します。 対応するオブジェクトを取得 `Shape` するには、 `Line.shape`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -21,10 +21,10 @@ methods:
     content: 'connectBeginShape(shape: Shape, connectionSite: number): void;'
     parameters:
     - id: shape
-      description: 接続する図形を示します。
+      description: 接続する図形。
       type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
     - id: connectionSite
-      description: コネクタの始点が接続される図形の接続サイトです。 指定した図形の 0 (両端を含む) と、指定した図形の接続サイト数 (排他) の間の整数である必要があります。
+      description: コネクタの先頭が接続されている図形上の接続サイト。 0 (包括) から指定した図形の接続サイト数 (排他的) の整数を指定する必要があります。
       type: number
     return:
       type: void
@@ -41,10 +41,10 @@ methods:
     content: 'connectEndShape(shape: Shape, connectionSite: number): void;'
     parameters:
     - id: shape
-      description: 接続する図形を示します。
+      description: 接続する図形。
       type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
     - id: connectionSite
-      description: コネクタの終点が接続されている図形の接続サイトを指定します。 指定した図形の 0 (両端を含む) と、指定した図形の接続サイト数 (排他) の間の整数である必要があります。
+      description: コネクタの端が接続されている図形上の接続サイト。 0 (包括) から指定した図形の接続サイト数 (排他的) の整数を指定する必要があります。
       type: number
     return:
       type: void
@@ -131,7 +131,7 @@ methods:
   uid: ExcelScript!ExcelScript.Line#getBeginConnectedSite:member(1)
   package: ExcelScript!
   fullName: getBeginConnectedSite()
-  summary: コネクタの始点が接続されている結合点を表します。 線の始点がどの図形にも接続されていない場合は、null を返します。
+  summary: コネクタの始点が接続されている結合点を表します。 線の `null` 先頭が図形にアタッチされていない場合に返します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -209,7 +209,7 @@ methods:
   uid: ExcelScript!ExcelScript.Line#getEndConnectedSite:member(1)
   package: ExcelScript!
   fullName: getEndConnectedSite()
-  summary: コネクタの終点が接続されている結合点を表します。 線の終点がどの図形にも接続されていない場合は、null を返します。
+  summary: コネクタの終点が接続されている結合点を表します。 線の `null` 端が図形に接続されていない場合に返します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -222,7 +222,7 @@ methods:
   uid: ExcelScript!ExcelScript.Line#getId:member(1)
   package: ExcelScript!
   fullName: getId()
-  summary: 図形の識別子を指定します。
+  summary: 図形識別子を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -235,7 +235,7 @@ methods:
   uid: ExcelScript!ExcelScript.Line#getIsBeginConnected:member(1)
   package: ExcelScript!
   fullName: getIsBeginConnected()
-  summary: 指定した線の始点が図形に接続されているかどうかを指定します。
+  summary: 指定した線の先頭が図形に接続される場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -248,7 +248,7 @@ methods:
   uid: ExcelScript!ExcelScript.Line#getIsEndConnected:member(1)
   package: ExcelScript!
   fullName: getIsEndConnected()
-  summary: 指定した線の終点が図形に接続されているかどうかを指定します。
+  summary: 指定した線の端が図形に接続される場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -261,7 +261,7 @@ methods:
   uid: ExcelScript!ExcelScript.Line#getShape:member(1)
   package: ExcelScript!
   fullName: getShape()
-  summary: 線に関連付けられた Shape オブジェクトを返します。
+  summary: 行に関連 `Shape` 付けられたオブジェクトを返します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -390,9 +390,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 07e52040452894f6382b0b022b9642037d8d4168
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 629957813ed37575e86ba1cf38ed57403a7d2b20
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412259"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606428"

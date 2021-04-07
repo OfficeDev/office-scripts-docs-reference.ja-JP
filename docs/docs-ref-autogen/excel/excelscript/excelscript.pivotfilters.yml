@@ -3,7 +3,7 @@ name: ExcelScript.PivotFilters
 uid: ExcelScript!ExcelScript.PivotFilters:interface
 package: ExcelScript!
 fullName: ExcelScript.PivotFilters
-summary: 特定の PivotField に現在適用されているすべての PivotFilters を表すインターフェイス。
+summary: 特定の PivotField に現在適用されているすべてのピボットフィルターを表すインターフェイス。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotFilters#dateFilter:member
   package: ExcelScript!
   fullName: dateFilter
-  summary: ピボットフィールドの現在適用されている日付フィルター。 何も適用されていない場合は、Null を返します。
+  summary: PivotField の現在適用されている日付フィルター。 このプロパティは `null` 、値フィルターが適用されない場合です。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotFilters#labelFilter:member
   package: ExcelScript!
   fullName: labelFilter
-  summary: ピボットフィールドの現在適用されているラベルフィルター。 何も適用されていない場合は、Null を返します。
+  summary: PivotField の現在適用されているラベル フィルター。 このプロパティは `null` 、値フィルターが適用されない場合です。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotFilters#manualFilter:member
   package: ExcelScript!
   fullName: manualFilter
-  summary: ピボットフィールドの現在適用されている手動フィルター。 何も適用されていない場合は、Null を返します。
+  summary: PivotField の現在適用されている手動フィルター。 このプロパティは `null` 、値フィルターが適用されない場合です。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,7 +49,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotFilters#valueFilter:member
   package: ExcelScript!
   fullName: valueFilter
-  summary: ピボットフィールドの現在適用されている値フィルター。 何も適用されていない場合は、Null を返します。
+  summary: PivotField の現在適用されている値フィルター。 このプロパティは `null` 、値フィルターが適用されない場合です。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -58,9 +58,9 @@ properties:
     return:
       type: <xref uid="ExcelScript!ExcelScript.PivotValueFilter:interface" />
 metadata:
-  ms.openlocfilehash: 7f7476fe423978732f5e56e547ef9f44e9c1df0a
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 4227afb078b084fa529039e7b77587a01635e689
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415261"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607201"

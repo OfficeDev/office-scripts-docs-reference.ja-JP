@@ -3,7 +3,7 @@ name: ExcelScript.ChartSeriesBy
 uid: ExcelScript!ExcelScript.ChartSeriesBy:enum
 package: ExcelScript!
 fullName: ExcelScript.ChartSeriesBy
-summary: 系列が行であるか列であるかを指定します。 デスクトップの場合、[自動] オプションを選択すると、データが行または列であるかどうかが自動的に推定されます。web 上の Excel では、"自動" は単に "列" を既定値にします。
+summary: 系列が行別か列別かを指定します。 デスクトップ上の Excel では、"auto" オプションはソース データの図形を検査して、データが行または列別であるかどうかを自動的に推測します。 Web 上の Excel では、"auto" は既定で "列" に設定されます。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -11,7 +11,7 @@ fields:
 - name: auto
   uid: ExcelScript!ExcelScript.ChartSeriesBy.auto:member
   package: ExcelScript!
-  summary: デスクトップの場合、[自動] オプションを選択すると、データが行または列であるかどうかが自動的に推定されます。web 上の Excel では、"自動" は単に "列" を既定値にします。
+  summary: デスクトップ上の Excel では、"auto" オプションはソース データの図形を検査して、データが行または列別であるかどうかを自動的に推測します。 Web 上の Excel では、"auto" は既定で "列" に設定されます。
 - name: columns
   uid: ExcelScript!ExcelScript.ChartSeriesBy.columns:member
   package: ExcelScript!
@@ -21,9 +21,9 @@ fields:
   package: ExcelScript!
   summary: ''
 metadata:
-  ms.openlocfilehash: f238e90af515a6bea1ddaf405d08fa645ce353f3
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: fb096e4967f4cba2bae1762ea3f5cd8685a54ccf
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416058"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606844"

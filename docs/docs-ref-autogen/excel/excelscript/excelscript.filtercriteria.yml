@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.FilterCriteria#color:member
   package: ExcelScript!
   fullName: color
-  summary: セルをフィルター処理するために使用する HTML カラー文字列。 「CellColor」フィルターおよび「fontColor」フィルターと併用します。
+  summary: セルをフィルター処理するために使用する HTML カラー文字列。 とフィルター `cellColor` 処理 `fontColor` で使用されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,10 +26,10 @@ properties:
   package: ExcelScript!
   fullName: criterion1
   summary: >-
-    データをフィルター処理するために使用する最初の条件。 「カスタム」フィルター処理の場合には、演算子として使用されます。 たとえば "<!-- -->&gt;<!-- -->50 "s" で終わる値に対して、50より大きい数値または "= * s" に対して。
+    データをフィルター処理するために使用する最初の条件。 フィルター処理の場合は演算子 `custom` として使用されます。 たとえば"<!-- -->&gt;<!-- -->50 より大きい数値の場合は 50"、"s" で終わる値は "=*s" です。
 
 
-    "FilterOn/フィルター適用" が "topItems" に設定されている場合、上位/下位アイテム/比率の場合は数値として使用されます (上位5つのアイテムの場合は "5")。
+    トップ/ボトム アイテム/パーセントの場合の数値として使用されます (たとえば、上位 5 アイテムの場合は "5" に `filterOn` 設定されている場合) `topItems`<!-- -->).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -41,7 +41,7 @@ properties:
   uid: ExcelScript!ExcelScript.FilterCriteria#criterion2:member
   package: ExcelScript!
   fullName: criterion2
-  summary: データをフィルター処理するために使用する 2 番目の条件。 「カスタム」フィルター処理の場合には、演算子としてのみ使用されます。
+  summary: データをフィルター処理するために使用する 2 番目の条件。 フィルター処理の場合にのみ演算子として `custom` 使用されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -53,7 +53,7 @@ properties:
   uid: ExcelScript!ExcelScript.FilterCriteria#dynamicCriteria:member
   package: ExcelScript!
   fullName: dynamicCriteria
-  summary: この列に適用するために、Excelfiltercriteria の動的な抽出条件を設定します。 "動的" フィルターで使用されます。
+  summary: この列に適用 `ExcelScript.DynamicFilterCriteria` するセットの動的な条件。 フィルター処理 `dynamic` で使用します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ properties:
   uid: ExcelScript!ExcelScript.FilterCriteria#filterOn:member
   package: ExcelScript!
   fullName: filterOn
-  summary: フィルターで値を表示するかどうかを決定するために使用されるプロパティ。
+  summary: 値を表示する必要があるかどうかを判断するためにフィルターで使用されるプロパティ。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -77,7 +77,7 @@ properties:
   uid: ExcelScript!ExcelScript.FilterCriteria#icon:member
   package: ExcelScript!
   fullName: icon
-  summary: セルをフィルター処理するために使用するアイコン。 「アイコン」フィルター処理で使用します。
+  summary: セルをフィルター処理するために使用するアイコン。 フィルター処理 `icon` で使用します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -89,7 +89,7 @@ properties:
   uid: ExcelScript!ExcelScript.FilterCriteria#operator:member
   package: ExcelScript!
   fullName: operator
-  summary: 「カスタム」フィルター処理を使用するときに、条件 1 と条件 2 を結合するために使用する演算子。
+  summary: フィルター処理を使用する場合、条件 1 と 2 を組み合わせて `custom` 使用する演算子。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -101,7 +101,7 @@ properties:
   uid: ExcelScript!ExcelScript.FilterCriteria#subField:member
   package: ExcelScript!
   fullName: subField
-  summary: リッチな値にリッチなフィルターを適用する場合、フィルターによって使用されるプロパティです。
+  summary: 豊富な値に対してリッチ フィルターを実行するためにフィルターで使用されるプロパティ。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -113,7 +113,7 @@ properties:
   uid: ExcelScript!ExcelScript.FilterCriteria#values:member
   package: ExcelScript!
   fullName: values
-  summary: "\"値\" フィルター処理の一部として使用する値のセット。"
+  summary: フィルター処理の一部として使用する値 `values` のセット。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -122,9 +122,9 @@ properties:
     return:
       type: Array&lt;string | <xref uid="ExcelScript!ExcelScript.FilterDatetime:interface" />&gt;
 metadata:
-  ms.openlocfilehash: 2ffdf128edd0c1d04a60912c1bb9a72fc5089230
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 7ec27c61105ed0d673b974f8fbb66d741917279f
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412574"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607026"

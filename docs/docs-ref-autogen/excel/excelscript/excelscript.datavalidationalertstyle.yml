@@ -3,7 +3,7 @@ name: ExcelScript.DataValidationAlertStyle
 uid: ExcelScript!ExcelScript.DataValidationAlertStyle:enum
 package: ExcelScript!
 fullName: ExcelScript.DataValidationAlertStyle
-summary: データの入力規則のエラーの通知のスタイルを表します。 既定値は "Stop" です。
+summary: データ検証エラー通知のスタイルを表します。 既定値は次の値です。 `Stop`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -21,9 +21,9 @@ fields:
   package: ExcelScript!
   summary: ''
 metadata:
-  ms.openlocfilehash: c35f438f37072025e91ac3f1abd5f4b66a835307
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: e1a569c8e6cc90c6b042cd54da6bdd487946d42e
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415555"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606531"

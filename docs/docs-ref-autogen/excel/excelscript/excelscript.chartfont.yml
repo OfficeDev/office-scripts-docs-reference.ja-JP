@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartFont#getColor:member(1)
   package: ExcelScript!
   fullName: getColor()
-  summary: テキストの色の HTML カラーコード表現 (たとえば、 \# ff0000 はは赤を表します)。
+  summary: テキストの色の HTML カラー コード表現 \# (FF0000 は赤を表すなど)。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartFont#getName:member(1)
   package: ExcelScript!
   fullName: getName()
-  summary: 'フォント名 (例: "Calibri")'
+  summary: フォント名 ("Calibri"など)
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartFont#getSize:member(1)
   package: ExcelScript!
   fullName: getSize()
-  summary: フォントのサイズ (たとえば、11)
+  summary: 'フォントのサイズ (例: 11)'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartFont#getUnderline:member(1)
   package: ExcelScript!
   fullName: getUnderline()
-  summary: フォントに適用する下線の種類。 詳細については、「ExcelScript. Chart過小 Linestyle」を参照してください。
+  summary: フォントに適用する下線の種類。 詳細は「`ExcelScript.ChartUnderlineStyle`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -108,7 +108,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartFont#setColor:member(1)
   package: ExcelScript!
   fullName: setColor(color)
-  summary: テキストの色の HTML カラーコード表現 (たとえば、 \# ff0000 はは赤を表します)。
+  summary: テキストの色の HTML カラー コード表現 \# (FF0000 は赤を表すなど)。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -142,7 +142,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartFont#setName:member(1)
   package: ExcelScript!
   fullName: setName(name)
-  summary: 'フォント名 (例: "Calibri")'
+  summary: フォント名 ("Calibri"など)
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartFont#setSize:member(1)
   package: ExcelScript!
   fullName: setSize(size)
-  summary: フォントのサイズ (たとえば、11)
+  summary: 'フォントのサイズ (例: 11)'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -176,7 +176,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartFont#setUnderline:member(1)
   package: ExcelScript!
   fullName: setUnderline(underline)
-  summary: フォントに適用する下線の種類。 詳細については、「ExcelScript. Chart過小 Linestyle」を参照してください。
+  summary: フォントに適用する下線の種類。 詳細は「`ExcelScript.ChartUnderlineStyle`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -190,9 +190,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: ef4d91ec8835380a3af1b0de7def9ab52d8dda8c
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 58486871c20f86feee8008975bd8790f284b09d0
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419937"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606900"

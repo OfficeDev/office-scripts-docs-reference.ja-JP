@@ -3,7 +3,7 @@ name: ExcelScript.TopBottomConditionalFormat
 uid: ExcelScript!ExcelScript.TopBottomConditionalFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.TopBottomConditionalFormat
-summary: 上位/下位条件付き書式を表します。
+summary: 上/下の条件付き書式を表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.TopBottomConditionalFormat#getFormat:member(1)
   package: ExcelScript!
   fullName: getFormat()
-  summary: 書式設定オブジェクトを返し、条件付き書式のフォント、塗りつぶし、罫線などのプロパティをカプセル化します。
+  summary: 条件付き書式のフォント、塗りつぶし、罫線、その他のプロパティをカプセル化する format オブジェクトを返します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.TopBottomConditionalFormat#getRule:member(1)
   package: ExcelScript!
   fullName: getRule()
-  summary: 上位/下位条件付き書式の条件を指定します。
+  summary: 上/下の条件付き書式の条件。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.TopBottomConditionalFormat#setRule:member(1)
   package: ExcelScript!
   fullName: setRule(rule)
-  summary: 上位/下位条件付き書式の条件を指定します。
+  summary: 上/下の条件付き書式の条件。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -53,9 +53,9 @@ methods:
       type: void
       description: "\n\n#### <a name=\"examples\"></a>例\n\n```javascript\n/**\n * This sample applies conditional formatting to the currently used range in the worksheet. \n * The conditional formatting is a green fill for the top 10% of values.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Get the used range in the worksheet.\n  let range = selectedSheet.getUsedRange();\n\n  // Set the fill color to green for the top 10% of values in the range.\n  let conditionalFormat = range.addConditionalFormat(ExcelScript.ConditionalFormatType.topBottom)\n  conditionalFormat.getTopBottom().getFormat().getFill().setColor(\"green\");\n  conditionalFormat.getTopBottom().setRule({\n    rank: 10, // The percentage threshold.\n    type: ExcelScript.ConditionalTopBottomCriterionType.topPercent // The type of the top/bottom condition.\n  });\n}\n```"
 metadata:
-  ms.openlocfilehash: 3a2f783224711b691587830e5138faf30a492838
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 08c7bba8cde074460e1a2f27872a6472fa8156e3
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420217"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51605298"

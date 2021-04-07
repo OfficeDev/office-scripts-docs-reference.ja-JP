@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeView#getCellAddresses:member(1)
   package: ExcelScript!
   fullName: getCellAddresses()
-  summary: RangeView のセル アドレスを表します。
+  summary: のセル アドレスを表します。 `RangeView`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeView#getColumnCount:member(1)
   package: ExcelScript!
   fullName: getColumnCount()
-  summary: 表示される列の数を指定します。
+  summary: 表示される列の数。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeView#getFormulas:member(1)
   package: ExcelScript!
   fullName: getFormulas()
-  summary: A1 スタイル表記の数式を表します。
+  summary: A1 スタイル表記の数式を表します。 セルに数式がない場合は、その値が代わりに返されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeView#getFormulasLocal:member(1)
   package: ExcelScript!
   fullName: getFormulasLocal()
-  summary: ユーザーの言語と数値書式ロケールで、A1 スタイル表記の数式を表します。たとえば、英語の数式 "=SUM(A1, 1.5)" は、ドイツ語では "=SUMME(A1; 1,5)" になります。
+  summary: ユーザーの言語と数値書式ロケールで、A1 スタイル表記の数式を表します。 たとえば、英語の数式 "=SUM(A1, 1.5)" は、ドイツ語では "=SUMME(A1; 1,5)" になります。 セルに数式がない場合は、その値が代わりに返されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeView#getFormulasR1C1:member(1)
   package: ExcelScript!
   fullName: getFormulasR1C1()
-  summary: R1C1 スタイル表記の数式を表します。
+  summary: R1C1 スタイル表記の数式を表します。 セルに数式がない場合は、その値が代わりに返されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeView#getIndex:member(1)
   package: ExcelScript!
   fullName: getIndex()
-  summary: RangeView のインデックスを表す値を返します。
+  summary: のインデックスを表す値を返します。 `RangeView`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeView#getRange:member(1)
   package: ExcelScript!
   fullName: getRange()
-  summary: 現在の RangeView に関連付けられている親の範囲を取得します。
+  summary: 現在の値に関連付けられている親範囲を取得します。 `RangeView`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -117,7 +117,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeView#getRowCount:member(1)
   package: ExcelScript!
   fullName: getRowCount()
-  summary: 表示される行の数を指定します。
+  summary: 表示される行の数。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeView#getText:member(1)
   package: ExcelScript!
   fullName: getText()
-  summary: 指定した範囲のテキスト値。 テキスト値は、セルの幅には依存しません。 \#EXCEL UI で行われた符号置換は、API によって返されるテキスト値には影響しません。
+  summary: 指定した範囲のテキスト値。 テキスト値は、セルの幅には依存しません。 \#Excel UI で行う符号の置換は、API によって返されるテキスト値には影響しません。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -182,7 +182,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeView#setFormulas:member(1)
   package: ExcelScript!
   fullName: setFormulas(formulas)
-  summary: A1 スタイル表記の数式を表します。
+  summary: A1 スタイル表記の数式を表します。 セルに数式がない場合は、その値が代わりに返されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -199,7 +199,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeView#setFormulasLocal:member(1)
   package: ExcelScript!
   fullName: setFormulasLocal(formulasLocal)
-  summary: ユーザーの言語と数値書式ロケールで、A1 スタイル表記の数式を表します。たとえば、英語の数式 "=SUM(A1, 1.5)" は、ドイツ語では "=SUMME(A1; 1,5)" になります。
+  summary: ユーザーの言語と数値書式ロケールで、A1 スタイル表記の数式を表します。 たとえば、英語の数式 "=SUM(A1, 1.5)" は、ドイツ語では "=SUMME(A1; 1,5)" になります。 セルに数式がない場合は、その値が代わりに返されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -216,7 +216,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeView#setFormulasR1C1:member(1)
   package: ExcelScript!
   fullName: setFormulasR1C1(formulasR1C1)
-  summary: R1C1 スタイル表記の数式を表します。
+  summary: R1C1 スタイル表記の数式を表します。 セルに数式がない場合は、その値が代わりに返されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -264,9 +264,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 56aef354a188f0e93b1b1e467949247a677351d0
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: e01eaccac964df4dff40b95781acb9e04794a395
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49411909"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606169"

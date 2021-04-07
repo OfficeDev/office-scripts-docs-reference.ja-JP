@@ -25,10 +25,10 @@ methods:
               ): CommentReply;
     parameters:
     - id: content
-      description: 'コメントの内容を示します。 これは、string または Interface CommentRichContent (例: メンション付きコメント) です。'
+      description: コメントのコンテンツ。 これは、文字列またはオブジェクトのいずれかです (たとえば、メンション付き `CommentRichContent` コメントの場合)。
       type: <xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" /> | string
     - id: contentType
-      description: 省略可能。 コメント内に含まれるコンテンツの種類。 既定値は enum です。 `ContentType.Plain`<!-- -->.
+      description: 省略可能。 コメントに含まれるコンテンツの種類。 既定値は enum です `ContentType.Plain`<!-- -->.
       type: <xref uid="ExcelScript!ExcelScript.ContentType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.CommentReply:interface" />
@@ -37,7 +37,7 @@ methods:
   uid: ExcelScript!ExcelScript.Comment#delete:member(1)
   package: ExcelScript!
   fullName: delete()
-  summary: コメントと、接続されているすべての返信を削除します。
+  summary: コメントとすべての接続済み返信を削除します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -84,7 +84,7 @@ methods:
     content: 'getCommentReply(commentReplyId: string): CommentReply;'
     parameters:
     - id: commentReplyId
-      description: コメント応答の識別子。
+      description: コメント返信の識別子。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.CommentReply:interface" />
@@ -93,7 +93,7 @@ methods:
   uid: ExcelScript!ExcelScript.Comment#getContent:member(1)
   package: ExcelScript!
   fullName: getContent()
-  summary: コメントの内容を示します。 文字列はテキスト形式です。
+  summary: コメントのコンテンツ。 文字列はプレーン テキストです。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -106,7 +106,7 @@ methods:
   uid: ExcelScript!ExcelScript.Comment#getContentType:member(1)
   package: ExcelScript!
   fullName: getContentType()
-  summary: コメントのコンテンツタイプを取得します。
+  summary: コメントのコンテンツ タイプを取得します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -119,7 +119,7 @@ methods:
   uid: ExcelScript!ExcelScript.Comment#getCreationDate:member(1)
   package: ExcelScript!
   fullName: getCreationDate()
-  summary: コメントの作成日時を取得します。 コメントがメモから変換されている場合、コメントには作成日時がないため、null が返されます。
+  summary: コメントの作成日時を取得します。 コメントに作成日が設定されていないので、コメントがメモから変換された `null` 場合に返します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -145,7 +145,7 @@ methods:
   uid: ExcelScript!ExcelScript.Comment#getLocation:member(1)
   package: ExcelScript!
   fullName: getLocation()
-  summary: このコメントが配置されているセルを取得します。
+  summary: このコメントがあるセルを取得します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -158,7 +158,7 @@ methods:
   uid: ExcelScript!ExcelScript.Comment#getMentions:member(1)
   package: ExcelScript!
   fullName: getMentions()
-  summary: コメントに記載されているエンティティ (ユーザーなど) を取得します。
+  summary: コメントに記載されているエンティティ (人など) を取得します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -184,7 +184,7 @@ methods:
   uid: ExcelScript!ExcelScript.Comment#getResolved:member(1)
   package: ExcelScript!
   fullName: getResolved()
-  summary: コメントスレッドの状態。 値 "true" は、コメントスレッドが解決されることを意味します。
+  summary: コメント スレッドの状態。 値は `true` 、コメント スレッドが解決されるという意味です。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -197,7 +197,7 @@ methods:
   uid: ExcelScript!ExcelScript.Comment#getRichContent:member(1)
   package: ExcelScript!
   fullName: getRichContent()
-  summary: リッチコメントの内容 (コメント内のメンションなど) を取得します。 この文字列は、エンドユーザーに表示されることを意図したものではありません。 アドインでは、リッチコメントコンテンツを解析するためにのみ使用する必要があります。
+  summary: リッチ コメント コンテンツ (コメントのメンションなど) を取得します。 この文字列は、エンド ユーザーに表示されるという意味ではありません。 アドインは、リッチ コメント コンテンツを解析する場合にのみ、これを使用する必要があります。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -210,7 +210,7 @@ methods:
   uid: ExcelScript!ExcelScript.Comment#setContent:member(1)
   package: ExcelScript!
   fullName: setContent(content)
-  summary: コメントの内容を示します。 文字列はテキスト形式です。
+  summary: コメントのコンテンツ。 文字列はプレーン テキストです。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -227,7 +227,7 @@ methods:
   uid: ExcelScript!ExcelScript.Comment#setResolved:member(1)
   package: ExcelScript!
   fullName: setResolved(resolved)
-  summary: コメントスレッドの状態。 値 "true" は、コメントスレッドが解決されることを意味します。
+  summary: コメント スレッドの状態。 値は `true` 、コメント スレッドが解決されるという意味です。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -244,7 +244,7 @@ methods:
   uid: ExcelScript!ExcelScript.Comment#updateMentions:member(1)
   package: ExcelScript!
   fullName: updateMentions(contentWithMentions)
-  summary: 特別に書式設定された文字列とメンションの一覧を使用して、コメントの内容を更新します。
+  summary: 特別に書式設定された文字列とメンションの一覧を使用してコメント コンテンツを更新します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -252,15 +252,15 @@ methods:
     content: 'updateMentions(contentWithMentions: CommentRichContent): void;'
     parameters:
     - id: contentWithMentions
-      description: コメントの内容を示します。 これには、特別に書式設定された文字列と、Excel で表示されるときに文字列に解析されるメンションの一覧が含まれています。
+      description: コメントのコンテンツ。 これには、特別に書式設定された文字列と、Excel で表示するときに文字列に解析されるメンションの一覧が含まれます。
       type: <xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" />
     return:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 99f2cf48b37e0d1b0db82fa78492b823e4d5eee7
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 3417d9212461ffdd5ba0314f41491575206a4e65
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415975"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606779"

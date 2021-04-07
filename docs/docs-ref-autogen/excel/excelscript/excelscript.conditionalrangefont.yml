@@ -3,7 +3,7 @@ name: ExcelScript.ConditionalRangeFont
 uid: ExcelScript!ExcelScript.ConditionalRangeFont:interface
 package: ExcelScript!
 fullName: ExcelScript.ConditionalRangeFont
-summary: このオブジェクトは、オブジェクトのフォントの属性 (フォントスタイル、色など) を表します。
+summary: このオブジェクトは、オブジェクトのフォント属性 (フォント のスタイル、色など) を表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#getBold:member(1)
   package: ExcelScript!
   fullName: getBold()
-  summary: フォントを太字にするかどうかを指定します。
+  summary: フォントが太字の場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#getColor:member(1)
   package: ExcelScript!
   fullName: getColor()
-  summary: テキストの色の HTML カラーコード表現 (たとえば、 \# ff0000 はは赤を表します)。
+  summary: テキストの色の HTML カラー コード表現 \# (FF0000 は赤を表すなど)。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#getItalic:member(1)
   package: ExcelScript!
   fullName: getItalic()
-  summary: フォントを斜体にするかどうかを指定します。
+  summary: フォントが italic の場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#getUnderline:member(1)
   package: ExcelScript!
   fullName: getUnderline()
-  summary: フォントに適用する下線の種類を設定します。 詳細については、「ExcelScript Efont過小 Linestyle」を参照してください。
+  summary: フォントに適用される下線の種類。 詳細は「`ExcelScript.ConditionalRangeFontUnderlineStyle`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#setBold:member(1)
   package: ExcelScript!
   fullName: setBold(bold)
-  summary: フォントを太字にするかどうかを指定します。
+  summary: フォントが太字の場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -108,7 +108,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#setColor:member(1)
   package: ExcelScript!
   fullName: setColor(color)
-  summary: テキストの色の HTML カラーコード表現 (たとえば、 \# ff0000 はは赤を表します)。
+  summary: テキストの色の HTML カラー コード表現 \# (FF0000 は赤を表すなど)。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -125,7 +125,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#setItalic:member(1)
   package: ExcelScript!
   fullName: setItalic(italic)
-  summary: フォントを斜体にするかどうかを指定します。
+  summary: フォントが italic の場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#setUnderline:member(1)
   package: ExcelScript!
   fullName: setUnderline(underline)
-  summary: フォントに適用する下線の種類を設定します。 詳細については、「ExcelScript Efont過小 Linestyle」を参照してください。
+  summary: フォントに適用される下線の種類。 詳細は「`ExcelScript.ConditionalRangeFontUnderlineStyle`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -173,9 +173,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 4b59e433ac3535d4aa352158485d17289731760a
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 0baa0c9251cd94135e208c7592d45e78dace77ca
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419370"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606711"

@@ -3,7 +3,7 @@ name: ExcelScript.ChartTrendline
 uid: ExcelScript!ExcelScript.ChartTrendline:interface
 package: ExcelScript!
 fullName: ExcelScript.ChartTrendline
-summary: このオブジェクトは、グラフの近似曲線オブジェクトの属性を表します。
+summary: このオブジェクトは、グラフの傾向線オブジェクトの属性を表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendline#getIntercept:member(1)
   package: ExcelScript!
   fullName: getIntercept()
-  summary: 近似曲線の切片値を指定します。
+  summary: 傾向線の切片の値を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendline#getMovingAveragePeriod:member(1)
   package: ExcelScript!
   fullName: getMovingAveragePeriod()
-  summary: グラフの近似曲線の期間を表します。 MovingAverage 型の近似曲線にのみ適用されます。
+  summary: グラフの傾向線の期間を表します。 タイプの傾向線にのみ適用されます。 `MovingAverage`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendline#getName:member(1)
   package: ExcelScript!
   fullName: getName()
-  summary: 近似曲線の名前を表します。 文字列値または null 値 (値を自動的に設定する場合) に設定できます。 戻り値は常に文字列です。
+  summary: 近似曲線の名前を表します。 文字列値に設定できます。値は `null` 自動値を表します。 戻り値は常に文字列です。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -117,7 +117,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendline#getPolynomialOrder:member(1)
   package: ExcelScript!
   fullName: getPolynomialOrder()
-  summary: グラフの近似曲線の順序を表します。 多項式型の近似曲線にのみ適用されます。
+  summary: グラフの傾向線の順序を表します。 タイプの傾向線にのみ適用されます。 `Polynomial`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendline#getShowRSquared:member(1)
   package: ExcelScript!
   fullName: getShowRSquared()
-  summary: true の場合、グラフに近似曲線の R-2 乗値が表示されます。
+  summary: True の場合、トレンドラインの r-2 乗値がグラフに表示されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -203,7 +203,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendline#setIntercept:member(1)
   package: ExcelScript!
   fullName: setIntercept(intercept)
-  summary: 近似曲線の切片値を指定します。
+  summary: 傾向線の切片の値を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -220,7 +220,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendline#setMovingAveragePeriod:member(1)
   package: ExcelScript!
   fullName: setMovingAveragePeriod(movingAveragePeriod)
-  summary: グラフの近似曲線の期間を表します。 MovingAverage 型の近似曲線にのみ適用されます。
+  summary: グラフの傾向線の期間を表します。 タイプの傾向線にのみ適用されます。 `MovingAverage`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -237,7 +237,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendline#setName:member(1)
   package: ExcelScript!
   fullName: setName(name)
-  summary: 近似曲線の名前を表します。 文字列値または null 値 (値を自動的に設定する場合) に設定できます。 戻り値は常に文字列です。
+  summary: 近似曲線の名前を表します。 文字列値に設定できます。値は `null` 自動値を表します。 戻り値は常に文字列です。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -254,7 +254,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendline#setPolynomialOrder:member(1)
   package: ExcelScript!
   fullName: setPolynomialOrder(polynomialOrder)
-  summary: グラフの近似曲線の順序を表します。 多項式型の近似曲線にのみ適用されます。
+  summary: グラフの傾向線の順序を表します。 タイプの傾向線にのみ適用されます。 `Polynomial`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -288,7 +288,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendline#setShowRSquared:member(1)
   package: ExcelScript!
   fullName: setShowRSquared(showRSquared)
-  summary: true の場合、グラフに近似曲線の R-2 乗値が表示されます。
+  summary: True の場合、トレンドラインの r-2 乗値がグラフに表示されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -319,9 +319,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: f529a31774e6430cd11a32826f876b48d7c3c43c
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 5ce9ab90bf97fbe09577aca7d44bfa1d09f59414
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416003"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606816"

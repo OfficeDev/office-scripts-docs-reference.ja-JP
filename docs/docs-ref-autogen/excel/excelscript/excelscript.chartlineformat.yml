@@ -3,7 +3,7 @@ name: ExcelScript.ChartLineFormat
 uid: ExcelScript!ExcelScript.ChartLineFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.ChartLineFormat
-summary: 直線要素の書式設定オプションをカプセル化します。
+summary: 行要素の書式設定オプションをカプセル化します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLineFormat#clear:member(1)
   package: ExcelScript!
   fullName: clear()
-  summary: グラフ要素の線の書式をクリアします。
+  summary: グラフ要素の線の形式をクリアします。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLineFormat#getLineStyle:member(1)
   package: ExcelScript!
   fullName: getLineStyle()
-  summary: 線のスタイルを表します。 詳細については、「ExcelScript. ChartLineStyle」を参照してください。
+  summary: 線のスタイルを表します。 詳細は「`ExcelScript.ChartLineStyle`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -82,7 +82,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLineFormat#setLineStyle:member(1)
   package: ExcelScript!
   fullName: setLineStyle(lineStyle)
-  summary: 線のスタイルを表します。 詳細については、「ExcelScript. ChartLineStyle」を参照してください。
+  summary: 線のスタイルを表します。 詳細は「`ExcelScript.ChartLineStyle`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -113,9 +113,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: eb75e6cd7f0ce668d6b38038f9b95404ccec5c14
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: fc27c573d735607f0893e2bead43abe73e169c8c
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419692"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606893"

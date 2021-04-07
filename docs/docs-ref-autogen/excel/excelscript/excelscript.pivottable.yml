@@ -103,7 +103,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getAllowMultipleFiltersPerField:member(1)
   package: ExcelScript!
   fullName: getAllowMultipleFiltersPerField()
-  summary: ピボットテーブルで、テーブル内の特定の PivotField に対して複数の PivotFilters を適用できるかどうかを指定します。
+  summary: ピボットテーブルで、テーブル内の特定のピボットフィールドに複数のピボットフィルターを適用できる場合を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -129,7 +129,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getColumnHierarchy:member(1)
   package: ExcelScript!
   fullName: getColumnHierarchy(name)
-  summary: 名前に基づいて RowColumnPivotHierarchy を取得します。 RowColumnPivotHierarchy が存在しない場合、この関数は、プロパティが次の値に設定されたオブジェクトを返します。 `isNullObject``true`<!-- -->.
+  summary: 名前に基づいて RowColumnPivotHierarchy を取得します。 RowColumnPivotHierarchy が存在しない場合、この関数はプロパティを次に設定した `isNullObject` オブジェクトを返します。 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getDataHierarchy:member(1)
   package: ExcelScript!
   fullName: getDataHierarchy(name)
-  summary: 名前に基づいて DataPivotHierarchy を取得します。 DataPivotHierarchy が存在しない場合、この関数は、プロパティが次の値に設定されたオブジェクトを返します。 `isNullObject``true`<!-- -->.
+  summary: 名前に基づいて DataPivotHierarchy を取得します。 DataPivotHierarchy が存在しない場合、この関数はプロパティを次に設定した `isNullObject` オブジェクトを返します。 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -176,7 +176,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getEnableDataValueEditing:member(1)
   package: ExcelScript!
   fullName: getEnableDataValueEditing()
-  summary: ピボットテーブルで、ユーザーがデータ本文の値を編集できるようにするかどうかを指定します。
+  summary: ピボットテーブルでデータ本文の値をユーザーが編集できる場合を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -202,7 +202,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getFilterHierarchy:member(1)
   package: ExcelScript!
   fullName: getFilterHierarchy(name)
-  summary: 名前に基づいて FilterPivotHierarchy を取得します。 FilterPivotHierarchy が存在しない場合、この関数は、プロパティが次の値に設定されたオブジェクトを返します。 `isNullObject``true`<!-- -->.
+  summary: 名前に基づいて FilterPivotHierarchy を取得します。 FilterPivotHierarchy が存在しない場合、この関数はプロパティを次に設定した `isNullObject` オブジェクトを返します。 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -232,7 +232,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getHierarchy:member(1)
   package: ExcelScript!
   fullName: getHierarchy(name)
-  summary: 名前に基づいて PivotHierarchy を取得します。 PivotHierarchy が存在しない場合、この関数は、プロパティが次の値に設定されたオブジェクトを返します。 `isNullObject``true`<!-- -->.
+  summary: 名前に基づいて PivotHierarchy を取得します。 PivotHierarchy が存在しない場合、この関数はプロパティを次に設定した `isNullObject` オブジェクトを返します。 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -301,7 +301,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getRowHierarchy:member(1)
   package: ExcelScript!
   fullName: getRowHierarchy(name)
-  summary: 名前に基づいて RowColumnPivotHierarchy を取得します。 RowColumnPivotHierarchy が存在しない場合、この関数は、プロパティが次の値に設定されたオブジェクトを返します。 `isNullObject``true`<!-- -->.
+  summary: 名前に基づいて RowColumnPivotHierarchy を取得します。 RowColumnPivotHierarchy が存在しない場合、この関数はプロパティを次に設定した `isNullObject` オブジェクトを返します。 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -318,7 +318,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getUseCustomSortLists:member(1)
   package: ExcelScript!
   fullName: getUseCustomSortLists()
-  summary: 並べ替えの際に、ピボットテーブルでカスタムリストを使用するかどうかを指定します。
+  summary: ピボットテーブルが並べ替え時にカスタム リストを使用する場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -431,7 +431,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#setAllowMultipleFiltersPerField:member(1)
   package: ExcelScript!
   fullName: setAllowMultipleFiltersPerField(allowMultipleFiltersPerField)
-  summary: ピボットテーブルで、テーブル内の特定の PivotField に対して複数の PivotFilters を適用できるかどうかを指定します。
+  summary: ピボットテーブルで、テーブル内の特定のピボットフィールドに複数のピボットフィルターを適用できる場合を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -451,7 +451,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#setEnableDataValueEditing:member(1)
   package: ExcelScript!
   fullName: setEnableDataValueEditing(enableDataValueEditing)
-  summary: ピボットテーブルで、ユーザーがデータ本文の値を編集できるようにするかどうかを指定します。
+  summary: ピボットテーブルでデータ本文の値をユーザーが編集できる場合を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -485,7 +485,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#setUseCustomSortLists:member(1)
   package: ExcelScript!
   fullName: setUseCustomSortLists(useCustomSortLists)
-  summary: 並べ替えの際に、ピボットテーブルでカスタムリストを使用するかどうかを指定します。
+  summary: ピボットテーブルが並べ替え時にカスタム リストを使用する場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -499,9 +499,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: cae3d58cfae8798085df614005461abe574927ec
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: 46b240d2029153fbbc2cbcfca1d15f2e54430414
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554609"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606379"

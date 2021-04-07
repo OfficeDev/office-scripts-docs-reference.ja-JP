@@ -3,7 +3,7 @@ name: ExcelScript.ChartPlotArea
 uid: ExcelScript!ExcelScript.ChartPlotArea:interface
 package: ExcelScript!
 fullName: ExcelScript.ChartPlotArea
-summary: このオブジェクトは、グラフ plotArea オブジェクトの属性を表します。
+summary: このオブジェクトは、グラフ プロット領域の属性を表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPlotArea#getFormat:member(1)
   package: ExcelScript!
   fullName: getFormat()
-  summary: グラフの plotArea の書式を指定します。
+  summary: グラフプロット領域の書式を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPlotArea#getHeight:member(1)
   package: ExcelScript!
   fullName: getHeight()
-  summary: PlotArea の高さの値を指定します。
+  summary: プロット領域の高さの値を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPlotArea#getInsideHeight:member(1)
   package: ExcelScript!
   fullName: getInsideHeight()
-  summary: PlotArea の insideHeight 値を指定します。
+  summary: プロット領域の内側の高さの値を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPlotArea#getInsideLeft:member(1)
   package: ExcelScript!
   fullName: getInsideLeft()
-  summary: PlotArea の insideLeft 値を指定します。
+  summary: プロット領域の内側の左の値を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPlotArea#getInsideTop:member(1)
   package: ExcelScript!
   fullName: getInsideTop()
-  summary: PlotArea の insideTop 値を指定します。
+  summary: プロット領域の内側の上の値を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPlotArea#getInsideWidth:member(1)
   package: ExcelScript!
   fullName: getInsideWidth()
-  summary: PlotArea の insideWidth 値を指定します。
+  summary: プロット領域の内側の幅の値を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPlotArea#getLeft:member(1)
   package: ExcelScript!
   fullName: getLeft()
-  summary: PlotArea の左の値を指定します。
+  summary: プロット領域の左の値を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPlotArea#getPosition:member(1)
   package: ExcelScript!
   fullName: getPosition()
-  summary: PlotArea の位置を指定します。
+  summary: プロット領域の位置を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -117,7 +117,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPlotArea#getTop:member(1)
   package: ExcelScript!
   fullName: getTop()
-  summary: PlotArea の最上位の値を指定します。
+  summary: プロット領域の上の値を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPlotArea#getWidth:member(1)
   package: ExcelScript!
   fullName: getWidth()
-  summary: PlotArea の幅の値を指定します。
+  summary: プロット領域の幅の値を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPlotArea#setHeight:member(1)
   package: ExcelScript!
   fullName: setHeight(height)
-  summary: PlotArea の高さの値を指定します。
+  summary: プロット領域の高さの値を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -160,7 +160,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPlotArea#setInsideHeight:member(1)
   package: ExcelScript!
   fullName: setInsideHeight(insideHeight)
-  summary: PlotArea の insideHeight 値を指定します。
+  summary: プロット領域の内側の高さの値を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -177,7 +177,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPlotArea#setInsideLeft:member(1)
   package: ExcelScript!
   fullName: setInsideLeft(insideLeft)
-  summary: PlotArea の insideLeft 値を指定します。
+  summary: プロット領域の内側の左の値を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -194,7 +194,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPlotArea#setInsideTop:member(1)
   package: ExcelScript!
   fullName: setInsideTop(insideTop)
-  summary: PlotArea の insideTop 値を指定します。
+  summary: プロット領域の内側の上の値を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -211,7 +211,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPlotArea#setInsideWidth:member(1)
   package: ExcelScript!
   fullName: setInsideWidth(insideWidth)
-  summary: PlotArea の insideWidth 値を指定します。
+  summary: プロット領域の内側の幅の値を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -228,7 +228,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPlotArea#setLeft:member(1)
   package: ExcelScript!
   fullName: setLeft(left)
-  summary: PlotArea の左の値を指定します。
+  summary: プロット領域の左の値を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -245,7 +245,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPlotArea#setPosition:member(1)
   package: ExcelScript!
   fullName: setPosition(position)
-  summary: PlotArea の位置を指定します。
+  summary: プロット領域の位置を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -262,7 +262,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPlotArea#setTop:member(1)
   package: ExcelScript!
   fullName: setTop(top)
-  summary: PlotArea の最上位の値を指定します。
+  summary: プロット領域の上の値を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -279,7 +279,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPlotArea#setWidth:member(1)
   package: ExcelScript!
   fullName: setWidth(width)
-  summary: PlotArea の幅の値を指定します。
+  summary: プロット領域の幅の値を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -293,9 +293,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 2498dbde0ed965ddea96e4039fc8fd20c473c8e0
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 244940a83d5ce9d335ed07152e1989692256e9aa
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419643"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606879"

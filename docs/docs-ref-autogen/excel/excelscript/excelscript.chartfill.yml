@@ -34,15 +34,15 @@ methods:
     content: 'setSolidColor(color: string): void;'
     parameters:
     - id: color
-      description: '背景の色を表す HTML カラーコード。フォーム \# RRGGBB (例: "FFA500")、または名前付きの html 色 (例: 「オレンジ」)。'
+      description: '背景の色を表す HTML カラー コード \# (RRGGBB 形式 ("FFA500"など) または名前付き HTML 色 (例: "orange") です。'
       type: string
     return:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: d33b09062079157785b412603d9f36f7736e6d92
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: e90710f2f898cebee541ca3eb4eb9923eb8dfe14
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416891"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606587"

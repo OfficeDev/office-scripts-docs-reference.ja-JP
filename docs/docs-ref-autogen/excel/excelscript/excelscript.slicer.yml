@@ -3,7 +3,7 @@ name: ExcelScript.Slicer
 uid: ExcelScript!ExcelScript.Slicer:interface
 package: ExcelScript!
 fullName: ExcelScript.Slicer
-summary: ブック内のスライサーオブジェクトを表します。
+summary: ブック内の `Slicer` オブジェクトを表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getHeight:member(1)
   package: ExcelScript!
   fullName: getHeight()
-  summary: スライサーの高さ (ポイント数) を表します。 "引数が無効であるか、存在しないか、または形式が正しくありません。" という例外がスローされます。 負の値で設定した場合、または入力に0の場合は例外。
+  summary: スライサーの高さ (ポイント数) を表します。 負の値 `InvalidArgument` または 0 を入力として設定すると、例外をスローします。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getIsFilterCleared:member(1)
   package: ExcelScript!
   fullName: getIsFilterCleared()
-  summary: スライサーに現在適用されているフィルターがすべて消去されている場合、true となります。
+  summary: 値は `true` 、スライサーに現在適用されているフィルターすべてがクリアされている場合です。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getLeft:member(1)
   package: ExcelScript!
   fullName: getLeft()
-  summary: スライサーの左側からワークシートの左までの距離を表します (ポイント数)。 "引数が無効であるか、存在しないか、または形式が正しくありません。" という例外がスローされます。 負の値を入力として設定した場合の例外。
+  summary: スライサーの左側からワークシートの左までの距離を表します (ポイント数)。 負の値 `InvalidArgument` を入力として設定すると、エラーをスローします。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getSlicerItem:member(1)
   package: ExcelScript!
   fullName: getSlicerItem(key)
-  summary: そのキーまたは名前を使用してスライサー アイテムを取得します。 スライサーアイテムが存在しない場合、この関数は、プロパティが次の値に設定されたオブジェクトを返します。 `isNullObject``true`<!-- -->.
+  summary: そのキーまたは名前を使用してスライサー アイテムを取得します。 スライサーアイテムが存在しない場合、この関数はプロパティが次に設定された `isNullObject` オブジェクトを返します。 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -138,7 +138,7 @@ methods:
     content: 'getSlicerItem(key: string): SlicerItem | undefined;'
     parameters:
     - id: key
-      description: 取得するスライサーのキーまたは名前を指定します。
+      description: 取得するスライサーのキーまたは名前。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.SlicerItem:interface" /> | undefined
@@ -147,7 +147,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getSlicerItems:member(1)
   package: ExcelScript!
   fullName: getSlicerItems()
-  summary: スライサーに含まれる SlicerItems のコレクションを表します。
+  summary: スライサーの一部であるスライサー アイテムのコレクションを表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -160,7 +160,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getSortBy:member(1)
   package: ExcelScript!
   fullName: getSortBy()
-  summary: スライサーに含まれるアイテムの並べ替え順序を表します。 可能な値は、"DataSourceOrder"、"昇順"、"降順" です。
+  summary: スライサーに含まれるアイテムの並べ替え順序を表します。 指定できる値は、"DataSourceOrder"、"昇順"、"降順" です。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -173,7 +173,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getStyle:member(1)
   package: ExcelScript!
   fullName: getStyle()
-  summary: スライサー スタイルを表す定数値。 可能な値は次のとおりです。 "SlicerStyleLight1" は "SlicerStyleLight6"、"TableStyleOther1" ~ "TableStyleOther2"、"SlicerStyleDark1" ~ "SlicerStyleDark6" です。 ブックに存在するカスタムのユーザー定義スタイルも指定できます。
+  summary: スライサー スタイルを表す定数値。 指定できる値は、"SlicerStyleLight1" ~ "SlicerStyleLight6"、"TableStyleOther1" ~ "TableStyleOther2"、"SlicerStyleDark1" ~ "SlicerStyleDark6" です。 ブックに存在するカスタムのユーザー定義スタイルも指定できます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -186,7 +186,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getTop:member(1)
   package: ExcelScript!
   fullName: getTop()
-  summary: スライサーの上端からワークシートの上端までの距離を表します (ポイント数)。 "引数が無効であるか、存在しないか、または形式が正しくありません。" という例外がスローされます。 負の値を入力として設定した場合の例外。
+  summary: スライサーの上端からワークシートの上端までの距離を表します (ポイント数)。 負の値 `InvalidArgument` を入力として設定すると、エラーをスローします。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -199,7 +199,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getWidth:member(1)
   package: ExcelScript!
   fullName: getWidth()
-  summary: スライサーの幅 (ポイント数) を表します。 "引数が無効であるか、存在しないか、または形式が正しくありません。" という例外がスローされます。 負の値で設定した場合、または入力に0の場合は例外。
+  summary: スライサーの幅 (ポイント数) を表します。 負の値 `InvalidArgument` または 0 を入力として設定すると、エラーをスローします。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -225,7 +225,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#selectItems:member(1)
   package: ExcelScript!
   fullName: selectItems(items)
-  summary: キーに基づいてスライサーアイテムを選択します。 以前の選択はクリアされます。 配列が空の場合、既定ではすべてのアイテムが選択されます。
+  summary: キーに基づいてスライサー アイテムを選択します。 前の選択はクリアされます。 配列が空の場合、すべてのアイテムが既定で選択されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -233,7 +233,7 @@ methods:
     content: 'selectItems(items?: string[]): void;'
     parameters:
     - id: items
-      description: 省略可能。 選択するスライサーアイテムの名前を指定します。
+      description: 省略可能。 選択する指定されたスライサー アイテム名。
       type: string[]
     return:
       type: void
@@ -259,7 +259,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#setHeight:member(1)
   package: ExcelScript!
   fullName: setHeight(height)
-  summary: スライサーの高さ (ポイント数) を表します。 "引数が無効であるか、存在しないか、または形式が正しくありません。" という例外がスローされます。 負の値で設定した場合、または入力に0の場合は例外。
+  summary: スライサーの高さ (ポイント数) を表します。 負の値 `InvalidArgument` または 0 を入力として設定すると、例外をスローします。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -276,7 +276,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#setLeft:member(1)
   package: ExcelScript!
   fullName: setLeft(left)
-  summary: スライサーの左側からワークシートの左までの距離を表します (ポイント数)。 "引数が無効であるか、存在しないか、または形式が正しくありません。" という例外がスローされます。 負の値を入力として設定した場合の例外。
+  summary: スライサーの左側からワークシートの左までの距離を表します (ポイント数)。 負の値 `InvalidArgument` を入力として設定すると、エラーをスローします。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -310,7 +310,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#setSortBy:member(1)
   package: ExcelScript!
   fullName: setSortBy(sortBy)
-  summary: スライサーに含まれるアイテムの並べ替え順序を表します。 可能な値は、"DataSourceOrder"、"昇順"、"降順" です。
+  summary: スライサーに含まれるアイテムの並べ替え順序を表します。 指定できる値は、"DataSourceOrder"、"昇順"、"降順" です。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -327,7 +327,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#setStyle:member(1)
   package: ExcelScript!
   fullName: setStyle(style)
-  summary: スライサー スタイルを表す定数値。 可能な値は次のとおりです。 "SlicerStyleLight1" は "SlicerStyleLight6"、"TableStyleOther1" ~ "TableStyleOther2"、"SlicerStyleDark1" ~ "SlicerStyleDark6" です。 ブックに存在するカスタムのユーザー定義スタイルも指定できます。
+  summary: スライサー スタイルを表す定数値。 指定できる値は、"SlicerStyleLight1" ~ "SlicerStyleLight6"、"TableStyleOther1" ~ "TableStyleOther2"、"SlicerStyleDark1" ~ "SlicerStyleDark6" です。 ブックに存在するカスタムのユーザー定義スタイルも指定できます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -344,7 +344,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#setTop:member(1)
   package: ExcelScript!
   fullName: setTop(top)
-  summary: スライサーの上端からワークシートの上端までの距離を表します (ポイント数)。 "引数が無効であるか、存在しないか、または形式が正しくありません。" という例外がスローされます。 負の値を入力として設定した場合の例外。
+  summary: スライサーの上端からワークシートの上端までの距離を表します (ポイント数)。 負の値 `InvalidArgument` を入力として設定すると、エラーをスローします。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -361,7 +361,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#setWidth:member(1)
   package: ExcelScript!
   fullName: setWidth(width)
-  summary: スライサーの幅 (ポイント数) を表します。 "引数が無効であるか、存在しないか、または形式が正しくありません。" という例外がスローされます。 負の値で設定した場合、または入力に0の場合は例外。
+  summary: スライサーの幅 (ポイント数) を表します。 負の値 `InvalidArgument` または 0 を入力として設定すると、エラーをスローします。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -375,9 +375,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 4136caf5e44c73d4f4a4ef5d7379a80e370d5ef9
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: e77939566a567014410472a3a707d5c624220469
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554772"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606012"

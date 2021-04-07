@@ -3,7 +3,7 @@ name: ExcelScript.ChartTrendlineLabelFormat
 uid: ExcelScript!ExcelScript.ChartTrendlineLabelFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.ChartTrendlineLabelFormat
-summary: グラフの近似曲線ラベルの書式設定プロパティをカプセル化します。
+summary: グラフの傾向線ラベルの書式プロパティをカプセル化します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabelFormat#getBorder:member(1)
   package: ExcelScript!
   fullName: getBorder()
-  summary: 色、linestyle、およびウエイトを含む罫線の書式を指定します。
+  summary: 色、線のスタイル、太さなど、罫線の形式を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabelFormat#getFill:member(1)
   package: ExcelScript!
   fullName: getFill()
-  summary: 現在のグラフの近似曲線ラベルの塗りつぶし書式を指定します。
+  summary: 現在のグラフの傾向線ラベルの塗りつぶしの形式を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabelFormat#getFont:member(1)
   package: ExcelScript!
   fullName: getFont()
-  summary: グラフの近似曲線ラベルのフォント属性 (フォント名、フォントサイズ、色など) を指定します。
+  summary: グラフの傾向線ラベルのフォント属性 (フォント名、フォント サイズ、色など) を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,9 +49,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.ChartFont:interface" />
       description: ''
 metadata:
-  ms.openlocfilehash: 0830f7c4527fd1b5b50b2ed8b04de4f42d839c38
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: bd5eb3a45779061c21b69399056af9b1ce764cdd
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419503"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606795"

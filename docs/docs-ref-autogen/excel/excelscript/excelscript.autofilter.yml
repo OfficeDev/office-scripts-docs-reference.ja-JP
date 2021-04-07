@@ -3,7 +3,7 @@ name: ExcelScript.AutoFilter
 uid: ExcelScript!ExcelScript.AutoFilter:interface
 package: ExcelScript!
 fullName: ExcelScript.AutoFilter
-summary: オートフィルターオブジェクトを表します。 オートフィルターは、Excel の列の値を、セルの内容に基づいて特定のフィルターに変換します。
+summary: オブジェクトを表 `AutoFilter` します。 オートフィルターは、セルの内容に基づいて Excel 列の値を特定のフィルターに変換します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -26,13 +26,13 @@ methods:
               ): void;
     parameters:
     - id: range
-      description: オートフィルターが適用される範囲を指定します。
+      description: オートフィルターが適用される範囲。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: columnIndex
-      description: オートフィルターが適用される0から始まる列インデックス。
+      description: オートフィルターが適用される 0 から始る列インデックス。
       type: number
     - id: criteria
-      description: フィルター条件を選択します。
+      description: フィルター条件。
       type: <xref uid="ExcelScript!ExcelScript.FilterCriteria:interface" />
     return:
       type: void
@@ -67,7 +67,7 @@ methods:
   uid: ExcelScript!ExcelScript.AutoFilter#getEnabled:member(1)
   package: ExcelScript!
   fullName: getEnabled()
-  summary: オートフィルターを有効にするかどうかを指定します。
+  summary: オートフィルターが有効になっている場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -80,7 +80,7 @@ methods:
   uid: ExcelScript!ExcelScript.AutoFilter#getIsDataFiltered:member(1)
   package: ExcelScript!
   fullName: getIsDataFiltered()
-  summary: オートフィルターにフィルター条件を適用するかどうかを指定します。
+  summary: オートフィルターにフィルター条件がある場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -93,7 +93,7 @@ methods:
   uid: ExcelScript!ExcelScript.AutoFilter#getRange:member(1)
   package: ExcelScript!
   fullName: getRange()
-  summary: '`Range`適用する範囲を表すオブジェクトを返し `AutoFilter` ます。 `Range`に関連付けられたオブジェクトがない場合`AutoFilter`<!-- -->の場合、このメソッドは、プロパティが次の値に設定されたオブジェクトを返します。 `isNullObject``true`<!-- -->.'
+  summary: '`Range`オートフィルターを適用する範囲を表すオブジェクトを返します。 AutoFilter に関連付けられたオブジェクトがない場合、このメソッドはプロパティを設定したオブジェクト `Range` `isNullObject` を次の値に戻します。 `true`<!-- -->.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -129,9 +129,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 1dbc1c191f25e138a30a64923da20b27f0f1d6d8
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: a865026c221bc283e64e00b8829f0eb05148ec61
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554668"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606615"

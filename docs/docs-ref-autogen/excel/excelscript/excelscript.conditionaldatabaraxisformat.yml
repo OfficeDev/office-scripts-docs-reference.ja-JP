@@ -3,7 +3,7 @@ name: ExcelScript.ConditionalDataBarAxisFormat
 uid: ExcelScript!ExcelScript.ConditionalDataBarAxisFormat:enum
 package: ExcelScript!
 fullName: ExcelScript.ConditionalDataBarAxisFormat
-summary: データバーの軸の書式設定オプションを表します。
+summary: データ バー軸の書式オプションを表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -21,9 +21,9 @@ fields:
   package: ExcelScript!
   summary: ''
 metadata:
-  ms.openlocfilehash: 8274afd14b7c8c33c32a7267ff1fc65c810f42c9
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: d402455b566086b0b2ff94cadc05961841ef40a3
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415926"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606746"

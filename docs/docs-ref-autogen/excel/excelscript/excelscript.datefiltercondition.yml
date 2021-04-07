@@ -3,7 +3,7 @@ name: ExcelScript.DateFilterCondition
 uid: ExcelScript!ExcelScript.DateFilterCondition:enum
 package: ExcelScript!
 fullName: ExcelScript.DateFilterCondition
-summary: 日付フィルターを適用することによって許容されるすべての条件を表す列挙。 フィールドに適用される PivotFilter の種類を構成するために使用します。
+summary: 日付フィルターを適用できる、受け入れ可能なすべての条件を表す列挙型。 フィールドに適用されるピボットフィルターの種類を構成するために使用します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -12,114 +12,114 @@ fields:
   uid: ExcelScript!ExcelScript.DateFilterCondition.after:member
   package: ExcelScript!
   summary: >-
-    日付は比較演算子の日付より後になります。
+    日付はコンパレータ日付の後です。
 
 
-    必要な条件: {`comparator`<!-- -->}<!-- -->. オプションの条件: {`wholeDays`<!-- -->}<!-- -->.
+    必須の条件: {`comparator`<!-- -->}<!-- -->. オプションの条件: {`wholeDays`<!-- -->}<!-- -->.
 - name: afterOrEqualTo
   uid: ExcelScript!ExcelScript.DateFilterCondition.afterOrEqualTo:member
   package: ExcelScript!
   summary: >-
-    日付が比較演算子の日付より後であるか等しい。
+    Date はコンパレータ日付以降です。
 
 
-    必要な条件: {`comparator`<!-- -->}<!-- -->. オプションの条件: {`wholeDays`<!-- -->}<!-- -->.
+    必須の条件: {`comparator`<!-- -->}<!-- -->. オプションの条件: {`wholeDays`<!-- -->}<!-- -->.
 - name: allDatesInPeriodApril
   uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodApril:member
   package: ExcelScript!
-  summary: 日付は4月です。
+  summary: 日付は 4 月です。
 - name: allDatesInPeriodAugust
   uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodAugust:member
   package: ExcelScript!
-  summary: 日付は8月です。
+  summary: 日付は 8 月です。
 - name: allDatesInPeriodDecember
   uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodDecember:member
   package: ExcelScript!
-  summary: 日付は12月です。
+  summary: 日付は 12 月です。
 - name: allDatesInPeriodFebruary
   uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodFebruary:member
   package: ExcelScript!
-  summary: 日付は2月です。
+  summary: 日付は 2 月です。
 - name: allDatesInPeriodJanuary
   uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodJanuary:member
   package: ExcelScript!
-  summary: 日付は1月になります。
+  summary: 日付は 1 月です。
 - name: allDatesInPeriodJuly
   uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodJuly:member
   package: ExcelScript!
-  summary: 日付は7月の日付です。
+  summary: 日付は 7 月です。
 - name: allDatesInPeriodJune
   uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodJune:member
   package: ExcelScript!
-  summary: 日付は6月です。
+  summary: 日付は 6 月です。
 - name: allDatesInPeriodMarch
   uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodMarch:member
   package: ExcelScript!
-  summary: 日付は3月です。
+  summary: 日付は 3 月です。
 - name: allDatesInPeriodMay
   uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodMay:member
   package: ExcelScript!
-  summary: 日付は5月になります。
+  summary: 日付は 5 月です。
 - name: allDatesInPeriodNovember
   uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodNovember:member
   package: ExcelScript!
-  summary: 日付は11月です。
+  summary: 日付は 11 月です。
 - name: allDatesInPeriodOctober
   uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodOctober:member
   package: ExcelScript!
-  summary: 日付は10月です。
+  summary: 日付は 10 月です。
 - name: allDatesInPeriodQuarter1
   uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodQuarter1:member
   package: ExcelScript!
-  summary: 日付は四半期1です。
+  summary: 日付は四半期 1 です。
 - name: allDatesInPeriodQuarter2
   uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodQuarter2:member
   package: ExcelScript!
-  summary: 日付が第2四半期になっています。
+  summary: 日付は四半期 2 です。
 - name: allDatesInPeriodQuarter3
   uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodQuarter3:member
   package: ExcelScript!
-  summary: 日付が第3四半期になっています。
+  summary: 日付は四半期 3 です。
 - name: allDatesInPeriodQuarter4
   uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodQuarter4:member
   package: ExcelScript!
-  summary: 日付が第4四半期になっています。
+  summary: 日付は四半期 4 です。
 - name: allDatesInPeriodSeptember
   uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodSeptember:member
   package: ExcelScript!
-  summary: 日付は9月です。
+  summary: 日付は 9 月です。
 - name: before
   uid: ExcelScript!ExcelScript.DateFilterCondition.before:member
   package: ExcelScript!
   summary: >-
-    日付は比較演算子の前の日付です。
+    Date はコンパレータ日付より前です。
 
 
-    必要な条件: {`comparator`<!-- -->}<!-- -->. オプションの条件: {`wholeDays`<!-- -->}<!-- -->.
+    必須の条件: {`comparator`<!-- -->}<!-- -->. オプションの条件: {`wholeDays`<!-- -->}<!-- -->.
 - name: beforeOrEqualTo
   uid: ExcelScript!ExcelScript.DateFilterCondition.beforeOrEqualTo:member
   package: ExcelScript!
   summary: >-
-    日付が比較演算子の日付より前であるか等しい。
+    Date はコンパレータ日付より前か等しいかです。
 
 
-    必要な条件: {`comparator`<!-- -->}<!-- -->. オプションの条件: {`wholeDays`<!-- -->}<!-- -->.
+    必須の条件: {`comparator`<!-- -->}<!-- -->. オプションの条件: {`wholeDays`<!-- -->}<!-- -->.
 - name: between
   uid: ExcelScript!ExcelScript.DateFilterCondition.between:member
   package: ExcelScript!
   summary: >-
-    `lowerBound`日付と `upperBound` 日付の間。
+    間 `lowerBound` と `upperBound` 日付。
 
 
-    必要な条件: {`lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->. オプションの条件: {`wholeDays`<!-- -->, `exclusive`<!-- -->}<!-- -->.
+    必須の条件: {`lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->. オプションの条件: {`wholeDays`<!-- -->, `exclusive`<!-- -->}<!-- -->.
 - name: equals
   uid: ExcelScript!ExcelScript.DateFilterCondition.equals:member
   package: ExcelScript!
   summary: >-
-    比較基準に等しい。
+    比較条件に等しい。
 
 
-    必要な条件: {`comparator`<!-- -->}<!-- -->. オプションの条件: {`wholeDays`<!-- -->, `exclusive`<!-- -->}<!-- -->.
+    必須の条件: {`comparator`<!-- -->}<!-- -->. オプションの条件: {`wholeDays`<!-- -->, `exclusive`<!-- -->}<!-- -->.
 - name: lastMonth
   uid: ExcelScript!ExcelScript.DateFilterCondition.lastMonth:member
   package: ExcelScript!
@@ -131,11 +131,11 @@ fields:
 - name: lastWeek
   uid: ExcelScript!ExcelScript.DateFilterCondition.lastWeek:member
   package: ExcelScript!
-  summary: 日付を先週にします。
+  summary: 日付は先週です。
 - name: lastYear
   uid: ExcelScript!ExcelScript.DateFilterCondition.lastYear:member
   package: ExcelScript!
-  summary: 日付が去年。
+  summary: 日付は昨年です。
 - name: nextMonth
   uid: ExcelScript!ExcelScript.DateFilterCondition.nextMonth:member
   package: ExcelScript!
@@ -147,31 +147,31 @@ fields:
 - name: nextWeek
   uid: ExcelScript!ExcelScript.DateFilterCondition.nextWeek:member
   package: ExcelScript!
-  summary: 日付は来週
+  summary: 日付は来週です。
 - name: nextYear
   uid: ExcelScript!ExcelScript.DateFilterCondition.nextYear:member
   package: ExcelScript!
-  summary: 日付は次の年です。
+  summary: 日付は来年です。
 - name: thisMonth
   uid: ExcelScript!ExcelScript.DateFilterCondition.thisMonth:member
   package: ExcelScript!
-  summary: この月の日付を指定します。
+  summary: 日付は今月です。
 - name: thisQuarter
   uid: ExcelScript!ExcelScript.DateFilterCondition.thisQuarter:member
   package: ExcelScript!
-  summary: この四半期は日付です。
+  summary: 日付は、この四半期です。
 - name: thisWeek
   uid: ExcelScript!ExcelScript.DateFilterCondition.thisWeek:member
   package: ExcelScript!
-  summary: 今週の日付を指定します。
+  summary: 日付は今週です。
 - name: thisYear
   uid: ExcelScript!ExcelScript.DateFilterCondition.thisYear:member
   package: ExcelScript!
-  summary: 日付は今年の日付です。
+  summary: 日付は今年です。
 - name: today
   uid: ExcelScript!ExcelScript.DateFilterCondition.today:member
   package: ExcelScript!
-  summary: 今日の日付。
+  summary: 日付は今日です。
 - name: tomorrow
   uid: ExcelScript!ExcelScript.DateFilterCondition.tomorrow:member
   package: ExcelScript!
@@ -179,19 +179,19 @@ fields:
 - name: unknown
   uid: ExcelScript!ExcelScript.DateFilterCondition.unknown:member
   package: ExcelScript!
-  summary: DateFilterCondition が不明であるか、サポートされていません。
+  summary: '`DateFilterCondition` 不明またはサポートされていません。'
 - name: yearToDate
   uid: ExcelScript!ExcelScript.DateFilterCondition.yearToDate:member
   package: ExcelScript!
-  summary: 日付は同じ年の日付になります。
+  summary: 日付は同じ年から現在の日付です。
 - name: yesterday
   uid: ExcelScript!ExcelScript.DateFilterCondition.yesterday:member
   package: ExcelScript!
   summary: 日付は昨日です。
 metadata:
-  ms.openlocfilehash: 70721c940cbf9dc9a73aa07a830206c4b7682b18
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 5891d34af071d4ed7b798acef50b8b875c2f3aa4
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415450"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607138"

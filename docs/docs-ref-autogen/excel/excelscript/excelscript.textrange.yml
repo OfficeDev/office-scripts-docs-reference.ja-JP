@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextRange#getFont:member(1)
   package: ExcelScript!
   fullName: getFont()
-  summary: テキスト範囲のフォント属性を表す ShapeFont オブジェクトを返します。
+  summary: テキスト範囲の `ShapeFont` フォント属性を表すオブジェクトを返します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -34,10 +34,10 @@ methods:
     content: 'getSubstring(start: number, length?: number): TextRange;'
     parameters:
     - id: start
-      description: テキスト範囲から取得する最初の文字の0から始まるインデックス。
+      description: テキスト範囲から取得する最初の文字の 0 から始るインデックス。
       type: number
     - id: length
-      description: 省略可能。 新しいテキスト範囲で返される文字数を指定します。 引数 length を省略すると、テキスト範囲の最後の段落の先頭までのすべての文字が返されます。
+      description: 省略可能。 新しいテキスト範囲で返される文字数。 length を省略すると、テキスト範囲の最後の段落の最初から最後までのすべての文字が返されます。
       type: number
     return:
       type: <xref uid="ExcelScript!ExcelScript.TextRange:interface" />
@@ -73,9 +73,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 6a02ebe67d08adff8c825586a96ada8c4177a1d4
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: b83f4e4ba30aafab3008fd7370d17230213f13f3
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420238"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51605284"

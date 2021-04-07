@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPoint#getHasDataLabel:member(1)
   package: ExcelScript!
   fullName: getHasDataLabel()
-  summary: データポイントにデータラベルがあるかどうかを表します。 等高線グラフには適用されません。
+  summary: データ ポイントにデータ ラベルが含されているかどうかを表します。 等高線グラフには適用されません。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPoint#getMarkerBackgroundColor:member(1)
   package: ExcelScript!
   fullName: getMarkerBackgroundColor()
-  summary: データポイントのマーカーの背景色の HTML カラーコード表現 (たとえば、 \# ff0000 はは赤を表します)。
+  summary: データ ポイントのマーカー背景色の HTML カラー コード表現 \# (FF0000 は赤を表すなど)。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPoint#getMarkerForegroundColor:member(1)
   package: ExcelScript!
   fullName: getMarkerForegroundColor()
-  summary: 'データポイントのマーカーの前景色を HTML カラーコードで表現したものです (例: \# ff0000 はは赤を表します)。'
+  summary: データ ポイントのマーカー前景色の HTML カラー コード表現 \# (FF0000 は赤を表すなど)。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPoint#getMarkerStyle:member(1)
   package: ExcelScript!
   fullName: getMarkerStyle()
-  summary: データ ポイントのマーカー スタイルを表します。 詳細については、「ExcelScript」を参照してください。
+  summary: データ ポイントのマーカー スタイルを表します。 詳細は「`ExcelScript.ChartMarkerStyle`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -117,7 +117,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPoint#setHasDataLabel:member(1)
   package: ExcelScript!
   fullName: setHasDataLabel(hasDataLabel)
-  summary: データポイントにデータラベルがあるかどうかを表します。 等高線グラフには適用されません。
+  summary: データ ポイントにデータ ラベルが含されているかどうかを表します。 等高線グラフには適用されません。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -134,7 +134,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPoint#setMarkerBackgroundColor:member(1)
   package: ExcelScript!
   fullName: setMarkerBackgroundColor(markerBackgroundColor)
-  summary: データポイントのマーカーの背景色の HTML カラーコード表現 (たとえば、 \# ff0000 はは赤を表します)。
+  summary: データ ポイントのマーカー背景色の HTML カラー コード表現 \# (FF0000 は赤を表すなど)。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -151,7 +151,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPoint#setMarkerForegroundColor:member(1)
   package: ExcelScript!
   fullName: setMarkerForegroundColor(markerForegroundColor)
-  summary: 'データポイントのマーカーの前景色を HTML カラーコードで表現したものです (例: \# ff0000 はは赤を表します)。'
+  summary: データ ポイントのマーカー前景色の HTML カラー コード表現 \# (FF0000 は赤を表すなど)。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -185,7 +185,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPoint#setMarkerStyle:member(1)
   package: ExcelScript!
   fullName: setMarkerStyle(markerStyle)
-  summary: データ ポイントのマーカー スタイルを表します。 詳細については、「ExcelScript」を参照してください。
+  summary: データ ポイントのマーカー スタイルを表します。 詳細は「`ExcelScript.ChartMarkerStyle`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -199,9 +199,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: d11ca64902c23c50ed0f8ae592d26c935e90319d
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: aad9a80594512307275935c6921b43f74220bd16
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419622"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606865"

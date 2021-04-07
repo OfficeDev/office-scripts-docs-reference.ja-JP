@@ -3,7 +3,7 @@ name: ExcelScript.AutoFillType
 uid: ExcelScript!ExcelScript.AutoFillType:enum
 package: ExcelScript!
 fullName: ExcelScript.AutoFillType
-summary: オートフィルがブック内の範囲に使用されている場合の動作の種類を指定します。
+summary: ブック内の範囲で AutoFill を使用する場合の動作の種類。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -11,27 +11,27 @@ fields:
 - name: fillCopy
   uid: ExcelScript!ExcelScript.AutoFillType.fillCopy:member
   package: ExcelScript!
-  summary: 選択したデータに基づいて隣接するセルにデータを設定します。
+  summary: 選択したデータに基づいて、隣接するセルにデータを設定します。
 - name: fillDays
   uid: ExcelScript!ExcelScript.AutoFillType.fillDays:member
   package: ExcelScript!
-  summary: 状況に応じて、月の日付または曜日のどちらかにパターンを基づいた日付の "FillSeries" のバージョン。
+  summary: コンテキストに応じて、月の日または週の日のどちらかにパターンを基にした日付の "FillSeries" のバージョン。
 - name: fillDefault
   uid: ExcelScript!ExcelScript.AutoFillType.fillDefault:member
   package: ExcelScript!
-  summary: 周囲のデータ (オートフィルの標準動作) に基づいて隣接するセルにデータを設定します。
+  summary: 周囲のデータ (標準のオートフィル動作) に基づいて、隣接するセルに値を設定します。
 - name: fillFormats
   uid: ExcelScript!ExcelScript.AutoFillType.fillFormats:member
   package: ExcelScript!
-  summary: 隣接するセルに、選択した数式を挿入します。
+  summary: 隣接するセルに、選択した数式を設定します。
 - name: fillMonths
   uid: ExcelScript!ExcelScript.AutoFillType.fillMonths:member
   package: ExcelScript!
-  summary: 月のパターンをベースとする日付の "FillSeries" のバージョン。
+  summary: 月のパターンを基にした日付の "FillSeries" のバージョン。
 - name: fillSeries
   uid: ExcelScript!ExcelScript.AutoFillType.fillSeries:member
   package: ExcelScript!
-  summary: 隣接するセルに、コピーしたセルのパターンに従ったデータを設定します。
+  summary: コピーしたセルのパターンに従うデータを隣接するセルに設定します。
 - name: fillValues
   uid: ExcelScript!ExcelScript.AutoFillType.fillValues:member
   package: ExcelScript!
@@ -39,27 +39,27 @@ fields:
 - name: fillWeekdays
   uid: ExcelScript!ExcelScript.AutoFillType.fillWeekdays:member
   package: ExcelScript!
-  summary: 曜日のパターンを基準とした日付の "FillSeries" のバージョン。曜日のみが含まれます。
+  summary: 曜日にパターンを基に、平日のみを含む日付のバージョン "FillSeries"。
 - name: fillYears
   uid: ExcelScript!ExcelScript.AutoFillType.fillYears:member
   package: ExcelScript!
-  summary: 年のパターンをベースにした日付の "FillSeries" のバージョン。
+  summary: 年のパターンを基にした日付の "FillSeries" のバージョン。
 - name: flashFill
   uid: ExcelScript!ExcelScript.AutoFillType.flashFill:member
   package: ExcelScript!
-  summary: Excel の FlashFill 機能を使用して、隣接するセルを設定します。
+  summary: Excel のフラッシュ塗りつぶし機能を使用して、隣接するセルに値を設定します。
 - name: growthTrend
   uid: ExcelScript!ExcelScript.AutoFillType.growthTrend:member
   package: ExcelScript!
-  summary: 拡張傾向モデルに従って隣接するセルの値を入力する数値の "FillSeries" のバージョン。
+  summary: 成長傾向モデルに従って隣接するセルの値を入力する数値の "FillSeries" のバージョン。
 - name: linearTrend
   uid: ExcelScript!ExcelScript.AutoFillType.linearTrend:member
   package: ExcelScript!
   summary: 線形傾向モデルに従って隣接するセルの値を入力する数値の "FillSeries" のバージョン。
 metadata:
-  ms.openlocfilehash: d9d6e6a7f8b28503a3c39ab71c66cbcbf5581dec
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 60a16fedc18165357a796d52d714408cb4288ca7
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417314"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606629"

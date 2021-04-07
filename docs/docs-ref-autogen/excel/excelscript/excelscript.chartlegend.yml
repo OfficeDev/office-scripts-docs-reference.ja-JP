@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegend#getFormat:member(1)
   package: ExcelScript!
   fullName: getFormat()
-  summary: 塗りつぶしとフォントの書式設定を含む、グラフの凡例の書式設定を表します。
+  summary: 塗りつぶしとフォントの書式設定を含むグラフの凡例の書式設定を表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegend#getHeight:member(1)
   package: ExcelScript!
   fullName: getHeight()
-  summary: グラフの凡例の高さをポイント単位で指定します。 凡例が表示されていない場合は Null。
+  summary: グラフ上の凡例の高さをポイントで指定します。 値は `null` 、凡例が表示されない場合です。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegend#getLeft:member(1)
   package: ExcelScript!
   fullName: getLeft()
-  summary: グラフの凡例の左のポイントを指定します。 凡例が表示されていない場合は Null。
+  summary: グラフ上の凡例の左の値をポイントで指定します。 値は `null` 、凡例が表示されない場合です。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegend#getOverlay:member(1)
   package: ExcelScript!
   fullName: getOverlay()
-  summary: グラフの凡例をグラフのメイン本文と重ねて表示するかどうかを指定します。
+  summary: グラフの凡例がグラフの本体と重なっている必要がある場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegend#getPosition:member(1)
   package: ExcelScript!
   fullName: getPosition()
-  summary: グラフの凡例の位置を指定します。 詳細については、「ExcelScript」を参照してください。
+  summary: グラフ上の凡例の位置を指定します。 詳細は「`ExcelScript.ChartLegendPosition`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegend#getShowShadow:member(1)
   package: ExcelScript!
   fullName: getShowShadow()
-  summary: 凡例をグラフ上に影付きにするかどうかを指定します。
+  summary: 凡例にグラフに影が付く場合を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegend#getTop:member(1)
   package: ExcelScript!
   fullName: getTop()
-  summary: グラフの凡例の上端を指定します。
+  summary: グラフの凡例の上部を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -117,7 +117,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegend#getVisible:member(1)
   package: ExcelScript!
   fullName: getVisible()
-  summary: ChartLegend を表示するかどうかを指定します。
+  summary: グラフの凡例が表示される場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegend#getWidth:member(1)
   package: ExcelScript!
   fullName: getWidth()
-  summary: グラフの凡例の幅をポイント単位で指定します。 凡例が表示されていない場合は Null。
+  summary: グラフ上の凡例の幅をポイント単位で指定します。 値は `null` 、凡例が表示されない場合です。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegend#setHeight:member(1)
   package: ExcelScript!
   fullName: setHeight(height)
-  summary: グラフの凡例の高さをポイント単位で指定します。 凡例が表示されていない場合は Null。
+  summary: グラフ上の凡例の高さをポイントで指定します。 値は `null` 、凡例が表示されない場合です。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -160,7 +160,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegend#setLeft:member(1)
   package: ExcelScript!
   fullName: setLeft(left)
-  summary: グラフの凡例の左のポイントを指定します。 凡例が表示されていない場合は Null。
+  summary: グラフ上の凡例の左の値をポイントで指定します。 値は `null` 、凡例が表示されない場合です。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -177,7 +177,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegend#setOverlay:member(1)
   package: ExcelScript!
   fullName: setOverlay(overlay)
-  summary: グラフの凡例をグラフのメイン本文と重ねて表示するかどうかを指定します。
+  summary: グラフの凡例がグラフの本体と重なっている必要がある場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -194,7 +194,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegend#setPosition:member(1)
   package: ExcelScript!
   fullName: setPosition(position)
-  summary: グラフの凡例の位置を指定します。 詳細については、「ExcelScript」を参照してください。
+  summary: グラフ上の凡例の位置を指定します。 詳細は「`ExcelScript.ChartLegendPosition`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -211,7 +211,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegend#setShowShadow:member(1)
   package: ExcelScript!
   fullName: setShowShadow(showShadow)
-  summary: 凡例をグラフ上に影付きにするかどうかを指定します。
+  summary: 凡例にグラフに影が付く場合を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -228,7 +228,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegend#setTop:member(1)
   package: ExcelScript!
   fullName: setTop(top)
-  summary: グラフの凡例の上端を指定します。
+  summary: グラフの凡例の上部を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -245,7 +245,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegend#setVisible:member(1)
   package: ExcelScript!
   fullName: setVisible(visible)
-  summary: ChartLegend を表示するかどうかを指定します。
+  summary: グラフの凡例が表示される場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -262,7 +262,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegend#setWidth:member(1)
   package: ExcelScript!
   fullName: setWidth(width)
-  summary: グラフの凡例の幅をポイント単位で指定します。 凡例が表示されていない場合は Null。
+  summary: グラフ上の凡例の幅をポイント単位で指定します。 値は `null` 、凡例が表示されない場合です。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -276,9 +276,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: a9523d4791f4725323ac5527c5bcc708f2922d8e
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: eab9ab999ce36aee22186b9febbeaca8cd935fd5
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419783"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606573"

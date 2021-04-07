@@ -3,7 +3,7 @@ name: ExcelScript.ConditionalFormatPresetCriterion
 uid: ExcelScript!ExcelScript.ConditionalFormatPresetCriterion:enum
 package: ExcelScript!
 fullName: ExcelScript.ConditionalFormatPresetCriterion
-summary: 既定の条件の条件付き書式の条件を表します。
+summary: 事前設定された条件の条件付き書式の種類の条件を表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -117,9 +117,9 @@ fields:
   package: ExcelScript!
   summary: ''
 metadata:
-  ms.openlocfilehash: 0046e5db73c25e4da091441c7846cfb61a719c5b
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 51de035596124dccfa3c9c0143362235b1a17a6b
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415842"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607089"

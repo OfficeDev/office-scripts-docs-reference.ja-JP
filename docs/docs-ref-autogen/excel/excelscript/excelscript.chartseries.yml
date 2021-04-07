@@ -21,7 +21,7 @@ methods:
     content: 'addChartTrendline(type?: ChartTrendlineType): ChartTrendline;'
     parameters:
     - id: type
-      description: 近似曲線の種類を指定します。 既定値は "Linear" です。 詳細については、「ExcelScript. ChartTrendline 曲線」を参照してください。
+      description: 傾向線の種類を指定します。 既定値は "Linear" です。 詳細は「`ExcelScript.ChartTrendline`」をご覧ください。
       type: <xref uid="ExcelScript!ExcelScript.ChartTrendlineType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.ChartTrendline:interface" />
@@ -43,7 +43,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getAxisGroup:member(1)
   package: ExcelScript!
   fullName: getAxisGroup()
-  summary: 指定されたデータ系列のグループを指定します。
+  summary: 指定した系列のグループを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -95,7 +95,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getChartTrendline:member(1)
   package: ExcelScript!
   fullName: getChartTrendline(index)
-  summary: インデックス (項目配列内の挿入順序) に基づいて trendline オブジェクトを取得します。
+  summary: items 配列の挿入順序である、インデックス別の trendline オブジェクトを取得します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -103,7 +103,7 @@ methods:
     content: 'getChartTrendline(index: number): ChartTrendline;'
     parameters:
     - id: index
-      description: アイテムの配列内の挿入順序を表します。
+      description: items 配列の挿入順序を表します。
       type: number
     return:
       type: <xref uid="ExcelScript!ExcelScript.ChartTrendline:interface" />
@@ -112,7 +112,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getChartType:member(1)
   package: ExcelScript!
   fullName: getChartType()
-  summary: グラフ系列の種類を表します。 詳細については、「ExcelScript」を参照してください。
+  summary: グラフ系列の種類を表します。 詳細は「`ExcelScript.ChartType`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -125,7 +125,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getDataLabels:member(1)
   package: ExcelScript!
   fullName: getDataLabels()
-  summary: 系列に含まれるすべてのデータ ラベルのコレクションを表します。
+  summary: 系列内のすべてのデータ ラベルのコレクションを表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -138,7 +138,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getDimensionValues:member(1)
   package: ExcelScript!
   fullName: getDimensionValues(dimension)
-  summary: グラフの系列の1つの次元から値を取得します。 指定できるのは、指定された次元と、グラフ系列に対するデータのマッピング方法によって異なります。
+  summary: グラフ系列の 1 つのディメンションから値を取得します。 これらは、指定したディメンションとグラフ系列のデータのマップ方法に応じて、カテゴリ値またはデータ値のいずれかになります。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -146,7 +146,7 @@ methods:
     content: 'getDimensionValues(dimension: ChartSeriesDimension): string[];'
     parameters:
     - id: dimension
-      description: データが格納されている軸の次元
+      description: データの基点である軸の次元。
       type: <xref uid="ExcelScript!ExcelScript.ChartSeriesDimension:enum" />
     return:
       type: string[]
@@ -155,7 +155,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getDoughnutHoleSize:member(1)
   package: ExcelScript!
   fullName: getDoughnutHoleSize()
-  summary: グラフ系列のドーナツの穴の大きさを表します。 ドーナツ グラフと doughnutExploded グラフでのみ有効です。 無効なグラフで無効な引数の例外をスローします。
+  summary: グラフ系列のドーナツの穴の大きさを表します。 ドーナツグラフとドーナツ分解グラフでのみ有効です。 無効なグラフ `InvalidArgument` にエラーをスローします。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -168,7 +168,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getExplosion:member(1)
   package: ExcelScript!
   fullName: getExplosion()
-  summary: 円グラフまたはドーナツグラフのスライスの切り出し値を指定します。 切り出し表示は行われず、スライスの先端が円の中心と一致する場合、0 を返します。
+  summary: 円グラフまたはドーナツ グラフのスライスの展開値を指定します。 切り出し表示は行われず、スライスの先端が円の中心と一致する場合、0 を返します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -181,7 +181,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getFiltered:member(1)
   package: ExcelScript!
   fullName: getFiltered()
-  summary: データ系列にフィルターを適用するかどうかを指定します。 等高線グラフには適用されません。
+  summary: 系列をフィルター処理する場合に指定します。 等高線グラフには適用されません。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -194,7 +194,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getFirstSliceAngle:member(1)
   package: ExcelScript!
   fullName: getFirstSliceAngle()
-  summary: 最初の円グラフまたはドーナツグラフのスライスの角度を、水平方向から時計回りに角度で指定します。 円グラフ、3-D 円グラフ、およびドーナツ グラフにのみ適用されます。 0 から 360 の範囲内で値を指定できます。
+  summary: 最初の円グラフまたはドーナツ グラフのスライスの角度を度 (垂直方向から時計回り) で指定します。 円グラフ、3-D 円グラフ、およびドーナツ グラフにのみ適用されます。 0 から 360 の範囲内で値を指定できます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -207,7 +207,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getFormat:member(1)
   package: ExcelScript!
   fullName: getFormat()
-  summary: グラフの系列の書式設定を表します。これには、塗りつぶしと線の書式設定が含まれます。
+  summary: 塗りつぶしと線の書式設定を含むグラフ系列の書式設定を表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -220,7 +220,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getGapWidth:member(1)
   package: ExcelScript!
   fullName: getGapWidth()
-  summary: グラフ系列間に設けられる間隔を表します。 横棒グラフと縦棒グラフ、および折れ線グラフと円グラフの特定のクラスに対してのみ有効です。 無効なグラフで無効な引数の例外をスローします。
+  summary: グラフ系列間に設けられる間隔を表します。 棒グラフと棒グラフ、および線グラフと円グラフの特定のクラスでのみ有効です。 無効なグラフに無効な引数例外をスローします。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -233,7 +233,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getGradientMaximumColor:member(1)
   package: ExcelScript!
   fullName: getGradientMaximumColor()
-  summary: 地域マップのグラフ系列の最大値の色を指定します。
+  summary: 地域マップ グラフ系列の最大値の色を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -246,7 +246,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getGradientMaximumType:member(1)
   package: ExcelScript!
   fullName: getGradientMaximumType()
-  summary: 地域マップのグラフ系列の最大値の種類を指定します。
+  summary: 地域マップ グラフ系列の最大値の種類を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -259,7 +259,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getGradientMaximumValue:member(1)
   package: ExcelScript!
   fullName: getGradientMaximumValue()
-  summary: 地域マップのグラフ系列の最大値を指定します。
+  summary: 地域マップ グラフ系列の最大値を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -272,7 +272,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getGradientMidpointColor:member(1)
   package: ExcelScript!
   fullName: getGradientMidpointColor()
-  summary: 地域マップのグラフ系列の中間値の色を指定します。
+  summary: 地域マップ グラフ系列の中点の値の色を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -285,7 +285,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getGradientMidpointType:member(1)
   package: ExcelScript!
   fullName: getGradientMidpointType()
-  summary: 地域マップのグラフ系列の中間値の種類を指定します。
+  summary: 地域マップ グラフ系列の中点値の種類を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -298,7 +298,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getGradientMidpointValue:member(1)
   package: ExcelScript!
   fullName: getGradientMidpointValue()
-  summary: 地域マップのグラフ系列の中間値を指定します。
+  summary: 地域マップ グラフ系列の中点の値を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -311,7 +311,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getGradientMinimumColor:member(1)
   package: ExcelScript!
   fullName: getGradientMinimumColor()
-  summary: 地域マップのグラフ系列の最小値の色を指定します。
+  summary: 地域マップ グラフ系列の最小値の色を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -324,7 +324,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getGradientMinimumType:member(1)
   package: ExcelScript!
   fullName: getGradientMinimumType()
-  summary: 地域マップのグラフ系列の最小値の種類を指定します。
+  summary: 地域マップ グラフ系列の最小値の種類を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -337,7 +337,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getGradientMinimumValue:member(1)
   package: ExcelScript!
   fullName: getGradientMinimumValue()
-  summary: 地域マップのグラフ系列の最小値を指定します。
+  summary: 地域マップ グラフ系列の最小値を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -350,7 +350,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getGradientStyle:member(1)
   package: ExcelScript!
   fullName: getGradientStyle()
-  summary: 地域マップグラフの系列のグラデーションのスタイルを指定します。
+  summary: 地域マップ グラフの系列グラデーション スタイルを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -363,7 +363,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getHasDataLabels:member(1)
   package: ExcelScript!
   fullName: getHasDataLabels()
-  summary: 系列にデータラベルを含むかどうかを指定します。
+  summary: 系列にデータ ラベルが含む場合を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -376,7 +376,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getInvertColor:member(1)
   package: ExcelScript!
   fullName: getInvertColor()
-  summary: 系列内の負のデータ要素の塗りつぶしの色を指定します。
+  summary: 系列内の負のデータ ポイントの塗りつぶしの色を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -389,7 +389,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getInvertIfNegative:member(1)
   package: ExcelScript!
   fullName: getInvertIfNegative()
-  summary: True の場合、Excel は負の数に対応する項目のパターンを反転します。
+  summary: True の場合は、負の数に対応するアイテムのパターンを反転します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -441,7 +441,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getMarkerSize:member(1)
   package: ExcelScript!
   fullName: getMarkerSize()
-  summary: グラフの系列のマーカーサイズを指定します。
+  summary: グラフ系列のマーカー サイズを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -454,7 +454,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getMarkerStyle:member(1)
   package: ExcelScript!
   fullName: getMarkerStyle()
-  summary: グラフ系列のマーカーのスタイルを指定します。 詳細については、「ExcelScript」を参照してください。
+  summary: グラフ系列のマーカー スタイルを指定します。 詳細は「`ExcelScript.ChartMarkerStyle`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -467,7 +467,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getName:member(1)
   package: ExcelScript!
   fullName: getName()
-  summary: グラフの系列の名前を指定します。 名前の長さは、255文字を超えることはできません。
+  summary: グラフ内の系列の名前を指定します。 名前の長さは 255 文字を超えることはできません。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -480,7 +480,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getOverlap:member(1)
   package: ExcelScript!
   fullName: getOverlap()
-  summary: 横棒と縦棒の配置方法を指定します。 -100 から100までの値を指定できます。 2-D 横棒グラフと 2-D 縦棒グラフにのみ適用されます。
+  summary: 横棒と縦棒の配置方法を指定します。 –100 ~ 100 の値を指定できます。 2-D 横棒グラフと 2-D 縦棒グラフにのみ適用されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -493,7 +493,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getParentLabelStrategy:member(1)
   package: ExcelScript!
   fullName: getParentLabelStrategy()
-  summary: ツリーマップグラフの系列の親ラベル戦略領域を指定します。
+  summary: ツリーマップ グラフの系列の親ラベル戦略領域を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -506,7 +506,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getPlotOrder:member(1)
   package: ExcelScript!
   fullName: getPlotOrder()
-  summary: グラフ種類グループ内のグラフ系列のプロット順序を指定します。
+  summary: グラフ グループ内のグラフ系列のプロット順序を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -532,7 +532,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getSecondPlotSize:member(1)
   package: ExcelScript!
   fullName: getSecondPlotSize()
-  summary: 補助円グラフ付き円グラフまたは補助縦棒付き円グラフのいずれかの2番目のセクションのサイズを、補助円グラフのサイズに対する割合で指定します。 5 から 200 の範囲内で値を指定できます。
+  summary: 円グラフまたは円グラフの 2 番目のセクションのサイズを、プライマリ 円グラフのサイズに対する割合で指定します。 5 から 200 の範囲内で値を指定できます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -545,7 +545,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getShowConnectorLines:member(1)
   package: ExcelScript!
   fullName: getShowConnectorLines()
-  summary: ウォーターフォールグラフでコネクタ線を表示するかどうかを指定します。
+  summary: ウォーターフォール グラフにコネクタ線を表示するかどうかを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -558,7 +558,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getShowLeaderLines:member(1)
   package: ExcelScript!
   fullName: getShowLeaderLines()
-  summary: データ系列の各データラベルに引き出し線を表示するかどうかを指定します。
+  summary: 系列内のデータ ラベルごとに引き出し線を表示するかどうかを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -571,7 +571,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getShowShadow:member(1)
   package: ExcelScript!
   fullName: getShowShadow()
-  summary: 系列に影が付いているかどうかを指定します。
+  summary: 系列に影が付く場合を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -584,7 +584,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getSmooth:member(1)
   package: ExcelScript!
   fullName: getSmooth()
-  summary: データ系列を滑らかにするかどうかを指定します。 折れ線グラフおよび散布図にのみ適用されます。
+  summary: 系列が滑らかな場合に指定します。 線グラフと散布図にのみ適用されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -597,7 +597,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getSplitType:member(1)
   package: ExcelScript!
   fullName: getSplitType()
-  summary: 補助円グラフ付き円グラフまたは補助縦棒グラフ付き円グラフの2つのセクションの分割方法を指定します。
+  summary: 円グラフまたは円グラフの 2 つのセクションを分割する方法を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -610,7 +610,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getSplitValue:member(1)
   package: ExcelScript!
   fullName: getSplitValue()
-  summary: 補助円グラフ付き円グラフまたは補助縦棒付き円グラフの2つのセクションを区切るしきい値を指定します。
+  summary: 円グラフまたは棒グラフの 2 つのセクションを分割するしきい値を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -623,7 +623,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getTrendlines:member(1)
   package: ExcelScript!
   fullName: getTrendlines()
-  summary: データ系列の近似曲線のコレクションです。
+  summary: 系列内の傾向線のコレクション。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -636,7 +636,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getVaryByCategories:member(1)
   package: ExcelScript!
   fullName: getVaryByCategories()
-  summary: True の場合、Excel は各データマーカーに異なる色またはパターンを割り当てます。 グラフに含まれるデータ系列は 1 つだけでなければなりません。
+  summary: True の場合、Excel は、各データ マーカーに異なる色またはパターンを割り当てる。 グラフに含まれるデータ系列は 1 つだけでなければなりません。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -675,7 +675,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setAxisGroup:member(1)
   package: ExcelScript!
   fullName: setAxisGroup(axisGroup)
-  summary: 指定されたデータ系列のグループを指定します。
+  summary: 指定した系列のグループを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -709,7 +709,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setBubbleSizes:member(1)
   package: ExcelScript!
   fullName: setBubbleSizes(sourceData)
-  summary: グラフの系列のバブルサイズを設定します。 バブル チャートにのみ適用されます。
+  summary: グラフ系列のバブル サイズを設定します。 バブル チャートにのみ適用されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -717,7 +717,7 @@ methods:
     content: 'setBubbleSizes(sourceData: Range): void;'
     parameters:
     - id: sourceData
-      description: データ ソースに対応する Range オブジェクトです。
+      description: ソース `Range` データに対応するオブジェクト。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
     return:
       type: void
@@ -726,7 +726,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setChartType:member(1)
   package: ExcelScript!
   fullName: setChartType(chartType)
-  summary: グラフ系列の種類を表します。 詳細については、「ExcelScript」を参照してください。
+  summary: グラフ系列の種類を表します。 詳細は「`ExcelScript.ChartType`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -743,7 +743,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setDoughnutHoleSize:member(1)
   package: ExcelScript!
   fullName: setDoughnutHoleSize(doughnutHoleSize)
-  summary: グラフ系列のドーナツの穴の大きさを表します。 ドーナツ グラフと doughnutExploded グラフでのみ有効です。 無効なグラフで無効な引数の例外をスローします。
+  summary: グラフ系列のドーナツの穴の大きさを表します。 ドーナツグラフとドーナツ分解グラフでのみ有効です。 無効なグラフ `InvalidArgument` にエラーをスローします。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -760,7 +760,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setExplosion:member(1)
   package: ExcelScript!
   fullName: setExplosion(explosion)
-  summary: 円グラフまたはドーナツグラフのスライスの切り出し値を指定します。 切り出し表示は行われず、スライスの先端が円の中心と一致する場合、0 を返します。
+  summary: 円グラフまたはドーナツ グラフのスライスの展開値を指定します。 切り出し表示は行われず、スライスの先端が円の中心と一致する場合、0 を返します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -777,7 +777,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setFiltered:member(1)
   package: ExcelScript!
   fullName: setFiltered(filtered)
-  summary: データ系列にフィルターを適用するかどうかを指定します。 等高線グラフには適用されません。
+  summary: 系列をフィルター処理する場合に指定します。 等高線グラフには適用されません。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -794,7 +794,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setFirstSliceAngle:member(1)
   package: ExcelScript!
   fullName: setFirstSliceAngle(firstSliceAngle)
-  summary: 最初の円グラフまたはドーナツグラフのスライスの角度を、水平方向から時計回りに角度で指定します。 円グラフ、3-D 円グラフ、およびドーナツ グラフにのみ適用されます。 0 から 360 の範囲内で値を指定できます。
+  summary: 最初の円グラフまたはドーナツ グラフのスライスの角度を度 (垂直方向から時計回り) で指定します。 円グラフ、3-D 円グラフ、およびドーナツ グラフにのみ適用されます。 0 から 360 の範囲内で値を指定できます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -811,7 +811,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setGapWidth:member(1)
   package: ExcelScript!
   fullName: setGapWidth(gapWidth)
-  summary: グラフ系列間に設けられる間隔を表します。 横棒グラフと縦棒グラフ、および折れ線グラフと円グラフの特定のクラスに対してのみ有効です。 無効なグラフで無効な引数の例外をスローします。
+  summary: グラフ系列間に設けられる間隔を表します。 棒グラフと棒グラフ、および線グラフと円グラフの特定のクラスでのみ有効です。 無効なグラフに無効な引数例外をスローします。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -828,7 +828,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setGradientMaximumColor:member(1)
   package: ExcelScript!
   fullName: setGradientMaximumColor(gradientMaximumColor)
-  summary: 地域マップのグラフ系列の最大値の色を指定します。
+  summary: 地域マップ グラフ系列の最大値の色を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -845,7 +845,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setGradientMaximumType:member(1)
   package: ExcelScript!
   fullName: setGradientMaximumType(gradientMaximumType)
-  summary: 地域マップのグラフ系列の最大値の種類を指定します。
+  summary: 地域マップ グラフ系列の最大値の種類を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -865,7 +865,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setGradientMaximumValue:member(1)
   package: ExcelScript!
   fullName: setGradientMaximumValue(gradientMaximumValue)
-  summary: 地域マップのグラフ系列の最大値を指定します。
+  summary: 地域マップ グラフ系列の最大値を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -882,7 +882,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setGradientMidpointColor:member(1)
   package: ExcelScript!
   fullName: setGradientMidpointColor(gradientMidpointColor)
-  summary: 地域マップのグラフ系列の中間値の色を指定します。
+  summary: 地域マップ グラフ系列の中点の値の色を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -899,7 +899,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setGradientMidpointType:member(1)
   package: ExcelScript!
   fullName: setGradientMidpointType(gradientMidpointType)
-  summary: 地域マップのグラフ系列の中間値の種類を指定します。
+  summary: 地域マップ グラフ系列の中点値の種類を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -919,7 +919,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setGradientMidpointValue:member(1)
   package: ExcelScript!
   fullName: setGradientMidpointValue(gradientMidpointValue)
-  summary: 地域マップのグラフ系列の中間値を指定します。
+  summary: 地域マップ グラフ系列の中点の値を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -936,7 +936,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setGradientMinimumColor:member(1)
   package: ExcelScript!
   fullName: setGradientMinimumColor(gradientMinimumColor)
-  summary: 地域マップのグラフ系列の最小値の色を指定します。
+  summary: 地域マップ グラフ系列の最小値の色を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -953,7 +953,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setGradientMinimumType:member(1)
   package: ExcelScript!
   fullName: setGradientMinimumType(gradientMinimumType)
-  summary: 地域マップのグラフ系列の最小値の種類を指定します。
+  summary: 地域マップ グラフ系列の最小値の種類を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -973,7 +973,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setGradientMinimumValue:member(1)
   package: ExcelScript!
   fullName: setGradientMinimumValue(gradientMinimumValue)
-  summary: 地域マップのグラフ系列の最小値を指定します。
+  summary: 地域マップ グラフ系列の最小値を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -990,7 +990,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setGradientStyle:member(1)
   package: ExcelScript!
   fullName: setGradientStyle(gradientStyle)
-  summary: 地域マップグラフの系列のグラデーションのスタイルを指定します。
+  summary: 地域マップ グラフの系列グラデーション スタイルを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1007,7 +1007,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setHasDataLabels:member(1)
   package: ExcelScript!
   fullName: setHasDataLabels(hasDataLabels)
-  summary: 系列にデータラベルを含むかどうかを指定します。
+  summary: 系列にデータ ラベルが含む場合を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1024,7 +1024,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setInvertColor:member(1)
   package: ExcelScript!
   fullName: setInvertColor(invertColor)
-  summary: 系列内の負のデータ要素の塗りつぶしの色を指定します。
+  summary: 系列内の負のデータ ポイントの塗りつぶしの色を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1041,7 +1041,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setInvertIfNegative:member(1)
   package: ExcelScript!
   fullName: setInvertIfNegative(invertIfNegative)
-  summary: True の場合、Excel は負の数に対応する項目のパターンを反転します。
+  summary: True の場合は、負の数に対応するアイテムのパターンを反転します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1092,7 +1092,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setMarkerSize:member(1)
   package: ExcelScript!
   fullName: setMarkerSize(markerSize)
-  summary: グラフの系列のマーカーサイズを指定します。
+  summary: グラフ系列のマーカー サイズを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1109,7 +1109,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setMarkerStyle:member(1)
   package: ExcelScript!
   fullName: setMarkerStyle(markerStyle)
-  summary: グラフ系列のマーカーのスタイルを指定します。 詳細については、「ExcelScript」を参照してください。
+  summary: グラフ系列のマーカー スタイルを指定します。 詳細は「`ExcelScript.ChartMarkerStyle`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1126,7 +1126,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setName:member(1)
   package: ExcelScript!
   fullName: setName(name)
-  summary: グラフの系列の名前を指定します。 名前の長さは、255文字を超えることはできません。
+  summary: グラフ内の系列の名前を指定します。 名前の長さは 255 文字を超えることはできません。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1143,7 +1143,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setOverlap:member(1)
   package: ExcelScript!
   fullName: setOverlap(overlap)
-  summary: 横棒と縦棒の配置方法を指定します。 -100 から100までの値を指定できます。 2-D 横棒グラフと 2-D 縦棒グラフにのみ適用されます。
+  summary: 横棒と縦棒の配置方法を指定します。 –100 ~ 100 の値を指定できます。 2-D 横棒グラフと 2-D 縦棒グラフにのみ適用されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1160,7 +1160,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setParentLabelStrategy:member(1)
   package: ExcelScript!
   fullName: setParentLabelStrategy(parentLabelStrategy)
-  summary: ツリーマップグラフの系列の親ラベル戦略領域を指定します。
+  summary: ツリーマップ グラフの系列の親ラベル戦略領域を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1180,7 +1180,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setPlotOrder:member(1)
   package: ExcelScript!
   fullName: setPlotOrder(plotOrder)
-  summary: グラフ種類グループ内のグラフ系列のプロット順序を指定します。
+  summary: グラフ グループ内のグラフ系列のプロット順序を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1197,7 +1197,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setSecondPlotSize:member(1)
   package: ExcelScript!
   fullName: setSecondPlotSize(secondPlotSize)
-  summary: 補助円グラフ付き円グラフまたは補助縦棒付き円グラフのいずれかの2番目のセクションのサイズを、補助円グラフのサイズに対する割合で指定します。 5 から 200 の範囲内で値を指定できます。
+  summary: 円グラフまたは円グラフの 2 番目のセクションのサイズを、プライマリ 円グラフのサイズに対する割合で指定します。 5 から 200 の範囲内で値を指定できます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1214,7 +1214,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setShowConnectorLines:member(1)
   package: ExcelScript!
   fullName: setShowConnectorLines(showConnectorLines)
-  summary: ウォーターフォールグラフでコネクタ線を表示するかどうかを指定します。
+  summary: ウォーターフォール グラフにコネクタ線を表示するかどうかを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1231,7 +1231,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setShowLeaderLines:member(1)
   package: ExcelScript!
   fullName: setShowLeaderLines(showLeaderLines)
-  summary: データ系列の各データラベルに引き出し線を表示するかどうかを指定します。
+  summary: 系列内のデータ ラベルごとに引き出し線を表示するかどうかを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1248,7 +1248,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setShowShadow:member(1)
   package: ExcelScript!
   fullName: setShowShadow(showShadow)
-  summary: 系列に影が付いているかどうかを指定します。
+  summary: 系列に影が付く場合を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1265,7 +1265,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setSmooth:member(1)
   package: ExcelScript!
   fullName: setSmooth(smooth)
-  summary: データ系列を滑らかにするかどうかを指定します。 折れ線グラフおよび散布図にのみ適用されます。
+  summary: 系列が滑らかな場合に指定します。 線グラフと散布図にのみ適用されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1282,7 +1282,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setSplitType:member(1)
   package: ExcelScript!
   fullName: setSplitType(splitType)
-  summary: 補助円グラフ付き円グラフまたは補助縦棒グラフ付き円グラフの2つのセクションの分割方法を指定します。
+  summary: 円グラフまたは円グラフの 2 つのセクションを分割する方法を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1299,7 +1299,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setSplitValue:member(1)
   package: ExcelScript!
   fullName: setSplitValue(splitValue)
-  summary: 補助円グラフ付き円グラフまたは補助縦棒付き円グラフの2つのセクションを区切るしきい値を指定します。
+  summary: 円グラフまたは棒グラフの 2 つのセクションを分割するしきい値を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1316,7 +1316,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setValues:member(1)
   package: ExcelScript!
   fullName: setValues(sourceData)
-  summary: グラフの系列の値を設定します。 散布図の場合、Y 軸の値を意味します。
+  summary: グラフ系列の値を設定します。 散布図の場合は、y 軸の値を参照します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1324,7 +1324,7 @@ methods:
     content: 'setValues(sourceData: Range): void;'
     parameters:
     - id: sourceData
-      description: データ ソースに対応する Range オブジェクトです。
+      description: ソース `Range` データに対応するオブジェクト。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
     return:
       type: void
@@ -1333,7 +1333,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setVaryByCategories:member(1)
   package: ExcelScript!
   fullName: setVaryByCategories(varyByCategories)
-  summary: True の場合、Excel は各データマーカーに異なる色またはパターンを割り当てます。 グラフに含まれるデータ系列は 1 つだけでなければなりません。
+  summary: True の場合、Excel は、各データ マーカーに異なる色またはパターンを割り当てる。 グラフに含まれるデータ系列は 1 つだけでなければなりません。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1350,7 +1350,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setXAxisValues:member(1)
   package: ExcelScript!
   fullName: setXAxisValues(sourceData)
-  summary: グラフの系列の X 軸の値を設定します。 散布図にのみ適用されます。
+  summary: グラフ系列の x 軸の値を設定します。 散布図にのみ適用されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1358,15 +1358,15 @@ methods:
     content: 'setXAxisValues(sourceData: Range): void;'
     parameters:
     - id: sourceData
-      description: データ ソースに対応する Range オブジェクトです。
+      description: ソース `Range` データに対応するオブジェクト。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
     return:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 8b9c62141ae265c4c4435ac88caf93de77fd4d84
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 81c5a9a881511db17fcc6ac1650410ef94dc472d
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419601"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606851"

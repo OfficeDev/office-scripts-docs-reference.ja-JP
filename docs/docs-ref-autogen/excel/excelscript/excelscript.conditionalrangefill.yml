@@ -3,7 +3,7 @@ name: ExcelScript.ConditionalRangeFill
 uid: ExcelScript!ExcelScript.ConditionalRangeFill:interface
 package: ExcelScript!
 fullName: ExcelScript.ConditionalRangeFill
-summary: 条件範囲オブジェクトの背景を表します。
+summary: 条件付き範囲オブジェクトの背景を表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFill#getColor:member(1)
   package: ExcelScript!
   fullName: getColor()
-  summary: '塗りつぶしの色を表す HTML カラーコード ( \# 例: "FFA500")、または名前付きの html 色 (例: "RRGGBB")。'
+  summary: 塗りつぶしの色を表す HTML カラー コード \# (RRGGBB 形式 ("FFA500" など)、または名前付き HTML 色 ("オレンジ色" など) として指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFill#setColor:member(1)
   package: ExcelScript!
   fullName: setColor(color)
-  summary: '塗りつぶしの色を表す HTML カラーコード ( \# 例: "FFA500")、または名前付きの html 色 (例: "RRGGBB")。'
+  summary: 塗りつぶしの色を表す HTML カラー コード \# (RRGGBB 形式 ("FFA500" など)、または名前付き HTML 色 ("オレンジ色" など) として指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -53,9 +53,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 5c7cbb289160e9a35d89c749f3a144bca6e8c3cd
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 782063b34ada316708387c9e2411219c5472aacb
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419384"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607068"

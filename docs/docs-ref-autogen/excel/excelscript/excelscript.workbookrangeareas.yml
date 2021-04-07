@@ -3,7 +3,7 @@ name: ExcelScript.WorkbookRangeAreas
 uid: ExcelScript!ExcelScript.WorkbookRangeAreas:interface
 package: ExcelScript!
 fullName: ExcelScript.WorkbookRangeAreas
-summary: 複数のワークシート内の1つまたは複数の四角形の範囲のコレクションを表します。
+summary: 複数のワークシート内の 1 つ以上の四角形範囲のコレクションを表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorkbookRangeAreas#getAddresses:member(1)
   package: ExcelScript!
   fullName: getAddresses()
-  summary: 'A1 形式のアドレスの配列を返します。 Address 値には、セルの各長方形ブロックのワークシート名が格納されます (例: "Sheet1!A1: B4、Sheet1!D1: D4 ")。 読み取り専用です。'
+  summary: A1 スタイルのアドレスの配列を返します。 アドレスの値には、セルの四角形の各ブロックのワークシート名が含まれます (たとえば、「Sheet1!A1:B4, Sheet1!D1:D4")。 読み取り専用です。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorkbookRangeAreas#getAreas:member(1)
   package: ExcelScript!
   fullName: getAreas()
-  summary: RangeAreasCollection オブジェクトを取得します。コレクション内の各 RangeAreas は、1つのワークシート内の1つまたは複数の四角形の範囲を表します。
+  summary: オブジェクトを返 `RangeAreasCollection` します。 コレクション `RangeAreas` 内の各範囲は、1 つのワークシート内の 1 つ以上の四角形の範囲を表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorkbookRangeAreas#getRangeAreasBySheet:member(1)
   package: ExcelScript!
   fullName: getRangeAreasBySheet(key)
-  summary: コレクション内のワークシートの名前または id に基づいて、RangeAreas オブジェクトを返します。 ワークシートが存在しない場合、この関数は、プロパティが次の値に設定されたオブジェクトを返します。 `isNullObject``true`<!-- -->.
+  summary: コレクション内の `RangeAreas` ワークシート名または ID に基づいてオブジェクトを返します。 ワークシートが存在しない場合、この関数はプロパティが次の値に設定された `isNullObject` オブジェクトを返します。 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -47,7 +47,7 @@ methods:
     content: 'getRangeAreasBySheet(key: string): RangeAreas;'
     parameters:
     - id: key
-      description: ワークシートの名前または id。
+      description: ワークシートの名前または ID。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
@@ -56,7 +56,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorkbookRangeAreas#getRanges:member(1)
   package: ExcelScript!
   fullName: getRanges()
-  summary: RangeCollection オブジェクト内のこのオブジェクトを構成する範囲を返します。
+  summary: オブジェクト内のこのオブジェクトを構成する範囲を返 `RangeCollection` します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -66,9 +66,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />[]
       description: ''
 metadata:
-  ms.openlocfilehash: 314209691b999d9cbfe9b31caec70a30bb490d93
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: 2a4a022464cf1f54246d451331da6d84f2d57ec3
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554751"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51605305"

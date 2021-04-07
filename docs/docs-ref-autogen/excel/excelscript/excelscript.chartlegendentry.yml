@@ -3,7 +3,7 @@ name: ExcelScript.ChartLegendEntry
 uid: ExcelScript!ExcelScript.ChartLegendEntry:interface
 package: ExcelScript!
 fullName: ExcelScript.ChartLegendEntry
-summary: LegendEntryCollection の legendEntry を表します。
+summary: 内の凡例エントリを表します。 `legendEntryCollection`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegendEntry#getHeight:member(1)
   package: ExcelScript!
   fullName: getHeight()
-  summary: グラフの凡例の legendEntry の高さを指定します。
+  summary: グラフの凡例の凡例エントリの高さを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegendEntry#getIndex:member(1)
   package: ExcelScript!
   fullName: getIndex()
-  summary: グラフの凡例の legendEntry のインデックスを指定します。
+  summary: グラフ凡例の凡例エントリのインデックスを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegendEntry#getLeft:member(1)
   package: ExcelScript!
   fullName: getLeft()
-  summary: グラフの legendEntry の左側を指定します。
+  summary: グラフの凡例エントリの左の値を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegendEntry#getTop:member(1)
   package: ExcelScript!
   fullName: getTop()
-  summary: グラフの legendEntry の上部を指定します。
+  summary: グラフ凡例エントリの上部を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegendEntry#getVisible:member(1)
   package: ExcelScript!
   fullName: getVisible()
-  summary: グラフの凡例エントリを表示するかどうかを表します。
+  summary: グラフの凡例エントリの表示を表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegendEntry#getWidth:member(1)
   package: ExcelScript!
   fullName: getWidth()
-  summary: グラフの凡例に表示される凡例エントリの幅を表します。
+  summary: グラフ Legend の凡例エントリの幅を表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegendEntry#setVisible:member(1)
   package: ExcelScript!
   fullName: setVisible(visible)
-  summary: グラフの凡例エントリを表示するかどうかを表します。
+  summary: グラフの凡例エントリの表示を表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -105,9 +105,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 8bce41532fd56c707fdc407fcb976525c2738314
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: d98e7450d1c9d3c24a5b91dd6b32f77ae37fd31f
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419769"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606566"

@@ -3,7 +3,7 @@ name: ExcelScript.CellBorder
 uid: ExcelScript!ExcelScript.CellBorder:interface
 package: ExcelScript!
 fullName: ExcelScript.CellBorder
-summary: で返される1つの境界線のプロパティを表します。 `getCellProperties`<!-- -->, `getRowProperties`<!-- -->、 `getColumnProperties` またはの border プロパティの入力パラメーター `setCellProperties`<!-- -->, `setRowProperties`<!-- -->そして `setColumnProperties`<!-- -->.
+summary: 返される 1 つの罫線のプロパティを表します。 `getCellProperties`<!-- -->, `getRowProperties`<!-- -->そして `getColumnProperties`<!-- -->、または border プロパティの入力パラメーター `setCellProperties`<!-- -->, `setRowProperties`<!-- -->そして `setColumnProperties`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -58,9 +58,9 @@ properties:
     return:
       type: <xref uid="ExcelScript!ExcelScript.BorderWeight:enum" />
 metadata:
-  ms.openlocfilehash: 5892c241cee81f97e1b52001d2d8cbb02d03f295
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: a945edbecc207d55be2843978bd0084f60441b23
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417185"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607005"

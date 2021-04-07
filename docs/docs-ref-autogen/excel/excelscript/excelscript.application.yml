@@ -21,7 +21,7 @@ methods:
     content: 'calculate(calculationType: CalculationType): void;'
     parameters:
     - id: calculationType
-      description: 使用する計算の種類を指定します。 詳細については、「ExcelScript Type」を参照してください。
+      description: 使用する計算の種類を指定します。 詳細は「`ExcelScript.CalculationType`」をご覧ください。
       type: <xref uid="ExcelScript!ExcelScript.CalculationType:enum" />
     return:
       type: void
@@ -43,7 +43,7 @@ methods:
   uid: ExcelScript!ExcelScript.Application#getCalculationMode:member(1)
   package: ExcelScript!
   fullName: getCalculationMode()
-  summary: CalculationMode の定数によって定義されている、ブックで使用されている計算モードを返します。 可能な値は次のとおりです。 `Automatic`<!-- -->、Excel は再計算を制御します。 `AutomaticExceptTables`<!-- -->、Excel は再計算を制御しますが、テーブル内の変更は無視します。 `Manual`<!-- -->、ユーザーが要求すると、計算が行われます。
+  summary: ブック内の定数で定義されている計算モードを返します。 `ExcelScript.CalculationMode`<!-- -->. 指定できる値は次のとおりです。 `Automatic`<!-- -->、Excel が再計算を制御します。 `AutomaticExceptTables`<!-- -->、Excel は再計算を制御しますが、テーブルの変更は無視します。 `Manual`<!-- -->で、ユーザーが要求した場合に計算が行われます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -56,7 +56,7 @@ methods:
   uid: ExcelScript!ExcelScript.Application#getCalculationState:member(1)
   package: ExcelScript!
   fullName: getCalculationState()
-  summary: アプリケーションの計算の状態を返します。 詳細については、「ExcelScript State」を参照してください。
+  summary: アプリケーションの計算の状態を返します。 詳細は「`ExcelScript.CalculationState`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -69,7 +69,7 @@ methods:
   uid: ExcelScript!ExcelScript.Application#getCultureInfo:member(1)
   package: ExcelScript!
   fullName: getCultureInfo()
-  summary: 現在のシステムのカルチャ設定に基づく情報を提供します。 これには、カルチャ名、数値形式、およびその他のカルチャに依存する設定が含まれます。
+  summary: 現在のシステム カルチャ設定に基づく情報を提供します。 これには、カルチャ名、数値の書式設定、その他の文化的に依存する設定が含まれます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -82,7 +82,7 @@ methods:
   uid: ExcelScript!ExcelScript.Application#getDecimalSeparator:member(1)
   package: ExcelScript!
   fullName: getDecimalSeparator()
-  summary: 数値の小数点の記号として使用される文字列を取得します。 これは、Excel のローカル設定に基づいています。
+  summary: 数値の小数点として使用される文字列を取得します。 これは、ローカルの Excel 設定に基づいて行います。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -95,7 +95,7 @@ methods:
   uid: ExcelScript!ExcelScript.Application#getIterativeCalculation:member(1)
   package: ExcelScript!
   fullName: getIterativeCalculation()
-  summary: 反復計算の設定を返します。 Windows と Mac の Excel では、設定は Excel アプリケーションに適用されます。 Web 上の Excel およびその他のプラットフォームでは、設定は作業中のブックに適用されます。
+  summary: 反復計算の設定を返します。 Windows と Mac の Excel では、設定が Excel アプリケーションに適用されます。 Web および他のプラットフォームの Excel では、設定はアクティブなブックに適用されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -108,7 +108,7 @@ methods:
   uid: ExcelScript!ExcelScript.Application#getThousandsSeparator:member(1)
   package: ExcelScript!
   fullName: getThousandsSeparator()
-  summary: 数値の小数点の左側にある数字のグループを区切るために使用される文字列を取得します。 これは、Excel のローカル設定に基づいています。
+  summary: 数値の 10 進数の左側に数字のグループを区切る文字列を取得します。 これは、ローカルの Excel 設定に基づいて行います。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -121,7 +121,7 @@ methods:
   uid: ExcelScript!ExcelScript.Application#getUseSystemSeparators:member(1)
   package: ExcelScript!
   fullName: getUseSystemSeparators()
-  summary: Excel のシステム区切り記号を有効にするかどうかを指定します。 システムの区切り記号には、小数点の記号と桁区切り記号が含まれます。
+  summary: Excel のシステム区切り記号が有効になっている場合に指定します。 システムの区切り記号には、小数点と桁区切り記号が含まれます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -134,7 +134,7 @@ methods:
   uid: ExcelScript!ExcelScript.Application#setCalculationMode:member(1)
   package: ExcelScript!
   fullName: setCalculationMode(calculationMode)
-  summary: CalculationMode の定数によって定義されている、ブックで使用されている計算モードを返します。 可能な値は次のとおりです。 `Automatic`<!-- -->、Excel は再計算を制御します。 `AutomaticExceptTables`<!-- -->、Excel は再計算を制御しますが、テーブル内の変更は無視します。 `Manual`<!-- -->、ユーザーが要求すると、計算が行われます。
+  summary: ブック内の定数で定義されている計算モードを返します。 `ExcelScript.CalculationMode`<!-- -->. 指定できる値は次のとおりです。 `Automatic`<!-- -->、Excel が再計算を制御します。 `AutomaticExceptTables`<!-- -->、Excel は再計算を制御しますが、テーブルの変更は無視します。 `Manual`<!-- -->で、ユーザーが要求した場合に計算が行われます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -148,9 +148,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 3bb99af272686a3303d2564bbed7e972f6cde6e7
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: cdcd7a220d23bc540129c9547789a241c15fd3b2
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49418129"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606636"
