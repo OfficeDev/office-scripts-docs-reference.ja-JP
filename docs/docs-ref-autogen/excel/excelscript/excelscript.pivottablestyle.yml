@@ -3,7 +3,7 @@ name: ExcelScript.PivotTableStyle
 uid: ExcelScript!ExcelScript.PivotTableStyle:interface
 package: ExcelScript!
 fullName: ExcelScript.PivotTableStyle
-summary: ピボットテーブルのスタイルを表します。これは、ピボットテーブル領域でスタイル要素を定義します。
+summary: ピボットテーブル領域でスタイル要素を定義するピボットテーブル スタイルを表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTableStyle#delete:member(1)
   package: ExcelScript!
   fullName: delete()
-  summary: PivotTableStyle を削除します。
+  summary: ピボットテーブル スタイルを削除します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTableStyle#duplicate:member(1)
   package: ExcelScript!
   fullName: duplicate()
-  summary: すべてのスタイル要素のコピーでこの PivotTableStyle の複製を作成します。
+  summary: すべてのスタイル要素のコピーを含む、このピボットテーブル スタイルの複製を作成します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTableStyle#getName:member(1)
   package: ExcelScript!
   fullName: getName()
-  summary: PivotTableStyle の名前を取得します。
+  summary: ピボットテーブル スタイルの名前を取得します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTableStyle#getReadOnly:member(1)
   package: ExcelScript!
   fullName: getReadOnly()
-  summary: この PivotTableStyle オブジェクトが読み取り専用であるかどうかを指定します。
+  summary: このオブジェクトが読 `PivotTableStyle` み取り専用の場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTableStyle#setName:member(1)
   package: ExcelScript!
   fullName: setName(name)
-  summary: PivotTableStyle の名前を取得します。
+  summary: ピボットテーブル スタイルの名前を取得します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -79,9 +79,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: be48391a3f9d7768d0fa40f7b6af974cb3284a0d
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 3c51495b8a265c82b23429024dd5328bb324095b
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412028"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607453"

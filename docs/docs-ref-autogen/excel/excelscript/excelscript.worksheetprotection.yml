@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorksheetProtection#getProtected:member(1)
   package: ExcelScript!
   fullName: getProtected()
-  summary: ワークシートが保護されているかどうかを指定します。
+  summary: ワークシートが保護される場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorksheetProtection#protect:member(1)
   package: ExcelScript!
   fullName: protect(options, password)
-  summary: ワークシートを保護します。 ワークシートが既に保護されている場合は、失敗します。
+  summary: ワークシートを保護します。 ワークシートが既に保護されている場合は失敗します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -50,7 +50,7 @@ methods:
       description: 省略可能。 シートの保護のオプション。
       type: <xref uid="ExcelScript!ExcelScript.WorksheetProtectionOptions:interface" />
     - id: password
-      description: 省略可能。 シート保護のパスワードを入力します。
+      description: 省略可能。 シート保護パスワード。
       type: string
     return:
       type: void
@@ -67,15 +67,15 @@ methods:
     content: 'unprotect(password?: string): void;'
     parameters:
     - id: password
-      description: シートの保護パスワード。
+      description: シート保護パスワード。
       type: string
     return:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: a3153d184f1b8537b9f3f117c9b98748c4ed724c
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 80193c401b00684ff1b02adbdd1c4e5f600ccdb2
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415135"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607271"

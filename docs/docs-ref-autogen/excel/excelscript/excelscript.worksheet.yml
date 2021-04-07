@@ -39,13 +39,13 @@ methods:
               ): Chart;
     parameters:
     - id: type
-      description: グラフの種類を表します。 詳細については、「ExcelScript」を参照してください。
+      description: グラフの種類を表します。 詳細は「`ExcelScript.ChartType`」をご覧ください。
       type: <xref uid="ExcelScript!ExcelScript.ChartType:enum" />
     - id: sourceData
-      description: データ ソースに対応する Range オブジェクトです。
+      description: ソース `Range` データに対応するオブジェクト。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
     - id: seriesBy
-      description: 省略可能。 列や行がグラフのデータ系列として使用される方法を指定します。 詳細については、「ExcelScript Chart」を参照してください。
+      description: 省略可能。 列や行がグラフのデータ系列として使用される方法を指定します。 詳細は「`ExcelScript.ChartSeriesBy`」をご覧ください。
       type: <xref uid="ExcelScript!ExcelScript.ChartSeriesBy:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Chart:interface" />
@@ -54,7 +54,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#addComment:member(1)
   package: ExcelScript!
   fullName: addComment(cellAddress, content, contentType)
-  summary: 指定したセルで、指定した内容の新しいコメントを作成します。 `InvalidArgument`指定した範囲が1つのセルより大きい場合は、エラーがスローされます。
+  summary: 指定したセルで、指定した内容の新しいコメントを作成します。 指定 `InvalidArgument` された範囲が 1 つのセルより大きい場合、エラーがスローされます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -67,13 +67,13 @@ methods:
               ): Comment;
     parameters:
     - id: cellAddress
-      description: コメントを追加するセルを指定します。 Range オブジェクトまたは文字列を指定できます。 文字列型 (string) の場合は、シート名を含む完全な住所が含まれている必要があります。 `InvalidArgument`指定した範囲が1つのセルより大きい場合は、エラーがスローされます。
+      description: コメントが追加されるセル。 オブジェクトまたは文字列 `Range` を指定できます。 文字列の場合は、シート名を含む完全なアドレスを含む必要があります。 指定 `InvalidArgument` された範囲が 1 つのセルより大きい場合、エラーがスローされます。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: content
-      description: コメントの内容を示します。 文字列または CommentRichContent オブジェクトのいずれかを指定できます。 文字列はテキスト形式に対して使用されます。 CommentRichContent オブジェクトでは、メンションなど、他のコメント機能を使用できます。
+      description: コメントのコンテンツ。 文字列またはオブジェクトを指定 `CommentRichContent` できます。 文字列は、プレーン テキストに使用されます。 `CommentRichContent` オブジェクトは、メンションなどの他のコメント機能を使用できます。
       type: <xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" /> | string
     - id: contentType
-      description: 省略可能。 コメント内に含まれるコンテンツの種類。 既定値は enum です。 `ContentType.Plain`<!-- -->.
+      description: 省略可能。 コメントに含まれるコンテンツの種類。 既定値は enum です `ContentType.Plain`<!-- -->.
       type: <xref uid="ExcelScript!ExcelScript.ContentType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
@@ -82,7 +82,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#addGeometricShape:member(1)
   package: ExcelScript!
   fullName: addGeometricShape(geometricShapeType)
-  summary: 幾何学的図形をワークシートに追加します。 新しい図形を表す Shape オブジェクトを返します。
+  summary: 幾何学的図形をワークシートに追加します。 新しい図形 `Shape` を表すオブジェクトを返します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -90,7 +90,7 @@ methods:
     content: 'addGeometricShape(geometricShapeType: GeometricShapeType): Shape;'
     parameters:
     - id: geometricShapeType
-      description: ジオメトリック図形の種類を表します。 詳細については、「ExcelScript」を参照してください。
+      description: 幾何学的図形の種類を表します。 詳細は「`ExcelScript.GeometricShapeType`」をご覧ください。
       type: <xref uid="ExcelScript!ExcelScript.GeometricShapeType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
@@ -99,7 +99,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#addGroup:member(1)
   package: ExcelScript!
   fullName: addGroup(values)
-  summary: このコレクションのワークシート内の図形のサブセットをグループ化します。 図形の新しいグループを表す Shape オブジェクトを返します。
+  summary: このコレクションのワークシート内の図形のサブセットをグループ化します。 図形の新 `Shape` しいグループを表すオブジェクトを返します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -107,7 +107,7 @@ methods:
     content: 'addGroup(values: Array<string | Shape>): Shape;'
     parameters:
     - id: values
-      description: 図形 ID または図形オブジェクトの配列。
+      description: 図形の ID または図形オブジェクトの配列。
       type: Array&lt;string | <xref uid="ExcelScript!ExcelScript.Shape:interface" />&gt;
     return:
       type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
@@ -124,7 +124,7 @@ methods:
     content: 'addHorizontalPageBreak(pageBreakRange: Range | string): PageBreak;'
     parameters:
     - id: pageBreakRange
-      description: 改ページが追加される直後のセル範囲を指定します。
+      description: 追加するページブレークの直後の範囲。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: <xref uid="ExcelScript!ExcelScript.PageBreak:interface" />
@@ -133,7 +133,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#addImage:member(1)
   package: ExcelScript!
   fullName: addImage(base64ImageString)
-  summary: base64 エンコード文字列から画像を作成し、それをワークシートに追加します。 新しい画像を表す Shape オブジェクトを返します。
+  summary: base64 エンコード文字列から画像を作成し、それをワークシートに追加します。 新しいイメージ `Shape` を表すオブジェクトを返します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -141,7 +141,7 @@ methods:
     content: 'addImage(base64ImageString: string): Shape;'
     parameters:
     - id: base64ImageString
-      description: JPEG または PNG 形式のイメージを表す、base64 でエンコードされた文字列。
+      description: JPEG 形式または PNG 形式の画像を表す base64 エンコード文字列。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
@@ -150,7 +150,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#addLine:member(1)
   package: ExcelScript!
   fullName: addLine(startLeft, startTop, endLeft, endTop, connectorType)
-  summary: ワークシートに行を追加します。 新しい行を表す Shape オブジェクトを返します。
+  summary: ワークシートに行を追加します。 新しい行 `Shape` を表すオブジェクトを返します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -165,19 +165,19 @@ methods:
               ): Shape;
     parameters:
     - id: startLeft
-      description: ワークシートの左端から左端までの距離をポイント単位で指定します。
+      description: 線の始めからワークシートの左側までの距離をポイントで指定します。
       type: number
     - id: startTop
-      description: ワークシートの上端から、行の先頭までの距離をポイント単位で指定します。
+      description: 線の始めからワークシートの上までの距離をポイントで指定します。
       type: number
     - id: endLeft
-      description: ワークシートの左端の線の終点からの距離をポイント単位で指定します。
+      description: 線の端からワークシートの左側までの距離をポイントで指定します。
       type: number
     - id: endTop
-      description: ワークシートの上端から、行の末尾までの距離をポイント単位で指定します。
+      description: 線の端からワークシートの上端までの距離をポイントで指定します。
       type: number
     - id: connectorType
-      description: コネクタの種類を表します。 詳細については、「ExcelScript」を参照してください。
+      description: コネクタの種類を表します。 詳細は「`ExcelScript.ConnectorType`」をご覧ください。
       type: <xref uid="ExcelScript!ExcelScript.ConnectorType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
@@ -205,7 +205,7 @@ methods:
       description: 名前が参照する数式または範囲。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: comment
-      description: 省略可能。 名前付きアイテムに関連付けられているコメント。
+      description: 省略可能。 名前付きアイテムに関連付けられたコメント。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
@@ -227,13 +227,13 @@ methods:
               ): NamedItem;
     parameters:
     - id: name
-      description: 名前付きアイテムの "名前"。
+      description: 名前付きの項目の名前。
       type: string
     - id: formula
       description: 名前が参照するユーザーのロケールの数式。
       type: string
     - id: comment
-      description: 省略可能。 名前付きアイテムに関連付けられているコメント。
+      description: 省略可能。 名前付きアイテムに関連付けられたコメント。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
@@ -242,7 +242,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#addPivotTable:member(1)
   package: ExcelScript!
   fullName: addPivotTable(name, source, destination)
-  summary: 指定したソースデータに基づいてピボットテーブルを追加し、貼り付け先のセル範囲の左上のセルに挿入します。
+  summary: 指定したソース データに基づいてピボットテーブルを追加し、移動先範囲の左上のセルに挿入します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -255,10 +255,10 @@ methods:
               ): PivotTable;
     parameters:
     - id: name
-      description: 新しいピボットテーブルの名前を指定します。
+      description: 新しいピボットテーブルの名前。
       type: string
     - id: source
-      description: 新しいピボットテーブルのソースデータは、範囲 (またはワークシート名を含む文字列のアドレス) またはテーブルのいずれかです。
+      description: 新しいピボットテーブルのソース データは、範囲 (またはワークシート名を含む文字列アドレス) またはテーブルのいずれかです。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string | <xref uid="ExcelScript!ExcelScript.Table:interface" />
     - id: destination
       description: ピボットテーブル レポートの配置先範囲 (結果のレポートを配置するワークシートの範囲) の左上端のセルを指定します。
@@ -283,13 +283,13 @@ methods:
               ): Slicer;
     parameters:
     - id: slicerSource
-      description: 新しいスライサーの基となるデータソース。 PivotTable オブジェクト、Table オブジェクト、または文字列を指定できます。 PivotTable オブジェクトが渡されると、データソースは PivotTable オブジェクトのソースになります。 Table オブジェクトが渡されると、データソースは Table オブジェクトになります。 文字列が渡されると、PivotTable/Table の名前または id として解釈されます。
+      description: 新しいスライサーの基になるデータ ソース。 オブジェクト、オブジェクト `PivotTable` 、または `Table` 文字列を指定できます。 PivotTable オブジェクトを渡す場合、データ ソースはオブジェクトのソース `PivotTable` です。 オブジェクトが `Table` 渡された場合、データ ソースはオブジェクト `Table` です。 文字列が渡された場合、ピボットテーブルまたはテーブルの名前または ID として解釈されます。
       type: string | <xref uid="ExcelScript!ExcelScript.PivotTable:interface" /> | <xref uid="ExcelScript!ExcelScript.Table:interface" />
     - id: sourceField
-      description: フィルター処理の対象となるデータソース内のフィールド。 PivotField オブジェクト、TableColumn オブジェクト、PivotField の id、または TableColumn の id または名前を指定できます。
+      description: フィルター処理するデータ ソースのフィールド。 オブジェクト、オブジェクト、A の ID、または a の名前または `PivotField` `TableColumn` ID `PivotField` を指定できます。 `TableColumn`<!-- -->.
       type: string | <xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | number | <xref uid="ExcelScript!ExcelScript.TableColumn:interface" />
     - id: slicerDestination
-      description: 省略可能。 新しいスライサーを作成するワークシートを指定します。 ワークシートオブジェクト、またはワークシートの名前/id を指定できます。 スライサーコレクションをワークシートから取得する場合は、このパラメーターを省略できます。
+      description: 省略可能。 新しいスライサーが作成されるワークシート。 オブジェクトまたはワークシート `Worksheet` の名前または ID を指定できます。 スライサー コレクションがワークシートから取得される場合は、このパラメーターを省略できます。
       type: string | <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Slicer:interface" />
@@ -298,7 +298,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#addTable:member(1)
   package: ExcelScript!
   fullName: addTable(address, hasHeaders)
-  summary: 新しいテーブルを作成します。範囲オブジェクトまたはソース アドレスにより、テーブルが追加されるワークシートが判断されます。テーブルが追加できない場合 (たとえば、アドレスが無効な場合や、テーブルが別のテーブルと重複している場合) は、エラーがスローされます。
+  summary: 新しいテーブルを作成します。 範囲オブジェクトまたはソース アドレスにより、テーブルが追加されるワークシートが判断されます。 テーブルが追加できない場合 (たとえば、アドレスが無効な場合や、テーブルが別のテーブルと重複している場合) は、エラーがスローされます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -306,10 +306,10 @@ methods:
     content: 'addTable(address: Range | string, hasHeaders: boolean): Table;'
     parameters:
     - id: address
-      description: Range オブジェクト、あるいはデータ ソースを表す範囲の文字列アドレスまたは名前。 アドレスにシート名が含まれていない場合は、現在作業中のシートが使用されます。
+      description: データ `Range` ソースを表すオブジェクト、または範囲の文字列アドレスまたは名前。 アドレスにシート名が含まれていない場合は、現在作業中のシートが使用されます。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: hasHeaders
-      description: インポートされたデータに列ラベルがあるかどうかを示すブール値。ソースにヘッダーが含まれていない場合 (このプロパティが false に設定されている場合)、Excel はデータを下方向に 1 行シフトして、自動的にヘッダーを生成します。
+      description: インポートするデータに列ラベルが含まれたかどうかを示すブール値。 ソースにヘッダーが含まれている (つまり、このプロパティがに設定されている場合) `false`<!-- -->)、Excel はヘッダーを自動的に生成し、データを 1 行下にシフトします。
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Table:interface" />
@@ -318,7 +318,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#addTextBox:member(1)
   package: ExcelScript!
   fullName: addTextBox(text)
-  summary: 指定されたテキストを含むテキスト ボックスをワークシートに追加します。 新しいテキスト ボックスを表す Shape オブジェクトを返します。
+  summary: 指定されたテキストを含むテキスト ボックスをワークシートに追加します。 新しいテキスト `Shape` ボックスを表すオブジェクトを返します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -326,7 +326,7 @@ methods:
     content: 'addTextBox(text?: string): Shape;'
     parameters:
     - id: text
-      description: '[作成済み] テキストボックスに表示されるテキストを表します。'
+      description: 作成したテキスト ボックスに表示されるテキストを表します。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
@@ -343,7 +343,7 @@ methods:
     content: 'addVerticalPageBreak(pageBreakRange: Range | string): PageBreak;'
     parameters:
     - id: pageBreakRange
-      description: 改ページが追加される直後のセル範囲を指定します。
+      description: 追加するページブレークの直後の範囲。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: <xref uid="ExcelScript!ExcelScript.PageBreak:interface" />
@@ -352,7 +352,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#addWorksheetCustomProperty:member(1)
   package: ExcelScript!
   fullName: addWorksheetCustomProperty(key, value)
-  summary: 指定したキーに対応する新しいカスタムプロパティを追加します。 これにより、既存のカスタムプロパティがそのキーで上書きされます。
+  summary: 指定されたキーにマップする新しいカスタム プロパティを追加します。 これにより、既存のカスタム プロパティをそのキーで上書きします。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -364,10 +364,10 @@ methods:
               ): WorksheetCustomProperty;
     parameters:
     - id: key
-      description: カスタムプロパティオブジェクトを識別するキー。 大文字と小文字は区別されません。キーは255文字に制限されています (大きい値を指定すると、"InvalidArgument" エラーがスローされます)。
+      description: カスタム プロパティ オブジェクトを識別するキー。 大文字と小文字は区別されません。キーは 255 文字に制限されています (値を大きくすると、エラー `InvalidArgument` がスローされます)。
       type: string
     - id: value
-      description: このカスタムプロパティの値。
+      description: このカスタム プロパティの値。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.WorksheetCustomProperty:interface" />
@@ -384,7 +384,7 @@ methods:
     content: 'calculate(markAllDirty: boolean): void;'
     parameters:
     - id: markAllDirty
-      description: True を設定すると、すべてがダーティとしてマークされます。
+      description: True を指定すると、すべてダーティとしてマークされます。
       type: boolean
     return:
       type: void
@@ -405,10 +405,10 @@ methods:
               ): Worksheet;
     parameters:
     - id: positionType
-      description: 新しく作成されたワークシートを配置するブック内の位置を指定します。 既定値は "None" で、ワークシートの先頭にワークシートを挿入します。
+      description: 新しく作成したワークシートを配置するブック内の場所。 既定値は "None" で、ワークシートの先頭にワークシートを挿入します。
       type: <xref uid="ExcelScript!ExcelScript.WorksheetPositionType:enum" />
     - id: relativeTo
-      description: 新しく作成されたワークシートの位置を決定する既存のワークシート。 これは、 `positionType` が "Before" または "After" の場合にのみ必要になります。
+      description: 新しく作成されたワークシートの位置を決定する既存のワークシート。 これは、"Before" `positionType` または "After" の場合にのみ必要です。
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -417,7 +417,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#delete:member(1)
   package: ExcelScript!
   fullName: delete()
-  summary: ブックからワークシートを削除します。 ワークシートの可視性が "非常に非表示" に設定されている場合は、削除操作が失敗して例外が発生し `InvalidOperation` ます。 最初に表示を削除する前に、表示を非表示または表示に変更する必要があります。
+  summary: ブックからワークシートを削除します。 ワークシートの表示設定が "VeryHidden" に設定されている場合、削除操作は例外で失敗します `InvalidOperation` 。 削除する前に、まず表示設定を非表示または表示に変更する必要があります。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -430,7 +430,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#findAll:member(1)
   package: ExcelScript!
   fullName: findAll(text, criteria)
-  summary: 指定された条件に基づいて指定された文字列の発生箇所をすべて見つけ、1 つまたは複数の長方形範囲を構成する RangeAreas オブジェクトとして返します。
+  summary: 指定された条件に基づいて、指定された文字列のすべての出現を検索し、1 つ以上の四角形の範囲で構成されるオブジェクト `RangeAreas` として返します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -438,10 +438,10 @@ methods:
     content: 'findAll(text: string, criteria: WorksheetSearchCriteria): RangeAreas;'
     parameters:
     - id: text
-      description: 検索する文字列を指定します。
+      description: 検索する文字列。
       type: string
     - id: criteria
-      description: 検索条件には、セル全体に一致するかどうか、または大文字と小文字を区別するかどうかなどの追加の検索条件があります。
+      description: 検索がセル全体に一致するか、大文字と小文字を区別する必要があるかどうかを含む、追加の検索条件。
       type: <xref uid="ExcelScript!ExcelScript.WorksheetSearchCriteria:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
@@ -450,7 +450,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getAutoFilter:member(1)
   package: ExcelScript!
   fullName: getAutoFilter()
-  summary: ワークシートの AutoFilter オブジェクトを表します。
+  summary: ワークシートの `AutoFilter` オブジェクトを表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -463,7 +463,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getCell:member(1)
   package: ExcelScript!
   fullName: getCell(row, column)
-  summary: 行と列の番号に基づいて、1 つのセルを含んだ範囲オブジェクトを取得します。 ワークシートのグリッド内に収まるセルは、親の範囲の境界の外側にある場合があります。
+  summary: 行番号 `Range` と列番号に基づいて 1 つのセルを含むオブジェクトを取得します。 セルは、ワークシート グリッド内にある限り、親範囲の境界外に配置できます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -483,7 +483,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getChart:member(1)
   package: ExcelScript!
   fullName: getChart(name)
-  summary: グラフ名を使用してグラフを取得します。 同じ名前の複数のグラフがある場合は、最初の 1 つが返されます。 グラフが存在しない場合、この関数は、プロパティが次の値に設定されたオブジェクトを返します。 `isNullObject``true`<!-- -->.
+  summary: グラフ名を使用してグラフを取得します。 同じ名前の複数のグラフがある場合は、最初の 1 つが返されます。 グラフが存在しない場合、この関数はプロパティが次の値に設定された `isNullObject` オブジェクトを返します。 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -538,7 +538,7 @@ methods:
     content: 'getCommentByCell(cellAddress: Range | string): Comment;'
     parameters:
     - id: cellAddress
-      description: コメントがあるセルを指定します。 Range オブジェクトまたは文字列を指定できます。 文字列型 (string) の場合は、シート名を含む完全な住所が含まれている必要があります。 `InvalidArgument`指定した範囲が1つのセルより大きい場合は、エラーがスローされます。
+      description: コメントがオンのセル。 オブジェクトまたは文字列 `Range` を指定できます。 文字列の場合は、シート名を含む完全なアドレスを含む必要があります。 指定 `InvalidArgument` された範囲が 1 つのセルより大きい場合、エラーがスローされます。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
@@ -555,7 +555,7 @@ methods:
     content: 'getCommentByReplyId(replyId: string): Comment;'
     parameters:
     - id: replyId
-      description: コメント応答の識別子。
+      description: コメント返信の識別子。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
@@ -577,7 +577,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getCustomProperties:member(1)
   package: ExcelScript!
   fullName: getCustomProperties()
-  summary: ワークシートレベルのカスタムプロパティのコレクションを取得します。
+  summary: ワークシート レベルのカスタム プロパティのコレクションを取得します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -590,7 +590,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getEnableCalculation:member(1)
   package: ExcelScript!
   fullName: getEnableCalculation()
-  summary: Excel が必要に応じてワークシートを再計算する必要があるかどうかを指定します。 True の場合、Excel は必要に応じてワークシートを再計算します。 False の場合、Excel はシートを再計算しません。
+  summary: 必要に応じて Excel でワークシートを再計算する必要があるかどうかを決定します。 True の場合、Excel は必要に応じてワークシートを再計算します。 False を指定すると、Excel でシートが再計算されません。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -603,7 +603,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getFreezePanes:member(1)
   package: ExcelScript!
   fullName: getFreezePanes()
-  summary: ワークシート上の固定されたウィンドウを操作するために使用できるオブジェクトを取得します。
+  summary: ワークシートの固定されたウィンドウを操作するために使用できるオブジェクトを取得します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -655,7 +655,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getNamedItem:member(1)
   package: ExcelScript!
   fullName: getNamedItem(name)
-  summary: '`NamedItem`名前を使用してオブジェクトを取得します。 オブジェクトが存在しない場合、この関数は、プロパティが次の値に設定されたオブジェクトを返します。 `isNullObject``true`<!-- -->.'
+  summary: その名前を `NamedItem` 使用してオブジェクトを取得します。 オブジェクトが存在しない場合、この関数はプロパティが次に設定された `isNullObject` オブジェクトを返します。 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -663,7 +663,7 @@ methods:
     content: 'getNamedItem(name: string): NamedItem | undefined;'
     parameters:
     - id: name
-      description: Nameditem 名。
+      description: Nameditem の名前。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" /> | undefined
@@ -685,7 +685,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getNext:member(1)
   package: ExcelScript!
   fullName: getNext(visibleOnly)
-  summary: これに続くワークシートを取得します。 このメソッドに続くワークシートがない場合、このメソッドは、そのプロパティが次の `isNullObject` ように設定されたオブジェクトを返します。 `true`<!-- -->.
+  summary: このワークシートに続くワークシートを取得します。 このワークシートの後にワークシートがない場合、このメソッドはプロパティが次の値に設定された `isNullObject` オブジェクトを返します。 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -693,7 +693,7 @@ methods:
     content: 'getNext(visibleOnly?: boolean): Worksheet;'
     parameters:
     - id: visibleOnly
-      description: 省略可能。 True の場合は、表示されているワークシートのみを考慮し、非表示のワークシートについてはスキップします。
+      description: 省略可能。 もし `true`<!-- -->、表示されているワークシートのみを考慮し、非表示のワークシートをスキップします。
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -702,7 +702,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getPageLayout:member(1)
   package: ExcelScript!
   fullName: getPageLayout()
-  summary: ワークシートの PageLayout オブジェクトを取得します。
+  summary: ワークシートの `PageLayout` オブジェクトを取得します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -715,7 +715,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getPivotTable:member(1)
   package: ExcelScript!
   fullName: getPivotTable(name)
-  summary: 名前を使用してピボットテーブルを取得します。 PivotTable が存在しない場合は null オブジェクトを返します。
+  summary: 名前に基づいてピボットテーブルを取得します。 ピボットテーブルが存在しない場合、この関数はプロパティを次に設定した `isNullObject` オブジェクトを返します。 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -758,7 +758,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getPrevious:member(1)
   package: ExcelScript!
   fullName: getPrevious(visibleOnly)
-  summary: これより前のワークシートを取得します。 前のワークシートがない場合、このメソッドは null の objet を返します。
+  summary: このワークシートの前のワークシートを取得します。 以前のワークシートがない場合、このメソッドはプロパティが次の値に設定された `isNullObject` オブジェクトを返します。 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -766,7 +766,7 @@ methods:
     content: 'getPrevious(visibleOnly?: boolean): Worksheet;'
     parameters:
     - id: visibleOnly
-      description: 省略可能。 True の場合は、表示されているワークシートのみを考慮し、非表示のワークシートについてはスキップします。
+      description: 省略可能。 もし `true`<!-- -->、表示されているワークシートのみを考慮し、非表示のワークシートをスキップします。
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -788,7 +788,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getRange:member(1)
   package: ExcelScript!
   fullName: getRange(address)
-  summary: アドレスまたは名前で指定された、セルの単一の四角形のブロックを表す range オブジェクトを取得します。
+  summary: アドレスまたは名前で指定された 1 つの四角形のセル ブロックを表す `Range` オブジェクトを取得します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -796,7 +796,7 @@ methods:
     content: 'getRange(address?: string): Range;'
     parameters:
     - id: address
-      description: '省略可能。 範囲のアドレスまたは名前を表す文字列。 たとえば、"A1: B2" となります。 指定されていない場合は、ワークシート全体の範囲が返されます。'
+      description: 省略可能。 範囲のアドレスまたは名前を表す文字列。 たとえば、"A1:B2" とします。 指定されていない場合は、ワークシート全体の範囲が返されます。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -805,7 +805,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getRangeByIndexes:member(1)
   package: ExcelScript!
   fullName: getRangeByIndexes(startRow, startColumn, rowCount, columnCount)
-  summary: 特定の行インデックスと列インデックスから開始し、一定数の行と列にわたる、Range オブジェクトを取得します。
+  summary: 特定の行インデックスと列インデックスから始まり、特定の数の行と列にまたがるオブジェクト `Range` を取得します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -819,16 +819,16 @@ methods:
               ): Range;
     parameters:
     - id: startRow
-      description: 開始行 (ゼロインデックス)。
+      description: 開始行 (インデックスが 0)。
       type: number
     - id: startColumn
-      description: 開始列 (ゼロインデックス)。
+      description: Start 列 (インデックスが 0)。
       type: number
     - id: rowCount
-      description: 範囲に含める行の数を指定します。
+      description: 範囲に含める行の数。
       type: number
     - id: columnCount
-      description: 範囲に含める列の数を指定します。
+      description: 範囲に含める列の数。
       type: number
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -837,7 +837,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getRanges:member(1)
   package: ExcelScript!
   fullName: getRanges(address)
-  summary: アドレスまたは名前で指定され、1 つまたは複数の長方形範囲ブロックを表す RangeAreas オブジェクトを取得します。
+  summary: アドレスまたは名前で指定された、四角形の範囲の 1 つ以上のブロックを表す `RangeAreas` オブジェクトを取得します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -845,7 +845,7 @@ methods:
     content: 'getRanges(address?: string): RangeAreas;'
     parameters:
     - id: address
-      description: '省略可能。 コンマ区切りのアドレスまたは個々の範囲の名前を含む文字列。 たとえば、"A1: B2, A5: B5" とします。 指定しない場合、ワークシート全体の RangeArea オブジェクトが返されます。'
+      description: 省略可能。 個々の範囲のコンマ区切りアドレスまたは名前を含む文字列。 たとえば、「A1:B2、A5:B5」などです。 指定しない場合は、ワークシート全体の RangeArea オブジェクトが返されます。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
@@ -862,7 +862,7 @@ methods:
     content: 'getShape(key: string): Shape;'
     parameters:
     - id: key
-      description: 取得する図形の名前または ID を指定します。
+      description: 取得する図形の名前または ID。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
@@ -884,7 +884,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getShowGridlines:member(1)
   package: ExcelScript!
   fullName: getShowGridlines()
-  summary: ユーザーに目盛線を表示するかどうかを指定します。
+  summary: グリッド線がユーザーに表示される場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -897,7 +897,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getShowHeadings:member(1)
   package: ExcelScript!
   fullName: getShowHeadings()
-  summary: ユーザーに見出しを表示するかどうかを指定します。
+  summary: ユーザーに見出しを表示する場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -910,7 +910,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getSlicer:member(1)
   package: ExcelScript!
   fullName: getSlicer(key)
-  summary: 名前または id を使用してスライサーを取得します。スライサーが存在しない場合、この関数は、プロパティが次の値に設定されたオブジェクトを返します。 `isNullObject``true`<!-- -->.
+  summary: 名前または ID を使用してスライサーを取得します。 スライサーが存在しない場合、この関数はプロパティを次に設定した `isNullObject` オブジェクトを返します。 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -918,7 +918,7 @@ methods:
     content: 'getSlicer(key: string): Slicer | undefined;'
     parameters:
     - id: key
-      description: 取得するスライサーの名前または Id。
+      description: 取得するスライサーの名前または ID。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Slicer:interface" /> | undefined
@@ -953,7 +953,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getStandardWidth:member(1)
   package: ExcelScript!
   fullName: getStandardWidth()
-  summary: ワークシート内のすべての列の標準 (既定) 幅を指定します。 列幅の単位は、標準スタイルの 1 文字分の幅に相当します。 プロポーショナル フォントでは、数字の 0 の幅が列幅の単位になります。
+  summary: ワークシート内のすべての列の標準 (既定) の幅を指定します。 列幅の単位は、標準スタイルの 1 文字分の幅に相当します。 プロポーショナル フォントでは、数字の 0 の幅が列幅の単位になります。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -966,7 +966,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getTabColor:member(1)
   package: ExcelScript!
   fullName: getTabColor()
-  summary: ワークシートのタブの色を設定します。 タブの色を取得するときに、ワークシートが非表示の場合、値は null になります。 ワークシートが表示されているにもかかわらず、tab の色が auto に設定されている場合は、空の文字列が返されます。 それ以外の場合は、プロパティは "123456" という色を設定するときに、"" という形式で設定され \# ます。色を設定するときは、空の文字列を使用して "auto" 色を設定するか、または実際の色を設定します。
+  summary: ワークシートのタブの色。 タブの色を取得する場合、ワークシートが非表示の場合、値は次の値になります。 `null`<!-- -->. ワークシートが表示されているが、タブの色が auto に設定されている場合は、空の文字列が返されます。 それ以外の場合、プロパティは \# RRGGBB 形式 ("FFA500"など) の色に設定されます。 色を設定する場合は、空の文字列を使用して "自動" 色を設定するか、それ以外の場合は実際の色を設定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -979,7 +979,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getTable:member(1)
   package: ExcelScript!
   fullName: getTable(key)
-  summary: 名前または ID を使用してテーブルを取得します。 テーブルが存在しない場合、この関数は、プロパティが次の値に設定されたオブジェクトを返します。 `isNullObject``true`<!-- -->.
+  summary: 名前または ID でテーブルを取得します。 テーブルが存在しない場合、この関数はプロパティを次に設定した `isNullObject` オブジェクトを返します。 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1052,7 +1052,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getWorksheetCustomProperty:member(1)
   package: ExcelScript!
   fullName: getWorksheetCustomProperty(key)
-  summary: キーを使用してカスタム プロパティ オブジェクトを取得します。大文字と小文字は区別されません。 カスタムプロパティが存在しない場合、この関数は、プロパティが次の値に設定されたオブジェクトを返します。 `isNullObject``true`<!-- -->.
+  summary: キーを使用してカスタム プロパティ オブジェクトを取得します。大文字と小文字は区別されません。 カスタム プロパティが存在しない場合、この関数はプロパティが次に設定された `isNullObject` オブジェクトを返します。 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1063,7 +1063,7 @@ methods:
               ): WorksheetCustomProperty | undefined;
     parameters:
     - id: key
-      description: カスタムプロパティオブジェクトを識別するキー。 大文字と小文字は区別されません。
+      description: カスタム プロパティ オブジェクトを識別するキー。 大文字と小文字は区別されません。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.WorksheetCustomProperty:interface" /> | undefined
@@ -1124,13 +1124,13 @@ methods:
               ): number;
     parameters:
     - id: text
-      description: 検索する文字列を指定します。
+      description: 検索する文字列。
       type: string
     - id: replacement
-      description: 元のと置き換える文字列。
+      description: 元の文字列を置き換える文字列。
       type: string
     - id: criteria
-      description: 置換条件を追加します。
+      description: 追加の置換条件。
       type: <xref uid="ExcelScript!ExcelScript.ReplaceCriteria:interface" />
     return:
       type: number
@@ -1139,7 +1139,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#setEnableCalculation:member(1)
   package: ExcelScript!
   fullName: setEnableCalculation(enableCalculation)
-  summary: Excel が必要に応じてワークシートを再計算する必要があるかどうかを指定します。 True の場合、Excel は必要に応じてワークシートを再計算します。 False の場合、Excel はシートを再計算しません。
+  summary: 必要に応じて Excel でワークシートを再計算する必要があるかどうかを決定します。 True の場合、Excel は必要に応じてワークシートを再計算します。 False を指定すると、Excel でシートが再計算されません。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1190,7 +1190,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#setShowGridlines:member(1)
   package: ExcelScript!
   fullName: setShowGridlines(showGridlines)
-  summary: ユーザーに目盛線を表示するかどうかを指定します。
+  summary: グリッド線がユーザーに表示される場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1207,7 +1207,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#setShowHeadings:member(1)
   package: ExcelScript!
   fullName: setShowHeadings(showHeadings)
-  summary: ユーザーに見出しを表示するかどうかを指定します。
+  summary: ユーザーに見出しを表示する場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1224,7 +1224,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#setStandardWidth:member(1)
   package: ExcelScript!
   fullName: setStandardWidth(standardWidth)
-  summary: ワークシート内のすべての列の標準 (既定) 幅を指定します。 列幅の単位は、標準スタイルの 1 文字分の幅に相当します。 プロポーショナル フォントでは、数字の 0 の幅が列幅の単位になります。
+  summary: ワークシート内のすべての列の標準 (既定) の幅を指定します。 列幅の単位は、標準スタイルの 1 文字分の幅に相当します。 プロポーショナル フォントでは、数字の 0 の幅が列幅の単位になります。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1241,7 +1241,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#setTabColor:member(1)
   package: ExcelScript!
   fullName: setTabColor(tabColor)
-  summary: ワークシートのタブの色を設定します。 タブの色を取得するときに、ワークシートが非表示の場合、値は null になります。 ワークシートが表示されているにもかかわらず、tab の色が auto に設定されている場合は、空の文字列が返されます。 それ以外の場合は、プロパティは "123456" という色を設定するときに、"" という形式で設定され \# ます。色を設定するときは、空の文字列を使用して "auto" 色を設定するか、または実際の色を設定します。
+  summary: ワークシートのタブの色。 タブの色を取得する場合、ワークシートが非表示の場合、値は次の値になります。 `null`<!-- -->. ワークシートが表示されているが、タブの色が auto に設定されている場合は、空の文字列が返されます。 それ以外の場合、プロパティは \# RRGGBB 形式 ("FFA500"など) の色に設定されます。 色を設定する場合は、空の文字列を使用して "自動" 色を設定するか、それ以外の場合は実際の色を設定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1275,7 +1275,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#showOutlineLevels:member(1)
   package: ExcelScript!
   fullName: showOutlineLevels(rowLevels, columnLevels)
-  summary: アウトラインレベルで行または列のグループを表示します。 グループ化して、ワークシート内のデータの一覧を要約します。 `rowLevels`パラメーターとは、 `columnLevels` 表示するアウトラインのレベルの数を指定します。 指定できる引数の範囲は 0 ~ 8 です。 0を指定すると、現在の表示が変更されません。 現在のレベル数より大きい値を指定すると、すべてのレベルが表示されます。
+  summary: 行または列のグループをアウトライン レベルで表示します。 グループの概要を示し、ワークシート内のデータの一覧を要約します。 パラメーター `rowLevels` と `columnLevels` パラメーターは、アウトラインを表示するレベルの数を指定します。 受け入れ可能な引数の範囲は 0 ~ 8 です。 値 0 を指定しても、現在の表示は変更されません。 現在のレベル数より大きい値は、すべてのレベルを表示します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1283,18 +1283,18 @@ methods:
     content: 'showOutlineLevels(rowLevels: number, columnLevels: number): void;'
     parameters:
     - id: rowLevels
-      description: 表示するアウトラインの行レベルの数を指定します。
+      description: 表示するアウトラインの行レベルの数。
       type: number
     - id: columnLevels
-      description: アウトラインで表示する列のレベル数を指定します。
+      description: 表示するアウトラインの列レベルの数。
       type: number
     return:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 76406c9a40bad3c850c09cdb198eabdad4a2b1c3
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: 821018eb13c005fc3de20385737536175e4686e4
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554063"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607285"

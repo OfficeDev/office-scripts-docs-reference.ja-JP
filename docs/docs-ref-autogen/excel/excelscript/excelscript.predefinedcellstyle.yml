@@ -3,7 +3,7 @@ name: ExcelScript.PredefinedCellStyle
 uid: ExcelScript!ExcelScript.PredefinedCellStyle:interface
 package: ExcelScript!
 fullName: ExcelScript.PredefinedCellStyle
-summary: スタイルの形式およびその他のプロパティをカプセル化するオブジェクト。
+summary: スタイルの形式と他のプロパティをカプセル化するオブジェクト。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getAutoIndent:member(1)
   package: ExcelScript!
   fullName: getAutoIndent()
-  summary: セル内の文字列の配置が均等分布に設定されている場合に、文字列を自動的にインデントするかどうかを指定します。
+  summary: セル内のテキスト配置が等しい分布に設定されている場合に、テキストが自動的にインデントされる場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getBorders:member(1)
   package: ExcelScript!
   fullName: getBorders()
-  summary: 4 つの辺の罫線のスタイルを表す、4 つの Border オブジェクトのコレクション。
+  summary: 4 つの罫線のスタイルを表す 4 つの罫線オブジェクトのコレクション。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getBuiltIn:member(1)
   package: ExcelScript!
   fullName: getBuiltIn()
-  summary: スタイルが組み込みのスタイルであるかどうかを指定します。
+  summary: スタイルが組み込みのスタイルである場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getFont:member(1)
   package: ExcelScript!
   fullName: getFont()
-  summary: スタイルのフォントを表す Font オブジェクト。
+  summary: スタイル `Font` のフォントを表すオブジェクト。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getFormulaHidden:member(1)
   package: ExcelScript!
   fullName: getFormulaHidden()
-  summary: ワークシートが保護されているときに、数式を非表示にするかどうかを指定します。
+  summary: ワークシートを保護するときに数式を非表示に設定する場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getHorizontalAlignment:member(1)
   package: ExcelScript!
   fullName: getHorizontalAlignment()
-  summary: スタイルでの水平方向の配置を表します。 詳細については、「ExcelScript.」を参照してください。
+  summary: スタイルでの水平方向の配置を表します。 詳細は「`ExcelScript.HorizontalAlignment`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -117,7 +117,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getIncludeAlignment:member(1)
   package: ExcelScript!
   fullName: getIncludeAlignment()
-  summary: スタイルに自動インデント、水平方向の配置、垂直方向の配置、WrapText、IndentLevel、および TextOrientation プロパティを含めるかどうかを指定します。
+  summary: スタイルに自動インデント、水平方向の配置、垂直方向の配置、折り返しテキスト、インデント レベル、およびテキストの向きのプロパティが含まれる場合を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getIncludeBorder:member(1)
   package: ExcelScript!
   fullName: getIncludeBorder()
-  summary: スタイルに、Color、ColorIndex、LineStyle、および Weight の各境界線のプロパティが含まれるかどうかを指定します。
+  summary: スタイルに色、色インデックス、線のスタイル、太さ罫線のプロパティが含まれる場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getIncludeFont:member(1)
   package: ExcelScript!
   fullName: getIncludeFont()
-  summary: スタイルに、Background、Bold、Color、ColorIndex、FontStyle、Italic、Name、Size、打ち消し線、下付き、上付き、および下線のフォントプロパティを含めるかどうかを指定します。
+  summary: スタイルに背景、太字、色、色インデックス、フォント スタイル、斜体、名前、サイズ、取り消し線、下付き文字、下線のフォント プロパティが含まれる場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -156,7 +156,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getIncludeNumber:member(1)
   package: ExcelScript!
   fullName: getIncludeNumber()
-  summary: スタイルに NumberFormat プロパティが含まれているかどうかを指定します。
+  summary: スタイルに number format プロパティが含まれる場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -169,7 +169,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getIncludePatterns:member(1)
   package: ExcelScript!
   fullName: getIncludePatterns()
-  summary: スタイルに、Color、ColorIndex、InvertIfNegative、Pattern、Pattern Color、および PatternColorIndex interior プロパティが含まれるかどうかを指定します。
+  summary: スタイルに色、色インデックス、負の場合は反転、パターン、パターンの色、パターンの色インデックスの内部プロパティを含む場合を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -182,7 +182,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getIncludeProtection:member(1)
   package: ExcelScript!
   fullName: getIncludeProtection()
-  summary: スタイルに FormulaHidden および Locked 保護のプロパティが含まれるかどうかを指定します。
+  summary: スタイルに非表示およびロックされた保護プロパティの数式が含まれる場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -208,7 +208,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getLocked:member(1)
   package: ExcelScript!
   fullName: getLocked()
-  summary: ワークシートが保護されているときに、オブジェクトをロックするかどうかを指定します。
+  summary: ワークシートが保護されているときにオブジェクトがロックされる場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -268,7 +268,7 @@ methods:
     content: 'getRangeBorder(index: BorderIndex): RangeBorder;'
     parameters:
     - id: index
-      description: 取得する border オブジェクトのインデックス値を指定します。 詳細については、「ExcelScript. BorderIndex」を参照してください。
+      description: 取得する罫線オブジェクトのインデックス値。 詳細は「`ExcelScript.BorderIndex`」をご覧ください。
       type: <xref uid="ExcelScript!ExcelScript.BorderIndex:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeBorder:interface" />
@@ -277,7 +277,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getRangeBorderTintAndShade:member(1)
   package: ExcelScript!
   fullName: getRangeBorderTintAndShade()
-  summary: 範囲の境界線の色を明るくまたは暗くする double を指定します。値は、-1 (最も暗い) から 1 (最も明るい) までの範囲で、元の色は0になります。 Null 値は、境界のコレクション全体に均一な tintAndShade が設定されていないことを示します。
+  summary: 範囲の境界線の色を明るくまたは暗くする倍数を指定します。 値は -1 (最も暗い) から 1 (最も明るい) の間で、元の色の場合は 0 です。 値 `null` は、罫線コレクション全体に均一な設定が設定できない場合を示 `tintAndShade` します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -303,7 +303,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getShrinkToFit:member(1)
   package: ExcelScript!
   fullName: getShrinkToFit()
-  summary: 使用可能な列幅に合わせて、テキストを自動的に縮小するかどうかを指定します。
+  summary: 使用可能な列の幅に収まるテキストを自動的に縮小する場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -329,7 +329,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: getVerticalAlignment()
-  summary: スタイルの垂直方向の配置を指定します。 詳細については、「ExcelScript. 縦書きの配置」を参照してください。
+  summary: スタイルの垂直方向の配置を指定します。 詳細は「`ExcelScript.VerticalAlignment`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -342,7 +342,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getWrapText:member(1)
   package: ExcelScript!
   fullName: getWrapText()
-  summary: Excel でオブジェクトのテキストを折り返すかどうかを指定します。
+  summary: Excel がオブジェクト内のテキストを折り返す場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -355,7 +355,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setAutoIndent:member(1)
   package: ExcelScript!
   fullName: setAutoIndent(autoIndent)
-  summary: セル内の文字列の配置が均等分布に設定されている場合に、文字列を自動的にインデントするかどうかを指定します。
+  summary: セル内のテキスト配置が等しい分布に設定されている場合に、テキストが自動的にインデントされる場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -372,7 +372,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setFormulaHidden:member(1)
   package: ExcelScript!
   fullName: setFormulaHidden(formulaHidden)
-  summary: ワークシートが保護されているときに、数式を非表示にするかどうかを指定します。
+  summary: ワークシートを保護するときに数式を非表示に設定する場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -389,7 +389,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setHorizontalAlignment:member(1)
   package: ExcelScript!
   fullName: setHorizontalAlignment(horizontalAlignment)
-  summary: スタイルでの水平方向の配置を表します。 詳細については、「ExcelScript.」を参照してください。
+  summary: スタイルでの水平方向の配置を表します。 詳細は「`ExcelScript.HorizontalAlignment`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -406,7 +406,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setIncludeAlignment:member(1)
   package: ExcelScript!
   fullName: setIncludeAlignment(includeAlignment)
-  summary: スタイルに自動インデント、水平方向の配置、垂直方向の配置、WrapText、IndentLevel、および TextOrientation プロパティを含めるかどうかを指定します。
+  summary: スタイルに自動インデント、水平方向の配置、垂直方向の配置、折り返しテキスト、インデント レベル、およびテキストの向きのプロパティが含まれる場合を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -423,7 +423,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setIncludeBorder:member(1)
   package: ExcelScript!
   fullName: setIncludeBorder(includeBorder)
-  summary: スタイルに、Color、ColorIndex、LineStyle、および Weight の各境界線のプロパティが含まれるかどうかを指定します。
+  summary: スタイルに色、色インデックス、線のスタイル、太さ罫線のプロパティが含まれる場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -440,7 +440,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setIncludeFont:member(1)
   package: ExcelScript!
   fullName: setIncludeFont(includeFont)
-  summary: スタイルに、Background、Bold、Color、ColorIndex、FontStyle、Italic、Name、Size、打ち消し線、下付き、上付き、および下線のフォントプロパティを含めるかどうかを指定します。
+  summary: スタイルに背景、太字、色、色インデックス、フォント スタイル、斜体、名前、サイズ、取り消し線、下付き文字、下線のフォント プロパティが含まれる場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -457,7 +457,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setIncludeNumber:member(1)
   package: ExcelScript!
   fullName: setIncludeNumber(includeNumber)
-  summary: スタイルに NumberFormat プロパティが含まれているかどうかを指定します。
+  summary: スタイルに number format プロパティが含まれる場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -474,7 +474,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setIncludePatterns:member(1)
   package: ExcelScript!
   fullName: setIncludePatterns(includePatterns)
-  summary: スタイルに、Color、ColorIndex、InvertIfNegative、Pattern、Pattern Color、および PatternColorIndex interior プロパティが含まれるかどうかを指定します。
+  summary: スタイルに色、色インデックス、負の場合は反転、パターン、パターンの色、パターンの色インデックスの内部プロパティを含む場合を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -491,7 +491,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setIncludeProtection:member(1)
   package: ExcelScript!
   fullName: setIncludeProtection(includeProtection)
-  summary: スタイルに FormulaHidden および Locked 保護のプロパティが含まれるかどうかを指定します。
+  summary: スタイルに非表示およびロックされた保護プロパティの数式が含まれる場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -525,7 +525,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setLocked:member(1)
   package: ExcelScript!
   fullName: setLocked(locked)
-  summary: ワークシートが保護されているときに、オブジェクトをロックするかどうかを指定します。
+  summary: ワークシートが保護されているときにオブジェクトがロックされる場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -576,7 +576,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setRangeBorderTintAndShade:member(1)
   package: ExcelScript!
   fullName: setRangeBorderTintAndShade(rangeBorderTintAndShade)
-  summary: 範囲の境界線の色を明るくまたは暗くする double を指定します。値は、-1 (最も暗い) から 1 (最も明るい) までの範囲で、元の色は0になります。 Null 値は、境界のコレクション全体に均一な tintAndShade が設定されていないことを示します。
+  summary: 範囲の境界線の色を明るくまたは暗くする倍数を指定します。 値は -1 (最も暗い) から 1 (最も明るい) の間で、元の色の場合は 0 です。 値 `null` は、罫線コレクション全体に均一な設定が設定できない場合を示 `tintAndShade` します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -610,7 +610,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setShrinkToFit:member(1)
   package: ExcelScript!
   fullName: setShrinkToFit(shrinkToFit)
-  summary: 使用可能な列幅に合わせて、テキストを自動的に縮小するかどうかを指定します。
+  summary: 使用可能な列の幅に収まるテキストを自動的に縮小する場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -644,7 +644,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: setVerticalAlignment(verticalAlignment)
-  summary: スタイルの垂直方向の配置を指定します。 詳細については、「ExcelScript. 縦書きの配置」を参照してください。
+  summary: スタイルの垂直方向の配置を指定します。 詳細は「`ExcelScript.VerticalAlignment`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -661,7 +661,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setWrapText:member(1)
   package: ExcelScript!
   fullName: setWrapText(wrapText)
-  summary: Excel でオブジェクトのテキストを折り返すかどうかを指定します。
+  summary: Excel がオブジェクト内のテキストを折り返す場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -675,9 +675,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 5969a129dc30629684c79765be7c43892cf87600
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 90d16417266aad48b871faec7c48f2fd03d52985
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416702"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607446"

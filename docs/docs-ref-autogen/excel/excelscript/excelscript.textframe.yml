@@ -3,7 +3,7 @@ name: ExcelScript.TextFrame
 uid: ExcelScript!ExcelScript.TextFrame:interface
 package: ExcelScript!
 fullName: ExcelScript.TextFrame
-summary: Shape オブジェクトのレイアウト枠を表します。
+summary: 図形オブジェクトのテキスト フレームを表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getAutoSizeSetting:member(1)
   package: ExcelScript!
   fullName: getAutoSizeSetting()
-  summary: レイアウト枠の自動サイズ設定。 テキストをテキスト フレームに自動的に合わせる、テキスト フレームをテキストに自動的に合わせる、自動サイズ変更を行わない、のいずれかにテキスト フレームを設定できます。
+  summary: テキスト フレームの自動サイズ設定。 テキストをテキスト フレームに自動的に合わせる、テキスト フレームをテキストに自動的に合わせる、自動サイズ変更を行わない、のいずれかにテキスト フレームを設定できます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getHasText:member(1)
   package: ExcelScript!
   fullName: getHasText()
-  summary: テキストフレームにテキストが含まれているかどうかを指定します。
+  summary: テキスト フレームにテキストが含まれている場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getHorizontalAlignment:member(1)
   package: ExcelScript!
   fullName: getHorizontalAlignment()
-  summary: テキスト フレームの水平方向の配置を表します。 詳細については、「ExcelScript」を参照してください。
+  summary: テキスト フレームの水平方向の配置を表します。 詳細は「`ExcelScript.ShapeTextHorizontalAlignment`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getHorizontalOverflow:member(1)
   package: ExcelScript!
   fullName: getHorizontalOverflow()
-  summary: テキスト フレームの水平方向のオーバーフローの動作を表します。 詳細については、「ExcelScript」を参照してください。
+  summary: テキスト フレームの水平方向のオーバーフローの動作を表します。 詳細は「`ExcelScript.ShapeTextHorizontalOverflow`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getOrientation:member(1)
   package: ExcelScript!
   fullName: getOrientation()
-  summary: レイアウト枠に対して、テキストの方向を指定する角度を表します。 詳細については、「ExcelScript」を参照してください。
+  summary: テキスト フレームの方向を指定する角度を表します。 詳細は「`ExcelScript.ShapeTextOrientation`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -117,7 +117,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getReadingOrder:member(1)
   package: ExcelScript!
   fullName: getReadingOrder()
-  summary: テキスト フレームの読む方向を表します (左から右または右から左)。 詳細については、「ExcelScript」を参照してください。
+  summary: テキスト フレームの読む方向を表します (左から右または右から左)。 詳細は「`ExcelScript.ShapeTextReadingOrder`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getTextRange:member(1)
   package: ExcelScript!
   fullName: getTextRange()
-  summary: テキスト フレーム内の図形にアタッチされているテキスト、およびテキストを操作するためのプロパティとメソッドを表します。 詳細については、「ExcelScript. TextRange」を参照してください。
+  summary: テキスト フレーム内の図形にアタッチされているテキスト、およびテキストを操作するためのプロパティとメソッドを表します。 詳細は「`ExcelScript.TextRange`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -169,7 +169,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: getVerticalAlignment()
-  summary: テキスト フレームの垂直方向の配置を表します。 詳細については、「ExcelScript」を参照してください。
+  summary: テキスト フレームの垂直方向の配置を表します。 詳細は「`ExcelScript.ShapeTextVerticalAlignment`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -182,7 +182,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getVerticalOverflow:member(1)
   package: ExcelScript!
   fullName: getVerticalOverflow()
-  summary: テキスト フレームの垂直方向のオーバーフローの動作を表します。 詳細については、「ExcelScript」を参照してください。
+  summary: テキスト フレームの垂直方向のオーバーフローの動作を表します。 詳細は「`ExcelScript.ShapeTextVerticalOverflow`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -195,7 +195,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#setAutoSizeSetting:member(1)
   package: ExcelScript!
   fullName: setAutoSizeSetting(autoSizeSetting)
-  summary: レイアウト枠の自動サイズ設定。 テキストをテキスト フレームに自動的に合わせる、テキスト フレームをテキストに自動的に合わせる、自動サイズ変更を行わない、のいずれかにテキスト フレームを設定できます。
+  summary: テキスト フレームの自動サイズ設定。 テキストをテキスト フレームに自動的に合わせる、テキスト フレームをテキストに自動的に合わせる、自動サイズ変更を行わない、のいずれかにテキスト フレームを設定できます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -229,7 +229,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#setHorizontalAlignment:member(1)
   package: ExcelScript!
   fullName: setHorizontalAlignment(horizontalAlignment)
-  summary: テキスト フレームの水平方向の配置を表します。 詳細については、「ExcelScript」を参照してください。
+  summary: テキスト フレームの水平方向の配置を表します。 詳細は「`ExcelScript.ShapeTextHorizontalAlignment`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -249,7 +249,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#setHorizontalOverflow:member(1)
   package: ExcelScript!
   fullName: setHorizontalOverflow(horizontalOverflow)
-  summary: テキスト フレームの水平方向のオーバーフローの動作を表します。 詳細については、「ExcelScript」を参照してください。
+  summary: テキスト フレームの水平方向のオーバーフローの動作を表します。 詳細は「`ExcelScript.ShapeTextHorizontalOverflow`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -286,7 +286,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#setOrientation:member(1)
   package: ExcelScript!
   fullName: setOrientation(orientation)
-  summary: レイアウト枠に対して、テキストの方向を指定する角度を表します。 詳細については、「ExcelScript」を参照してください。
+  summary: テキスト フレームの方向を指定する角度を表します。 詳細は「`ExcelScript.ShapeTextOrientation`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -303,7 +303,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#setReadingOrder:member(1)
   package: ExcelScript!
   fullName: setReadingOrder(readingOrder)
-  summary: テキスト フレームの読む方向を表します (左から右または右から左)。 詳細については、「ExcelScript」を参照してください。
+  summary: テキスト フレームの読む方向を表します (左から右または右から左)。 詳細は「`ExcelScript.ShapeTextReadingOrder`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -354,7 +354,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#setVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: setVerticalAlignment(verticalAlignment)
-  summary: テキスト フレームの垂直方向の配置を表します。 詳細については、「ExcelScript」を参照してください。
+  summary: テキスト フレームの垂直方向の配置を表します。 詳細は「`ExcelScript.ShapeTextVerticalAlignment`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -374,7 +374,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#setVerticalOverflow:member(1)
   package: ExcelScript!
   fullName: setVerticalOverflow(verticalOverflow)
-  summary: テキスト フレームの垂直方向のオーバーフローの動作を表します。 詳細については、「ExcelScript」を参照してください。
+  summary: テキスト フレームの垂直方向のオーバーフローの動作を表します。 詳細は「`ExcelScript.ShapeTextVerticalOverflow`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -388,9 +388,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 5ecc8ca404ec0d89960a592962c74e1f4e0fd5ce
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: cea8dceea74129d42e754dfb4acde0c1518acd90
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419265"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607313"

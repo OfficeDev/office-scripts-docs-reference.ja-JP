@@ -3,7 +3,7 @@ name: ExcelScript.ShapeGroup
 uid: ExcelScript!ExcelScript.ShapeGroup:interface
 package: ExcelScript!
 fullName: ExcelScript.ShapeGroup
-summary: ワークシート内の図形グループを表します。 対応する Shape オブジェクトを取得するには、 `ShapeGroup.shape`<!-- -->.
+summary: ワークシート内の図形グループを表します。 対応するオブジェクトを取得 `Shape` するには、 `ShapeGroup.shape`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeGroup#getGroupShape:member(1)
   package: ExcelScript!
   fullName: getGroupShape()
-  summary: グループに関連付けられた Shape オブジェクトを返します。
+  summary: グループに関連 `Shape` 付けられているオブジェクトを返します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeGroup#getId:member(1)
   package: ExcelScript!
   fullName: getId()
-  summary: 図形の識別子を指定します。
+  summary: 図形識別子を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -47,7 +47,7 @@ methods:
     content: 'getShape(key: string): Shape;'
     parameters:
     - id: key
-      description: 取得する図形の名前または ID を指定します。
+      description: 取得する図形の名前または ID。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
@@ -56,7 +56,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeGroup#getShapes:member(1)
   package: ExcelScript!
   fullName: getShapes()
-  summary: Shape オブジェクトのコレクションを返します。
+  summary: オブジェクトのコレクションを返 `Shape` します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -79,9 +79,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 7aa8ade3b8eb551378ae316ced0864f037bee30f
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: cc1e9a9a08dfbf3710f374a5e254984a8314df9c
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420637"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607376"

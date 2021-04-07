@@ -3,7 +3,7 @@ name: ExcelScript.SlicerStyle
 uid: ExcelScript!ExcelScript.SlicerStyle:interface
 package: ExcelScript!
 fullName: ExcelScript.SlicerStyle
-summary: スライサーの領域ごとにスタイル要素を定義するスライサースタイルを表します。
+summary: スライサーの領域別にスタイル要素を定義するスライサー スタイルを表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.SlicerStyle#delete:member(1)
   package: ExcelScript!
   fullName: delete()
-  summary: SlicerStyle を削除します。
+  summary: スライサー スタイルを削除します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.SlicerStyle#duplicate:member(1)
   package: ExcelScript!
   fullName: duplicate()
-  summary: すべてのスタイル要素のコピーでこの SlicerStyle の複製を作成します。
+  summary: すべてのスタイル要素のコピーを使用して、このスライサー スタイルの複製を作成します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.SlicerStyle#getName:member(1)
   package: ExcelScript!
   fullName: getName()
-  summary: SlicerStyle の名前を取得します。
+  summary: スライサー スタイルの名前を取得します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.SlicerStyle#getReadOnly:member(1)
   package: ExcelScript!
   fullName: getReadOnly()
-  summary: この SlicerStyle オブジェクトが読み取り専用であるかどうかを指定します。
+  summary: このオブジェクトが読 `SlicerStyle` み取り専用の場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.SlicerStyle#setName:member(1)
   package: ExcelScript!
   fullName: setName(name)
-  summary: SlicerStyle の名前を取得します。
+  summary: スライサー スタイルの名前を取得します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -79,9 +79,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 1bd98885aa1a0790b67701c2500449d2d97aa6b4
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: fa5d50110c995d315855f63ac8716c1a9e5dd267
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420462"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607348"

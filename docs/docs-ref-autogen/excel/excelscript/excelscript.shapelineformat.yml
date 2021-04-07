@@ -3,7 +3,7 @@ name: ExcelScript.ShapeLineFormat
 uid: ExcelScript!ExcelScript.ShapeLineFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.ShapeLineFormat
-summary: Shape オブジェクトの線の書式設定を表します。 画像と幾何学的な図形の場合、線の書式は図形の枠線を表します。
+summary: 図形オブジェクトの線の書式設定を表します。 画像と幾何学的図形の場合、線の書式設定は図形の境界線を表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#getColor:member(1)
   package: ExcelScript!
   fullName: getColor()
-  summary: 'フォームの \# RRGGBB ("FFA500" など) または名前付きの html 色 (例: "オレンジ") の線の色を html 色形式で表します。'
+  summary: 行の色を HTML カラー形式 \# 、RRGGBB 形式 ("FFA500" など) または名前付き HTML 色 ("オレンジ色" など) として表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#getDashStyle:member(1)
   package: ExcelScript!
   fullName: getDashStyle()
-  summary: 図形の線スタイルを表します。 線が非表示の場合、または破線のスタイルが一定ではない場合は、null を返します。 詳細については、「ExcelScript」を参照してください。
+  summary: 図形の線スタイルを表します。 線が `null` 表示されない場合、または一貫性のない破線スタイルがある場合に返します。 詳細は「`ExcelScript.ShapeLineStyle`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#getStyle:member(1)
   package: ExcelScript!
   fullName: getStyle()
-  summary: 図形の線スタイルを表します。 線が非表示の場合、またはスタイルが一定ではない場合は、null を返します。 詳細については、「ExcelScript」を参照してください。
+  summary: 図形の線スタイルを表します。 線が `null` 表示されないか、スタイルが一貫性のない場合に返します。 詳細は「`ExcelScript.ShapeLineStyle`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#getTransparency:member(1)
   package: ExcelScript!
   fullName: getTransparency()
-  summary: 指定された線の透明度を示す 0.0 (不透明) から 1.0 (透明) までの値を表します。 図形の透明度が一定ではない場合は、null を返します。
+  summary: 指定された線の透明度を示す 0.0 (不透明) から 1.0 (透明) までの値を表します。 図形の `null` 透明度が一貫性のない場合に返します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#getVisible:member(1)
   package: ExcelScript!
   fullName: getVisible()
-  summary: Shape 要素の線の書式を表示するかどうかを指定します。 図形の可視性が一定ではない場合は、null を返します。
+  summary: 図形要素の線の書式設定が表示される場合に指定します。 図形の `null` 表示が一貫性のない場合に返します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#getWeight:member(1)
   package: ExcelScript!
   fullName: getWeight()
-  summary: 線の太さ (ポイント数) を表します。 線が非表示の場合、または線の太さが一定ではない場合は、null を返します。
+  summary: 線の太さ (ポイント数) を表します。 線が `null` 表示されない場合、または線の太さがない場合に返します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#setColor:member(1)
   package: ExcelScript!
   fullName: setColor(color)
-  summary: 'フォームの \# RRGGBB ("FFA500" など) または名前付きの html 色 (例: "オレンジ") の線の色を html 色形式で表します。'
+  summary: 行の色を HTML カラー形式 \# 、RRGGBB 形式 ("FFA500" など) または名前付き HTML 色 ("オレンジ色" など) として表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -108,7 +108,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#setDashStyle:member(1)
   package: ExcelScript!
   fullName: setDashStyle(dashStyle)
-  summary: 図形の線スタイルを表します。 線が非表示の場合、または破線のスタイルが一定ではない場合は、null を返します。 詳細については、「ExcelScript」を参照してください。
+  summary: 図形の線スタイルを表します。 線が `null` 表示されない場合、または一貫性のない破線スタイルがある場合に返します。 詳細は「`ExcelScript.ShapeLineStyle`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -125,7 +125,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#setStyle:member(1)
   package: ExcelScript!
   fullName: setStyle(style)
-  summary: 図形の線スタイルを表します。 線が非表示の場合、またはスタイルが一定ではない場合は、null を返します。 詳細については、「ExcelScript」を参照してください。
+  summary: 図形の線スタイルを表します。 線が `null` 表示されないか、スタイルが一貫性のない場合に返します。 詳細は「`ExcelScript.ShapeLineStyle`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -142,7 +142,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#setTransparency:member(1)
   package: ExcelScript!
   fullName: setTransparency(transparency)
-  summary: 指定された線の透明度を示す 0.0 (不透明) から 1.0 (透明) までの値を表します。 図形の透明度が一定ではない場合は、null を返します。
+  summary: 指定された線の透明度を示す 0.0 (不透明) から 1.0 (透明) までの値を表します。 図形の `null` 透明度が一貫性のない場合に返します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#setVisible:member(1)
   package: ExcelScript!
   fullName: setVisible(visible)
-  summary: Shape 要素の線の書式を表示するかどうかを指定します。 図形の可視性が一定ではない場合は、null を返します。
+  summary: 図形要素の線の書式設定が表示される場合に指定します。 図形の `null` 表示が一貫性のない場合に返します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -176,7 +176,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#setWeight:member(1)
   package: ExcelScript!
   fullName: setWeight(weight)
-  summary: 線の太さ (ポイント数) を表します。 線が非表示の場合、または線の太さが一定ではない場合は、null を返します。
+  summary: 線の太さ (ポイント数) を表します。 線が `null` 表示されない場合、または線の太さがない場合に返します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -190,9 +190,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: bad1df9e2238ca401ec4f8ca3d3e30198db219d8
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 2ea61848a51fe162e684d79d1b1439a1ffdf5356
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420630"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607369"
