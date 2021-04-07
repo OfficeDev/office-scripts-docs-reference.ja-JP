@@ -3,7 +3,7 @@ name: ExcelScript.WorkbookProtection
 uid: ExcelScript!ExcelScript.WorkbookProtection:interface
 package: ExcelScript!
 fullName: ExcelScript.WorkbookProtection
-summary: ブックオブジェクトの保護を表します。
+summary: ブック オブジェクトの保護を表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorkbookProtection#getProtected:member(1)
   package: ExcelScript!
   fullName: getProtected()
-  summary: ブックが保護されているかどうかを指定します。
+  summary: ブックが保護される場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -34,7 +34,7 @@ methods:
     content: 'protect(password?: string): void;'
     parameters:
     - id: password
-      description: ブックの保護パスワード。
+      description: ブック保護パスワード。
       type: string
     return:
       type: void
@@ -51,15 +51,15 @@ methods:
     content: 'unprotect(password?: string): void;'
     parameters:
     - id: password
-      description: ブックの保護パスワード。
+      description: ブック保護パスワード。
       type: string
     return:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 78fcc6042f655d841c8330506ca305e7533ac0f6
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: c3744f882474aedd6d50bdbb466cf704b3b5b143
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415163"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607292"

@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorksheetFreezePanes#freezeAt:member(1)
   package: ExcelScript!
   fullName: freezeAt(frozenRange)
-  summary: アクティブなワークシート ビューに固定セルを設定します。 指定される範囲は、最上位および左端のウィンドウで固定されるセルに対応します。
+  summary: アクティブなワークシート ビューに固定セルを設定します。 指定された範囲は、上部および左側のウィンドウで固定されるセルに対応します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -21,7 +21,7 @@ methods:
     content: 'freezeAt(frozenRange: Range | string): void;'
     parameters:
     - id: frozenRange
-      description: 固定するセルを表す範囲、または固定されていないすべてのウィンドウを削除する場合は null。
+      description: 凍結するセルを表す範囲、またはすべての固定されたウィンドウ `null` を削除する範囲。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: void
@@ -30,7 +30,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorksheetFreezePanes#freezeColumns:member(1)
   package: ExcelScript!
   fullName: freezeColumns(count)
-  summary: ワークシートの最初の列を所定の位置に固定します。
+  summary: ワークシートの最初の列または列を固定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -38,7 +38,7 @@ methods:
     content: 'freezeColumns(count?: number): void;'
     parameters:
     - id: count
-      description: 固定する列の数 (省略可能)、またはすべての列を固定解除するゼロ
+      description: 固定する列の省略可能な数、またはすべての列の凍結を解除する 0
       type: number
     return:
       type: void
@@ -55,7 +55,7 @@ methods:
     content: 'freezeRows(count?: number): void;'
     parameters:
     - id: count
-      description: 固定する行数 (省略可能)、またはすべての行を固定解除するためのゼロ
+      description: フリーズする行の省略可能な数、またはすべての行の凍結を解除する 0
       type: number
     return:
       type: void
@@ -64,7 +64,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorksheetFreezePanes#getLocation:member(1)
   package: ExcelScript!
   fullName: getLocation()
-  summary: アクティブなワークシート ビュー内の固定セルを記述する範囲を取得します。 固定範囲は、上端と左端のウィンドウ枠で固定されているセルに対応します。 ペインが固定されていない場合、この関数は、プロパティが設定されたオブジェクトを返します。 `isNullObject``true`<!-- -->.
+  summary: アクティブなワークシート ビュー内の固定セルを記述する範囲を取得します。 固定範囲は、最上部および左側のウィンドウで固定されているセルに対応します。 固定されたウィンドウがない場合、この関数はプロパティが次に設定された `isNullObject` オブジェクトを返します。 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -87,9 +87,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 6e5fbac54802cd580aee48a168245ddc3f4bb59a
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: 3ee4e99a62a7adfff3ab84a75424673c3cb9f59c
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554049"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607278"

@@ -3,7 +3,7 @@ name: ExcelScript.SearchCriteria
 uid: ExcelScript!ExcelScript.SearchCriteria:interface
 package: ExcelScript!
 fullName: ExcelScript.SearchCriteria
-summary: 使用する検索基準を表します。
+summary: 使用する検索条件を表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.SearchCriteria#completeMatch:member
   package: ExcelScript!
   fullName: completeMatch
-  summary: 一致する必要があるか、完全か一部であるかを指定します。 完全一致は、セルの内容全体に一致します。 部分一致は、セルのコンテンツ内の部分文字列に一致します (たとえば、 `cat` 部分的に一致 `caterpillar` し、 `scatter`<!-- -->). 既定値は false (部分一致) です。
+  summary: 一致が完了する必要がある場合と部分的に行う必要がある場合に指定します。 完全一致は、セルの内容全体と一致します。 部分的な一致は、セルのコンテンツ内の部分文字列と一致します (部分的に一致し `cat` `caterpillar` 、 `scatter`<!-- -->). 既定値は `false` (部分) です。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.SearchCriteria#matchCase:member
   package: ExcelScript!
   fullName: matchCase
-  summary: 一致が大文字と小文字を区別するかどうかを指定します。 既定値は false (区別しない) です。
+  summary: 一致で大文字と小文字が区別される場合を指定します。 既定値は `false` (大文字と小文字を区別しない) です。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.SearchCriteria#searchDirection:member
   package: ExcelScript!
   fullName: searchDirection
-  summary: 検索の方向を指定します。 既定値は前方向です。 「ExcelScript. SearchDirection」を参照してください。
+  summary: 検索の方向を指定します。 既定値は前方向です。 参照 `ExcelScript.SearchDirection`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -46,9 +46,9 @@ properties:
     return:
       type: <xref uid="ExcelScript!ExcelScript.SearchDirection:enum" />
 metadata:
-  ms.openlocfilehash: d89bc86f6e879e686895008e09b83f2c36780279
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 4a5a44cf76a45689d6c5f0c38356a3700f188890
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420672"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607404"

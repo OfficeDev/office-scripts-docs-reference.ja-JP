@@ -3,7 +3,7 @@ name: ExcelScript.Shape
 uid: ExcelScript!ExcelScript.Shape:interface
 package: ExcelScript!
 fullName: ExcelScript.Shape
-summary: ワークシートの標準図形オブジェクトを表します。 図形とは、幾何学的な図形、線、図形のグループなどのことです。
+summary: ワークシート内の汎用図形オブジェクトを表します。 図形には、幾何学的な図形、線、図形のグループなどがあります。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#copyTo:member(1)
   package: ExcelScript!
   fullName: copyTo(destinationSheet)
-  summary: Shape オブジェクトをコピーして貼り付けます。 貼り付けられた図形は、この図形と同じピクセル位置にコピーされます。
+  summary: オブジェクトをコピーして貼り付 `Shape` けます。 貼り付けされた図形は、この図形と同じピクセル位置にコピーされます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -21,7 +21,7 @@ methods:
     content: 'copyTo(destinationSheet?: Worksheet | string): Shape;'
     parameters:
     - id: destinationSheet
-      description: Shape オブジェクトの貼り付け先となるシートを指定します。 既定値は、コピーされた図形のワークシートです。
+      description: 図形オブジェクトを貼り付けするシート。 既定値は、コピーされた図形のワークシートです。
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" /> | string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
@@ -43,7 +43,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getAltTextDescription:member(1)
   package: ExcelScript!
   fullName: getAltTextDescription()
-  summary: Shape オブジェクトの代替説明テキストを指定します。
+  summary: オブジェクトの代替説明テキストを指定 `Shape` します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -56,7 +56,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getAltTextTitle:member(1)
   package: ExcelScript!
   fullName: getAltTextTitle()
-  summary: Shape オブジェクトの代替タイトルテキストを指定します。
+  summary: オブジェクトの代替タイトル テキストを指定 `Shape` します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -69,7 +69,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getAsImage:member(1)
   package: ExcelScript!
   fullName: getAsImage(format)
-  summary: 図形を画像に変換し、base 64 でエンコードされた文字列として画像を返します。 DPI は 96 です。 サポートされている形式は、 `ExcelScript.PictureFormat.BMP`<!-- -->, `ExcelScript.PictureFormat.PNG`<!-- -->, `ExcelScript.PictureFormat.JPEG`<!-- -->そして `ExcelScript.PictureFormat.GIF`<!-- -->.
+  summary: 図形を画像に変換し、base 64 でエンコードされた文字列として画像を返します。 DPI は 96 です。 サポートされている唯一の形式は次のとおりです。 `ExcelScript.PictureFormat.BMP`<!-- -->, `ExcelScript.PictureFormat.PNG`<!-- -->, `ExcelScript.PictureFormat.JPEG`<!-- -->そして `ExcelScript.PictureFormat.GIF`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -77,7 +77,7 @@ methods:
     content: 'getAsImage(format: PictureFormat): string;'
     parameters:
     - id: format
-      description: 画像の形式を指定します。
+      description: イメージの形式を指定します。
       type: <xref uid="ExcelScript!ExcelScript.PictureFormat:enum" />
     return:
       type: string
@@ -125,7 +125,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getGeometricShapeType:member(1)
   package: ExcelScript!
   fullName: getGeometricShapeType()
-  summary: この幾何学図形の図形の種類を指定します。 詳細については、「ExcelScript」を参照してください。 図形の種類が "GeometricShape" ではない場合は、null を返します。
+  summary: この幾何学的な図形の幾何学的な図形の種類を指定します。 詳細は「`ExcelScript.GeometricShapeType`」をご覧ください。 図形の `null` 種類が "GeometricShape" ではない場合に返します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -151,7 +151,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getHeight:member(1)
   package: ExcelScript!
   fullName: getHeight()
-  summary: 図形の高さをポイント単位で指定します。 負の値を設定した場合、または入力に0を指定した場合、無効な引数の例外がスローされます。
+  summary: 図形の高さをポイントで指定します。 負の値 `InvalidArgument` または 0 を入力として設定すると、例外をスローします。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -164,7 +164,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getId:member(1)
   package: ExcelScript!
   fullName: getId()
-  summary: 図形の識別子を指定します。
+  summary: 図形識別子を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -190,7 +190,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getLeft:member(1)
   package: ExcelScript!
   fullName: getLeft()
-  summary: 図形の左側からワークシートの左側までの距離 (ポイント数) です。 入力として負の値を設定すると、無効な引数の例外がスローされます。
+  summary: 図形の左側からワークシートの左側までの距離 (ポイント数) です。 負の値 `InvalidArgument` を入力として設定すると、例外をスローします。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -242,7 +242,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getLockAspectRatio:member(1)
   package: ExcelScript!
   fullName: getLockAspectRatio()
-  summary: この図形の縦横比がロックされているかどうかを指定します。
+  summary: この図形の縦横比をロックする場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -294,7 +294,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getRotation:member(1)
   package: ExcelScript!
   fullName: getRotation()
-  summary: 図形の回転角度を度単位で指定します。
+  summary: 図形の回転角度を度で指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -320,7 +320,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getTop:member(1)
   package: ExcelScript!
   fullName: getTop()
-  summary: 図形の上端からワークシートの上までのポイント単位の距離です。 入力として負の値を設定すると、無効な引数の例外がスローされます。
+  summary: 図形の上端からワークシートの上までのポイント単位の距離です。 負の値 `InvalidArgument` を入力として設定すると、例外をスローします。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -333,7 +333,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getType:member(1)
   package: ExcelScript!
   fullName: getType()
-  summary: この図形の種類を返します。 詳細については、「ExcelScript」を参照してください。
+  summary: この図形の種類を返します。 詳細は「`ExcelScript.ShapeType`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -346,7 +346,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getVisible:member(1)
   package: ExcelScript!
   fullName: getVisible()
-  summary: 図形を表示するかどうかを指定します。
+  summary: 図形が表示される場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -359,7 +359,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getWidth:member(1)
   package: ExcelScript!
   fullName: getWidth()
-  summary: 図形の幅をポイント単位で指定します。 負の値を設定した場合、または入力に0を指定した場合、無効な引数の例外がスローされます。
+  summary: 図形の幅をポイント単位で指定します。 負の値 `InvalidArgument` または 0 を入力として設定すると、例外をスローします。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -393,7 +393,7 @@ methods:
     content: 'incrementLeft(increment: number): void;'
     parameters:
     - id: increment
-      description: 図形を水平方向に移動するには、ポイント単位で指定します。 正の値を指定すると図形は右に移動し、負の値を指定すると左に移動します。 シートの方向が右から左の場合、正の値を指定すると、図形は左に移動し、負の値を指定すると右に移動します。
+      description: 増分をポイント単位で指定すると、図形は水平方向に移動されます。 正の値を指定すると、図形は右に移動し、負の値を指定すると左に移動します。 シートが右から左に向いた場合は、正の値を指定すると図形が左に移動し、負の値が右に移動します。
       type: number
     return:
       type: void
@@ -402,7 +402,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#incrementRotation:member(1)
   package: ExcelScript!
   fullName: incrementRotation(increment)
-  summary: z 軸を中心に、指定された度数だけ、図形を時計回りに回転します。 `rotation`図形の絶対回転角度を設定するには、プロパティを使用します。
+  summary: z 軸を中心に、指定された度数だけ、図形を時計回りに回転します。 プロパティを `rotation` 使用して、図形の絶対回転を設定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -410,7 +410,7 @@ methods:
     content: 'incrementRotation(increment: number): void;'
     parameters:
     - id: increment
-      description: 図形を回転する角度を指定します。 正の値を指定すると図形は時計回りに回転し、負の値を指定すると反時計回りに回転します。
+      description: 図形を回転する度数。 正の値を指定すると、図形は時計回りに回転し、負の値は反時計回りに回転します。
       type: number
     return:
       type: void
@@ -427,7 +427,7 @@ methods:
     content: 'incrementTop(increment: number): void;'
     parameters:
     - id: increment
-      description: 図形を垂直方向に移動するには、ポイント単位で指定します。 をポイント単位で指定します。 正の値を指定すると図形は下に移動し、負の値を指定すると上に移動します。
+      description: 増分をポイント単位で指定すると、図形は垂直方向に移動されます。 正の値を指定すると、図形は下に移動し、負の値を指定すると上に移動します。
       type: number
     return:
       type: void
@@ -452,10 +452,10 @@ methods:
       description: 現在の高さと変更後の高さの比率、または元の高さと変更後の高さの比率を指定します。
       type: number
     - id: scaleType
-      description: 図形を元のサイズに対して拡大または縮小するかを指定します。 元のサイズスケーリングオプションは、イメージに対してのみ機能します。
+      description: 図形を元のサイズまたは現在のサイズを基準に拡大/縮小するかどうかを指定します。 元のサイズのスケーリング オプションは、イメージに対してのみ機能します。
       type: <xref uid="ExcelScript!ExcelScript.ShapeScaleType:enum" />
     - id: scaleFrom
-      description: 省略可能。 図形を拡大縮小する場合、図形の位置を保持する部分を指定します。 省略すると、図形の左上隅の位置を保持します。
+      description: 省略可能。 図形を拡大縮小する場合、図形の位置を保持する部分を指定します。 省略すると、図形の左上隅が位置を保持します。
       type: <xref uid="ExcelScript!ExcelScript.ShapeScaleFrom:enum" />
     return:
       type: void
@@ -480,10 +480,10 @@ methods:
       description: 現在の幅と変更後の幅の比率、または元の幅と変更後の幅の比率を指定します。
       type: number
     - id: scaleType
-      description: 図形を元のサイズに対して拡大または縮小するかを指定します。 元のサイズスケーリングオプションは、イメージに対してのみ機能します。
+      description: 図形を元のサイズまたは現在のサイズを基準に拡大/縮小するかどうかを指定します。 元のサイズのスケーリング オプションは、イメージに対してのみ機能します。
       type: <xref uid="ExcelScript!ExcelScript.ShapeScaleType:enum" />
     - id: scaleFrom
-      description: 省略可能。 図形を拡大縮小する場合、図形の位置を保持する部分を指定します。 省略すると、図形の左上隅の位置を保持します。
+      description: 省略可能。 図形を拡大縮小する場合、図形の位置を保持する部分を指定します。 省略すると、図形の左上隅が位置を保持します。
       type: <xref uid="ExcelScript!ExcelScript.ShapeScaleFrom:enum" />
     return:
       type: void
@@ -492,7 +492,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setAltTextDescription:member(1)
   package: ExcelScript!
   fullName: setAltTextDescription(altTextDescription)
-  summary: Shape オブジェクトの代替説明テキストを指定します。
+  summary: オブジェクトの代替説明テキストを指定 `Shape` します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -509,7 +509,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setAltTextTitle:member(1)
   package: ExcelScript!
   fullName: setAltTextTitle(altTextTitle)
-  summary: Shape オブジェクトの代替タイトルテキストを指定します。
+  summary: オブジェクトの代替タイトル テキストを指定 `Shape` します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -526,7 +526,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setGeometricShapeType:member(1)
   package: ExcelScript!
   fullName: setGeometricShapeType(geometricShapeType)
-  summary: この幾何学図形の図形の種類を指定します。 詳細については、「ExcelScript」を参照してください。 図形の種類が "GeometricShape" ではない場合は、null を返します。
+  summary: この幾何学的な図形の幾何学的な図形の種類を指定します。 詳細は「`ExcelScript.GeometricShapeType`」をご覧ください。 図形の `null` 種類が "GeometricShape" ではない場合に返します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -543,7 +543,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setHeight:member(1)
   package: ExcelScript!
   fullName: setHeight(height)
-  summary: 図形の高さをポイント単位で指定します。 負の値を設定した場合、または入力に0を指定した場合、無効な引数の例外がスローされます。
+  summary: 図形の高さをポイントで指定します。 負の値 `InvalidArgument` または 0 を入力として設定すると、例外をスローします。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -560,7 +560,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setLeft:member(1)
   package: ExcelScript!
   fullName: setLeft(left)
-  summary: 図形の左側からワークシートの左側までの距離 (ポイント数) です。 入力として負の値を設定すると、無効な引数の例外がスローされます。
+  summary: 図形の左側からワークシートの左側までの距離 (ポイント数) です。 負の値 `InvalidArgument` を入力として設定すると、例外をスローします。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -577,7 +577,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setLockAspectRatio:member(1)
   package: ExcelScript!
   fullName: setLockAspectRatio(lockAspectRatio)
-  summary: この図形の縦横比がロックされているかどうかを指定します。
+  summary: この図形の縦横比をロックする場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -628,7 +628,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setRotation:member(1)
   package: ExcelScript!
   fullName: setRotation(rotation)
-  summary: 図形の回転角度を度単位で指定します。
+  summary: 図形の回転角度を度で指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -645,7 +645,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setTop:member(1)
   package: ExcelScript!
   fullName: setTop(top)
-  summary: 図形の上端からワークシートの上までのポイント単位の距離です。 入力として負の値を設定すると、無効な引数の例外がスローされます。
+  summary: 図形の上端からワークシートの上までのポイント単位の距離です。 負の値 `InvalidArgument` を入力として設定すると、例外をスローします。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -662,7 +662,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setVisible:member(1)
   package: ExcelScript!
   fullName: setVisible(visible)
-  summary: 図形を表示するかどうかを指定します。
+  summary: 図形が表示される場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -679,7 +679,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setWidth:member(1)
   package: ExcelScript!
   fullName: setWidth(width)
-  summary: 図形の幅をポイント単位で指定します。 負の値を設定した場合、または入力に0を指定した場合、無効な引数の例外がスローされます。
+  summary: 図形の幅をポイント単位で指定します。 負の値 `InvalidArgument` または 0 を入力として設定すると、例外をスローします。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -704,15 +704,15 @@ methods:
     content: 'setZOrder(position: ShapeZOrder): void;'
     parameters:
     - id: position
-      description: 他の図形を基準にして z オーダーのスタック内の図形を移動する位置を指定します。 詳細については、「ExcelScript Order」を参照してください。
+      description: Z オーダー スタック内の図形を他の図形に対して相対的に移動する場所。 詳細は「`ExcelScript.ShapeZOrder`」をご覧ください。
       type: <xref uid="ExcelScript!ExcelScript.ShapeZOrder:enum" />
     return:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 5f91e5e56a6070dafa9e07a6b9d4d48328abfca6
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 36a7bebbdc04c3cd25b9e093008cfdb50e67a4c1
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420665"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607397"

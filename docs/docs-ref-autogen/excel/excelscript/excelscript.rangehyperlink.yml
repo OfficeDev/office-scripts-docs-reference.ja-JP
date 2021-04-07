@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.RangeHyperlink#documentReference:member
   package: ExcelScript!
   fullName: documentReference
-  summary: ハイパーリンクのドキュメント参照先を表します。
+  summary: ハイパーリンクのドキュメント参照ターゲットを表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -58,9 +58,9 @@ properties:
     return:
       type: string
 metadata:
-  ms.openlocfilehash: 8ff934a57f355a4480ae8c939e77b1f07a7b6c3e
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: b296ffb565aa120c41ff01fd95e8f8e92b0d3dc3
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416597"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607425"

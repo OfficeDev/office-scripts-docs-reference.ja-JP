@@ -3,7 +3,7 @@ name: ExcelScript.Subtotals
 uid: ExcelScript!ExcelScript.Subtotals:interface
 package: ExcelScript!
 fullName: ExcelScript.Subtotals
-summary: ピボットフィールドの小計。
+summary: ピボット フィールドの小計。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.Subtotals#automatic:member
   package: ExcelScript!
   fullName: automatic
-  summary: automatic が true に設定されている場合、小計を設定する際に、他の値はすべて無視されます。
+  summary: If `Automatic` がに設定されている場合 `true`<!-- -->を設定すると、他のすべての値は無視されます。 `Subtotals`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -133,7 +133,7 @@ properties:
   uid: ExcelScript!ExcelScript.Subtotals#variance:member
   package: ExcelScript!
   fullName: variance
-  summary: Var
+  summary: 差異
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -154,9 +154,9 @@ properties:
     return:
       type: boolean
 metadata:
-  ms.openlocfilehash: c75a609fc36f6b00544f4d9437c9c149bcb64848
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: c34f149472ce8c2cde19ce23c5f3cb1e84c2a28a
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419328"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607334"

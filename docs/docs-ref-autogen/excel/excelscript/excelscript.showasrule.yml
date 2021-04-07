@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.ShowAsRule#baseField:member
   package: ExcelScript!
   fullName: baseField
-  summary: ShowAsCalculation 型に基づき、該当する場合は ShowAs 計算の基準となるベース ピボット フィールド。それ以外の場合は null 値です。
+  summary: 種類に応じて該当する場合は、計算の基にピボット `ShowAs` `ShowAsCalculation` フィールドを設定します。それ以外の場合 `null`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.ShowAsRule#baseItem:member
   package: ExcelScript!
   fullName: baseItem
-  summary: ShowAsCalculation 型に基づき、該当する場合は ShowAs 計算の基準となるベース項目。それ以外の場合は null 値です。
+  summary: 計算の基に設定 `ShowAs` するアイテム (型に応じて該当する場合 `ShowAsCalculation` ) `null`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.ShowAsRule#calculation:member
   package: ExcelScript!
   fullName: calculation
-  summary: データ ピボット フィールドに使用する ShowAs 計算。 詳細については、「ExcelScript. ShowAsCalculation」を参照してください。
+  summary: '`ShowAs`PivotField に使用する計算。 詳細は「`ExcelScript.ShowAsCalculation`」をご覧ください。'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -46,9 +46,9 @@ properties:
     return:
       type: <xref uid="ExcelScript!ExcelScript.ShowAsCalculation:enum" />
 metadata:
-  ms.openlocfilehash: 67e05ceac6ff56dc434ee1679fc237c15216c871
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 6b811a5ed9514c963f23ae2d4bce796431236782
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420504"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607362"

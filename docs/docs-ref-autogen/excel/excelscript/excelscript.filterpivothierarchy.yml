@@ -3,7 +3,7 @@ name: ExcelScript.FilterPivotHierarchy
 uid: ExcelScript!ExcelScript.FilterPivotHierarchy:interface
 package: ExcelScript!
 fullName: ExcelScript.FilterPivotHierarchy
-summary: Excel の FilterPivotHierarchy を表します。
+summary: Excel FilterPivotHierarchy を表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.FilterPivotHierarchy#getPivotField:member(1)
   package: ExcelScript!
   fullName: getPivotField(name)
-  summary: 名前によってピボットフィールドを取得します。 PivotField が存在しない場合、この関数は、プロパティが次の値に設定されたオブジェクトを返します。 `isNullObject``true`<!-- -->.
+  summary: 名前でピボットフィールドを取得します。 PivotField が存在しない場合、この関数はプロパティを次に設定した `isNullObject` オブジェクトを返します。 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -73,7 +73,7 @@ methods:
     content: 'getPivotField(name: string): PivotField | undefined;'
     parameters:
     - id: name
-      description: 取得する PivotField の名前。
+      description: 取得するピボットフィールドの名前。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | undefined
@@ -156,9 +156,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: af7fd69594be9ce4e054accf9bbc368055e51b8d
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: cf431a5718822ee8d157fdfa96ceca84d87c5323
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554647"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607257"

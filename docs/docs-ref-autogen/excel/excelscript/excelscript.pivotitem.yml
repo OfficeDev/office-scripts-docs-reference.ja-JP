@@ -3,7 +3,7 @@ name: ExcelScript.PivotItem
 uid: ExcelScript!ExcelScript.PivotItem:interface
 package: ExcelScript!
 fullName: ExcelScript.PivotItem
-summary: Excel の PivotItem を表します。
+summary: Excel PivotItem を表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotItem#getVisible:member(1)
   package: ExcelScript!
   fullName: getVisible()
-  summary: PivotItem を表示するかどうかを指定します。
+  summary: PivotItem が表示される場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -99,7 +99,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotItem#setVisible:member(1)
   package: ExcelScript!
   fullName: setVisible(visible)
-  summary: PivotItem を表示するかどうかを指定します。
+  summary: PivotItem が表示される場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -113,9 +113,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 691551a1db24705c3a6f9d2d379df6b2caa5978a
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 52df61b82381f963ddd361d22f3a72f9650aff94
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415219"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607460"
