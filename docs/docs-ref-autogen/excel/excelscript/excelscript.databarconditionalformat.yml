@@ -3,7 +3,7 @@ name: ExcelScript.DataBarConditionalFormat
 uid: ExcelScript!ExcelScript.DataBarConditionalFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.DataBarConditionalFormat
-summary: Excel の条件付きデータバーの種類を表します。
+summary: Excel の条件付きデータ バーの種類を表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataBarConditionalFormat#getAxisColor:member(1)
   package: ExcelScript!
   fullName: getAxisColor()
-  summary: 'フォーム RRGGBB (例: "FFA500") の軸線の色を表す HTML カラーコード、 \# または名前付きの html 色 (例: 「オレンジ」)。 軸が存在しない場合または設定されていない場合は、"" (空の文字列)。'
+  summary: 軸線の色 \# 、RRGGBB 形式 ("FFA500" など) を表す HTML カラー コード、または名前付き HTML 色 ("オレンジ色" など) を表します。 軸が存在しない場合、または設定されている場合、値は "" (空の文字列) です。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataBarConditionalFormat#getAxisFormat:member(1)
   package: ExcelScript!
   fullName: getAxisFormat()
-  summary: Excel データバーの軸をどのように判別するかを表します。
+  summary: Excel データ バーの軸の決定方法を表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataBarConditionalFormat#getBarDirection:member(1)
   package: ExcelScript!
   fullName: getBarDirection()
-  summary: データバーのグラフィックスの基準となる方向を指定します。
+  summary: データ バー グラフィックの基になる方向を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataBarConditionalFormat#getLowerBoundRule:member(1)
   package: ExcelScript!
   fullName: getLowerBoundRule()
-  summary: データ バーの下限値 (および該当する場合はその計算方法) を構成するルール。 `ConditionalDataBarRule`オブジェクトは JSON オブジェクトとして設定する必要があります ( `x.lowerBoundRule = {...}` の代わりに使用します)。`x.lowerBoundRule.formula = ...`<!-- -->).
+  summary: データ バーの下限値 (および該当する場合はその計算方法) を構成するルール。 オブジェクト `ConditionalDataBarRule` は JSON オブジェクトとして設定する必要があります (代 `x.lowerBoundRule = {...}` わりに `x.lowerBoundRule.formula = ...`<!-- -->).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataBarConditionalFormat#getNegativeFormat:member(1)
   package: ExcelScript!
   fullName: getNegativeFormat()
-  summary: Excel データバーの軸の左側にあるすべての値の表現。
+  summary: Excel データ バーの軸の左側のすべての値を表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataBarConditionalFormat#getPositiveFormat:member(1)
   package: ExcelScript!
   fullName: getPositiveFormat()
-  summary: Excel データバーの軸の右側にあるすべての値の表現。
+  summary: Excel データ バーの軸の右側のすべての値を表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataBarConditionalFormat#getShowDataBarOnly:member(1)
   package: ExcelScript!
   fullName: getShowDataBarOnly()
-  summary: true の場合、データ バーが適用されているセルの値を非表示にします。
+  summary: もし `true`<!-- -->をクリックすると、データ バーが適用されているセルの値が非表示になります。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataBarConditionalFormat#getUpperBoundRule:member(1)
   package: ExcelScript!
   fullName: getUpperBoundRule()
-  summary: データ バーの上限値 (および該当する場合はその計算方法) を構成するルール。 `ConditionalDataBarRule`オブジェクトは JSON オブジェクトとして設定する必要があります ( `x.upperBoundRule = {...}` の代わりに使用します)。`x.upperBoundRule.formula = ...`<!-- -->).
+  summary: データ バーの上限値 (および該当する場合はその計算方法) を構成するルール。 オブジェクト `ConditionalDataBarRule` は JSON オブジェクトとして設定する必要があります (代 `x.upperBoundRule = {...}` わりに `x.upperBoundRule.formula = ...`<!-- -->).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -117,7 +117,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataBarConditionalFormat#setAxisColor:member(1)
   package: ExcelScript!
   fullName: setAxisColor(axisColor)
-  summary: 'フォーム RRGGBB (例: "FFA500") の軸線の色を表す HTML カラーコード、 \# または名前付きの html 色 (例: 「オレンジ」)。 軸が存在しない場合または設定されていない場合は、"" (空の文字列)。'
+  summary: 軸線の色 \# 、RRGGBB 形式 ("FFA500" など) を表す HTML カラー コード、または名前付き HTML 色 ("オレンジ色" など) を表します。 軸が存在しない場合、または設定されている場合、値は "" (空の文字列) です。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -134,7 +134,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataBarConditionalFormat#setAxisFormat:member(1)
   package: ExcelScript!
   fullName: setAxisFormat(axisFormat)
-  summary: Excel データバーの軸をどのように判別するかを表します。
+  summary: Excel データ バーの軸の決定方法を表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -151,7 +151,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataBarConditionalFormat#setBarDirection:member(1)
   package: ExcelScript!
   fullName: setBarDirection(barDirection)
-  summary: データバーのグラフィックスの基準となる方向を指定します。
+  summary: データ バー グラフィックの基になる方向を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -168,7 +168,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataBarConditionalFormat#setLowerBoundRule:member(1)
   package: ExcelScript!
   fullName: setLowerBoundRule(lowerBoundRule)
-  summary: データ バーの下限値 (および該当する場合はその計算方法) を構成するルール。 `ConditionalDataBarRule`オブジェクトは JSON オブジェクトとして設定する必要があります ( `x.lowerBoundRule = {...}` の代わりに使用します)。`x.lowerBoundRule.formula = ...`<!-- -->).
+  summary: データ バーの下限値 (および該当する場合はその計算方法) を構成するルール。 オブジェクト `ConditionalDataBarRule` は JSON オブジェクトとして設定する必要があります (代 `x.lowerBoundRule = {...}` わりに `x.lowerBoundRule.formula = ...`<!-- -->).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -185,7 +185,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataBarConditionalFormat#setShowDataBarOnly:member(1)
   package: ExcelScript!
   fullName: setShowDataBarOnly(showDataBarOnly)
-  summary: true の場合、データ バーが適用されているセルの値を非表示にします。
+  summary: もし `true`<!-- -->をクリックすると、データ バーが適用されているセルの値が非表示になります。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -202,7 +202,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataBarConditionalFormat#setUpperBoundRule:member(1)
   package: ExcelScript!
   fullName: setUpperBoundRule(upperBoundRule)
-  summary: データ バーの上限値 (および該当する場合はその計算方法) を構成するルール。 `ConditionalDataBarRule`オブジェクトは JSON オブジェクトとして設定する必要があります ( `x.upperBoundRule = {...}` の代わりに使用します)。`x.upperBoundRule.formula = ...`<!-- -->).
+  summary: データ バーの上限値 (および該当する場合はその計算方法) を構成するルール。 オブジェクト `ConditionalDataBarRule` は JSON オブジェクトとして設定する必要があります (代 `x.upperBoundRule = {...}` わりに `x.upperBoundRule.formula = ...`<!-- -->).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -216,9 +216,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 71067c46b38608eb87a203c02f0406f1b68d0d2e
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 3a334c053c4f5bbddbcc87db22e43f21cbe47260
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415569"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606545"

@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowAutoFilter:member
   package: ExcelScript!
   fullName: allowAutoFilter
-  summary: 自動フィルター機能の使用を可能にするワークシート保護オプションを表します。
+  summary: オートフィルター機能の使用を許可するワークシート保護オプションを表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowDeleteColumns:member
   package: ExcelScript!
   fullName: allowDeleteColumns
-  summary: 列の削除を可能にするワークシート保護オプションを表します。
+  summary: 列の削除を許可するワークシート保護オプションを表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowDeleteRows:member
   package: ExcelScript!
   fullName: allowDeleteRows
-  summary: 行の削除を可能にするワークシート保護オプションを表します。
+  summary: 行の削除を許可するワークシート保護オプションを表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,7 +49,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowEditObjects:member
   package: ExcelScript!
   fullName: allowEditObjects
-  summary: オブジェクトの編集を可能にするワークシート保護オプションを表します。
+  summary: オブジェクトの編集を許可するワークシート保護オプションを表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -61,7 +61,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowEditScenarios:member
   package: ExcelScript!
   fullName: allowEditScenarios
-  summary: シナリオの編集を可能にするワークシート保護オプションを表します。
+  summary: シナリオの編集を許可するワークシート保護オプションを表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -73,7 +73,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowFormatCells:member
   package: ExcelScript!
   fullName: allowFormatCells
-  summary: セルの書式設定を可能にするワークシート保護オプションを表します。
+  summary: セルの書式設定を許可するワークシート保護オプションを表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -85,7 +85,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowFormatColumns:member
   package: ExcelScript!
   fullName: allowFormatColumns
-  summary: 列の書式設定を可能にするワークシート保護オプションを表します。
+  summary: 列の書式設定を許可するワークシート保護オプションを表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -97,7 +97,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowFormatRows:member
   package: ExcelScript!
   fullName: allowFormatRows
-  summary: 行の書式設定を可能にするワークシート保護オプションを表します。
+  summary: 行の書式設定を許可するワークシート保護オプションを表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -109,7 +109,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowInsertColumns:member
   package: ExcelScript!
   fullName: allowInsertColumns
-  summary: 列の挿入を可能にするワークシート保護オプションを表します。
+  summary: 列の挿入を許可するワークシート保護オプションを表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -121,7 +121,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowInsertHyperlinks:member
   package: ExcelScript!
   fullName: allowInsertHyperlinks
-  summary: ハイパーリンクの挿入を可能にするワークシート保護オプションを表します。
+  summary: ハイパーリンクの挿入を許可するワークシート保護オプションを表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -133,7 +133,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowInsertRows:member
   package: ExcelScript!
   fullName: allowInsertRows
-  summary: 行の挿入を可能にするワークシート保護オプションを表します。
+  summary: 行の挿入を許可するワークシート保護オプションを表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -145,7 +145,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowPivotTables:member
   package: ExcelScript!
   fullName: allowPivotTables
-  summary: ピボットテーブル機能の使用を可能にするワークシート保護オプションを表します。
+  summary: ピボットテーブル機能の使用を許可するワークシート保護オプションを表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -157,7 +157,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowSort:member
   package: ExcelScript!
   fullName: allowSort
-  summary: 並ベ替え機能の使用を可能にするワークシート保護オプションを表します。
+  summary: 並べ替え機能の使用を許可するワークシート保護オプションを表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -178,9 +178,9 @@ properties:
     return:
       type: <xref uid="ExcelScript!ExcelScript.ProtectionSelectionMode:enum" />
 metadata:
-  ms.openlocfilehash: d4d1d23a781e1be35d76429ab5af1d60d5d696c5
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 0772bfad59e8d426f5f989afdd69557ba5d49c10
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419230"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51605291"

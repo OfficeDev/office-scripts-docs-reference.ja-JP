@@ -3,7 +3,7 @@ name: ExcelScript.RangeReference
 uid: ExcelScript!ExcelScript.RangeReference:interface
 package: ExcelScript!
 fullName: ExcelScript.RangeReference
-summary: 'SheetName の形式の文字列参照を表します。A1: B5、またはグローバルまたはローカルの名前付き範囲。'
+summary: "\"SheetName! という形式の文字列参照を表します。A1:B5\"、またはグローバルまたはローカルの名前付き範囲。"
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.RangeReference#address:member
   package: ExcelScript!
   fullName: address
-  summary: "範囲のアドレスを指定します。たとえば、' SheetName!A1: B5 '。"
+  summary: 範囲のアドレス (たとえば"SheetName!A1:B5".
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -22,9 +22,9 @@ properties:
     return:
       type: string
 metadata:
-  ms.openlocfilehash: f6b7b4d465148aa0ef601a71a1fa5f1e56d34e6f
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 2502eba04073c8ec8349a3371d2744831d5b2f28
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49411916"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607159"

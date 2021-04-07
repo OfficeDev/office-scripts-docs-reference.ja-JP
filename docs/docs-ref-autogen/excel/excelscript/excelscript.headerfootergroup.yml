@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.HeaderFooterGroup#getState:member(1)
   package: ExcelScript!
   fullName: getState()
-  summary: ヘッダー/フッターが設定される状態。 詳細については、「ExcelScript. HeaderFooterState」を参照してください。
+  summary: ヘッダー/フッターが設定されている状態。 詳細は「`ExcelScript.HeaderFooterState`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.HeaderFooterGroup#setState:member(1)
   package: ExcelScript!
   fullName: setState(state)
-  summary: ヘッダー/フッターが設定される状態。 詳細については、「ExcelScript. HeaderFooterState」を参照してください。
+  summary: ヘッダー/フッターが設定されている状態。 詳細は「`ExcelScript.HeaderFooterState`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -152,9 +152,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 71e09d8afcb0e5bc03f61d0b33deaf1c8ae71fa0
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 814b26bcfb463566b9563e5eb07809139b69ad2f
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412378"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607236"

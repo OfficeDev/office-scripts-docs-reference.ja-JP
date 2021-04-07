@@ -3,7 +3,7 @@ name: ExcelScript.LabelFilterCondition
 uid: ExcelScript!ExcelScript.LabelFilterCondition:enum
 package: ExcelScript!
 fullName: ExcelScript.LabelFilterCondition
-summary: ラベルフィルターを適用することによって許容されるすべての条件を表す列挙。 フィールドに適用される PivotFilter の種類を構成するために使用します。 `PivotFilter.criteria.exclusive` true に設定すると、これらの条件の多くを反転させることができます。
+summary: ラベル フィルターを適用できる、受け入れられるすべての条件を表す列挙型。 フィールドに適用されるピボットフィルターの種類を構成するために使用します。 `PivotFilter.criteria.exclusive` これらの条件の多 `true` くを反転させる設定が可能です。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -12,82 +12,82 @@ fields:
   uid: ExcelScript!ExcelScript.LabelFilterCondition.beginsWith:member
   package: ExcelScript!
   summary: >-
-    ラベルが部分文字列の条件で始まります。
+    ラベルは部分文字列条件で始まります。
 
 
-    必要な条件: {`substring`<!-- -->}<!-- -->. オプションの条件: {`exclusive`<!-- -->}<!-- -->.
+    必須の条件: {`substring`<!-- -->}<!-- -->. オプションの条件: {`exclusive`<!-- -->}<!-- -->.
 - name: between
   uid: ExcelScript!ExcelScript.LabelFilterCondition.between:member
   package: ExcelScript!
   summary: >-
-    `lowerBound`And `upperBound` 条件。
+    間 `lowerBound` と `upperBound` 条件。
 
 
-    必要な条件: {`lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->. オプションの条件: {`exclusive`<!-- -->}<!-- -->.
+    必須の条件: {`lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->. オプションの条件: {`exclusive`<!-- -->}<!-- -->.
 - name: contains
   uid: ExcelScript!ExcelScript.LabelFilterCondition.contains:member
   package: ExcelScript!
   summary: >-
-    ラベルには、部分文字列の条件が含まれています。
+    Label には、サブ文字列の条件が含まれる。
 
 
-    必要な条件: {`substring`<!-- -->}<!-- -->. オプションの条件: {`exclusive`<!-- -->}<!-- -->.
+    必須の条件: {`substring`<!-- -->}<!-- -->. オプションの条件: {`exclusive`<!-- -->}<!-- -->.
 - name: endsWith
   uid: ExcelScript!ExcelScript.LabelFilterCondition.endsWith:member
   package: ExcelScript!
   summary: >-
-    ラベルは、部分文字列の条件で終わります。
+    ラベルは部分文字列条件で終わります。
 
 
-    必要な条件: {`substring`<!-- -->}<!-- -->. オプションの条件: {`exclusive`<!-- -->}<!-- -->.
+    必須の条件: {`substring`<!-- -->}<!-- -->. オプションの条件: {`exclusive`<!-- -->}<!-- -->.
 - name: equals
   uid: ExcelScript!ExcelScript.LabelFilterCondition.equals:member
   package: ExcelScript!
   summary: >-
-    比較基準に等しい。
+    比較条件に等しい。
 
 
-    必要な条件: {`comparator`<!-- -->}<!-- -->. オプションの条件: {`exclusive`<!-- -->}<!-- -->.
+    必須の条件: {`comparator`<!-- -->}<!-- -->. オプションの条件: {`exclusive`<!-- -->}<!-- -->.
 - name: greaterThan
   uid: ExcelScript!ExcelScript.LabelFilterCondition.greaterThan:member
   package: ExcelScript!
   summary: >-
-    比較条件の値より大きい。
+    比較条件より大きい。
 
 
-    必要な条件: {`comparator`<!-- -->}<!-- -->.
+    必須の条件: {`comparator`<!-- -->}<!-- -->.
 - name: greaterThanOrEqualTo
   uid: ExcelScript!ExcelScript.LabelFilterCondition.greaterThanOrEqualTo:member
   package: ExcelScript!
   summary: >-
-    比較基準と等しいかそれより大きい。
+    コンパレータ条件以上。
 
 
-    必要な条件: {`comparator`<!-- -->}<!-- -->.
+    必須の条件: {`comparator`<!-- -->}<!-- -->.
 - name: lessThan
   uid: ExcelScript!ExcelScript.LabelFilterCondition.lessThan:member
   package: ExcelScript!
   summary: >-
-    比較条件の値より小さい。
+    比較条件より小さい。
 
 
-    必要な条件: {`comparator`<!-- -->}<!-- -->.
+    必須の条件: {`comparator`<!-- -->}<!-- -->.
 - name: lessThanOrEqualTo
   uid: ExcelScript!ExcelScript.LabelFilterCondition.lessThanOrEqualTo:member
   package: ExcelScript!
   summary: >-
-    比較条件の値より小さいか等しい。
+    コンパレータ条件以下。
 
 
-    必要な条件: {`comparator`<!-- -->}<!-- -->.
+    必須の条件: {`comparator`<!-- -->}<!-- -->.
 - name: unknown
   uid: ExcelScript!ExcelScript.LabelFilterCondition.unknown:member
   package: ExcelScript!
-  summary: LabelFilterCondition が不明であるか、サポートされていません。
+  summary: '`LabelFilterCondition` 不明またはサポートされていません。'
 metadata:
-  ms.openlocfilehash: a594c7298529f819089b8b9985157fbc7d064e3d
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 971720fcb310dec1604bf18761b42f0ea34421a9
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415408"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606435"

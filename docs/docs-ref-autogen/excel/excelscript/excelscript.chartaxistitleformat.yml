@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxisTitleFormat#getBorder:member(1)
   package: ExcelScript!
   fullName: getBorder()
-  summary: グラフ軸のタイトルの枠線の書式を指定します。色、linestyle、および重みを含みます。
+  summary: 色、線のスタイル、太さなど、グラフ軸のタイトルの罫線の形式を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxisTitleFormat#getFill:member(1)
   package: ExcelScript!
   fullName: getFill()
-  summary: グラフ軸のタイトルの塗りつぶしの書式を指定します。
+  summary: グラフ軸のタイトルの塗りつぶしの書式設定を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxisTitleFormat#getFont:member(1)
   package: ExcelScript!
   fullName: getFont()
-  summary: グラフ軸のタイトルのフォントの属性 (フォント名、フォントサイズ、色など) をグラフ軸のタイトルオブジェクトとして指定します。
+  summary: グラフ軸タイトル オブジェクトのグラフ軸タイトルのフォント属性 (フォント名、フォント サイズ、色など) を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,9 +49,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.ChartFont:interface" />
       description: ''
 metadata:
-  ms.openlocfilehash: aa3d5e5f80de2db848dd49faa79439f0a0490d45
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 2a8b4cfada09ede9adb3bf5501b9032ad26247ea
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420063"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606601"

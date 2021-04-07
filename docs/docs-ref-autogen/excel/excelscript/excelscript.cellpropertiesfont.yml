@@ -3,7 +3,7 @@ name: ExcelScript.CellPropertiesFont
 uid: ExcelScript!ExcelScript.CellPropertiesFont:interface
 package: ExcelScript!
 fullName: ExcelScript.CellPropertiesFont
-summary: のプロパティを表します。 `format.font``getCellProperties`<!-- -->, `getRowProperties`<!-- -->、 `getColumnProperties` または `format.font` の入力パラメーター `setCellProperties`<!-- -->, `setRowProperties`<!-- -->そして `setColumnProperties`<!-- -->.
+summary: のプロパティ `format.font` を表します。 `getCellProperties`<!-- -->, `getRowProperties`<!-- -->そして `getColumnProperties`<!-- -->、または `format.font` の入力パラメーター `setCellProperties`<!-- -->, `setRowProperties`<!-- -->そして `setColumnProperties`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -130,9 +130,9 @@ properties:
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeUnderlineStyle:enum" />
 metadata:
-  ms.openlocfilehash: 6b5104aa2edf2fa0ab56abf4c59524697299d81a
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: b8810ed0fc9dd048d8e481c755f5559328d7b7e9
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420196"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606977"

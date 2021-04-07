@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.ConditionalCellValueRule#formula1:member
   package: ExcelScript!
   fullName: formula1
-  summary: 条件付き書式ルールを評価するために必要な場合、数式。
+  summary: 必要に応じて、条件付き書式ルールを評価する数式。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.ConditionalCellValueRule#formula2:member
   package: ExcelScript!
   fullName: formula2
-  summary: 条件付き書式ルールを評価するために必要な場合、数式。
+  summary: 必要に応じて、条件付き書式ルールを評価する数式。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -46,9 +46,9 @@ properties:
     return:
       type: <xref uid="ExcelScript!ExcelScript.ConditionalCellValueOperator:enum" />
 metadata:
-  ms.openlocfilehash: 99dcaaed173ccddd00142e3c85d936062f5f9ffb
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 300b542825d2eed18cd8f5a2fefe07ccc0862f98
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415940"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607124"

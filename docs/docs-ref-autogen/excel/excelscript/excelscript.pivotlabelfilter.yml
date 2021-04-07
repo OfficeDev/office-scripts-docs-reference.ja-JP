@@ -3,7 +3,7 @@ name: ExcelScript.PivotLabelFilter
 uid: ExcelScript!ExcelScript.PivotLabelFilter:interface
 package: ExcelScript!
 fullName: ExcelScript.PivotLabelFilter
-summary: ピボットフィールドに適用するラベルフィルターの構成可能なテンプレート。 は、 `condition` フィルターを操作するために設定する必要のある条件を定義します。
+summary: ピボットフィールドに適用するラベル フィルターの構成可能なテンプレート。 フィルター `condition` を操作するために設定する必要がある条件を定義します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotLabelFilter#exclusive:member
   package: ExcelScript!
   fullName: exclusive
-  summary: True の場合、フィルターは条件に一致するアイテムを *除外* します。 既定では false (条件に一致するアイテムを含むフィルター)。
+  summary: もし `true`<!-- -->を選択すると *、条件を満* たすアイテムが除外されます。 既定値は `false` (条件を満たすアイテムを含めるフィルター)。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotLabelFilter#lowerBound:member
   package: ExcelScript!
   fullName: lowerBound
-  summary: 'フィルター条件間の範囲の下限。 注: 数値文字列は、他の数値文字列と比較する場合、数値として処理されます。'
+  summary: 'フィルター条件の範囲の下限 `between` 。 注: 数値文字列は、他の数値文字列と比較するときに数値として扱われます。'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,7 +49,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotLabelFilter#substring:member
   package: ExcelScript!
   fullName: substring
-  summary: に使用されるサブ文字列 `BeginsWith`<!-- -->, `EndsWith`<!-- -->、および `Contains` フィルター条件。
+  summary: に使用されるサブ文字列 `beginsWith`<!-- -->, `endsWith`<!-- -->、および `contains` フィルター条件。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -61,7 +61,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotLabelFilter#upperBound:member
   package: ExcelScript!
   fullName: upperBound
-  summary: 'フィルター条件の間の範囲の上限を指定します。 注: 数値文字列は、他の数値文字列と比較する場合、数値として処理されます。'
+  summary: 'フィルター条件の範囲の上限 `between` 。 注: 数値文字列は、他の数値文字列と比較するときに数値として扱われます。'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -70,9 +70,9 @@ properties:
     return:
       type: string
 metadata:
-  ms.openlocfilehash: d030957f0b9d36c810d4e9b9016f5ec9ba5f704a
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: c6080eb33854c086d20c526e506de43a898f0463
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412056"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606386"

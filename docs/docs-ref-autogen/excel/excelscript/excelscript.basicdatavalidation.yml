@@ -3,7 +3,7 @@ name: ExcelScript.BasicDataValidation
 uid: ExcelScript!ExcelScript.BasicDataValidation:interface
 package: ExcelScript!
 fullName: ExcelScript.BasicDataValidation
-summary: 基本的な種類のデータ入力規則の条件を表します。
+summary: 基本的な型のデータ検証条件を表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.BasicDataValidation#formula1:member
   package: ExcelScript!
   fullName: formula1
-  summary: 'Operator プロパティが GreaterThan などのバイナリ演算子に設定されている場合、右のオペランドを指定します (左のオペランドは、ユーザーがセルに入力しようとした値です)。 三項演算子と NotBetween の間の and notbetween で、下限オペランドを指定します。 たとえば、formula1 を10に、演算子を GreaterThan に設定すると、範囲に対して有効なデータが10より大きいことを意味します。 値を設定する場合、数値、range オブジェクト、または文字列式 (文字列は文字列 number、セル参照は "= A1" など)、または "= MIN (A1, B1)" のような数式に渡すことができます。 値を取得するときは、常に文字列式として返されます。たとえば、"= 10"、"= A1"、"= SUM (A1: B5)" などです。'
+  summary: 演算子プロパティが GreaterThan などのバイナリ演算子に設定されている場合に、右側のオペランドを指定します (左側のオペランドは、ユーザーがセルに入力しようとする値です)。 3 項演算子 Between と NotBetween を使用して、下限オペランドを指定します。 たとえば、数式 1 を 10 に設定し、演算子を GreaterThan に設定すると、範囲の有効なデータは 10 より大きい必要があります。 値を設定すると、数値、範囲オブジェクト、または文字列式 (文字列が文字列番号、"=A1" のようなセル参照、または "=MIN(A1, B1)" のような数式) として渡されます。 値を取得すると、"=10"、"=A1"、"=SUM(A1:B5)"など、常に文字列式として返されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.BasicDataValidation#formula2:member
   package: ExcelScript!
   fullName: formula2
-  summary: '三項演算子を and NotBetween で指定すると、上限オペランドが指定されます。 は、GreaterThan などの二項演算子では使用されません。 値を設定する場合、数値、range オブジェクト、または文字列式 (文字列は文字列 number、セル参照は "= A1" など)、または "= MIN (A1, B1)" のような数式に渡すことができます。 値を取得するときは、常に文字列式として返されます。たとえば、"= 10"、"= A1"、"= SUM (A1: B5)" などです。'
+  summary: 3 項演算子 Between と NotBetween を使用して、上限オペランドを指定します。 GreaterThan などのバイナリ演算子では使用されません。 値を設定すると、数値、範囲オブジェクト、または文字列式 (文字列が文字列番号、"=A1" のようなセル参照、または "=MIN(A1, B1)" のような数式) として渡されます。 値を取得すると、"=10"、"=A1"、"=SUM(A1:B5)"など、常に文字列式として返されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -46,9 +46,9 @@ properties:
     return:
       type: <xref uid="ExcelScript!ExcelScript.DataValidationOperator:enum" />
 metadata:
-  ms.openlocfilehash: 2838d9862880de654555b397ba920d1eb4f30619
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 698ac0ea4a88c50a3297755a09bc30f79077d21d
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417293"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606622"

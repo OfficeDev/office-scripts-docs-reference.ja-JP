@@ -3,7 +3,7 @@ name: ExcelScript.PivotField
 uid: ExcelScript!ExcelScript.PivotField:interface
 package: ExcelScript!
 fullName: ExcelScript.PivotField
-summary: Excel のピボットフィールドを表します。
+summary: Excel ピボットフィールドを表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#applyFilter:member(1)
   package: ExcelScript!
   fullName: applyFilter(filter)
-  summary: 1つまたは複数のフィールドの現在の PivotFilters を設定し、フィールドに適用します。 指定したフィルターが無効であるか、適用できない場合は、例外がスローされます。
+  summary: 1 つ以上のフィールドの現在のピボットフィルターを設定し、フィールドに適用します。 指定されたフィルターが無効であるか、適用できない場合は、例外がスローされます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -21,7 +21,7 @@ methods:
     content: 'applyFilter(filter: PivotFilters): void;'
     parameters:
     - id: filter
-      description: 構成された特定の PivotFilter または複数の構成されたフィルターを含む PivotFilters インターフェイス。
+      description: 構成済みの特定の PivotFilter、または複数の構成済みフィルターを含む PivotFilters インターフェイス。
       type: <xref uid="ExcelScript!ExcelScript.PivotFilters:interface" />
     return:
       type: void
@@ -30,7 +30,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#clearAllFilters:member(1)
   package: ExcelScript!
   fullName: clearAllFilters()
-  summary: すべてのフィールドフィルターのすべての条件をクリアします。 これにより、そのフィールドのアクティブなフィルター処理がすべて削除されます。
+  summary: フィールドのすべてのフィルターからすべての条件をクリアします。 これにより、フィールドでアクティブなフィルター処理が削除されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -43,7 +43,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#clearFilter:member(1)
   package: ExcelScript!
   fullName: clearFilter(filterType)
-  summary: 指定した種類のフィールドのフィルターから、すべての既存の条件を削除します (現在適用されている場合)。
+  summary: 指定した種類のフィールドのフィルターからすべての既存の条件をクリアします (現在適用されている場合)。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -51,7 +51,7 @@ methods:
     content: 'clearFilter(filterType: PivotFilterType): void;'
     parameters:
     - id: filterType
-      description: すべての条件をクリアするフィールドのフィルターの種類を指定します。
+      description: すべての条件をクリアするフィールドのフィルターの種類。
       type: <xref uid="ExcelScript!ExcelScript.PivotFilterType:enum" />
     return:
       type: void
@@ -60,7 +60,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#getFilters:member(1)
   package: ExcelScript!
   fullName: getFilters()
-  summary: フィールドに現在適用されているすべてのフィルターを取得します。
+  summary: フィールドに現在適用されているフィルターを取得します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -112,7 +112,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#getPivotItem:member(1)
   package: ExcelScript!
   fullName: getPivotItem(name)
-  summary: 名前によって PivotItem を取得します。 PivotItem が存在しない場合、この関数は、プロパティが次の値に設定されたオブジェクトを返します。 `isNullObject``true`<!-- -->.
+  summary: 名前で PivotItem を取得します。 PivotItem が存在しない場合、この関数はプロパティを次に設定した `isNullObject` オブジェクトを返します。 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -120,7 +120,7 @@ methods:
     content: 'getPivotItem(name: string): PivotItem | undefined;'
     parameters:
     - id: name
-      description: 取得する PivotItem の名前を指定します。
+      description: 取得する PivotItem の名前。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.PivotItem:interface" /> | undefined
@@ -155,7 +155,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#isFiltered:member(1)
   package: ExcelScript!
   fullName: isFiltered(filterType)
-  summary: フィールドに適用されているフィルターがあるかどうかを確認します。
+  summary: フィールドに適用されたフィルターが何かあるか確認します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -163,7 +163,7 @@ methods:
     content: 'isFiltered(filterType?: PivotFilterType): boolean;'
     parameters:
     - id: filterType
-      description: 確認するフィルターの種類を示します。 型が指定されていない場合、このメソッドはフィルターが適用されているかどうかを確認します。
+      description: チェックするフィルターの種類。 型が指定されない場合、このメソッドはフィルターが適用されるのを確認します。
       type: <xref uid="ExcelScript!ExcelScript.PivotFilterType:enum" />
     return:
       type: boolean
@@ -231,7 +231,7 @@ methods:
     content: 'sortByLabels(sortBy: SortBy): void;'
     parameters:
     - id: sortBy
-      description: 並べ替えを昇順または降順のどちらで実行するかを指定します。
+      description: 並べ替えを昇順または降順で行う場合に指定します。
       type: <xref uid="ExcelScript!ExcelScript.SortBy:enum" />
     return:
       type: void
@@ -240,7 +240,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#sortByValues:member(1)
   package: ExcelScript!
   fullName: sortByValues(sortBy, valuesHierarchy, pivotItemScope)
-  summary: 与えられた範囲で、指定された値に基づいて PivotField を並べ替えます。 範囲では、同じ DataPivotHierarchy の複数の値がある場合に、並べ替えに使用する特定の値を定義します。
+  summary: 与えられた範囲で、指定された値に基づいて PivotField を並べ替えます。 スコープは、同じ DataPivotHierarchy から複数の値がある場合に、並べ替えに使用する特定の値を定義します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -253,21 +253,21 @@ methods:
               ): void;
     parameters:
     - id: sortBy
-      description: 並べ替えを昇順または降順のどちらで実行するかを指定します。
+      description: 並べ替えを昇順または降順で行う場合に指定します。
       type: <xref uid="ExcelScript!ExcelScript.SortBy:enum" />
     - id: valuesHierarchy
       description: 並べ替えに使用するデータ軸の値階層を指定します。
       type: <xref uid="ExcelScript!ExcelScript.DataPivotHierarchy:interface" />
     - id: pivotItemScope
-      description: 並べ替えの範囲として使用するアイテムを指定します。 これらは、並べ替えの基準となる行または列を構成するアイテムになります。 PivotItem の代わりに文字列を使用する場合、文字列は PivotItem の ID を表します。 並べ替えの基準となるデータ階層以外のアイテムが軸上にない場合、この値は空になることがあります。
+      description: 並べ替えの範囲に使用する必要があるアイテム。 これらは、並べ替える行または列を表すアイテムです。 PivotItem の代わりに文字列を使用する場合、その文字列は PivotItem の ID を表します。 並べ替える軸にデータ階層以外の項目がない場合は、空にできます。
       type: "Array&lt;<xref uid=\"ExcelScript!ExcelScript.PivotItem:interface\" /> | string&gt;\n        "
     return:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: f9bc753c30f6ec8c165cdf9966aab8c5be2040cc
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: 4228e7c2e7435e23e1566b570c05a7c18505e14e
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554616"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606400"

@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.SortField#ascending:member
   package: ExcelScript!
   fullName: ascending
-  summary: 並べ替えが昇順で行われるかどうかを指定します。
+  summary: 並べ替えを昇順で行う場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.SortField#color:member
   package: ExcelScript!
   fullName: color
-  summary: 並べ替えがフォントまたはセルの色に設定されている場合に、条件の対象となる色を指定します。
+  summary: 並べ替えがフォントまたはセルの色にある場合、条件のターゲットとなる色を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,7 +49,7 @@ properties:
   uid: ExcelScript!ExcelScript.SortField#icon:member
   package: ExcelScript!
   fullName: icon
-  summary: セルのアイコンに並べ替えが適用されている場合に、条件の対象となるアイコンを指定します。
+  summary: 並べ替えがセルのアイコンにある場合、条件のターゲットであるアイコンを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -61,7 +61,7 @@ properties:
   uid: ExcelScript!ExcelScript.SortField#key:member
   package: ExcelScript!
   fullName: key
-  summary: 条件がオンになっている列 (または並べ替えの方向に応じて行) を指定します。 最初の列 (または行) からのオフセットとして表されます。
+  summary: 条件がオンの列 (または並べ替えの向きに応じて行) を指定します。 最初の列 (または行) からのオフセットとして表されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -85,7 +85,7 @@ properties:
   uid: ExcelScript!ExcelScript.SortField#subField:member
   package: ExcelScript!
   fullName: subField
-  summary: 並べ替えの対象となるリッチ値のターゲットプロパティ名であるサブフィールドを指定します。
+  summary: 並べ替えるリッチ値のターゲット プロパティ名であるサブフィールドを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -94,9 +94,9 @@ properties:
     return:
       type: string
 metadata:
-  ms.openlocfilehash: ebc6a6627cee8a97f7f156534f43fb99f731efa4
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: e357fd813e45dcb01b36c18a57e930c7b07708da
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420385"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51605998"

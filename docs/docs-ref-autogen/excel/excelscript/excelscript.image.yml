@@ -3,7 +3,7 @@ name: ExcelScript.Image
 uid: ExcelScript!ExcelScript.Image:interface
 package: ExcelScript!
 fullName: ExcelScript.Image
-summary: ワークシート内のイメージを表します。 対応する Shape オブジェクトを取得するには、イメージの図形を使用します。
+summary: ワークシート内のイメージを表します。 対応するオブジェクトを取得 `Shape` するには、 `Image.shape`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.Image#getId:member(1)
   package: ExcelScript!
   fullName: getId()
-  summary: Image オブジェクトの図形識別子を指定します。
+  summary: イメージ オブジェクトの図形識別子を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.Image#getShape:member(1)
   package: ExcelScript!
   fullName: getShape()
-  summary: 画像に関連付けられた Shape オブジェクトを返します。
+  summary: イメージに関連 `Shape` 付けられているオブジェクトを返します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,9 +49,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
       description: ''
 metadata:
-  ms.openlocfilehash: 79a5c551aea428b700a3caa43efab0ea628ef1c0
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: f12812b70105d30969ae25bfae6744e9338f8a12
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412315"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606503"

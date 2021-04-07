@@ -3,7 +3,7 @@ name: ExcelScript.DateTimeDataValidation
 uid: ExcelScript!ExcelScript.DateTimeDataValidation:interface
 package: ExcelScript!
 fullName: ExcelScript.DateTimeDataValidation
-summary: 日付データの入力規則の条件を表します。
+summary: 日付データの検証条件を表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.DateTimeDataValidation#formula1:member
   package: ExcelScript!
   fullName: formula1
-  summary: 'Operator プロパティが GreaterThan などのバイナリ演算子に設定されている場合、右のオペランドを指定します (左のオペランドは、ユーザーがセルに入力しようとした値です)。 三項演算子と NotBetween の間の and notbetween で、下限オペランドを指定します。 値を設定するときは、日付、Range オブジェクト、または文字列の数式 (文字列は、文字列形式の場合は "= A1" のようなセル参照、または "= MIN (A1, B1)" のような数式) として渡すことができます。 値を取得するときは、常に文字列式として返されます。たとえば、"= 10"、"= A1"、"= SUM (A1: B5)" などです。'
+  summary: 演算子プロパティが GreaterThan などのバイナリ演算子に設定されている場合に、右側のオペランドを指定します (左側のオペランドは、ユーザーがセルに入力しようとする値です)。 3 項演算子 Between と NotBetween を使用して、下限オペランドを指定します。 値を設定する場合は、Date、Range オブジェクト、または文字列式 (文字列が ISO8601 形式の文字列化された日付/時刻、"=A1"のようなセル参照、または "=MIN(A1, B1)" のような数式) として渡されます。 値を取得すると、"=10"、"=A1"、"=SUM(A1:B5)"など、常に文字列式として返されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.DateTimeDataValidation#formula2:member
   package: ExcelScript!
   fullName: formula2
-  summary: '三項演算子を and NotBetween で指定すると、上限オペランドが指定されます。 は、GreaterThan などの二項演算子では使用されません。 値を設定するときは、日付、Range オブジェクト、または文字列として渡すことができます。文字列は、文字列形式の日付/時刻、"= A1" のようなセル参照、または "= MIN (A1, B1)" のような数式です。 値を取得するときは、常に文字列式として返されます。たとえば、"= 10"、"= A1"、"= SUM (A1: B5)" などです。'
+  summary: 3 項演算子 Between と NotBetween を使用して、上限オペランドを指定します。 GreaterThan などのバイナリ演算子では使用されません。 値を設定する場合は、Date、Range オブジェクト、または文字列 (文字列が ISO8601 形式の文字列化された日付/時刻、"=A1"のようなセル参照、または "=MIN(A1, B1)" のような数式) として渡されます。 値を取得すると、"=10"、"=A1"、"=SUM(A1:B5)"など、常に文字列式として返されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -46,9 +46,9 @@ properties:
     return:
       type: <xref uid="ExcelScript!ExcelScript.DataValidationOperator:enum" />
 metadata:
-  ms.openlocfilehash: e996fdc017fd932a17031a0bb57255f84f01759c
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: c1b292157a719eed4f7ba1716623d9e64f359ae2
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415431"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607040"

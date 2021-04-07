@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPivotOptions#getShowAxisFieldButtons:member(1)
   package: ExcelScript!
   fullName: getShowAxisFieldButtons()
-  summary: ピボットグラフに軸フィールドボタンを表示するかどうかを指定します。 ShowAxisFieldButtons プロパティは、ピボットグラフを選択したときに有効になる [分析] タブの [フィールド ボタン] ボックスの一覧にある [軸フィールド ボタンを表示する] コマンドに対応します。
+  summary: ピボットグラフに軸フィールド ボタンを表示するかどうかを指定します。 プロパティは、[分析] タブの [フィールド ボタン] ドロップダウン リストの [軸フィールド ボタンの表示] コマンドに対応します。ピボットグラフが選択されている場合に `showAxisFieldButtons` 使用できます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPivotOptions#getShowLegendFieldButtons:member(1)
   package: ExcelScript!
   fullName: getShowLegendFieldButtons()
-  summary: ピボットグラフに凡例フィールドボタンを表示するかどうかを指定します。
+  summary: ピボットグラフに凡例フィールド ボタンを表示するかどうかを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPivotOptions#getShowReportFilterFieldButtons:member(1)
   package: ExcelScript!
   fullName: getShowReportFilterFieldButtons()
-  summary: ピボットグラフにレポートフィルターフィールドボタンを表示するかどうかを指定します。
+  summary: ピボットグラフにレポート フィルター フィールド ボタンを表示するかどうかを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPivotOptions#getShowValueFieldButtons:member(1)
   package: ExcelScript!
   fullName: getShowValueFieldButtons()
-  summary: ピボットグラフに [値フィールドを表示する] ボタンを表示するかどうかを指定します。
+  summary: ピボットグラフに値フィールドの表示ボタンを表示するかどうかを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPivotOptions#setShowAxisFieldButtons:member(1)
   package: ExcelScript!
   fullName: setShowAxisFieldButtons(showAxisFieldButtons)
-  summary: ピボットグラフに軸フィールドボタンを表示するかどうかを指定します。 ShowAxisFieldButtons プロパティは、ピボットグラフを選択したときに有効になる [分析] タブの [フィールド ボタン] ボックスの一覧にある [軸フィールド ボタンを表示する] コマンドに対応します。
+  summary: ピボットグラフに軸フィールド ボタンを表示するかどうかを指定します。 プロパティは、[分析] タブの [フィールド ボタン] ドロップダウン リストの [軸フィールド ボタンの表示] コマンドに対応します。ピボットグラフが選択されている場合に `showAxisFieldButtons` 使用できます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -82,7 +82,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPivotOptions#setShowLegendFieldButtons:member(1)
   package: ExcelScript!
   fullName: setShowLegendFieldButtons(showLegendFieldButtons)
-  summary: ピボットグラフに凡例フィールドボタンを表示するかどうかを指定します。
+  summary: ピボットグラフに凡例フィールド ボタンを表示するかどうかを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -99,7 +99,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPivotOptions#setShowReportFilterFieldButtons:member(1)
   package: ExcelScript!
   fullName: setShowReportFilterFieldButtons(showReportFilterFieldButtons)
-  summary: ピボットグラフにレポートフィルターフィールドボタンを表示するかどうかを指定します。
+  summary: ピボットグラフにレポート フィルター フィールド ボタンを表示するかどうかを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -119,7 +119,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPivotOptions#setShowValueFieldButtons:member(1)
   package: ExcelScript!
   fullName: setShowValueFieldButtons(showValueFieldButtons)
-  summary: ピボットグラフに [値フィールドを表示する] ボタンを表示するかどうかを指定します。
+  summary: ピボットグラフに値フィールドの表示ボタンを表示するかどうかを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -133,9 +133,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 5e94255c9725007c9ba6c5d53a78e68ff0187988
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 0ca2455781d883ab28bf8116c67068e82d4ba043
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416125"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606886"

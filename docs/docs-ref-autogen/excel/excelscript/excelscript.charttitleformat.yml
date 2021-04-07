@@ -3,7 +3,7 @@ name: ExcelScript.ChartTitleFormat
 uid: ExcelScript!ExcelScript.ChartTitleFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.ChartTitleFormat
-summary: グラフのタイトルの Office Art の書式設定にアクセスできるようにします。
+summary: グラフタイトルの書式設定オプションへのアクセスを提供します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitleFormat#getBorder:member(1)
   package: ExcelScript!
   fullName: getBorder()
-  summary: グラフタイトルの罫線の書式を表します。これには、色、linestyle、およびウエイトが含まれます。
+  summary: 色、線のスタイル、太さなど、グラフタイトルの罫線の形式を表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,9 +49,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.ChartFont:interface" />
       description: ''
 metadata:
-  ms.openlocfilehash: fd2f4dd5f848a50004c41c46601def48bd710026
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: c9eba7efeaa42e00ebb73c9b4aeeb2ba736dec61
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416010"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606830"

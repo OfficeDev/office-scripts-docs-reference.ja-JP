@@ -3,7 +3,7 @@ name: ExcelScript.ConditionalIconCriterion
 uid: ExcelScript!ExcelScript.ConditionalIconCriterion:interface
 package: ExcelScript!
 fullName: ExcelScript.ConditionalIconCriterion
-summary: Iconset を使用していない場合に、型、値、演算子、およびオプションのカスタムアイコンを含むアイコンの条件を表します。
+summary: アイコン セットを使用しない場合は、種類、値、演算子、およびオプションのカスタム アイコンを含むアイコン条件を表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.ConditionalIconCriterion#customIcon:member
   package: ExcelScript!
   fullName: customIcon
-  summary: 既定の IconSet と異なる場合は現在の条件のカスタム アイコン、そうでない場合は null が返されます。
+  summary: 既定のアイコン セットと異なる場合は、現在の条件のカスタム アイコンが `null` 返されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.ConditionalIconCriterion#operator:member
   package: ExcelScript!
   fullName: operator
-  summary: アイコンの条件付き書式のルールの種類ごとに、GreaterThan または GreaterThanOrEqual。
+  summary: '`greaterThan` または `greaterThanOrEqual` 、アイコンの条件付き書式のルールの種類ごとに指定します。'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -58,9 +58,9 @@ properties:
     return:
       type: <xref uid="ExcelScript!ExcelScript.ConditionalFormatIconRuleType:enum" />
 metadata:
-  ms.openlocfilehash: 9b3036c3ec274c8ee615228c09544491621f56b8
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: b083df158cdb7cae996211669a2da4cc707b7d58
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419461"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607082"

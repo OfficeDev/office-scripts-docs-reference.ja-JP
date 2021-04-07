@@ -4,7 +4,7 @@ uid: ExcelScript!ExcelScript.DeleteShiftDirection:enum
 package: ExcelScript!
 fullName: ExcelScript.DeleteShiftDirection
 summary: ''
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```javascript\n/**\n * This sample creates a sample range, then deletes\n * \"A1\" using different DeleteShiftDirection values.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Add sample data to better visualize the delete changes.\n  const currentSheet = workbook.getActiveWorksheet();\n  currentSheet.getRange(\"A1:D4\").setValues([\n    [1,2,3,4],\n    [5,6,7,8],\n    [9,10,11,12],\n    [13,14,15,16]]);\n\n  // Delete A1 and shift the cells from the right to fill the space.\n  // The value being deleted is 1.\n  currentSheet.getRange(\"A1\").delete(ExcelScript.DeleteShiftDirection.left);\n\n  // Delete A1 and shift the cells from the bottom to fill the space.\n  // The value being deleted is 2.\n  currentSheet.getRange(\"A1\").delete(ExcelScript.DeleteShiftDirection.up);\n\n  // Log the sample range. The values should be:\n  /*\n    5, 3, 4, \"\",\n    9, 6, 7, 8,\n    13, 10, 11, 12,\n    \"\", 14, 15, 16\n  */\n  console.log(currentSheet.getRange(\"A1:D4\").getValues()); \n}\n```"
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,9 +17,9 @@ fields:
   package: ExcelScript!
   summary: ''
 metadata:
-  ms.openlocfilehash: efcb3da2843feebb79f90d7c030aa42ab809b0de
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: dadefd39d1cd6166b29635a81c9dddca8b3f4429
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415422"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607131"

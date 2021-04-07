@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.FilterDatetime#specificity:member
   package: ExcelScript!
   fullName: specificity
-  summary: データを保持するのに、日付をどの程度詳細に使用するか。 たとえば、date が 2005-04-02 で "month" に設定した場合、フィルター操作では 2005 年 4 月の日付データを含むすべての行が保持されます。
+  summary: データを保持するのに、日付をどの程度詳細に使用するか。 たとえば、日付が 2005-04-02 で、指定度が "month" に設定されている場合、フィルター操作では、2005 年 4 月の日付を持つすべての行が保持されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -34,9 +34,9 @@ properties:
     return:
       type: <xref uid="ExcelScript!ExcelScript.FilterDatetimeSpecificity:enum" />
 metadata:
-  ms.openlocfilehash: 279bad360e47a9c9987f878d85fa9f6f132d9dbf
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 3304efeeeafde7f2db34f4cd867e3013db90bc63
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412511"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607019"

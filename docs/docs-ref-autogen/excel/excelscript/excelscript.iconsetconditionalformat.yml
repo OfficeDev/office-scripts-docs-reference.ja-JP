@@ -3,7 +3,7 @@ name: ExcelScript.IconSetConditionalFormat
 uid: ExcelScript!ExcelScript.IconSetConditionalFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.IconSetConditionalFormat
-summary: 条件付き書式の IconSet 条件を表します。
+summary: 条件付き書式のアイコン セット条件を表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#getCriteria:member(1)
   package: ExcelScript!
   fullName: getCriteria()
-  summary: ルールの条件および IconSets の配列と、条件付きアイコンのユーザー設定のアイコン。 最初の条件では、カスタムアイコンのみを変更できることに注意してください。設定すると、type、formula、および operator は無視されます。
+  summary: ルールの条件とアイコン セットの配列と、条件付きアイコンの潜在的なカスタム アイコン。 最初の条件では、カスタム アイコンのみを変更できます。一方、型、数式、演算子は設定時に無視されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#getReverseIconOrder:member(1)
   package: ExcelScript!
   fullName: getReverseIconOrder()
-  summary: True の場合は、IconSet のアイコンオーダーを逆にします。 カスタムアイコンが使用されている場合は、これを設定できないことに注意してください。
+  summary: もし `true`<!-- -->をクリックすると、アイコン セットのアイコンの順序が反転します。 カスタム アイコンを使用する場合は、これを設定できないことに注意してください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#getShowIconOnly:member(1)
   package: ExcelScript!
   fullName: getShowIconOnly()
-  summary: true の場合、値は非表示にされて、アイコンのみが表示されます。
+  summary: もし `true`<!-- -->、値を非表示にし、アイコンのみを表示します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#getStyle:member(1)
   package: ExcelScript!
   fullName: getStyle()
-  summary: 設定すると、条件付き書式の IconSet オプションが表示されます。
+  summary: 設定されている場合は、条件付き書式のアイコン セット オプションを表示します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#setCriteria:member(1)
   package: ExcelScript!
   fullName: setCriteria(criteria)
-  summary: ルールの条件および IconSets の配列と、条件付きアイコンのユーザー設定のアイコン。 最初の条件では、カスタムアイコンのみを変更できることに注意してください。設定すると、type、formula、および operator は無視されます。
+  summary: ルールの条件とアイコン セットの配列と、条件付きアイコンの潜在的なカスタム アイコン。 最初の条件では、カスタム アイコンのみを変更できます。一方、型、数式、演算子は設定時に無視されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -82,7 +82,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#setReverseIconOrder:member(1)
   package: ExcelScript!
   fullName: setReverseIconOrder(reverseIconOrder)
-  summary: True の場合は、IconSet のアイコンオーダーを逆にします。 カスタムアイコンが使用されている場合は、これを設定できないことに注意してください。
+  summary: もし `true`<!-- -->をクリックすると、アイコン セットのアイコンの順序が反転します。 カスタム アイコンを使用する場合は、これを設定できないことに注意してください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -99,7 +99,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#setShowIconOnly:member(1)
   package: ExcelScript!
   fullName: setShowIconOnly(showIconOnly)
-  summary: true の場合、値は非表示にされて、アイコンのみが表示されます。
+  summary: もし `true`<!-- -->、値を非表示にし、アイコンのみを表示します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -116,7 +116,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#setStyle:member(1)
   package: ExcelScript!
   fullName: setStyle(style)
-  summary: 設定すると、条件付き書式の IconSet オプションが表示されます。
+  summary: 設定されている場合は、条件付き書式のアイコン セット オプションを表示します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,9 +130,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 097baba5d4e77c03e543300da7c48c70638dd62c
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 0fd12949aad6fc518834dfe02a0fd9aa01dae20a
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412329"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607229"

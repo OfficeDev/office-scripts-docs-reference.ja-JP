@@ -3,7 +3,7 @@ name: ExcelScript.ConditionalPresetCriteriaRule
 uid: ExcelScript!ExcelScript.ConditionalPresetCriteriaRule:interface
 package: ExcelScript!
 fullName: ExcelScript.ConditionalPresetCriteriaRule
-summary: 事前設定の条件の条件付き書式ルールを表します。
+summary: 事前設定された条件の条件付き書式ルールを表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.ConditionalPresetCriteriaRule#criterion:member
   package: ExcelScript!
   fullName: criterion
-  summary: 条件付き書式の条件を指定します。
+  summary: 条件付き書式の条件。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -22,9 +22,9 @@ properties:
     return:
       type: <xref uid="ExcelScript!ExcelScript.ConditionalFormatPresetCriterion:enum" />
 metadata:
-  ms.openlocfilehash: bfc34039ea55133099e0689f124e27190d2fa7d3
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: ebe2b81c47762e6d9d7e6fc0fd77b04671cab837
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419412"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607075"

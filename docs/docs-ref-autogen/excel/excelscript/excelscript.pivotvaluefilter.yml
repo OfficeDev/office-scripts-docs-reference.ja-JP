@@ -3,7 +3,7 @@ name: ExcelScript.PivotValueFilter
 uid: ExcelScript!ExcelScript.PivotValueFilter:interface
 package: ExcelScript!
 fullName: ExcelScript.PivotValueFilter
-summary: ピボットフィールドに適用する値フィルターの構成可能なテンプレート。 は、 `condition` フィルターを操作するために設定する必要のある条件を定義します。
+summary: PivotField に適用する値フィルターの構成可能なテンプレート。 フィルター `condition` を操作するために設定する必要がある条件を定義します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotValueFilter#comparator:member
   package: ExcelScript!
   fullName: comparator
-  summary: 比較演算子は、他の値を比較する静的な値です。 比較の種類は、条件によって定義されます。 たとえば、比較演算子が "50" で、条件が "GreaterThan" の場合、50を超えないすべてのアイテム値がフィルターによって削除されます。
+  summary: コンパレータは、他の値を比較する静的な値です。 比較の種類は、条件によって定義されます。 たとえば、コンパレータが "50" で、条件が "greaterThan" の場合、50 を超えないアイテム値はすべてフィルターによって削除されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotValueFilter#exclusive:member
   package: ExcelScript!
   fullName: exclusive
-  summary: True の場合、フィルターは条件に一致するアイテムを *除外* します。 既定では false (条件に一致するアイテムを含むフィルター)。
+  summary: もし `true`<!-- -->を選択すると *、条件を満* たすアイテムが除外されます。 既定値は `false` (条件を満たすアイテムを含めるフィルター)。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,7 +49,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotValueFilter#lowerBound:member
   package: ExcelScript!
   fullName: lowerBound
-  summary: フィルター条件の範囲の下限を指定し `Between` ます。
+  summary: フィルター条件の範囲の下限 `between` 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -61,7 +61,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotValueFilter#selectionType:member
   package: ExcelScript!
   fullName: selectionType
-  summary: フィルターを上位/下位 N 個のアイテム、上位/下位 n%、上位/下位 N 個の合計にするかどうかを指定します。
+  summary: フィルターが上位/下位の N 項目、上/下の N パーセント、または上/下の N 合計のフィルターの値を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -73,7 +73,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotValueFilter#threshold:member
   package: ExcelScript!
   fullName: threshold
-  summary: 上位/下位フィルター条件に対してフィルター処理するアイテム、パーセント、または合計の "N" 個のしきい値。
+  summary: 上/下のフィルター条件に対してフィルター処理するアイテム、パーセント、または合計の "N" しきい値数。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -85,7 +85,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotValueFilter#upperBound:member
   package: ExcelScript!
   fullName: upperBound
-  summary: フィルター条件の範囲の上限を指定し `Between` ます。
+  summary: フィルター条件の範囲の上限 `between` 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -97,7 +97,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotValueFilter#value:member
   package: ExcelScript!
   fullName: value
-  summary: フィルター処理の対象となるフィールドで選択されている "value" の名前です。
+  summary: フィルター処理するフィールドで選択した "value" の名前。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -106,9 +106,9 @@ properties:
     return:
       type: string
 metadata:
-  ms.openlocfilehash: 3c35fae98f6ae6e897b205b57d818601ad71a0cc
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 2f788cd8ae30fd40cb31cdb383b7929a79c40ca4
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416709"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606211"

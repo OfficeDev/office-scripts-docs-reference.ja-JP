@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.IterativeCalculation#getMaxChange:member(1)
   package: ExcelScript!
   fullName: getMaxChange()
-  summary: Excel が循環参照を解決するときの、各反復の最大変更量を指定します。
+  summary: Excel が循環参照を解決する場合、各反復間の最大変更量を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.IterativeCalculation#getMaxIteration:member(1)
   package: ExcelScript!
   fullName: getMaxIteration()
-  summary: Excel で循環参照を解決するために使用できる最大反復回数を指定します。
+  summary: 循環参照の解決に Excel で使用できる反復回数の最大数を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -69,7 +69,7 @@ methods:
   uid: ExcelScript!ExcelScript.IterativeCalculation#setMaxChange:member(1)
   package: ExcelScript!
   fullName: setMaxChange(maxChange)
-  summary: Excel が循環参照を解決するときの、各反復の最大変更量を指定します。
+  summary: Excel が循環参照を解決する場合、各反復間の最大変更量を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -86,7 +86,7 @@ methods:
   uid: ExcelScript!ExcelScript.IterativeCalculation#setMaxIteration:member(1)
   package: ExcelScript!
   fullName: setMaxIteration(maxIteration)
-  summary: Excel で循環参照を解決するために使用できる最大反復回数を指定します。
+  summary: 循環参照の解決に Excel で使用できる反復回数の最大数を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -100,9 +100,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 7fcf571a42bdb830bb9372a15896f1e862f0ccb3
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 7cb09be3de82cb1333c3afdcb640c8a19e2b89dd
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412294"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606442"

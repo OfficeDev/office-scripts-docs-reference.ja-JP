@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.Binding#getType:member(1)
   package: ExcelScript!
   fullName: getType()
-  summary: バインドの種類を返します。 詳細については、「ExcelScript. BindingType」を参照してください。
+  summary: バインドの種類を返します。 詳細は「`ExcelScript.BindingType`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -88,9 +88,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.BindingType:enum" />
       description: ''
 metadata:
-  ms.openlocfilehash: dbc040f8940983d3292d272d4d19d7f21a794d9e
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 8136878c252afcb6a1d1412551c0a38aa65aaa13
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49418087"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606608"

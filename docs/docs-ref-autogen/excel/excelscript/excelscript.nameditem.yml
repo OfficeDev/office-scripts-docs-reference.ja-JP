@@ -3,7 +3,7 @@ name: ExcelScript.NamedItem
 uid: ExcelScript!ExcelScript.NamedItem:interface
 package: ExcelScript!
 fullName: ExcelScript.NamedItem
-summary: セルまたは値の範囲の定義済みの名前を表します。 名前には、プリミティブという名前のオブジェクト、range オブジェクト、または範囲への参照を指定できます。 このオブジェクトを使用して、名前に関連付けられた範囲オブジェクトを取得することができます。
+summary: セルまたは値の範囲の定義済みの名前を表します。 名前には、プリミティブという名前のオブジェクト (以下の種類に見られる)、range オブジェクト、または範囲への参照を指定できます。 このオブジェクトを使用して、名前に関連付けられた範囲オブジェクトを取得することができます。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getComment:member(1)
   package: ExcelScript!
   fullName: getComment()
-  summary: この名前に関連付けられているコメントを指定します。
+  summary: この名前に関連付けられたコメントを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getFormula:member(1)
   package: ExcelScript!
   fullName: getFormula()
-  summary: 名前付きアイテムの数式を指定します。 数式は常に '=' 記号で始まります。
+  summary: 名前付きアイテムの数式。 数式は常に等号 ("=") で始まる。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getRange:member(1)
   package: ExcelScript!
   fullName: getRange()
-  summary: 名前に関連付けられている範囲オブジェクトを返します。 名前付きアイテムの型が範囲でない場合、この関数は、プロパティが次の値に設定されたオブジェクトを返します。 `isNullObject``true`<!-- -->.
+  summary: 名前に関連付けられている範囲オブジェクトを返します。 名前付きアイテムの型が範囲ではない場合、この関数はプロパティが次の値に設定された `isNullObject` オブジェクトを返します。 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getScope:member(1)
   package: ExcelScript!
   fullName: getScope()
-  summary: ブックまたは特定のワークシートに対して、名前をスコープ設定するかどうかを指定します。 可能な値は次のとおりです。ワークシート、ブック。
+  summary: 名前をブックまたは特定のワークシートの範囲に設定する場合に指定します。 使用できる値は、ワークシート、ブックです。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getType:member(1)
   package: ExcelScript!
   fullName: getType()
-  summary: 名前の数式によって返される値の型を指定します。 詳細については、「ExcelScript. NamedItemType」を参照してください。
+  summary: 名前の数式によって返される値の種類を指定します。 詳細は「`ExcelScript.NamedItemType`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getVisible:member(1)
   package: ExcelScript!
   fullName: getVisible()
-  summary: オブジェクトを表示するかどうかを指定します。
+  summary: オブジェクトが表示される場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getWorksheet:member(1)
   package: ExcelScript!
   fullName: getWorksheet()
-  summary: 名前付きアイテムのスコープが設定されているワークシートを返します。 代わりに、アイテムのスコープがブックに設定されている場合、この関数は、プロパティが次の値に設定されたオブジェクトを返します。 `isNullObject``true`<!-- -->.
+  summary: 名前付きアイテムのスコープを設定するワークシートを返します。 代わりにアイテムのスコープがブックに設定されている場合、この関数はプロパティを設定したオブジェクト `isNullObject` を返します。 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -156,7 +156,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#setComment:member(1)
   package: ExcelScript!
   fullName: setComment(comment)
-  summary: この名前に関連付けられているコメントを指定します。
+  summary: この名前に関連付けられたコメントを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -173,7 +173,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#setFormula:member(1)
   package: ExcelScript!
   fullName: setFormula(formula)
-  summary: 名前付きアイテムの数式を指定します。 数式は常に '=' 記号で始まります。
+  summary: 名前付きアイテムの数式。 数式は常に等号 ("=") で始まる。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -190,7 +190,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#setVisible:member(1)
   package: ExcelScript!
   fullName: setVisible(visible)
-  summary: オブジェクトを表示するかどうかを指定します。
+  summary: オブジェクトが表示される場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -204,9 +204,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 64b38b2371d79f40394f2bfb6db981b9f56f740b
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: 03b2b429178a6d8ad6d13a13c28271340d8c23ef
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554758"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606421"

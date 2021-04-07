@@ -3,7 +3,7 @@ name: ExcelScript.CustomDataValidation
 uid: ExcelScript!ExcelScript.CustomDataValidation:interface
 package: ExcelScript!
 fullName: ExcelScript.CustomDataValidation
-summary: ユーザー設定のデータの入力規則の条件を表します。
+summary: ユーザー設定のデータ検証条件を表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.CustomDataValidation#formula:member
   package: ExcelScript!
   fullName: formula
-  summary: ユーザーの入力規則のカスタム数式。 これにより、重複を防止したり、セル範囲内の合計を制限したりする特別な入力ルールが作成されます。
+  summary: ユーザーの入力規則のカスタム数式。 これにより、重複を防止したり、セル範囲の合計を制限したりなど、特別な入力ルールが作成されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -22,9 +22,9 @@ properties:
     return:
       type: string
 metadata:
-  ms.openlocfilehash: 00ca951e7f8db10335c4f605a4b8d1e9a44d1a0a
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: abceba6296f70e4098ed3fd999ce8e04638d3048
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415639"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607152"

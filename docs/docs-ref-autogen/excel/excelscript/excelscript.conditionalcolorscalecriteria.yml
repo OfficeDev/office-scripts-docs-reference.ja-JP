@@ -3,7 +3,7 @@ name: ExcelScript.ConditionalColorScaleCriteria
 uid: ExcelScript!ExcelScript.ConditionalColorScaleCriteria:interface
 package: ExcelScript!
 fullName: ExcelScript.ConditionalColorScaleCriteria
-summary: カラースケールの条件を表します。
+summary: カラー スケールの条件を表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.ConditionalColorScaleCriteria#maximum:member
   package: ExcelScript!
   fullName: maximum
-  summary: 最大ポイントのカラー スケール条件。
+  summary: カラー スケール条件の最大ポイント。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.ConditionalColorScaleCriteria#midpoint:member
   package: ExcelScript!
   fullName: midpoint
-  summary: カラー スケールが 3 色スケールの場合のカラー スケール条件の中間値。
+  summary: カラー スケールの基準の中間点 (カラー スケールが 3 色スケールの場合)。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.ConditionalColorScaleCriteria#minimum:member
   package: ExcelScript!
   fullName: minimum
-  summary: 最小ポイントのカラー スケール条件。
+  summary: 色スケール基準の最小点。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -46,9 +46,9 @@ properties:
     return:
       type: <xref uid="ExcelScript!ExcelScript.ConditionalColorScaleCriterion:interface" />
 metadata:
-  ms.openlocfilehash: 9806365d0f00b639c861222996eb4e916f1950c5
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 57fbcb090ccbf7f9a69c4d50bc2673bd98680e5a
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416772"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606753"

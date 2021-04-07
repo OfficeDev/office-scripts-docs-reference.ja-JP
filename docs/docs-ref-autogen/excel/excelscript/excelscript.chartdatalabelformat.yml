@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabelFormat#getFont:member(1)
   package: ExcelScript!
   fullName: getFont()
-  summary: グラフのデータ ラベルのフォント属性 (フォント名、フォント サイズ、色など) を表します。
+  summary: グラフ データ ラベルのフォント属性 (フォント名、フォント サイズ、色など) を表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,9 +49,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.ChartFont:interface" />
       description: ''
 metadata:
-  ms.openlocfilehash: 501c1c739325039d2c64c8389423749a8ce3f3b7
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: da98f5cb65d25429b7e569a4e9fc4a830821e96b
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416961"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606914"

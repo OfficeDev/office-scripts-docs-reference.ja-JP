@@ -3,7 +3,7 @@ name: ExcelScript.PageLayoutZoomOptions
 uid: ExcelScript!ExcelScript.PageLayoutZoomOptions:interface
 package: ExcelScript!
 fullName: ExcelScript.PageLayoutZoomOptions
-summary: ページのズームプロパティを表します。
+summary: ページズームのプロパティを表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.PageLayoutZoomOptions#horizontalFitToPages:member
   package: ExcelScript!
   fullName: horizontalFitToPages
-  summary: 横方向に合わせるページ数。 パーセンテージ スケールが使用される場合、この値には null を指定できます。
+  summary: 横方向に合わせるページ数。 この値は、パーセンテージ `null` スケールを使用する場合に使用できます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.PageLayoutZoomOptions#scale:member
   package: ExcelScript!
   fullName: scale
-  summary: 印刷ページのスケール値は 10 から 400 までです。 縦または横方向にページを合わせるように指定されている場合、この値には null を指定できます。
+  summary: 印刷ページのスケール値は 10 から 400 までです。 この値は、ページ `null` の高さまたは幅に合わせて指定できます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.PageLayoutZoomOptions#verticalFitToPages:member
   package: ExcelScript!
   fullName: verticalFitToPages
-  summary: 縦方向に合わせるページ数。 パーセンテージ スケールが使用される場合、この値には null を指定できます。
+  summary: 縦方向に合わせるページ数。 この値は、パーセンテージ `null` スケールを使用する場合に使用できます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -46,9 +46,9 @@ properties:
     return:
       type: number
 metadata:
-  ms.openlocfilehash: 2a2da1f74156c03a28170a94b0d2fc9aabfd960f
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 745f7759380e98af90f43cb3a032629642bed648
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412175"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606407"

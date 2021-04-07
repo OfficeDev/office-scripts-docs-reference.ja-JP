@@ -81,7 +81,7 @@ methods:
   uid: ExcelScript!ExcelScript.Filter#applyCustomFilter:member(1)
   package: ExcelScript!
   fullName: applyCustomFilter(criteria1, criteria2, oper)
-  summary: 指定した抽出条件の文字列の列に "アイコン" フィルターを適用します。
+  summary: 指定した条件文字列の列に "Icon" フィルターを適用します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.Filter#applyIconFilter:member(1)
   package: ExcelScript!
   fullName: applyIconFilter(icon)
-  summary: 指定したアイコンの列に "アイコン" フィルターを適用します。
+  summary: 指定したアイコンの列に "Icon" フィルターを適用します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -202,7 +202,7 @@ methods:
     content: 'applyValuesFilter(values: Array<string | FilterDatetime>): void;'
     parameters:
     - id: values
-      description: 表示する値のリスト。 これは、文字列の配列または ExcelScript オブジェクトの配列である必要があります。
+      description: 表示する値のリスト。 これは、文字列の配列またはオブジェクトの配列である必要 `ExcelScript.FilterDateTime` があります。
       type: Array&lt;string | <xref uid="ExcelScript!ExcelScript.FilterDatetime:interface" />&gt;
     return:
       type: void
@@ -234,9 +234,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.FilterCriteria:interface" />
       description: ''
 metadata:
-  ms.openlocfilehash: 342de2634a064df6aaca42af8d6d475321ca9c0c
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 6e78989be8f08913ef4f140e12f158a4dfe02bba
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412581"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607033"

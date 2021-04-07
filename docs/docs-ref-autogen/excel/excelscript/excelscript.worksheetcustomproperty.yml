@@ -3,7 +3,7 @@ name: ExcelScript.WorksheetCustomProperty
 uid: ExcelScript!ExcelScript.WorksheetCustomProperty:interface
 package: ExcelScript!
 fullName: ExcelScript.WorksheetCustomProperty
-summary: ワークシートレベルのカスタムプロパティを表します。
+summary: ワークシート レベルのカスタム プロパティを表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorksheetCustomProperty#getKey:member(1)
   package: ExcelScript!
   fullName: getKey()
-  summary: カスタム プロパティのキーを取得します。 カスタムプロパティのキーは大文字と小文字を区別しません。 キーは255文字に制限されています (大きい値を指定すると、"InvalidArgument" エラーがスローされます)。
+  summary: カスタム プロパティのキーを取得します。 カスタム プロパティ キーは大文字と小文字を区別しません。 キーは 255 文字に制限されています (値を大きくすると、エラー `InvalidArgument` がスローされます)。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -66,9 +66,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 663e655b4570ccbf1294b000127f86bf21e2d844
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 1ff07614ff8fe9bc3921fae37293065a192aead1
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419237"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51605262"

@@ -3,7 +3,7 @@ name: ExcelScript.PivotDateFilter
 uid: ExcelScript!ExcelScript.PivotDateFilter:interface
 package: ExcelScript!
 fullName: ExcelScript.PivotDateFilter
-summary: ピボットフィールドに適用する日付フィルターの構成可能なテンプレート。 は、 `condition` フィルターを操作するために設定する必要のある条件を定義します。
+summary: PivotField に適用する日付フィルターの構成可能なテンプレート。 フィルター `condition` を操作するために設定する必要がある条件を定義します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotDateFilter#comparator:member
   package: ExcelScript!
   fullName: comparator
-  summary: 比較演算子は、他の値を比較する静的な値です。 比較の種類は、条件によって定義されます。
+  summary: コンパレータは、他の値を比較する静的な値です。 比較の種類は、条件によって定義されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotDateFilter#exclusive:member
   package: ExcelScript!
   fullName: exclusive
-  summary: True の場合、フィルターは条件に一致するアイテムを *除外* します。 既定では false (条件に一致するアイテムを含むフィルター)。
+  summary: もし `true`<!-- -->を選択すると *、条件を満* たすアイテムが除外されます。 既定値は `false` (条件を満たすアイテムを含めるフィルター)。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,7 +49,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotDateFilter#lowerBound:member
   package: ExcelScript!
   fullName: lowerBound
-  summary: フィルター条件の範囲の下限を指定し `Between` ます。
+  summary: フィルター条件の範囲の下限 `between` 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -61,7 +61,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotDateFilter#upperBound:member
   package: ExcelScript!
   fullName: upperBound
-  summary: フィルター条件の範囲の上限を指定し `Between` ます。
+  summary: フィルター条件の範囲の上限 `between` 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -73,7 +73,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotDateFilter#wholeDays:member
   package: ExcelScript!
   fullName: wholeDays
-  summary: '`Equals` の場合<!-- -->, `Before`<!-- -->, `After`<!-- -->、および `Between` フィルター条件は、比較を日単位で行う必要があるかどうかを示します。'
+  summary: '`equals` の場合<!-- -->, `before`<!-- -->, `after`<!-- -->、および `between` フィルター条件は、比較を丸 1 日として行う必要があるかどうかを示します。'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -82,9 +82,9 @@ properties:
     return:
       type: boolean
 metadata:
-  ms.openlocfilehash: 50b2f14b12d33ae4786ce8fd4838d8c8ade4a3bd
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 905fcb75ff1228a38409d7e7d9d860ac4725350d
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415275"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607215"

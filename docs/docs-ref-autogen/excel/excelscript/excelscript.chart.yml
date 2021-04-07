@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#addChartSeries:member(1)
   package: ExcelScript!
   fullName: addChartSeries(name, index)
-  summary: コレクションに新しい系列を追加します。 新たに追加された系列は、値を設定するか x 軸の値/バブルサイズを (グラフの種類に応じて) 表示されるまで表示されません。
+  summary: コレクションに新しい系列を追加します。 新しい追加された系列は、値、x 軸の値、またはバブル サイズが設定されるまで表示されません (グラフの種類によって異なります)。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -34,10 +34,10 @@ methods:
     content: 'addChartSeries(name?: string, index?: number): ChartSeries;'
     parameters:
     - id: name
-      description: 省略可能。 データ系列の名前を指定します。
+      description: 省略可能。 系列の名前。
       type: string
     - id: index
-      description: 省略可能。 追加する系列のインデックス値を指定します。 0 を起点とする番号になります。
+      description: 省略可能。 追加する系列のインデックス値。 0 を起点とする番号になります。
       type: number
     return:
       type: <xref uid="ExcelScript!ExcelScript.ChartSeries:interface" />
@@ -72,7 +72,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getCategoryLabelLevel:member(1)
   package: ExcelScript!
   fullName: getCategoryLabelLevel()
-  summary: 項目ラベルがソースとするレベルを参照する Chartcategory Labellevel 列挙定数を指定します。
+  summary: ソース カテゴリ ラベルのレベルを参照して、グラフ カテゴリ ラベル レベル列挙定数を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -85,7 +85,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getChartType:member(1)
   package: ExcelScript!
   fullName: getChartType()
-  summary: グラフの種類を指定します。 詳細については、「ExcelScript」を参照してください。
+  summary: グラフの種類を指定します。 詳細は「`ExcelScript.ChartType`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -98,7 +98,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getDataLabels:member(1)
   package: ExcelScript!
   fullName: getDataLabels()
-  summary: グラフのデータラベルを表します。
+  summary: グラフのデータ ラベルを表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -111,7 +111,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getDisplayBlanksAs:member(1)
   package: ExcelScript!
   fullName: getDisplayBlanksAs()
-  summary: 空白セルをグラフにプロットする方法を指定します。
+  summary: 空白のセルをグラフにプロットする方法を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -137,7 +137,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getHeight:member(1)
   package: ExcelScript!
   fullName: getHeight()
-  summary: グラフオブジェクトの高さをポイント単位で指定します。
+  summary: グラフ オブジェクトの高さをポイントで指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -163,7 +163,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getImage:member(1)
   package: ExcelScript!
   fullName: getImage(width, height, fittingMode)
-  summary: 指定したサイズに合わせてグラフを拡大、縮小することで、グラフを Base64 でエンコードされた画像としてレンダリングします。 縦横比は、サイズ変更の一部として保持されます。
+  summary: 指定したサイズに合わせてグラフを拡大、縮小することで、グラフを Base64 でエンコードされた画像としてレンダリングします。 縦横比はサイズ変更の一部として保持されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -176,13 +176,13 @@ methods:
               ): string;
     parameters:
     - id: width
-      description: (省略可能) 結果の画像の希望する幅。
+      description: 省略可能。 結果の画像の希望する幅。
       type: number
     - id: height
-      description: (省略可能) 結果の画像の希望する高さ。
+      description: 省略可能。 結果の画像の希望する高さ。
       type: number
     - id: fittingMode
-      description: オプション指定した寸法 (高さと幅の両方が設定されている場合) にグラフを拡大または縮小するために使用する方法を指定します。
+      description: 省略可能。 グラフのサイズを指定したサイズに調整するために使用するメソッド (高さと幅の両方が設定されている場合)。
       type: <xref uid="ExcelScript!ExcelScript.ImageFittingMode:enum" />
     return:
       type: string
@@ -217,7 +217,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getName:member(1)
   package: ExcelScript!
   fullName: getName()
-  summary: グラフオブジェクトの名前を指定します。
+  summary: グラフ オブジェクトの名前を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -243,7 +243,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getPlotArea:member(1)
   package: ExcelScript!
   fullName: getPlotArea()
-  summary: グラフのプロット エリアを表します。
+  summary: グラフのプロット領域を表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -295,7 +295,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getSeriesNameLevel:member(1)
   package: ExcelScript!
   fullName: getSeriesNameLevel()
-  summary: ChartSeriesNameLevel 列挙定数を指定します。この列挙定数は、系列名のソースを指定するレベルを参照します。
+  summary: ソース 系列名のレベルを参照して、グラフ系列名レベルの列挙定数を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -308,7 +308,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getShowAllFieldButtons:member(1)
   package: ExcelScript!
   fullName: getShowAllFieldButtons()
-  summary: ピボットグラフのすべてのフィールドボタンを表示するかどうかを指定します。
+  summary: PivotChart のすべてのフィールド ボタンを表示するかどうかを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -321,7 +321,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getShowDataLabelsOverMaximum:member(1)
   package: ExcelScript!
   fullName: getShowDataLabelsOverMaximum()
-  summary: 値が数値軸の最大値より大きい場合にデータラベルを表示するかどうかを指定します。 数値軸がデータ要素のサイズよりも小さくなった場合は、このプロパティを使用してデータラベルを表示するかどうかを設定できます。 このプロパティは、2-D グラフにのみ使用できます。
+  summary: 値が値軸の最大値より大きい場合にデータ ラベルを表示するかどうかを指定します。 値軸がデータ ポイントのサイズよりも小さくなる場合は、このプロパティを使用してデータ ラベルを表示するかどうかを設定できます。 このプロパティは、2-D グラフにのみ使用できます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -334,7 +334,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getStyle:member(1)
   package: ExcelScript!
   fullName: getStyle()
-  summary: グラフのグラフのスタイルを指定します。
+  summary: グラフのグラフ スタイルを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -347,7 +347,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getTitle:member(1)
   package: ExcelScript!
   fullName: getTitle()
-  summary: 指定したグラフのタイトルのテキスト、可視性、位置、書式などを指定します。
+  summary: 指定したグラフのタイトル (タイトルのテキスト、表示/非表示、位置、書式設定など) を表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -360,7 +360,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getTop:member(1)
   package: ExcelScript!
   fullName: getTop()
-  summary: オブジェクトの上端から (ワークシートの) 行1の上端またはグラフエリアの上端までの距離をポイント単位で指定します (グラフの場合)。
+  summary: オブジェクトの上端から行 1 の上端までの距離 (ワークシート上) またはグラフ領域の上端 (グラフ上) をポイントで指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -373,7 +373,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getWidth:member(1)
   package: ExcelScript!
   fullName: getWidth()
-  summary: グラフオブジェクトの幅をポイント単位で指定します。
+  summary: グラフ オブジェクトの幅をポイント単位で指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -399,7 +399,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#setCategoryLabelLevel:member(1)
   package: ExcelScript!
   fullName: setCategoryLabelLevel(categoryLabelLevel)
-  summary: 項目ラベルがソースとするレベルを参照する Chartcategory Labellevel 列挙定数を指定します。
+  summary: ソース カテゴリ ラベルのレベルを参照して、グラフ カテゴリ ラベル レベル列挙定数を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -416,7 +416,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#setChartType:member(1)
   package: ExcelScript!
   fullName: setChartType(chartType)
-  summary: グラフの種類を指定します。 詳細については、「ExcelScript」を参照してください。
+  summary: グラフの種類を指定します。 詳細は「`ExcelScript.ChartType`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -441,10 +441,10 @@ methods:
     content: 'setData(sourceData: Range, seriesBy?: ChartSeriesBy): void;'
     parameters:
     - id: sourceData
-      description: ソースデータに対応する range オブジェクトを指定します。
+      description: ソース データに対応する range オブジェクト。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
     - id: seriesBy
-      description: 列や行がグラフのデータ系列として使用される方法を指定します。 Auto (既定)、行、列のいずれかをすることができます。 詳細については、「ExcelScript Chart」を参照してください。
+      description: 列や行がグラフのデータ系列として使用される方法を指定します。 自動 (既定)、行、列のいずれかを指定できます。 詳細は「`ExcelScript.ChartSeriesBy`」をご覧ください。
       type: <xref uid="ExcelScript!ExcelScript.ChartSeriesBy:enum" />
     return:
       type: void
@@ -453,7 +453,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#setDisplayBlanksAs:member(1)
   package: ExcelScript!
   fullName: setDisplayBlanksAs(displayBlanksAs)
-  summary: 空白セルをグラフにプロットする方法を指定します。
+  summary: 空白のセルをグラフにプロットする方法を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -470,7 +470,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#setHeight:member(1)
   package: ExcelScript!
   fullName: setHeight(height)
-  summary: グラフオブジェクトの高さをポイント単位で指定します。
+  summary: グラフ オブジェクトの高さをポイントで指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -504,7 +504,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#setName:member(1)
   package: ExcelScript!
   fullName: setName(name)
-  summary: グラフオブジェクトの名前を指定します。
+  summary: グラフ オブジェクトの名前を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -566,7 +566,7 @@ methods:
       description: 開始セル。これは、グラフの移動先です。開始セルは、ユーザーの右から左への表示の設定に応じて、左上のセルか、右上のセルとなります。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: endCell
-      description: (省略可能) 最後のセル。 指定されている場合、グラフの幅と高さは、このセルまたは範囲を完全にカバーするように設定されます。
+      description: 省略可能。 終了セル。 指定されている場合、グラフの幅と高さは、このセルまたは範囲を完全にカバーするように設定されます。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: void
@@ -575,7 +575,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#setSeriesNameLevel:member(1)
   package: ExcelScript!
   fullName: setSeriesNameLevel(seriesNameLevel)
-  summary: ChartSeriesNameLevel 列挙定数を指定します。この列挙定数は、系列名のソースを指定するレベルを参照します。
+  summary: ソース 系列名のレベルを参照して、グラフ系列名レベルの列挙定数を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -592,7 +592,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#setShowAllFieldButtons:member(1)
   package: ExcelScript!
   fullName: setShowAllFieldButtons(showAllFieldButtons)
-  summary: ピボットグラフのすべてのフィールドボタンを表示するかどうかを指定します。
+  summary: PivotChart のすべてのフィールド ボタンを表示するかどうかを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -609,7 +609,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#setShowDataLabelsOverMaximum:member(1)
   package: ExcelScript!
   fullName: setShowDataLabelsOverMaximum(showDataLabelsOverMaximum)
-  summary: 値が数値軸の最大値より大きい場合にデータラベルを表示するかどうかを指定します。 数値軸がデータ要素のサイズよりも小さくなった場合は、このプロパティを使用してデータラベルを表示するかどうかを設定できます。 このプロパティは、2-D グラフにのみ使用できます。
+  summary: 値が値軸の最大値より大きい場合にデータ ラベルを表示するかどうかを指定します。 値軸がデータ ポイントのサイズよりも小さくなる場合は、このプロパティを使用してデータ ラベルを表示するかどうかを設定できます。 このプロパティは、2-D グラフにのみ使用できます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -626,7 +626,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#setStyle:member(1)
   package: ExcelScript!
   fullName: setStyle(style)
-  summary: グラフのグラフのスタイルを指定します。
+  summary: グラフのグラフ スタイルを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -643,7 +643,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#setTop:member(1)
   package: ExcelScript!
   fullName: setTop(top)
-  summary: オブジェクトの上端から (ワークシートの) 行1の上端またはグラフエリアの上端までの距離をポイント単位で指定します (グラフの場合)。
+  summary: オブジェクトの上端から行 1 の上端までの距離 (ワークシート上) またはグラフ領域の上端 (グラフ上) をポイントで指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -660,7 +660,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#setWidth:member(1)
   package: ExcelScript!
   fullName: setWidth(width)
-  summary: グラフオブジェクトの幅をポイント単位で指定します。
+  summary: グラフ オブジェクトの幅をポイント単位で指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -674,9 +674,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 16db85eee5fc6327494e016ddfc9584f3d263d5c
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 622f7bc0491202803f57b7644468ee49e2787d89
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420161"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606956"

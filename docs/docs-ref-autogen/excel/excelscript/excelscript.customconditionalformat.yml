@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.CustomConditionalFormat#getFormat:member(1)
   package: ExcelScript!
   fullName: getFormat()
-  summary: 書式設定オブジェクトを返し、条件付き書式のフォント、塗りつぶし、罫線などのプロパティをカプセル化します。
+  summary: 条件付き書式のフォント、塗りつぶし、罫線、その他のプロパティをカプセル化する format オブジェクトを返します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.CustomConditionalFormat#getRule:member(1)
   package: ExcelScript!
   fullName: getRule()
-  summary: この条件付き書式で Rule オブジェクトを指定します。
+  summary: この条件付き `Rule` 形式のオブジェクトを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -36,9 +36,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.ConditionalFormatRule:interface" />
       description: ''
 metadata:
-  ms.openlocfilehash: 7b61d313814a23f543c9507123573298dde6f36d
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: fdd94ee431794b06febf59f81ea14deca322b1a8
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415646"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606552"

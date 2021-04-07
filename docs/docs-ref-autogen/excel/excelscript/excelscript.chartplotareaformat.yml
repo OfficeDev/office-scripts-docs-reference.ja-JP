@@ -3,7 +3,7 @@ name: ExcelScript.ChartPlotAreaFormat
 uid: ExcelScript!ExcelScript.ChartPlotAreaFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.ChartPlotAreaFormat
-summary: グラフの plotArea の書式プロパティを表します。
+summary: グラフ プロット領域の書式プロパティを表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPlotAreaFormat#getBorder:member(1)
   package: ExcelScript!
   fullName: getBorder()
-  summary: グラフ plotArea の罫線の属性を指定します。
+  summary: グラフプロット領域の罫線属性を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPlotAreaFormat#getFill:member(1)
   package: ExcelScript!
   fullName: getFill()
-  summary: 背景の書式設定情報を含むオブジェクトの塗りつぶしの書式を指定します。
+  summary: 背景の書式設定情報を含むオブジェクトの塗りつぶしの形式を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -36,9 +36,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.ChartFill:interface" />
       description: ''
 metadata:
-  ms.openlocfilehash: b6992c45251b55c0b3d0329b1e1d29e21bfdf566
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: c346f4fb13140639199528de6f7876897f645bf8
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416118"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606872"

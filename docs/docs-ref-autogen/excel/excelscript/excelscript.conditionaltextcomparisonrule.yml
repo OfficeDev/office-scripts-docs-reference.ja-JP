@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.ConditionalTextComparisonRule#operator:member
   package: ExcelScript!
   fullName: operator
-  summary: テキスト条件付き書式の演算子を指定します。
+  summary: テキストの条件付き書式の演算子。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -34,9 +34,9 @@ properties:
     return:
       type: string
 metadata:
-  ms.openlocfilehash: 18b8cd59bfb5002b0359322d99785661a64ef641
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 980518439125d151e8547b61ac2547a017974707
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415730"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607061"

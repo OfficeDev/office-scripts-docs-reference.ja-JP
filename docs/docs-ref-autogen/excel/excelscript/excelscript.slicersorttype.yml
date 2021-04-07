@@ -3,7 +3,7 @@ name: ExcelScript.SlicerSortType
 uid: ExcelScript!ExcelScript.SlicerSortType:enum
 package: ExcelScript!
 fullName: ExcelScript.SlicerSortType
-summary: スライサーの sortBy API の並べ替え動作を指定します。
+summary: スライサーの並べ替え動作を指定します。 `Slicer.sortBy`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -11,19 +11,19 @@ fields:
 - name: ascending
   uid: ExcelScript!ExcelScript.SlicerSortType.ascending:member
   package: ExcelScript!
-  summary: アイテムキャプションの昇順でスライサーアイテムを並べ替えます。
+  summary: スライサー アイテムをアイテムキャプションで昇順に並べ替えます。
 - name: dataSourceOrder
   uid: ExcelScript!ExcelScript.SlicerSortType.dataSourceOrder:member
   package: ExcelScript!
-  summary: データソースによって提供される順序でスライサーアイテムを並べ替えます。
+  summary: データ ソースによって提供される順序でスライサー アイテムを並べ替える。
 - name: descending
   uid: ExcelScript!ExcelScript.SlicerSortType.descending:member
   package: ExcelScript!
-  summary: アイテムキャプションを基準にして、スライサーアイテムを降順に並べ替えます。
+  summary: スライサー アイテムを項目のキャプションで降順に並べ替える。
 metadata:
-  ms.openlocfilehash: 5b56c58547f73ee6fdbcc145985c6bfc2526d6c3
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: db45ddcb1ff4913f4f4d76e9303660517f95a4a4
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420476"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606005"

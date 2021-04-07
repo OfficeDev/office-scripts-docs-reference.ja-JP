@@ -3,7 +3,7 @@ name: ExcelScript.ConditionalDataBarRule
 uid: ExcelScript!ExcelScript.ConditionalDataBarRule:interface
 package: ExcelScript!
 fullName: ExcelScript.ConditionalDataBarRule
-summary: データバーのルールの種類を表します。
+summary: データ バーのルールの種類を表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.ConditionalDataBarRule#formula:member
   package: ExcelScript!
   fullName: formula
-  summary: databar のルールを評価するために必要な場合、数式。
+  summary: 必要に応じて、データ バー ルールを評価する数式。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.ConditionalDataBarRule#type:member
   package: ExcelScript!
   fullName: type
-  summary: Databar のルールの種類。
+  summary: データ バーのルールの種類。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -34,9 +34,9 @@ properties:
     return:
       type: <xref uid="ExcelScript!ExcelScript.ConditionalFormatRuleType:enum" />
 metadata:
-  ms.openlocfilehash: ff4a94bef89608675513912330c1f46d94efaeca
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: fdfd59f9413a06f00ecd953b24cb018a893cc638
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415912"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606732"

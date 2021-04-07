@@ -3,7 +3,7 @@ name: ExcelScript.DataValidationOperator
 uid: ExcelScript!ExcelScript.DataValidationOperator:enum
 package: ExcelScript!
 fullName: ExcelScript.DataValidationOperator
-summary: データ検証演算子の列挙を表します。
+summary: データ検証演算子の列挙型を表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -41,9 +41,9 @@ fields:
   package: ExcelScript!
   summary: ''
 metadata:
-  ms.openlocfilehash: bf6b9a18a05344ce8c45230251decb19afa61ea3
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: c6041b09d6b0de53c44d73c26d3a2eb1f13673b3
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415527"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606517"

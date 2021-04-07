@@ -3,7 +3,7 @@ name: ExcelScript.ChartPointFormat
 uid: ExcelScript!ExcelScript.ChartPointFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.ChartPointFormat
-summary: グラフのポイントのオブジェクトの書式設定を表します。
+summary: グラフ ポイントの書式設定オブジェクトを表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPointFormat#getBorder:member(1)
   package: ExcelScript!
   fullName: getBorder()
-  summary: 色、スタイル、および重みの情報を含むグラフデータポイントの罫線の書式を表します。
+  summary: 色、スタイル、および重み情報を含むグラフ データ ポイントの罫線の形式を表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPointFormat#getFill:member(1)
   package: ExcelScript!
   fullName: getFill()
-  summary: 背景の書式設定情報を含むグラフの塗りつぶしの書式を表します。
+  summary: 背景の書式設定情報を含むグラフの塗りつぶしの形式を表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -36,9 +36,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.ChartFill:interface" />
       description: ''
 metadata:
-  ms.openlocfilehash: d4731ddaac158b83d1aabe172d19f47b0153a81b
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: c90275f66858b0afa2251140d08c527c6a55474a
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416090"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606858"

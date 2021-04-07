@@ -11,11 +11,11 @@ fields:
 - name: blanks
   uid: ExcelScript!ExcelScript.SpecialCellType.blanks:member
   package: ExcelScript!
-  summary: コンテンツのないセル
+  summary: コンテンツがないセル。
 - name: conditionalFormats
   uid: ExcelScript!ExcelScript.SpecialCellType.conditionalFormats:member
   package: ExcelScript!
-  summary: 条件付き書式が設定されるすべてのセル
+  summary: 条件付き書式を持つすべてのセル。
 - name: constants
   uid: ExcelScript!ExcelScript.SpecialCellType.constants:member
   package: ExcelScript!
@@ -23,7 +23,7 @@ fields:
 - name: dataValidations
   uid: ExcelScript!ExcelScript.SpecialCellType.dataValidations:member
   package: ExcelScript!
-  summary: 条件の設定が含まれているセル
+  summary: 検証条件を持つセル。
 - name: formulas
   uid: ExcelScript!ExcelScript.SpecialCellType.formulas:member
   package: ExcelScript!
@@ -31,19 +31,19 @@ fields:
 - name: sameConditionalFormat
   uid: ExcelScript!ExcelScript.SpecialCellType.sameConditionalFormat:member
   package: ExcelScript!
-  summary: 範囲内の最初のセルと同じ条件付き書式を持つセル。
+  summary: セル範囲の最初のセルと同じ条件付き書式を持つセル。
 - name: sameDataValidation
   uid: ExcelScript!ExcelScript.SpecialCellType.sameDataValidation:member
   package: ExcelScript!
-  summary: 範囲内の最初のセルと同じデータの入力規則の条件を持つセル。
+  summary: 範囲内の最初のセルと同じデータ検証条件を持つセル。
 - name: visible
   uid: ExcelScript!ExcelScript.SpecialCellType.visible:member
   package: ExcelScript!
-  summary: 表示されているセル
+  summary: 表示されるセル。
 metadata:
-  ms.openlocfilehash: e267008031fc63a772a4410ae996daf5b1352f86
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: abfcbb551319211b6da5a509bc9ab75e2f24dea8
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420350"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51605991"
