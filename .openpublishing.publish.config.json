@@ -1,31 +1,35 @@
 {
   "docsets_to_publish": [
     {
-      "customized_tasks": {
-        "docset_prebuild": [
-          "_dependentPackages/CommonPlugins/tools/JoinTOC.ps1"
-        ]
-      },
       "docset_name": "office-scripts-docs-reference",
       "build_source_folder": "docs",
       "build_output_subfolder": "office-scripts-docs-reference",
       "locale": "ja-JP",
       "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": false,
+      "moniker_ranges": [
+        "office-scripts"
+      ],
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
-        "ManagedReference": "Content",
         "RestApi": "Content",
-        "UniversalReference": "Content",
-        "TSType": "content",
-        "TSPackage": "content",
-        "TSEnum": "content",
-        "TSTypeAlias": "content",
-        "ReferenceContainer": "content"
+        "TSType": "Content",
+        "TSPackage": "Content",
+        "TSEnum": "Content",
+        "TSTypeAlias": "Content",
+        "ReferenceContainer": "Content",
+        "ManagedReference": "Content"
       },
       "build_entry_point": "docs",
-      "template_folder": "_themes"
+      "template_folder": "_themes",
+      "customized_tasks": {
+        "docset_prebuild": [
+          "_dependentPackages/CommonPlugins/tools/JoinTOC.ps1"
+        ]
+      },
+      "customized_template_paths": [
+        "_dependentPackages/uref.plugins/content"
+      ]
     }
   ],
   "dependent_repositories": [
@@ -61,12 +65,8 @@
       "Pdf"
     ]
   },
-  "need_generate_pdf_url_template": true,
-  "targets": {
-    "Pdf": {
-      "template_folder": "_themes.pdf"
-    }
-  },
+  "need_generate_pdf_url_template": false,
+  "targets": {},
   "JoinTOCPlugin": [
     {
       "ReferenceTOC": "docs/docs-ref-autogen/excel/toc.yml",
@@ -82,7 +82,7 @@
   ],
   "continue_with_document_error": true,
   "skip_source_output_uploading": false,
-  "need_preview_pull_request": false,
+  "need_preview_pull_request": true,
   "contribution_branch_mappings": {},
   "dependent_packages": [
     {
@@ -102,5 +102,6 @@
   ],
   "docs_build_engine": {
     "name": "docfx_v3"
-  }
+  },
+  "sync_notification_subscribers": []
 }
