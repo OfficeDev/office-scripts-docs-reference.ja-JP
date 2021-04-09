@@ -50,12 +50,12 @@
           "ThirdPartyNotices"
         ]
       },
-
       {
         "files": [
           "**/*.md",
           "**/*.yml"
         ],
+        "group": "office-scripts",
         "src": "docs-ref-autogen/excel",
         "dest": "api/office-scripts"
       },
@@ -63,29 +63,20 @@
         "files": [
           "excel.yml"
         ],
-        "src": "docs-ref-autogen",
+        "group": "office-scripts",
+        "src": "docs-ref-autogen/excel",
         "dest": "api/office-scripts"
       },
       {
         "files": [
           "toc.yml"
         ],
+        "group": "office-scripts",
         "src": "breadcrumb",
         "dest": "office_scripts_breadcrumb"
       }
     ],
     "resource": [
-      {
-        "files": [
-          "**/*.png",
-          "**/*.jpg"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**"
-        ],
-        "dest": "api"
-      },
       {
         "files": [
           "**/*.png",
@@ -96,14 +87,13 @@
           "**/obj/**",
           "**/includes/**"
         ],
-        "src": "docs-ref-conceptual",
-        "dest": "office-scripts"
+        "dest": "api"
       }
     ],
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "uhfHeaderId": "MSDocsHeader-Dev_Office",
+      "uhfHeaderId": "office-scripts",
       "breadcrumb_path": "~/breadcrumb/toc.yml",
       "extendBreadcrumb": true,
       "ms.suite": "office",
@@ -117,11 +107,11 @@
       "product": [
         "office 365"
       ],
-      "feedback_system": "None",
-      "hide_comments": true,
+      "feedback_system": "GitHub",
       "feedback_github_repo": "OfficeDev/office-scripts-docs-reference",
       "feedback_product_url": "https://excel.uservoice.com/forums/274580-excel-for-the-web?category_id=143439",
-      "bilingual_type": "hover over"
+      "bilingual_type": "hover over",
+      "hide_comments": true
     },
     "fileMetadata": {
       "feedback_system": {
@@ -139,10 +129,17 @@
         ]
       },
       "ms.prod": {
-        "docs-ref-autogen/excel/**": "excel"
+        "docs-ref-autogen/excel/**": "excel",
+        "docs-ref-autogen/overview/**": "non-product-specific"
       }
     },
     "template": [],
-    "dest": "office-scripts-docs-reference"
+    "dest": "office-scripts-docs-reference",
+    "groups": {
+      "office-scripts": {
+        "dest": "office-scripts",
+        "moniker_range": "office-scripts"
+      }
+    }
   }
 }
