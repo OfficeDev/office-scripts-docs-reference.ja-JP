@@ -7,18 +7,18 @@
       "locale": "ja-jp",
       "monikers": [],
       "moniker_ranges": [
-        "office-scripts",
-        "office-scripts-async"
+        "office-scripts"
       ],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
-        "ManagedReference": "Content",
         "RestApi": "Content",
-        "TSType": "content",
-        "TSPackage": "content",
-        "TSEnum": "content",
-        "TSTypeAlias": "content"
+        "TSType": "Content",
+        "TSPackage": "Content",
+        "TSEnum": "Content",
+        "TSTypeAlias": "Content",
+        "ReferenceContainer": "Content",
+        "ManagedReference": "Content"
       },
       "build_entry_point": "docs",
       "template_folder": "_themes",
@@ -41,7 +41,7 @@
     "master-sxs"
   ],
   "skip_source_output_uploading": false,
-  "need_preview_pull_request": false,
+  "need_preview_pull_request": true,
   "contribution_branch_mappings": {},
   "dependent_repositories": [
     {
