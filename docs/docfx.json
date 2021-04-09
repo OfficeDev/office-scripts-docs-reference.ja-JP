@@ -81,7 +81,7 @@
         "files": [
           "**/*.png",
           "**/*.jpg",
-		      "**/*.svg"
+          "**/*.svg"
         ],
         "exclude": [
           "**/obj/**",
@@ -113,11 +113,11 @@
       "product": [
         "office 365"
       ],
-      "feedback_system": "None",
-      "hide_comments": true,
-      "bilingual_type": "hover over",
+      "feedback_system": "GitHub",
       "feedback_github_repo": "OfficeDev/office-scripts-docs-reference",
-      "feedback_product_url": "https://excel.uservoice.com/forums/274580-excel-for-the-web?category_id=143439"
+      "feedback_product_url": "https://excel.uservoice.com/forums/274580-excel-for-the-web?category_id=143439",
+      "bilingual_type": "hover over",
+      "hide_comments": true
     },
     "fileMetadata": {
       "feedback_system": {
