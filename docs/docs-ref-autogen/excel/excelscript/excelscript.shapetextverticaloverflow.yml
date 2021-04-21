@@ -3,7 +3,7 @@ name: ExcelScript.ShapeTextVerticalOverflow
 uid: ExcelScript!ExcelScript.ShapeTextVerticalOverflow:enum
 package: ExcelScript!
 fullName: ExcelScript.ShapeTextVerticalOverflow
-summary: 図形内のレイアウト枠の垂直オーバーフローを指定します。
+summary: 図形のテキスト フレームの垂直方向のオーバーフローを指定します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -21,9 +21,9 @@ fields:
   package: ExcelScript!
   summary: テキストはレイアウト枠を垂直方向にはみ出すことができます (テキストの配置によって、上、下、または両方からはみ出します)。
 metadata:
-  ms.openlocfilehash: e52155ed38292cb461911c22ce5173e88217f3b5
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 11a5caa2c4b41de28d80f7ffb202c8c783478acc
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49411776"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913385"

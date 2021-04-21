@@ -21,10 +21,10 @@ methods:
     content: 'addCustomProperty(key: string, value: any): CustomProperty;'
     parameters:
     - id: key
-      description: 必須です。 カスタムプロパティのキー。大文字と小文字は区別されません。 このキーは、Excel の外部にある255文字までに制限されます (大きなキーは、他のプラットフォームでは自動的に255文字にトリミングされます)。
+      description: 必須です。 大文字と小文字を区別しないカスタム プロパティのキー。 キーは、Web 上の Excel 以外では 255 文字に制限されています (大きいキーは、他のプラットフォームでは自動的に 255 文字にトリミングされます)。
       type: string
     - id: value
-      description: 必須です。 カスタムプロパティの値。 この値は、Excel の外部にある255文字までに制限されています (他のプラットフォームでは、大きな値は自動的に255文字にトリミングされます)。
+      description: 必須です。 カスタム プロパティの値。 この値は、Web 上の Excel 以外では 255 文字に制限されています (大きい値は、他のプラットフォームでは自動的に 255 文字にトリミングされます)。
       type: any
     return:
       type: <xref uid="ExcelScript!ExcelScript.CustomProperty:interface" />
@@ -46,7 +46,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getAuthor:member(1)
   package: ExcelScript!
   fullName: getAuthor()
-  summary: ブックの作成者を示します。
+  summary: ブックの作成者。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -72,7 +72,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getComments:member(1)
   package: ExcelScript!
   fullName: getComments()
-  summary: ブックのコメントを示します。
+  summary: ブックのコメント。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -124,7 +124,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getCustomProperty:member(1)
   package: ExcelScript!
   fullName: getCustomProperty(key)
-  summary: キーを使用してカスタム プロパティ オブジェクトを取得します。大文字と小文字は区別されません。 カスタムプロパティが存在しない場合、この関数は、プロパティが次の値に設定されたオブジェクトを返します。 `isNullObject``true`<!-- -->.
+  summary: キーを使用してカスタム プロパティ オブジェクトを取得します。大文字と小文字は区別されません。 カスタム プロパティが存在しない場合、この関数はプロパティが次に設定された `isNullObject` オブジェクトを返します。 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -132,7 +132,7 @@ methods:
     content: 'getCustomProperty(key: string): CustomProperty | undefined;'
     parameters:
     - id: key
-      description: 必須です。 カスタムプロパティオブジェクトを識別するキー。
+      description: 必須です。 カスタム プロパティ オブジェクトを識別するキー。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.CustomProperty:interface" /> | undefined
@@ -193,7 +193,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getSubject:member(1)
   package: ExcelScript!
   fullName: getSubject()
-  summary: ブックの件名を示します。
+  summary: ブックの件名。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -206,7 +206,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getTitle:member(1)
   package: ExcelScript!
   fullName: getTitle()
-  summary: ブックのタイトルを示します。
+  summary: ブックのタイトル。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -219,7 +219,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#setAuthor:member(1)
   package: ExcelScript!
   fullName: setAuthor(author)
-  summary: ブックの作成者を示します。
+  summary: ブックの作成者。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -253,7 +253,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#setComments:member(1)
   package: ExcelScript!
   fullName: setComments(comments)
-  summary: ブックのコメントを示します。
+  summary: ブックのコメント。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -338,7 +338,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#setSubject:member(1)
   package: ExcelScript!
   fullName: setSubject(subject)
-  summary: ブックの件名を示します。
+  summary: ブックの件名。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -355,7 +355,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#setTitle:member(1)
   package: ExcelScript!
   fullName: setTitle(title)
-  summary: ブックのタイトルを示します。
+  summary: ブックのタイトル。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -369,9 +369,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 5eab007d84d344b973beabd9d62c7753486d3895
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: b6ba5c9e2e1da6c6fddfee819fc8bc43a4cf24a9
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554654"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914416"

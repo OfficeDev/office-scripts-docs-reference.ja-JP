@@ -3,7 +3,7 @@ name: ExcelScript.ConditionalFormatColorCriterionType
 uid: ExcelScript!ExcelScript.ConditionalFormatColorCriterionType:enum
 package: ExcelScript!
 fullName: ExcelScript.ConditionalFormatColorCriterionType
-summary: 条件付き書式の色の条件の種類を表します。
+summary: 条件付き書式の色基準の種類を表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -37,9 +37,9 @@ fields:
   package: ExcelScript!
   summary: ''
 metadata:
-  ms.openlocfilehash: d146be6636b4919ad83da4852463dcf2491a58d4
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 47e4e6ea889ae0cbf60e4c644dcebbc4493d214d
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415870"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913831"

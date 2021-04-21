@@ -717,9 +717,9 @@ fields:
   package: ExcelScript!
   summary: ''
 metadata:
-  ms.openlocfilehash: dd95617ddc4fbb9039f5604d601a70a6f2dcaf54
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: 9e1711168a4cd595f4317424446683809170a9ef
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51607243"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913633"

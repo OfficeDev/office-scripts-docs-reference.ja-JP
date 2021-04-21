@@ -3,7 +3,7 @@ name: ExcelScript.NumberFormatInfo
 uid: ExcelScript!ExcelScript.NumberFormatInfo:interface
 package: ExcelScript!
 fullName: ExcelScript.NumberFormatInfo
-summary: 数字を表示するためのカルチャに適した形式を定義します。 これは、現在のシステムのカルチャ設定に基づいています。
+summary: 数値を表示する文化的に適切な形式を定義します。 これは、現在のシステム カルチャ設定に基づいて行います。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.NumberFormatInfo#getNumberDecimalSeparator:member(1)
   package: ExcelScript!
   fullName: getNumberDecimalSeparator()
-  summary: 数値の小数点の記号として使用される文字列を取得します。 これは、現在のシステム設定に基づいています。
+  summary: 数値の小数点として使用される文字列を取得します。 これは、現在のシステム設定に基づいて行います。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.NumberFormatInfo#getNumberGroupSeparator:member(1)
   package: ExcelScript!
   fullName: getNumberGroupSeparator()
-  summary: 数値の小数点の左側にある数字のグループを区切るために使用される文字列を取得します。 これは、現在のシステム設定に基づいています。
+  summary: 数値の 10 進数の左側に数字のグループを区切る文字列を取得します。 これは、現在のシステム設定に基づいて行います。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -36,9 +36,9 @@ methods:
       type: string
       description: ''
 metadata:
-  ms.openlocfilehash: 1fcd1c48e99ecf014cfbef77d2a8cfb2dd79ba55
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: a789fa3e10f31daa00bcc359f7bfd09f4d87121a
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412196"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913583"

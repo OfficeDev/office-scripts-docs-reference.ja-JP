@@ -3,7 +3,7 @@ name: ExcelScript.CalculationState
 uid: ExcelScript!ExcelScript.CalculationState:enum
 package: ExcelScript!
 fullName: ExcelScript.CalculationState
-summary: Excel アプリケーション全体での計算の状態を表します。
+summary: Excel アプリケーション全体の計算の状態を表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -11,7 +11,7 @@ fields:
 - name: calculating
   uid: ExcelScript!ExcelScript.CalculationState.calculating:member
   package: ExcelScript!
-  summary: 計算が進行中です。
+  summary: 進行中の計算。
 - name: done
   uid: ExcelScript!ExcelScript.CalculationState.done:member
   package: ExcelScript!
@@ -21,9 +21,9 @@ fields:
   package: ExcelScript!
   summary: 計算を引き起こす変更が行われましたが、再計算はまだ実行されていません
 metadata:
-  ms.openlocfilehash: c9b0c55e213af980d82164b7fb282eaf4a34f78f
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: e9a1951d22a2108e21da0eb9eb873c921968ba9a
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420210"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913288"

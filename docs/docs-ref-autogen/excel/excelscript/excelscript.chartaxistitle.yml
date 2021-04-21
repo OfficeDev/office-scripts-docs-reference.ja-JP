@@ -130,9 +130,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 3ac4a54e34535c1f4198a7ea2f714ef83f0e45b1
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: 24f39ab1eca8351eacb662b2849df42686d4850b
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51606935"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913253"

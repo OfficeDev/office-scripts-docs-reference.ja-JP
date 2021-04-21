@@ -3,7 +3,7 @@ name: ExcelScript.ShapeLineStyle
 uid: ExcelScript!ExcelScript.ShapeLineStyle:enum
 package: ExcelScript!
 fullName: ExcelScript.ShapeLineStyle
-summary: 線のスタイルを示します。
+summary: 線のスタイル。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -19,19 +19,19 @@ fields:
 - name: thickThin
   uid: ExcelScript!ExcelScript.ShapeLineStyle.thickThin:member
   package: ExcelScript!
-  summary: 細い線の横に太い線。 水平線の場合、太い線は細い線の上になります。 垂直線の場合、太い線は細い線の左側になります。
+  summary: 細い線の横に太い線。 水平線の場合、太い線は細線の上になります。 垂直線の場合、太い線は細線の左側になります。
 - name: thinThick
   uid: ExcelScript!ExcelScript.ShapeLineStyle.thinThick:member
   package: ExcelScript!
-  summary: 細い線の横に太い線。 水平線の場合、太い線は細い線の下になります。 垂直線の場合、太い線は細い線の右になります。
+  summary: 細い線の横に太い線。 水平線の場合、太線は細線の下になります。 垂直線の場合、太い線は細線の右側になります。
 - name: thinThin
   uid: ExcelScript!ExcelScript.ShapeLineStyle.thinThin:member
   package: ExcelScript!
   summary: 2 本の細い線。
 metadata:
-  ms.openlocfilehash: b3b5d5a888b7055f50e0ae080eff50a898717a93
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 05c9927a86ac3301390897d4f09c15ccdb49606a
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49411748"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913399"

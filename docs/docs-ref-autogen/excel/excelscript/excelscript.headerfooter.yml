@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.HeaderFooter#getCenterFooter:member(1)
   package: ExcelScript!
   fullName: getCenterFooter()
-  summary: ワークシートの中央のフッター。 フォントの書式を適用したり、変数の値を挿入したりするには、ここで指定した書式コードを使用 https://msdn.microsoft.com/library/bb225426.aspx します。
+  summary: ワークシートの中央フッター。 フォントの書式設定を適用したり、変数値を挿入したりするには、次に示す書式コードを使用します https://msdn.microsoft.com/library/bb225426.aspx 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.HeaderFooter#getCenterHeader:member(1)
   package: ExcelScript!
   fullName: getCenterHeader()
-  summary: ワークシートの中央ヘッダー。 フォントの書式を適用したり、変数の値を挿入したりするには、ここで指定した書式コードを使用 https://msdn.microsoft.com/library/bb225426.aspx します。
+  summary: ワークシートの中央ヘッダー。 フォントの書式設定を適用したり、変数値を挿入したりするには、次に示す書式コードを使用します https://msdn.microsoft.com/library/bb225426.aspx 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.HeaderFooter#getLeftFooter:member(1)
   package: ExcelScript!
   fullName: getLeftFooter()
-  summary: ワークシートの左フッターを示します。 フォントの書式を適用したり、変数の値を挿入したりするには、ここで指定した書式コードを使用 https://msdn.microsoft.com/library/bb225426.aspx します。
+  summary: ワークシートの左側のフッター。 フォントの書式設定を適用したり、変数値を挿入したりするには、次に示す書式コードを使用します https://msdn.microsoft.com/library/bb225426.aspx 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.HeaderFooter#getLeftHeader:member(1)
   package: ExcelScript!
   fullName: getLeftHeader()
-  summary: ワークシートの左のヘッダーを示します。 フォントの書式を適用したり、変数の値を挿入したりするには、ここで指定した書式コードを使用 https://msdn.microsoft.com/library/bb225426.aspx します。
+  summary: ワークシートの左側のヘッダー。 フォントの書式設定を適用したり、変数値を挿入したりするには、次に示す書式コードを使用します https://msdn.microsoft.com/library/bb225426.aspx 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.HeaderFooter#getRightFooter:member(1)
   package: ExcelScript!
   fullName: getRightFooter()
-  summary: ワークシートの右フッター。 フォントの書式を適用したり、変数の値を挿入したりするには、ここで指定した書式コードを使用 https://msdn.microsoft.com/library/bb225426.aspx します。
+  summary: ワークシートの右側のフッター。 フォントの書式設定を適用したり、変数値を挿入したりするには、次に示す書式コードを使用します https://msdn.microsoft.com/library/bb225426.aspx 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.HeaderFooter#getRightHeader:member(1)
   package: ExcelScript!
   fullName: getRightHeader()
-  summary: ワークシートの右ヘッダー。 フォントの書式を適用したり、変数の値を挿入したりするには、ここで指定した書式コードを使用 https://msdn.microsoft.com/library/bb225426.aspx します。
+  summary: ワークシートの右側のヘッダー。 フォントの書式設定を適用したり、変数値を挿入したりするには、次に示す書式コードを使用します https://msdn.microsoft.com/library/bb225426.aspx 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.HeaderFooter#setCenterFooter:member(1)
   package: ExcelScript!
   fullName: setCenterFooter(centerFooter)
-  summary: ワークシートの中央のフッター。 フォントの書式を適用したり、変数の値を挿入したりするには、ここで指定した書式コードを使用 https://msdn.microsoft.com/library/bb225426.aspx します。
+  summary: ワークシートの中央フッター。 フォントの書式設定を適用したり、変数値を挿入したりするには、次に示す書式コードを使用します https://msdn.microsoft.com/library/bb225426.aspx 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -108,7 +108,7 @@ methods:
   uid: ExcelScript!ExcelScript.HeaderFooter#setCenterHeader:member(1)
   package: ExcelScript!
   fullName: setCenterHeader(centerHeader)
-  summary: ワークシートの中央ヘッダー。 フォントの書式を適用したり、変数の値を挿入したりするには、ここで指定した書式コードを使用 https://msdn.microsoft.com/library/bb225426.aspx します。
+  summary: ワークシートの中央ヘッダー。 フォントの書式設定を適用したり、変数値を挿入したりするには、次に示す書式コードを使用します https://msdn.microsoft.com/library/bb225426.aspx 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -125,7 +125,7 @@ methods:
   uid: ExcelScript!ExcelScript.HeaderFooter#setLeftFooter:member(1)
   package: ExcelScript!
   fullName: setLeftFooter(leftFooter)
-  summary: ワークシートの左フッターを示します。 フォントの書式を適用したり、変数の値を挿入したりするには、ここで指定した書式コードを使用 https://msdn.microsoft.com/library/bb225426.aspx します。
+  summary: ワークシートの左側のフッター。 フォントの書式設定を適用したり、変数値を挿入したりするには、次に示す書式コードを使用します https://msdn.microsoft.com/library/bb225426.aspx 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -142,7 +142,7 @@ methods:
   uid: ExcelScript!ExcelScript.HeaderFooter#setLeftHeader:member(1)
   package: ExcelScript!
   fullName: setLeftHeader(leftHeader)
-  summary: ワークシートの左のヘッダーを示します。 フォントの書式を適用したり、変数の値を挿入したりするには、ここで指定した書式コードを使用 https://msdn.microsoft.com/library/bb225426.aspx します。
+  summary: ワークシートの左側のヘッダー。 フォントの書式設定を適用したり、変数値を挿入したりするには、次に示す書式コードを使用します https://msdn.microsoft.com/library/bb225426.aspx 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.HeaderFooter#setRightFooter:member(1)
   package: ExcelScript!
   fullName: setRightFooter(rightFooter)
-  summary: ワークシートの右フッター。 フォントの書式を適用したり、変数の値を挿入したりするには、ここで指定した書式コードを使用 https://msdn.microsoft.com/library/bb225426.aspx します。
+  summary: ワークシートの右側のフッター。 フォントの書式設定を適用したり、変数値を挿入したりするには、次に示す書式コードを使用します https://msdn.microsoft.com/library/bb225426.aspx 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -176,7 +176,7 @@ methods:
   uid: ExcelScript!ExcelScript.HeaderFooter#setRightHeader:member(1)
   package: ExcelScript!
   fullName: setRightHeader(rightHeader)
-  summary: ワークシートの右ヘッダー。 フォントの書式を適用したり、変数の値を挿入したりするには、ここで指定した書式コードを使用 https://msdn.microsoft.com/library/bb225426.aspx します。
+  summary: ワークシートの右側のヘッダー。 フォントの書式設定を適用したり、変数値を挿入したりするには、次に示す書式コードを使用します https://msdn.microsoft.com/library/bb225426.aspx 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -190,9 +190,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 6faa4ebc12652555ddfa4821a2414e91ab197ae7
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 578a04d20b570cfbc2da1458fd3b79e74cf67dfe
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412434"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913626"

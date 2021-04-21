@@ -3,7 +3,7 @@ name: ExcelScript.ChartBoxwhiskerOptions
 uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions:interface
 package: ExcelScript!
 fullName: ExcelScript.ChartBoxwhiskerOptions
-summary: 箱ひげ図のプロパティを表します。
+summary: ボックスグラフとひげグラフのプロパティを表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#getQuartileCalculation:member(1)
   package: ExcelScript!
   fullName: getQuartileCalculation()
-  summary: 箱ひげ図の四分位数の計算の種類を指定します。
+  summary: ボックスグラフとひげグラフの四分位計算の種類を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#getShowInnerPoints:member(1)
   package: ExcelScript!
   fullName: getShowInnerPoints()
-  summary: 箱ひげ図に内側のポイントを表示するかどうかを指定します。
+  summary: ボックスとひげグラフに内側の点を表示する場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#getShowMeanLine:member(1)
   package: ExcelScript!
   fullName: getShowMeanLine()
-  summary: 箱ひげ図に平均線を表示するかどうかを指定します。
+  summary: 平均線をボックスとひげグラフに表示する場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#getShowMeanMarker:member(1)
   package: ExcelScript!
   fullName: getShowMeanMarker()
-  summary: 箱ひげ図に平均マーカーを表示するかどうかを指定します。
+  summary: 平均マーカーをボックスとひげグラフに表示する場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#getShowOutlierPoints:member(1)
   package: ExcelScript!
   fullName: getShowOutlierPoints()
-  summary: Outlier points を箱ひげ図に表示するかどうかを指定します。
+  summary: ボックスとひげグラフに外れ値ポイントを表示する場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#setQuartileCalculation:member(1)
   package: ExcelScript!
   fullName: setQuartileCalculation(quartileCalculation)
-  summary: 箱ひげ図の四分位数の計算の種類を指定します。
+  summary: ボックスグラフとひげグラフの四分位計算の種類を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -98,7 +98,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#setShowInnerPoints:member(1)
   package: ExcelScript!
   fullName: setShowInnerPoints(showInnerPoints)
-  summary: 箱ひげ図に内側のポイントを表示するかどうかを指定します。
+  summary: ボックスとひげグラフに内側の点を表示する場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -115,7 +115,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#setShowMeanLine:member(1)
   package: ExcelScript!
   fullName: setShowMeanLine(showMeanLine)
-  summary: 箱ひげ図に平均線を表示するかどうかを指定します。
+  summary: 平均線をボックスとひげグラフに表示する場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -132,7 +132,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#setShowMeanMarker:member(1)
   package: ExcelScript!
   fullName: setShowMeanMarker(showMeanMarker)
-  summary: 箱ひげ図に平均マーカーを表示するかどうかを指定します。
+  summary: 平均マーカーをボックスとひげグラフに表示する場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -149,7 +149,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#setShowOutlierPoints:member(1)
   package: ExcelScript!
   fullName: setShowOutlierPoints(showOutlierPoints)
-  summary: Outlier points を箱ひげ図に表示するかどうかを指定します。
+  summary: ボックスとひげグラフに外れ値ポイントを表示する場合に指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -163,9 +163,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 12b3f06b1036fee3892bdc0ab9a63c1dbff335b5
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: b53c861761fa2dbead962e9ec6e1b011af51f12b
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420021"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914563"

@@ -85,9 +85,9 @@ fields:
   package: ExcelScript!
   summary: '`LabelFilterCondition` 不明またはサポートされていません。'
 metadata:
-  ms.openlocfilehash: 971720fcb310dec1604bf18761b42f0ea34421a9
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: fef83ff91682edfcb31821be1ed8fb89bf98ea79
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51606435"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913597"

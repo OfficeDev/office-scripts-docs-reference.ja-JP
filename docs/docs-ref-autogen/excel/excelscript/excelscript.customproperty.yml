@@ -3,7 +3,7 @@ name: ExcelScript.CustomProperty
 uid: ExcelScript!ExcelScript.CustomProperty:interface
 package: ExcelScript!
 fullName: ExcelScript.CustomProperty
-summary: ユーザー設定のプロパティを表します。
+summary: カスタム プロパティを表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.CustomProperty#getKey:member(1)
   package: ExcelScript!
   fullName: getKey()
-  summary: カスタムプロパティのキー。 このキーは、Excel の外部にある255文字までに制限されます (大きなキーは、他のプラットフォームでは自動的に255文字にトリミングされます)。
+  summary: カスタム プロパティのキー。 キーは、Web 上の Excel 以外では 255 文字に制限されています (大きいキーは、他のプラットフォームでは自動的に 255 文字にトリミングされます)。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.CustomProperty#getType:member(1)
   package: ExcelScript!
   fullName: getType()
-  summary: カスタムプロパティに使用される値の型。
+  summary: カスタム プロパティに使用される値の種類。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.CustomProperty#getValue:member(1)
   package: ExcelScript!
   fullName: getValue()
-  summary: カスタム プロパティの値を指定します。 この値は、Excel の外部にある255文字までに制限されています (他のプラットフォームでは、大きな値は自動的に255文字にトリミングされます)。
+  summary: カスタム プロパティの値を指定します。 この値は、Web 上の Excel 以外では 255 文字に制限されています (大きい値は、他のプラットフォームでは自動的に 255 文字にトリミングされます)。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.CustomProperty#setValue:member(1)
   package: ExcelScript!
   fullName: setValue(value)
-  summary: カスタム プロパティの値を指定します。 この値は、Excel の外部にある255文字までに制限されています (他のプラットフォームでは、大きな値は自動的に255文字にトリミングされます)。
+  summary: カスタム プロパティの値を指定します。 この値は、Web 上の Excel 以外では 255 文字に制限されています (大きい値は、他のプラットフォームでは自動的に 255 文字にトリミングされます)。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -79,9 +79,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: c1a2f549413c7c33b66a60e232fb80bfeb60658a
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 816d6f4b2634092596bba7e6f92e5d414be58d7b
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415604"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914493"

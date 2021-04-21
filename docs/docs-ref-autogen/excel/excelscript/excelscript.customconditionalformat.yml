@@ -36,9 +36,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.ConditionalFormatRule:interface" />
       description: ''
 metadata:
-  ms.openlocfilehash: fdd94ee431794b06febf59f81ea14deca322b1a8
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: 046fed36dddd0b581e68e7ca102e92079b203241
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51606552"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914500"

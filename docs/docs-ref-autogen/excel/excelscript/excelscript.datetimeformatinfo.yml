@@ -3,7 +3,7 @@ name: ExcelScript.DatetimeFormatInfo
 uid: ExcelScript!ExcelScript.DatetimeFormatInfo:interface
 package: ExcelScript!
 fullName: ExcelScript.DatetimeFormatInfo
-summary: 数字を表示するためのカルチャに適した形式を定義します。 これは、現在のシステムのカルチャ設定に基づいています。
+summary: 数値を表示する文化的に適切な形式を定義します。 これは、現在のシステム カルチャ設定に基づいて行います。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.DatetimeFormatInfo#getDateSeparator:member(1)
   package: ExcelScript!
   fullName: getDateSeparator()
-  summary: 日付の区切り文字として使用される文字列を取得します。 これは、現在のシステム設定に基づいています。
+  summary: 日付区切り記号として使用される文字列を取得します。 これは、現在のシステム設定に基づいて行います。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.DatetimeFormatInfo#getLongDatePattern:member(1)
   package: ExcelScript!
   fullName: getLongDatePattern()
-  summary: 長い日付の値の書式指定文字列を取得します。 これは、現在のシステム設定に基づいています。
+  summary: 長い日付値の書式文字列を取得します。 これは、現在のシステム設定に基づいて行います。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.DatetimeFormatInfo#getLongTimePattern:member(1)
   package: ExcelScript!
   fullName: getLongTimePattern()
-  summary: 長い時間の値の書式指定文字列を取得します。 これは、現在のシステム設定に基づいています。
+  summary: 長い時間の値の書式文字列を取得します。 これは、現在のシステム設定に基づいて行います。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.DatetimeFormatInfo#getShortDatePattern:member(1)
   package: ExcelScript!
   fullName: getShortDatePattern()
-  summary: 短い日付の値の書式文字列を取得します。 これは、現在のシステム設定に基づいています。
+  summary: 短い日付の値の書式文字列を取得します。 これは、現在のシステム設定に基づいて行います。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.DatetimeFormatInfo#getTimeSeparator:member(1)
   package: ExcelScript!
   fullName: getTimeSeparator()
-  summary: 時刻の区切り記号として使用される文字列を取得します。 これは、現在のシステム設定に基づいています。
+  summary: 時刻の区切り記号として使用される文字列を取得します。 これは、現在のシステム設定に基づいて行います。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -75,9 +75,9 @@ methods:
       type: string
       description: ''
 metadata:
-  ms.openlocfilehash: a0ef9ff40580d0e29330b73b2f05c382fd73f777
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 41c906081273622c3070f65ff6c49fa4f3931586
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415436"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914472"

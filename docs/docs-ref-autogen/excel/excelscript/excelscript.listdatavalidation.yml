@@ -34,9 +34,9 @@ properties:
     return:
       type: string | <xref uid="ExcelScript!ExcelScript.Range:interface" />
 metadata:
-  ms.openlocfilehash: 9b241254b4ff28826e267a10e68a801a7535d4bf
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: fdc280019cb5828cac3464e444d69ce01a971b16
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51607222"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914353"

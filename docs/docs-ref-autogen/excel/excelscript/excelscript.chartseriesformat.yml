@@ -3,7 +3,7 @@ name: ExcelScript.ChartSeriesFormat
 uid: ExcelScript!ExcelScript.ChartSeriesFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.ChartSeriesFormat
-summary: グラフ系列の書式設定プロパティをカプセル化します。
+summary: グラフ系列の書式プロパティをカプセル化する
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeriesFormat#getFill:member(1)
   package: ExcelScript!
   fullName: getFill()
-  summary: 背景の書式設定情報を含むグラフ系列の塗りつぶしの書式を表します。
+  summary: 背景書式情報を含むグラフ系列の塗りつぶし形式を表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -36,9 +36,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.ChartLineFormat:interface" />
       description: ''
 metadata:
-  ms.openlocfilehash: ea18d6bd2a315f7839c42eb77b6d996df64daf98
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: fd60ce5ece36aebf97f2f1d06b99c0c126f5aef2
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416055"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51911936"

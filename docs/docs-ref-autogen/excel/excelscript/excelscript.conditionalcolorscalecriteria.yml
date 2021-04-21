@@ -46,9 +46,9 @@ properties:
     return:
       type: <xref uid="ExcelScript!ExcelScript.ConditionalColorScaleCriterion:interface" />
 metadata:
-  ms.openlocfilehash: 57fbcb090ccbf7f9a69c4d50bc2673bd98680e5a
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: e0082d23db4f84cee4fa07562c755a284ee497bc
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51606753"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913852"

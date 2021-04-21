@@ -3,7 +3,7 @@ name: ExcelScript.ChartMapAreaLevel
 uid: ExcelScript!ExcelScript.ChartMapAreaLevel:enum
 package: ExcelScript!
 fullName: ExcelScript.ChartMapAreaLevel
-summary: グラフの系列のマッピングレベルを表します。 これは地域マップグラフにのみ適用されます。
+summary: グラフ系列のマッピング レベルを表します。 これは地域マップ グラフにのみ適用されます。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -41,9 +41,9 @@ fields:
   package: ExcelScript!
   summary: ''
 metadata:
-  ms.openlocfilehash: ef37b0fbd25924cc8825e5a2d18727ca0a8b2522
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: f40a92e832a71fe6b481b38945f40de541ae1c7b
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419671"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51912006"

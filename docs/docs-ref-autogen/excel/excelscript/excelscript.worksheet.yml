@@ -238,6 +238,23 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
       description: ''
+- name: addNamedSheetView(name)
+  uid: ExcelScript!ExcelScript.Worksheet#addNamedSheetView:member(1)
+  package: ExcelScript!
+  fullName: addNamedSheetView(name)
+  summary: 指定した名前の新しいシート ビューを作成します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'addNamedSheetView(name: string): NamedSheetView;'
+    parameters:
+    - id: name
+      description: 作成するシート ビューの名前。 指定された名前が既に存在するか、空の場合、またはワークシートによって予約されている名前である場合にエラーをスローします。
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NamedSheetView:interface" />
+      description: ''
 - name: addPivotTable(name, source, destination)
   uid: ExcelScript!ExcelScript.Worksheet#addPivotTable:member(1)
   package: ExcelScript!
@@ -426,6 +443,32 @@ methods:
     return:
       type: void
       description: "\n\n#### <a name=\"examples\"></a>例\n\n```javascript\n/**\n * The following scripts removes the first worksheet in the workbook.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the first worksheet.\n  let sheet = workbook.getWorksheets()[0];\n\n  // Remove that worksheet from the workbook.\n  sheet.delete();\n}\n```"
+- name: enterTemporaryNamedSheetView()
+  uid: ExcelScript!ExcelScript.Worksheet#enterTemporaryNamedSheetView:member(1)
+  package: ExcelScript!
+  fullName: enterTemporaryNamedSheetView()
+  summary: 新しい一時シート ビューを作成してアクティブ化します。 一時ビューは、アプリケーションを閉じる、exit メソッドを使用して一時ビューを終了する、または別のシート ビューに切り替えるときに削除されます。 一時ビューが存在する場合は、一時シート ビューを空の文字列 ("") で指定できます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'enterTemporaryNamedSheetView(): NamedSheetView;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NamedSheetView:interface" />
+      description: ''
+- name: exitActiveNamedSheetView()
+  uid: ExcelScript!ExcelScript.Worksheet#exitActiveNamedSheetView:member(1)
+  package: ExcelScript!
+  fullName: exitActiveNamedSheetView()
+  summary: 現在アクティブなシート ビューを終了します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'exitActiveNamedSheetView(): void;'
+    return:
+      type: void
+      description: ''
 - name: findAll(text, criteria)
   uid: ExcelScript!ExcelScript.Worksheet#findAll:member(1)
   package: ExcelScript!
@@ -445,6 +488,19 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.WorksheetSearchCriteria:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
+      description: ''
+- name: getActiveNamedSheetView()
+  uid: ExcelScript!ExcelScript.Worksheet#getActiveNamedSheetView:member(1)
+  package: ExcelScript!
+  fullName: getActiveNamedSheetView()
+  summary: ワークシートの現在アクティブなシート ビューを取得します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getActiveNamedSheetView(): NamedSheetView;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NamedSheetView:interface" />
       description: ''
 - name: getAutoFilter()
   uid: ExcelScript!ExcelScript.Worksheet#getAutoFilter:member(1)
@@ -667,6 +723,36 @@ methods:
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" /> | undefined
+      description: ''
+- name: getNamedSheetView(key)
+  uid: ExcelScript!ExcelScript.Worksheet#getNamedSheetView:member(1)
+  package: ExcelScript!
+  fullName: getNamedSheetView(key)
+  summary: 名前を使用してシート ビューを取得します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getNamedSheetView(key: string): NamedSheetView;'
+    parameters:
+    - id: key
+      description: シート ビューの大文字と小文字を区別する名前。 一時ビューが存在する場合は、空の文字列 ("") を使用して一時シート ビューを取得します。
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NamedSheetView:interface" />
+      description: ''
+- name: getNamedSheetViews()
+  uid: ExcelScript!ExcelScript.Worksheet#getNamedSheetViews:member(1)
+  package: ExcelScript!
+  fullName: getNamedSheetViews()
+  summary: ワークシートに存在するシート ビューのコレクションを返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getNamedSheetViews(): NamedSheetView[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NamedSheetView:interface" />[]
       description: ''
 - name: getNames()
   uid: ExcelScript!ExcelScript.Worksheet#getNames:member(1)
@@ -1292,9 +1378,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 821018eb13c005fc3de20385737536175e4686e4
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: 0264cc15d8a8218728682ed849333c8b5222960a
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51607285"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914664"

@@ -3,7 +3,7 @@ name: ExcelScript.ChartMapProjectionType
 uid: ExcelScript!ExcelScript.ChartMapProjectionType:enum
 package: ExcelScript!
 fullName: ExcelScript.ChartMapProjectionType
-summary: グラフの系列のレイアウトの地域投影の種類を表します。 これは地域マップグラフにのみ適用されます。
+summary: グラフ系列レイアウトの地域投影の種類を表します。 これは地域マップ グラフにのみ適用されます。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -29,9 +29,9 @@ fields:
   package: ExcelScript!
   summary: ''
 metadata:
-  ms.openlocfilehash: 0a8e87d7222587f7a99b7ecbf7ec4b3c93c525b9
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: ca88a5c97a9f9295e46e4d8d6ccc562eb0e59001
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419657"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51912041"

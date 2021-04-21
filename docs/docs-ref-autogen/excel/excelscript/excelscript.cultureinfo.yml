@@ -3,7 +3,7 @@ name: ExcelScript.CultureInfo
 uid: ExcelScript!ExcelScript.CultureInfo:interface
 package: ExcelScript!
 fullName: ExcelScript.CultureInfo
-summary: 現在のシステムのカルチャ設定に基づく情報を提供します。 これには、カルチャ名、数値形式、およびその他のカルチャに依存する設定が含まれます。
+summary: 現在のシステム カルチャ設定に基づく情報を提供します。 これには、カルチャ名、数値の書式設定、その他の文化的に依存する設定が含まれます。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.CultureInfo#getDatetimeFormat:member(1)
   package: ExcelScript!
   fullName: getDatetimeFormat()
-  summary: 日付と時刻を表示するためのカルチャに適した形式を定義します。 これは、現在のシステムのカルチャ設定に基づいています。
+  summary: 日付と時刻を表示する文化的に適切な形式を定義します。 これは、現在のシステム カルチャ設定に基づいて行います。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.CultureInfo#getName:member(1)
   package: ExcelScript!
   fullName: getName()
-  summary: 'カルチャ名を languagecode2-country/regioncode2 の形式で取得します (例: "zh-cn-cn" または "en-us")。 これは、現在のシステム設定に基づいています。'
+  summary: languagecode2-country/regioncode2 形式のカルチャ名 ("zh-cn" や "ja-us" など) を取得します。 これは、現在のシステム設定に基づいて行います。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.CultureInfo#getNumberFormat:member(1)
   package: ExcelScript!
   fullName: getNumberFormat()
-  summary: 数字を表示するためのカルチャに適した形式を定義します。 これは、現在のシステムのカルチャ設定に基づいています。
+  summary: 数値を表示する文化的に適切な形式を定義します。 これは、現在のシステム カルチャ設定に基づいて行います。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,9 +49,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.NumberFormatInfo:interface" />
       description: ''
 metadata:
-  ms.openlocfilehash: a399c6a2970feddfa20b995cbb9e55cb565f9f07
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 6d1e2ed04dfcdbb0275fc42382fa9a9e3f0c819b
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415660"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913711"

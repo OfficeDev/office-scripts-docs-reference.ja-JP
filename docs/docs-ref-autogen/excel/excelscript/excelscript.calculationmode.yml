@@ -11,19 +11,19 @@ fields:
 - name: automatic
   uid: ExcelScript!ExcelScript.CalculationMode.automatic:member
   package: ExcelScript!
-  summary: Excel で、関連するデータが変更されるたびに新しい数式の結果が計算される既定の再計算動作。
+  summary: Excel は、関連するデータが変更されるごとに新しい数式の結果を計算する既定の再計算動作です。
 - name: automaticExceptTables
   uid: ExcelScript!ExcelScript.CalculationMode.automaticExceptTables:member
   package: ExcelScript!
-  summary: 数式がデータテーブルに含まれていない限り、関連するデータが変更されるたびに、新しい数式の結果を計算します。
+  summary: 数式がデータ テーブルに含されていない限り、関連するデータが変更される度に新しい数式の結果を計算します。
 - name: manual
   uid: ExcelScript!ExcelScript.CalculationMode.manual:member
   package: ExcelScript!
-  summary: 計算は、ユーザーまたはアドインが要求したときにのみ発生します。
+  summary: 計算は、ユーザーまたはアドインが要求した場合にのみ発生します。
 metadata:
-  ms.openlocfilehash: 21802549487f1e9e5b59b90c31094a5d2cdfc0c5
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: f7df42bfa4aee3c3bd6e39aabfc1140e64088d58
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417227"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913986"

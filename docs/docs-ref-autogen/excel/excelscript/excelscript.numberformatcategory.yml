@@ -3,7 +3,7 @@ name: ExcelScript.NumberFormatCategory
 uid: ExcelScript!ExcelScript.NumberFormatCategory:enum
 package: ExcelScript!
 fullName: ExcelScript.NumberFormatCategory
-summary: 数値書式のカテゴリを表します。
+summary: 数値形式のカテゴリを表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -11,55 +11,55 @@ fields:
 - name: accounting
   uid: ExcelScript!ExcelScript.NumberFormatCategory.accounting:member
   package: ExcelScript!
-  summary: '[会計形式] 列で通貨記号と小数点を揃えます。'
+  summary: 会計書式は、列内の通貨記号と小数点を表します。
 - name: currency
   uid: ExcelScript!ExcelScript.NumberFormatCategory.currency:member
   package: ExcelScript!
-  summary: 通貨の形式は、一般的な通貨の値に使用されます。 列の小数点を調整するには、会計形式を使用します。
+  summary: 通貨形式は、一般的な金銭的な値に使用されます。 列内の小数点を揃える場合は、アカウンティング形式を使用します。
 - name: custom
   uid: ExcelScript!ExcelScript.NumberFormatCategory.custom:member
   package: ExcelScript!
-  summary: カテゴリの一部ではないカスタム形式。
+  summary: 任意のカテゴリの一部ではないカスタム形式。
 - name: date
   uid: ExcelScript!ExcelScript.NumberFormatCategory.date:member
   package: ExcelScript!
-  summary: 日付形式は、日付と時刻のシリアル番号を日付値として表示します。 アスタリスク (*) で始まる日付形式は、オペレーティングシステムに対して指定されている地域の日付と時刻の設定の変更に対応します。 アスタリスクのない書式は、オペレーティングシステム設定の影響を受けません。
+  summary: 日付形式では、日付と時刻のシリアル番号が日付値として表示されます。 アスタリスク (*) で始まる日付形式は、オペレーティング システムに指定された地域の日付と時刻の設定の変更に応答します。 アスタリスクのない形式は、オペレーティング システム設定の影響を受けずに使用できます。
 - name: fraction
   uid: ExcelScript!ExcelScript.NumberFormatCategory.fraction:member
   package: ExcelScript!
-  summary: 分数形式では、セルの値が整数として表示され、余りが最も近い分の値に丸められます。
+  summary: 分数の形式は、セル値を整数として表示し、残りは最も近い分数の値に丸められます。
 - name: general
   uid: ExcelScript!ExcelScript.NumberFormatCategory.general:member
   package: ExcelScript!
-  summary: '[標準形式] セルには特定の番号書式はありません。'
+  summary: 一般的な書式セルには、特定の数値形式はありません。
 - name: number
   uid: ExcelScript!ExcelScript.NumberFormatCategory.number:member
   package: ExcelScript!
-  summary: 数値は、数値の一般的な表示に使用されます。 通貨およびアカウンティングでは、金銭的価値に特化した書式設定が提供されます。
+  summary: 数値は、数値の一般的な表示に使用されます。 通貨と会計は、金銭的価値に特化した書式を提供します。
 - name: percentage
   uid: ExcelScript!ExcelScript.NumberFormatCategory.percentage:member
   package: ExcelScript!
-  summary: パーセンテージの書式はセルの値を100で乗算し、結果をパーセント記号で表示します。
+  summary: パーセント形式はセル値に 100 を掛け、結果にパーセント記号を表示します。
 - name: scientific
   uid: ExcelScript!ExcelScript.NumberFormatCategory.scientific:member
   package: ExcelScript!
-  summary: 科学的な書式では、セルの値が1から10の数値に10の累乗で乗算されて表示されます。
+  summary: 科学形式では、セルの値を 1 ~ 10 の数値に 10 の乗数で表示します。
 - name: special
   uid: ExcelScript!ExcelScript.NumberFormatCategory.special:member
   package: ExcelScript!
-  summary: 特別な形式は、リストやデータベースの値を追跡するのに便利です。
+  summary: 特別な形式は、リストとデータベース値の追跡に役立ちます。
 - name: text
   uid: ExcelScript!ExcelScript.NumberFormatCategory.text:member
   package: ExcelScript!
-  summary: セルに数値が含まれている場合でも、テキスト形式のセルはテキストとして扱われます。 セルは入力したとおりに表示されます。
+  summary: テキスト形式のセルは、数値がセル内にある場合でもテキストとして扱います。 セルは入力したとおりに表示されます。
 - name: time
   uid: ExcelScript!ExcelScript.NumberFormatCategory.time:member
   package: ExcelScript!
-  summary: '[時間の形式] は、日付と時刻のシリアル番号を日付値として表示します。 アスタリスク (*) で始まる時刻書式は、オペレーティングシステムに対して指定されている地域の日付と時刻の設定の変更に対応します。 アスタリスクのない書式は、オペレーティングシステム設定の影響を受けません。'
+  summary: 時刻形式では、日付と時刻のシリアル番号が日付値として表示されます。 アスタリスク (*) で始まる時刻形式は、オペレーティング システムに指定された地域の日付と時刻の設定の変更に応答します。 アスタリスクのない形式は、オペレーティング システム設定の影響を受けずに使用できます。
 metadata:
-  ms.openlocfilehash: 777a00f106fd556e7702ec022cc3baa78008871c
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: e5918eeb718dd94b8c443a5cfed0b2e537542975
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415317"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914336"

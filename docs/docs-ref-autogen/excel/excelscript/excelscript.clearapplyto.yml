@@ -19,7 +19,7 @@ fields:
 - name: formats
   uid: ExcelScript!ExcelScript.ClearApplyTo.formats:member
   package: ExcelScript!
-  summary: 範囲のすべての書式設定をクリアします。
+  summary: 範囲のすべての書式をクリアします。
 - name: hyperlinks
   uid: ExcelScript!ExcelScript.ClearApplyTo.hyperlinks:member
   package: ExcelScript!
@@ -27,11 +27,11 @@ fields:
 - name: removeHyperlinks
   uid: ExcelScript!ExcelScript.ClearApplyTo.removeHyperlinks:member
   package: ExcelScript!
-  summary: セルのハイパーリンクと書式設定を削除しますが、コンテンツ、条件付き書式、およびデータの入力規則はそのまま残します。
+  summary: セルのハイパーリンクと書式を削除しますが、コンテンツ、条件付き書式、およびデータ検証はそのまま残ります。
 metadata:
-  ms.openlocfilehash: ac23bc453e0ec416e0d2f4bde26e0f69a7270ccf
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 71f3e0f6a14f8aff49e539b9078306047c60a77d
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415982"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913909"
