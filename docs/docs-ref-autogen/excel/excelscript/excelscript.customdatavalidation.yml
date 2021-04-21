@@ -22,9 +22,9 @@ properties:
     return:
       type: string
 metadata:
-  ms.openlocfilehash: abceba6296f70e4098ed3fd999ce8e04638d3048
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: fdfa6250fa959a35feba17bfc6e9310666129986
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51607152"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913704"

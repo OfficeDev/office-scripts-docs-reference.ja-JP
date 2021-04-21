@@ -73,9 +73,9 @@ fields:
   package: ExcelScript!
   summary: 計算が不明またはサポートされていません。
 metadata:
-  ms.openlocfilehash: 97d9e9bb0fbe87d7cf904afd092d25094e6c208a
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: a5a8b7f6787e483642c183627ef1400ab7c84def
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51606082"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913371"

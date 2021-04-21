@@ -3,7 +3,7 @@ name: ExcelScript.ConditionalCellValueOperator
 uid: ExcelScript!ExcelScript.ConditionalCellValueOperator:enum
 package: ExcelScript!
 fullName: ExcelScript.ConditionalCellValueOperator
-summary: テキスト条件付き書式の種類の演算子を表します。
+summary: テキストの条件付き書式の種類の演算子を表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -45,9 +45,9 @@ fields:
   package: ExcelScript!
   summary: ''
 metadata:
-  ms.openlocfilehash: f6d00cbf789ecf4874dac0cbffdb67ed1939fc47
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: f2b99a5ddb5d8a656a7e35efe158707a5852de7e
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416786"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913859"

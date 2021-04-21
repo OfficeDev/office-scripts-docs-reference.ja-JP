@@ -57,9 +57,9 @@ fields:
   package: ExcelScript!
   summary: 線形傾向モデルに従って隣接するセルの値を入力する数値の "FillSeries" のバージョン。
 metadata:
-  ms.openlocfilehash: 60a16fedc18165357a796d52d714408cb4288ca7
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: 2035fcda973e33df938bcfc54db8f110be392f06
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51606629"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913937"

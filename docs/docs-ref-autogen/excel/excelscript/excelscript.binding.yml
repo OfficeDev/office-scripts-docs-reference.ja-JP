@@ -88,9 +88,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.BindingType:enum" />
       description: ''
 metadata:
-  ms.openlocfilehash: 8136878c252afcb6a1d1412551c0a38aa65aaa13
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: 78a858eca5b9ad2e26e3349976abae2cca455e54
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51606608"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913993"

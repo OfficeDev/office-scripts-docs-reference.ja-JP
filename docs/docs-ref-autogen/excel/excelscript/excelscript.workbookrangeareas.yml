@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorkbookRangeAreas#getAddresses:member(1)
   package: ExcelScript!
   fullName: getAddresses()
-  summary: A1 スタイルのアドレスの配列を返します。 アドレスの値には、セルの四角形の各ブロックのワークシート名が含まれます (たとえば、「Sheet1!A1:B4, Sheet1!D1:D4")。 読み取り専用です。
+  summary: A1 スタイルのアドレスの配列を返します。 アドレスの値には、セルの四角形の各ブロックのワークシート名が含まれます (たとえば、「Sheet1!A1:B4, Sheet1!D1:D4")。 読み取り専用。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -66,9 +66,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />[]
       description: ''
 metadata:
-  ms.openlocfilehash: 2a4a022464cf1f54246d451331da6d84f2d57ec3
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: a56a6dbb72129b429a514e511ad1f7227222c0df
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51605305"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914601"

@@ -3,7 +3,7 @@ name: ExcelScript.ConditionalTopBottomRule
 uid: ExcelScript!ExcelScript.ConditionalTopBottomRule:interface
 package: ExcelScript!
 fullName: ExcelScript.ConditionalTopBottomRule
-summary: 上位/下位の条件付き書式のルールを表します。
+summary: 上/下の条件付き書式のルールを表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.ConditionalTopBottomRule#type:member
   package: ExcelScript!
   fullName: type
-  summary: 上位または下位のランクに基づいて値を書式設定します。
+  summary: 上または下のランクに基づいて値を書式設定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -34,9 +34,9 @@ properties:
     return:
       type: <xref uid="ExcelScript!ExcelScript.ConditionalTopBottomCriterionType:enum" />
 metadata:
-  ms.openlocfilehash: d46779df9dfc53561b864c95907f33d387ab25e3
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 7ed95d94dcade1c0fe7b898eae45e7c5b058f9a5
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415716"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913718"

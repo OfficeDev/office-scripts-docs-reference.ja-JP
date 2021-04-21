@@ -3,7 +3,7 @@ name: ExcelScript.TextConditionalFormat
 uid: ExcelScript!ExcelScript.TextConditionalFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.TextConditionalFormat
-summary: 特定のテキスト条件付き書式を表します。
+summary: 特定のテキストの条件付き書式を表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextConditionalFormat#getFormat:member(1)
   package: ExcelScript!
   fullName: getFormat()
-  summary: 書式設定オブジェクトを返し、条件付き書式のフォント、塗りつぶし、罫線などのプロパティをカプセル化します。
+  summary: 条件付き書式のフォント、塗りつぶし、罫線、その他のプロパティをカプセル化する format オブジェクトを返します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -53,9 +53,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: d8c00c2d246010e30903554288c963d01d010c8f
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: e22b27edda001744c08f8e9b5a99b78b187c6c0c
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420252"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914622"

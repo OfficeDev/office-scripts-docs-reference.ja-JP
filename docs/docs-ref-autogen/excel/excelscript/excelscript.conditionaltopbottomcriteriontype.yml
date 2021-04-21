@@ -3,7 +3,7 @@ name: ExcelScript.ConditionalTopBottomCriterionType
 uid: ExcelScript!ExcelScript.ConditionalTopBottomCriterionType:enum
 package: ExcelScript!
 fullName: ExcelScript.ConditionalTopBottomCriterionType
-summary: 上/下の平均条件付き書式の種類の条件を表します。
+summary: 平均条件付き書式の種類の上/下の条件を表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -29,9 +29,9 @@ fields:
   package: ExcelScript!
   summary: ''
 metadata:
-  ms.openlocfilehash: ec51de97641ac5b510fb4118b118de61f6545129
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: e2bfd14af9d8a2bdcdf3b5b4f14af01876dd1878
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415695"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913725"

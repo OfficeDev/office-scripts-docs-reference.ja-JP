@@ -189,9 +189,9 @@ fields:
   package: ExcelScript!
   summary: 日付は昨日です。
 metadata:
-  ms.openlocfilehash: 5891d34af071d4ed7b798acef50b8b875c2f3aa4
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: e38289c8ae5e90bb90db21e64ec61fff4300f4e0
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51607138"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914479"

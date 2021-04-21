@@ -49,9 +49,9 @@ fields:
   package: ExcelScript!
   summary: 数値のデータ検証の種類です。
 metadata:
-  ms.openlocfilehash: f812a19bb9b22a0f84176ac9dbf8dc92c6086f75
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: 654b4ba3b2602f74a5090ba9f6bf1ca0fe2cc101
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51607145"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913661"

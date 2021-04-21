@@ -21,9 +21,9 @@ fields:
   package: ExcelScript!
   summary: ''
 metadata:
-  ms.openlocfilehash: fb096e4967f4cba2bae1762ea3f5cd8685a54ccf
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: e41eaae1d2ca390388775c565331243e7ea95ae5
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51606844"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914542"

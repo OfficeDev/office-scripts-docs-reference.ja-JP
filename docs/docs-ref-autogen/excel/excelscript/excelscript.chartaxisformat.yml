@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxisFormat#getFill:member(1)
   package: ExcelScript!
   fullName: getFill()
-  summary: グラフの塗りつぶしの書式を指定します。
+  summary: グラフの塗りつぶしの書式設定を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxisFormat#getFont:member(1)
   package: ExcelScript!
   fullName: getFont()
-  summary: グラフ軸要素のフォント属性 (フォント名、フォントサイズ、色など) を指定します。
+  summary: グラフ軸要素のフォント属性 (フォント名、フォント サイズ、色など) を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxisFormat#getLine:member(1)
   package: ExcelScript!
   fullName: getLine()
-  summary: グラフの線の書式を指定します。
+  summary: グラフの線の書式設定を指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,9 +49,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.ChartLineFormat:interface" />
       description: ''
 metadata:
-  ms.openlocfilehash: 7a45fe459150d9ea8ccad9dfcca8ef833298db96
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 6f74fcae0950ec6307702d2075e3258acf4c7d81
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420098"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913965"

@@ -77,9 +77,9 @@ fields:
   package: ExcelScript!
   summary: '`ValueFilterCondition` 不明またはサポートされていません。'
 metadata:
-  ms.openlocfilehash: fb0d318f36cfc2a4d50f14a690eebf1d922f18c9
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: 74b546f8625a2e025318666956c019507d604c3e
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51605256"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914615"

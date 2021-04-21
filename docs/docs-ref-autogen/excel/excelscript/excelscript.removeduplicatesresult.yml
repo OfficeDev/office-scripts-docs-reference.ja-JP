@@ -36,9 +36,9 @@ methods:
       type: number
       description: ''
 metadata:
-  ms.openlocfilehash: dfde98d3f90317d1c43a5166f5b518d837b841aa
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: 5dd7c6cccc896294adf24064d3525b745a731725
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51606138"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913413"

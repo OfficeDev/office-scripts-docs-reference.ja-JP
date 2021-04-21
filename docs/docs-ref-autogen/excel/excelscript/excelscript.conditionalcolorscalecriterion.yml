@@ -46,9 +46,9 @@ properties:
     return:
       type: <xref uid="ExcelScript!ExcelScript.ConditionalFormatColorCriterionType:enum" />
 metadata:
-  ms.openlocfilehash: 25ed1beb5905b9dc3fe38a118f5191b51cdfabcb
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: eac56501e1a342e131cf192de81a465659d2c41d
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51607117"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914042"

@@ -21,9 +21,9 @@ fields:
   package: ExcelScript!
   summary: 選択した値で測定した上/下の N の合計をフィルター処理します。
 metadata:
-  ms.openlocfilehash: b9352750a5222ad7c57c6933a3cc26c4c78e7c34
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: c58781b98eee7b27807577f9f00af54e048877a9
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51607299"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914671"

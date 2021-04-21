@@ -456,6 +456,30 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
+- name: getExtendedRange(direction, activeCell)
+  uid: ExcelScript!ExcelScript.Range#getExtendedRange:member(1)
+  package: ExcelScript!
+  fullName: getExtendedRange(direction, activeCell)
+  summary: 指定された方向に基づいて、現在の範囲と範囲の端までの範囲オブジェクトを返します。 これは、Windows UI 上の Excel の Ctrl + Shift + Arrow キーの動作と一致します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      getExtendedRange(
+                  direction: KeyboardDirection,
+                  activeCell?: Range | string
+              ): Range;
+    parameters:
+    - id: direction
+      description: アクティブ セルからの方向。
+      type: <xref uid="ExcelScript!ExcelScript.KeyboardDirection:enum" />
+    - id: activeCell
+      description: この範囲内のアクティブ セル。 既定では、アクティブ セルは範囲の左上のセルです。 アクティブ セルがこの範囲内にない場合は、エラーがスローされます。
+      type: "<xref uid=\"ExcelScript!ExcelScript.Range:interface\" /> | string\n        "
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
 - name: getFormat()
   uid: ExcelScript!ExcelScript.Range#getFormat:member(1)
   package: ExcelScript!
@@ -733,19 +757,6 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.LinkedDataTypeState:enum" />[][]
       description: ''
-- name: getMergedAreas()
-  uid: ExcelScript!ExcelScript.Range#getMergedAreas:member(1)
-  package: ExcelScript!
-  fullName: getMergedAreas()
-  summary: この範囲内の `RangeAreas` 結合領域を表すオブジェクトを返します。 この範囲内の結合領域数が 512 を超える場合は、エラー `InvalidOperation` がスローされます。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getMergedAreas(): RangeAreas;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
-      description: ''
 - name: getNumberFormat()
   uid: ExcelScript!ExcelScript.Range#getNumberFormat:member(1)
   package: ExcelScript!
@@ -873,6 +884,30 @@ methods:
     content: 'getPredefinedCellStyle(): string;'
     return:
       type: string
+      description: ''
+- name: getRangeEdge(direction, activeCell)
+  uid: ExcelScript!ExcelScript.Range#getRangeEdge:member(1)
+  package: ExcelScript!
+  fullName: getRangeEdge(direction, activeCell)
+  summary: 指定された方向に対応するデータ領域のエッジ セルである範囲オブジェクトを返します。 これは、Windows UI 上の Excel の Ctrl+ Arrow キーの動作と一致します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      getRangeEdge(
+                  direction: KeyboardDirection,
+                  activeCell?: Range | string
+              ): Range;
+    parameters:
+    - id: direction
+      description: アクティブ セルからの方向。
+      type: <xref uid="ExcelScript!ExcelScript.KeyboardDirection:enum" />
+    - id: activeCell
+      description: この範囲内のアクティブ セル。 既定では、アクティブ セルは範囲の左上のセルです。 アクティブ セルがこの範囲内にない場合は、エラーがスローされます。
+      type: "<xref uid=\"ExcelScript!ExcelScript.Range:interface\" /> | string\n        "
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
 - name: getResizedRange(deltaRows, deltaColumns)
   uid: ExcelScript!ExcelScript.Range#getResizedRange:member(1)
@@ -1733,9 +1768,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 14625f148749589d974e094e1dc33f24a04b8a06
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: da511bf9e95a19149c3cf48a6df97c9a50ba5299
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51607187"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914259"

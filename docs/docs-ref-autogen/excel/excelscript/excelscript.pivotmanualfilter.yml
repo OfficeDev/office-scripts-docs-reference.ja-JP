@@ -3,7 +3,7 @@ name: ExcelScript.PivotManualFilter
 uid: ExcelScript!ExcelScript.PivotManualFilter:interface
 package: ExcelScript!
 fullName: ExcelScript.PivotManualFilter
-summary: ピボットフィールドに適用する手動フィルターの構成可能なテンプレート。 は、 `condition` フィルターを操作するために設定する必要のある条件を定義します。
+summary: PivotField に適用する手動フィルターの構成可能なテンプレート。 フィルター `condition` を操作するために設定する必要がある条件を定義します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotManualFilter#selectedItems:member
   package: ExcelScript!
   fullName: selectedItems
-  summary: 手動でフィルター処理するために選択されたアイテムのリスト。 これらは、選択されたフィールドの既存のアイテムおよび有効なアイテムである必要があります。
+  summary: 手動でフィルター処理する選択したアイテムの一覧。 これらは、選択したフィールドの既存の有効なアイテムである必要があります。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -22,9 +22,9 @@ properties:
     return:
       type: (string | <xref uid="ExcelScript!ExcelScript.PivotItem:interface" />)[]
 metadata:
-  ms.openlocfilehash: 0d1cc3922a3900abb54d5dccbe117a38b37583ee
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: f6650745d1d034a6a6e5bead877d305905428c5c
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412063"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914287"

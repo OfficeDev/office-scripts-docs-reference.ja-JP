@@ -69,9 +69,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.ChartAxis:interface" />
       description: ''
 metadata:
-  ms.openlocfilehash: 3e931303394e4db4ad29430321ba35ee32ca4018
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: 73e2396224adde7351299c69b73758091ba00aa1
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51606949"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913281"
