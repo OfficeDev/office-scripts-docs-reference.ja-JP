@@ -9,7 +9,7 @@
       "moniker_ranges": [
         "office-scripts"
       ],
-      "open_to_public_contributors": true,
+      "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
         "RestApi": "Content",
@@ -82,7 +82,7 @@
   ],
   "continue_with_document_error": true,
   "skip_source_output_uploading": false,
-  "need_preview_pull_request": true,
+  "need_preview_pull_request": false,
   "contribution_branch_mappings": {},
   "dependent_packages": [
     {
