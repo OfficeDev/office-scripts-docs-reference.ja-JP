@@ -9,7 +9,7 @@
       "moniker_ranges": [
         "office-scripts"
       ],
-      "open_to_public_contributors": true,
+      "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
         "RestApi": "Content",
@@ -41,7 +41,7 @@
     "master-sxs"
   ],
   "skip_source_output_uploading": false,
-  "need_preview_pull_request": true,
+  "need_preview_pull_request": false,
   "contribution_branch_mappings": {},
   "dependent_repositories": [
     {
@@ -80,10 +80,6 @@
   "JoinTOCPlugin": [
     {
       "ReferenceTOC": "docs/docs-ref-autogen/excel/toc.yml",
-      "ConceptualTOCUrl": "/office/dev/scripts/toc.json"
-    },
-    {
-      "ReferenceTOC": "docs/docs-ref-autogen/excel-async/toc.yml",
       "ConceptualTOCUrl": "/office/dev/scripts/toc.json"
     }
   ],
