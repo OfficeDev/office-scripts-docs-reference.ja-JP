@@ -29,14 +29,14 @@ methods:
       description: 並べ替えに使用する条件の一覧。
       type: <xref uid="ExcelScript!ExcelScript.SortField:interface" />[]
     - id: matchCase
-      description: 省略可能。 大文字小文字の区別が文字列の順序に影響を与えるかどうか。
+      description: 省略可能。大文字小文字の区別が文字列の順序に影響を与えるかどうか。
       type: boolean
     - id: method
       description: 省略可能。 中国語文字に使用される順序付けの方法です。
       type: <xref uid="ExcelScript!ExcelScript.SortMethod:enum" />
     return:
       type: void
-      description: "\n\n#### <a name=\"examples\"></a>例\n\n```javascript\n/**\n * This sample creates a table from the current worksheet's used range, then sorts it based on the first column.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Create a table with the used cells.\n  let usedRange = selectedSheet.getUsedRange();\n  let newTable = selectedSheet.addTable(usedRange, true);\n\n  // Sort the table using the first column.\n  newTable.getSort().apply([{ key: 0, ascending: true }]);\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This sample creates a table from the current worksheet's used range, then sorts it based on the first column.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Create a table with the used cells.\n  let usedRange = selectedSheet.getUsedRange();\n  let newTable = selectedSheet.addTable(usedRange, true);\n\n  // Sort the table using the first column.\n  newTable.getSort().apply([{ key: 0, ascending: true }]);\n}\n```"
 - name: clear()
   uid: ExcelScript!ExcelScript.TableSort#clear:member(1)
   package: ExcelScript!
@@ -103,9 +103,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: b65a4e2c0edcdbbc3b0380f1f4c11770ff0f1b73
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
+  ms.openlocfilehash: 791bf7bf229aee2c17a7dc6f3848e783ca34f20f
+  ms.sourcegitcommit: 41542794df8af7ea28b8d7db989fba7ec77b6b0c
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913336"
+  ms.lasthandoff: 05/12/2021
+  ms.locfileid: "52330395"

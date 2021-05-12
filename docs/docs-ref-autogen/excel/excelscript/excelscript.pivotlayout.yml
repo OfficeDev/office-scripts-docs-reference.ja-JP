@@ -34,7 +34,7 @@ methods:
     content: 'getBodyAndTotalRange(): Range;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: "\n\n#### <a name=\"examples\"></a>例\n\n```javascript\n/**\n * This sample finds the first PivotTable in the workbook and logs the values in the \"Grand Total\" cells.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the first PivotTable in the workbook.\n  let pivotTable = workbook.getPivotTables()[0];\n\n  // Get the names of each data column in the PivotTable.\n  let pivotColumnLabelRange = pivotTable.getLayout().getColumnLabelRange();\n\n  // Get the range displaying the pivoted data.\n  let pivotDataRange = pivotTable.getLayout().getBodyAndTotalRange();\n\n  // Get the range with the \"grand totals\" for the PivotTable columns.\n  let grandTotalRange = pivotDataRange.getLastRow();\n\n  // Print each of the \"Grand Totals\" to the console.\n  grandTotalRange.getValues()[0].forEach((column, columnIndex) => {\n    console.log(`Grand total of ${pivotColumnLabelRange.getValues()[0][columnIndex]}: ${grandTotalRange.getValues()[0][columnIndex]}`);\n    // Example log: \"Grand total of Sum of Crates Sold Wholesale: 11000\"\n  });\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This sample finds the first PivotTable in the workbook and logs the values in the \"Grand Total\" cells.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the first PivotTable in the workbook.\n  let pivotTable = workbook.getPivotTables()[0];\n\n  // Get the names of each data column in the PivotTable.\n  let pivotColumnLabelRange = pivotTable.getLayout().getColumnLabelRange();\n\n  // Get the range displaying the pivoted data.\n  let pivotDataRange = pivotTable.getLayout().getBodyAndTotalRange();\n\n  // Get the range with the \"grand totals\" for the PivotTable columns.\n  let grandTotalRange = pivotDataRange.getLastRow();\n\n  // Print each of the \"Grand Totals\" to the console.\n  grandTotalRange.getValues()[0].forEach((column, columnIndex) => {\n    console.log(`Grand total of ${pivotColumnLabelRange.getValues()[0][columnIndex]}: ${grandTotalRange.getValues()[0][columnIndex]}`);\n    // Example log: \"Grand total of Sum of Crates Sold Wholesale: 11000\"\n  });\n}\n```"
 - name: getColumnLabelRange()
   uid: ExcelScript!ExcelScript.PivotLayout#getColumnLabelRange:member(1)
   package: ExcelScript!
@@ -322,9 +322,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 6329eaaeb305d4a07223761071ab79c764ca688d
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
+  ms.openlocfilehash: 39f68692a50e5f76cd679d9414640e53f00a5c38
+  ms.sourcegitcommit: 41542794df8af7ea28b8d7db989fba7ec77b6b0c
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914294"
+  ms.lasthandoff: 05/12/2021
+  ms.locfileid: "52330363"
