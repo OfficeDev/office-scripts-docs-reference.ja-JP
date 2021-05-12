@@ -392,7 +392,7 @@ methods:
     content: 'getActiveCell(): Range;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: "\n\n#### <a name=\"examples\"></a>例\n\n```javascript\n/**\n * This script logs the value of the current active cell. \n * If multiple cells are selected, the top-leftmost cell will be logged.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current active cell in the workbook.\n  let cell = workbook.getActiveCell();\n  console.log(`The current cell's value is ${cell.getValue()}`);\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script logs the value of the current active cell. \n * If multiple cells are selected, the top-leftmost cell will be logged.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current active cell in the workbook.\n  let cell = workbook.getActiveCell();\n  console.log(`The current cell's value is ${cell.getValue()}`);\n}\n```"
 - name: getActiveChart()
   uid: ExcelScript!ExcelScript.Workbook#getActiveChart:member(1)
   package: ExcelScript!
@@ -736,7 +736,7 @@ methods:
     content: 'getName(): string;'
     return:
       type: string
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script logs the name of the workbook without the \".xlsx\" extension.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the workbook's name.\n  let name = workbook.getName();\n\n  // Remove the file extension.\n  name = name.substring(0, name.lastIndexOf(\".xlsx\"));\n\n  // Display the name in the console.\n  console.log(name);\n}\n```"
 - name: getNamedItem(name)
   uid: ExcelScript!ExcelScript.Workbook#getNamedItem:member(1)
   package: ExcelScript!
@@ -1127,7 +1127,7 @@ methods:
     content: 'getWorksheets(): Worksheet[];'
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />[]
-      description: "\n\n#### <a name=\"examples\"></a>例\n\n```javascript\n/**\n * This script logs the names of all the worksheets in the workbook.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get all the worksheets in the workbook. \n  let sheets = workbook.getWorksheets();\n\n  // Get a list of all the worksheet names.\n  let names = sheets.map ((sheet) => sheet.getName());\n\n  // Write in the console all the worksheet names and the total count.\n  console.log(names);\n  console.log(`Total worksheets inside of this workbook: ${sheets.length}`);\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script logs the names of all the worksheets in the workbook.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get all the worksheets in the workbook. \n  let sheets = workbook.getWorksheets();\n\n  // Get a list of all the worksheet names.\n  let names = sheets.map ((sheet) => sheet.getName());\n\n  // Write in the console all the worksheet names and the total count.\n  console.log(names);\n  console.log(`Total worksheets inside of this workbook: ${sheets.length}`);\n}\n```"
 - name: refreshAllDataConnections()
   uid: ExcelScript!ExcelScript.Workbook#refreshAllDataConnections:member(1)
   package: ExcelScript!
@@ -1277,9 +1277,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: ef603379751d75e1a554bd8a4bb630adf4e66c6a
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
+  ms.openlocfilehash: 5ba82a40b51a08dec4e026d99bcd69f4783fe59d
+  ms.sourcegitcommit: 41542794df8af7ea28b8d7db989fba7ec77b6b0c
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914608"
+  ms.lasthandoff: 05/12/2021
+  ms.locfileid: "52330370"

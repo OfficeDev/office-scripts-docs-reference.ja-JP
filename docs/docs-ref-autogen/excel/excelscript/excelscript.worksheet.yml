@@ -3,7 +3,7 @@ name: ExcelScript.Worksheet
 uid: ExcelScript!ExcelScript.Worksheet:interface
 package: ExcelScript!
 fullName: ExcelScript.Worksheet
-summary: Excel のワークシートは、セルのグリッドです。 データ、表、グラフなどを含めることができます。
+summary: Excel のワークシートは、セルのグリッドです。データ、表、グラフなどを含めることができます。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -330,7 +330,7 @@ methods:
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Table:interface" />
-      description: "\n\n#### <a name=\"examples\"></a>例\n\n```javascript\n/**\n * This sample creates a table from the current worksheet's used range, then sorts it based on the first column.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Create a table with the used cells.\n  let usedRange = selectedSheet.getUsedRange();\n  let newTable = selectedSheet.addTable(usedRange, true);\n\n  // Sort the table using the first column.\n  newTable.getSort().apply([{ key: 0, ascending: true }]);\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This sample creates a table from the current worksheet's used range, then sorts it based on the first column.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Create a table with the used cells.\n  let usedRange = selectedSheet.getUsedRange();\n  let newTable = selectedSheet.addTable(usedRange, true);\n\n  // Sort the table using the first column.\n  newTable.getSort().apply([{ key: 0, ascending: true }]);\n}\n```"
 - name: addTextBox(text)
   uid: ExcelScript!ExcelScript.Worksheet#addTextBox:member(1)
   package: ExcelScript!
@@ -442,7 +442,7 @@ methods:
     content: 'delete(): void;'
     return:
       type: void
-      description: "\n\n#### <a name=\"examples\"></a>例\n\n```javascript\n/**\n * The following scripts removes the first worksheet in the workbook.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the first worksheet.\n  let sheet = workbook.getWorksheets()[0];\n\n  // Remove that worksheet from the workbook.\n  sheet.delete();\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * The following scripts removes the first worksheet in the workbook.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the first worksheet.\n  let sheet = workbook.getWorksheets()[0];\n\n  // Remove that worksheet from the workbook.\n  sheet.delete();\n}\n```"
 - name: enterTemporaryNamedSheetView()
   uid: ExcelScript!ExcelScript.Worksheet#enterTemporaryNamedSheetView:member(1)
   package: ExcelScript!
@@ -527,10 +527,10 @@ methods:
     content: 'getCell(row: number, column: number): Range;'
     parameters:
     - id: row
-      description: 取得するセルの行番号。 0 を起点とする番号になります。
+      description: 取得するセルの行番号。0 を起点とする番号になります。
       type: number
     - id: column
-      description: 取得するセルの列番号。 0 を起点とする番号になります。
+      description: 取得するセルの列番号。0 を起点とする番号になります。
       type: number
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -706,7 +706,7 @@ methods:
     content: 'getName(): string;'
     return:
       type: string
-      description: "\n\n#### <a name=\"examples\"></a>例\n\n```javascript\n/**\n * This sample gets all the worksheet names in the workbook.\n * It then logs those names to the console.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n    // Create an array to hold the worksheet names.\n    let worksheetNames = [];\n\n    // Iterate over the worksheet collection in the workbook.\n    for (let worksheet of workbook.getWorksheets()) {\n        worksheetNames.push(worksheet.getName());\n    }\n\n    // Log the array of worksheet names.\n    console.log(worksheetNames);\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This sample gets all the worksheet names in the workbook.\n * It then logs those names to the console.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n    // Create an array to hold the worksheet names.\n    let worksheetNames = [];\n\n    // Iterate over the worksheet collection in the workbook.\n    for (let worksheet of workbook.getWorksheets()) {\n        worksheetNames.push(worksheet.getName());\n    }\n\n    // Log the array of worksheet names.\n    console.log(worksheetNames);\n}\n```"
 - name: getNamedItem(name)
   uid: ExcelScript!ExcelScript.Worksheet#getNamedItem:member(1)
   package: ExcelScript!
@@ -886,7 +886,7 @@ methods:
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: "\n\n#### <a name=\"examples\"></a>例\n\n```javascript\n/**\n * This sample reads the value of A1 and prints it to the console.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Get the value of cell A1.\n  let range = selectedSheet.getRange(\"A1\");\n  \n  // Print the value of A1.\n  console.log(range.getValue());\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This sample reads the value of A1 and prints it to the console.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Get the value of cell A1.\n  let range = selectedSheet.getRange(\"A1\");\n  \n  // Print the value of A1.\n  console.log(range.getValue());\n}\n```"
 - name: getRangeByIndexes(startRow, startColumn, rowCount, columnCount)
   uid: ExcelScript!ExcelScript.Worksheet#getRangeByIndexes:member(1)
   package: ExcelScript!
@@ -1103,7 +1103,7 @@ methods:
     content: 'getUsedRange(valuesOnly?: boolean): Range;'
     parameters:
     - id: valuesOnly
-      description: 省略可能。 値の入っているセルのみを使用セルと見なします。
+      description: 省略可能。値の入っているセルのみを使用セルと見なします。
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -1225,7 +1225,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#setEnableCalculation:member(1)
   package: ExcelScript!
   fullName: setEnableCalculation(enableCalculation)
-  summary: 必要に応じて Excel でワークシートを再計算する必要があるかどうかを決定します。 True の場合、Excel は必要に応じてワークシートを再計算します。 False を指定すると、Excel でシートが再計算されません。
+  summary: 必要に応Excelワークシートを再計算する必要があるかどうかを決定します。 True の場合Excel場合はワークシートを再計算します。 False を指定Excelシートを再計算しない場合。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1254,7 +1254,7 @@ methods:
       type: string
     return:
       type: void
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This sample renames a worksheet from \"Sheet1\" to \"SALES\".\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get a worksheet named \"Sheet1\".\n  const sheet = workbook.getWorksheet('Sheet1'); \n\n  // Set its name to SALES.\n  sheet.setName('SALES');\n}\n```"
 - name: setPosition(position)
   uid: ExcelScript!ExcelScript.Worksheet#setPosition:member(1)
   package: ExcelScript!
@@ -1271,7 +1271,7 @@ methods:
       type: number
     return:
       type: void
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This sample sets the worksheet named \"SALES\" as the first sheet in the workbook.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get a worksheet named \"SALES\".\n  const sheet = workbook.getWorksheet('SALES'); \n  // Position the worksheet at the beginning of the workbook.\n  sheet.setPosition(0);\n}\n```"
 - name: setShowGridlines(showGridlines)
   uid: ExcelScript!ExcelScript.Worksheet#setShowGridlines:member(1)
   package: ExcelScript!
@@ -1339,7 +1339,7 @@ methods:
       type: string
     return:
       type: void
-      description: "\n\n#### <a name=\"examples\"></a>例\n\n```javascript\n/**\n * This script sets the tab color of every worksheet in the workbook to red.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get all the worksheets in the workbook. \n  let sheets = workbook.getWorksheets();\n  \n  // Set the tab color of each worksheet to a random color.\n  for (let sheet of sheets) {    \n    // Set the color of the current worksheet's tab to red.\n    sheet.setTabColor(\"red\");\n  }\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script sets the tab color of every worksheet in the workbook to red.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get all the worksheets in the workbook. \n  let sheets = workbook.getWorksheets();\n  \n  // Set the tab color of each worksheet to a random color.\n  for (let sheet of sheets) {    \n    // Set the color of the current worksheet's tab to red.\n    sheet.setTabColor(\"red\");\n  }\n}\n```"
 - name: setVisibility(visibility)
   uid: ExcelScript!ExcelScript.Worksheet#setVisibility:member(1)
   package: ExcelScript!
@@ -1378,9 +1378,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 0264cc15d8a8218728682ed849333c8b5222960a
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
+  ms.openlocfilehash: 1ac81b789a7f8c6499f8ec6c3290ba38e359d0f0
+  ms.sourcegitcommit: 41542794df8af7ea28b8d7db989fba7ec77b6b0c
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914664"
+  ms.lasthandoff: 05/12/2021
+  ms.locfileid: "52330384"

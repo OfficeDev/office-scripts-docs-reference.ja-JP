@@ -185,7 +185,7 @@ methods:
     content: 'getImage(): Image;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.Image:interface" />
-      description: "\n\n#### <a name=\"examples\"></a>例\n\n```javascript\n/**\n* This script transfers an image from one worksheet to another.\n*/\nfunction main(workbook: ExcelScript.Workbook)\n{\n  // Get the worksheet with the image on it.\n  let firstWorksheet = workbook.getWorksheet(\"FirstSheet\");\n\n  // Get the first image from the worksheet.\n  // If a script added the image, you could add a name to make it easier to find.\n  let image: ExcelScript.Image;\n  firstWorksheet.getShapes().forEach((shape, index) => {\n    if (shape.getType() === ExcelScript.ShapeType.image) {\n      image = shape.getImage();\n      return;\n    }\n  });\n\n  // Copy the image to another worksheet.\n  image.getShape().copyTo(\"SecondSheet\");\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n* This script transfers an image from one worksheet to another.\n*/\nfunction main(workbook: ExcelScript.Workbook)\n{\n  // Get the worksheet with the image on it.\n  let firstWorksheet = workbook.getWorksheet(\"FirstSheet\");\n\n  // Get the first image from the worksheet.\n  // If a script added the image, you could add a name to make it easier to find.\n  let image: ExcelScript.Image;\n  firstWorksheet.getShapes().forEach((shape, index) => {\n    if (shape.getType() === ExcelScript.ShapeType.image) {\n      image = shape.getImage();\n      return;\n    }\n  });\n\n  // Copy the image to another worksheet.\n  image.getShape().copyTo(\"SecondSheet\");\n}\n```"
 - name: getLeft()
   uid: ExcelScript!ExcelScript.Shape#getLeft:member(1)
   package: ExcelScript!
@@ -710,9 +710,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 246a39c12c375808836414f3cc40971eaa6b92e4
-  ms.sourcegitcommit: 63588467d6a6e420fcbf0fdea644aca8ff7e6e8d
+  ms.openlocfilehash: bb0044ef90b105d370ee4d52e489a7e1022b0f20
+  ms.sourcegitcommit: 41542794df8af7ea28b8d7db989fba7ec77b6b0c
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 05/06/2021
-  ms.locfileid: "52236845"
+  ms.lasthandoff: 05/12/2021
+  ms.locfileid: "52330396"
