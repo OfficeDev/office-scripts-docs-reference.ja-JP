@@ -460,7 +460,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getExtendedRange:member(1)
   package: ExcelScript!
   fullName: getExtendedRange(direction, activeCell)
-  summary: 指定された方向に基づいて、現在の範囲と範囲の端までの範囲オブジェクトを返します。 これは、Windows UI 上の Excel の Ctrl + Shift + Arrow キーの動作と一致します。
+  summary: 指定された方向に基づいて、現在の範囲と範囲の端までの範囲オブジェクトを返します。 これは、UI 上のコントロールの Ctrl + Shift +矢印キー Excel一Windows一致します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -622,7 +622,7 @@ methods:
     content: 'getHyperlink(): RangeHyperlink;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeHyperlink:interface" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This sample clears all of the hyperlinks from the current worksheet\n * and removes the usual hyperlink formatting.\n */\nfunction main(workbook: ExcelScript.Workbook, sheetName: string = 'Sheet1') {\n  // Get the active worksheet. \n  let sheet = workbook.getWorksheet(sheetName);\n\n  // Get the used range to operate on.\n  // For large ranges (over 10000 entries), consider splitting the operation into batches for performance.\n  const targetRange = sheet.getUsedRange(true);\n  console.log(`Target Range to clear hyperlinks from: ${targetRange.getAddress()}`);\n\n  const rowCount = targetRange.getRowCount();\n  const colCount = targetRange.getColumnCount();\n  console.log(`Searching for hyperlinks in ${targetRange.getAddress()} which contains ${(rowCount * colCount)} cells`);\n\n  // Go through each individual cell looking for a hyperlink. \n  // This allows us to limit the formatting changes to only the cells with hyperlink formatting.\n  let clearedCount = 0;\n  for (let i = 0; i < rowCount; i++) {\n    for (let j = 0; j < colCount; j++) {\n      const cell = targetRange.getCell(i, j);\n      const hyperlink = cell.getHyperlink();\n      if (hyperlink) {\n        cell.clear(ExcelScript.ClearApplyTo.hyperlinks);\n        cell.getFormat().getFont().setUnderline(ExcelScript.RangeUnderlineStyle.none);\n        cell.getFormat().getFont().setColor('Black');\n        clearedCount++;\n      }\n    }\n  }\n\n  console.log(`Done. Cleared hyperlinks from ${clearedCount} cells`);\n}\n```"
 - name: getImage()
   uid: ExcelScript!ExcelScript.Range#getImage:member(1)
   package: ExcelScript!
@@ -928,7 +928,7 @@ methods:
       type: number
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script copies the formatting in the active cell to the neighboring cells.\n * Note that this script only works when the active cell isn't on an edge of the worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the active cell.\n  let activeCell = workbook.getActiveCell();\n\n  // Get the cell that's one row above and one column to the left of the active cell.\n  let cornerCell = activeCell.getOffsetRange(-1,-1);\n\n  // Get a range that includes all the cells surrounding the active cell.\n  let surroundingRange = cornerCell.getResizedRange(2, 2)\n\n  // Copy the formatting from the active cell to the new range.\n  surroundingRange.copyFrom(\n    activeCell, /* The source range. */\n    ExcelScript.RangeCopyType.formats /* What to copy. */\n    );\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script copies the formatting in the active cell to the neighboring cells.\n * Note that this script only works when the active cell isn't on an edge of the worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the active cell.\n  let activeCell = workbook.getActiveCell();\n\n  // Get the cell that's one row above and one column to the left of the active cell.\n  let cornerCell = activeCell.getOffsetRange(-1,-1);\n\n  // Get a range that includes all the cells surrounding the active cell.\n  let surroundingRange = cornerCell.getResizedRange(2, 2)\n\n  // Copy the formatting from the active cell to the new range.\n  surroundingRange.copyFrom(\n    activeCell, /* The source range. */\n    ExcelScript.RangeCopyType.formats /* What to copy. */\n  );\n}\n```"
 - name: getRow(row)
   uid: ExcelScript!ExcelScript.Range#getRow:member(1)
   package: ExcelScript!
@@ -1198,7 +1198,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getValues:member(1)
   package: ExcelScript!
   fullName: getValues()
-  summary: 指定した範囲の Raw 値を表します。 返されるデータには、文字列、数値、またはブール値を指定できます。 エラーが含まれているセルは、エラー文字列を返します。 戻り値がプラス ("+")、マイナス ("-")、または等号 ("=") で始まる場合、Excel は、この値を数式として解釈します。
+  summary: 指定した範囲の Raw 値を表します。 返されるデータには、文字列、数値、またはブール値を指定できます。 エラーが含まれているセルは、エラー文字列を返します。 戻り値がプラス ("+")、マイナス ("-")、または等号 ("=") で始まる場合、Excelは、この値を数式として解釈します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1575,7 +1575,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setNumberFormat:member(1)
   package: ExcelScript!
   fullName: setNumberFormat(numberFormat)
-  summary: セルの指定範囲の Excel 番号書式コードを設定します。 範囲に複数のセルが含まれている場合は、指定した範囲内の各セルが入力データで更新されます。
+  summary: 指定した範囲Excel番号の書式コードのセルを設定します。 範囲に複数のセルが含まれている場合は、指定した範囲内の各セルが入力データで更新されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1592,7 +1592,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setNumberFormatLocal:member(1)
   package: ExcelScript!
   fullName: setNumberFormatLocal(numberFormatLocal)
-  summary: ユーザーの言語設定に基づいて、指定した範囲のセル Excel 番号書式コードを設定します。 Excel は、プロパティを取得または設定するときに、言語や形式の設定を実行 `numberFormatLocal` します。 返されるテキストは、システム設定で指定された言語に基づいてローカル形式の文字列を使用します。 範囲に複数のセルが含まれている場合は、指定した範囲内の各セルが入力データで更新されます。
+  summary: ユーザーのExcelに基づいて、指定した範囲の数値書式コードのセルを設定します。 Excelプロパティを取得または設定するときに、言語や形式の設定を実行 `numberFormatLocal` しない場合。 返されるテキストは、システム設定で指定された言語に基づいてローカル形式の文字列を使用します。 範囲に複数のセルが含まれている場合は、指定した範囲内の各セルが入力データで更新されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1609,7 +1609,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setNumberFormats:member(1)
   package: ExcelScript!
   fullName: setNumberFormats(numberFormats)
-  summary: 指定した範囲の Excel の数値書式コードを表します。
+  summary: 指定したExcelの数値書式コードを表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1626,7 +1626,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setNumberFormatsLocal:member(1)
   package: ExcelScript!
   fullName: setNumberFormatsLocal(numberFormatsLocal)
-  summary: ユーザーの言語設定に基づいて、指定した範囲の Excel の数値形式コードを表します。 Excel は、プロパティを取得または設定するときに、言語や形式の設定を実行 `numberFormatLocal` します。 返されるテキストは、システム設定で指定された言語に基づいてローカル形式の文字列を使用します。
+  summary: ユーザー Excelの言語設定に基づいて、指定した範囲の数値書式コードを表します。 Excelプロパティを取得または設定するときに、言語や形式の設定を実行 `numberFormatLocal` しない場合。 返されるテキストは、システム設定で指定された言語に基づいてローカル形式の文字列を使用します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1677,7 +1677,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setValue:member(1)
   package: ExcelScript!
   fullName: setValue(value)
-  summary: 指定した範囲の生の値を設定します。 設定するデータには、文字列型、数値型、ブール型を指定できます。 `null` 値は無視されます (Excel では設定も上書きもされません)。 範囲に複数のセルが含まれている場合は、指定した範囲内の各セルが入力データで更新されます。
+  summary: 指定した範囲の生の値を設定します。 設定するデータには、文字列型、数値型、ブール型を指定できます。 `null`value は無視されます (設定または上書きは行Excel)。 範囲に複数のセルが含まれている場合は、指定した範囲内の各セルが入力データで更新されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1694,7 +1694,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setValues:member(1)
   package: ExcelScript!
   fullName: setValues(values)
-  summary: 指定した範囲の Raw 値を表します。 返されるデータには、文字列、数値、またはブール値を指定できます。 エラーが含まれているセルは、エラー文字列を返します。 戻り値がプラス ("+")、マイナス ("-")、または等号 ("=") で始まる場合、Excel は、この値を数式として解釈します。
+  summary: 指定した範囲の Raw 値を表します。 返されるデータには、文字列、数値、またはブール値を指定できます。 エラーが含まれているセルは、エラー文字列を返します。 戻り値がプラス ("+")、マイナス ("-")、または等号 ("=") で始まる場合、Excelは、この値を数式として解釈します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1768,9 +1768,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 1170c2483f4795587758037090678928c8b6bbbf
-  ms.sourcegitcommit: 41542794df8af7ea28b8d7db989fba7ec77b6b0c
+  ms.openlocfilehash: 5078d20a7a7558619d9393ab529fd3cd46c8f433
+  ms.sourcegitcommit: 02aeeff79f2bdb28393fdcacd6266820f7c4d085
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 05/12/2021
-  ms.locfileid: "52330356"
+  ms.lasthandoff: 05/20/2021
+  ms.locfileid: "52589307"

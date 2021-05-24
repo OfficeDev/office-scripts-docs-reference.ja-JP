@@ -145,7 +145,7 @@ methods:
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```typescript\n/**\n * This sample copies an image from a URL. This could be used to copy photos that a colleague stored in a shared folder to a related workbook.\n */\nasync function main(workbook: ExcelScript.Workbook) {\n  // Fetch the image from a URL.\n  const link = \"https://raw.githubusercontent.com/OfficeDev/office-scripts-docs/master/docs/images/git-octocat.png\";\n  const response = await fetch(link);\n\n  // Store the response as an ArrayBuffer, since it is a raw image file.\n  const data = await response.arrayBuffer();\n\n  // Convert the image data into a base64-encoded string.\n  const image = convertToBase64(data);\n\n  // Add the image to the current worksheet.\n  workbook.getActiveWorksheet().addImage(image)\n}\n\n/**\n * Converts an ArrayBuffer containing a .png image into a base64-encoded string.\n */\nfunction convertToBase64(input: ArrayBuffer) {\n  const uInt8Array = new Uint8Array(input);\n  const count = uInt8Array.length;\n\n  // Allocate the necessary space up front.\n  const charCodeArray = new Array(count) \n  \n  // Convert every entry in the array to a character.\n  for (let i = count; i >= 0; i--) { \n    charCodeArray[i] = String.fromCharCode(uInt8Array[i]);\n  }\n\n  // Convert the characters to base64.\n  const base64 = btoa(charCodeArray.join(''));\n  return base64;\n}\n```"
 - name: addLine(startLeft, startTop, endLeft, endTop, connectorType)
   uid: ExcelScript!ExcelScript.Worksheet#addLine:member(1)
   package: ExcelScript!
@@ -326,7 +326,7 @@ methods:
       description: データ `Range` ソースを表すオブジェクト、または範囲の文字列アドレスまたは名前。 アドレスにシート名が含まれていない場合は、現在作業中のシートが使用されます。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: hasHeaders
-      description: インポートするデータに列ラベルが含まれたかどうかを示すブール値。 ソースにヘッダーが含まれている (つまり、このプロパティがに設定されている場合) `false`<!-- -->)、Excel はヘッダーを自動的に生成し、データを 1 行下にシフトします。
+      description: インポートするデータに列ラベルが含まれたかどうかを示すブール値。 ソースにヘッダーが含まれている (つまり、このプロパティがに設定されている場合) `false`<!-- -->)Excelヘッダーを自動的に生成し、データを 1 行下にシフトします。
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Table:interface" />
@@ -646,7 +646,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getEnableCalculation:member(1)
   package: ExcelScript!
   fullName: getEnableCalculation()
-  summary: 必要に応じて Excel でワークシートを再計算する必要があるかどうかを決定します。 True の場合、Excel は必要に応じてワークシートを再計算します。 False を指定すると、Excel でシートが再計算されません。
+  summary: 必要に応Excelワークシートを再計算する必要があるかどうかを決定します。 True の場合Excel場合はワークシートを再計算します。 False を指定Excelシートを再計算しない場合。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1378,9 +1378,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 1ac81b789a7f8c6499f8ec6c3290ba38e359d0f0
-  ms.sourcegitcommit: 41542794df8af7ea28b8d7db989fba7ec77b6b0c
+  ms.openlocfilehash: 885ec166ed147b719bc96d8a092e0230fa0da1ca
+  ms.sourcegitcommit: 02aeeff79f2bdb28393fdcacd6266820f7c4d085
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 05/12/2021
-  ms.locfileid: "52330384"
+  ms.lasthandoff: 05/20/2021
+  ms.locfileid: "52589300"
