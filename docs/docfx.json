@@ -81,7 +81,7 @@
         "files": [
           "**/*.png",
           "**/*.jpg",
-          "**/*.svg"
+		      "**/*.svg"
         ],
         "exclude": [
           "**/obj/**",
@@ -90,6 +90,12 @@
         "dest": "api"
       }
     ],
+    "groups": {
+      "office-scripts": {
+        "dest": "office-scripts",
+        "moniker_range": "office-scripts"
+      }
+    },
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
@@ -99,6 +105,7 @@
       "ms.suite": "office",
       "ms.author": "o365devx",
       "apiPlatform": "javascript",
+      "ocv-translation-feedback": true,
       "author": "o365devx",
       "ms.technology": "scripts",
       "ms.topic": "reference",
@@ -107,11 +114,9 @@
       "product": [
         "office 365"
       ],
-      "feedback_system": "GitHub",
+      "feedback_system": "None",
       "feedback_github_repo": "OfficeDev/office-scripts-docs-reference",
-      "feedback_product_url": "https://excel.uservoice.com/forums/274580-excel-for-the-web?category_id=143439",
-      "bilingual_type": "hover over",
-      "hide_comments": true
+      "feedback_product_url": "https://excel.uservoice.com/forums/274580-excel-for-the-web?category_id=143439"
     },
     "fileMetadata": {
       "feedback_system": {
@@ -134,12 +139,6 @@
       }
     },
     "template": [],
-    "dest": "office-scripts-docs-reference",
-    "groups": {
-      "office-scripts": {
-        "dest": "office-scripts",
-        "moniker_range": "office-scripts"
-      }
-    }
+    "dest": "office-scripts-docs-reference"
   }
 }
