@@ -13,7 +13,9 @@ enums:
 - ExcelScript!ExcelScript.BorderIndex:enum
 - ExcelScript!ExcelScript.BorderLineStyle:enum
 - ExcelScript!ExcelScript.BorderWeight:enum
+- ExcelScript!ExcelScript.BuiltInPivotTableStyle:enum
 - ExcelScript!ExcelScript.BuiltInStyle:enum
+- ExcelScript!ExcelScript.BuiltInTableStyle:enum
 - ExcelScript!ExcelScript.CalculationMode:enum
 - ExcelScript!ExcelScript.CalculationState:enum
 - ExcelScript!ExcelScript.CalculationType:enum
@@ -321,9 +323,9 @@ functions:
       type: Promise&lt;void&gt;
       description: ''
 metadata:
-  ms.openlocfilehash: a5a8fa9af69cfe98ac2f3b7d0e5393808b73db23
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
+  ms.openlocfilehash: 9345e96caa7c522d6fb5bc3462fff568d9d51643
+  ms.sourcegitcommit: e5b33f91b2d93fb8623df8ddbb6ee42bf55b73b5
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913944"
+  ms.lasthandoff: 06/22/2021
+  ms.locfileid: "53068213"
