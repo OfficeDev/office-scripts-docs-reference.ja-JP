@@ -757,6 +757,19 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.LinkedDataTypeState:enum" />[][]
       description: ''
+- name: getMergedAreas()
+  uid: ExcelScript!ExcelScript.Range#getMergedAreas:member(1)
+  package: ExcelScript!
+  fullName: getMergedAreas()
+  summary: この範囲内の結合領域を表す RangeAreas オブジェクトを返します。 この範囲内の結合領域数が 512 を超える場合、API は結果を返すのに失敗します。 RangeAreas が存在しない場合は、null オブジェクトが返されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getMergedAreas(): RangeAreas;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
+      description: ''
 - name: getNumberFormat()
   uid: ExcelScript!ExcelScript.Range#getNumberFormat:member(1)
   package: ExcelScript!
@@ -1335,7 +1348,7 @@ methods:
     content: 'merge(across?: boolean): void;'
     parameters:
     - id: across
-      description: 省略可能。 指定 `true` した範囲の各行のセルを個別の結合セルとして結合します。 既定値は次の値です。 `false`<!-- -->.
+      description: 省略可能です。 指定 `true` した範囲の各行のセルを個別の結合セルとして結合します。 既定値は次の値です。 `false`<!-- -->.
       type: boolean
     return:
       type: void
@@ -1768,9 +1781,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 5078d20a7a7558619d9393ab529fd3cd46c8f433
-  ms.sourcegitcommit: 02aeeff79f2bdb28393fdcacd6266820f7c4d085
+  ms.openlocfilehash: 39db0f5c0479064f14f416e076ab7292688f1055
+  ms.sourcegitcommit: e5b33f91b2d93fb8623df8ddbb6ee42bf55b73b5
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 05/20/2021
-  ms.locfileid: "52589307"
+  ms.lasthandoff: 06/22/2021
+  ms.locfileid: "53068286"

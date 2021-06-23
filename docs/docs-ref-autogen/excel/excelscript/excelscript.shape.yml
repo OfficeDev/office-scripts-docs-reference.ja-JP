@@ -72,7 +72,8 @@ methods:
   summary: 図形を画像に変換し、base 64 でエンコードされた文字列として画像を返します。 DPI は 96 です。 サポートされている唯一の形式は次のとおりです。 `ExcelScript.PictureFormat.BMP`<!-- -->, `ExcelScript.PictureFormat.PNG`<!-- -->, `ExcelScript.PictureFormat.JPEG`<!-- -->そして `ExcelScript.PictureFormat.GIF`<!-- -->.
   remarks: ''
   isPreview: false
-  isDeprecated: false
+  isDeprecated: true
+  customDeprecatedMessage: Use `getImageAsBase64` instead.
   syntax:
     content: 'getAsImage(format: PictureFormat): string;'
     parameters:
@@ -186,6 +187,23 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.Image:interface" />
       description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n* This script transfers an image from one worksheet to another.\n*/\nfunction main(workbook: ExcelScript.Workbook)\n{\n  // Get the worksheet with the image on it.\n  let firstWorksheet = workbook.getWorksheet(\"FirstSheet\");\n\n  // Get the first image from the worksheet.\n  // If a script added the image, you could add a name to make it easier to find.\n  let image: ExcelScript.Image;\n  firstWorksheet.getShapes().forEach((shape, index) => {\n    if (shape.getType() === ExcelScript.ShapeType.image) {\n      image = shape.getImage();\n      return;\n    }\n  });\n\n  // Copy the image to another worksheet.\n  image.getShape().copyTo(\"SecondSheet\");\n}\n```"
+- name: getImageAsBase64(format)
+  uid: ExcelScript!ExcelScript.Shape#getImageAsBase64:member(1)
+  package: ExcelScript!
+  fullName: getImageAsBase64(format)
+  summary: 図形を画像に変換し、base 64 でエンコードされた文字列として画像を返します。 DPI は 96 です。 サポートされている唯一の形式は次のとおりです。 `ExcelScript.PictureFormat.BMP`<!-- -->, `ExcelScript.PictureFormat.PNG`<!-- -->, `ExcelScript.PictureFormat.JPEG`<!-- -->そして `ExcelScript.PictureFormat.GIF`<!-- -->.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getImageAsBase64(format: PictureFormat): string;'
+    parameters:
+    - id: format
+      description: イメージの形式を指定します。
+      type: <xref uid="ExcelScript!ExcelScript.PictureFormat:enum" />
+    return:
+      type: string
+      description: ''
 - name: getLeft()
   uid: ExcelScript!ExcelScript.Shape#getLeft:member(1)
   package: ExcelScript!
@@ -455,7 +473,7 @@ methods:
       description: 図形を元のサイズまたは現在のサイズを基準に拡大/縮小するかどうかを指定します。 元のサイズのスケーリング オプションは、イメージに対してのみ機能します。
       type: <xref uid="ExcelScript!ExcelScript.ShapeScaleType:enum" />
     - id: scaleFrom
-      description: 省略可能。 図形を拡大縮小する場合、図形の位置を保持する部分を指定します。 省略すると、図形の左上隅が位置を保持します。
+      description: 省略可能です。 図形を拡大縮小する場合、図形の位置を保持する部分を指定します。 省略すると、図形の左上隅が位置を保持します。
       type: <xref uid="ExcelScript!ExcelScript.ShapeScaleFrom:enum" />
     return:
       type: void
@@ -483,7 +501,7 @@ methods:
       description: 図形を元のサイズまたは現在のサイズを基準に拡大/縮小するかどうかを指定します。 元のサイズのスケーリング オプションは、イメージに対してのみ機能します。
       type: <xref uid="ExcelScript!ExcelScript.ShapeScaleType:enum" />
     - id: scaleFrom
-      description: 省略可能。 図形を拡大縮小する場合、図形の位置を保持する部分を指定します。 省略すると、図形の左上隅が位置を保持します。
+      description: 省略可能です。 図形を拡大縮小する場合、図形の位置を保持する部分を指定します。 省略すると、図形の左上隅が位置を保持します。
       type: <xref uid="ExcelScript!ExcelScript.ShapeScaleFrom:enum" />
     return:
       type: void
@@ -710,9 +728,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: bb0044ef90b105d370ee4d52e489a7e1022b0f20
-  ms.sourcegitcommit: 41542794df8af7ea28b8d7db989fba7ec77b6b0c
+  ms.openlocfilehash: bfcd50130075a73e983f90cf0a2de06eb5330643
+  ms.sourcegitcommit: e5b33f91b2d93fb8623df8ddbb6ee42bf55b73b5
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 05/12/2021
-  ms.locfileid: "52330396"
+  ms.lasthandoff: 06/22/2021
+  ms.locfileid: "53068237"
