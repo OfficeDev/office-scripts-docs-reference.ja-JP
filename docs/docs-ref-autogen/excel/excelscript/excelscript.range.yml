@@ -35,11 +35,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      autoFill(
-                  destinationRange?: Range | string,
-                  autoFillType?: AutoFillType
-              ): void;
+    content: 'autoFill( destinationRange?: range |文字列, autoFillType?: AutoFillType ): void;'
     parameters:
     - id: destinationRange
       description: 自動入力への移動先の範囲。 移動先の範囲が `null`<!-- -->をクリックすると、周囲のセル (UI の範囲塗りつぶしハンドルをダブルクリックした場合の動作) に基づいてデータが入力されます。
@@ -115,13 +111,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      copyFrom(
-                  sourceRange: Range | RangeAreas | string,
-                  copyType?: RangeCopyType,
-                  skipBlanks?: boolean,
-                  transpose?: boolean
-              ): void;
+    content: 'copyFrom( sourceRange: range |RangeAreas |string, copyType?: RangeCopyType, skipBlanks?: boolean, transpose?: boolean : void;'
     parameters:
     - id: sourceRange
       description: ソース範囲または `RangeAreas` コピー元。 ソースに複数の範囲がある場合は、四角形の範囲から完全な行または列を削除してフォーム `RangeAreas` を作成できる必要があります。
@@ -243,7 +233,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getBoundingRect(anotherRange: Range | string): Range;'
+    content: 'getBoundingRect(anotherRange: range |文字列): Range;'
     parameters:
     - id: anotherRange
       description: range オブジェクト、アドレス、または範囲の名前。
@@ -260,7 +250,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getCell(row: number, column: number): Range;'
+    content: 'getCell(row: number, column: number: Range;'
     parameters:
     - id: row
       description: 取得するセルの行番号。0 を起点とする番号になります。
@@ -465,11 +455,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      getExtendedRange(
-                  direction: KeyboardDirection,
-                  activeCell?: Range | string
-              ): Range;
+    content: 'getExtendedRange( direction: KeyboardDirection, activeCell?: Range |文字列 ): Range;'
     parameters:
     - id: direction
       description: アクティブ セルからの方向。
@@ -645,7 +631,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getIntersection(anotherRange: Range | string): Range;'
+    content: 'getIntersection(anotherRange: range |文字列): Range;'
     parameters:
     - id: anotherRange
       description: 範囲の交差を判断するために使用される、Range オブジェクトまたは Range アドレス。
@@ -907,11 +893,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      getRangeEdge(
-                  direction: KeyboardDirection,
-                  activeCell?: Range | string
-              ): Range;
+    content: 'getRangeEdge( direction: KeyboardDirection, activeCell?: Range |文字列 ): Range;'
     parameters:
     - id: direction
       description: アクティブ セルからの方向。
@@ -931,7 +913,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getResizedRange(deltaRows: number, deltaColumns: number): Range;'
+    content: 'getResizedRange(deltaRows: number, deltaColumns: number: Range;'
     parameters:
     - id: deltaRows
       description: 現在の範囲を基準にして、右下隅を拡張する行の数です。範囲を拡張するには正の数値、または範囲を縮小するには負の数値を使用します。
@@ -1067,11 +1049,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      getSpecialCells(
-                  cellType: SpecialCellType,
-                  cellValueType?: SpecialCellValueType
-              ): RangeAreas;
+    content: 'getSpecialCells( cellType: SpecialCellType, cellValueType?: SpecialCellValueType ): RangeAreas;'
     parameters:
     - id: cellType
       description: 含めるセルの種類。
@@ -1203,7 +1181,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getValue(): string | number | boolean;'
+    content: 'getValue(): 文字列|番号 |ブール型 (boolean)'
     return:
       type: string | number | boolean
       description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This sample reads the value of A1 and prints it to the console.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Get the value of cell A1.\n  let range = selectedSheet.getRange(\"A1\");\n  \n  // Print the value of A1.\n  console.log(range.getValue());\n}\n```"
@@ -1216,7 +1194,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getValues(): (string | number | boolean)[][];'
+    content: 'getValues(): (文字列|ブール|)[][]。;'
     return:
       type: (string | number | boolean)[][]
       description: ''
@@ -1348,7 +1326,7 @@ methods:
     content: 'merge(across?: boolean): void;'
     parameters:
     - id: across
-      description: 省略可能です。 指定 `true` した範囲の各行のセルを個別の結合セルとして結合します。 既定値は次の値です。 `false`<!-- -->.
+      description: 省略可能。 指定 `true` した範囲の各行のセルを個別の結合セルとして結合します。 既定値は次の値です。 `false`<!-- -->.
       type: boolean
     return:
       type: void
@@ -1362,7 +1340,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'moveTo(destinationRange: Range | string): void;'
+    content: 'moveTo(destinationRange: range |文字列): void;'
     parameters:
     - id: destinationRange
       description: destinationRange この範囲内の情報を移動する範囲を指定します。
@@ -1379,11 +1357,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      removeDuplicates(
-                  columns: number[],
-                  includesHeader: boolean
-              ): RemoveDuplicatesResult;
+    content: 'removeDuplicates( columns: number[], includesHeader: boolean ): RemoveDuplicatesResult;'
     parameters:
     - id: columns
       description: 重複を含む可能性がある範囲内の列。 少なくとも 1 つの列を指定する必要があります。 0 を起点とする番号になります。
@@ -1394,7 +1368,7 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.RemoveDuplicatesResult:interface" />
       description: ''
-- name: replaceAll(text, replacement, criteria)
+- name: replaceAll(text, replace, criteria)
   uid: ExcelScript!ExcelScript.Range#replaceAll:member(1)
   package: ExcelScript!
   fullName: replaceAll(text, replacement, criteria)
@@ -1403,12 +1377,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      replaceAll(
-                  text: string,
-                  replacement: string,
-                  criteria: ReplaceCriteria
-              ): number;
+    content: 'replaceAll( text: string, replace: string, criteria: ReplaceCriteria ): number;'
     parameters:
     - id: text
       description: 検索する文字列。
@@ -1576,7 +1545,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'setHyperlink(hyperlink: RangeHyperlink): void;'
+    content: 'setHyperlink(ハイパーリンク: RangeHyperlink): void;'
     parameters:
     - id: hyperlink
       description: ''
@@ -1707,12 +1676,12 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setValues:member(1)
   package: ExcelScript!
   fullName: setValues(values)
-  summary: 指定した範囲の Raw 値を表します。 返されるデータには、文字列、数値、またはブール値を指定できます。 エラーが含まれているセルは、エラー文字列を返します。 戻り値がプラス ("+")、マイナス ("-")、または等号 ("=") で始まる場合、Excelは、この値を数式として解釈します。
+  summary: 指定した範囲の生の値を設定します。 提供されるデータには、文字列、数値、またはブール型 (Boolean) の値を指定できます。 指定された値がプラス ("+")、マイナス ("-")、または等号 ("=") で始まる場合、Excelは、この値を数式として解釈します。
   remarks: ''
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'setValues(values: (string | number | boolean)[][]): void;'
+    content: 'setValues(values: (string | | boolean)[][]): void;'
     parameters:
     - id: values
       description: ''
@@ -1781,9 +1750,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 39db0f5c0479064f14f416e076ab7292688f1055
-  ms.sourcegitcommit: e5b33f91b2d93fb8623df8ddbb6ee42bf55b73b5
+  ms.openlocfilehash: bc3d9a01cbb2a67d6461bbbd97c67014fae0e2fc
+  ms.sourcegitcommit: 95be94d379c5184e2db071999e3367c51e927a27
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 06/22/2021
-  ms.locfileid: "53068286"
+  ms.lasthandoff: 07/28/2021
+  ms.locfileid: "53617914"
