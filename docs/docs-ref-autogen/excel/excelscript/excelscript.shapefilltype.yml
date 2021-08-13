@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ShapeFillType
-uid: ExcelScript!ExcelScript.ShapeFillType:enum
+uid: 'ExcelScript!ExcelScript.ShapeFillType:enum'
 package: ExcelScript!
 fullName: ExcelScript.ShapeFillType
 summary: 図形の塗りつぶしの種類を指定します。
@@ -8,34 +8,27 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: gradient
-  uid: ExcelScript!ExcelScript.ShapeFillType.gradient:member
-  package: ExcelScript!
-  summary: 塗りつぶし (グラデーション)
-- name: mixed
-  uid: ExcelScript!ExcelScript.ShapeFillType.mixed:member
-  package: ExcelScript!
-  summary: 塗りつぶし (混在)
-- name: noFill
-  uid: ExcelScript!ExcelScript.ShapeFillType.noFill:member
-  package: ExcelScript!
-  summary: 塗りつぶしなし
-- name: pattern
-  uid: ExcelScript!ExcelScript.ShapeFillType.pattern:member
-  package: ExcelScript!
-  summary: パターンの塗りつぶし
-- name: pictureAndTexture
-  uid: ExcelScript!ExcelScript.ShapeFillType.pictureAndTexture:member
-  package: ExcelScript!
-  summary: 図とテクスチャの塗りつぶし
-- name: solid
-  uid: ExcelScript!ExcelScript.ShapeFillType.solid:member
-  package: ExcelScript!
-  summary: 塗りつぶし (単色)
-metadata:
-  ms.openlocfilehash: 45fe6ba829de5ab95a7aaa2fb1bb37750f649038
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49411797"
+  - name: gradient
+    uid: 'ExcelScript!ExcelScript.ShapeFillType.gradient:member'
+    package: ExcelScript!
+    summary: 塗りつぶし (グラデーション)
+  - name: mixed
+    uid: 'ExcelScript!ExcelScript.ShapeFillType.mixed:member'
+    package: ExcelScript!
+    summary: 塗りつぶし (混在)
+  - name: noFill
+    uid: 'ExcelScript!ExcelScript.ShapeFillType.noFill:member'
+    package: ExcelScript!
+    summary: 塗りつぶしなし。
+  - name: pattern
+    uid: 'ExcelScript!ExcelScript.ShapeFillType.pattern:member'
+    package: ExcelScript!
+    summary: パターン塗りつぶし。
+  - name: pictureAndTexture
+    uid: 'ExcelScript!ExcelScript.ShapeFillType.pictureAndTexture:member'
+    package: ExcelScript!
+    summary: 画像とテクスチャの塗りつぶし。
+  - name: solid
+    uid: 'ExcelScript!ExcelScript.ShapeFillType.solid:member'
+    package: ExcelScript!
+    summary: 塗りつぶし (単色)

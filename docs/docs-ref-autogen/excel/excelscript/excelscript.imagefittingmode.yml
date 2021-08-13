@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ImageFittingMode
-uid: ExcelScript!ExcelScript.ImageFittingMode:enum
+uid: 'ExcelScript!ExcelScript.ImageFittingMode:enum'
 package: ExcelScript!
 fullName: ExcelScript.ImageFittingMode
 summary: ''
@@ -8,22 +8,15 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: fill
-  uid: ExcelScript!ExcelScript.ImageFittingMode.fill:member
-  package: ExcelScript!
-  summary: ''
-- name: fit
-  uid: ExcelScript!ExcelScript.ImageFittingMode.fit:member
-  package: ExcelScript!
-  summary: ''
-- name: fitAndCenter
-  uid: ExcelScript!ExcelScript.ImageFittingMode.fitAndCenter:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: cfc2d6092c2a70a6acdaad88d2e7fb8f361adbdc
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412308"
+  - name: fill
+    uid: 'ExcelScript!ExcelScript.ImageFittingMode.fill:member'
+    package: ExcelScript!
+    summary: ''
+  - name: fit
+    uid: 'ExcelScript!ExcelScript.ImageFittingMode.fit:member'
+    package: ExcelScript!
+    summary: ''
+  - name: fitAndCenter
+    uid: 'ExcelScript!ExcelScript.ImageFittingMode.fitAndCenter:member'
+    package: ExcelScript!
+    summary: ''

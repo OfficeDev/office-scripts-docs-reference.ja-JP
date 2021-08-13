@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.TableStyle
-uid: ExcelScript!ExcelScript.TableStyle:interface
+uid: 'ExcelScript!ExcelScript.TableStyle:interface'
 package: ExcelScript!
 fullName: ExcelScript.TableStyle
 summary: 表のスタイルを表し、表の領域別にスタイル要素を定義します。
@@ -9,79 +9,72 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: delete()
-  uid: ExcelScript!ExcelScript.TableStyle#delete:member(1)
-  package: ExcelScript!
-  fullName: delete()
-  summary: 表のスタイルを削除します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'delete(): void;'
-    return:
-      type: void
-      description: ''
-- name: duplicate()
-  uid: ExcelScript!ExcelScript.TableStyle#duplicate:member(1)
-  package: ExcelScript!
-  fullName: duplicate()
-  summary: すべてのスタイル要素のコピーを含む、このテーブル スタイルの複製を作成します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'duplicate(): TableStyle;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.TableStyle:interface" />
-      description: ''
-- name: getName()
-  uid: ExcelScript!ExcelScript.TableStyle#getName:member(1)
-  package: ExcelScript!
-  fullName: getName()
-  summary: テーブル スタイルの名前を取得します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getName(): string;'
-    return:
-      type: string
-      description: ''
-- name: getReadOnly()
-  uid: ExcelScript!ExcelScript.TableStyle#getReadOnly:member(1)
-  package: ExcelScript!
-  fullName: getReadOnly()
-  summary: このオブジェクトが読 `TableStyle` み取り専用の場合に指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getReadOnly(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: setName(name)
-  uid: ExcelScript!ExcelScript.TableStyle#setName:member(1)
-  package: ExcelScript!
-  fullName: setName(name)
-  summary: テーブル スタイルの名前を取得します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setName(name: string): void;'
-    parameters:
-    - id: name
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 8916d6b0d2b9988a6cd5473331e57dc821d4123a
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914126"
+  - name: delete()
+    uid: 'ExcelScript!ExcelScript.TableStyle#delete:member(1)'
+    package: ExcelScript!
+    fullName: delete()
+    summary: 表のスタイルを削除します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: ''
+  - name: duplicate()
+    uid: 'ExcelScript!ExcelScript.TableStyle#duplicate:member(1)'
+    package: ExcelScript!
+    fullName: duplicate()
+    summary: すべてのスタイル要素のコピーを含む、このテーブル スタイルの複製を作成します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'duplicate(): TableStyle;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.TableStyle:interface" />'
+        description: ''
+  - name: getName()
+    uid: 'ExcelScript!ExcelScript.TableStyle#getName:member(1)'
+    package: ExcelScript!
+    fullName: getName()
+    summary: テーブル スタイルの名前を取得します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getReadOnly()
+    uid: 'ExcelScript!ExcelScript.TableStyle#getReadOnly:member(1)'
+    package: ExcelScript!
+    fullName: getReadOnly()
+    summary: このオブジェクトが読 `TableStyle` み取り専用の場合に指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getReadOnly(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: setName(name)
+    uid: 'ExcelScript!ExcelScript.TableStyle#setName:member(1)'
+    package: ExcelScript!
+    fullName: setName(name)
+    summary: テーブル スタイルの名前を取得します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setName(name: string): void;'
+      parameters:
+        - id: name
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''

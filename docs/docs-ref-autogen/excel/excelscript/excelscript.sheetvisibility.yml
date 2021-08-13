@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.SheetVisibility
-uid: ExcelScript!ExcelScript.SheetVisibility:enum
+uid: 'ExcelScript!ExcelScript.SheetVisibility:enum'
 package: ExcelScript!
 fullName: ExcelScript.SheetVisibility
 summary: ''
@@ -8,22 +8,15 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: hidden
-  uid: ExcelScript!ExcelScript.SheetVisibility.hidden:member
-  package: ExcelScript!
-  summary: ''
-- name: veryHidden
-  uid: ExcelScript!ExcelScript.SheetVisibility.veryHidden:member
-  package: ExcelScript!
-  summary: ''
-- name: visible
-  uid: ExcelScript!ExcelScript.SheetVisibility.visible:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: 87951a06d81e64b4bafe93c86250214f77926e72
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420518"
+  - name: hidden
+    uid: 'ExcelScript!ExcelScript.SheetVisibility.hidden:member'
+    package: ExcelScript!
+    summary: ''
+  - name: veryHidden
+    uid: 'ExcelScript!ExcelScript.SheetVisibility.veryHidden:member'
+    package: ExcelScript!
+    summary: ''
+  - name: visible
+    uid: 'ExcelScript!ExcelScript.SheetVisibility.visible:member'
+    package: ExcelScript!
+    summary: ''

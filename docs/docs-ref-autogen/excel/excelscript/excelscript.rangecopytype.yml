@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.RangeCopyType
-uid: ExcelScript!ExcelScript.RangeCopyType:enum
+uid: 'ExcelScript!ExcelScript.RangeCopyType:enum'
 package: ExcelScript!
 fullName: ExcelScript.RangeCopyType
 summary: ''
@@ -8,26 +8,19 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: all
-  uid: ExcelScript!ExcelScript.RangeCopyType.all:member
-  package: ExcelScript!
-  summary: ''
-- name: formats
-  uid: ExcelScript!ExcelScript.RangeCopyType.formats:member
-  package: ExcelScript!
-  summary: ''
-- name: formulas
-  uid: ExcelScript!ExcelScript.RangeCopyType.formulas:member
-  package: ExcelScript!
-  summary: ''
-- name: values
-  uid: ExcelScript!ExcelScript.RangeCopyType.values:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: bab6710def8ccf93e101f08dd89c18bc6eabf2b5
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416625"
+  - name: all
+    uid: 'ExcelScript!ExcelScript.RangeCopyType.all:member'
+    package: ExcelScript!
+    summary: ''
+  - name: formats
+    uid: 'ExcelScript!ExcelScript.RangeCopyType.formats:member'
+    package: ExcelScript!
+    summary: ''
+  - name: formulas
+    uid: 'ExcelScript!ExcelScript.RangeCopyType.formulas:member'
+    package: ExcelScript!
+    summary: ''
+  - name: values
+    uid: 'ExcelScript!ExcelScript.RangeCopyType.values:member'
+    package: ExcelScript!
+    summary: ''

@@ -1,164 +1,157 @@
 ### YamlMime:TSType
 name: ExcelScript.FilterPivotHierarchy
-uid: ExcelScript!ExcelScript.FilterPivotHierarchy:interface
+uid: 'ExcelScript!ExcelScript.FilterPivotHierarchy:interface'
 package: ExcelScript!
 fullName: ExcelScript.FilterPivotHierarchy
-summary: Excel FilterPivotHierarchy を表します。
+summary: FilterPivotHierarchy のExcelを表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getEnableMultipleFilterItems()
-  uid: ExcelScript!ExcelScript.FilterPivotHierarchy#getEnableMultipleFilterItems:member(1)
-  package: ExcelScript!
-  fullName: getEnableMultipleFilterItems()
-  summary: 複数のフィルター項目を許可するかどうかを指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getEnableMultipleFilterItems(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getFields()
-  uid: ExcelScript!ExcelScript.FilterPivotHierarchy#getFields:member(1)
-  package: ExcelScript!
-  fullName: getFields()
-  summary: FilterPivotHierarchy に関連付けられているピボット フィールドを返します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFields(): PivotField[];'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.PivotField:interface" />[]
-      description: ''
-- name: getId()
-  uid: ExcelScript!ExcelScript.FilterPivotHierarchy#getId:member(1)
-  package: ExcelScript!
-  fullName: getId()
-  summary: FilterPivotHierarchy の ID。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getId(): string;'
-    return:
-      type: string
-      description: ''
-- name: getName()
-  uid: ExcelScript!ExcelScript.FilterPivotHierarchy#getName:member(1)
-  package: ExcelScript!
-  fullName: getName()
-  summary: FilterPivotHierarchy の名前。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getName(): string;'
-    return:
-      type: string
-      description: ''
-- name: getPivotField(name)
-  uid: ExcelScript!ExcelScript.FilterPivotHierarchy#getPivotField:member(1)
-  package: ExcelScript!
-  fullName: getPivotField(name)
-  summary: 名前でピボットフィールドを取得します。 PivotField が存在しない場合、この関数はプロパティを次に設定した `isNullObject` オブジェクトを返します。 `true`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getPivotField(name: string): PivotField | undefined;'
-    parameters:
-    - id: name
-      description: 取得するピボットフィールドの名前。
-      type: string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | undefined
-      description: ''
-- name: getPosition()
-  uid: ExcelScript!ExcelScript.FilterPivotHierarchy#getPosition:member(1)
-  package: ExcelScript!
-  fullName: getPosition()
-  summary: FilterPivotHierarchy の位置。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getPosition(): number;'
-    return:
-      type: number
-      description: ''
-- name: setEnableMultipleFilterItems(enableMultipleFilterItems)
-  uid: ExcelScript!ExcelScript.FilterPivotHierarchy#setEnableMultipleFilterItems:member(1)
-  package: ExcelScript!
-  fullName: setEnableMultipleFilterItems(enableMultipleFilterItems)
-  summary: 複数のフィルター項目を許可するかどうかを指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setEnableMultipleFilterItems(enableMultipleFilterItems: boolean): void;'
-    parameters:
-    - id: enableMultipleFilterItems
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setName(name)
-  uid: ExcelScript!ExcelScript.FilterPivotHierarchy#setName:member(1)
-  package: ExcelScript!
-  fullName: setName(name)
-  summary: FilterPivotHierarchy の名前。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setName(name: string): void;'
-    parameters:
-    - id: name
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setPosition(position)
-  uid: ExcelScript!ExcelScript.FilterPivotHierarchy#setPosition:member(1)
-  package: ExcelScript!
-  fullName: setPosition(position)
-  summary: FilterPivotHierarchy の位置。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setPosition(position: number): void;'
-    parameters:
-    - id: position
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setToDefault()
-  uid: ExcelScript!ExcelScript.FilterPivotHierarchy#setToDefault:member(1)
-  package: ExcelScript!
-  fullName: setToDefault()
-  summary: FilterPivotHierarchy を既定値にリセットします。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setToDefault(): void;'
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 30f67b1e864829c00617a61b69a82eee1ce69f4e
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914388"
+  - name: getEnableMultipleFilterItems()
+    uid: 'ExcelScript!ExcelScript.FilterPivotHierarchy#getEnableMultipleFilterItems:member(1)'
+    package: ExcelScript!
+    fullName: getEnableMultipleFilterItems()
+    summary: 複数のフィルター項目を許可するかどうかを指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getEnableMultipleFilterItems(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getFields()
+    uid: 'ExcelScript!ExcelScript.FilterPivotHierarchy#getFields:member(1)'
+    package: ExcelScript!
+    fullName: getFields()
+    summary: FilterPivotHierarchy に関連付けられているピボット フィールドを返します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFields(): PivotField[];'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.PivotField:interface" />[]'
+        description: ''
+  - name: getId()
+    uid: 'ExcelScript!ExcelScript.FilterPivotHierarchy#getId:member(1)'
+    package: ExcelScript!
+    fullName: getId()
+    summary: FilterPivotHierarchy の ID。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getId(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getName()
+    uid: 'ExcelScript!ExcelScript.FilterPivotHierarchy#getName:member(1)'
+    package: ExcelScript!
+    fullName: getName()
+    summary: FilterPivotHierarchy の名前。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getPivotField(name)
+    uid: 'ExcelScript!ExcelScript.FilterPivotHierarchy#getPivotField:member(1)'
+    package: ExcelScript!
+    fullName: getPivotField(name)
+    summary: 名前でピボットフィールドを取得します。 PivotField が存在しない場合、この関数はプロパティを次に設定した `isNullObject` オブジェクトを返します。 `true`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getPivotField(name: string): PivotField | undefined;'
+      parameters:
+        - id: name
+          description: 取得するピボットフィールドの名前。
+          type: string
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | undefined'
+        description: ''
+  - name: getPosition()
+    uid: 'ExcelScript!ExcelScript.FilterPivotHierarchy#getPosition:member(1)'
+    package: ExcelScript!
+    fullName: getPosition()
+    summary: FilterPivotHierarchy の位置。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getPosition(): number;'
+      return:
+        type: number
+        description: ''
+  - name: setEnableMultipleFilterItems(enableMultipleFilterItems)
+    uid: 'ExcelScript!ExcelScript.FilterPivotHierarchy#setEnableMultipleFilterItems:member(1)'
+    package: ExcelScript!
+    fullName: setEnableMultipleFilterItems(enableMultipleFilterItems)
+    summary: 複数のフィルター項目を許可するかどうかを指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setEnableMultipleFilterItems(enableMultipleFilterItems: boolean): void;'
+      parameters:
+        - id: enableMultipleFilterItems
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setName(name)
+    uid: 'ExcelScript!ExcelScript.FilterPivotHierarchy#setName:member(1)'
+    package: ExcelScript!
+    fullName: setName(name)
+    summary: FilterPivotHierarchy の名前。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setName(name: string): void;'
+      parameters:
+        - id: name
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setPosition(position)
+    uid: 'ExcelScript!ExcelScript.FilterPivotHierarchy#setPosition:member(1)'
+    package: ExcelScript!
+    fullName: setPosition(position)
+    summary: FilterPivotHierarchy の位置。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setPosition(position: number): void;'
+      parameters:
+        - id: position
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setToDefault()
+    uid: 'ExcelScript!ExcelScript.FilterPivotHierarchy#setToDefault:member(1)'
+    package: ExcelScript!
+    fullName: setToDefault()
+    summary: FilterPivotHierarchy を既定値にリセットします。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setToDefault(): void;'
+      return:
+        type: void
+        description: ''

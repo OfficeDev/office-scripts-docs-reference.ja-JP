@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ChartMapProjectionType
-uid: ExcelScript!ExcelScript.ChartMapProjectionType:enum
+uid: 'ExcelScript!ExcelScript.ChartMapProjectionType:enum'
 package: ExcelScript!
 fullName: ExcelScript.ChartMapProjectionType
 summary: グラフ系列レイアウトの地域投影の種類を表します。 これは地域マップ グラフにのみ適用されます。
@@ -8,30 +8,23 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: albers
-  uid: ExcelScript!ExcelScript.ChartMapProjectionType.albers:member
-  package: ExcelScript!
-  summary: ''
-- name: automatic
-  uid: ExcelScript!ExcelScript.ChartMapProjectionType.automatic:member
-  package: ExcelScript!
-  summary: ''
-- name: mercator
-  uid: ExcelScript!ExcelScript.ChartMapProjectionType.mercator:member
-  package: ExcelScript!
-  summary: ''
-- name: miller
-  uid: ExcelScript!ExcelScript.ChartMapProjectionType.miller:member
-  package: ExcelScript!
-  summary: ''
-- name: robinson
-  uid: ExcelScript!ExcelScript.ChartMapProjectionType.robinson:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: ca88a5c97a9f9295e46e4d8d6ccc562eb0e59001
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51912041"
+  - name: albers
+    uid: 'ExcelScript!ExcelScript.ChartMapProjectionType.albers:member'
+    package: ExcelScript!
+    summary: ''
+  - name: automatic
+    uid: 'ExcelScript!ExcelScript.ChartMapProjectionType.automatic:member'
+    package: ExcelScript!
+    summary: ''
+  - name: mercator
+    uid: 'ExcelScript!ExcelScript.ChartMapProjectionType.mercator:member'
+    package: ExcelScript!
+    summary: ''
+  - name: miller
+    uid: 'ExcelScript!ExcelScript.ChartMapProjectionType.miller:member'
+    package: ExcelScript!
+    summary: ''
+  - name: robinson
+    uid: 'ExcelScript!ExcelScript.ChartMapProjectionType.robinson:member'
+    package: ExcelScript!
+    summary: ''

@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.HeaderFooterState
-uid: ExcelScript!ExcelScript.HeaderFooterState:enum
+uid: 'ExcelScript!ExcelScript.HeaderFooterState:enum'
 package: ExcelScript!
 fullName: ExcelScript.HeaderFooterState
 summary: ''
@@ -8,26 +8,19 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: default
-  uid: ExcelScript!ExcelScript.HeaderFooterState.default:member
-  package: ExcelScript!
-  summary: 印刷されるページには、一般的なヘッダー/フッターが 1 つしか使用されません。
-- name: firstAndDefault
-  uid: ExcelScript!ExcelScript.HeaderFooterState.firstAndDefault:member
-  package: ExcelScript!
-  summary: 別の最初のページヘッダー/フッターと、他のすべてのページに使用される一般的なヘッダー/フッターがあります。
-- name: firstOddAndEven
-  uid: ExcelScript!ExcelScript.HeaderFooterState.firstOddAndEven:member
-  package: ExcelScript!
-  summary: 別の最初のページヘッダー/フッターがあります。その後、奇数ページと偶数ページ用の個別のヘッダー/フッターがあります。
-- name: oddAndEven
-  uid: ExcelScript!ExcelScript.HeaderFooterState.oddAndEven:member
-  package: ExcelScript!
-  summary: 奇数ページと偶数ページには異なるヘッダー/フッターがあります。
-metadata:
-  ms.openlocfilehash: 56adb02d9f1d03352bfb5382c00767ba553f376f
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913619"
+  - name: default
+    uid: 'ExcelScript!ExcelScript.HeaderFooterState.default:member'
+    package: ExcelScript!
+    summary: 印刷されるページには、一般的なヘッダー/フッターが 1 つしか使用されません。
+  - name: firstAndDefault
+    uid: 'ExcelScript!ExcelScript.HeaderFooterState.firstAndDefault:member'
+    package: ExcelScript!
+    summary: 別の最初のページヘッダー/フッターと、他のすべてのページに使用される一般的なヘッダー/フッターがあります。
+  - name: firstOddAndEven
+    uid: 'ExcelScript!ExcelScript.HeaderFooterState.firstOddAndEven:member'
+    package: ExcelScript!
+    summary: 別の最初のページヘッダー/フッターがあります。その後、奇数ページと偶数ページ用の個別のヘッダー/フッターがあります。
+  - name: oddAndEven
+    uid: 'ExcelScript!ExcelScript.HeaderFooterState.oddAndEven:member'
+    package: ExcelScript!
+    summary: 奇数ページと偶数ページには異なるヘッダー/フッターがあります。
