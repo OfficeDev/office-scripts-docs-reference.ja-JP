@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.RangeFont
-uid: ExcelScript!ExcelScript.RangeFont:interface
+uid: 'ExcelScript!ExcelScript.RangeFont:interface'
 package: ExcelScript!
 fullName: ExcelScript.RangeFont
 summary: このオブジェクトは、オブジェクトのフォントの属性 (フォント名、フォント サイズ、色など) を表します。
@@ -9,310 +9,303 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getBold()
-  uid: ExcelScript!ExcelScript.RangeFont#getBold:member(1)
-  package: ExcelScript!
-  fullName: getBold()
-  summary: フォントの太字の状態を表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getBold(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getColor()
-  uid: ExcelScript!ExcelScript.RangeFont#getColor:member(1)
-  package: ExcelScript!
-  fullName: getColor()
-  summary: テキストの色の HTML カラー コード表現 \# (FF0000 は赤を表すなど)。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getColor(): string;'
-    return:
-      type: string
-      description: ''
-- name: getItalic()
-  uid: ExcelScript!ExcelScript.RangeFont#getItalic:member(1)
-  package: ExcelScript!
-  fullName: getItalic()
-  summary: フォントの italic 状態を指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getItalic(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getName()
-  uid: ExcelScript!ExcelScript.RangeFont#getName:member(1)
-  package: ExcelScript!
-  fullName: getName()
-  summary: フォント名 ("Calibri"など)。 名前の長さは 31 文字を超えることはできません。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getName(): string;'
-    return:
-      type: string
-      description: ''
-- name: getSize()
-  uid: ExcelScript!ExcelScript.RangeFont#getSize:member(1)
-  package: ExcelScript!
-  fullName: getSize()
-  summary: フォント サイズ。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getSize(): number;'
-    return:
-      type: number
-      description: ''
-- name: getStrikethrough()
-  uid: ExcelScript!ExcelScript.RangeFont#getStrikethrough:member(1)
-  package: ExcelScript!
-  fullName: getStrikethrough()
-  summary: フォントの取り消し線の状態を指定します。 値 `null` は、範囲全体に一様な取り消し線の設定が含めなかった場合を示します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getStrikethrough(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getSubscript()
-  uid: ExcelScript!ExcelScript.RangeFont#getSubscript:member(1)
-  package: ExcelScript!
-  fullName: getSubscript()
-  summary: フォントの下付き文字の状態を指定します。 範囲のすべての `true` フォントが下付き文字の場合に返します。 範囲のすべてのフォントが上付きまたは標準 (上付きでも下付きでも) の場合 `false` に返します。 それ以外 `null` の場合は返します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getSubscript(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getSuperscript()
-  uid: ExcelScript!ExcelScript.RangeFont#getSuperscript:member(1)
-  package: ExcelScript!
-  fullName: getSuperscript()
-  summary: フォントの上付き文字の状態を指定します。 範囲のすべての `true` フォントが上付き文字の場合に返します。 範囲のすべてのフォントが下付きまたは標準 (上付きでも下付きでも) の場合 `false` に返します。 それ以外 `null` の場合は返します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getSuperscript(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getTintAndShade()
-  uid: ExcelScript!ExcelScript.RangeFont#getTintAndShade:member(1)
-  package: ExcelScript!
-  fullName: getTintAndShade()
-  summary: 範囲フォントの色を明るくまたは暗くする倍数を指定します。 値は -1 (最も暗い) から 1 (最も明るい) の間で、元の色の場合は 0 です。 値 `null` は、範囲全体に統一されたフォント設定が含めなかった場合を示 `tintAndShade` します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTintAndShade(): number;'
-    return:
-      type: number
-      description: ''
-- name: getUnderline()
-  uid: ExcelScript!ExcelScript.RangeFont#getUnderline:member(1)
-  package: ExcelScript!
-  fullName: getUnderline()
-  summary: フォントに適用する下線の種類。 詳細は「`ExcelScript.RangeUnderlineStyle`」をご覧ください。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getUnderline(): RangeUnderlineStyle;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.RangeUnderlineStyle:enum" />
-      description: ''
-- name: setBold(bold)
-  uid: ExcelScript!ExcelScript.RangeFont#setBold:member(1)
-  package: ExcelScript!
-  fullName: setBold(bold)
-  summary: フォントの太字の状態を表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setBold(bold: boolean): void;'
-    parameters:
-    - id: bold
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setColor(color)
-  uid: ExcelScript!ExcelScript.RangeFont#setColor:member(1)
-  package: ExcelScript!
-  fullName: setColor(color)
-  summary: テキストの色の HTML カラー コード表現 \# (FF0000 は赤を表すなど)。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setColor(color: string): void;'
-    parameters:
-    - id: color
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setItalic(italic)
-  uid: ExcelScript!ExcelScript.RangeFont#setItalic:member(1)
-  package: ExcelScript!
-  fullName: setItalic(italic)
-  summary: フォントの italic 状態を指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setItalic(italic: boolean): void;'
-    parameters:
-    - id: italic
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setName(name)
-  uid: ExcelScript!ExcelScript.RangeFont#setName:member(1)
-  package: ExcelScript!
-  fullName: setName(name)
-  summary: フォント名 ("Calibri"など)。 名前の長さは 31 文字を超えることはできません。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setName(name: string): void;'
-    parameters:
-    - id: name
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setSize(size)
-  uid: ExcelScript!ExcelScript.RangeFont#setSize:member(1)
-  package: ExcelScript!
-  fullName: setSize(size)
-  summary: フォント サイズ。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setSize(size: number): void;'
-    parameters:
-    - id: size
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setStrikethrough(strikethrough)
-  uid: ExcelScript!ExcelScript.RangeFont#setStrikethrough:member(1)
-  package: ExcelScript!
-  fullName: setStrikethrough(strikethrough)
-  summary: フォントの取り消し線の状態を指定します。 値 `null` は、範囲全体に一様な取り消し線の設定が含めなかった場合を示します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setStrikethrough(strikethrough: boolean): void;'
-    parameters:
-    - id: strikethrough
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setSubscript(subscript)
-  uid: ExcelScript!ExcelScript.RangeFont#setSubscript:member(1)
-  package: ExcelScript!
-  fullName: setSubscript(subscript)
-  summary: フォントの下付き文字の状態を指定します。 範囲のすべての `true` フォントが下付き文字の場合に返します。 範囲のすべてのフォントが上付きまたは標準 (上付きでも下付きでも) の場合 `false` に返します。 それ以外 `null` の場合は返します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setSubscript(subscript: boolean): void;'
-    parameters:
-    - id: subscript
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setSuperscript(superscript)
-  uid: ExcelScript!ExcelScript.RangeFont#setSuperscript:member(1)
-  package: ExcelScript!
-  fullName: setSuperscript(superscript)
-  summary: フォントの上付き文字の状態を指定します。 範囲のすべての `true` フォントが上付き文字の場合に返します。 範囲のすべてのフォントが下付きまたは標準 (上付きでも下付きでも) の場合 `false` に返します。 それ以外 `null` の場合は返します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setSuperscript(superscript: boolean): void;'
-    parameters:
-    - id: superscript
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setTintAndShade(tintAndShade)
-  uid: ExcelScript!ExcelScript.RangeFont#setTintAndShade:member(1)
-  package: ExcelScript!
-  fullName: setTintAndShade(tintAndShade)
-  summary: 範囲フォントの色を明るくまたは暗くする倍数を指定します。 値は -1 (最も暗い) から 1 (最も明るい) の間で、元の色の場合は 0 です。 値 `null` は、範囲全体に統一されたフォント設定が含めなかった場合を示 `tintAndShade` します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setTintAndShade(tintAndShade: number): void;'
-    parameters:
-    - id: tintAndShade
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setUnderline(underline)
-  uid: ExcelScript!ExcelScript.RangeFont#setUnderline:member(1)
-  package: ExcelScript!
-  fullName: setUnderline(underline)
-  summary: フォントに適用する下線の種類。 詳細は「`ExcelScript.RangeUnderlineStyle`」をご覧ください。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setUnderline(underline: RangeUnderlineStyle): void;'
-    parameters:
-    - id: underline
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.RangeUnderlineStyle:enum" />
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: a22c0bd020b988ba946b27dcda5004939b09d153
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913434"
+  - name: getBold()
+    uid: 'ExcelScript!ExcelScript.RangeFont#getBold:member(1)'
+    package: ExcelScript!
+    fullName: getBold()
+    summary: フォントの太字の状態を表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getBold(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getColor()
+    uid: 'ExcelScript!ExcelScript.RangeFont#getColor:member(1)'
+    package: ExcelScript!
+    fullName: getColor()
+    summary: テキストの色の HTML カラー コード表現 \# (FF0000 は赤を表すなど)。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getColor(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getItalic()
+    uid: 'ExcelScript!ExcelScript.RangeFont#getItalic:member(1)'
+    package: ExcelScript!
+    fullName: getItalic()
+    summary: フォントの italic 状態を指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getItalic(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getName()
+    uid: 'ExcelScript!ExcelScript.RangeFont#getName:member(1)'
+    package: ExcelScript!
+    fullName: getName()
+    summary: フォント名 ("Calibri"など)。 名前の長さは 31 文字を超えることはできません。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getSize()
+    uid: 'ExcelScript!ExcelScript.RangeFont#getSize:member(1)'
+    package: ExcelScript!
+    fullName: getSize()
+    summary: フォント サイズ。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSize(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getStrikethrough()
+    uid: 'ExcelScript!ExcelScript.RangeFont#getStrikethrough:member(1)'
+    package: ExcelScript!
+    fullName: getStrikethrough()
+    summary: フォントの取り消し線の状態を指定します。 値 `null` は、範囲全体に一様な取り消し線の設定が含めなかった場合を示します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getStrikethrough(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getSubscript()
+    uid: 'ExcelScript!ExcelScript.RangeFont#getSubscript:member(1)'
+    package: ExcelScript!
+    fullName: getSubscript()
+    summary: フォントの下付き文字の状態を指定します。 範囲のすべての `true` フォントが下付き文字の場合に返します。 範囲のすべてのフォントが上付きまたは標準 (上付きでも下付きでも) の場合 `false` に返します。 それ以外 `null` の場合は返します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSubscript(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getSuperscript()
+    uid: 'ExcelScript!ExcelScript.RangeFont#getSuperscript:member(1)'
+    package: ExcelScript!
+    fullName: getSuperscript()
+    summary: フォントの上付き文字の状態を指定します。 範囲のすべての `true` フォントが上付き文字の場合に返します。 範囲のすべてのフォントが下付きまたは標準 (上付きでも下付きでも) の場合 `false` に返します。 それ以外 `null` の場合は返します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSuperscript(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getTintAndShade()
+    uid: 'ExcelScript!ExcelScript.RangeFont#getTintAndShade:member(1)'
+    package: ExcelScript!
+    fullName: getTintAndShade()
+    summary: 範囲フォントの色を明るくまたは暗くする倍数を指定します。 値は -1 (最も暗い) から 1 (最も明るい) の間で、元の色の場合は 0 です。 値 `null` は、範囲全体に統一されたフォント設定が含めなかった場合を示 `tintAndShade` します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTintAndShade(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getUnderline()
+    uid: 'ExcelScript!ExcelScript.RangeFont#getUnderline:member(1)'
+    package: ExcelScript!
+    fullName: getUnderline()
+    summary: フォントに適用する下線の種類。 詳細は「`ExcelScript.RangeUnderlineStyle`」をご覧ください。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getUnderline(): RangeUnderlineStyle;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.RangeUnderlineStyle:enum" />'
+        description: ''
+  - name: setBold(bold)
+    uid: 'ExcelScript!ExcelScript.RangeFont#setBold:member(1)'
+    package: ExcelScript!
+    fullName: setBold(bold)
+    summary: フォントの太字の状態を表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setBold(bold: boolean): void;'
+      parameters:
+        - id: bold
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setColor(color)
+    uid: 'ExcelScript!ExcelScript.RangeFont#setColor:member(1)'
+    package: ExcelScript!
+    fullName: setColor(color)
+    summary: テキストの色の HTML カラー コード表現 \# (FF0000 は赤を表すなど)。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setColor(color: string): void;'
+      parameters:
+        - id: color
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setItalic(italic)
+    uid: 'ExcelScript!ExcelScript.RangeFont#setItalic:member(1)'
+    package: ExcelScript!
+    fullName: setItalic(italic)
+    summary: フォントの italic 状態を指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setItalic(italic: boolean): void;'
+      parameters:
+        - id: italic
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setName(name)
+    uid: 'ExcelScript!ExcelScript.RangeFont#setName:member(1)'
+    package: ExcelScript!
+    fullName: setName(name)
+    summary: フォント名 ("Calibri"など)。 名前の長さは 31 文字を超えることはできません。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setName(name: string): void;'
+      parameters:
+        - id: name
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setSize(size)
+    uid: 'ExcelScript!ExcelScript.RangeFont#setSize:member(1)'
+    package: ExcelScript!
+    fullName: setSize(size)
+    summary: フォント サイズ。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setSize(size: number): void;'
+      parameters:
+        - id: size
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setStrikethrough(strikethrough)
+    uid: 'ExcelScript!ExcelScript.RangeFont#setStrikethrough:member(1)'
+    package: ExcelScript!
+    fullName: setStrikethrough(strikethrough)
+    summary: フォントの取り消し線の状態を指定します。 値 `null` は、範囲全体に一様な取り消し線の設定が含めなかった場合を示します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setStrikethrough(strikethrough: boolean): void;'
+      parameters:
+        - id: strikethrough
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setSubscript(subscript)
+    uid: 'ExcelScript!ExcelScript.RangeFont#setSubscript:member(1)'
+    package: ExcelScript!
+    fullName: setSubscript(subscript)
+    summary: フォントの下付き文字の状態を指定します。 範囲のすべての `true` フォントが下付き文字の場合に返します。 範囲のすべてのフォントが上付きまたは標準 (上付きでも下付きでも) の場合 `false` に返します。 それ以外 `null` の場合は返します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setSubscript(subscript: boolean): void;'
+      parameters:
+        - id: subscript
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setSuperscript(superscript)
+    uid: 'ExcelScript!ExcelScript.RangeFont#setSuperscript:member(1)'
+    package: ExcelScript!
+    fullName: setSuperscript(superscript)
+    summary: フォントの上付き文字の状態を指定します。 範囲のすべての `true` フォントが上付き文字の場合に返します。 範囲のすべてのフォントが下付きまたは標準 (上付きでも下付きでも) の場合 `false` に返します。 それ以外 `null` の場合は返します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setSuperscript(superscript: boolean): void;'
+      parameters:
+        - id: superscript
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setTintAndShade(tintAndShade)
+    uid: 'ExcelScript!ExcelScript.RangeFont#setTintAndShade:member(1)'
+    package: ExcelScript!
+    fullName: setTintAndShade(tintAndShade)
+    summary: 範囲フォントの色を明るくまたは暗くする倍数を指定します。 値は -1 (最も暗い) から 1 (最も明るい) の間で、元の色の場合は 0 です。 値 `null` は、範囲全体に統一されたフォント設定が含めなかった場合を示 `tintAndShade` します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setTintAndShade(tintAndShade: number): void;'
+      parameters:
+        - id: tintAndShade
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setUnderline(underline)
+    uid: 'ExcelScript!ExcelScript.RangeFont#setUnderline:member(1)'
+    package: ExcelScript!
+    fullName: setUnderline(underline)
+    summary: フォントに適用する下線の種類。 詳細は「`ExcelScript.RangeUnderlineStyle`」をご覧ください。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setUnderline(underline: RangeUnderlineStyle): void;'
+      parameters:
+        - id: underline
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.RangeUnderlineStyle:enum" />'
+      return:
+        type: void
+        description: ''

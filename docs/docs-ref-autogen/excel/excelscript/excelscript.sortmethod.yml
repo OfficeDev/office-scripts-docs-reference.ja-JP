@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.SortMethod
-uid: ExcelScript!ExcelScript.SortMethod:enum
+uid: 'ExcelScript!ExcelScript.SortMethod:enum'
 package: ExcelScript!
 fullName: ExcelScript.SortMethod
 summary: ''
@@ -8,18 +8,11 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: pinYin
-  uid: ExcelScript!ExcelScript.SortMethod.pinYin:member
-  package: ExcelScript!
-  summary: ''
-- name: strokeCount
-  uid: ExcelScript!ExcelScript.SortMethod.strokeCount:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: c1a30e8115110f8a8495151e83bb86e4ed5710a3
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420378"
+  - name: pinYin
+    uid: 'ExcelScript!ExcelScript.SortMethod.pinYin:member'
+    package: ExcelScript!
+    summary: ''
+  - name: strokeCount
+    uid: 'ExcelScript!ExcelScript.SortMethod.strokeCount:member'
+    package: ExcelScript!
+    summary: ''

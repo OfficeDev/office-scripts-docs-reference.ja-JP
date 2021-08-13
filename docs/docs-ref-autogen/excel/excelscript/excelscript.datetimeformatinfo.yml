@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.DatetimeFormatInfo
-uid: ExcelScript!ExcelScript.DatetimeFormatInfo:interface
+uid: 'ExcelScript!ExcelScript.DatetimeFormatInfo:interface'
 package: ExcelScript!
 fullName: ExcelScript.DatetimeFormatInfo
 summary: 数値を表示する文化的に適切な形式を定義します。 これは、現在のシステム カルチャ設定に基づいて行います。
@@ -9,75 +9,68 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getDateSeparator()
-  uid: ExcelScript!ExcelScript.DatetimeFormatInfo#getDateSeparator:member(1)
-  package: ExcelScript!
-  fullName: getDateSeparator()
-  summary: 日付区切り記号として使用される文字列を取得します。 これは、現在のシステム設定に基づいて行います。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getDateSeparator(): string;'
-    return:
-      type: string
-      description: ''
-- name: getLongDatePattern()
-  uid: ExcelScript!ExcelScript.DatetimeFormatInfo#getLongDatePattern:member(1)
-  package: ExcelScript!
-  fullName: getLongDatePattern()
-  summary: 長い日付値の書式文字列を取得します。 これは、現在のシステム設定に基づいて行います。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLongDatePattern(): string;'
-    return:
-      type: string
-      description: ''
-- name: getLongTimePattern()
-  uid: ExcelScript!ExcelScript.DatetimeFormatInfo#getLongTimePattern:member(1)
-  package: ExcelScript!
-  fullName: getLongTimePattern()
-  summary: 長い時間の値の書式文字列を取得します。 これは、現在のシステム設定に基づいて行います。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLongTimePattern(): string;'
-    return:
-      type: string
-      description: ''
-- name: getShortDatePattern()
-  uid: ExcelScript!ExcelScript.DatetimeFormatInfo#getShortDatePattern:member(1)
-  package: ExcelScript!
-  fullName: getShortDatePattern()
-  summary: 短い日付の値の書式文字列を取得します。 これは、現在のシステム設定に基づいて行います。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShortDatePattern(): string;'
-    return:
-      type: string
-      description: ''
-- name: getTimeSeparator()
-  uid: ExcelScript!ExcelScript.DatetimeFormatInfo#getTimeSeparator:member(1)
-  package: ExcelScript!
-  fullName: getTimeSeparator()
-  summary: 時刻の区切り記号として使用される文字列を取得します。 これは、現在のシステム設定に基づいて行います。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTimeSeparator(): string;'
-    return:
-      type: string
-      description: ''
-metadata:
-  ms.openlocfilehash: 41c906081273622c3070f65ff6c49fa4f3931586
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914472"
+  - name: getDateSeparator()
+    uid: 'ExcelScript!ExcelScript.DatetimeFormatInfo#getDateSeparator:member(1)'
+    package: ExcelScript!
+    fullName: getDateSeparator()
+    summary: 日付区切り記号として使用される文字列を取得します。 これは、現在のシステム設定に基づいて行います。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getDateSeparator(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getLongDatePattern()
+    uid: 'ExcelScript!ExcelScript.DatetimeFormatInfo#getLongDatePattern:member(1)'
+    package: ExcelScript!
+    fullName: getLongDatePattern()
+    summary: 長い日付値の書式文字列を取得します。 これは、現在のシステム設定に基づいて行います。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLongDatePattern(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getLongTimePattern()
+    uid: 'ExcelScript!ExcelScript.DatetimeFormatInfo#getLongTimePattern:member(1)'
+    package: ExcelScript!
+    fullName: getLongTimePattern()
+    summary: 長い時間の値の書式文字列を取得します。 これは、現在のシステム設定に基づいて行います。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLongTimePattern(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getShortDatePattern()
+    uid: 'ExcelScript!ExcelScript.DatetimeFormatInfo#getShortDatePattern:member(1)'
+    package: ExcelScript!
+    fullName: getShortDatePattern()
+    summary: 短い日付の値の書式文字列を取得します。 これは、現在のシステム設定に基づいて行います。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShortDatePattern(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getTimeSeparator()
+    uid: 'ExcelScript!ExcelScript.DatetimeFormatInfo#getTimeSeparator:member(1)'
+    package: ExcelScript!
+    fullName: getTimeSeparator()
+    summary: 時刻の区切り記号として使用される文字列を取得します。 これは、現在のシステム設定に基づいて行います。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTimeSeparator(): string;'
+      return:
+        type: string
+        description: ''

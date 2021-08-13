@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ChartAxisTickMark
-uid: ExcelScript!ExcelScript.ChartAxisTickMark:enum
+uid: 'ExcelScript!ExcelScript.ChartAxisTickMark:enum'
 package: ExcelScript!
 fullName: ExcelScript.ChartAxisTickMark
 summary: ''
@@ -8,26 +8,19 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: cross
-  uid: ExcelScript!ExcelScript.ChartAxisTickMark.cross:member
-  package: ExcelScript!
-  summary: ''
-- name: inside
-  uid: ExcelScript!ExcelScript.ChartAxisTickMark.inside:member
-  package: ExcelScript!
-  summary: ''
-- name: none
-  uid: ExcelScript!ExcelScript.ChartAxisTickMark.none:member
-  package: ExcelScript!
-  summary: ''
-- name: outside
-  uid: ExcelScript!ExcelScript.ChartAxisTickMark.outside:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: 2a3ad5a28ff12387e0b02d85cb5befd55b17e5c8
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417031"
+  - name: cross
+    uid: 'ExcelScript!ExcelScript.ChartAxisTickMark.cross:member'
+    package: ExcelScript!
+    summary: ''
+  - name: inside
+    uid: 'ExcelScript!ExcelScript.ChartAxisTickMark.inside:member'
+    package: ExcelScript!
+    summary: ''
+  - name: none
+    uid: 'ExcelScript!ExcelScript.ChartAxisTickMark.none:member'
+    package: ExcelScript!
+    summary: ''
+  - name: outside
+    uid: 'ExcelScript!ExcelScript.ChartAxisTickMark.outside:member'
+    package: ExcelScript!
+    summary: ''

@@ -1,108 +1,101 @@
 ### YamlMime:TSType
 name: ExcelScript.ChartMapOptions
-uid: ExcelScript!ExcelScript.ChartMapOptions:interface
+uid: 'ExcelScript!ExcelScript.ChartMapOptions:interface'
 package: ExcelScript!
 fullName: ExcelScript.ChartMapOptions
-summary: 地域マップグラフのプロパティをカプセル化します。
+summary: 地域マップ グラフのプロパティをカプセル化します。
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getLabelStrategy()
-  uid: ExcelScript!ExcelScript.ChartMapOptions#getLabelStrategy:member(1)
-  package: ExcelScript!
-  fullName: getLabelStrategy()
-  summary: 地域マップグラフの系列マップラベル戦略を指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLabelStrategy(): ChartMapLabelStrategy;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartMapLabelStrategy:enum" />
-      description: ''
-- name: getLevel()
-  uid: ExcelScript!ExcelScript.ChartMapOptions#getLevel:member(1)
-  package: ExcelScript!
-  fullName: getLevel()
-  summary: 地域マップグラフの系列マッピングレベルを指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLevel(): ChartMapAreaLevel;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartMapAreaLevel:enum" />
-      description: ''
-- name: getProjectionType()
-  uid: ExcelScript!ExcelScript.ChartMapOptions#getProjectionType:member(1)
-  package: ExcelScript!
-  fullName: getProjectionType()
-  summary: 地域マップグラフの系列の投影の種類を指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getProjectionType(): ChartMapProjectionType;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartMapProjectionType:enum" />
-      description: ''
-- name: setLabelStrategy(labelStrategy)
-  uid: ExcelScript!ExcelScript.ChartMapOptions#setLabelStrategy:member(1)
-  package: ExcelScript!
-  fullName: setLabelStrategy(labelStrategy)
-  summary: 地域マップグラフの系列マップラベル戦略を指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setLabelStrategy(labelStrategy: ChartMapLabelStrategy): void;'
-    parameters:
-    - id: labelStrategy
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ChartMapLabelStrategy:enum" />
-    return:
-      type: void
-      description: ''
-- name: setLevel(level)
-  uid: ExcelScript!ExcelScript.ChartMapOptions#setLevel:member(1)
-  package: ExcelScript!
-  fullName: setLevel(level)
-  summary: 地域マップグラフの系列マッピングレベルを指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setLevel(level: ChartMapAreaLevel): void;'
-    parameters:
-    - id: level
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ChartMapAreaLevel:enum" />
-    return:
-      type: void
-      description: ''
-- name: setProjectionType(projectionType)
-  uid: ExcelScript!ExcelScript.ChartMapOptions#setProjectionType:member(1)
-  package: ExcelScript!
-  fullName: setProjectionType(projectionType)
-  summary: 地域マップグラフの系列の投影の種類を指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setProjectionType(projectionType: ChartMapProjectionType): void;'
-    parameters:
-    - id: projectionType
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ChartMapProjectionType:enum" />
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: e742df86933d33c7a0f0392075bf8b0800266f57
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419664"
+  - name: getLabelStrategy()
+    uid: 'ExcelScript!ExcelScript.ChartMapOptions#getLabelStrategy:member(1)'
+    package: ExcelScript!
+    fullName: getLabelStrategy()
+    summary: 地域マップ グラフの系列マップ ラベル戦略を指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLabelStrategy(): ChartMapLabelStrategy;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartMapLabelStrategy:enum" />'
+        description: ''
+  - name: getLevel()
+    uid: 'ExcelScript!ExcelScript.ChartMapOptions#getLevel:member(1)'
+    package: ExcelScript!
+    fullName: getLevel()
+    summary: 地域マップ グラフの系列マッピング レベルを指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLevel(): ChartMapAreaLevel;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartMapAreaLevel:enum" />'
+        description: ''
+  - name: getProjectionType()
+    uid: 'ExcelScript!ExcelScript.ChartMapOptions#getProjectionType:member(1)'
+    package: ExcelScript!
+    fullName: getProjectionType()
+    summary: 地域マップ グラフの系列投影の種類を指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getProjectionType(): ChartMapProjectionType;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartMapProjectionType:enum" />'
+        description: ''
+  - name: setLabelStrategy(labelStrategy)
+    uid: 'ExcelScript!ExcelScript.ChartMapOptions#setLabelStrategy:member(1)'
+    package: ExcelScript!
+    fullName: setLabelStrategy(labelStrategy)
+    summary: 地域マップ グラフの系列マップ ラベル戦略を指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setLabelStrategy(labelStrategy: ChartMapLabelStrategy): void;'
+      parameters:
+        - id: labelStrategy
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ChartMapLabelStrategy:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setLevel(level)
+    uid: 'ExcelScript!ExcelScript.ChartMapOptions#setLevel:member(1)'
+    package: ExcelScript!
+    fullName: setLevel(level)
+    summary: 地域マップ グラフの系列マッピング レベルを指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setLevel(level: ChartMapAreaLevel): void;'
+      parameters:
+        - id: level
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ChartMapAreaLevel:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setProjectionType(projectionType)
+    uid: 'ExcelScript!ExcelScript.ChartMapOptions#setProjectionType:member(1)'
+    package: ExcelScript!
+    fullName: setProjectionType(projectionType)
+    summary: 地域マップ グラフの系列投影の種類を指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setProjectionType(projectionType: ChartMapProjectionType): void;'
+      parameters:
+        - id: projectionType
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ChartMapProjectionType:enum" />'
+      return:
+        type: void
+        description: ''

@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.SlicerItem
-uid: ExcelScript!ExcelScript.SlicerItem:interface
+uid: 'ExcelScript!ExcelScript.SlicerItem:interface'
 package: ExcelScript!
 fullName: ExcelScript.SlicerItem
 summary: スライサー内のスライサー アイテムを表します。
@@ -9,79 +9,72 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getHasData()
-  uid: ExcelScript!ExcelScript.SlicerItem#getHasData:member(1)
-  package: ExcelScript!
-  fullName: getHasData()
-  summary: 値は `true` 、スライサー アイテムにデータがある場合です。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getHasData(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getIsSelected()
-  uid: ExcelScript!ExcelScript.SlicerItem#getIsSelected:member(1)
-  package: ExcelScript!
-  fullName: getIsSelected()
-  summary: 値は `true` 、スライサー アイテムが選択されている場合です。 この値を設定すると、他のスライサー アイテムの選択した状態はクリアされません。 既定では、スライサー アイテムが選択されている唯一のアイテムである場合、選択を解除すると、すべてのアイテムが選択されます。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getIsSelected(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getKey()
-  uid: ExcelScript!ExcelScript.SlicerItem#getKey:member(1)
-  package: ExcelScript!
-  fullName: getKey()
-  summary: スライサー アイテムを表す一意の値を表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getKey(): string;'
-    return:
-      type: string
-      description: ''
-- name: getName()
-  uid: ExcelScript!ExcelScript.SlicerItem#getName:member(1)
-  package: ExcelScript!
-  fullName: getName()
-  summary: Excel UI に表示されるタイトルを表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getName(): string;'
-    return:
-      type: string
-      description: ''
-- name: setIsSelected(isSelected)
-  uid: ExcelScript!ExcelScript.SlicerItem#setIsSelected:member(1)
-  package: ExcelScript!
-  fullName: setIsSelected(isSelected)
-  summary: 値は `true` 、スライサー アイテムが選択されている場合です。 この値を設定すると、他のスライサー アイテムの選択した状態はクリアされません。 既定では、スライサー アイテムが選択されている唯一のアイテムである場合、選択を解除すると、すべてのアイテムが選択されます。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setIsSelected(isSelected: boolean): void;'
-    parameters:
-    - id: isSelected
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 10c0521469d6d8f2a916ba92fb907da2b1ef9d4c
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914154"
+  - name: getHasData()
+    uid: 'ExcelScript!ExcelScript.SlicerItem#getHasData:member(1)'
+    package: ExcelScript!
+    fullName: getHasData()
+    summary: 値は `true` 、スライサー アイテムにデータがある場合です。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getHasData(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getIsSelected()
+    uid: 'ExcelScript!ExcelScript.SlicerItem#getIsSelected:member(1)'
+    package: ExcelScript!
+    fullName: getIsSelected()
+    summary: 値は `true` 、スライサー アイテムが選択されている場合です。 この値を設定すると、他のスライサー アイテムの選択した状態はクリアされません。 既定では、スライサー アイテムが選択されている唯一のアイテムである場合、選択を解除すると、すべてのアイテムが選択されます。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getIsSelected(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getKey()
+    uid: 'ExcelScript!ExcelScript.SlicerItem#getKey:member(1)'
+    package: ExcelScript!
+    fullName: getKey()
+    summary: スライサー アイテムを表す一意の値を表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getKey(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getName()
+    uid: 'ExcelScript!ExcelScript.SlicerItem#getName:member(1)'
+    package: ExcelScript!
+    fullName: getName()
+    summary: ユーザー UI に表示されるタイトルExcelします。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type: string
+        description: ''
+  - name: setIsSelected(isSelected)
+    uid: 'ExcelScript!ExcelScript.SlicerItem#setIsSelected:member(1)'
+    package: ExcelScript!
+    fullName: setIsSelected(isSelected)
+    summary: 値は `true` 、スライサー アイテムが選択されている場合です。 この値を設定すると、他のスライサー アイテムの選択した状態はクリアされません。 既定では、スライサー アイテムが選択されている唯一のアイテムである場合、選択を解除すると、すべてのアイテムが選択されます。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setIsSelected(isSelected: boolean): void;'
+      parameters:
+        - id: isSelected
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''

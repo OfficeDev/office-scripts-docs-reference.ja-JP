@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.SpecialCellType
-uid: ExcelScript!ExcelScript.SpecialCellType:enum
+uid: 'ExcelScript!ExcelScript.SpecialCellType:enum'
 package: ExcelScript!
 fullName: ExcelScript.SpecialCellType
 summary: ''
@@ -8,42 +8,35 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: blanks
-  uid: ExcelScript!ExcelScript.SpecialCellType.blanks:member
-  package: ExcelScript!
-  summary: コンテンツがないセル。
-- name: conditionalFormats
-  uid: ExcelScript!ExcelScript.SpecialCellType.conditionalFormats:member
-  package: ExcelScript!
-  summary: 条件付き書式を持つすべてのセル。
-- name: constants
-  uid: ExcelScript!ExcelScript.SpecialCellType.constants:member
-  package: ExcelScript!
-  summary: 定数が含まれているセル
-- name: dataValidations
-  uid: ExcelScript!ExcelScript.SpecialCellType.dataValidations:member
-  package: ExcelScript!
-  summary: 検証条件を持つセル。
-- name: formulas
-  uid: ExcelScript!ExcelScript.SpecialCellType.formulas:member
-  package: ExcelScript!
-  summary: 数式が含まれているセル
-- name: sameConditionalFormat
-  uid: ExcelScript!ExcelScript.SpecialCellType.sameConditionalFormat:member
-  package: ExcelScript!
-  summary: セル範囲の最初のセルと同じ条件付き書式を持つセル。
-- name: sameDataValidation
-  uid: ExcelScript!ExcelScript.SpecialCellType.sameDataValidation:member
-  package: ExcelScript!
-  summary: 範囲内の最初のセルと同じデータ検証条件を持つセル。
-- name: visible
-  uid: ExcelScript!ExcelScript.SpecialCellType.visible:member
-  package: ExcelScript!
-  summary: 表示されるセル。
-metadata:
-  ms.openlocfilehash: ec7e463d5deaa1f6613ea3b1a97ec6f12b488a69
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913350"
+  - name: blanks
+    uid: 'ExcelScript!ExcelScript.SpecialCellType.blanks:member'
+    package: ExcelScript!
+    summary: コンテンツがないセル。
+  - name: conditionalFormats
+    uid: 'ExcelScript!ExcelScript.SpecialCellType.conditionalFormats:member'
+    package: ExcelScript!
+    summary: 条件付き書式を持つすべてのセル。
+  - name: constants
+    uid: 'ExcelScript!ExcelScript.SpecialCellType.constants:member'
+    package: ExcelScript!
+    summary: 定数が含まれているセル
+  - name: dataValidations
+    uid: 'ExcelScript!ExcelScript.SpecialCellType.dataValidations:member'
+    package: ExcelScript!
+    summary: 検証条件を持つセル。
+  - name: formulas
+    uid: 'ExcelScript!ExcelScript.SpecialCellType.formulas:member'
+    package: ExcelScript!
+    summary: 数式が含まれているセル
+  - name: sameConditionalFormat
+    uid: 'ExcelScript!ExcelScript.SpecialCellType.sameConditionalFormat:member'
+    package: ExcelScript!
+    summary: セル範囲の最初のセルと同じ条件付き書式を持つセル。
+  - name: sameDataValidation
+    uid: 'ExcelScript!ExcelScript.SpecialCellType.sameDataValidation:member'
+    package: ExcelScript!
+    summary: 範囲内の最初のセルと同じデータ検証条件を持つセル。
+  - name: visible
+    uid: 'ExcelScript!ExcelScript.SpecialCellType.visible:member'
+    package: ExcelScript!
+    summary: 表示されるセル。

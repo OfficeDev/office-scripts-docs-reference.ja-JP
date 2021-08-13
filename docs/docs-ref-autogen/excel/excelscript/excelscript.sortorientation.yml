@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.SortOrientation
-uid: ExcelScript!ExcelScript.SortOrientation:enum
+uid: 'ExcelScript!ExcelScript.SortOrientation:enum'
 package: ExcelScript!
 fullName: ExcelScript.SortOrientation
 summary: ''
@@ -8,18 +8,11 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: columns
-  uid: ExcelScript!ExcelScript.SortOrientation.columns:member
-  package: ExcelScript!
-  summary: ''
-- name: rows
-  uid: ExcelScript!ExcelScript.SortOrientation.rows:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: c1d9b7dba3c38e3cae5b1e2c3bf300ca8ede63f3
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420364"
+  - name: columns
+    uid: 'ExcelScript!ExcelScript.SortOrientation.columns:member'
+    package: ExcelScript!
+    summary: ''
+  - name: rows
+    uid: 'ExcelScript!ExcelScript.SortOrientation.rows:member'
+    package: ExcelScript!
+    summary: ''

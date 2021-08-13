@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.PrintOrder
-uid: ExcelScript!ExcelScript.PrintOrder:enum
+uid: 'ExcelScript!ExcelScript.PrintOrder:enum'
 package: ExcelScript!
 fullName: ExcelScript.PrintOrder
 summary: ''
@@ -8,18 +8,11 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: downThenOver
-  uid: ExcelScript!ExcelScript.PrintOrder.downThenOver:member
-  package: ExcelScript!
-  summary: 反対側のページや右側のページのフィールドを処理する前に下の行を処理します。
-- name: overThenDown
-  uid: ExcelScript!ExcelScript.PrintOrder.overThenDown:member
-  package: ExcelScript!
-  summary: 下の行を処理する前に反対側のページや右側のページのフィールドを処理します。
-metadata:
-  ms.openlocfilehash: e164a2b92767c6d8f6504164598ef6e78802052a
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914266"
+  - name: downThenOver
+    uid: 'ExcelScript!ExcelScript.PrintOrder.downThenOver:member'
+    package: ExcelScript!
+    summary: 反対側のページや右側のページのフィールドを処理する前に下の行を処理します。
+  - name: overThenDown
+    uid: 'ExcelScript!ExcelScript.PrintOrder.overThenDown:member'
+    package: ExcelScript!
+    summary: 下の行を処理する前に反対側のページや右側のページのフィールドを処理します。

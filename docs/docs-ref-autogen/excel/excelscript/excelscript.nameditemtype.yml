@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.NamedItemType
-uid: ExcelScript!ExcelScript.NamedItemType:enum
+uid: 'ExcelScript!ExcelScript.NamedItemType:enum'
 package: ExcelScript!
 fullName: ExcelScript.NamedItemType
 summary: ''
@@ -8,38 +8,31 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: array
-  uid: ExcelScript!ExcelScript.NamedItemType.array:member
-  package: ExcelScript!
-  summary: ''
-- name: boolean
-  uid: ExcelScript!ExcelScript.NamedItemType.boolean:member
-  package: ExcelScript!
-  summary: ''
-- name: double
-  uid: ExcelScript!ExcelScript.NamedItemType.double:member
-  package: ExcelScript!
-  summary: ''
-- name: error
-  uid: ExcelScript!ExcelScript.NamedItemType.error:member
-  package: ExcelScript!
-  summary: ''
-- name: integer
-  uid: ExcelScript!ExcelScript.NamedItemType.integer:member
-  package: ExcelScript!
-  summary: ''
-- name: range
-  uid: ExcelScript!ExcelScript.NamedItemType.range:member
-  package: ExcelScript!
-  summary: ''
-- name: string
-  uid: ExcelScript!ExcelScript.NamedItemType.string:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: fdfdae73aa769803c4ecf3e89d3f20376fcd68da
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412203"
+  - name: array
+    uid: 'ExcelScript!ExcelScript.NamedItemType.array:member'
+    package: ExcelScript!
+    summary: ''
+  - name: boolean
+    uid: 'ExcelScript!ExcelScript.NamedItemType.boolean:member'
+    package: ExcelScript!
+    summary: ''
+  - name: double
+    uid: 'ExcelScript!ExcelScript.NamedItemType.double:member'
+    package: ExcelScript!
+    summary: ''
+  - name: error
+    uid: 'ExcelScript!ExcelScript.NamedItemType.error:member'
+    package: ExcelScript!
+    summary: ''
+  - name: integer
+    uid: 'ExcelScript!ExcelScript.NamedItemType.integer:member'
+    package: ExcelScript!
+    summary: ''
+  - name: range
+    uid: 'ExcelScript!ExcelScript.NamedItemType.range:member'
+    package: ExcelScript!
+    summary: ''
+  - name: string
+    uid: 'ExcelScript!ExcelScript.NamedItemType.string:member'
+    package: ExcelScript!
+    summary: ''

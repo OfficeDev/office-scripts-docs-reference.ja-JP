@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ShapeAutoSize
-uid: ExcelScript!ExcelScript.ShapeAutoSize:enum
+uid: 'ExcelScript!ExcelScript.ShapeAutoSize:enum'
 package: ExcelScript!
 fullName: ExcelScript.ShapeAutoSize
 summary: 許可される自動サイズ変更を決定します。
@@ -8,26 +8,19 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: autoSizeMixed
-  uid: ExcelScript!ExcelScript.ShapeAutoSize.autoSizeMixed:member
-  package: ExcelScript!
-  summary: 自動サイズ変更の組み合わせが使用されます。
-- name: autoSizeNone
-  uid: ExcelScript!ExcelScript.ShapeAutoSize.autoSizeNone:member
-  package: ExcelScript!
-  summary: 自動サイズ変更は実行されません。
-- name: autoSizeShapeToFitText
-  uid: ExcelScript!ExcelScript.ShapeAutoSize.autoSizeShapeToFitText:member
-  package: ExcelScript!
-  summary: 図形はテキストに合わせて調整されます。
-- name: autoSizeTextToFitShape
-  uid: ExcelScript!ExcelScript.ShapeAutoSize.autoSizeTextToFitShape:member
-  package: ExcelScript!
-  summary: テキストは図形に合わせて調整されます。
-metadata:
-  ms.openlocfilehash: 0157f57366a64fa30466de86e56cfcd69ba2e3be
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49411867"
+  - name: autoSizeMixed
+    uid: 'ExcelScript!ExcelScript.ShapeAutoSize.autoSizeMixed:member'
+    package: ExcelScript!
+    summary: 自動サイズ変更の組み合わせが使用されます。
+  - name: autoSizeNone
+    uid: 'ExcelScript!ExcelScript.ShapeAutoSize.autoSizeNone:member'
+    package: ExcelScript!
+    summary: 自動サイズ変更は実行されません。
+  - name: autoSizeShapeToFitText
+    uid: 'ExcelScript!ExcelScript.ShapeAutoSize.autoSizeShapeToFitText:member'
+    package: ExcelScript!
+    summary: 図形はテキストに合わせて調整されます。
+  - name: autoSizeTextToFitShape
+    uid: 'ExcelScript!ExcelScript.ShapeAutoSize.autoSizeTextToFitShape:member'
+    package: ExcelScript!
+    summary: テキストは図形に合わせて調整されます。

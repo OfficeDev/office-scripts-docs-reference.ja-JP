@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ConditionalDataBarAxisFormat
-uid: ExcelScript!ExcelScript.ConditionalDataBarAxisFormat:enum
+uid: 'ExcelScript!ExcelScript.ConditionalDataBarAxisFormat:enum'
 package: ExcelScript!
 fullName: ExcelScript.ConditionalDataBarAxisFormat
 summary: データ バー軸の書式オプションを表します。
@@ -8,22 +8,15 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: automatic
-  uid: ExcelScript!ExcelScript.ConditionalDataBarAxisFormat.automatic:member
-  package: ExcelScript!
-  summary: ''
-- name: cellMidPoint
-  uid: ExcelScript!ExcelScript.ConditionalDataBarAxisFormat.cellMidPoint:member
-  package: ExcelScript!
-  summary: ''
-- name: none
-  uid: ExcelScript!ExcelScript.ConditionalDataBarAxisFormat.none:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: d402455b566086b0b2ff94cadc05961841ef40a3
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51606746"
+  - name: automatic
+    uid: 'ExcelScript!ExcelScript.ConditionalDataBarAxisFormat.automatic:member'
+    package: ExcelScript!
+    summary: ''
+  - name: cellMidPoint
+    uid: 'ExcelScript!ExcelScript.ConditionalDataBarAxisFormat.cellMidPoint:member'
+    package: ExcelScript!
+    summary: ''
+  - name: none
+    uid: 'ExcelScript!ExcelScript.ConditionalDataBarAxisFormat.none:member'
+    package: ExcelScript!
+    summary: ''

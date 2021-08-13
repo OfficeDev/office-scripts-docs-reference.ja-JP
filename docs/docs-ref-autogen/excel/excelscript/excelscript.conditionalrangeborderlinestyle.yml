@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ConditionalRangeBorderLineStyle
-uid: ExcelScript!ExcelScript.ConditionalRangeBorderLineStyle:enum
+uid: 'ExcelScript!ExcelScript.ConditionalRangeBorderLineStyle:enum'
 package: ExcelScript!
 fullName: ExcelScript.ConditionalRangeBorderLineStyle
 summary: ''
@@ -8,34 +8,27 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: continuous
-  uid: ExcelScript!ExcelScript.ConditionalRangeBorderLineStyle.continuous:member
-  package: ExcelScript!
-  summary: ''
-- name: dash
-  uid: ExcelScript!ExcelScript.ConditionalRangeBorderLineStyle.dash:member
-  package: ExcelScript!
-  summary: ''
-- name: dashDot
-  uid: ExcelScript!ExcelScript.ConditionalRangeBorderLineStyle.dashDot:member
-  package: ExcelScript!
-  summary: ''
-- name: dashDotDot
-  uid: ExcelScript!ExcelScript.ConditionalRangeBorderLineStyle.dashDotDot:member
-  package: ExcelScript!
-  summary: ''
-- name: dot
-  uid: ExcelScript!ExcelScript.ConditionalRangeBorderLineStyle.dot:member
-  package: ExcelScript!
-  summary: ''
-- name: none
-  uid: ExcelScript!ExcelScript.ConditionalRangeBorderLineStyle.none:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: 65a613e8ebd2046e9b49691bcb49384e8e097e02
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419398"
+  - name: continuous
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeBorderLineStyle.continuous:member'
+    package: ExcelScript!
+    summary: ''
+  - name: dash
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeBorderLineStyle.dash:member'
+    package: ExcelScript!
+    summary: ''
+  - name: dashDot
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeBorderLineStyle.dashDot:member'
+    package: ExcelScript!
+    summary: ''
+  - name: dashDotDot
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeBorderLineStyle.dashDotDot:member'
+    package: ExcelScript!
+    summary: ''
+  - name: dot
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeBorderLineStyle.dot:member'
+    package: ExcelScript!
+    summary: ''
+  - name: none
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeBorderLineStyle.none:member'
+    package: ExcelScript!
+    summary: ''

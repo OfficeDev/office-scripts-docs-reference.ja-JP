@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ContentType
-uid: ExcelScript!ExcelScript.ContentType:enum
+uid: 'ExcelScript!ExcelScript.ContentType:enum'
 package: ExcelScript!
 fullName: ExcelScript.ContentType
 summary: ''
@@ -8,18 +8,11 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: mention
-  uid: ExcelScript!ExcelScript.ContentType.mention:member
-  package: ExcelScript!
-  summary: メンションを含むコメント コンテンツ。
-- name: plain
-  uid: ExcelScript!ExcelScript.ContentType.plain:member
-  package: ExcelScript!
-  summary: コメント コンテンツのプレーンな形式の種類を示します。
-metadata:
-  ms.openlocfilehash: 730ba12d905053e4f2d87f6b3ba449fac4a2dc4d
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51607054"
+  - name: mention
+    uid: 'ExcelScript!ExcelScript.ContentType.mention:member'
+    package: ExcelScript!
+    summary: メンションを含むコメント コンテンツ。
+  - name: plain
+    uid: 'ExcelScript!ExcelScript.ContentType.plain:member'
+    package: ExcelScript!
+    summary: コメント コンテンツのプレーンな形式の種類を示します。

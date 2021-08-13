@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.PresetCriteriaConditionalFormat
-uid: ExcelScript!ExcelScript.PresetCriteriaConditionalFormat:interface
+uid: 'ExcelScript!ExcelScript.PresetCriteriaConditionalFormat:interface'
 package: ExcelScript!
 fullName: ExcelScript.PresetCriteriaConditionalFormat
 summary: 平均以上、平均以下、一意の値などの事前設定された条件の条件付き形式を表し、空白、非ブランク、エラー、およびエラーが含まれます。
@@ -9,53 +9,46 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getFormat()
-  uid: ExcelScript!ExcelScript.PresetCriteriaConditionalFormat#getFormat:member(1)
-  package: ExcelScript!
-  fullName: getFormat()
-  summary: 条件付き書式のフォント、塗りつぶし、罫線、その他のプロパティをカプセル化する format オブジェクトを返します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFormat(): ConditionalRangeFormat;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeFormat:interface" />
-      description: ''
-- name: getRule()
-  uid: ExcelScript!ExcelScript.PresetCriteriaConditionalFormat#getRule:member(1)
-  package: ExcelScript!
-  fullName: getRule()
-  summary: 条件付き書式のルール。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getRule(): ConditionalPresetCriteriaRule;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalPresetCriteriaRule:interface" />
-      description: ''
-- name: setRule(rule)
-  uid: ExcelScript!ExcelScript.PresetCriteriaConditionalFormat#setRule:member(1)
-  package: ExcelScript!
-  fullName: setRule(rule)
-  summary: 条件付き書式のルール。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setRule(rule: ConditionalPresetCriteriaRule): void;'
-    parameters:
-    - id: rule
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalPresetCriteriaRule:interface" />
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 693c7a160b439c57a88374b06cc5d155d701cfab
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914273"
+  - name: getFormat()
+    uid: 'ExcelScript!ExcelScript.PresetCriteriaConditionalFormat#getFormat:member(1)'
+    package: ExcelScript!
+    fullName: getFormat()
+    summary: 条件付き書式のフォント、塗りつぶし、罫線、その他のプロパティをカプセル化する format オブジェクトを返します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFormat(): ConditionalRangeFormat;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeFormat:interface" />'
+        description: ''
+  - name: getRule()
+    uid: 'ExcelScript!ExcelScript.PresetCriteriaConditionalFormat#getRule:member(1)'
+    package: ExcelScript!
+    fullName: getRule()
+    summary: 条件付き書式のルール。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRule(): ConditionalPresetCriteriaRule;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalPresetCriteriaRule:interface" />'
+        description: ''
+  - name: setRule(rule)
+    uid: 'ExcelScript!ExcelScript.PresetCriteriaConditionalFormat#setRule:member(1)'
+    package: ExcelScript!
+    fullName: setRule(rule)
+    summary: 条件付き書式のルール。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setRule(rule: ConditionalPresetCriteriaRule): void;'
+      parameters:
+        - id: rule
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ConditionalPresetCriteriaRule:interface" />'
+      return:
+        type: void
+        description: ''

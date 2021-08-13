@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.SearchCriteria
-uid: ExcelScript!ExcelScript.SearchCriteria:interface
+uid: 'ExcelScript!ExcelScript.SearchCriteria:interface'
 package: ExcelScript!
 fullName: ExcelScript.SearchCriteria
 summary: 使用する検索条件を表します。
@@ -9,46 +9,39 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: completeMatch
-  uid: ExcelScript!ExcelScript.SearchCriteria#completeMatch:member
-  package: ExcelScript!
-  fullName: completeMatch
-  summary: 一致が完了する必要がある場合と部分的に行う必要がある場合に指定します。 完全一致は、セルの内容全体と一致します。 部分的な一致は、セルのコンテンツ内の部分文字列と一致します (部分的に一致し `cat` `caterpillar` 、 `scatter`<!-- -->). 既定値は `false` (部分) です。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'completeMatch?: boolean;'
-    return:
-      type: boolean
-- name: matchCase
-  uid: ExcelScript!ExcelScript.SearchCriteria#matchCase:member
-  package: ExcelScript!
-  fullName: matchCase
-  summary: 一致で大文字と小文字が区別される場合を指定します。 既定値は `false` (大文字と小文字を区別しない) です。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'matchCase?: boolean;'
-    return:
-      type: boolean
-- name: searchDirection
-  uid: ExcelScript!ExcelScript.SearchCriteria#searchDirection:member
-  package: ExcelScript!
-  fullName: searchDirection
-  summary: 検索の方向を指定します。 既定値は前方向です。 参照 `ExcelScript.SearchDirection`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'searchDirection?: SearchDirection;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.SearchDirection:enum" />
-metadata:
-  ms.openlocfilehash: 62a8753c9a00042de9c1a25b12e2b74730a5a0d3
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914217"
+  - name: completeMatch
+    uid: 'ExcelScript!ExcelScript.SearchCriteria#completeMatch:member'
+    package: ExcelScript!
+    fullName: completeMatch
+    summary: 一致が完了する必要がある場合と部分的に行う必要がある場合に指定します。 完全一致は、セルの内容全体と一致します。 部分的な一致は、セルのコンテンツ内の部分文字列と一致します (部分的に一致し `cat` `caterpillar` 、 `scatter`<!-- -->). 既定値は `false` (部分) です。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'completeMatch?: boolean;'
+      return:
+        type: boolean
+  - name: matchCase
+    uid: 'ExcelScript!ExcelScript.SearchCriteria#matchCase:member'
+    package: ExcelScript!
+    fullName: matchCase
+    summary: 一致で大文字と小文字が区別される場合を指定します。 既定値は `false` (大文字と小文字を区別しない) です。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'matchCase?: boolean;'
+      return:
+        type: boolean
+  - name: searchDirection
+    uid: 'ExcelScript!ExcelScript.SearchCriteria#searchDirection:member'
+    package: ExcelScript!
+    fullName: searchDirection
+    summary: 検索の方向を指定します。 既定値は前方向です。 参照 `ExcelScript.SearchDirection`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'searchDirection?: SearchDirection;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.SearchDirection:enum" />'

@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.BorderWeight
-uid: ExcelScript!ExcelScript.BorderWeight:enum
+uid: 'ExcelScript!ExcelScript.BorderWeight:enum'
 package: ExcelScript!
 fullName: ExcelScript.BorderWeight
 summary: ''
@@ -8,26 +8,19 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: hairline
-  uid: ExcelScript!ExcelScript.BorderWeight.hairline:member
-  package: ExcelScript!
-  summary: ''
-- name: medium
-  uid: ExcelScript!ExcelScript.BorderWeight.medium:member
-  package: ExcelScript!
-  summary: ''
-- name: thick
-  uid: ExcelScript!ExcelScript.BorderWeight.thick:member
-  package: ExcelScript!
-  summary: ''
-- name: thin
-  uid: ExcelScript!ExcelScript.BorderWeight.thin:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: 17fb0c85c1d220fdd9382b38b1a05762140a9335
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417254"
+  - name: hairline
+    uid: 'ExcelScript!ExcelScript.BorderWeight.hairline:member'
+    package: ExcelScript!
+    summary: ''
+  - name: medium
+    uid: 'ExcelScript!ExcelScript.BorderWeight.medium:member'
+    package: ExcelScript!
+    summary: ''
+  - name: thick
+    uid: 'ExcelScript!ExcelScript.BorderWeight.thick:member'
+    package: ExcelScript!
+    summary: ''
+  - name: thin
+    uid: 'ExcelScript!ExcelScript.BorderWeight.thin:member'
+    package: ExcelScript!
+    summary: ''

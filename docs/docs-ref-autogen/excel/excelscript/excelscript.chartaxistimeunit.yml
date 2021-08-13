@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ChartAxisTimeUnit
-uid: ExcelScript!ExcelScript.ChartAxisTimeUnit:enum
+uid: 'ExcelScript!ExcelScript.ChartAxisTimeUnit:enum'
 package: ExcelScript!
 fullName: ExcelScript.ChartAxisTimeUnit
 summary: グラフ軸とデータ系列の時間の単位を指定します。
@@ -8,22 +8,15 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: days
-  uid: ExcelScript!ExcelScript.ChartAxisTimeUnit.days:member
-  package: ExcelScript!
-  summary: ''
-- name: months
-  uid: ExcelScript!ExcelScript.ChartAxisTimeUnit.months:member
-  package: ExcelScript!
-  summary: ''
-- name: years
-  uid: ExcelScript!ExcelScript.ChartAxisTimeUnit.years:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: 4245836c61a1fc60d1fd3c8fd52ae321d5a717c2
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420084"
+  - name: days
+    uid: 'ExcelScript!ExcelScript.ChartAxisTimeUnit.days:member'
+    package: ExcelScript!
+    summary: ''
+  - name: months
+    uid: 'ExcelScript!ExcelScript.ChartAxisTimeUnit.months:member'
+    package: ExcelScript!
+    summary: ''
+  - name: years
+    uid: 'ExcelScript!ExcelScript.ChartAxisTimeUnit.years:member'
+    package: ExcelScript!
+    summary: ''

@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ValueFilterCondition
-uid: ExcelScript!ExcelScript.ValueFilterCondition:enum
+uid: 'ExcelScript!ExcelScript.ValueFilterCondition:enum'
 package: ExcelScript!
 fullName: ExcelScript.ValueFilterCondition
 summary: 値フィルターを適用できる、受け入れられるすべての条件を表す列挙型。 フィールドに適用されるピボットフィルターの種類を構成するために使用します。 `PivotFilter.exclusive` これらの条件の多 `true` くを反転させる設定が可能です。
@@ -8,78 +8,63 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: between
-  uid: ExcelScript!ExcelScript.ValueFilterCondition.between:member
-  package: ExcelScript!
-  summary: >-
-    間 `lowerBound` と `upperBound` 条件。
+  - name: between
+    uid: 'ExcelScript!ExcelScript.ValueFilterCondition.between:member'
+    package: ExcelScript!
+    summary: |-
+      間 `lowerBound` と `upperBound` 条件。
 
+      必須の条件: {`value`<!-- -->, `lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->. オプションの条件: {`exclusive`<!-- -->}<!-- -->.
+  - name: bottomN
+    uid: 'ExcelScript!ExcelScript.ValueFilterCondition.bottomN:member'
+    package: ExcelScript!
+    summary: |-
+      下の N (`threshold`<!-- -->) \[ アイテム、パーセント、値 \] カテゴリの合計。
 
-    必須の条件: {`value`<!-- -->, `lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->. オプションの条件: {`exclusive`<!-- -->}<!-- -->.
-- name: bottomN
-  uid: ExcelScript!ExcelScript.ValueFilterCondition.bottomN:member
-  package: ExcelScript!
-  summary: >-
-    下の N (`threshold`<!-- -->) \[ アイテム、パーセント、値 \] カテゴリの合計。
+      必須の条件: {`value`<!-- -->, `threshold`<!-- -->, `selectionType`<!-- -->}<!-- -->.
+  - name: equals
+    uid: 'ExcelScript!ExcelScript.ValueFilterCondition.equals:member'
+    package: ExcelScript!
+    summary: |-
+      比較条件に等しい。
 
+      必須の条件: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->. オプションの条件: {`exclusive`<!-- -->}<!-- -->.
+  - name: greaterThan
+    uid: 'ExcelScript!ExcelScript.ValueFilterCondition.greaterThan:member'
+    package: ExcelScript!
+    summary: |-
+      比較条件より大きい。
 
-    必須の条件: {`value`<!-- -->, `threshold`<!-- -->, `selectionType`<!-- -->}<!-- -->.
-- name: equals
-  uid: ExcelScript!ExcelScript.ValueFilterCondition.equals:member
-  package: ExcelScript!
-  summary: >-
-    比較条件に等しい。
+      必須の条件: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
+  - name: greaterThanOrEqualTo
+    uid: 'ExcelScript!ExcelScript.ValueFilterCondition.greaterThanOrEqualTo:member'
+    package: ExcelScript!
+    summary: |-
+      コンパレータ条件以上。
 
+      必須の条件: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
+  - name: lessThan
+    uid: 'ExcelScript!ExcelScript.ValueFilterCondition.lessThan:member'
+    package: ExcelScript!
+    summary: |-
+      比較条件より小さい。
 
-    必須の条件: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->. オプションの条件: {`exclusive`<!-- -->}<!-- -->.
-- name: greaterThan
-  uid: ExcelScript!ExcelScript.ValueFilterCondition.greaterThan:member
-  package: ExcelScript!
-  summary: >-
-    比較条件より大きい。
+      必須の条件: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
+  - name: lessThanOrEqualTo
+    uid: 'ExcelScript!ExcelScript.ValueFilterCondition.lessThanOrEqualTo:member'
+    package: ExcelScript!
+    summary: |-
+      コンパレータ条件以下。
 
+      必須の条件: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
+  - name: topN
+    uid: 'ExcelScript!ExcelScript.ValueFilterCondition.topN:member'
+    package: ExcelScript!
+    summary: |-
+      上位 N (`threshold`<!-- -->) \[ アイテム、パーセント、値 \] カテゴリの合計。
 
-    必須の条件: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
-- name: greaterThanOrEqualTo
-  uid: ExcelScript!ExcelScript.ValueFilterCondition.greaterThanOrEqualTo:member
-  package: ExcelScript!
-  summary: >-
-    コンパレータ条件以上。
-
-
-    必須の条件: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
-- name: lessThan
-  uid: ExcelScript!ExcelScript.ValueFilterCondition.lessThan:member
-  package: ExcelScript!
-  summary: >-
-    比較条件より小さい。
-
-
-    必須の条件: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
-- name: lessThanOrEqualTo
-  uid: ExcelScript!ExcelScript.ValueFilterCondition.lessThanOrEqualTo:member
-  package: ExcelScript!
-  summary: >-
-    コンパレータ条件以下。
-
-
-    必須の条件: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
-- name: topN
-  uid: ExcelScript!ExcelScript.ValueFilterCondition.topN:member
-  package: ExcelScript!
-  summary: >-
-    上位 N (`threshold`<!-- -->) \[ アイテム、パーセント、値 \] カテゴリの合計。
-
-
-    必須の条件: {`value`<!-- -->, `threshold`<!-- -->, `selectionType`<!-- -->}<!-- -->.
-- name: unknown
-  uid: ExcelScript!ExcelScript.ValueFilterCondition.unknown:member
-  package: ExcelScript!
-  summary: '`ValueFilterCondition` 不明またはサポートされていません。'
-metadata:
-  ms.openlocfilehash: 74b546f8625a2e025318666956c019507d604c3e
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914615"
+      必須の条件: {`value`<!-- -->, `threshold`<!-- -->, `selectionType`<!-- -->}<!-- -->.
+  - name: unknown
+    uid: 'ExcelScript!ExcelScript.ValueFilterCondition.unknown:member'
+    package: ExcelScript!
+    summary: '`ValueFilterCondition` 不明またはサポートされていません。'

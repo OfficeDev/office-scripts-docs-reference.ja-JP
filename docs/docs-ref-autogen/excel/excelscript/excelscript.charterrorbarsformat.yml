@@ -1,31 +1,24 @@
 ### YamlMime:TSType
 name: ExcelScript.ChartErrorBarsFormat
-uid: ExcelScript!ExcelScript.ChartErrorBarsFormat:interface
+uid: 'ExcelScript!ExcelScript.ChartErrorBarsFormat:interface'
 package: ExcelScript!
 fullName: ExcelScript.ChartErrorBarsFormat
-summary: グラフの誤差範囲の書式設定プロパティをカプセル化します。
+summary: グラフのエラー バーの書式プロパティをカプセル化します。
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getLine()
-  uid: ExcelScript!ExcelScript.ChartErrorBarsFormat#getLine:member(1)
-  package: ExcelScript!
-  fullName: getLine()
-  summary: グラフの線の書式設定を表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLine(): ChartLineFormat;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartLineFormat:interface" />
-      description: ''
-metadata:
-  ms.openlocfilehash: 9be8de50a5ecadd099da95092eac027a9a948979
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419951"
+  - name: getLine()
+    uid: 'ExcelScript!ExcelScript.ChartErrorBarsFormat#getLine:member(1)'
+    package: ExcelScript!
+    fullName: getLine()
+    summary: グラフの線の書式設定を表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLine(): ChartLineFormat;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartLineFormat:interface" />'
+        description: ''

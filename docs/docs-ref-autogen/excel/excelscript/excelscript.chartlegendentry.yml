@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ChartLegendEntry
-uid: ExcelScript!ExcelScript.ChartLegendEntry:interface
+uid: 'ExcelScript!ExcelScript.ChartLegendEntry:interface'
 package: ExcelScript!
 fullName: ExcelScript.ChartLegendEntry
 summary: 内の凡例エントリを表します。 `legendEntryCollection`<!-- -->.
@@ -9,105 +9,98 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getHeight()
-  uid: ExcelScript!ExcelScript.ChartLegendEntry#getHeight:member(1)
-  package: ExcelScript!
-  fullName: getHeight()
-  summary: グラフの凡例の凡例エントリの高さを指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getHeight(): number;'
-    return:
-      type: number
-      description: ''
-- name: getIndex()
-  uid: ExcelScript!ExcelScript.ChartLegendEntry#getIndex:member(1)
-  package: ExcelScript!
-  fullName: getIndex()
-  summary: グラフ凡例の凡例エントリのインデックスを指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getIndex(): number;'
-    return:
-      type: number
-      description: ''
-- name: getLeft()
-  uid: ExcelScript!ExcelScript.ChartLegendEntry#getLeft:member(1)
-  package: ExcelScript!
-  fullName: getLeft()
-  summary: グラフの凡例エントリの左の値を指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLeft(): number;'
-    return:
-      type: number
-      description: ''
-- name: getTop()
-  uid: ExcelScript!ExcelScript.ChartLegendEntry#getTop:member(1)
-  package: ExcelScript!
-  fullName: getTop()
-  summary: グラフ凡例エントリの上部を指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTop(): number;'
-    return:
-      type: number
-      description: ''
-- name: getVisible()
-  uid: ExcelScript!ExcelScript.ChartLegendEntry#getVisible:member(1)
-  package: ExcelScript!
-  fullName: getVisible()
-  summary: グラフの凡例エントリの表示を表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getVisible(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getWidth()
-  uid: ExcelScript!ExcelScript.ChartLegendEntry#getWidth:member(1)
-  package: ExcelScript!
-  fullName: getWidth()
-  summary: グラフ Legend の凡例エントリの幅を表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getWidth(): number;'
-    return:
-      type: number
-      description: ''
-- name: setVisible(visible)
-  uid: ExcelScript!ExcelScript.ChartLegendEntry#setVisible:member(1)
-  package: ExcelScript!
-  fullName: setVisible(visible)
-  summary: グラフの凡例エントリの表示を表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setVisible(visible: boolean): void;'
-    parameters:
-    - id: visible
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: d98e7450d1c9d3c24a5b91dd6b32f77ae37fd31f
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51606566"
+  - name: getHeight()
+    uid: 'ExcelScript!ExcelScript.ChartLegendEntry#getHeight:member(1)'
+    package: ExcelScript!
+    fullName: getHeight()
+    summary: グラフの凡例の凡例エントリの高さを指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getHeight(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getIndex()
+    uid: 'ExcelScript!ExcelScript.ChartLegendEntry#getIndex:member(1)'
+    package: ExcelScript!
+    fullName: getIndex()
+    summary: グラフ凡例の凡例エントリのインデックスを指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getIndex(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getLeft()
+    uid: 'ExcelScript!ExcelScript.ChartLegendEntry#getLeft:member(1)'
+    package: ExcelScript!
+    fullName: getLeft()
+    summary: グラフの凡例エントリの左の値を指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLeft(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getTop()
+    uid: 'ExcelScript!ExcelScript.ChartLegendEntry#getTop:member(1)'
+    package: ExcelScript!
+    fullName: getTop()
+    summary: グラフ凡例エントリの上部を指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTop(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getVisible()
+    uid: 'ExcelScript!ExcelScript.ChartLegendEntry#getVisible:member(1)'
+    package: ExcelScript!
+    fullName: getVisible()
+    summary: グラフの凡例エントリの表示を表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getVisible(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getWidth()
+    uid: 'ExcelScript!ExcelScript.ChartLegendEntry#getWidth:member(1)'
+    package: ExcelScript!
+    fullName: getWidth()
+    summary: グラフ Legend の凡例エントリの幅を表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getWidth(): number;'
+      return:
+        type: number
+        description: ''
+  - name: setVisible(visible)
+    uid: 'ExcelScript!ExcelScript.ChartLegendEntry#setVisible:member(1)'
+    package: ExcelScript!
+    fullName: setVisible(visible)
+    summary: グラフの凡例エントリの表示を表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setVisible(visible: boolean): void;'
+      parameters:
+        - id: visible
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''

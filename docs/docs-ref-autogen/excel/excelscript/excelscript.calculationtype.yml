@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.CalculationType
-uid: ExcelScript!ExcelScript.CalculationType:enum
+uid: 'ExcelScript!ExcelScript.CalculationType:enum'
 package: ExcelScript!
 fullName: ExcelScript.CalculationType
 summary: ''
@@ -8,22 +8,15 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: full
-  uid: ExcelScript!ExcelScript.CalculationType.full:member
-  package: ExcelScript!
-  summary: これにより、すべてのセルがダーティとしてマークされ、再計算されます。
-- name: fullRebuild
-  uid: ExcelScript!ExcelScript.CalculationType.fullRebuild:member
-  package: ExcelScript!
-  summary: これにより、完全な依存関係チェーンが再構築され、すべてのセルがダーティとしてマークされ、再計算されます。
-- name: recalculate
-  uid: ExcelScript!ExcelScript.CalculationType.recalculate:member
-  package: ExcelScript!
-  summary: Excel によってダーティのマークが付けられたすべてのセル (揮発性データと変更されたデータの参照先、およびプログラムによりダーティのマークが付けられたセル) を再計算します。
-metadata:
-  ms.openlocfilehash: 8ea006b639ccac5ebe3f44e5c3cf960973b79665
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913979"
+  - name: full
+    uid: 'ExcelScript!ExcelScript.CalculationType.full:member'
+    package: ExcelScript!
+    summary: これにより、すべてのセルがダーティとしてマークされ、再計算されます。
+  - name: fullRebuild
+    uid: 'ExcelScript!ExcelScript.CalculationType.fullRebuild:member'
+    package: ExcelScript!
+    summary: これにより、完全な依存関係チェーンが再構築され、すべてのセルがダーティとしてマークされ、再計算されます。
+  - name: recalculate
+    uid: 'ExcelScript!ExcelScript.CalculationType.recalculate:member'
+    package: ExcelScript!
+    summary: Excel によってダーティのマークが付けられたすべてのセル (揮発性データと変更されたデータの参照先、およびプログラムによりダーティのマークが付けられたセル) を再計算します。

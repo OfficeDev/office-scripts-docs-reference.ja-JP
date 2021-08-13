@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.SubtotalLocationType
-uid: ExcelScript!ExcelScript.SubtotalLocationType:enum
+uid: 'ExcelScript!ExcelScript.SubtotalLocationType:enum'
 package: ExcelScript!
 fullName: ExcelScript.SubtotalLocationType
 summary: ''
@@ -8,22 +8,15 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: atBottom
-  uid: ExcelScript!ExcelScript.SubtotalLocationType.atBottom:member
-  package: ExcelScript!
-  summary: 小計は下にあります。
-- name: atTop
-  uid: ExcelScript!ExcelScript.SubtotalLocationType.atTop:member
-  package: ExcelScript!
-  summary: 小計は上部にあります。
-- name: off
-  uid: ExcelScript!ExcelScript.SubtotalLocationType.off:member
-  package: ExcelScript!
-  summary: 小計がオフになっています。
-metadata:
-  ms.openlocfilehash: abe7dbfb29d798447df91fbfc669de1123dc3f84
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420336"
+  - name: atBottom
+    uid: 'ExcelScript!ExcelScript.SubtotalLocationType.atBottom:member'
+    package: ExcelScript!
+    summary: 小計は下部に表示されます。
+  - name: atTop
+    uid: 'ExcelScript!ExcelScript.SubtotalLocationType.atTop:member'
+    package: ExcelScript!
+    summary: 小計は上部に表示されます。
+  - name: 'off'
+    uid: 'ExcelScript!ExcelScript.SubtotalLocationType.off:member'
+    package: ExcelScript!
+    summary: 小計はオフです。

@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ProtectionSelectionMode
-uid: ExcelScript!ExcelScript.ProtectionSelectionMode:enum
+uid: 'ExcelScript!ExcelScript.ProtectionSelectionMode:enum'
 package: ExcelScript!
 fullName: ExcelScript.ProtectionSelectionMode
 summary: ''
@@ -8,22 +8,15 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: none
-  uid: ExcelScript!ExcelScript.ProtectionSelectionMode.none:member
-  package: ExcelScript!
-  summary: セルの選択は許可されません。
-- name: normal
-  uid: ExcelScript!ExcelScript.ProtectionSelectionMode.normal:member
-  package: ExcelScript!
-  summary: すべてのセルに対して選択が許可されます。
-- name: unlocked
-  uid: ExcelScript!ExcelScript.ProtectionSelectionMode.unlocked:member
-  package: ExcelScript!
-  summary: 選択は、ロックされていないセルに対してのみ許可されます。
-metadata:
-  ms.openlocfilehash: 7785335f2a75e072de6401873f37f801c85feddf
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51606204"
+  - name: none
+    uid: 'ExcelScript!ExcelScript.ProtectionSelectionMode.none:member'
+    package: ExcelScript!
+    summary: セルの選択は許可されません。
+  - name: normal
+    uid: 'ExcelScript!ExcelScript.ProtectionSelectionMode.normal:member'
+    package: ExcelScript!
+    summary: すべてのセルに対して選択が許可されます。
+  - name: unlocked
+    uid: 'ExcelScript!ExcelScript.ProtectionSelectionMode.unlocked:member'
+    package: ExcelScript!
+    summary: 選択は、ロックされていないセルに対してのみ許可されます。

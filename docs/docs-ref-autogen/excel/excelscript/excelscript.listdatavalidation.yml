@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ListDataValidation
-uid: ExcelScript!ExcelScript.ListDataValidation:interface
+uid: 'ExcelScript!ExcelScript.ListDataValidation:interface'
 package: ExcelScript!
 fullName: ExcelScript.ListDataValidation
 summary: リスト データの検証条件を表します。
@@ -9,34 +9,27 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: inCellDropDown
-  uid: ExcelScript!ExcelScript.ListDataValidation#inCellDropDown:member
-  package: ExcelScript!
-  fullName: inCellDropDown
-  summary: セル ドロップダウンにリストを表示するかどうかを指定します。 既定値は次の値です。 `true`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'inCellDropDown: boolean;'
-    return:
-      type: boolean
-- name: source
-  uid: ExcelScript!ExcelScript.ListDataValidation#source:member
-  package: ExcelScript!
-  fullName: source
-  summary: データ検証のリストのソース 値を設定すると、値をオブジェクトとして渡したり、コンマで区切られた数値、ブール値、または日付を含む文字列 `Range` を渡したりできます。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'source: string | Range;'
-    return:
-      type: string | <xref uid="ExcelScript!ExcelScript.Range:interface" />
-metadata:
-  ms.openlocfilehash: fdc280019cb5828cac3464e444d69ce01a971b16
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914353"
+  - name: inCellDropDown
+    uid: 'ExcelScript!ExcelScript.ListDataValidation#inCellDropDown:member'
+    package: ExcelScript!
+    fullName: inCellDropDown
+    summary: セル ドロップダウンにリストを表示するかどうかを指定します。 既定値は次の値です。 `true`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'inCellDropDown: boolean;'
+      return:
+        type: boolean
+  - name: source
+    uid: 'ExcelScript!ExcelScript.ListDataValidation#source:member'
+    package: ExcelScript!
+    fullName: source
+    summary: データ検証のリストのソース 値を設定すると、値をオブジェクトとして渡したり、コンマで区切られた数値、ブール値、または日付を含む文字列 `Range` を渡したりできます。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'source: string | Range;'
+      return:
+        type: 'string | <xref uid="ExcelScript!ExcelScript.Range:interface" />'

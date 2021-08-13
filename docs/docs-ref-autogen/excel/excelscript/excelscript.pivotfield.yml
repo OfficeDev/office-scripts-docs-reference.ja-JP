@@ -1,273 +1,268 @@
 ### YamlMime:TSType
 name: ExcelScript.PivotField
-uid: ExcelScript!ExcelScript.PivotField:interface
+uid: 'ExcelScript!ExcelScript.PivotField:interface'
 package: ExcelScript!
 fullName: ExcelScript.PivotField
-summary: Excel ピボットフィールドを表します。
+summary: ピボットフィールドのExcelします。
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: applyFilter(filter)
-  uid: ExcelScript!ExcelScript.PivotField#applyFilter:member(1)
-  package: ExcelScript!
-  fullName: applyFilter(filter)
-  summary: 1 つ以上のフィールドの現在のピボットフィルターを設定し、フィールドに適用します。 指定されたフィルターが無効であるか、適用できない場合は、例外がスローされます。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'applyFilter(filter: PivotFilters): void;'
-    parameters:
-    - id: filter
-      description: 構成済みの特定の PivotFilter、または複数の構成済みフィルターを含む PivotFilters インターフェイス。
-      type: <xref uid="ExcelScript!ExcelScript.PivotFilters:interface" />
-    return:
-      type: void
-      description: ''
-- name: clearAllFilters()
-  uid: ExcelScript!ExcelScript.PivotField#clearAllFilters:member(1)
-  package: ExcelScript!
-  fullName: clearAllFilters()
-  summary: フィールドのすべてのフィルターからすべての条件をクリアします。 これにより、フィールドでアクティブなフィルター処理が削除されます。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'clearAllFilters(): void;'
-    return:
-      type: void
-      description: ''
-- name: clearFilter(filterType)
-  uid: ExcelScript!ExcelScript.PivotField#clearFilter:member(1)
-  package: ExcelScript!
-  fullName: clearFilter(filterType)
-  summary: 指定した種類のフィールドのフィルターからすべての既存の条件をクリアします (現在適用されている場合)。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'clearFilter(filterType: PivotFilterType): void;'
-    parameters:
-    - id: filterType
-      description: すべての条件をクリアするフィールドのフィルターの種類。
-      type: <xref uid="ExcelScript!ExcelScript.PivotFilterType:enum" />
-    return:
-      type: void
-      description: ''
-- name: getFilters()
-  uid: ExcelScript!ExcelScript.PivotField#getFilters:member(1)
-  package: ExcelScript!
-  fullName: getFilters()
-  summary: フィールドに現在適用されているフィルターを取得します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFilters(): PivotFilters;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.PivotFilters:interface" />
-      description: ''
-- name: getId()
-  uid: ExcelScript!ExcelScript.PivotField#getId:member(1)
-  package: ExcelScript!
-  fullName: getId()
-  summary: PivotField の ID。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getId(): string;'
-    return:
-      type: string
-      description: ''
-- name: getItems()
-  uid: ExcelScript!ExcelScript.PivotField#getItems:member(1)
-  package: ExcelScript!
-  fullName: getItems()
-  summary: PivotField に関連付けられているピボット フィールドを返します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getItems(): PivotItem[];'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.PivotItem:interface" />[]
-      description: ''
-- name: getName()
-  uid: ExcelScript!ExcelScript.PivotField#getName:member(1)
-  package: ExcelScript!
-  fullName: getName()
-  summary: PivotField の名前。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getName(): string;'
-    return:
-      type: string
-      description: ''
-- name: getPivotItem(name)
-  uid: ExcelScript!ExcelScript.PivotField#getPivotItem:member(1)
-  package: ExcelScript!
-  fullName: getPivotItem(name)
-  summary: 名前で PivotItem を取得します。 PivotItem が存在しない場合、この関数はプロパティを次に設定した `isNullObject` オブジェクトを返します。 `true`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getPivotItem(name: string): PivotItem | undefined;'
-    parameters:
-    - id: name
-      description: 取得する PivotItem の名前。
-      type: string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.PivotItem:interface" /> | undefined
-      description: ''
-- name: getShowAllItems()
-  uid: ExcelScript!ExcelScript.PivotField#getShowAllItems:member(1)
-  package: ExcelScript!
-  fullName: getShowAllItems()
-  summary: PivotField のすべての項目を表示するかどうかを指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowAllItems(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getSubtotals()
-  uid: ExcelScript!ExcelScript.PivotField#getSubtotals:member(1)
-  package: ExcelScript!
-  fullName: getSubtotals()
-  summary: PivotField の小計。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getSubtotals(): Subtotals;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Subtotals:interface" />
-      description: ''
-- name: isFiltered(filterType)
-  uid: ExcelScript!ExcelScript.PivotField#isFiltered:member(1)
-  package: ExcelScript!
-  fullName: isFiltered(filterType)
-  summary: フィールドに適用されたフィルターが何かあるか確認します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'isFiltered(filterType?: PivotFilterType): boolean;'
-    parameters:
-    - id: filterType
-      description: チェックするフィルターの種類。 型が指定されない場合、このメソッドはフィルターが適用されるのを確認します。
-      type: <xref uid="ExcelScript!ExcelScript.PivotFilterType:enum" />
-    return:
-      type: boolean
-      description: ''
-- name: setName(name)
-  uid: ExcelScript!ExcelScript.PivotField#setName:member(1)
-  package: ExcelScript!
-  fullName: setName(name)
-  summary: PivotField の名前。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setName(name: string): void;'
-    parameters:
-    - id: name
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setShowAllItems(showAllItems)
-  uid: ExcelScript!ExcelScript.PivotField#setShowAllItems:member(1)
-  package: ExcelScript!
-  fullName: setShowAllItems(showAllItems)
-  summary: PivotField のすべての項目を表示するかどうかを指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowAllItems(showAllItems: boolean): void;'
-    parameters:
-    - id: showAllItems
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setSubtotals(subtotals)
-  uid: ExcelScript!ExcelScript.PivotField#setSubtotals:member(1)
-  package: ExcelScript!
-  fullName: setSubtotals(subtotals)
-  summary: PivotField の小計。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setSubtotals(subtotals: Subtotals): void;'
-    parameters:
-    - id: subtotals
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.Subtotals:interface" />
-    return:
-      type: void
-      description: ''
-- name: sortByLabels(sortBy)
-  uid: ExcelScript!ExcelScript.PivotField#sortByLabels:member(1)
-  package: ExcelScript!
-  fullName: sortByLabels(sortBy)
-  summary: PivotField を並べ替えます。 DataPivotHierarchy を指定すると、そのピボット階層に基づいて並べ替えが適用されます。指定しない場合、ピボット フィールド自体が並べ替えの基準になります。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'sortByLabels(sortBy: SortBy): void;'
-    parameters:
-    - id: sortBy
-      description: 並べ替えを昇順または降順で行う場合に指定します。
-      type: <xref uid="ExcelScript!ExcelScript.SortBy:enum" />
-    return:
-      type: void
-      description: ''
-- name: sortByValues(sortBy, valuesHierarchy, pivotItemScope)
-  uid: ExcelScript!ExcelScript.PivotField#sortByValues:member(1)
-  package: ExcelScript!
-  fullName: sortByValues(sortBy, valuesHierarchy, pivotItemScope)
-  summary: 与えられた範囲で、指定された値に基づいて PivotField を並べ替えます。 スコープは、同じ DataPivotHierarchy から複数の値がある場合に、並べ替えに使用する特定の値を定義します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: >-
-      sortByValues(
-                  sortBy: SortBy,
-                  valuesHierarchy: DataPivotHierarchy,
-                  pivotItemScope?: Array<PivotItem | string>
-              ): void;
-    parameters:
-    - id: sortBy
-      description: 並べ替えを昇順または降順で行う場合に指定します。
-      type: <xref uid="ExcelScript!ExcelScript.SortBy:enum" />
-    - id: valuesHierarchy
-      description: 並べ替えに使用するデータ軸の値階層を指定します。
-      type: <xref uid="ExcelScript!ExcelScript.DataPivotHierarchy:interface" />
-    - id: pivotItemScope
-      description: 並べ替えの範囲に使用する必要があるアイテム。 これらは、並べ替える行または列を表すアイテムです。 PivotItem の代わりに文字列を使用する場合、その文字列は PivotItem の ID を表します。 並べ替える軸にデータ階層以外の項目がない場合は、空にできます。
-      type: "Array&lt;<xref uid=\"ExcelScript!ExcelScript.PivotItem:interface\" /> | string&gt;\n        "
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 093b593da92ac24585132f9c9b2da2dea2dcb1db
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913562"
+  - name: applyFilter(filter)
+    uid: 'ExcelScript!ExcelScript.PivotField#applyFilter:member(1)'
+    package: ExcelScript!
+    fullName: applyFilter(filter)
+    summary: 1 つ以上のフィールドの現在のピボットフィルターを設定し、フィールドに適用します。 指定されたフィルターが無効であるか、適用できない場合は、例外がスローされます。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'applyFilter(filter: PivotFilters): void;'
+      parameters:
+        - id: filter
+          description: 構成済みの特定の PivotFilter、または複数の構成済みフィルターを含む PivotFilters インターフェイス。
+          type: '<xref uid="ExcelScript!ExcelScript.PivotFilters:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: clearAllFilters()
+    uid: 'ExcelScript!ExcelScript.PivotField#clearAllFilters:member(1)'
+    package: ExcelScript!
+    fullName: clearAllFilters()
+    summary: フィールドのすべてのフィルターからすべての条件をクリアします。 これにより、フィールドでアクティブなフィルター処理が削除されます。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clearAllFilters(): void;'
+      return:
+        type: void
+        description: ''
+  - name: clearFilter(filterType)
+    uid: 'ExcelScript!ExcelScript.PivotField#clearFilter:member(1)'
+    package: ExcelScript!
+    fullName: clearFilter(filterType)
+    summary: 指定した種類のフィールドのフィルターからすべての既存の条件をクリアします (現在適用されている場合)。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clearFilter(filterType: PivotFilterType): void;'
+      parameters:
+        - id: filterType
+          description: すべての条件をクリアするフィールドのフィルターの種類。
+          type: '<xref uid="ExcelScript!ExcelScript.PivotFilterType:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: getFilters()
+    uid: 'ExcelScript!ExcelScript.PivotField#getFilters:member(1)'
+    package: ExcelScript!
+    fullName: getFilters()
+    summary: フィールドに現在適用されているフィルターを取得します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFilters(): PivotFilters;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.PivotFilters:interface" />'
+        description: ''
+  - name: getId()
+    uid: 'ExcelScript!ExcelScript.PivotField#getId:member(1)'
+    package: ExcelScript!
+    fullName: getId()
+    summary: PivotField の ID。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getId(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getItems()
+    uid: 'ExcelScript!ExcelScript.PivotField#getItems:member(1)'
+    package: ExcelScript!
+    fullName: getItems()
+    summary: PivotField に関連付けられているピボット フィールドを返します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getItems(): PivotItem[];'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.PivotItem:interface" />[]'
+        description: ''
+  - name: getName()
+    uid: 'ExcelScript!ExcelScript.PivotField#getName:member(1)'
+    package: ExcelScript!
+    fullName: getName()
+    summary: PivotField の名前。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getPivotItem(name)
+    uid: 'ExcelScript!ExcelScript.PivotField#getPivotItem:member(1)'
+    package: ExcelScript!
+    fullName: getPivotItem(name)
+    summary: 名前で PivotItem を取得します。 PivotItem が存在しない場合、この関数はプロパティを次に設定した `isNullObject` オブジェクトを返します。 `true`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getPivotItem(name: string): PivotItem | undefined;'
+      parameters:
+        - id: name
+          description: 取得する PivotItem の名前。
+          type: string
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.PivotItem:interface" /> | undefined'
+        description: ''
+  - name: getShowAllItems()
+    uid: 'ExcelScript!ExcelScript.PivotField#getShowAllItems:member(1)'
+    package: ExcelScript!
+    fullName: getShowAllItems()
+    summary: PivotField のすべての項目を表示するかどうかを指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowAllItems(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getSubtotals()
+    uid: 'ExcelScript!ExcelScript.PivotField#getSubtotals:member(1)'
+    package: ExcelScript!
+    fullName: getSubtotals()
+    summary: PivotField の小計。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSubtotals(): Subtotals;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Subtotals:interface" />'
+        description: ''
+  - name: isFiltered(filterType)
+    uid: 'ExcelScript!ExcelScript.PivotField#isFiltered:member(1)'
+    package: ExcelScript!
+    fullName: isFiltered(filterType)
+    summary: フィールドに適用されたフィルターが何かあるか確認します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isFiltered(filterType?: PivotFilterType): boolean;'
+      parameters:
+        - id: filterType
+          description: チェックするフィルターの種類。 型が指定されない場合、このメソッドはフィルターが適用されるのを確認します。
+          type: '<xref uid="ExcelScript!ExcelScript.PivotFilterType:enum" />'
+      return:
+        type: boolean
+        description: ''
+  - name: setName(name)
+    uid: 'ExcelScript!ExcelScript.PivotField#setName:member(1)'
+    package: ExcelScript!
+    fullName: setName(name)
+    summary: PivotField の名前。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setName(name: string): void;'
+      parameters:
+        - id: name
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setShowAllItems(showAllItems)
+    uid: 'ExcelScript!ExcelScript.PivotField#setShowAllItems:member(1)'
+    package: ExcelScript!
+    fullName: setShowAllItems(showAllItems)
+    summary: PivotField のすべての項目を表示するかどうかを指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowAllItems(showAllItems: boolean): void;'
+      parameters:
+        - id: showAllItems
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setSubtotals(subtotals)
+    uid: 'ExcelScript!ExcelScript.PivotField#setSubtotals:member(1)'
+    package: ExcelScript!
+    fullName: setSubtotals(subtotals)
+    summary: PivotField の小計。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setSubtotals(subtotals: Subtotals): void;'
+      parameters:
+        - id: subtotals
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.Subtotals:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: sortByLabels(sortBy)
+    uid: 'ExcelScript!ExcelScript.PivotField#sortByLabels:member(1)'
+    package: ExcelScript!
+    fullName: sortByLabels(sortBy)
+    summary: PivotField を並べ替えます。 DataPivotHierarchy を指定すると、そのピボット階層に基づいて並べ替えが適用されます。指定しない場合、ピボット フィールド自体が並べ替えの基準になります。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sortByLabels(sortBy: SortBy): void;'
+      parameters:
+        - id: sortBy
+          description: 並べ替えを昇順または降順で行う場合に指定します。
+          type: '<xref uid="ExcelScript!ExcelScript.SortBy:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: 'sortByValues(sortBy, valuesHierarchy, pivotItemScope)'
+    uid: 'ExcelScript!ExcelScript.PivotField#sortByValues:member(1)'
+    package: ExcelScript!
+    fullName: 'sortByValues(sortBy, valuesHierarchy, pivotItemScope)'
+    summary: 与えられた範囲で、指定された値に基づいて PivotField を並べ替えます。 スコープは、同じ DataPivotHierarchy から複数の値がある場合に、並べ替えに使用する特定の値を定義します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        sortByValues(
+                    sortBy: SortBy,
+                    valuesHierarchy: DataPivotHierarchy,
+                    pivotItemScope?: Array<PivotItem | string>
+                ): void;
+      parameters:
+        - id: sortBy
+          description: 並べ替えを昇順または降順で行う場合に指定します。
+          type: '<xref uid="ExcelScript!ExcelScript.SortBy:enum" />'
+        - id: valuesHierarchy
+          description: 並べ替えに使用するデータ軸の値階層を指定します。
+          type: '<xref uid="ExcelScript!ExcelScript.DataPivotHierarchy:interface" />'
+        - id: pivotItemScope
+          description: 並べ替えの範囲に使用する必要があるアイテム。 これらは、並べ替える行または列を表すアイテムです。 PivotItem の代わりに文字列を使用する場合、その文字列は PivotItem の ID を表します。 並べ替える軸にデータ階層以外の項目がない場合は、空にできます。
+          type: |-
+            Array&lt;<xref uid="ExcelScript!ExcelScript.PivotItem:interface" /> | string&gt;
+                    
+      return:
+        type: void
+        description: ''

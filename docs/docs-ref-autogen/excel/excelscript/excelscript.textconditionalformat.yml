@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.TextConditionalFormat
-uid: ExcelScript!ExcelScript.TextConditionalFormat:interface
+uid: 'ExcelScript!ExcelScript.TextConditionalFormat:interface'
 package: ExcelScript!
 fullName: ExcelScript.TextConditionalFormat
 summary: 特定のテキストの条件付き書式を表します。
@@ -9,53 +9,46 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getFormat()
-  uid: ExcelScript!ExcelScript.TextConditionalFormat#getFormat:member(1)
-  package: ExcelScript!
-  fullName: getFormat()
-  summary: 条件付き書式のフォント、塗りつぶし、罫線、その他のプロパティをカプセル化する format オブジェクトを返します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFormat(): ConditionalRangeFormat;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeFormat:interface" />
-      description: ''
-- name: getRule()
-  uid: ExcelScript!ExcelScript.TextConditionalFormat#getRule:member(1)
-  package: ExcelScript!
-  fullName: getRule()
-  summary: 条件付き書式のルール。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getRule(): ConditionalTextComparisonRule;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalTextComparisonRule:interface" />
-      description: ''
-- name: setRule(rule)
-  uid: ExcelScript!ExcelScript.TextConditionalFormat#setRule:member(1)
-  package: ExcelScript!
-  fullName: setRule(rule)
-  summary: 条件付き書式のルール。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setRule(rule: ConditionalTextComparisonRule): void;'
-    parameters:
-    - id: rule
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalTextComparisonRule:interface" />
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: e22b27edda001744c08f8e9b5a99b78b187c6c0c
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914622"
+  - name: getFormat()
+    uid: 'ExcelScript!ExcelScript.TextConditionalFormat#getFormat:member(1)'
+    package: ExcelScript!
+    fullName: getFormat()
+    summary: 条件付き書式のフォント、塗りつぶし、罫線、その他のプロパティをカプセル化する format オブジェクトを返します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFormat(): ConditionalRangeFormat;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeFormat:interface" />'
+        description: ''
+  - name: getRule()
+    uid: 'ExcelScript!ExcelScript.TextConditionalFormat#getRule:member(1)'
+    package: ExcelScript!
+    fullName: getRule()
+    summary: 条件付き書式のルール。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRule(): ConditionalTextComparisonRule;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalTextComparisonRule:interface" />'
+        description: ''
+  - name: setRule(rule)
+    uid: 'ExcelScript!ExcelScript.TextConditionalFormat#setRule:member(1)'
+    package: ExcelScript!
+    fullName: setRule(rule)
+    summary: 条件付き書式のルール。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setRule(rule: ConditionalTextComparisonRule): void;'
+      parameters:
+        - id: rule
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ConditionalTextComparisonRule:interface" />'
+      return:
+        type: void
+        description: ''

@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ChartTrendlineFormat
-uid: ExcelScript!ExcelScript.ChartTrendlineFormat:interface
+uid: 'ExcelScript!ExcelScript.ChartTrendlineFormat:interface'
 package: ExcelScript!
 fullName: ExcelScript.ChartTrendlineFormat
 summary: グラフの傾向線の書式プロパティを表します。
@@ -9,23 +9,16 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getLine()
-  uid: ExcelScript!ExcelScript.ChartTrendlineFormat#getLine:member(1)
-  package: ExcelScript!
-  fullName: getLine()
-  summary: グラフの線の書式設定を表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLine(): ChartLineFormat;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartLineFormat:interface" />
-      description: ''
-metadata:
-  ms.openlocfilehash: 1a5fb5aee71a023e4ec4ffb50e0311206eaebfaf
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51606809"
+  - name: getLine()
+    uid: 'ExcelScript!ExcelScript.ChartTrendlineFormat#getLine:member(1)'
+    package: ExcelScript!
+    fullName: getLine()
+    summary: グラフの線の書式設定を表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLine(): ChartLineFormat;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartLineFormat:interface" />'
+        description: ''

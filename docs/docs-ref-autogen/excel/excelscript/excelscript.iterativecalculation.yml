@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.IterativeCalculation
-uid: ExcelScript!ExcelScript.IterativeCalculation:interface
+uid: 'ExcelScript!ExcelScript.IterativeCalculation:interface'
 package: ExcelScript!
 fullName: ExcelScript.IterativeCalculation
 summary: 反復計算の設定を表します。
@@ -9,100 +9,93 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getEnabled()
-  uid: ExcelScript!ExcelScript.IterativeCalculation#getEnabled:member(1)
-  package: ExcelScript!
-  fullName: getEnabled()
-  summary: Excel で反復計算を使用して循環参照を解決する場合、true となります。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getEnabled(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getMaxChange()
-  uid: ExcelScript!ExcelScript.IterativeCalculation#getMaxChange:member(1)
-  package: ExcelScript!
-  fullName: getMaxChange()
-  summary: Excel が循環参照を解決する場合、各反復間の最大変更量を指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getMaxChange(): number;'
-    return:
-      type: number
-      description: ''
-- name: getMaxIteration()
-  uid: ExcelScript!ExcelScript.IterativeCalculation#getMaxIteration:member(1)
-  package: ExcelScript!
-  fullName: getMaxIteration()
-  summary: 循環参照の解決に Excel で使用できる反復回数の最大数を指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getMaxIteration(): number;'
-    return:
-      type: number
-      description: ''
-- name: setEnabled(enabled)
-  uid: ExcelScript!ExcelScript.IterativeCalculation#setEnabled:member(1)
-  package: ExcelScript!
-  fullName: setEnabled(enabled)
-  summary: Excel で反復計算を使用して循環参照を解決する場合、true となります。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setEnabled(enabled: boolean): void;'
-    parameters:
-    - id: enabled
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setMaxChange(maxChange)
-  uid: ExcelScript!ExcelScript.IterativeCalculation#setMaxChange:member(1)
-  package: ExcelScript!
-  fullName: setMaxChange(maxChange)
-  summary: Excel が循環参照を解決する場合、各反復間の最大変更量を指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setMaxChange(maxChange: number): void;'
-    parameters:
-    - id: maxChange
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setMaxIteration(maxIteration)
-  uid: ExcelScript!ExcelScript.IterativeCalculation#setMaxIteration:member(1)
-  package: ExcelScript!
-  fullName: setMaxIteration(maxIteration)
-  summary: 循環参照の解決に Excel で使用できる反復回数の最大数を指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setMaxIteration(maxIteration: number): void;'
-    parameters:
-    - id: maxIteration
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 9cd7e98544d85bb18748059ba1ab5c8d382aab7f
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913604"
+  - name: getEnabled()
+    uid: 'ExcelScript!ExcelScript.IterativeCalculation#getEnabled:member(1)'
+    package: ExcelScript!
+    fullName: getEnabled()
+    summary: Excel で反復計算を使用して循環参照を解決する場合、true となります。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getEnabled(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getMaxChange()
+    uid: 'ExcelScript!ExcelScript.IterativeCalculation#getMaxChange:member(1)'
+    package: ExcelScript!
+    fullName: getMaxChange()
+    summary: 循環参照を解決するために、各反復間のExcelを指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getMaxChange(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getMaxIteration()
+    uid: 'ExcelScript!ExcelScript.IterativeCalculation#getMaxIteration:member(1)'
+    package: ExcelScript!
+    fullName: getMaxIteration()
+    summary: 循環参照の解決に使用Excel繰り返しの最大数を指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getMaxIteration(): number;'
+      return:
+        type: number
+        description: ''
+  - name: setEnabled(enabled)
+    uid: 'ExcelScript!ExcelScript.IterativeCalculation#setEnabled:member(1)'
+    package: ExcelScript!
+    fullName: setEnabled(enabled)
+    summary: Excel で反復計算を使用して循環参照を解決する場合、true となります。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setEnabled(enabled: boolean): void;'
+      parameters:
+        - id: enabled
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setMaxChange(maxChange)
+    uid: 'ExcelScript!ExcelScript.IterativeCalculation#setMaxChange:member(1)'
+    package: ExcelScript!
+    fullName: setMaxChange(maxChange)
+    summary: 循環参照を解決するために、各反復間のExcelを指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setMaxChange(maxChange: number): void;'
+      parameters:
+        - id: maxChange
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setMaxIteration(maxIteration)
+    uid: 'ExcelScript!ExcelScript.IterativeCalculation#setMaxIteration:member(1)'
+    package: ExcelScript!
+    fullName: setMaxIteration(maxIteration)
+    summary: 循環参照の解決に使用Excel繰り返しの最大数を指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setMaxIteration(maxIteration: number): void;'
+      parameters:
+        - id: maxIteration
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''

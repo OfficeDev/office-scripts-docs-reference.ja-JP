@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ChartFont
-uid: ExcelScript!ExcelScript.ChartFont:interface
+uid: 'ExcelScript!ExcelScript.ChartFont:interface'
 package: ExcelScript!
 fullName: ExcelScript.ChartFont
 summary: このオブジェクトは、グラフ オブジェクトのフォント属性 (フォント名、フォント サイズ、色など) を表します。
@@ -9,190 +9,183 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getBold()
-  uid: ExcelScript!ExcelScript.ChartFont#getBold:member(1)
-  package: ExcelScript!
-  fullName: getBold()
-  summary: フォントの太字の状態を表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getBold(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getColor()
-  uid: ExcelScript!ExcelScript.ChartFont#getColor:member(1)
-  package: ExcelScript!
-  fullName: getColor()
-  summary: テキストの色の HTML カラー コード表現 \# (FF0000 は赤を表すなど)。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getColor(): string;'
-    return:
-      type: string
-      description: ''
-- name: getItalic()
-  uid: ExcelScript!ExcelScript.ChartFont#getItalic:member(1)
-  package: ExcelScript!
-  fullName: getItalic()
-  summary: フォントの斜体の状態を表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getItalic(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getName()
-  uid: ExcelScript!ExcelScript.ChartFont#getName:member(1)
-  package: ExcelScript!
-  fullName: getName()
-  summary: フォント名 ("Calibri"など)
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getName(): string;'
-    return:
-      type: string
-      description: ''
-- name: getSize()
-  uid: ExcelScript!ExcelScript.ChartFont#getSize:member(1)
-  package: ExcelScript!
-  fullName: getSize()
-  summary: 'フォントのサイズ (例: 11)'
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getSize(): number;'
-    return:
-      type: number
-      description: ''
-- name: getUnderline()
-  uid: ExcelScript!ExcelScript.ChartFont#getUnderline:member(1)
-  package: ExcelScript!
-  fullName: getUnderline()
-  summary: フォントに適用する下線の種類。 詳細は「`ExcelScript.ChartUnderlineStyle`」をご覧ください。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getUnderline(): ChartUnderlineStyle;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartUnderlineStyle:enum" />
-      description: ''
-- name: setBold(bold)
-  uid: ExcelScript!ExcelScript.ChartFont#setBold:member(1)
-  package: ExcelScript!
-  fullName: setBold(bold)
-  summary: フォントの太字の状態を表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setBold(bold: boolean): void;'
-    parameters:
-    - id: bold
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setColor(color)
-  uid: ExcelScript!ExcelScript.ChartFont#setColor:member(1)
-  package: ExcelScript!
-  fullName: setColor(color)
-  summary: テキストの色の HTML カラー コード表現 \# (FF0000 は赤を表すなど)。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setColor(color: string): void;'
-    parameters:
-    - id: color
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setItalic(italic)
-  uid: ExcelScript!ExcelScript.ChartFont#setItalic:member(1)
-  package: ExcelScript!
-  fullName: setItalic(italic)
-  summary: フォントの斜体の状態を表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setItalic(italic: boolean): void;'
-    parameters:
-    - id: italic
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setName(name)
-  uid: ExcelScript!ExcelScript.ChartFont#setName:member(1)
-  package: ExcelScript!
-  fullName: setName(name)
-  summary: フォント名 ("Calibri"など)
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setName(name: string): void;'
-    parameters:
-    - id: name
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setSize(size)
-  uid: ExcelScript!ExcelScript.ChartFont#setSize:member(1)
-  package: ExcelScript!
-  fullName: setSize(size)
-  summary: 'フォントのサイズ (例: 11)'
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setSize(size: number): void;'
-    parameters:
-    - id: size
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setUnderline(underline)
-  uid: ExcelScript!ExcelScript.ChartFont#setUnderline:member(1)
-  package: ExcelScript!
-  fullName: setUnderline(underline)
-  summary: フォントに適用する下線の種類。 詳細は「`ExcelScript.ChartUnderlineStyle`」をご覧ください。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setUnderline(underline: ChartUnderlineStyle): void;'
-    parameters:
-    - id: underline
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ChartUnderlineStyle:enum" />
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 079bf5328dd4fad8c853b5d5459360f8cf1daa5c
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914091"
+  - name: getBold()
+    uid: 'ExcelScript!ExcelScript.ChartFont#getBold:member(1)'
+    package: ExcelScript!
+    fullName: getBold()
+    summary: フォントの太字の状態を表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getBold(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getColor()
+    uid: 'ExcelScript!ExcelScript.ChartFont#getColor:member(1)'
+    package: ExcelScript!
+    fullName: getColor()
+    summary: テキストの色の HTML カラー コード表現 \# (FF0000 は赤を表すなど)。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getColor(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getItalic()
+    uid: 'ExcelScript!ExcelScript.ChartFont#getItalic:member(1)'
+    package: ExcelScript!
+    fullName: getItalic()
+    summary: フォントの斜体の状態を表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getItalic(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getName()
+    uid: 'ExcelScript!ExcelScript.ChartFont#getName:member(1)'
+    package: ExcelScript!
+    fullName: getName()
+    summary: フォント名 ("Calibri"など)
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getSize()
+    uid: 'ExcelScript!ExcelScript.ChartFont#getSize:member(1)'
+    package: ExcelScript!
+    fullName: getSize()
+    summary: 'フォントのサイズ (例: 11)'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSize(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getUnderline()
+    uid: 'ExcelScript!ExcelScript.ChartFont#getUnderline:member(1)'
+    package: ExcelScript!
+    fullName: getUnderline()
+    summary: フォントに適用する下線の種類。 詳細は「`ExcelScript.ChartUnderlineStyle`」をご覧ください。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getUnderline(): ChartUnderlineStyle;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartUnderlineStyle:enum" />'
+        description: ''
+  - name: setBold(bold)
+    uid: 'ExcelScript!ExcelScript.ChartFont#setBold:member(1)'
+    package: ExcelScript!
+    fullName: setBold(bold)
+    summary: フォントの太字の状態を表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setBold(bold: boolean): void;'
+      parameters:
+        - id: bold
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setColor(color)
+    uid: 'ExcelScript!ExcelScript.ChartFont#setColor:member(1)'
+    package: ExcelScript!
+    fullName: setColor(color)
+    summary: テキストの色の HTML カラー コード表現 \# (FF0000 は赤を表すなど)。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setColor(color: string): void;'
+      parameters:
+        - id: color
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setItalic(italic)
+    uid: 'ExcelScript!ExcelScript.ChartFont#setItalic:member(1)'
+    package: ExcelScript!
+    fullName: setItalic(italic)
+    summary: フォントの斜体の状態を表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setItalic(italic: boolean): void;'
+      parameters:
+        - id: italic
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setName(name)
+    uid: 'ExcelScript!ExcelScript.ChartFont#setName:member(1)'
+    package: ExcelScript!
+    fullName: setName(name)
+    summary: フォント名 ("Calibri"など)
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setName(name: string): void;'
+      parameters:
+        - id: name
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setSize(size)
+    uid: 'ExcelScript!ExcelScript.ChartFont#setSize:member(1)'
+    package: ExcelScript!
+    fullName: setSize(size)
+    summary: 'フォントのサイズ (例: 11)'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setSize(size: number): void;'
+      parameters:
+        - id: size
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setUnderline(underline)
+    uid: 'ExcelScript!ExcelScript.ChartFont#setUnderline:member(1)'
+    package: ExcelScript!
+    fullName: setUnderline(underline)
+    summary: フォントに適用する下線の種類。 詳細は「`ExcelScript.ChartUnderlineStyle`」をご覧ください。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setUnderline(underline: ChartUnderlineStyle): void;'
+      parameters:
+        - id: underline
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ChartUnderlineStyle:enum" />'
+      return:
+        type: void
+        description: ''

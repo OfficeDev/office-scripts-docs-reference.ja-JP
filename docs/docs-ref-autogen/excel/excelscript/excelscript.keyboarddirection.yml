@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.KeyboardDirection
-uid: ExcelScript!ExcelScript.KeyboardDirection:enum
+uid: 'ExcelScript!ExcelScript.KeyboardDirection:enum'
 package: ExcelScript!
 fullName: ExcelScript.KeyboardDirection
 summary: ''
@@ -8,26 +8,19 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: down
-  uid: ExcelScript!ExcelScript.KeyboardDirection.down:member
-  package: ExcelScript!
-  summary: ''
-- name: left
-  uid: ExcelScript!ExcelScript.KeyboardDirection.left:member
-  package: ExcelScript!
-  summary: ''
-- name: right
-  uid: ExcelScript!ExcelScript.KeyboardDirection.right:member
-  package: ExcelScript!
-  summary: ''
-- name: up
-  uid: ExcelScript!ExcelScript.KeyboardDirection.up:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: e6063672aeb32d4afe7238c84d33ec36988f8874
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914688"
+  - name: down
+    uid: 'ExcelScript!ExcelScript.KeyboardDirection.down:member'
+    package: ExcelScript!
+    summary: ''
+  - name: left
+    uid: 'ExcelScript!ExcelScript.KeyboardDirection.left:member'
+    package: ExcelScript!
+    summary: ''
+  - name: right
+    uid: 'ExcelScript!ExcelScript.KeyboardDirection.right:member'
+    package: ExcelScript!
+    summary: ''
+  - name: up
+    uid: 'ExcelScript!ExcelScript.KeyboardDirection.up:member'
+    package: ExcelScript!
+    summary: ''

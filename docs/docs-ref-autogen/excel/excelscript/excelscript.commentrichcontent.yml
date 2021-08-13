@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.CommentRichContent
-uid: ExcelScript!ExcelScript.CommentRichContent:interface
+uid: 'ExcelScript!ExcelScript.CommentRichContent:interface'
 package: ExcelScript!
 fullName: ExcelScript.CommentRichContent
 summary: コメントまたはコメントの返信に含まれるコンテンツを表します。 リッチ コンテンツは、テキスト文字列と、コメント本文に含まれるその他のオブジェクト (メンションなど) を切り分けします。
@@ -9,35 +9,101 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: mentions
-  uid: ExcelScript!ExcelScript.CommentRichContent#mentions:member
-  package: ExcelScript!
-  fullName: mentions
-  summary: コメント内で言及されているすべてのエンティティ (人など) を含む配列。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'mentions?: CommentMention[];'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.CommentMention:interface" />[]
-- name: richContent
-  uid: ExcelScript!ExcelScript.CommentRichContent#richContent:member
-  package: ExcelScript!
-  fullName: richContent
-  summary: 'コメントのリッチ コンテンツを指定します (例: メンション付きコメント コンテンツ、最初に言及したエンティティの ID 属性は 0、2 番目に指定したエンティティの ID 属性は 1)。'
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'richContent: string;'
-    return:
-      type: string
-      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This sample finds overdue work items in a table and \n * lets their owners know with a comment that uses an @mention.\n * \n * This assumes the worksheet has a table with the columns: \n * \"Work Item\", \"Project\", \"Owner\", \"Due Date\"\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  let currentSheet = workbook.getActiveWorksheet();\n\n  // Get the \"Owner\" column range and values.\n  let table = currentSheet.getTables()[0];\n  let ownerColumnRange = table.getColumn(\"Owner\").getRangeBetweenHeaderAndTotal();\n  let ownerColumnValues = ownerColumnRange.getValues();\n\n  // Get the \"Due Date\" column range and values.\n  let dueDateColumnRange = table.getColumn(\"Due Date\").getRangeBetweenHeaderAndTotal();\n  let dueDateColumnValues = dueDateColumnRange.getValues();\n\n  // Look for overdue work items.\n  for (let row = 0; row < dueDateColumnValues.length; row++) {\n\n    /* Convert the Excel date into a JavaScript date. \n     * This is necessary because Excel and JavaScript store\n     * their dates as different numerical values.\n     */\n    let dueDate = new Date(Math.round((dueDateColumnValues[row][0] as number - 25569) * 86400 * 1000));\n\n    // Check if the current date is greater than the due date.\n    if (Date.now() > dueDate.valueOf()) {\n\n      /* Create a CommentMention object for the comment,\n       * based on the work item's owner.\n       *\n       * A CommentMention's properties are:\n       * `name`: The name of the person being mentioned.\n       * `id`: The index of this mention in the comment.\n       * `email`: The email address of the person being mentioned. \n       *          In this sample, \"Owner: is also the user name for the email.\n       */\n      let mention = {\n        name: ownerColumnValues[row][0],\n        id: 0,\n        email: ownerColumnValues[row][0] + \"@contoso.com\"\n      };\n\n      /* Create the comment. \n       * The `<at id=\"0\">` syntax embeds the mention in the comment text. \n       * The name is displayed in the comment, \n       * while an email is sent to the given address.\n       *\n       * The addComment parameters are:\n       * `cellAddress`: The location of the comment.\n       * `content`: The text of the comment and any embedded mentions.\n       * `contentType`: The type of comment (\"Mention\" or \"Plain\").\n       */\n      currentSheet.addComment(\n        dueDateColumnRange.getCell(row, 0),\n        {\n          richContent: '<at id=\"0\">' + mention.name + \"</at> - Your work item is overdue.\",\n          mentions: [mention]\n        },\n        ExcelScript.ContentType.mention\n      );\n    }\n  }\n}\n```"
-metadata:
-  ms.openlocfilehash: f4e86bc608516eacc8eac7a67d950fa47b697f70
-  ms.sourcegitcommit: 41542794df8af7ea28b8d7db989fba7ec77b6b0c
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 05/12/2021
-  ms.locfileid: "52330256"
+  - name: mentions
+    uid: 'ExcelScript!ExcelScript.CommentRichContent#mentions:member'
+    package: ExcelScript!
+    fullName: mentions
+    summary: コメント内で言及されているすべてのエンティティ (人など) を含む配列。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'mentions?: CommentMention[];'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.CommentMention:interface" />[]'
+  - name: richContent
+    uid: 'ExcelScript!ExcelScript.CommentRichContent#richContent:member'
+    package: ExcelScript!
+    fullName: richContent
+    summary: 'コメントのリッチ コンテンツを指定します (例: メンション付きコメント コンテンツ、最初に言及したエンティティの ID 属性は 0、2 番目に指定したエンティティの ID 属性は 1)。'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'richContent: string;'
+      return:
+        type: string
+        description: |-
+
+
+          #### <a name="examples"></a>例
+
+          ```TypeScript
+          /**
+           * This sample finds overdue work items in a table and 
+           * lets their owners know with a comment that uses an @mention.
+           * 
+           * This assumes the worksheet has a table with the columns: 
+           * "Work Item", "Project", "Owner", "Due Date"
+           */
+          function main(workbook: ExcelScript.Workbook) {
+            let currentSheet = workbook.getActiveWorksheet();
+
+            // Get the "Owner" column range and values.
+            let table = currentSheet.getTables()[0];
+            let ownerColumnRange = table.getColumn("Owner").getRangeBetweenHeaderAndTotal();
+            let ownerColumnValues = ownerColumnRange.getValues();
+
+            // Get the "Due Date" column range and values.
+            let dueDateColumnRange = table.getColumn("Due Date").getRangeBetweenHeaderAndTotal();
+            let dueDateColumnValues = dueDateColumnRange.getValues();
+
+            // Look for overdue work items.
+            for (let row = 0; row < dueDateColumnValues.length; row++) {
+
+              /* Convert the Excel date into a JavaScript date. 
+               * This is necessary because Excel and JavaScript store
+               * their dates as different numerical values.
+               */
+              let dueDate = new Date(Math.round((dueDateColumnValues[row][0] as number - 25569) * 86400 * 1000));
+
+              // Check if the current date is greater than the due date.
+              if (Date.now() > dueDate.valueOf()) {
+
+                /* Create a CommentMention object for the comment,
+                 * based on the work item's owner.
+                 *
+                 * A CommentMention's properties are:
+                 * `name`: The name of the person being mentioned.
+                 * `id`: The index of this mention in the comment.
+                 * `email`: The email address of the person being mentioned. 
+                 *          In this sample, "Owner: is also the user name for the email.
+                 */
+                let mention = {
+                  name: ownerColumnValues[row][0],
+                  id: 0,
+                  email: ownerColumnValues[row][0] + "@contoso.com"
+                };
+
+                /* Create the comment. 
+                 * The `<at id="0">` syntax embeds the mention in the comment text. 
+                 * The name is displayed in the comment, 
+                 * while an email is sent to the given address.
+                 *
+                 * The addComment parameters are:
+                 * `cellAddress`: The location of the comment.
+                 * `content`: The text of the comment and any embedded mentions.
+                 * `contentType`: The type of comment ("Mention" or "Plain").
+                 */
+                currentSheet.addComment(
+                  dueDateColumnRange.getCell(row, 0),
+                  {
+                    richContent: '<at id="0">' + mention.name + "</at> - Your work item is overdue.",
+                    mentions: [mention]
+                  },
+                  ExcelScript.ContentType.mention
+                );
+              }
+            }
+          }
+          ```

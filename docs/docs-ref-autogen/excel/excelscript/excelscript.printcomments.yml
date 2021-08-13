@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.PrintComments
-uid: ExcelScript!ExcelScript.PrintComments:enum
+uid: 'ExcelScript!ExcelScript.PrintComments:enum'
 package: ExcelScript!
 fullName: ExcelScript.PrintComments
 summary: ''
@@ -8,22 +8,15 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: endSheet
-  uid: ExcelScript!ExcelScript.PrintComments.endSheet:member
-  package: ExcelScript!
-  summary: コメントは、ワークシートの末尾に印刷されます。
-- name: inPlace
-  uid: ExcelScript!ExcelScript.PrintComments.inPlace:member
-  package: ExcelScript!
-  summary: コメントは、ワークシートの挿入された位置に印刷されます。
-- name: noComments
-  uid: ExcelScript!ExcelScript.PrintComments.noComments:member
-  package: ExcelScript!
-  summary: コメントは印刷されません。
-metadata:
-  ms.openlocfilehash: 9345db1600a53ddc874796ab8bbaa060ddb7aaa4
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416688"
+  - name: endSheet
+    uid: 'ExcelScript!ExcelScript.PrintComments.endSheet:member'
+    package: ExcelScript!
+    summary: コメントは、ワークシートの末尾に印刷されます。
+  - name: inPlace
+    uid: 'ExcelScript!ExcelScript.PrintComments.inPlace:member'
+    package: ExcelScript!
+    summary: コメントは、ワークシートの挿入された位置に印刷されます。
+  - name: noComments
+    uid: 'ExcelScript!ExcelScript.PrintComments.noComments:member'
+    package: ExcelScript!
+    summary: コメントは印刷されません。

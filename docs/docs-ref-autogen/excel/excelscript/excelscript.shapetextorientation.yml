@@ -1,45 +1,38 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ShapeTextOrientation
-uid: ExcelScript!ExcelScript.ShapeTextOrientation:enum
+uid: 'ExcelScript!ExcelScript.ShapeTextOrientation:enum'
 package: ExcelScript!
 fullName: ExcelScript.ShapeTextOrientation
-summary: 図形内のレイアウト枠の向きを指定します。
+summary: 図形のテキスト フレームの向きを指定します。
 remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: eastAsianVertical
-  uid: ExcelScript!ExcelScript.ShapeTextOrientation.eastAsianVertical:member
-  package: ExcelScript!
-  summary: ''
-- name: horizontal
-  uid: ExcelScript!ExcelScript.ShapeTextOrientation.horizontal:member
-  package: ExcelScript!
-  summary: ''
-- name: mongolianVertical
-  uid: ExcelScript!ExcelScript.ShapeTextOrientation.mongolianVertical:member
-  package: ExcelScript!
-  summary: ''
-- name: vertical
-  uid: ExcelScript!ExcelScript.ShapeTextOrientation.vertical:member
-  package: ExcelScript!
-  summary: ''
-- name: vertical270
-  uid: ExcelScript!ExcelScript.ShapeTextOrientation.vertical270:member
-  package: ExcelScript!
-  summary: ''
-- name: wordArtVertical
-  uid: ExcelScript!ExcelScript.ShapeTextOrientation.wordArtVertical:member
-  package: ExcelScript!
-  summary: ''
-- name: wordArtVerticalRTL
-  uid: ExcelScript!ExcelScript.ShapeTextOrientation.wordArtVerticalRTL:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: 50b4962e6fc86ebd48108f771df3fd2ce025191f
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420602"
+  - name: eastAsianVertical
+    uid: 'ExcelScript!ExcelScript.ShapeTextOrientation.eastAsianVertical:member'
+    package: ExcelScript!
+    summary: ''
+  - name: horizontal
+    uid: 'ExcelScript!ExcelScript.ShapeTextOrientation.horizontal:member'
+    package: ExcelScript!
+    summary: ''
+  - name: mongolianVertical
+    uid: 'ExcelScript!ExcelScript.ShapeTextOrientation.mongolianVertical:member'
+    package: ExcelScript!
+    summary: ''
+  - name: vertical
+    uid: 'ExcelScript!ExcelScript.ShapeTextOrientation.vertical:member'
+    package: ExcelScript!
+    summary: ''
+  - name: vertical270
+    uid: 'ExcelScript!ExcelScript.ShapeTextOrientation.vertical270:member'
+    package: ExcelScript!
+    summary: ''
+  - name: wordArtVertical
+    uid: 'ExcelScript!ExcelScript.ShapeTextOrientation.wordArtVertical:member'
+    package: ExcelScript!
+    summary: ''
+  - name: wordArtVerticalRTL
+    uid: 'ExcelScript!ExcelScript.ShapeTextOrientation.wordArtVerticalRTL:member'
+    package: ExcelScript!
+    summary: ''

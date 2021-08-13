@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.Line
-uid: ExcelScript!ExcelScript.Line:interface
+uid: 'ExcelScript!ExcelScript.Line:interface'
 package: ExcelScript!
 fullName: ExcelScript.Line
 summary: ワークシート内の行を表します。 対応するオブジェクトを取得 `Shape` するには、 `Line.shape`<!-- -->.
@@ -9,390 +9,383 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: connectBeginShape(shape, connectionSite)
-  uid: ExcelScript!ExcelScript.Line#connectBeginShape:member(1)
-  package: ExcelScript!
-  fullName: connectBeginShape(shape, connectionSite)
-  summary: 指定されたコネクタの始点を指定された図形に接続します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'connectBeginShape(shape: Shape, connectionSite: number): void;'
-    parameters:
-    - id: shape
-      description: 接続する図形。
-      type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
-    - id: connectionSite
-      description: コネクタの先頭が接続されている図形上の接続サイト。 0 (包括) から指定した図形の接続サイト数 (排他的) の整数を指定する必要があります。
-      type: number
-    return:
-      type: void
-      description: ''
-- name: connectEndShape(shape, connectionSite)
-  uid: ExcelScript!ExcelScript.Line#connectEndShape:member(1)
-  package: ExcelScript!
-  fullName: connectEndShape(shape, connectionSite)
-  summary: 指定されたコネクタの終点を指定された図形に接続します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'connectEndShape(shape: Shape, connectionSite: number): void;'
-    parameters:
-    - id: shape
-      description: 接続する図形。
-      type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
-    - id: connectionSite
-      description: コネクタの端が接続されている図形上の接続サイト。 0 (包括) から指定した図形の接続サイト数 (排他的) の整数を指定する必要があります。
-      type: number
-    return:
-      type: void
-      description: ''
-- name: disconnectBeginShape()
-  uid: ExcelScript!ExcelScript.Line#disconnectBeginShape:member(1)
-  package: ExcelScript!
-  fullName: disconnectBeginShape()
-  summary: 指定されたコネクタの始点を図形から切り離します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'disconnectBeginShape(): void;'
-    return:
-      type: void
-      description: ''
-- name: disconnectEndShape()
-  uid: ExcelScript!ExcelScript.Line#disconnectEndShape:member(1)
-  package: ExcelScript!
-  fullName: disconnectEndShape()
-  summary: 指定されたコネクタの終点を図形から切り離します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'disconnectEndShape(): void;'
-    return:
-      type: void
-      description: ''
-- name: getBeginArrowheadLength()
-  uid: ExcelScript!ExcelScript.Line#getBeginArrowheadLength:member(1)
-  package: ExcelScript!
-  fullName: getBeginArrowheadLength()
-  summary: 指定された線の始点の矢印の長さを表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getBeginArrowheadLength(): ArrowheadLength;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ArrowheadLength:enum" />
-      description: ''
-- name: getBeginArrowheadStyle()
-  uid: ExcelScript!ExcelScript.Line#getBeginArrowheadStyle:member(1)
-  package: ExcelScript!
-  fullName: getBeginArrowheadStyle()
-  summary: 指定された線の始点の矢印のスタイルを表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getBeginArrowheadStyle(): ArrowheadStyle;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ArrowheadStyle:enum" />
-      description: ''
-- name: getBeginArrowheadWidth()
-  uid: ExcelScript!ExcelScript.Line#getBeginArrowheadWidth:member(1)
-  package: ExcelScript!
-  fullName: getBeginArrowheadWidth()
-  summary: 指定された線の始点の矢印の幅を表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getBeginArrowheadWidth(): ArrowheadWidth;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ArrowheadWidth:enum" />
-      description: ''
-- name: getBeginConnectedShape()
-  uid: ExcelScript!ExcelScript.Line#getBeginConnectedShape:member(1)
-  package: ExcelScript!
-  fullName: getBeginConnectedShape()
-  summary: 指定された線の始点が接続されている図形を表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getBeginConnectedShape(): Shape;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
-      description: ''
-- name: getBeginConnectedSite()
-  uid: ExcelScript!ExcelScript.Line#getBeginConnectedSite:member(1)
-  package: ExcelScript!
-  fullName: getBeginConnectedSite()
-  summary: コネクタの始点が接続されている結合点を表します。 線の `null` 先頭が図形にアタッチされていない場合に返します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getBeginConnectedSite(): number;'
-    return:
-      type: number
-      description: ''
-- name: getConnectorType()
-  uid: ExcelScript!ExcelScript.Line#getConnectorType:member(1)
-  package: ExcelScript!
-  fullName: getConnectorType()
-  summary: 線のコネクタの種類を表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getConnectorType(): ConnectorType;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConnectorType:enum" />
-      description: ''
-- name: getEndArrowheadLength()
-  uid: ExcelScript!ExcelScript.Line#getEndArrowheadLength:member(1)
-  package: ExcelScript!
-  fullName: getEndArrowheadLength()
-  summary: 指定された線の終点の矢印の長さを表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getEndArrowheadLength(): ArrowheadLength;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ArrowheadLength:enum" />
-      description: ''
-- name: getEndArrowheadStyle()
-  uid: ExcelScript!ExcelScript.Line#getEndArrowheadStyle:member(1)
-  package: ExcelScript!
-  fullName: getEndArrowheadStyle()
-  summary: 指定された線の終点の矢印のスタイルを表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getEndArrowheadStyle(): ArrowheadStyle;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ArrowheadStyle:enum" />
-      description: ''
-- name: getEndArrowheadWidth()
-  uid: ExcelScript!ExcelScript.Line#getEndArrowheadWidth:member(1)
-  package: ExcelScript!
-  fullName: getEndArrowheadWidth()
-  summary: 指定された線の終点の矢印の幅を表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getEndArrowheadWidth(): ArrowheadWidth;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ArrowheadWidth:enum" />
-      description: ''
-- name: getEndConnectedShape()
-  uid: ExcelScript!ExcelScript.Line#getEndConnectedShape:member(1)
-  package: ExcelScript!
-  fullName: getEndConnectedShape()
-  summary: 指定された線の終点が接続されている図形を表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getEndConnectedShape(): Shape;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
-      description: ''
-- name: getEndConnectedSite()
-  uid: ExcelScript!ExcelScript.Line#getEndConnectedSite:member(1)
-  package: ExcelScript!
-  fullName: getEndConnectedSite()
-  summary: コネクタの終点が接続されている結合点を表します。 線の `null` 端が図形に接続されていない場合に返します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getEndConnectedSite(): number;'
-    return:
-      type: number
-      description: ''
-- name: getId()
-  uid: ExcelScript!ExcelScript.Line#getId:member(1)
-  package: ExcelScript!
-  fullName: getId()
-  summary: 図形識別子を指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getId(): string;'
-    return:
-      type: string
-      description: ''
-- name: getIsBeginConnected()
-  uid: ExcelScript!ExcelScript.Line#getIsBeginConnected:member(1)
-  package: ExcelScript!
-  fullName: getIsBeginConnected()
-  summary: 指定した線の先頭が図形に接続される場合に指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getIsBeginConnected(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getIsEndConnected()
-  uid: ExcelScript!ExcelScript.Line#getIsEndConnected:member(1)
-  package: ExcelScript!
-  fullName: getIsEndConnected()
-  summary: 指定した線の端が図形に接続される場合に指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getIsEndConnected(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getShape()
-  uid: ExcelScript!ExcelScript.Line#getShape:member(1)
-  package: ExcelScript!
-  fullName: getShape()
-  summary: 行に関連 `Shape` 付けられたオブジェクトを返します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShape(): Shape;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
-      description: ''
-- name: setBeginArrowheadLength(beginArrowheadLength)
-  uid: ExcelScript!ExcelScript.Line#setBeginArrowheadLength:member(1)
-  package: ExcelScript!
-  fullName: setBeginArrowheadLength(beginArrowheadLength)
-  summary: 指定された線の始点の矢印の長さを表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setBeginArrowheadLength(beginArrowheadLength: ArrowheadLength): void;'
-    parameters:
-    - id: beginArrowheadLength
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ArrowheadLength:enum" />
-    return:
-      type: void
-      description: ''
-- name: setBeginArrowheadStyle(beginArrowheadStyle)
-  uid: ExcelScript!ExcelScript.Line#setBeginArrowheadStyle:member(1)
-  package: ExcelScript!
-  fullName: setBeginArrowheadStyle(beginArrowheadStyle)
-  summary: 指定された線の始点の矢印のスタイルを表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setBeginArrowheadStyle(beginArrowheadStyle: ArrowheadStyle): void;'
-    parameters:
-    - id: beginArrowheadStyle
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ArrowheadStyle:enum" />
-    return:
-      type: void
-      description: ''
-- name: setBeginArrowheadWidth(beginArrowheadWidth)
-  uid: ExcelScript!ExcelScript.Line#setBeginArrowheadWidth:member(1)
-  package: ExcelScript!
-  fullName: setBeginArrowheadWidth(beginArrowheadWidth)
-  summary: 指定された線の始点の矢印の幅を表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setBeginArrowheadWidth(beginArrowheadWidth: ArrowheadWidth): void;'
-    parameters:
-    - id: beginArrowheadWidth
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ArrowheadWidth:enum" />
-    return:
-      type: void
-      description: ''
-- name: setConnectorType(connectorType)
-  uid: ExcelScript!ExcelScript.Line#setConnectorType:member(1)
-  package: ExcelScript!
-  fullName: setConnectorType(connectorType)
-  summary: 線のコネクタの種類を表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setConnectorType(connectorType: ConnectorType): void;'
-    parameters:
-    - id: connectorType
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ConnectorType:enum" />
-    return:
-      type: void
-      description: ''
-- name: setEndArrowheadLength(endArrowheadLength)
-  uid: ExcelScript!ExcelScript.Line#setEndArrowheadLength:member(1)
-  package: ExcelScript!
-  fullName: setEndArrowheadLength(endArrowheadLength)
-  summary: 指定された線の終点の矢印の長さを表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setEndArrowheadLength(endArrowheadLength: ArrowheadLength): void;'
-    parameters:
-    - id: endArrowheadLength
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ArrowheadLength:enum" />
-    return:
-      type: void
-      description: ''
-- name: setEndArrowheadStyle(endArrowheadStyle)
-  uid: ExcelScript!ExcelScript.Line#setEndArrowheadStyle:member(1)
-  package: ExcelScript!
-  fullName: setEndArrowheadStyle(endArrowheadStyle)
-  summary: 指定された線の終点の矢印のスタイルを表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setEndArrowheadStyle(endArrowheadStyle: ArrowheadStyle): void;'
-    parameters:
-    - id: endArrowheadStyle
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ArrowheadStyle:enum" />
-    return:
-      type: void
-      description: ''
-- name: setEndArrowheadWidth(endArrowheadWidth)
-  uid: ExcelScript!ExcelScript.Line#setEndArrowheadWidth:member(1)
-  package: ExcelScript!
-  fullName: setEndArrowheadWidth(endArrowheadWidth)
-  summary: 指定された線の終点の矢印の幅を表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setEndArrowheadWidth(endArrowheadWidth: ArrowheadWidth): void;'
-    parameters:
-    - id: endArrowheadWidth
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ArrowheadWidth:enum" />
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: ad5199cef65f3c284260afe9bf89774e42638da5
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914360"
+  - name: 'connectBeginShape(shape, connectionSite)'
+    uid: 'ExcelScript!ExcelScript.Line#connectBeginShape:member(1)'
+    package: ExcelScript!
+    fullName: 'connectBeginShape(shape, connectionSite)'
+    summary: 指定されたコネクタの始点を指定された図形に接続します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'connectBeginShape(shape: Shape, connectionSite: number): void;'
+      parameters:
+        - id: shape
+          description: 接続する図形。
+          type: '<xref uid="ExcelScript!ExcelScript.Shape:interface" />'
+        - id: connectionSite
+          description: コネクタの先頭が接続されている図形上の接続サイト。 0 (包括) から指定した図形の接続サイト数 (排他的) の整数を指定する必要があります。
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: 'connectEndShape(shape, connectionSite)'
+    uid: 'ExcelScript!ExcelScript.Line#connectEndShape:member(1)'
+    package: ExcelScript!
+    fullName: 'connectEndShape(shape, connectionSite)'
+    summary: 指定されたコネクタの終点を指定された図形に接続します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'connectEndShape(shape: Shape, connectionSite: number): void;'
+      parameters:
+        - id: shape
+          description: 接続する図形。
+          type: '<xref uid="ExcelScript!ExcelScript.Shape:interface" />'
+        - id: connectionSite
+          description: コネクタの端が接続されている図形上の接続サイト。 0 (包括) から指定した図形の接続サイト数 (排他的) の整数を指定する必要があります。
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: disconnectBeginShape()
+    uid: 'ExcelScript!ExcelScript.Line#disconnectBeginShape:member(1)'
+    package: ExcelScript!
+    fullName: disconnectBeginShape()
+    summary: 指定されたコネクタの始点を図形から切り離します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'disconnectBeginShape(): void;'
+      return:
+        type: void
+        description: ''
+  - name: disconnectEndShape()
+    uid: 'ExcelScript!ExcelScript.Line#disconnectEndShape:member(1)'
+    package: ExcelScript!
+    fullName: disconnectEndShape()
+    summary: 指定されたコネクタの終点を図形から切り離します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'disconnectEndShape(): void;'
+      return:
+        type: void
+        description: ''
+  - name: getBeginArrowheadLength()
+    uid: 'ExcelScript!ExcelScript.Line#getBeginArrowheadLength:member(1)'
+    package: ExcelScript!
+    fullName: getBeginArrowheadLength()
+    summary: 指定された線の始点の矢印の長さを表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getBeginArrowheadLength(): ArrowheadLength;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ArrowheadLength:enum" />'
+        description: ''
+  - name: getBeginArrowheadStyle()
+    uid: 'ExcelScript!ExcelScript.Line#getBeginArrowheadStyle:member(1)'
+    package: ExcelScript!
+    fullName: getBeginArrowheadStyle()
+    summary: 指定された線の始点の矢印のスタイルを表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getBeginArrowheadStyle(): ArrowheadStyle;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ArrowheadStyle:enum" />'
+        description: ''
+  - name: getBeginArrowheadWidth()
+    uid: 'ExcelScript!ExcelScript.Line#getBeginArrowheadWidth:member(1)'
+    package: ExcelScript!
+    fullName: getBeginArrowheadWidth()
+    summary: 指定された線の始点の矢印の幅を表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getBeginArrowheadWidth(): ArrowheadWidth;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ArrowheadWidth:enum" />'
+        description: ''
+  - name: getBeginConnectedShape()
+    uid: 'ExcelScript!ExcelScript.Line#getBeginConnectedShape:member(1)'
+    package: ExcelScript!
+    fullName: getBeginConnectedShape()
+    summary: 指定された線の始点が接続されている図形を表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getBeginConnectedShape(): Shape;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Shape:interface" />'
+        description: ''
+  - name: getBeginConnectedSite()
+    uid: 'ExcelScript!ExcelScript.Line#getBeginConnectedSite:member(1)'
+    package: ExcelScript!
+    fullName: getBeginConnectedSite()
+    summary: コネクタの始点が接続されている結合点を表します。 線の `null` 先頭が図形にアタッチされていない場合に返します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getBeginConnectedSite(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getConnectorType()
+    uid: 'ExcelScript!ExcelScript.Line#getConnectorType:member(1)'
+    package: ExcelScript!
+    fullName: getConnectorType()
+    summary: 線のコネクタの種類を表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getConnectorType(): ConnectorType;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConnectorType:enum" />'
+        description: ''
+  - name: getEndArrowheadLength()
+    uid: 'ExcelScript!ExcelScript.Line#getEndArrowheadLength:member(1)'
+    package: ExcelScript!
+    fullName: getEndArrowheadLength()
+    summary: 指定された線の終点の矢印の長さを表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getEndArrowheadLength(): ArrowheadLength;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ArrowheadLength:enum" />'
+        description: ''
+  - name: getEndArrowheadStyle()
+    uid: 'ExcelScript!ExcelScript.Line#getEndArrowheadStyle:member(1)'
+    package: ExcelScript!
+    fullName: getEndArrowheadStyle()
+    summary: 指定された線の終点の矢印のスタイルを表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getEndArrowheadStyle(): ArrowheadStyle;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ArrowheadStyle:enum" />'
+        description: ''
+  - name: getEndArrowheadWidth()
+    uid: 'ExcelScript!ExcelScript.Line#getEndArrowheadWidth:member(1)'
+    package: ExcelScript!
+    fullName: getEndArrowheadWidth()
+    summary: 指定された線の終点の矢印の幅を表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getEndArrowheadWidth(): ArrowheadWidth;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ArrowheadWidth:enum" />'
+        description: ''
+  - name: getEndConnectedShape()
+    uid: 'ExcelScript!ExcelScript.Line#getEndConnectedShape:member(1)'
+    package: ExcelScript!
+    fullName: getEndConnectedShape()
+    summary: 指定された線の終点が接続されている図形を表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getEndConnectedShape(): Shape;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Shape:interface" />'
+        description: ''
+  - name: getEndConnectedSite()
+    uid: 'ExcelScript!ExcelScript.Line#getEndConnectedSite:member(1)'
+    package: ExcelScript!
+    fullName: getEndConnectedSite()
+    summary: コネクタの終点が接続されている結合点を表します。 線の `null` 端が図形に接続されていない場合に返します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getEndConnectedSite(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getId()
+    uid: 'ExcelScript!ExcelScript.Line#getId:member(1)'
+    package: ExcelScript!
+    fullName: getId()
+    summary: 図形識別子を指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getId(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getIsBeginConnected()
+    uid: 'ExcelScript!ExcelScript.Line#getIsBeginConnected:member(1)'
+    package: ExcelScript!
+    fullName: getIsBeginConnected()
+    summary: 指定した線の先頭が図形に接続される場合に指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getIsBeginConnected(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getIsEndConnected()
+    uid: 'ExcelScript!ExcelScript.Line#getIsEndConnected:member(1)'
+    package: ExcelScript!
+    fullName: getIsEndConnected()
+    summary: 指定した線の端が図形に接続される場合に指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getIsEndConnected(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getShape()
+    uid: 'ExcelScript!ExcelScript.Line#getShape:member(1)'
+    package: ExcelScript!
+    fullName: getShape()
+    summary: 行に関連 `Shape` 付けられたオブジェクトを返します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShape(): Shape;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Shape:interface" />'
+        description: ''
+  - name: setBeginArrowheadLength(beginArrowheadLength)
+    uid: 'ExcelScript!ExcelScript.Line#setBeginArrowheadLength:member(1)'
+    package: ExcelScript!
+    fullName: setBeginArrowheadLength(beginArrowheadLength)
+    summary: 指定された線の始点の矢印の長さを表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setBeginArrowheadLength(beginArrowheadLength: ArrowheadLength): void;'
+      parameters:
+        - id: beginArrowheadLength
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ArrowheadLength:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setBeginArrowheadStyle(beginArrowheadStyle)
+    uid: 'ExcelScript!ExcelScript.Line#setBeginArrowheadStyle:member(1)'
+    package: ExcelScript!
+    fullName: setBeginArrowheadStyle(beginArrowheadStyle)
+    summary: 指定された線の始点の矢印のスタイルを表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setBeginArrowheadStyle(beginArrowheadStyle: ArrowheadStyle): void;'
+      parameters:
+        - id: beginArrowheadStyle
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ArrowheadStyle:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setBeginArrowheadWidth(beginArrowheadWidth)
+    uid: 'ExcelScript!ExcelScript.Line#setBeginArrowheadWidth:member(1)'
+    package: ExcelScript!
+    fullName: setBeginArrowheadWidth(beginArrowheadWidth)
+    summary: 指定された線の始点の矢印の幅を表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setBeginArrowheadWidth(beginArrowheadWidth: ArrowheadWidth): void;'
+      parameters:
+        - id: beginArrowheadWidth
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ArrowheadWidth:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setConnectorType(connectorType)
+    uid: 'ExcelScript!ExcelScript.Line#setConnectorType:member(1)'
+    package: ExcelScript!
+    fullName: setConnectorType(connectorType)
+    summary: 線のコネクタの種類を表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setConnectorType(connectorType: ConnectorType): void;'
+      parameters:
+        - id: connectorType
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ConnectorType:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setEndArrowheadLength(endArrowheadLength)
+    uid: 'ExcelScript!ExcelScript.Line#setEndArrowheadLength:member(1)'
+    package: ExcelScript!
+    fullName: setEndArrowheadLength(endArrowheadLength)
+    summary: 指定された線の終点の矢印の長さを表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setEndArrowheadLength(endArrowheadLength: ArrowheadLength): void;'
+      parameters:
+        - id: endArrowheadLength
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ArrowheadLength:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setEndArrowheadStyle(endArrowheadStyle)
+    uid: 'ExcelScript!ExcelScript.Line#setEndArrowheadStyle:member(1)'
+    package: ExcelScript!
+    fullName: setEndArrowheadStyle(endArrowheadStyle)
+    summary: 指定された線の終点の矢印のスタイルを表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setEndArrowheadStyle(endArrowheadStyle: ArrowheadStyle): void;'
+      parameters:
+        - id: endArrowheadStyle
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ArrowheadStyle:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setEndArrowheadWidth(endArrowheadWidth)
+    uid: 'ExcelScript!ExcelScript.Line#setEndArrowheadWidth:member(1)'
+    package: ExcelScript!
+    fullName: setEndArrowheadWidth(endArrowheadWidth)
+    summary: 指定された線の終点の矢印の幅を表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setEndArrowheadWidth(endArrowheadWidth: ArrowheadWidth): void;'
+      parameters:
+        - id: endArrowheadWidth
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ArrowheadWidth:enum" />'
+      return:
+        type: void
+        description: ''

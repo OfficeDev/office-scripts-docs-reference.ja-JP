@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ConditionalIconCriterionOperator
-uid: ExcelScript!ExcelScript.ConditionalIconCriterionOperator:enum
+uid: 'ExcelScript!ExcelScript.ConditionalIconCriterionOperator:enum'
 package: ExcelScript!
 fullName: ExcelScript.ConditionalIconCriterionOperator
 summary: 各アイコン条件の演算子を表します。
@@ -8,22 +8,15 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: greaterThan
-  uid: ExcelScript!ExcelScript.ConditionalIconCriterionOperator.greaterThan:member
-  package: ExcelScript!
-  summary: ''
-- name: greaterThanOrEqual
-  uid: ExcelScript!ExcelScript.ConditionalIconCriterionOperator.greaterThanOrEqual:member
-  package: ExcelScript!
-  summary: ''
-- name: invalid
-  uid: ExcelScript!ExcelScript.ConditionalIconCriterionOperator.invalid:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: 9c8b3034289f073f8b9b2dfaab2599305f50bf96
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913803"
+  - name: greaterThan
+    uid: 'ExcelScript!ExcelScript.ConditionalIconCriterionOperator.greaterThan:member'
+    package: ExcelScript!
+    summary: ''
+  - name: greaterThanOrEqual
+    uid: 'ExcelScript!ExcelScript.ConditionalIconCriterionOperator.greaterThanOrEqual:member'
+    package: ExcelScript!
+    summary: ''
+  - name: invalid
+    uid: 'ExcelScript!ExcelScript.ConditionalIconCriterionOperator.invalid:member'
+    package: ExcelScript!
+    summary: ''

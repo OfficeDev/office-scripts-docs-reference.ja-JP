@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.DocumentProperties
-uid: ExcelScript!ExcelScript.DocumentProperties:interface
+uid: 'ExcelScript!ExcelScript.DocumentProperties:interface'
 package: ExcelScript!
 fullName: ExcelScript.DocumentProperties
 summary: ブックのプロパティを表します。
@@ -9,369 +9,362 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: addCustomProperty(key, value)
-  uid: ExcelScript!ExcelScript.DocumentProperties#addCustomProperty:member(1)
-  package: ExcelScript!
-  fullName: addCustomProperty(key, value)
-  summary: 新しいカスタム プロパティを作成、または既存のカスタム プロパティを設定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'addCustomProperty(key: string, value: any): CustomProperty;'
-    parameters:
-    - id: key
-      description: 必須です。 大文字と小文字を区別しないカスタム プロパティのキー。 キーは、Web 上の Excel 以外では 255 文字に制限されています (大きいキーは、他のプラットフォームでは自動的に 255 文字にトリミングされます)。
-      type: string
-    - id: value
-      description: 必須です。 カスタム プロパティの値。 この値は、Web 上の Excel 以外では 255 文字に制限されています (大きい値は、他のプラットフォームでは自動的に 255 文字にトリミングされます)。
-      type: any
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.CustomProperty:interface" />
-      description: ''
-- name: deleteAllCustomProperties()
-  uid: ExcelScript!ExcelScript.DocumentProperties#deleteAllCustomProperties:member(1)
-  package: ExcelScript!
-  fullName: deleteAllCustomProperties()
-  summary: このコレクション内のすべてのカスタム プロパティを削除します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'deleteAllCustomProperties(): void;'
-    return:
-      type: void
-      description: ''
-- name: getAuthor()
-  uid: ExcelScript!ExcelScript.DocumentProperties#getAuthor:member(1)
-  package: ExcelScript!
-  fullName: getAuthor()
-  summary: ブックの作成者。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getAuthor(): string;'
-    return:
-      type: string
-      description: ''
-- name: getCategory()
-  uid: ExcelScript!ExcelScript.DocumentProperties#getCategory:member(1)
-  package: ExcelScript!
-  fullName: getCategory()
-  summary: ブックのカテゴリ。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getCategory(): string;'
-    return:
-      type: string
-      description: ''
-- name: getComments()
-  uid: ExcelScript!ExcelScript.DocumentProperties#getComments:member(1)
-  package: ExcelScript!
-  fullName: getComments()
-  summary: ブックのコメント。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getComments(): string;'
-    return:
-      type: string
-      description: ''
-- name: getCompany()
-  uid: ExcelScript!ExcelScript.DocumentProperties#getCompany:member(1)
-  package: ExcelScript!
-  fullName: getCompany()
-  summary: ブックの会社。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getCompany(): string;'
-    return:
-      type: string
-      description: ''
-- name: getCreationDate()
-  uid: ExcelScript!ExcelScript.DocumentProperties#getCreationDate:member(1)
-  package: ExcelScript!
-  fullName: getCreationDate()
-  summary: ブックの作成日を取得します。 読み取り専用です。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getCreationDate(): Date;'
-    return:
-      type: Date
-      description: ''
-- name: getCustom()
-  uid: ExcelScript!ExcelScript.DocumentProperties#getCustom:member(1)
-  package: ExcelScript!
-  fullName: getCustom()
-  summary: ブックのカスタム プロパティのコレクションを取得します。 読み取り専用です。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getCustom(): CustomProperty[];'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.CustomProperty:interface" />[]
-      description: ''
-- name: getCustomProperty(key)
-  uid: ExcelScript!ExcelScript.DocumentProperties#getCustomProperty:member(1)
-  package: ExcelScript!
-  fullName: getCustomProperty(key)
-  summary: キーを使用してカスタム プロパティ オブジェクトを取得します。大文字と小文字は区別されません。 カスタム プロパティが存在しない場合、この関数はプロパティが次に設定された `isNullObject` オブジェクトを返します。 `true`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getCustomProperty(key: string): CustomProperty | undefined;'
-    parameters:
-    - id: key
-      description: 必須です。 カスタム プロパティ オブジェクトを識別するキー。
-      type: string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.CustomProperty:interface" /> | undefined
-      description: ''
-- name: getKeywords()
-  uid: ExcelScript!ExcelScript.DocumentProperties#getKeywords:member(1)
-  package: ExcelScript!
-  fullName: getKeywords()
-  summary: ブックのキーワード。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getKeywords(): string;'
-    return:
-      type: string
-      description: ''
-- name: getLastAuthor()
-  uid: ExcelScript!ExcelScript.DocumentProperties#getLastAuthor:member(1)
-  package: ExcelScript!
-  fullName: getLastAuthor()
-  summary: ブックの最後の作成者を取得します。 読み取り専用です。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLastAuthor(): string;'
-    return:
-      type: string
-      description: ''
-- name: getManager()
-  uid: ExcelScript!ExcelScript.DocumentProperties#getManager:member(1)
-  package: ExcelScript!
-  fullName: getManager()
-  summary: ブックのマネージャー。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getManager(): string;'
-    return:
-      type: string
-      description: ''
-- name: getRevisionNumber()
-  uid: ExcelScript!ExcelScript.DocumentProperties#getRevisionNumber:member(1)
-  package: ExcelScript!
-  fullName: getRevisionNumber()
-  summary: ブックのリビジョン番号を取得します。 読み取り専用です。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getRevisionNumber(): number;'
-    return:
-      type: number
-      description: ''
-- name: getSubject()
-  uid: ExcelScript!ExcelScript.DocumentProperties#getSubject:member(1)
-  package: ExcelScript!
-  fullName: getSubject()
-  summary: ブックの件名。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getSubject(): string;'
-    return:
-      type: string
-      description: ''
-- name: getTitle()
-  uid: ExcelScript!ExcelScript.DocumentProperties#getTitle:member(1)
-  package: ExcelScript!
-  fullName: getTitle()
-  summary: ブックのタイトル。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTitle(): string;'
-    return:
-      type: string
-      description: ''
-- name: setAuthor(author)
-  uid: ExcelScript!ExcelScript.DocumentProperties#setAuthor:member(1)
-  package: ExcelScript!
-  fullName: setAuthor(author)
-  summary: ブックの作成者。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setAuthor(author: string): void;'
-    parameters:
-    - id: author
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setCategory(category)
-  uid: ExcelScript!ExcelScript.DocumentProperties#setCategory:member(1)
-  package: ExcelScript!
-  fullName: setCategory(category)
-  summary: ブックのカテゴリ。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setCategory(category: string): void;'
-    parameters:
-    - id: category
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setComments(comments)
-  uid: ExcelScript!ExcelScript.DocumentProperties#setComments:member(1)
-  package: ExcelScript!
-  fullName: setComments(comments)
-  summary: ブックのコメント。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setComments(comments: string): void;'
-    parameters:
-    - id: comments
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setCompany(company)
-  uid: ExcelScript!ExcelScript.DocumentProperties#setCompany:member(1)
-  package: ExcelScript!
-  fullName: setCompany(company)
-  summary: ブックの会社。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setCompany(company: string): void;'
-    parameters:
-    - id: company
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setKeywords(keywords)
-  uid: ExcelScript!ExcelScript.DocumentProperties#setKeywords:member(1)
-  package: ExcelScript!
-  fullName: setKeywords(keywords)
-  summary: ブックのキーワード。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setKeywords(keywords: string): void;'
-    parameters:
-    - id: keywords
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setManager(manager)
-  uid: ExcelScript!ExcelScript.DocumentProperties#setManager:member(1)
-  package: ExcelScript!
-  fullName: setManager(manager)
-  summary: ブックのマネージャー。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setManager(manager: string): void;'
-    parameters:
-    - id: manager
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setRevisionNumber(revisionNumber)
-  uid: ExcelScript!ExcelScript.DocumentProperties#setRevisionNumber:member(1)
-  package: ExcelScript!
-  fullName: setRevisionNumber(revisionNumber)
-  summary: ブックのリビジョン番号を取得します。 読み取り専用です。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setRevisionNumber(revisionNumber: number): void;'
-    parameters:
-    - id: revisionNumber
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setSubject(subject)
-  uid: ExcelScript!ExcelScript.DocumentProperties#setSubject:member(1)
-  package: ExcelScript!
-  fullName: setSubject(subject)
-  summary: ブックの件名。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setSubject(subject: string): void;'
-    parameters:
-    - id: subject
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setTitle(title)
-  uid: ExcelScript!ExcelScript.DocumentProperties#setTitle:member(1)
-  package: ExcelScript!
-  fullName: setTitle(title)
-  summary: ブックのタイトル。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setTitle(title: string): void;'
-    parameters:
-    - id: title
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: b6ba5c9e2e1da6c6fddfee819fc8bc43a4cf24a9
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914416"
+  - name: 'addCustomProperty(key, value)'
+    uid: 'ExcelScript!ExcelScript.DocumentProperties#addCustomProperty:member(1)'
+    package: ExcelScript!
+    fullName: 'addCustomProperty(key, value)'
+    summary: 新しいカスタム プロパティを作成、または既存のカスタム プロパティを設定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'addCustomProperty(key: string, value: any): CustomProperty;'
+      parameters:
+        - id: key
+          description: 必須です。 大文字と小文字を区別しないカスタム プロパティのキー。 キーは 255 文字に制限されています (Excel on the webキーは他のプラットフォームでは自動的に 255 文字にトリミングされます)。
+          type: string
+        - id: value
+          description: 必須です。 カスタム プロパティの値。 この値は、Excel on the web 以外の 255 文字に制限されます (大きい値は、他のプラットフォームでは自動的に 255 文字にトリミングされます)。
+          type: any
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.CustomProperty:interface" />'
+        description: ''
+  - name: deleteAllCustomProperties()
+    uid: 'ExcelScript!ExcelScript.DocumentProperties#deleteAllCustomProperties:member(1)'
+    package: ExcelScript!
+    fullName: deleteAllCustomProperties()
+    summary: このコレクション内のすべてのカスタム プロパティを削除します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'deleteAllCustomProperties(): void;'
+      return:
+        type: void
+        description: ''
+  - name: getAuthor()
+    uid: 'ExcelScript!ExcelScript.DocumentProperties#getAuthor:member(1)'
+    package: ExcelScript!
+    fullName: getAuthor()
+    summary: ブックの作成者。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getAuthor(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getCategory()
+    uid: 'ExcelScript!ExcelScript.DocumentProperties#getCategory:member(1)'
+    package: ExcelScript!
+    fullName: getCategory()
+    summary: ブックのカテゴリ。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCategory(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getComments()
+    uid: 'ExcelScript!ExcelScript.DocumentProperties#getComments:member(1)'
+    package: ExcelScript!
+    fullName: getComments()
+    summary: ブックのコメント。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getComments(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getCompany()
+    uid: 'ExcelScript!ExcelScript.DocumentProperties#getCompany:member(1)'
+    package: ExcelScript!
+    fullName: getCompany()
+    summary: ブックの会社。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCompany(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getCreationDate()
+    uid: 'ExcelScript!ExcelScript.DocumentProperties#getCreationDate:member(1)'
+    package: ExcelScript!
+    fullName: getCreationDate()
+    summary: ブックの作成日を取得します。 読み取り専用です。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCreationDate(): Date;'
+      return:
+        type: Date
+        description: ''
+  - name: getCustom()
+    uid: 'ExcelScript!ExcelScript.DocumentProperties#getCustom:member(1)'
+    package: ExcelScript!
+    fullName: getCustom()
+    summary: ブックのカスタム プロパティのコレクションを取得します。 読み取り専用です。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCustom(): CustomProperty[];'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.CustomProperty:interface" />[]'
+        description: ''
+  - name: getCustomProperty(key)
+    uid: 'ExcelScript!ExcelScript.DocumentProperties#getCustomProperty:member(1)'
+    package: ExcelScript!
+    fullName: getCustomProperty(key)
+    summary: キーを使用してカスタム プロパティ オブジェクトを取得します。大文字と小文字は区別されません。 カスタム プロパティが存在しない場合、この関数はプロパティが次に設定された `isNullObject` オブジェクトを返します。 `true`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCustomProperty(key: string): CustomProperty | undefined;'
+      parameters:
+        - id: key
+          description: 必須です。 カスタム プロパティ オブジェクトを識別するキー。
+          type: string
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.CustomProperty:interface" /> | undefined'
+        description: ''
+  - name: getKeywords()
+    uid: 'ExcelScript!ExcelScript.DocumentProperties#getKeywords:member(1)'
+    package: ExcelScript!
+    fullName: getKeywords()
+    summary: ブックのキーワード。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getKeywords(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getLastAuthor()
+    uid: 'ExcelScript!ExcelScript.DocumentProperties#getLastAuthor:member(1)'
+    package: ExcelScript!
+    fullName: getLastAuthor()
+    summary: ブックの最後の作成者を取得します。 読み取り専用です。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLastAuthor(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getManager()
+    uid: 'ExcelScript!ExcelScript.DocumentProperties#getManager:member(1)'
+    package: ExcelScript!
+    fullName: getManager()
+    summary: ブックのマネージャー。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getManager(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getRevisionNumber()
+    uid: 'ExcelScript!ExcelScript.DocumentProperties#getRevisionNumber:member(1)'
+    package: ExcelScript!
+    fullName: getRevisionNumber()
+    summary: ブックのリビジョン番号を取得します。 読み取り専用です。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRevisionNumber(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getSubject()
+    uid: 'ExcelScript!ExcelScript.DocumentProperties#getSubject:member(1)'
+    package: ExcelScript!
+    fullName: getSubject()
+    summary: ブックの件名。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSubject(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getTitle()
+    uid: 'ExcelScript!ExcelScript.DocumentProperties#getTitle:member(1)'
+    package: ExcelScript!
+    fullName: getTitle()
+    summary: ブックのタイトル。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTitle(): string;'
+      return:
+        type: string
+        description: ''
+  - name: setAuthor(author)
+    uid: 'ExcelScript!ExcelScript.DocumentProperties#setAuthor:member(1)'
+    package: ExcelScript!
+    fullName: setAuthor(author)
+    summary: ブックの作成者。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setAuthor(author: string): void;'
+      parameters:
+        - id: author
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setCategory(category)
+    uid: 'ExcelScript!ExcelScript.DocumentProperties#setCategory:member(1)'
+    package: ExcelScript!
+    fullName: setCategory(category)
+    summary: ブックのカテゴリ。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setCategory(category: string): void;'
+      parameters:
+        - id: category
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setComments(comments)
+    uid: 'ExcelScript!ExcelScript.DocumentProperties#setComments:member(1)'
+    package: ExcelScript!
+    fullName: setComments(comments)
+    summary: ブックのコメント。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setComments(comments: string): void;'
+      parameters:
+        - id: comments
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setCompany(company)
+    uid: 'ExcelScript!ExcelScript.DocumentProperties#setCompany:member(1)'
+    package: ExcelScript!
+    fullName: setCompany(company)
+    summary: ブックの会社。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setCompany(company: string): void;'
+      parameters:
+        - id: company
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setKeywords(keywords)
+    uid: 'ExcelScript!ExcelScript.DocumentProperties#setKeywords:member(1)'
+    package: ExcelScript!
+    fullName: setKeywords(keywords)
+    summary: ブックのキーワード。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setKeywords(keywords: string): void;'
+      parameters:
+        - id: keywords
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setManager(manager)
+    uid: 'ExcelScript!ExcelScript.DocumentProperties#setManager:member(1)'
+    package: ExcelScript!
+    fullName: setManager(manager)
+    summary: ブックのマネージャー。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setManager(manager: string): void;'
+      parameters:
+        - id: manager
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setRevisionNumber(revisionNumber)
+    uid: 'ExcelScript!ExcelScript.DocumentProperties#setRevisionNumber:member(1)'
+    package: ExcelScript!
+    fullName: setRevisionNumber(revisionNumber)
+    summary: ブックのリビジョン番号を取得します。 読み取り専用です。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setRevisionNumber(revisionNumber: number): void;'
+      parameters:
+        - id: revisionNumber
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setSubject(subject)
+    uid: 'ExcelScript!ExcelScript.DocumentProperties#setSubject:member(1)'
+    package: ExcelScript!
+    fullName: setSubject(subject)
+    summary: ブックの件名。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setSubject(subject: string): void;'
+      parameters:
+        - id: subject
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setTitle(title)
+    uid: 'ExcelScript!ExcelScript.DocumentProperties#setTitle:member(1)'
+    package: ExcelScript!
+    fullName: setTitle(title)
+    summary: ブックのタイトル。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setTitle(title: string): void;'
+      parameters:
+        - id: title
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''

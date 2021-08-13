@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.CommentMention
-uid: ExcelScript!ExcelScript.CommentMention:interface
+uid: 'ExcelScript!ExcelScript.CommentMention:interface'
 package: ExcelScript!
 fullName: ExcelScript.CommentMention
 summary: コメントに記載されているエンティティを表します。
@@ -9,46 +9,39 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: email
-  uid: ExcelScript!ExcelScript.CommentMention#email:member
-  package: ExcelScript!
-  fullName: email
-  summary: コメントに記載されているエンティティの電子メール アドレス。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'email: string;'
-    return:
-      type: string
-- name: id
-  uid: ExcelScript!ExcelScript.CommentMention#id:member
-  package: ExcelScript!
-  fullName: id
-  summary: エンティティの ID。 ID は、次の ID の 1 つと一致します。 `CommentRichContent.richContent`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'id: number;'
-    return:
-      type: number
-- name: name
-  uid: ExcelScript!ExcelScript.CommentMention#name:member
-  package: ExcelScript!
-  fullName: name
-  summary: コメントに記載されているエンティティの名前。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'name: string;'
-    return:
-      type: string
-metadata:
-  ms.openlocfilehash: 8942bc859cde2bf8efc57d0001742f1b96f1d9ca
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914507"
+  - name: email
+    uid: 'ExcelScript!ExcelScript.CommentMention#email:member'
+    package: ExcelScript!
+    fullName: email
+    summary: コメントに記載されているエンティティの電子メール アドレス。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'email: string;'
+      return:
+        type: string
+  - name: id
+    uid: 'ExcelScript!ExcelScript.CommentMention#id:member'
+    package: ExcelScript!
+    fullName: id
+    summary: エンティティの ID。 ID は、次の ID の 1 つと一致します。 `CommentRichContent.richContent`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id: number;'
+      return:
+        type: number
+  - name: name
+    uid: 'ExcelScript!ExcelScript.CommentMention#name:member'
+    package: ExcelScript!
+    fullName: name
+    summary: コメントに記載されているエンティティの名前。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: string;'
+      return:
+        type: string

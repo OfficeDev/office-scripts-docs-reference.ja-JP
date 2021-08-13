@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.TextRange
-uid: ExcelScript!ExcelScript.TextRange:interface
+uid: 'ExcelScript!ExcelScript.TextRange:interface'
 package: ExcelScript!
 fullName: ExcelScript.TextRange
 summary: 図形に結合するテキストや、テキストを操作するためのプロパティおよびメソッドが含まれます。
@@ -9,73 +9,66 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getFont()
-  uid: ExcelScript!ExcelScript.TextRange#getFont:member(1)
-  package: ExcelScript!
-  fullName: getFont()
-  summary: テキスト範囲の `ShapeFont` フォント属性を表すオブジェクトを返します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFont(): ShapeFont;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ShapeFont:interface" />
-      description: ''
-- name: getSubstring(start, length)
-  uid: ExcelScript!ExcelScript.TextRange#getSubstring:member(1)
-  package: ExcelScript!
-  fullName: getSubstring(start, length)
-  summary: 指定された範囲の部分文字列に対する TextRange オブジェクトを返します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getSubstring(start: number, length?: number): TextRange;'
-    parameters:
-    - id: start
-      description: テキスト範囲から取得する最初の文字の 0 から始るインデックス。
-      type: number
-    - id: length
-      description: 省略可能。 新しいテキスト範囲で返される文字数。 length を省略すると、テキスト範囲の最後の段落の最初から最後までのすべての文字が返されます。
-      type: number
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.TextRange:interface" />
-      description: ''
-- name: getText()
-  uid: ExcelScript!ExcelScript.TextRange#getText:member(1)
-  package: ExcelScript!
-  fullName: getText()
-  summary: テキスト範囲のプレーン テキスト コンテンツを表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getText(): string;'
-    return:
-      type: string
-      description: ''
-- name: setText(text)
-  uid: ExcelScript!ExcelScript.TextRange#setText:member(1)
-  package: ExcelScript!
-  fullName: setText(text)
-  summary: テキスト範囲のプレーン テキスト コンテンツを表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setText(text: string): void;'
-    parameters:
-    - id: text
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 330faf3cabf13b2c07016407ca922173c1e66519
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913319"
+  - name: getFont()
+    uid: 'ExcelScript!ExcelScript.TextRange#getFont:member(1)'
+    package: ExcelScript!
+    fullName: getFont()
+    summary: テキスト範囲の `ShapeFont` フォント属性を表すオブジェクトを返します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFont(): ShapeFont;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ShapeFont:interface" />'
+        description: ''
+  - name: 'getSubstring(start, length)'
+    uid: 'ExcelScript!ExcelScript.TextRange#getSubstring:member(1)'
+    package: ExcelScript!
+    fullName: 'getSubstring(start, length)'
+    summary: 指定された範囲の部分文字列に対する TextRange オブジェクトを返します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSubstring(start: number, length?: number): TextRange;'
+      parameters:
+        - id: start
+          description: テキスト範囲から取得する最初の文字の 0 から始るインデックス。
+          type: number
+        - id: length
+          description: 省略可能です。 新しいテキスト範囲で返される文字数。 length を省略すると、テキスト範囲の最後の段落の最初から最後までのすべての文字が返されます。
+          type: number
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.TextRange:interface" />'
+        description: ''
+  - name: getText()
+    uid: 'ExcelScript!ExcelScript.TextRange#getText:member(1)'
+    package: ExcelScript!
+    fullName: getText()
+    summary: テキスト範囲のプレーン テキスト コンテンツを表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getText(): string;'
+      return:
+        type: string
+        description: ''
+  - name: setText(text)
+    uid: 'ExcelScript!ExcelScript.TextRange#setText:member(1)'
+    package: ExcelScript!
+    fullName: setText(text)
+    summary: テキスト範囲のプレーン テキスト コンテンツを表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setText(text: string): void;'
+      parameters:
+        - id: text
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''

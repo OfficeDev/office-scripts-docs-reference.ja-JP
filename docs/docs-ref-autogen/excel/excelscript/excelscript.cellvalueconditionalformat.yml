@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.CellValueConditionalFormat
-uid: ExcelScript!ExcelScript.CellValueConditionalFormat:interface
+uid: 'ExcelScript!ExcelScript.CellValueConditionalFormat:interface'
 package: ExcelScript!
 fullName: ExcelScript.CellValueConditionalFormat
 summary: セル値の条件付き書式を表します。
@@ -9,53 +9,46 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getFormat()
-  uid: ExcelScript!ExcelScript.CellValueConditionalFormat#getFormat:member(1)
-  package: ExcelScript!
-  fullName: getFormat()
-  summary: 条件付き書式のフォント、塗りつぶし、罫線、その他のプロパティをカプセル化する format オブジェクトを返します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFormat(): ConditionalRangeFormat;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeFormat:interface" />
-      description: ''
-- name: getRule()
-  uid: ExcelScript!ExcelScript.CellValueConditionalFormat#getRule:member(1)
-  package: ExcelScript!
-  fullName: getRule()
-  summary: この条件付き形式のルール オブジェクトを指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getRule(): ConditionalCellValueRule;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalCellValueRule:interface" />
-      description: ''
-- name: setRule(rule)
-  uid: ExcelScript!ExcelScript.CellValueConditionalFormat#setRule:member(1)
-  package: ExcelScript!
-  fullName: setRule(rule)
-  summary: この条件付き形式のルール オブジェクトを指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setRule(rule: ConditionalCellValueRule): void;'
-    parameters:
-    - id: rule
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalCellValueRule:interface" />
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 07decd3b64fda9ffa3e814f17d21d5fcc1f508de
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913923"
+  - name: getFormat()
+    uid: 'ExcelScript!ExcelScript.CellValueConditionalFormat#getFormat:member(1)'
+    package: ExcelScript!
+    fullName: getFormat()
+    summary: 条件付き書式のフォント、塗りつぶし、罫線、その他のプロパティをカプセル化する format オブジェクトを返します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFormat(): ConditionalRangeFormat;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeFormat:interface" />'
+        description: ''
+  - name: getRule()
+    uid: 'ExcelScript!ExcelScript.CellValueConditionalFormat#getRule:member(1)'
+    package: ExcelScript!
+    fullName: getRule()
+    summary: この条件付き形式のルール オブジェクトを指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRule(): ConditionalCellValueRule;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalCellValueRule:interface" />'
+        description: ''
+  - name: setRule(rule)
+    uid: 'ExcelScript!ExcelScript.CellValueConditionalFormat#setRule:member(1)'
+    package: ExcelScript!
+    fullName: setRule(rule)
+    summary: この条件付き形式のルール オブジェクトを指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setRule(rule: ConditionalCellValueRule): void;'
+      parameters:
+        - id: rule
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ConditionalCellValueRule:interface" />'
+      return:
+        type: void
+        description: ''

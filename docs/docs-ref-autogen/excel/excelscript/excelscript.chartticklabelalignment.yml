@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ChartTickLabelAlignment
-uid: ExcelScript!ExcelScript.ChartTickLabelAlignment:enum
+uid: 'ExcelScript!ExcelScript.ChartTickLabelAlignment:enum'
 package: ExcelScript!
 fullName: ExcelScript.ChartTickLabelAlignment
 summary: ''
@@ -8,22 +8,15 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: center
-  uid: ExcelScript!ExcelScript.ChartTickLabelAlignment.center:member
-  package: ExcelScript!
-  summary: ''
-- name: left
-  uid: ExcelScript!ExcelScript.ChartTickLabelAlignment.left:member
-  package: ExcelScript!
-  summary: ''
-- name: right
-  uid: ExcelScript!ExcelScript.ChartTickLabelAlignment.right:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: d56336a17b97607267c6757890ddfbc550deaa96
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419531"
+  - name: center
+    uid: 'ExcelScript!ExcelScript.ChartTickLabelAlignment.center:member'
+    package: ExcelScript!
+    summary: ''
+  - name: left
+    uid: 'ExcelScript!ExcelScript.ChartTickLabelAlignment.left:member'
+    package: ExcelScript!
+    summary: ''
+  - name: right
+    uid: 'ExcelScript!ExcelScript.ChartTickLabelAlignment.right:member'
+    package: ExcelScript!
+    summary: ''

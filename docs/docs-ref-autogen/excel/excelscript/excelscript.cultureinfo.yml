@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.CultureInfo
-uid: ExcelScript!ExcelScript.CultureInfo:interface
+uid: 'ExcelScript!ExcelScript.CultureInfo:interface'
 package: ExcelScript!
 fullName: ExcelScript.CultureInfo
 summary: 現在のシステム カルチャ設定に基づく情報を提供します。 これには、カルチャ名、数値の書式設定、その他の文化的に依存する設定が含まれます。
@@ -9,49 +9,42 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getDatetimeFormat()
-  uid: ExcelScript!ExcelScript.CultureInfo#getDatetimeFormat:member(1)
-  package: ExcelScript!
-  fullName: getDatetimeFormat()
-  summary: 日付と時刻を表示する文化的に適切な形式を定義します。 これは、現在のシステム カルチャ設定に基づいて行います。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getDatetimeFormat(): DatetimeFormatInfo;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.DatetimeFormatInfo:interface" />
-      description: ''
-- name: getName()
-  uid: ExcelScript!ExcelScript.CultureInfo#getName:member(1)
-  package: ExcelScript!
-  fullName: getName()
-  summary: languagecode2-country/regioncode2 形式のカルチャ名 ("zh-cn" や "ja-us" など) を取得します。 これは、現在のシステム設定に基づいて行います。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getName(): string;'
-    return:
-      type: string
-      description: ''
-- name: getNumberFormat()
-  uid: ExcelScript!ExcelScript.CultureInfo#getNumberFormat:member(1)
-  package: ExcelScript!
-  fullName: getNumberFormat()
-  summary: 数値を表示する文化的に適切な形式を定義します。 これは、現在のシステム カルチャ設定に基づいて行います。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getNumberFormat(): NumberFormatInfo;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.NumberFormatInfo:interface" />
-      description: ''
-metadata:
-  ms.openlocfilehash: 6d1e2ed04dfcdbb0275fc42382fa9a9e3f0c819b
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913711"
+  - name: getDatetimeFormat()
+    uid: 'ExcelScript!ExcelScript.CultureInfo#getDatetimeFormat:member(1)'
+    package: ExcelScript!
+    fullName: getDatetimeFormat()
+    summary: 日付と時刻を表示する文化的に適切な形式を定義します。 これは、現在のシステム カルチャ設定に基づいて行います。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getDatetimeFormat(): DatetimeFormatInfo;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.DatetimeFormatInfo:interface" />'
+        description: ''
+  - name: getName()
+    uid: 'ExcelScript!ExcelScript.CultureInfo#getName:member(1)'
+    package: ExcelScript!
+    fullName: getName()
+    summary: languagecode2-country/regioncode2 形式のカルチャ名 ("zh-cn" や "ja-us" など) を取得します。 これは、現在のシステム設定に基づいて行います。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getNumberFormat()
+    uid: 'ExcelScript!ExcelScript.CultureInfo#getNumberFormat:member(1)'
+    package: ExcelScript!
+    fullName: getNumberFormat()
+    summary: 数値を表示する文化的に適切な形式を定義します。 これは、現在のシステム カルチャ設定に基づいて行います。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getNumberFormat(): NumberFormatInfo;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.NumberFormatInfo:interface" />'
+        description: ''

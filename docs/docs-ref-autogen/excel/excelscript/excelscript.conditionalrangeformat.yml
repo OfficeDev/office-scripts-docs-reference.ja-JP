@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ConditionalRangeFormat
-uid: ExcelScript!ExcelScript.ConditionalRangeFormat:interface
+uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat:interface'
 package: ExcelScript!
 fullName: ExcelScript.ConditionalRangeFormat
 summary: 条件付き書式範囲のフォント、塗りつぶし、罫線、その他のプロパティをカプセル化する format オブジェクト。
@@ -9,151 +9,144 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getBorders()
-  uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getBorders:member(1)
-  package: ExcelScript!
-  fullName: getBorders()
-  summary: 条件付き書式範囲全体に適用される罫線オブジェクトのコレクション。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getBorders(): ConditionalRangeBorder[];'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />[]
-      description: ''
-- name: getConditionalRangeBorder(index)
-  uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorder:member(1)
-  package: ExcelScript!
-  fullName: getConditionalRangeBorder(index)
-  summary: オブジェクトの名前を使用して、境界線オブジェクトを取得します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: >-
-      getConditionalRangeBorder(
-                  index: ConditionalRangeBorderIndex
-              ): ConditionalRangeBorder;
-    parameters:
-    - id: index
-      description: 取得する罫線オブジェクトのインデックス値。 詳細は「`ExcelScript.ConditionalRangeBorderIndex`」をご覧ください。
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeBorderIndex:enum" />
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />
-      description: ''
-- name: getConditionalRangeBorderBottom()
-  uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorderBottom:member(1)
-  package: ExcelScript!
-  fullName: getConditionalRangeBorderBottom()
-  summary: 下の罫線を取得します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getConditionalRangeBorderBottom(): ConditionalRangeBorder;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />
-      description: ''
-- name: getConditionalRangeBorderLeft()
-  uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorderLeft:member(1)
-  package: ExcelScript!
-  fullName: getConditionalRangeBorderLeft()
-  summary: 左側の罫線を取得します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getConditionalRangeBorderLeft(): ConditionalRangeBorder;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />
-      description: ''
-- name: getConditionalRangeBorderRight()
-  uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorderRight:member(1)
-  package: ExcelScript!
-  fullName: getConditionalRangeBorderRight()
-  summary: 右の罫線を取得します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getConditionalRangeBorderRight(): ConditionalRangeBorder;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />
-      description: ''
-- name: getConditionalRangeBorderTop()
-  uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorderTop:member(1)
-  package: ExcelScript!
-  fullName: getConditionalRangeBorderTop()
-  summary: 上の罫線を取得します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getConditionalRangeBorderTop(): ConditionalRangeBorder;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />
-      description: ''
-- name: getFill()
-  uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getFill:member(1)
-  package: ExcelScript!
-  fullName: getFill()
-  summary: 条件付き書式の範囲全体で定義されている fill オブジェクトを返します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFill(): ConditionalRangeFill;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeFill:interface" />
-      description: ''
-- name: getFont()
-  uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getFont:member(1)
-  package: ExcelScript!
-  fullName: getFont()
-  summary: 条件付き書式の範囲全体で定義されているフォント オブジェクトを返します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFont(): ConditionalRangeFont;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeFont:interface" />
-      description: ''
-- name: getNumberFormat()
-  uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getNumberFormat:member(1)
-  package: ExcelScript!
-  fullName: getNumberFormat()
-  summary: 指定した範囲の Excel の数値書式コードを表します。 渡された場合 `null` はクリアされます。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getNumberFormat(): string;'
-    return:
-      type: string
-      description: ''
-- name: setNumberFormat(numberFormat)
-  uid: ExcelScript!ExcelScript.ConditionalRangeFormat#setNumberFormat:member(1)
-  package: ExcelScript!
-  fullName: setNumberFormat(numberFormat)
-  summary: 指定した範囲の Excel の数値書式コードを表します。 渡された場合 `null` はクリアされます。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setNumberFormat(numberFormat: string): void;'
-    parameters:
-    - id: numberFormat
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: fa181e54c3f71c44ba2e1bb08a890674d7e6f027
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913732"
+  - name: getBorders()
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getBorders:member(1)'
+    package: ExcelScript!
+    fullName: getBorders()
+    summary: 条件付き書式範囲全体に適用される罫線オブジェクトのコレクション。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getBorders(): ConditionalRangeBorder[];'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />[]'
+        description: ''
+  - name: getConditionalRangeBorder(index)
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorder:member(1)'
+    package: ExcelScript!
+    fullName: getConditionalRangeBorder(index)
+    summary: オブジェクトの名前を使用して、境界線オブジェクトを取得します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        getConditionalRangeBorder(
+                    index: ConditionalRangeBorderIndex
+                ): ConditionalRangeBorder;
+      parameters:
+        - id: index
+          description: 取得する罫線オブジェクトのインデックス値。 詳細は「`ExcelScript.ConditionalRangeBorderIndex`」をご覧ください。
+          type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeBorderIndex:enum" />'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />'
+        description: ''
+  - name: getConditionalRangeBorderBottom()
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorderBottom:member(1)'
+    package: ExcelScript!
+    fullName: getConditionalRangeBorderBottom()
+    summary: 下の罫線を取得します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getConditionalRangeBorderBottom(): ConditionalRangeBorder;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />'
+        description: ''
+  - name: getConditionalRangeBorderLeft()
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorderLeft:member(1)'
+    package: ExcelScript!
+    fullName: getConditionalRangeBorderLeft()
+    summary: 左側の罫線を取得します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getConditionalRangeBorderLeft(): ConditionalRangeBorder;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />'
+        description: ''
+  - name: getConditionalRangeBorderRight()
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorderRight:member(1)'
+    package: ExcelScript!
+    fullName: getConditionalRangeBorderRight()
+    summary: 右の罫線を取得します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getConditionalRangeBorderRight(): ConditionalRangeBorder;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />'
+        description: ''
+  - name: getConditionalRangeBorderTop()
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorderTop:member(1)'
+    package: ExcelScript!
+    fullName: getConditionalRangeBorderTop()
+    summary: 上の罫線を取得します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getConditionalRangeBorderTop(): ConditionalRangeBorder;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />'
+        description: ''
+  - name: getFill()
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getFill:member(1)'
+    package: ExcelScript!
+    fullName: getFill()
+    summary: 条件付き書式の範囲全体で定義されている fill オブジェクトを返します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFill(): ConditionalRangeFill;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeFill:interface" />'
+        description: ''
+  - name: getFont()
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getFont:member(1)'
+    package: ExcelScript!
+    fullName: getFont()
+    summary: 条件付き書式の範囲全体で定義されているフォント オブジェクトを返します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFont(): ConditionalRangeFont;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeFont:interface" />'
+        description: ''
+  - name: getNumberFormat()
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getNumberFormat:member(1)'
+    package: ExcelScript!
+    fullName: getNumberFormat()
+    summary: 指定したExcelの数値書式コードを表します。 渡された場合 `null` はクリアされます。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getNumberFormat(): string;'
+      return:
+        type: string
+        description: ''
+  - name: setNumberFormat(numberFormat)
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#setNumberFormat:member(1)'
+    package: ExcelScript!
+    fullName: setNumberFormat(numberFormat)
+    summary: 指定したExcelの数値書式コードを表します。 渡された場合 `null` はクリアされます。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setNumberFormat(numberFormat: string): void;'
+      parameters:
+        - id: numberFormat
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''

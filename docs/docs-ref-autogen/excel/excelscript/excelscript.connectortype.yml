@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ConnectorType
-uid: ExcelScript!ExcelScript.ConnectorType:enum
+uid: 'ExcelScript!ExcelScript.ConnectorType:enum'
 package: ExcelScript!
 fullName: ExcelScript.ConnectorType
 summary: ''
@@ -8,22 +8,15 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: curve
-  uid: ExcelScript!ExcelScript.ConnectorType.curve:member
-  package: ExcelScript!
-  summary: ''
-- name: elbow
-  uid: ExcelScript!ExcelScript.ConnectorType.elbow:member
-  package: ExcelScript!
-  summary: ''
-- name: straight
-  uid: ExcelScript!ExcelScript.ConnectorType.straight:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: 38d96052bb69576ab860f09a1812b3afbc0d226e
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415702"
+  - name: curve
+    uid: 'ExcelScript!ExcelScript.ConnectorType.curve:member'
+    package: ExcelScript!
+    summary: ''
+  - name: elbow
+    uid: 'ExcelScript!ExcelScript.ConnectorType.elbow:member'
+    package: ExcelScript!
+    summary: ''
+  - name: straight
+    uid: 'ExcelScript!ExcelScript.ConnectorType.straight:member'
+    package: ExcelScript!
+    summary: ''

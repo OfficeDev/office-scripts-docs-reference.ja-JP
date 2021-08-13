@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.BorderLineStyle
-uid: ExcelScript!ExcelScript.BorderLineStyle:enum
+uid: 'ExcelScript!ExcelScript.BorderLineStyle:enum'
 package: ExcelScript!
 fullName: ExcelScript.BorderLineStyle
 summary: ''
@@ -8,42 +8,35 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: continuous
-  uid: ExcelScript!ExcelScript.BorderLineStyle.continuous:member
-  package: ExcelScript!
-  summary: ''
-- name: dash
-  uid: ExcelScript!ExcelScript.BorderLineStyle.dash:member
-  package: ExcelScript!
-  summary: ''
-- name: dashDot
-  uid: ExcelScript!ExcelScript.BorderLineStyle.dashDot:member
-  package: ExcelScript!
-  summary: ''
-- name: dashDotDot
-  uid: ExcelScript!ExcelScript.BorderLineStyle.dashDotDot:member
-  package: ExcelScript!
-  summary: ''
-- name: dot
-  uid: ExcelScript!ExcelScript.BorderLineStyle.dot:member
-  package: ExcelScript!
-  summary: ''
-- name: double
-  uid: ExcelScript!ExcelScript.BorderLineStyle.double:member
-  package: ExcelScript!
-  summary: ''
-- name: none
-  uid: ExcelScript!ExcelScript.BorderLineStyle.none:member
-  package: ExcelScript!
-  summary: ''
-- name: slantDashDot
-  uid: ExcelScript!ExcelScript.BorderLineStyle.slantDashDot:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: 39e297f82b8b7eca5686ea6e25f41c7ed6bc5ec5
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417251"
+  - name: continuous
+    uid: 'ExcelScript!ExcelScript.BorderLineStyle.continuous:member'
+    package: ExcelScript!
+    summary: ''
+  - name: dash
+    uid: 'ExcelScript!ExcelScript.BorderLineStyle.dash:member'
+    package: ExcelScript!
+    summary: ''
+  - name: dashDot
+    uid: 'ExcelScript!ExcelScript.BorderLineStyle.dashDot:member'
+    package: ExcelScript!
+    summary: ''
+  - name: dashDotDot
+    uid: 'ExcelScript!ExcelScript.BorderLineStyle.dashDotDot:member'
+    package: ExcelScript!
+    summary: ''
+  - name: dot
+    uid: 'ExcelScript!ExcelScript.BorderLineStyle.dot:member'
+    package: ExcelScript!
+    summary: ''
+  - name: double
+    uid: 'ExcelScript!ExcelScript.BorderLineStyle.double:member'
+    package: ExcelScript!
+    summary: ''
+  - name: none
+    uid: 'ExcelScript!ExcelScript.BorderLineStyle.none:member'
+    package: ExcelScript!
+    summary: ''
+  - name: slantDashDot
+    uid: 'ExcelScript!ExcelScript.BorderLineStyle.slantDashDot:member'
+    package: ExcelScript!
+    summary: ''

@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ChartAxisFormat
-uid: ExcelScript!ExcelScript.ChartAxisFormat:interface
+uid: 'ExcelScript!ExcelScript.ChartAxisFormat:interface'
 package: ExcelScript!
 fullName: ExcelScript.ChartAxisFormat
 summary: グラフ軸の書式設定プロパティをカプセル化します。
@@ -9,49 +9,42 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getFill()
-  uid: ExcelScript!ExcelScript.ChartAxisFormat#getFill:member(1)
-  package: ExcelScript!
-  fullName: getFill()
-  summary: グラフの塗りつぶしの書式設定を指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFill(): ChartFill;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartFill:interface" />
-      description: ''
-- name: getFont()
-  uid: ExcelScript!ExcelScript.ChartAxisFormat#getFont:member(1)
-  package: ExcelScript!
-  fullName: getFont()
-  summary: グラフ軸要素のフォント属性 (フォント名、フォント サイズ、色など) を指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFont(): ChartFont;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartFont:interface" />
-      description: ''
-- name: getLine()
-  uid: ExcelScript!ExcelScript.ChartAxisFormat#getLine:member(1)
-  package: ExcelScript!
-  fullName: getLine()
-  summary: グラフの線の書式設定を指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLine(): ChartLineFormat;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartLineFormat:interface" />
-      description: ''
-metadata:
-  ms.openlocfilehash: 6f74fcae0950ec6307702d2075e3258acf4c7d81
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913965"
+  - name: getFill()
+    uid: 'ExcelScript!ExcelScript.ChartAxisFormat#getFill:member(1)'
+    package: ExcelScript!
+    fullName: getFill()
+    summary: グラフの塗りつぶしの書式設定を指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFill(): ChartFill;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartFill:interface" />'
+        description: ''
+  - name: getFont()
+    uid: 'ExcelScript!ExcelScript.ChartAxisFormat#getFont:member(1)'
+    package: ExcelScript!
+    fullName: getFont()
+    summary: グラフ軸要素のフォント属性 (フォント名、フォント サイズ、色など) を指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFont(): ChartFont;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartFont:interface" />'
+        description: ''
+  - name: getLine()
+    uid: 'ExcelScript!ExcelScript.ChartAxisFormat#getLine:member(1)'
+    package: ExcelScript!
+    fullName: getLine()
+    summary: グラフの線の書式設定を指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLine(): ChartLineFormat;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartLineFormat:interface" />'
+        description: ''

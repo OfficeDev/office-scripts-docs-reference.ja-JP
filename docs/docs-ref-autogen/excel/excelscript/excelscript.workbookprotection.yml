@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.WorkbookProtection
-uid: ExcelScript!ExcelScript.WorkbookProtection:interface
+uid: 'ExcelScript!ExcelScript.WorkbookProtection:interface'
 package: ExcelScript!
 fullName: ExcelScript.WorkbookProtection
 summary: ブック オブジェクトの保護を表します。
@@ -9,57 +9,50 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getProtected()
-  uid: ExcelScript!ExcelScript.WorkbookProtection#getProtected:member(1)
-  package: ExcelScript!
-  fullName: getProtected()
-  summary: ブックが保護される場合に指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getProtected(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: protect(password)
-  uid: ExcelScript!ExcelScript.WorkbookProtection#protect:member(1)
-  package: ExcelScript!
-  fullName: protect(password)
-  summary: ブックを保護します。 ブックが保護されている場合は失敗します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'protect(password?: string): void;'
-    parameters:
-    - id: password
-      description: ブック保護パスワード。
-      type: string
-    return:
-      type: void
-      description: ''
-- name: unprotect(password)
-  uid: ExcelScript!ExcelScript.WorkbookProtection#unprotect:member(1)
-  package: ExcelScript!
-  fullName: unprotect(password)
-  summary: ブックの保護を解除します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'unprotect(password?: string): void;'
-    parameters:
-    - id: password
-      description: ブック保護パスワード。
-      type: string
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: c3744f882474aedd6d50bdbb466cf704b3b5b143
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51607292"
+  - name: getProtected()
+    uid: 'ExcelScript!ExcelScript.WorkbookProtection#getProtected:member(1)'
+    package: ExcelScript!
+    fullName: getProtected()
+    summary: ブックが保護される場合に指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getProtected(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: protect(password)
+    uid: 'ExcelScript!ExcelScript.WorkbookProtection#protect:member(1)'
+    package: ExcelScript!
+    fullName: protect(password)
+    summary: ブックを保護します。 ブックが保護されている場合は失敗します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protect(password?: string): void;'
+      parameters:
+        - id: password
+          description: ブック保護パスワード。
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: unprotect(password)
+    uid: 'ExcelScript!ExcelScript.WorkbookProtection#unprotect:member(1)'
+    package: ExcelScript!
+    fullName: unprotect(password)
+    summary: ブックの保護を解除します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'unprotect(password?: string): void;'
+      parameters:
+        - id: password
+          description: ブック保護パスワード。
+          type: string
+      return:
+        type: void
+        description: ''

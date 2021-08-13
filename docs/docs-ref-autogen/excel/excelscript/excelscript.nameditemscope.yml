@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.NamedItemScope
-uid: ExcelScript!ExcelScript.NamedItemScope:enum
+uid: 'ExcelScript!ExcelScript.NamedItemScope:enum'
 package: ExcelScript!
 fullName: ExcelScript.NamedItemScope
 summary: ''
@@ -8,18 +8,11 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: workbook
-  uid: ExcelScript!ExcelScript.NamedItemScope.workbook:member
-  package: ExcelScript!
-  summary: ''
-- name: worksheet
-  uid: ExcelScript!ExcelScript.NamedItemScope.worksheet:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: 561f71d57df59beefafc232474f0a6a3fbc311f9
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415324"
+  - name: workbook
+    uid: 'ExcelScript!ExcelScript.NamedItemScope.workbook:member'
+    package: ExcelScript!
+    summary: ''
+  - name: worksheet
+    uid: 'ExcelScript!ExcelScript.NamedItemScope.worksheet:member'
+    package: ExcelScript!
+    summary: ''

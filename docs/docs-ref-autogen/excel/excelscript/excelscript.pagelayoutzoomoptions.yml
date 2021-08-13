@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.PageLayoutZoomOptions
-uid: ExcelScript!ExcelScript.PageLayoutZoomOptions:interface
+uid: 'ExcelScript!ExcelScript.PageLayoutZoomOptions:interface'
 package: ExcelScript!
 fullName: ExcelScript.PageLayoutZoomOptions
 summary: ページズームのプロパティを表します。
@@ -9,46 +9,39 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: horizontalFitToPages
-  uid: ExcelScript!ExcelScript.PageLayoutZoomOptions#horizontalFitToPages:member
-  package: ExcelScript!
-  fullName: horizontalFitToPages
-  summary: 横方向に合わせるページ数。 この値は、パーセンテージ `null` スケールを使用する場合に使用できます。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'horizontalFitToPages?: number;'
-    return:
-      type: number
-- name: scale
-  uid: ExcelScript!ExcelScript.PageLayoutZoomOptions#scale:member
-  package: ExcelScript!
-  fullName: scale
-  summary: 印刷ページのスケール値は 10 から 400 までです。 この値は、ページ `null` の高さまたは幅に合わせて指定できます。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'scale?: number;'
-    return:
-      type: number
-- name: verticalFitToPages
-  uid: ExcelScript!ExcelScript.PageLayoutZoomOptions#verticalFitToPages:member
-  package: ExcelScript!
-  fullName: verticalFitToPages
-  summary: 縦方向に合わせるページ数。 この値は、パーセンテージ `null` スケールを使用する場合に使用できます。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'verticalFitToPages?: number;'
-    return:
-      type: number
-metadata:
-  ms.openlocfilehash: e003103fb547ccfe9c0fcbabbdd5f9d1c7bb042f
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913569"
+  - name: horizontalFitToPages
+    uid: 'ExcelScript!ExcelScript.PageLayoutZoomOptions#horizontalFitToPages:member'
+    package: ExcelScript!
+    fullName: horizontalFitToPages
+    summary: 横方向に合わせるページ数。 この値は、パーセンテージ `null` スケールを使用する場合に使用できます。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'horizontalFitToPages?: number;'
+      return:
+        type: number
+  - name: scale
+    uid: 'ExcelScript!ExcelScript.PageLayoutZoomOptions#scale:member'
+    package: ExcelScript!
+    fullName: scale
+    summary: 印刷ページのスケール値は 10 から 400 までです。 この値は、ページ `null` の高さまたは幅に合わせて指定できます。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'scale?: number;'
+      return:
+        type: number
+  - name: verticalFitToPages
+    uid: 'ExcelScript!ExcelScript.PageLayoutZoomOptions#verticalFitToPages:member'
+    package: ExcelScript!
+    fullName: verticalFitToPages
+    summary: 縦方向に合わせるページ数。 この値は、パーセンテージ `null` スケールを使用する場合に使用できます。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'verticalFitToPages?: number;'
+      return:
+        type: number

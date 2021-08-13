@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ConditionalRangeBorder
-uid: ExcelScript!ExcelScript.ConditionalRangeBorder:interface
+uid: 'ExcelScript!ExcelScript.ConditionalRangeBorder:interface'
 package: ExcelScript!
 fullName: ExcelScript.ConditionalRangeBorder
 summary: オブジェクトの輪郭を表します。
@@ -9,83 +9,76 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getColor()
-  uid: ExcelScript!ExcelScript.ConditionalRangeBorder#getColor:member(1)
-  package: ExcelScript!
-  fullName: getColor()
-  summary: RRGGBB 形式 ("FFA500" など) の境界線の色を表す HTML カラー コード、または名前付き HTML 色 ("オレンジ色" など) を表 \# します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getColor(): string;'
-    return:
-      type: string
-      description: ''
-- name: getSideIndex()
-  uid: ExcelScript!ExcelScript.ConditionalRangeBorder#getSideIndex:member(1)
-  package: ExcelScript!
-  fullName: getSideIndex()
-  summary: 罫線の特定の辺を表す定数値。 詳細は「`ExcelScript.ConditionalRangeBorderIndex`」をご覧ください。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getSideIndex(): ConditionalRangeBorderIndex;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeBorderIndex:enum" />
-      description: ''
-- name: getStyle()
-  uid: ExcelScript!ExcelScript.ConditionalRangeBorder#getStyle:member(1)
-  package: ExcelScript!
-  fullName: getStyle()
-  summary: 罫線の線スタイルを指定する、線スタイル定数のいずれか 1 つ。 詳細は「`ExcelScript.BorderLineStyle`」をご覧ください。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getStyle(): ConditionalRangeBorderLineStyle;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeBorderLineStyle:enum" />
-      description: ''
-- name: setColor(color)
-  uid: ExcelScript!ExcelScript.ConditionalRangeBorder#setColor:member(1)
-  package: ExcelScript!
-  fullName: setColor(color)
-  summary: RRGGBB 形式 ("FFA500" など) の境界線の色を表す HTML カラー コード、または名前付き HTML 色 ("オレンジ色" など) を表 \# します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setColor(color: string): void;'
-    parameters:
-    - id: color
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setStyle(style)
-  uid: ExcelScript!ExcelScript.ConditionalRangeBorder#setStyle:member(1)
-  package: ExcelScript!
-  fullName: setStyle(style)
-  summary: 罫線の線スタイルを指定する、線スタイル定数のいずれか 1 つ。 詳細は「`ExcelScript.BorderLineStyle`」をご覧ください。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setStyle(style: ConditionalRangeBorderLineStyle): void;'
-    parameters:
-    - id: style
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeBorderLineStyle:enum" />
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 8c63e4408d69e8f9db8bcefb559987dff96fbd95
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913753"
+  - name: getColor()
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeBorder#getColor:member(1)'
+    package: ExcelScript!
+    fullName: getColor()
+    summary: RRGGBB 形式 ("FFA500" など) の境界線の色を表す HTML カラー コード、または名前付き HTML 色 ("オレンジ色" など) を表 \# します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getColor(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getSideIndex()
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeBorder#getSideIndex:member(1)'
+    package: ExcelScript!
+    fullName: getSideIndex()
+    summary: 罫線の特定の辺を表す定数値。 詳細は「`ExcelScript.ConditionalRangeBorderIndex`」をご覧ください。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSideIndex(): ConditionalRangeBorderIndex;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeBorderIndex:enum" />'
+        description: ''
+  - name: getStyle()
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeBorder#getStyle:member(1)'
+    package: ExcelScript!
+    fullName: getStyle()
+    summary: 罫線の線スタイルを指定する、線スタイル定数のいずれか 1 つ。 詳細は「`ExcelScript.BorderLineStyle`」をご覧ください。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getStyle(): ConditionalRangeBorderLineStyle;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeBorderLineStyle:enum" />'
+        description: ''
+  - name: setColor(color)
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeBorder#setColor:member(1)'
+    package: ExcelScript!
+    fullName: setColor(color)
+    summary: RRGGBB 形式 ("FFA500" など) の境界線の色を表す HTML カラー コード、または名前付き HTML 色 ("オレンジ色" など) を表 \# します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setColor(color: string): void;'
+      parameters:
+        - id: color
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setStyle(style)
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeBorder#setStyle:member(1)'
+    package: ExcelScript!
+    fullName: setStyle(style)
+    summary: 罫線の線スタイルを指定する、線スタイル定数のいずれか 1 つ。 詳細は「`ExcelScript.BorderLineStyle`」をご覧ください。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setStyle(style: ConditionalRangeBorderLineStyle): void;'
+      parameters:
+        - id: style
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeBorderLineStyle:enum" />'
+      return:
+        type: void
+        description: ''

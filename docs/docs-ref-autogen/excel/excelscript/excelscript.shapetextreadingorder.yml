@@ -1,25 +1,18 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ShapeTextReadingOrder
-uid: ExcelScript!ExcelScript.ShapeTextReadingOrder:enum
+uid: 'ExcelScript!ExcelScript.ShapeTextReadingOrder:enum'
 package: ExcelScript!
 fullName: ExcelScript.ShapeTextReadingOrder
-summary: 図形内のテキストボックスの読み取り順序を指定します。
+summary: 図形のテキスト フレームの読み取り順序を指定します。
 remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: leftToRight
-  uid: ExcelScript!ExcelScript.ShapeTextReadingOrder.leftToRight:member
-  package: ExcelScript!
-  summary: ''
-- name: rightToLeft
-  uid: ExcelScript!ExcelScript.ShapeTextReadingOrder.rightToLeft:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: 9d69d673a670c893ee2a518f7cbcfffe0f71d12e
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49411741"
+  - name: leftToRight
+    uid: 'ExcelScript!ExcelScript.ShapeTextReadingOrder.leftToRight:member'
+    package: ExcelScript!
+    summary: ''
+  - name: rightToLeft
+    uid: 'ExcelScript!ExcelScript.ShapeTextReadingOrder.rightToLeft:member'
+    package: ExcelScript!
+    summary: ''

@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.NamedSheetView
-uid: ExcelScript!ExcelScript.NamedSheetView:interface
+uid: 'ExcelScript!ExcelScript.NamedSheetView:interface'
 package: ExcelScript!
 fullName: ExcelScript.NamedSheetView
 summary: ワークシートの名前付きシート ビューを表します。 シート ビューには、特定のワークシートの並べ替えルールとフィルター ルールが格納されます。 すべてのシート ビュー (一時的なシート ビューでも) には、ビューへのアクセスに使用される一意のワークシートスコープの名前があります。
@@ -9,83 +9,76 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: activate()
-  uid: ExcelScript!ExcelScript.NamedSheetView#activate:member(1)
-  package: ExcelScript!
-  fullName: activate()
-  summary: このシート ビューをアクティブ化します。 これは、Excel UI で "Switch To" を使用するのと同じです。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'activate(): void;'
-    return:
-      type: void
-      description: ''
-- name: delete()
-  uid: ExcelScript!ExcelScript.NamedSheetView#delete:member(1)
-  package: ExcelScript!
-  fullName: delete()
-  summary: ワークシートからシート ビューを削除します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'delete(): void;'
-    return:
-      type: void
-      description: ''
-- name: duplicate(name)
-  uid: ExcelScript!ExcelScript.NamedSheetView#duplicate:member(1)
-  package: ExcelScript!
-  fullName: duplicate(name)
-  summary: このシート ビューのコピーを作成します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'duplicate(name?: string): NamedSheetView;'
-    parameters:
-    - id: name
-      description: 重複したシート ビューの名前。 名前が指定されなき場合は、1 つが生成されます。
-      type: string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.NamedSheetView:interface" />
-      description: ''
-- name: getName()
-  uid: ExcelScript!ExcelScript.NamedSheetView#getName:member(1)
-  package: ExcelScript!
-  fullName: getName()
-  summary: シート ビューの名前を取得または設定します。 一時シート ビュー名は空の文字列 ("") です。 name プロパティを使用してビューに名前を付けると、シート ビューが保存されます。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getName(): string;'
-    return:
-      type: string
-      description: ''
-- name: setName(name)
-  uid: ExcelScript!ExcelScript.NamedSheetView#setName:member(1)
-  package: ExcelScript!
-  fullName: setName(name)
-  summary: シート ビューの名前を取得または設定します。 一時シート ビュー名は空の文字列 ("") です。 name プロパティを使用してビューに名前を付けると、シート ビューが保存されます。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setName(name: string): void;'
-    parameters:
-    - id: name
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 1db6ac57a9824763fd56594c4d8e94abb9ad9211
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913685"
+  - name: activate()
+    uid: 'ExcelScript!ExcelScript.NamedSheetView#activate:member(1)'
+    package: ExcelScript!
+    fullName: activate()
+    summary: このシート ビューをアクティブ化します。 これは、ユーザーインターフェイスで "Switch To" を使用Excelです。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'activate(): void;'
+      return:
+        type: void
+        description: ''
+  - name: delete()
+    uid: 'ExcelScript!ExcelScript.NamedSheetView#delete:member(1)'
+    package: ExcelScript!
+    fullName: delete()
+    summary: ワークシートからシート ビューを削除します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: ''
+  - name: duplicate(name)
+    uid: 'ExcelScript!ExcelScript.NamedSheetView#duplicate:member(1)'
+    package: ExcelScript!
+    fullName: duplicate(name)
+    summary: このシート ビューのコピーを作成します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'duplicate(name?: string): NamedSheetView;'
+      parameters:
+        - id: name
+          description: 重複したシート ビューの名前。 名前が指定されなき場合は、1 つが生成されます。
+          type: string
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.NamedSheetView:interface" />'
+        description: ''
+  - name: getName()
+    uid: 'ExcelScript!ExcelScript.NamedSheetView#getName:member(1)'
+    package: ExcelScript!
+    fullName: getName()
+    summary: シート ビューの名前を取得または設定します。 一時シート ビュー名は空の文字列 ("") です。 name プロパティを使用してビューに名前を付けると、シート ビューが保存されます。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type: string
+        description: ''
+  - name: setName(name)
+    uid: 'ExcelScript!ExcelScript.NamedSheetView#setName:member(1)'
+    package: ExcelScript!
+    fullName: setName(name)
+    summary: シート ビューの名前を取得または設定します。 一時シート ビュー名は空の文字列 ("") です。 name プロパティを使用してビューに名前を付けると、シート ビューが保存されます。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setName(name: string): void;'
+      parameters:
+        - id: name
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''

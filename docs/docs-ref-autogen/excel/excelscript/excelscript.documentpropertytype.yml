@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.DocumentPropertyType
-uid: ExcelScript!ExcelScript.DocumentPropertyType:enum
+uid: 'ExcelScript!ExcelScript.DocumentPropertyType:enum'
 package: ExcelScript!
 fullName: ExcelScript.DocumentPropertyType
 summary: ''
@@ -8,30 +8,23 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: boolean
-  uid: ExcelScript!ExcelScript.DocumentPropertyType.boolean:member
-  package: ExcelScript!
-  summary: ''
-- name: date
-  uid: ExcelScript!ExcelScript.DocumentPropertyType.date:member
-  package: ExcelScript!
-  summary: ''
-- name: float
-  uid: ExcelScript!ExcelScript.DocumentPropertyType.float:member
-  package: ExcelScript!
-  summary: ''
-- name: number
-  uid: ExcelScript!ExcelScript.DocumentPropertyType.number:member
-  package: ExcelScript!
-  summary: ''
-- name: string
-  uid: ExcelScript!ExcelScript.DocumentPropertyType.string:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: a2096a48ad9649b26c878fdf9ab5513531787f7a
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412602"
+  - name: boolean
+    uid: 'ExcelScript!ExcelScript.DocumentPropertyType.boolean:member'
+    package: ExcelScript!
+    summary: ''
+  - name: date
+    uid: 'ExcelScript!ExcelScript.DocumentPropertyType.date:member'
+    package: ExcelScript!
+    summary: ''
+  - name: float
+    uid: 'ExcelScript!ExcelScript.DocumentPropertyType.float:member'
+    package: ExcelScript!
+    summary: ''
+  - name: number
+    uid: 'ExcelScript!ExcelScript.DocumentPropertyType.number:member'
+    package: ExcelScript!
+    summary: ''
+  - name: string
+    uid: 'ExcelScript!ExcelScript.DocumentPropertyType.string:member'
+    package: ExcelScript!
+    summary: ''

@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ArrowheadLength
-uid: ExcelScript!ExcelScript.ArrowheadLength:enum
+uid: 'ExcelScript!ExcelScript.ArrowheadLength:enum'
 package: ExcelScript!
 fullName: ExcelScript.ArrowheadLength
 summary: ''
@@ -8,22 +8,15 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: long
-  uid: ExcelScript!ExcelScript.ArrowheadLength.long:member
-  package: ExcelScript!
-  summary: ''
-- name: medium
-  uid: ExcelScript!ExcelScript.ArrowheadLength.medium:member
-  package: ExcelScript!
-  summary: ''
-- name: short
-  uid: ExcelScript!ExcelScript.ArrowheadLength.short:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: 959d28fd70ce6e1c2b0ccfb3d760f0c9f9617b87
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417356"
+  - name: long
+    uid: 'ExcelScript!ExcelScript.ArrowheadLength.long:member'
+    package: ExcelScript!
+    summary: ''
+  - name: medium
+    uid: 'ExcelScript!ExcelScript.ArrowheadLength.medium:member'
+    package: ExcelScript!
+    summary: ''
+  - name: short
+    uid: 'ExcelScript!ExcelScript.ArrowheadLength.short:member'
+    package: ExcelScript!
+    summary: ''

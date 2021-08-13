@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ShapeGroup
-uid: ExcelScript!ExcelScript.ShapeGroup:interface
+uid: 'ExcelScript!ExcelScript.ShapeGroup:interface'
 package: ExcelScript!
 fullName: ExcelScript.ShapeGroup
 summary: ワークシート内の図形グループを表します。 対応するオブジェクトを取得 `Shape` するには、 `ShapeGroup.shape`<!-- -->.
@@ -9,79 +9,72 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getGroupShape()
-  uid: ExcelScript!ExcelScript.ShapeGroup#getGroupShape:member(1)
-  package: ExcelScript!
-  fullName: getGroupShape()
-  summary: グループに関連 `Shape` 付けられているオブジェクトを返します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getGroupShape(): Shape;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
-      description: ''
-- name: getId()
-  uid: ExcelScript!ExcelScript.ShapeGroup#getId:member(1)
-  package: ExcelScript!
-  fullName: getId()
-  summary: 図形識別子を指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getId(): string;'
-    return:
-      type: string
-      description: ''
-- name: getShape(key)
-  uid: ExcelScript!ExcelScript.ShapeGroup#getShape:member(1)
-  package: ExcelScript!
-  fullName: getShape(key)
-  summary: 名前または ID を使用して図形を取得します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShape(key: string): Shape;'
-    parameters:
-    - id: key
-      description: 取得する図形の名前または ID。
-      type: string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
-      description: ''
-- name: getShapes()
-  uid: ExcelScript!ExcelScript.ShapeGroup#getShapes:member(1)
-  package: ExcelScript!
-  fullName: getShapes()
-  summary: オブジェクトのコレクションを返 `Shape` します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShapes(): Shape[];'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />[]
-      description: ''
-- name: ungroup()
-  uid: ExcelScript!ExcelScript.ShapeGroup#ungroup:member(1)
-  package: ExcelScript!
-  fullName: ungroup()
-  summary: 指定した図形グループに含まれるグループ化された図形のグループを解除します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'ungroup(): void;'
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 0a39bde9d14cfdacde4873f9cac7c01d82861ced
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914189"
+  - name: getGroupShape()
+    uid: 'ExcelScript!ExcelScript.ShapeGroup#getGroupShape:member(1)'
+    package: ExcelScript!
+    fullName: getGroupShape()
+    summary: グループに関連 `Shape` 付けられているオブジェクトを返します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getGroupShape(): Shape;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Shape:interface" />'
+        description: ''
+  - name: getId()
+    uid: 'ExcelScript!ExcelScript.ShapeGroup#getId:member(1)'
+    package: ExcelScript!
+    fullName: getId()
+    summary: 図形識別子を指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getId(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getShape(key)
+    uid: 'ExcelScript!ExcelScript.ShapeGroup#getShape:member(1)'
+    package: ExcelScript!
+    fullName: getShape(key)
+    summary: 名前または ID を使用して図形を取得します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShape(key: string): Shape;'
+      parameters:
+        - id: key
+          description: 取得する図形の名前または ID。
+          type: string
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Shape:interface" />'
+        description: ''
+  - name: getShapes()
+    uid: 'ExcelScript!ExcelScript.ShapeGroup#getShapes:member(1)'
+    package: ExcelScript!
+    fullName: getShapes()
+    summary: オブジェクトのコレクションを返 `Shape` します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShapes(): Shape[];'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Shape:interface" />[]'
+        description: ''
+  - name: ungroup()
+    uid: 'ExcelScript!ExcelScript.ShapeGroup#ungroup:member(1)'
+    package: ExcelScript!
+    fullName: ungroup()
+    summary: 指定した図形グループに含まれるグループ化された図形のグループを解除します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ungroup(): void;'
+      return:
+        type: void
+        description: ''

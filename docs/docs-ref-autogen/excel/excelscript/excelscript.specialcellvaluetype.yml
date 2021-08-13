@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.SpecialCellValueType
-uid: ExcelScript!ExcelScript.SpecialCellValueType:enum
+uid: 'ExcelScript!ExcelScript.SpecialCellValueType:enum'
 package: ExcelScript!
 fullName: ExcelScript.SpecialCellValueType
 summary: ''
@@ -8,70 +8,63 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: all
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.all:member
-  package: ExcelScript!
-  summary: エラー、ブール値、数値、または文字列値を持つセル。
-- name: errors
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.errors:member
-  package: ExcelScript!
-  summary: エラーがあるセル。
-- name: errorsLogical
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsLogical:member
-  package: ExcelScript!
-  summary: エラーまたはブール値を持つセル。
-- name: errorsLogicalNumber
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsLogicalNumber:member
-  package: ExcelScript!
-  summary: エラー、ブール値、または数値を持つセル。
-- name: errorsLogicalText
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsLogicalText:member
-  package: ExcelScript!
-  summary: エラー、ブール値、または文字列値を持つセル。
-- name: errorsNumbers
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsNumbers:member
-  package: ExcelScript!
-  summary: エラーまたは数値を持つセル。
-- name: errorsNumberText
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsNumberText:member
-  package: ExcelScript!
-  summary: エラー、数値、または文字列値を持つセル。
-- name: errorsText
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsText:member
-  package: ExcelScript!
-  summary: エラーまたは文字列値を持つセル。
-- name: logical
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.logical:member
-  package: ExcelScript!
-  summary: ブール値を持つセル。
-- name: logicalNumbers
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.logicalNumbers:member
-  package: ExcelScript!
-  summary: ブール値または数値を持つセル。
-- name: logicalNumbersText
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.logicalNumbersText:member
-  package: ExcelScript!
-  summary: ブール値、数値、または文字列値を持つセル。
-- name: logicalText
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.logicalText:member
-  package: ExcelScript!
-  summary: ブール値または文字列値を持つセル。
-- name: numbers
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.numbers:member
-  package: ExcelScript!
-  summary: 数値を持つセル。
-- name: numbersText
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.numbersText:member
-  package: ExcelScript!
-  summary: 数値または文字列値を持つセル。
-- name: text
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.text:member
-  package: ExcelScript!
-  summary: 文字列値を持つセル。
-metadata:
-  ms.openlocfilehash: 93f2ab2e05785f1f93bc26839d20d9c060205384
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51607341"
+  - name: all
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.all:member'
+    package: ExcelScript!
+    summary: エラー、ブール値、数値、または文字列値を持つセル。
+  - name: errors
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errors:member'
+    package: ExcelScript!
+    summary: エラーがあるセル。
+  - name: errorsLogical
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsLogical:member'
+    package: ExcelScript!
+    summary: エラーまたはブール値を持つセル。
+  - name: errorsLogicalNumber
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsLogicalNumber:member'
+    package: ExcelScript!
+    summary: エラー、ブール値、または数値を持つセル。
+  - name: errorsLogicalText
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsLogicalText:member'
+    package: ExcelScript!
+    summary: エラー、ブール値、または文字列値を持つセル。
+  - name: errorsNumbers
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsNumbers:member'
+    package: ExcelScript!
+    summary: エラーまたは数値を持つセル。
+  - name: errorsNumberText
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsNumberText:member'
+    package: ExcelScript!
+    summary: エラー、数値、または文字列値を持つセル。
+  - name: errorsText
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsText:member'
+    package: ExcelScript!
+    summary: エラーまたは文字列値を持つセル。
+  - name: logical
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.logical:member'
+    package: ExcelScript!
+    summary: ブール値を持つセル。
+  - name: logicalNumbers
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.logicalNumbers:member'
+    package: ExcelScript!
+    summary: ブール値または数値を持つセル。
+  - name: logicalNumbersText
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.logicalNumbersText:member'
+    package: ExcelScript!
+    summary: ブール値、数値、または文字列値を持つセル。
+  - name: logicalText
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.logicalText:member'
+    package: ExcelScript!
+    summary: ブール値または文字列値を持つセル。
+  - name: numbers
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.numbers:member'
+    package: ExcelScript!
+    summary: 数値を持つセル。
+  - name: numbersText
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.numbersText:member'
+    package: ExcelScript!
+    summary: 数値または文字列値を持つセル。
+  - name: text
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.text:member'
+    package: ExcelScript!
+    summary: 文字列値を持つセル。

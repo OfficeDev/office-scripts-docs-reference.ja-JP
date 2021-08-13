@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ChartBoxwhiskerOptions
-uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions:interface
+uid: 'ExcelScript!ExcelScript.ChartBoxwhiskerOptions:interface'
 package: ExcelScript!
 fullName: ExcelScript.ChartBoxwhiskerOptions
 summary: ボックスグラフとひげグラフのプロパティを表します。
@@ -9,163 +9,156 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getQuartileCalculation()
-  uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#getQuartileCalculation:member(1)
-  package: ExcelScript!
-  fullName: getQuartileCalculation()
-  summary: ボックスグラフとひげグラフの四分位計算の種類を指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getQuartileCalculation(): ChartBoxQuartileCalculation;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartBoxQuartileCalculation:enum" />
-      description: ''
-- name: getShowInnerPoints()
-  uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#getShowInnerPoints:member(1)
-  package: ExcelScript!
-  fullName: getShowInnerPoints()
-  summary: ボックスとひげグラフに内側の点を表示する場合に指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowInnerPoints(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getShowMeanLine()
-  uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#getShowMeanLine:member(1)
-  package: ExcelScript!
-  fullName: getShowMeanLine()
-  summary: 平均線をボックスとひげグラフに表示する場合に指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowMeanLine(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getShowMeanMarker()
-  uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#getShowMeanMarker:member(1)
-  package: ExcelScript!
-  fullName: getShowMeanMarker()
-  summary: 平均マーカーをボックスとひげグラフに表示する場合に指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowMeanMarker(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getShowOutlierPoints()
-  uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#getShowOutlierPoints:member(1)
-  package: ExcelScript!
-  fullName: getShowOutlierPoints()
-  summary: ボックスとひげグラフに外れ値ポイントを表示する場合に指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowOutlierPoints(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: setQuartileCalculation(quartileCalculation)
-  uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#setQuartileCalculation:member(1)
-  package: ExcelScript!
-  fullName: setQuartileCalculation(quartileCalculation)
-  summary: ボックスグラフとひげグラフの四分位計算の種類を指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: >-
-      setQuartileCalculation(
-                  quartileCalculation: ChartBoxQuartileCalculation
-              ): void;
-    parameters:
-    - id: quartileCalculation
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ChartBoxQuartileCalculation:enum" />
-    return:
-      type: void
-      description: ''
-- name: setShowInnerPoints(showInnerPoints)
-  uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#setShowInnerPoints:member(1)
-  package: ExcelScript!
-  fullName: setShowInnerPoints(showInnerPoints)
-  summary: ボックスとひげグラフに内側の点を表示する場合に指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowInnerPoints(showInnerPoints: boolean): void;'
-    parameters:
-    - id: showInnerPoints
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setShowMeanLine(showMeanLine)
-  uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#setShowMeanLine:member(1)
-  package: ExcelScript!
-  fullName: setShowMeanLine(showMeanLine)
-  summary: 平均線をボックスとひげグラフに表示する場合に指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowMeanLine(showMeanLine: boolean): void;'
-    parameters:
-    - id: showMeanLine
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setShowMeanMarker(showMeanMarker)
-  uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#setShowMeanMarker:member(1)
-  package: ExcelScript!
-  fullName: setShowMeanMarker(showMeanMarker)
-  summary: 平均マーカーをボックスとひげグラフに表示する場合に指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowMeanMarker(showMeanMarker: boolean): void;'
-    parameters:
-    - id: showMeanMarker
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setShowOutlierPoints(showOutlierPoints)
-  uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#setShowOutlierPoints:member(1)
-  package: ExcelScript!
-  fullName: setShowOutlierPoints(showOutlierPoints)
-  summary: ボックスとひげグラフに外れ値ポイントを表示する場合に指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowOutlierPoints(showOutlierPoints: boolean): void;'
-    parameters:
-    - id: showOutlierPoints
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: b53c861761fa2dbead962e9ec6e1b011af51f12b
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914563"
+  - name: getQuartileCalculation()
+    uid: 'ExcelScript!ExcelScript.ChartBoxwhiskerOptions#getQuartileCalculation:member(1)'
+    package: ExcelScript!
+    fullName: getQuartileCalculation()
+    summary: ボックスグラフとひげグラフの四分位計算の種類を指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getQuartileCalculation(): ChartBoxQuartileCalculation;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartBoxQuartileCalculation:enum" />'
+        description: ''
+  - name: getShowInnerPoints()
+    uid: 'ExcelScript!ExcelScript.ChartBoxwhiskerOptions#getShowInnerPoints:member(1)'
+    package: ExcelScript!
+    fullName: getShowInnerPoints()
+    summary: ボックスとひげグラフに内側の点を表示する場合に指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowInnerPoints(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getShowMeanLine()
+    uid: 'ExcelScript!ExcelScript.ChartBoxwhiskerOptions#getShowMeanLine:member(1)'
+    package: ExcelScript!
+    fullName: getShowMeanLine()
+    summary: 平均線をボックスとひげグラフに表示する場合に指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowMeanLine(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getShowMeanMarker()
+    uid: 'ExcelScript!ExcelScript.ChartBoxwhiskerOptions#getShowMeanMarker:member(1)'
+    package: ExcelScript!
+    fullName: getShowMeanMarker()
+    summary: 平均マーカーをボックスとひげグラフに表示する場合に指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowMeanMarker(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getShowOutlierPoints()
+    uid: 'ExcelScript!ExcelScript.ChartBoxwhiskerOptions#getShowOutlierPoints:member(1)'
+    package: ExcelScript!
+    fullName: getShowOutlierPoints()
+    summary: ボックスとひげグラフに外れ値ポイントを表示する場合に指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowOutlierPoints(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: setQuartileCalculation(quartileCalculation)
+    uid: 'ExcelScript!ExcelScript.ChartBoxwhiskerOptions#setQuartileCalculation:member(1)'
+    package: ExcelScript!
+    fullName: setQuartileCalculation(quartileCalculation)
+    summary: ボックスグラフとひげグラフの四分位計算の種類を指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        setQuartileCalculation(
+                    quartileCalculation: ChartBoxQuartileCalculation
+                ): void;
+      parameters:
+        - id: quartileCalculation
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ChartBoxQuartileCalculation:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setShowInnerPoints(showInnerPoints)
+    uid: 'ExcelScript!ExcelScript.ChartBoxwhiskerOptions#setShowInnerPoints:member(1)'
+    package: ExcelScript!
+    fullName: setShowInnerPoints(showInnerPoints)
+    summary: ボックスとひげグラフに内側の点を表示する場合に指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowInnerPoints(showInnerPoints: boolean): void;'
+      parameters:
+        - id: showInnerPoints
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setShowMeanLine(showMeanLine)
+    uid: 'ExcelScript!ExcelScript.ChartBoxwhiskerOptions#setShowMeanLine:member(1)'
+    package: ExcelScript!
+    fullName: setShowMeanLine(showMeanLine)
+    summary: 平均線をボックスとひげグラフに表示する場合に指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowMeanLine(showMeanLine: boolean): void;'
+      parameters:
+        - id: showMeanLine
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setShowMeanMarker(showMeanMarker)
+    uid: 'ExcelScript!ExcelScript.ChartBoxwhiskerOptions#setShowMeanMarker:member(1)'
+    package: ExcelScript!
+    fullName: setShowMeanMarker(showMeanMarker)
+    summary: 平均マーカーをボックスとひげグラフに表示する場合に指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowMeanMarker(showMeanMarker: boolean): void;'
+      parameters:
+        - id: showMeanMarker
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setShowOutlierPoints(showOutlierPoints)
+    uid: 'ExcelScript!ExcelScript.ChartBoxwhiskerOptions#setShowOutlierPoints:member(1)'
+    package: ExcelScript!
+    fullName: setShowOutlierPoints(showOutlierPoints)
+    summary: ボックスとひげグラフに外れ値ポイントを表示する場合に指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowOutlierPoints(showOutlierPoints: boolean): void;'
+      parameters:
+        - id: showOutlierPoints
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''

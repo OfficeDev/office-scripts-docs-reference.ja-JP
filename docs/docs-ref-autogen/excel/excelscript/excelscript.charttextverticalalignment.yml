@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ChartTextVerticalAlignment
-uid: ExcelScript!ExcelScript.ChartTextVerticalAlignment:enum
+uid: 'ExcelScript!ExcelScript.ChartTextVerticalAlignment:enum'
 package: ExcelScript!
 fullName: ExcelScript.ChartTextVerticalAlignment
 summary: 指定したオブジェクトの垂直方向の配置を表します。
@@ -8,30 +8,23 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: bottom
-  uid: ExcelScript!ExcelScript.ChartTextVerticalAlignment.bottom:member
-  package: ExcelScript!
-  summary: ''
-- name: center
-  uid: ExcelScript!ExcelScript.ChartTextVerticalAlignment.center:member
-  package: ExcelScript!
-  summary: ''
-- name: distributed
-  uid: ExcelScript!ExcelScript.ChartTextVerticalAlignment.distributed:member
-  package: ExcelScript!
-  summary: ''
-- name: justify
-  uid: ExcelScript!ExcelScript.ChartTextVerticalAlignment.justify:member
-  package: ExcelScript!
-  summary: ''
-- name: top
-  uid: ExcelScript!ExcelScript.ChartTextVerticalAlignment.top:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: 6140ee9b8f514c9287d8567581a64432fc5747e4
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416024"
+  - name: bottom
+    uid: 'ExcelScript!ExcelScript.ChartTextVerticalAlignment.bottom:member'
+    package: ExcelScript!
+    summary: ''
+  - name: center
+    uid: 'ExcelScript!ExcelScript.ChartTextVerticalAlignment.center:member'
+    package: ExcelScript!
+    summary: ''
+  - name: distributed
+    uid: 'ExcelScript!ExcelScript.ChartTextVerticalAlignment.distributed:member'
+    package: ExcelScript!
+    summary: ''
+  - name: justify
+    uid: 'ExcelScript!ExcelScript.ChartTextVerticalAlignment.justify:member'
+    package: ExcelScript!
+    summary: ''
+  - name: top
+    uid: 'ExcelScript!ExcelScript.ChartTextVerticalAlignment.top:member'
+    package: ExcelScript!
+    summary: ''

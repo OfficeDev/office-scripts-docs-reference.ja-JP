@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.RangeSort
-uid: ExcelScript!ExcelScript.RangeSort:interface
+uid: 'ExcelScript!ExcelScript.RangeSort:interface'
 package: ExcelScript!
 fullName: ExcelScript.RangeSort
 summary: オブジェクトの並べ替え操作を `Range` 管理します。
@@ -9,46 +9,39 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: apply(fields, matchCase, hasHeaders, orientation, method)
-  uid: ExcelScript!ExcelScript.RangeSort#apply:member(1)
-  package: ExcelScript!
-  fullName: apply(fields, matchCase, hasHeaders, orientation, method)
-  summary: 並べ替え操作を実行します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: >-
-      apply(
-                  fields: SortField[],
-                  matchCase?: boolean,
-                  hasHeaders?: boolean,
-                  orientation?: SortOrientation,
-                  method?: SortMethod
-              ): void;
-    parameters:
-    - id: fields
-      description: 並べ替えに使用する条件の一覧。
-      type: <xref uid="ExcelScript!ExcelScript.SortField:interface" />[]
-    - id: matchCase
-      description: 省略可能。 大文字小文字の区別が文字列の順序に影響を与えるかどうか。
-      type: boolean
-    - id: hasHeaders
-      description: 省略可能。 範囲にヘッダーがあるかどうか。
-      type: boolean
-    - id: orientation
-      description: 省略可能。 操作が行と列のどちらの並べ替えかを示します。
-      type: <xref uid="ExcelScript!ExcelScript.SortOrientation:enum" />
-    - id: method
-      description: 省略可能。 中国語文字に使用される順序付けの方法です。
-      type: <xref uid="ExcelScript!ExcelScript.SortMethod:enum" />
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: aac26f2501cc8107831122b3f171fc7a52403333
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51607418"
+  - name: 'apply(fields, matchCase, hasHeaders, orientation, method)'
+    uid: 'ExcelScript!ExcelScript.RangeSort#apply:member(1)'
+    package: ExcelScript!
+    fullName: 'apply(fields, matchCase, hasHeaders, orientation, method)'
+    summary: 並べ替え操作を実行します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        apply(
+                    fields: SortField[],
+                    matchCase?: boolean,
+                    hasHeaders?: boolean,
+                    orientation?: SortOrientation,
+                    method?: SortMethod
+                ): void;
+      parameters:
+        - id: fields
+          description: 並べ替えに使用する条件の一覧。
+          type: '<xref uid="ExcelScript!ExcelScript.SortField:interface" />[]'
+        - id: matchCase
+          description: 省略可能。大文字小文字の区別が文字列の順序に影響を与えるかどうか。
+          type: boolean
+        - id: hasHeaders
+          description: 省略可能。範囲にヘッダーがあるかどうか。
+          type: boolean
+        - id: orientation
+          description: 省略可能。 操作が行と列のどちらの並べ替えかを示します。
+          type: '<xref uid="ExcelScript!ExcelScript.SortOrientation:enum" />'
+        - id: method
+          description: 省略可能。 中国語文字に使用される順序付けの方法です。
+          type: '<xref uid="ExcelScript!ExcelScript.SortMethod:enum" />'
+      return:
+        type: void
+        description: ''

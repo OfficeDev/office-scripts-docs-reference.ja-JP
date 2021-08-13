@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ConditionalTopBottomCriterionType
-uid: ExcelScript!ExcelScript.ConditionalTopBottomCriterionType:enum
+uid: 'ExcelScript!ExcelScript.ConditionalTopBottomCriterionType:enum'
 package: ExcelScript!
 fullName: ExcelScript.ConditionalTopBottomCriterionType
 summary: 平均条件付き書式の種類の上/下の条件を表します。
@@ -8,30 +8,23 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: bottomItems
-  uid: ExcelScript!ExcelScript.ConditionalTopBottomCriterionType.bottomItems:member
-  package: ExcelScript!
-  summary: ''
-- name: bottomPercent
-  uid: ExcelScript!ExcelScript.ConditionalTopBottomCriterionType.bottomPercent:member
-  package: ExcelScript!
-  summary: ''
-- name: invalid
-  uid: ExcelScript!ExcelScript.ConditionalTopBottomCriterionType.invalid:member
-  package: ExcelScript!
-  summary: ''
-- name: topItems
-  uid: ExcelScript!ExcelScript.ConditionalTopBottomCriterionType.topItems:member
-  package: ExcelScript!
-  summary: ''
-- name: topPercent
-  uid: ExcelScript!ExcelScript.ConditionalTopBottomCriterionType.topPercent:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: e2bfd14af9d8a2bdcdf3b5b4f14af01876dd1878
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913725"
+  - name: bottomItems
+    uid: 'ExcelScript!ExcelScript.ConditionalTopBottomCriterionType.bottomItems:member'
+    package: ExcelScript!
+    summary: ''
+  - name: bottomPercent
+    uid: 'ExcelScript!ExcelScript.ConditionalTopBottomCriterionType.bottomPercent:member'
+    package: ExcelScript!
+    summary: ''
+  - name: invalid
+    uid: 'ExcelScript!ExcelScript.ConditionalTopBottomCriterionType.invalid:member'
+    package: ExcelScript!
+    summary: ''
+  - name: topItems
+    uid: 'ExcelScript!ExcelScript.ConditionalTopBottomCriterionType.topItems:member'
+    package: ExcelScript!
+    summary: ''
+  - name: topPercent
+    uid: 'ExcelScript!ExcelScript.ConditionalTopBottomCriterionType.topPercent:member'
+    package: ExcelScript!
+    summary: ''

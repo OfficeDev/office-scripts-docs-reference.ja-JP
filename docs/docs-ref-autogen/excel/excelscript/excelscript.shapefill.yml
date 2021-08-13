@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ShapeFill
-uid: ExcelScript!ExcelScript.ShapeFill:interface
+uid: 'ExcelScript!ExcelScript.ShapeFill:interface'
 package: ExcelScript!
 fullName: ExcelScript.ShapeFill
 summary: 図形オブジェクトの塗りつぶしの書式設定を表します。
@@ -9,113 +9,106 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: clear()
-  uid: ExcelScript!ExcelScript.ShapeFill#clear:member(1)
-  package: ExcelScript!
-  fullName: clear()
-  summary: この図形の塗りつぶしの書式設定をクリアします。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'clear(): void;'
-    return:
-      type: void
-      description: ''
-- name: getForegroundColor()
-  uid: ExcelScript!ExcelScript.ShapeFill#getForegroundColor:member(1)
-  package: ExcelScript!
-  fullName: getForegroundColor()
-  summary: 図形塗りつぶし前景色を HTML カラー形式 \# 、RRGGBB 形式 ("FFA500" など) または名前付き HTML 色 ("オレンジ" など) で表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getForegroundColor(): string;'
-    return:
-      type: string
-      description: ''
-- name: getTransparency()
-  uid: ExcelScript!ExcelScript.ShapeFill#getTransparency:member(1)
-  package: ExcelScript!
-  fullName: getTransparency()
-  summary: 塗りつぶしの透明度の割合を 0.0 (不透明) から 1.0 (クリア) の値として指定します。 図形の種類が透明度をサポートしていない場合、またはグラデーション塗りつぶしの種類など、図形の塗りつぶしの透明度が矛盾している `null` 場合に返します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTransparency(): number;'
-    return:
-      type: number
-      description: ''
-- name: getType()
-  uid: ExcelScript!ExcelScript.ShapeFill#getType:member(1)
-  package: ExcelScript!
-  fullName: getType()
-  summary: 図形の塗りつぶしの種類を返します。 詳細は「`ExcelScript.ShapeFillType`」をご覧ください。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getType(): ShapeFillType;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ShapeFillType:enum" />
-      description: ''
-- name: setForegroundColor(foregroundColor)
-  uid: ExcelScript!ExcelScript.ShapeFill#setForegroundColor:member(1)
-  package: ExcelScript!
-  fullName: setForegroundColor(foregroundColor)
-  summary: 図形塗りつぶし前景色を HTML カラー形式 \# 、RRGGBB 形式 ("FFA500" など) または名前付き HTML 色 ("オレンジ" など) で表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setForegroundColor(foregroundColor: string): void;'
-    parameters:
-    - id: foregroundColor
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setSolidColor(color)
-  uid: ExcelScript!ExcelScript.ShapeFill#setSolidColor:member(1)
-  package: ExcelScript!
-  fullName: setSolidColor(color)
-  summary: 図形の塗りつぶしの書式設定を均一な色に設定します。 これにより、塗りつぶしの種類が "Solid" に変更されます。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setSolidColor(color: string): void;'
-    parameters:
-    - id: color
-      description: '\#RRGGBB 形式 ("FFA500" など) または名前付き HTML 色 ("オレンジ色" など) で塗りつぶしの色を表す文字列。'
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setTransparency(transparency)
-  uid: ExcelScript!ExcelScript.ShapeFill#setTransparency:member(1)
-  package: ExcelScript!
-  fullName: setTransparency(transparency)
-  summary: 塗りつぶしの透明度の割合を 0.0 (不透明) から 1.0 (クリア) の値として指定します。 図形の種類が透明度をサポートしていない場合、またはグラデーション塗りつぶしの種類など、図形の塗りつぶしの透明度が矛盾している `null` 場合に返します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setTransparency(transparency: number): void;'
-    parameters:
-    - id: transparency
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 62c912b1bff56417669beddab76781e11a03624c
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914203"
+  - name: clear()
+    uid: 'ExcelScript!ExcelScript.ShapeFill#clear:member(1)'
+    package: ExcelScript!
+    fullName: clear()
+    summary: この図形の塗りつぶしの書式設定をクリアします。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type: void
+        description: ''
+  - name: getForegroundColor()
+    uid: 'ExcelScript!ExcelScript.ShapeFill#getForegroundColor:member(1)'
+    package: ExcelScript!
+    fullName: getForegroundColor()
+    summary: 図形塗りつぶし前景色を HTML カラー形式 \# 、RRGGBB 形式 ("FFA500" など) または名前付き HTML 色 ("オレンジ" など) で表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getForegroundColor(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getTransparency()
+    uid: 'ExcelScript!ExcelScript.ShapeFill#getTransparency:member(1)'
+    package: ExcelScript!
+    fullName: getTransparency()
+    summary: 塗りつぶしの透明度の割合を 0.0 (不透明) から 1.0 (クリア) の値として指定します。 図形の種類が透明度をサポートしていない場合、またはグラデーション塗りつぶしの種類など、図形の塗りつぶしの透明度が矛盾している `null` 場合に返します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTransparency(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getType()
+    uid: 'ExcelScript!ExcelScript.ShapeFill#getType:member(1)'
+    package: ExcelScript!
+    fullName: getType()
+    summary: 図形の塗りつぶしの種類を返します。 詳細は「`ExcelScript.ShapeFillType`」をご覧ください。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getType(): ShapeFillType;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ShapeFillType:enum" />'
+        description: ''
+  - name: setForegroundColor(foregroundColor)
+    uid: 'ExcelScript!ExcelScript.ShapeFill#setForegroundColor:member(1)'
+    package: ExcelScript!
+    fullName: setForegroundColor(foregroundColor)
+    summary: 図形塗りつぶし前景色を HTML カラー形式 \# 、RRGGBB 形式 ("FFA500" など) または名前付き HTML 色 ("オレンジ" など) で表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setForegroundColor(foregroundColor: string): void;'
+      parameters:
+        - id: foregroundColor
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setSolidColor(color)
+    uid: 'ExcelScript!ExcelScript.ShapeFill#setSolidColor:member(1)'
+    package: ExcelScript!
+    fullName: setSolidColor(color)
+    summary: 図形の塗りつぶしの書式設定を均一な色に設定します。 これにより、塗りつぶしの種類が "Solid" に変更されます。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setSolidColor(color: string): void;'
+      parameters:
+        - id: color
+          description: \#RRGGBB 形式 ("FFA500" など) または名前付き HTML 色 ("オレンジ色" など) で塗りつぶしの色を表す文字列。
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setTransparency(transparency)
+    uid: 'ExcelScript!ExcelScript.ShapeFill#setTransparency:member(1)'
+    package: ExcelScript!
+    fullName: setTransparency(transparency)
+    summary: 塗りつぶしの透明度の割合を 0.0 (不透明) から 1.0 (クリア) の値として指定します。 図形の種類が透明度をサポートしていない場合、またはグラデーション塗りつぶしの種類など、図形の塗りつぶしの透明度が矛盾している `null` 場合に返します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setTransparency(transparency: number): void;'
+      parameters:
+        - id: transparency
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''

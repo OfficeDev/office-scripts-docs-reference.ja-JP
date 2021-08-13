@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ConditionalIconCriterion
-uid: ExcelScript!ExcelScript.ConditionalIconCriterion:interface
+uid: 'ExcelScript!ExcelScript.ConditionalIconCriterion:interface'
 package: ExcelScript!
 fullName: ExcelScript.ConditionalIconCriterion
 summary: アイコン セットを使用しない場合は、種類、値、演算子、およびオプションのカスタム アイコンを含むアイコン条件を表します。
@@ -9,58 +9,51 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: customIcon
-  uid: ExcelScript!ExcelScript.ConditionalIconCriterion#customIcon:member
-  package: ExcelScript!
-  fullName: customIcon
-  summary: 既定のアイコン セットと異なる場合は、現在の条件のカスタム アイコンが `null` 返されます。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'customIcon?: Icon;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Icon:interface" />
-- name: formula
-  uid: ExcelScript!ExcelScript.ConditionalIconCriterion#formula:member
-  package: ExcelScript!
-  fullName: formula
-  summary: 種類によっては数値または数式。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'formula: string;'
-    return:
-      type: string
-- name: operator
-  uid: ExcelScript!ExcelScript.ConditionalIconCriterion#operator:member
-  package: ExcelScript!
-  fullName: operator
-  summary: '`greaterThan` または `greaterThanOrEqual` 、アイコンの条件付き書式のルールの種類ごとに指定します。'
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'operator: ConditionalIconCriterionOperator;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalIconCriterionOperator:enum" />
-- name: type
-  uid: ExcelScript!ExcelScript.ConditionalIconCriterion#type:member
-  package: ExcelScript!
-  fullName: type
-  summary: アイコンの条件式は次のものに基づいています。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'type: ConditionalFormatIconRuleType;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalFormatIconRuleType:enum" />
-metadata:
-  ms.openlocfilehash: 935df823942bbf9c9e6edfd28ed75ea430240bc3
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913810"
+  - name: customIcon
+    uid: 'ExcelScript!ExcelScript.ConditionalIconCriterion#customIcon:member'
+    package: ExcelScript!
+    fullName: customIcon
+    summary: 既定のアイコン セットと異なる場合は、現在の条件のカスタム アイコンが `null` 返されます。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'customIcon?: Icon;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Icon:interface" />'
+  - name: formula
+    uid: 'ExcelScript!ExcelScript.ConditionalIconCriterion#formula:member'
+    package: ExcelScript!
+    fullName: formula
+    summary: 種類によっては数値または数式。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'formula: string;'
+      return:
+        type: string
+  - name: operator
+    uid: 'ExcelScript!ExcelScript.ConditionalIconCriterion#operator:member'
+    package: ExcelScript!
+    fullName: operator
+    summary: '`greaterThan` または `greaterThanOrEqual` 、アイコンの条件付き書式のルールの種類ごとに指定します。'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'operator: ConditionalIconCriterionOperator;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalIconCriterionOperator:enum" />'
+  - name: type
+    uid: 'ExcelScript!ExcelScript.ConditionalIconCriterion#type:member'
+    package: ExcelScript!
+    fullName: type
+    summary: アイコンの条件式は次のものに基づいています。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: ConditionalFormatIconRuleType;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalFormatIconRuleType:enum" />'

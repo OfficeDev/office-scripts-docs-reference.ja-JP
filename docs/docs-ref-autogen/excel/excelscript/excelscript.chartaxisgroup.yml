@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ChartAxisGroup
-uid: ExcelScript!ExcelScript.ChartAxisGroup:enum
+uid: 'ExcelScript!ExcelScript.ChartAxisGroup:enum'
 package: ExcelScript!
 fullName: ExcelScript.ChartAxisGroup
 summary: ''
@@ -8,18 +8,11 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: primary
-  uid: ExcelScript!ExcelScript.ChartAxisGroup.primary:member
-  package: ExcelScript!
-  summary: ''
-- name: secondary
-  uid: ExcelScript!ExcelScript.ChartAxisGroup.secondary:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: 3053597d53a57b4698741477a7becf8ac08a9cf6
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417073"
+  - name: primary
+    uid: 'ExcelScript!ExcelScript.ChartAxisGroup.primary:member'
+    package: ExcelScript!
+    summary: ''
+  - name: secondary
+    uid: 'ExcelScript!ExcelScript.ChartAxisGroup.secondary:member'
+    package: ExcelScript!
+    summary: ''

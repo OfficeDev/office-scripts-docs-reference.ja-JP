@@ -1,29 +1,22 @@
 ### YamlMime:TSEnum
 name: ExcelScript.CalculationState
-uid: ExcelScript!ExcelScript.CalculationState:enum
+uid: 'ExcelScript!ExcelScript.CalculationState:enum'
 package: ExcelScript!
 fullName: ExcelScript.CalculationState
-summary: Excel アプリケーション全体の計算の状態を表します。
+summary: アプリケーション全体にわたる計算の状態Excelします。
 remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: calculating
-  uid: ExcelScript!ExcelScript.CalculationState.calculating:member
-  package: ExcelScript!
-  summary: 進行中の計算。
-- name: done
-  uid: ExcelScript!ExcelScript.CalculationState.done:member
-  package: ExcelScript!
-  summary: 計算完了
-- name: pending
-  uid: ExcelScript!ExcelScript.CalculationState.pending:member
-  package: ExcelScript!
-  summary: 計算を引き起こす変更が行われましたが、再計算はまだ実行されていません
-metadata:
-  ms.openlocfilehash: e9a1951d22a2108e21da0eb9eb873c921968ba9a
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913288"
+  - name: calculating
+    uid: 'ExcelScript!ExcelScript.CalculationState.calculating:member'
+    package: ExcelScript!
+    summary: 進行中の計算。
+  - name: done
+    uid: 'ExcelScript!ExcelScript.CalculationState.done:member'
+    package: ExcelScript!
+    summary: 計算完了
+  - name: pending
+    uid: 'ExcelScript!ExcelScript.CalculationState.pending:member'
+    package: ExcelScript!
+    summary: 計算を引き起こす変更が行われましたが、再計算はまだ実行されていません

@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.Subtotals
-uid: ExcelScript!ExcelScript.Subtotals:interface
+uid: 'ExcelScript!ExcelScript.Subtotals:interface'
 package: ExcelScript!
 fullName: ExcelScript.Subtotals
 summary: ピボット フィールドの小計。
@@ -9,154 +9,147 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: automatic
-  uid: ExcelScript!ExcelScript.Subtotals#automatic:member
-  package: ExcelScript!
-  fullName: automatic
-  summary: If `Automatic` がに設定されている場合 `true`<!-- -->を設定すると、他のすべての値は無視されます。 `Subtotals`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'automatic?: boolean;'
-    return:
-      type: boolean
-- name: average
-  uid: ExcelScript!ExcelScript.Subtotals#average:member
-  package: ExcelScript!
-  fullName: average
-  summary: Average
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'average?: boolean;'
-    return:
-      type: boolean
-- name: count
-  uid: ExcelScript!ExcelScript.Subtotals#count:member
-  package: ExcelScript!
-  fullName: count
-  summary: カウント
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'count?: boolean;'
-    return:
-      type: boolean
-- name: countNumbers
-  uid: ExcelScript!ExcelScript.Subtotals#countNumbers:member
-  package: ExcelScript!
-  fullName: countNumbers
-  summary: CountNumbers
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'countNumbers?: boolean;'
-    return:
-      type: boolean
-- name: max
-  uid: ExcelScript!ExcelScript.Subtotals#max:member
-  package: ExcelScript!
-  fullName: max
-  summary: Max
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'max?: boolean;'
-    return:
-      type: boolean
-- name: min
-  uid: ExcelScript!ExcelScript.Subtotals#min:member
-  package: ExcelScript!
-  fullName: min
-  summary: Min
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'min?: boolean;'
-    return:
-      type: boolean
-- name: product
-  uid: ExcelScript!ExcelScript.Subtotals#product:member
-  package: ExcelScript!
-  fullName: product
-  summary: 製品
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'product?: boolean;'
-    return:
-      type: boolean
-- name: standardDeviation
-  uid: ExcelScript!ExcelScript.Subtotals#standardDeviation:member
-  package: ExcelScript!
-  fullName: standardDeviation
-  summary: StandardDeviation
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'standardDeviation?: boolean;'
-    return:
-      type: boolean
-- name: standardDeviationP
-  uid: ExcelScript!ExcelScript.Subtotals#standardDeviationP:member
-  package: ExcelScript!
-  fullName: standardDeviationP
-  summary: StandardDeviationP
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'standardDeviationP?: boolean;'
-    return:
-      type: boolean
-- name: sum
-  uid: ExcelScript!ExcelScript.Subtotals#sum:member
-  package: ExcelScript!
-  fullName: sum
-  summary: Sum
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'sum?: boolean;'
-    return:
-      type: boolean
-- name: variance
-  uid: ExcelScript!ExcelScript.Subtotals#variance:member
-  package: ExcelScript!
-  fullName: variance
-  summary: 差異
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'variance?: boolean;'
-    return:
-      type: boolean
-- name: varianceP
-  uid: ExcelScript!ExcelScript.Subtotals#varianceP:member
-  package: ExcelScript!
-  fullName: varianceP
-  summary: VarianceP
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'varianceP?: boolean;'
-    return:
-      type: boolean
-metadata:
-  ms.openlocfilehash: 3bb27dcaabf075c918886296194bab11c74ae5a5
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914140"
+  - name: automatic
+    uid: 'ExcelScript!ExcelScript.Subtotals#automatic:member'
+    package: ExcelScript!
+    fullName: automatic
+    summary: If `Automatic` がに設定されている場合 `true`<!-- -->を設定すると、他のすべての値は無視されます。 `Subtotals`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'automatic?: boolean;'
+      return:
+        type: boolean
+  - name: average
+    uid: 'ExcelScript!ExcelScript.Subtotals#average:member'
+    package: ExcelScript!
+    fullName: average
+    summary: Average
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'average?: boolean;'
+      return:
+        type: boolean
+  - name: count
+    uid: 'ExcelScript!ExcelScript.Subtotals#count:member'
+    package: ExcelScript!
+    fullName: count
+    summary: カウント
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'count?: boolean;'
+      return:
+        type: boolean
+  - name: countNumbers
+    uid: 'ExcelScript!ExcelScript.Subtotals#countNumbers:member'
+    package: ExcelScript!
+    fullName: countNumbers
+    summary: CountNumbers
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'countNumbers?: boolean;'
+      return:
+        type: boolean
+  - name: max
+    uid: 'ExcelScript!ExcelScript.Subtotals#max:member'
+    package: ExcelScript!
+    fullName: max
+    summary: Max
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'max?: boolean;'
+      return:
+        type: boolean
+  - name: min
+    uid: 'ExcelScript!ExcelScript.Subtotals#min:member'
+    package: ExcelScript!
+    fullName: min
+    summary: Min
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'min?: boolean;'
+      return:
+        type: boolean
+  - name: product
+    uid: 'ExcelScript!ExcelScript.Subtotals#product:member'
+    package: ExcelScript!
+    fullName: product
+    summary: 製品
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'product?: boolean;'
+      return:
+        type: boolean
+  - name: standardDeviation
+    uid: 'ExcelScript!ExcelScript.Subtotals#standardDeviation:member'
+    package: ExcelScript!
+    fullName: standardDeviation
+    summary: StandardDeviation
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'standardDeviation?: boolean;'
+      return:
+        type: boolean
+  - name: standardDeviationP
+    uid: 'ExcelScript!ExcelScript.Subtotals#standardDeviationP:member'
+    package: ExcelScript!
+    fullName: standardDeviationP
+    summary: StandardDeviationP
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'standardDeviationP?: boolean;'
+      return:
+        type: boolean
+  - name: sum
+    uid: 'ExcelScript!ExcelScript.Subtotals#sum:member'
+    package: ExcelScript!
+    fullName: sum
+    summary: Sum
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sum?: boolean;'
+      return:
+        type: boolean
+  - name: variance
+    uid: 'ExcelScript!ExcelScript.Subtotals#variance:member'
+    package: ExcelScript!
+    fullName: variance
+    summary: 差異
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'variance?: boolean;'
+      return:
+        type: boolean
+  - name: varianceP
+    uid: 'ExcelScript!ExcelScript.Subtotals#varianceP:member'
+    package: ExcelScript!
+    fullName: varianceP
+    summary: VarianceP
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'varianceP?: boolean;'
+      return:
+        type: boolean

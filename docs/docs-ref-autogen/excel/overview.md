@@ -1,36 +1,36 @@
 ---
 title: Office スクリプト API リファレンス
-description: Office Scripts JavaScript Api の概要について説明します。
+description: JavaScript API Officeの概要。
 ms.date: 06/29/2020
-ms.openlocfilehash: 7c4fe97ca35cfb442ebbf9db2e0b03b389185ae8
-ms.sourcegitcommit: 9c4c4c213a203e58c55eb3d84d7d92fa527f3eb8
+ms.openlocfilehash: 3ce3344fb49b2811719feb13f8fb4118f1a20060db9d85a06d1be939f22bf3c5
+ms.sourcegitcommit: 6a0182075a558c4fe664fedfee08fea76513b192
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45004732"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "58183427"
 ---
 # <a name="office-scripts-api-reference"></a>Office スクリプト API リファレンス
 
-Office スクリプト API を使用すると、web 上の Excel で一般的なタスクを自動化できます。 このリファレンスドキュメントを使用して、スクリプトで使用できるクラス、メソッド、およびその他の種類の詳細について説明します。 Office スクリプトを使用してアクセスできるすべてのオブジェクトについては、ページの左側にある目次を参照してください。
+このOfficeスクリプト API を使用すると、一般的なタスクを自動化Excel on the web。 スクリプトで使用できるクラス、メソッド、その他の種類の詳細については、このリファレンス ドキュメントを参照してください。 スクリプトからアクセスOfficeオブジェクトはすべて、ページの左側の目次に表示されます。
 
 > [!NOTE]
-> Office アドインを開発するための JavaScript Api を探している場合は、「 [Office アドインの JAVASCRIPT api リファレンス](/javascript/api/overview?view=excel-js-preview)」を参照してください。
+> アドインを開発するための JavaScript API を探している場合Officeアドインの[JavaScript API](/javascript/api/overview?view=excel-js-preview)リファレンスOffice参照してください。
 
-## <a name="common-classes"></a>一般的なクラス
+## <a name="common-classes"></a>共通クラス
 
-次の一覧は、Office Scripts オブジェクトモデルの基本事項を示しています。 これにより、共通のクラスと、それらが相互にどのように関係しているかがわかります。
+次の一覧では、Scripts オブジェクト モデルのOfficeを示します。 これは、共通のクラスと、そのクラスが他のクラスとどのように関連付け合うのかを示しています。
 
 - [ブック](/javascript/api/office-scripts/excelscript/excelscript.workbook) には、1 つ以上の [ワークシート](/javascript/api/office-scripts/excelscript/excelscript.worksheet) が含まれます。
 - [ワークシート](/javascript/api/office-scripts/excelscript/excelscript.worksheet) では、[Range](/javascript/api/office-scripts/excelscript/excelscript.range) オブジェクトを介してセルにアクセスできます。
 - [Range](/javascript/api/office-scripts/excelscript/excelscript.range) は、連続したセルのグループを表します。
 - [Range](/javascript/api/office-scripts/excelscript/excelscript.range) は、[表](/javascript/api/office-scripts/excelscript/excelscript.table)、[グラフ](/javascript/api/office-scripts/excelscript/excelscript.chart)、[図形](/javascript/api/office-scripts/excelscript/excelscript.shape)、およびその他のデータ可視化や組織オブジェクトを作成して配置するために使用されます。
-- [ワークシート](/javascript/api/office-scripts/excelscript/excelscript.worksheet)には、個々のシートにあるオブジェクトが格納されている配列が含まれています。
-- ブックには、ブック全体に対するいくつかのデータオブジェクトの配列[が含まれ](/javascript/api/office-scripts/excelscript/excelscript.workbook)ています。
+- Worksheet [には](/javascript/api/office-scripts/excelscript/excelscript.worksheet) 、個々のシートに存在するオブジェクトで埋め込まれている配列が含まれます。
+- ブック [には](/javascript/api/office-scripts/excelscript/excelscript.workbook) 、ブック全体のデータ オブジェクトの一部の配列が含まれます。
 
-Office Scripts オブジェクトモデルの詳細については、「 [Office スクリプトの基礎知識](/office/dev/scripts/develop/scripting-fundamentals)」を参照してください。
+スクリプト オブジェクト モデルの詳細については、「Office スクリプトのスクリプトの基本[Office」を参照Excel on the web](/office/dev/scripts/develop/scripting-fundamentals)
 
 ## <a name="see-also"></a>関連項目
 
-- [Office スクリプトについて](/office/dev/scripts/overview/excel)
+- [スクリプトOfficeについて](/office/dev/scripts/overview/excel)
 - [Excel on the web で Office スクリプトを記録、編集、作成する](/office/dev/scripts/tutorials/excel-tutorial)
 - [Excel on the web での Office スクリプトのスクリプトの基本事項](/office/dev/scripts/develop/scripting-fundamentals)

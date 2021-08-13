@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.Binding
-uid: ExcelScript!ExcelScript.Binding:interface
+uid: 'ExcelScript!ExcelScript.Binding:interface'
 package: ExcelScript!
 fullName: ExcelScript.Binding
 summary: ブックで定義されている Office.js のバインディングを表します。
@@ -9,88 +9,81 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: delete()
-  uid: ExcelScript!ExcelScript.Binding#delete:member(1)
-  package: ExcelScript!
-  fullName: delete()
-  summary: バインドを削除します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'delete(): void;'
-    return:
-      type: void
-      description: ''
-- name: getId()
-  uid: ExcelScript!ExcelScript.Binding#getId:member(1)
-  package: ExcelScript!
-  fullName: getId()
-  summary: バインド識別子を表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getId(): string;'
-    return:
-      type: string
-      description: ''
-- name: getRange()
-  uid: ExcelScript!ExcelScript.Binding#getRange:member(1)
-  package: ExcelScript!
-  fullName: getRange()
-  summary: バインディングによって表される範囲を返します。 バインドが正しい型ではない場合、エラーがスローされます。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getRange(): Range;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: getTable()
-  uid: ExcelScript!ExcelScript.Binding#getTable:member(1)
-  package: ExcelScript!
-  fullName: getTable()
-  summary: バインドによって表されるテーブルを返します。 バインドが正しい型ではない場合、エラーがスローされます。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTable(): Table;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Table:interface" />
-      description: ''
-- name: getText()
-  uid: ExcelScript!ExcelScript.Binding#getText:member(1)
-  package: ExcelScript!
-  fullName: getText()
-  summary: バインドによって表されるテキストを返します。 バインドが正しい型ではない場合、エラーがスローされます。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getText(): string;'
-    return:
-      type: string
-      description: ''
-- name: getType()
-  uid: ExcelScript!ExcelScript.Binding#getType:member(1)
-  package: ExcelScript!
-  fullName: getType()
-  summary: バインドの種類を返します。 詳細は「`ExcelScript.BindingType`」をご覧ください。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getType(): BindingType;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.BindingType:enum" />
-      description: ''
-metadata:
-  ms.openlocfilehash: 78a858eca5b9ad2e26e3349976abae2cca455e54
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913993"
+  - name: delete()
+    uid: 'ExcelScript!ExcelScript.Binding#delete:member(1)'
+    package: ExcelScript!
+    fullName: delete()
+    summary: バインドを削除します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: ''
+  - name: getId()
+    uid: 'ExcelScript!ExcelScript.Binding#getId:member(1)'
+    package: ExcelScript!
+    fullName: getId()
+    summary: バインド識別子を表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getId(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getRange()
+    uid: 'ExcelScript!ExcelScript.Binding#getRange:member(1)'
+    package: ExcelScript!
+    fullName: getRange()
+    summary: バインディングによって表される範囲を返します。 バインドが正しい型ではない場合、エラーがスローされます。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRange(): Range;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: getTable()
+    uid: 'ExcelScript!ExcelScript.Binding#getTable:member(1)'
+    package: ExcelScript!
+    fullName: getTable()
+    summary: バインドによって表されるテーブルを返します。 バインドが正しい型ではない場合、エラーがスローされます。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTable(): Table;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Table:interface" />'
+        description: ''
+  - name: getText()
+    uid: 'ExcelScript!ExcelScript.Binding#getText:member(1)'
+    package: ExcelScript!
+    fullName: getText()
+    summary: バインドによって表されるテキストを返します。 バインドが正しい型ではない場合、エラーがスローされます。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getText(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getType()
+    uid: 'ExcelScript!ExcelScript.Binding#getType:member(1)'
+    package: ExcelScript!
+    fullName: getType()
+    summary: バインドの種類を返します。 詳細は「`ExcelScript.BindingType`」をご覧ください。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getType(): BindingType;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.BindingType:enum" />'
+        description: ''

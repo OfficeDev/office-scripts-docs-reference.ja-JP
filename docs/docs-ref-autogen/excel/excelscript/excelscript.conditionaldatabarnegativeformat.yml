@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ConditionalDataBarNegativeFormat
-uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat:interface
+uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat:interface'
 package: ExcelScript!
 fullName: ExcelScript.ConditionalDataBarNegativeFormat
 summary: データ バーの負の側の条件付き書式を表します。
@@ -9,130 +9,123 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getBorderColor()
-  uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getBorderColor:member(1)
-  package: ExcelScript!
-  fullName: getBorderColor()
-  summary: RRGGBB 形式 ("FFA500" など) の境界線の色を表す HTML カラー コード、または名前付き HTML 色 ("オレンジ色" など) を表 \# します。 罫線が存在しない場合、または設定されている場合、値は "" (空の文字列) です。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getBorderColor(): string;'
-    return:
-      type: string
-      description: ''
-- name: getFillColor()
-  uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getFillColor:member(1)
-  package: ExcelScript!
-  fullName: getFillColor()
-  summary: 塗りつぶしの色を表す HTML カラー コード \# (RRGGBB 形式 ("FFA500" など)、または名前付き HTML 色 ("オレンジ色" など) として指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFillColor(): string;'
-    return:
-      type: string
-      description: ''
-- name: getMatchPositiveBorderColor()
-  uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getMatchPositiveBorderColor:member(1)
-  package: ExcelScript!
-  fullName: getMatchPositiveBorderColor()
-  summary: 負のデータ バーが正のデータ バーと同じ罫線の色を持っている場合に指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getMatchPositiveBorderColor(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getMatchPositiveFillColor()
-  uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getMatchPositiveFillColor:member(1)
-  package: ExcelScript!
-  fullName: getMatchPositiveFillColor()
-  summary: 負のデータ バーが正のデータ バーと同じ塗りつぶし色を持つ場合に指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getMatchPositiveFillColor(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: setBorderColor(borderColor)
-  uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setBorderColor:member(1)
-  package: ExcelScript!
-  fullName: setBorderColor(borderColor)
-  summary: RRGGBB 形式 ("FFA500" など) の境界線の色を表す HTML カラー コード、または名前付き HTML 色 ("オレンジ色" など) を表 \# します。 罫線が存在しない場合、または設定されている場合、値は "" (空の文字列) です。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setBorderColor(borderColor: string): void;'
-    parameters:
-    - id: borderColor
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setFillColor(fillColor)
-  uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setFillColor:member(1)
-  package: ExcelScript!
-  fullName: setFillColor(fillColor)
-  summary: 塗りつぶしの色を表す HTML カラー コード \# (RRGGBB 形式 ("FFA500" など)、または名前付き HTML 色 ("オレンジ色" など) として指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setFillColor(fillColor: string): void;'
-    parameters:
-    - id: fillColor
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setMatchPositiveBorderColor(matchPositiveBorderColor)
-  uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setMatchPositiveBorderColor:member(1)
-  package: ExcelScript!
-  fullName: setMatchPositiveBorderColor(matchPositiveBorderColor)
-  summary: 負のデータ バーが正のデータ バーと同じ罫線の色を持っている場合に指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setMatchPositiveBorderColor(matchPositiveBorderColor: boolean): void;'
-    parameters:
-    - id: matchPositiveBorderColor
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setMatchPositiveFillColor(matchPositiveFillColor)
-  uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setMatchPositiveFillColor:member(1)
-  package: ExcelScript!
-  fullName: setMatchPositiveFillColor(matchPositiveFillColor)
-  summary: 負のデータ バーが正のデータ バーと同じ塗りつぶし色を持つ場合に指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setMatchPositiveFillColor(matchPositiveFillColor: boolean): void;'
-    parameters:
-    - id: matchPositiveFillColor
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 29715083641d7ffbc94357a022635db2179ce5d4
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913295"
+  - name: getBorderColor()
+    uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getBorderColor:member(1)'
+    package: ExcelScript!
+    fullName: getBorderColor()
+    summary: RRGGBB 形式 ("FFA500" など) の境界線の色を表す HTML カラー コード、または名前付き HTML 色 ("オレンジ色" など) を表 \# します。 罫線が存在しない場合、または設定されている場合、値は "" (空の文字列) です。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getBorderColor(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getFillColor()
+    uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getFillColor:member(1)'
+    package: ExcelScript!
+    fullName: getFillColor()
+    summary: 塗りつぶしの色を表す HTML カラー コード \# (RRGGBB 形式 ("FFA500" など)、または名前付き HTML 色 ("オレンジ色" など) として指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFillColor(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getMatchPositiveBorderColor()
+    uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getMatchPositiveBorderColor:member(1)'
+    package: ExcelScript!
+    fullName: getMatchPositiveBorderColor()
+    summary: 負のデータ バーが正のデータ バーと同じ罫線の色を持っている場合に指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getMatchPositiveBorderColor(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getMatchPositiveFillColor()
+    uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getMatchPositiveFillColor:member(1)'
+    package: ExcelScript!
+    fullName: getMatchPositiveFillColor()
+    summary: 負のデータ バーが正のデータ バーと同じ塗りつぶし色を持つ場合に指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getMatchPositiveFillColor(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: setBorderColor(borderColor)
+    uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setBorderColor:member(1)'
+    package: ExcelScript!
+    fullName: setBorderColor(borderColor)
+    summary: RRGGBB 形式 ("FFA500" など) の境界線の色を表す HTML カラー コード、または名前付き HTML 色 ("オレンジ色" など) を表 \# します。 罫線が存在しない場合、または設定されている場合、値は "" (空の文字列) です。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setBorderColor(borderColor: string): void;'
+      parameters:
+        - id: borderColor
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setFillColor(fillColor)
+    uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setFillColor:member(1)'
+    package: ExcelScript!
+    fullName: setFillColor(fillColor)
+    summary: 塗りつぶしの色を表す HTML カラー コード \# (RRGGBB 形式 ("FFA500" など)、または名前付き HTML 色 ("オレンジ色" など) として指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setFillColor(fillColor: string): void;'
+      parameters:
+        - id: fillColor
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setMatchPositiveBorderColor(matchPositiveBorderColor)
+    uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setMatchPositiveBorderColor:member(1)'
+    package: ExcelScript!
+    fullName: setMatchPositiveBorderColor(matchPositiveBorderColor)
+    summary: 負のデータ バーが正のデータ バーと同じ罫線の色を持っている場合に指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setMatchPositiveBorderColor(matchPositiveBorderColor: boolean): void;'
+      parameters:
+        - id: matchPositiveBorderColor
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setMatchPositiveFillColor(matchPositiveFillColor)
+    uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setMatchPositiveFillColor:member(1)'
+    package: ExcelScript!
+    fullName: setMatchPositiveFillColor(matchPositiveFillColor)
+    summary: 負のデータ バーが正のデータ バーと同じ塗りつぶし色を持つ場合に指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setMatchPositiveFillColor(matchPositiveFillColor: boolean): void;'
+      parameters:
+        - id: matchPositiveFillColor
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''

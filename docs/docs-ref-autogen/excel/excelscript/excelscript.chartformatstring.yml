@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ChartFormatString
-uid: ExcelScript!ExcelScript.ChartFormatString:interface
+uid: 'ExcelScript!ExcelScript.ChartFormatString:interface'
 package: ExcelScript!
 fullName: ExcelScript.ChartFormatString
 summary: オブジェクトやオブジェクトなど、テキストを含むグラフ関連オブジェクトの部分 `ChartTitle` 文字列を表 `ChartAxisTitle` します。
@@ -9,23 +9,16 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getFont()
-  uid: ExcelScript!ExcelScript.ChartFormatString#getFont:member(1)
-  package: ExcelScript!
-  fullName: getFont()
-  summary: グラフ文字オブジェクトのフォント名、フォント サイズ、色などのフォント属性を表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFont(): ChartFont;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartFont:interface" />
-      description: ''
-metadata:
-  ms.openlocfilehash: 117644700d3730164127e2c31f04b633b42ac244
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914084"
+  - name: getFont()
+    uid: 'ExcelScript!ExcelScript.ChartFormatString#getFont:member(1)'
+    package: ExcelScript!
+    fullName: getFont()
+    summary: グラフ文字オブジェクトのフォント名、フォント サイズ、色などのフォント属性を表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFont(): ChartFont;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartFont:interface" />'
+        description: ''

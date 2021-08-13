@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.TableSort
-uid: ExcelScript!ExcelScript.TableSort:interface
+uid: 'ExcelScript!ExcelScript.TableSort:interface'
 package: ExcelScript!
 fullName: ExcelScript.TableSort
 summary: オブジェクトの並べ替え操作を `Table` 管理します。
@@ -9,103 +9,116 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: apply(fields, matchCase, method)
-  uid: ExcelScript!ExcelScript.TableSort#apply:member(1)
-  package: ExcelScript!
-  fullName: apply(fields, matchCase, method)
-  summary: 並べ替え操作を実行します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: >-
-      apply(
-                  fields: SortField[],
-                  matchCase?: boolean,
-                  method?: SortMethod
-              ): void;
-    parameters:
-    - id: fields
-      description: 並べ替えに使用する条件の一覧。
-      type: <xref uid="ExcelScript!ExcelScript.SortField:interface" />[]
-    - id: matchCase
-      description: 省略可能。大文字小文字の区別が文字列の順序に影響を与えるかどうか。
-      type: boolean
-    - id: method
-      description: 省略可能。 中国語文字に使用される順序付けの方法です。
-      type: <xref uid="ExcelScript!ExcelScript.SortMethod:enum" />
-    return:
-      type: void
-      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This sample creates a table from the current worksheet's used range, then sorts it based on the first column.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Create a table with the used cells.\n  let usedRange = selectedSheet.getUsedRange();\n  let newTable = selectedSheet.addTable(usedRange, true);\n\n  // Sort the table using the first column.\n  newTable.getSort().apply([{ key: 0, ascending: true }]);\n}\n```"
-- name: clear()
-  uid: ExcelScript!ExcelScript.TableSort#clear:member(1)
-  package: ExcelScript!
-  fullName: clear()
-  summary: テーブルに現在設定されている並べ替えをクリアします。これにより表の順序が変更されることはありませんが、ヘッダーのボタンの状態がクリアされます。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'clear(): void;'
-    return:
-      type: void
-      description: ''
-- name: getFields()
-  uid: ExcelScript!ExcelScript.TableSort#getFields:member(1)
-  package: ExcelScript!
-  fullName: getFields()
-  summary: テーブルの最後の並べ替えに使用される現在の条件を指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFields(): SortField[];'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.SortField:interface" />[]
-      description: ''
-- name: getMatchCase()
-  uid: ExcelScript!ExcelScript.TableSort#getMatchCase:member(1)
-  package: ExcelScript!
-  fullName: getMatchCase()
-  summary: 大文字小文字がテーブルの最後の並べ替えに影響を与える場合に指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getMatchCase(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getMethod()
-  uid: ExcelScript!ExcelScript.TableSort#getMethod:member(1)
-  package: ExcelScript!
-  fullName: getMethod()
-  summary: テーブルの並べ替えに最後に使用した中国語の文字順序付けメソッドを表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getMethod(): SortMethod;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.SortMethod:enum" />
-      description: ''
-- name: reapply()
-  uid: ExcelScript!ExcelScript.TableSort#reapply:member(1)
-  package: ExcelScript!
-  fullName: reapply()
-  summary: テーブルに、現在の並べ替えパラメーターを再適用します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'reapply(): void;'
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 791bf7bf229aee2c17a7dc6f3848e783ca34f20f
-  ms.sourcegitcommit: 41542794df8af7ea28b8d7db989fba7ec77b6b0c
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 05/12/2021
-  ms.locfileid: "52330395"
+  - name: 'apply(fields, matchCase, method)'
+    uid: 'ExcelScript!ExcelScript.TableSort#apply:member(1)'
+    package: ExcelScript!
+    fullName: 'apply(fields, matchCase, method)'
+    summary: 並べ替え操作を実行します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        apply(
+                    fields: SortField[],
+                    matchCase?: boolean,
+                    method?: SortMethod
+                ): void;
+      parameters:
+        - id: fields
+          description: 並べ替えに使用する条件の一覧。
+          type: '<xref uid="ExcelScript!ExcelScript.SortField:interface" />[]'
+        - id: matchCase
+          description: 省略可能。大文字小文字の区別が文字列の順序に影響を与えるかどうか。
+          type: boolean
+        - id: method
+          description: 省略可能。 中国語文字に使用される順序付けの方法です。
+          type: '<xref uid="ExcelScript!ExcelScript.SortMethod:enum" />'
+      return:
+        type: void
+        description: |-
+
+
+          #### <a name="examples"></a>例
+
+          ```TypeScript
+          /**
+           * This sample creates a table from the current worksheet's used range, then sorts it based on the first column.
+           */
+          function main(workbook: ExcelScript.Workbook) {
+            // Get the current worksheet.
+            let selectedSheet = workbook.getActiveWorksheet();
+
+            // Create a table with the used cells.
+            let usedRange = selectedSheet.getUsedRange();
+            let newTable = selectedSheet.addTable(usedRange, true);
+
+            // Sort the table using the first column.
+            newTable.getSort().apply([{ key: 0, ascending: true }]);
+          }
+          ```
+  - name: clear()
+    uid: 'ExcelScript!ExcelScript.TableSort#clear:member(1)'
+    package: ExcelScript!
+    fullName: clear()
+    summary: テーブルに現在設定されている並べ替えをクリアします。これにより表の順序が変更されることはありませんが、ヘッダーのボタンの状態がクリアされます。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type: void
+        description: ''
+  - name: getFields()
+    uid: 'ExcelScript!ExcelScript.TableSort#getFields:member(1)'
+    package: ExcelScript!
+    fullName: getFields()
+    summary: テーブルの最後の並べ替えに使用される現在の条件を指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFields(): SortField[];'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.SortField:interface" />[]'
+        description: ''
+  - name: getMatchCase()
+    uid: 'ExcelScript!ExcelScript.TableSort#getMatchCase:member(1)'
+    package: ExcelScript!
+    fullName: getMatchCase()
+    summary: 大文字小文字がテーブルの最後の並べ替えに影響を与える場合に指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getMatchCase(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getMethod()
+    uid: 'ExcelScript!ExcelScript.TableSort#getMethod:member(1)'
+    package: ExcelScript!
+    fullName: getMethod()
+    summary: テーブルの並べ替えに最後に使用した中国語の文字順序付けメソッドを表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getMethod(): SortMethod;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.SortMethod:enum" />'
+        description: ''
+  - name: reapply()
+    uid: 'ExcelScript!ExcelScript.TableSort#reapply:member(1)'
+    package: ExcelScript!
+    fullName: reapply()
+    summary: テーブルに、現在の並べ替えパラメーターを再適用します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'reapply(): void;'
+      return:
+        type: void
+        description: ''

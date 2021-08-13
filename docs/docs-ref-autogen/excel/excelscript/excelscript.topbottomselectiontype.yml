@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.TopBottomSelectionType
-uid: ExcelScript!ExcelScript.TopBottomSelectionType:enum
+uid: 'ExcelScript!ExcelScript.TopBottomSelectionType:enum'
 package: ExcelScript!
 fullName: ExcelScript.TopBottomSelectionType
 summary: 上位 N パーセントまたは下位 N パーセント、数値、または値の合計でフィルター処理するかどうかを選択する、上部/下部フィルターの単純な列挙型。
@@ -8,22 +8,15 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: items
-  uid: ExcelScript!ExcelScript.TopBottomSelectionType.items:member
-  package: ExcelScript!
-  summary: 選択した値で測定されたアイテムの上位/下位 N の数をフィルター処理します。
-- name: percent
-  uid: ExcelScript!ExcelScript.TopBottomSelectionType.percent:member
-  package: ExcelScript!
-  summary: 選択した値で測定された項目の上位/下位 N パーセントをフィルター処理します。
-- name: sum
-  uid: ExcelScript!ExcelScript.TopBottomSelectionType.sum:member
-  package: ExcelScript!
-  summary: 選択した値で測定した上/下の N の合計をフィルター処理します。
-metadata:
-  ms.openlocfilehash: c58781b98eee7b27807577f9f00af54e048877a9
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914671"
+  - name: items
+    uid: 'ExcelScript!ExcelScript.TopBottomSelectionType.items:member'
+    package: ExcelScript!
+    summary: 選択した値で測定されたアイテムの上位/下位 N の数をフィルター処理します。
+  - name: percent
+    uid: 'ExcelScript!ExcelScript.TopBottomSelectionType.percent:member'
+    package: ExcelScript!
+    summary: 選択した値で測定された項目の上位/下位 N パーセントをフィルター処理します。
+  - name: sum
+    uid: 'ExcelScript!ExcelScript.TopBottomSelectionType.sum:member'
+    package: ExcelScript!
+    summary: 選択した値で測定した上/下の N の合計をフィルター処理します。

@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.InsertShiftDirection
-uid: ExcelScript!ExcelScript.InsertShiftDirection:enum
+uid: 'ExcelScript!ExcelScript.InsertShiftDirection:enum'
 package: ExcelScript!
 fullName: ExcelScript.InsertShiftDirection
 summary: ''
@@ -8,18 +8,11 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: down
-  uid: ExcelScript!ExcelScript.InsertShiftDirection.down:member
-  package: ExcelScript!
-  summary: ''
-- name: right
-  uid: ExcelScript!ExcelScript.InsertShiftDirection.right:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: 79356faafeb25d6024dbc4dafa58c1897ad1e52f
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412301"
+  - name: down
+    uid: 'ExcelScript!ExcelScript.InsertShiftDirection.down:member'
+    package: ExcelScript!
+    summary: ''
+  - name: right
+    uid: 'ExcelScript!ExcelScript.InsertShiftDirection.right:member'
+    package: ExcelScript!
+    summary: ''

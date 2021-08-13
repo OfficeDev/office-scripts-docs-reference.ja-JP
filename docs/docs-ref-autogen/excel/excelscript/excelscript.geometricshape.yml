@@ -1,31 +1,24 @@
 ### YamlMime:TSType
 name: ExcelScript.GeometricShape
-uid: ExcelScript!ExcelScript.GeometricShape:interface
+uid: 'ExcelScript!ExcelScript.GeometricShape:interface'
 package: ExcelScript!
 fullName: ExcelScript.GeometricShape
-summary: ワークシート内の幾何学的な図形を表します。 幾何学的図形には、Excel の四角形、ブロック矢印、数式記号、フローチャート 項目、星、バナー、吹き出し、その他の基本的な図形を指定できます。
+summary: ワークシート内の幾何学的な図形を表します。 幾何学的な図形には、四角形、ブロック矢印、数式記号、フローチャート項目、星、バナー、吹き出し、その他の基本的な図形Excel。
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getId()
-  uid: ExcelScript!ExcelScript.GeometricShape#getId:member(1)
-  package: ExcelScript!
-  fullName: getId()
-  summary: 図形 ID を返します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getId(): string;'
-    return:
-      type: string
-      description: ''
-metadata:
-  ms.openlocfilehash: 4dfea045b85b1e12ab56c49603ae13d4e82f6b12
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914381"
+  - name: getId()
+    uid: 'ExcelScript!ExcelScript.GeometricShape#getId:member(1)'
+    package: ExcelScript!
+    fullName: getId()
+    summary: 図形 ID を返します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getId(): string;'
+      return:
+        type: string
+        description: ''

@@ -1,32 +1,32 @@
 {
-    "title": "API 抽出器の構成",
-    "description": "Describes how the API Extractor tool will process a project.",
+    "title": "API Extractor の構成",
+    "description": "API Extractor ツールがプロジェクトを処理する方法について説明します。",
     "type": "object",
     "properties": {
         "$schema": {
-            "description": "Part of the JSON Schema standard, this optional keyword declares the URL of the schema that the file conforms to. Editors may download the schema and use it to perform syntax highlighting.",
+            "description": "JSON スキーマ標準の一部であるこの省略可能なキーワードは、ファイルが準拠しているスキーマの URL を宣言します。 エディターはスキーマをダウンロードし、それを使用して構文の強調表示を実行できます。",
             "type": "string"
         },
         "compiler": {
-            "description": "Determines how the TypeScript compiler will be invoked. The compiler.configType selects the type of configuration. Different options are available according to the configuration type.",
+            "description": "TypeScript コンパイラの呼び出し方法を指定します。 [compiler.configの種類] では、構成の種類を選択します。 構成の種類に応じて、さまざまなオプションを使用できます。",
             "type": "object",
             "oneOf": [
                 {
                     "type": "object",
                     "properties": {
                         "configType": {
-                            "description": "configType=tsconfig indicates that the compiler settings will be taken from a tsconfig.json file",
+                            "description": "configType=tsconfig は、コンパイラ設定がファイル上のアプリケーションからtsconfig.js示します",
                             "type": "string",
                             "enum": [
                                 "tsconfig"
                             ]
                         },
                         "rootFolder": {
-                            "description": "The root folder for the project. This folder typically contains the tsconfig.json and package.json config files.",
+                            "description": "プロジェクトのルート フォルダー。 このフォルダーには、通常、構成ファイルtsconfig.jsのpackage.jsが含まれる。",
                             "type": "string"
                         },
                         "overrideTsconfig": {
-                            "description": "Provides already parsed tsconfig.json contents conforming to the TypeScript tsconfig schema: http://json.schemastore.org/tsconfig If omitted, then the tsconfig.json file will be read.",
+                            "description": "TypeScript tsconfig スキーマtsconfig.jsに準拠したコンテンツに対して、既に解析済みのデータを提供します。省略すると、ファイルtsconfig.jsが http://json.schemastore.org/tsconfig 読み取りされます。",
                             "type": "object"
                         }
                     },
@@ -40,7 +40,7 @@
                     "type": "object",
                     "properties": {
                         "configType": {
-                            "description": "configType=runtime indicates that the compiler settings will be provided by a tool chain via a runtime API",
+                            "description": "configType=runtime は、コンパイラ設定がランタイム API を介してツール チェーンによって提供されるかどうかを示します。",
                             "type": "string",
                             "enum": [
                                 "runtime"
@@ -55,15 +55,15 @@
             ]
         },
         "project": {
-            "description": "Describes a specific project that will be analyzed.",
+            "description": "分析する特定のプロジェクトについて説明します。",
             "type": "object",
             "properties": {
                 "entryPointSourceFile": {
-                    "description": "Specifies the TypeScript source file that will be treated as the entry point for compilation.",
+                    "description": "コンパイルのエントリ ポイントとして扱う TypeScript ソース ファイルを指定します。",
                     "type": "string"
                 },
                 "externalJsonFileFolders": {
-                    "description": "Indicates folders containing additional APJ JSON files (*.api.json) that will be consulted during the analysis.  This is useful for providing annotations for external packages that were not built using API Extractor.",
+                    "description": "分析中に参照される追加の APJ JSON ファイル (*.api.jsオン) を含むフォルダーを示します。  これは、API Extractor を使用して構築されていない外部パッケージに注釈を提供する場合に便利です。",
                     "type": "string"
                 }
             },
@@ -73,11 +73,11 @@
             "additionalProperties": false
         },
         "policies": {
-            "description": "These policies determine how API Extractor validates various best practices for API design.",
+            "description": "これらのポリシーは、API Extractor が API 設計のさまざまなベスト プラクティスを検証する方法を決定します。",
             "type": "object",
             "properties": {
                 "namespaceSupport": {
-                    "description": "Controls how API Extractor treats the TypeScript namespace keyword:\n\nconservative - (the default) namespaces may only be used to represent tables of constants\n\npermissive - arbitrary nesting of namespaces is allowed",
+                    "description": "API Extractor が TypeScript 名前空間キーワードを処理する方法を制御します。\n\nconservative - (既定の) 名前空間は、定数のテーブルを表す場合にのみ使用できます\n\npermissive - 名前空間の任意のネストが許可される",
                     "type": "string",
                     "enum": [
                         "conservative",
@@ -88,19 +88,19 @@
             "additionalProperties": false
         },
         "apiReviewFile": {
-            "description": "Configures how the API review files (*.api.ts) will be generated.",
+            "description": "API レビュー ファイル (*.api.ts) の生成方法を構成します。",
             "type": "object",
             "properties": {
                 "enabled": {
-                    "description": "Whether to generate review files at all.  The default is true.",
+                    "description": "レビュー ファイルを生成するかどうか。  既定値は true です。",
                     "type": "boolean"
                 },
                 "apiReviewFolder": {
-                    "description": "The file path of the folder containing API review file, relative to the project folder. The default value is \"./etc\".",
+                    "description": "プロジェクト フォルダーを基準にした、API レビュー ファイルを含むフォルダーのファイル パス。 既定値は \"./etc\" です。",
                     "type": "string"
                 },
                 "tempFolder": {
-                    "description": "The *.api.ts report is saved into this folder.  During a production build, the temporary file will be compared with the file in apiReviewFolder; if there are differences, and error will be reported. The default value is \"./temp\".",
+                    "description": "*.api.ts レポートは、このフォルダーに保存されます。  実稼働ビルド中に、一時ファイルは apiReviewFolder のファイルと比較されます。違いがある場合は、エラーが報告されます。 既定値は \"./temp\" です。",
                     "type": "string"
                 }
             },
@@ -110,15 +110,15 @@
             "additionalProperties": false
         },
         "apiJsonFile": {
-            "description": "Configures how the API JSON files (*.api.json) will be generated.",
+            "description": "API JSON ファイル (*.api.js) の生成方法を構成します。",
             "type": "object",
             "properties": {
                 "enabled": {
-                    "description": "Whether to generate API JSON files at all.  The default is true.",
+                    "description": "API JSON ファイルを生成するかどうか。  既定値は true です。",
                     "type": "boolean"
                 },
                 "outputFolder": {
-                    "description": "Specifies where the *.api.json file should be written. The default value is \"./dist\"",
+                    "description": "ファイル上の *.api.js書き込む場所を指定します。 既定値は \"./dist\" です。",
                     "type": "string"
                 }
             },

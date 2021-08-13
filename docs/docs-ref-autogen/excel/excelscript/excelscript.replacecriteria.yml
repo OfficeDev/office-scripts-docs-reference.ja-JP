@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ReplaceCriteria
-uid: ExcelScript!ExcelScript.ReplaceCriteria:interface
+uid: 'ExcelScript!ExcelScript.ReplaceCriteria:interface'
 package: ExcelScript!
 fullName: ExcelScript.ReplaceCriteria
 summary: 使用する置換条件を表します。
@@ -9,34 +9,27 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: completeMatch
-  uid: ExcelScript!ExcelScript.ReplaceCriteria#completeMatch:member
-  package: ExcelScript!
-  fullName: completeMatch
-  summary: 一致が完了する必要がある場合と部分的に行う必要がある場合に指定します。 完全一致は、セルの内容全体と一致します。 部分的な一致は、セルのコンテンツ内の部分文字列と一致します (部分的に一致し `cat` `caterpillar` 、 `scatter`<!-- -->). 既定値は `false` (部分) です。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'completeMatch?: boolean;'
-    return:
-      type: boolean
-- name: matchCase
-  uid: ExcelScript!ExcelScript.ReplaceCriteria#matchCase:member
-  package: ExcelScript!
-  fullName: matchCase
-  summary: 一致で大文字と小文字が区別される場合を指定します。 既定値は `false` (大文字と小文字を区別しない) です。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'matchCase?: boolean;'
-    return:
-      type: boolean
-metadata:
-  ms.openlocfilehash: 68dd8e155cf367ff10b8ce7c2fc33bfa1b162a63
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914224"
+  - name: completeMatch
+    uid: 'ExcelScript!ExcelScript.ReplaceCriteria#completeMatch:member'
+    package: ExcelScript!
+    fullName: completeMatch
+    summary: 一致が完了する必要がある場合と部分的に行う必要がある場合に指定します。 完全一致は、セルの内容全体と一致します。 部分的な一致は、セルのコンテンツ内の部分文字列と一致します (部分的に一致し `cat` `caterpillar` 、 `scatter`<!-- -->). 既定値は `false` (部分) です。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'completeMatch?: boolean;'
+      return:
+        type: boolean
+  - name: matchCase
+    uid: 'ExcelScript!ExcelScript.ReplaceCriteria#matchCase:member'
+    package: ExcelScript!
+    fullName: matchCase
+    summary: 一致で大文字と小文字が区別される場合を指定します。 既定値は `false` (大文字と小文字を区別しない) です。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'matchCase?: boolean;'
+      return:
+        type: boolean

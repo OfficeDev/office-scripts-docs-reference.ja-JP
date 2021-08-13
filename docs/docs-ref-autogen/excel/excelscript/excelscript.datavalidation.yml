@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.DataValidation
-uid: ExcelScript!ExcelScript.DataValidation:interface
+uid: 'ExcelScript!ExcelScript.DataValidation:interface'
 package: ExcelScript!
 fullName: ExcelScript.DataValidation
 summary: 現在の範囲に適用されるデータ検証を表します。
@@ -9,182 +9,199 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: clear()
-  uid: ExcelScript!ExcelScript.DataValidation#clear:member(1)
-  package: ExcelScript!
-  fullName: clear()
-  summary: 現在の範囲からデータの入力規則をクリアします。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'clear(): void;'
-    return:
-      type: void
-      description: ''
-- name: getErrorAlert()
-  uid: ExcelScript!ExcelScript.DataValidation#getErrorAlert:member(1)
-  package: ExcelScript!
-  fullName: getErrorAlert()
-  summary: 無効なデータが入力された場合のエラー警告。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getErrorAlert(): DataValidationErrorAlert;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.DataValidationErrorAlert:interface" />
-      description: ''
-- name: getIgnoreBlanks()
-  uid: ExcelScript!ExcelScript.DataValidation#getIgnoreBlanks:member(1)
-  package: ExcelScript!
-  fullName: getIgnoreBlanks()
-  summary: 空白のセルに対してデータ検証を実行する場合に指定します。 既定値は `true` です<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getIgnoreBlanks(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getInvalidCells()
-  uid: ExcelScript!ExcelScript.DataValidation#getInvalidCells:member(1)
-  package: ExcelScript!
-  fullName: getInvalidCells()
-  summary: 無効なセル値を持つ 1 つ以上の四角形の範囲を含む `RangeAreas` オブジェクトを返します。 すべてのセル値が有効な場合、この関数は `null`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getInvalidCells(): RangeAreas;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
-      description: ''
-- name: getPrompt()
-  uid: ExcelScript!ExcelScript.DataValidation#getPrompt:member(1)
-  package: ExcelScript!
-  fullName: getPrompt()
-  summary: ユーザーがセルを選択するときにプロンプトを表示します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getPrompt(): DataValidationPrompt;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.DataValidationPrompt:interface" />
-      description: ''
-- name: getRule()
-  uid: ExcelScript!ExcelScript.DataValidation#getRule:member(1)
-  package: ExcelScript!
-  fullName: getRule()
-  summary: さまざまな種類のデータ検証条件を含むデータ検証ルール。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getRule(): DataValidationRule;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.DataValidationRule:interface" />
-      description: ''
-- name: getType()
-  uid: ExcelScript!ExcelScript.DataValidation#getType:member(1)
-  package: ExcelScript!
-  fullName: getType()
-  summary: データ検証の種類については、「詳細 `ExcelScript.DataValidationType` 」を参照してください。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getType(): DataValidationType;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.DataValidationType:enum" />
-      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This sample reads and logs the data validation type of the currently selected range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the currently selected range.\n  let range = workbook.getSelectedRange();\n\n  // Get the type (`DataValidationType`) of data validation applied to the range.\n  let validationType = range.getDataValidation().getType();\n\n  /*\n   * Log the data validation type.\n   * If the range has a single value, it logs that type.\n   * If the range doesn't have data validation applied, it logs \"None\".\n   * If the range has multiple different types of data validation, it logs \"Inconsistent\" or \"MixedCriteria\".\n   */\n  console.log(validationType.toString());\n}\n```"
-- name: getValid()
-  uid: ExcelScript!ExcelScript.DataValidation#getValid:member(1)
-  package: ExcelScript!
-  fullName: getValid()
-  summary: すべてのセルの値がデータの入力規則に従っているかどうかを表します。 すべてのセル `true` 値が有効な場合、またはすべてのセル `false` 値が無効な場合に返します。 範囲内に `null` 有効なセル値と無効なセル値の両方がある場合に返します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getValid(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: setErrorAlert(errorAlert)
-  uid: ExcelScript!ExcelScript.DataValidation#setErrorAlert:member(1)
-  package: ExcelScript!
-  fullName: setErrorAlert(errorAlert)
-  summary: 無効なデータが入力された場合のエラー警告。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setErrorAlert(errorAlert: DataValidationErrorAlert): void;'
-    parameters:
-    - id: errorAlert
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.DataValidationErrorAlert:interface" />
-    return:
-      type: void
-      description: ''
-- name: setIgnoreBlanks(ignoreBlanks)
-  uid: ExcelScript!ExcelScript.DataValidation#setIgnoreBlanks:member(1)
-  package: ExcelScript!
-  fullName: setIgnoreBlanks(ignoreBlanks)
-  summary: 空白のセルに対してデータ検証を実行する場合に指定します。 既定値は `true` です<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setIgnoreBlanks(ignoreBlanks: boolean): void;'
-    parameters:
-    - id: ignoreBlanks
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setPrompt(prompt)
-  uid: ExcelScript!ExcelScript.DataValidation#setPrompt:member(1)
-  package: ExcelScript!
-  fullName: setPrompt(prompt)
-  summary: ユーザーがセルを選択するときにプロンプトを表示します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setPrompt(prompt: DataValidationPrompt): void;'
-    parameters:
-    - id: prompt
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.DataValidationPrompt:interface" />
-    return:
-      type: void
-      description: ''
-- name: setRule(rule)
-  uid: ExcelScript!ExcelScript.DataValidation#setRule:member(1)
-  package: ExcelScript!
-  fullName: setRule(rule)
-  summary: さまざまな種類のデータ検証条件を含むデータ検証ルール。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setRule(rule: DataValidationRule): void;'
-    parameters:
-    - id: rule
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.DataValidationRule:interface" />
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 367e9601e90532f9d877e5c1432caf6681b56117
-  ms.sourcegitcommit: 0b4ded26cbb2aa6e90e05b3e0af88b67da159021
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 07/15/2021
-  ms.locfileid: "53451608"
+  - name: clear()
+    uid: 'ExcelScript!ExcelScript.DataValidation#clear:member(1)'
+    package: ExcelScript!
+    fullName: clear()
+    summary: 現在の範囲からデータの入力規則をクリアします。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type: void
+        description: ''
+  - name: getErrorAlert()
+    uid: 'ExcelScript!ExcelScript.DataValidation#getErrorAlert:member(1)'
+    package: ExcelScript!
+    fullName: getErrorAlert()
+    summary: 無効なデータが入力された場合のエラー警告。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getErrorAlert(): DataValidationErrorAlert;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.DataValidationErrorAlert:interface" />'
+        description: ''
+  - name: getIgnoreBlanks()
+    uid: 'ExcelScript!ExcelScript.DataValidation#getIgnoreBlanks:member(1)'
+    package: ExcelScript!
+    fullName: getIgnoreBlanks()
+    summary: 空白のセルに対してデータ検証を実行する場合に指定します。 既定値は `true` です<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getIgnoreBlanks(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getInvalidCells()
+    uid: 'ExcelScript!ExcelScript.DataValidation#getInvalidCells:member(1)'
+    package: ExcelScript!
+    fullName: getInvalidCells()
+    summary: 無効なセル値を持つ 1 つ以上の四角形の範囲を含む `RangeAreas` オブジェクトを返します。 すべてのセル値が有効な場合、この関数は `null`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getInvalidCells(): RangeAreas;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />'
+        description: ''
+  - name: getPrompt()
+    uid: 'ExcelScript!ExcelScript.DataValidation#getPrompt:member(1)'
+    package: ExcelScript!
+    fullName: getPrompt()
+    summary: ユーザーがセルを選択するときにプロンプトを表示します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getPrompt(): DataValidationPrompt;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.DataValidationPrompt:interface" />'
+        description: ''
+  - name: getRule()
+    uid: 'ExcelScript!ExcelScript.DataValidation#getRule:member(1)'
+    package: ExcelScript!
+    fullName: getRule()
+    summary: さまざまな種類のデータ検証条件を含むデータ検証ルール。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRule(): DataValidationRule;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.DataValidationRule:interface" />'
+        description: ''
+  - name: getType()
+    uid: 'ExcelScript!ExcelScript.DataValidation#getType:member(1)'
+    package: ExcelScript!
+    fullName: getType()
+    summary: データ検証の種類については、「詳細 `ExcelScript.DataValidationType` 」を参照してください。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getType(): DataValidationType;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.DataValidationType:enum" />'
+        description: |-
+
+
+          #### <a name="examples"></a>例
+
+          ```TypeScript
+          /**
+           * This sample reads and logs the data validation type of the currently selected range.
+           */
+          function main(workbook: ExcelScript.Workbook) {
+            // Get the currently selected range.
+            let range = workbook.getSelectedRange();
+
+            // Get the type (`DataValidationType`) of data validation applied to the range.
+            let validationType = range.getDataValidation().getType();
+
+            /*
+             * Log the data validation type.
+             * If the range has a single value, it logs that type.
+             * If the range doesn't have data validation applied, it logs "None".
+             * If the range has multiple different types of data validation, it logs "Inconsistent" or "MixedCriteria".
+             */
+            console.log(validationType.toString());
+          }
+          ```
+  - name: getValid()
+    uid: 'ExcelScript!ExcelScript.DataValidation#getValid:member(1)'
+    package: ExcelScript!
+    fullName: getValid()
+    summary: すべてのセルの値がデータの入力規則に従っているかどうかを表します。 すべてのセル `true` 値が有効な場合、またはすべてのセル `false` 値が無効な場合に返します。 範囲内に `null` 有効なセル値と無効なセル値の両方がある場合に返します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getValid(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: setErrorAlert(errorAlert)
+    uid: 'ExcelScript!ExcelScript.DataValidation#setErrorAlert:member(1)'
+    package: ExcelScript!
+    fullName: setErrorAlert(errorAlert)
+    summary: 無効なデータが入力された場合のエラー警告。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setErrorAlert(errorAlert: DataValidationErrorAlert): void;'
+      parameters:
+        - id: errorAlert
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.DataValidationErrorAlert:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: setIgnoreBlanks(ignoreBlanks)
+    uid: 'ExcelScript!ExcelScript.DataValidation#setIgnoreBlanks:member(1)'
+    package: ExcelScript!
+    fullName: setIgnoreBlanks(ignoreBlanks)
+    summary: 空白のセルに対してデータ検証を実行する場合に指定します。 既定値は `true` です<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setIgnoreBlanks(ignoreBlanks: boolean): void;'
+      parameters:
+        - id: ignoreBlanks
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setPrompt(prompt)
+    uid: 'ExcelScript!ExcelScript.DataValidation#setPrompt:member(1)'
+    package: ExcelScript!
+    fullName: setPrompt(prompt)
+    summary: ユーザーがセルを選択するときにプロンプトを表示します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setPrompt(prompt: DataValidationPrompt): void;'
+      parameters:
+        - id: prompt
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.DataValidationPrompt:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: setRule(rule)
+    uid: 'ExcelScript!ExcelScript.DataValidation#setRule:member(1)'
+    package: ExcelScript!
+    fullName: setRule(rule)
+    summary: さまざまな種類のデータ検証条件を含むデータ検証ルール。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setRule(rule: DataValidationRule): void;'
+      parameters:
+        - id: rule
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.DataValidationRule:interface" />'
+      return:
+        type: void
+        description: ''

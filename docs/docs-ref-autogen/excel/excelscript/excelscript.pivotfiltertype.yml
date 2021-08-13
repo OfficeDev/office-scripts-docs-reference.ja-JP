@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.PivotFilterType
-uid: ExcelScript!ExcelScript.PivotFilterType:enum
+uid: 'ExcelScript!ExcelScript.PivotFilterType:enum'
 package: ExcelScript!
 fullName: ExcelScript.PivotFilterType
 summary: ピボットフィールドのフィルターの種類を表す単純な列挙型。
@@ -8,30 +8,23 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: date
-  uid: ExcelScript!ExcelScript.PivotFilterType.date:member
-  package: ExcelScript!
-  summary: 'ラベルの代りで日付を持つピボットアイテムをフィルター処理します。 注: PivotField では、ラベル フィルターと日付フィルターを同時に適用することはできません。'
-- name: label
-  uid: ExcelScript!ExcelScript.PivotFilterType.label:member
-  package: ExcelScript!
-  summary: 'ラベルに基づいてピボットアイテムをフィルター処理します。 注: PivotField では、ラベル フィルターと日付フィルターを同時に適用することはできません。'
-- name: manual
-  uid: ExcelScript!ExcelScript.PivotFilterType.manual:member
-  package: ExcelScript!
-  summary: ピボットテーブルから手動で選択したピボットアイテムをフィルター処理します。
-- name: unknown
-  uid: ExcelScript!ExcelScript.PivotFilterType.unknown:member
-  package: ExcelScript!
-  summary: '`PivotFilterType` 不明またはサポートされていません。'
-- name: value
-  uid: ExcelScript!ExcelScript.PivotFilterType.value:member
-  package: ExcelScript!
-  summary: ピボットアイテムの値に基づくフィルター `DataPivotHierarchy`<!-- -->.
-metadata:
-  ms.openlocfilehash: f070c217d5b4a7958666c25a9971c8c8eaffb8f4
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914308"
+  - name: date
+    uid: 'ExcelScript!ExcelScript.PivotFilterType.date:member'
+    package: ExcelScript!
+    summary: 'ラベルの代りで日付を持つピボットアイテムをフィルター処理します。 注: PivotField では、ラベル フィルターと日付フィルターを同時に適用することはできません。'
+  - name: label
+    uid: 'ExcelScript!ExcelScript.PivotFilterType.label:member'
+    package: ExcelScript!
+    summary: 'ラベルに基づいてピボットアイテムをフィルター処理します。 注: PivotField では、ラベル フィルターと日付フィルターを同時に適用することはできません。'
+  - name: manual
+    uid: 'ExcelScript!ExcelScript.PivotFilterType.manual:member'
+    package: ExcelScript!
+    summary: ピボットテーブルから手動で選択したピボットアイテムをフィルター処理します。
+  - name: unknown
+    uid: 'ExcelScript!ExcelScript.PivotFilterType.unknown:member'
+    package: ExcelScript!
+    summary: '`PivotFilterType` 不明またはサポートされていません。'
+  - name: value
+    uid: 'ExcelScript!ExcelScript.PivotFilterType.value:member'
+    package: ExcelScript!
+    summary: ピボットアイテムの値に基づくフィルター `DataPivotHierarchy`<!-- -->.

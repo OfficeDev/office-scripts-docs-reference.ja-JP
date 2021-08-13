@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.DataValidationAlertStyle
-uid: ExcelScript!ExcelScript.DataValidationAlertStyle:enum
+uid: 'ExcelScript!ExcelScript.DataValidationAlertStyle:enum'
 package: ExcelScript!
 fullName: ExcelScript.DataValidationAlertStyle
 summary: データ検証エラー通知のスタイルを表します。 既定値は次の値です。 `Stop`<!-- -->.
@@ -8,22 +8,15 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: information
-  uid: ExcelScript!ExcelScript.DataValidationAlertStyle.information:member
-  package: ExcelScript!
-  summary: ''
-- name: stop
-  uid: ExcelScript!ExcelScript.DataValidationAlertStyle.stop:member
-  package: ExcelScript!
-  summary: ''
-- name: warning
-  uid: ExcelScript!ExcelScript.DataValidationAlertStyle.warning:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: 562eb1ab76afd0505d516c133bcf73e5cee07eaa
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914035"
+  - name: information
+    uid: 'ExcelScript!ExcelScript.DataValidationAlertStyle.information:member'
+    package: ExcelScript!
+    summary: ''
+  - name: stop
+    uid: 'ExcelScript!ExcelScript.DataValidationAlertStyle.stop:member'
+    package: ExcelScript!
+    summary: ''
+  - name: warning
+    uid: 'ExcelScript!ExcelScript.DataValidationAlertStyle.warning:member'
+    package: ExcelScript!
+    summary: ''

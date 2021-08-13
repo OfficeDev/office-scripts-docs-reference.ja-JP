@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.PivotLayoutType
-uid: ExcelScript!ExcelScript.PivotLayoutType:enum
+uid: 'ExcelScript!ExcelScript.PivotLayoutType:enum'
 package: ExcelScript!
 fullName: ExcelScript.PivotLayoutType
 summary: ''
@@ -8,22 +8,15 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: compact
-  uid: ExcelScript!ExcelScript.PivotLayoutType.compact:member
-  package: ExcelScript!
-  summary: 同じ列の次のフィールドのラベルを持つ水平方向に圧縮されたフォーム。
-- name: outline
-  uid: ExcelScript!ExcelScript.PivotLayoutType.outline:member
-  package: ExcelScript!
-  summary: 内部フィールドのアイテムは外部フィールドのアイテムと同じ行に、小計は常に下部に表示されます。
-- name: tabular
-  uid: ExcelScript!ExcelScript.PivotLayoutType.tabular:member
-  package: ExcelScript!
-  summary: 内部フィールドのアイテムは、常に外部フィールドのアイテムを基準に新しい行に表示されます。
-metadata:
-  ms.openlocfilehash: 00e8342cd618db35b9f2f4a49bf8ab454be15c58
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913541"
+  - name: compact
+    uid: 'ExcelScript!ExcelScript.PivotLayoutType.compact:member'
+    package: ExcelScript!
+    summary: 同じ列の次のフィールドのラベルを持つ水平方向に圧縮されたフォーム。
+  - name: outline
+    uid: 'ExcelScript!ExcelScript.PivotLayoutType.outline:member'
+    package: ExcelScript!
+    summary: 内部フィールドのアイテムは外部フィールドのアイテムと同じ行に、小計は常に下部に表示されます。
+  - name: tabular
+    uid: 'ExcelScript!ExcelScript.PivotLayoutType.tabular:member'
+    package: ExcelScript!
+    summary: 内部フィールドのアイテムは、常に外部フィールドのアイテムを基準に新しい行に表示されます。

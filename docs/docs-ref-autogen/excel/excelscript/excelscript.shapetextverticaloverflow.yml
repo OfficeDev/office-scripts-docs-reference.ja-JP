@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ShapeTextVerticalOverflow
-uid: ExcelScript!ExcelScript.ShapeTextVerticalOverflow:enum
+uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow:enum'
 package: ExcelScript!
 fullName: ExcelScript.ShapeTextVerticalOverflow
 summary: 図形のテキスト フレームの垂直方向のオーバーフローを指定します。
@@ -8,22 +8,15 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: clip
-  uid: ExcelScript!ExcelScript.ShapeTextVerticalOverflow.clip:member
-  package: ExcelScript!
-  summary: 垂直方向のレイアウト枠内に収まらないテキストを非表示にします。
-- name: ellipsis
-  uid: ExcelScript!ExcelScript.ShapeTextVerticalOverflow.ellipsis:member
-  package: ExcelScript!
-  summary: 垂直方向のレイアウト枠内に収まらないテキストを非表示にし、表示されるテキストの終わりに省略記号 (...) を追加します。
-- name: overflow
-  uid: ExcelScript!ExcelScript.ShapeTextVerticalOverflow.overflow:member
-  package: ExcelScript!
-  summary: テキストはレイアウト枠を垂直方向にはみ出すことができます (テキストの配置によって、上、下、または両方からはみ出します)。
-metadata:
-  ms.openlocfilehash: 11a5caa2c4b41de28d80f7ffb202c8c783478acc
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913385"
+  - name: clip
+    uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.clip:member'
+    package: ExcelScript!
+    summary: 垂直方向のレイアウト枠内に収まらないテキストを非表示にします。
+  - name: ellipsis
+    uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.ellipsis:member'
+    package: ExcelScript!
+    summary: 垂直方向のレイアウト枠内に収まらないテキストを非表示にし、表示されるテキストの終わりに省略記号 (...) を追加します。
+  - name: overflow
+    uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.overflow:member'
+    package: ExcelScript!
+    summary: テキストはレイアウト枠を垂直方向にはみ出すことができます (テキストの配置によって、上、下、または両方からはみ出します)。

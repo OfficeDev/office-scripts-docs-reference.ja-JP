@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ChartFill
-uid: ExcelScript!ExcelScript.ChartFill:interface
+uid: 'ExcelScript!ExcelScript.ChartFill:interface'
 package: ExcelScript!
 fullName: ExcelScript.ChartFill
 summary: グラフ要素の塗りつぶしの書式設定を表します。
@@ -9,40 +9,33 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: clear()
-  uid: ExcelScript!ExcelScript.ChartFill#clear:member(1)
-  package: ExcelScript!
-  fullName: clear()
-  summary: グラフ要素の塗りつぶしの色をクリアします。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'clear(): void;'
-    return:
-      type: void
-      description: ''
-- name: setSolidColor(color)
-  uid: ExcelScript!ExcelScript.ChartFill#setSolidColor:member(1)
-  package: ExcelScript!
-  fullName: setSolidColor(color)
-  summary: グラフ要素の塗りつぶしの書式設定を均一な色に設定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setSolidColor(color: string): void;'
-    parameters:
-    - id: color
-      description: '背景の色を表す HTML カラー コード \# (RRGGBB 形式 ("FFA500"など) または名前付き HTML 色 (例: "orange") です。'
-      type: string
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: df36de06fa52b5c2265c88a0d10c4b462357b4d2
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914098"
+  - name: clear()
+    uid: 'ExcelScript!ExcelScript.ChartFill#clear:member(1)'
+    package: ExcelScript!
+    fullName: clear()
+    summary: グラフ要素の塗りつぶしの色をクリアします。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type: void
+        description: ''
+  - name: setSolidColor(color)
+    uid: 'ExcelScript!ExcelScript.ChartFill#setSolidColor:member(1)'
+    package: ExcelScript!
+    fullName: setSolidColor(color)
+    summary: グラフ要素の塗りつぶしの書式設定を均一な色に設定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setSolidColor(color: string): void;'
+      parameters:
+        - id: color
+          description: '背景の色を表す HTML カラー コード \# (RRGGBB 形式 ("FFA500"など) または名前付き HTML 色 (例: "orange") です。'
+          type: string
+      return:
+        type: void
+        description: ''

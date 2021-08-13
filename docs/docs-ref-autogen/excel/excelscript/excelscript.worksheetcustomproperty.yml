@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.WorksheetCustomProperty
-uid: ExcelScript!ExcelScript.WorksheetCustomProperty:interface
+uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty:interface'
 package: ExcelScript!
 fullName: ExcelScript.WorksheetCustomProperty
 summary: ワークシート レベルのカスタム プロパティを表します。
@@ -9,66 +9,59 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: delete()
-  uid: ExcelScript!ExcelScript.WorksheetCustomProperty#delete:member(1)
-  package: ExcelScript!
-  fullName: delete()
-  summary: カスタム プロパティを削除します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'delete(): void;'
-    return:
-      type: void
-      description: ''
-- name: getKey()
-  uid: ExcelScript!ExcelScript.WorksheetCustomProperty#getKey:member(1)
-  package: ExcelScript!
-  fullName: getKey()
-  summary: カスタム プロパティのキーを取得します。 カスタム プロパティ キーは大文字と小文字を区別しません。 キーは 255 文字に制限されています (値を大きくすると、エラー `InvalidArgument` がスローされます)。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getKey(): string;'
-    return:
-      type: string
-      description: ''
-- name: getValue()
-  uid: ExcelScript!ExcelScript.WorksheetCustomProperty#getValue:member(1)
-  package: ExcelScript!
-  fullName: getValue()
-  summary: カスタム プロパティの値を取得または設定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getValue(): string;'
-    return:
-      type: string
-      description: ''
-- name: setValue(value)
-  uid: ExcelScript!ExcelScript.WorksheetCustomProperty#setValue:member(1)
-  package: ExcelScript!
-  fullName: setValue(value)
-  summary: カスタム プロパティの値を取得または設定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setValue(value: string): void;'
-    parameters:
-    - id: value
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 6654f21268a1b68607283f91010afc6d00221981
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914594"
+  - name: delete()
+    uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty#delete:member(1)'
+    package: ExcelScript!
+    fullName: delete()
+    summary: カスタム プロパティを削除します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: ''
+  - name: getKey()
+    uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty#getKey:member(1)'
+    package: ExcelScript!
+    fullName: getKey()
+    summary: カスタム プロパティのキーを取得します。 カスタム プロパティ キーは大文字と小文字を区別しません。 キーは 255 文字に制限されています (値を大きくすると、エラー `InvalidArgument` がスローされます)。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getKey(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getValue()
+    uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty#getValue:member(1)'
+    package: ExcelScript!
+    fullName: getValue()
+    summary: カスタム プロパティの値を取得または設定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getValue(): string;'
+      return:
+        type: string
+        description: ''
+  - name: setValue(value)
+    uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty#setValue:member(1)'
+    package: ExcelScript!
+    fullName: setValue(value)
+    summary: カスタム プロパティの値を取得または設定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setValue(value: string): void;'
+      parameters:
+        - id: value
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''

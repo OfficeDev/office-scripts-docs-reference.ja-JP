@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.AggregationFunction
-uid: ExcelScript!ExcelScript.AggregationFunction:enum
+uid: 'ExcelScript!ExcelScript.AggregationFunction:enum'
 package: ExcelScript!
 fullName: ExcelScript.AggregationFunction
 summary: DataPivotField の集計関数。
@@ -8,62 +8,55 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: automatic
-  uid: ExcelScript!ExcelScript.AggregationFunction.automatic:member
-  package: ExcelScript!
-  summary: Excel は、データ項目に基づいて集計を自動的に選択します。
-- name: average
-  uid: ExcelScript!ExcelScript.AggregationFunction.average:member
-  package: ExcelScript!
-  summary: AVERAGE 関数と同等のデータの平均を使用して集計します。
-- name: count
-  uid: ExcelScript!ExcelScript.AggregationFunction.count:member
-  package: ExcelScript!
-  summary: COUNTA 関数と同等のデータ内のアイテムの数を使用して集計します。
-- name: countNumbers
-  uid: ExcelScript!ExcelScript.AggregationFunction.countNumbers:member
-  package: ExcelScript!
-  summary: COUNT 関数と同等のデータ内の数値の数を使用して集計します。
-- name: max
-  uid: ExcelScript!ExcelScript.AggregationFunction.max:member
-  package: ExcelScript!
-  summary: MAX 関数と同等のデータの最大値を使用して集計します。
-- name: min
-  uid: ExcelScript!ExcelScript.AggregationFunction.min:member
-  package: ExcelScript!
-  summary: MIN 関数と同等のデータの最小値を使用して集計します。
-- name: product
-  uid: ExcelScript!ExcelScript.AggregationFunction.product:member
-  package: ExcelScript!
-  summary: PRODUCT 関数と同等のデータの製品を使用して集計します。
-- name: standardDeviation
-  uid: ExcelScript!ExcelScript.AggregationFunction.standardDeviation:member
-  package: ExcelScript!
-  summary: STDEV 関数と同等のデータの標準偏差を使用して集計します。
-- name: standardDeviationP
-  uid: ExcelScript!ExcelScript.AggregationFunction.standardDeviationP:member
-  package: ExcelScript!
-  summary: STDEVP 関数と同等のデータの標準偏差を使用して集計します。
-- name: sum
-  uid: ExcelScript!ExcelScript.AggregationFunction.sum:member
-  package: ExcelScript!
-  summary: SUM 関数と同等のデータの合計を使用して集計します。
-- name: unknown
-  uid: ExcelScript!ExcelScript.AggregationFunction.unknown:member
-  package: ExcelScript!
-  summary: 集計関数が不明またはサポートされていません。
-- name: variance
-  uid: ExcelScript!ExcelScript.AggregationFunction.variance:member
-  package: ExcelScript!
-  summary: VAR 関数と同等のデータの分散を使用して集計します。
-- name: varianceP
-  uid: ExcelScript!ExcelScript.AggregationFunction.varianceP:member
-  package: ExcelScript!
-  summary: VARP 関数と同等のデータの分散を使用して集計します。
-metadata:
-  ms.openlocfilehash: 092cb76f526a517d2395ea21634e90044d9fd05d
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914014"
+  - name: automatic
+    uid: 'ExcelScript!ExcelScript.AggregationFunction.automatic:member'
+    package: ExcelScript!
+    summary: Excelアイテムに基づいて集計が自動的に選択されます。
+  - name: average
+    uid: 'ExcelScript!ExcelScript.AggregationFunction.average:member'
+    package: ExcelScript!
+    summary: AVERAGE 関数と同等のデータの平均を使用して集計します。
+  - name: count
+    uid: 'ExcelScript!ExcelScript.AggregationFunction.count:member'
+    package: ExcelScript!
+    summary: COUNTA 関数と同等のデータ内のアイテムの数を使用して集計します。
+  - name: countNumbers
+    uid: 'ExcelScript!ExcelScript.AggregationFunction.countNumbers:member'
+    package: ExcelScript!
+    summary: COUNT 関数と同等のデータ内の数値の数を使用して集計します。
+  - name: max
+    uid: 'ExcelScript!ExcelScript.AggregationFunction.max:member'
+    package: ExcelScript!
+    summary: MAX 関数と同等のデータの最大値を使用して集計します。
+  - name: min
+    uid: 'ExcelScript!ExcelScript.AggregationFunction.min:member'
+    package: ExcelScript!
+    summary: MIN 関数と同等のデータの最小値を使用して集計します。
+  - name: product
+    uid: 'ExcelScript!ExcelScript.AggregationFunction.product:member'
+    package: ExcelScript!
+    summary: PRODUCT 関数と同等のデータの製品を使用して集計します。
+  - name: standardDeviation
+    uid: 'ExcelScript!ExcelScript.AggregationFunction.standardDeviation:member'
+    package: ExcelScript!
+    summary: STDEV 関数と同等のデータの標準偏差を使用して集計します。
+  - name: standardDeviationP
+    uid: 'ExcelScript!ExcelScript.AggregationFunction.standardDeviationP:member'
+    package: ExcelScript!
+    summary: STDEVP 関数と同等のデータの標準偏差を使用して集計します。
+  - name: sum
+    uid: 'ExcelScript!ExcelScript.AggregationFunction.sum:member'
+    package: ExcelScript!
+    summary: SUM 関数と同等のデータの合計を使用して集計します。
+  - name: unknown
+    uid: 'ExcelScript!ExcelScript.AggregationFunction.unknown:member'
+    package: ExcelScript!
+    summary: 集計関数が不明またはサポートされていません。
+  - name: variance
+    uid: 'ExcelScript!ExcelScript.AggregationFunction.variance:member'
+    package: ExcelScript!
+    summary: VAR 関数と同等のデータの分散を使用して集計します。
+  - name: varianceP
+    uid: 'ExcelScript!ExcelScript.AggregationFunction.varianceP:member'
+    package: ExcelScript!
+    summary: VARP 関数と同等のデータの分散を使用して集計します。

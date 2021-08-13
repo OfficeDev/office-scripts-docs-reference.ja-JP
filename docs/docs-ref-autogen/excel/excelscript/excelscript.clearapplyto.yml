@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ClearApplyTo
-uid: ExcelScript!ExcelScript.ClearApplyTo:enum
+uid: 'ExcelScript!ExcelScript.ClearApplyTo:enum'
 package: ExcelScript!
 fullName: ExcelScript.ClearApplyTo
 summary: ''
@@ -8,30 +8,23 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: all
-  uid: ExcelScript!ExcelScript.ClearApplyTo.all:member
-  package: ExcelScript!
-  summary: ''
-- name: contents
-  uid: ExcelScript!ExcelScript.ClearApplyTo.contents:member
-  package: ExcelScript!
-  summary: 範囲の内容をクリアします。
-- name: formats
-  uid: ExcelScript!ExcelScript.ClearApplyTo.formats:member
-  package: ExcelScript!
-  summary: 範囲のすべての書式をクリアします。
-- name: hyperlinks
-  uid: ExcelScript!ExcelScript.ClearApplyTo.hyperlinks:member
-  package: ExcelScript!
-  summary: すべてのハイパーリンクをクリアしますが、すべてのコンテンツと書式設定はそのままにします。
-- name: removeHyperlinks
-  uid: ExcelScript!ExcelScript.ClearApplyTo.removeHyperlinks:member
-  package: ExcelScript!
-  summary: セルのハイパーリンクと書式を削除しますが、コンテンツ、条件付き書式、およびデータ検証はそのまま残ります。
-metadata:
-  ms.openlocfilehash: 71f3e0f6a14f8aff49e539b9078306047c60a77d
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913909"
+  - name: all
+    uid: 'ExcelScript!ExcelScript.ClearApplyTo.all:member'
+    package: ExcelScript!
+    summary: ''
+  - name: contents
+    uid: 'ExcelScript!ExcelScript.ClearApplyTo.contents:member'
+    package: ExcelScript!
+    summary: 範囲の内容をクリアします。
+  - name: formats
+    uid: 'ExcelScript!ExcelScript.ClearApplyTo.formats:member'
+    package: ExcelScript!
+    summary: 範囲のすべての書式をクリアします。
+  - name: hyperlinks
+    uid: 'ExcelScript!ExcelScript.ClearApplyTo.hyperlinks:member'
+    package: ExcelScript!
+    summary: すべてのハイパーリンクをクリアしますが、すべてのコンテンツと書式設定はそのままにします。
+  - name: removeHyperlinks
+    uid: 'ExcelScript!ExcelScript.ClearApplyTo.removeHyperlinks:member'
+    package: ExcelScript!
+    summary: セルのハイパーリンクと書式を削除しますが、コンテンツ、条件付き書式、およびデータ検証はそのまま残ります。

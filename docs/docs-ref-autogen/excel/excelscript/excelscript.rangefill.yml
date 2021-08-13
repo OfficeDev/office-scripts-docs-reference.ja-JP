@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.RangeFill
-uid: ExcelScript!ExcelScript.RangeFill:interface
+uid: 'ExcelScript!ExcelScript.RangeFill:interface'
 package: ExcelScript!
 fullName: ExcelScript.RangeFill
 summary: Range オブジェクトの背景を表します。
@@ -9,173 +9,166 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: clear()
-  uid: ExcelScript!ExcelScript.RangeFill#clear:member(1)
-  package: ExcelScript!
-  fullName: clear()
-  summary: 範囲の背景をリセットします。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'clear(): void;'
-    return:
-      type: void
-      description: ''
-- name: getColor()
-  uid: ExcelScript!ExcelScript.RangeFill#getColor:member(1)
-  package: ExcelScript!
-  fullName: getColor()
-  summary: 背景の色を表す HTML カラー コード \# (RRGGBB 形式 ("FFA500"など)、または名前付き HTML 色 ("orange"など)
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getColor(): string;'
-    return:
-      type: string
-      description: ''
-- name: getPattern()
-  uid: ExcelScript!ExcelScript.RangeFill#getPattern:member(1)
-  package: ExcelScript!
-  fullName: getPattern()
-  summary: 範囲のパターン。 詳細は「`ExcelScript.FillPattern`」をご覧ください。 LinearGradient と RectangularGradient はサポートされていません。 値 `null` は、範囲全体に均一なパターン設定が設定できない場合を示します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getPattern(): FillPattern;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.FillPattern:enum" />
-      description: ''
-- name: getPatternColor()
-  uid: ExcelScript!ExcelScript.RangeFill#getPatternColor:member(1)
-  package: ExcelScript!
-  fullName: getPatternColor()
-  summary: 範囲パターンの色を表す HTML カラー コードは \# 、RRGGBB 形式 ("FFA500"など)、または名前付き HTML 色 ("オレンジ色" など) として表されます。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getPatternColor(): string;'
-    return:
-      type: string
-      description: ''
-- name: getPatternTintAndShade()
-  uid: ExcelScript!ExcelScript.RangeFill#getPatternTintAndShade:member(1)
-  package: ExcelScript!
-  fullName: getPatternTintAndShade()
-  summary: 範囲塗りつぶしのパターンの色を明るくまたは暗くする倍数を指定します。 値は -1 (最も暗い) から 1 (最も明るい) の間で、元の色の場合は 0 です。 値 `null` は、範囲に一様な設定が含めなかった場合を示 `patternTintAndShade` します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getPatternTintAndShade(): number;'
-    return:
-      type: number
-      description: ''
-- name: getTintAndShade()
-  uid: ExcelScript!ExcelScript.RangeFill#getTintAndShade:member(1)
-  package: ExcelScript!
-  fullName: getTintAndShade()
-  summary: 範囲塗りつぶしの色を明るくまたは暗くする倍数を指定します。 値は -1 (最も暗い) から 1 (最も明るい) の間で、元の色の場合は 0 です。 値 `null` は、範囲に一様な設定が含めなかった場合を示 `tintAndShade` します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTintAndShade(): number;'
-    return:
-      type: number
-      description: ''
-- name: setColor(color)
-  uid: ExcelScript!ExcelScript.RangeFill#setColor:member(1)
-  package: ExcelScript!
-  fullName: setColor(color)
-  summary: 背景の色を表す HTML カラー コード \# (RRGGBB 形式 ("FFA500"など)、または名前付き HTML 色 ("orange"など)
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setColor(color: string): void;'
-    parameters:
-    - id: color
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setPattern(pattern)
-  uid: ExcelScript!ExcelScript.RangeFill#setPattern:member(1)
-  package: ExcelScript!
-  fullName: setPattern(pattern)
-  summary: 範囲のパターン。 詳細は「`ExcelScript.FillPattern`」をご覧ください。 LinearGradient と RectangularGradient はサポートされていません。 値 `null` は、範囲全体に均一なパターン設定が設定できない場合を示します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setPattern(pattern: FillPattern): void;'
-    parameters:
-    - id: pattern
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.FillPattern:enum" />
-    return:
-      type: void
-      description: ''
-- name: setPatternColor(patternColor)
-  uid: ExcelScript!ExcelScript.RangeFill#setPatternColor:member(1)
-  package: ExcelScript!
-  fullName: setPatternColor(patternColor)
-  summary: 範囲パターンの色を表す HTML カラー コードは \# 、RRGGBB 形式 ("FFA500"など)、または名前付き HTML 色 ("オレンジ色" など) として表されます。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setPatternColor(patternColor: string): void;'
-    parameters:
-    - id: patternColor
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setPatternTintAndShade(patternTintAndShade)
-  uid: ExcelScript!ExcelScript.RangeFill#setPatternTintAndShade:member(1)
-  package: ExcelScript!
-  fullName: setPatternTintAndShade(patternTintAndShade)
-  summary: 範囲塗りつぶしのパターンの色を明るくまたは暗くする倍数を指定します。 値は -1 (最も暗い) から 1 (最も明るい) の間で、元の色の場合は 0 です。 値 `null` は、範囲に一様な設定が含めなかった場合を示 `patternTintAndShade` します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setPatternTintAndShade(patternTintAndShade: number): void;'
-    parameters:
-    - id: patternTintAndShade
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setTintAndShade(tintAndShade)
-  uid: ExcelScript!ExcelScript.RangeFill#setTintAndShade:member(1)
-  package: ExcelScript!
-  fullName: setTintAndShade(tintAndShade)
-  summary: 範囲塗りつぶしの色を明るくまたは暗くする倍数を指定します。 値は -1 (最も暗い) から 1 (最も明るい) の間で、元の色の場合は 0 です。 値 `null` は、範囲に一様な設定が含めなかった場合を示 `tintAndShade` します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setTintAndShade(tintAndShade: number): void;'
-    parameters:
-    - id: tintAndShade
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: dafa67da456c4e91adef5f2af1b7f06b3460152d
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914245"
+  - name: clear()
+    uid: 'ExcelScript!ExcelScript.RangeFill#clear:member(1)'
+    package: ExcelScript!
+    fullName: clear()
+    summary: 範囲の背景をリセットします。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type: void
+        description: ''
+  - name: getColor()
+    uid: 'ExcelScript!ExcelScript.RangeFill#getColor:member(1)'
+    package: ExcelScript!
+    fullName: getColor()
+    summary: 背景の色を表す HTML カラー コード \# (RRGGBB 形式 ("FFA500"など)、または名前付き HTML 色 ("orange"など)
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getColor(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getPattern()
+    uid: 'ExcelScript!ExcelScript.RangeFill#getPattern:member(1)'
+    package: ExcelScript!
+    fullName: getPattern()
+    summary: 範囲のパターン。 詳細は「`ExcelScript.FillPattern`」をご覧ください。 LinearGradient と RectangularGradient はサポートされていません。 値 `null` は、範囲全体に均一なパターン設定が設定できない場合を示します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getPattern(): FillPattern;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.FillPattern:enum" />'
+        description: ''
+  - name: getPatternColor()
+    uid: 'ExcelScript!ExcelScript.RangeFill#getPatternColor:member(1)'
+    package: ExcelScript!
+    fullName: getPatternColor()
+    summary: 範囲パターンの色を表す HTML カラー コードは \# 、RRGGBB 形式 ("FFA500"など)、または名前付き HTML 色 ("オレンジ色" など) として表されます。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getPatternColor(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getPatternTintAndShade()
+    uid: 'ExcelScript!ExcelScript.RangeFill#getPatternTintAndShade:member(1)'
+    package: ExcelScript!
+    fullName: getPatternTintAndShade()
+    summary: 範囲塗りつぶしのパターンの色を明るくまたは暗くする倍数を指定します。 値は -1 (最も暗い) から 1 (最も明るい) の間で、元の色の場合は 0 です。 値 `null` は、範囲に一様な設定が含めなかった場合を示 `patternTintAndShade` します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getPatternTintAndShade(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getTintAndShade()
+    uid: 'ExcelScript!ExcelScript.RangeFill#getTintAndShade:member(1)'
+    package: ExcelScript!
+    fullName: getTintAndShade()
+    summary: 範囲塗りつぶしの色を明るくまたは暗くする倍数を指定します。 値は -1 (最も暗い) から 1 (最も明るい) の間で、元の色の場合は 0 です。 値 `null` は、範囲に一様な設定が含めなかった場合を示 `tintAndShade` します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTintAndShade(): number;'
+      return:
+        type: number
+        description: ''
+  - name: setColor(color)
+    uid: 'ExcelScript!ExcelScript.RangeFill#setColor:member(1)'
+    package: ExcelScript!
+    fullName: setColor(color)
+    summary: 背景の色を表す HTML カラー コード \# (RRGGBB 形式 ("FFA500"など)、または名前付き HTML 色 ("orange"など)
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setColor(color: string): void;'
+      parameters:
+        - id: color
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setPattern(pattern)
+    uid: 'ExcelScript!ExcelScript.RangeFill#setPattern:member(1)'
+    package: ExcelScript!
+    fullName: setPattern(pattern)
+    summary: 範囲のパターン。 詳細は「`ExcelScript.FillPattern`」をご覧ください。 LinearGradient と RectangularGradient はサポートされていません。 値 `null` は、範囲全体に均一なパターン設定が設定できない場合を示します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setPattern(pattern: FillPattern): void;'
+      parameters:
+        - id: pattern
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.FillPattern:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setPatternColor(patternColor)
+    uid: 'ExcelScript!ExcelScript.RangeFill#setPatternColor:member(1)'
+    package: ExcelScript!
+    fullName: setPatternColor(patternColor)
+    summary: 範囲パターンの色を表す HTML カラー コードは \# 、RRGGBB 形式 ("FFA500"など)、または名前付き HTML 色 ("オレンジ色" など) として表されます。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setPatternColor(patternColor: string): void;'
+      parameters:
+        - id: patternColor
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setPatternTintAndShade(patternTintAndShade)
+    uid: 'ExcelScript!ExcelScript.RangeFill#setPatternTintAndShade:member(1)'
+    package: ExcelScript!
+    fullName: setPatternTintAndShade(patternTintAndShade)
+    summary: 範囲塗りつぶしのパターンの色を明るくまたは暗くする倍数を指定します。 値は -1 (最も暗い) から 1 (最も明るい) の間で、元の色の場合は 0 です。 値 `null` は、範囲に一様な設定が含めなかった場合を示 `patternTintAndShade` します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setPatternTintAndShade(patternTintAndShade: number): void;'
+      parameters:
+        - id: patternTintAndShade
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setTintAndShade(tintAndShade)
+    uid: 'ExcelScript!ExcelScript.RangeFill#setTintAndShade:member(1)'
+    package: ExcelScript!
+    fullName: setTintAndShade(tintAndShade)
+    summary: 範囲塗りつぶしの色を明るくまたは暗くする倍数を指定します。 値は -1 (最も暗い) から 1 (最も明るい) の間で、元の色の場合は 0 です。 値 `null` は、範囲に一様な設定が含めなかった場合を示 `tintAndShade` します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setTintAndShade(tintAndShade: number): void;'
+      parameters:
+        - id: tintAndShade
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''

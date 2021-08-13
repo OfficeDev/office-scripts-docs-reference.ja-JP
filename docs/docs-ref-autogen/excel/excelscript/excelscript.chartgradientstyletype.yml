@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ChartGradientStyleType
-uid: ExcelScript!ExcelScript.ChartGradientStyleType:enum
+uid: 'ExcelScript!ExcelScript.ChartGradientStyleType:enum'
 package: ExcelScript!
 fullName: ExcelScript.ChartGradientStyleType
 summary: グラフ系列のグラデーション スタイルの種類を表します。 これは地域マップ グラフにのみ適用されます。
@@ -8,22 +8,15 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: extremeValue
-  uid: ExcelScript!ExcelScript.ChartGradientStyleType.extremeValue:member
-  package: ExcelScript!
-  summary: ''
-- name: number
-  uid: ExcelScript!ExcelScript.ChartGradientStyleType.number:member
-  package: ExcelScript!
-  summary: ''
-- name: percent
-  uid: ExcelScript!ExcelScript.ChartGradientStyleType.percent:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: 64538414488c996baef038e5fba66776c14e7a91
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914077"
+  - name: extremeValue
+    uid: 'ExcelScript!ExcelScript.ChartGradientStyleType.extremeValue:member'
+    package: ExcelScript!
+    summary: ''
+  - name: number
+    uid: 'ExcelScript!ExcelScript.ChartGradientStyleType.number:member'
+    package: ExcelScript!
+    summary: ''
+  - name: percent
+    uid: 'ExcelScript!ExcelScript.ChartGradientStyleType.percent:member'
+    package: ExcelScript!
+    summary: ''

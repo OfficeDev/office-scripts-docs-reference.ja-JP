@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ConditionalFormatIconRuleType
-uid: ExcelScript!ExcelScript.ConditionalFormatIconRuleType:enum
+uid: 'ExcelScript!ExcelScript.ConditionalFormatIconRuleType:enum'
 package: ExcelScript!
 fullName: ExcelScript.ConditionalFormatIconRuleType
 summary: アイコンの条件付き書式の種類を表します。
@@ -8,30 +8,23 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: formula
-  uid: ExcelScript!ExcelScript.ConditionalFormatIconRuleType.formula:member
-  package: ExcelScript!
-  summary: ''
-- name: invalid
-  uid: ExcelScript!ExcelScript.ConditionalFormatIconRuleType.invalid:member
-  package: ExcelScript!
-  summary: ''
-- name: number
-  uid: ExcelScript!ExcelScript.ConditionalFormatIconRuleType.number:member
-  package: ExcelScript!
-  summary: ''
-- name: percent
-  uid: ExcelScript!ExcelScript.ConditionalFormatIconRuleType.percent:member
-  package: ExcelScript!
-  summary: ''
-- name: percentile
-  uid: ExcelScript!ExcelScript.ConditionalFormatIconRuleType.percentile:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: d531162485e1c1eb5a03a719a04fb89de4093630
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415849"
+  - name: formula
+    uid: 'ExcelScript!ExcelScript.ConditionalFormatIconRuleType.formula:member'
+    package: ExcelScript!
+    summary: ''
+  - name: invalid
+    uid: 'ExcelScript!ExcelScript.ConditionalFormatIconRuleType.invalid:member'
+    package: ExcelScript!
+    summary: ''
+  - name: number
+    uid: 'ExcelScript!ExcelScript.ConditionalFormatIconRuleType.number:member'
+    package: ExcelScript!
+    summary: ''
+  - name: percent
+    uid: 'ExcelScript!ExcelScript.ConditionalFormatIconRuleType.percent:member'
+    package: ExcelScript!
+    summary: ''
+  - name: percentile
+    uid: 'ExcelScript!ExcelScript.ConditionalFormatIconRuleType.percentile:member'
+    package: ExcelScript!
+    summary: ''

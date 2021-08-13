@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ChartMapAreaLevel
-uid: ExcelScript!ExcelScript.ChartMapAreaLevel:enum
+uid: 'ExcelScript!ExcelScript.ChartMapAreaLevel:enum'
 package: ExcelScript!
 fullName: ExcelScript.ChartMapAreaLevel
 summary: グラフ系列のマッピング レベルを表します。 これは地域マップ グラフにのみ適用されます。
@@ -8,42 +8,35 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: automatic
-  uid: ExcelScript!ExcelScript.ChartMapAreaLevel.automatic:member
-  package: ExcelScript!
-  summary: ''
-- name: city
-  uid: ExcelScript!ExcelScript.ChartMapAreaLevel.city:member
-  package: ExcelScript!
-  summary: ''
-- name: continent
-  uid: ExcelScript!ExcelScript.ChartMapAreaLevel.continent:member
-  package: ExcelScript!
-  summary: ''
-- name: country
-  uid: ExcelScript!ExcelScript.ChartMapAreaLevel.country:member
-  package: ExcelScript!
-  summary: ''
-- name: county
-  uid: ExcelScript!ExcelScript.ChartMapAreaLevel.county:member
-  package: ExcelScript!
-  summary: ''
-- name: dataOnly
-  uid: ExcelScript!ExcelScript.ChartMapAreaLevel.dataOnly:member
-  package: ExcelScript!
-  summary: ''
-- name: state
-  uid: ExcelScript!ExcelScript.ChartMapAreaLevel.state:member
-  package: ExcelScript!
-  summary: ''
-- name: world
-  uid: ExcelScript!ExcelScript.ChartMapAreaLevel.world:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: f40a92e832a71fe6b481b38945f40de541ae1c7b
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51912006"
+  - name: automatic
+    uid: 'ExcelScript!ExcelScript.ChartMapAreaLevel.automatic:member'
+    package: ExcelScript!
+    summary: ''
+  - name: city
+    uid: 'ExcelScript!ExcelScript.ChartMapAreaLevel.city:member'
+    package: ExcelScript!
+    summary: ''
+  - name: continent
+    uid: 'ExcelScript!ExcelScript.ChartMapAreaLevel.continent:member'
+    package: ExcelScript!
+    summary: ''
+  - name: country
+    uid: 'ExcelScript!ExcelScript.ChartMapAreaLevel.country:member'
+    package: ExcelScript!
+    summary: ''
+  - name: county
+    uid: 'ExcelScript!ExcelScript.ChartMapAreaLevel.county:member'
+    package: ExcelScript!
+    summary: ''
+  - name: dataOnly
+    uid: 'ExcelScript!ExcelScript.ChartMapAreaLevel.dataOnly:member'
+    package: ExcelScript!
+    summary: ''
+  - name: state
+    uid: 'ExcelScript!ExcelScript.ChartMapAreaLevel.state:member'
+    package: ExcelScript!
+    summary: ''
+  - name: world
+    uid: 'ExcelScript!ExcelScript.ChartMapAreaLevel.world:member'
+    package: ExcelScript!
+    summary: ''

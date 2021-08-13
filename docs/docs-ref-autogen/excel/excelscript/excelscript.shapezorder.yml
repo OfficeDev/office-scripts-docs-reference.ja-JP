@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ShapeZOrder
-uid: ExcelScript!ExcelScript.ShapeZOrder:enum
+uid: 'ExcelScript!ExcelScript.ShapeZOrder:enum'
 package: ExcelScript!
 fullName: ExcelScript.ShapeZOrder
 summary: 他の図形を基準として、図形を移動する位置を Z オーダーで指定します。
@@ -8,26 +8,19 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: bringForward
-  uid: ExcelScript!ExcelScript.ShapeZOrder.bringForward:member
-  package: ExcelScript!
-  summary: ''
-- name: bringToFront
-  uid: ExcelScript!ExcelScript.ShapeZOrder.bringToFront:member
-  package: ExcelScript!
-  summary: ''
-- name: sendBackward
-  uid: ExcelScript!ExcelScript.ShapeZOrder.sendBackward:member
-  package: ExcelScript!
-  summary: ''
-- name: sendToBack
-  uid: ExcelScript!ExcelScript.ShapeZOrder.sendToBack:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: 94a3d882aaecfe2405b162a967f6babb45388f79
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913378"
+  - name: bringForward
+    uid: 'ExcelScript!ExcelScript.ShapeZOrder.bringForward:member'
+    package: ExcelScript!
+    summary: ''
+  - name: bringToFront
+    uid: 'ExcelScript!ExcelScript.ShapeZOrder.bringToFront:member'
+    package: ExcelScript!
+    summary: ''
+  - name: sendBackward
+    uid: 'ExcelScript!ExcelScript.ShapeZOrder.sendBackward:member'
+    package: ExcelScript!
+    summary: ''
+  - name: sendToBack
+    uid: 'ExcelScript!ExcelScript.ShapeZOrder.sendToBack:member'
+    package: ExcelScript!
+    summary: ''

@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ChartSeriesFormat
-uid: ExcelScript!ExcelScript.ChartSeriesFormat:interface
+uid: 'ExcelScript!ExcelScript.ChartSeriesFormat:interface'
 package: ExcelScript!
 fullName: ExcelScript.ChartSeriesFormat
 summary: グラフ系列の書式プロパティをカプセル化する
@@ -9,36 +9,29 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getFill()
-  uid: ExcelScript!ExcelScript.ChartSeriesFormat#getFill:member(1)
-  package: ExcelScript!
-  fullName: getFill()
-  summary: 背景書式情報を含むグラフ系列の塗りつぶし形式を表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFill(): ChartFill;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartFill:interface" />
-      description: ''
-- name: getLine()
-  uid: ExcelScript!ExcelScript.ChartSeriesFormat#getLine:member(1)
-  package: ExcelScript!
-  fullName: getLine()
-  summary: 線の書式設定を表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLine(): ChartLineFormat;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartLineFormat:interface" />
-      description: ''
-metadata:
-  ms.openlocfilehash: fd60ce5ece36aebf97f2f1d06b99c0c126f5aef2
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51911936"
+  - name: getFill()
+    uid: 'ExcelScript!ExcelScript.ChartSeriesFormat#getFill:member(1)'
+    package: ExcelScript!
+    fullName: getFill()
+    summary: 背景書式情報を含むグラフ系列の塗りつぶし形式を表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFill(): ChartFill;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartFill:interface" />'
+        description: ''
+  - name: getLine()
+    uid: 'ExcelScript!ExcelScript.ChartSeriesFormat#getLine:member(1)'
+    package: ExcelScript!
+    fullName: getLine()
+    summary: 線の書式設定を表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLine(): ChartLineFormat;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartLineFormat:interface" />'
+        description: ''

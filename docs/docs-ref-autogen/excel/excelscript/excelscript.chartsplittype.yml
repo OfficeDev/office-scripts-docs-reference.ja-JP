@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ChartSplitType
-uid: ExcelScript!ExcelScript.ChartSplitType:enum
+uid: 'ExcelScript!ExcelScript.ChartSplitType:enum'
 package: ExcelScript!
 fullName: ExcelScript.ChartSplitType
 summary: ''
@@ -8,26 +8,19 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: splitByCustomSplit
-  uid: ExcelScript!ExcelScript.ChartSplitType.splitByCustomSplit:member
-  package: ExcelScript!
-  summary: ''
-- name: splitByPercentValue
-  uid: ExcelScript!ExcelScript.ChartSplitType.splitByPercentValue:member
-  package: ExcelScript!
-  summary: ''
-- name: splitByPosition
-  uid: ExcelScript!ExcelScript.ChartSplitType.splitByPosition:member
-  package: ExcelScript!
-  summary: ''
-- name: splitByValue
-  uid: ExcelScript!ExcelScript.ChartSplitType.splitByValue:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: 84022de0b2a2cca5fea50fee26e92eefa98d2605
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419923"
+  - name: splitByCustomSplit
+    uid: 'ExcelScript!ExcelScript.ChartSplitType.splitByCustomSplit:member'
+    package: ExcelScript!
+    summary: ''
+  - name: splitByPercentValue
+    uid: 'ExcelScript!ExcelScript.ChartSplitType.splitByPercentValue:member'
+    package: ExcelScript!
+    summary: ''
+  - name: splitByPosition
+    uid: 'ExcelScript!ExcelScript.ChartSplitType.splitByPosition:member'
+    package: ExcelScript!
+    summary: ''
+  - name: splitByValue
+    uid: 'ExcelScript!ExcelScript.ChartSplitType.splitByValue:member'
+    package: ExcelScript!
+    summary: ''

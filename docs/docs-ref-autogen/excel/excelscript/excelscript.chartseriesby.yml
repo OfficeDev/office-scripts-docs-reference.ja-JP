@@ -1,29 +1,22 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ChartSeriesBy
-uid: ExcelScript!ExcelScript.ChartSeriesBy:enum
+uid: 'ExcelScript!ExcelScript.ChartSeriesBy:enum'
 package: ExcelScript!
 fullName: ExcelScript.ChartSeriesBy
-summary: 系列が行別か列別かを指定します。 デスクトップ上の Excel では、"auto" オプションはソース データの図形を検査して、データが行または列別であるかどうかを自動的に推測します。 Web 上の Excel では、"auto" は既定で "列" に設定されます。
+summary: 系列が行別か列別かを指定します。 デスクトップExcel場合、"auto" オプションはソース データの図形を検査して、データが行または列別であるかどうかを自動的に推測します。 このExcel on the web"auto" は既定で "columns" になります。
 remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: auto
-  uid: ExcelScript!ExcelScript.ChartSeriesBy.auto:member
-  package: ExcelScript!
-  summary: デスクトップ上の Excel では、"auto" オプションはソース データの図形を検査して、データが行または列別であるかどうかを自動的に推測します。 Web 上の Excel では、"auto" は既定で "列" に設定されます。
-- name: columns
-  uid: ExcelScript!ExcelScript.ChartSeriesBy.columns:member
-  package: ExcelScript!
-  summary: ''
-- name: rows
-  uid: ExcelScript!ExcelScript.ChartSeriesBy.rows:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: e41eaae1d2ca390388775c565331243e7ea95ae5
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914542"
+  - name: auto
+    uid: 'ExcelScript!ExcelScript.ChartSeriesBy.auto:member'
+    package: ExcelScript!
+    summary: デスクトップExcel場合、"auto" オプションはソース データの図形を検査して、データが行または列別であるかどうかを自動的に推測します。 このExcel on the web"auto" は既定で "columns" になります。
+  - name: columns
+    uid: 'ExcelScript!ExcelScript.ChartSeriesBy.columns:member'
+    package: ExcelScript!
+    summary: ''
+  - name: rows
+    uid: 'ExcelScript!ExcelScript.ChartSeriesBy.rows:member'
+    package: ExcelScript!
+    summary: ''

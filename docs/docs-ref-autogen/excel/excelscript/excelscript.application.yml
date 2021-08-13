@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.Application
-uid: ExcelScript!ExcelScript.Application:interface
+uid: 'ExcelScript!ExcelScript.Application:interface'
 package: ExcelScript!
 fullName: ExcelScript.Application
 summary: ブックを管理する Excel アプリケーションを表します。
@@ -9,148 +9,141 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: calculate(calculationType)
-  uid: ExcelScript!ExcelScript.Application#calculate:member(1)
-  package: ExcelScript!
-  fullName: calculate(calculationType)
-  summary: Excel で現在開いているすべてのブックを再計算します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'calculate(calculationType: CalculationType): void;'
-    parameters:
-    - id: calculationType
-      description: 使用する計算の種類を指定します。 詳細は「`ExcelScript.CalculationType`」をご覧ください。
-      type: <xref uid="ExcelScript!ExcelScript.CalculationType:enum" />
-    return:
-      type: void
-      description: ''
-- name: getCalculationEngineVersion()
-  uid: ExcelScript!ExcelScript.Application#getCalculationEngineVersion:member(1)
-  package: ExcelScript!
-  fullName: getCalculationEngineVersion()
-  summary: 最後の完全な再計算に使用した Excel 計算エンジンのバージョンを返します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getCalculationEngineVersion(): number;'
-    return:
-      type: number
-      description: ''
-- name: getCalculationMode()
-  uid: ExcelScript!ExcelScript.Application#getCalculationMode:member(1)
-  package: ExcelScript!
-  fullName: getCalculationMode()
-  summary: ブック内の定数で定義されている計算モードを返します。 `ExcelScript.CalculationMode`<!-- -->. 指定できる値は次のとおりです。 `Automatic`<!-- -->、Excel が再計算を制御します。 `AutomaticExceptTables`<!-- -->、Excel は再計算を制御しますが、テーブルの変更は無視します。 `Manual`<!-- -->で、ユーザーが要求した場合に計算が行われます。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getCalculationMode(): CalculationMode;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.CalculationMode:enum" />
-      description: ''
-- name: getCalculationState()
-  uid: ExcelScript!ExcelScript.Application#getCalculationState:member(1)
-  package: ExcelScript!
-  fullName: getCalculationState()
-  summary: アプリケーションの計算の状態を返します。 詳細は「`ExcelScript.CalculationState`」をご覧ください。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getCalculationState(): CalculationState;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.CalculationState:enum" />
-      description: ''
-- name: getCultureInfo()
-  uid: ExcelScript!ExcelScript.Application#getCultureInfo:member(1)
-  package: ExcelScript!
-  fullName: getCultureInfo()
-  summary: 現在のシステム カルチャ設定に基づく情報を提供します。 これには、カルチャ名、数値の書式設定、その他の文化的に依存する設定が含まれます。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getCultureInfo(): CultureInfo;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.CultureInfo:interface" />
-      description: ''
-- name: getDecimalSeparator()
-  uid: ExcelScript!ExcelScript.Application#getDecimalSeparator:member(1)
-  package: ExcelScript!
-  fullName: getDecimalSeparator()
-  summary: 数値の小数点として使用される文字列を取得します。 これは、ローカルの Excel 設定に基づいて行います。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getDecimalSeparator(): string;'
-    return:
-      type: string
-      description: ''
-- name: getIterativeCalculation()
-  uid: ExcelScript!ExcelScript.Application#getIterativeCalculation:member(1)
-  package: ExcelScript!
-  fullName: getIterativeCalculation()
-  summary: 反復計算の設定を返します。 Windows と Mac の Excel では、設定が Excel アプリケーションに適用されます。 Web および他のプラットフォームの Excel では、設定はアクティブなブックに適用されます。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getIterativeCalculation(): IterativeCalculation;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.IterativeCalculation:interface" />
-      description: ''
-- name: getThousandsSeparator()
-  uid: ExcelScript!ExcelScript.Application#getThousandsSeparator:member(1)
-  package: ExcelScript!
-  fullName: getThousandsSeparator()
-  summary: 数値の 10 進数の左側に数字のグループを区切る文字列を取得します。 これは、ローカルの Excel 設定に基づいて行います。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getThousandsSeparator(): string;'
-    return:
-      type: string
-      description: ''
-- name: getUseSystemSeparators()
-  uid: ExcelScript!ExcelScript.Application#getUseSystemSeparators:member(1)
-  package: ExcelScript!
-  fullName: getUseSystemSeparators()
-  summary: Excel のシステム区切り記号が有効になっている場合に指定します。 システムの区切り記号には、小数点と桁区切り記号が含まれます。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getUseSystemSeparators(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: setCalculationMode(calculationMode)
-  uid: ExcelScript!ExcelScript.Application#setCalculationMode:member(1)
-  package: ExcelScript!
-  fullName: setCalculationMode(calculationMode)
-  summary: ブック内の定数で定義されている計算モードを返します。 `ExcelScript.CalculationMode`<!-- -->. 指定できる値は次のとおりです。 `Automatic`<!-- -->、Excel が再計算を制御します。 `AutomaticExceptTables`<!-- -->、Excel は再計算を制御しますが、テーブルの変更は無視します。 `Manual`<!-- -->で、ユーザーが要求した場合に計算が行われます。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setCalculationMode(calculationMode: CalculationMode): void;'
-    parameters:
-    - id: calculationMode
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.CalculationMode:enum" />
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: bef93d1a143f1bf94aa7a2ccfb5d2b0856352f1b
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914007"
+  - name: calculate(calculationType)
+    uid: 'ExcelScript!ExcelScript.Application#calculate:member(1)'
+    package: ExcelScript!
+    fullName: calculate(calculationType)
+    summary: Excel で現在開いているすべてのブックを再計算します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'calculate(calculationType: CalculationType): void;'
+      parameters:
+        - id: calculationType
+          description: 使用する計算の種類を指定します。 詳細は「`ExcelScript.CalculationType`」をご覧ください。
+          type: '<xref uid="ExcelScript!ExcelScript.CalculationType:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: getCalculationEngineVersion()
+    uid: 'ExcelScript!ExcelScript.Application#getCalculationEngineVersion:member(1)'
+    package: ExcelScript!
+    fullName: getCalculationEngineVersion()
+    summary: 最後の完全な再計算に使用した Excel 計算エンジンのバージョンを返します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCalculationEngineVersion(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getCalculationMode()
+    uid: 'ExcelScript!ExcelScript.Application#getCalculationMode:member(1)'
+    package: ExcelScript!
+    fullName: getCalculationMode()
+    summary: ブック内の定数で定義されている計算モードを返します。 `ExcelScript.CalculationMode`<!-- -->. 指定できる値は次のとおりです。 `Automatic`<!-- -->、ここで、Excel再計算を制御します。`AutomaticExceptTables`<!-- -->で、Excel再計算を制御しますが、テーブルの変更は無視されます。`Manual`<!-- -->で、ユーザーが要求した場合に計算が行われます。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCalculationMode(): CalculationMode;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.CalculationMode:enum" />'
+        description: ''
+  - name: getCalculationState()
+    uid: 'ExcelScript!ExcelScript.Application#getCalculationState:member(1)'
+    package: ExcelScript!
+    fullName: getCalculationState()
+    summary: アプリケーションの計算の状態を返します。 詳細は「`ExcelScript.CalculationState`」をご覧ください。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCalculationState(): CalculationState;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.CalculationState:enum" />'
+        description: ''
+  - name: getCultureInfo()
+    uid: 'ExcelScript!ExcelScript.Application#getCultureInfo:member(1)'
+    package: ExcelScript!
+    fullName: getCultureInfo()
+    summary: 現在のシステム カルチャ設定に基づく情報を提供します。 これには、カルチャ名、数値の書式設定、その他の文化的に依存する設定が含まれます。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCultureInfo(): CultureInfo;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.CultureInfo:interface" />'
+        description: ''
+  - name: getDecimalSeparator()
+    uid: 'ExcelScript!ExcelScript.Application#getDecimalSeparator:member(1)'
+    package: ExcelScript!
+    fullName: getDecimalSeparator()
+    summary: 数値の小数点として使用される文字列を取得します。 これは、ローカル の設定に基Excelです。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getDecimalSeparator(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getIterativeCalculation()
+    uid: 'ExcelScript!ExcelScript.Application#getIterativeCalculation:member(1)'
+    package: ExcelScript!
+    fullName: getIterativeCalculation()
+    summary: '反復計算の設定を返します。 [Excel Mac Windowsでは、設定はアプリケーションアプリケーションにExcelされます。 このExcel on the webプラットフォームでは、設定はアクティブなブックに適用されます。'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getIterativeCalculation(): IterativeCalculation;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.IterativeCalculation:interface" />'
+        description: ''
+  - name: getThousandsSeparator()
+    uid: 'ExcelScript!ExcelScript.Application#getThousandsSeparator:member(1)'
+    package: ExcelScript!
+    fullName: getThousandsSeparator()
+    summary: 数値の 10 進数の左側に数字のグループを区切る文字列を取得します。 これは、ローカル の設定に基Excelです。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getThousandsSeparator(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getUseSystemSeparators()
+    uid: 'ExcelScript!ExcelScript.Application#getUseSystemSeparators:member(1)'
+    package: ExcelScript!
+    fullName: getUseSystemSeparators()
+    summary: ユーザーのシステム区切り記号が有効Excel指定します。 システムの区切り記号には、小数点と桁区切り記号が含まれます。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getUseSystemSeparators(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: setCalculationMode(calculationMode)
+    uid: 'ExcelScript!ExcelScript.Application#setCalculationMode:member(1)'
+    package: ExcelScript!
+    fullName: setCalculationMode(calculationMode)
+    summary: ブック内の定数で定義されている計算モードを返します。 `ExcelScript.CalculationMode`<!-- -->. 指定できる値は次のとおりです。 `Automatic`<!-- -->、ここで、Excel再計算を制御します。`AutomaticExceptTables`<!-- -->で、Excel再計算を制御しますが、テーブルの変更は無視されます。`Manual`<!-- -->で、ユーザーが要求した場合に計算が行われます。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setCalculationMode(calculationMode: CalculationMode): void;'
+      parameters:
+        - id: calculationMode
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.CalculationMode:enum" />'
+      return:
+        type: void
+        description: ''

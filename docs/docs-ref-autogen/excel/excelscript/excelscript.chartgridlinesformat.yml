@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ChartGridlinesFormat
-uid: ExcelScript!ExcelScript.ChartGridlinesFormat:interface
+uid: 'ExcelScript!ExcelScript.ChartGridlinesFormat:interface'
 package: ExcelScript!
 fullName: ExcelScript.ChartGridlinesFormat
 summary: グラフの目盛線の書式設定プロパティをカプセル化します。
@@ -9,23 +9,16 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getLine()
-  uid: ExcelScript!ExcelScript.ChartGridlinesFormat#getLine:member(1)
-  package: ExcelScript!
-  fullName: getLine()
-  summary: グラフの線の書式設定を表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLine(): ChartLineFormat;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartLineFormat:interface" />
-      description: ''
-metadata:
-  ms.openlocfilehash: f462525f1969fc353d6de80e42a956c2174303f1
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419790"
+  - name: getLine()
+    uid: 'ExcelScript!ExcelScript.ChartGridlinesFormat#getLine:member(1)'
+    package: ExcelScript!
+    fullName: getLine()
+    summary: グラフの線の書式設定を表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLine(): ChartLineFormat;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartLineFormat:interface" />'
+        description: ''

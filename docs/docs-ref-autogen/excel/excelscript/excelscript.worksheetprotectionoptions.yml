@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.WorksheetProtectionOptions
-uid: ExcelScript!ExcelScript.WorksheetProtectionOptions:interface
+uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions:interface'
 package: ExcelScript!
 fullName: ExcelScript.WorksheetProtectionOptions
 summary: シート保護のオプションを表します。
@@ -9,178 +9,171 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: allowAutoFilter
-  uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowAutoFilter:member
-  package: ExcelScript!
-  fullName: allowAutoFilter
-  summary: オートフィルター機能の使用を許可するワークシート保護オプションを表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'allowAutoFilter?: boolean;'
-    return:
-      type: boolean
-- name: allowDeleteColumns
-  uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowDeleteColumns:member
-  package: ExcelScript!
-  fullName: allowDeleteColumns
-  summary: 列の削除を許可するワークシート保護オプションを表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'allowDeleteColumns?: boolean;'
-    return:
-      type: boolean
-- name: allowDeleteRows
-  uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowDeleteRows:member
-  package: ExcelScript!
-  fullName: allowDeleteRows
-  summary: 行の削除を許可するワークシート保護オプションを表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'allowDeleteRows?: boolean;'
-    return:
-      type: boolean
-- name: allowEditObjects
-  uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowEditObjects:member
-  package: ExcelScript!
-  fullName: allowEditObjects
-  summary: オブジェクトの編集を許可するワークシート保護オプションを表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'allowEditObjects?: boolean;'
-    return:
-      type: boolean
-- name: allowEditScenarios
-  uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowEditScenarios:member
-  package: ExcelScript!
-  fullName: allowEditScenarios
-  summary: シナリオの編集を許可するワークシート保護オプションを表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'allowEditScenarios?: boolean;'
-    return:
-      type: boolean
-- name: allowFormatCells
-  uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowFormatCells:member
-  package: ExcelScript!
-  fullName: allowFormatCells
-  summary: セルの書式設定を許可するワークシート保護オプションを表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'allowFormatCells?: boolean;'
-    return:
-      type: boolean
-- name: allowFormatColumns
-  uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowFormatColumns:member
-  package: ExcelScript!
-  fullName: allowFormatColumns
-  summary: 列の書式設定を許可するワークシート保護オプションを表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'allowFormatColumns?: boolean;'
-    return:
-      type: boolean
-- name: allowFormatRows
-  uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowFormatRows:member
-  package: ExcelScript!
-  fullName: allowFormatRows
-  summary: 行の書式設定を許可するワークシート保護オプションを表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'allowFormatRows?: boolean;'
-    return:
-      type: boolean
-- name: allowInsertColumns
-  uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowInsertColumns:member
-  package: ExcelScript!
-  fullName: allowInsertColumns
-  summary: 列の挿入を許可するワークシート保護オプションを表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'allowInsertColumns?: boolean;'
-    return:
-      type: boolean
-- name: allowInsertHyperlinks
-  uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowInsertHyperlinks:member
-  package: ExcelScript!
-  fullName: allowInsertHyperlinks
-  summary: ハイパーリンクの挿入を許可するワークシート保護オプションを表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'allowInsertHyperlinks?: boolean;'
-    return:
-      type: boolean
-- name: allowInsertRows
-  uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowInsertRows:member
-  package: ExcelScript!
-  fullName: allowInsertRows
-  summary: 行の挿入を許可するワークシート保護オプションを表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'allowInsertRows?: boolean;'
-    return:
-      type: boolean
-- name: allowPivotTables
-  uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowPivotTables:member
-  package: ExcelScript!
-  fullName: allowPivotTables
-  summary: ピボットテーブル機能の使用を許可するワークシート保護オプションを表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'allowPivotTables?: boolean;'
-    return:
-      type: boolean
-- name: allowSort
-  uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowSort:member
-  package: ExcelScript!
-  fullName: allowSort
-  summary: 並べ替え機能の使用を許可するワークシート保護オプションを表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'allowSort?: boolean;'
-    return:
-      type: boolean
-- name: selectionMode
-  uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#selectionMode:member
-  package: ExcelScript!
-  fullName: selectionMode
-  summary: 選択モードのワークシート保護オプションを表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'selectionMode?: ProtectionSelectionMode;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ProtectionSelectionMode:enum" />
-metadata:
-  ms.openlocfilehash: 6c51d25920b0502eedd28e20d0ce867d79410d6e
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914587"
+  - name: allowAutoFilter
+    uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowAutoFilter:member'
+    package: ExcelScript!
+    fullName: allowAutoFilter
+    summary: オートフィルター機能の使用を許可するワークシート保護オプションを表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowAutoFilter?: boolean;'
+      return:
+        type: boolean
+  - name: allowDeleteColumns
+    uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowDeleteColumns:member'
+    package: ExcelScript!
+    fullName: allowDeleteColumns
+    summary: 列の削除を許可するワークシート保護オプションを表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowDeleteColumns?: boolean;'
+      return:
+        type: boolean
+  - name: allowDeleteRows
+    uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowDeleteRows:member'
+    package: ExcelScript!
+    fullName: allowDeleteRows
+    summary: 行の削除を許可するワークシート保護オプションを表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowDeleteRows?: boolean;'
+      return:
+        type: boolean
+  - name: allowEditObjects
+    uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowEditObjects:member'
+    package: ExcelScript!
+    fullName: allowEditObjects
+    summary: オブジェクトの編集を許可するワークシート保護オプションを表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowEditObjects?: boolean;'
+      return:
+        type: boolean
+  - name: allowEditScenarios
+    uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowEditScenarios:member'
+    package: ExcelScript!
+    fullName: allowEditScenarios
+    summary: シナリオの編集を許可するワークシート保護オプションを表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowEditScenarios?: boolean;'
+      return:
+        type: boolean
+  - name: allowFormatCells
+    uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowFormatCells:member'
+    package: ExcelScript!
+    fullName: allowFormatCells
+    summary: セルの書式設定を許可するワークシート保護オプションを表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowFormatCells?: boolean;'
+      return:
+        type: boolean
+  - name: allowFormatColumns
+    uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowFormatColumns:member'
+    package: ExcelScript!
+    fullName: allowFormatColumns
+    summary: 列の書式設定を許可するワークシート保護オプションを表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowFormatColumns?: boolean;'
+      return:
+        type: boolean
+  - name: allowFormatRows
+    uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowFormatRows:member'
+    package: ExcelScript!
+    fullName: allowFormatRows
+    summary: 行の書式設定を許可するワークシート保護オプションを表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowFormatRows?: boolean;'
+      return:
+        type: boolean
+  - name: allowInsertColumns
+    uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowInsertColumns:member'
+    package: ExcelScript!
+    fullName: allowInsertColumns
+    summary: 列の挿入を許可するワークシート保護オプションを表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowInsertColumns?: boolean;'
+      return:
+        type: boolean
+  - name: allowInsertHyperlinks
+    uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowInsertHyperlinks:member'
+    package: ExcelScript!
+    fullName: allowInsertHyperlinks
+    summary: ハイパーリンクの挿入を許可するワークシート保護オプションを表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowInsertHyperlinks?: boolean;'
+      return:
+        type: boolean
+  - name: allowInsertRows
+    uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowInsertRows:member'
+    package: ExcelScript!
+    fullName: allowInsertRows
+    summary: 行の挿入を許可するワークシート保護オプションを表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowInsertRows?: boolean;'
+      return:
+        type: boolean
+  - name: allowPivotTables
+    uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowPivotTables:member'
+    package: ExcelScript!
+    fullName: allowPivotTables
+    summary: ピボットテーブル機能の使用を許可するワークシート保護オプションを表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowPivotTables?: boolean;'
+      return:
+        type: boolean
+  - name: allowSort
+    uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowSort:member'
+    package: ExcelScript!
+    fullName: allowSort
+    summary: 並べ替え機能の使用を許可するワークシート保護オプションを表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowSort?: boolean;'
+      return:
+        type: boolean
+  - name: selectionMode
+    uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions#selectionMode:member'
+    package: ExcelScript!
+    fullName: selectionMode
+    summary: 選択モードのワークシート保護オプションを表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'selectionMode?: ProtectionSelectionMode;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ProtectionSelectionMode:enum" />'

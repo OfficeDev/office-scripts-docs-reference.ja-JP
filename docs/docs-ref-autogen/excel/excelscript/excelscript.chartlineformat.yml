@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ChartLineFormat
-uid: ExcelScript!ExcelScript.ChartLineFormat:interface
+uid: 'ExcelScript!ExcelScript.ChartLineFormat:interface'
 package: ExcelScript!
 fullName: ExcelScript.ChartLineFormat
 summary: 行要素の書式設定オプションをカプセル化します。
@@ -9,113 +9,106 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: clear()
-  uid: ExcelScript!ExcelScript.ChartLineFormat#clear:member(1)
-  package: ExcelScript!
-  fullName: clear()
-  summary: グラフ要素の線の形式をクリアします。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'clear(): void;'
-    return:
-      type: void
-      description: ''
-- name: getColor()
-  uid: ExcelScript!ExcelScript.ChartLineFormat#getColor:member(1)
-  package: ExcelScript!
-  fullName: getColor()
-  summary: グラフの線の色を表す HTML カラー コード。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getColor(): string;'
-    return:
-      type: string
-      description: ''
-- name: getLineStyle()
-  uid: ExcelScript!ExcelScript.ChartLineFormat#getLineStyle:member(1)
-  package: ExcelScript!
-  fullName: getLineStyle()
-  summary: 線のスタイルを表します。 詳細は「`ExcelScript.ChartLineStyle`」をご覧ください。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLineStyle(): ChartLineStyle;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartLineStyle:enum" />
-      description: ''
-- name: getWeight()
-  uid: ExcelScript!ExcelScript.ChartLineFormat#getWeight:member(1)
-  package: ExcelScript!
-  fullName: getWeight()
-  summary: 線の太さ (ポイント数) を表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getWeight(): number;'
-    return:
-      type: number
-      description: ''
-- name: setColor(color)
-  uid: ExcelScript!ExcelScript.ChartLineFormat#setColor:member(1)
-  package: ExcelScript!
-  fullName: setColor(color)
-  summary: グラフの線の色を表す HTML カラー コード。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setColor(color: string): void;'
-    parameters:
-    - id: color
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setLineStyle(lineStyle)
-  uid: ExcelScript!ExcelScript.ChartLineFormat#setLineStyle:member(1)
-  package: ExcelScript!
-  fullName: setLineStyle(lineStyle)
-  summary: 線のスタイルを表します。 詳細は「`ExcelScript.ChartLineStyle`」をご覧ください。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setLineStyle(lineStyle: ChartLineStyle): void;'
-    parameters:
-    - id: lineStyle
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ChartLineStyle:enum" />
-    return:
-      type: void
-      description: ''
-- name: setWeight(weight)
-  uid: ExcelScript!ExcelScript.ChartLineFormat#setWeight:member(1)
-  package: ExcelScript!
-  fullName: setWeight(weight)
-  summary: 線の太さ (ポイント数) を表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setWeight(weight: number): void;'
-    parameters:
-    - id: weight
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: fc27c573d735607f0893e2bead43abe73e169c8c
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51606893"
+  - name: clear()
+    uid: 'ExcelScript!ExcelScript.ChartLineFormat#clear:member(1)'
+    package: ExcelScript!
+    fullName: clear()
+    summary: グラフ要素の線の形式をクリアします。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type: void
+        description: ''
+  - name: getColor()
+    uid: 'ExcelScript!ExcelScript.ChartLineFormat#getColor:member(1)'
+    package: ExcelScript!
+    fullName: getColor()
+    summary: グラフの線の色を表す HTML カラー コード。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getColor(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getLineStyle()
+    uid: 'ExcelScript!ExcelScript.ChartLineFormat#getLineStyle:member(1)'
+    package: ExcelScript!
+    fullName: getLineStyle()
+    summary: 線のスタイルを表します。 詳細は「`ExcelScript.ChartLineStyle`」をご覧ください。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLineStyle(): ChartLineStyle;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartLineStyle:enum" />'
+        description: ''
+  - name: getWeight()
+    uid: 'ExcelScript!ExcelScript.ChartLineFormat#getWeight:member(1)'
+    package: ExcelScript!
+    fullName: getWeight()
+    summary: 線の太さ (ポイント数) を表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getWeight(): number;'
+      return:
+        type: number
+        description: ''
+  - name: setColor(color)
+    uid: 'ExcelScript!ExcelScript.ChartLineFormat#setColor:member(1)'
+    package: ExcelScript!
+    fullName: setColor(color)
+    summary: グラフの線の色を表す HTML カラー コード。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setColor(color: string): void;'
+      parameters:
+        - id: color
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setLineStyle(lineStyle)
+    uid: 'ExcelScript!ExcelScript.ChartLineFormat#setLineStyle:member(1)'
+    package: ExcelScript!
+    fullName: setLineStyle(lineStyle)
+    summary: 線のスタイルを表します。 詳細は「`ExcelScript.ChartLineStyle`」をご覧ください。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setLineStyle(lineStyle: ChartLineStyle): void;'
+      parameters:
+        - id: lineStyle
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ChartLineStyle:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setWeight(weight)
+    uid: 'ExcelScript!ExcelScript.ChartLineFormat#setWeight:member(1)'
+    package: ExcelScript!
+    fullName: setWeight(weight)
+    summary: 線の太さ (ポイント数) を表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setWeight(weight: number): void;'
+      parameters:
+        - id: weight
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''

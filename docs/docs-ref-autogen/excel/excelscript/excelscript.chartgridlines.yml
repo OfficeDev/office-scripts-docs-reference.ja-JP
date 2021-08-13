@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ChartGridlines
-uid: ExcelScript!ExcelScript.ChartGridlines:interface
+uid: 'ExcelScript!ExcelScript.ChartGridlines:interface'
 package: ExcelScript!
 fullName: ExcelScript.ChartGridlines
 summary: グラフの軸の目盛線または補助目盛線を表します。
@@ -9,53 +9,46 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getFormat()
-  uid: ExcelScript!ExcelScript.ChartGridlines#getFormat:member(1)
-  package: ExcelScript!
-  fullName: getFormat()
-  summary: グラフの目盛線の書式設定を表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFormat(): ChartGridlinesFormat;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartGridlinesFormat:interface" />
-      description: ''
-- name: getVisible()
-  uid: ExcelScript!ExcelScript.ChartGridlines#getVisible:member(1)
-  package: ExcelScript!
-  fullName: getVisible()
-  summary: 軸目盛線を表示するかどうかを指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getVisible(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: setVisible(visible)
-  uid: ExcelScript!ExcelScript.ChartGridlines#setVisible:member(1)
-  package: ExcelScript!
-  fullName: setVisible(visible)
-  summary: 軸目盛線を表示するかどうかを指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setVisible(visible: boolean): void;'
-    parameters:
-    - id: visible
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 81ec22aa839c012149c0b7facd8ffc69b417b398
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419804"
+  - name: getFormat()
+    uid: 'ExcelScript!ExcelScript.ChartGridlines#getFormat:member(1)'
+    package: ExcelScript!
+    fullName: getFormat()
+    summary: グラフの目盛線の書式設定を表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFormat(): ChartGridlinesFormat;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartGridlinesFormat:interface" />'
+        description: ''
+  - name: getVisible()
+    uid: 'ExcelScript!ExcelScript.ChartGridlines#getVisible:member(1)'
+    package: ExcelScript!
+    fullName: getVisible()
+    summary: 軸のグリッド線が表示される場合に指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getVisible(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: setVisible(visible)
+    uid: 'ExcelScript!ExcelScript.ChartGridlines#setVisible:member(1)'
+    package: ExcelScript!
+    fullName: setVisible(visible)
+    summary: 軸のグリッド線が表示される場合に指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setVisible(visible: boolean): void;'
+      parameters:
+        - id: visible
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''

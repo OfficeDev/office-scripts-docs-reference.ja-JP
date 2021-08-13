@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ChartAxes
-uid: ExcelScript!ExcelScript.ChartAxes:interface
+uid: 'ExcelScript!ExcelScript.ChartAxes:interface'
 package: ExcelScript!
 fullName: ExcelScript.ChartAxes
 summary: グラフの軸を表します。
@@ -9,69 +9,62 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getCategoryAxis()
-  uid: ExcelScript!ExcelScript.ChartAxes#getCategoryAxis:member(1)
-  package: ExcelScript!
-  fullName: getCategoryAxis()
-  summary: グラフの項目軸を表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getCategoryAxis(): ChartAxis;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxis:interface" />
-      description: ''
-- name: getChartAxis(type, group)
-  uid: ExcelScript!ExcelScript.ChartAxes#getChartAxis:member(1)
-  package: ExcelScript!
-  fullName: getChartAxis(type, group)
-  summary: 種類とグループで識別された特定の軸を返します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getChartAxis(type: ChartAxisType, group?: ChartAxisGroup): ChartAxis;'
-    parameters:
-    - id: type
-      description: 軸の種類を指定します。 詳細は「`ExcelScript.ChartAxisType`」をご覧ください。
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisType:enum" />
-    - id: group
-      description: 省略可能。 軸のグループを指定します。 詳細は「`ExcelScript.ChartAxisGroup`」をご覧ください。
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisGroup:enum" />
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxis:interface" />
-      description: ''
-- name: getSeriesAxis()
-  uid: ExcelScript!ExcelScript.ChartAxes#getSeriesAxis:member(1)
-  package: ExcelScript!
-  fullName: getSeriesAxis()
-  summary: 3-D グラフの系列軸を表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getSeriesAxis(): ChartAxis;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxis:interface" />
-      description: ''
-- name: getValueAxis()
-  uid: ExcelScript!ExcelScript.ChartAxes#getValueAxis:member(1)
-  package: ExcelScript!
-  fullName: getValueAxis()
-  summary: 軸の数値軸を表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getValueAxis(): ChartAxis;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxis:interface" />
-      description: ''
-metadata:
-  ms.openlocfilehash: 73e2396224adde7351299c69b73758091ba00aa1
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913281"
+  - name: getCategoryAxis()
+    uid: 'ExcelScript!ExcelScript.ChartAxes#getCategoryAxis:member(1)'
+    package: ExcelScript!
+    fullName: getCategoryAxis()
+    summary: グラフの項目軸を表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCategoryAxis(): ChartAxis;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartAxis:interface" />'
+        description: ''
+  - name: 'getChartAxis(type, group)'
+    uid: 'ExcelScript!ExcelScript.ChartAxes#getChartAxis:member(1)'
+    package: ExcelScript!
+    fullName: 'getChartAxis(type, group)'
+    summary: 種類とグループで識別された特定の軸を返します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getChartAxis(type: ChartAxisType, group?: ChartAxisGroup): ChartAxis;'
+      parameters:
+        - id: type
+          description: 軸の種類を指定します。 詳細は「`ExcelScript.ChartAxisType`」をご覧ください。
+          type: '<xref uid="ExcelScript!ExcelScript.ChartAxisType:enum" />'
+        - id: group
+          description: 省略可能です。 軸のグループを指定します。 詳細は「`ExcelScript.ChartAxisGroup`」をご覧ください。
+          type: '<xref uid="ExcelScript!ExcelScript.ChartAxisGroup:enum" />'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartAxis:interface" />'
+        description: ''
+  - name: getSeriesAxis()
+    uid: 'ExcelScript!ExcelScript.ChartAxes#getSeriesAxis:member(1)'
+    package: ExcelScript!
+    fullName: getSeriesAxis()
+    summary: 3-D グラフの系列軸を表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSeriesAxis(): ChartAxis;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartAxis:interface" />'
+        description: ''
+  - name: getValueAxis()
+    uid: 'ExcelScript!ExcelScript.ChartAxes#getValueAxis:member(1)'
+    package: ExcelScript!
+    fullName: getValueAxis()
+    summary: 軸の数値軸を表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getValueAxis(): ChartAxis;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartAxis:interface" />'
+        description: ''

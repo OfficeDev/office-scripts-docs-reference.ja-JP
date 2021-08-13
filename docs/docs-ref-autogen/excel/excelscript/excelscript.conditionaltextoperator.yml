@@ -1,37 +1,30 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ConditionalTextOperator
-uid: ExcelScript!ExcelScript.ConditionalTextOperator:enum
+uid: 'ExcelScript!ExcelScript.ConditionalTextOperator:enum'
 package: ExcelScript!
 fullName: ExcelScript.ConditionalTextOperator
-summary: テキスト条件付き書式の種類の演算子を表します。
+summary: テキストの条件付き書式の種類の演算子を表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: beginsWith
-  uid: ExcelScript!ExcelScript.ConditionalTextOperator.beginsWith:member
-  package: ExcelScript!
-  summary: ''
-- name: contains
-  uid: ExcelScript!ExcelScript.ConditionalTextOperator.contains:member
-  package: ExcelScript!
-  summary: ''
-- name: endsWith
-  uid: ExcelScript!ExcelScript.ConditionalTextOperator.endsWith:member
-  package: ExcelScript!
-  summary: ''
-- name: invalid
-  uid: ExcelScript!ExcelScript.ConditionalTextOperator.invalid:member
-  package: ExcelScript!
-  summary: ''
-- name: notContains
-  uid: ExcelScript!ExcelScript.ConditionalTextOperator.notContains:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: d67958e246c62b0e36be93f553fa439693805861
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415709"
+  - name: beginsWith
+    uid: 'ExcelScript!ExcelScript.ConditionalTextOperator.beginsWith:member'
+    package: ExcelScript!
+    summary: ''
+  - name: contains
+    uid: 'ExcelScript!ExcelScript.ConditionalTextOperator.contains:member'
+    package: ExcelScript!
+    summary: ''
+  - name: endsWith
+    uid: 'ExcelScript!ExcelScript.ConditionalTextOperator.endsWith:member'
+    package: ExcelScript!
+    summary: ''
+  - name: invalid
+    uid: 'ExcelScript!ExcelScript.ConditionalTextOperator.invalid:member'
+    package: ExcelScript!
+    summary: ''
+  - name: notContains
+    uid: 'ExcelScript!ExcelScript.ConditionalTextOperator.notContains:member'
+    package: ExcelScript!
+    summary: ''

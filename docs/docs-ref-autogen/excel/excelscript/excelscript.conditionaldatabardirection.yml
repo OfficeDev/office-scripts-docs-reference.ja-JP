@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ConditionalDataBarDirection
-uid: ExcelScript!ExcelScript.ConditionalDataBarDirection:enum
+uid: 'ExcelScript!ExcelScript.ConditionalDataBarDirection:enum'
 package: ExcelScript!
 fullName: ExcelScript.ConditionalDataBarDirection
 summary: セル内のデータ バーの方向を表します。
@@ -8,22 +8,15 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: context
-  uid: ExcelScript!ExcelScript.ConditionalDataBarDirection.context:member
-  package: ExcelScript!
-  summary: ''
-- name: leftToRight
-  uid: ExcelScript!ExcelScript.ConditionalDataBarDirection.leftToRight:member
-  package: ExcelScript!
-  summary: ''
-- name: rightToLeft
-  uid: ExcelScript!ExcelScript.ConditionalDataBarDirection.rightToLeft:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: c08b72d876a60f7a0cc2af2dbb468b878a0cab3e
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51607110"
+  - name: context
+    uid: 'ExcelScript!ExcelScript.ConditionalDataBarDirection.context:member'
+    package: ExcelScript!
+    summary: ''
+  - name: leftToRight
+    uid: 'ExcelScript!ExcelScript.ConditionalDataBarDirection.leftToRight:member'
+    package: ExcelScript!
+    summary: ''
+  - name: rightToLeft
+    uid: 'ExcelScript!ExcelScript.ConditionalDataBarDirection.rightToLeft:member'
+    package: ExcelScript!
+    summary: ''

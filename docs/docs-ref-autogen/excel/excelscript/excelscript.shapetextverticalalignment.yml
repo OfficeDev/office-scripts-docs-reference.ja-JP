@@ -1,37 +1,30 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ShapeTextVerticalAlignment
-uid: ExcelScript!ExcelScript.ShapeTextVerticalAlignment:enum
+uid: 'ExcelScript!ExcelScript.ShapeTextVerticalAlignment:enum'
 package: ExcelScript!
 fullName: ExcelScript.ShapeTextVerticalAlignment
-summary: 図形内のレイアウト枠の垂直方向の配置を指定します。
+summary: 図形のテキスト フレームの垂直方向の配置を指定します。
 remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: bottom
-  uid: ExcelScript!ExcelScript.ShapeTextVerticalAlignment.bottom:member
-  package: ExcelScript!
-  summary: ''
-- name: distributed
-  uid: ExcelScript!ExcelScript.ShapeTextVerticalAlignment.distributed:member
-  package: ExcelScript!
-  summary: ''
-- name: justified
-  uid: ExcelScript!ExcelScript.ShapeTextVerticalAlignment.justified:member
-  package: ExcelScript!
-  summary: ''
-- name: middle
-  uid: ExcelScript!ExcelScript.ShapeTextVerticalAlignment.middle:member
-  package: ExcelScript!
-  summary: ''
-- name: top
-  uid: ExcelScript!ExcelScript.ShapeTextVerticalAlignment.top:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: 1798c5744c139a36f1eb6c9dcf35147a36a6bc51
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420574"
+  - name: bottom
+    uid: 'ExcelScript!ExcelScript.ShapeTextVerticalAlignment.bottom:member'
+    package: ExcelScript!
+    summary: ''
+  - name: distributed
+    uid: 'ExcelScript!ExcelScript.ShapeTextVerticalAlignment.distributed:member'
+    package: ExcelScript!
+    summary: ''
+  - name: justified
+    uid: 'ExcelScript!ExcelScript.ShapeTextVerticalAlignment.justified:member'
+    package: ExcelScript!
+    summary: ''
+  - name: middle
+    uid: 'ExcelScript!ExcelScript.ShapeTextVerticalAlignment.middle:member'
+    package: ExcelScript!
+    summary: ''
+  - name: top
+    uid: 'ExcelScript!ExcelScript.ShapeTextVerticalAlignment.top:member'
+    package: ExcelScript!
+    summary: ''

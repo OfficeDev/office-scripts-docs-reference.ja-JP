@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.SortOn
-uid: ExcelScript!ExcelScript.SortOn:enum
+uid: 'ExcelScript!ExcelScript.SortOn:enum'
 package: ExcelScript!
 fullName: ExcelScript.SortOn
 summary: ''
@@ -8,26 +8,19 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: cellColor
-  uid: ExcelScript!ExcelScript.SortOn.cellColor:member
-  package: ExcelScript!
-  summary: ''
-- name: fontColor
-  uid: ExcelScript!ExcelScript.SortOn.fontColor:member
-  package: ExcelScript!
-  summary: ''
-- name: icon
-  uid: ExcelScript!ExcelScript.SortOn.icon:member
-  package: ExcelScript!
-  summary: ''
-- name: value
-  uid: ExcelScript!ExcelScript.SortOn.value:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: e40925381431184bda5781f47f630b37649fa197
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420371"
+  - name: cellColor
+    uid: 'ExcelScript!ExcelScript.SortOn.cellColor:member'
+    package: ExcelScript!
+    summary: ''
+  - name: fontColor
+    uid: 'ExcelScript!ExcelScript.SortOn.fontColor:member'
+    package: ExcelScript!
+    summary: ''
+  - name: icon
+    uid: 'ExcelScript!ExcelScript.SortOn.icon:member'
+    package: ExcelScript!
+    summary: ''
+  - name: value
+    uid: 'ExcelScript!ExcelScript.SortOn.value:member'
+    package: ExcelScript!
+    summary: ''

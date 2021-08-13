@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.RemoveDuplicatesResult
-uid: ExcelScript!ExcelScript.RemoveDuplicatesResult:interface
+uid: 'ExcelScript!ExcelScript.RemoveDuplicatesResult:interface'
 package: ExcelScript!
 fullName: ExcelScript.RemoveDuplicatesResult
 summary: 結果を表します。 `Range.removeDuplicates`<!-- -->.
@@ -9,36 +9,29 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getRemoved()
-  uid: ExcelScript!ExcelScript.RemoveDuplicatesResult#getRemoved:member(1)
-  package: ExcelScript!
-  fullName: getRemoved()
-  summary: 操作によって削除された重複行の数。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getRemoved(): number;'
-    return:
-      type: number
-      description: ''
-- name: getUniqueRemaining()
-  uid: ExcelScript!ExcelScript.RemoveDuplicatesResult#getUniqueRemaining:member(1)
-  package: ExcelScript!
-  fullName: getUniqueRemaining()
-  summary: 結果として生じた範囲に存在する残りの一意の行の数。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getUniqueRemaining(): number;'
-    return:
-      type: number
-      description: ''
-metadata:
-  ms.openlocfilehash: 5dd7c6cccc896294adf24064d3525b745a731725
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913413"
+  - name: getRemoved()
+    uid: 'ExcelScript!ExcelScript.RemoveDuplicatesResult#getRemoved:member(1)'
+    package: ExcelScript!
+    fullName: getRemoved()
+    summary: 操作によって削除された重複行の数。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRemoved(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getUniqueRemaining()
+    uid: 'ExcelScript!ExcelScript.RemoveDuplicatesResult#getUniqueRemaining:member(1)'
+    package: ExcelScript!
+    fullName: getUniqueRemaining()
+    summary: 結果として生じた範囲に存在する残りの一意の行の数。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getUniqueRemaining(): number;'
+      return:
+        type: number
+        description: ''

@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ConditionalColorScaleCriterion
-uid: ExcelScript!ExcelScript.ConditionalColorScaleCriterion:interface
+uid: 'ExcelScript!ExcelScript.ConditionalColorScaleCriterion:interface'
 package: ExcelScript!
 fullName: ExcelScript.ConditionalColorScaleCriterion
 summary: 型、値、および色を含む色スケール基準を表します。
@@ -9,46 +9,39 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: color
-  uid: ExcelScript!ExcelScript.ConditionalColorScaleCriterion#color:member
-  package: ExcelScript!
-  fullName: color
-  summary: カラー スケールの色の HTML カラー コード表現 \# (FF00000 は赤を表すなど)。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'color?: string;'
-    return:
-      type: string
-- name: formula
-  uid: ExcelScript!ExcelScript.ConditionalColorScaleCriterion#formula:member
-  package: ExcelScript!
-  fullName: formula
-  summary: 数値、数式、または `null` (if `type` is `lowestValue`<!-- -->).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'formula?: string;'
-    return:
-      type: string
-- name: type
-  uid: ExcelScript!ExcelScript.ConditionalColorScaleCriterion#type:member
-  package: ExcelScript!
-  fullName: type
-  summary: 条件式の基準の基になる条件。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'type: ConditionalFormatColorCriterionType;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalFormatColorCriterionType:enum" />
-metadata:
-  ms.openlocfilehash: eac56501e1a342e131cf192de81a465659d2c41d
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914042"
+  - name: color
+    uid: 'ExcelScript!ExcelScript.ConditionalColorScaleCriterion#color:member'
+    package: ExcelScript!
+    fullName: color
+    summary: カラー スケールの色の HTML カラー コード表現 \# (FF00000 は赤を表すなど)。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'color?: string;'
+      return:
+        type: string
+  - name: formula
+    uid: 'ExcelScript!ExcelScript.ConditionalColorScaleCriterion#formula:member'
+    package: ExcelScript!
+    fullName: formula
+    summary: 数値、数式、または `null` (if `type` is `lowestValue`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'formula?: string;'
+      return:
+        type: string
+  - name: type
+    uid: 'ExcelScript!ExcelScript.ConditionalColorScaleCriterion#type:member'
+    package: ExcelScript!
+    fullName: type
+    summary: 条件式の基準の基になる条件。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: ConditionalFormatColorCriterionType;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalFormatColorCriterionType:enum" />'

@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ConditionalColorScaleCriteria
-uid: ExcelScript!ExcelScript.ConditionalColorScaleCriteria:interface
+uid: 'ExcelScript!ExcelScript.ConditionalColorScaleCriteria:interface'
 package: ExcelScript!
 fullName: ExcelScript.ConditionalColorScaleCriteria
 summary: カラー スケールの条件を表します。
@@ -9,46 +9,39 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: maximum
-  uid: ExcelScript!ExcelScript.ConditionalColorScaleCriteria#maximum:member
-  package: ExcelScript!
-  fullName: maximum
-  summary: カラー スケール条件の最大ポイント。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'maximum: ConditionalColorScaleCriterion;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalColorScaleCriterion:interface" />
-- name: midpoint
-  uid: ExcelScript!ExcelScript.ConditionalColorScaleCriteria#midpoint:member
-  package: ExcelScript!
-  fullName: midpoint
-  summary: カラー スケールの基準の中間点 (カラー スケールが 3 色スケールの場合)。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'midpoint?: ConditionalColorScaleCriterion;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalColorScaleCriterion:interface" />
-- name: minimum
-  uid: ExcelScript!ExcelScript.ConditionalColorScaleCriteria#minimum:member
-  package: ExcelScript!
-  fullName: minimum
-  summary: 色スケール基準の最小点。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'minimum: ConditionalColorScaleCriterion;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalColorScaleCriterion:interface" />
-metadata:
-  ms.openlocfilehash: e0082d23db4f84cee4fa07562c755a284ee497bc
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913852"
+  - name: maximum
+    uid: 'ExcelScript!ExcelScript.ConditionalColorScaleCriteria#maximum:member'
+    package: ExcelScript!
+    fullName: maximum
+    summary: カラー スケール条件の最大ポイント。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'maximum: ConditionalColorScaleCriterion;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalColorScaleCriterion:interface" />'
+  - name: midpoint
+    uid: 'ExcelScript!ExcelScript.ConditionalColorScaleCriteria#midpoint:member'
+    package: ExcelScript!
+    fullName: midpoint
+    summary: カラー スケールの基準の中間点 (カラー スケールが 3 色スケールの場合)。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'midpoint?: ConditionalColorScaleCriterion;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalColorScaleCriterion:interface" />'
+  - name: minimum
+    uid: 'ExcelScript!ExcelScript.ConditionalColorScaleCriteria#minimum:member'
+    package: ExcelScript!
+    fullName: minimum
+    summary: 色スケール基準の最小点。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'minimum: ConditionalColorScaleCriterion;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalColorScaleCriterion:interface" />'

@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.CustomProperty
-uid: ExcelScript!ExcelScript.CustomProperty:interface
+uid: 'ExcelScript!ExcelScript.CustomProperty:interface'
 package: ExcelScript!
 fullName: ExcelScript.CustomProperty
 summary: カスタム プロパティを表します。
@@ -9,79 +9,72 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: delete()
-  uid: ExcelScript!ExcelScript.CustomProperty#delete:member(1)
-  package: ExcelScript!
-  fullName: delete()
-  summary: カスタム プロパティを削除します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'delete(): void;'
-    return:
-      type: void
-      description: ''
-- name: getKey()
-  uid: ExcelScript!ExcelScript.CustomProperty#getKey:member(1)
-  package: ExcelScript!
-  fullName: getKey()
-  summary: カスタム プロパティのキー。 キーは、Web 上の Excel 以外では 255 文字に制限されています (大きいキーは、他のプラットフォームでは自動的に 255 文字にトリミングされます)。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getKey(): string;'
-    return:
-      type: string
-      description: ''
-- name: getType()
-  uid: ExcelScript!ExcelScript.CustomProperty#getType:member(1)
-  package: ExcelScript!
-  fullName: getType()
-  summary: カスタム プロパティに使用される値の種類。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getType(): DocumentPropertyType;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.DocumentPropertyType:enum" />
-      description: ''
-- name: getValue()
-  uid: ExcelScript!ExcelScript.CustomProperty#getValue:member(1)
-  package: ExcelScript!
-  fullName: getValue()
-  summary: カスタム プロパティの値を指定します。 この値は、Web 上の Excel 以外では 255 文字に制限されています (大きい値は、他のプラットフォームでは自動的に 255 文字にトリミングされます)。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getValue(): any;'
-    return:
-      type: any
-      description: ''
-- name: setValue(value)
-  uid: ExcelScript!ExcelScript.CustomProperty#setValue:member(1)
-  package: ExcelScript!
-  fullName: setValue(value)
-  summary: カスタム プロパティの値を指定します。 この値は、Web 上の Excel 以外では 255 文字に制限されています (大きい値は、他のプラットフォームでは自動的に 255 文字にトリミングされます)。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setValue(value: any): void;'
-    parameters:
-    - id: value
-      description: ''
-      type: any
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 816d6f4b2634092596bba7e6f92e5d414be58d7b
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914493"
+  - name: delete()
+    uid: 'ExcelScript!ExcelScript.CustomProperty#delete:member(1)'
+    package: ExcelScript!
+    fullName: delete()
+    summary: カスタム プロパティを削除します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: ''
+  - name: getKey()
+    uid: 'ExcelScript!ExcelScript.CustomProperty#getKey:member(1)'
+    package: ExcelScript!
+    fullName: getKey()
+    summary: カスタム プロパティのキー。 キーは 255 文字に制限されています (Excel on the webキーは他のプラットフォームでは自動的に 255 文字にトリミングされます)。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getKey(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getType()
+    uid: 'ExcelScript!ExcelScript.CustomProperty#getType:member(1)'
+    package: ExcelScript!
+    fullName: getType()
+    summary: カスタム プロパティに使用される値の種類。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getType(): DocumentPropertyType;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.DocumentPropertyType:enum" />'
+        description: ''
+  - name: getValue()
+    uid: 'ExcelScript!ExcelScript.CustomProperty#getValue:member(1)'
+    package: ExcelScript!
+    fullName: getValue()
+    summary: カスタム プロパティの値を指定します。 この値は、Excel on the web 以外の 255 文字に制限されます (大きい値は、他のプラットフォームでは自動的に 255 文字にトリミングされます)。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getValue(): any;'
+      return:
+        type: any
+        description: ''
+  - name: setValue(value)
+    uid: 'ExcelScript!ExcelScript.CustomProperty#setValue:member(1)'
+    package: ExcelScript!
+    fullName: setValue(value)
+    summary: カスタム プロパティの値を指定します。 この値は、Excel on the web 以外の 255 文字に制限されます (大きい値は、他のプラットフォームでは自動的に 255 文字にトリミングされます)。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setValue(value: any): void;'
+      parameters:
+        - id: value
+          description: ''
+          type: any
+      return:
+        type: void
+        description: ''

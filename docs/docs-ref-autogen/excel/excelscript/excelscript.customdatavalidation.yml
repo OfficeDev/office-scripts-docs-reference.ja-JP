@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.CustomDataValidation
-uid: ExcelScript!ExcelScript.CustomDataValidation:interface
+uid: 'ExcelScript!ExcelScript.CustomDataValidation:interface'
 package: ExcelScript!
 fullName: ExcelScript.CustomDataValidation
 summary: ユーザー設定のデータ検証条件を表します。
@@ -9,22 +9,15 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: formula
-  uid: ExcelScript!ExcelScript.CustomDataValidation#formula:member
-  package: ExcelScript!
-  fullName: formula
-  summary: ユーザーの入力規則のカスタム数式。 これにより、重複を防止したり、セル範囲の合計を制限したりなど、特別な入力ルールが作成されます。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'formula: string;'
-    return:
-      type: string
-metadata:
-  ms.openlocfilehash: fdfa6250fa959a35feba17bfc6e9310666129986
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913704"
+  - name: formula
+    uid: 'ExcelScript!ExcelScript.CustomDataValidation#formula:member'
+    package: ExcelScript!
+    fullName: formula
+    summary: ユーザーの入力規則のカスタム数式。 これにより、重複を防止したり、セル範囲の合計を制限したりなど、特別な入力ルールが作成されます。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'formula: string;'
+      return:
+        type: string

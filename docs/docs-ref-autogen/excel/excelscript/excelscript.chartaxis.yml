@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ChartAxis
-uid: ExcelScript!ExcelScript.ChartAxis:interface
+uid: 'ExcelScript!ExcelScript.ChartAxis:interface'
 package: ExcelScript!
 fullName: ExcelScript.ChartAxis
 summary: グラフの 1 つの軸を表します。
@@ -9,1030 +9,1023 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getAlignment()
-  uid: ExcelScript!ExcelScript.ChartAxis#getAlignment:member(1)
-  package: ExcelScript!
-  fullName: getAlignment()
-  summary: 指定した軸目盛ラベルの配置を指定します。 詳細 `ExcelScript.ChartTextHorizontalAlignment` については、「」を参照してください。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getAlignment(): ChartTickLabelAlignment;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartTickLabelAlignment:enum" />
-      description: ''
-- name: getAxisGroup()
-  uid: ExcelScript!ExcelScript.ChartAxis#getAxisGroup:member(1)
-  package: ExcelScript!
-  fullName: getAxisGroup()
-  summary: 指定した軸のグループを指定します。 詳細は「`ExcelScript.ChartAxisGroup`」をご覧ください。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getAxisGroup(): ChartAxisGroup;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisGroup:enum" />
-      description: ''
-- name: getBaseTimeUnit()
-  uid: ExcelScript!ExcelScript.ChartAxis#getBaseTimeUnit:member(1)
-  package: ExcelScript!
-  fullName: getBaseTimeUnit()
-  summary: 指定したカテゴリ軸の基本単位を指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getBaseTimeUnit(): ChartAxisTimeUnit;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisTimeUnit:enum" />
-      description: ''
-- name: getCategoryType()
-  uid: ExcelScript!ExcelScript.ChartAxis#getCategoryType:member(1)
-  package: ExcelScript!
-  fullName: getCategoryType()
-  summary: カテゴリ軸の種類を指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getCategoryType(): ChartAxisCategoryType;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisCategoryType:enum" />
-      description: ''
-- name: getCustomDisplayUnit()
-  uid: ExcelScript!ExcelScript.ChartAxis#getCustomDisplayUnit:member(1)
-  package: ExcelScript!
-  fullName: getCustomDisplayUnit()
-  summary: ユーザー設定の軸表示単位の値を指定します。 このプロパティを設定するには、メソッドを使用 `SetCustomDisplayUnit(double)` してください。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getCustomDisplayUnit(): number;'
-    return:
-      type: number
-      description: ''
-- name: getDisplayUnit()
-  uid: ExcelScript!ExcelScript.ChartAxis#getDisplayUnit:member(1)
-  package: ExcelScript!
-  fullName: getDisplayUnit()
-  summary: 軸の表示単位を表します。 詳細は「`ExcelScript.ChartAxisDisplayUnit`」をご覧ください。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getDisplayUnit(): ChartAxisDisplayUnit;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisDisplayUnit:enum" />
-      description: ''
-- name: getFormat()
-  uid: ExcelScript!ExcelScript.ChartAxis#getFormat:member(1)
-  package: ExcelScript!
-  fullName: getFormat()
-  summary: 線とフォントの書式設定を含むグラフ オブジェクトの書式設定を表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFormat(): ChartAxisFormat;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisFormat:interface" />
-      description: ''
-- name: getHeight()
-  uid: ExcelScript!ExcelScript.ChartAxis#getHeight:member(1)
-  package: ExcelScript!
-  fullName: getHeight()
-  summary: グラフ軸の高さをポイントで指定します。 軸が `null` 表示されていない場合に返します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getHeight(): number;'
-    return:
-      type: number
-      description: ''
-- name: getIsBetweenCategories()
-  uid: ExcelScript!ExcelScript.ChartAxis#getIsBetweenCategories:member(1)
-  package: ExcelScript!
-  fullName: getIsBetweenCategories()
-  summary: 値軸がカテゴリの間でカテゴリ軸と交差する場合に指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getIsBetweenCategories(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getLeft()
-  uid: ExcelScript!ExcelScript.ChartAxis#getLeft:member(1)
-  package: ExcelScript!
-  fullName: getLeft()
-  summary: 軸の左端からグラフ領域の左側までの距離をポイントで指定します。 軸が `null` 表示されていない場合に返します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLeft(): number;'
-    return:
-      type: number
-      description: ''
-- name: getLinkNumberFormat()
-  uid: ExcelScript!ExcelScript.ChartAxis#getLinkNumberFormat:member(1)
-  package: ExcelScript!
-  fullName: getLinkNumberFormat()
-  summary: 数値の形式がセルにリンクされている場合に指定します。 もし `true`<!-- -->をクリックすると、セル内でラベルが変更された際に数値の形式が変更されます。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLinkNumberFormat(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getLogBase()
-  uid: ExcelScript!ExcelScript.ChartAxis#getLogBase:member(1)
-  package: ExcelScript!
-  fullName: getLogBase()
-  summary: 対数スケールを使用する場合の対数の基数を指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLogBase(): number;'
-    return:
-      type: number
-      description: ''
-- name: getMajorGridlines()
-  uid: ExcelScript!ExcelScript.ChartAxis#getMajorGridlines:member(1)
-  package: ExcelScript!
-  fullName: getMajorGridlines()
-  summary: 指定した軸の主グリッド線を表すオブジェクトを返します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getMajorGridlines(): ChartGridlines;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartGridlines:interface" />
-      description: ''
-- name: getMajorTickMark()
-  uid: ExcelScript!ExcelScript.ChartAxis#getMajorTickMark:member(1)
-  package: ExcelScript!
-  fullName: getMajorTickMark()
-  summary: 指定した軸の目盛の種類を指定します。 詳細は「`ExcelScript.ChartAxisTickMark`」をご覧ください。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getMajorTickMark(): ChartAxisTickMark;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisTickMark:enum" />
-      description: ''
-- name: getMajorTimeUnitScale()
-  uid: ExcelScript!ExcelScript.ChartAxis#getMajorTimeUnitScale:member(1)
-  package: ExcelScript!
-  fullName: getMajorTimeUnitScale()
-  summary: プロパティがに設定されている場合に、カテゴリ軸のメジャー単位 `categoryType` スケール値を指定します。 `dateAxis`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getMajorTimeUnitScale(): ChartAxisTimeUnit;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisTimeUnit:enum" />
-      description: ''
-- name: getMajorUnit()
-  uid: ExcelScript!ExcelScript.ChartAxis#getMajorUnit:member(1)
-  package: ExcelScript!
-  fullName: getMajorUnit()
-  summary: 2 つの目盛りの間隔を指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getMajorUnit(): number;'
-    return:
-      type: number
-      description: ''
-- name: getMaximum()
-  uid: ExcelScript!ExcelScript.ChartAxis#getMaximum:member(1)
-  package: ExcelScript!
-  fullName: getMaximum()
-  summary: 値軸の最大値を指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getMaximum(): number;'
-    return:
-      type: number
-      description: ''
-- name: getMinimum()
-  uid: ExcelScript!ExcelScript.ChartAxis#getMinimum:member(1)
-  package: ExcelScript!
-  fullName: getMinimum()
-  summary: 値軸の最小値を指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getMinimum(): number;'
-    return:
-      type: number
-      description: ''
-- name: getMinorGridlines()
-  uid: ExcelScript!ExcelScript.ChartAxis#getMinorGridlines:member(1)
-  package: ExcelScript!
-  fullName: getMinorGridlines()
-  summary: 指定した軸の小さい枠線を表すオブジェクトを返します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getMinorGridlines(): ChartGridlines;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartGridlines:interface" />
-      description: ''
-- name: getMinorTickMark()
-  uid: ExcelScript!ExcelScript.ChartAxis#getMinorTickMark:member(1)
-  package: ExcelScript!
-  fullName: getMinorTickMark()
-  summary: 指定した軸の目盛りの種類を指定します。 詳細は「`ExcelScript.ChartAxisTickMark`」をご覧ください。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getMinorTickMark(): ChartAxisTickMark;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisTickMark:enum" />
-      description: ''
-- name: getMinorTimeUnitScale()
-  uid: ExcelScript!ExcelScript.ChartAxis#getMinorTimeUnitScale:member(1)
-  package: ExcelScript!
-  fullName: getMinorTimeUnitScale()
-  summary: プロパティがに設定されている場合、カテゴリ軸のマイナー単位 `categoryType` スケール値を指定します。 `dateAxis`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getMinorTimeUnitScale(): ChartAxisTimeUnit;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisTimeUnit:enum" />
-      description: ''
-- name: getMinorUnit()
-  uid: ExcelScript!ExcelScript.ChartAxis#getMinorUnit:member(1)
-  package: ExcelScript!
-  fullName: getMinorUnit()
-  summary: 2 つの小さな目盛りの間隔を指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getMinorUnit(): number;'
-    return:
-      type: number
-      description: ''
-- name: getMultiLevel()
-  uid: ExcelScript!ExcelScript.ChartAxis#getMultiLevel:member(1)
-  package: ExcelScript!
-  fullName: getMultiLevel()
-  summary: 軸がマルチレベルの場合に指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getMultiLevel(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getNumberFormat()
-  uid: ExcelScript!ExcelScript.ChartAxis#getNumberFormat:member(1)
-  package: ExcelScript!
-  fullName: getNumberFormat()
-  summary: 軸目盛ラベルの書式コードを指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getNumberFormat(): string;'
-    return:
-      type: string
-      description: ''
-- name: getOffset()
-  uid: ExcelScript!ExcelScript.ChartAxis#getOffset:member(1)
-  package: ExcelScript!
-  fullName: getOffset()
-  summary: ラベルのレベル間の距離と、最初のレベルと軸線の間の距離を指定します。 値は 0 から 1000 の範囲内でなければなりません。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getOffset(): number;'
-    return:
-      type: number
-      description: ''
-- name: getPosition()
-  uid: ExcelScript!ExcelScript.ChartAxis#getPosition:member(1)
-  package: ExcelScript!
-  fullName: getPosition()
-  summary: 他の軸が交差する指定した軸位置を指定します。 詳細は「`ExcelScript.ChartAxisPosition`」をご覧ください。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getPosition(): ChartAxisPosition;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisPosition:enum" />
-      description: ''
-- name: getPositionAt()
-  uid: ExcelScript!ExcelScript.ChartAxis#getPositionAt:member(1)
-  package: ExcelScript!
-  fullName: getPositionAt()
-  summary: 他の軸が交差する軸位置を指定します。 このプロパティを設定 `SetPositionAt(double)` するには、メソッドを使用する必要があります。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getPositionAt(): number;'
-    return:
-      type: number
-      description: ''
-- name: getReversePlotOrder()
-  uid: ExcelScript!ExcelScript.ChartAxis#getReversePlotOrder:member(1)
-  package: ExcelScript!
-  fullName: getReversePlotOrder()
-  summary: Excel が最後から最初のデータ ポイントをプロットする場合に指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getReversePlotOrder(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getScaleType()
-  uid: ExcelScript!ExcelScript.ChartAxis#getScaleType:member(1)
-  package: ExcelScript!
-  fullName: getScaleType()
-  summary: 値軸のスケールの種類を指定します。 詳細は「`ExcelScript.ChartAxisScaleType`」をご覧ください。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getScaleType(): ChartAxisScaleType;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisScaleType:enum" />
-      description: ''
-- name: getShowDisplayUnitLabel()
-  uid: ExcelScript!ExcelScript.ChartAxis#getShowDisplayUnitLabel:member(1)
-  package: ExcelScript!
-  fullName: getShowDisplayUnitLabel()
-  summary: 軸表示単位ラベルが表示される場合に指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowDisplayUnitLabel(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getTextOrientation()
-  uid: ExcelScript!ExcelScript.ChartAxis#getTextOrientation:member(1)
-  package: ExcelScript!
-  fullName: getTextOrientation()
-  summary: グラフ軸目盛ラベルのテキストの向きを指定します。 値は、-90 ~ 90 の整数または垂直方向のテキストの整数 180 のいずれかである必要があります。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTextOrientation(): number;'
-    return:
-      type: number
-      description: ''
-- name: getTickLabelPosition()
-  uid: ExcelScript!ExcelScript.ChartAxis#getTickLabelPosition:member(1)
-  package: ExcelScript!
-  fullName: getTickLabelPosition()
-  summary: 指定された軸の目盛ラベルの位置を指定します。 詳細は「`ExcelScript.ChartAxisTickLabelPosition`」をご覧ください。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTickLabelPosition(): ChartAxisTickLabelPosition;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisTickLabelPosition:enum" />
-      description: ''
-- name: getTickLabelSpacing()
-  uid: ExcelScript!ExcelScript.ChartAxis#getTickLabelSpacing:member(1)
-  package: ExcelScript!
-  fullName: getTickLabelSpacing()
-  summary: 目盛ラベル間のカテゴリまたは系列の数を指定します。 1 から 31999 の値を指定できます。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTickLabelSpacing(): number;'
-    return:
-      type: number
-      description: ''
-- name: getTickMarkSpacing()
-  uid: ExcelScript!ExcelScript.ChartAxis#getTickMarkSpacing:member(1)
-  package: ExcelScript!
-  fullName: getTickMarkSpacing()
-  summary: 目盛の間のカテゴリまたは系列の数を指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTickMarkSpacing(): number;'
-    return:
-      type: number
-      description: ''
-- name: getTitle()
-  uid: ExcelScript!ExcelScript.ChartAxis#getTitle:member(1)
-  package: ExcelScript!
-  fullName: getTitle()
-  summary: 軸タイトルを表します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTitle(): ChartAxisTitle;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisTitle:interface" />
-      description: ''
-- name: getTop()
-  uid: ExcelScript!ExcelScript.ChartAxis#getTop:member(1)
-  package: ExcelScript!
-  fullName: getTop()
-  summary: 軸の上端からグラフ領域の上端までの距離をポイントで指定します。 軸が `null` 表示されていない場合に返します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTop(): number;'
-    return:
-      type: number
-      description: ''
-- name: getType()
-  uid: ExcelScript!ExcelScript.ChartAxis#getType:member(1)
-  package: ExcelScript!
-  fullName: getType()
-  summary: 軸の種類を指定します。 詳細は「`ExcelScript.ChartAxisType`」をご覧ください。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getType(): ChartAxisType;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisType:enum" />
-      description: ''
-- name: getVisible()
-  uid: ExcelScript!ExcelScript.ChartAxis#getVisible:member(1)
-  package: ExcelScript!
-  fullName: getVisible()
-  summary: 軸が表示される場合に指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getVisible(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getWidth()
-  uid: ExcelScript!ExcelScript.ChartAxis#getWidth:member(1)
-  package: ExcelScript!
-  fullName: getWidth()
-  summary: グラフ軸の幅をポイント単位で指定します。 軸が `null` 表示されていない場合に返します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getWidth(): number;'
-    return:
-      type: number
-      description: ''
-- name: setAlignment(alignment)
-  uid: ExcelScript!ExcelScript.ChartAxis#setAlignment:member(1)
-  package: ExcelScript!
-  fullName: setAlignment(alignment)
-  summary: 指定した軸目盛ラベルの配置を指定します。 詳細 `ExcelScript.ChartTextHorizontalAlignment` については、「」を参照してください。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setAlignment(alignment: ChartTickLabelAlignment): void;'
-    parameters:
-    - id: alignment
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ChartTickLabelAlignment:enum" />
-    return:
-      type: void
-      description: ''
-- name: setBaseTimeUnit(baseTimeUnit)
-  uid: ExcelScript!ExcelScript.ChartAxis#setBaseTimeUnit:member(1)
-  package: ExcelScript!
-  fullName: setBaseTimeUnit(baseTimeUnit)
-  summary: 指定したカテゴリ軸の基本単位を指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setBaseTimeUnit(baseTimeUnit: ChartAxisTimeUnit): void;'
-    parameters:
-    - id: baseTimeUnit
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisTimeUnit:enum" />
-    return:
-      type: void
-      description: ''
-- name: setCategoryNames(sourceData)
-  uid: ExcelScript!ExcelScript.ChartAxis#setCategoryNames:member(1)
-  package: ExcelScript!
-  fullName: setCategoryNames(sourceData)
-  summary: 指定した軸のすべてのカテゴリ名を設定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setCategoryNames(sourceData: Range): void;'
-    parameters:
-    - id: sourceData
-      description: ソース `Range` データに対応するオブジェクト。
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-    return:
-      type: void
-      description: ''
-- name: setCategoryType(categoryType)
-  uid: ExcelScript!ExcelScript.ChartAxis#setCategoryType:member(1)
-  package: ExcelScript!
-  fullName: setCategoryType(categoryType)
-  summary: カテゴリ軸の種類を指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setCategoryType(categoryType: ChartAxisCategoryType): void;'
-    parameters:
-    - id: categoryType
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisCategoryType:enum" />
-    return:
-      type: void
-      description: ''
-- name: setCustomDisplayUnit(value)
-  uid: ExcelScript!ExcelScript.ChartAxis#setCustomDisplayUnit:member(1)
-  package: ExcelScript!
-  fullName: setCustomDisplayUnit(value)
-  summary: 軸の表示単位をカスタム値に設定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setCustomDisplayUnit(value: number): void;'
-    parameters:
-    - id: value
-      description: 表示単位のカスタム値。
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setDisplayUnit(displayUnit)
-  uid: ExcelScript!ExcelScript.ChartAxis#setDisplayUnit:member(1)
-  package: ExcelScript!
-  fullName: setDisplayUnit(displayUnit)
-  summary: 軸の表示単位を表します。 詳細は「`ExcelScript.ChartAxisDisplayUnit`」をご覧ください。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setDisplayUnit(displayUnit: ChartAxisDisplayUnit): void;'
-    parameters:
-    - id: displayUnit
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisDisplayUnit:enum" />
-    return:
-      type: void
-      description: ''
-- name: setIsBetweenCategories(isBetweenCategories)
-  uid: ExcelScript!ExcelScript.ChartAxis#setIsBetweenCategories:member(1)
-  package: ExcelScript!
-  fullName: setIsBetweenCategories(isBetweenCategories)
-  summary: 値軸がカテゴリの間でカテゴリ軸と交差する場合に指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setIsBetweenCategories(isBetweenCategories: boolean): void;'
-    parameters:
-    - id: isBetweenCategories
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setLinkNumberFormat(linkNumberFormat)
-  uid: ExcelScript!ExcelScript.ChartAxis#setLinkNumberFormat:member(1)
-  package: ExcelScript!
-  fullName: setLinkNumberFormat(linkNumberFormat)
-  summary: 数値の形式がセルにリンクされている場合に指定します。 もし `true`<!-- -->をクリックすると、セル内でラベルが変更された際に数値の形式が変更されます。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setLinkNumberFormat(linkNumberFormat: boolean): void;'
-    parameters:
-    - id: linkNumberFormat
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setLogBase(logBase)
-  uid: ExcelScript!ExcelScript.ChartAxis#setLogBase:member(1)
-  package: ExcelScript!
-  fullName: setLogBase(logBase)
-  summary: 対数スケールを使用する場合の対数の基数を指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setLogBase(logBase: number): void;'
-    parameters:
-    - id: logBase
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setMajorTickMark(majorTickMark)
-  uid: ExcelScript!ExcelScript.ChartAxis#setMajorTickMark:member(1)
-  package: ExcelScript!
-  fullName: setMajorTickMark(majorTickMark)
-  summary: 指定した軸の目盛の種類を指定します。 詳細は「`ExcelScript.ChartAxisTickMark`」をご覧ください。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setMajorTickMark(majorTickMark: ChartAxisTickMark): void;'
-    parameters:
-    - id: majorTickMark
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisTickMark:enum" />
-    return:
-      type: void
-      description: ''
-- name: setMajorTimeUnitScale(majorTimeUnitScale)
-  uid: ExcelScript!ExcelScript.ChartAxis#setMajorTimeUnitScale:member(1)
-  package: ExcelScript!
-  fullName: setMajorTimeUnitScale(majorTimeUnitScale)
-  summary: プロパティがに設定されている場合に、カテゴリ軸のメジャー単位 `categoryType` スケール値を指定します。 `dateAxis`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setMajorTimeUnitScale(majorTimeUnitScale: ChartAxisTimeUnit): void;'
-    parameters:
-    - id: majorTimeUnitScale
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisTimeUnit:enum" />
-    return:
-      type: void
-      description: ''
-- name: setMajorUnit(majorUnit)
-  uid: ExcelScript!ExcelScript.ChartAxis#setMajorUnit:member(1)
-  package: ExcelScript!
-  fullName: setMajorUnit(majorUnit)
-  summary: 2 つの目盛りの間隔を指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setMajorUnit(majorUnit: number): void;'
-    parameters:
-    - id: majorUnit
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setMaximum(maximum)
-  uid: ExcelScript!ExcelScript.ChartAxis#setMaximum:member(1)
-  package: ExcelScript!
-  fullName: setMaximum(maximum)
-  summary: 値軸の最大値を指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setMaximum(maximum: number): void;'
-    parameters:
-    - id: maximum
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setMinimum(minimum)
-  uid: ExcelScript!ExcelScript.ChartAxis#setMinimum:member(1)
-  package: ExcelScript!
-  fullName: setMinimum(minimum)
-  summary: 値軸の最小値を指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setMinimum(minimum: number): void;'
-    parameters:
-    - id: minimum
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setMinorTickMark(minorTickMark)
-  uid: ExcelScript!ExcelScript.ChartAxis#setMinorTickMark:member(1)
-  package: ExcelScript!
-  fullName: setMinorTickMark(minorTickMark)
-  summary: 指定した軸の目盛りの種類を指定します。 詳細は「`ExcelScript.ChartAxisTickMark`」をご覧ください。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setMinorTickMark(minorTickMark: ChartAxisTickMark): void;'
-    parameters:
-    - id: minorTickMark
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisTickMark:enum" />
-    return:
-      type: void
-      description: ''
-- name: setMinorTimeUnitScale(minorTimeUnitScale)
-  uid: ExcelScript!ExcelScript.ChartAxis#setMinorTimeUnitScale:member(1)
-  package: ExcelScript!
-  fullName: setMinorTimeUnitScale(minorTimeUnitScale)
-  summary: プロパティがに設定されている場合、カテゴリ軸のマイナー単位 `categoryType` スケール値を指定します。 `dateAxis`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setMinorTimeUnitScale(minorTimeUnitScale: ChartAxisTimeUnit): void;'
-    parameters:
-    - id: minorTimeUnitScale
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisTimeUnit:enum" />
-    return:
-      type: void
-      description: ''
-- name: setMinorUnit(minorUnit)
-  uid: ExcelScript!ExcelScript.ChartAxis#setMinorUnit:member(1)
-  package: ExcelScript!
-  fullName: setMinorUnit(minorUnit)
-  summary: 2 つの小さな目盛りの間隔を指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setMinorUnit(minorUnit: number): void;'
-    parameters:
-    - id: minorUnit
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setMultiLevel(multiLevel)
-  uid: ExcelScript!ExcelScript.ChartAxis#setMultiLevel:member(1)
-  package: ExcelScript!
-  fullName: setMultiLevel(multiLevel)
-  summary: 軸がマルチレベルの場合に指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setMultiLevel(multiLevel: boolean): void;'
-    parameters:
-    - id: multiLevel
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setNumberFormat(numberFormat)
-  uid: ExcelScript!ExcelScript.ChartAxis#setNumberFormat:member(1)
-  package: ExcelScript!
-  fullName: setNumberFormat(numberFormat)
-  summary: 軸目盛ラベルの書式コードを指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setNumberFormat(numberFormat: string): void;'
-    parameters:
-    - id: numberFormat
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setOffset(offset)
-  uid: ExcelScript!ExcelScript.ChartAxis#setOffset:member(1)
-  package: ExcelScript!
-  fullName: setOffset(offset)
-  summary: ラベルのレベル間の距離と、最初のレベルと軸線の間の距離を指定します。 値は 0 から 1000 の範囲内でなければなりません。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setOffset(offset: number): void;'
-    parameters:
-    - id: offset
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setPosition(position)
-  uid: ExcelScript!ExcelScript.ChartAxis#setPosition:member(1)
-  package: ExcelScript!
-  fullName: setPosition(position)
-  summary: 他の軸が交差する指定した軸位置を指定します。 詳細は「`ExcelScript.ChartAxisPosition`」をご覧ください。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setPosition(position: ChartAxisPosition): void;'
-    parameters:
-    - id: position
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisPosition:enum" />
-    return:
-      type: void
-      description: ''
-- name: setPositionAt(value)
-  uid: ExcelScript!ExcelScript.ChartAxis#setPositionAt:member(1)
-  package: ExcelScript!
-  fullName: setPositionAt(value)
-  summary: 他の軸が交差する指定した軸位置を設定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setPositionAt(value: number): void;'
-    parameters:
-    - id: value
-      description: 交差ポイントのカスタム値。
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setReversePlotOrder(reversePlotOrder)
-  uid: ExcelScript!ExcelScript.ChartAxis#setReversePlotOrder:member(1)
-  package: ExcelScript!
-  fullName: setReversePlotOrder(reversePlotOrder)
-  summary: Excel が最後から最初のデータ ポイントをプロットする場合に指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setReversePlotOrder(reversePlotOrder: boolean): void;'
-    parameters:
-    - id: reversePlotOrder
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setScaleType(scaleType)
-  uid: ExcelScript!ExcelScript.ChartAxis#setScaleType:member(1)
-  package: ExcelScript!
-  fullName: setScaleType(scaleType)
-  summary: 値軸のスケールの種類を指定します。 詳細は「`ExcelScript.ChartAxisScaleType`」をご覧ください。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setScaleType(scaleType: ChartAxisScaleType): void;'
-    parameters:
-    - id: scaleType
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisScaleType:enum" />
-    return:
-      type: void
-      description: ''
-- name: setShowDisplayUnitLabel(showDisplayUnitLabel)
-  uid: ExcelScript!ExcelScript.ChartAxis#setShowDisplayUnitLabel:member(1)
-  package: ExcelScript!
-  fullName: setShowDisplayUnitLabel(showDisplayUnitLabel)
-  summary: 軸表示単位ラベルが表示される場合に指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowDisplayUnitLabel(showDisplayUnitLabel: boolean): void;'
-    parameters:
-    - id: showDisplayUnitLabel
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setTextOrientation(textOrientation)
-  uid: ExcelScript!ExcelScript.ChartAxis#setTextOrientation:member(1)
-  package: ExcelScript!
-  fullName: setTextOrientation(textOrientation)
-  summary: グラフ軸目盛ラベルのテキストの向きを指定します。 値は、-90 ~ 90 の整数または垂直方向のテキストの整数 180 のいずれかである必要があります。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setTextOrientation(textOrientation: number): void;'
-    parameters:
-    - id: textOrientation
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setTickLabelPosition(tickLabelPosition)
-  uid: ExcelScript!ExcelScript.ChartAxis#setTickLabelPosition:member(1)
-  package: ExcelScript!
-  fullName: setTickLabelPosition(tickLabelPosition)
-  summary: 指定された軸の目盛ラベルの位置を指定します。 詳細は「`ExcelScript.ChartAxisTickLabelPosition`」をご覧ください。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: >-
-      setTickLabelPosition(
-                  tickLabelPosition: ChartAxisTickLabelPosition
-              ): void;
-    parameters:
-    - id: tickLabelPosition
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisTickLabelPosition:enum" />
-    return:
-      type: void
-      description: ''
-- name: setTickLabelSpacing(tickLabelSpacing)
-  uid: ExcelScript!ExcelScript.ChartAxis#setTickLabelSpacing:member(1)
-  package: ExcelScript!
-  fullName: setTickLabelSpacing(tickLabelSpacing)
-  summary: 目盛ラベル間のカテゴリまたは系列の数を指定します。 1 から 31999 の値を指定できます。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setTickLabelSpacing(tickLabelSpacing: number): void;'
-    parameters:
-    - id: tickLabelSpacing
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setTickMarkSpacing(tickMarkSpacing)
-  uid: ExcelScript!ExcelScript.ChartAxis#setTickMarkSpacing:member(1)
-  package: ExcelScript!
-  fullName: setTickMarkSpacing(tickMarkSpacing)
-  summary: 目盛の間のカテゴリまたは系列の数を指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setTickMarkSpacing(tickMarkSpacing: number): void;'
-    parameters:
-    - id: tickMarkSpacing
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setVisible(visible)
-  uid: ExcelScript!ExcelScript.ChartAxis#setVisible:member(1)
-  package: ExcelScript!
-  fullName: setVisible(visible)
-  summary: 軸が表示される場合に指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setVisible(visible: boolean): void;'
-    parameters:
-    - id: visible
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 2c55f9587deac5994c689b5725c1cd76809d45c8
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913972"
+  - name: getAlignment()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getAlignment:member(1)'
+    package: ExcelScript!
+    fullName: getAlignment()
+    summary: 指定した軸目盛ラベルの配置を指定します。 詳細 `ExcelScript.ChartTextHorizontalAlignment` については、「」を参照してください。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getAlignment(): ChartTickLabelAlignment;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartTickLabelAlignment:enum" />'
+        description: ''
+  - name: getAxisGroup()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getAxisGroup:member(1)'
+    package: ExcelScript!
+    fullName: getAxisGroup()
+    summary: 指定した軸のグループを指定します。 詳細は「`ExcelScript.ChartAxisGroup`」をご覧ください。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getAxisGroup(): ChartAxisGroup;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartAxisGroup:enum" />'
+        description: ''
+  - name: getBaseTimeUnit()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getBaseTimeUnit:member(1)'
+    package: ExcelScript!
+    fullName: getBaseTimeUnit()
+    summary: 指定したカテゴリ軸の基本単位を指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getBaseTimeUnit(): ChartAxisTimeUnit;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartAxisTimeUnit:enum" />'
+        description: ''
+  - name: getCategoryType()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getCategoryType:member(1)'
+    package: ExcelScript!
+    fullName: getCategoryType()
+    summary: カテゴリ軸の種類を指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCategoryType(): ChartAxisCategoryType;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartAxisCategoryType:enum" />'
+        description: ''
+  - name: getCustomDisplayUnit()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getCustomDisplayUnit:member(1)'
+    package: ExcelScript!
+    fullName: getCustomDisplayUnit()
+    summary: ユーザー設定の軸表示単位の値を指定します。 このプロパティを設定するには、メソッドを使用 `SetCustomDisplayUnit(double)` してください。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCustomDisplayUnit(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getDisplayUnit()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getDisplayUnit:member(1)'
+    package: ExcelScript!
+    fullName: getDisplayUnit()
+    summary: 軸の表示単位を表します。 詳細は「`ExcelScript.ChartAxisDisplayUnit`」をご覧ください。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getDisplayUnit(): ChartAxisDisplayUnit;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartAxisDisplayUnit:enum" />'
+        description: ''
+  - name: getFormat()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getFormat:member(1)'
+    package: ExcelScript!
+    fullName: getFormat()
+    summary: 線とフォントの書式設定を含むグラフ オブジェクトの書式設定を表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFormat(): ChartAxisFormat;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartAxisFormat:interface" />'
+        description: ''
+  - name: getHeight()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getHeight:member(1)'
+    package: ExcelScript!
+    fullName: getHeight()
+    summary: グラフ軸の高さをポイントで指定します。 軸が `null` 表示されていない場合に返します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getHeight(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getIsBetweenCategories()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getIsBetweenCategories:member(1)'
+    package: ExcelScript!
+    fullName: getIsBetweenCategories()
+    summary: 値軸がカテゴリの間でカテゴリ軸と交差する場合に指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getIsBetweenCategories(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getLeft()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getLeft:member(1)'
+    package: ExcelScript!
+    fullName: getLeft()
+    summary: 軸の左端からグラフ領域の左側までの距離をポイントで指定します。 軸が `null` 表示されていない場合に返します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLeft(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getLinkNumberFormat()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getLinkNumberFormat:member(1)'
+    package: ExcelScript!
+    fullName: getLinkNumberFormat()
+    summary: 数値の形式がセルにリンクされている場合に指定します。 もし `true`<!-- -->をクリックすると、セル内でラベルが変更された際に数値の形式が変更されます。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLinkNumberFormat(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getLogBase()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getLogBase:member(1)'
+    package: ExcelScript!
+    fullName: getLogBase()
+    summary: 対数スケールを使用する場合の対数の基数を指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLogBase(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getMajorGridlines()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getMajorGridlines:member(1)'
+    package: ExcelScript!
+    fullName: getMajorGridlines()
+    summary: 指定した軸の主グリッド線を表すオブジェクトを返します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getMajorGridlines(): ChartGridlines;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartGridlines:interface" />'
+        description: ''
+  - name: getMajorTickMark()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getMajorTickMark:member(1)'
+    package: ExcelScript!
+    fullName: getMajorTickMark()
+    summary: 指定した軸の目盛の種類を指定します。 詳細は「`ExcelScript.ChartAxisTickMark`」をご覧ください。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getMajorTickMark(): ChartAxisTickMark;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartAxisTickMark:enum" />'
+        description: ''
+  - name: getMajorTimeUnitScale()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getMajorTimeUnitScale:member(1)'
+    package: ExcelScript!
+    fullName: getMajorTimeUnitScale()
+    summary: プロパティがに設定されている場合に、カテゴリ軸のメジャー単位 `categoryType` スケール値を指定します。 `dateAxis`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getMajorTimeUnitScale(): ChartAxisTimeUnit;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartAxisTimeUnit:enum" />'
+        description: ''
+  - name: getMajorUnit()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getMajorUnit:member(1)'
+    package: ExcelScript!
+    fullName: getMajorUnit()
+    summary: 2 つの目盛りの間隔を指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getMajorUnit(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getMaximum()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getMaximum:member(1)'
+    package: ExcelScript!
+    fullName: getMaximum()
+    summary: 値軸の最大値を指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getMaximum(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getMinimum()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getMinimum:member(1)'
+    package: ExcelScript!
+    fullName: getMinimum()
+    summary: 値軸の最小値を指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getMinimum(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getMinorGridlines()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getMinorGridlines:member(1)'
+    package: ExcelScript!
+    fullName: getMinorGridlines()
+    summary: 指定した軸の小さい枠線を表すオブジェクトを返します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getMinorGridlines(): ChartGridlines;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartGridlines:interface" />'
+        description: ''
+  - name: getMinorTickMark()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getMinorTickMark:member(1)'
+    package: ExcelScript!
+    fullName: getMinorTickMark()
+    summary: 指定した軸の目盛りの種類を指定します。 詳細は「`ExcelScript.ChartAxisTickMark`」をご覧ください。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getMinorTickMark(): ChartAxisTickMark;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartAxisTickMark:enum" />'
+        description: ''
+  - name: getMinorTimeUnitScale()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getMinorTimeUnitScale:member(1)'
+    package: ExcelScript!
+    fullName: getMinorTimeUnitScale()
+    summary: プロパティがに設定されている場合、カテゴリ軸のマイナー単位 `categoryType` スケール値を指定します。 `dateAxis`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getMinorTimeUnitScale(): ChartAxisTimeUnit;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartAxisTimeUnit:enum" />'
+        description: ''
+  - name: getMinorUnit()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getMinorUnit:member(1)'
+    package: ExcelScript!
+    fullName: getMinorUnit()
+    summary: 2 つの小さな目盛りの間隔を指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getMinorUnit(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getMultiLevel()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getMultiLevel:member(1)'
+    package: ExcelScript!
+    fullName: getMultiLevel()
+    summary: 軸がマルチレベルの場合に指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getMultiLevel(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getNumberFormat()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getNumberFormat:member(1)'
+    package: ExcelScript!
+    fullName: getNumberFormat()
+    summary: 軸目盛ラベルの書式コードを指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getNumberFormat(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getOffset()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getOffset:member(1)'
+    package: ExcelScript!
+    fullName: getOffset()
+    summary: ラベルのレベル間の距離と、最初のレベルと軸線の間の距離を指定します。 値は 0 から 1000 の範囲内でなければなりません。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getOffset(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getPosition()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getPosition:member(1)'
+    package: ExcelScript!
+    fullName: getPosition()
+    summary: 他の軸が交差する指定した軸位置を指定します。 詳細は「`ExcelScript.ChartAxisPosition`」をご覧ください。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getPosition(): ChartAxisPosition;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartAxisPosition:enum" />'
+        description: ''
+  - name: getPositionAt()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getPositionAt:member(1)'
+    package: ExcelScript!
+    fullName: getPositionAt()
+    summary: 他の軸が交差する軸位置を指定します。 このプロパティを設定 `SetPositionAt(double)` するには、メソッドを使用する必要があります。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getPositionAt(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getReversePlotOrder()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getReversePlotOrder:member(1)'
+    package: ExcelScript!
+    fullName: getReversePlotOrder()
+    summary: 最後から最初Excelデータ ポイントをプロットする方法を指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getReversePlotOrder(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getScaleType()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getScaleType:member(1)'
+    package: ExcelScript!
+    fullName: getScaleType()
+    summary: 値軸のスケールの種類を指定します。 詳細は「`ExcelScript.ChartAxisScaleType`」をご覧ください。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getScaleType(): ChartAxisScaleType;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartAxisScaleType:enum" />'
+        description: ''
+  - name: getShowDisplayUnitLabel()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getShowDisplayUnitLabel:member(1)'
+    package: ExcelScript!
+    fullName: getShowDisplayUnitLabel()
+    summary: 軸表示単位ラベルが表示される場合に指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowDisplayUnitLabel(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getTextOrientation()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getTextOrientation:member(1)'
+    package: ExcelScript!
+    fullName: getTextOrientation()
+    summary: グラフ軸目盛ラベルのテキストの向きを指定します。 値は、-90 ~ 90 の整数または垂直方向のテキストの整数 180 のいずれかである必要があります。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTextOrientation(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getTickLabelPosition()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getTickLabelPosition:member(1)'
+    package: ExcelScript!
+    fullName: getTickLabelPosition()
+    summary: 指定された軸の目盛ラベルの位置を指定します。 詳細は「`ExcelScript.ChartAxisTickLabelPosition`」をご覧ください。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTickLabelPosition(): ChartAxisTickLabelPosition;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartAxisTickLabelPosition:enum" />'
+        description: ''
+  - name: getTickLabelSpacing()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getTickLabelSpacing:member(1)'
+    package: ExcelScript!
+    fullName: getTickLabelSpacing()
+    summary: 目盛ラベル間のカテゴリまたは系列の数を指定します。 1 から 31999 の値を指定できます。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTickLabelSpacing(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getTickMarkSpacing()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getTickMarkSpacing:member(1)'
+    package: ExcelScript!
+    fullName: getTickMarkSpacing()
+    summary: 目盛の間のカテゴリまたは系列の数を指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTickMarkSpacing(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getTitle()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getTitle:member(1)'
+    package: ExcelScript!
+    fullName: getTitle()
+    summary: 軸タイトルを表します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTitle(): ChartAxisTitle;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartAxisTitle:interface" />'
+        description: ''
+  - name: getTop()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getTop:member(1)'
+    package: ExcelScript!
+    fullName: getTop()
+    summary: 軸の上端からグラフ領域の上端までの距離をポイントで指定します。 軸が `null` 表示されていない場合に返します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTop(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getType()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getType:member(1)'
+    package: ExcelScript!
+    fullName: getType()
+    summary: 軸の種類を指定します。 詳細は「`ExcelScript.ChartAxisType`」をご覧ください。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getType(): ChartAxisType;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartAxisType:enum" />'
+        description: ''
+  - name: getVisible()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getVisible:member(1)'
+    package: ExcelScript!
+    fullName: getVisible()
+    summary: 軸が表示される場合に指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getVisible(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getWidth()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getWidth:member(1)'
+    package: ExcelScript!
+    fullName: getWidth()
+    summary: グラフ軸の幅をポイント単位で指定します。 軸が `null` 表示されていない場合に返します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getWidth(): number;'
+      return:
+        type: number
+        description: ''
+  - name: setAlignment(alignment)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setAlignment:member(1)'
+    package: ExcelScript!
+    fullName: setAlignment(alignment)
+    summary: 指定した軸目盛ラベルの配置を指定します。 詳細 `ExcelScript.ChartTextHorizontalAlignment` については、「」を参照してください。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setAlignment(alignment: ChartTickLabelAlignment): void;'
+      parameters:
+        - id: alignment
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ChartTickLabelAlignment:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setBaseTimeUnit(baseTimeUnit)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setBaseTimeUnit:member(1)'
+    package: ExcelScript!
+    fullName: setBaseTimeUnit(baseTimeUnit)
+    summary: 指定したカテゴリ軸の基本単位を指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setBaseTimeUnit(baseTimeUnit: ChartAxisTimeUnit): void;'
+      parameters:
+        - id: baseTimeUnit
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ChartAxisTimeUnit:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setCategoryNames(sourceData)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setCategoryNames:member(1)'
+    package: ExcelScript!
+    fullName: setCategoryNames(sourceData)
+    summary: 指定した軸のすべてのカテゴリ名を設定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setCategoryNames(sourceData: Range): void;'
+      parameters:
+        - id: sourceData
+          description: ソース `Range` データに対応するオブジェクト。
+          type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: setCategoryType(categoryType)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setCategoryType:member(1)'
+    package: ExcelScript!
+    fullName: setCategoryType(categoryType)
+    summary: カテゴリ軸の種類を指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setCategoryType(categoryType: ChartAxisCategoryType): void;'
+      parameters:
+        - id: categoryType
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ChartAxisCategoryType:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setCustomDisplayUnit(value)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setCustomDisplayUnit:member(1)'
+    package: ExcelScript!
+    fullName: setCustomDisplayUnit(value)
+    summary: 軸の表示単位をカスタム値に設定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setCustomDisplayUnit(value: number): void;'
+      parameters:
+        - id: value
+          description: 表示単位のカスタム値。
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setDisplayUnit(displayUnit)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setDisplayUnit:member(1)'
+    package: ExcelScript!
+    fullName: setDisplayUnit(displayUnit)
+    summary: 軸の表示単位を表します。 詳細は「`ExcelScript.ChartAxisDisplayUnit`」をご覧ください。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setDisplayUnit(displayUnit: ChartAxisDisplayUnit): void;'
+      parameters:
+        - id: displayUnit
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ChartAxisDisplayUnit:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setIsBetweenCategories(isBetweenCategories)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setIsBetweenCategories:member(1)'
+    package: ExcelScript!
+    fullName: setIsBetweenCategories(isBetweenCategories)
+    summary: 値軸がカテゴリの間でカテゴリ軸と交差する場合に指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setIsBetweenCategories(isBetweenCategories: boolean): void;'
+      parameters:
+        - id: isBetweenCategories
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setLinkNumberFormat(linkNumberFormat)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setLinkNumberFormat:member(1)'
+    package: ExcelScript!
+    fullName: setLinkNumberFormat(linkNumberFormat)
+    summary: 数値の形式がセルにリンクされている場合に指定します。 もし `true`<!-- -->をクリックすると、セル内でラベルが変更された際に数値の形式が変更されます。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setLinkNumberFormat(linkNumberFormat: boolean): void;'
+      parameters:
+        - id: linkNumberFormat
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setLogBase(logBase)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setLogBase:member(1)'
+    package: ExcelScript!
+    fullName: setLogBase(logBase)
+    summary: 対数スケールを使用する場合の対数の基数を指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setLogBase(logBase: number): void;'
+      parameters:
+        - id: logBase
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setMajorTickMark(majorTickMark)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setMajorTickMark:member(1)'
+    package: ExcelScript!
+    fullName: setMajorTickMark(majorTickMark)
+    summary: 指定した軸の目盛の種類を指定します。 詳細は「`ExcelScript.ChartAxisTickMark`」をご覧ください。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setMajorTickMark(majorTickMark: ChartAxisTickMark): void;'
+      parameters:
+        - id: majorTickMark
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ChartAxisTickMark:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setMajorTimeUnitScale(majorTimeUnitScale)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setMajorTimeUnitScale:member(1)'
+    package: ExcelScript!
+    fullName: setMajorTimeUnitScale(majorTimeUnitScale)
+    summary: プロパティがに設定されている場合に、カテゴリ軸のメジャー単位 `categoryType` スケール値を指定します。 `dateAxis`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setMajorTimeUnitScale(majorTimeUnitScale: ChartAxisTimeUnit): void;'
+      parameters:
+        - id: majorTimeUnitScale
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ChartAxisTimeUnit:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setMajorUnit(majorUnit)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setMajorUnit:member(1)'
+    package: ExcelScript!
+    fullName: setMajorUnit(majorUnit)
+    summary: 2 つの目盛りの間隔を指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setMajorUnit(majorUnit: number): void;'
+      parameters:
+        - id: majorUnit
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setMaximum(maximum)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setMaximum:member(1)'
+    package: ExcelScript!
+    fullName: setMaximum(maximum)
+    summary: 値軸の最大値を指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setMaximum(maximum: number): void;'
+      parameters:
+        - id: maximum
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setMinimum(minimum)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setMinimum:member(1)'
+    package: ExcelScript!
+    fullName: setMinimum(minimum)
+    summary: 値軸の最小値を指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setMinimum(minimum: number): void;'
+      parameters:
+        - id: minimum
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setMinorTickMark(minorTickMark)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setMinorTickMark:member(1)'
+    package: ExcelScript!
+    fullName: setMinorTickMark(minorTickMark)
+    summary: 指定した軸の目盛りの種類を指定します。 詳細は「`ExcelScript.ChartAxisTickMark`」をご覧ください。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setMinorTickMark(minorTickMark: ChartAxisTickMark): void;'
+      parameters:
+        - id: minorTickMark
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ChartAxisTickMark:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setMinorTimeUnitScale(minorTimeUnitScale)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setMinorTimeUnitScale:member(1)'
+    package: ExcelScript!
+    fullName: setMinorTimeUnitScale(minorTimeUnitScale)
+    summary: プロパティがに設定されている場合、カテゴリ軸のマイナー単位 `categoryType` スケール値を指定します。 `dateAxis`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setMinorTimeUnitScale(minorTimeUnitScale: ChartAxisTimeUnit): void;'
+      parameters:
+        - id: minorTimeUnitScale
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ChartAxisTimeUnit:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setMinorUnit(minorUnit)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setMinorUnit:member(1)'
+    package: ExcelScript!
+    fullName: setMinorUnit(minorUnit)
+    summary: 2 つの小さな目盛りの間隔を指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setMinorUnit(minorUnit: number): void;'
+      parameters:
+        - id: minorUnit
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setMultiLevel(multiLevel)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setMultiLevel:member(1)'
+    package: ExcelScript!
+    fullName: setMultiLevel(multiLevel)
+    summary: 軸がマルチレベルの場合に指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setMultiLevel(multiLevel: boolean): void;'
+      parameters:
+        - id: multiLevel
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setNumberFormat(numberFormat)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setNumberFormat:member(1)'
+    package: ExcelScript!
+    fullName: setNumberFormat(numberFormat)
+    summary: 軸目盛ラベルの書式コードを指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setNumberFormat(numberFormat: string): void;'
+      parameters:
+        - id: numberFormat
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setOffset(offset)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setOffset:member(1)'
+    package: ExcelScript!
+    fullName: setOffset(offset)
+    summary: ラベルのレベル間の距離と、最初のレベルと軸線の間の距離を指定します。 値は 0 から 1000 の範囲内でなければなりません。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setOffset(offset: number): void;'
+      parameters:
+        - id: offset
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setPosition(position)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setPosition:member(1)'
+    package: ExcelScript!
+    fullName: setPosition(position)
+    summary: 他の軸が交差する指定した軸位置を指定します。 詳細は「`ExcelScript.ChartAxisPosition`」をご覧ください。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setPosition(position: ChartAxisPosition): void;'
+      parameters:
+        - id: position
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ChartAxisPosition:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setPositionAt(value)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setPositionAt:member(1)'
+    package: ExcelScript!
+    fullName: setPositionAt(value)
+    summary: 他の軸が交差する指定した軸位置を設定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setPositionAt(value: number): void;'
+      parameters:
+        - id: value
+          description: 交差ポイントのカスタム値。
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setReversePlotOrder(reversePlotOrder)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setReversePlotOrder:member(1)'
+    package: ExcelScript!
+    fullName: setReversePlotOrder(reversePlotOrder)
+    summary: 最後から最初Excelデータ ポイントをプロットする方法を指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setReversePlotOrder(reversePlotOrder: boolean): void;'
+      parameters:
+        - id: reversePlotOrder
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setScaleType(scaleType)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setScaleType:member(1)'
+    package: ExcelScript!
+    fullName: setScaleType(scaleType)
+    summary: 値軸のスケールの種類を指定します。 詳細は「`ExcelScript.ChartAxisScaleType`」をご覧ください。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setScaleType(scaleType: ChartAxisScaleType): void;'
+      parameters:
+        - id: scaleType
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ChartAxisScaleType:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setShowDisplayUnitLabel(showDisplayUnitLabel)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setShowDisplayUnitLabel:member(1)'
+    package: ExcelScript!
+    fullName: setShowDisplayUnitLabel(showDisplayUnitLabel)
+    summary: 軸表示単位ラベルが表示される場合に指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowDisplayUnitLabel(showDisplayUnitLabel: boolean): void;'
+      parameters:
+        - id: showDisplayUnitLabel
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setTextOrientation(textOrientation)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setTextOrientation:member(1)'
+    package: ExcelScript!
+    fullName: setTextOrientation(textOrientation)
+    summary: グラフ軸目盛ラベルのテキストの向きを指定します。 値は、-90 ~ 90 の整数または垂直方向のテキストの整数 180 のいずれかである必要があります。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setTextOrientation(textOrientation: number): void;'
+      parameters:
+        - id: textOrientation
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setTickLabelPosition(tickLabelPosition)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setTickLabelPosition:member(1)'
+    package: ExcelScript!
+    fullName: setTickLabelPosition(tickLabelPosition)
+    summary: 指定された軸の目盛ラベルの位置を指定します。 詳細は「`ExcelScript.ChartAxisTickLabelPosition`」をご覧ください。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        setTickLabelPosition(
+                    tickLabelPosition: ChartAxisTickLabelPosition
+                ): void;
+      parameters:
+        - id: tickLabelPosition
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ChartAxisTickLabelPosition:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setTickLabelSpacing(tickLabelSpacing)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setTickLabelSpacing:member(1)'
+    package: ExcelScript!
+    fullName: setTickLabelSpacing(tickLabelSpacing)
+    summary: 目盛ラベル間のカテゴリまたは系列の数を指定します。 1 から 31999 の値を指定できます。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setTickLabelSpacing(tickLabelSpacing: number): void;'
+      parameters:
+        - id: tickLabelSpacing
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setTickMarkSpacing(tickMarkSpacing)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setTickMarkSpacing:member(1)'
+    package: ExcelScript!
+    fullName: setTickMarkSpacing(tickMarkSpacing)
+    summary: 目盛の間のカテゴリまたは系列の数を指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setTickMarkSpacing(tickMarkSpacing: number): void;'
+      parameters:
+        - id: tickMarkSpacing
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setVisible(visible)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setVisible:member(1)'
+    package: ExcelScript!
+    fullName: setVisible(visible)
+    summary: 軸が表示される場合に指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setVisible(visible: boolean): void;'
+      parameters:
+        - id: visible
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''

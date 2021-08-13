@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.GroupOption
-uid: ExcelScript!ExcelScript.GroupOption:enum
+uid: 'ExcelScript!ExcelScript.GroupOption:enum'
 package: ExcelScript!
 fullName: ExcelScript.GroupOption
 summary: ''
@@ -8,18 +8,11 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: byColumns
-  uid: ExcelScript!ExcelScript.GroupOption.byColumns:member
-  package: ExcelScript!
-  summary: 列ごとにグループ化します。
-- name: byRows
-  uid: ExcelScript!ExcelScript.GroupOption.byRows:member
-  package: ExcelScript!
-  summary: 行ごとにグループ化します。
-metadata:
-  ms.openlocfilehash: c29a29f2f84b7af9fe2a58f57293fedda56cb518
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412441"
+  - name: byColumns
+    uid: 'ExcelScript!ExcelScript.GroupOption.byColumns:member'
+    package: ExcelScript!
+    summary: 列でグループ化します。
+  - name: byRows
+    uid: 'ExcelScript!ExcelScript.GroupOption.byRows:member'
+    package: ExcelScript!
+    summary: 行でグループ化します。

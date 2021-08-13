@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.CalculationMode
-uid: ExcelScript!ExcelScript.CalculationMode:enum
+uid: 'ExcelScript!ExcelScript.CalculationMode:enum'
 package: ExcelScript!
 fullName: ExcelScript.CalculationMode
 summary: ''
@@ -8,22 +8,15 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: automatic
-  uid: ExcelScript!ExcelScript.CalculationMode.automatic:member
-  package: ExcelScript!
-  summary: Excel は、関連するデータが変更されるごとに新しい数式の結果を計算する既定の再計算動作です。
-- name: automaticExceptTables
-  uid: ExcelScript!ExcelScript.CalculationMode.automaticExceptTables:member
-  package: ExcelScript!
-  summary: 数式がデータ テーブルに含されていない限り、関連するデータが変更される度に新しい数式の結果を計算します。
-- name: manual
-  uid: ExcelScript!ExcelScript.CalculationMode.manual:member
-  package: ExcelScript!
-  summary: 計算は、ユーザーまたはアドインが要求した場合にのみ発生します。
-metadata:
-  ms.openlocfilehash: f7df42bfa4aee3c3bd6e39aabfc1140e64088d58
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913986"
+  - name: automatic
+    uid: 'ExcelScript!ExcelScript.CalculationMode.automatic:member'
+    package: ExcelScript!
+    summary: 関連するデータが変更されるExcel新しい数式の結果を計算する既定の再計算動作。
+  - name: automaticExceptTables
+    uid: 'ExcelScript!ExcelScript.CalculationMode.automaticExceptTables:member'
+    package: ExcelScript!
+    summary: 数式がデータ テーブルに含されていない限り、関連するデータが変更される度に新しい数式の結果を計算します。
+  - name: manual
+    uid: 'ExcelScript!ExcelScript.CalculationMode.manual:member'
+    package: ExcelScript!
+    summary: 計算は、ユーザーまたはアドインが要求した場合にのみ発生します。

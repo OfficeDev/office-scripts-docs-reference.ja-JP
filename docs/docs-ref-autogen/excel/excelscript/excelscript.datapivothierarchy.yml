@@ -1,207 +1,200 @@
 ### YamlMime:TSType
 name: ExcelScript.DataPivotHierarchy
-uid: ExcelScript!ExcelScript.DataPivotHierarchy:interface
+uid: 'ExcelScript!ExcelScript.DataPivotHierarchy:interface'
 package: ExcelScript!
 fullName: ExcelScript.DataPivotHierarchy
-summary: Excel DataPivotHierarchy を表します。
+summary: DataPivotHierarchy のExcelを表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getField()
-  uid: ExcelScript!ExcelScript.DataPivotHierarchy#getField:member(1)
-  package: ExcelScript!
-  fullName: getField()
-  summary: DataPivotHierarchy に関連付けられているピボット フィールドを返します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getField(): PivotField;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.PivotField:interface" />
-      description: ''
-- name: getId()
-  uid: ExcelScript!ExcelScript.DataPivotHierarchy#getId:member(1)
-  package: ExcelScript!
-  fullName: getId()
-  summary: DataPivotHierarchy の ID。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getId(): string;'
-    return:
-      type: string
-      description: ''
-- name: getName()
-  uid: ExcelScript!ExcelScript.DataPivotHierarchy#getName:member(1)
-  package: ExcelScript!
-  fullName: getName()
-  summary: DataPivotHierarchy の名前。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getName(): string;'
-    return:
-      type: string
-      description: ''
-- name: getNumberFormat()
-  uid: ExcelScript!ExcelScript.DataPivotHierarchy#getNumberFormat:member(1)
-  package: ExcelScript!
-  fullName: getNumberFormat()
-  summary: DataPivotHierarchy の数値形式。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getNumberFormat(): string;'
-    return:
-      type: string
-      description: ''
-- name: getPosition()
-  uid: ExcelScript!ExcelScript.DataPivotHierarchy#getPosition:member(1)
-  package: ExcelScript!
-  fullName: getPosition()
-  summary: DataPivotHierarchy の位置。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getPosition(): number;'
-    return:
-      type: number
-      description: ''
-- name: getShowAs()
-  uid: ExcelScript!ExcelScript.DataPivotHierarchy#getShowAs:member(1)
-  package: ExcelScript!
-  fullName: getShowAs()
-  summary: データを特定の集計計算として表示する必要がある場合に指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowAs(): ShowAsRule;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ShowAsRule:interface" />
-      description: ''
-- name: getSummarizeBy()
-  uid: ExcelScript!ExcelScript.DataPivotHierarchy#getSummarizeBy:member(1)
-  package: ExcelScript!
-  fullName: getSummarizeBy()
-  summary: DataPivotHierarchy のすべての項目を表示する場合に指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getSummarizeBy(): AggregationFunction;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.AggregationFunction:enum" />
-      description: ''
-- name: setName(name)
-  uid: ExcelScript!ExcelScript.DataPivotHierarchy#setName:member(1)
-  package: ExcelScript!
-  fullName: setName(name)
-  summary: DataPivotHierarchy の名前。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setName(name: string): void;'
-    parameters:
-    - id: name
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setNumberFormat(numberFormat)
-  uid: ExcelScript!ExcelScript.DataPivotHierarchy#setNumberFormat:member(1)
-  package: ExcelScript!
-  fullName: setNumberFormat(numberFormat)
-  summary: DataPivotHierarchy の数値形式。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setNumberFormat(numberFormat: string): void;'
-    parameters:
-    - id: numberFormat
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setPosition(position)
-  uid: ExcelScript!ExcelScript.DataPivotHierarchy#setPosition:member(1)
-  package: ExcelScript!
-  fullName: setPosition(position)
-  summary: DataPivotHierarchy の位置。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setPosition(position: number): void;'
-    parameters:
-    - id: position
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setShowAs(showAs)
-  uid: ExcelScript!ExcelScript.DataPivotHierarchy#setShowAs:member(1)
-  package: ExcelScript!
-  fullName: setShowAs(showAs)
-  summary: データを特定の集計計算として表示する必要がある場合に指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowAs(showAs: ShowAsRule): void;'
-    parameters:
-    - id: showAs
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ShowAsRule:interface" />
-    return:
-      type: void
-      description: ''
-- name: setSummarizeBy(summarizeBy)
-  uid: ExcelScript!ExcelScript.DataPivotHierarchy#setSummarizeBy:member(1)
-  package: ExcelScript!
-  fullName: setSummarizeBy(summarizeBy)
-  summary: DataPivotHierarchy のすべての項目を表示する場合に指定します。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setSummarizeBy(summarizeBy: AggregationFunction): void;'
-    parameters:
-    - id: summarizeBy
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.AggregationFunction:enum" />
-    return:
-      type: void
-      description: ''
-- name: setToDefault()
-  uid: ExcelScript!ExcelScript.DataPivotHierarchy#setToDefault:member(1)
-  package: ExcelScript!
-  fullName: setToDefault()
-  summary: DataPivotHierarchy を既定値にリセットします。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setToDefault(): void;'
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 6ba2d7d4728f1ea6f3510714e5f868fe1544dfda
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51607047"
+  - name: getField()
+    uid: 'ExcelScript!ExcelScript.DataPivotHierarchy#getField:member(1)'
+    package: ExcelScript!
+    fullName: getField()
+    summary: DataPivotHierarchy に関連付けられているピボット フィールドを返します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getField(): PivotField;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.PivotField:interface" />'
+        description: ''
+  - name: getId()
+    uid: 'ExcelScript!ExcelScript.DataPivotHierarchy#getId:member(1)'
+    package: ExcelScript!
+    fullName: getId()
+    summary: DataPivotHierarchy の ID。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getId(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getName()
+    uid: 'ExcelScript!ExcelScript.DataPivotHierarchy#getName:member(1)'
+    package: ExcelScript!
+    fullName: getName()
+    summary: DataPivotHierarchy の名前。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getNumberFormat()
+    uid: 'ExcelScript!ExcelScript.DataPivotHierarchy#getNumberFormat:member(1)'
+    package: ExcelScript!
+    fullName: getNumberFormat()
+    summary: DataPivotHierarchy の数値形式。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getNumberFormat(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getPosition()
+    uid: 'ExcelScript!ExcelScript.DataPivotHierarchy#getPosition:member(1)'
+    package: ExcelScript!
+    fullName: getPosition()
+    summary: DataPivotHierarchy の位置。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getPosition(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getShowAs()
+    uid: 'ExcelScript!ExcelScript.DataPivotHierarchy#getShowAs:member(1)'
+    package: ExcelScript!
+    fullName: getShowAs()
+    summary: データを特定の集計計算として表示する必要がある場合に指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowAs(): ShowAsRule;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ShowAsRule:interface" />'
+        description: ''
+  - name: getSummarizeBy()
+    uid: 'ExcelScript!ExcelScript.DataPivotHierarchy#getSummarizeBy:member(1)'
+    package: ExcelScript!
+    fullName: getSummarizeBy()
+    summary: DataPivotHierarchy のすべての項目を表示する場合に指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSummarizeBy(): AggregationFunction;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.AggregationFunction:enum" />'
+        description: ''
+  - name: setName(name)
+    uid: 'ExcelScript!ExcelScript.DataPivotHierarchy#setName:member(1)'
+    package: ExcelScript!
+    fullName: setName(name)
+    summary: DataPivotHierarchy の名前。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setName(name: string): void;'
+      parameters:
+        - id: name
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setNumberFormat(numberFormat)
+    uid: 'ExcelScript!ExcelScript.DataPivotHierarchy#setNumberFormat:member(1)'
+    package: ExcelScript!
+    fullName: setNumberFormat(numberFormat)
+    summary: DataPivotHierarchy の数値形式。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setNumberFormat(numberFormat: string): void;'
+      parameters:
+        - id: numberFormat
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setPosition(position)
+    uid: 'ExcelScript!ExcelScript.DataPivotHierarchy#setPosition:member(1)'
+    package: ExcelScript!
+    fullName: setPosition(position)
+    summary: DataPivotHierarchy の位置。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setPosition(position: number): void;'
+      parameters:
+        - id: position
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setShowAs(showAs)
+    uid: 'ExcelScript!ExcelScript.DataPivotHierarchy#setShowAs:member(1)'
+    package: ExcelScript!
+    fullName: setShowAs(showAs)
+    summary: データを特定の集計計算として表示する必要がある場合に指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowAs(showAs: ShowAsRule): void;'
+      parameters:
+        - id: showAs
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ShowAsRule:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: setSummarizeBy(summarizeBy)
+    uid: 'ExcelScript!ExcelScript.DataPivotHierarchy#setSummarizeBy:member(1)'
+    package: ExcelScript!
+    fullName: setSummarizeBy(summarizeBy)
+    summary: DataPivotHierarchy のすべての項目を表示する場合に指定します。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setSummarizeBy(summarizeBy: AggregationFunction): void;'
+      parameters:
+        - id: summarizeBy
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.AggregationFunction:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setToDefault()
+    uid: 'ExcelScript!ExcelScript.DataPivotHierarchy#setToDefault:member(1)'
+    package: ExcelScript!
+    fullName: setToDefault()
+    summary: DataPivotHierarchy を既定値にリセットします。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setToDefault(): void;'
+      return:
+        type: void
+        description: ''

@@ -1,37 +1,30 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ChartErrorBarsType
-uid: ExcelScript!ExcelScript.ChartErrorBarsType:enum
+uid: 'ExcelScript!ExcelScript.ChartErrorBarsType:enum'
 package: ExcelScript!
 fullName: ExcelScript.ChartErrorBarsType
-summary: 誤差範囲の範囲の種類を表します。
+summary: エラー バーの範囲の種類を表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: custom
-  uid: ExcelScript!ExcelScript.ChartErrorBarsType.custom:member
-  package: ExcelScript!
-  summary: ''
-- name: fixedValue
-  uid: ExcelScript!ExcelScript.ChartErrorBarsType.fixedValue:member
-  package: ExcelScript!
-  summary: ''
-- name: percent
-  uid: ExcelScript!ExcelScript.ChartErrorBarsType.percent:member
-  package: ExcelScript!
-  summary: ''
-- name: stDev
-  uid: ExcelScript!ExcelScript.ChartErrorBarsType.stDev:member
-  package: ExcelScript!
-  summary: ''
-- name: stError
-  uid: ExcelScript!ExcelScript.ChartErrorBarsType.stError:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: ad7c93bc17b179da538f7a1047ef7e7466cb46e0
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419944"
+  - name: custom
+    uid: 'ExcelScript!ExcelScript.ChartErrorBarsType.custom:member'
+    package: ExcelScript!
+    summary: ''
+  - name: fixedValue
+    uid: 'ExcelScript!ExcelScript.ChartErrorBarsType.fixedValue:member'
+    package: ExcelScript!
+    summary: ''
+  - name: percent
+    uid: 'ExcelScript!ExcelScript.ChartErrorBarsType.percent:member'
+    package: ExcelScript!
+    summary: ''
+  - name: stDev
+    uid: 'ExcelScript!ExcelScript.ChartErrorBarsType.stDev:member'
+    package: ExcelScript!
+    summary: ''
+  - name: stError
+    uid: 'ExcelScript!ExcelScript.ChartErrorBarsType.stError:member'
+    package: ExcelScript!
+    summary: ''

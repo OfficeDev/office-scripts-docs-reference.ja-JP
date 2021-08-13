@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ChartAxisType
-uid: ExcelScript!ExcelScript.ChartAxisType:enum
+uid: 'ExcelScript!ExcelScript.ChartAxisType:enum'
 package: ExcelScript!
 fullName: ExcelScript.ChartAxisType
 summary: ''
@@ -8,26 +8,19 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: category
-  uid: ExcelScript!ExcelScript.ChartAxisType.category:member
-  package: ExcelScript!
-  summary: 軸は項目を表示します。
-- name: invalid
-  uid: ExcelScript!ExcelScript.ChartAxisType.invalid:member
-  package: ExcelScript!
-  summary: ''
-- name: series
-  uid: ExcelScript!ExcelScript.ChartAxisType.series:member
-  package: ExcelScript!
-  summary: 軸はデータ系列を表示します。
-- name: value
-  uid: ExcelScript!ExcelScript.ChartAxisType.value:member
-  package: ExcelScript!
-  summary: 軸は値を表示します。
-metadata:
-  ms.openlocfilehash: acf9e097fbe377740e967cf8d0c8360ed8efbf6b
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417003"
+  - name: category
+    uid: 'ExcelScript!ExcelScript.ChartAxisType.category:member'
+    package: ExcelScript!
+    summary: 軸は項目を表示します。
+  - name: invalid
+    uid: 'ExcelScript!ExcelScript.ChartAxisType.invalid:member'
+    package: ExcelScript!
+    summary: ''
+  - name: series
+    uid: 'ExcelScript!ExcelScript.ChartAxisType.series:member'
+    package: ExcelScript!
+    summary: 軸はデータ系列を表示します。
+  - name: value
+    uid: 'ExcelScript!ExcelScript.ChartAxisType.value:member'
+    package: ExcelScript!
+    summary: 軸は値を表示します。

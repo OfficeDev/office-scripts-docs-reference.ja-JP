@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ChartAxisPosition
-uid: ExcelScript!ExcelScript.ChartAxisPosition:enum
+uid: 'ExcelScript!ExcelScript.ChartAxisPosition:enum'
 package: ExcelScript!
 fullName: ExcelScript.ChartAxisPosition
 summary: ''
@@ -8,26 +8,19 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: automatic
-  uid: ExcelScript!ExcelScript.ChartAxisPosition.automatic:member
-  package: ExcelScript!
-  summary: ''
-- name: custom
-  uid: ExcelScript!ExcelScript.ChartAxisPosition.custom:member
-  package: ExcelScript!
-  summary: ''
-- name: maximum
-  uid: ExcelScript!ExcelScript.ChartAxisPosition.maximum:member
-  package: ExcelScript!
-  summary: ''
-- name: minimum
-  uid: ExcelScript!ExcelScript.ChartAxisPosition.minimum:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: 3e60aac52df5773c1501d8b11e680321f26a6af3
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420077"
+  - name: automatic
+    uid: 'ExcelScript!ExcelScript.ChartAxisPosition.automatic:member'
+    package: ExcelScript!
+    summary: ''
+  - name: custom
+    uid: 'ExcelScript!ExcelScript.ChartAxisPosition.custom:member'
+    package: ExcelScript!
+    summary: ''
+  - name: maximum
+    uid: 'ExcelScript!ExcelScript.ChartAxisPosition.maximum:member'
+    package: ExcelScript!
+    summary: ''
+  - name: minimum
+    uid: 'ExcelScript!ExcelScript.ChartAxisPosition.minimum:member'
+    package: ExcelScript!
+    summary: ''
