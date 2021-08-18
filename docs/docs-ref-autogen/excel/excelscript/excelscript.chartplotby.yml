@@ -1,43 +1,25 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ChartPlotBy
-uid: 'ExcelScript!ExcelScript.ChartPlotBy:enum'
+uid: ExcelScript!ExcelScript.ChartPlotBy:enum
 package: ExcelScript!
 fullName: ExcelScript.ChartPlotBy
 summary: ''
-remarks: |-
-
-
-  #### <a name="examples"></a>例
-
-  ```TypeScript
-  /**
-   * This sample performs the "Switch Row/Column" action on a chart named "ColumnClusteredChart".
-   */
-  function main(workbook: ExcelScript.Workbook) {
-    // Get the current worksheet.
-    let selectedSheet = workbook.getActiveWorksheet();
-
-    // Get an existing chart named "ColumnClusteredChart".
-    let columnClusteredChart = selectedSheet.getChart("ColumnClusteredChart");
-    
-    // Switch the row and column for the chart's data source.
-    if (columnClusteredChart.getPlotBy() === ExcelScript.ChartPlotBy.columns) {
-      // If the chart is grouped by columns, switch it to rows.
-      columnClusteredChart.setPlotBy(ExcelScript.ChartPlotBy.rows);
-    } else {
-      // If the chart is grouped by rows, switch it to columns.
-      columnClusteredChart.setPlotBy(ExcelScript.ChartPlotBy.columns);
-    }
-  }
-  ```
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This sample performs the \"Switch Row/Column\" action on a chart named \"ColumnClusteredChart\".\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Get an existing chart named \"ColumnClusteredChart\".\n  let columnClusteredChart = selectedSheet.getChart(\"ColumnClusteredChart\");\n  \n  // Switch the row and column for the chart's data source.\n  if (columnClusteredChart.getPlotBy() === ExcelScript.ChartPlotBy.columns) {\n    // If the chart is grouped by columns, switch it to rows.\n    columnClusteredChart.setPlotBy(ExcelScript.ChartPlotBy.rows);\n  } else {\n    // If the chart is grouped by rows, switch it to columns.\n    columnClusteredChart.setPlotBy(ExcelScript.ChartPlotBy.columns);\n  }\n}\n```"
 isPreview: false
 isDeprecated: false
 fields:
-  - name: columns
-    uid: 'ExcelScript!ExcelScript.ChartPlotBy.columns:member'
-    package: ExcelScript!
-    summary: ''
-  - name: rows
-    uid: 'ExcelScript!ExcelScript.ChartPlotBy.rows:member'
-    package: ExcelScript!
-    summary: ''
+- name: columns
+  uid: ExcelScript!ExcelScript.ChartPlotBy.columns:member
+  package: ExcelScript!
+  summary: ''
+- name: rows
+  uid: ExcelScript!ExcelScript.ChartPlotBy.rows:member
+  package: ExcelScript!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 5b3f3703e20cf55e5d74b5a85beb4a56253c7a9e
+  ms.sourcegitcommit: b426fa221dc89bd11cd7a2d1204c13a3bf656826
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 08/18/2021
+  ms.locfileid: "58379962"
