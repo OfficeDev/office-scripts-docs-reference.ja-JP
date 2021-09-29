@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.RangeFormat
-uid: 'ExcelScript!ExcelScript.RangeFormat:interface'
+uid: ExcelScript!ExcelScript.RangeFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.RangeFormat
 summary: 範囲のフォント、塗りつぶし、境界線、配置などのプロパティをカプセル化する、書式設定オブジェクトです。
@@ -9,505 +9,512 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-  - name: adjustIndent(amount)
-    uid: 'ExcelScript!ExcelScript.RangeFormat#adjustIndent:member(1)'
-    package: ExcelScript!
-    fullName: adjustIndent(amount)
-    summary: 範囲の書式設定のインデントを調整します。 インデント値の範囲は 0 ~ 250 で、文字単位で測定されます。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'adjustIndent(amount: number): void;'
-      parameters:
-        - id: amount
-          description: '現在のインデントを調整する文字スペースの数。 この値は、-250 ~ 250 の間である必要があります。 **注**: インデント レベルが 250 を超える場合、インデント レベルは 250 のままです。 同様に、インデント レベルが 0 より小さい場合、インデント レベルは 0 のままです。'
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: autofitColumns()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#autofitColumns:member(1)'
-    package: ExcelScript!
-    fullName: autofitColumns()
-    summary: 現在の列のデータに基づいて、現在の範囲の列の幅を最適な幅に変更します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'autofitColumns(): void;'
-      return:
-        type: void
-        description: ''
-  - name: autofitRows()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#autofitRows:member(1)'
-    package: ExcelScript!
-    fullName: autofitRows()
-    summary: 現在の行のデータに基づいて、現在の範囲の行の高さを最適な高さに変更します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'autofitRows(): void;'
-      return:
-        type: void
-        description: ''
-  - name: getAutoIndent()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getAutoIndent:member(1)'
-    package: ExcelScript!
-    fullName: getAutoIndent()
-    summary: テキストの配置が等しい分布に設定されている場合に、テキストが自動的にインデントされる場合に指定します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getAutoIndent(): boolean;'
-      return:
-        type: boolean
-        description: ''
-  - name: getBorders()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getBorders:member(1)'
-    package: ExcelScript!
-    fullName: getBorders()
-    summary: 選択した範囲全体に適用する境界線オブジェクトのコレクション。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getBorders(): RangeBorder[];'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.RangeBorder:interface" />[]'
-        description: ''
-  - name: getColumnWidth()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getColumnWidth:member(1)'
-    package: ExcelScript!
-    fullName: getColumnWidth()
-    summary: 範囲内のすべての列の幅を指定します。 列の幅が一様ではない場合 `null` は、返されます。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getColumnWidth(): number;'
-      return:
-        type: number
-        description: ''
-  - name: getFill()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getFill:member(1)'
-    package: ExcelScript!
-    fullName: getFill()
-    summary: 範囲全体に定義された塗りつぶしオブジェクトを返します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getFill(): RangeFill;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.RangeFill:interface" />'
-        description: ''
-  - name: getFont()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getFont:member(1)'
-    package: ExcelScript!
-    fullName: getFont()
-    summary: 範囲全体に定義されたフォント オブジェクトを返します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getFont(): RangeFont;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.RangeFont:interface" />'
-        description: ''
-  - name: getHorizontalAlignment()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getHorizontalAlignment:member(1)'
-    package: ExcelScript!
-    fullName: getHorizontalAlignment()
-    summary: 指定したオブジェクトの水平方向の配置を表します。 詳細は「`ExcelScript.HorizontalAlignment`」をご覧ください。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getHorizontalAlignment(): HorizontalAlignment;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.HorizontalAlignment:enum" />'
-        description: ''
-  - name: getIndentLevel()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getIndentLevel:member(1)'
-    package: ExcelScript!
-    fullName: getIndentLevel()
-    summary: インデント レベルを示す 0 から 250 までの整数。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getIndentLevel(): number;'
-      return:
-        type: number
-        description: ''
-  - name: getProtection()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getProtection:member(1)'
-    package: ExcelScript!
-    fullName: getProtection()
-    summary: 範囲に対する書式保護オブジェクトを返します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getProtection(): FormatProtection;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.FormatProtection:interface" />'
-        description: ''
-  - name: getRangeBorder(index)
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getRangeBorder:member(1)'
-    package: ExcelScript!
-    fullName: getRangeBorder(index)
-    summary: オブジェクトの名前を使用して、境界線オブジェクトを取得します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getRangeBorder(index: BorderIndex): RangeBorder;'
-      parameters:
-        - id: index
-          description: 取得する罫線オブジェクトのインデックス値。 詳細は「`ExcelScript.BorderIndex`」をご覧ください。
-          type: '<xref uid="ExcelScript!ExcelScript.BorderIndex:enum" />'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.RangeBorder:interface" />'
-        description: ''
-  - name: getRangeBorderTintAndShade()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getRangeBorderTintAndShade:member(1)'
-    package: ExcelScript!
-    fullName: getRangeBorderTintAndShade()
-    summary: 範囲の境界線の色を明るくまたは暗くする倍数を指定します。 値は -1 (最も暗い) から 1 (最も明るい) の間で、元の色の場合は 0 です。 値 `null` は、罫線コレクション全体に均一な設定が設定できない場合を示 `tintAndShade` します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getRangeBorderTintAndShade(): number;'
-      return:
-        type: number
-        description: ''
-  - name: getReadingOrder()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getReadingOrder:member(1)'
-    package: ExcelScript!
-    fullName: getReadingOrder()
-    summary: 範囲に適用される読み上げ順序。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getReadingOrder(): ReadingOrder;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.ReadingOrder:enum" />'
-        description: ''
-  - name: getRowHeight()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getRowHeight:member(1)'
-    package: ExcelScript!
-    fullName: getRowHeight()
-    summary: 範囲内のすべての行の高さ。 行の高さが一様ではない場合 `null` は、返されます。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getRowHeight(): number;'
-      return:
-        type: number
-        description: ''
-  - name: getShrinkToFit()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getShrinkToFit:member(1)'
-    package: ExcelScript!
-    fullName: getShrinkToFit()
-    summary: 使用可能な列の幅に収まるテキストを自動的に縮小する場合に指定します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getShrinkToFit(): boolean;'
-      return:
-        type: boolean
-        description: ''
-  - name: getTextOrientation()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getTextOrientation:member(1)'
-    package: ExcelScript!
-    fullName: getTextOrientation()
-    summary: 範囲内のすべてのセルのテキストの向き。 テキストの向きは、-90 ~ 90 の整数、または垂直方向のテキストの場合は 180 です。 範囲内の方向が一様ではない場合は `null` 、返されます。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getTextOrientation(): number;'
-      return:
-        type: number
-        description: ''
-  - name: getUseStandardHeight()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getUseStandardHeight:member(1)'
-    package: ExcelScript!
-    fullName: getUseStandardHeight()
-    summary: 'オブジェクトの行の高さがシートの標準の高 `Range` さと等しいかどうかを指定します。 オブジェクトの行の高さがシートの標準の高さと等 `true` `Range` しい場合に返します。 範囲に複数の行が含まれている場合に、行が同じ高 `null` さではない場合に返します。 それ以外 `false` の場合は返します。 注: このプロパティは、 `true`<!-- -->. 設定は `false` 無効です。'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getUseStandardHeight(): boolean;'
-      return:
-        type: boolean
-        description: ''
-  - name: getUseStandardWidth()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getUseStandardWidth:member(1)'
-    package: ExcelScript!
-    fullName: getUseStandardWidth()
-    summary: 'オブジェクトの列幅がシートの標準幅 `Range` と等しい場合に指定します。 オブジェクトの列幅がシートの標準幅と等しい `true` `Range` 場合に返します。 範囲に複数の列が含まれている場合に、列の高さが同 `null` じでない場合に返します。 それ以外 `false` の場合は返します。 注: このプロパティは、 `true`<!-- -->. 設定は `false` 無効です。'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getUseStandardWidth(): boolean;'
-      return:
-        type: boolean
-        description: ''
-  - name: getVerticalAlignment()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getVerticalAlignment:member(1)'
-    package: ExcelScript!
-    fullName: getVerticalAlignment()
-    summary: 指定したオブジェクトの垂直方向の配置を表します。 詳細は「`ExcelScript.VerticalAlignment`」をご覧ください。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getVerticalAlignment(): VerticalAlignment;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.VerticalAlignment:enum" />'
-        description: ''
-  - name: getWrapText()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getWrapText:member(1)'
-    package: ExcelScript!
-    fullName: getWrapText()
-    summary: オブジェクト内のExcelを折り返す値を指定します。 値 `null` は、範囲全体に均一な折り返し設定が含めなかった場合を示します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getWrapText(): boolean;'
-      return:
-        type: boolean
-        description: ''
-  - name: setAutoIndent(autoIndent)
-    uid: 'ExcelScript!ExcelScript.RangeFormat#setAutoIndent:member(1)'
-    package: ExcelScript!
-    fullName: setAutoIndent(autoIndent)
-    summary: テキストの配置が等しい分布に設定されている場合に、テキストが自動的にインデントされる場合に指定します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setAutoIndent(autoIndent: boolean): void;'
-      parameters:
-        - id: autoIndent
-          description: ''
-          type: boolean
-      return:
-        type: void
-        description: ''
-  - name: setColumnWidth(columnWidth)
-    uid: 'ExcelScript!ExcelScript.RangeFormat#setColumnWidth:member(1)'
-    package: ExcelScript!
-    fullName: setColumnWidth(columnWidth)
-    summary: 範囲内のすべての列の幅を指定します。 列の幅が一様ではない場合 `null` は、返されます。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setColumnWidth(columnWidth: number): void;'
-      parameters:
-        - id: columnWidth
-          description: ''
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: setHorizontalAlignment(horizontalAlignment)
-    uid: 'ExcelScript!ExcelScript.RangeFormat#setHorizontalAlignment:member(1)'
-    package: ExcelScript!
-    fullName: setHorizontalAlignment(horizontalAlignment)
-    summary: 指定したオブジェクトの水平方向の配置を表します。 詳細は「`ExcelScript.HorizontalAlignment`」をご覧ください。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setHorizontalAlignment(horizontalAlignment: HorizontalAlignment): void;'
-      parameters:
-        - id: horizontalAlignment
-          description: ''
-          type: '<xref uid="ExcelScript!ExcelScript.HorizontalAlignment:enum" />'
-      return:
-        type: void
-        description: ''
-  - name: setIndentLevel(indentLevel)
-    uid: 'ExcelScript!ExcelScript.RangeFormat#setIndentLevel:member(1)'
-    package: ExcelScript!
-    fullName: setIndentLevel(indentLevel)
-    summary: インデント レベルを示す 0 から 250 までの整数。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setIndentLevel(indentLevel: number): void;'
-      parameters:
-        - id: indentLevel
-          description: ''
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: setRangeBorderTintAndShade(rangeBorderTintAndShade)
-    uid: 'ExcelScript!ExcelScript.RangeFormat#setRangeBorderTintAndShade:member(1)'
-    package: ExcelScript!
-    fullName: setRangeBorderTintAndShade(rangeBorderTintAndShade)
-    summary: 範囲の境界線の色を明るくまたは暗くする倍数を指定します。 値は -1 (最も暗い) から 1 (最も明るい) の間で、元の色の場合は 0 です。 値 `null` は、罫線コレクション全体に均一な設定が設定できない場合を示 `tintAndShade` します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setRangeBorderTintAndShade(rangeBorderTintAndShade: number): void;'
-      parameters:
-        - id: rangeBorderTintAndShade
-          description: ''
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: setReadingOrder(readingOrder)
-    uid: 'ExcelScript!ExcelScript.RangeFormat#setReadingOrder:member(1)'
-    package: ExcelScript!
-    fullName: setReadingOrder(readingOrder)
-    summary: 範囲に適用される読み上げ順序。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setReadingOrder(readingOrder: ReadingOrder): void;'
-      parameters:
-        - id: readingOrder
-          description: ''
-          type: '<xref uid="ExcelScript!ExcelScript.ReadingOrder:enum" />'
-      return:
-        type: void
-        description: ''
-  - name: setRowHeight(rowHeight)
-    uid: 'ExcelScript!ExcelScript.RangeFormat#setRowHeight:member(1)'
-    package: ExcelScript!
-    fullName: setRowHeight(rowHeight)
-    summary: 範囲内のすべての行の高さ。 行の高さが一様ではない場合 `null` は、返されます。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setRowHeight(rowHeight: number): void;'
-      parameters:
-        - id: rowHeight
-          description: ''
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: setShrinkToFit(shrinkToFit)
-    uid: 'ExcelScript!ExcelScript.RangeFormat#setShrinkToFit:member(1)'
-    package: ExcelScript!
-    fullName: setShrinkToFit(shrinkToFit)
-    summary: 使用可能な列の幅に収まるテキストを自動的に縮小する場合に指定します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setShrinkToFit(shrinkToFit: boolean): void;'
-      parameters:
-        - id: shrinkToFit
-          description: ''
-          type: boolean
-      return:
-        type: void
-        description: ''
-  - name: setTextOrientation(textOrientation)
-    uid: 'ExcelScript!ExcelScript.RangeFormat#setTextOrientation:member(1)'
-    package: ExcelScript!
-    fullName: setTextOrientation(textOrientation)
-    summary: 範囲内のすべてのセルのテキストの向き。 テキストの向きは、-90 ~ 90 の整数、または垂直方向のテキストの場合は 180 です。 範囲内の方向が一様ではない場合は `null` 、返されます。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setTextOrientation(textOrientation: number): void;'
-      parameters:
-        - id: textOrientation
-          description: ''
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: setUseStandardHeight(useStandardHeight)
-    uid: 'ExcelScript!ExcelScript.RangeFormat#setUseStandardHeight:member(1)'
-    package: ExcelScript!
-    fullName: setUseStandardHeight(useStandardHeight)
-    summary: 'オブジェクトの行の高さがシートの標準の高 `Range` さと等しいかどうかを指定します。 オブジェクトの行の高さがシートの標準の高さと等 `true` `Range` しい場合に返します。 範囲に複数の行が含まれている場合に、行が同じ高 `null` さではない場合に返します。 それ以外 `false` の場合は返します。 注: このプロパティは、 `true`<!-- -->. 設定は `false` 無効です。'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setUseStandardHeight(useStandardHeight: boolean): void;'
-      parameters:
-        - id: useStandardHeight
-          description: ''
-          type: boolean
-      return:
-        type: void
-        description: ''
-  - name: setUseStandardWidth(useStandardWidth)
-    uid: 'ExcelScript!ExcelScript.RangeFormat#setUseStandardWidth:member(1)'
-    package: ExcelScript!
-    fullName: setUseStandardWidth(useStandardWidth)
-    summary: 'オブジェクトの列幅がシートの標準幅 `Range` と等しい場合に指定します。 オブジェクトの列幅がシートの標準幅と等しい `true` `Range` 場合に返します。 範囲に複数の列が含まれている場合に、列の高さが同 `null` じでない場合に返します。 それ以外 `false` の場合は返します。 注: このプロパティは、 `true`<!-- -->. 設定は `false` 無効です。'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setUseStandardWidth(useStandardWidth: boolean): void;'
-      parameters:
-        - id: useStandardWidth
-          description: ''
-          type: boolean
-      return:
-        type: void
-        description: ''
-  - name: setVerticalAlignment(verticalAlignment)
-    uid: 'ExcelScript!ExcelScript.RangeFormat#setVerticalAlignment:member(1)'
-    package: ExcelScript!
-    fullName: setVerticalAlignment(verticalAlignment)
-    summary: 指定したオブジェクトの垂直方向の配置を表します。 詳細は「`ExcelScript.VerticalAlignment`」をご覧ください。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setVerticalAlignment(verticalAlignment: VerticalAlignment): void;'
-      parameters:
-        - id: verticalAlignment
-          description: ''
-          type: '<xref uid="ExcelScript!ExcelScript.VerticalAlignment:enum" />'
-      return:
-        type: void
-        description: ''
-  - name: setWrapText(wrapText)
-    uid: 'ExcelScript!ExcelScript.RangeFormat#setWrapText:member(1)'
-    package: ExcelScript!
-    fullName: setWrapText(wrapText)
-    summary: オブジェクト内のExcelを折り返す値を指定します。 値 `null` は、範囲全体に均一な折り返し設定が含めなかった場合を示します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setWrapText(wrapText: boolean): void;'
-      parameters:
-        - id: wrapText
-          description: ''
-          type: boolean
-      return:
-        type: void
-        description: ''
+- name: adjustIndent(amount)
+  uid: ExcelScript!ExcelScript.RangeFormat#adjustIndent:member(1)
+  package: ExcelScript!
+  fullName: adjustIndent(amount)
+  summary: 範囲の書式設定のインデントを調整します。 インデント値の範囲は 0 ~ 250 で、文字単位で測定されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'adjustIndent(amount: number): void;'
+    parameters:
+    - id: amount
+      description: '現在のインデントを調整する文字スペースの数。 この値は、-250 ~ 250 の間である必要があります。 **注**: インデント レベルが 250 を超える場合、インデント レベルは 250 のままです。 同様に、インデント レベルが 0 より小さい場合、インデント レベルは 0 のままです。'
+      type: number
+    return:
+      type: void
+      description: ''
+- name: autofitColumns()
+  uid: ExcelScript!ExcelScript.RangeFormat#autofitColumns:member(1)
+  package: ExcelScript!
+  fullName: autofitColumns()
+  summary: 現在の列のデータに基づいて、現在の範囲の列の幅を最適な幅に変更します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'autofitColumns(): void;'
+    return:
+      type: void
+      description: ''
+- name: autofitRows()
+  uid: ExcelScript!ExcelScript.RangeFormat#autofitRows:member(1)
+  package: ExcelScript!
+  fullName: autofitRows()
+  summary: 現在の行のデータに基づいて、現在の範囲の行の高さを最適な高さに変更します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'autofitRows(): void;'
+    return:
+      type: void
+      description: ''
+- name: getAutoIndent()
+  uid: ExcelScript!ExcelScript.RangeFormat#getAutoIndent:member(1)
+  package: ExcelScript!
+  fullName: getAutoIndent()
+  summary: テキストの配置が等しい分布に設定されている場合に、テキストが自動的にインデントされる場合に指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getAutoIndent(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getBorders()
+  uid: ExcelScript!ExcelScript.RangeFormat#getBorders:member(1)
+  package: ExcelScript!
+  fullName: getBorders()
+  summary: 選択した範囲全体に適用する境界線オブジェクトのコレクション。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getBorders(): RangeBorder[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeBorder:interface" />[]
+      description: ''
+- name: getColumnWidth()
+  uid: ExcelScript!ExcelScript.RangeFormat#getColumnWidth:member(1)
+  package: ExcelScript!
+  fullName: getColumnWidth()
+  summary: 範囲内のすべての列の幅を指定します。 列の幅が一様ではない場合 `null` は、返されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getColumnWidth(): number;'
+    return:
+      type: number
+      description: ''
+- name: getFill()
+  uid: ExcelScript!ExcelScript.RangeFormat#getFill:member(1)
+  package: ExcelScript!
+  fullName: getFill()
+  summary: 範囲全体に定義された塗りつぶしオブジェクトを返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFill(): RangeFill;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeFill:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script gives the total row of a table a green color fill.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the first table in the workbook.\n  let table = workbook.getTables()[0];\n\n  // Get the range for the total row of the table.\n  let totalRange = table.getTotalRowRange();\n\n  // Set the fill color to green.\n  totalRange.getFormat().getFill().setColor(\"green\");\n}\n```"
+- name: getFont()
+  uid: ExcelScript!ExcelScript.RangeFormat#getFont:member(1)
+  package: ExcelScript!
+  fullName: getFont()
+  summary: 範囲全体に定義されたフォント オブジェクトを返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFont(): RangeFont;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeFont:interface" />
+      description: ''
+- name: getHorizontalAlignment()
+  uid: ExcelScript!ExcelScript.RangeFormat#getHorizontalAlignment:member(1)
+  package: ExcelScript!
+  fullName: getHorizontalAlignment()
+  summary: 指定したオブジェクトの水平方向の配置を表します。 詳細は「`ExcelScript.HorizontalAlignment`」をご覧ください。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getHorizontalAlignment(): HorizontalAlignment;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.HorizontalAlignment:enum" />
+      description: ''
+- name: getIndentLevel()
+  uid: ExcelScript!ExcelScript.RangeFormat#getIndentLevel:member(1)
+  package: ExcelScript!
+  fullName: getIndentLevel()
+  summary: インデント レベルを示す 0 から 250 までの整数。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getIndentLevel(): number;'
+    return:
+      type: number
+      description: ''
+- name: getProtection()
+  uid: ExcelScript!ExcelScript.RangeFormat#getProtection:member(1)
+  package: ExcelScript!
+  fullName: getProtection()
+  summary: 範囲に対する書式保護オブジェクトを返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getProtection(): FormatProtection;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.FormatProtection:interface" />
+      description: ''
+- name: getRangeBorder(index)
+  uid: ExcelScript!ExcelScript.RangeFormat#getRangeBorder:member(1)
+  package: ExcelScript!
+  fullName: getRangeBorder(index)
+  summary: オブジェクトの名前を使用して、境界線オブジェクトを取得します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRangeBorder(index: BorderIndex): RangeBorder;'
+    parameters:
+    - id: index
+      description: 取得する罫線オブジェクトのインデックス値。 詳細は「`ExcelScript.BorderIndex`」をご覧ください。
+      type: <xref uid="ExcelScript!ExcelScript.BorderIndex:enum" />
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeBorder:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script adds a border around the outside of a range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get a range from the current worksheet.\n  let range = workbook.getActiveWorksheet().getRange(\"B2:E15\");\n\n  // Add a border around the whole bounding range.\n  let format = range.getFormat();\n  format.getRangeBorder(ExcelScript.BorderIndex.edgeTop).setStyle(ExcelScript.BorderLineStyle.continuous); // Top border\n  format.getRangeBorder(ExcelScript.BorderIndex.edgeBottom).setStyle(ExcelScript.BorderLineStyle.continuous); // Bottom border\n  format.getRangeBorder(ExcelScript.BorderIndex.edgeLeft).setStyle(ExcelScript.BorderLineStyle.continuous); // Left border\n  format.getRangeBorder(ExcelScript.BorderIndex.edgeRight).setStyle(ExcelScript.BorderLineStyle.continuous); // Right border\n}\n```"
+- name: getRangeBorderTintAndShade()
+  uid: ExcelScript!ExcelScript.RangeFormat#getRangeBorderTintAndShade:member(1)
+  package: ExcelScript!
+  fullName: getRangeBorderTintAndShade()
+  summary: 範囲の境界線の色を明るくまたは暗くする倍数を指定します。 値は -1 (最も暗い) から 1 (最も明るい) の間で、元の色の場合は 0 です。 値 `null` は、罫線コレクション全体に均一な設定が設定できない場合を示 `tintAndShade` します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRangeBorderTintAndShade(): number;'
+    return:
+      type: number
+      description: ''
+- name: getReadingOrder()
+  uid: ExcelScript!ExcelScript.RangeFormat#getReadingOrder:member(1)
+  package: ExcelScript!
+  fullName: getReadingOrder()
+  summary: 範囲に適用される読み上げ順序。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getReadingOrder(): ReadingOrder;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ReadingOrder:enum" />
+      description: ''
+- name: getRowHeight()
+  uid: ExcelScript!ExcelScript.RangeFormat#getRowHeight:member(1)
+  package: ExcelScript!
+  fullName: getRowHeight()
+  summary: 範囲内のすべての行の高さ。 行の高さが一様ではない場合 `null` は、返されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRowHeight(): number;'
+    return:
+      type: number
+      description: ''
+- name: getShrinkToFit()
+  uid: ExcelScript!ExcelScript.RangeFormat#getShrinkToFit:member(1)
+  package: ExcelScript!
+  fullName: getShrinkToFit()
+  summary: 使用可能な列の幅に収まるテキストを自動的に縮小する場合に指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getShrinkToFit(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getTextOrientation()
+  uid: ExcelScript!ExcelScript.RangeFormat#getTextOrientation:member(1)
+  package: ExcelScript!
+  fullName: getTextOrientation()
+  summary: 範囲内のすべてのセルのテキストの向き。 テキストの向きは、-90 ~ 90 の整数、または垂直方向のテキストの場合は 180 です。 範囲内の方向が一様ではない場合は `null` 、返されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTextOrientation(): number;'
+    return:
+      type: number
+      description: ''
+- name: getUseStandardHeight()
+  uid: ExcelScript!ExcelScript.RangeFormat#getUseStandardHeight:member(1)
+  package: ExcelScript!
+  fullName: getUseStandardHeight()
+  summary: 'オブジェクトの行の高さがシートの標準の高 `Range` さと等しいかどうかを指定します。 オブジェクトの行の高さがシートの標準の高さと等 `true` `Range` しい場合に返します。 範囲に複数の行が含まれている場合に、行が同じ高 `null` さではない場合に返します。 それ以外 `false` の場合は返します。 注: このプロパティは、 `true`<!-- -->. 設定は `false` 無効です。'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getUseStandardHeight(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getUseStandardWidth()
+  uid: ExcelScript!ExcelScript.RangeFormat#getUseStandardWidth:member(1)
+  package: ExcelScript!
+  fullName: getUseStandardWidth()
+  summary: 'オブジェクトの列幅がシートの標準幅 `Range` と等しい場合に指定します。 オブジェクトの列幅がシートの標準幅と等しい `true` `Range` 場合に返します。 範囲に複数の列が含まれている場合に、列の高さが同 `null` じでない場合に返します。 それ以外 `false` の場合は返します。 注: このプロパティは、 `true`<!-- -->. 設定は `false` 無効です。'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getUseStandardWidth(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getVerticalAlignment()
+  uid: ExcelScript!ExcelScript.RangeFormat#getVerticalAlignment:member(1)
+  package: ExcelScript!
+  fullName: getVerticalAlignment()
+  summary: 指定したオブジェクトの垂直方向の配置を表します。 詳細は「`ExcelScript.VerticalAlignment`」をご覧ください。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getVerticalAlignment(): VerticalAlignment;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.VerticalAlignment:enum" />
+      description: ''
+- name: getWrapText()
+  uid: ExcelScript!ExcelScript.RangeFormat#getWrapText:member(1)
+  package: ExcelScript!
+  fullName: getWrapText()
+  summary: オブジェクト内のExcelを折り返す値を指定します。 値 `null` は、範囲全体に均一な折り返し設定が含めなかった場合を示します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getWrapText(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: setAutoIndent(autoIndent)
+  uid: ExcelScript!ExcelScript.RangeFormat#setAutoIndent:member(1)
+  package: ExcelScript!
+  fullName: setAutoIndent(autoIndent)
+  summary: テキストの配置が等しい分布に設定されている場合に、テキストが自動的にインデントされる場合に指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setAutoIndent(autoIndent: boolean): void;'
+    parameters:
+    - id: autoIndent
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setColumnWidth(columnWidth)
+  uid: ExcelScript!ExcelScript.RangeFormat#setColumnWidth:member(1)
+  package: ExcelScript!
+  fullName: setColumnWidth(columnWidth)
+  summary: 範囲内のすべての列の幅を指定します。 列の幅が一様ではない場合 `null` は、返されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setColumnWidth(columnWidth: number): void;'
+    parameters:
+    - id: columnWidth
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setHorizontalAlignment(horizontalAlignment)
+  uid: ExcelScript!ExcelScript.RangeFormat#setHorizontalAlignment:member(1)
+  package: ExcelScript!
+  fullName: setHorizontalAlignment(horizontalAlignment)
+  summary: 指定したオブジェクトの水平方向の配置を表します。 詳細は「`ExcelScript.HorizontalAlignment`」をご覧ください。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setHorizontalAlignment(horizontalAlignment: HorizontalAlignment): void;'
+    parameters:
+    - id: horizontalAlignment
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.HorizontalAlignment:enum" />
+    return:
+      type: void
+      description: ''
+- name: setIndentLevel(indentLevel)
+  uid: ExcelScript!ExcelScript.RangeFormat#setIndentLevel:member(1)
+  package: ExcelScript!
+  fullName: setIndentLevel(indentLevel)
+  summary: インデント レベルを示す 0 から 250 までの整数。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setIndentLevel(indentLevel: number): void;'
+    parameters:
+    - id: indentLevel
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setRangeBorderTintAndShade(rangeBorderTintAndShade)
+  uid: ExcelScript!ExcelScript.RangeFormat#setRangeBorderTintAndShade:member(1)
+  package: ExcelScript!
+  fullName: setRangeBorderTintAndShade(rangeBorderTintAndShade)
+  summary: 範囲の境界線の色を明るくまたは暗くする倍数を指定します。 値は -1 (最も暗い) から 1 (最も明るい) の間で、元の色の場合は 0 です。 値 `null` は、罫線コレクション全体に均一な設定が設定できない場合を示 `tintAndShade` します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setRangeBorderTintAndShade(rangeBorderTintAndShade: number): void;'
+    parameters:
+    - id: rangeBorderTintAndShade
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setReadingOrder(readingOrder)
+  uid: ExcelScript!ExcelScript.RangeFormat#setReadingOrder:member(1)
+  package: ExcelScript!
+  fullName: setReadingOrder(readingOrder)
+  summary: 範囲に適用される読み上げ順序。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setReadingOrder(readingOrder: ReadingOrder): void;'
+    parameters:
+    - id: readingOrder
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ReadingOrder:enum" />
+    return:
+      type: void
+      description: ''
+- name: setRowHeight(rowHeight)
+  uid: ExcelScript!ExcelScript.RangeFormat#setRowHeight:member(1)
+  package: ExcelScript!
+  fullName: setRowHeight(rowHeight)
+  summary: 範囲内のすべての行の高さ。 行の高さが一様ではない場合 `null` は、返されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setRowHeight(rowHeight: number): void;'
+    parameters:
+    - id: rowHeight
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setShrinkToFit(shrinkToFit)
+  uid: ExcelScript!ExcelScript.RangeFormat#setShrinkToFit:member(1)
+  package: ExcelScript!
+  fullName: setShrinkToFit(shrinkToFit)
+  summary: 使用可能な列の幅に収まるテキストを自動的に縮小する場合に指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setShrinkToFit(shrinkToFit: boolean): void;'
+    parameters:
+    - id: shrinkToFit
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setTextOrientation(textOrientation)
+  uid: ExcelScript!ExcelScript.RangeFormat#setTextOrientation:member(1)
+  package: ExcelScript!
+  fullName: setTextOrientation(textOrientation)
+  summary: 範囲内のすべてのセルのテキストの向き。 テキストの向きは、-90 ~ 90 の整数、または垂直方向のテキストの場合は 180 です。 範囲内の方向が一様ではない場合は `null` 、返されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setTextOrientation(textOrientation: number): void;'
+    parameters:
+    - id: textOrientation
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setUseStandardHeight(useStandardHeight)
+  uid: ExcelScript!ExcelScript.RangeFormat#setUseStandardHeight:member(1)
+  package: ExcelScript!
+  fullName: setUseStandardHeight(useStandardHeight)
+  summary: 'オブジェクトの行の高さがシートの標準の高 `Range` さと等しいかどうかを指定します。 オブジェクトの行の高さがシートの標準の高さと等 `true` `Range` しい場合に返します。 範囲に複数の行が含まれている場合に、行が同じ高 `null` さではない場合に返します。 それ以外 `false` の場合は返します。 注: このプロパティは、 `true`<!-- -->. 設定は `false` 無効です。'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setUseStandardHeight(useStandardHeight: boolean): void;'
+    parameters:
+    - id: useStandardHeight
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setUseStandardWidth(useStandardWidth)
+  uid: ExcelScript!ExcelScript.RangeFormat#setUseStandardWidth:member(1)
+  package: ExcelScript!
+  fullName: setUseStandardWidth(useStandardWidth)
+  summary: 'オブジェクトの列幅がシートの標準幅 `Range` と等しい場合に指定します。 オブジェクトの列幅がシートの標準幅と等しい `true` `Range` 場合に返します。 範囲に複数の列が含まれている場合に、列の高さが同 `null` じでない場合に返します。 それ以外 `false` の場合は返します。 注: このプロパティは、 `true`<!-- -->. 設定は `false` 無効です。'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setUseStandardWidth(useStandardWidth: boolean): void;'
+    parameters:
+    - id: useStandardWidth
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setVerticalAlignment(verticalAlignment)
+  uid: ExcelScript!ExcelScript.RangeFormat#setVerticalAlignment:member(1)
+  package: ExcelScript!
+  fullName: setVerticalAlignment(verticalAlignment)
+  summary: 指定したオブジェクトの垂直方向の配置を表します。 詳細は「`ExcelScript.VerticalAlignment`」をご覧ください。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setVerticalAlignment(verticalAlignment: VerticalAlignment): void;'
+    parameters:
+    - id: verticalAlignment
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.VerticalAlignment:enum" />
+    return:
+      type: void
+      description: ''
+- name: setWrapText(wrapText)
+  uid: ExcelScript!ExcelScript.RangeFormat#setWrapText:member(1)
+  package: ExcelScript!
+  fullName: setWrapText(wrapText)
+  summary: オブジェクト内のExcelを折り返す値を指定します。 値 `null` は、範囲全体に均一な折り返し設定が含めなかった場合を示します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setWrapText(wrapText: boolean): void;'
+    parameters:
+    - id: wrapText
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 571788b608684d394f3bbb12eb82acdb736a4e2e
+  ms.sourcegitcommit: b862905bd3ed886880931647f7c164ae908cb1cd
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 09/29/2021
+  ms.locfileid: "60003723"

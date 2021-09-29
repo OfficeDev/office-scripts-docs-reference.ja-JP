@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.RangeBorder
-uid: 'ExcelScript!ExcelScript.RangeBorder:interface'
+uid: ExcelScript!ExcelScript.RangeBorder:interface
 package: ExcelScript!
 fullName: ExcelScript.RangeBorder
 summary: オブジェクトの輪郭を表します。
@@ -9,136 +9,143 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-  - name: getColor()
-    uid: 'ExcelScript!ExcelScript.RangeBorder#getColor:member(1)'
-    package: ExcelScript!
-    fullName: getColor()
-    summary: RRGGBB 形式 ("FFA500" など) の境界線の色を表す HTML カラー コード、または名前付き HTML 色 \# ("オレンジ色" など) を表します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getColor(): string;'
-      return:
-        type: string
-        description: ''
-  - name: getSideIndex()
-    uid: 'ExcelScript!ExcelScript.RangeBorder#getSideIndex:member(1)'
-    package: ExcelScript!
-    fullName: getSideIndex()
-    summary: 罫線の特定の辺を表す定数値。 詳細は「`ExcelScript.BorderIndex`」をご覧ください。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getSideIndex(): BorderIndex;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.BorderIndex:enum" />'
-        description: ''
-  - name: getStyle()
-    uid: 'ExcelScript!ExcelScript.RangeBorder#getStyle:member(1)'
-    package: ExcelScript!
-    fullName: getStyle()
-    summary: 罫線の線スタイルを指定する、線スタイル定数のいずれか 1 つ。 詳細は「`ExcelScript.BorderLineStyle`」をご覧ください。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getStyle(): BorderLineStyle;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.BorderLineStyle:enum" />'
-        description: ''
-  - name: getTintAndShade()
-    uid: 'ExcelScript!ExcelScript.RangeBorder#getTintAndShade:member(1)'
-    package: ExcelScript!
-    fullName: getTintAndShade()
-    summary: 範囲の境界線の色を明るくまたは暗くする倍数を指定します。値は -1 (最も暗い) ~ 1 (最も明るい) で、元の色の場合は 0 です。 値 `null` は、罫線に均一な設定が含めなかったかどうかを示 `tintAndShade` します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getTintAndShade(): number;'
-      return:
-        type: number
-        description: ''
-  - name: getWeight()
-    uid: 'ExcelScript!ExcelScript.RangeBorder#getWeight:member(1)'
-    package: ExcelScript!
-    fullName: getWeight()
-    summary: 範囲周辺の罫線の太さを指定します。 詳細は「`ExcelScript.BorderWeight`」をご覧ください。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getWeight(): BorderWeight;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.BorderWeight:enum" />'
-        description: ''
-  - name: setColor(color)
-    uid: 'ExcelScript!ExcelScript.RangeBorder#setColor:member(1)'
-    package: ExcelScript!
-    fullName: setColor(color)
-    summary: RRGGBB 形式 ("FFA500" など) の境界線の色を表す HTML カラー コード、または名前付き HTML 色 \# ("オレンジ色" など) を表します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setColor(color: string): void;'
-      parameters:
-        - id: color
-          description: ''
-          type: string
-      return:
-        type: void
-        description: ''
-  - name: setStyle(style)
-    uid: 'ExcelScript!ExcelScript.RangeBorder#setStyle:member(1)'
-    package: ExcelScript!
-    fullName: setStyle(style)
-    summary: 罫線の線スタイルを指定する、線スタイル定数のいずれか 1 つ。 詳細は「`ExcelScript.BorderLineStyle`」をご覧ください。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setStyle(style: BorderLineStyle): void;'
-      parameters:
-        - id: style
-          description: ''
-          type: '<xref uid="ExcelScript!ExcelScript.BorderLineStyle:enum" />'
-      return:
-        type: void
-        description: ''
-  - name: setTintAndShade(tintAndShade)
-    uid: 'ExcelScript!ExcelScript.RangeBorder#setTintAndShade:member(1)'
-    package: ExcelScript!
-    fullName: setTintAndShade(tintAndShade)
-    summary: 範囲の境界線の色を明るくまたは暗くする倍数を指定します。値は -1 (最も暗い) ~ 1 (最も明るい) で、元の色の場合は 0 です。 値 `null` は、罫線に均一な設定が含めなかったかどうかを示 `tintAndShade` します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setTintAndShade(tintAndShade: number): void;'
-      parameters:
-        - id: tintAndShade
-          description: ''
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: setWeight(weight)
-    uid: 'ExcelScript!ExcelScript.RangeBorder#setWeight:member(1)'
-    package: ExcelScript!
-    fullName: setWeight(weight)
-    summary: 範囲周辺の罫線の太さを指定します。 詳細は「`ExcelScript.BorderWeight`」をご覧ください。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setWeight(weight: BorderWeight): void;'
-      parameters:
-        - id: weight
-          description: ''
-          type: '<xref uid="ExcelScript!ExcelScript.BorderWeight:enum" />'
-      return:
-        type: void
-        description: ''
+- name: getColor()
+  uid: ExcelScript!ExcelScript.RangeBorder#getColor:member(1)
+  package: ExcelScript!
+  fullName: getColor()
+  summary: RRGGBB 形式 ("FFA500" など) の境界線の色を表す HTML カラー コード、または名前付き HTML 色 \# ("オレンジ色" など) を表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getColor(): string;'
+    return:
+      type: string
+      description: ''
+- name: getSideIndex()
+  uid: ExcelScript!ExcelScript.RangeBorder#getSideIndex:member(1)
+  package: ExcelScript!
+  fullName: getSideIndex()
+  summary: 罫線の特定の辺を表す定数値。 詳細は「`ExcelScript.BorderIndex`」をご覧ください。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getSideIndex(): BorderIndex;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.BorderIndex:enum" />
+      description: ''
+- name: getStyle()
+  uid: ExcelScript!ExcelScript.RangeBorder#getStyle:member(1)
+  package: ExcelScript!
+  fullName: getStyle()
+  summary: 罫線の線スタイルを指定する、線スタイル定数のいずれか 1 つ。 詳細は「`ExcelScript.BorderLineStyle`」をご覧ください。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getStyle(): BorderLineStyle;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.BorderLineStyle:enum" />
+      description: ''
+- name: getTintAndShade()
+  uid: ExcelScript!ExcelScript.RangeBorder#getTintAndShade:member(1)
+  package: ExcelScript!
+  fullName: getTintAndShade()
+  summary: 範囲の境界線の色を明るくまたは暗くする倍数を指定します。値は -1 (最も暗い) ~ 1 (最も明るい) で、元の色の場合は 0 です。 値 `null` は、罫線に均一な設定が含めなかったかどうかを示 `tintAndShade` します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTintAndShade(): number;'
+    return:
+      type: number
+      description: ''
+- name: getWeight()
+  uid: ExcelScript!ExcelScript.RangeBorder#getWeight:member(1)
+  package: ExcelScript!
+  fullName: getWeight()
+  summary: 範囲周辺の罫線の太さを指定します。 詳細は「`ExcelScript.BorderWeight`」をご覧ください。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getWeight(): BorderWeight;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.BorderWeight:enum" />
+      description: ''
+- name: setColor(color)
+  uid: ExcelScript!ExcelScript.RangeBorder#setColor:member(1)
+  package: ExcelScript!
+  fullName: setColor(color)
+  summary: RRGGBB 形式 ("FFA500" など) の境界線の色を表す HTML カラー コード、または名前付き HTML 色 \# ("オレンジ色" など) を表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setColor(color: string): void;'
+    parameters:
+    - id: color
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setStyle(style)
+  uid: ExcelScript!ExcelScript.RangeBorder#setStyle:member(1)
+  package: ExcelScript!
+  fullName: setStyle(style)
+  summary: 罫線の線スタイルを指定する、線スタイル定数のいずれか 1 つ。 詳細は「`ExcelScript.BorderLineStyle`」をご覧ください。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setStyle(style: BorderLineStyle): void;'
+    parameters:
+    - id: style
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.BorderLineStyle:enum" />
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script adds a border around the outside of a range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get a range from the current worksheet.\n  let range = workbook.getActiveWorksheet().getRange(\"B2:E15\");\n\n  // Add a border around the whole bounding range.\n  let format = range.getFormat();\n  format.getRangeBorder(ExcelScript.BorderIndex.edgeTop).setStyle(ExcelScript.BorderLineStyle.continuous); // Top border\n  format.getRangeBorder(ExcelScript.BorderIndex.edgeBottom).setStyle(ExcelScript.BorderLineStyle.continuous); // Bottom border\n  format.getRangeBorder(ExcelScript.BorderIndex.edgeLeft).setStyle(ExcelScript.BorderLineStyle.continuous); // Left border\n  format.getRangeBorder(ExcelScript.BorderIndex.edgeRight).setStyle(ExcelScript.BorderLineStyle.continuous); // Right border\n}\n```"
+- name: setTintAndShade(tintAndShade)
+  uid: ExcelScript!ExcelScript.RangeBorder#setTintAndShade:member(1)
+  package: ExcelScript!
+  fullName: setTintAndShade(tintAndShade)
+  summary: 範囲の境界線の色を明るくまたは暗くする倍数を指定します。値は -1 (最も暗い) ~ 1 (最も明るい) で、元の色の場合は 0 です。 値 `null` は、罫線に均一な設定が含めなかったかどうかを示 `tintAndShade` します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setTintAndShade(tintAndShade: number): void;'
+    parameters:
+    - id: tintAndShade
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setWeight(weight)
+  uid: ExcelScript!ExcelScript.RangeBorder#setWeight:member(1)
+  package: ExcelScript!
+  fullName: setWeight(weight)
+  summary: 範囲周辺の罫線の太さを指定します。 詳細は「`ExcelScript.BorderWeight`」をご覧ください。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setWeight(weight: BorderWeight): void;'
+    parameters:
+    - id: weight
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.BorderWeight:enum" />
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 1c76336a0b4683796b60d045b2cf0cb33f699b36
+  ms.sourcegitcommit: b862905bd3ed886880931647f7c164ae908cb1cd
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 09/29/2021
+  ms.locfileid: "60003737"
