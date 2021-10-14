@@ -21,7 +21,7 @@ methods:
     content: 'activate(): void;'
     return:
       type: void
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script switches the active view to a worksheet named \"Data\", if it exists.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Check if the \"Data\" worksheet exists.\n  let dataWorksheet = workbook.getWorksheet(\"Data\");\n  if (dataWorksheet) {\n    // Switch to the \"Data\" worksheet.\n    dataWorksheet.activate();\n  } else {\n    console.log(`No worksheet named \"Data\" in this workbook.`);\n  }\n}\n```"
 - name: addChart(type, sourceData, seriesBy)
   uid: ExcelScript!ExcelScript.Worksheet#addChart:member(1)
   package: ExcelScript!
@@ -73,7 +73,7 @@ methods:
       description: コメントのコンテンツ。 文字列またはオブジェクトを指定 `CommentRichContent` できます。 文字列は、プレーン テキストに使用されます。 `CommentRichContent` オブジェクトは、メンションなどの他のコメント機能を使用できます。
       type: <xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" /> | string
     - id: contentType
-      description: 省略可能。 コメントに含まれるコンテンツの種類。 既定値は enum です `ContentType.Plain`<!-- -->.
+      description: 省略可能です。 コメントに含まれるコンテンツの種類。 既定値は enum です `ContentType.Plain`<!-- -->.
       type: <xref uid="ExcelScript!ExcelScript.ContentType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
@@ -205,7 +205,7 @@ methods:
       description: 名前が参照する数式または範囲。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: comment
-      description: 省略可能。 名前付きアイテムに関連付けられたコメント。
+      description: 省略可能です。 名前付きアイテムに関連付けられたコメント。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
@@ -233,7 +233,7 @@ methods:
       description: 名前が参照するユーザーのロケールの数式。
       type: string
     - id: comment
-      description: 省略可能。 名前付きアイテムに関連付けられたコメント。
+      description: 省略可能です。 名前付きアイテムに関連付けられたコメント。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
@@ -306,7 +306,7 @@ methods:
       description: フィルター処理するデータ ソースのフィールド。 オブジェクト、オブジェクト、A の ID、または a の名前または `PivotField` `TableColumn` ID `PivotField` を指定できます。 `TableColumn`<!-- -->.
       type: string | <xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | number | <xref uid="ExcelScript!ExcelScript.TableColumn:interface" />
     - id: slicerDestination
-      description: 省略可能。 新しいスライサーが作成されるワークシート。 オブジェクトまたはワークシート `Worksheet` の名前または ID を指定できます。 スライサー コレクションがワークシートから取得される場合は、このパラメーターを省略できます。
+      description: 省略可能です。 新しいスライサーが作成されるワークシート。 オブジェクトまたはワークシート `Worksheet` の名前または ID を指定できます。 スライサー コレクションがワークシートから取得される場合は、このパラメーターを省略できます。
       type: string | <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Slicer:interface" />
@@ -429,7 +429,7 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script duplicates a worksheet named \"Template\". \n * The new worksheet is added after the template.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the worksheet named \"Template\".\n  let template = workbook.getWorksheet(\"Template\");\n\n  // Copy the worksheet.\n  let newSheet = template.copy(\n    ExcelScript.WorksheetPositionType.after,\n    template\n  );\n\n  // Name the worksheet using the current date.\n  let date = new Date(Date.now());\n  newSheet.setName(`${date.toDateString()}`);\n}\n```"
 - name: delete()
   uid: ExcelScript!ExcelScript.Worksheet#delete:member(1)
   package: ExcelScript!
@@ -779,7 +779,7 @@ methods:
     content: 'getNext(visibleOnly?: boolean): Worksheet;'
     parameters:
     - id: visibleOnly
-      description: 省略可能。 もし `true`<!-- -->、表示されているワークシートのみを考慮し、非表示のワークシートをスキップします。
+      description: 省略可能です。 もし `true`<!-- -->、表示されているワークシートのみを考慮し、非表示のワークシートをスキップします。
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -852,7 +852,7 @@ methods:
     content: 'getPrevious(visibleOnly?: boolean): Worksheet;'
     parameters:
     - id: visibleOnly
-      description: 省略可能。 もし `true`<!-- -->、表示されているワークシートのみを考慮し、非表示のワークシートをスキップします。
+      description: 省略可能です。 もし `true`<!-- -->、表示されているワークシートのみを考慮し、非表示のワークシートをスキップします。
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -882,7 +882,7 @@ methods:
     content: 'getRange(address?: string): Range;'
     parameters:
     - id: address
-      description: 省略可能。 範囲のアドレスまたは名前を表す文字列。 たとえば、"A1:B2" とします。 指定されていない場合は、ワークシート全体の範囲が返されます。
+      description: 省略可能です。 範囲のアドレスまたは名前を表す文字列。 たとえば、"A1:B2" とします。 指定されていない場合は、ワークシート全体の範囲が返されます。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -931,7 +931,7 @@ methods:
     content: 'getRanges(address?: string): RangeAreas;'
     parameters:
     - id: address
-      description: 省略可能。 個々の範囲のコンマ区切りアドレスまたは名前を含む文字列。 たとえば、「A1:B2、A5:B5」などです。 指定しない場合は、ワークシート全体の RangeArea オブジェクトが返されます。
+      description: 省略可能です。 個々の範囲のコンマ区切りアドレスまたは名前を含む文字列。 たとえば、「A1:B2、A5:B5」などです。 指定しない場合は、ワークシート全体の RangeArea オブジェクトが返されます。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
@@ -1378,9 +1378,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 26571777e8d9e984b3dea653b3e9e85ed7c41166
-  ms.sourcegitcommit: b862905bd3ed886880931647f7c164ae908cb1cd
+  ms.openlocfilehash: 8d72ac45bf8844897dbdf829fd94f516fbce4bea
+  ms.sourcegitcommit: 453b3731fa9a0e87412009b01c55142cd361b9cd
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/29/2021
-  ms.locfileid: "60003761"
+  ms.lasthandoff: 10/14/2021
+  ms.locfileid: "60355736"

@@ -1,26 +1,33 @@
 ### YamlMime:TSEnum
 name: ExcelScript.KeyboardDirection
-uid: 'ExcelScript!ExcelScript.KeyboardDirection:enum'
+uid: ExcelScript!ExcelScript.KeyboardDirection:enum
 package: ExcelScript!
 fullName: ExcelScript.KeyboardDirection
 summary: ''
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script makes the font bold on all the contiguous cells between \n * A1 and the bottom of the used range of the first column.\n */\nfunction main(workbook: ExcelScript.Workbook)\n{\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Get every cell that's used between A1 and the end of the column.\n  // This recreates the Ctrl+Shift+Down arrow key behavior.\n  let firstCell = selectedSheet.getRange(\"A1\");\n  let firstColumn = firstCell.getExtendedRange(ExcelScript.KeyboardDirection.down);\n\n  // Set the font to bold in that range.\n  firstColumn.getFormat().getFont().setBold(true);\n}\n```"
 isPreview: false
 isDeprecated: false
 fields:
-  - name: down
-    uid: 'ExcelScript!ExcelScript.KeyboardDirection.down:member'
-    package: ExcelScript!
-    summary: ''
-  - name: left
-    uid: 'ExcelScript!ExcelScript.KeyboardDirection.left:member'
-    package: ExcelScript!
-    summary: ''
-  - name: right
-    uid: 'ExcelScript!ExcelScript.KeyboardDirection.right:member'
-    package: ExcelScript!
-    summary: ''
-  - name: up
-    uid: 'ExcelScript!ExcelScript.KeyboardDirection.up:member'
-    package: ExcelScript!
-    summary: ''
+- name: down
+  uid: ExcelScript!ExcelScript.KeyboardDirection.down:member
+  package: ExcelScript!
+  summary: ''
+- name: left
+  uid: ExcelScript!ExcelScript.KeyboardDirection.left:member
+  package: ExcelScript!
+  summary: ''
+- name: right
+  uid: ExcelScript!ExcelScript.KeyboardDirection.right:member
+  package: ExcelScript!
+  summary: ''
+- name: up
+  uid: ExcelScript!ExcelScript.KeyboardDirection.up:member
+  package: ExcelScript!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 83168ee0b12a647152d32ecbb9b3d34e323f2117
+  ms.sourcegitcommit: 453b3731fa9a0e87412009b01c55142cd361b9cd
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 10/14/2021
+  ms.locfileid: "60355750"

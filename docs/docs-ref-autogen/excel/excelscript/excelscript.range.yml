@@ -479,7 +479,7 @@ methods:
       type: "<xref uid=\"ExcelScript!ExcelScript.Range:interface\" /> | string\n        "
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script makes the font bold on all the contiguous cells between \n * A1 and the bottom of the used range of the first column.\n */\nfunction main(workbook: ExcelScript.Workbook)\n{\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Get every cell that's used between A1 and the end of the column.\n  // This recreates the Ctrl+Shift+Down arrow key behavior.\n  let firstCell = selectedSheet.getRange(\"A1\");\n  let firstColumn = firstCell.getExtendedRange(ExcelScript.KeyboardDirection.down);\n\n  // Set the font to bold in that range.\n  firstColumn.getFormat().getFont().setBold(true);\n}\n```"
 - name: getFormat()
   uid: ExcelScript!ExcelScript.Range#getFormat:member(1)
   package: ExcelScript!
@@ -921,7 +921,7 @@ methods:
       type: "<xref uid=\"ExcelScript!ExcelScript.Range:interface\" /> | string\n        "
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script adds the value \"Total\" after the end of the first column.\n */\nfunction main(workbook: ExcelScript.Workbook)\n{\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Get the last used cell at the end of the column.\n  // This recreates the Ctrl+Down arrow key behavior.\n  let firstCell = selectedSheet.getRange(\"A1\");\n  let firstColumn = selectedSheet.getRange(\"A1\").getRangeEdge(ExcelScript.KeyboardDirection.down);\n  let cellAfter = firstColumn.getOffsetRange(1, 0);\n\n  // Set the value of the cell after the current end of the used column to \"Total\".\n  cellAfter.setValue(\"Total\");\n}\n```"
 - name: getResizedRange(deltaRows, deltaColumns)
   uid: ExcelScript!ExcelScript.Range#getResizedRange:member(1)
   package: ExcelScript!
@@ -1348,7 +1348,7 @@ methods:
     content: 'merge(across?: boolean): void;'
     parameters:
     - id: across
-      description: 省略可能。 指定 `true` した範囲の各行のセルを個別の結合セルとして結合します。 既定値は次の値です。 `false`<!-- -->.
+      description: 省略可能です。 指定 `true` した範囲の各行のセルを個別の結合セルとして結合します。 既定値は次の値です。 `false`<!-- -->.
       type: boolean
     return:
       type: void
@@ -1781,9 +1781,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 6d238bce547d0bd250e01dde04b04e32173d8bf2
-  ms.sourcegitcommit: b862905bd3ed886880931647f7c164ae908cb1cd
+  ms.openlocfilehash: e44255d9c8f0023ddc124fd4a84f7583ce094a97
+  ms.sourcegitcommit: 453b3731fa9a0e87412009b01c55142cd361b9cd
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/29/2021
-  ms.locfileid: "60003754"
+  ms.lasthandoff: 10/14/2021
+  ms.locfileid: "60355764"
