@@ -108,7 +108,7 @@ methods:
       description: コメントのコンテンツ。 文字列またはオブジェクトを指定 `CommentRichContent` できます。 文字列は、プレーン テキストに使用されます。 `CommentRichContent` オブジェクトは、メンションなどの他のコメント機能を使用できます。
       type: <xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" /> | string
     - id: contentType
-      description: 省略可能です。 コメントに含まれるコンテンツの種類。 既定値は enum です `ContentType.Plain`<!-- -->.
+      description: オプション。 コメントに含まれるコンテンツの種類。 既定値は enum です `ContentType.Plain`<!-- -->.
       type: <xref uid="ExcelScript!ExcelScript.ContentType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
@@ -153,7 +153,7 @@ methods:
       description: 名前が参照する数式または範囲。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: comment
-      description: 省略可能です。 名前付きアイテムに関連付けられたコメント。
+      description: オプション。 名前付きアイテムに関連付けられたコメント。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
@@ -181,7 +181,7 @@ methods:
       description: 名前が参照するユーザーのロケールの数式。
       type: string
     - id: comment
-      description: 省略可能です。 名前付きアイテムに関連付けられたコメント。
+      description: オプション。 名前付きアイテムに関連付けられたコメント。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
@@ -233,7 +233,7 @@ methods:
       description: 新しいピボットテーブル スタイルの一意の名前。 名前が既 `InvalidArgument` に使用されている場合は、エラーがスローされます。
       type: string
     - id: makeUniqueName
-      description: 省略可能です。 既定値は `false`。<!-- -->. もし `true`<!-- -->をクリックすると、必要に応じて一意の番号を名前に追加します。
+      description: オプション。 既定値は `false`。<!-- -->. もし `true`<!-- -->をクリックすると、必要に応じて一意の番号を名前に追加します。
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.PivotTableStyle:interface" />
@@ -278,7 +278,7 @@ methods:
       description: フィルター処理するデータ ソースのフィールド。 オブジェクト、オブジェクト、A の ID、または a の名前または `PivotField` `TableColumn` ID `PivotField` を指定できます。 `TableColumn`<!-- -->.
       type: string | <xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | number | <xref uid="ExcelScript!ExcelScript.TableColumn:interface" />
     - id: slicerDestination
-      description: 省略可能です。 新しいスライサーが作成されるワークシート。 オブジェクトまたはワークシート `Worksheet` の名前または ID を指定できます。 スライサー コレクションがワークシートから取得される場合は、このパラメーターを省略できます。
+      description: オプション。 新しいスライサーが作成されるワークシート。 オブジェクトまたはワークシート `Worksheet` の名前または ID を指定できます。 スライサー コレクションがワークシートから取得される場合は、このパラメーターを省略できます。
       type: string | <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Slicer:interface" />
@@ -298,7 +298,7 @@ methods:
       description: 新しいスライサー スタイルの一意の名前。 名前が既 `InvalidArgument` に使用されている場合は例外をスローします。
       type: string
     - id: makeUniqueName
-      description: 省略可能です。 既定値は `false`。<!-- -->. もし `true`<!-- -->をクリックすると、必要に応じて一意の番号を名前に追加します。
+      description: オプション。 既定値は `false`。<!-- -->. もし `true`<!-- -->をクリックすると、必要に応じて一意の番号を名前に追加します。
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.SlicerStyle:interface" />
@@ -338,7 +338,7 @@ methods:
       description: 新しいテーブル スタイルの一意の名前。 名前が既 `InvalidArgument` に使用されている場合は、エラーがスローされます。
       type: string
     - id: makeUniqueName
-      description: 省略可能です。 既定値は `false`。<!-- -->. もし `true`<!-- -->をクリックすると、必要に応じて一意の番号を名前に追加します。
+      description: オプション。 既定値は `false`。<!-- -->. もし `true`<!-- -->をクリックすると、必要に応じて一意の番号を名前に追加します。
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.TableStyle:interface" />
@@ -358,7 +358,7 @@ methods:
       description: 新しいタイムライン スタイルの一意の名前。 名前が既 `InvalidArgument` に使用されている場合は、エラーがスローされます。
       type: string
     - id: makeUniqueName
-      description: 省略可能です。 既定値は `false`。<!-- -->. もし `true`<!-- -->をクリックすると、必要に応じて一意の番号を名前に追加します。
+      description: オプション。 既定値は `false`。<!-- -->. もし `true`<!-- -->をクリックすると、必要に応じて一意の番号を名前に追加します。
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.TimelineStyle:interface" />
@@ -380,6 +380,19 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
       description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script adds a new worksheet named \"Data\" to the workbook.\n * If a worksheet with that name already exists, the script logs a note.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Check if the \"Data\" worksheet already exists.\n  if (workbook.getWorksheet(\"Data\")) {\n    console.log(\"The Data worksheet is already in the workbook.\");\n  } else {\n    // Add a new worksheet.\n    let worksheet = workbook.addWorksheet(\"Data\");\n  }\n}\n```"
+- name: breakAllLinksToLinkedWorkbooks()
+  uid: ExcelScript!ExcelScript.Workbook#breakAllLinksToLinkedWorkbooks:member(1)
+  package: ExcelScript!
+  fullName: breakAllLinksToLinkedWorkbooks()
+  summary: リンクされたブックへのすべてのリンクを壊します。 リンクが壊れたら、ブックリンクを参照する数式は完全に削除され、最近取得した値に置き換えられる。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'breakAllLinksToLinkedWorkbooks(): void;'
+    return:
+      type: void
+      description: ''
 - name: getActiveCell()
   uid: ExcelScript!ExcelScript.Workbook#getActiveCell:member(1)
   package: ExcelScript!
@@ -707,7 +720,7 @@ methods:
     content: 'getFirstWorksheet(visibleOnly?: boolean): Worksheet;'
     parameters:
     - id: visibleOnly
-      description: 省略可能です。 もし `true`<!-- -->、表示されているワークシートのみを考慮し、非表示のワークシートをスキップします。
+      description: オプション。 もし `true`<!-- -->、表示されているワークシートのみを考慮し、非表示のワークシートをスキップします。
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -737,10 +750,53 @@ methods:
     content: 'getLastWorksheet(visibleOnly?: boolean): Worksheet;'
     parameters:
     - id: visibleOnly
-      description: 省略可能です。 もし `true`<!-- -->、表示されているワークシートのみを考慮し、非表示のワークシートをスキップします。
+      description: オプション。 もし `true`<!-- -->、表示されているワークシートのみを考慮し、非表示のワークシートをスキップします。
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
+      description: ''
+- name: getLinkedWorkbookByUrl(key)
+  uid: ExcelScript!ExcelScript.Workbook#getLinkedWorkbookByUrl:member(1)
+  package: ExcelScript!
+  fullName: getLinkedWorkbookByUrl(key)
+  summary: リンクされたブックに関する情報を URL で取得します。 ブックが存在しない場合、この関数はプロパティを次に設定した `isNullObject` オブジェクトを返します。 `true`<!-- -->.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLinkedWorkbookByUrl(key: string): LinkedWorkbook | undefined;'
+    parameters:
+    - id: key
+      description: リンクされたブックの URL。
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.LinkedWorkbook:interface" /> | undefined
+      description: ''
+- name: getLinkedWorkbookRefreshMode()
+  uid: ExcelScript!ExcelScript.Workbook#getLinkedWorkbookRefreshMode:member(1)
+  package: ExcelScript!
+  fullName: getLinkedWorkbookRefreshMode()
+  summary: ブック リンクの更新モードを表します。 このモードは、ブック内に存在するブック リンクすべてについて同じです。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLinkedWorkbookRefreshMode(): WorkbookLinksRefreshMode;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.WorkbookLinksRefreshMode:enum" />
+      description: ''
+- name: getLinkedWorkbooks()
+  uid: ExcelScript!ExcelScript.Workbook#getLinkedWorkbooks:member(1)
+  package: ExcelScript!
+  fullName: getLinkedWorkbooks()
+  summary: リンクされたブックのコレクションを返します。 数式では、ブック リンクを使用して、現在のブックの外部のデータ (セルの値と名前) を参照できます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLinkedWorkbooks(): LinkedWorkbook[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.LinkedWorkbook:interface" />[]
       description: ''
 - name: getName()
   uid: ExcelScript!ExcelScript.Workbook#getName:member(1)
@@ -1159,6 +1215,19 @@ methods:
     return:
       type: void
       description: ''
+- name: refreshAllLinksToLinkedWorkbooks()
+  uid: ExcelScript!ExcelScript.Workbook#refreshAllLinksToLinkedWorkbooks:member(1)
+  package: ExcelScript!
+  fullName: refreshAllLinksToLinkedWorkbooks()
+  summary: すべてのブック リンクを更新する要求を行います。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'refreshAllLinksToLinkedWorkbooks(): void;'
+    return:
+      type: void
+      description: ''
 - name: refreshAllPivotTables()
   uid: ExcelScript!ExcelScript.Workbook#refreshAllPivotTables:member(1)
   package: ExcelScript!
@@ -1277,6 +1346,26 @@ methods:
     return:
       type: void
       description: ''
+- name: setLinkedWorkbookRefreshMode(linkedWorkbookRefreshMode)
+  uid: ExcelScript!ExcelScript.Workbook#setLinkedWorkbookRefreshMode:member(1)
+  package: ExcelScript!
+  fullName: setLinkedWorkbookRefreshMode(linkedWorkbookRefreshMode)
+  summary: ブック リンクの更新モードを表します。 このモードは、ブック内に存在するブック リンクすべてについて同じです。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      setLinkedWorkbookRefreshMode(
+                  linkedWorkbookRefreshMode: WorkbookLinksRefreshMode
+              ): void;
+    parameters:
+    - id: linkedWorkbookRefreshMode
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.WorkbookLinksRefreshMode:enum" />
+    return:
+      type: void
+      description: ''
 - name: setUsePrecisionAsDisplayed(usePrecisionAsDisplayed)
   uid: ExcelScript!ExcelScript.Workbook#setUsePrecisionAsDisplayed:member(1)
   package: ExcelScript!
@@ -1295,9 +1384,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 1861d589a81d75380b4f92bccb13376a263cf6b6
-  ms.sourcegitcommit: 453b3731fa9a0e87412009b01c55142cd361b9cd
+  ms.openlocfilehash: 6639d3d72f5077f3f49c1ad953085ecd684ef599
+  ms.sourcegitcommit: 279af9e14fb2bf9e0d54a7e3ead0e3c4ca4164e8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 10/14/2021
-  ms.locfileid: "60355757"
+  ms.lasthandoff: 11/05/2021
+  ms.locfileid: "60793367"

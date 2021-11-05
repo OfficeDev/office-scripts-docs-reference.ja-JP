@@ -1,0 +1,25 @@
+### YamlMime:TSEnum
+name: ExcelScript.WorkbookLinksRefreshMode
+uid: ExcelScript!ExcelScript.WorkbookLinksRefreshMode:enum
+package: ExcelScript!
+fullName: ExcelScript.WorkbookLinksRefreshMode
+summary: ブック リンクの更新モードを表します。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: automatic
+  uid: ExcelScript!ExcelScript.WorkbookLinksRefreshMode.automatic:member
+  package: ExcelScript!
+  summary: ブック のリンクは、アプリケーションによって決定される一定の間隔Excelされます。
+- name: manual
+  uid: ExcelScript!ExcelScript.WorkbookLinksRefreshMode.manual:member
+  package: ExcelScript!
+  summary: ブックリンクは手動で更新されます。
+metadata:
+  ms.openlocfilehash: b10e670da4146f94e49053a67d15c391909009de
+  ms.sourcegitcommit: 279af9e14fb2bf9e0d54a7e3ead0e3c4ca4164e8
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/05/2021
+  ms.locfileid: "60793433"

@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.AutoFilter
-uid: 'ExcelScript!ExcelScript.AutoFilter:interface'
+uid: ExcelScript!ExcelScript.AutoFilter:interface
 package: ExcelScript!
 fullName: ExcelScript.AutoFilter
 summary: オブジェクトを表 `AutoFilter` します。 オートフィルターは、セルの内容に基Excel列の値を特定のフィルターに変換します。
@@ -9,122 +9,129 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-  - name: 'apply(range, columnIndex, criteria)'
-    uid: 'ExcelScript!ExcelScript.AutoFilter#apply:member(1)'
-    package: ExcelScript!
-    fullName: 'apply(range, columnIndex, criteria)'
-    summary: 範囲にオートフィルターを適用します。 列インデックスやフィルター条件が指定されている場合、列にフィルターを適用します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: |-
-        apply(
-                    range: Range | string,
-                    columnIndex?: number,
-                    criteria?: FilterCriteria
-                ): void;
-      parameters:
-        - id: range
-          description: オートフィルターが適用される範囲。
-          type: '<xref uid="ExcelScript!ExcelScript.Range:interface" /> | string'
-        - id: columnIndex
-          description: オートフィルターが適用される 0 から始る列インデックス。
-          type: number
-        - id: criteria
-          description: フィルター条件。
-          type: '<xref uid="ExcelScript!ExcelScript.FilterCriteria:interface" />'
-      return:
-        type: void
-        description: ''
-  - name: clearCriteria()
-    uid: 'ExcelScript!ExcelScript.AutoFilter#clearCriteria:member(1)'
-    package: ExcelScript!
-    fullName: clearCriteria()
-    summary: オートフィルターのフィルター条件がクリアされます。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'clearCriteria(): void;'
-      return:
-        type: void
-        description: ''
-  - name: getCriteria()
-    uid: 'ExcelScript!ExcelScript.AutoFilter#getCriteria:member(1)'
-    package: ExcelScript!
-    fullName: getCriteria()
-    summary: オートフィルターが適用された範囲のすべてのフィルター条件を保持する配列です。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getCriteria(): FilterCriteria[];'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.FilterCriteria:interface" />[]'
-        description: ''
-  - name: getEnabled()
-    uid: 'ExcelScript!ExcelScript.AutoFilter#getEnabled:member(1)'
-    package: ExcelScript!
-    fullName: getEnabled()
-    summary: オートフィルターが有効になっている場合に指定します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getEnabled(): boolean;'
-      return:
-        type: boolean
-        description: ''
-  - name: getIsDataFiltered()
-    uid: 'ExcelScript!ExcelScript.AutoFilter#getIsDataFiltered:member(1)'
-    package: ExcelScript!
-    fullName: getIsDataFiltered()
-    summary: オートフィルターにフィルター条件がある場合に指定します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getIsDataFiltered(): boolean;'
-      return:
-        type: boolean
-        description: ''
-  - name: getRange()
-    uid: 'ExcelScript!ExcelScript.AutoFilter#getRange:member(1)'
-    package: ExcelScript!
-    fullName: getRange()
-    summary: '`Range`オートフィルターを適用する範囲を表すオブジェクトを返します。 AutoFilter に関連付けられたオブジェクトがない場合、このメソッドはプロパティを設定したオブジェクト `Range` `isNullObject` を次の値に戻します。 `true`<!-- -->.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getRange(): Range;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
-        description: ''
-  - name: reapply()
-    uid: 'ExcelScript!ExcelScript.AutoFilter#reapply:member(1)'
-    package: ExcelScript!
-    fullName: reapply()
-    summary: その範囲で現在指定されている Autofilter オブジェクトを適用します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'reapply(): void;'
-      return:
-        type: void
-        description: ''
-  - name: remove()
-    uid: 'ExcelScript!ExcelScript.AutoFilter#remove:member(1)'
-    package: ExcelScript!
-    fullName: remove()
-    summary: 範囲の AutoFilter を削除します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'remove(): void;'
-      return:
-        type: void
-        description: ''
+- name: apply(range, columnIndex, criteria)
+  uid: ExcelScript!ExcelScript.AutoFilter#apply:member(1)
+  package: ExcelScript!
+  fullName: apply(range, columnIndex, criteria)
+  summary: 範囲にオートフィルターを適用します。 列インデックスやフィルター条件が指定されている場合、列にフィルターを適用します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      apply(
+                  range: Range | string,
+                  columnIndex?: number,
+                  criteria?: FilterCriteria
+              ): void;
+    parameters:
+    - id: range
+      description: オートフィルターが適用される範囲。
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
+    - id: columnIndex
+      description: オートフィルターが適用される 0 から始る列インデックス。
+      type: number
+    - id: criteria
+      description: フィルター条件。
+      type: <xref uid="ExcelScript!ExcelScript.FilterCriteria:interface" />
+    return:
+      type: void
+      description: ''
+- name: clearCriteria()
+  uid: ExcelScript!ExcelScript.AutoFilter#clearCriteria:member(1)
+  package: ExcelScript!
+  fullName: clearCriteria()
+  summary: オートフィルターのフィルター条件と並べ替え状態をクリアします。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'clearCriteria(): void;'
+    return:
+      type: void
+      description: ''
+- name: getCriteria()
+  uid: ExcelScript!ExcelScript.AutoFilter#getCriteria:member(1)
+  package: ExcelScript!
+  fullName: getCriteria()
+  summary: オートフィルターが適用された範囲のすべてのフィルター条件を保持する配列です。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCriteria(): FilterCriteria[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.FilterCriteria:interface" />[]
+      description: ''
+- name: getEnabled()
+  uid: ExcelScript!ExcelScript.AutoFilter#getEnabled:member(1)
+  package: ExcelScript!
+  fullName: getEnabled()
+  summary: オートフィルターが有効になっている場合に指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getEnabled(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getIsDataFiltered()
+  uid: ExcelScript!ExcelScript.AutoFilter#getIsDataFiltered:member(1)
+  package: ExcelScript!
+  fullName: getIsDataFiltered()
+  summary: オートフィルターにフィルター条件がある場合に指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getIsDataFiltered(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getRange()
+  uid: ExcelScript!ExcelScript.AutoFilter#getRange:member(1)
+  package: ExcelScript!
+  fullName: getRange()
+  summary: '`Range`オートフィルターを適用する範囲を表すオブジェクトを返します。 AutoFilter に関連付けられたオブジェクトがない場合、このメソッドはプロパティを設定したオブジェクト `Range` `isNullObject` を次の値に戻します。 `true`<!-- -->.'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRange(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: reapply()
+  uid: ExcelScript!ExcelScript.AutoFilter#reapply:member(1)
+  package: ExcelScript!
+  fullName: reapply()
+  summary: その範囲で現在指定されている Autofilter オブジェクトを適用します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'reapply(): void;'
+    return:
+      type: void
+      description: ''
+- name: remove()
+  uid: ExcelScript!ExcelScript.AutoFilter#remove:member(1)
+  package: ExcelScript!
+  fullName: remove()
+  summary: 範囲の AutoFilter を削除します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'remove(): void;'
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: e798066ad83627541c710f23dd17468bc22e9c66
+  ms.sourcegitcommit: 279af9e14fb2bf9e0d54a7e3ead0e3c4ca4164e8
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/05/2021
+  ms.locfileid: "60793353"

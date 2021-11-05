@@ -3,7 +3,7 @@ name: ExcelScript.Range
 uid: ExcelScript!ExcelScript.Range:interface
 package: ExcelScript!
 fullName: ExcelScript.Range
-summary: 範囲は、1 つ以上の隣接するセル (セル、行、列、セルのブロックなど) のセットを表します。
+summary: Range は、セル、行、列、またはセルのブロックなど、1 つ以上の連続するセルのセットを表します。
 remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script logs the address of the used range in the current worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current, active worksheet.\n  let currentWorksheet = workbook.getActiveWorksheet();\n\n  // Get the range containing all the cells with data or formatting.\n  let usedRange = currentWorksheet.getUsedRange();\n\n  // Log the range's address to the console.\n  console.log(usedRange.getAddress());\n}\n```"
 isPreview: false
 isDeprecated: false
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#find:member(1)
   package: ExcelScript!
   fullName: find(text, criteria)
-  summary: 指定された条件に基づいて指定された文字列を見つけます。 現在の範囲が 1 つのセルより大きい場合、検索はその範囲に制限されます。それ以外の場合、検索はそのセルの後からシート全体をカバーします。 一致がない場合、この関数はプロパティが次に設定された `isNullObject` オブジェクトを返します。 `true`<!-- -->.
+  summary: 指定された条件に基づいて指定された文字列を見つけます。 現在の範囲が 1 つのセルより大きい場合、検索はその範囲に制限されます。それ以外の場合、検索はそのセルの後からシート全体をカバーします。 一致がない場合、この関数は `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -167,10 +167,10 @@ methods:
     content: 'find(text: string, criteria: SearchCriteria): Range;'
     parameters:
     - id: text
-      description: 検索する文字列。
+      description: ''
       type: string
     - id: criteria
-      description: 検索の方向、検索がセル全体と一致する必要があるかどうか、大文字と小文字を区別する必要があるかどうかなど、追加の検索条件。
+      description: ''
       type: <xref uid="ExcelScript!ExcelScript.SearchCriteria:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -640,7 +640,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getIntersection:member(1)
   package: ExcelScript!
   fullName: getIntersection(anotherRange)
-  summary: 指定した範囲の長方形の交差を表す範囲オブジェクトを取得します。 交差が見つからない場合、この関数はプロパティが次に設定された `isNullObject` オブジェクトを返します。 `true`<!-- -->.
+  summary: 指定した範囲の長方形の交差を表す範囲オブジェクトを取得します。 交差が見つからない場合、この関数は `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -648,7 +648,7 @@ methods:
     content: 'getIntersection(anotherRange: Range | string): Range;'
     parameters:
     - id: anotherRange
-      description: 範囲の交差を判断するために使用される、Range オブジェクトまたは Range アドレス。
+      description: ''
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -1062,7 +1062,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpecialCells:member(1)
   package: ExcelScript!
   fullName: getSpecialCells(cellType, cellValueType)
-  summary: 指定した種類と値に一致するセルを表す 1 つ以上の範囲を含むオブジェクト `RangeAreas` を取得します。 特別なセルが見つからない場合、この関数はプロパティが次に設定された `isNullObject` オブジェクトを返します。 `true`<!-- -->.
+  summary: 指定した種類と値に一致するセルを表す 1 つ以上の範囲を含むオブジェクト `RangeAreas` を取得します。 特別なセルが見つからない場合、この関数は `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1074,10 +1074,10 @@ methods:
               ): RangeAreas;
     parameters:
     - id: cellType
-      description: 含めるセルの種類。
+      description: ''
       type: <xref uid="ExcelScript!ExcelScript.SpecialCellType:enum" />
     - id: cellValueType
-      description: If `cellType` は、または `constants``formulas`<!-- -->、この引数は、結果に含めるセルの種類を決定するために使用されます。 これらの値を組み合わせて、複数の型を返します。 この引数を省略すると、すべての定数および数式が対象になります。
+      description: ''
       type: <xref uid="ExcelScript!ExcelScript.SpecialCellValueType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
@@ -1086,7 +1086,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpillingToRange:member(1)
   package: ExcelScript!
   fullName: getSpillingToRange()
-  summary: アンカー セルで呼び出されたとき、スピル範囲を含む範囲オブジェクトを取得します。 範囲がアンカー セルではないか、スピル範囲が見つからない場合、この関数はプロパティが次に設定された `isNullObject` オブジェクトを返します。 `true`<!-- -->.
+  summary: アンカー セルで呼び出されたとき、スピル範囲を含む範囲オブジェクトを取得します。 範囲がアンカー セルではないか、スピル範囲が見つからない場合、この関数は返します。 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1099,7 +1099,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpillParent:member(1)
   package: ExcelScript!
   fullName: getSpillParent()
-  summary: セルが流出するアンカー セルを含む範囲オブジェクトを取得します。 セルがこぼれたセルではないか、複数のセルが指定されている場合、この関数はプロパティが次の値に設定されたオブジェクト `isNullObject` を返します。 `true`<!-- -->.
+  summary: セルが流出するアンカー セルを含む範囲オブジェクトを取得します。 こぼれたセルではないか、複数のセルが指定されている場合、この関数は返します。 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1181,7 +1181,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getUsedRange:member(1)
   package: ExcelScript!
   fullName: getUsedRange(valuesOnly)
-  summary: 指定した範囲オブジェクトのうち使用されている範囲を返します。 範囲内に使用されているセルがない場合、この関数はプロパティが次の値に設定された `isNullObject` オブジェクトを返します。 `true`<!-- -->.
+  summary: 指定した範囲オブジェクトのうち使用されている範囲を返します。 範囲内に使用されているセルがない場合、この関数は `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1189,7 +1189,7 @@ methods:
     content: 'getUsedRange(valuesOnly?: boolean): Range;'
     parameters:
     - id: valuesOnly
-      description: 値の入っているセルのみを使用セルと見なします。
+      description: ''
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -1348,7 +1348,7 @@ methods:
     content: 'merge(across?: boolean): void;'
     parameters:
     - id: across
-      description: 省略可能です。 指定 `true` した範囲の各行のセルを個別の結合セルとして結合します。 既定値は次の値です。 `false`<!-- -->.
+      description: オプション。 指定 `true` した範囲の各行のセルを個別の結合セルとして結合します。 既定値は次の値です。 `false`<!-- -->.
       type: boolean
     return:
       type: void
@@ -1781,9 +1781,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: e44255d9c8f0023ddc124fd4a84f7583ce094a97
-  ms.sourcegitcommit: 453b3731fa9a0e87412009b01c55142cd361b9cd
+  ms.openlocfilehash: 6f92ae14072075e94e23da505d833044859315ff
+  ms.sourcegitcommit: 279af9e14fb2bf9e0d54a7e3ead0e3c4ca4164e8
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 10/14/2021
-  ms.locfileid: "60355764"
+  ms.lasthandoff: 11/05/2021
+  ms.locfileid: "60793381"

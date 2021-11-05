@@ -1,0 +1,44 @@
+### YamlMime:TSType
+name: ExcelScript.LinkedWorkbook
+uid: ExcelScript!ExcelScript.LinkedWorkbook:interface
+package: ExcelScript!
+fullName: ExcelScript.LinkedWorkbook
+summary: リンクされたブックに関する情報が含まれます。 ブックに別のブック内のデータを指すリンクがある場合、2 番目のブックは最初のブックにリンクされます。 このシナリオでは、2 番目のブックは "リンクされたブック" と呼ばれる。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: breakLinks()
+  uid: ExcelScript!ExcelScript.LinkedWorkbook#breakLinks:member(1)
+  package: ExcelScript!
+  fullName: breakLinks()
+  summary: リンクされたブックを指すリンクを壊す要求を行います。 数式内のリンクは、最新のフェッチされたデータに置き換えられる。 現在の `LinkedWorkbook` オブジェクトは無効化され、削除されます。 `LinkedWorkbookCollection`<!-- -->.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'breakLinks(): void;'
+    return:
+      type: void
+      description: ''
+- name: refreshLinks()
+  uid: ExcelScript!ExcelScript.LinkedWorkbook#refreshLinks:member(1)
+  package: ExcelScript!
+  fullName: refreshLinks()
+  summary: リンクされたブックから取得したデータを更新する要求を行います。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'refreshLinks(): void;'
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 62aaa5917dd461c5b2e2b9b12281f41897ecfc57
+  ms.sourcegitcommit: 279af9e14fb2bf9e0d54a7e3ead0e3c4ca4164e8
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/05/2021
+  ms.locfileid: "60793438"
