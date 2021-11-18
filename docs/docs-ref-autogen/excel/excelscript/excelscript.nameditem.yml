@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.NamedItem
-uid: 'ExcelScript!ExcelScript.NamedItem:interface'
+uid: ExcelScript!ExcelScript.NamedItem:interface
 package: ExcelScript!
 fullName: ExcelScript.NamedItem
 summary: セルまたは値の範囲の定義済みの名前を表します。 名前には、プリミティブという名前のオブジェクト (以下の種類に見られる)、range オブジェクト、または範囲への参照を指定できます。 このオブジェクトを使用して、名前に関連付けられた範囲オブジェクトを取得することができます。
@@ -9,197 +9,204 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-  - name: delete()
-    uid: 'ExcelScript!ExcelScript.NamedItem#delete:member(1)'
-    package: ExcelScript!
-    fullName: delete()
-    summary: 指定された名前を削除します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'delete(): void;'
-      return:
-        type: void
-        description: ''
-  - name: getArrayValues()
-    uid: 'ExcelScript!ExcelScript.NamedItem#getArrayValues:member(1)'
-    package: ExcelScript!
-    fullName: getArrayValues()
-    summary: 名前付きアイテムの値と型を含むオブジェクトを返します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getArrayValues(): NamedItemArrayValues;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.NamedItemArrayValues:interface" />'
-        description: ''
-  - name: getComment()
-    uid: 'ExcelScript!ExcelScript.NamedItem#getComment:member(1)'
-    package: ExcelScript!
-    fullName: getComment()
-    summary: この名前に関連付けられたコメントを指定します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getComment(): string;'
-      return:
-        type: string
-        description: ''
-  - name: getFormula()
-    uid: 'ExcelScript!ExcelScript.NamedItem#getFormula:member(1)'
-    package: ExcelScript!
-    fullName: getFormula()
-    summary: 名前付きアイテムの数式。 数式は常に等号 ("=") で始まる。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getFormula(): string;'
-      return:
-        type: string
-        description: ''
-  - name: getName()
-    uid: 'ExcelScript!ExcelScript.NamedItem#getName:member(1)'
-    package: ExcelScript!
-    fullName: getName()
-    summary: オブジェクトの名前。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getName(): string;'
-      return:
-        type: string
-        description: ''
-  - name: getRange()
-    uid: 'ExcelScript!ExcelScript.NamedItem#getRange:member(1)'
-    package: ExcelScript!
-    fullName: getRange()
-    summary: 名前に関連付けられている範囲オブジェクトを返します。 名前付きアイテムの型が範囲ではない場合、この関数はプロパティが次の値に設定された `isNullObject` オブジェクトを返します。 `true`<!-- -->.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getRange(): Range;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
-        description: ''
-  - name: getScope()
-    uid: 'ExcelScript!ExcelScript.NamedItem#getScope:member(1)'
-    package: ExcelScript!
-    fullName: getScope()
-    summary: 名前をブックまたは特定のワークシートの範囲に設定する場合に指定します。 使用できる値は、ワークシート、ブックです。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getScope(): NamedItemScope;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.NamedItemScope:enum" />'
-        description: ''
-  - name: getType()
-    uid: 'ExcelScript!ExcelScript.NamedItem#getType:member(1)'
-    package: ExcelScript!
-    fullName: getType()
-    summary: 名前の数式によって返される値の種類を指定します。 詳細は「`ExcelScript.NamedItemType`」をご覧ください。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getType(): NamedItemType;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.NamedItemType:enum" />'
-        description: ''
-  - name: getValue()
-    uid: 'ExcelScript!ExcelScript.NamedItem#getValue:member(1)'
-    package: ExcelScript!
-    fullName: getValue()
-    summary: 名前の数式で計算された値を表します。 名前付き範囲の場合は範囲のアドレスを返します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getValue(): string | number;'
-      return:
-        type: string | number
-        description: ''
-  - name: getVisible()
-    uid: 'ExcelScript!ExcelScript.NamedItem#getVisible:member(1)'
-    package: ExcelScript!
-    fullName: getVisible()
-    summary: オブジェクトが表示される場合に指定します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getVisible(): boolean;'
-      return:
-        type: boolean
-        description: ''
-  - name: getWorksheet()
-    uid: 'ExcelScript!ExcelScript.NamedItem#getWorksheet:member(1)'
-    package: ExcelScript!
-    fullName: getWorksheet()
-    summary: 名前付きアイテムのスコープを設定するワークシートを返します。 代わりにアイテムのスコープがブックに設定されている場合、この関数はプロパティを設定したオブジェクト `isNullObject` を返します。 `true`<!-- -->.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getWorksheet(): Worksheet | undefined;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.Worksheet:interface" /> | undefined'
-        description: ''
-  - name: setComment(comment)
-    uid: 'ExcelScript!ExcelScript.NamedItem#setComment:member(1)'
-    package: ExcelScript!
-    fullName: setComment(comment)
-    summary: この名前に関連付けられたコメントを指定します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setComment(comment: string): void;'
-      parameters:
-        - id: comment
-          description: ''
-          type: string
-      return:
-        type: void
-        description: ''
-  - name: setFormula(formula)
-    uid: 'ExcelScript!ExcelScript.NamedItem#setFormula:member(1)'
-    package: ExcelScript!
-    fullName: setFormula(formula)
-    summary: 名前付きアイテムの数式。 数式は常に等号 ("=") で始まる。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setFormula(formula: string): void;'
-      parameters:
-        - id: formula
-          description: ''
-          type: string
-      return:
-        type: void
-        description: ''
-  - name: setVisible(visible)
-    uid: 'ExcelScript!ExcelScript.NamedItem#setVisible:member(1)'
-    package: ExcelScript!
-    fullName: setVisible(visible)
-    summary: オブジェクトが表示される場合に指定します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setVisible(visible: boolean): void;'
-      parameters:
-        - id: visible
-          description: ''
-          type: boolean
-      return:
-        type: void
-        description: ''
+- name: delete()
+  uid: ExcelScript!ExcelScript.NamedItem#delete:member(1)
+  package: ExcelScript!
+  fullName: delete()
+  summary: 指定された名前を削除します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(): void;'
+    return:
+      type: void
+      description: ''
+- name: getArrayValues()
+  uid: ExcelScript!ExcelScript.NamedItem#getArrayValues:member(1)
+  package: ExcelScript!
+  fullName: getArrayValues()
+  summary: 名前付きアイテムの値と型を含むオブジェクトを返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getArrayValues(): NamedItemArrayValues;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NamedItemArrayValues:interface" />
+      description: ''
+- name: getComment()
+  uid: ExcelScript!ExcelScript.NamedItem#getComment:member(1)
+  package: ExcelScript!
+  fullName: getComment()
+  summary: この名前に関連付けられたコメントを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getComment(): string;'
+    return:
+      type: string
+      description: ''
+- name: getFormula()
+  uid: ExcelScript!ExcelScript.NamedItem#getFormula:member(1)
+  package: ExcelScript!
+  fullName: getFormula()
+  summary: 名前付きアイテムの数式。 数式は常に等号 ("=") で始まる。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFormula(): string;'
+    return:
+      type: string
+      description: ''
+- name: getName()
+  uid: ExcelScript!ExcelScript.NamedItem#getName:member(1)
+  package: ExcelScript!
+  fullName: getName()
+  summary: オブジェクトの名前。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getName(): string;'
+    return:
+      type: string
+      description: ''
+- name: getRange()
+  uid: ExcelScript!ExcelScript.NamedItem#getRange:member(1)
+  package: ExcelScript!
+  fullName: getRange()
+  summary: 名前に関連付けられている範囲オブジェクトを返します。 名前付きアイテムの型が範囲ではない場合、この関数は `undefined`<!-- -->.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRange(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getScope()
+  uid: ExcelScript!ExcelScript.NamedItem#getScope:member(1)
+  package: ExcelScript!
+  fullName: getScope()
+  summary: 名前をブックまたは特定のワークシートの範囲に設定する場合に指定します。 使用できる値は、ワークシート、ブックです。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getScope(): NamedItemScope;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NamedItemScope:enum" />
+      description: ''
+- name: getType()
+  uid: ExcelScript!ExcelScript.NamedItem#getType:member(1)
+  package: ExcelScript!
+  fullName: getType()
+  summary: 名前の数式によって返される値の種類を指定します。 詳細は「`ExcelScript.NamedItemType`」をご覧ください。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getType(): NamedItemType;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NamedItemType:enum" />
+      description: ''
+- name: getValue()
+  uid: ExcelScript!ExcelScript.NamedItem#getValue:member(1)
+  package: ExcelScript!
+  fullName: getValue()
+  summary: 名前の数式で計算された値を表します。 名前付き範囲の場合は範囲のアドレスを返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getValue(): string | number;'
+    return:
+      type: string | number
+      description: ''
+- name: getVisible()
+  uid: ExcelScript!ExcelScript.NamedItem#getVisible:member(1)
+  package: ExcelScript!
+  fullName: getVisible()
+  summary: オブジェクトが表示される場合に指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getVisible(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getWorksheet()
+  uid: ExcelScript!ExcelScript.NamedItem#getWorksheet:member(1)
+  package: ExcelScript!
+  fullName: getWorksheet()
+  summary: 名前付きアイテムのスコープを設定するワークシートを返します。 アイテムのスコープがブックの代わりに設定されている場合、この関数は `undefined`<!-- -->.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getWorksheet(): Worksheet | undefined;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" /> | undefined
+      description: ''
+- name: setComment(comment)
+  uid: ExcelScript!ExcelScript.NamedItem#setComment:member(1)
+  package: ExcelScript!
+  fullName: setComment(comment)
+  summary: この名前に関連付けられたコメントを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setComment(comment: string): void;'
+    parameters:
+    - id: comment
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setFormula(formula)
+  uid: ExcelScript!ExcelScript.NamedItem#setFormula:member(1)
+  package: ExcelScript!
+  fullName: setFormula(formula)
+  summary: 名前付きアイテムの数式。 数式は常に等号 ("=") で始まる。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setFormula(formula: string): void;'
+    parameters:
+    - id: formula
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setVisible(visible)
+  uid: ExcelScript!ExcelScript.NamedItem#setVisible:member(1)
+  package: ExcelScript!
+  fullName: setVisible(visible)
+  summary: オブジェクトが表示される場合に指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setVisible(visible: boolean): void;'
+    parameters:
+    - id: visible
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: b097f6d3666bdd2d2334de0cd2e9705852bb219a
+  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 11/17/2021
+  ms.locfileid: "61064837"

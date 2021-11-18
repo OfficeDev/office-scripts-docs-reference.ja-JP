@@ -73,7 +73,7 @@ methods:
       description: コメントのコンテンツ。 文字列またはオブジェクトを指定 `CommentRichContent` できます。 文字列は、プレーン テキストに使用されます。 `CommentRichContent` オブジェクトは、メンションなどの他のコメント機能を使用できます。
       type: <xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" /> | string
     - id: contentType
-      description: 省略可能です。 コメントに含まれるコンテンツの種類。 既定値は enum です `ContentType.Plain`<!-- -->.
+      description: 省略可能。 コメントに含まれるコンテンツの種類。 既定値は enum です `ContentType.Plain`<!-- -->.
       type: <xref uid="ExcelScript!ExcelScript.ContentType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
@@ -205,7 +205,7 @@ methods:
       description: 名前が参照する数式または範囲。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: comment
-      description: 省略可能です。 名前付きアイテムに関連付けられたコメント。
+      description: 省略可能。 名前付きアイテムに関連付けられたコメント。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
@@ -233,7 +233,7 @@ methods:
       description: 名前が参照するユーザーのロケールの数式。
       type: string
     - id: comment
-      description: 省略可能です。 名前付きアイテムに関連付けられたコメント。
+      description: 省略可能。 名前付きアイテムに関連付けられたコメント。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
@@ -306,7 +306,7 @@ methods:
       description: フィルター処理するデータ ソースのフィールド。 オブジェクト、オブジェクト、A の ID、または a の名前または `PivotField` `TableColumn` ID `PivotField` を指定できます。 `TableColumn`<!-- -->.
       type: string | <xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | number | <xref uid="ExcelScript!ExcelScript.TableColumn:interface" />
     - id: slicerDestination
-      description: 省略可能です。 新しいスライサーが作成されるワークシート。 オブジェクトまたはワークシート `Worksheet` の名前または ID を指定できます。 スライサー コレクションがワークシートから取得される場合は、このパラメーターを省略できます。
+      description: 省略可能。 新しいスライサーが作成されるワークシート。 オブジェクトまたはワークシート `Worksheet` の名前または ID を指定できます。 スライサー コレクションがワークシートから取得される場合は、このパラメーターを省略できます。
       type: string | <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Slicer:interface" />
@@ -539,7 +539,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getChart:member(1)
   package: ExcelScript!
   fullName: getChart(name)
-  summary: グラフ名を使用してグラフを取得します。 同じ名前の複数のグラフがある場合は、最初の 1 つが返されます。 グラフが存在しない場合、この関数はプロパティが次の値に設定された `isNullObject` オブジェクトを返します。 `true`<!-- -->.
+  summary: グラフ名を使用してグラフを取得します。 同じ名前の複数のグラフがある場合は、最初の 1 つが返されます。 グラフが存在しない場合、この関数は `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -711,7 +711,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getNamedItem:member(1)
   package: ExcelScript!
   fullName: getNamedItem(name)
-  summary: その名前を `NamedItem` 使用してオブジェクトを取得します。 オブジェクトが存在しない場合、この関数はプロパティが次に設定された `isNullObject` オブジェクトを返します。 `true`<!-- -->.
+  summary: その名前を `NamedItem` 使用してオブジェクトを取得します。 オブジェクトが存在しない場合、この関数は `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -771,7 +771,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getNext:member(1)
   package: ExcelScript!
   fullName: getNext(visibleOnly)
-  summary: このワークシートに続くワークシートを取得します。 このワークシートの後にワークシートがない場合、このメソッドはプロパティが次の値に設定された `isNullObject` オブジェクトを返します。 `true`<!-- -->.
+  summary: このワークシートに続くワークシートを取得します。 このワークシートの後にワークシートがない場合、このメソッドは `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -779,7 +779,7 @@ methods:
     content: 'getNext(visibleOnly?: boolean): Worksheet;'
     parameters:
     - id: visibleOnly
-      description: 省略可能です。 もし `true`<!-- -->、表示されているワークシートのみを考慮し、非表示のワークシートをスキップします。
+      description: 省略可能。 もし `true`<!-- -->、表示されているワークシートのみを考慮し、非表示のワークシートをスキップします。
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -801,7 +801,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getPivotTable:member(1)
   package: ExcelScript!
   fullName: getPivotTable(name)
-  summary: 名前に基づいてピボットテーブルを取得します。 ピボットテーブルが存在しない場合、この関数はプロパティを次に設定した `isNullObject` オブジェクトを返します。 `true`<!-- -->.
+  summary: 名前に基づいてピボットテーブルを取得します。 ピボットテーブルが存在しない場合、この関数は `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -844,7 +844,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getPrevious:member(1)
   package: ExcelScript!
   fullName: getPrevious(visibleOnly)
-  summary: このワークシートの前のワークシートを取得します。 以前のワークシートがない場合、このメソッドはプロパティが次の値に設定された `isNullObject` オブジェクトを返します。 `true`<!-- -->.
+  summary: このワークシートの前のワークシートを取得します。 以前のワークシートがない場合、このメソッドは `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -852,7 +852,7 @@ methods:
     content: 'getPrevious(visibleOnly?: boolean): Worksheet;'
     parameters:
     - id: visibleOnly
-      description: 省略可能です。 もし `true`<!-- -->、表示されているワークシートのみを考慮し、非表示のワークシートをスキップします。
+      description: 省略可能。 もし `true`<!-- -->、表示されているワークシートのみを考慮し、非表示のワークシートをスキップします。
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -882,7 +882,7 @@ methods:
     content: 'getRange(address?: string): Range;'
     parameters:
     - id: address
-      description: 省略可能です。 範囲のアドレスまたは名前を表す文字列。 たとえば、"A1:B2" とします。 指定されていない場合は、ワークシート全体の範囲が返されます。
+      description: 省略可能。 範囲のアドレスまたは名前を表す文字列。 たとえば、"A1:B2" とします。 指定されていない場合は、ワークシート全体の範囲が返されます。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -931,7 +931,7 @@ methods:
     content: 'getRanges(address?: string): RangeAreas;'
     parameters:
     - id: address
-      description: 省略可能です。 個々の範囲のコンマ区切りアドレスまたは名前を含む文字列。 たとえば、「A1:B2、A5:B5」などです。 指定しない場合は、ワークシート全体の RangeArea オブジェクトが返されます。
+      description: 省略可能。 個々の範囲のコンマ区切りアドレスまたは名前を含む文字列。 たとえば、「A1:B2、A5:B5」などです。 指定しない場合は、ワークシート全体の RangeArea オブジェクトが返されます。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
@@ -996,7 +996,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getSlicer:member(1)
   package: ExcelScript!
   fullName: getSlicer(key)
-  summary: 名前または ID を使用してスライサーを取得します。 スライサーが存在しない場合、この関数はプロパティを次に設定した `isNullObject` オブジェクトを返します。 `true`<!-- -->.
+  summary: 名前または ID を使用してスライサーを取得します。 スライサーが存在しない場合、この関数は `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1065,7 +1065,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getTable:member(1)
   package: ExcelScript!
   fullName: getTable(key)
-  summary: 名前または ID でテーブルを取得します。 テーブルが存在しない場合、この関数はプロパティを次に設定した `isNullObject` オブジェクトを返します。 `true`<!-- -->.
+  summary: 名前または ID でテーブルを取得します。 テーブルが存在しない場合、この関数は `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1138,7 +1138,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getWorksheetCustomProperty:member(1)
   package: ExcelScript!
   fullName: getWorksheetCustomProperty(key)
-  summary: キーを使用してカスタム プロパティ オブジェクトを取得します。大文字と小文字は区別されません。 カスタム プロパティが存在しない場合、この関数はプロパティが次に設定された `isNullObject` オブジェクトを返します。 `true`<!-- -->.
+  summary: キーを使用してカスタム プロパティ オブジェクトを取得します。大文字と小文字は区別されません。 カスタム プロパティが存在しない場合、この関数は `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1378,9 +1378,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 8d72ac45bf8844897dbdf829fd94f516fbce4bea
-  ms.sourcegitcommit: 453b3731fa9a0e87412009b01c55142cd361b9cd
+  ms.openlocfilehash: b57e4675686b008cc43f13043451f1be337f9b23
+  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 10/14/2021
-  ms.locfileid: "60355736"
+  ms.lasthandoff: 11/17/2021
+  ms.locfileid: "61064802"

@@ -627,7 +627,11 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getImage:member(1)
   package: ExcelScript!
   fullName: getImage()
-  summary: 範囲を base64 エンコードされた png イメージとしてレンダリングします。
+  summary: >-
+    範囲を base64 エンコードされた png イメージとしてレンダリングします。
+
+
+    **注**: セルの幅を超える折り返しテキストやテキストが、行の折り返しなしで同じ行にレンダリングされるという既知の `Range.getImage` 問題があります。 これにより、行全体にテキストがオーバーフローして結果の画像が読み取れなされます。 回避策として、範囲内のデータが各セルに 1 行として収まる必要があります。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1348,7 +1352,7 @@ methods:
     content: 'merge(across?: boolean): void;'
     parameters:
     - id: across
-      description: オプション。 指定 `true` した範囲の各行のセルを個別の結合セルとして結合します。 既定値は次の値です。 `false`<!-- -->.
+      description: 省略可能。 指定 `true` した範囲の各行のセルを個別の結合セルとして結合します。 既定値は次の値です。 `false`<!-- -->.
       type: boolean
     return:
       type: void
@@ -1781,9 +1785,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 6f92ae14072075e94e23da505d833044859315ff
-  ms.sourcegitcommit: 279af9e14fb2bf9e0d54a7e3ead0e3c4ca4164e8
+  ms.openlocfilehash: d3769fc5b4b2da492a94ed9a151f9eeba68791b9
+  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/05/2021
-  ms.locfileid: "60793381"
+  ms.lasthandoff: 11/17/2021
+  ms.locfileid: "61064907"
