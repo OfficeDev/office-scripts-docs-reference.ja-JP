@@ -1,18 +1,25 @@
 ### YamlMime:TSEnum
 name: ExcelScript.SearchDirection
-uid: 'ExcelScript!ExcelScript.SearchDirection:enum'
+uid: ExcelScript!ExcelScript.SearchDirection:enum
 package: ExcelScript!
 fullName: ExcelScript.SearchDirection
 summary: 検索の方向を指定します。
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script searches for the next instance of the text \"TK\" on the current worksheet.\n * It then selects that cell and removes \"TK\" and all formatting from the cell.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the used range on the current worksheet.\n  let range = workbook.getActiveWorksheet().getUsedRange();\n\n  // Get the next cell that contains \"TK\".\n  let tkCell = range.find(\"TK\", {\n    completeMatch: true, /* Don't match if the cell text only contains \"TK\" as part of another string. */\n    matchCase: false,\n    searchDirection: ExcelScript.SearchDirection.forward /* Start at the beginning of the range and go to later columns and rows. */\n  });\n\n  // Set focus on the found cell.\n  tkCell.select();\n\n  // Remove the \"TK\" text value from the cell, as well as any formatting that may have been added.\n  tkCell.clear(ExcelScript.ClearApplyTo.all);\n}\n```"
 isPreview: false
 isDeprecated: false
 fields:
-  - name: backwards
-    uid: 'ExcelScript!ExcelScript.SearchDirection.backwards:member'
-    package: ExcelScript!
-    summary: 逆の順序で検索します。
-  - name: forward
-    uid: 'ExcelScript!ExcelScript.SearchDirection.forward:member'
-    package: ExcelScript!
-    summary: 順方向に検索します。
+- name: backwards
+  uid: ExcelScript!ExcelScript.SearchDirection.backwards:member
+  package: ExcelScript!
+  summary: 逆の順序で検索します。
+- name: forward
+  uid: ExcelScript!ExcelScript.SearchDirection.forward:member
+  package: ExcelScript!
+  summary: 順方向に検索します。
+metadata:
+  ms.openlocfilehash: 16bf5a9d504cb557a9de7a72e56e53b496b2b6aa
+  ms.sourcegitcommit: b796bf885c8fe7d777f70602bb7038de424d922b
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 12/01/2021
+  ms.locfileid: "61240641"

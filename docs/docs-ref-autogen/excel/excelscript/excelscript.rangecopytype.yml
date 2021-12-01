@@ -1,26 +1,33 @@
 ### YamlMime:TSEnum
 name: ExcelScript.RangeCopyType
-uid: 'ExcelScript!ExcelScript.RangeCopyType:enum'
+uid: ExcelScript!ExcelScript.RangeCopyType:enum
 package: ExcelScript!
 fullName: ExcelScript.RangeCopyType
 summary: ''
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script copies all of the values from the current worksheet to a new worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the used range on the current worksheet.\n  let usedRange = workbook.getActiveWorksheet().getUsedRange();\n\n  // Create a new worksheet with a default name.\n  let newSheet = workbook.addWorksheet();\n\n  // Copy the values from the used range to the new worksheet.\n  let copyType = ExcelScript.RangeCopyType.values; /* Change this to copy different information, such as formats. */\n  let targetRange = newSheet.getRangeByIndexes(\n    usedRange.getRowIndex(),\n    usedRange.getColumnIndex(),\n    usedRange.getRowCount(),\n    usedRange.getColumnCount());\n  targetRange.copyFrom(usedRange, copyType);\n\n  // Switch the view to the new worksheet.\n  newSheet.activate();\n}\n```"
 isPreview: false
 isDeprecated: false
 fields:
-  - name: all
-    uid: 'ExcelScript!ExcelScript.RangeCopyType.all:member'
-    package: ExcelScript!
-    summary: ''
-  - name: formats
-    uid: 'ExcelScript!ExcelScript.RangeCopyType.formats:member'
-    package: ExcelScript!
-    summary: ''
-  - name: formulas
-    uid: 'ExcelScript!ExcelScript.RangeCopyType.formulas:member'
-    package: ExcelScript!
-    summary: ''
-  - name: values
-    uid: 'ExcelScript!ExcelScript.RangeCopyType.values:member'
-    package: ExcelScript!
-    summary: ''
+- name: all
+  uid: ExcelScript!ExcelScript.RangeCopyType.all:member
+  package: ExcelScript!
+  summary: ''
+- name: formats
+  uid: ExcelScript!ExcelScript.RangeCopyType.formats:member
+  package: ExcelScript!
+  summary: ''
+- name: formulas
+  uid: ExcelScript!ExcelScript.RangeCopyType.formulas:member
+  package: ExcelScript!
+  summary: ''
+- name: values
+  uid: ExcelScript!ExcelScript.RangeCopyType.values:member
+  package: ExcelScript!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 42b5eb16d30dbce158a6330190b07114d27bba89
+  ms.sourcegitcommit: b796bf885c8fe7d777f70602bb7038de424d922b
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 12/01/2021
+  ms.locfileid: "61240515"

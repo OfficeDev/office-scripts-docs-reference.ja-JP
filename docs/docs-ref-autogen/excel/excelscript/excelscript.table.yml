@@ -316,7 +316,7 @@ methods:
     content: 'getRange(): Range;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script removes any extra formatting that's been applied to a table. \n * This leaves only the base table style effects.\n * Any formatting outside of the table will be left as is.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the first table on the current worksheet.\n  let worksheet = workbook.getActiveWorksheet();\n  let table = worksheet.getTables()[0];\n\n  // Get the range used by the table.\n  let range = table.getRange();\n\n  // Clear all the formatting that is not applied by the table and the table style.\n  range.clear(ExcelScript.ClearApplyTo.formats);\n}\n```"
 - name: getRangeBetweenHeaderAndTotal()
   uid: ExcelScript!ExcelScript.Table#getRangeBetweenHeaderAndTotal:member(1)
   package: ExcelScript!
@@ -631,9 +631,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 975cc95648d8c32ae11912ae299d3ef70529bae7
-  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
+  ms.openlocfilehash: 6519d6987825c7f3c316f3f153115fb4d83a2bef
+  ms.sourcegitcommit: b796bf885c8fe7d777f70602bb7038de424d922b
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/17/2021
-  ms.locfileid: "61064900"
+  ms.lasthandoff: 12/01/2021
+  ms.locfileid: "61240655"

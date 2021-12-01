@@ -1,30 +1,37 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ClearApplyTo
-uid: 'ExcelScript!ExcelScript.ClearApplyTo:enum'
+uid: ExcelScript!ExcelScript.ClearApplyTo:enum
 package: ExcelScript!
 fullName: ExcelScript.ClearApplyTo
 summary: ''
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script removes any extra formatting that's been applied to a table. \n * This leaves only the base table style effects.\n * Any formatting outside of the table will be left as is.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the first table on the current worksheet.\n  let worksheet = workbook.getActiveWorksheet();\n  let table = worksheet.getTables()[0];\n\n  // Get the range used by the table.\n  let range = table.getRange();\n\n  // Clear all the formatting that is not applied by the table and the table style.\n  range.clear(ExcelScript.ClearApplyTo.formats);\n}\n```"
 isPreview: false
 isDeprecated: false
 fields:
-  - name: all
-    uid: 'ExcelScript!ExcelScript.ClearApplyTo.all:member'
-    package: ExcelScript!
-    summary: ''
-  - name: contents
-    uid: 'ExcelScript!ExcelScript.ClearApplyTo.contents:member'
-    package: ExcelScript!
-    summary: 範囲の内容をクリアします。
-  - name: formats
-    uid: 'ExcelScript!ExcelScript.ClearApplyTo.formats:member'
-    package: ExcelScript!
-    summary: 範囲のすべての書式をクリアします。
-  - name: hyperlinks
-    uid: 'ExcelScript!ExcelScript.ClearApplyTo.hyperlinks:member'
-    package: ExcelScript!
-    summary: すべてのハイパーリンクをクリアしますが、すべてのコンテンツと書式設定はそのままにします。
-  - name: removeHyperlinks
-    uid: 'ExcelScript!ExcelScript.ClearApplyTo.removeHyperlinks:member'
-    package: ExcelScript!
-    summary: セルのハイパーリンクと書式を削除しますが、コンテンツ、条件付き書式、およびデータ検証はそのまま残ります。
+- name: all
+  uid: ExcelScript!ExcelScript.ClearApplyTo.all:member
+  package: ExcelScript!
+  summary: ''
+- name: contents
+  uid: ExcelScript!ExcelScript.ClearApplyTo.contents:member
+  package: ExcelScript!
+  summary: 範囲の内容をクリアします。
+- name: formats
+  uid: ExcelScript!ExcelScript.ClearApplyTo.formats:member
+  package: ExcelScript!
+  summary: 範囲のすべての書式をクリアします。
+- name: hyperlinks
+  uid: ExcelScript!ExcelScript.ClearApplyTo.hyperlinks:member
+  package: ExcelScript!
+  summary: すべてのハイパーリンクをクリアしますが、すべてのコンテンツと書式設定はそのままにします。
+- name: removeHyperlinks
+  uid: ExcelScript!ExcelScript.ClearApplyTo.removeHyperlinks:member
+  package: ExcelScript!
+  summary: セルのハイパーリンクと書式を削除しますが、コンテンツ、条件付き書式、およびデータ検証はそのまま残ります。
+metadata:
+  ms.openlocfilehash: f0f21dae9498613b3105fe0396f9c45b55883616
+  ms.sourcegitcommit: b796bf885c8fe7d777f70602bb7038de424d922b
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 12/01/2021
+  ms.locfileid: "61240543"

@@ -174,7 +174,7 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.SearchCriteria:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script looks through a table column and finds cells marked \"no change\". \n * Those cells have \"no change\" replaced with the value from the cell to the left.\n * This script uses Range.find instead of Worksheet.findAll \n * to limit the search to a specific range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the range of a table named \"Orders\".\n  let table = workbook.getTable(\"Orders\");\n  let range = table.getColumnByName(\"March\").getRange();\n\n  // Find all cells with the value \"no change\".\n  let cellToOverwrite = range.find(\"no change\", { completeMatch: true });\n  while (cellToOverwrite) {\n    let cellToCopyFrom = cellToOverwrite.getOffsetRange(0,-1);\n    cellToOverwrite.setValue(cellToCopyFrom.getValue());\n    cellToOverwrite = range.find(\"no change\", { completeMatch: true });\n  }\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script searches through a table column and finds cells marked \"no change\". \n * Those cells have \"no change\" replaced with the value from the cell to the left.\n * This script uses Range.find instead of Worksheet.findAll \n * to limit the search to a specific range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the range of a table named \"Orders\".\n  let table = workbook.getTable(\"Orders\");\n  let range = table.getColumnByName(\"March\").getRange();\n\n  // Find all cells with the value \"no change\".\n  let cellToOverwrite = range.find(\"no change\", { completeMatch: true });\n  while (cellToOverwrite) {\n    let cellToCopyFrom = cellToOverwrite.getOffsetRange(0,-1);\n    cellToOverwrite.setValue(cellToCopyFrom.getValue());\n    cellToOverwrite = range.find(\"no change\", { completeMatch: true });\n  }\n}\n```"
 - name: flashFill()
   uid: ExcelScript!ExcelScript.Range#flashFill:member(1)
   package: ExcelScript!
@@ -1352,7 +1352,7 @@ methods:
     content: 'merge(across?: boolean): void;'
     parameters:
     - id: across
-      description: 省略可能。 指定 `true` した範囲の各行のセルを個別の結合セルとして結合します。 既定値は次の値です。 `false`<!-- -->.
+      description: オプション。 指定 `true` した範囲の各行のセルを個別の結合セルとして結合します。 既定値は次の値です。 `false`<!-- -->.
       type: boolean
     return:
       type: void
@@ -1425,7 +1425,7 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.ReplaceCriteria:interface" />
     return:
       type: number
-      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script looks through a table column and replaces  \n * cells marked \"monthly special\" with \"parsnip\".\n * This script uses Range.replaceAll instead of Worksheet.replaceAll\n * to limit the search to a specific range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the range of a table named \"Orders\".\n  let table = workbook.getTable(\"Orders\");\n  let range = table.getColumnByName(\"Vegetable\").getRange();\n  \n  // Change the value of any cells with the value \"monthly special\".\n  range.replaceAll(\"monthly special\", \"parsnip\", {completeMatch: true});\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script searches through a table column and replaces  \n * cells marked \"monthly special\" with \"parsnip\".\n * This script uses Range.replaceAll instead of Worksheet.replaceAll\n * to limit the search to a specific range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the range of a table named \"Orders\".\n  let table = workbook.getTable(\"Orders\");\n  let range = table.getColumnByName(\"Vegetable\").getRange();\n  \n  // Change the value of any cells with the value \"monthly special\".\n  range.replaceAll(\"monthly special\", \"parsnip\", {completeMatch: true});\n}\n```"
 - name: select()
   uid: ExcelScript!ExcelScript.Range#select:member(1)
   package: ExcelScript!
@@ -1785,9 +1785,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: d3769fc5b4b2da492a94ed9a151f9eeba68791b9
-  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
+  ms.openlocfilehash: f53fee1a0c937cb705b0890bc9e783670fcb6e58
+  ms.sourcegitcommit: b796bf885c8fe7d777f70602bb7038de424d922b
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/17/2021
-  ms.locfileid: "61064907"
+  ms.lasthandoff: 12/01/2021
+  ms.locfileid: "61240648"

@@ -1,37 +1,44 @@
 ### YamlMime:TSType
 name: ExcelScript.CustomConditionalFormat
-uid: 'ExcelScript!ExcelScript.CustomConditionalFormat:interface'
+uid: ExcelScript!ExcelScript.CustomConditionalFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.CustomConditionalFormat
 summary: ユーザー設定の条件付き書式の種類を表します。
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script applies a custom three-color conditional formatting to the selected range.\n * The three colors represent positive, negative, or no changes from the values in the previous column.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the selected cells.\n  let selectedRange = workbook.getSelectedRange();\n\n  // Apply a rule for positive change from the previous column.\n  let positiveChange = selectedRange.addConditionalFormat(ExcelScript.ConditionalFormatType.custom);\n  positiveChange.getCustom().getFormat().getFill().setColor(\"lightgreen\");\n  positiveChange.getCustom().getRule().setFormula(`=${selectedRange.getCell(0, 0).getAddress()}>${selectedRange.getOffsetRange(0, -1).getCell(0, 0).getAddress()}`);\n\n  // Apply a rule for negative change from the previous column.\n  let negativeChange = selectedRange.addConditionalFormat(ExcelScript.ConditionalFormatType.custom);\n  negativeChange.getCustom().getFormat().getFill().setColor(\"pink\");\n  negativeChange.getCustom().getRule().setFormula(`=${selectedRange.getCell(0, 0).getAddress()}<${selectedRange.getOffsetRange(0, -1).getCell(0, 0).getAddress()}`);\n\n  // Apply a rule for no change from the previous column.\n  let noChange = selectedRange.addConditionalFormat(ExcelScript.ConditionalFormatType.custom);\n  noChange.getCustom().getFormat().getFill().setColor(\"lightyellow\");\n  noChange.getCustom().getRule().setFormula(`=${selectedRange.getCell(0, 0).getAddress()}=${selectedRange.getOffsetRange(0, -1).getCell(0, 0).getAddress()}`);\n}\n```"
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-  - name: getFormat()
-    uid: 'ExcelScript!ExcelScript.CustomConditionalFormat#getFormat:member(1)'
-    package: ExcelScript!
-    fullName: getFormat()
-    summary: 条件付き書式のフォント、塗りつぶし、罫線、その他のプロパティをカプセル化する format オブジェクトを返します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getFormat(): ConditionalRangeFormat;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeFormat:interface" />'
-        description: ''
-  - name: getRule()
-    uid: 'ExcelScript!ExcelScript.CustomConditionalFormat#getRule:member(1)'
-    package: ExcelScript!
-    fullName: getRule()
-    summary: この条件付き `Rule` 形式のオブジェクトを指定します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getRule(): ConditionalFormatRule;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.ConditionalFormatRule:interface" />'
-        description: ''
+- name: getFormat()
+  uid: ExcelScript!ExcelScript.CustomConditionalFormat#getFormat:member(1)
+  package: ExcelScript!
+  fullName: getFormat()
+  summary: 条件付き書式のフォント、塗りつぶし、罫線、その他のプロパティをカプセル化する format オブジェクトを返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFormat(): ConditionalRangeFormat;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeFormat:interface" />
+      description: ''
+- name: getRule()
+  uid: ExcelScript!ExcelScript.CustomConditionalFormat#getRule:member(1)
+  package: ExcelScript!
+  fullName: getRule()
+  summary: この条件付き `Rule` 形式のオブジェクトを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRule(): ConditionalFormatRule;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ConditionalFormatRule:interface" />
+      description: ''
+metadata:
+  ms.openlocfilehash: 73db52a239a10f2e02a6e2f446d3d4e90264c1dd
+  ms.sourcegitcommit: b796bf885c8fe7d777f70602bb7038de424d922b
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 12/01/2021
+  ms.locfileid: "61240522"

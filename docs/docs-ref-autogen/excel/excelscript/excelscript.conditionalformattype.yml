@@ -1,42 +1,49 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ConditionalFormatType
-uid: 'ExcelScript!ExcelScript.ConditionalFormatType:enum'
+uid: ExcelScript!ExcelScript.ConditionalFormatType:enum
 package: ExcelScript!
 fullName: ExcelScript.ConditionalFormatType
 summary: ''
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script applies a red, white, and blue color scale to the selected range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the selected range.\n  let selectedRange = workbook.getSelectedRange();\n\n  // Create a new conditional formatting object by adding one to the range.\n  let conditionalFormatting = selectedRange.addConditionalFormat(ExcelScript.ConditionalFormatType.colorScale);\n\n  // Set the colors for the three parts of the scale: minimum, midpoint, and maximum.\n  conditionalFormatting.getColorScale().setCriteria({\n    minimum: {\n      color:\"#F8696B\", /* A pale red. */\n      type:ExcelScript.ConditionalFormatColorCriterionType.lowestValue\n    },\n    midpoint: {\n      color: \"#FCFCFF\", /* Slightly off-white. */\n      formula:'=50',type:ExcelScript.ConditionalFormatColorCriterionType.percentile\n    },\n    maximum: {\n      color: \"#5A8AC6\", /* A pale blue. */\n      type:ExcelScript.ConditionalFormatColorCriterionType.highestValue\n    }\n  });\n}\n```"
 isPreview: false
 isDeprecated: false
 fields:
-  - name: cellValue
-    uid: 'ExcelScript!ExcelScript.ConditionalFormatType.cellValue:member'
-    package: ExcelScript!
-    summary: ''
-  - name: colorScale
-    uid: 'ExcelScript!ExcelScript.ConditionalFormatType.colorScale:member'
-    package: ExcelScript!
-    summary: ''
-  - name: containsText
-    uid: 'ExcelScript!ExcelScript.ConditionalFormatType.containsText:member'
-    package: ExcelScript!
-    summary: ''
-  - name: custom
-    uid: 'ExcelScript!ExcelScript.ConditionalFormatType.custom:member'
-    package: ExcelScript!
-    summary: ''
-  - name: dataBar
-    uid: 'ExcelScript!ExcelScript.ConditionalFormatType.dataBar:member'
-    package: ExcelScript!
-    summary: ''
-  - name: iconSet
-    uid: 'ExcelScript!ExcelScript.ConditionalFormatType.iconSet:member'
-    package: ExcelScript!
-    summary: ''
-  - name: presetCriteria
-    uid: 'ExcelScript!ExcelScript.ConditionalFormatType.presetCriteria:member'
-    package: ExcelScript!
-    summary: ''
-  - name: topBottom
-    uid: 'ExcelScript!ExcelScript.ConditionalFormatType.topBottom:member'
-    package: ExcelScript!
-    summary: ''
+- name: cellValue
+  uid: ExcelScript!ExcelScript.ConditionalFormatType.cellValue:member
+  package: ExcelScript!
+  summary: ''
+- name: colorScale
+  uid: ExcelScript!ExcelScript.ConditionalFormatType.colorScale:member
+  package: ExcelScript!
+  summary: ''
+- name: containsText
+  uid: ExcelScript!ExcelScript.ConditionalFormatType.containsText:member
+  package: ExcelScript!
+  summary: ''
+- name: custom
+  uid: ExcelScript!ExcelScript.ConditionalFormatType.custom:member
+  package: ExcelScript!
+  summary: ''
+- name: dataBar
+  uid: ExcelScript!ExcelScript.ConditionalFormatType.dataBar:member
+  package: ExcelScript!
+  summary: ''
+- name: iconSet
+  uid: ExcelScript!ExcelScript.ConditionalFormatType.iconSet:member
+  package: ExcelScript!
+  summary: ''
+- name: presetCriteria
+  uid: ExcelScript!ExcelScript.ConditionalFormatType.presetCriteria:member
+  package: ExcelScript!
+  summary: ''
+- name: topBottom
+  uid: ExcelScript!ExcelScript.ConditionalFormatType.topBottom:member
+  package: ExcelScript!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 408b3edaaf408b11599811ad80bd0f18555304cc
+  ms.sourcegitcommit: b796bf885c8fe7d777f70602bb7038de424d922b
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 12/01/2021
+  ms.locfileid: "61240529"

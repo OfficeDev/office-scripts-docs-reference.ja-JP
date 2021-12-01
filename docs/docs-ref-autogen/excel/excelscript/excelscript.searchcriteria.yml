@@ -1,47 +1,54 @@
 ### YamlMime:TSType
 name: ExcelScript.SearchCriteria
-uid: 'ExcelScript!ExcelScript.SearchCriteria:interface'
+uid: ExcelScript!ExcelScript.SearchCriteria:interface
 package: ExcelScript!
 fullName: ExcelScript.SearchCriteria
 summary: 使用する検索条件を表します。
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script searches for the next instance of the text \"TK\" on the current worksheet.\n * It then selects that cell and removes \"TK\" and all formatting from the cell.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the used range on the current worksheet.\n  let range = workbook.getActiveWorksheet().getUsedRange();\n\n  // Get the next cell that contains \"TK\".\n  let tkCell = range.find(\"TK\", {\n    completeMatch: true, /* Don't match if the cell text only contains \"TK\" as part of another string. */\n    matchCase: false,\n    searchDirection: ExcelScript.SearchDirection.forward /* Start at the beginning of the range and go to later columns and rows. */\n  });\n\n  // Set focus on the found cell.\n  tkCell.select();\n\n  // Remove the \"TK\" text value from the cell, as well as any formatting that may have been added.\n  tkCell.clear(ExcelScript.ClearApplyTo.all);\n}\n```"
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: completeMatch
-    uid: 'ExcelScript!ExcelScript.SearchCriteria#completeMatch:member'
-    package: ExcelScript!
-    fullName: completeMatch
-    summary: 一致が完了する必要がある場合と部分的に行う必要がある場合に指定します。 完全一致は、セルの内容全体と一致します。 部分的な一致は、セルのコンテンツ内の部分文字列と一致します (部分的に一致し `cat` `caterpillar` 、 `scatter`<!-- -->). 既定値は `false` (部分) です。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'completeMatch?: boolean;'
-      return:
-        type: boolean
-  - name: matchCase
-    uid: 'ExcelScript!ExcelScript.SearchCriteria#matchCase:member'
-    package: ExcelScript!
-    fullName: matchCase
-    summary: 一致で大文字と小文字が区別される場合を指定します。 既定値は `false` (大文字と小文字を区別しない) です。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'matchCase?: boolean;'
-      return:
-        type: boolean
-  - name: searchDirection
-    uid: 'ExcelScript!ExcelScript.SearchCriteria#searchDirection:member'
-    package: ExcelScript!
-    fullName: searchDirection
-    summary: 検索の方向を指定します。 既定値は前方向です。 参照 `ExcelScript.SearchDirection`<!-- -->.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'searchDirection?: SearchDirection;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.SearchDirection:enum" />'
+- name: completeMatch
+  uid: ExcelScript!ExcelScript.SearchCriteria#completeMatch:member
+  package: ExcelScript!
+  fullName: completeMatch
+  summary: 一致が完了する必要がある場合と部分的に行う必要がある場合に指定します。 完全一致は、セルの内容全体と一致します。 部分的な一致は、セルのコンテンツ内の部分文字列と一致します (部分的に一致し `cat` `caterpillar` 、 `scatter`<!-- -->). 既定値は `false` (部分) です。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'completeMatch?: boolean;'
+    return:
+      type: boolean
+- name: matchCase
+  uid: ExcelScript!ExcelScript.SearchCriteria#matchCase:member
+  package: ExcelScript!
+  fullName: matchCase
+  summary: 一致で大文字と小文字が区別される場合を指定します。 既定値は `false` (大文字と小文字を区別しない) です。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'matchCase?: boolean;'
+    return:
+      type: boolean
+- name: searchDirection
+  uid: ExcelScript!ExcelScript.SearchCriteria#searchDirection:member
+  package: ExcelScript!
+  fullName: searchDirection
+  summary: 検索の方向を指定します。 既定値は前方向です。 参照 `ExcelScript.SearchDirection`<!-- -->.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'searchDirection?: SearchDirection;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.SearchDirection:enum" />
+metadata:
+  ms.openlocfilehash: bb362830b20602d07ce046b465a4d6f2936dcd53
+  ms.sourcegitcommit: b796bf885c8fe7d777f70602bb7038de424d922b
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 12/01/2021
+  ms.locfileid: "61240634"

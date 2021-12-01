@@ -47,7 +47,7 @@ methods:
     content: 'getColorScale(): ColorScaleConditionalFormat | undefined;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.ColorScaleConditionalFormat:interface" /> | undefined
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script applies a red, white, and blue color scale to the selected range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the selected range.\n  let selectedRange = workbook.getSelectedRange();\n\n  // Create a new conditional formatting object by adding one to the range.\n  let conditionalFormatting = selectedRange.addConditionalFormat(ExcelScript.ConditionalFormatType.colorScale);\n\n  // Set the colors for the three parts of the scale: minimum, midpoint, and maximum.\n  conditionalFormatting.getColorScale().setCriteria({\n    minimum: {\n      color:\"#F8696B\", /* A pale red. */\n      type:ExcelScript.ConditionalFormatColorCriterionType.lowestValue\n    },\n    midpoint: {\n      color: \"#FCFCFF\", /* Slightly off-white. */\n      formula:'=50',type:ExcelScript.ConditionalFormatColorCriterionType.percentile\n    },\n    maximum: {\n      color: \"#5A8AC6\", /* A pale blue. */\n      type:ExcelScript.ConditionalFormatColorCriterionType.highestValue\n    }\n  });\n}\n```"
 - name: getCustom()
   uid: ExcelScript!ExcelScript.ConditionalFormat#getCustom:member(1)
   package: ExcelScript!
@@ -60,7 +60,7 @@ methods:
     content: 'getCustom(): CustomConditionalFormat | undefined;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.CustomConditionalFormat:interface" /> | undefined
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script applies a custom conditional formatting to the selected range.\n * A light-green fill is applied to a cell if the value is larger than the value in the row's previous column.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the selected cells.\n  let selectedRange = workbook.getSelectedRange();\n\n  // Apply a rule for positive change from the previous column.\n  let positiveChange = selectedRange.addConditionalFormat(ExcelScript.ConditionalFormatType.custom);\n  positiveChange.getCustom().getFormat().getFill().setColor(\"lightgreen\");\n  positiveChange.getCustom().getRule().setFormula(`=${selectedRange.getCell(0, 0).getAddress()}>${selectedRange.getOffsetRange(0, -1).getCell(0, 0).getAddress()}`);\n}\n```"
 - name: getDataBar()
   uid: ExcelScript!ExcelScript.ConditionalFormat#getDataBar:member(1)
   package: ExcelScript!
@@ -239,9 +239,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 1390e7e20dd608095b4a547f7b6a0851920a900a
-  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
+  ms.openlocfilehash: d76b9ca2141a89c44983f5dda3bd7b0609016220
+  ms.sourcegitcommit: b796bf885c8fe7d777f70602bb7038de424d922b
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/17/2021
-  ms.locfileid: "61064921"
+  ms.lasthandoff: 12/01/2021
+  ms.locfileid: "61240578"

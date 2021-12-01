@@ -1,79 +1,61 @@
 ### YamlMime:TSType
 name: ExcelScript.TopBottomConditionalFormat
-uid: 'ExcelScript!ExcelScript.TopBottomConditionalFormat:interface'
+uid: ExcelScript!ExcelScript.TopBottomConditionalFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.TopBottomConditionalFormat
 summary: 上/下の条件付き書式を表します。
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This sample applies conditional formatting to the currently used range in the worksheet. \n * The conditional formatting is a green fill for the top 10% of values.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Get the used range in the worksheet.\n  let range = selectedSheet.getUsedRange();\n\n  // Set the fill color to green for the top 10% of values in the range.\n  let conditionalFormat = range.addConditionalFormat(ExcelScript.ConditionalFormatType.topBottom)\n  conditionalFormat.getTopBottom().getFormat().getFill().setColor(\"green\");\n  conditionalFormat.getTopBottom().setRule({\n    rank: 10, /* The percentage threshold. */\n    type: ExcelScript.ConditionalTopBottomCriterionType.topPercent /* The type of the top/bottom condition. */\n  });\n}\n```"
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-  - name: getFormat()
-    uid: 'ExcelScript!ExcelScript.TopBottomConditionalFormat#getFormat:member(1)'
-    package: ExcelScript!
-    fullName: getFormat()
-    summary: 条件付き書式のフォント、塗りつぶし、罫線、その他のプロパティをカプセル化する format オブジェクトを返します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getFormat(): ConditionalRangeFormat;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeFormat:interface" />'
-        description: ''
-  - name: getRule()
-    uid: 'ExcelScript!ExcelScript.TopBottomConditionalFormat#getRule:member(1)'
-    package: ExcelScript!
-    fullName: getRule()
-    summary: 上/下の条件付き書式の条件。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getRule(): ConditionalTopBottomRule;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.ConditionalTopBottomRule:interface" />'
-        description: ''
-  - name: setRule(rule)
-    uid: 'ExcelScript!ExcelScript.TopBottomConditionalFormat#setRule:member(1)'
-    package: ExcelScript!
-    fullName: setRule(rule)
-    summary: 上/下の条件付き書式の条件。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setRule(rule: ConditionalTopBottomRule): void;'
-      parameters:
-        - id: rule
-          description: ''
-          type: '<xref uid="ExcelScript!ExcelScript.ConditionalTopBottomRule:interface" />'
-      return:
-        type: void
-        description: |-
-
-
-          #### <a name="examples"></a>例
-
-          ```TypeScript
-          /**
-           * This sample applies conditional formatting to the currently used range in the worksheet. 
-           * The conditional formatting is a green fill for the top 10% of values.
-           */
-          function main(workbook: ExcelScript.Workbook) {
-            // Get the current worksheet.
-            let selectedSheet = workbook.getActiveWorksheet();
-
-            // Get the used range in the worksheet.
-            let range = selectedSheet.getUsedRange();
-
-            // Set the fill color to green for the top 10% of values in the range.
-            let conditionalFormat = range.addConditionalFormat(ExcelScript.ConditionalFormatType.topBottom)
-            conditionalFormat.getTopBottom().getFormat().getFill().setColor("green");
-            conditionalFormat.getTopBottom().setRule({
-              rank: 10, // The percentage threshold.
-              type: ExcelScript.ConditionalTopBottomCriterionType.topPercent // The type of the top/bottom condition.
-            });
-          }
-          ```
+- name: getFormat()
+  uid: ExcelScript!ExcelScript.TopBottomConditionalFormat#getFormat:member(1)
+  package: ExcelScript!
+  fullName: getFormat()
+  summary: 条件付き書式のフォント、塗りつぶし、罫線、その他のプロパティをカプセル化する format オブジェクトを返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFormat(): ConditionalRangeFormat;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeFormat:interface" />
+      description: ''
+- name: getRule()
+  uid: ExcelScript!ExcelScript.TopBottomConditionalFormat#getRule:member(1)
+  package: ExcelScript!
+  fullName: getRule()
+  summary: 上/下の条件付き書式の条件。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRule(): ConditionalTopBottomRule;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ConditionalTopBottomRule:interface" />
+      description: ''
+- name: setRule(rule)
+  uid: ExcelScript!ExcelScript.TopBottomConditionalFormat#setRule:member(1)
+  package: ExcelScript!
+  fullName: setRule(rule)
+  summary: 上/下の条件付き書式の条件。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setRule(rule: ConditionalTopBottomRule): void;'
+    parameters:
+    - id: rule
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ConditionalTopBottomRule:interface" />
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 195b908e4d72ad8b58007bde8f9e7ce71d4f48cb
+  ms.sourcegitcommit: b796bf885c8fe7d777f70602bb7038de424d922b
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 12/01/2021
+  ms.locfileid: "61240662"

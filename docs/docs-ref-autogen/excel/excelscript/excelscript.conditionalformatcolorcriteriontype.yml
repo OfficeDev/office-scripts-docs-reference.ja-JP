@@ -1,38 +1,45 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ConditionalFormatColorCriterionType
-uid: 'ExcelScript!ExcelScript.ConditionalFormatColorCriterionType:enum'
+uid: ExcelScript!ExcelScript.ConditionalFormatColorCriterionType:enum
 package: ExcelScript!
 fullName: ExcelScript.ConditionalFormatColorCriterionType
 summary: 条件付き書式の色基準の種類を表します。
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script applies a red, white, and blue color scale to the selected range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the selected range.\n  let selectedRange = workbook.getSelectedRange();\n\n  // Create a new conditional formatting object by adding one to the range.\n  let conditionalFormatting = selectedRange.addConditionalFormat(ExcelScript.ConditionalFormatType.colorScale);\n\n  // Set the colors for the three parts of the scale: minimum, midpoint, and maximum.\n  conditionalFormatting.getColorScale().setCriteria({\n    minimum: {\n      color:\"#F8696B\", /* A pale red. */\n      type:ExcelScript.ConditionalFormatColorCriterionType.lowestValue\n    },\n    midpoint: {\n      color: \"#FCFCFF\", /* Slightly off-white. */\n      formula:'=50',type:ExcelScript.ConditionalFormatColorCriterionType.percentile\n    },\n    maximum: {\n      color: \"#5A8AC6\", /* A pale blue. */\n      type:ExcelScript.ConditionalFormatColorCriterionType.highestValue\n    }\n  });\n}\n```"
 isPreview: false
 isDeprecated: false
 fields:
-  - name: formula
-    uid: 'ExcelScript!ExcelScript.ConditionalFormatColorCriterionType.formula:member'
-    package: ExcelScript!
-    summary: ''
-  - name: highestValue
-    uid: 'ExcelScript!ExcelScript.ConditionalFormatColorCriterionType.highestValue:member'
-    package: ExcelScript!
-    summary: ''
-  - name: invalid
-    uid: 'ExcelScript!ExcelScript.ConditionalFormatColorCriterionType.invalid:member'
-    package: ExcelScript!
-    summary: ''
-  - name: lowestValue
-    uid: 'ExcelScript!ExcelScript.ConditionalFormatColorCriterionType.lowestValue:member'
-    package: ExcelScript!
-    summary: ''
-  - name: number
-    uid: 'ExcelScript!ExcelScript.ConditionalFormatColorCriterionType.number:member'
-    package: ExcelScript!
-    summary: ''
-  - name: percent
-    uid: 'ExcelScript!ExcelScript.ConditionalFormatColorCriterionType.percent:member'
-    package: ExcelScript!
-    summary: ''
-  - name: percentile
-    uid: 'ExcelScript!ExcelScript.ConditionalFormatColorCriterionType.percentile:member'
-    package: ExcelScript!
-    summary: ''
+- name: formula
+  uid: ExcelScript!ExcelScript.ConditionalFormatColorCriterionType.formula:member
+  package: ExcelScript!
+  summary: ''
+- name: highestValue
+  uid: ExcelScript!ExcelScript.ConditionalFormatColorCriterionType.highestValue:member
+  package: ExcelScript!
+  summary: ''
+- name: invalid
+  uid: ExcelScript!ExcelScript.ConditionalFormatColorCriterionType.invalid:member
+  package: ExcelScript!
+  summary: ''
+- name: lowestValue
+  uid: ExcelScript!ExcelScript.ConditionalFormatColorCriterionType.lowestValue:member
+  package: ExcelScript!
+  summary: ''
+- name: number
+  uid: ExcelScript!ExcelScript.ConditionalFormatColorCriterionType.number:member
+  package: ExcelScript!
+  summary: ''
+- name: percent
+  uid: ExcelScript!ExcelScript.ConditionalFormatColorCriterionType.percent:member
+  package: ExcelScript!
+  summary: ''
+- name: percentile
+  uid: ExcelScript!ExcelScript.ConditionalFormatColorCriterionType.percentile:member
+  package: ExcelScript!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 508ae18900eabda45fa3c2cd1339a563e8cd4652
+  ms.sourcegitcommit: b796bf885c8fe7d777f70602bb7038de424d922b
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 12/01/2021
+  ms.locfileid: "61240536"

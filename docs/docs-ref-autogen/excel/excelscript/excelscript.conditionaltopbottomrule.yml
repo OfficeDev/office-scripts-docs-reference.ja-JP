@@ -1,35 +1,42 @@
 ### YamlMime:TSType
 name: ExcelScript.ConditionalTopBottomRule
-uid: 'ExcelScript!ExcelScript.ConditionalTopBottomRule:interface'
+uid: ExcelScript!ExcelScript.ConditionalTopBottomRule:interface
 package: ExcelScript!
 fullName: ExcelScript.ConditionalTopBottomRule
 summary: 上/下の条件付き書式のルールを表します。
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This sample applies conditional formatting to the currently used range in the worksheet. \n * The conditional formatting is a pink fill for the 5 lowest values.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Get the used range in the worksheet.\n  let range = selectedSheet.getUsedRange();\n\n  // Set the fill color to pink for the lowest 5 values in the range.\n  let conditionalFormat = range.addConditionalFormat(ExcelScript.ConditionalFormatType.topBottom)\n  conditionalFormat.getTopBottom().getFormat().getFill().setColor(\"pink\");\n  conditionalFormat.getTopBottom().setRule({\n    rank: 5, /* The numerical threshold. */\n    type: ExcelScript.ConditionalTopBottomCriterionType.bottomItems /* The type of the top/bottom condition. */\n  });\n}\n```"
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: rank
-    uid: 'ExcelScript!ExcelScript.ConditionalTopBottomRule#rank:member'
-    package: ExcelScript!
-    fullName: rank
-    summary: 数値のランクに対する 1 から 1000、またはパーセントのランクに対する 1 から 100 のランク。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'rank: number;'
-      return:
-        type: number
-  - name: type
-    uid: 'ExcelScript!ExcelScript.ConditionalTopBottomRule#type:member'
-    package: ExcelScript!
-    fullName: type
-    summary: 上または下のランクに基づいて値を書式設定します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'type: ConditionalTopBottomCriterionType;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.ConditionalTopBottomCriterionType:enum" />'
+- name: rank
+  uid: ExcelScript!ExcelScript.ConditionalTopBottomRule#rank:member
+  package: ExcelScript!
+  fullName: rank
+  summary: 数値のランクに対する 1 から 1000、またはパーセントのランクに対する 1 から 100 のランク。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'rank: number;'
+    return:
+      type: number
+- name: type
+  uid: ExcelScript!ExcelScript.ConditionalTopBottomRule#type:member
+  package: ExcelScript!
+  fullName: type
+  summary: 上または下のランクに基づいて値を書式設定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'type: ConditionalTopBottomCriterionType;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ConditionalTopBottomCriterionType:enum" />
+metadata:
+  ms.openlocfilehash: 3fe078c3bc0ac5c26a9640ba1df8a8d9dfffcf0e
+  ms.sourcegitcommit: b796bf885c8fe7d777f70602bb7038de424d922b
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 12/01/2021
+  ms.locfileid: "61240585"
