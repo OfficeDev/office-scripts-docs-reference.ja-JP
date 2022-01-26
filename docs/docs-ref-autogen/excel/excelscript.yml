@@ -302,6 +302,8 @@ interfaces:
 - ExcelScript!ExcelScript.WorksheetProtection:interface
 - ExcelScript!ExcelScript.WorksheetProtectionOptions:interface
 - ExcelScript!ExcelScript.WorksheetSearchCriteria:interface
+typeAliases:
+- ExcelScript!ExcelScript.RangeValue:type
 functions:
 - name: ExcelScript.run(callback)
   uid: ExcelScript!ExcelScript.run:function(1)
@@ -323,9 +325,9 @@ functions:
       type: Promise&lt;void&gt;
       description: ''
 metadata:
-  ms.openlocfilehash: 038bff1ccc0abceeaac46564adb394fcf779ba6c
-  ms.sourcegitcommit: 279af9e14fb2bf9e0d54a7e3ead0e3c4ca4164e8
+  ms.openlocfilehash: fe80c01eb64f738e14f541f9a06cfbddf9496ddf
+  ms.sourcegitcommit: 0675e5a8982c67a50f192aff2c47fba884f1fd26
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/05/2021
-  ms.locfileid: "60793360"
+  ms.lasthandoff: 01/26/2022
+  ms.locfileid: "62222320"

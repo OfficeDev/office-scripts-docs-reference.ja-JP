@@ -1,0 +1,17 @@
+### YamlMime:TSTypeAlias
+name: ExcelScript.RangeValue
+uid: ExcelScript!ExcelScript.RangeValue:type
+package: ExcelScript!
+fullName: ExcelScript.RangeValue
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: type RangeValue = string | number | boolean | null | undefined;
+metadata:
+  ms.openlocfilehash: aff602c520221ba948ba58cab9b53f6b50336e8e
+  ms.sourcegitcommit: 0675e5a8982c67a50f192aff2c47fba884f1fd26
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 01/26/2022
+  ms.locfileid: "62222358"
