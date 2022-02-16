@@ -25,7 +25,7 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.PivotFilters:interface" />
     return:
       type: void
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script applies a PivotValueFilter to the first row hierarchy in the PivotTable.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the PivotTable on the current worksheet.\n  let sheet = workbook.getActiveWorksheet();\n  let pivotTable = sheet.getPivotTables()[0];\n\n  // Get the first row hierarchy to use as the field which gets filtered.\n  let rowHierarchy = pivotTable.getRowHierarchies()[0];\n\n  // Get the first data hierarchy to use as the values for filtering the rows.\n  let dataHierarchy = pivotTable.getDataHierarchies()[0];\n\n  // Create a filter that excludes values greater than 500.\n  let filter: ExcelScript.PivotValueFilter = {\n    condition: ExcelScript.ValueFilterCondition.greaterThan,\n    comparator: 500,\n    value: dataHierarchy.getName()\n  };\n\n  // Apply the filter.\n  rowHierarchy.getPivotField(rowHierarchy.getName()).applyFilter({\n    valueFilter: filter\n  });\n}\n```"
 - name: clearAllFilters()
   uid: ExcelScript!ExcelScript.PivotField#clearAllFilters:member(1)
   package: ExcelScript!
@@ -265,9 +265,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 6d5e709d288c028cf167f0b1495a8b9ba963c335
-  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
+  ms.openlocfilehash: 0a1b4e3b1fa368d54a066f1ed58dbde60edf99ca
+  ms.sourcegitcommit: 9dbae2022b7fe47e64affb163fd332b01810dccf
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/17/2021
-  ms.locfileid: "61064795"
+  ms.lasthandoff: 02/16/2022
+  ms.locfileid: "62857329"

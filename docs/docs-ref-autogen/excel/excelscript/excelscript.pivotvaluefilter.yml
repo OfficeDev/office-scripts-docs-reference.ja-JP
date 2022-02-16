@@ -1,107 +1,114 @@
 ### YamlMime:TSType
 name: ExcelScript.PivotValueFilter
-uid: 'ExcelScript!ExcelScript.PivotValueFilter:interface'
+uid: ExcelScript!ExcelScript.PivotValueFilter:interface
 package: ExcelScript!
 fullName: ExcelScript.PivotValueFilter
 summary: PivotField に適用する値フィルターの構成可能なテンプレート。 フィルター `condition` を操作するために設定する必要がある条件を定義します。
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script applies a PivotValueFilter to the first row hierarchy in the PivotTable.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the PivotTable on the current worksheet.\n  let sheet = workbook.getActiveWorksheet();\n  let pivotTable = sheet.getPivotTables()[0];\n\n  // Get the first row hierarchy to use as the field which gets filtered.\n  let rowHierarchy = pivotTable.getRowHierarchies()[0];\n\n  // Get the first data hierarchy to use as the values for filtering the rows.\n  let dataHierarchy = pivotTable.getDataHierarchies()[0];\n\n  // Create a filter that excludes values greater than 500.\n  let filter: ExcelScript.PivotValueFilter = {\n    condition: ExcelScript.ValueFilterCondition.greaterThan,\n    comparator: 500,\n    value: dataHierarchy.getName()\n  };\n\n  // Apply the filter.\n  rowHierarchy.getPivotField(rowHierarchy.getName()).applyFilter({\n    valueFilter: filter\n  });\n}\n```"
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: comparator
-    uid: 'ExcelScript!ExcelScript.PivotValueFilter#comparator:member'
-    package: ExcelScript!
-    fullName: comparator
-    summary: コンパレータは、他の値を比較する静的な値です。 比較の種類は、条件によって定義されます。 たとえば、コンパレータが "50" で、条件が "greaterThan" の場合、50 を超えないアイテム値はすべてフィルターによって削除されます。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'comparator?: number;'
-      return:
-        type: number
-  - name: condition
-    uid: 'ExcelScript!ExcelScript.PivotValueFilter#condition:member'
-    package: ExcelScript!
-    fullName: condition
-    summary: 必要なフィルター条件を定義するフィルターの条件を指定します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'condition: ValueFilterCondition;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.ValueFilterCondition:enum" />'
-  - name: exclusive
-    uid: 'ExcelScript!ExcelScript.PivotValueFilter#exclusive:member'
-    package: ExcelScript!
-    fullName: exclusive
-    summary: もし `true`<!-- -->を選択すると *、条件を満* たすアイテムが除外されます。 既定値は `false` (条件を満たすアイテムを含めるフィルター)。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'exclusive?: boolean;'
-      return:
-        type: boolean
-  - name: lowerBound
-    uid: 'ExcelScript!ExcelScript.PivotValueFilter#lowerBound:member'
-    package: ExcelScript!
-    fullName: lowerBound
-    summary: フィルター条件の範囲の下限 `between` 。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'lowerBound?: number;'
-      return:
-        type: number
-  - name: selectionType
-    uid: 'ExcelScript!ExcelScript.PivotValueFilter#selectionType:member'
-    package: ExcelScript!
-    fullName: selectionType
-    summary: フィルターが上位/下位の N 項目、上/下の N パーセント、または上/下の N 合計のフィルターの値を指定します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'selectionType?: TopBottomSelectionType;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.TopBottomSelectionType:enum" />'
-  - name: threshold
-    uid: 'ExcelScript!ExcelScript.PivotValueFilter#threshold:member'
-    package: ExcelScript!
-    fullName: threshold
-    summary: 上/下のフィルター条件に対してフィルター処理するアイテム、パーセント、または合計の "N" しきい値数。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'threshold?: number;'
-      return:
-        type: number
-  - name: upperBound
-    uid: 'ExcelScript!ExcelScript.PivotValueFilter#upperBound:member'
-    package: ExcelScript!
-    fullName: upperBound
-    summary: フィルター条件の範囲の上限 `between` 。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'upperBound?: number;'
-      return:
-        type: number
-  - name: value
-    uid: 'ExcelScript!ExcelScript.PivotValueFilter#value:member'
-    package: ExcelScript!
-    fullName: value
-    summary: フィルター処理するフィールドで選択した "value" の名前。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'value: string;'
-      return:
-        type: string
+- name: comparator
+  uid: ExcelScript!ExcelScript.PivotValueFilter#comparator:member
+  package: ExcelScript!
+  fullName: comparator
+  summary: コンパレータは、他の値を比較する静的な値です。 比較の種類は、条件によって定義されます。 たとえば、コンパレータが "50" で、条件が "greaterThan" の場合、50 を超えないアイテム値はすべてフィルターによって削除されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'comparator?: number;'
+    return:
+      type: number
+- name: condition
+  uid: ExcelScript!ExcelScript.PivotValueFilter#condition:member
+  package: ExcelScript!
+  fullName: condition
+  summary: 必要なフィルター条件を定義するフィルターの条件を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'condition: ValueFilterCondition;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ValueFilterCondition:enum" />
+- name: exclusive
+  uid: ExcelScript!ExcelScript.PivotValueFilter#exclusive:member
+  package: ExcelScript!
+  fullName: exclusive
+  summary: もし `true`<!-- -->を選択すると *、条件を満* たすアイテムが除外されます。 既定値は (条件 `false` を満たすアイテムを含めるフィルター)。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'exclusive?: boolean;'
+    return:
+      type: boolean
+- name: lowerBound
+  uid: ExcelScript!ExcelScript.PivotValueFilter#lowerBound:member
+  package: ExcelScript!
+  fullName: lowerBound
+  summary: フィルター条件の範囲の下限 `between` 。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'lowerBound?: number;'
+    return:
+      type: number
+- name: selectionType
+  uid: ExcelScript!ExcelScript.PivotValueFilter#selectionType:member
+  package: ExcelScript!
+  fullName: selectionType
+  summary: フィルターが上位/下位の N 項目、上/下の N パーセント、または上/下の N 合計のフィルターの値を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'selectionType?: TopBottomSelectionType;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.TopBottomSelectionType:enum" />
+- name: threshold
+  uid: ExcelScript!ExcelScript.PivotValueFilter#threshold:member
+  package: ExcelScript!
+  fullName: threshold
+  summary: 上/下のフィルター条件に対してフィルター処理するアイテム、パーセント、または合計の "N" しきい値数。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'threshold?: number;'
+    return:
+      type: number
+- name: upperBound
+  uid: ExcelScript!ExcelScript.PivotValueFilter#upperBound:member
+  package: ExcelScript!
+  fullName: upperBound
+  summary: フィルター条件の範囲の上限 `between` 。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'upperBound?: number;'
+    return:
+      type: number
+- name: value
+  uid: ExcelScript!ExcelScript.PivotValueFilter#value:member
+  package: ExcelScript!
+  fullName: value
+  summary: フィルター処理するフィールドで選択した "value" の名前。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'value: string;'
+    return:
+      type: string
+metadata:
+  ms.openlocfilehash: 2d47bccf4c5df4a98803dce78b17d943f29519cd
+  ms.sourcegitcommit: 9dbae2022b7fe47e64affb163fd332b01810dccf
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 02/16/2022
+  ms.locfileid: "62857300"

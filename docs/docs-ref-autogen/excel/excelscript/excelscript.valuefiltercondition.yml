@@ -1,70 +1,85 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ValueFilterCondition
-uid: 'ExcelScript!ExcelScript.ValueFilterCondition:enum'
+uid: ExcelScript!ExcelScript.ValueFilterCondition:enum
 package: ExcelScript!
 fullName: ExcelScript.ValueFilterCondition
-summary: 値フィルターを適用できる、受け入れられるすべての条件を表す列挙型。 フィールドに適用されるピボットフィルターの種類を構成するために使用します。 `PivotFilter.exclusive` これらの条件の多 `true` くを反転させる設定が可能です。
-remarks: ''
+summary: 値フィルターを適用できる、受け入れられるすべての条件を表す列挙型。 フィールドに適用されるピボットフィルターの種類を構成するために使用します。 `PivotFilter.exclusive` これらの条件の多くを `true` 反転させる設定が可能です。
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script applies a PivotValueFilter to the first row hierarchy in the PivotTable.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the PivotTable on the current worksheet.\n  let sheet = workbook.getActiveWorksheet();\n  let pivotTable = sheet.getPivotTables()[0];\n\n  // Get the first row hierarchy to use as the field which gets filtered.\n  let rowHierarchy = pivotTable.getRowHierarchies()[0];\n\n  // Get the first data hierarchy to use as the values for filtering the rows.\n  let dataHierarchy = pivotTable.getDataHierarchies()[0];\n\n  // Create a filter that excludes values greater than 500.\n  let filter: ExcelScript.PivotValueFilter = {\n    condition: ExcelScript.ValueFilterCondition.greaterThan,\n    comparator: 500,\n    value: dataHierarchy.getName()\n  };\n\n  // Apply the filter.\n  rowHierarchy.getPivotField(rowHierarchy.getName()).applyFilter({\n    valueFilter: filter\n  });\n}\n```"
 isPreview: false
 isDeprecated: false
 fields:
-  - name: between
-    uid: 'ExcelScript!ExcelScript.ValueFilterCondition.between:member'
-    package: ExcelScript!
-    summary: |-
-      間 `lowerBound` と `upperBound` 条件。
+- name: between
+  uid: ExcelScript!ExcelScript.ValueFilterCondition.between:member
+  package: ExcelScript!
+  summary: >-
+    間と `lowerBound` 条件 `upperBound` 。
 
-      必須の条件: {`value`<!-- -->, `lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->. オプションの条件: {`exclusive`<!-- -->}<!-- -->.
-  - name: bottomN
-    uid: 'ExcelScript!ExcelScript.ValueFilterCondition.bottomN:member'
-    package: ExcelScript!
-    summary: |-
-      下の N (`threshold`<!-- -->) \[ アイテム、パーセント、値 \] カテゴリの合計。
 
-      必須の条件: {`value`<!-- -->, `threshold`<!-- -->, `selectionType`<!-- -->}<!-- -->.
-  - name: equals
-    uid: 'ExcelScript!ExcelScript.ValueFilterCondition.equals:member'
-    package: ExcelScript!
-    summary: |-
-      比較条件に等しい。
+    必須の条件: {`value`<!-- -->, `lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->. オプションの条件: {`exclusive`<!-- -->}<!-- -->.
+- name: bottomN
+  uid: ExcelScript!ExcelScript.ValueFilterCondition.bottomN:member
+  package: ExcelScript!
+  summary: >-
+    下の N (`threshold`<!-- -->) \[アイテム、パーセント、値カテゴリ\] の合計。
 
-      必須の条件: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->. オプションの条件: {`exclusive`<!-- -->}<!-- -->.
-  - name: greaterThan
-    uid: 'ExcelScript!ExcelScript.ValueFilterCondition.greaterThan:member'
-    package: ExcelScript!
-    summary: |-
-      比較条件より大きい。
 
-      必須の条件: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
-  - name: greaterThanOrEqualTo
-    uid: 'ExcelScript!ExcelScript.ValueFilterCondition.greaterThanOrEqualTo:member'
-    package: ExcelScript!
-    summary: |-
-      コンパレータ条件以上。
+    必須の条件: {`value`<!-- -->, `threshold`<!-- -->, `selectionType`<!-- -->}<!-- -->.
+- name: equals
+  uid: ExcelScript!ExcelScript.ValueFilterCondition.equals:member
+  package: ExcelScript!
+  summary: >-
+    比較条件に等しい。
 
-      必須の条件: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
-  - name: lessThan
-    uid: 'ExcelScript!ExcelScript.ValueFilterCondition.lessThan:member'
-    package: ExcelScript!
-    summary: |-
-      比較条件より小さい。
 
-      必須の条件: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
-  - name: lessThanOrEqualTo
-    uid: 'ExcelScript!ExcelScript.ValueFilterCondition.lessThanOrEqualTo:member'
-    package: ExcelScript!
-    summary: |-
-      コンパレータ条件以下。
+    必須の条件: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->. オプションの条件: {`exclusive`<!-- -->}<!-- -->.
+- name: greaterThan
+  uid: ExcelScript!ExcelScript.ValueFilterCondition.greaterThan:member
+  package: ExcelScript!
+  summary: >-
+    比較条件より大きい。
 
-      必須の条件: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
-  - name: topN
-    uid: 'ExcelScript!ExcelScript.ValueFilterCondition.topN:member'
-    package: ExcelScript!
-    summary: |-
-      上位 N (`threshold`<!-- -->) \[ アイテム、パーセント、値 \] カテゴリの合計。
 
-      必須の条件: {`value`<!-- -->, `threshold`<!-- -->, `selectionType`<!-- -->}<!-- -->.
-  - name: unknown
-    uid: 'ExcelScript!ExcelScript.ValueFilterCondition.unknown:member'
-    package: ExcelScript!
-    summary: '`ValueFilterCondition` 不明またはサポートされていません。'
+    必須の条件: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
+- name: greaterThanOrEqualTo
+  uid: ExcelScript!ExcelScript.ValueFilterCondition.greaterThanOrEqualTo:member
+  package: ExcelScript!
+  summary: >-
+    コンパレータ条件以上。
+
+
+    必須の条件: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
+- name: lessThan
+  uid: ExcelScript!ExcelScript.ValueFilterCondition.lessThan:member
+  package: ExcelScript!
+  summary: >-
+    比較条件より小さい。
+
+
+    必須の条件: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
+- name: lessThanOrEqualTo
+  uid: ExcelScript!ExcelScript.ValueFilterCondition.lessThanOrEqualTo:member
+  package: ExcelScript!
+  summary: >-
+    コンパレータ条件以下。
+
+
+    必須の条件: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
+- name: topN
+  uid: ExcelScript!ExcelScript.ValueFilterCondition.topN:member
+  package: ExcelScript!
+  summary: >-
+    上位 N (`threshold`<!-- -->) \[アイテム、パーセント、値カテゴリ\] の合計。
+
+
+    必須の条件: {`value`<!-- -->, `threshold`<!-- -->, `selectionType`<!-- -->}<!-- -->.
+- name: unknown
+  uid: ExcelScript!ExcelScript.ValueFilterCondition.unknown:member
+  package: ExcelScript!
+  summary: '`ValueFilterCondition` 不明またはサポートされていません。'
+metadata:
+  ms.openlocfilehash: 8789c8f060146cd4bacc5b6af3c92f1da44eff2d
+  ms.sourcegitcommit: 9dbae2022b7fe47e64affb163fd332b01810dccf
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 02/16/2022
+  ms.locfileid: "62857315"

@@ -1,84 +1,91 @@
 ### YamlMime:TSType
 name: ExcelScript.PivotHierarchy
-uid: 'ExcelScript!ExcelScript.PivotHierarchy:interface'
+uid: ExcelScript!ExcelScript.PivotHierarchy:interface
 package: ExcelScript!
 fullName: ExcelScript.PivotHierarchy
 summary: PivotHierarchy のExcelを表します。
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script creates a PivotTable from an existing table and adds it to a new worksheet.\n * This script assumes there is a table in the current worksheet with columns named \"Type\" and \"Sales\".\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Create a PivotTable based on a table in the current worksheet.\n  let sheet = workbook.getActiveWorksheet();\n  let table = sheet.getTables()[0];\n\n  // Add the PivotTable to a new worksheet.\n  let newSheet = workbook.addWorksheet(\"Pivot\");\n  let pivotTable = newSheet.addPivotTable(\"My Pivot\", table, \"A1\");\n\n  // Add fields to the PivotTable to show \"Sales\" per \"Type\".\n  pivotTable.addRowHierarchy(pivotTable.getHierarchy(\"Type\"));\n  pivotTable.addDataHierarchy(pivotTable.getHierarchy(\"Sales\"));\n}\n```"
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-  - name: getFields()
-    uid: 'ExcelScript!ExcelScript.PivotHierarchy#getFields:member(1)'
-    package: ExcelScript!
-    fullName: getFields()
-    summary: PivotHierarchy に関連付けられているピボット フィールドを返します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getFields(): PivotField[];'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.PivotField:interface" />[]'
-        description: ''
-  - name: getId()
-    uid: 'ExcelScript!ExcelScript.PivotHierarchy#getId:member(1)'
-    package: ExcelScript!
-    fullName: getId()
-    summary: PivotHierarchy の ID。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getId(): string;'
-      return:
-        type: string
-        description: ''
-  - name: getName()
-    uid: 'ExcelScript!ExcelScript.PivotHierarchy#getName:member(1)'
-    package: ExcelScript!
-    fullName: getName()
-    summary: PivotHierarchy の名前。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getName(): string;'
-      return:
-        type: string
-        description: ''
-  - name: getPivotField(name)
-    uid: 'ExcelScript!ExcelScript.PivotHierarchy#getPivotField:member(1)'
-    package: ExcelScript!
-    fullName: getPivotField(name)
-    summary: 名前でピボットフィールドを取得します。 PivotField が存在しない場合、この関数はプロパティを次に設定した `isNullObject` オブジェクトを返します。 `true`<!-- -->.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getPivotField(name: string): PivotField | undefined;'
-      parameters:
-        - id: name
-          description: 取得するピボットフィールドの名前。
-          type: string
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | undefined'
-        description: ''
-  - name: setName(name)
-    uid: 'ExcelScript!ExcelScript.PivotHierarchy#setName:member(1)'
-    package: ExcelScript!
-    fullName: setName(name)
-    summary: PivotHierarchy の名前。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setName(name: string): void;'
-      parameters:
-        - id: name
-          description: ''
-          type: string
-      return:
-        type: void
-        description: ''
+- name: getFields()
+  uid: ExcelScript!ExcelScript.PivotHierarchy#getFields:member(1)
+  package: ExcelScript!
+  fullName: getFields()
+  summary: PivotHierarchy に関連付けられているピボット フィールドを返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFields(): PivotField[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PivotField:interface" />[]
+      description: ''
+- name: getId()
+  uid: ExcelScript!ExcelScript.PivotHierarchy#getId:member(1)
+  package: ExcelScript!
+  fullName: getId()
+  summary: PivotHierarchy の ID。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getId(): string;'
+    return:
+      type: string
+      description: ''
+- name: getName()
+  uid: ExcelScript!ExcelScript.PivotHierarchy#getName:member(1)
+  package: ExcelScript!
+  fullName: getName()
+  summary: PivotHierarchy の名前。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getName(): string;'
+    return:
+      type: string
+      description: ''
+- name: getPivotField(name)
+  uid: ExcelScript!ExcelScript.PivotHierarchy#getPivotField:member(1)
+  package: ExcelScript!
+  fullName: getPivotField(name)
+  summary: 名前でピボットフィールドを取得します。 PivotField が存在しない場合、この関数はプロパティを次に設定したオブジェクト `isNullObject` を返します。 `true`<!-- -->.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPivotField(name: string): PivotField | undefined;'
+    parameters:
+    - id: name
+      description: 取得するピボットフィールドの名前。
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | undefined
+      description: ''
+- name: setName(name)
+  uid: ExcelScript!ExcelScript.PivotHierarchy#setName:member(1)
+  package: ExcelScript!
+  fullName: setName(name)
+  summary: PivotHierarchy の名前。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setName(name: string): void;'
+    parameters:
+    - id: name
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 8af87fa67284d57a4d6dfe76ea1695a8097bbe5c
+  ms.sourcegitcommit: 9dbae2022b7fe47e64affb163fd332b01810dccf
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 02/16/2022
+  ms.locfileid: "62857322"

@@ -28,7 +28,7 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.PivotHierarchy:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.RowColumnPivotHierarchy:interface" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script adds a row hierarchy to the PivotTable on the current worksheet.\n * This assumes the source data has columns named \n * \"Type\", \"Classification\", and \"Sales\".\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the PivotTable on the current worksheet.\n  let sheet = workbook.getActiveWorksheet();\n  let pivotTable = sheet.getPivotTables()[0];\n\n  // Add the field \"Type\" to the PivotTable as a row hierarchy.\n  pivotTable.addRowHierarchy(pivotTable.getHierarchy(\"Type\"));\n\n  // Add the field \"Classification\" to the PivotTable as a column hierarchy.\n  pivotTable.addColumnHierarchy(pivotTable.getHierarchy(\"Classification\"));\n\n  // Add the field \"Sales\" to the PivotTable as a data hierarchy.\n  // By default, this displays the sums of the values in \"Sales\" based on the \"Type\".\n  pivotTable.addDataHierarchy(pivotTable.getHierarchy(\"Sales\"));\n}\n```"
 - name: addDataHierarchy(pivotHierarchy)
   uid: ExcelScript!ExcelScript.PivotTable#addDataHierarchy:member(1)
   package: ExcelScript!
@@ -45,7 +45,7 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.PivotHierarchy:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.DataPivotHierarchy:interface" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script creates a PivotTable from an existing table and adds it to a new worksheet.\n * This script assumes there is a table in the current worksheet with columns named \"Type\" and \"Sales\".\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Create a PivotTable based on a table in the current worksheet.\n  let sheet = workbook.getActiveWorksheet();\n  let table = sheet.getTables()[0];\n\n  // Add the PivotTable to a new worksheet.\n  let newSheet = workbook.addWorksheet(\"Pivot\");\n  let pivotTable = newSheet.addPivotTable(\"My Pivot\", table, \"A1\");\n\n  // Add fields to the PivotTable to show \"Sales\" per \"Type\".\n  pivotTable.addRowHierarchy(pivotTable.getHierarchy(\"Type\"));\n  pivotTable.addDataHierarchy(pivotTable.getHierarchy(\"Sales\"));\n}\n```"
 - name: addFilterHierarchy(pivotHierarchy)
   uid: ExcelScript!ExcelScript.PivotTable#addFilterHierarchy:member(1)
   package: ExcelScript!
@@ -85,7 +85,7 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.PivotHierarchy:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.RowColumnPivotHierarchy:interface" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script creates a PivotTable from an existing table and adds it to a new worksheet.\n * This script assumes there is a table in the current worksheet with columns named \"Type\" and \"Sales\".\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Create a PivotTable based on a table in the current worksheet.\n  let sheet = workbook.getActiveWorksheet();\n  let table = sheet.getTables()[0];\n\n  // Add the PivotTable to a new worksheet.\n  let newSheet = workbook.addWorksheet(\"Pivot\");\n  let pivotTable = newSheet.addPivotTable(\"My Pivot\", table, \"A1\");\n\n  // Add fields to the PivotTable to show \"Sales\" per \"Type\".\n  pivotTable.addRowHierarchy(pivotTable.getHierarchy(\"Type\"));\n  pivotTable.addDataHierarchy(pivotTable.getHierarchy(\"Sales\"));\n}\n```"
 - name: delete()
   uid: ExcelScript!ExcelScript.PivotTable#delete:member(1)
   package: ExcelScript!
@@ -499,9 +499,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 3ec164476973a94e55f3345f65718d4bb6c0060f
-  ms.sourcegitcommit: b796bf885c8fe7d777f70602bb7038de424d922b
+  ms.openlocfilehash: f6b88612869dba6c21921d9c43f3c469a1c97da6
+  ms.sourcegitcommit: 9dbae2022b7fe47e64affb163fd332b01810dccf
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 12/01/2021
-  ms.locfileid: "61240550"
+  ms.lasthandoff: 02/16/2022
+  ms.locfileid: "62857308"
