@@ -4,7 +4,7 @@ uid: ExcelScript!ExcelScript.RangeFill:interface
 package: ExcelScript!
 fullName: ExcelScript.RangeFill
 summary: Range オブジェクトの背景を表します。
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script sets the fill color of the used range to green.\n */\nfunction main(workbook: ExcelScript.Workbook)\n{\n  // Get the used range of the current worksheet.\n  let currentSheet = workbook.getActiveWorksheet();\n  let usedRange = currentSheet.getUsedRange();\n\n  // Get the RangeFill object.\n  let fill = usedRange.getFormat().getFill();\n\n  // Set the fill color to green.\n  fill.setColor(\"green\");\n}\n```"
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,12 +21,12 @@ methods:
     content: 'clear(): void;'
     return:
       type: void
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script removes all fill color and styles from the used range.\n */\nfunction main(workbook: ExcelScript.Workbook)\n{\n  // Get the used range of the current worksheet.\n  let currentSheet = workbook.getActiveWorksheet();\n  let usedRange = currentSheet.getUsedRange();\n\n  // Clear the fill from the entire range.\n  usedRange.getFormat().getFill().clear();\n}\n```"
 - name: getColor()
   uid: ExcelScript!ExcelScript.RangeFill#getColor:member(1)
   package: ExcelScript!
   fullName: getColor()
-  summary: 背景の色を表す HTML カラー コード \# (RRGGBB 形式 ("FFA500"など)、または名前付き HTML 色 ("orange"など)
+  summary: 背景の \#色を表す HTML カラー コード(RRGGBB 形式 ("FFA500"など)、または名前付き HTML 色 ("orange"など)
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#getPatternColor:member(1)
   package: ExcelScript!
   fullName: getPatternColor()
-  summary: 範囲パターンの色を表す HTML カラー コードは \# 、RRGGBB 形式 ("FFA500"など)、または名前付き HTML 色 ("オレンジ色" など) として表されます。
+  summary: 範囲パターンの \#色を表す HTML カラー コードは、RRGGBB 形式 ("FFA500"など)、または名前付き HTML 色 ("オレンジ色" など) として表されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#setColor:member(1)
   package: ExcelScript!
   fullName: setColor(color)
-  summary: 背景の色を表す HTML カラー コード \# (RRGGBB 形式 ("FFA500"など)、または名前付き HTML 色 ("orange"など)
+  summary: 背景の \#色を表す HTML カラー コード(RRGGBB 形式 ("FFA500"など)、または名前付き HTML 色 ("orange"など)
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -125,7 +125,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#setPatternColor:member(1)
   package: ExcelScript!
   fullName: setPatternColor(patternColor)
-  summary: 範囲パターンの色を表す HTML カラー コードは \# 、RRGGBB 形式 ("FFA500"など)、または名前付き HTML 色 ("オレンジ色" など) として表されます。
+  summary: 範囲パターンの \#色を表す HTML カラー コードは、RRGGBB 形式 ("FFA500"など)、または名前付き HTML 色 ("オレンジ色" など) として表されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -173,9 +173,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 50a9ed8476ce3f2bbcc2d8a3209cec35097a6657
-  ms.sourcegitcommit: b862905bd3ed886880931647f7c164ae908cb1cd
+  ms.openlocfilehash: a6ffc69ccf2ef802d028fb2df60ca6e4a752c352
+  ms.sourcegitcommit: 95d4c3dc3d1a6a84b10430cfe796f4d883d5dbf4
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/29/2021
-  ms.locfileid: "60003730"
+  ms.lasthandoff: 03/09/2022
+  ms.locfileid: "63391611"
