@@ -4,7 +4,7 @@ uid: ExcelScript!ExcelScript.Worksheet:interface
 package: ExcelScript!
 fullName: ExcelScript.Worksheet
 summary: Excel のワークシートは、セルのグリッドになっています。そこに、データ、表、グラフなどを含めることができます。
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script creates a new worksheet named \"Plum\" and sets its tab color to purple.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  const newSheet = workbook.addWorksheet(\"Plum\")\n  newSheet.setTabColor(\"purple\");\n}\n```"
 isPreview: false
 isDeprecated: false
 type: interface
@@ -133,7 +133,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#addImage:member(1)
   package: ExcelScript!
   fullName: addImage(base64ImageString)
-  summary: base64 エンコード文字列から画像を作成し、それをワークシートに追加します。 新しいイメージ `Shape` を表すオブジェクトを返します。
+  summary: base64 エンコード文字列から画像を作成し、それをワークシートに追加します。 新しいイメージを `Shape` 表すオブジェクトを返します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -303,7 +303,7 @@ methods:
       description: 新しいスライサーの基になるデータ ソース。 オブジェクト、オブジェクト `PivotTable` 、または `Table` 文字列を指定できます。 PivotTable オブジェクトを渡す場合、データ ソースはオブジェクトのソース `PivotTable` です。 オブジェクトが `Table` 渡された場合、データ ソースはオブジェクト `Table` です。 文字列が渡された場合、ピボットテーブルまたはテーブルの名前または ID として解釈されます。
       type: string | <xref uid="ExcelScript!ExcelScript.PivotTable:interface" /> | <xref uid="ExcelScript!ExcelScript.Table:interface" />
     - id: sourceField
-      description: フィルター処理するデータ ソースのフィールド。 オブジェクト、オブジェクト、A の ID、または a の名前または `PivotField` `TableColumn` ID `PivotField` を指定できます。 `TableColumn`<!-- -->.
+      description: フィルター処理するデータ ソースのフィールド。 オブジェクト、オブジェクト `PivotField` 、 `TableColumn` A の ID、または a `PivotField` の名前または ID を指定できます。 `TableColumn`<!-- -->.
       type: string | <xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | number | <xref uid="ExcelScript!ExcelScript.TableColumn:interface" />
     - id: slicerDestination
       description: オプション。 新しいスライサーが作成されるワークシート。 オブジェクトまたはワークシート `Worksheet` の名前または ID を指定できます。 スライサー コレクションがワークシートから取得される場合は、このパラメーターを省略できます。
@@ -326,7 +326,7 @@ methods:
       description: データ `Range` ソースを表すオブジェクト、または範囲の文字列アドレスまたは名前。 アドレスにシート名が含まれていない場合は、現在作業中のシートが使用されます。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: hasHeaders
-      description: インポートするデータに列ラベルが含まれたかどうかを示すブール値。 ソースにヘッダーが含まれている (つまり、このプロパティがに設定されている場合) `false`<!-- -->)Excelヘッダーを自動的に生成し、データを 1 行下にシフトします。
+      description: インポートするデータに列ラベルが含まれたかどうかを示すブール値。 ソースにヘッダーが含まれている (つまり、このプロパティがに設定されている場合) `false`<!-- -->)をExcelヘッダーを自動的に生成し、データを 1 行下にシフトします。
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Table:interface" />
@@ -425,7 +425,7 @@ methods:
       description: 新しく作成したワークシートを配置するブック内の場所。 既定値は "None" で、ワークシートの先頭にワークシートを挿入します。
       type: <xref uid="ExcelScript!ExcelScript.WorksheetPositionType:enum" />
     - id: relativeTo
-      description: 新しく作成されたワークシートの位置を決定する既存のワークシート。 これは、"Before" `positionType` または "After" の場合にのみ必要です。
+      description: 新しく作成されたワークシートの位置を決定する既存のワークシート。 これは、"Before" または `positionType` "After" の場合にのみ必要です。
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -434,7 +434,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#delete:member(1)
   package: ExcelScript!
   fullName: delete()
-  summary: ブックからワークシートを削除します。 ワークシートの表示設定が "VeryHidden" に設定されている場合、削除操作は例外で失敗します `InvalidOperation` 。 削除する前に、まず表示設定を非表示または表示に変更する必要があります。
+  summary: ブックからワークシートを削除します。 ワークシートの表示設定が "VeryHidden" に設定されている場合、削除操作は例外で失敗 `InvalidOperation` します。 削除する前に、まず表示設定を非表示または表示に変更する必要があります。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -473,7 +473,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#findAll:member(1)
   package: ExcelScript!
   fullName: findAll(text, criteria)
-  summary: 指定された条件に基づいて、指定された文字列のすべての出現を検索し、1 つ以上の四角形の範囲で構成されるオブジェクト `RangeAreas` として返します。
+  summary: 指定された条件に基 `RangeAreas` づいて、指定された文字列のすべての出現を検索し、1 つ以上の四角形の範囲で構成されるオブジェクトとして返します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -506,7 +506,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getAutoFilter:member(1)
   package: ExcelScript!
   fullName: getAutoFilter()
-  summary: ワークシートの `AutoFilter` オブジェクトを表します。
+  summary: ワークシートのオブジェクト `AutoFilter` を表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -514,12 +514,12 @@ methods:
     content: 'getAutoFilter(): AutoFilter;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.AutoFilter:interface" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script creates an autofilter on the worksheet that filters out rows based on column values. \n * The autofilter filters to only include rows that have a value in column D in the top 10 percentile \n * (of column D values).\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  const currentSheet = workbook.getActiveWorksheet();\n  const dataRange = currentSheet.getUsedRange();\n\n  // Add a filter that will only show the rows with the top 10% of values in column D\n  // (index 3, assuming the used range spans from at least A:D).\n  currentSheet.getAutoFilter().apply(dataRange, 3, {\n    criterion1: \"10\",\n    filterOn: ExcelScript.FilterOn.topPercent\n  });\n}\n```"
 - name: getCell(row, column)
   uid: ExcelScript!ExcelScript.Worksheet#getCell:member(1)
   package: ExcelScript!
   fullName: getCell(row, column)
-  summary: 行番号 `Range` と列番号に基づいて 1 つのセルを含むオブジェクトを取得します。 セルは、ワークシート グリッド内にある限り、親範囲の境界外に配置できます。
+  summary: 行番号と `Range` 列番号に基づいて 1 つのセルを含むオブジェクトを取得します。 セルは、ワークシート グリッド内にある限り、親範囲の境界外に配置できます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -646,7 +646,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getEnableCalculation:member(1)
   package: ExcelScript!
   fullName: getEnableCalculation()
-  summary: 必要に応Excelワークシートを再計算する必要があるかどうかを決定します。 True の場合Excel場合はワークシートを再計算します。 False を指定Excelシートを再計算しない場合。
+  summary: 必要に応Excelワークシートを再計算する必要があるかどうかを決定します。 True の場合Excel場合はワークシートを再計算します。 False をExcelシートを再計算しない場合。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -874,7 +874,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getRange:member(1)
   package: ExcelScript!
   fullName: getRange(address)
-  summary: アドレスまたは名前で指定された 1 つの四角形のセル ブロックを表す `Range` オブジェクトを取得します。
+  summary: アドレスまたは名前 `Range` で指定された 1 つの四角形のセル ブロックを表すオブジェクトを取得します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -891,7 +891,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getRangeByIndexes:member(1)
   package: ExcelScript!
   fullName: getRangeByIndexes(startRow, startColumn, rowCount, columnCount)
-  summary: 特定の行インデックスと列インデックスから始まり、特定の数の行と列にまたがるオブジェクト `Range` を取得します。
+  summary: 特定の行 `Range` インデックスと列インデックスから始まり、特定の数の行と列にまたがるオブジェクトを取得します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -923,7 +923,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getRanges:member(1)
   package: ExcelScript!
   fullName: getRanges(address)
-  summary: アドレスまたは名前で指定された、四角形の範囲の 1 つ以上のブロックを表す `RangeAreas` オブジェクトを取得します。
+  summary: アドレスまたは名前 `RangeAreas` で指定された、四角形の範囲の 1 つ以上のブロックを表すオブジェクトを取得します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1052,7 +1052,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getTabColor:member(1)
   package: ExcelScript!
   fullName: getTabColor()
-  summary: ワークシートのタブの色。 タブの色を取得する場合、ワークシートが非表示の場合、値は次の値になります。 `null`<!-- -->. ワークシートが表示されているが、タブの色が auto に設定されている場合は、空の文字列が返されます。 それ以外の場合、プロパティは \# RRGGBB 形式 ("FFA500"など) の色に設定されます。 色を設定する場合は、空の文字列を使用して "自動" 色を設定するか、それ以外の場合は実際の色を設定します。
+  summary: ワークシートのタブの色。 タブの色を取得する場合、ワークシートが非表示の場合、値は次の値になります。 `null`<!-- -->. ワークシートが表示されているが、タブの色が auto に設定されている場合は、空の文字列が返されます。 それ以外の場合、プロパティは \#RRGGBB 形式 ("FFA500"など) の色に設定されます。 色を設定する場合は、空の文字列を使用して "自動" 色を設定するか、それ以外の場合は実際の色を設定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1225,7 +1225,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#setEnableCalculation:member(1)
   package: ExcelScript!
   fullName: setEnableCalculation(enableCalculation)
-  summary: 必要に応Excelワークシートを再計算する必要があるかどうかを決定します。 True の場合Excel場合はワークシートを再計算します。 False を指定Excelシートを再計算しない場合。
+  summary: 必要に応Excelワークシートを再計算する必要があるかどうかを決定します。 True の場合Excel場合はワークシートを再計算します。 False をExcelシートを再計算しない場合。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1327,7 +1327,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#setTabColor:member(1)
   package: ExcelScript!
   fullName: setTabColor(tabColor)
-  summary: ワークシートのタブの色。 タブの色を取得する場合、ワークシートが非表示の場合、値は次の値になります。 `null`<!-- -->. ワークシートが表示されているが、タブの色が auto に設定されている場合は、空の文字列が返されます。 それ以外の場合、プロパティは \# RRGGBB 形式 ("FFA500"など) の色に設定されます。 色を設定する場合は、空の文字列を使用して "自動" 色を設定するか、それ以外の場合は実際の色を設定します。
+  summary: ワークシートのタブの色。 タブの色を取得する場合、ワークシートが非表示の場合、値は次の値になります。 `null`<!-- -->. ワークシートが表示されているが、タブの色が auto に設定されている場合は、空の文字列が返されます。 それ以外の場合、プロパティは \#RRGGBB 形式 ("FFA500"など) の色に設定されます。 色を設定する場合は、空の文字列を使用して "自動" 色を設定するか、それ以外の場合は実際の色を設定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1361,7 +1361,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#showOutlineLevels:member(1)
   package: ExcelScript!
   fullName: showOutlineLevels(rowLevels, columnLevels)
-  summary: 行または列のグループをアウトライン レベルで表示します。 グループの概要を示し、ワークシート内のデータの一覧を要約します。 パラメーター `rowLevels` と `columnLevels` パラメーターは、アウトラインを表示するレベルの数を指定します。 受け入れ可能な引数の範囲は 0 ~ 8 です。 値 0 を指定しても、現在の表示は変更されません。 現在のレベル数より大きい値は、すべてのレベルを表示します。
+  summary: 行または列のグループをアウトライン レベルで表示します。 グループの概要を示し、ワークシート内のデータの一覧を要約します。 パラメーター `rowLevels` とパラメーター `columnLevels` は、アウトラインを表示するレベルの数を指定します。 受け入れ可能な引数の範囲は 0 ~ 8 です。 値 0 を指定しても、現在の表示は変更されません。 現在のレベル数より大きい値は、すべてのレベルを表示します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1378,9 +1378,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 1eef5e7e31219028c6c86b4b4784ef9f0a74011f
-  ms.sourcegitcommit: b796bf885c8fe7d777f70602bb7038de424d922b
+  ms.openlocfilehash: 81c49cac1838a1162ade2933ae19caa11519834d
+  ms.sourcegitcommit: f6d4b6aecddf48872f4d9a7bcfffafce65e3d9aa
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 12/01/2021
-  ms.locfileid: "61240564"
+  ms.lasthandoff: 03/11/2022
+  ms.locfileid: "63434829"

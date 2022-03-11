@@ -38,7 +38,7 @@ methods:
     content: 'autofitColumns(): void;'
     return:
       type: void
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script creates a new table from existing data and autofits the columns.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  const currentSheet = workbook.getActiveWorksheet();\n  const usedRange = currentSheet.getUsedRange();\n\n  // Create the table.\n  const table = currentSheet.addTable(usedRange, true);\n\n  // Format the table columns.\n  table.getRange().getFormat().autofitColumns();\n}\n```"
 - name: autofitRows()
   uid: ExcelScript!ExcelScript.RangeFormat#autofitRows:member(1)
   package: ExcelScript!
@@ -51,7 +51,7 @@ methods:
     content: 'autofitRows(): void;'
     return:
       type: void
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script creates a new table from existing data and autofits the rows.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  const currentSheet = workbook.getActiveWorksheet();\n  const usedRange = currentSheet.getUsedRange();\n\n  // Create the table.\n  const table = currentSheet.addTable(usedRange, true);\n\n  // Format the table rows.\n  table.getRange().getFormat().autofitRows();\n}\n```"
 - name: getAutoIndent()
   uid: ExcelScript!ExcelScript.RangeFormat#getAutoIndent:member(1)
   package: ExcelScript!
@@ -82,7 +82,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#getColumnWidth:member(1)
   package: ExcelScript!
   fullName: getColumnWidth()
-  summary: 範囲内のすべての列の幅を指定します。 列の幅が一様ではない場合 `null` は、返されます。
+  summary: 範囲内のすべての列の幅を指定します。 列の幅が一様ではない場合は `null` 、返されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -90,7 +90,7 @@ methods:
     content: 'getColumnWidth(): number;'
     return:
       type: number
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script doubles the column width for every column in the active worksheet's used range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  const currentSheet = workbook.getActiveWorksheet();\n  const usedRange = currentSheet.getUsedRange();\n\n  // To optimize performance, get all the current row heights before setting them.\n  let currentWidths = Array<number>(usedRange.getColumnCount());\n  for (let column = 0; column < currentWidths.length; column++) {\n    currentWidths[column] = usedRange.getColumn(column).getFormat().getColumnWidth();\n  }\n\n  // Set the new column widths.\n  for (let column = 0; column < currentWidths.length; column++) {\n    usedRange.getFormat().setColumnWidth(currentWidths[column] * 2);\n  }\n```"
 - name: getFill()
   uid: ExcelScript!ExcelScript.RangeFormat#getFill:member(1)
   package: ExcelScript!
@@ -203,7 +203,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#getRowHeight:member(1)
   package: ExcelScript!
   fullName: getRowHeight()
-  summary: 範囲内のすべての行の高さ。 行の高さが一様ではない場合 `null` は、返されます。
+  summary: 範囲内のすべての行の高さ。 行の高さが一様ではない場合は `null` 、返されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -211,7 +211,7 @@ methods:
     content: 'getRowHeight(): number;'
     return:
       type: number
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script doubles the row height for every row in the active worksheet's used range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  const currentSheet = workbook.getActiveWorksheet();\n  const usedRange = currentSheet.getUsedRange();\n\n  // To optimize performance, get all the current row heights before setting them.\n  let currentHeights = Array<number>(usedRange.getRowCount());\n  for (let row = 0; row < currentHeights.length; row++) {\n    currentHeights[row] = usedRange.getRow(row).getFormat().getRowHeight();\n  }\n\n  // Set the new row heights.\n  for (let row = 0; row < currentHeights.length; row++) {\n    usedRange.getFormat().setRowHeight(currentHeights[row] * 2);\n  }\n}\n```"
 - name: getShrinkToFit()
   uid: ExcelScript!ExcelScript.RangeFormat#getShrinkToFit:member(1)
   package: ExcelScript!
@@ -242,7 +242,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#getUseStandardHeight:member(1)
   package: ExcelScript!
   fullName: getUseStandardHeight()
-  summary: 'オブジェクトの行の高さがシートの標準の高 `Range` さと等しいかどうかを指定します。 オブジェクトの行の高さがシートの標準の高さと等 `true` `Range` しい場合に返します。 範囲に複数の行が含まれている場合に、行が同じ高 `null` さではない場合に返します。 それ以外 `false` の場合は返します。 注: このプロパティは、 `true`<!-- -->. 設定は `false` 無効です。'
+  summary: 'オブジェクトの行の高さが `Range` シートの標準の高さと等しいかどうかを指定します。 オブジェクトの `true` 行の高さが `Range` シートの標準の高さと等しい場合に返します。 範囲に `null` 複数の行が含まれている場合に、行が同じ高さではない場合に返します。 それ以外の場合 `false` は返します。 注: このプロパティは、 `true`<!-- -->. 設定は `false` 無効です。'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -255,7 +255,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#getUseStandardWidth:member(1)
   package: ExcelScript!
   fullName: getUseStandardWidth()
-  summary: 'オブジェクトの列幅がシートの標準幅 `Range` と等しい場合に指定します。 オブジェクトの列幅がシートの標準幅と等しい `true` `Range` 場合に返します。 範囲に複数の列が含まれている場合に、列の高さが同 `null` じでない場合に返します。 それ以外 `false` の場合は返します。 注: このプロパティは、 `true`<!-- -->. 設定は `false` 無効です。'
+  summary: 'オブジェクトの列幅が `Range` シートの標準幅と等しい場合に指定します。 オブジェクトの `true` 列幅が `Range` シートの標準幅と等しい場合に返します。 範囲に `null` 複数の列が含まれている場合に、列の高さが同じでない場合に返します。 それ以外の場合 `false` は返します。 注: このプロパティは、 `true`<!-- -->. 設定は `false` 無効です。'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -311,7 +311,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#setColumnWidth:member(1)
   package: ExcelScript!
   fullName: setColumnWidth(columnWidth)
-  summary: 範囲内のすべての列の幅を指定します。 列の幅が一様ではない場合 `null` は、返されます。
+  summary: 範囲内のすべての列の幅を指定します。 列の幅が一様ではない場合は `null` 、返されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -323,7 +323,7 @@ methods:
       type: number
     return:
       type: void
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script inserts a new column and sets that column's width to 100 pixels wide.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  const currentSheet = workbook.getActiveWorksheet();\n\n  // Insert a new column between the current B and C columns.\n  const bcRange = currentSheet.getRange(\"C:C\");\n  const newColumn = bcRange.insert(ExcelScript.InsertShiftDirection.right);\n  \n  // Set the column width of the new column to 100 pixels.\n  newColumn.getFormat().setColumnWidth(100);\n}\n```"
 - name: setHorizontalAlignment(horizontalAlignment)
   uid: ExcelScript!ExcelScript.RangeFormat#setHorizontalAlignment:member(1)
   package: ExcelScript!
@@ -396,7 +396,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#setRowHeight:member(1)
   package: ExcelScript!
   fullName: setRowHeight(rowHeight)
-  summary: 範囲内のすべての行の高さ。 行の高さが一様ではない場合 `null` は、返されます。
+  summary: 範囲内のすべての行の高さ。 行の高さが一様ではない場合は `null` 、返されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -408,7 +408,7 @@ methods:
       type: number
     return:
       type: void
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script inserts a new row and sets that row's width to 100 pixels tall.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  const currentSheet = workbook.getActiveWorksheet();\n\n  // Insert a new row between the current 2 and 3 rows.\n  const bcRange = currentSheet.getRange(\"3:3\");\n  const newRow = bcRange.insert(ExcelScript.InsertShiftDirection.down);\n  \n  // Set the row height of the new row to 100 pixels.\n  newRow.getFormat().setRowHeight(100);\n}\n```"
 - name: setShrinkToFit(shrinkToFit)
   uid: ExcelScript!ExcelScript.RangeFormat#setShrinkToFit:member(1)
   package: ExcelScript!
@@ -447,7 +447,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#setUseStandardHeight:member(1)
   package: ExcelScript!
   fullName: setUseStandardHeight(useStandardHeight)
-  summary: 'オブジェクトの行の高さがシートの標準の高 `Range` さと等しいかどうかを指定します。 オブジェクトの行の高さがシートの標準の高さと等 `true` `Range` しい場合に返します。 範囲に複数の行が含まれている場合に、行が同じ高 `null` さではない場合に返します。 それ以外 `false` の場合は返します。 注: このプロパティは、 `true`<!-- -->. 設定は `false` 無効です。'
+  summary: 'オブジェクトの行の高さが `Range` シートの標準の高さと等しいかどうかを指定します。 オブジェクトの `true` 行の高さが `Range` シートの標準の高さと等しい場合に返します。 範囲に `null` 複数の行が含まれている場合に、行が同じ高さではない場合に返します。 それ以外の場合 `false` は返します。 注: このプロパティは、 `true`<!-- -->. 設定は `false` 無効です。'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -464,7 +464,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#setUseStandardWidth:member(1)
   package: ExcelScript!
   fullName: setUseStandardWidth(useStandardWidth)
-  summary: 'オブジェクトの列幅がシートの標準幅 `Range` と等しい場合に指定します。 オブジェクトの列幅がシートの標準幅と等しい `true` `Range` 場合に返します。 範囲に複数の列が含まれている場合に、列の高さが同 `null` じでない場合に返します。 それ以外 `false` の場合は返します。 注: このプロパティは、 `true`<!-- -->. 設定は `false` 無効です。'
+  summary: 'オブジェクトの列幅が `Range` シートの標準幅と等しい場合に指定します。 オブジェクトの `true` 列幅が `Range` シートの標準幅と等しい場合に返します。 範囲に `null` 複数の列が含まれている場合に、列の高さが同じでない場合に返します。 それ以外の場合 `false` は返します。 注: このプロパティは、 `true`<!-- -->. 設定は `false` 無効です。'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -512,9 +512,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 571788b608684d394f3bbb12eb82acdb736a4e2e
-  ms.sourcegitcommit: b862905bd3ed886880931647f7c164ae908cb1cd
+  ms.openlocfilehash: b004e43e137a815b7b1e58df63c72df4ffdbba60
+  ms.sourcegitcommit: f6d4b6aecddf48872f4d9a7bcfffafce65e3d9aa
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/29/2021
-  ms.locfileid: "60003723"
+  ms.lasthandoff: 03/11/2022
+  ms.locfileid: "63434836"
