@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ReplaceCriteria
-uid: 'ExcelScript!ExcelScript.ReplaceCriteria:interface'
+uid: ExcelScript!ExcelScript.ReplaceCriteria:interface
 package: ExcelScript!
 fullName: ExcelScript.ReplaceCriteria
 summary: 使用する置換条件を表します。
@@ -9,27 +9,36 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: completeMatch
-    uid: 'ExcelScript!ExcelScript.ReplaceCriteria#completeMatch:member'
-    package: ExcelScript!
-    fullName: completeMatch
-    summary: 一致が完了する必要がある場合と部分的に行う必要がある場合に指定します。 完全一致は、セルの内容全体と一致します。 部分的な一致は、セルのコンテンツ内の部分文字列と一致します (部分的に一致し `cat` `caterpillar` 、 `scatter`<!-- -->). 既定値は `false` (部分) です。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'completeMatch?: boolean;'
-      return:
-        type: boolean
-  - name: matchCase
-    uid: 'ExcelScript!ExcelScript.ReplaceCriteria#matchCase:member'
-    package: ExcelScript!
-    fullName: matchCase
-    summary: 一致で大文字と小文字が区別される場合を指定します。 既定値は `false` (大文字と小文字を区別しない) です。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'matchCase?: boolean;'
-      return:
-        type: boolean
+- name: completeMatch
+  uid: ExcelScript!ExcelScript.ReplaceCriteria#completeMatch:member
+  package: ExcelScript!
+  fullName: completeMatch
+  summary: 一致が完了する必要がある場合と部分的に行う必要がある場合に指定します。 完全一致は、セルの内容全体と一致します。 部分的な一致は、セルのコンテンツ内の部分文字列と一致します ( `cat` `caterpillar` 部分的に一致し、 `scatter`<!-- -->). 既定値は `false` (部分) です。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'completeMatch?: boolean;'
+    return:
+      type: boolean
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script normalizes the text in a column so that values don't include both \"OK\" and \"okay\". \n * It replaces \"OK\" and all the case-based variants with \"okay\".\n */ \nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the range representing column D.\n  const currentSheet = workbook.getActiveWorksheet();\n  const column = currentSheet.getRange(\"D:D\");\n\n  // Create a ReplaceCriteria object for the Range.replaceAll call.\n  const criteria: ExcelScript.ReplaceCriteria = {\n    completeMatch: true, /* Use a complete match to skip cells that already say \"okay\". */\n    matchCase: false /* Ignore case when comparing strings. */\n  };\n\n  // Replace all instances of \"ok\" (case-insensitive) with \"okay\".\n  column.replaceAll(\"ok\", \"okay\", criteria);\n}\n```"
+- name: matchCase
+  uid: ExcelScript!ExcelScript.ReplaceCriteria#matchCase:member
+  package: ExcelScript!
+  fullName: matchCase
+  summary: 一致で大文字と小文字が区別される場合を指定します。 既定値は `false` (大文字と小文字を区別しない) です。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'matchCase?: boolean;'
+    return:
+      type: boolean
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script replaces instances of \"NA\" with \"North America\", \n * using the casing to ignore parts of words.\n */ \nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the currently used range.\n  const currentSheet = workbook.getActiveWorksheet();\n  const usedRange = currentSheet.getUsedRange();\n\n  // Create a ReplaceCriteria object for the Range.replaceAll call.\n  const criteria: ExcelScript.ReplaceCriteria = {\n    completeMatch: false, \n    matchCase: true /* Match with \"NA market\", not \"navigate\" */\n  }\n\n  // Replace all instances of \"NA\" (case-sensitive) with \"North America\".\n  usedRange.replaceAll(\"NA\", \"North America\", criteria);\n}\n```"
+metadata:
+  ms.openlocfilehash: 67d8d8e77928b29159806267f82e9532d3d41d58
+  ms.sourcegitcommit: 9b58b1ac2de88fae836d9f575fbc59c498a0b4ea
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 03/15/2022
+  ms.locfileid: "63508377"

@@ -1352,7 +1352,7 @@ methods:
     content: 'merge(across?: boolean): void;'
     parameters:
     - id: across
-      description: 省略可能。 指定した `true` 範囲の各行のセルを個別の結合セルとして結合します。 既定値は次の値です。 `false`<!-- -->.
+      description: オプション。 指定した `true` 範囲の各行のセルを個別の結合セルとして結合します。 既定値は次の値です。 `false`<!-- -->.
       type: boolean
     return:
       type: void
@@ -1604,7 +1604,7 @@ methods:
       type: string
     return:
       type: void
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script sets the number format in column C to show the data as a percentage.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  const  selectedSheet = workbook.getActiveWorksheet();\n  \n  // Set number format for column C to a percentage that rounds to the nearest percentage point.\n  selectedSheet.getRange(\"C:C\").setNumberFormat(\"0%\");\n}\n```"
 - name: setNumberFormatLocal(numberFormatLocal)
   uid: ExcelScript!ExcelScript.Range#setNumberFormatLocal:member(1)
   package: ExcelScript!
@@ -1621,7 +1621,7 @@ methods:
       type: string
     return:
       type: void
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script sets the number format in column D to show the data as a percentage with a decimal.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  const  selectedSheet = workbook.getActiveWorksheet();\n  \n  // Set number format for column D to a percentage that rounds to the nearest tenth of a percentage.\n  selectedSheet.getRange(\"D:D\").setNumberFormatLocal(\"0.0%\");\n}\n```"
 - name: setNumberFormats(numberFormats)
   uid: ExcelScript!ExcelScript.Range#setNumberFormats:member(1)
   package: ExcelScript!
@@ -1785,9 +1785,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 6b6236c13056dc9f23d2dc9766a1ab586e9c6339
-  ms.sourcegitcommit: 95d4c3dc3d1a6a84b10430cfe796f4d883d5dbf4
+  ms.openlocfilehash: 10f95bef6a77dd47ba74b3d7cda2ee0c0d5d2164
+  ms.sourcegitcommit: 9b58b1ac2de88fae836d9f575fbc59c498a0b4ea
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 03/09/2022
-  ms.locfileid: "63391618"
+  ms.lasthandoff: 03/15/2022
+  ms.locfileid: "63508386"

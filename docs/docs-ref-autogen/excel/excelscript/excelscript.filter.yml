@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.Filter
-uid: 'ExcelScript!ExcelScript.Filter:interface'
+uid: ExcelScript!ExcelScript.Filter:interface
 package: ExcelScript!
 fullName: ExcelScript.Filter
 summary: テーブルの列のフィルター処理を管理します。
@@ -9,227 +9,234 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-  - name: apply(criteria)
-    uid: 'ExcelScript!ExcelScript.Filter#apply:member(1)'
-    package: ExcelScript!
-    fullName: apply(criteria)
-    summary: 指定の列に、指定したフィルター条件を適用します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'apply(criteria: FilterCriteria): void;'
-      parameters:
-        - id: criteria
-          description: 適用する基準。
-          type: '<xref uid="ExcelScript!ExcelScript.FilterCriteria:interface" />'
-      return:
-        type: void
-        description: ''
-  - name: applyBottomItemsFilter(count)
-    uid: 'ExcelScript!ExcelScript.Filter#applyBottomItemsFilter:member(1)'
-    package: ExcelScript!
-    fullName: applyBottomItemsFilter(count)
-    summary: 指定した数の要素の列に "下位アイテム" フィルターを適用します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'applyBottomItemsFilter(count: number): void;'
-      parameters:
-        - id: count
-          description: 表示する下位からの要素の数。
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: applyBottomPercentFilter(percent)
-    uid: 'ExcelScript!ExcelScript.Filter#applyBottomPercentFilter:member(1)'
-    package: ExcelScript!
-    fullName: applyBottomPercentFilter(percent)
-    summary: 指定した割合の要素の列に "下位パーセント" フィルターを適用します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'applyBottomPercentFilter(percent: number): void;'
-      parameters:
-        - id: percent
-          description: 表示する下位からの要素のパーセンテージ。
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: applyCellColorFilter(color)
-    uid: 'ExcelScript!ExcelScript.Filter#applyCellColorFilter:member(1)'
-    package: ExcelScript!
-    fullName: applyCellColorFilter(color)
-    summary: 指定した色の列に "セルの色" フィルターを適用します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'applyCellColorFilter(color: string): void;'
-      parameters:
-        - id: color
-          description: 表示するセルの背景色です。
-          type: string
-      return:
-        type: void
-        description: ''
-  - name: 'applyCustomFilter(criteria1, criteria2, oper)'
-    uid: 'ExcelScript!ExcelScript.Filter#applyCustomFilter:member(1)'
-    package: ExcelScript!
-    fullName: 'applyCustomFilter(criteria1, criteria2, oper)'
-    summary: 指定した条件文字列の列に "Icon" フィルターを適用します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: |-
-        applyCustomFilter(
-                    criteria1: string,
-                    criteria2?: string,
-                    oper?: FilterOperator
-                ): void;
-      parameters:
-        - id: criteria1
-          description: 最初の条件の文字列です。
-          type: string
-        - id: criteria2
-          description: 省略可能。2 つ目の条件の文字列です。
-          type: string
-        - id: oper
-          description: 省略可能。2 つの条件を結合する方法を記述する演算子です。
-          type: '<xref uid="ExcelScript!ExcelScript.FilterOperator:enum" />'
-      return:
-        type: void
-        description: ''
-  - name: applyDynamicFilter(criteria)
-    uid: 'ExcelScript!ExcelScript.Filter#applyDynamicFilter:member(1)'
-    package: ExcelScript!
-    fullName: applyDynamicFilter(criteria)
-    summary: 列に "動的" フィルターを適用します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'applyDynamicFilter(criteria: DynamicFilterCriteria): void;'
-      parameters:
-        - id: criteria
-          description: 適用する動的な条件。
-          type: '<xref uid="ExcelScript!ExcelScript.DynamicFilterCriteria:enum" />'
-      return:
-        type: void
-        description: ''
-  - name: applyFontColorFilter(color)
-    uid: 'ExcelScript!ExcelScript.Filter#applyFontColorFilter:member(1)'
-    package: ExcelScript!
-    fullName: applyFontColorFilter(color)
-    summary: 指定した色の列に "フォントの色" フィルターを適用します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'applyFontColorFilter(color: string): void;'
-      parameters:
-        - id: color
-          description: 表示するセルのフォントの色です。
-          type: string
-      return:
-        type: void
-        description: ''
-  - name: applyIconFilter(icon)
-    uid: 'ExcelScript!ExcelScript.Filter#applyIconFilter:member(1)'
-    package: ExcelScript!
-    fullName: applyIconFilter(icon)
-    summary: 指定したアイコンの列に "Icon" フィルターを適用します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'applyIconFilter(icon: Icon): void;'
-      parameters:
-        - id: icon
-          description: 表示するセルのアイコンです。
-          type: '<xref uid="ExcelScript!ExcelScript.Icon:interface" />'
-      return:
-        type: void
-        description: ''
-  - name: applyTopItemsFilter(count)
-    uid: 'ExcelScript!ExcelScript.Filter#applyTopItemsFilter:member(1)'
-    package: ExcelScript!
-    fullName: applyTopItemsFilter(count)
-    summary: 指定した数の要素の列に "上位アイテム" フィルターを適用します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'applyTopItemsFilter(count: number): void;'
-      parameters:
-        - id: count
-          description: 表示する上位からの要素の数。
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: applyTopPercentFilter(percent)
-    uid: 'ExcelScript!ExcelScript.Filter#applyTopPercentFilter:member(1)'
-    package: ExcelScript!
-    fullName: applyTopPercentFilter(percent)
-    summary: 指定した割合の要素の列に "上位パーセント" フィルターを適用します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'applyTopPercentFilter(percent: number): void;'
-      parameters:
-        - id: percent
-          description: 表示する上位からの要素のパーセンテージ。
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: applyValuesFilter(values)
-    uid: 'ExcelScript!ExcelScript.Filter#applyValuesFilter:member(1)'
-    package: ExcelScript!
-    fullName: applyValuesFilter(values)
-    summary: 指定した値の列に "値" フィルターを適用します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'applyValuesFilter(values: Array<string | FilterDatetime>): void;'
-      parameters:
-        - id: values
-          description: 表示する値のリスト。 これは、文字列の配列またはオブジェクトの配列である必要 `ExcelScript.FilterDateTime` があります。
-          type: 'Array&lt;string | <xref uid="ExcelScript!ExcelScript.FilterDatetime:interface" />&gt;'
-      return:
-        type: void
-        description: ''
-  - name: clear()
-    uid: 'ExcelScript!ExcelScript.Filter#clear:member(1)'
-    package: ExcelScript!
-    fullName: clear()
-    summary: 指定した列に適用されているフィルターをクリアします。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'clear(): void;'
-      return:
-        type: void
-        description: ''
-  - name: getCriteria()
-    uid: 'ExcelScript!ExcelScript.Filter#getCriteria:member(1)'
-    package: ExcelScript!
-    fullName: getCriteria()
-    summary: 指定した列に現在適用されているフィルターです。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getCriteria(): FilterCriteria;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.FilterCriteria:interface" />'
-        description: ''
+- name: apply(criteria)
+  uid: ExcelScript!ExcelScript.Filter#apply:member(1)
+  package: ExcelScript!
+  fullName: apply(criteria)
+  summary: 指定の列に、指定したフィルター条件を適用します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'apply(criteria: FilterCriteria): void;'
+    parameters:
+    - id: criteria
+      description: 適用する基準。
+      type: <xref uid="ExcelScript!ExcelScript.FilterCriteria:interface" />
+    return:
+      type: void
+      description: ''
+- name: applyBottomItemsFilter(count)
+  uid: ExcelScript!ExcelScript.Filter#applyBottomItemsFilter:member(1)
+  package: ExcelScript!
+  fullName: applyBottomItemsFilter(count)
+  summary: 指定した数の要素の列に "下位アイテム" フィルターを適用します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'applyBottomItemsFilter(count: number): void;'
+    parameters:
+    - id: count
+      description: 表示する下位からの要素の数。
+      type: number
+    return:
+      type: void
+      description: ''
+- name: applyBottomPercentFilter(percent)
+  uid: ExcelScript!ExcelScript.Filter#applyBottomPercentFilter:member(1)
+  package: ExcelScript!
+  fullName: applyBottomPercentFilter(percent)
+  summary: 指定した割合の要素の列に "下位パーセント" フィルターを適用します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'applyBottomPercentFilter(percent: number): void;'
+    parameters:
+    - id: percent
+      description: 表示する下位からの要素のパーセンテージ。
+      type: number
+    return:
+      type: void
+      description: ''
+- name: applyCellColorFilter(color)
+  uid: ExcelScript!ExcelScript.Filter#applyCellColorFilter:member(1)
+  package: ExcelScript!
+  fullName: applyCellColorFilter(color)
+  summary: 指定した色の列に "セルの色" フィルターを適用します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'applyCellColorFilter(color: string): void;'
+    parameters:
+    - id: color
+      description: 表示するセルの背景色です。
+      type: string
+    return:
+      type: void
+      description: ''
+- name: applyCustomFilter(criteria1, criteria2, oper)
+  uid: ExcelScript!ExcelScript.Filter#applyCustomFilter:member(1)
+  package: ExcelScript!
+  fullName: applyCustomFilter(criteria1, criteria2, oper)
+  summary: 指定した条件文字列の列に "Icon" フィルターを適用します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      applyCustomFilter(
+                  criteria1: string,
+                  criteria2?: string,
+                  oper?: FilterOperator
+              ): void;
+    parameters:
+    - id: criteria1
+      description: 最初の条件の文字列です。
+      type: string
+    - id: criteria2
+      description: 省略可能。2 つ目の条件の文字列です。
+      type: string
+    - id: oper
+      description: 省略可能。2 つの条件を結合する方法を記述する演算子です。
+      type: <xref uid="ExcelScript!ExcelScript.FilterOperator:enum" />
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * The script filters rows from a table based on numerical values.\n */ \nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the first table in the current worksheet.\n  const currentSheet = workbook.getActiveWorksheet();\n  const table = currentSheet.getTables()[0];\n\n  // Filter to only show rows with values in the \"Sales\" column that are \n  // greater than or equal to 2000.\n  table.getColumnByName(\"Sales\").getFilter().applyCustomFilter(\">=2000\");\n}\n```"
+- name: applyDynamicFilter(criteria)
+  uid: ExcelScript!ExcelScript.Filter#applyDynamicFilter:member(1)
+  package: ExcelScript!
+  fullName: applyDynamicFilter(criteria)
+  summary: 列に "動的" フィルターを適用します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'applyDynamicFilter(criteria: DynamicFilterCriteria): void;'
+    parameters:
+    - id: criteria
+      description: 適用する動的な条件。
+      type: <xref uid="ExcelScript!ExcelScript.DynamicFilterCriteria:enum" />
+    return:
+      type: void
+      description: ''
+- name: applyFontColorFilter(color)
+  uid: ExcelScript!ExcelScript.Filter#applyFontColorFilter:member(1)
+  package: ExcelScript!
+  fullName: applyFontColorFilter(color)
+  summary: 指定した色の列に "フォントの色" フィルターを適用します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'applyFontColorFilter(color: string): void;'
+    parameters:
+    - id: color
+      description: 表示するセルのフォントの色です。
+      type: string
+    return:
+      type: void
+      description: ''
+- name: applyIconFilter(icon)
+  uid: ExcelScript!ExcelScript.Filter#applyIconFilter:member(1)
+  package: ExcelScript!
+  fullName: applyIconFilter(icon)
+  summary: 指定したアイコンの列に "Icon" フィルターを適用します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'applyIconFilter(icon: Icon): void;'
+    parameters:
+    - id: icon
+      description: 表示するセルのアイコンです。
+      type: <xref uid="ExcelScript!ExcelScript.Icon:interface" />
+    return:
+      type: void
+      description: ''
+- name: applyTopItemsFilter(count)
+  uid: ExcelScript!ExcelScript.Filter#applyTopItemsFilter:member(1)
+  package: ExcelScript!
+  fullName: applyTopItemsFilter(count)
+  summary: 指定した数の要素の列に "上位アイテム" フィルターを適用します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'applyTopItemsFilter(count: number): void;'
+    parameters:
+    - id: count
+      description: 表示する上位からの要素の数。
+      type: number
+    return:
+      type: void
+      description: ''
+- name: applyTopPercentFilter(percent)
+  uid: ExcelScript!ExcelScript.Filter#applyTopPercentFilter:member(1)
+  package: ExcelScript!
+  fullName: applyTopPercentFilter(percent)
+  summary: 指定した割合の要素の列に "上位パーセント" フィルターを適用します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'applyTopPercentFilter(percent: number): void;'
+    parameters:
+    - id: percent
+      description: 表示する上位からの要素のパーセンテージ。
+      type: number
+    return:
+      type: void
+      description: ''
+- name: applyValuesFilter(values)
+  uid: ExcelScript!ExcelScript.Filter#applyValuesFilter:member(1)
+  package: ExcelScript!
+  fullName: applyValuesFilter(values)
+  summary: 指定した値の列に "値" フィルターを適用します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'applyValuesFilter(values: Array<string | FilterDatetime>): void;'
+    parameters:
+    - id: values
+      description: 表示する値のリスト。 これは、文字列の配列またはオブジェクトの配列である必要 `ExcelScript.FilterDateTime` があります。
+      type: Array&lt;string | <xref uid="ExcelScript!ExcelScript.FilterDatetime:interface" />&gt;
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script applies a filter to a table so that it only shows rows with \"Needs Review\" in the \"Type\" column.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the first table in the workbook.\n  const table = workbook.getTables()[0];\n\n  // Apply the filter to the \"Type\" column.\n  const typeColumn = table.getColumnByName(\"Type\");\n  typeColumn.getFilter().applyValuesFilter([\"Needs Review\"]);\n}\n```"
+- name: clear()
+  uid: ExcelScript!ExcelScript.Filter#clear:member(1)
+  package: ExcelScript!
+  fullName: clear()
+  summary: 指定した列に適用されているフィルターをクリアします。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'clear(): void;'
+    return:
+      type: void
+      description: ''
+- name: getCriteria()
+  uid: ExcelScript!ExcelScript.Filter#getCriteria:member(1)
+  package: ExcelScript!
+  fullName: getCriteria()
+  summary: 指定した列に現在適用されているフィルターです。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCriteria(): FilterCriteria;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.FilterCriteria:interface" />
+      description: ''
+metadata:
+  ms.openlocfilehash: c7a8aeffb0d54e23920b3eafbdcd8fe93798e637
+  ms.sourcegitcommit: 9b58b1ac2de88fae836d9f575fbc59c498a0b4ea
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 03/15/2022
+  ms.locfileid: "63508382"

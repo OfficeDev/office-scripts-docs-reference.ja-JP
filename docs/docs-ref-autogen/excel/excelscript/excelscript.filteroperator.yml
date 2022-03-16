@@ -1,18 +1,25 @@
 ### YamlMime:TSEnum
 name: ExcelScript.FilterOperator
-uid: 'ExcelScript!ExcelScript.FilterOperator:enum'
+uid: ExcelScript!ExcelScript.FilterOperator:enum
 package: ExcelScript!
 fullName: ExcelScript.FilterOperator
 summary: ''
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * The script filters rows from a table based on a numerical range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the first table in the current worksheet.\n  const currentSheet = workbook.getActiveWorksheet();\n  const table = currentSheet.getTables()[0];\n\n  // Filter to only show rows with a value in the \"Exam Score\" column that is\n  // greater than 0 and less than or equal to 60.\n  table.getColumnByName(\"Exam Score\").getFilter().applyCustomFilter(\">0\", \"<=60\", ExcelScript.FilterOperator.and);\n}\n```"
 isPreview: false
 isDeprecated: false
 fields:
-  - name: and
-    uid: 'ExcelScript!ExcelScript.FilterOperator.and:member'
-    package: ExcelScript!
-    summary: ''
-  - name: or
-    uid: 'ExcelScript!ExcelScript.FilterOperator.or:member'
-    package: ExcelScript!
-    summary: ''
+- name: and
+  uid: ExcelScript!ExcelScript.FilterOperator.and:member
+  package: ExcelScript!
+  summary: ''
+- name: or
+  uid: ExcelScript!ExcelScript.FilterOperator.or:member
+  package: ExcelScript!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 37f982207510b76a1ed9d97dfca817edf8064485
+  ms.sourcegitcommit: 9b58b1ac2de88fae836d9f575fbc59c498a0b4ea
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 03/15/2022
+  ms.locfileid: "63508366"
