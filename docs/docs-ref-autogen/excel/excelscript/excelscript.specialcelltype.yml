@@ -1,42 +1,49 @@
 ### YamlMime:TSEnum
 name: ExcelScript.SpecialCellType
-uid: 'ExcelScript!ExcelScript.SpecialCellType:enum'
+uid: ExcelScript!ExcelScript.SpecialCellType:enum
 package: ExcelScript!
 fullName: ExcelScript.SpecialCellType
 summary: ''
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script finds and highlights all the cells in the current worksheet that contain a formula.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the used range on the current sheet.\n  const currentSheet = workbook.getActiveWorksheet();\n  const usedRange = currentSheet.getUsedRange();\n\n  // Get the RangeAreas object for each cell with a formula.\n  const formulaCells = usedRange.getSpecialCells(ExcelScript.SpecialCellType.formulas);\n\n  // Add a light blue background to the cells containing formulas.\n  formulaCells.getFormat().getFill().setColor(\"#ADD8E6\");\n}\n```"
 isPreview: false
 isDeprecated: false
 fields:
-  - name: blanks
-    uid: 'ExcelScript!ExcelScript.SpecialCellType.blanks:member'
-    package: ExcelScript!
-    summary: コンテンツがないセル。
-  - name: conditionalFormats
-    uid: 'ExcelScript!ExcelScript.SpecialCellType.conditionalFormats:member'
-    package: ExcelScript!
-    summary: 条件付き書式を持つすべてのセル。
-  - name: constants
-    uid: 'ExcelScript!ExcelScript.SpecialCellType.constants:member'
-    package: ExcelScript!
-    summary: 定数が含まれているセル
-  - name: dataValidations
-    uid: 'ExcelScript!ExcelScript.SpecialCellType.dataValidations:member'
-    package: ExcelScript!
-    summary: 検証条件を持つセル。
-  - name: formulas
-    uid: 'ExcelScript!ExcelScript.SpecialCellType.formulas:member'
-    package: ExcelScript!
-    summary: 数式が含まれているセル
-  - name: sameConditionalFormat
-    uid: 'ExcelScript!ExcelScript.SpecialCellType.sameConditionalFormat:member'
-    package: ExcelScript!
-    summary: セル範囲の最初のセルと同じ条件付き書式を持つセル。
-  - name: sameDataValidation
-    uid: 'ExcelScript!ExcelScript.SpecialCellType.sameDataValidation:member'
-    package: ExcelScript!
-    summary: 範囲内の最初のセルと同じデータ検証条件を持つセル。
-  - name: visible
-    uid: 'ExcelScript!ExcelScript.SpecialCellType.visible:member'
-    package: ExcelScript!
-    summary: 表示されるセル。
+- name: blanks
+  uid: ExcelScript!ExcelScript.SpecialCellType.blanks:member
+  package: ExcelScript!
+  summary: コンテンツがないセル。
+- name: conditionalFormats
+  uid: ExcelScript!ExcelScript.SpecialCellType.conditionalFormats:member
+  package: ExcelScript!
+  summary: 条件付き書式を持つすべてのセル。
+- name: constants
+  uid: ExcelScript!ExcelScript.SpecialCellType.constants:member
+  package: ExcelScript!
+  summary: 定数が含まれているセル
+- name: dataValidations
+  uid: ExcelScript!ExcelScript.SpecialCellType.dataValidations:member
+  package: ExcelScript!
+  summary: 検証条件を持つセル。
+- name: formulas
+  uid: ExcelScript!ExcelScript.SpecialCellType.formulas:member
+  package: ExcelScript!
+  summary: 数式が含まれているセル
+- name: sameConditionalFormat
+  uid: ExcelScript!ExcelScript.SpecialCellType.sameConditionalFormat:member
+  package: ExcelScript!
+  summary: セル範囲の最初のセルと同じ条件付き書式を持つセル。
+- name: sameDataValidation
+  uid: ExcelScript!ExcelScript.SpecialCellType.sameDataValidation:member
+  package: ExcelScript!
+  summary: 範囲内の最初のセルと同じデータ検証条件を持つセル。
+- name: visible
+  uid: ExcelScript!ExcelScript.SpecialCellType.visible:member
+  package: ExcelScript!
+  summary: 表示されるセル。
+metadata:
+  ms.openlocfilehash: 9a5fdd98d522b86985eadea08df2fe65b4cbd817
+  ms.sourcegitcommit: dfc12de9e6eb5de71199b36f92ce93039509ad37
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 03/23/2022
+  ms.locfileid: "63755957"

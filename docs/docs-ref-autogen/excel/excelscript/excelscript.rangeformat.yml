@@ -116,7 +116,7 @@ methods:
     content: 'getFont(): RangeFont;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeFont:interface" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script bolds the text of cell A1.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get A1 on the current worksheet.\n  const cell = workbook.getActiveWorksheet().getCell(0,0);\n\n  // Bold the font for that cell\n  cell.getFormat().getFont().setBold(true);\n}\n```"
 - name: getHorizontalAlignment()
   uid: ExcelScript!ExcelScript.RangeFormat#getHorizontalAlignment:member(1)
   package: ExcelScript!
@@ -512,9 +512,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: b004e43e137a815b7b1e58df63c72df4ffdbba60
-  ms.sourcegitcommit: f6d4b6aecddf48872f4d9a7bcfffafce65e3d9aa
+  ms.openlocfilehash: 2e0aa07251e56260c03256716594889b1cf5d0cf
+  ms.sourcegitcommit: dfc12de9e6eb5de71199b36f92ce93039509ad37
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 03/11/2022
-  ms.locfileid: "63434836"
+  ms.lasthandoff: 03/23/2022
+  ms.locfileid: "63755985"
