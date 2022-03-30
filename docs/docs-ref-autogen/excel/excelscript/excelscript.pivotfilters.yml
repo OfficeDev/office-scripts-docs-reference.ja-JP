@@ -45,6 +45,7 @@ properties:
     content: 'manualFilter?: PivotManualFilter;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.PivotManualFilter:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script adds a manual filter to a PivotTable. \n */\nfunction main(workbook: ExcelScript.Workbook)\n{\n  // Get the first PivotTable in the workbook.\n  const pivot = workbook.getPivotTables()[0];\n\n  // Get the hierarchy to use as the filter.\n  const location = pivot.getHierarchy(\"Location\");\n\n  // Use \"Location\" as the FilterHierarchy.\n  pivot.addFilterHierarchy(location);\n\n  // Select items for the filter.\n  // Note that hierarchies and fields have a 1:1 relationship in Excel,\n  // so `getFields()[0]` always gets the correct field.\n  location.getFields()[0].applyFilter({\n    manualFilter: {\n      selectedItems: [\"Seattle\", \"Chicago\"]\n    }\n  });\n}\n```"
 - name: valueFilter
   uid: ExcelScript!ExcelScript.PivotFilters#valueFilter:member
   package: ExcelScript!
@@ -59,9 +60,9 @@ properties:
       type: <xref uid="ExcelScript!ExcelScript.PivotValueFilter:interface" />
       description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script applies a PivotValueFilter to the first row hierarchy in the PivotTable.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the PivotTable on the current worksheet.\n  let sheet = workbook.getActiveWorksheet();\n  let pivotTable = sheet.getPivotTables()[0];\n\n  // Get the first row hierarchy to use as the field which gets filtered.\n  let rowHierarchy = pivotTable.getRowHierarchies()[0];\n\n  // Get the first data hierarchy to use as the values for filtering the rows.\n  let dataHierarchy = pivotTable.getDataHierarchies()[0];\n\n  // Create a filter that excludes values greater than 500.\n  let filter: ExcelScript.PivotValueFilter = {\n    condition: ExcelScript.ValueFilterCondition.greaterThan,\n    comparator: 500,\n    value: dataHierarchy.getName()\n  };\n\n  // Apply the filter.\n  rowHierarchy.getPivotField(rowHierarchy.getName()).applyFilter({\n    valueFilter: filter\n  });\n}\n```"
 metadata:
-  ms.openlocfilehash: dbf3d43443519967afa22f78d8b3f7fd07a25fa6
-  ms.sourcegitcommit: 9dbae2022b7fe47e64affb163fd332b01810dccf
+  ms.openlocfilehash: fa190ca98e4c263c4c4fd015b306e2da4092557e
+  ms.sourcegitcommit: b9473966fe37e1ac701719cf9fc4714c572878ca
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 02/16/2022
-  ms.locfileid: "62857294"
+  ms.lasthandoff: 03/30/2022
+  ms.locfileid: "64536525"

@@ -65,7 +65,7 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.PivotHierarchy:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.FilterPivotHierarchy:interface" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script adds a manual filter to a PivotTable. \n */\nfunction main(workbook: ExcelScript.Workbook)\n{\n  // Get the first PivotTable in the workbook.\n  const pivot = workbook.getPivotTables()[0];\n\n  // Get the hierarchy to use as the filter.\n  const location = pivot.getHierarchy(\"Location\");\n\n  // Use \"Location\" as the FilterHierarchy.\n  pivot.addFilterHierarchy(location);\n\n  // Select items for the filter.\n  // Note that hierarchies and fields have a 1:1 relationship in Excel,\n  // so `getFields()[0]` always gets the correct field.\n  location.getFields()[0].applyFilter({\n    manualFilter: {\n      selectedItems: [\"Seattle\", \"Chicago\"]\n    }\n  });\n}\n```"
 - name: addRowHierarchy(pivotHierarchy)
   uid: ExcelScript!ExcelScript.PivotTable#addRowHierarchy:member(1)
   package: ExcelScript!
@@ -499,9 +499,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: f6b88612869dba6c21921d9c43f3c469a1c97da6
-  ms.sourcegitcommit: 9dbae2022b7fe47e64affb163fd332b01810dccf
+  ms.openlocfilehash: dd8d395e4cc4c09f3443c686bf19c4a441e5c28e
+  ms.sourcegitcommit: b9473966fe37e1ac701719cf9fc4714c572878ca
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 02/16/2022
-  ms.locfileid: "62857308"
+  ms.lasthandoff: 03/30/2022
+  ms.locfileid: "64536518"

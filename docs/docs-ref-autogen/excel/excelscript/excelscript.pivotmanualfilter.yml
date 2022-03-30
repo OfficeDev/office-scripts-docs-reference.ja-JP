@@ -1,23 +1,30 @@
 ### YamlMime:TSType
 name: ExcelScript.PivotManualFilter
-uid: 'ExcelScript!ExcelScript.PivotManualFilter:interface'
+uid: ExcelScript!ExcelScript.PivotManualFilter:interface
 package: ExcelScript!
 fullName: ExcelScript.PivotManualFilter
 summary: PivotField に適用する手動フィルターの構成可能なテンプレート。 フィルター `condition` を操作するために設定する必要がある条件を定義します。
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script adds a manual filter to a PivotTable. \n */\nfunction main(workbook: ExcelScript.Workbook)\n{\n  // Get the first PivotTable in the workbook.\n  const pivot = workbook.getPivotTables()[0];\n\n  // Get the hierarchy to use as the filter.\n  const location = pivot.getHierarchy(\"Location\");\n\n  // Use \"Location\" as the FilterHierarchy.\n  pivot.addFilterHierarchy(location);\n\n  // Select items for the filter.\n  const cityFilter: ExcelScript.PivotManualFilter = {\n    selectedItems: [\"Seattle\", \"Chicago\"]\n  };\n\n  // Apply the filter\n  // Note that hierarchies and fields have a 1:1 relationship in Excel, so `getFields()[0]` always gets the correct field.\n  location.getFields()[0].applyFilter({\n    manualFilter: cityFilter\n  });\n}\n```"
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: selectedItems
-    uid: 'ExcelScript!ExcelScript.PivotManualFilter#selectedItems:member'
-    package: ExcelScript!
-    fullName: selectedItems
-    summary: 手動でフィルター処理する選択したアイテムの一覧。 これらは、選択したフィールドの既存の有効なアイテムである必要があります。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'selectedItems?: (string | PivotItem)[];'
-      return:
-        type: '(string | <xref uid="ExcelScript!ExcelScript.PivotItem:interface" />)[]'
+- name: selectedItems
+  uid: ExcelScript!ExcelScript.PivotManualFilter#selectedItems:member
+  package: ExcelScript!
+  fullName: selectedItems
+  summary: 手動でフィルター処理する選択したアイテムの一覧。 これらは、選択したフィールドの既存の有効なアイテムである必要があります。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'selectedItems?: (string | PivotItem)[];'
+    return:
+      type: (string | <xref uid="ExcelScript!ExcelScript.PivotItem:interface" />)[]
+metadata:
+  ms.openlocfilehash: e48a92617ba26e1c456c341814ca690c5b2ad57c
+  ms.sourcegitcommit: b9473966fe37e1ac701719cf9fc4714c572878ca
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 03/30/2022
+  ms.locfileid: "64536532"
