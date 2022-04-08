@@ -3,8 +3,8 @@ name: ExcelScript.AutoFilter
 uid: ExcelScript!ExcelScript.AutoFilter:interface
 package: ExcelScript!
 fullName: ExcelScript.AutoFilter
-summary: オブジェクトを表 `AutoFilter` します。 オートフィルターは、セルの内容にExcelに基づいて、列の値を特定のフィルターに変換します。
-remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script creates an autofilter on the worksheet that filters out rows based on column values. \n * The autofilter filters to only include rows that have a value in column C in the lowest 10 values \n * (of column C values).\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  const currentSheet = workbook.getActiveWorksheet();\n  const dataRange = currentSheet.getUsedRange();\n\n  // Add a filter that will only show the rows with the lowest 10 values in column C\n  // (index 2, assuming the used range spans from at least A:C).\n  currentSheet.getAutoFilter().apply(dataRange, 2, {\n    criterion1: \"10\",\n    filterOn: ExcelScript.FilterOn.bottomItems\n  });\n}\n```"
+summary: オブジェクトを `AutoFilter` 表します。 AutoFilter は、セルの内容に基づいて、Excel列の値を特定のフィルターに変換します。
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script creates an autoFilter on the worksheet that filters out rows based on column values. \n * The autoFilter filters to only include rows that have a value in column C in the lowest 10 values \n * (of column C values).\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the autoFilter of the first table in the current worksheet.\n  const currentSheet = workbook.getActiveWorksheet();\n  const dataRange = currentSheet.getUsedRange();\n  const autoFilter = currentSheet.getAutoFilter();\n\n  // Add a filter that will only show the rows with the lowest 10 values in column C\n  // (index 2, assuming the used range spans from at least A:C).\n  autoFilter.apply(dataRange, 2, {\n    criterion1: \"10\",\n    filterOn: ExcelScript.FilterOn.bottomItems\n  });\n}\n```"
 isPreview: false
 isDeprecated: false
 type: interface
@@ -29,14 +29,14 @@ methods:
       description: オートフィルターが適用される範囲。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: columnIndex
-      description: オートフィルターが適用される 0 から始る列インデックス。
+      description: オートフィルターが適用される 0 から始まる列インデックス。
       type: number
     - id: criteria
       description: フィルター条件。
       type: <xref uid="ExcelScript!ExcelScript.FilterCriteria:interface" />
     return:
       type: void
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script applies a filter to a table so that \n * only rows with values in column 1 that start with \"L\" are shown.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the autoFilter of the first table in the current worksheet.\n  const table = workbook.getActiveWorksheet().getTables()[0];\n  const autoFilter = table.getAutoFilter();\n\n  // Filter to only include values that start with \"L\".\n  const filterCriteria: ExcelScript.FilterCriteria = {\n    filterOn: ExcelScript.FilterOn.custom,\n    criterion1: \"L*\"\n  };\n  \n  // Apply the filter to column 1 (zero-based).\n  autoFilter.apply(table.getRange(), 1, filterCriteria);\n}\n```"
 - name: clearCriteria()
   uid: ExcelScript!ExcelScript.AutoFilter#clearCriteria:member(1)
   package: ExcelScript!
@@ -49,7 +49,7 @@ methods:
     content: 'clearCriteria(): void;'
     return:
       type: void
-      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script clears any applied criteria from the worksheet's autofilter.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  const currentSheet = workbook.getActiveWorksheet();\n\n  // Clear all the criteria currently applied to the autofilter.\n  currentSheet.getAutoFilter().clearCriteria();\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script clears any applied criteria from the worksheet's autoFilter.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  const currentSheet = workbook.getActiveWorksheet();\n\n  // Clear all the criteria currently applied to the autoFilter.\n  currentSheet.getAutoFilter().clearCriteria();\n}\n```"
 - name: getCriteria()
   uid: ExcelScript!ExcelScript.AutoFilter#getCriteria:member(1)
   package: ExcelScript!
@@ -67,7 +67,7 @@ methods:
   uid: ExcelScript!ExcelScript.AutoFilter#getEnabled:member(1)
   package: ExcelScript!
   fullName: getEnabled()
-  summary: オートフィルターが有効になっている場合に指定します。
+  summary: オートフィルターが有効になっているかどうかを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -80,7 +80,7 @@ methods:
   uid: ExcelScript!ExcelScript.AutoFilter#getIsDataFiltered:member(1)
   package: ExcelScript!
   fullName: getIsDataFiltered()
-  summary: オートフィルターにフィルター条件がある場合に指定します。
+  summary: オートフィルターにフィルター条件があるかどうかを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -93,7 +93,7 @@ methods:
   uid: ExcelScript!ExcelScript.AutoFilter#getRange:member(1)
   package: ExcelScript!
   fullName: getRange()
-  summary: オートフィルターを `Range` 適用する範囲を表すオブジェクトを返します。 AutoFilter に関連付 `Range` けられているオブジェクトがない場合、このメソッドは `undefined`<!-- -->.
+  summary: オートフィルターが `Range` 適用される範囲を表すオブジェクトを返します。 AutoFilter に関連付けられているオブジェクトがない `Range` 場合、このメソッドは `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -129,9 +129,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: b583ee6c2f358be8d97705af178b9581635b8948
-  ms.sourcegitcommit: f6d4b6aecddf48872f4d9a7bcfffafce65e3d9aa
+  ms.openlocfilehash: a3277f164629739bb29f1c860ec5ec940d23313b
+  ms.sourcegitcommit: 1dccdb18053820ef3bc635279479d0cba4f0f482
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 03/11/2022
-  ms.locfileid: "63434822"
+  ms.lasthandoff: 04/08/2022
+  ms.locfileid: "64715975"

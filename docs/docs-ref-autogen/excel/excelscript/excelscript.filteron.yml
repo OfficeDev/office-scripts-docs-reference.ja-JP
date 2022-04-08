@@ -1,50 +1,57 @@
 ### YamlMime:TSEnum
 name: ExcelScript.FilterOn
-uid: 'ExcelScript!ExcelScript.FilterOn:enum'
+uid: ExcelScript!ExcelScript.FilterOn:enum
 package: ExcelScript!
 fullName: ExcelScript.FilterOn
 summary: ''
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script applies a filter to a table so that \n * only rows with values in column 1 that start with \"L\" are shown.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the autoFilter of the first table in the current worksheet.\n  const table = workbook.getActiveWorksheet().getTables()[0];\n  const autoFilter = table.getAutoFilter();\n\n  // Filter to only include values that start with \"L\".\n  const filterCriteria: ExcelScript.FilterCriteria = {\n    filterOn: ExcelScript.FilterOn.custom,\n    criterion1: \"L*\"\n  };\n\n  // Apply the filter to column 1 (zero-based).\n  autoFilter.apply(table.getRange(), 1, filterCriteria);\n}\n```"
 isPreview: false
 isDeprecated: false
 fields:
-  - name: bottomItems
-    uid: 'ExcelScript!ExcelScript.FilterOn.bottomItems:member'
-    package: ExcelScript!
-    summary: ''
-  - name: bottomPercent
-    uid: 'ExcelScript!ExcelScript.FilterOn.bottomPercent:member'
-    package: ExcelScript!
-    summary: ''
-  - name: cellColor
-    uid: 'ExcelScript!ExcelScript.FilterOn.cellColor:member'
-    package: ExcelScript!
-    summary: ''
-  - name: custom
-    uid: 'ExcelScript!ExcelScript.FilterOn.custom:member'
-    package: ExcelScript!
-    summary: ''
-  - name: dynamic
-    uid: 'ExcelScript!ExcelScript.FilterOn.dynamic:member'
-    package: ExcelScript!
-    summary: ''
-  - name: fontColor
-    uid: 'ExcelScript!ExcelScript.FilterOn.fontColor:member'
-    package: ExcelScript!
-    summary: ''
-  - name: icon
-    uid: 'ExcelScript!ExcelScript.FilterOn.icon:member'
-    package: ExcelScript!
-    summary: ''
-  - name: topItems
-    uid: 'ExcelScript!ExcelScript.FilterOn.topItems:member'
-    package: ExcelScript!
-    summary: ''
-  - name: topPercent
-    uid: 'ExcelScript!ExcelScript.FilterOn.topPercent:member'
-    package: ExcelScript!
-    summary: ''
-  - name: values
-    uid: 'ExcelScript!ExcelScript.FilterOn.values:member'
-    package: ExcelScript!
-    summary: ''
+- name: bottomItems
+  uid: ExcelScript!ExcelScript.FilterOn.bottomItems:member
+  package: ExcelScript!
+  summary: ''
+- name: bottomPercent
+  uid: ExcelScript!ExcelScript.FilterOn.bottomPercent:member
+  package: ExcelScript!
+  summary: ''
+- name: cellColor
+  uid: ExcelScript!ExcelScript.FilterOn.cellColor:member
+  package: ExcelScript!
+  summary: ''
+- name: custom
+  uid: ExcelScript!ExcelScript.FilterOn.custom:member
+  package: ExcelScript!
+  summary: ''
+- name: dynamic
+  uid: ExcelScript!ExcelScript.FilterOn.dynamic:member
+  package: ExcelScript!
+  summary: ''
+- name: fontColor
+  uid: ExcelScript!ExcelScript.FilterOn.fontColor:member
+  package: ExcelScript!
+  summary: ''
+- name: icon
+  uid: ExcelScript!ExcelScript.FilterOn.icon:member
+  package: ExcelScript!
+  summary: ''
+- name: topItems
+  uid: ExcelScript!ExcelScript.FilterOn.topItems:member
+  package: ExcelScript!
+  summary: ''
+- name: topPercent
+  uid: ExcelScript!ExcelScript.FilterOn.topPercent:member
+  package: ExcelScript!
+  summary: ''
+- name: values
+  uid: ExcelScript!ExcelScript.FilterOn.values:member
+  package: ExcelScript!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 159cfc97826d44da46f2b83f78278a2c93351e2e
+  ms.sourcegitcommit: 1dccdb18053820ef3bc635279479d0cba4f0f482
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 04/08/2022
+  ms.locfileid: "64716031"

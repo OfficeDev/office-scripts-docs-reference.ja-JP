@@ -1,265 +1,272 @@
 ### YamlMime:TSType
 name: ExcelScript.RangeView
-uid: 'ExcelScript!ExcelScript.RangeView:interface'
+uid: ExcelScript!ExcelScript.RangeView:interface
 package: ExcelScript!
 fullName: ExcelScript.RangeView
 summary: RangeView は、親の範囲の表示されているセルのセットを表します。
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script copies values and formatting from the visible range of a table in Sheet1 into Sheet2.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the filtered data from Sheet1.\n  const currentSheet = workbook.getWorksheet(\"Sheet1\");\n  const table = currentSheet.getTables()[0];\n  const visibleTableRange: ExcelScript.RangeView = table.getRange().getVisibleView();\n  const source = visibleTableRange.getRange();\n  \n  // Copy the data into the other sheet.\n  const otherSheet = workbook.getWorksheet(\"Sheet2\");\n  const otherRangeCorner = otherSheet.getRange(\"A1\");\n  otherRangeCorner.copyFrom(source, ExcelScript.RangeCopyType.all);\n}\n```"
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-  - name: getCellAddresses()
-    uid: 'ExcelScript!ExcelScript.RangeView#getCellAddresses:member(1)'
-    package: ExcelScript!
-    fullName: getCellAddresses()
-    summary: のセル アドレスを表します。 `RangeView`<!-- -->.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getCellAddresses(): string[][];'
-      return:
-        type: 'string[][]'
-        description: ''
-  - name: getColumnCount()
-    uid: 'ExcelScript!ExcelScript.RangeView#getColumnCount:member(1)'
-    package: ExcelScript!
-    fullName: getColumnCount()
-    summary: 表示される列の数。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getColumnCount(): number;'
-      return:
-        type: number
-        description: ''
-  - name: getFormulas()
-    uid: 'ExcelScript!ExcelScript.RangeView#getFormulas:member(1)'
-    package: ExcelScript!
-    fullName: getFormulas()
-    summary: A1 スタイル表記の数式を表します。 セルに数式がない場合は、その値が代わりに返されます。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getFormulas(): string[][];'
-      return:
-        type: 'string[][]'
-        description: ''
-  - name: getFormulasLocal()
-    uid: 'ExcelScript!ExcelScript.RangeView#getFormulasLocal:member(1)'
-    package: ExcelScript!
-    fullName: getFormulasLocal()
-    summary: 'ユーザーの言語と数値書式ロケールで、A1 スタイル表記の数式を表します。 たとえば、英語の数式 "=SUM(A1, 1.5)" は、ドイツ語では "=SUMME(A1; 1,5)" になります。 セルに数式がない場合は、その値が代わりに返されます。'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getFormulasLocal(): string[][];'
-      return:
-        type: 'string[][]'
-        description: ''
-  - name: getFormulasR1C1()
-    uid: 'ExcelScript!ExcelScript.RangeView#getFormulasR1C1:member(1)'
-    package: ExcelScript!
-    fullName: getFormulasR1C1()
-    summary: R1C1 スタイル表記の数式を表します。 セルに数式がない場合は、その値が代わりに返されます。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getFormulasR1C1(): string[][];'
-      return:
-        type: 'string[][]'
-        description: ''
-  - name: getIndex()
-    uid: 'ExcelScript!ExcelScript.RangeView#getIndex:member(1)'
-    package: ExcelScript!
-    fullName: getIndex()
-    summary: のインデックスを表す値を返します。 `RangeView`<!-- -->.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getIndex(): number;'
-      return:
-        type: number
-        description: ''
-  - name: getNumberFormat()
-    uid: 'ExcelScript!ExcelScript.RangeView#getNumberFormat:member(1)'
-    package: ExcelScript!
-    fullName: getNumberFormat()
-    summary: 指定したセルの Excel の数値書式コードを表します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getNumberFormat(): string[][];'
-      return:
-        type: 'string[][]'
-        description: ''
-  - name: getRange()
-    uid: 'ExcelScript!ExcelScript.RangeView#getRange:member(1)'
-    package: ExcelScript!
-    fullName: getRange()
-    summary: 現在の値に関連付けられている親範囲を取得します。 `RangeView`<!-- -->.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getRange(): Range;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
-        description: ''
-  - name: getRowCount()
-    uid: 'ExcelScript!ExcelScript.RangeView#getRowCount:member(1)'
-    package: ExcelScript!
-    fullName: getRowCount()
-    summary: 表示される行の数。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getRowCount(): number;'
-      return:
-        type: number
-        description: ''
-  - name: getRows()
-    uid: 'ExcelScript!ExcelScript.RangeView#getRows:member(1)'
-    package: ExcelScript!
-    fullName: getRows()
-    summary: 範囲に関連付けられている範囲ビューのコレクションを表します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getRows(): RangeView[];'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.RangeView:interface" />[]'
-        description: ''
-  - name: getText()
-    uid: 'ExcelScript!ExcelScript.RangeView#getText:member(1)'
-    package: ExcelScript!
-    fullName: getText()
-    summary: 指定した範囲のテキスト値。 テキスト値は、セルの幅には依存しません。 UI \# で行う符号Excelは、API によって返されるテキスト値には影響しません。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getText(): string[][];'
-      return:
-        type: 'string[][]'
-        description: ''
-  - name: getValues()
-    uid: 'ExcelScript!ExcelScript.RangeView#getValues:member(1)'
-    package: ExcelScript!
-    fullName: getValues()
-    summary: 指定した範囲ビューの Raw 値を表します。 返されるデータの型は、文字列、数値、ブール値のいずれかになります。 エラーが含まれているセルは、エラー文字列を返します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getValues(): (string | number | boolean)[][];'
-      return:
-        type: '(string | number | boolean)[][]'
-        description: ''
-  - name: getValueTypes()
-    uid: 'ExcelScript!ExcelScript.RangeView#getValueTypes:member(1)'
-    package: ExcelScript!
-    fullName: getValueTypes()
-    summary: 各セルのデータの種類を表します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getValueTypes(): RangeValueType[][];'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.RangeValueType:enum" />[][]'
-        description: ''
-  - name: setFormulas(formulas)
-    uid: 'ExcelScript!ExcelScript.RangeView#setFormulas:member(1)'
-    package: ExcelScript!
-    fullName: setFormulas(formulas)
-    summary: A1 スタイル表記の数式を表します。 セルに数式がない場合は、その値が代わりに返されます。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setFormulas(formulas: string[][]): void;'
-      parameters:
-        - id: formulas
-          description: ''
-          type: 'string[][]'
-      return:
-        type: void
-        description: ''
-  - name: setFormulasLocal(formulasLocal)
-    uid: 'ExcelScript!ExcelScript.RangeView#setFormulasLocal:member(1)'
-    package: ExcelScript!
-    fullName: setFormulasLocal(formulasLocal)
-    summary: 'ユーザーの言語と数値書式ロケールで、A1 スタイル表記の数式を表します。 たとえば、英語の数式 "=SUM(A1, 1.5)" は、ドイツ語では "=SUMME(A1; 1,5)" になります。 セルに数式がない場合は、その値が代わりに返されます。'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setFormulasLocal(formulasLocal: string[][]): void;'
-      parameters:
-        - id: formulasLocal
-          description: ''
-          type: 'string[][]'
-      return:
-        type: void
-        description: ''
-  - name: setFormulasR1C1(formulasR1C1)
-    uid: 'ExcelScript!ExcelScript.RangeView#setFormulasR1C1:member(1)'
-    package: ExcelScript!
-    fullName: setFormulasR1C1(formulasR1C1)
-    summary: R1C1 スタイル表記の数式を表します。 セルに数式がない場合は、その値が代わりに返されます。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setFormulasR1C1(formulasR1C1: string[][]): void;'
-      parameters:
-        - id: formulasR1C1
-          description: ''
-          type: 'string[][]'
-      return:
-        type: void
-        description: ''
-  - name: setNumberFormat(numberFormat)
-    uid: 'ExcelScript!ExcelScript.RangeView#setNumberFormat:member(1)'
-    package: ExcelScript!
-    fullName: setNumberFormat(numberFormat)
-    summary: 指定したセルの Excel の数値書式コードを表します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setNumberFormat(numberFormat: string[][]): void;'
-      parameters:
-        - id: numberFormat
-          description: ''
-          type: 'string[][]'
-      return:
-        type: void
-        description: ''
-  - name: setValues(values)
-    uid: 'ExcelScript!ExcelScript.RangeView#setValues:member(1)'
-    package: ExcelScript!
-    fullName: setValues(values)
-    summary: 指定した範囲ビューの Raw 値を表します。 返されるデータの型は、文字列、数値、ブール値のいずれかになります。 エラーが含まれているセルは、エラー文字列を返します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setValues(values: (string | number | boolean)[][]): void;'
-      parameters:
-        - id: values
-          description: ''
-          type: '(string | number | boolean)[][]'
-      return:
-        type: void
-        description: ''
+- name: getCellAddresses()
+  uid: ExcelScript!ExcelScript.RangeView#getCellAddresses:member(1)
+  package: ExcelScript!
+  fullName: getCellAddresses()
+  summary: のセル アドレスを表します。 `RangeView`<!-- -->.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCellAddresses(): string[][];'
+    return:
+      type: string[][]
+      description: ''
+- name: getColumnCount()
+  uid: ExcelScript!ExcelScript.RangeView#getColumnCount:member(1)
+  package: ExcelScript!
+  fullName: getColumnCount()
+  summary: 表示される列の数。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getColumnCount(): number;'
+    return:
+      type: number
+      description: ''
+- name: getFormulas()
+  uid: ExcelScript!ExcelScript.RangeView#getFormulas:member(1)
+  package: ExcelScript!
+  fullName: getFormulas()
+  summary: A1 スタイル表記の数式を表します。 セルに数式がない場合は、代わりにその値が返されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFormulas(): string[][];'
+    return:
+      type: string[][]
+      description: ''
+- name: getFormulasLocal()
+  uid: ExcelScript!ExcelScript.RangeView#getFormulasLocal:member(1)
+  package: ExcelScript!
+  fullName: getFormulasLocal()
+  summary: ユーザーの言語と数値書式ロケールで、A1 スタイル表記の数式を表します。 たとえば、英語の数式 "=SUM(A1, 1.5)" は、ドイツ語では "=SUMME(A1; 1,5)" になります。 セルに数式がない場合は、代わりにその値が返されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFormulasLocal(): string[][];'
+    return:
+      type: string[][]
+      description: ''
+- name: getFormulasR1C1()
+  uid: ExcelScript!ExcelScript.RangeView#getFormulasR1C1:member(1)
+  package: ExcelScript!
+  fullName: getFormulasR1C1()
+  summary: R1C1 スタイル表記の数式を表します。 セルに数式がない場合は、代わりにその値が返されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFormulasR1C1(): string[][];'
+    return:
+      type: string[][]
+      description: ''
+- name: getIndex()
+  uid: ExcelScript!ExcelScript.RangeView#getIndex:member(1)
+  package: ExcelScript!
+  fullName: getIndex()
+  summary: のインデックスを表す値を返します。 `RangeView`<!-- -->.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getIndex(): number;'
+    return:
+      type: number
+      description: ''
+- name: getNumberFormat()
+  uid: ExcelScript!ExcelScript.RangeView#getNumberFormat:member(1)
+  package: ExcelScript!
+  fullName: getNumberFormat()
+  summary: 指定したセルの Excel の数値書式コードを表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getNumberFormat(): string[][];'
+    return:
+      type: string[][]
+      description: ''
+- name: getRange()
+  uid: ExcelScript!ExcelScript.RangeView#getRange:member(1)
+  package: ExcelScript!
+  fullName: getRange()
+  summary: 現在の範囲に関連付けられている親範囲を取得します。 `RangeView`<!-- -->.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRange(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script copies values and formatting from the visible range of a table in Sheet1 into Sheet2.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the filtered data from Sheet1.\n  const currentSheet = workbook.getWorksheet(\"Sheet1\");\n  const table = currentSheet.getTables()[0];\n  const visibleTableRange: ExcelScript.RangeView = table.getRange().getVisibleView();\n  const source = visibleTableRange.getRange();\n  \n  // Copy the data into the other sheet.\n  const otherSheet = workbook.getWorksheet(\"Sheet2\");\n  const otherRangeCorner = otherSheet.getRange(\"A1\");\n  otherRangeCorner.copyFrom(source, ExcelScript.RangeCopyType.all);\n}\n```"
+- name: getRowCount()
+  uid: ExcelScript!ExcelScript.RangeView#getRowCount:member(1)
+  package: ExcelScript!
+  fullName: getRowCount()
+  summary: 表示される行の数。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRowCount(): number;'
+    return:
+      type: number
+      description: ''
+- name: getRows()
+  uid: ExcelScript!ExcelScript.RangeView#getRows:member(1)
+  package: ExcelScript!
+  fullName: getRows()
+  summary: 範囲に関連付けられている範囲ビューのコレクションを表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRows(): RangeView[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeView:interface" />[]
+      description: ''
+- name: getText()
+  uid: ExcelScript!ExcelScript.RangeView#getText:member(1)
+  package: ExcelScript!
+  fullName: getText()
+  summary: 指定した範囲のテキスト値。 テキスト値は、セルの幅には依存しません。 EXCEL UI で行われる符号の置換は\#、API によって返されるテキスト値には影響しません。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getText(): string[][];'
+    return:
+      type: string[][]
+      description: ''
+- name: getValues()
+  uid: ExcelScript!ExcelScript.RangeView#getValues:member(1)
+  package: ExcelScript!
+  fullName: getValues()
+  summary: 指定した範囲ビューの Raw 値を表します。 返されるデータの型は、文字列、数値、ブール値のいずれかになります。 エラーが含まれているセルは、エラー文字列を返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getValues(): (string | number | boolean)[][];'
+    return:
+      type: (string | number | boolean)[][]
+      description: ''
+- name: getValueTypes()
+  uid: ExcelScript!ExcelScript.RangeView#getValueTypes:member(1)
+  package: ExcelScript!
+  fullName: getValueTypes()
+  summary: 各セルのデータの種類を表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getValueTypes(): RangeValueType[][];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeValueType:enum" />[][]
+      description: ''
+- name: setFormulas(formulas)
+  uid: ExcelScript!ExcelScript.RangeView#setFormulas:member(1)
+  package: ExcelScript!
+  fullName: setFormulas(formulas)
+  summary: A1 スタイル表記の数式を表します。 セルに数式がない場合は、代わりにその値が返されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setFormulas(formulas: string[][]): void;'
+    parameters:
+    - id: formulas
+      description: ''
+      type: string[][]
+    return:
+      type: void
+      description: ''
+- name: setFormulasLocal(formulasLocal)
+  uid: ExcelScript!ExcelScript.RangeView#setFormulasLocal:member(1)
+  package: ExcelScript!
+  fullName: setFormulasLocal(formulasLocal)
+  summary: ユーザーの言語と数値書式ロケールで、A1 スタイル表記の数式を表します。 たとえば、英語の数式 "=SUM(A1, 1.5)" は、ドイツ語では "=SUMME(A1; 1,5)" になります。 セルに数式がない場合は、代わりにその値が返されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setFormulasLocal(formulasLocal: string[][]): void;'
+    parameters:
+    - id: formulasLocal
+      description: ''
+      type: string[][]
+    return:
+      type: void
+      description: ''
+- name: setFormulasR1C1(formulasR1C1)
+  uid: ExcelScript!ExcelScript.RangeView#setFormulasR1C1:member(1)
+  package: ExcelScript!
+  fullName: setFormulasR1C1(formulasR1C1)
+  summary: R1C1 スタイル表記の数式を表します。 セルに数式がない場合は、代わりにその値が返されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setFormulasR1C1(formulasR1C1: string[][]): void;'
+    parameters:
+    - id: formulasR1C1
+      description: ''
+      type: string[][]
+    return:
+      type: void
+      description: ''
+- name: setNumberFormat(numberFormat)
+  uid: ExcelScript!ExcelScript.RangeView#setNumberFormat:member(1)
+  package: ExcelScript!
+  fullName: setNumberFormat(numberFormat)
+  summary: 指定したセルの Excel の数値書式コードを表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setNumberFormat(numberFormat: string[][]): void;'
+    parameters:
+    - id: numberFormat
+      description: ''
+      type: string[][]
+    return:
+      type: void
+      description: ''
+- name: setValues(values)
+  uid: ExcelScript!ExcelScript.RangeView#setValues:member(1)
+  package: ExcelScript!
+  fullName: setValues(values)
+  summary: 指定した範囲ビューの Raw 値を表します。 返されるデータの型は、文字列、数値、ブール値のいずれかになります。 エラーが含まれているセルは、エラー文字列を返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setValues(values: (string | number | boolean)[][]): void;'
+    parameters:
+    - id: values
+      description: ''
+      type: (string | number | boolean)[][]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: cfc888a3a52caef4343f14b0326ee414f204081d
+  ms.sourcegitcommit: 1dccdb18053820ef3bc635279479d0cba4f0f482
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 04/08/2022
+  ms.locfileid: "64715982"

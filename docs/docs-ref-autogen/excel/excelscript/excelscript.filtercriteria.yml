@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.FilterCriteria
-uid: 'ExcelScript!ExcelScript.FilterCriteria:interface'
+uid: ExcelScript!ExcelScript.FilterCriteria:interface
 package: ExcelScript!
 fullName: ExcelScript.FilterCriteria
 summary: 列に適用するフィルター条件を表します。
@@ -9,114 +9,124 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: color
-    uid: 'ExcelScript!ExcelScript.FilterCriteria#color:member'
-    package: ExcelScript!
-    fullName: color
-    summary: セルをフィルター処理するために使用する HTML カラー文字列。 とフィルター `cellColor` 処理 `fontColor` で使用されます。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'color?: string;'
-      return:
-        type: string
-  - name: criterion1
-    uid: 'ExcelScript!ExcelScript.FilterCriteria#criterion1:member'
-    package: ExcelScript!
-    fullName: criterion1
-    summary: |-
-      データをフィルター処理するために使用する最初の条件。 フィルター処理の場合は演算子 `custom` として使用されます。 たとえば"<!-- -->&gt;<!-- -->50 より大きい数値の場合は 50"、"s" で終わる値は "=*s" です。
+- name: color
+  uid: ExcelScript!ExcelScript.FilterCriteria#color:member
+  package: ExcelScript!
+  fullName: color
+  summary: セルをフィルター処理するために使用する HTML カラー文字列。 フィルター処理と`fontColor`共に`cellColor`使用されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'color?: string;'
+    return:
+      type: string
+- name: criterion1
+  uid: ExcelScript!ExcelScript.FilterCriteria#criterion1:member
+  package: ExcelScript!
+  fullName: criterion1
+  summary: >-
+    データをフィルター処理するために使用する最初の条件。 フィルター処理の場合 `custom` に演算子として使用されます。 たとえば"<!-- -->&gt;<!-- -->50 より大きい数値の場合は 50"、"s" で終わる値の場合は "=*s" です。
 
-      トップ/ボトム アイテム/パーセントの場合の数値として使用されます (たとえば、上位 5 アイテムの場合は "5" に `filterOn` 設定されている場合) `topItems`<!-- -->).
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'criterion1?: string;'
-      return:
-        type: string
-  - name: criterion2
-    uid: 'ExcelScript!ExcelScript.FilterCriteria#criterion2:member'
-    package: ExcelScript!
-    fullName: criterion2
-    summary: データをフィルター処理するために使用する 2 番目の条件。 フィルター処理の場合にのみ演算子として `custom` 使用されます。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'criterion2?: string;'
-      return:
-        type: string
-  - name: dynamicCriteria
-    uid: 'ExcelScript!ExcelScript.FilterCriteria#dynamicCriteria:member'
-    package: ExcelScript!
-    fullName: dynamicCriteria
-    summary: この列に適用 `ExcelScript.DynamicFilterCriteria` するセットの動的な条件。 フィルター処理 `dynamic` で使用します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'dynamicCriteria?: DynamicFilterCriteria;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.DynamicFilterCriteria:enum" />'
-  - name: filterOn
-    uid: 'ExcelScript!ExcelScript.FilterCriteria#filterOn:member'
-    package: ExcelScript!
-    fullName: filterOn
-    summary: 値を表示する必要があるかどうかを判断するためにフィルターで使用されるプロパティ。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'filterOn: FilterOn;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.FilterOn:enum" />'
-  - name: icon
-    uid: 'ExcelScript!ExcelScript.FilterCriteria#icon:member'
-    package: ExcelScript!
-    fullName: icon
-    summary: セルをフィルター処理するために使用するアイコン。 フィルター処理 `icon` で使用します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'icon?: Icon;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.Icon:interface" />'
-  - name: operator
-    uid: 'ExcelScript!ExcelScript.FilterCriteria#operator:member'
-    package: ExcelScript!
-    fullName: operator
-    summary: フィルター処理を使用する場合、条件 1 と 2 を組み合わせて `custom` 使用する演算子。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'operator?: FilterOperator;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.FilterOperator:enum" />'
-  - name: subField
-    uid: 'ExcelScript!ExcelScript.FilterCriteria#subField:member'
-    package: ExcelScript!
-    fullName: subField
-    summary: 豊富な値に対してリッチ フィルターを実行するためにフィルターで使用されるプロパティ。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'subField?: string;'
-      return:
-        type: string
-  - name: values
-    uid: 'ExcelScript!ExcelScript.FilterCriteria#values:member'
-    package: ExcelScript!
-    fullName: values
-    summary: フィルター処理の一部として使用する値 `values` のセット。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'values?: Array<string | FilterDatetime>;'
-      return:
-        type: 'Array&lt;string | <xref uid="ExcelScript!ExcelScript.FilterDatetime:interface" />&gt;'
+
+    上/下のアイテム/パーセントの場合は数値として使用されます (たとえば、上位 5 項目の場合は "5" に設定されている場合 `filterOn` ) `topItems`<!-- -->).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'criterion1?: string;'
+    return:
+      type: string
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script creates an autoFilter on the worksheet that filters out rows based on column values. \n * The autoFilter filters to only include rows that have a value in column C in the lowest 10 values \n * (of column C values).\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  const currentSheet = workbook.getActiveWorksheet();\n  const dataRange = currentSheet.getUsedRange();\n\n  // Add a filter that will only show the rows with the lowest 10 values in column C\n  // (index 2, assuming the used range spans from at least A:C).\n  const filterCriteria: ExcelScript.FilterCriteria = {\n    criterion1: \"10\",\n    filterOn: ExcelScript.FilterOn.bottomItems\n  };\n  currentSheet.getAutoFilter().apply(dataRange, 2, filterCriteria);\n}\n```"
+- name: criterion2
+  uid: ExcelScript!ExcelScript.FilterCriteria#criterion2:member
+  package: ExcelScript!
+  fullName: criterion2
+  summary: データをフィルター処理するために使用する 2 番目の条件。 フィルター処理の場合 `custom` にのみ演算子として使用されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'criterion2?: string;'
+    return:
+      type: string
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script applies a filter to a table so that it only shows rows with \"Needs Review\" in the \"Type\" column.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the first table in the workbook.\n  const table = workbook.getTables()[0];\n\n  // Apply the filter to the \"Type\" column.\n  const typeColumn = table.getColumnByName(\"Type\");\n  typeColumn.getFilter().applyValuesFilter([\"Needs Review\"]);\n}\n```"
+- name: dynamicCriteria
+  uid: ExcelScript!ExcelScript.FilterCriteria#dynamicCriteria:member
+  package: ExcelScript!
+  fullName: dynamicCriteria
+  summary: この列に適用する `ExcelScript.DynamicFilterCriteria` セットの動的条件。 フィルター処理で `dynamic` 使用されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'dynamicCriteria?: DynamicFilterCriteria;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.DynamicFilterCriteria:enum" />
+- name: filterOn
+  uid: ExcelScript!ExcelScript.FilterCriteria#filterOn:member
+  package: ExcelScript!
+  fullName: filterOn
+  summary: 値を表示したままにする必要があるかどうかを判断するためにフィルターで使用されるプロパティ。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'filterOn: FilterOn;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.FilterOn:enum" />
+- name: icon
+  uid: ExcelScript!ExcelScript.FilterCriteria#icon:member
+  package: ExcelScript!
+  fullName: icon
+  summary: セルをフィルター処理するために使用するアイコン。 フィルター処理で `icon` 使用されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'icon?: Icon;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Icon:interface" />
+- name: operator
+  uid: ExcelScript!ExcelScript.FilterCriteria#operator:member
+  package: ExcelScript!
+  fullName: operator
+  summary: フィルター処理を使用するときに条件 1 と 2 を結合するために使用される `custom` 演算子。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'operator?: FilterOperator;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.FilterOperator:enum" />
+- name: subField
+  uid: ExcelScript!ExcelScript.FilterCriteria#subField:member
+  package: ExcelScript!
+  fullName: subField
+  summary: 豊富な値に対してリッチ フィルターを実行するためにフィルターによって使用されるプロパティ。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'subField?: string;'
+    return:
+      type: string
+- name: values
+  uid: ExcelScript!ExcelScript.FilterCriteria#values:member
+  package: ExcelScript!
+  fullName: values
+  summary: フィルター処理の一部として使用する値の `values` セット。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'values?: Array<string | FilterDatetime>;'
+    return:
+      type: Array&lt;string | <xref uid="ExcelScript!ExcelScript.FilterDatetime:interface" />&gt;
+metadata:
+  ms.openlocfilehash: 60b92aa11cdd91ddfb0094c33bef414d77d896d8
+  ms.sourcegitcommit: 1dccdb18053820ef3bc635279479d0cba4f0f482
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 04/08/2022
+  ms.locfileid: "64716017"
