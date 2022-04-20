@@ -1,80 +1,87 @@
 ### YamlMime:TSType
 name: ExcelScript.TableStyle
-uid: 'ExcelScript!ExcelScript.TableStyle:interface'
+uid: ExcelScript!ExcelScript.TableStyle:interface
 package: ExcelScript!
 fullName: ExcelScript.TableStyle
-summary: 表のスタイルを表し、表の領域別にスタイル要素を定義します。
+summary: テーブルの領域によってスタイル要素を定義するテーブル スタイルを表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-  - name: delete()
-    uid: 'ExcelScript!ExcelScript.TableStyle#delete:member(1)'
-    package: ExcelScript!
-    fullName: delete()
-    summary: 表のスタイルを削除します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'delete(): void;'
-      return:
-        type: void
-        description: ''
-  - name: duplicate()
-    uid: 'ExcelScript!ExcelScript.TableStyle#duplicate:member(1)'
-    package: ExcelScript!
-    fullName: duplicate()
-    summary: すべてのスタイル要素のコピーを含む、このテーブル スタイルの複製を作成します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'duplicate(): TableStyle;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.TableStyle:interface" />'
-        description: ''
-  - name: getName()
-    uid: 'ExcelScript!ExcelScript.TableStyle#getName:member(1)'
-    package: ExcelScript!
-    fullName: getName()
-    summary: テーブル スタイルの名前を取得します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getName(): string;'
-      return:
-        type: string
-        description: ''
-  - name: getReadOnly()
-    uid: 'ExcelScript!ExcelScript.TableStyle#getReadOnly:member(1)'
-    package: ExcelScript!
-    fullName: getReadOnly()
-    summary: このオブジェクトが読 `TableStyle` み取り専用の場合に指定します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getReadOnly(): boolean;'
-      return:
-        type: boolean
-        description: ''
-  - name: setName(name)
-    uid: 'ExcelScript!ExcelScript.TableStyle#setName:member(1)'
-    package: ExcelScript!
-    fullName: setName(name)
-    summary: テーブル スタイルの名前を取得します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setName(name: string): void;'
-      parameters:
-        - id: name
-          description: ''
-          type: string
-      return:
-        type: void
-        description: ''
+- name: delete()
+  uid: ExcelScript!ExcelScript.TableStyle#delete:member(1)
+  package: ExcelScript!
+  fullName: delete()
+  summary: テーブル スタイルを削除します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(): void;'
+    return:
+      type: void
+      description: ''
+- name: duplicate()
+  uid: ExcelScript!ExcelScript.TableStyle#duplicate:member(1)
+  package: ExcelScript!
+  fullName: duplicate()
+  summary: すべてのスタイル要素のコピーを使用して、このテーブル スタイルの複製を作成します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'duplicate(): TableStyle;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.TableStyle:interface" />
+      description: ''
+- name: getName()
+  uid: ExcelScript!ExcelScript.TableStyle#getName:member(1)
+  package: ExcelScript!
+  fullName: getName()
+  summary: テーブル スタイルの名前を取得します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getName(): string;'
+    return:
+      type: string
+      description: ''
+- name: getReadOnly()
+  uid: ExcelScript!ExcelScript.TableStyle#getReadOnly:member(1)
+  package: ExcelScript!
+  fullName: getReadOnly()
+  summary: この `TableStyle` オブジェクトが読み取り専用かどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getReadOnly(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: setName(name)
+  uid: ExcelScript!ExcelScript.TableStyle#setName:member(1)
+  package: ExcelScript!
+  fullName: setName(name)
+  summary: テーブル スタイルの名前を設定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setName(name: string): void;'
+    parameters:
+    - id: name
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 5a1830425bb5776fe765c141ac70c3881411d244
+  ms.sourcegitcommit: 5e9cd6fc2480832684fc0dbc264cfcf8e422c735
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 04/20/2022
+  ms.locfileid: "64963527"
