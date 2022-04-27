@@ -73,7 +73,7 @@ methods:
       description: コメントの内容。 これは、文字列または `CommentRichContent` オブジェクトのいずれかです。 文字列はプレーンテキストに使用されます。 `CommentRichContent` オブジェクトでは、メンションなどの他のコメント機能を使用できます。
       type: <xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" /> | string
     - id: contentType
-      description: オプション。 コメントに含まれるコンテンツの種類。 既定値は enum です `ContentType.Plain`<!-- -->.
+      description: 省略可能。 コメントに含まれるコンテンツの種類。 既定値は enum です `ContentType.Plain`<!-- -->.
       type: <xref uid="ExcelScript!ExcelScript.ContentType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
@@ -205,7 +205,7 @@ methods:
       description: 名前が参照する数式または範囲。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: comment
-      description: オプション。 名前付きアイテムに関連付けられているコメント。
+      description: 省略可能。 名前付きアイテムに関連付けられているコメント。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
@@ -233,7 +233,7 @@ methods:
       description: 名前が参照するユーザーのロケールの数式。
       type: string
     - id: comment
-      description: オプション。 名前付きアイテムに関連付けられているコメント。
+      description: 省略可能。 名前付きアイテムに関連付けられているコメント。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
@@ -306,11 +306,11 @@ methods:
       description: フィルター処理するデータ ソース内のフィールド。 オブジェクト、オブジェクト、`TableColumn`A の ID、または a `PivotField` の名前または ID を指定できます`PivotField`。`TableColumn`<!-- -->.
       type: string | <xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | number | <xref uid="ExcelScript!ExcelScript.TableColumn:interface" />
     - id: slicerDestination
-      description: オプション。 新しいスライサーが作成されるワークシート。 オブジェクトまたはワークシートの名前または ID を指定できます `Worksheet` 。 このパラメーターは、スライサー コレクションがワークシートから取得される場合は省略できます。
+      description: 省略可能。 新しいスライサーが作成されるワークシート。 オブジェクトまたはワークシートの名前または ID を指定できます `Worksheet` 。 このパラメーターは、スライサー コレクションがワークシートから取得される場合は省略できます。
       type: string | <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Slicer:interface" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script adds a slicer for an existing PivotTable on the current worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the first PivotTable from the current worksheet.\n  const currentSheet = workbook.getActiveWorksheet();\n  const pivot = currentSheet.getPivotTables()[0];\n\n  // Create the slicer. \n  // Note that this assumes \"Type\" is already added as a hierarchy to the PivotTable.\n  const slicer = currentSheet.addSlicer(\n    pivot, /* The table or PivotTale to be sliced. */\n    pivot.getHierarchy(\"Type\").getFields()[0] /* What source field to use as the slicer options. */\n  );\n\n  // Select the items to display.\n  slicer.selectItems([\"Lemon\", \"Lime\"]);\n\n  // Set the left margin of the slicer.\n  slicer.setLeft(400);\n}\n```"
 - name: addTable(address, hasHeaders)
   uid: ExcelScript!ExcelScript.Worksheet#addTable:member(1)
   package: ExcelScript!
@@ -779,7 +779,7 @@ methods:
     content: 'getNext(visibleOnly?: boolean): Worksheet;'
     parameters:
     - id: visibleOnly
-      description: オプション。 もし `true`<!-- -->では、非表示のワークシートをスキップして、表示可能なワークシートのみを考慮します。
+      description: 省略可能。 もし `true`<!-- -->では、非表示のワークシートをスキップして、表示可能なワークシートのみを考慮します。
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -852,7 +852,7 @@ methods:
     content: 'getPrevious(visibleOnly?: boolean): Worksheet;'
     parameters:
     - id: visibleOnly
-      description: オプション。 もし `true`<!-- -->では、非表示のワークシートをスキップして、表示可能なワークシートのみを考慮します。
+      description: 省略可能。 もし `true`<!-- -->では、非表示のワークシートをスキップして、表示可能なワークシートのみを考慮します。
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -882,7 +882,7 @@ methods:
     content: 'getRange(address?: string): Range;'
     parameters:
     - id: address
-      description: オプション。 範囲のアドレスまたは名前を表す文字列。 たとえば、"A1:B2" です。 指定されていない場合は、ワークシート全体の範囲が返されます。
+      description: 省略可能。 範囲のアドレスまたは名前を表す文字列。 たとえば、"A1:B2" です。 指定されていない場合は、ワークシート全体の範囲が返されます。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -931,7 +931,7 @@ methods:
     content: 'getRanges(address?: string): RangeAreas;'
     parameters:
     - id: address
-      description: オプション。 コンマ区切りのアドレスまたは個々の範囲の名前を含む文字列。 たとえば、「A1:B2、A5:B5」などです。 指定しない場合は、ワークシート全体の RangeArea オブジェクトが返されます。
+      description: 省略可能。 コンマ区切りのアドレスまたは個々の範囲の名前を含む文字列。 たとえば、「A1:B2、A5:B5」などです。 指定しない場合は、ワークシート全体の RangeArea オブジェクトが返されます。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
@@ -1378,9 +1378,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: e2f112cd55fb4eef8c72cf1ab283bda7250afd63
-  ms.sourcegitcommit: 1dccdb18053820ef3bc635279479d0cba4f0f482
+  ms.openlocfilehash: 5762fd324dff67a465aaa29178f872c7111ea8ce
+  ms.sourcegitcommit: 62fb657a306ed43211bc29b7e4ee016260dcc810
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/08/2022
-  ms.locfileid: "64715968"
+  ms.lasthandoff: 04/27/2022
+  ms.locfileid: "65076882"

@@ -3,7 +3,7 @@ name: ExcelScript.Workbook
 uid: ExcelScript!ExcelScript.Workbook:interface
 package: ExcelScript!
 fullName: ExcelScript.Workbook
-summary: Workbook は、ワークシート、テーブル、範囲などの関連するブック オブジェクトを含む、トップ レベルのオブジェクトです。
+summary: ブックは、ワークシート、テーブル、範囲などの関連するブック オブジェクトを含む最上位レベルのオブジェクトです。
 remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script adds a new worksheet to the workbook, then switches to it.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Add a new worksheet with the default name.\n  let worksheet = workbook.addWorksheet();\n\n  // Switch focus to the new worksheet.\n  worksheet.activate();\n}\n```"
 isPreview: false
 isDeprecated: false
@@ -26,10 +26,10 @@ methods:
               ): Binding;
     parameters:
     - id: range
-      description: バインドをバインドする範囲です。 オブジェクトまたは `Range` 文字列を指定できます。 文字列の場合は、シート名を含む完全なアドレスが含まれている必要があります
+      description: バインドをバインドする範囲です。 `Range`オブジェクトまたは文字列を指定できます。 文字列の場合は、シート名を含む完全なアドレスが含まれている必要があります
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: bindingType
-      description: バインドの種類。 参照 `ExcelScript.BindingType`<!-- -->.
+      description: バインドの種類。 見る `ExcelScript.BindingType`<!-- -->.
       type: <xref uid="ExcelScript!ExcelScript.BindingType:enum" />
     - id: id
       description: バインドの名前。
@@ -41,7 +41,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#addBindingFromNamedItem:member(1)
   package: ExcelScript!
   fullName: addBindingFromNamedItem(name, bindingType, id)
-  summary: ブック内の名前付きアイテムに基づいて新しいバインドを追加します。 名前付きアイテムが複数の領域を参照している場合は、 `InvalidReference` エラーが返されます。
+  summary: ブック内の名前付きアイテムに基づいて新しいバインドを追加します。 名前付きアイテムが複数の領域を参照している場合、 `InvalidReference` エラーが返されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -57,7 +57,7 @@ methods:
       description: バインドの作成元の名前です。
       type: string
     - id: bindingType
-      description: バインドの種類。 参照 `ExcelScript.BindingType`<!-- -->.
+      description: バインドの種類。 見る `ExcelScript.BindingType`<!-- -->.
       type: <xref uid="ExcelScript!ExcelScript.BindingType:enum" />
     - id: id
       description: バインドの名前。
@@ -77,7 +77,7 @@ methods:
     content: 'addBindingFromSelection(bindingType: BindingType, id: string): Binding;'
     parameters:
     - id: bindingType
-      description: バインドの種類。 参照 `ExcelScript.BindingType`<!-- -->.
+      description: バインドの種類。 見る `ExcelScript.BindingType`<!-- -->.
       type: <xref uid="ExcelScript!ExcelScript.BindingType:enum" />
     - id: id
       description: バインドの名前。
@@ -102,13 +102,13 @@ methods:
               ): Comment;
     parameters:
     - id: cellAddress
-      description: コメントが追加されるセル。 オブジェクトまたは文字列 `Range` を指定できます。 文字列の場合は、シート名を含む完全なアドレスを含む必要があります。 指定 `InvalidArgument` された範囲が 1 つのセルより大きい場合、エラーがスローされます。
+      description: コメントが追加されるセル。 オブジェクトまたは文字列を `Range` 指定できます。 文字列の場合は、シート名を含む完全なアドレスを含む必要があります。 指定 `InvalidArgument` された範囲が 1 つのセルより大きい場合、エラーがスローされます。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: content
-      description: コメントのコンテンツ。 文字列またはオブジェクトを指定 `CommentRichContent` できます。 文字列は、プレーン テキストに使用されます。 `CommentRichContent` オブジェクトは、メンションなどの他のコメント機能を使用できます。
+      description: コメントの内容。 これは、文字列または `CommentRichContent` オブジェクトのいずれかです。 文字列はプレーンテキストに使用されます。 `CommentRichContent` オブジェクトでは、メンションなどの他のコメント機能を使用できます。
       type: <xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" /> | string
     - id: contentType
-      description: オプション。 コメントに含まれるコンテンツの種類。 既定値は enum です `ContentType.Plain`<!-- -->.
+      description: 省略可能。 コメントに含まれるコンテンツの種類。 既定値は enum です `ContentType.Plain`<!-- -->.
       type: <xref uid="ExcelScript!ExcelScript.ContentType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
@@ -153,7 +153,7 @@ methods:
       description: 名前が参照する数式または範囲。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: comment
-      description: オプション。 名前付きアイテムに関連付けられたコメント。
+      description: 省略可能。 名前付きアイテムに関連付けられているコメント。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
@@ -181,7 +181,7 @@ methods:
       description: 名前が参照するユーザーのロケールの数式。
       type: string
     - id: comment
-      description: オプション。 名前付きアイテムに関連付けられたコメント。
+      description: 省略可能。 名前付きアイテムに関連付けられているコメント。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
@@ -190,7 +190,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#addPivotTable:member(1)
   package: ExcelScript!
   fullName: addPivotTable(name, source, destination)
-  summary: 指定したソース データに基づいてピボットテーブルを追加し、移動先範囲の左上のセルに挿入します。
+  summary: 指定したソース データに基づいてピボットテーブルを追加し、ターゲット範囲の左上のセルに挿入します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -218,7 +218,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#addPivotTableStyle:member(1)
   package: ExcelScript!
   fullName: addPivotTableStyle(name, makeUniqueName)
-  summary: 指定した名前の `PivotTableStyle` 空白を作成します。
+  summary: 指定した名前の空白 `PivotTableStyle` を作成します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -230,10 +230,10 @@ methods:
               ): PivotTableStyle;
     parameters:
     - id: name
-      description: 新しいピボットテーブル スタイルの一意の名前。 名前が既 `InvalidArgument` に使用されている場合は、エラーがスローされます。
+      description: 新しいピボットテーブル スタイルの一意の名前。 名前が既に `InvalidArgument` 使用されている場合は、エラーがスローされます。
       type: string
     - id: makeUniqueName
-      description: オプション。 既定値は `false`。<!-- -->. もし `true`<!-- -->をクリックすると、必要に応じて一意の番号を名前に追加します。
+      description: 省略可能。 既定値は `false`。<!-- -->. もし `true`<!-- -->は、必要に応じて一意にするために、名前に番号を追加します。
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.PivotTableStyle:interface" />
@@ -272,17 +272,17 @@ methods:
               ): Slicer;
     parameters:
     - id: slicerSource
-      description: 新しいスライサーの基になるデータ ソース。 オブジェクト、オブジェクト `PivotTable` 、または `Table` 文字列を指定できます。 PivotTable オブジェクトを渡す場合、データ ソースはオブジェクトのソース `PivotTable` です。 オブジェクトが `Table` 渡された場合、データ ソースはオブジェクト `Table` です。 文字列が渡された場合、ピボットテーブルまたはテーブルの名前または ID として解釈されます。
+      description: 新しいスライサーの基になるデータ ソース。 オブジェクト、オブジェクト、`Table`または文字列を指定できます`PivotTable`。 ピボットテーブル オブジェクトが渡されると、データ ソースはオブジェクトの `PivotTable` ソースになります。 オブジェクトが `Table` 渡されると、データ ソースはオブジェクトになります `Table` 。 文字列が渡されると、ピボットテーブルまたはテーブルの名前または ID として解釈されます。
       type: string | <xref uid="ExcelScript!ExcelScript.PivotTable:interface" /> | <xref uid="ExcelScript!ExcelScript.Table:interface" />
     - id: sourceField
-      description: フィルター処理するデータ ソースのフィールド。 オブジェクト、オブジェクト、A の ID、または a の名前または `PivotField` `TableColumn` ID `PivotField` を指定できます。 `TableColumn`<!-- -->.
+      description: フィルター処理するデータ ソース内のフィールド。 オブジェクト、オブジェクト、`TableColumn`A の ID、または a `PivotField` の名前または ID を指定できます`PivotField`。`TableColumn`<!-- -->.
       type: string | <xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | number | <xref uid="ExcelScript!ExcelScript.TableColumn:interface" />
     - id: slicerDestination
-      description: オプション。 新しいスライサーが作成されるワークシート。 オブジェクトまたはワークシート `Worksheet` の名前または ID を指定できます。 スライサー コレクションがワークシートから取得される場合は、このパラメーターを省略できます。
+      description: 省略可能。 新しいスライサーが作成されるワークシート。 オブジェクトまたはワークシートの名前または ID を指定できます `Worksheet` 。 このパラメーターは、スライサー コレクションがワークシートから取得される場合は省略できます。
       type: string | <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Slicer:interface" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script adds a slicer for an existing PivotTable.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the PivotTable named \"Farm Pivot\".\n  const farmPivot = workbook.getPivotTable(\"Farm Pivot\");\n\n  // Create the slicer. \n  // Note that this assumes \"Type\" is already added as a hierarchy to the PivotTable.\n  const fruitSlicer: ExcelScript.Slicer = workbook.addSlicer(\n    farmPivot, /* The table or PivotTale to be sliced. */\n    farmPivot.getHierarchy(\"Type\").getFields()[0] /* What source field to use as the slicer options. */\n  );\n\n  // Select the items to display.\n  fruitSlicer.selectItems([\"Lemon\", \"Lime\"]);\n\n  // Set the left margin of the slicer.\n  fruitSlicer.setLeft(400);\n}\n```"
 - name: addSlicerStyle(name, makeUniqueName)
   uid: ExcelScript!ExcelScript.Workbook#addSlicerStyle:member(1)
   package: ExcelScript!
@@ -295,10 +295,10 @@ methods:
     content: 'addSlicerStyle(name: string, makeUniqueName?: boolean): SlicerStyle;'
     parameters:
     - id: name
-      description: 新しいスライサー スタイルの一意の名前。 名前が既 `InvalidArgument` に使用されている場合は例外をスローします。
+      description: 新しいスライサー スタイルの一意の名前。 名前が既に `InvalidArgument` 使用されている場合は例外をスローします。
       type: string
     - id: makeUniqueName
-      description: オプション。 既定値は `false`。<!-- -->. もし `true`<!-- -->をクリックすると、必要に応じて一意の番号を名前に追加します。
+      description: 省略可能。 既定値は `false`。<!-- -->. もし `true`<!-- -->は、必要に応じて一意にするために、名前に番号を追加します。
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.SlicerStyle:interface" />
@@ -315,19 +315,19 @@ methods:
     content: 'addTable(address: Range | string, hasHeaders: boolean): Table;'
     parameters:
     - id: address
-      description: データ `Range` ソースを表すオブジェクト、または範囲の文字列アドレスまたは名前。 アドレスにシート名が含まれていない場合は、現在作業中のシートが使用されます。
+      description: '`Range`オブジェクト、またはデータ ソースを表す範囲の文字列アドレスまたは名前。 アドレスにシート名が含まれていない場合は、現在作業中のシートが使用されます。'
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: hasHeaders
-      description: インポートするデータに列ラベルが含まれたかどうかを示すブール値。 ソースにヘッダーが含まれている (つまり、このプロパティがに設定されている場合) `false`<!-- -->)Excelヘッダーを自動的に生成し、データを 1 行下にシフトします。
+      description: インポートするデータに列ラベルがあるかどうかを示すブール値。 ソースにヘッダーが含まれていない場合 (つまり、このプロパティが `false`<!-- -->)、Excelヘッダーが自動的に生成され、データが 1 行下にシフトされます。
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Table:interface" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This sample converts the information in the first worksheet\n * into a table with headers.\n*/\nfunction main(workbook: ExcelScript.Workbook) {\n  // This assumes there is one contiguous range in the first worksheet.\n  const dataRange = workbook.getFirstWorksheet().getUsedRange();\n  \n  // Add a table at the workbook level.\n  workbook.addTable(dataRange.getAddress(), true);\n}\n```"
 - name: addTableStyle(name, makeUniqueName)
   uid: ExcelScript!ExcelScript.Workbook#addTableStyle:member(1)
   package: ExcelScript!
   fullName: addTableStyle(name, makeUniqueName)
-  summary: 指定した名前の `TableStyle` 空白を作成します。
+  summary: 指定した名前の空白 `TableStyle` を作成します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -335,10 +335,10 @@ methods:
     content: 'addTableStyle(name: string, makeUniqueName?: boolean): TableStyle;'
     parameters:
     - id: name
-      description: 新しいテーブル スタイルの一意の名前。 名前が既 `InvalidArgument` に使用されている場合は、エラーがスローされます。
+      description: 新しいテーブル スタイルの一意の名前。 名前が既に `InvalidArgument` 使用されている場合は、エラーがスローされます。
       type: string
     - id: makeUniqueName
-      description: オプション。 既定値は `false`。<!-- -->. もし `true`<!-- -->をクリックすると、必要に応じて一意の番号を名前に追加します。
+      description: 省略可能。 既定値は `false`。<!-- -->. もし `true`<!-- -->は、必要に応じて一意にするために、名前に番号を追加します。
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.TableStyle:interface" />
@@ -347,7 +347,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#addTimelineStyle:member(1)
   package: ExcelScript!
   fullName: addTimelineStyle(name, makeUniqueName)
-  summary: 指定した名前の `TimelineStyle` 空白を作成します。
+  summary: 指定した名前の空白 `TimelineStyle` を作成します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -355,10 +355,10 @@ methods:
     content: 'addTimelineStyle(name: string, makeUniqueName?: boolean): TimelineStyle;'
     parameters:
     - id: name
-      description: 新しいタイムライン スタイルの一意の名前。 名前が既 `InvalidArgument` に使用されている場合は、エラーがスローされます。
+      description: 新しいタイムライン スタイルの一意の名前。 名前が既に `InvalidArgument` 使用されている場合は、エラーがスローされます。
       type: string
     - id: makeUniqueName
-      description: オプション。 既定値は `false`。<!-- -->. もし `true`<!-- -->をクリックすると、必要に応じて一意の番号を名前に追加します。
+      description: 省略可能。 既定値は `false`。<!-- -->. もし `true`<!-- -->は、必要に応じて一意にするために、名前に番号を追加します。
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.TimelineStyle:interface" />
@@ -367,7 +367,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#addWorksheet:member(1)
   package: ExcelScript!
   fullName: addWorksheet(name)
-  summary: 新しいワークシートをブックに追加します。 ワークシートは、既存のワークシートの末尾に追加されます。 新しく追加したワークシートをアクティブ化する場合は、そのワークシートを `.activate()` 呼び出します。
+  summary: 新しいワークシートをブックに追加します。 ワークシートは、既存のワークシートの末尾に追加されます。 新しく追加されたワークシートをアクティブ化する場合は、それを呼び出 `.activate()` します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -384,7 +384,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#breakAllLinksToLinkedWorkbooks:member(1)
   package: ExcelScript!
   fullName: breakAllLinksToLinkedWorkbooks()
-  summary: リンクされたブックへのすべてのリンクを壊します。 リンクが壊れたら、ブックリンクを参照する数式は完全に削除され、最近取得した値に置き換えられる。
+  summary: リンクされたブックへのリンクをすべて解除します。 リンクが解除されると、ブック リンクを参照するすべての数式が完全に削除され、最近取得された値に置き換えられます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -410,7 +410,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getActiveChart:member(1)
   package: ExcelScript!
   fullName: getActiveChart()
-  summary: ブックで現在アクティブになっているグラフを取得します。 アクティブなグラフがない場合、この関数は次の値を返します。 `undefined`<!-- -->.
+  summary: ブックで現在アクティブになっているグラフを取得します。 アクティブなグラフがない場合、この関数は返します。 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -449,7 +449,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getApplication:member(1)
   package: ExcelScript!
   fullName: getApplication()
-  summary: このブックをExcelアプリケーション インスタンスを表します。
+  summary: このブックを含むExcelアプリケーション インスタンスを表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -462,7 +462,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getAutoSave:member(1)
   package: ExcelScript!
   fullName: getAutoSave()
-  summary: ブックが自動保存モードの場合に指定します。
+  summary: ブックが自動保存モードであるかどうかを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -518,7 +518,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getChartDataPointTrack:member(1)
   package: ExcelScript!
   fullName: getChartDataPointTrack()
-  summary: 関連付けられている実際のデータ ポイントをブックの全グラフが追跡している場合、true となります。 False の場合は、グラフがデータ ポイントのインデックスを追跡します。
+  summary: 関連付けられている実際のデータ ポイントをブックの全グラフが追跡している場合、true となります。 False の場合、グラフはデータ ポイントのインデックスを追跡します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -556,7 +556,7 @@ methods:
     content: 'getCommentByCell(cellAddress: Range | string): Comment;'
     parameters:
     - id: cellAddress
-      description: コメントがオンのセル。 オブジェクトまたは文字列 `Range` を指定できます。 文字列の場合は、シート名を含む完全なアドレスを含む必要があります。 指定 `InvalidArgument` された範囲が 1 つのセルより大きい場合、エラーがスローされます。
+      description: コメントが表示されているセル。 オブジェクトまたは文字列を `Range` 指定できます。 文字列の場合は、シート名を含む完全なアドレスを含む必要があります。 指定 `InvalidArgument` された範囲が 1 つのセルより大きい場合、エラーがスローされます。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
@@ -565,7 +565,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getCommentByReplyId:member(1)
   package: ExcelScript!
   fullName: getCommentByReplyId(replyId)
-  summary: 指定した返信が接続されているコメントを取得します。
+  summary: 指定した応答が接続されているコメントを取得します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -573,7 +573,7 @@ methods:
     content: 'getCommentByReplyId(replyId: string): Comment;'
     parameters:
     - id: replyId
-      description: コメント返信の識別子。
+      description: コメント応答の識別子。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
@@ -582,7 +582,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getComments:member(1)
   package: ExcelScript!
   fullName: getComments()
-  summary: ブックに関連付けられたコメントのコレクションを表します。
+  summary: ブックに関連付けられているコメントのコレクションを表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -595,7 +595,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getCustomXmlPart:member(1)
   package: ExcelScript!
   fullName: getCustomXmlPart(id)
-  summary: ID に基づいて、カスタム XML パーツを取得します。 存在しない `CustomXmlPart` 場合、この関数は `undefined`<!-- -->.
+  summary: ID に基づいて、カスタム XML パーツを取得します。 存在 `CustomXmlPart` しない場合、この関数は返します。 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -612,7 +612,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getCustomXmlPartByNamespace:member(1)
   package: ExcelScript!
   fullName: getCustomXmlPartByNamespace(namespaceUri)
-  summary: 名前空間が指定された名前空間と一致するカスタム XML パーツの新しいコレクションを取得します。
+  summary: 指定した名前空間と一致する名前空間を持つカスタム XML パーツの新しいコレクションを取得します。
   remarks: ''
   isPreview: false
   isDeprecated: true
@@ -621,7 +621,7 @@ methods:
     content: 'getCustomXmlPartByNamespace(namespaceUri: string): CustomXmlPart[];'
     parameters:
     - id: namespaceUri
-      description: これは完全修飾スキーマ URI である必要があります。たとえば、 " http://schemas.contoso.com/review/1.0 ".
+      description: これは完全修飾スキーマ URI である必要があります。たとえば、"" ですhttp://schemas.contoso.com/review/1.0。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.CustomXmlPart:interface" />[]
@@ -643,7 +643,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getCustomXmlPartsByNamespace:member(1)
   package: ExcelScript!
   fullName: getCustomXmlPartsByNamespace(namespaceUri)
-  summary: 名前空間が指定された名前空間と一致するカスタム XML パーツの新しいコレクションを取得します。
+  summary: 指定した名前空間と一致する名前空間を持つカスタム XML パーツの新しいコレクションを取得します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -651,7 +651,7 @@ methods:
     content: 'getCustomXmlPartsByNamespace(namespaceUri: string): CustomXmlPart[];'
     parameters:
     - id: namespaceUri
-      description: これは完全修飾スキーマ URI である必要があります。たとえば、 " http://schemas.contoso.com/review/1.0 ".
+      description: これは完全修飾スキーマ URI である必要があります。たとえば、"" ですhttp://schemas.contoso.com/review/1.0。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.CustomXmlPart:interface" />[]
@@ -673,7 +673,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getDefaultSlicerStyle:member(1)
   package: ExcelScript!
   fullName: getDefaultSlicerStyle()
-  summary: 親オブジェクトの `SlicerStyle` スコープの既定値を取得します。
+  summary: 親オブジェクトのスコープの既定値 `SlicerStyle` を取得します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -720,7 +720,7 @@ methods:
     content: 'getFirstWorksheet(visibleOnly?: boolean): Worksheet;'
     parameters:
     - id: visibleOnly
-      description: オプション。 もし `true`<!-- -->、表示されているワークシートのみを考慮し、非表示のワークシートをスキップします。
+      description: 省略可能。 もし `true`<!-- -->では、非表示のワークシートをスキップして、表示可能なワークシートのみを考慮します。
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -729,7 +729,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getIsDirty:member(1)
   package: ExcelScript!
   fullName: getIsDirty()
-  summary: ブックが最後に保存された後に変更が行われた場合に指定します。 変更したブックを保存せずに閉じるか、保存するように求めるメッセージが表示される場合は、このプロパティ `true` を設定できます。
+  summary: ブックが最後に保存されてから変更が加えられたかどうかを指定します。 このプロパティは、変更したブックを `true` 保存せずに閉じたり、保存を求められたりしない場合に設定できます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -750,7 +750,7 @@ methods:
     content: 'getLastWorksheet(visibleOnly?: boolean): Worksheet;'
     parameters:
     - id: visibleOnly
-      description: オプション。 もし `true`<!-- -->、表示されているワークシートのみを考慮し、非表示のワークシートをスキップします。
+      description: 省略可能。 もし `true`<!-- -->では、非表示のワークシートをスキップして、表示可能なワークシートのみを考慮します。
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -759,7 +759,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getLinkedWorkbookByUrl:member(1)
   package: ExcelScript!
   fullName: getLinkedWorkbookByUrl(key)
-  summary: リンクされたブックに関する情報を URL で取得します。 ブックが存在しない場合、この関数はプロパティを次に設定した `isNullObject` オブジェクトを返します。 `true`<!-- -->.
+  summary: リンクされたブックに関する情報を URL で取得します。 ブックが存在しない場合、この関数は、その `isNullObject` プロパティを次に設定したオブジェクトを返します。 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -776,7 +776,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getLinkedWorkbookRefreshMode:member(1)
   package: ExcelScript!
   fullName: getLinkedWorkbookRefreshMode()
-  summary: ブック リンクの更新モードを表します。 このモードは、ブック内に存在するブック リンクすべてについて同じです。
+  summary: ブック リンクの更新モードを表します。 モードは、ブックに存在するすべてのブック リンクで同じです。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -789,7 +789,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getLinkedWorkbooks:member(1)
   package: ExcelScript!
   fullName: getLinkedWorkbooks()
-  summary: リンクされたブックのコレクションを返します。 数式では、ブック リンクを使用して、現在のブックの外部のデータ (セルの値と名前) を参照できます。
+  summary: リンクされたブックのコレクションを返します。 数式では、ブックリンクを使用して、現在のブックの外部のデータ (セル値と名前) を参照できます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -823,7 +823,7 @@ methods:
     content: 'getNamedItem(name: string): NamedItem | undefined;'
     parameters:
     - id: name
-      description: Nameditem の名前。
+      description: Nameditem 名。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" /> | undefined
@@ -832,7 +832,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getNames:member(1)
   package: ExcelScript!
   fullName: getNames()
-  summary: ブックスコープの名前付きアイテム (名前付き範囲と定数) のコレクションを表します。
+  summary: ブック スコープの名前付きアイテム (名前付き範囲と定数) のコレクションを表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -845,7 +845,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getPivotTable:member(1)
   package: ExcelScript!
   fullName: getPivotTable(name)
-  summary: 名前に基づいてピボットテーブルを取得します。 ピボットテーブルが存在しない場合、この関数は `undefined`<!-- -->.
+  summary: 名前に基づいてピボットテーブルを取得します。 ピボットテーブルが存在しない場合、この関数は返します。 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -875,7 +875,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getPivotTableStyle:member(1)
   package: ExcelScript!
   fullName: getPivotTableStyle(name)
-  summary: 名前で `PivotTableStyle` 取得します。 存在しない `PivotTableStyle` 場合、この関数は `undefined`<!-- -->.
+  summary: 名前で `PivotTableStyle` 取得します。 存在 `PivotTableStyle` しない場合、この関数は返します。 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -935,7 +935,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getPreviouslySaved:member(1)
   package: ExcelScript!
   fullName: getPreviouslySaved()
-  summary: ブックがローカルまたはオンラインで保存された場合に指定します。
+  summary: ブックがローカルまたはオンラインで保存されたかどうかを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -974,7 +974,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getReadOnly:member(1)
   package: ExcelScript!
   fullName: getReadOnly()
-  summary: ブックが `true` 読み取り専用モードで開いている場合に返します。
+  summary: ブックが `true` 読み取り専用モードで開かれている場合に返されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1000,7 +1000,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getSelectedRanges:member(1)
   package: ExcelScript!
   fullName: getSelectedRanges()
-  summary: ブックから現在選択されている 1 つまたは複数の範囲を取得します。 異なり `getSelectedRange()`<!-- -->を指定すると、選択した `RangeAreas` 範囲を表すオブジェクトが返されます。
+  summary: ブックから現在選択されている 1 つまたは複数の範囲を取得します。 違って `getSelectedRange()`<!-- -->、このメソッドは、選択したすべての範囲を `RangeAreas` 表すオブジェクトを返します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1030,7 +1030,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getSlicers:member(1)
   package: ExcelScript!
   fullName: getSlicers()
-  summary: ブックに関連付けられたスライサーのコレクションを表します。
+  summary: ブックに関連付けられているスライサーのコレクションを表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1133,7 +1133,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getTimelineStyle:member(1)
   package: ExcelScript!
   fullName: getTimelineStyle(name)
-  summary: 名前で `TimelineStyle` 取得します。 タイムライン スタイルが存在しない場合、この関数は `undefined`<!-- -->.
+  summary: 名前で `TimelineStyle` 取得します。 タイムライン スタイルが存在しない場合、この関数は返します。 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1163,7 +1163,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getUsePrecisionAsDisplayed:member(1)
   package: ExcelScript!
   fullName: getUsePrecisionAsDisplayed()
-  summary: ブックを表示桁数でのみ計算する場合、true となります。 このプロパティをからからに切り替える場合、データは完全に精度を失 `false` います `true`<!-- -->.
+  summary: ブックを表示桁数でのみ計算する場合、true となります。 このプロパティ `false` を次の値に切り替えると、データの精度が完全に失われます。 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1176,7 +1176,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getWorksheet:member(1)
   package: ExcelScript!
   fullName: getWorksheet(key)
-  summary: 名前または ID を使用して、ワークシート オブジェクトを取得します。 ワークシートが存在しない場合、この関数は `undefined`<!-- -->.
+  summary: 名前または ID を使用して、ワークシート オブジェクトを取得します。 ワークシートが存在しない場合、この関数は返します `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1219,7 +1219,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#refreshAllLinksToLinkedWorkbooks:member(1)
   package: ExcelScript!
   fullName: refreshAllLinksToLinkedWorkbooks()
-  summary: すべてのブック リンクを更新する要求を行います。
+  summary: すべてのブック リンクを更新するように要求します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1245,7 +1245,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#setChartDataPointTrack:member(1)
   package: ExcelScript!
   fullName: setChartDataPointTrack(chartDataPointTrack)
-  summary: 関連付けられている実際のデータ ポイントをブックの全グラフが追跡している場合、true となります。 False の場合は、グラフがデータ ポイントのインデックスを追跡します。
+  summary: 関連付けられている実際のデータ ポイントをブックの全グラフが追跡している場合、true となります。 False の場合、グラフはデータ ポイントのインデックスを追跡します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1273,7 +1273,7 @@ methods:
               ): void;
     parameters:
     - id: newDefaultStyle
-      description: 新 `PivotTableStyle` しい既定値である必要 `PivotTableStyle` があるオブジェクトまたはオブジェクトの名前。
+      description: '`PivotTableStyle`新しい既定値であるオブジェクト (オブジェクトの`PivotTableStyle`名前)。'
       type: "<xref uid=\"ExcelScript!ExcelScript.PivotTableStyle:interface\" /> | string\n        "
     return:
       type: void
@@ -1290,7 +1290,7 @@ methods:
     content: 'setDefaultSlicerStyle(newDefaultStyle: SlicerStyle | string): void;'
     parameters:
     - id: newDefaultStyle
-      description: 新 `SlicerStyle` しい既定値である必要 `SlicerStyle` があるオブジェクトまたはオブジェクトの名前。
+      description: '`SlicerStyle`新しい既定値であるオブジェクト (オブジェクトの`SlicerStyle`名前)。'
       type: <xref uid="ExcelScript!ExcelScript.SlicerStyle:interface" /> | string
     return:
       type: void
@@ -1307,7 +1307,7 @@ methods:
     content: 'setDefaultTableStyle(newDefaultStyle: TableStyle | string): void;'
     parameters:
     - id: newDefaultStyle
-      description: 新 `TableStyle` しい既定値である必要 `TableStyle` があるオブジェクトまたはオブジェクトの名前。
+      description: '`TableStyle`新しい既定値であるオブジェクト (オブジェクトの`TableStyle`名前)。'
       type: <xref uid="ExcelScript!ExcelScript.TableStyle:interface" /> | string
     return:
       type: void
@@ -1324,7 +1324,7 @@ methods:
     content: 'setDefaultTimelineStyle(newDefaultStyle: TimelineStyle | string): void;'
     parameters:
     - id: newDefaultStyle
-      description: 新 `TimelineStyle` しい既定値である必要 `TimelineStyle` があるオブジェクトまたはオブジェクトの名前。
+      description: '`TimelineStyle`新しい既定値であるオブジェクト (オブジェクトの`TimelineStyle`名前)。'
       type: <xref uid="ExcelScript!ExcelScript.TimelineStyle:interface" /> | string
     return:
       type: void
@@ -1333,7 +1333,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#setIsDirty:member(1)
   package: ExcelScript!
   fullName: setIsDirty(isDirty)
-  summary: ブックが最後に保存された後に変更が行われた場合に指定します。 変更したブックを保存せずに閉じるか、保存するように求めるメッセージが表示される場合は、このプロパティ `true` を設定できます。
+  summary: ブックが最後に保存されてから変更が加えられたかどうかを指定します。 このプロパティは、変更したブックを `true` 保存せずに閉じたり、保存を求められたりしない場合に設定できます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1350,7 +1350,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#setLinkedWorkbookRefreshMode:member(1)
   package: ExcelScript!
   fullName: setLinkedWorkbookRefreshMode(linkedWorkbookRefreshMode)
-  summary: ブック リンクの更新モードを表します。 このモードは、ブック内に存在するブック リンクすべてについて同じです。
+  summary: ブック リンクの更新モードを表します。 モードは、ブックに存在するすべてのブック リンクで同じです。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1370,7 +1370,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#setUsePrecisionAsDisplayed:member(1)
   package: ExcelScript!
   fullName: setUsePrecisionAsDisplayed(usePrecisionAsDisplayed)
-  summary: ブックを表示桁数でのみ計算する場合、true となります。 このプロパティをからからに切り替える場合、データは完全に精度を失 `false` います `true`<!-- -->.
+  summary: ブックを表示桁数でのみ計算する場合、true となります。 このプロパティ `false` を次の値に切り替えると、データの精度が完全に失われます。 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1384,9 +1384,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 0cf6be7bea44595eb8cdce4d1000268f330f9073
-  ms.sourcegitcommit: b796bf885c8fe7d777f70602bb7038de424d922b
+  ms.openlocfilehash: 52a3ed7e88d6452aa71cd8efd9bcdb459065dd98
+  ms.sourcegitcommit: 62fb657a306ed43211bc29b7e4ee016260dcc810
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 12/01/2021
-  ms.locfileid: "61240613"
+  ms.lasthandoff: 04/27/2022
+  ms.locfileid: "65076875"
