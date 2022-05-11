@@ -1,756 +1,736 @@
 ### YamlMime:TSType
 name: ExcelScript.Shape
-uid: 'ExcelScript!ExcelScript.Shape:interface'
+uid: ExcelScript!ExcelScript.Shape:interface
 package: ExcelScript!
 fullName: ExcelScript.Shape
 summary: ワークシート内の汎用図形オブジェクトを表します。 図形には、幾何学的な図形、線、図形のグループなどがあります。
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script creates a hexagon shape on the current worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  const currentSheet = workbook.getActiveWorksheet();\n  const hexagon: ExcelScript.Shape = \n    currentSheet.addGeometricShape(ExcelScript.GeometricShapeType.hexagon);\n  \n  // Set the hexagon size to 40x40 pixels.\n  hexagon.setHeight(40);\n  hexagon.setWidth(40);\n\n  // Position the hexagon at [100,100] pixels.\n  hexagon.setLeft(100);\n  hexagon.setTop(100);\n}\n```"
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-  - name: copyTo(destinationSheet)
-    uid: 'ExcelScript!ExcelScript.Shape#copyTo:member(1)'
-    package: ExcelScript!
-    fullName: copyTo(destinationSheet)
-    summary: オブジェクトをコピーして貼り付 `Shape` けます。 貼り付けされた図形は、この図形と同じピクセル位置にコピーされます。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'copyTo(destinationSheet?: Worksheet | string): Shape;'
-      parameters:
-        - id: destinationSheet
-          description: 図形オブジェクトを貼り付けするシート。 既定値は、コピーされた図形のワークシートです。
-          type: '<xref uid="ExcelScript!ExcelScript.Worksheet:interface" /> | string'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.Shape:interface" />'
-        description: ''
-  - name: delete()
-    uid: 'ExcelScript!ExcelScript.Shape#delete:member(1)'
-    package: ExcelScript!
-    fullName: delete()
-    summary: ワークシートから図形を削除します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'delete(): void;'
-      return:
-        type: void
-        description: ''
-  - name: getAltTextDescription()
-    uid: 'ExcelScript!ExcelScript.Shape#getAltTextDescription:member(1)'
-    package: ExcelScript!
-    fullName: getAltTextDescription()
-    summary: オブジェクトの代替説明テキストを指定 `Shape` します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getAltTextDescription(): string;'
-      return:
-        type: string
-        description: ''
-  - name: getAltTextTitle()
-    uid: 'ExcelScript!ExcelScript.Shape#getAltTextTitle:member(1)'
-    package: ExcelScript!
-    fullName: getAltTextTitle()
-    summary: オブジェクトの代替タイトル テキストを指定 `Shape` します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getAltTextTitle(): string;'
-      return:
-        type: string
-        description: ''
-  - name: getAsImage(format)
-    uid: 'ExcelScript!ExcelScript.Shape#getAsImage:member(1)'
-    package: ExcelScript!
-    fullName: getAsImage(format)
-    summary: '図形を画像に変換し、base 64 でエンコードされた文字列として画像を返します。 DPI は 96 です。 サポートされている唯一の形式は次のとおりです。 `ExcelScript.PictureFormat.BMP`<!-- -->, `ExcelScript.PictureFormat.PNG`<!-- -->, `ExcelScript.PictureFormat.JPEG`<!-- -->そして `ExcelScript.PictureFormat.GIF`<!-- -->.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: true
-    customDeprecatedMessage: Use `getImageAsBase64` instead.
-    syntax:
-      content: 'getAsImage(format: PictureFormat): string;'
-      parameters:
-        - id: format
-          description: イメージの形式を指定します。
-          type: '<xref uid="ExcelScript!ExcelScript.PictureFormat:enum" />'
-      return:
-        type: string
-        description: ''
-  - name: getConnectionSiteCount()
-    uid: 'ExcelScript!ExcelScript.Shape#getConnectionSiteCount:member(1)'
-    package: ExcelScript!
-    fullName: getConnectionSiteCount()
-    summary: この図形の結合点の数を返します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getConnectionSiteCount(): number;'
-      return:
-        type: number
-        description: ''
-  - name: getFill()
-    uid: 'ExcelScript!ExcelScript.Shape#getFill:member(1)'
-    package: ExcelScript!
-    fullName: getFill()
-    summary: この図形の塗りつぶしの書式設定を返します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getFill(): ShapeFill;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.ShapeFill:interface" />'
-        description: ''
-  - name: getGeometricShape()
-    uid: 'ExcelScript!ExcelScript.Shape#getGeometricShape:member(1)'
-    package: ExcelScript!
-    fullName: getGeometricShape()
-    summary: 図形に関連付けられた幾何学的図形を返します。 図形の種類が "GeometricShape" ではない場合は、エラーがスローされます。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getGeometricShape(): GeometricShape;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.GeometricShape:interface" />'
-        description: ''
-  - name: getGeometricShapeType()
-    uid: 'ExcelScript!ExcelScript.Shape#getGeometricShapeType:member(1)'
-    package: ExcelScript!
-    fullName: getGeometricShapeType()
-    summary: この幾何学的な図形の幾何学的な図形の種類を指定します。 詳細は「`ExcelScript.GeometricShapeType`」をご覧ください。 図形の `null` 種類が "GeometricShape" ではない場合に返します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getGeometricShapeType(): GeometricShapeType;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.GeometricShapeType:enum" />'
-        description: ''
-  - name: getGroup()
-    uid: 'ExcelScript!ExcelScript.Shape#getGroup:member(1)'
-    package: ExcelScript!
-    fullName: getGroup()
-    summary: 図形に関連付けられた図形グループを返します。 図形の種類が "GroupShape" ではない場合は、エラーがスローされます。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getGroup(): ShapeGroup;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.ShapeGroup:interface" />'
-        description: ''
-  - name: getHeight()
-    uid: 'ExcelScript!ExcelScript.Shape#getHeight:member(1)'
-    package: ExcelScript!
-    fullName: getHeight()
-    summary: 図形の高さをポイントで指定します。 負の値 `InvalidArgument` または 0 を入力として設定すると、例外をスローします。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getHeight(): number;'
-      return:
-        type: number
-        description: ''
-  - name: getId()
-    uid: 'ExcelScript!ExcelScript.Shape#getId:member(1)'
-    package: ExcelScript!
-    fullName: getId()
-    summary: 図形識別子を指定します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getId(): string;'
-      return:
-        type: string
-        description: ''
-  - name: getImage()
-    uid: 'ExcelScript!ExcelScript.Shape#getImage:member(1)'
-    package: ExcelScript!
-    fullName: getImage()
-    summary: 図形に関連付けられた画像を返します。 図形の種類が "Image" ではない場合は、エラーがスローされます。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getImage(): Image;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.Image:interface" />'
-        description: |-
-
-
-          #### <a name="examples"></a>例
-
-          ```TypeScript
-          /**
-          * This script transfers an image from one worksheet to another.
-          */
-          function main(workbook: ExcelScript.Workbook)
-          {
-            // Get the worksheet with the image on it.
-            let firstWorksheet = workbook.getWorksheet("FirstSheet");
-
-            // Get the first image from the worksheet.
-            // If a script added the image, you could add a name to make it easier to find.
-            let image: ExcelScript.Image;
-            firstWorksheet.getShapes().forEach((shape, index) => {
-              if (shape.getType() === ExcelScript.ShapeType.image) {
-                image = shape.getImage();
-                return;
-              }
-            });
-
-            // Copy the image to another worksheet.
-            image.getShape().copyTo("SecondSheet");
-          }
-          ```
-  - name: getImageAsBase64(format)
-    uid: 'ExcelScript!ExcelScript.Shape#getImageAsBase64:member(1)'
-    package: ExcelScript!
-    fullName: getImageAsBase64(format)
-    summary: '図形を画像に変換し、base 64 でエンコードされた文字列として画像を返します。 DPI は 96 です。 サポートされている唯一の形式は次のとおりです。 `ExcelScript.PictureFormat.BMP`<!-- -->, `ExcelScript.PictureFormat.PNG`<!-- -->, `ExcelScript.PictureFormat.JPEG`<!-- -->そして `ExcelScript.PictureFormat.GIF`<!-- -->.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getImageAsBase64(format: PictureFormat): string;'
-      parameters:
-        - id: format
-          description: イメージの形式を指定します。
-          type: '<xref uid="ExcelScript!ExcelScript.PictureFormat:enum" />'
-      return:
-        type: string
-        description: ''
-  - name: getLeft()
-    uid: 'ExcelScript!ExcelScript.Shape#getLeft:member(1)'
-    package: ExcelScript!
-    fullName: getLeft()
-    summary: 図形の左側からワークシートの左側までの距離 (ポイント数) です。 負の値 `InvalidArgument` を入力として設定すると、例外をスローします。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getLeft(): number;'
-      return:
-        type: number
-        description: ''
-  - name: getLevel()
-    uid: 'ExcelScript!ExcelScript.Shape#getLevel:member(1)'
-    package: ExcelScript!
-    fullName: getLevel()
-    summary: 指定した図形のレベルを指定します。 たとえば、レベル 0 は図形がどのグループの一部でもないことを意味し、レベル 1 は図形が最上位グループの一部であることを意味し、レベル 2 は図形が最上位レベルのサブグループの一部であることを意味します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getLevel(): number;'
-      return:
-        type: number
-        description: ''
-  - name: getLine()
-    uid: 'ExcelScript!ExcelScript.Shape#getLine:member(1)'
-    package: ExcelScript!
-    fullName: getLine()
-    summary: 図形に関連付けられた線を返します。 図形の種類が "Line" ではない場合は、エラーがスローされます。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getLine(): Line;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.Line:interface" />'
-        description: ''
-  - name: getLineFormat()
-    uid: 'ExcelScript!ExcelScript.Shape#getLineFormat:member(1)'
-    package: ExcelScript!
-    fullName: getLineFormat()
-    summary: この図形の線の書式設定を返します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getLineFormat(): ShapeLineFormat;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.ShapeLineFormat:interface" />'
-        description: ''
-  - name: getLockAspectRatio()
-    uid: 'ExcelScript!ExcelScript.Shape#getLockAspectRatio:member(1)'
-    package: ExcelScript!
-    fullName: getLockAspectRatio()
-    summary: この図形の縦横比をロックする場合に指定します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getLockAspectRatio(): boolean;'
-      return:
-        type: boolean
-        description: ''
-  - name: getName()
-    uid: 'ExcelScript!ExcelScript.Shape#getName:member(1)'
-    package: ExcelScript!
-    fullName: getName()
-    summary: 図形の名前を指定します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getName(): string;'
-      return:
-        type: string
-        description: ''
-  - name: getParentGroup()
-    uid: 'ExcelScript!ExcelScript.Shape#getParentGroup:member(1)'
-    package: ExcelScript!
-    fullName: getParentGroup()
-    summary: この図形の親グループを指定します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getParentGroup(): Shape;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.Shape:interface" />'
-        description: ''
-  - name: getPlacement()
-    uid: 'ExcelScript!ExcelScript.Shape#getPlacement:member(1)'
-    package: ExcelScript!
-    fullName: getPlacement()
-    summary: オブジェクトがその下のセルに接続されている方法を表します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getPlacement(): Placement;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.Placement:enum" />'
-        description: ''
-  - name: getRotation()
-    uid: 'ExcelScript!ExcelScript.Shape#getRotation:member(1)'
-    package: ExcelScript!
-    fullName: getRotation()
-    summary: 図形の回転角度を度で指定します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getRotation(): number;'
-      return:
-        type: number
-        description: ''
-  - name: getTextFrame()
-    uid: 'ExcelScript!ExcelScript.Shape#getTextFrame:member(1)'
-    package: ExcelScript!
-    fullName: getTextFrame()
-    summary: この図形のテキスト フレーム オブジェクトを返します。 読み取り専用です。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getTextFrame(): TextFrame;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.TextFrame:interface" />'
-        description: ''
-  - name: getTop()
-    uid: 'ExcelScript!ExcelScript.Shape#getTop:member(1)'
-    package: ExcelScript!
-    fullName: getTop()
-    summary: 図形の上端からワークシートの上までのポイント単位の距離です。 負の値 `InvalidArgument` を入力として設定すると、例外をスローします。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getTop(): number;'
-      return:
-        type: number
-        description: ''
-  - name: getType()
-    uid: 'ExcelScript!ExcelScript.Shape#getType:member(1)'
-    package: ExcelScript!
-    fullName: getType()
-    summary: この図形の種類を返します。 詳細は「`ExcelScript.ShapeType`」をご覧ください。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getType(): ShapeType;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.ShapeType:enum" />'
-        description: ''
-  - name: getVisible()
-    uid: 'ExcelScript!ExcelScript.Shape#getVisible:member(1)'
-    package: ExcelScript!
-    fullName: getVisible()
-    summary: 図形が表示される場合に指定します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getVisible(): boolean;'
-      return:
-        type: boolean
-        description: ''
-  - name: getWidth()
-    uid: 'ExcelScript!ExcelScript.Shape#getWidth:member(1)'
-    package: ExcelScript!
-    fullName: getWidth()
-    summary: 図形の幅をポイント単位で指定します。 負の値 `InvalidArgument` または 0 を入力として設定すると、例外をスローします。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getWidth(): number;'
-      return:
-        type: number
-        description: ''
-  - name: getZOrderPosition()
-    uid: 'ExcelScript!ExcelScript.Shape#getZOrderPosition:member(1)'
-    package: ExcelScript!
-    fullName: getZOrderPosition()
-    summary: 指定された図形の z オーダーでの位置を返します。0 はオーダー スタックの一番下を表します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getZOrderPosition(): number;'
-      return:
-        type: number
-        description: ''
-  - name: incrementLeft(increment)
-    uid: 'ExcelScript!ExcelScript.Shape#incrementLeft:member(1)'
-    package: ExcelScript!
-    fullName: incrementLeft(increment)
-    summary: 指定したポイント数だけ水平方向に図形を移動します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'incrementLeft(increment: number): void;'
-      parameters:
-        - id: increment
-          description: 増分をポイント単位で指定すると、図形は水平方向に移動されます。 正の値を指定すると、図形は右に移動し、負の値を指定すると左に移動します。 シートが右から左に向いた場合は、正の値を指定すると図形が左に移動し、負の値が右に移動します。
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: incrementRotation(increment)
-    uid: 'ExcelScript!ExcelScript.Shape#incrementRotation:member(1)'
-    package: ExcelScript!
-    fullName: incrementRotation(increment)
-    summary: z 軸を中心に、指定された度数だけ、図形を時計回りに回転します。 プロパティを `rotation` 使用して、図形の絶対回転を設定します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'incrementRotation(increment: number): void;'
-      parameters:
-        - id: increment
-          description: 図形を回転する度数。 正の値を指定すると、図形は時計回りに回転し、負の値は反時計回りに回転します。
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: incrementTop(increment)
-    uid: 'ExcelScript!ExcelScript.Shape#incrementTop:member(1)'
-    package: ExcelScript!
-    fullName: incrementTop(increment)
-    summary: 指定したポイント数だけ垂直方向に図形を移動します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'incrementTop(increment: number): void;'
-      parameters:
-        - id: increment
-          description: 増分をポイント単位で指定すると、図形は垂直方向に移動されます。 正の値を指定すると、図形は下に移動し、負の値を指定すると上に移動します。
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: 'scaleHeight(scaleFactor, scaleType, scaleFrom)'
-    uid: 'ExcelScript!ExcelScript.Shape#scaleHeight:member(1)'
-    package: ExcelScript!
-    fullName: 'scaleHeight(scaleFactor, scaleType, scaleFrom)'
-    summary: 指定した係数分だけ図形の高さを変更します。 画像の場合は、図形を元のサイズに対して拡大または縮小するのか、現在のサイズに対して拡大または縮小するのかを指定できます。 画像以外の図形の場合は、常に現在の高さに対して拡大または縮小されます。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: |-
-        scaleHeight(
-                    scaleFactor: number,
-                    scaleType: ShapeScaleType,
-                    scaleFrom?: ShapeScaleFrom
-                ): void;
-      parameters:
-        - id: scaleFactor
-          description: 現在の高さと変更後の高さの比率、または元の高さと変更後の高さの比率を指定します。
-          type: number
-        - id: scaleType
-          description: 図形を元のサイズまたは現在のサイズを基準に拡大/縮小するかどうかを指定します。 元のサイズのスケーリング オプションは、イメージに対してのみ機能します。
-          type: '<xref uid="ExcelScript!ExcelScript.ShapeScaleType:enum" />'
-        - id: scaleFrom
-          description: 省略可能です。 図形を拡大縮小する場合、図形の位置を保持する部分を指定します。 省略すると、図形の左上隅が位置を保持します。
-          type: '<xref uid="ExcelScript!ExcelScript.ShapeScaleFrom:enum" />'
-      return:
-        type: void
-        description: ''
-  - name: 'scaleWidth(scaleFactor, scaleType, scaleFrom)'
-    uid: 'ExcelScript!ExcelScript.Shape#scaleWidth:member(1)'
-    package: ExcelScript!
-    fullName: 'scaleWidth(scaleFactor, scaleType, scaleFrom)'
-    summary: 指定した係数分だけ図形の幅を変更します。 画像の場合は、図形を元のサイズに対して拡大または縮小するのか、現在のサイズに対して拡大または縮小するのかを指定できます。 画像以外の図形の場合は、常に現在の幅に対して拡大または縮小されます。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: |-
-        scaleWidth(
-                    scaleFactor: number,
-                    scaleType: ShapeScaleType,
-                    scaleFrom?: ShapeScaleFrom
-                ): void;
-      parameters:
-        - id: scaleFactor
-          description: 現在の幅と変更後の幅の比率、または元の幅と変更後の幅の比率を指定します。
-          type: number
-        - id: scaleType
-          description: 図形を元のサイズまたは現在のサイズを基準に拡大/縮小するかどうかを指定します。 元のサイズのスケーリング オプションは、イメージに対してのみ機能します。
-          type: '<xref uid="ExcelScript!ExcelScript.ShapeScaleType:enum" />'
-        - id: scaleFrom
-          description: 省略可能です。 図形を拡大縮小する場合、図形の位置を保持する部分を指定します。 省略すると、図形の左上隅が位置を保持します。
-          type: '<xref uid="ExcelScript!ExcelScript.ShapeScaleFrom:enum" />'
-      return:
-        type: void
-        description: ''
-  - name: setAltTextDescription(altTextDescription)
-    uid: 'ExcelScript!ExcelScript.Shape#setAltTextDescription:member(1)'
-    package: ExcelScript!
-    fullName: setAltTextDescription(altTextDescription)
-    summary: オブジェクトの代替説明テキストを指定 `Shape` します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setAltTextDescription(altTextDescription: string): void;'
-      parameters:
-        - id: altTextDescription
-          description: ''
-          type: string
-      return:
-        type: void
-        description: ''
-  - name: setAltTextTitle(altTextTitle)
-    uid: 'ExcelScript!ExcelScript.Shape#setAltTextTitle:member(1)'
-    package: ExcelScript!
-    fullName: setAltTextTitle(altTextTitle)
-    summary: オブジェクトの代替タイトル テキストを指定 `Shape` します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setAltTextTitle(altTextTitle: string): void;'
-      parameters:
-        - id: altTextTitle
-          description: ''
-          type: string
-      return:
-        type: void
-        description: ''
-  - name: setGeometricShapeType(geometricShapeType)
-    uid: 'ExcelScript!ExcelScript.Shape#setGeometricShapeType:member(1)'
-    package: ExcelScript!
-    fullName: setGeometricShapeType(geometricShapeType)
-    summary: この幾何学的な図形の幾何学的な図形の種類を指定します。 詳細は「`ExcelScript.GeometricShapeType`」をご覧ください。 図形の `null` 種類が "GeometricShape" ではない場合に返します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setGeometricShapeType(geometricShapeType: GeometricShapeType): void;'
-      parameters:
-        - id: geometricShapeType
-          description: ''
-          type: '<xref uid="ExcelScript!ExcelScript.GeometricShapeType:enum" />'
-      return:
-        type: void
-        description: ''
-  - name: setHeight(height)
-    uid: 'ExcelScript!ExcelScript.Shape#setHeight:member(1)'
-    package: ExcelScript!
-    fullName: setHeight(height)
-    summary: 図形の高さをポイントで指定します。 負の値 `InvalidArgument` または 0 を入力として設定すると、例外をスローします。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setHeight(height: number): void;'
-      parameters:
-        - id: height
-          description: ''
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: setLeft(left)
-    uid: 'ExcelScript!ExcelScript.Shape#setLeft:member(1)'
-    package: ExcelScript!
-    fullName: setLeft(left)
-    summary: 図形の左側からワークシートの左側までの距離 (ポイント数) です。 負の値 `InvalidArgument` を入力として設定すると、例外をスローします。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setLeft(left: number): void;'
-      parameters:
-        - id: left
-          description: ''
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: setLockAspectRatio(lockAspectRatio)
-    uid: 'ExcelScript!ExcelScript.Shape#setLockAspectRatio:member(1)'
-    package: ExcelScript!
-    fullName: setLockAspectRatio(lockAspectRatio)
-    summary: この図形の縦横比をロックする場合に指定します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setLockAspectRatio(lockAspectRatio: boolean): void;'
-      parameters:
-        - id: lockAspectRatio
-          description: ''
-          type: boolean
-      return:
-        type: void
-        description: ''
-  - name: setName(name)
-    uid: 'ExcelScript!ExcelScript.Shape#setName:member(1)'
-    package: ExcelScript!
-    fullName: setName(name)
-    summary: 図形の名前を指定します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setName(name: string): void;'
-      parameters:
-        - id: name
-          description: ''
-          type: string
-      return:
-        type: void
-        description: ''
-  - name: setPlacement(placement)
-    uid: 'ExcelScript!ExcelScript.Shape#setPlacement:member(1)'
-    package: ExcelScript!
-    fullName: setPlacement(placement)
-    summary: オブジェクトがその下のセルに接続されている方法を表します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setPlacement(placement: Placement): void;'
-      parameters:
-        - id: placement
-          description: ''
-          type: '<xref uid="ExcelScript!ExcelScript.Placement:enum" />'
-      return:
-        type: void
-        description: ''
-  - name: setRotation(rotation)
-    uid: 'ExcelScript!ExcelScript.Shape#setRotation:member(1)'
-    package: ExcelScript!
-    fullName: setRotation(rotation)
-    summary: 図形の回転角度を度で指定します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setRotation(rotation: number): void;'
-      parameters:
-        - id: rotation
-          description: ''
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: setTop(top)
-    uid: 'ExcelScript!ExcelScript.Shape#setTop:member(1)'
-    package: ExcelScript!
-    fullName: setTop(top)
-    summary: 図形の上端からワークシートの上までのポイント単位の距離です。 負の値 `InvalidArgument` を入力として設定すると、例外をスローします。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setTop(top: number): void;'
-      parameters:
-        - id: top
-          description: ''
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: setVisible(visible)
-    uid: 'ExcelScript!ExcelScript.Shape#setVisible:member(1)'
-    package: ExcelScript!
-    fullName: setVisible(visible)
-    summary: 図形が表示される場合に指定します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setVisible(visible: boolean): void;'
-      parameters:
-        - id: visible
-          description: ''
-          type: boolean
-      return:
-        type: void
-        description: ''
-  - name: setWidth(width)
-    uid: 'ExcelScript!ExcelScript.Shape#setWidth:member(1)'
-    package: ExcelScript!
-    fullName: setWidth(width)
-    summary: 図形の幅をポイント単位で指定します。 負の値 `InvalidArgument` または 0 を入力として設定すると、例外をスローします。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setWidth(width: number): void;'
-      parameters:
-        - id: width
-          description: ''
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: setZOrder(position)
-    uid: 'ExcelScript!ExcelScript.Shape#setZOrder:member(1)'
-    package: ExcelScript!
-    fullName: setZOrder(position)
-    summary: 指定された図形をコレクションの z オーダーで上または下に移動します。他の図形の手前または奥に移動します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setZOrder(position: ShapeZOrder): void;'
-      parameters:
-        - id: position
-          description: Z オーダー スタック内の図形を他の図形に対して相対的に移動する場所。 詳細は「`ExcelScript.ShapeZOrder`」をご覧ください。
-          type: '<xref uid="ExcelScript!ExcelScript.ShapeZOrder:enum" />'
-      return:
-        type: void
-        description: ''
+- name: copyTo(destinationSheet)
+  uid: ExcelScript!ExcelScript.Shape#copyTo:member(1)
+  package: ExcelScript!
+  fullName: copyTo(destinationSheet)
+  summary: オブジェクトをコピーして貼り付けます `Shape` 。 貼り付けられた図形は、この図形と同じピクセル位置にコピーされます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'copyTo(destinationSheet?: Worksheet | string): Shape;'
+    parameters:
+    - id: destinationSheet
+      description: 図形オブジェクトを貼り付けるシート。 既定値は、コピーされた図形のワークシートです。
+      type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" /> | string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
+      description: ''
+- name: delete()
+  uid: ExcelScript!ExcelScript.Shape#delete:member(1)
+  package: ExcelScript!
+  fullName: delete()
+  summary: ワークシートから図形を削除します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(): void;'
+    return:
+      type: void
+      description: ''
+- name: getAltTextDescription()
+  uid: ExcelScript!ExcelScript.Shape#getAltTextDescription:member(1)
+  package: ExcelScript!
+  fullName: getAltTextDescription()
+  summary: オブジェクトの代替説明テキストを `Shape` 指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getAltTextDescription(): string;'
+    return:
+      type: string
+      description: ''
+- name: getAltTextTitle()
+  uid: ExcelScript!ExcelScript.Shape#getAltTextTitle:member(1)
+  package: ExcelScript!
+  fullName: getAltTextTitle()
+  summary: オブジェクトの代替タイトル テキストを `Shape` 指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getAltTextTitle(): string;'
+    return:
+      type: string
+      description: ''
+- name: getAsImage(format)
+  uid: ExcelScript!ExcelScript.Shape#getAsImage:member(1)
+  package: ExcelScript!
+  fullName: getAsImage(format)
+  summary: 図形を画像に変換し、base 64 でエンコードされた文字列として画像を返します。 DPI は 96 です。 サポートされている形式は次のとおりです。 `ExcelScript.PictureFormat.BMP`<!-- -->, `ExcelScript.PictureFormat.PNG`<!-- -->, `ExcelScript.PictureFormat.JPEG`<!-- -->そして `ExcelScript.PictureFormat.GIF`<!-- -->.
+  remarks: ''
+  isPreview: false
+  isDeprecated: true
+  customDeprecatedMessage: Use `getImageAsBase64` instead.
+  syntax:
+    content: 'getAsImage(format: PictureFormat): string;'
+    parameters:
+    - id: format
+      description: イメージの形式を指定します。
+      type: <xref uid="ExcelScript!ExcelScript.PictureFormat:enum" />
+    return:
+      type: string
+      description: ''
+- name: getConnectionSiteCount()
+  uid: ExcelScript!ExcelScript.Shape#getConnectionSiteCount:member(1)
+  package: ExcelScript!
+  fullName: getConnectionSiteCount()
+  summary: この図形の結合点の数を返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getConnectionSiteCount(): number;'
+    return:
+      type: number
+      description: ''
+- name: getFill()
+  uid: ExcelScript!ExcelScript.Shape#getFill:member(1)
+  package: ExcelScript!
+  fullName: getFill()
+  summary: この図形の塗りつぶしの書式設定を返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFill(): ShapeFill;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ShapeFill:interface" />
+      description: ''
+- name: getGeometricShape()
+  uid: ExcelScript!ExcelScript.Shape#getGeometricShape:member(1)
+  package: ExcelScript!
+  fullName: getGeometricShape()
+  summary: 図形に関連付けられた幾何学的図形を返します。 図形の種類が "GeometricShape" ではない場合は、エラーがスローされます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getGeometricShape(): GeometricShape;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.GeometricShape:interface" />
+      description: ''
+- name: getGeometricShapeType()
+  uid: ExcelScript!ExcelScript.Shape#getGeometricShapeType:member(1)
+  package: ExcelScript!
+  fullName: getGeometricShapeType()
+  summary: このジオメトリ図形のジオメトリ図形の種類を指定します。 詳細は「`ExcelScript.GeometricShapeType`」をご覧ください。 図形の `null` 種類が "GeometrShape" でない場合に返されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getGeometricShapeType(): GeometricShapeType;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.GeometricShapeType:enum" />
+      description: ''
+- name: getGroup()
+  uid: ExcelScript!ExcelScript.Shape#getGroup:member(1)
+  package: ExcelScript!
+  fullName: getGroup()
+  summary: 図形に関連付けられた図形グループを返します。 図形の種類が "GroupShape" ではない場合は、エラーがスローされます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getGroup(): ShapeGroup;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ShapeGroup:interface" />
+      description: ''
+- name: getHeight()
+  uid: ExcelScript!ExcelScript.Shape#getHeight:member(1)
+  package: ExcelScript!
+  fullName: getHeight()
+  summary: 図形の高さをポイント単位で指定します。 負の `InvalidArgument` 値または 0 を入力として設定すると、例外がスローされます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getHeight(): number;'
+    return:
+      type: number
+      description: ''
+- name: getId()
+  uid: ExcelScript!ExcelScript.Shape#getId:member(1)
+  package: ExcelScript!
+  fullName: getId()
+  summary: 図形識別子を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getId(): string;'
+    return:
+      type: string
+      description: ''
+- name: getImage()
+  uid: ExcelScript!ExcelScript.Shape#getImage:member(1)
+  package: ExcelScript!
+  fullName: getImage()
+  summary: 図形に関連付けられた画像を返します。 図形の種類が "Image" ではない場合は、エラーがスローされます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getImage(): Image;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Image:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n* This script transfers an image from one worksheet to another.\n*/\nfunction main(workbook: ExcelScript.Workbook)\n{\n  // Get the worksheet with the image on it.\n  let firstWorksheet = workbook.getWorksheet(\"FirstSheet\");\n\n  // Get the first image from the worksheet.\n  // If a script added the image, you could add a name to make it easier to find.\n  let image: ExcelScript.Image;\n  firstWorksheet.getShapes().forEach((shape, index) => {\n    if (shape.getType() === ExcelScript.ShapeType.image) {\n      image = shape.getImage();\n      return;\n    }\n  });\n\n  // Copy the image to another worksheet.\n  image.getShape().copyTo(\"SecondSheet\");\n}\n```"
+- name: getImageAsBase64(format)
+  uid: ExcelScript!ExcelScript.Shape#getImageAsBase64:member(1)
+  package: ExcelScript!
+  fullName: getImageAsBase64(format)
+  summary: 図形を画像に変換し、base 64 でエンコードされた文字列として画像を返します。 DPI は 96 です。 サポートされている形式は次のとおりです。 `ExcelScript.PictureFormat.BMP`<!-- -->, `ExcelScript.PictureFormat.PNG`<!-- -->, `ExcelScript.PictureFormat.JPEG`<!-- -->そして `ExcelScript.PictureFormat.GIF`<!-- -->.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getImageAsBase64(format: PictureFormat): string;'
+    parameters:
+    - id: format
+      description: イメージの形式を指定します。
+      type: <xref uid="ExcelScript!ExcelScript.PictureFormat:enum" />
+    return:
+      type: string
+      description: ''
+- name: getLeft()
+  uid: ExcelScript!ExcelScript.Shape#getLeft:member(1)
+  package: ExcelScript!
+  fullName: getLeft()
+  summary: 図形の左側からワークシートの左側までの距離 (ポイント数) です。 負の値を `InvalidArgument` 入力として設定すると、例外がスローされます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLeft(): number;'
+    return:
+      type: number
+      description: ''
+- name: getLevel()
+  uid: ExcelScript!ExcelScript.Shape#getLevel:member(1)
+  package: ExcelScript!
+  fullName: getLevel()
+  summary: 指定した図形のレベルを指定します。 たとえば、レベル 0 は図形がどのグループの一部でもないことを意味し、レベル 1 は図形が最上位グループの一部であることを意味し、レベル 2 は図形が最上位レベルのサブグループの一部であることを意味します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLevel(): number;'
+    return:
+      type: number
+      description: ''
+- name: getLine()
+  uid: ExcelScript!ExcelScript.Shape#getLine:member(1)
+  package: ExcelScript!
+  fullName: getLine()
+  summary: 図形に関連付けられた線を返します。 図形の種類が "Line" ではない場合は、エラーがスローされます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLine(): Line;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Line:interface" />
+      description: ''
+- name: getLineFormat()
+  uid: ExcelScript!ExcelScript.Shape#getLineFormat:member(1)
+  package: ExcelScript!
+  fullName: getLineFormat()
+  summary: この図形の線の書式設定を返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLineFormat(): ShapeLineFormat;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ShapeLineFormat:interface" />
+      description: ''
+- name: getLockAspectRatio()
+  uid: ExcelScript!ExcelScript.Shape#getLockAspectRatio:member(1)
+  package: ExcelScript!
+  fullName: getLockAspectRatio()
+  summary: この図形の縦横比をロックするかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLockAspectRatio(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getName()
+  uid: ExcelScript!ExcelScript.Shape#getName:member(1)
+  package: ExcelScript!
+  fullName: getName()
+  summary: 図形の名前を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getName(): string;'
+    return:
+      type: string
+      description: ''
+- name: getParentGroup()
+  uid: ExcelScript!ExcelScript.Shape#getParentGroup:member(1)
+  package: ExcelScript!
+  fullName: getParentGroup()
+  summary: この図形の親グループを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getParentGroup(): Shape;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
+      description: ''
+- name: getPlacement()
+  uid: ExcelScript!ExcelScript.Shape#getPlacement:member(1)
+  package: ExcelScript!
+  fullName: getPlacement()
+  summary: オブジェクトがその下のセルに接続されている方法を表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPlacement(): Placement;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Placement:enum" />
+      description: ''
+- name: getRotation()
+  uid: ExcelScript!ExcelScript.Shape#getRotation:member(1)
+  package: ExcelScript!
+  fullName: getRotation()
+  summary: 図形の回転角度を度単位で指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRotation(): number;'
+    return:
+      type: number
+      description: ''
+- name: getTextFrame()
+  uid: ExcelScript!ExcelScript.Shape#getTextFrame:member(1)
+  package: ExcelScript!
+  fullName: getTextFrame()
+  summary: この図形のテキスト フレーム オブジェクトを返します。 読み取り専用です。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTextFrame(): TextFrame;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.TextFrame:interface" />
+      description: ''
+- name: getTop()
+  uid: ExcelScript!ExcelScript.Shape#getTop:member(1)
+  package: ExcelScript!
+  fullName: getTop()
+  summary: 図形の上端からワークシートの上までのポイント単位の距離です。 負の値を `InvalidArgument` 入力として設定すると、例外がスローされます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTop(): number;'
+    return:
+      type: number
+      description: ''
+- name: getType()
+  uid: ExcelScript!ExcelScript.Shape#getType:member(1)
+  package: ExcelScript!
+  fullName: getType()
+  summary: この図形の種類を返します。 詳細は「`ExcelScript.ShapeType`」をご覧ください。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getType(): ShapeType;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ShapeType:enum" />
+      description: ''
+- name: getVisible()
+  uid: ExcelScript!ExcelScript.Shape#getVisible:member(1)
+  package: ExcelScript!
+  fullName: getVisible()
+  summary: 図形が表示されるかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getVisible(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getWidth()
+  uid: ExcelScript!ExcelScript.Shape#getWidth:member(1)
+  package: ExcelScript!
+  fullName: getWidth()
+  summary: 図形の幅をポイント単位で指定します。 負の `InvalidArgument` 値または 0 を入力として設定すると、例外がスローされます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getWidth(): number;'
+    return:
+      type: number
+      description: ''
+- name: getZOrderPosition()
+  uid: ExcelScript!ExcelScript.Shape#getZOrderPosition:member(1)
+  package: ExcelScript!
+  fullName: getZOrderPosition()
+  summary: 指定された図形の z オーダーでの位置を返します。0 はオーダー スタックの一番下を表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getZOrderPosition(): number;'
+    return:
+      type: number
+      description: ''
+- name: incrementLeft(increment)
+  uid: ExcelScript!ExcelScript.Shape#incrementLeft:member(1)
+  package: ExcelScript!
+  fullName: incrementLeft(increment)
+  summary: 指定したポイント数だけ水平方向に図形を移動します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'incrementLeft(increment: number): void;'
+    parameters:
+    - id: increment
+      description: インクリメント (ポイント単位) は、図形が水平方向に移動されます。 正の値は図形を右に移動し、負の値は左に移動します。 シートが右から左方向の場合は逆になります。正の値は図形を左に移動し、負の値は右に移動します。
+      type: number
+    return:
+      type: void
+      description: ''
+- name: incrementRotation(increment)
+  uid: ExcelScript!ExcelScript.Shape#incrementRotation:member(1)
+  package: ExcelScript!
+  fullName: incrementRotation(increment)
+  summary: z 軸を中心に、指定された度数だけ、図形を時計回りに回転します。 プロパティを `rotation` 使用して、図形の絶対回転を設定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'incrementRotation(increment: number): void;'
+    parameters:
+    - id: increment
+      description: 図形が回転する角度の数。 正の値は図形を時計回りに回転し、負の値は反時計回りに回転します。
+      type: number
+    return:
+      type: void
+      description: ''
+- name: incrementTop(increment)
+  uid: ExcelScript!ExcelScript.Shape#incrementTop:member(1)
+  package: ExcelScript!
+  fullName: incrementTop(increment)
+  summary: 指定したポイント数だけ垂直方向に図形を移動します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'incrementTop(increment: number): void;'
+    parameters:
+    - id: increment
+      description: インクリメント (ポイント単位) は、図形が垂直方向に移動されます。 正の値は図形を下に移動し、負の値は上に移動します。
+      type: number
+    return:
+      type: void
+      description: ''
+- name: scaleHeight(scaleFactor, scaleType, scaleFrom)
+  uid: ExcelScript!ExcelScript.Shape#scaleHeight:member(1)
+  package: ExcelScript!
+  fullName: scaleHeight(scaleFactor, scaleType, scaleFrom)
+  summary: 指定した係数分だけ図形の高さを変更します。 画像の場合は、図形を元のサイズに対して拡大または縮小するのか、現在のサイズに対して拡大または縮小するのかを指定できます。 画像以外の図形の場合は、常に現在の高さに対して拡大または縮小されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      scaleHeight(
+                  scaleFactor: number,
+                  scaleType: ShapeScaleType,
+                  scaleFrom?: ShapeScaleFrom
+              ): void;
+    parameters:
+    - id: scaleFactor
+      description: 現在の高さと変更後の高さの比率、または元の高さと変更後の高さの比率を指定します。
+      type: number
+    - id: scaleType
+      description: 図形を元のサイズまたは現在のサイズに対してスケーリングするかどうかを指定します。 元のサイズのスケーリング オプションは、イメージに対してのみ機能します。
+      type: <xref uid="ExcelScript!ExcelScript.ShapeScaleType:enum" />
+    - id: scaleFrom
+      description: 省略可能。 図形を拡大縮小する場合、図形の位置を保持する部分を指定します。 省略した場合は、図形の左上隅を表し、その位置を保持します。
+      type: <xref uid="ExcelScript!ExcelScript.ShapeScaleFrom:enum" />
+    return:
+      type: void
+      description: ''
+- name: scaleWidth(scaleFactor, scaleType, scaleFrom)
+  uid: ExcelScript!ExcelScript.Shape#scaleWidth:member(1)
+  package: ExcelScript!
+  fullName: scaleWidth(scaleFactor, scaleType, scaleFrom)
+  summary: 指定した係数分だけ図形の幅を変更します。 画像の場合は、図形を元のサイズに対して拡大または縮小するのか、現在のサイズに対して拡大または縮小するのかを指定できます。 画像以外の図形の場合は、常に現在の幅に対して拡大または縮小されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      scaleWidth(
+                  scaleFactor: number,
+                  scaleType: ShapeScaleType,
+                  scaleFrom?: ShapeScaleFrom
+              ): void;
+    parameters:
+    - id: scaleFactor
+      description: 現在の幅と変更後の幅の比率、または元の幅と変更後の幅の比率を指定します。
+      type: number
+    - id: scaleType
+      description: 図形を元のサイズまたは現在のサイズに対してスケーリングするかどうかを指定します。 元のサイズのスケーリング オプションは、イメージに対してのみ機能します。
+      type: <xref uid="ExcelScript!ExcelScript.ShapeScaleType:enum" />
+    - id: scaleFrom
+      description: 省略可能。 図形を拡大縮小する場合、図形の位置を保持する部分を指定します。 省略した場合は、図形の左上隅を表し、その位置を保持します。
+      type: <xref uid="ExcelScript!ExcelScript.ShapeScaleFrom:enum" />
+    return:
+      type: void
+      description: ''
+- name: setAltTextDescription(altTextDescription)
+  uid: ExcelScript!ExcelScript.Shape#setAltTextDescription:member(1)
+  package: ExcelScript!
+  fullName: setAltTextDescription(altTextDescription)
+  summary: オブジェクトの代替説明テキストを `Shape` 指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setAltTextDescription(altTextDescription: string): void;'
+    parameters:
+    - id: altTextDescription
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setAltTextTitle(altTextTitle)
+  uid: ExcelScript!ExcelScript.Shape#setAltTextTitle:member(1)
+  package: ExcelScript!
+  fullName: setAltTextTitle(altTextTitle)
+  summary: オブジェクトの代替タイトル テキストを `Shape` 指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setAltTextTitle(altTextTitle: string): void;'
+    parameters:
+    - id: altTextTitle
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setGeometricShapeType(geometricShapeType)
+  uid: ExcelScript!ExcelScript.Shape#setGeometricShapeType:member(1)
+  package: ExcelScript!
+  fullName: setGeometricShapeType(geometricShapeType)
+  summary: このジオメトリ図形のジオメトリ図形の種類を指定します。 詳細は「`ExcelScript.GeometricShapeType`」をご覧ください。 図形の `null` 種類が "GeometrShape" でない場合に返されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setGeometricShapeType(geometricShapeType: GeometricShapeType): void;'
+    parameters:
+    - id: geometricShapeType
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.GeometricShapeType:enum" />
+    return:
+      type: void
+      description: ''
+- name: setHeight(height)
+  uid: ExcelScript!ExcelScript.Shape#setHeight:member(1)
+  package: ExcelScript!
+  fullName: setHeight(height)
+  summary: 図形の高さをポイント単位で指定します。 負の `InvalidArgument` 値または 0 を入力として設定すると、例外がスローされます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setHeight(height: number): void;'
+    parameters:
+    - id: height
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setLeft(left)
+  uid: ExcelScript!ExcelScript.Shape#setLeft:member(1)
+  package: ExcelScript!
+  fullName: setLeft(left)
+  summary: 図形の左側からワークシートの左側までの距離 (ポイント数) です。 負の値を `InvalidArgument` 入力として設定すると、例外がスローされます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setLeft(left: number): void;'
+    parameters:
+    - id: left
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setLockAspectRatio(lockAspectRatio)
+  uid: ExcelScript!ExcelScript.Shape#setLockAspectRatio:member(1)
+  package: ExcelScript!
+  fullName: setLockAspectRatio(lockAspectRatio)
+  summary: この図形の縦横比をロックするかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setLockAspectRatio(lockAspectRatio: boolean): void;'
+    parameters:
+    - id: lockAspectRatio
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setName(name)
+  uid: ExcelScript!ExcelScript.Shape#setName:member(1)
+  package: ExcelScript!
+  fullName: setName(name)
+  summary: 図形の名前を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setName(name: string): void;'
+    parameters:
+    - id: name
+      description: ''
+      type: string
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script creates a triangle shape on the current worksheet and names it \"TRI\".\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  const currentSheet = workbook.getActiveWorksheet();\n  const triangle: ExcelScript.Shape = \n    currentSheet.addGeometricShape(ExcelScript.GeometricShapeType.triangle);\n  \n  triangle.setName(\"TRI\");\n}\n```"
+- name: setPlacement(placement)
+  uid: ExcelScript!ExcelScript.Shape#setPlacement:member(1)
+  package: ExcelScript!
+  fullName: setPlacement(placement)
+  summary: オブジェクトがその下のセルに接続されている方法を表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setPlacement(placement: Placement): void;'
+    parameters:
+    - id: placement
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.Placement:enum" />
+    return:
+      type: void
+      description: ''
+- name: setRotation(rotation)
+  uid: ExcelScript!ExcelScript.Shape#setRotation:member(1)
+  package: ExcelScript!
+  fullName: setRotation(rotation)
+  summary: 図形の回転角度を度単位で指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setRotation(rotation: number): void;'
+    parameters:
+    - id: rotation
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setTop(top)
+  uid: ExcelScript!ExcelScript.Shape#setTop:member(1)
+  package: ExcelScript!
+  fullName: setTop(top)
+  summary: 図形の上端からワークシートの上までのポイント単位の距離です。 負の値を `InvalidArgument` 入力として設定すると、例外がスローされます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setTop(top: number): void;'
+    parameters:
+    - id: top
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setVisible(visible)
+  uid: ExcelScript!ExcelScript.Shape#setVisible:member(1)
+  package: ExcelScript!
+  fullName: setVisible(visible)
+  summary: 図形が表示されるかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setVisible(visible: boolean): void;'
+    parameters:
+    - id: visible
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setWidth(width)
+  uid: ExcelScript!ExcelScript.Shape#setWidth:member(1)
+  package: ExcelScript!
+  fullName: setWidth(width)
+  summary: 図形の幅をポイント単位で指定します。 負の `InvalidArgument` 値または 0 を入力として設定すると、例外がスローされます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setWidth(width: number): void;'
+    parameters:
+    - id: width
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setZOrder(position)
+  uid: ExcelScript!ExcelScript.Shape#setZOrder:member(1)
+  package: ExcelScript!
+  fullName: setZOrder(position)
+  summary: 指定された図形をコレクションの z オーダーで上または下に移動します。他の図形の手前または奥に移動します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setZOrder(position: ShapeZOrder): void;'
+    parameters:
+    - id: position
+      description: Z オーダー スタック内の図形を他の図形に対して相対的に移動する場所。 詳細は「`ExcelScript.ShapeZOrder`」をご覧ください。
+      type: <xref uid="ExcelScript!ExcelScript.ShapeZOrder:enum" />
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 1a092224f551461d4e08943071fad680c53574ac
+  ms.sourcegitcommit: 3de53184008ce4f389e84261036465e9dce79b98
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 05/11/2022
+  ms.locfileid: "65305246"

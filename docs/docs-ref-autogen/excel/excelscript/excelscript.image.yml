@@ -1,50 +1,57 @@
 ### YamlMime:TSType
 name: ExcelScript.Image
-uid: 'ExcelScript!ExcelScript.Image:interface'
+uid: ExcelScript!ExcelScript.Image:interface
 package: ExcelScript!
 fullName: ExcelScript.Image
-summary: ワークシート内のイメージを表します。 対応するオブジェクトを取得 `Shape` するには、 `Image.shape`<!-- -->.
-remarks: ''
+summary: ワークシート内の画像を表します。 対応する `Shape` オブジェクトを取得するには、 `Image.shape`<!-- -->.
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script transfers an image from one worksheet to another.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the worksheet with the image on it.\n  const firstWorksheet = workbook.getWorksheet(\"FirstSheet\");\n\n  // Get the first image from the worksheet.\n  // If a script added the image, you could add a name to make it easier to find.\n  let image: ExcelScript.Image;\n  firstWorksheet.getShapes().forEach((shape, index) => {\n    if (shape.getType() === ExcelScript.ShapeType.image) {\n      image = shape.getImage();\n      return;\n    }\n  });\n\n  // Copy the image to another worksheet.\n  image.getShape().copyTo(\"SecondSheet\");\n}\n```"
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-  - name: getFormat()
-    uid: 'ExcelScript!ExcelScript.Image#getFormat:member(1)'
-    package: ExcelScript!
-    fullName: getFormat()
-    summary: 画像の形式を返します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getFormat(): PictureFormat;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.PictureFormat:enum" />'
-        description: ''
-  - name: getId()
-    uid: 'ExcelScript!ExcelScript.Image#getId:member(1)'
-    package: ExcelScript!
-    fullName: getId()
-    summary: イメージ オブジェクトの図形識別子を指定します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getId(): string;'
-      return:
-        type: string
-        description: ''
-  - name: getShape()
-    uid: 'ExcelScript!ExcelScript.Image#getShape:member(1)'
-    package: ExcelScript!
-    fullName: getShape()
-    summary: イメージに関連 `Shape` 付けられているオブジェクトを返します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getShape(): Shape;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.Shape:interface" />'
-        description: ''
+- name: getFormat()
+  uid: ExcelScript!ExcelScript.Image#getFormat:member(1)
+  package: ExcelScript!
+  fullName: getFormat()
+  summary: 画像の形式を返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFormat(): PictureFormat;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PictureFormat:enum" />
+      description: ''
+- name: getId()
+  uid: ExcelScript!ExcelScript.Image#getId:member(1)
+  package: ExcelScript!
+  fullName: getId()
+  summary: イメージ オブジェクトの図形識別子を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getId(): string;'
+    return:
+      type: string
+      description: ''
+- name: getShape()
+  uid: ExcelScript!ExcelScript.Image#getShape:member(1)
+  package: ExcelScript!
+  fullName: getShape()
+  summary: イメージに `Shape` 関連付けられているオブジェクトを返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getShape(): Shape;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
+      description: ''
+metadata:
+  ms.openlocfilehash: ca92b050e41c5d5e5e9a82e07f1faed17a6adede
+  ms.sourcegitcommit: 3de53184008ce4f389e84261036465e9dce79b98
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 05/11/2022
+  ms.locfileid: "65305233"
