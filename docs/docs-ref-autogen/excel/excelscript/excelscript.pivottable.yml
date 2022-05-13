@@ -103,7 +103,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getAllowMultipleFiltersPerField:member(1)
   package: ExcelScript!
   fullName: getAllowMultipleFiltersPerField()
-  summary: ピボットテーブルで、テーブル内の特定のピボットフィールドに複数のピボットフィルターを適用できる場合を指定します。
+  summary: ピボットテーブルで、テーブル内の特定のピボットフィールドに対して複数のピボットフィルターの適用を許可するかどうかを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -129,7 +129,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getColumnHierarchy:member(1)
   package: ExcelScript!
   fullName: getColumnHierarchy(name)
-  summary: 名前に基づいて RowColumnPivotHierarchy を取得します。 RowColumnPivotHierarchy が存在しない場合、この関数は `undefined`<!-- -->.
+  summary: 名前に基づいて RowColumnPivotHierarchy を取得します。 RowColumnPivotHierarchy が存在しない場合、このメソッドは返します。 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getDataHierarchy:member(1)
   package: ExcelScript!
   fullName: getDataHierarchy(name)
-  summary: 名前に基づいて DataPivotHierarchy を取得します。 DataPivotHierarchy が存在しない場合、この関数は `undefined`<!-- -->.
+  summary: 名前に基づいて DataPivotHierarchy を取得します。 DataPivotHierarchy が存在しない場合、このメソッドは `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -176,7 +176,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getEnableDataValueEditing:member(1)
   package: ExcelScript!
   fullName: getEnableDataValueEditing()
-  summary: ピボットテーブルでデータ本文の値をユーザーが編集できる場合を指定します。
+  summary: ピボットテーブルでデータ本文の値をユーザーが編集できるかどうかを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -202,7 +202,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getFilterHierarchy:member(1)
   package: ExcelScript!
   fullName: getFilterHierarchy(name)
-  summary: 名前に基づいて FilterPivotHierarchy を取得します。 FilterPivotHierarchy が存在しない場合、この関数は `undefined`<!-- -->.
+  summary: 名前に基づいて FilterPivotHierarchy を取得します。 FilterPivotHierarchy が存在しない場合、このメソッドは `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -232,7 +232,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getHierarchy:member(1)
   package: ExcelScript!
   fullName: getHierarchy(name)
-  summary: 名前に基づいて PivotHierarchy を取得します。 PivotHierarchy が存在しない場合、この関数は `undefined`<!-- -->.
+  summary: 名前に基づいて PivotHierarchy を取得します。 PivotHierarchy が存在しない場合、このメソッドは `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -301,7 +301,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getRowHierarchy:member(1)
   package: ExcelScript!
   fullName: getRowHierarchy(name)
-  summary: 名前に基づいて RowColumnPivotHierarchy を取得します。 RowColumnPivotHierarchy が存在しない場合、この関数は `undefined`<!-- -->.
+  summary: 名前に基づいて RowColumnPivotHierarchy を取得します。 RowColumnPivotHierarchy が存在しない場合、このメソッドは返します。 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -318,7 +318,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getUseCustomSortLists:member(1)
   package: ExcelScript!
   fullName: getUseCustomSortLists()
-  summary: ピボットテーブルが並べ替え時にカスタム リストを使用する場合に指定します。
+  summary: ピボットテーブルが並べ替え時にカスタム リストを使用するかどうかを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -431,7 +431,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#setAllowMultipleFiltersPerField:member(1)
   package: ExcelScript!
   fullName: setAllowMultipleFiltersPerField(allowMultipleFiltersPerField)
-  summary: ピボットテーブルで、テーブル内の特定のピボットフィールドに複数のピボットフィルターを適用できる場合を指定します。
+  summary: ピボットテーブルで、テーブル内の特定のピボットフィールドに対して複数のピボットフィルターの適用を許可するかどうかを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -451,7 +451,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#setEnableDataValueEditing:member(1)
   package: ExcelScript!
   fullName: setEnableDataValueEditing(enableDataValueEditing)
-  summary: ピボットテーブルでデータ本文の値をユーザーが編集できる場合を指定します。
+  summary: ピボットテーブルでデータ本文の値をユーザーが編集できるかどうかを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -485,7 +485,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#setUseCustomSortLists:member(1)
   package: ExcelScript!
   fullName: setUseCustomSortLists(useCustomSortLists)
-  summary: ピボットテーブルが並べ替え時にカスタム リストを使用する場合に指定します。
+  summary: ピボットテーブルが並べ替え時にカスタム リストを使用するかどうかを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -499,9 +499,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: dd8d395e4cc4c09f3443c686bf19c4a441e5c28e
-  ms.sourcegitcommit: b9473966fe37e1ac701719cf9fc4714c572878ca
+  ms.openlocfilehash: fa1e1616bb66cac6a98078b5d73d36f71cedd19d
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 03/30/2022
-  ms.locfileid: "64536518"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394031"

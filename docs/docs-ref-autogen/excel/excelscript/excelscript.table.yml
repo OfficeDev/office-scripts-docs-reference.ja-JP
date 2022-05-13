@@ -120,7 +120,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#deleteRowsAt:member(1)
   package: ExcelScript!
   fullName: deleteRowsAt(index, count)
-  summary: 指定したインデックスの行数を削除します。
+  summary: 特定のインデックスで指定した数の行を削除します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -128,10 +128,10 @@ methods:
     content: 'deleteRowsAt(index: number, count?: number): void;'
     parameters:
     - id: index
-      description: '削除する行のインデックス値。 注意: 行のインデックスは、削除に使用する値を決定した時刻から移動している可能性があります。'
+      description: '削除する行のインデックス値。 注意: 削除に使用する値を決定した時点から行のインデックスが移動した可能性があります。'
       type: number
     - id: count
-      description: '削除する行の数。 既定では、1 行が削除されます。 注: 同時に 1000 行を超える行を削除すると、タイムアウトPower Automate可能性があります。'
+      description: '削除する行数。 既定では、1 つの行が削除されます。 注: 同時に 1,000 行を超える行を削除すると、Power Automateタイムアウトになる可能性があります。'
       type: number
     return:
       type: void
@@ -153,7 +153,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getColumn:member(1)
   package: ExcelScript!
   fullName: getColumn(key)
-  summary: 名前または ID によって、列オブジェクトを取得します。 列が存在しない場合、この関数は `undefined`<!-- -->.
+  summary: 名前または ID によって、列オブジェクトを取得します。 列が存在しない場合、このメソッドは返します。 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -170,7 +170,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getColumnById:member(1)
   package: ExcelScript!
   fullName: getColumnById(key)
-  summary: ID で列オブジェクトを取得します。 列が存在しない場合は、未定義を返します。
+  summary: ID で列オブジェクトを取得します。 列が存在しない場合は、未定義が返されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -187,7 +187,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getColumnByName:member(1)
   package: ExcelScript!
   fullName: getColumnByName(key)
-  summary: Name で列オブジェクトを取得します。 列が存在しない場合は、未定義を返します。
+  summary: Name で列オブジェクトを取得します。 列が存在しない場合は、未定義が返されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -230,7 +230,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getHighlightFirstColumn:member(1)
   package: ExcelScript!
   fullName: getHighlightFirstColumn()
-  summary: 最初の列に特別な書式が含まれている場合に指定します。
+  summary: 最初の列に特殊な書式が含まれているかどうかを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -243,7 +243,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getHighlightLastColumn:member(1)
   package: ExcelScript!
   fullName: getHighlightLastColumn()
-  summary: 最後の列に特別な書式が含まれている場合に指定します。
+  summary: 最後の列に特殊な書式が含まれているかどうかを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -295,7 +295,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getPredefinedTableStyle:member(1)
   package: ExcelScript!
   fullName: getPredefinedTableStyle()
-  summary: 表のスタイルを表す定数値。 指定できる値は、"TableStyleLight1" ~ "TableStyleLight21"、"TableStyleMedium1" ~ "TableStyleMedium28"、"TableStyleDark1" ~ "TableStyleDark11" です。 ブックに存在するカスタムのユーザー定義スタイルも指定できます。
+  summary: テーブル スタイルを表す定数値。 指定できる値は、"TableStyleLight1" から "TableStyleLight21"、"TableStyleMedium1" から "TableStyleMedium28"、"TableStyleDark1" から "TableStyleDark11" です。 ブックに存在するカスタムのユーザー定義スタイルも指定できます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -347,7 +347,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getShowBandedColumns:member(1)
   package: ExcelScript!
   fullName: getShowBandedColumns()
-  summary: テーブルの読み取りを容易にするために、奇数列が偶数列とは異なる方法で強調表示されるバンド書式を列に表示する場合に指定します。
+  summary: テーブルの読み取りを容易にするために、奇数の列が強調表示される書式を列に表示するかどうかを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -360,7 +360,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getShowBandedRows:member(1)
   package: ExcelScript!
   fullName: getShowBandedRows()
-  summary: テーブルの読み取りを容易にするために、奇数行が偶数行とは異なる方法で強調表示されるバンド書式を行に表示する場合に指定します。
+  summary: テーブルの読み取りを容易にするために、奇数行が強調表示される書式が偶数行と異なる場合に、行にバンド形式を表示するかどうかを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -373,7 +373,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getShowFilterButton:member(1)
   package: ExcelScript!
   fullName: getShowFilterButton()
-  summary: フィルター ボタンが各列ヘッダーの上部に表示される場合に指定します。 これは、テーブルにヘッダー行が含まれている場合のみ設定できます。
+  summary: フィルター ボタンが各列ヘッダーの上部に表示されるかどうかを指定します。 これは、テーブルにヘッダー行が含まれている場合のみ設定できます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -386,7 +386,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getShowHeaders:member(1)
   package: ExcelScript!
   fullName: getShowHeaders()
-  summary: ヘッダー行が表示される場合に指定します。 この値によって、ヘッダー行の表示または削除を設定できます。
+  summary: ヘッダー行が表示されるかどうかを指定します。 この値によって、ヘッダー行の表示または削除を設定できます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -399,7 +399,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getShowTotals:member(1)
   package: ExcelScript!
   fullName: getShowTotals()
-  summary: 合計行が表示される場合に指定します。 この値によって、集計行の表示または削除を設定できます。
+  summary: 合計行が表示されるかどうかを指定します。 この値によって、集計行の表示または削除を設定できます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -464,7 +464,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#resize:member(1)
   package: ExcelScript!
   fullName: resize(newRange)
-  summary: テーブルのサイズを新しい範囲に変更します。 新しい範囲は元のテーブル範囲と重なり、ヘッダー (またはテーブルの上部) が同じ行にある必要があります。
+  summary: テーブルのサイズを新しい範囲に変更します。 新しい範囲は元のテーブル範囲と重複している必要があり、ヘッダー (またはテーブルの上部) は同じ行に含まれている必要があります。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -472,7 +472,7 @@ methods:
     content: 'resize(newRange: Range | string): void;'
     parameters:
     - id: newRange
-      description: テーブルの新しいサイズを決定するために使用される range オブジェクトまたは範囲アドレス。
+      description: テーブルの新しいサイズを決定するために使用される範囲オブジェクトまたは範囲アドレス。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: void
@@ -481,7 +481,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#setHighlightFirstColumn:member(1)
   package: ExcelScript!
   fullName: setHighlightFirstColumn(highlightFirstColumn)
-  summary: 最初の列に特別な書式が含まれている場合に指定します。
+  summary: 最初の列に特殊な書式が含まれているかどうかを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -498,7 +498,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#setHighlightLastColumn:member(1)
   package: ExcelScript!
   fullName: setHighlightLastColumn(highlightLastColumn)
-  summary: 最後の列に特別な書式が含まれている場合に指定します。
+  summary: 最後の列に特殊な書式が含まれているかどうかを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -532,7 +532,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#setPredefinedTableStyle:member(1)
   package: ExcelScript!
   fullName: setPredefinedTableStyle(predefinedTableStyle)
-  summary: 表のスタイルを表す定数値。 指定できる値は、"TableStyleLight1" ~ "TableStyleLight21"、"TableStyleMedium1" ~ "TableStyleMedium28"、"TableStyleDark1" ~ "TableStyleDark11" です。 ブックに存在するカスタムのユーザー定義スタイルも指定できます。
+  summary: テーブル スタイルを表す定数値。 指定できる値は、"TableStyleLight1" から "TableStyleLight21"、"TableStyleMedium1" から "TableStyleMedium28"、"TableStyleDark1" から "TableStyleDark11" です。 ブックに存在するカスタムのユーザー定義スタイルも指定できます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -549,7 +549,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#setShowBandedColumns:member(1)
   package: ExcelScript!
   fullName: setShowBandedColumns(showBandedColumns)
-  summary: テーブルの読み取りを容易にするために、奇数列が偶数列とは異なる方法で強調表示されるバンド書式を列に表示する場合に指定します。
+  summary: テーブルの読み取りを容易にするために、奇数の列が強調表示される書式を列に表示するかどうかを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -566,7 +566,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#setShowBandedRows:member(1)
   package: ExcelScript!
   fullName: setShowBandedRows(showBandedRows)
-  summary: テーブルの読み取りを容易にするために、奇数行が偶数行とは異なる方法で強調表示されるバンド書式を行に表示する場合に指定します。
+  summary: テーブルの読み取りを容易にするために、奇数行が強調表示される書式が偶数行と異なる場合に、行にバンド形式を表示するかどうかを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -583,7 +583,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#setShowFilterButton:member(1)
   package: ExcelScript!
   fullName: setShowFilterButton(showFilterButton)
-  summary: フィルター ボタンが各列ヘッダーの上部に表示される場合に指定します。 これは、テーブルにヘッダー行が含まれている場合のみ設定できます。
+  summary: フィルター ボタンが各列ヘッダーの上部に表示されるかどうかを指定します。 これは、テーブルにヘッダー行が含まれている場合のみ設定できます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -600,7 +600,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#setShowHeaders:member(1)
   package: ExcelScript!
   fullName: setShowHeaders(showHeaders)
-  summary: ヘッダー行が表示される場合に指定します。 この値によって、ヘッダー行の表示または削除を設定できます。
+  summary: ヘッダー行が表示されるかどうかを指定します。 この値によって、ヘッダー行の表示または削除を設定できます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -617,7 +617,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#setShowTotals:member(1)
   package: ExcelScript!
   fullName: setShowTotals(showTotals)
-  summary: 合計行が表示される場合に指定します。 この値によって、集計行の表示または削除を設定できます。
+  summary: 合計行が表示されるかどうかを指定します。 この値によって、集計行の表示または削除を設定できます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -631,9 +631,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 6519d6987825c7f3c316f3f153115fb4d83a2bef
-  ms.sourcegitcommit: b796bf885c8fe7d777f70602bb7038de424d922b
+  ms.openlocfilehash: d257901ee686a182d2891bb7ccf63cba1116a1dd
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 12/01/2021
-  ms.locfileid: "61240655"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394038"

@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorksheetFreezePanes#freezeAt:member(1)
   package: ExcelScript!
   fullName: freezeAt(frozenRange)
-  summary: アクティブなワークシート ビューに固定セルを設定します。 指定された範囲は、上部および左側のウィンドウで固定されるセルに対応します。
+  summary: アクティブなワークシート ビューに固定セルを設定します。 指定された範囲は、上部と左端のペインで固定されるセルに対応します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -21,7 +21,7 @@ methods:
     content: 'freezeAt(frozenRange: Range | string): void;'
     parameters:
     - id: frozenRange
-      description: 凍結するセルを表す範囲、またはすべての固定されたウィンドウ `null` を削除する範囲。
+      description: 固定するセルを表す範囲、または `null` 固定されているすべてのペインを削除します。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: void
@@ -30,7 +30,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorksheetFreezePanes#freezeColumns:member(1)
   package: ExcelScript!
   fullName: freezeColumns(count)
-  summary: ワークシートの最初の列または列を固定します。
+  summary: ワークシートの最初の列を固定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -38,7 +38,7 @@ methods:
     content: 'freezeColumns(count?: number): void;'
     parameters:
     - id: count
-      description: 固定する列の省略可能な数、またはすべての列の凍結を解除する 0
+      description: 固定する列の省略可能な数、またはすべての列の凍結解除に 0
       type: number
     return:
       type: void
@@ -47,7 +47,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorksheetFreezePanes#freezeRows:member(1)
   package: ExcelScript!
   fullName: freezeRows(count)
-  summary: ワークシートの一番上の行または行を固定します。
+  summary: ワークシートの一番上の行を固定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -55,7 +55,7 @@ methods:
     content: 'freezeRows(count?: number): void;'
     parameters:
     - id: count
-      description: フリーズする行の省略可能な数、またはすべての行の凍結を解除する 0
+      description: 固定する行の省略可能な数、またはすべての行の凍結解除に 0
       type: number
     return:
       type: void
@@ -64,7 +64,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorksheetFreezePanes#getLocation:member(1)
   package: ExcelScript!
   fullName: getLocation()
-  summary: アクティブなワークシート ビュー内の固定セルを記述する範囲を取得します。 固定範囲は、最上部および左側のウィンドウで固定されているセルに対応します。 固定されたウィンドウがない場合、この関数は `undefined`<!-- -->.
+  summary: アクティブなワークシート ビュー内の固定セルを記述する範囲を取得します。 固定範囲は、上部と左端のペインで固定されているセルに対応します。 固定ウィンドウがない場合、このメソッドは `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -87,9 +87,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 98ee21716269e9fcbb26b7cb2623708b083d54df
-  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
+  ms.openlocfilehash: 805a3dc4b9cb94abb0cdc75c7cb177c0786510d3
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/17/2021
-  ms.locfileid: "61064823"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394141"

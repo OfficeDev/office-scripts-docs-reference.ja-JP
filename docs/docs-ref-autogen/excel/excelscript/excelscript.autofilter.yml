@@ -106,7 +106,7 @@ methods:
   uid: ExcelScript!ExcelScript.AutoFilter#reapply:member(1)
   package: ExcelScript!
   fullName: reapply()
-  summary: その範囲で現在指定されている Autofilter オブジェクトを適用します。
+  summary: 現在範囲に指定されている AutoFilter オブジェクトを適用します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -129,9 +129,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: a3277f164629739bb29f1c860ec5ec940d23313b
-  ms.sourcegitcommit: 1dccdb18053820ef3bc635279479d0cba4f0f482
+  ms.openlocfilehash: c97f52943d4a5e775477eb1aae007e859d053559
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/08/2022
-  ms.locfileid: "64715975"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394045"

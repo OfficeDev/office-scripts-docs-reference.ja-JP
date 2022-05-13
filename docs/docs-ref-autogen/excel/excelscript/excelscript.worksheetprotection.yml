@@ -1,74 +1,81 @@
 ### YamlMime:TSType
 name: ExcelScript.WorksheetProtection
-uid: 'ExcelScript!ExcelScript.WorksheetProtection:interface'
+uid: ExcelScript!ExcelScript.WorksheetProtection:interface
 package: ExcelScript!
 fullName: ExcelScript.WorksheetProtection
-summary: シート オブジェクトの保護を表します。
+summary: ワークシート オブジェクトの保護を表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-  - name: getOptions()
-    uid: 'ExcelScript!ExcelScript.WorksheetProtection#getOptions:member(1)'
-    package: ExcelScript!
-    fullName: getOptions()
-    summary: ワークシートの保護オプションを指定します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getOptions(): WorksheetProtectionOptions;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.WorksheetProtectionOptions:interface" />'
-        description: ''
-  - name: getProtected()
-    uid: 'ExcelScript!ExcelScript.WorksheetProtection#getProtected:member(1)'
-    package: ExcelScript!
-    fullName: getProtected()
-    summary: ワークシートが保護される場合に指定します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getProtected(): boolean;'
-      return:
-        type: boolean
-        description: ''
-  - name: 'protect(options, password)'
-    uid: 'ExcelScript!ExcelScript.WorksheetProtection#protect:member(1)'
-    package: ExcelScript!
-    fullName: 'protect(options, password)'
-    summary: ワークシートを保護します。 ワークシートが既に保護されている場合は失敗します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'protect(options?: WorksheetProtectionOptions, password?: string): void;'
-      parameters:
-        - id: options
-          description: 省略可能です。 シートの保護のオプション。
-          type: '<xref uid="ExcelScript!ExcelScript.WorksheetProtectionOptions:interface" />'
-        - id: password
-          description: 省略可能です。 シート保護パスワード。
-          type: string
-      return:
-        type: void
-        description: ''
-  - name: unprotect(password)
-    uid: 'ExcelScript!ExcelScript.WorksheetProtection#unprotect:member(1)'
-    package: ExcelScript!
-    fullName: unprotect(password)
-    summary: ワークシートの保護を解除します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'unprotect(password?: string): void;'
-      parameters:
-        - id: password
-          description: シート保護パスワード。
-          type: string
-      return:
-        type: void
-        description: ''
+- name: getOptions()
+  uid: ExcelScript!ExcelScript.WorksheetProtection#getOptions:member(1)
+  package: ExcelScript!
+  fullName: getOptions()
+  summary: ワークシートの保護オプションを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getOptions(): WorksheetProtectionOptions;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.WorksheetProtectionOptions:interface" />
+      description: ''
+- name: getProtected()
+  uid: ExcelScript!ExcelScript.WorksheetProtection#getProtected:member(1)
+  package: ExcelScript!
+  fullName: getProtected()
+  summary: ワークシートが保護されているかどうかを指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getProtected(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: protect(options, password)
+  uid: ExcelScript!ExcelScript.WorksheetProtection#protect:member(1)
+  package: ExcelScript!
+  fullName: protect(options, password)
+  summary: ワークシートを保護します。 ワークシートが既に保護されている場合は失敗します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'protect(options?: WorksheetProtectionOptions, password?: string): void;'
+    parameters:
+    - id: options
+      description: 省略可能。 シートの保護のオプション。
+      type: <xref uid="ExcelScript!ExcelScript.WorksheetProtectionOptions:interface" />
+    - id: password
+      description: 省略可能。 シート保護パスワード。
+      type: string
+    return:
+      type: void
+      description: ''
+- name: unprotect(password)
+  uid: ExcelScript!ExcelScript.WorksheetProtection#unprotect:member(1)
+  package: ExcelScript!
+  fullName: unprotect(password)
+  summary: ワークシートの保護を解除します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'unprotect(password?: string): void;'
+    parameters:
+    - id: password
+      description: シート保護パスワード。
+      type: string
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 41cd1bf740b824d87cbc25f743022d047c1015ea
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394073"

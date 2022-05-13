@@ -325,7 +325,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getTextFrame:member(1)
   package: ExcelScript!
   fullName: getTextFrame()
-  summary: この図形のテキスト フレーム オブジェクトを返します。 読み取り専用です。
+  summary: この図形のテキスト フレーム オブジェクトを返します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -728,9 +728,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 1a092224f551461d4e08943071fad680c53574ac
-  ms.sourcegitcommit: 3de53184008ce4f389e84261036465e9dce79b98
+  ms.openlocfilehash: ada90a41593e16c30239927364f7955501de640c
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 05/11/2022
-  ms.locfileid: "65305246"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394213"

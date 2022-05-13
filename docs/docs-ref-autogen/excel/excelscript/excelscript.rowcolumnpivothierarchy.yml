@@ -1,127 +1,134 @@
 ### YamlMime:TSType
 name: ExcelScript.RowColumnPivotHierarchy
-uid: 'ExcelScript!ExcelScript.RowColumnPivotHierarchy:interface'
+uid: ExcelScript!ExcelScript.RowColumnPivotHierarchy:interface
 package: ExcelScript!
 fullName: ExcelScript.RowColumnPivotHierarchy
-summary: RowColumnPivotHierarchy のExcelを表します。
+summary: RowColumnPivotHierarchy Excelを表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-  - name: getFields()
-    uid: 'ExcelScript!ExcelScript.RowColumnPivotHierarchy#getFields:member(1)'
-    package: ExcelScript!
-    fullName: getFields()
-    summary: RowColumnPivotHierarchy に関連付けられているピボット フィールドを返します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getFields(): PivotField[];'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.PivotField:interface" />[]'
-        description: ''
-  - name: getId()
-    uid: 'ExcelScript!ExcelScript.RowColumnPivotHierarchy#getId:member(1)'
-    package: ExcelScript!
-    fullName: getId()
-    summary: RowColumnPivotHierarchy の ID。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getId(): string;'
-      return:
-        type: string
-        description: ''
-  - name: getName()
-    uid: 'ExcelScript!ExcelScript.RowColumnPivotHierarchy#getName:member(1)'
-    package: ExcelScript!
-    fullName: getName()
-    summary: RowColumnPivotHierarchy の名前。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getName(): string;'
-      return:
-        type: string
-        description: ''
-  - name: getPivotField(name)
-    uid: 'ExcelScript!ExcelScript.RowColumnPivotHierarchy#getPivotField:member(1)'
-    package: ExcelScript!
-    fullName: getPivotField(name)
-    summary: 名前でピボットフィールドを取得します。 PivotField が存在しない場合、この関数はプロパティを次に設定した `isNullObject` オブジェクトを返します。 `true`<!-- -->.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getPivotField(name: string): PivotField | undefined;'
-      parameters:
-        - id: name
-          description: 取得するピボットフィールドの名前。
-          type: string
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | undefined'
-        description: ''
-  - name: getPosition()
-    uid: 'ExcelScript!ExcelScript.RowColumnPivotHierarchy#getPosition:member(1)'
-    package: ExcelScript!
-    fullName: getPosition()
-    summary: RowColumnPivotHierarchy の位置。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getPosition(): number;'
-      return:
-        type: number
-        description: ''
-  - name: setName(name)
-    uid: 'ExcelScript!ExcelScript.RowColumnPivotHierarchy#setName:member(1)'
-    package: ExcelScript!
-    fullName: setName(name)
-    summary: RowColumnPivotHierarchy の名前。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setName(name: string): void;'
-      parameters:
-        - id: name
-          description: ''
-          type: string
-      return:
-        type: void
-        description: ''
-  - name: setPosition(position)
-    uid: 'ExcelScript!ExcelScript.RowColumnPivotHierarchy#setPosition:member(1)'
-    package: ExcelScript!
-    fullName: setPosition(position)
-    summary: RowColumnPivotHierarchy の位置。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setPosition(position: number): void;'
-      parameters:
-        - id: position
-          description: ''
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: setToDefault()
-    uid: 'ExcelScript!ExcelScript.RowColumnPivotHierarchy#setToDefault:member(1)'
-    package: ExcelScript!
-    fullName: setToDefault()
-    summary: RowColumnPivotHierarchy を既定値にリセットします。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setToDefault(): void;'
-      return:
-        type: void
-        description: ''
+- name: getFields()
+  uid: ExcelScript!ExcelScript.RowColumnPivotHierarchy#getFields:member(1)
+  package: ExcelScript!
+  fullName: getFields()
+  summary: RowColumnPivotHierarchy に関連付けられているピボット フィールドを返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFields(): PivotField[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PivotField:interface" />[]
+      description: ''
+- name: getId()
+  uid: ExcelScript!ExcelScript.RowColumnPivotHierarchy#getId:member(1)
+  package: ExcelScript!
+  fullName: getId()
+  summary: RowColumnPivotHierarchy の ID。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getId(): string;'
+    return:
+      type: string
+      description: ''
+- name: getName()
+  uid: ExcelScript!ExcelScript.RowColumnPivotHierarchy#getName:member(1)
+  package: ExcelScript!
+  fullName: getName()
+  summary: RowColumnPivotHierarchy の名前。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getName(): string;'
+    return:
+      type: string
+      description: ''
+- name: getPivotField(name)
+  uid: ExcelScript!ExcelScript.RowColumnPivotHierarchy#getPivotField:member(1)
+  package: ExcelScript!
+  fullName: getPivotField(name)
+  summary: PivotField を名前で取得します。 PivotField が存在しない場合、このメソッドは、その `isNullObject` プロパティが次に設定されたオブジェクトを返します。 `true`<!-- -->.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPivotField(name: string): PivotField | undefined;'
+    parameters:
+    - id: name
+      description: 取得するピボットフィールドの名前。
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | undefined
+      description: ''
+- name: getPosition()
+  uid: ExcelScript!ExcelScript.RowColumnPivotHierarchy#getPosition:member(1)
+  package: ExcelScript!
+  fullName: getPosition()
+  summary: RowColumnPivotHierarchy の位置。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPosition(): number;'
+    return:
+      type: number
+      description: ''
+- name: setName(name)
+  uid: ExcelScript!ExcelScript.RowColumnPivotHierarchy#setName:member(1)
+  package: ExcelScript!
+  fullName: setName(name)
+  summary: RowColumnPivotHierarchy の名前。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setName(name: string): void;'
+    parameters:
+    - id: name
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setPosition(position)
+  uid: ExcelScript!ExcelScript.RowColumnPivotHierarchy#setPosition:member(1)
+  package: ExcelScript!
+  fullName: setPosition(position)
+  summary: RowColumnPivotHierarchy の位置。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setPosition(position: number): void;'
+    parameters:
+    - id: position
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setToDefault()
+  uid: ExcelScript!ExcelScript.RowColumnPivotHierarchy#setToDefault:member(1)
+  package: ExcelScript!
+  fullName: setToDefault()
+  summary: RowColumnPivotHierarchy を既定値にリセットします。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setToDefault(): void;'
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 597c8c3c5fa9221c43f23fdaab92d67f5002cb42
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394220"

@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getSlicerItem:member(1)
   package: ExcelScript!
   fullName: getSlicerItem(key)
-  summary: そのキーまたは名前を使用してスライサー アイテムを取得します。 スライサー項目が存在しない場合、この関数は `undefined`<!-- -->.
+  summary: そのキーまたは名前を使用してスライサー アイテムを取得します。 スライサー項目が存在しない場合は、このメソッドが返します。 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -375,9 +375,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 02fa3684b136b4b2c84960d53099380381570c1c
-  ms.sourcegitcommit: 62fb657a306ed43211bc29b7e4ee016260dcc810
+  ms.openlocfilehash: f0381fff643c16295794534070ded1cf3ad7ce28
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/27/2022
-  ms.locfileid: "65076890"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394024"

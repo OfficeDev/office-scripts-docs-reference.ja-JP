@@ -3,7 +3,7 @@ name: ExcelScript.PivotHierarchy
 uid: ExcelScript!ExcelScript.PivotHierarchy:interface
 package: ExcelScript!
 fullName: ExcelScript.PivotHierarchy
-summary: PivotHierarchy のExcelを表します。
+summary: Excel PivotHierarchy を表します。
 remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script creates a PivotTable from an existing table and adds it to a new worksheet.\n * This script assumes there is a table in the current worksheet with columns named \"Type\" and \"Sales\".\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Create a PivotTable based on a table in the current worksheet.\n  let sheet = workbook.getActiveWorksheet();\n  let table = sheet.getTables()[0];\n\n  // Add the PivotTable to a new worksheet.\n  let newSheet = workbook.addWorksheet(\"Pivot\");\n  let pivotTable = newSheet.addPivotTable(\"My Pivot\", table, \"A1\");\n\n  // Add fields to the PivotTable to show \"Sales\" per \"Type\".\n  pivotTable.addRowHierarchy(pivotTable.getHierarchy(\"Type\"));\n  pivotTable.addDataHierarchy(pivotTable.getHierarchy(\"Sales\"));\n}\n```"
 isPreview: false
 isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotHierarchy#getPivotField:member(1)
   package: ExcelScript!
   fullName: getPivotField(name)
-  summary: 名前でピボットフィールドを取得します。 PivotField が存在しない場合、この関数はプロパティを次に設定したオブジェクト `isNullObject` を返します。 `true`<!-- -->.
+  summary: PivotField を名前で取得します。 PivotField が存在しない場合、このメソッドは、その `isNullObject` プロパティが次に設定されたオブジェクトを返します。 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -83,9 +83,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 8af87fa67284d57a4d6dfe76ea1695a8097bbe5c
-  ms.sourcegitcommit: 9dbae2022b7fe47e64affb163fd332b01810dccf
+  ms.openlocfilehash: 8dd3224aa51c08ebda345dd7b8b1b86a5f769f57
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 02/16/2022
-  ms.locfileid: "62857322"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394087"

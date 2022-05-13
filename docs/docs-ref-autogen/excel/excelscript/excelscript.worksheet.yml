@@ -539,7 +539,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getChart:member(1)
   package: ExcelScript!
   fullName: getChart(name)
-  summary: グラフ名を使用してグラフを取得します。 同じ名前の複数のグラフがある場合は、最初の 1 つが返されます。 グラフが存在しない場合、この関数は返します `undefined`<!-- -->.
+  summary: グラフ名を使用してグラフを取得します。 同じ名前の複数のグラフがある場合は、最初の 1 つが返されます。 グラフが存在しない場合、このメソッドは返します `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -711,7 +711,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getNamedItem:member(1)
   package: ExcelScript!
   fullName: getNamedItem(name)
-  summary: その名前を `NamedItem` 使用してオブジェクトを取得します。 オブジェクトが存在しない場合、この関数は `undefined`<!-- -->.
+  summary: その名前を `NamedItem` 使用してオブジェクトを取得します。 オブジェクトが存在しない場合、このメソッドは返します。 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -801,7 +801,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getPivotTable:member(1)
   package: ExcelScript!
   fullName: getPivotTable(name)
-  summary: 名前に基づいてピボットテーブルを取得します。 ピボットテーブルが存在しない場合、この関数は返します。 `undefined`<!-- -->.
+  summary: 名前に基づいてピボットテーブルを取得します。 ピボットテーブルが存在しない場合、このメソッドは返します `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -931,7 +931,7 @@ methods:
     content: 'getRanges(address?: string): RangeAreas;'
     parameters:
     - id: address
-      description: 省略可能。 コンマ区切りのアドレスまたは個々の範囲の名前を含む文字列。 たとえば、「A1:B2、A5:B5」などです。 指定しない場合は、ワークシート全体の RangeArea オブジェクトが返されます。
+      description: 省略可能。 コンマ区切りまたはセミコロンで区切られたアドレスまたは個々の範囲の名前を含む文字列。 たとえば、"A1:B2、A5:B5"、または "A1:B2;A5:B5"。 指定しない場合は `RangeAreas` 、ワークシート全体のオブジェクトが返されます。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
@@ -996,7 +996,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getSlicer:member(1)
   package: ExcelScript!
   fullName: getSlicer(key)
-  summary: 名前または ID を使用してスライサーを取得します。 スライサーが存在しない場合、この関数は `undefined`<!-- -->.
+  summary: 名前または ID を使用してスライサーを取得します。 スライサーが存在しない場合、このメソッドは `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1065,7 +1065,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getTable:member(1)
   package: ExcelScript!
   fullName: getTable(key)
-  summary: 名前または ID でテーブルを取得します。 テーブルが存在しない場合、この関数は `undefined`<!-- -->.
+  summary: 名前または ID でテーブルを取得します。 テーブルが存在しない場合、このメソッドは返します `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1138,7 +1138,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getWorksheetCustomProperty:member(1)
   package: ExcelScript!
   fullName: getWorksheetCustomProperty(key)
-  summary: キーを使用してカスタム プロパティ オブジェクトを取得します。大文字と小文字は区別されません。 カスタム プロパティが存在しない場合、この関数は返します。 `undefined`<!-- -->.
+  summary: キーを使用してカスタム プロパティ オブジェクトを取得します。大文字と小文字は区別されません。 カスタム プロパティが存在しない場合、このメソッドは `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1378,9 +1378,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: e305dee531c508a067d76ed6c0384ba1abf5f055
-  ms.sourcegitcommit: 3de53184008ce4f389e84261036465e9dce79b98
+  ms.openlocfilehash: 597c099a51f4330cbe2c47736f6686b297591b07
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 05/11/2022
-  ms.locfileid: "65305240"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394199"

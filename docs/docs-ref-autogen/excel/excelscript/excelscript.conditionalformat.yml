@@ -3,7 +3,7 @@ name: ExcelScript.ConditionalFormat
 uid: ExcelScript!ExcelScript.ConditionalFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.ConditionalFormat
-summary: 条件付き書式の範囲、形式、ルール、その他のプロパティをカプセル化するオブジェクト。
+summary: 条件付き書式の範囲、書式、規則、およびその他のプロパティをカプセル化するオブジェクト。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getCellValue:member(1)
   package: ExcelScript!
   fullName: getCellValue()
-  summary: 現在の条件付き書式が型の場合、セル値の条件付き書式プロパティを返 `CellValue` します。
+  summary: 現在の条件付き書式が型の場合は、セル値の条件付き書式プロパティを `CellValue` 返します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getColorScale:member(1)
   package: ExcelScript!
   fullName: getColorScale()
-  summary: 現在の条件付き書式が型の場合は、色スケールの条件付き書式プロパティを返 `ColorScale` します。
+  summary: 現在の条件付き書式が型の場合は、色スケールの条件付き書式プロパティを `ColorScale` 返します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getCustom:member(1)
   package: ExcelScript!
   fullName: getCustom()
-  summary: 現在の条件付き書式がカスタム型の場合は、カスタムの条件付き書式プロパティを返します。
+  summary: 現在の条件付き書式がカスタム型の場合は、カスタム条件付き書式プロパティを返します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getIconSet:member(1)
   package: ExcelScript!
   fullName: getIconSet()
-  summary: 現在の条件付き書式が型の場合は、アイコン セットの条件付き書式プロパティを返 `IconSet` します。
+  summary: 現在の条件付き書式が型の場合は、アイコン セットの条件付き書式プロパティを `IconSet` 返します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getPreset:member(1)
   package: ExcelScript!
   fullName: getPreset()
-  summary: 事前設定された条件の条件付き書式を返します。 詳細については、`ExcelScript.PresetCriteriaConditionalFormat`を参照してください。
+  summary: 事前設定された条件の条件付き形式を返します。 詳細については、`ExcelScript.PresetCriteriaConditionalFormat`を参照してください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -117,7 +117,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getPriority:member(1)
   package: ExcelScript!
   fullName: getPriority()
-  summary: この条件付き書式が現在存在する条件付き書式コレクション内の優先度 (またはインデックス)。 これを変更すると、他の条件付き書式の優先度も変更されます。これにより、連続する優先度の順序が可能になります。 背面から開始するには、負の優先度を使用します。 境界より大きい優先度は、最大値 (または負の場合は最小) の優先度に設定されます。 また、優先度を変更する場合は、そのオブジェクトにさらに変更を加える場合は、その新しい優先度の場所でオブジェクトの新しいコピーを再フェッチする必要があります。
+  summary: この条件付き書式が現在存在する条件付き書式コレクション内の優先度 (またはインデックス)。 これを変更すると、他の条件付き形式の優先順位も変更され、連続した優先度の順序が可能になります。 負の優先順位を使用して、後ろから開始します。 境界より大きい優先順位は、最大値 (負の場合は最小値) の優先順位を取得して設定します。 また、優先度を変更する場合は、さらに変更を加える場合は、その新しい優先度の場所でオブジェクトの新しいコピーを再フェッチする必要があることにも注意してください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getRange:member(1)
   package: ExcelScript!
   fullName: getRange()
-  summary: conditonal 形式が適用される範囲を返します。 条件付き書式が複数の範囲に適用されている場合、この関数は `undefined`<!-- -->.
+  summary: conditonal 形式が適用される範囲を返します。 条件付き書式が複数の範囲に適用されている場合、このメソッドは `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getRanges:member(1)
   package: ExcelScript!
   fullName: getRanges()
-  summary: を返します。 `RangeAreas`<!-- -->は、1 つ以上の四角形の範囲で構成され、その範囲に対して同じ形式が適用されます。
+  summary: を返します。 `RangeAreas`<!-- -->は、1 つ以上の四角形の範囲で構成され、この範囲に対して同一形式が適用されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -156,7 +156,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getStopIfTrue:member(1)
   package: ExcelScript!
   fullName: getStopIfTrue()
-  summary: この条件付き書式の条件が満たされた場合、優先順位の低い書式はそのセルに影響を及ぼしません。 値は、データ バー、アイコン セット、およびカラー スケールに関する概念を `null` `StopIfTrue` 示す値ではありません。
+  summary: この条件付き書式の条件が満たされた場合、優先順位の低い書式はそのセルに影響を及ぼしません。 値は `null` 、データ バー、アイコン セット、およびカラー スケール上にあります。これらの概念 `StopIfTrue` がないためです。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -182,7 +182,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getTopBottom:member(1)
   package: ExcelScript!
   fullName: getTopBottom()
-  summary: 現在の条件付き書式が型の場合は、上/下の条件付き書式プロパティを返 `TopBottom` します。 たとえば、上位 10% または下位 10 アイテムの書式を設定します。
+  summary: 現在の条件付き書式が型の場合は、上/下の条件付き書式プロパティを `TopBottom` 返します。 たとえば、上位 10% または下位 10 項目の書式を設定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -195,7 +195,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getType:member(1)
   package: ExcelScript!
   fullName: getType()
-  summary: 条件付き書式の種類。 一度に設定できる設定は 1 つのみです。
+  summary: 条件付き書式の種類。 一度に設定できるのは 1 つだけです。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -208,7 +208,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#setPriority:member(1)
   package: ExcelScript!
   fullName: setPriority(priority)
-  summary: この条件付き書式が現在存在する条件付き書式コレクション内の優先度 (またはインデックス)。 これを変更すると、他の条件付き書式の優先度も変更されます。これにより、連続する優先度の順序が可能になります。 背面から開始するには、負の優先度を使用します。 境界より大きい優先度は、最大値 (または負の場合は最小) の優先度に設定されます。 また、優先度を変更する場合は、そのオブジェクトにさらに変更を加える場合は、その新しい優先度の場所でオブジェクトの新しいコピーを再フェッチする必要があります。
+  summary: この条件付き書式が現在存在する条件付き書式コレクション内の優先度 (またはインデックス)。 これを変更すると、他の条件付き形式の優先順位も変更され、連続した優先度の順序が可能になります。 負の優先順位を使用して、後ろから開始します。 境界より大きい優先順位は、最大値 (負の場合は最小値) の優先順位を取得して設定します。 また、優先度を変更する場合は、さらに変更を加える場合は、その新しい優先度の場所でオブジェクトの新しいコピーを再フェッチする必要があることにも注意してください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -225,7 +225,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#setStopIfTrue:member(1)
   package: ExcelScript!
   fullName: setStopIfTrue(stopIfTrue)
-  summary: この条件付き書式の条件が満たされた場合、優先順位の低い書式はそのセルに影響を及ぼしません。 値は、データ バー、アイコン セット、およびカラー スケールに関する概念を `null` `StopIfTrue` 示す値ではありません。
+  summary: この条件付き書式の条件が満たされた場合、優先順位の低い書式はそのセルに影響を及ぼしません。 値は `null` 、データ バー、アイコン セット、およびカラー スケール上にあります。これらの概念 `StopIfTrue` がないためです。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -239,9 +239,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: d76b9ca2141a89c44983f5dda3bd7b0609016220
-  ms.sourcegitcommit: b796bf885c8fe7d777f70602bb7038de424d922b
+  ms.openlocfilehash: 268983e49cd3b24c52841add0c9c6cc39613b7c7
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 12/01/2021
-  ms.locfileid: "61240578"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394164"

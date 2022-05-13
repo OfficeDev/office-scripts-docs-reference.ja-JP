@@ -3,7 +3,7 @@ name: ExcelScript.NamedItem
 uid: ExcelScript!ExcelScript.NamedItem:interface
 package: ExcelScript!
 fullName: ExcelScript.NamedItem
-summary: セルまたは値の範囲の定義済みの名前を表します。 名前には、プリミティブという名前のオブジェクト (以下の種類に見られる)、range オブジェクト、または範囲への参照を指定できます。 このオブジェクトを使用して、名前に関連付けられた範囲オブジェクトを取得することができます。
+summary: セルまたは値の範囲の定義済みの名前を表します。 名前には、プリミティブな名前付きオブジェクト (以下の型に示すように)、範囲オブジェクト、または範囲への参照を指定できます。 このオブジェクトを使用して、名前に関連付けられた範囲オブジェクトを取得することができます。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getComment:member(1)
   package: ExcelScript!
   fullName: getComment()
-  summary: この名前に関連付けられたコメントを指定します。
+  summary: この名前に関連付けられているコメントを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getRange:member(1)
   package: ExcelScript!
   fullName: getRange()
-  summary: 名前に関連付けられている範囲オブジェクトを返します。 名前付きアイテムの型が範囲ではない場合、この関数は `undefined`<!-- -->.
+  summary: 名前に関連付けられている範囲オブジェクトを返します。 名前付き項目の型が範囲でない場合、このメソッドは返します `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getScope:member(1)
   package: ExcelScript!
   fullName: getScope()
-  summary: 名前をブックまたは特定のワークシートの範囲に設定する場合に指定します。 使用できる値は、ワークシート、ブックです。
+  summary: 名前がブックまたは特定のワークシートにスコープを設定するかどうかを指定します。 使用可能な値は、ワークシート、ブックです。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getType:member(1)
   package: ExcelScript!
   fullName: getType()
-  summary: 名前の数式によって返される値の種類を指定します。 詳細は「`ExcelScript.NamedItemType`」をご覧ください。
+  summary: 名前の数式によって返される値の型を指定します。 詳細は「`ExcelScript.NamedItemType`」をご覧ください。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getVisible:member(1)
   package: ExcelScript!
   fullName: getVisible()
-  summary: オブジェクトが表示される場合に指定します。
+  summary: オブジェクトが表示されるかどうかを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getWorksheet:member(1)
   package: ExcelScript!
   fullName: getWorksheet()
-  summary: 名前付きアイテムのスコープを設定するワークシートを返します。 アイテムのスコープがブックの代わりに設定されている場合、この関数は `undefined`<!-- -->.
+  summary: 名前付きアイテムのスコープを設定するワークシートを返します。 アイテムのスコープがブックに代わって設定されている場合、このメソッドは `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -156,7 +156,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#setComment:member(1)
   package: ExcelScript!
   fullName: setComment(comment)
-  summary: この名前に関連付けられたコメントを指定します。
+  summary: この名前に関連付けられているコメントを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -190,7 +190,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#setVisible:member(1)
   package: ExcelScript!
   fullName: setVisible(visible)
-  summary: オブジェクトが表示される場合に指定します。
+  summary: オブジェクトが表示されるかどうかを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -204,9 +204,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: b097f6d3666bdd2d2334de0cd2e9705852bb219a
-  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
+  ms.openlocfilehash: 182f0fc8a5e12d2bc525d28c22f8c6734abbcffd
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/17/2021
-  ms.locfileid: "61064837"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394122"

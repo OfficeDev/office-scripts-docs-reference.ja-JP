@@ -30,7 +30,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#autoFill:member(1)
   package: ExcelScript!
   fullName: autoFill(destinationRange, autoFillType)
-  summary: 指定したオートフィル ロジックを使用して、現在の範囲から変換先の範囲に範囲を入力します。 変換先の範囲は次のことができます。 `null`<!-- -->または、ソースを水平方向または垂直方向に拡張できます。 Discontiguous 範囲はサポートされていません。
+  summary: 指定したオートフィル ロジックを使用して、現在の範囲から宛先範囲までの範囲を入力します。 変換先の範囲は、 `null` ソース範囲を水平方向または垂直方向に拡張できます。 Discontiguous 範囲はサポートされていません。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#find:member(1)
   package: ExcelScript!
   fullName: find(text, criteria)
-  summary: 指定された条件に基づいて指定された文字列を見つけます。 現在の範囲が 1 つのセルより大きい場合、検索はその範囲に制限されます。それ以外の場合は、そのセルの後から始まるシート全体が検索対象になります。 一致しない場合、この関数は返します。 `undefined`<!-- -->.
+  summary: 指定された条件に基づいて指定された文字列を見つけます。 現在の範囲が 1 つのセルより大きい場合、検索はその範囲に制限されます。それ以外の場合は、そのセルの後から始まるシート全体が検索対象になります。 一致しない場合は、このメソッドが返します。 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -644,7 +644,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getIntersection:member(1)
   package: ExcelScript!
   fullName: getIntersection(anotherRange)
-  summary: 指定した範囲の長方形の交差を表す範囲オブジェクトを取得します。 交差が見つからない場合、この関数は返します。 `undefined`<!-- -->.
+  summary: 指定した範囲の長方形の交差を表す範囲オブジェクトを取得します。 交差が見つからない場合、このメソッドは返します `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -765,7 +765,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getMergedAreas:member(1)
   package: ExcelScript!
   fullName: getMergedAreas()
-  summary: この範囲内のマージされた領域を表す RangeAreas オブジェクトを返します。 この範囲のマージされた領域数が 512 を超える場合、API は結果を返しません。 RangeAreas が存在しない場合は、null オブジェクトが返されます。
+  summary: この範囲内の `RangeAreas` マージされた領域を表すオブジェクトを返します。 この範囲のマージされた領域数が 512 を超える場合、このメソッドは結果を返しません。 オブジェクトが `RangeAreas` 存在しない場合、この関数は、その `isNullObject` プロパティが設定されたオブジェクトを返します。 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1066,7 +1066,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpecialCells:member(1)
   package: ExcelScript!
   fullName: getSpecialCells(cellType, cellValueType)
-  summary: 指定した型と値に `RangeAreas` 一致するすべてのセルを表す 1 つ以上の範囲を含むオブジェクトを取得します。 特別なセルが見つからない場合、この関数は `undefined`<!-- -->.
+  summary: 指定した型と値に `RangeAreas` 一致するすべてのセルを表す 1 つ以上の範囲を含むオブジェクトを取得します。 特別なセルが見つからない場合、このメソッドは `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1090,7 +1090,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpillingToRange:member(1)
   package: ExcelScript!
   fullName: getSpillingToRange()
-  summary: アンカー セルで呼び出されたとき、スピル範囲を含む範囲オブジェクトを取得します。 範囲がアンカー セルでない場合、またはスピル範囲が見つからない場合、この関数は返します。 `undefined`<!-- -->.
+  summary: アンカー セルで呼び出されたとき、スピル範囲を含む範囲オブジェクトを取得します。 範囲がアンカー セルでない場合、またはスピル範囲が見つからない場合、このメソッドは返します。 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1103,7 +1103,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpillParent:member(1)
   package: ExcelScript!
   fullName: getSpillParent()
-  summary: セルが流出するアンカー セルを含む範囲オブジェクトを取得します。 スピルされたセルではない場合、または複数のセルが指定されている場合、この関数は返します。 `undefined`<!-- -->.
+  summary: セルが流出するアンカー セルを含む範囲オブジェクトを取得します。 スピルされたセルではない場合、または複数のセルが指定されている場合、このメソッドは返します `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1185,7 +1185,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getUsedRange:member(1)
   package: ExcelScript!
   fullName: getUsedRange(valuesOnly)
-  summary: 指定した範囲オブジェクトのうち使用されている範囲を返します。 範囲内に使用されているセルがない場合、この関数は返します。 `undefined`<!-- -->.
+  summary: 指定した範囲オブジェクトのうち使用されている範囲を返します。 範囲内に使用されているセルがない場合、このメソッドは返します。 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1352,7 +1352,7 @@ methods:
     content: 'merge(across?: boolean): void;'
     parameters:
     - id: across
-      description: オプション。 指定した範囲の各行のセルを個別の結合セルとして結合するように設定 `true` します。 既定値は次の値です。 `false`<!-- -->.
+      description: 省略可能。 指定した範囲の各行のセルを個別の結合セルとして結合するように設定 `true` します。 既定値は次の値です。 `false`<!-- -->.
       type: boolean
     return:
       type: void
@@ -1785,9 +1785,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 8d30c738908e33ddb292f08f12814d25c0ce30c9
-  ms.sourcegitcommit: 1dccdb18053820ef3bc635279479d0cba4f0f482
+  ms.openlocfilehash: 131c648e35d13d5d8bc28d44514f8c893b4250d8
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/08/2022
-  ms.locfileid: "64715961"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394150"

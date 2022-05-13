@@ -410,7 +410,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getActiveChart:member(1)
   package: ExcelScript!
   fullName: getActiveChart()
-  summary: ブックで現在アクティブになっているグラフを取得します。 アクティブなグラフがない場合、この関数は返します。 `undefined`<!-- -->.
+  summary: ブックで現在アクティブになっているグラフを取得します。 アクティブなグラフがない場合、このメソッドは返します `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -423,7 +423,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getActiveSlicer:member(1)
   package: ExcelScript!
   fullName: getActiveSlicer()
-  summary: ブックで現在アクティブになっているスライサーを取得します。 アクティブなスライサーがない場合、この関数は `undefined`<!-- -->.
+  summary: ブックで現在アクティブになっているスライサーを取得します。 アクティブなスライサーがない場合、このメソッドは `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -475,7 +475,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getBinding:member(1)
   package: ExcelScript!
   fullName: getBinding(id)
-  summary: ID を使用してバインド オブジェクトを取得します。 バインド オブジェクトが存在しない場合、この関数は `undefined`<!-- -->.
+  summary: ID を使用してバインド オブジェクトを取得します。 バインド オブジェクトが存在しない場合、このメソッドは返します `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -595,7 +595,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getCustomXmlPart:member(1)
   package: ExcelScript!
   fullName: getCustomXmlPart(id)
-  summary: ID に基づいて、カスタム XML パーツを取得します。 存在 `CustomXmlPart` しない場合、この関数は返します。 `undefined`<!-- -->.
+  summary: ID に基づいて、カスタム XML パーツを取得します。 存在 `CustomXmlPart` しない場合、このメソッドは返します。 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -759,7 +759,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getLinkedWorkbookByUrl:member(1)
   package: ExcelScript!
   fullName: getLinkedWorkbookByUrl(key)
-  summary: リンクされたブックに関する情報を URL で取得します。 ブックが存在しない場合、この関数は、その `isNullObject` プロパティを次に設定したオブジェクトを返します。 `true`<!-- -->.
+  summary: リンクされたブックに関する情報を URL で取得します。 ブックが存在しない場合、このメソッドは、その `isNullObject` プロパティを次に設定したオブジェクトを返します。 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -815,7 +815,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getNamedItem:member(1)
   package: ExcelScript!
   fullName: getNamedItem(name)
-  summary: その名前を `NamedItem` 使用してオブジェクトを取得します。 オブジェクトが存在しない場合、この関数は `undefined`<!-- -->.
+  summary: その名前を `NamedItem` 使用してオブジェクトを取得します。 オブジェクトが存在しない場合、このメソッドは返します。 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -845,7 +845,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getPivotTable:member(1)
   package: ExcelScript!
   fullName: getPivotTable(name)
-  summary: 名前に基づいてピボットテーブルを取得します。 ピボットテーブルが存在しない場合、この関数は返します。 `undefined`<!-- -->.
+  summary: 名前に基づいてピボットテーブルを取得します。 ピボットテーブルが存在しない場合、このメソッドは返します `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -875,7 +875,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getPivotTableStyle:member(1)
   package: ExcelScript!
   fullName: getPivotTableStyle(name)
-  summary: 名前で `PivotTableStyle` 取得します。 存在 `PivotTableStyle` しない場合、この関数は返します。 `undefined`<!-- -->.
+  summary: 名前で `PivotTableStyle` 取得します。 存在 `PivotTableStyle` しない場合、このメソッドは返します。 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1013,7 +1013,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getSlicer:member(1)
   package: ExcelScript!
   fullName: getSlicer(key)
-  summary: 名前または ID を使用してスライサーを取得します。 スライサーが存在しない場合、この関数は `undefined`<!-- -->.
+  summary: 名前または ID を使用してスライサーを取得します。 スライサーが存在しない場合、このメソッドは `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1043,7 +1043,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getSlicerStyle:member(1)
   package: ExcelScript!
   fullName: getSlicerStyle(name)
-  summary: 名前で `SlicerStyle` 取得します。 スライサー スタイルが存在しない場合、この関数は `undefined`<!-- -->.
+  summary: 名前で `SlicerStyle` 取得します。 スライサー スタイルが存在しない場合、このメソッドは `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1073,7 +1073,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getTable:member(1)
   package: ExcelScript!
   fullName: getTable(key)
-  summary: 名前または ID でテーブルを取得します。 テーブルが存在しない場合、この関数は `undefined`<!-- -->.
+  summary: 名前または ID でテーブルを取得します。 テーブルが存在しない場合、このメソッドは返します `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1103,7 +1103,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getTableStyle:member(1)
   package: ExcelScript!
   fullName: getTableStyle(name)
-  summary: 名前で `TableStyle` 取得します。 テーブル スタイルが存在しない場合、この関数は `undefined`<!-- -->.
+  summary: 名前で `TableStyle` 取得します。 テーブル スタイルが存在しない場合、このメソッドは返します `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1133,7 +1133,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getTimelineStyle:member(1)
   package: ExcelScript!
   fullName: getTimelineStyle(name)
-  summary: 名前で `TimelineStyle` 取得します。 タイムライン スタイルが存在しない場合、この関数は返します。 `undefined`<!-- -->.
+  summary: 名前で `TimelineStyle` 取得します。 タイムライン スタイルが存在しない場合は、このメソッドが返します。 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1176,7 +1176,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getWorksheet:member(1)
   package: ExcelScript!
   fullName: getWorksheet(key)
-  summary: 名前または ID を使用して、ワークシート オブジェクトを取得します。 ワークシートが存在しない場合、この関数は返します `undefined`<!-- -->.
+  summary: 名前または ID を使用して、ワークシート オブジェクトを取得します。 ワークシートが存在しない場合、このメソッドは返します `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1384,9 +1384,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 52a3ed7e88d6452aa71cd8efd9bcdb459065dd98
-  ms.sourcegitcommit: 62fb657a306ed43211bc29b7e4ee016260dcc810
+  ms.openlocfilehash: c59ddc105a519d4e120bc94d88f0c99817598214
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/27/2022
-  ms.locfileid: "65076875"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394017"
