@@ -4,7 +4,7 @@ uid: ExcelScript!ExcelScript.DocumentProperties:interface
 package: ExcelScript!
 fullName: ExcelScript.DocumentProperties
 summary: ブックのプロパティを表します。
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script creates a new worksheet that displays some of the document properties.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n    // Get the document properties.\n    const properties: ExcelScript.DocumentProperties = workbook.getProperties();\n\n    // Create a new worksheet called \"Metadata\".\n    const newWorksheet = workbook.addWorksheet(\"Metadata\");\n    \n    // Create an array to store the string values of properties to save.\n    let values: string[][] = [];\n    values.push([\"Creation Date\", properties.getCreationDate().toString()]);\n    values.push([\"Author\", properties.getAuthor()]);\n    values.push([\"Last Edited By\", properties.getLastAuthor()]);\n    \n    // Set the property values to a range on the new worksheet.\n    newWorksheet.getRange(\"A1:B3\").setValues(values);\n}\n```"
 isPreview: false
 isDeprecated: false
 type: interface
@@ -369,9 +369,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: b145a889420ad995959a9445c8cd936f8e588d39
-  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
+  ms.openlocfilehash: fdfac6367693316e150160054dde7e6e7909b7f9
+  ms.sourcegitcommit: 06347048781ffab27a78855e3fafb81fe966e963
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 05/13/2022
-  ms.locfileid: "65394140"
+  ms.lasthandoff: 06/17/2022
+  ms.locfileid: "66140225"
