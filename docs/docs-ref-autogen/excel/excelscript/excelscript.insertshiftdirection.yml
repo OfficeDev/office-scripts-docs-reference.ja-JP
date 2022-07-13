@@ -1,18 +1,25 @@
 ### YamlMime:TSEnum
 name: ExcelScript.InsertShiftDirection
-uid: 'ExcelScript!ExcelScript.InsertShiftDirection:enum'
+uid: ExcelScript!ExcelScript.InsertShiftDirection:enum
 package: ExcelScript!
 fullName: ExcelScript.InsertShiftDirection
 summary: ''
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script inserts headers at the top of the worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook)\n{\n  let currentSheet = workbook.getActiveWorksheet();\n\n  // Create headers for 3 columns.\n  let myHeaders = [[\"NAME\", \"ID\", \"ROLE\"]];\n\n  // Add a blank first row and push existing data down a row.\n  let firstRow = currentSheet.getRange(\"1:1\");\n  firstRow.insert(ExcelScript.InsertShiftDirection.down);\n\n  // Add the headers.\n  currentSheet.getRange(\"A1:C1\").setValues(myHeaders);\n}\n```"
 isPreview: false
 isDeprecated: false
 fields:
-  - name: down
-    uid: 'ExcelScript!ExcelScript.InsertShiftDirection.down:member'
-    package: ExcelScript!
-    summary: ''
-  - name: right
-    uid: 'ExcelScript!ExcelScript.InsertShiftDirection.right:member'
-    package: ExcelScript!
-    summary: ''
+- name: down
+  uid: ExcelScript!ExcelScript.InsertShiftDirection.down:member
+  package: ExcelScript!
+  summary: ''
+- name: right
+  uid: ExcelScript!ExcelScript.InsertShiftDirection.right:member
+  package: ExcelScript!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 11ead1e3c66af090d69c14326543d28265a6f1c9
+  ms.sourcegitcommit: 224152865ad439182e63f5630f0f0aec589420a7
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 07/13/2022
+  ms.locfileid: "66767092"

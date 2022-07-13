@@ -1,42 +1,49 @@
 ### YamlMime:TSEnum
 name: ExcelScript.RangeValueType
-uid: 'ExcelScript!ExcelScript.RangeValueType:enum'
+uid: ExcelScript!ExcelScript.RangeValueType:enum
 package: ExcelScript!
 fullName: ExcelScript.RangeValueType
 summary: ''
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script formats rows in a worksheet based on the first value in that row. \n * If it's the boolean value TRUE, the row is bolded. \n * If it's FALSE, nothing is changed. \n * If the value type isn't a boolean, the row is italicized.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the used range in the active worksheet.\n  const sheet = workbook.getActiveWorksheet();\n  const usedRange = sheet.getUsedRange();\n\n  // Get the values in the first column.\n  const firstColumnValues = usedRange.getColumn(0).getValues();\n\n  // Look at the first cell in each row.\n  const rowCount = usedRange.getRowCount();\n  for (let i = 0; i < rowCount; i++) {\n    // Get the type of the first cell to make sure it's a boolean.\n    let firstValueType = usedRange.getCell(i, 0).getValueType();\n\n    // Set the bold or italic of the row as described earlier.\n    if (firstValueType === ExcelScript.RangeValueType.boolean) {\n      if (firstColumnValues[i][0] as boolean === true) {\n        usedRange.getRow(i).getFormat().getFont().setBold(true);\n      } else {\n        usedRange.getRow(i).getFormat().getFont().setBold(false);\n      }\n    } else {\n      usedRange.getRow(i).getFormat().getFont().setItalic(true);\n    }\n  }\n}\n```"
 isPreview: false
 isDeprecated: false
 fields:
-  - name: boolean
-    uid: 'ExcelScript!ExcelScript.RangeValueType.boolean:member'
-    package: ExcelScript!
-    summary: ''
-  - name: double
-    uid: 'ExcelScript!ExcelScript.RangeValueType.double:member'
-    package: ExcelScript!
-    summary: ''
-  - name: empty
-    uid: 'ExcelScript!ExcelScript.RangeValueType.empty:member'
-    package: ExcelScript!
-    summary: ''
-  - name: error
-    uid: 'ExcelScript!ExcelScript.RangeValueType.error:member'
-    package: ExcelScript!
-    summary: ''
-  - name: integer
-    uid: 'ExcelScript!ExcelScript.RangeValueType.integer:member'
-    package: ExcelScript!
-    summary: ''
-  - name: richValue
-    uid: 'ExcelScript!ExcelScript.RangeValueType.richValue:member'
-    package: ExcelScript!
-    summary: ''
-  - name: string
-    uid: 'ExcelScript!ExcelScript.RangeValueType.string:member'
-    package: ExcelScript!
-    summary: ''
-  - name: unknown
-    uid: 'ExcelScript!ExcelScript.RangeValueType.unknown:member'
-    package: ExcelScript!
-    summary: ''
+- name: boolean
+  uid: ExcelScript!ExcelScript.RangeValueType.boolean:member
+  package: ExcelScript!
+  summary: ''
+- name: double
+  uid: ExcelScript!ExcelScript.RangeValueType.double:member
+  package: ExcelScript!
+  summary: ''
+- name: empty
+  uid: ExcelScript!ExcelScript.RangeValueType.empty:member
+  package: ExcelScript!
+  summary: ''
+- name: error
+  uid: ExcelScript!ExcelScript.RangeValueType.error:member
+  package: ExcelScript!
+  summary: ''
+- name: integer
+  uid: ExcelScript!ExcelScript.RangeValueType.integer:member
+  package: ExcelScript!
+  summary: ''
+- name: richValue
+  uid: ExcelScript!ExcelScript.RangeValueType.richValue:member
+  package: ExcelScript!
+  summary: ''
+- name: string
+  uid: ExcelScript!ExcelScript.RangeValueType.string:member
+  package: ExcelScript!
+  summary: ''
+- name: unknown
+  uid: ExcelScript!ExcelScript.RangeValueType.unknown:member
+  package: ExcelScript!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 97ce40e8553ea8a6efef1cee50c1f1eb6850a7b1
+  ms.sourcegitcommit: 224152865ad439182e63f5630f0f0aec589420a7
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 07/13/2022
+  ms.locfileid: "66766917"

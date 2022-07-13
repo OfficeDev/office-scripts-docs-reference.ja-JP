@@ -1,58 +1,65 @@
 ### YamlMime:TSEnum
 name: ExcelScript.NumberFormatCategory
-uid: 'ExcelScript!ExcelScript.NumberFormatCategory:enum'
+uid: ExcelScript!ExcelScript.NumberFormatCategory:enum
 package: ExcelScript!
 fullName: ExcelScript.NumberFormatCategory
 summary: 数値形式のカテゴリを表します。
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script finds cells in a table column that are not formatted as currency\n * and sets the fill color to red.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the \"Cost\" column from the \"Expenses\" table.\n  const table = workbook.getTable(\"Expenses\");\n  const costColumn = table.getColumnByName(\"Cost\");\n  const costColumnRange = costColumn.getRangeBetweenHeaderAndTotal();\n\n  // Get the number format categories for the column's range.\n  const numberFormatCategories = costColumnRange.getNumberFormatCategories();\n\n  // If any cell in the column doesn't have a currency format, make the cell red.\n  numberFormatCategories.forEach((category, index) =>{\n    if (category[0] != ExcelScript.NumberFormatCategory.currency) {\n      costColumnRange.getCell(index, 0).getFormat().getFill().setColor(\"red\");\n    }\n  }); \n}\n```"
 isPreview: false
 isDeprecated: false
 fields:
-  - name: accounting
-    uid: 'ExcelScript!ExcelScript.NumberFormatCategory.accounting:member'
-    package: ExcelScript!
-    summary: 会計書式は、列内の通貨記号と小数点を表します。
-  - name: currency
-    uid: 'ExcelScript!ExcelScript.NumberFormatCategory.currency:member'
-    package: ExcelScript!
-    summary: 通貨形式は、一般的な金銭的な値に使用されます。 列内の小数点を揃える場合は、アカウンティング形式を使用します。
-  - name: custom
-    uid: 'ExcelScript!ExcelScript.NumberFormatCategory.custom:member'
-    package: ExcelScript!
-    summary: 任意のカテゴリの一部ではないカスタム形式。
-  - name: date
-    uid: 'ExcelScript!ExcelScript.NumberFormatCategory.date:member'
-    package: ExcelScript!
-    summary: 日付形式では、日付と時刻のシリアル番号が日付値として表示されます。 アスタリスク (*) で始まる日付形式は、オペレーティング システムに指定された地域の日付と時刻の設定の変更に応答します。 アスタリスクのない形式は、オペレーティング システム設定の影響を受けずに使用できます。
-  - name: fraction
-    uid: 'ExcelScript!ExcelScript.NumberFormatCategory.fraction:member'
-    package: ExcelScript!
-    summary: 分数の形式は、セル値を整数として表示し、残りは最も近い分数の値に丸められます。
-  - name: general
-    uid: 'ExcelScript!ExcelScript.NumberFormatCategory.general:member'
-    package: ExcelScript!
-    summary: 一般的な書式セルには、特定の数値形式はありません。
-  - name: number
-    uid: 'ExcelScript!ExcelScript.NumberFormatCategory.number:member'
-    package: ExcelScript!
-    summary: 数値は、数値の一般的な表示に使用されます。 通貨と会計は、金銭的価値に特化した書式を提供します。
-  - name: percentage
-    uid: 'ExcelScript!ExcelScript.NumberFormatCategory.percentage:member'
-    package: ExcelScript!
-    summary: パーセント形式はセル値に 100 を掛け、結果にパーセント記号を表示します。
-  - name: scientific
-    uid: 'ExcelScript!ExcelScript.NumberFormatCategory.scientific:member'
-    package: ExcelScript!
-    summary: 科学形式では、セルの値を 1 ~ 10 の数値に 10 の乗数で表示します。
-  - name: special
-    uid: 'ExcelScript!ExcelScript.NumberFormatCategory.special:member'
-    package: ExcelScript!
-    summary: 特別な形式は、リストとデータベース値の追跡に役立ちます。
-  - name: text
-    uid: 'ExcelScript!ExcelScript.NumberFormatCategory.text:member'
-    package: ExcelScript!
-    summary: テキスト形式のセルは、数値がセル内にある場合でもテキストとして扱います。 セルは入力したとおりに表示されます。
-  - name: time
-    uid: 'ExcelScript!ExcelScript.NumberFormatCategory.time:member'
-    package: ExcelScript!
-    summary: 時刻形式では、日付と時刻のシリアル番号が日付値として表示されます。 アスタリスク (*) で始まる時刻形式は、オペレーティング システムに指定された地域の日付と時刻の設定の変更に応答します。 アスタリスクのない形式は、オペレーティング システム設定の影響を受けずに使用できます。
+- name: accounting
+  uid: ExcelScript!ExcelScript.NumberFormatCategory.accounting:member
+  package: ExcelScript!
+  summary: 会計書式は、列内の通貨記号と小数点を並びます。
+- name: currency
+  uid: ExcelScript!ExcelScript.NumberFormatCategory.currency:member
+  package: ExcelScript!
+  summary: 通貨形式は、一般的な通貨値に使用されます。 アカウンティング形式を使用して、列内の小数点を揃えます。
+- name: custom
+  uid: ExcelScript!ExcelScript.NumberFormatCategory.custom:member
+  package: ExcelScript!
+  summary: 任意のカテゴリの一部ではないカスタム形式。
+- name: date
+  uid: ExcelScript!ExcelScript.NumberFormatCategory.date:member
+  package: ExcelScript!
+  summary: 日付形式では、日付と時刻のシリアル番号が日付値として表示されます。 アスタリスク (*) で始まる日付形式は、オペレーティング システムに指定されている地域の日付と時刻の設定の変更に応答します。 アスタリスクのない形式は、オペレーティング システムの設定の影響を受けません。
+- name: fraction
+  uid: ExcelScript!ExcelScript.NumberFormatCategory.fraction:member
+  package: ExcelScript!
+  summary: 分数形式では、セル値が整数として表示され、残りの部分は最も近い分数の値に丸められます。
+- name: general
+  uid: ExcelScript!ExcelScript.NumberFormatCategory.general:member
+  package: ExcelScript!
+  summary: 一般的な書式セルには、特定の数値書式はありません。
+- name: number
+  uid: ExcelScript!ExcelScript.NumberFormatCategory.number:member
+  package: ExcelScript!
+  summary: 数値は、数値の一般的な表示に使用されます。 通貨と会計は、金額に特化した書式設定を提供します。
+- name: percentage
+  uid: ExcelScript!ExcelScript.NumberFormatCategory.percentage:member
+  package: ExcelScript!
+  summary: パーセンテージ形式では、セル値に 100 を乗算し、パーセント記号で結果を表示します。
+- name: scientific
+  uid: ExcelScript!ExcelScript.NumberFormatCategory.scientific:member
+  package: ExcelScript!
+  summary: 科学形式では、セル値を 1 ~ 10 の数値に 10 の累乗で乗算して表示します。
+- name: special
+  uid: ExcelScript!ExcelScript.NumberFormatCategory.special:member
+  package: ExcelScript!
+  summary: 特別な形式は、リストとデータベースの値の追跡に役立ちます。
+- name: text
+  uid: ExcelScript!ExcelScript.NumberFormatCategory.text:member
+  package: ExcelScript!
+  summary: テキスト形式のセルは、数値がセル内にある場合でもテキストとして扱われます。 セルは、入力したとおりに表示されます。
+- name: time
+  uid: ExcelScript!ExcelScript.NumberFormatCategory.time:member
+  package: ExcelScript!
+  summary: 時刻形式では、日付と時刻のシリアル番号が日付値として表示されます。 アスタリスク (*) で始まる時刻形式は、オペレーティング システムに指定された地域の日付と時刻の設定の変更に応答します。 アスタリスクのない形式は、オペレーティング システムの設定の影響を受けません。
+metadata:
+  ms.openlocfilehash: 30806ddddb236ff15b8082dd22b0004c365365a9
+  ms.sourcegitcommit: 224152865ad439182e63f5630f0f0aec589420a7
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 07/13/2022
+  ms.locfileid: "66766929"

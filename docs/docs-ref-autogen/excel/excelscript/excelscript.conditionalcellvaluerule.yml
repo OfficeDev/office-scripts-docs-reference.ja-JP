@@ -1,47 +1,54 @@
 ### YamlMime:TSType
 name: ExcelScript.ConditionalCellValueRule
-uid: 'ExcelScript!ExcelScript.ConditionalCellValueRule:interface'
+uid: ExcelScript!ExcelScript.ConditionalCellValueRule:interface
 package: ExcelScript!
 fullName: ExcelScript.ConditionalCellValueRule
 summary: セル値の条件付き書式ルールを表します。
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script applies conditional formatting to a range.\n * That formatting is conditional upon the cell's numerical value.\n * Any value between 50 and 75 will have the cell fill color changed and the font made italic.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the range to format.\n  const sheet = workbook.getActiveWorksheet();\n  const ratingColumn = sheet.getRange(\"D2:D20\");\n\n  // Add cell value conditional formatting.\n  const cellValueConditionalFormatting = ratingColumn.addConditionalFormat(ExcelScript.ConditionalFormatType.cellValue).getCellValue();\n  \n  // Create the condition, in this case when the cell value is between 50 and 75.\n  let rule: ExcelScript.ConditionalCellValueRule = {\n    formula1: \"50\",\n    formula2: \"75\",\n    operator: ExcelScript.ConditionalCellValueOperator.between\n  };\n  cellValueConditionalFormatting.setRule(rule);\n\n  // Set the format to apply when the condition is met.\n  let format = cellValueConditionalFormatting.getFormat();\n  format.getFill().setColor(\"yellow\");\n  format.getFont().setItalic(true);\n}\n```"
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: formula1
-    uid: 'ExcelScript!ExcelScript.ConditionalCellValueRule#formula1:member'
-    package: ExcelScript!
-    fullName: formula1
-    summary: 必要に応じて、条件付き書式ルールを評価する数式。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'formula1: string;'
-      return:
-        type: string
-  - name: formula2
-    uid: 'ExcelScript!ExcelScript.ConditionalCellValueRule#formula2:member'
-    package: ExcelScript!
-    fullName: formula2
-    summary: 必要に応じて、条件付き書式ルールを評価する数式。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'formula2?: string;'
-      return:
-        type: string
-  - name: operator
-    uid: 'ExcelScript!ExcelScript.ConditionalCellValueRule#operator:member'
-    package: ExcelScript!
-    fullName: operator
-    summary: セル値の条件付き書式の演算子。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'operator: ConditionalCellValueOperator;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.ConditionalCellValueOperator:enum" />'
+- name: formula1
+  uid: ExcelScript!ExcelScript.ConditionalCellValueRule#formula1:member
+  package: ExcelScript!
+  fullName: formula1
+  summary: 必要に応じて、条件付き書式規則を評価する数式。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'formula1: string;'
+    return:
+      type: string
+- name: formula2
+  uid: ExcelScript!ExcelScript.ConditionalCellValueRule#formula2:member
+  package: ExcelScript!
+  fullName: formula2
+  summary: 必要に応じて、条件付き書式規則を評価する数式。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'formula2?: string;'
+    return:
+      type: string
+- name: operator
+  uid: ExcelScript!ExcelScript.ConditionalCellValueRule#operator:member
+  package: ExcelScript!
+  fullName: operator
+  summary: セル値の条件付き書式の演算子。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'operator: ConditionalCellValueOperator;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ConditionalCellValueOperator:enum" />
+metadata:
+  ms.openlocfilehash: 4ad1a7ef13917eadd37e1ef70cfac72435737c59
+  ms.sourcegitcommit: 224152865ad439182e63f5630f0f0aec589420a7
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 07/13/2022
+  ms.locfileid: "66767148"

@@ -81,7 +81,7 @@ methods:
   uid: ExcelScript!ExcelScript.Filter#applyCustomFilter:member(1)
   package: ExcelScript!
   fullName: applyCustomFilter(criteria1, criteria2, oper)
-  summary: 指定した条件文字列の列に "Icon" フィルターを適用します。
+  summary: 指定した条件文字列の列に "アイコン" フィルターを適用します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -97,10 +97,10 @@ methods:
       description: 最初の条件の文字列です。
       type: string
     - id: criteria2
-      description: 省略可能。2 つ目の条件の文字列です。
+      description: 省略可能。 2 つ目の条件の文字列です。
       type: string
     - id: oper
-      description: 省略可能。2 つの条件を結合する方法を記述する演算子です。
+      description: 省略可能。 2 つの条件を結合する方法を記述する演算子です。
       type: <xref uid="ExcelScript!ExcelScript.FilterOperator:enum" />
     return:
       type: void
@@ -117,11 +117,11 @@ methods:
     content: 'applyDynamicFilter(criteria: DynamicFilterCriteria): void;'
     parameters:
     - id: criteria
-      description: 適用する動的な条件。
+      description: 適用する動的条件。
       type: <xref uid="ExcelScript!ExcelScript.DynamicFilterCriteria:enum" />
     return:
       type: void
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script applies a filter to a table that filters it \n * to only show rows with dates from the previous month.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the table named \"ReportTable\".\n  const table = workbook.getTable(\"ReportTable\");\n\n  // Get the column with the header \"Date\".\n  const dateColumn = table.getColumnByName(\"Date\");\n\n  // Apply a dynamic filter to the column. \n  // `lastMonth` will only show rows with a date from the previous month.\n  dateColumn.getFilter().applyDynamicFilter(ExcelScript.DynamicFilterCriteria.lastMonth);\n}\n```"
 - name: applyFontColorFilter(color)
   uid: ExcelScript!ExcelScript.Filter#applyFontColorFilter:member(1)
   package: ExcelScript!
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.Filter#applyIconFilter:member(1)
   package: ExcelScript!
   fullName: applyIconFilter(icon)
-  summary: 指定したアイコンの列に "Icon" フィルターを適用します。
+  summary: 指定したアイコンの列に "アイコン" フィルターを適用します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -202,7 +202,7 @@ methods:
     content: 'applyValuesFilter(values: Array<string | FilterDatetime>): void;'
     parameters:
     - id: values
-      description: 表示する値のリスト。 これは、文字列の配列またはオブジェクトの配列である必要 `ExcelScript.FilterDateTime` があります。
+      description: 表示する値のリスト。 これは、文字列の配列またはオブジェクトの `ExcelScript.FilterDateTime` 配列である必要があります。
       type: Array&lt;string | <xref uid="ExcelScript!ExcelScript.FilterDatetime:interface" />&gt;
     return:
       type: void
@@ -234,9 +234,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.FilterCriteria:interface" />
       description: ''
 metadata:
-  ms.openlocfilehash: c7a8aeffb0d54e23920b3eafbdcd8fe93798e637
-  ms.sourcegitcommit: 9b58b1ac2de88fae836d9f575fbc59c498a0b4ea
+  ms.openlocfilehash: c387a30a5fb3630a161fdc9f68954b61d07b8118
+  ms.sourcegitcommit: 224152865ad439182e63f5630f0f0aec589420a7
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 03/15/2022
-  ms.locfileid: "63508382"
+  ms.lasthandoff: 07/13/2022
+  ms.locfileid: "66767036"

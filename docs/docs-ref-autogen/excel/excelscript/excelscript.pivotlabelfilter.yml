@@ -1,71 +1,78 @@
 ### YamlMime:TSType
 name: ExcelScript.PivotLabelFilter
-uid: 'ExcelScript!ExcelScript.PivotLabelFilter:interface'
+uid: ExcelScript!ExcelScript.PivotLabelFilter:interface
 package: ExcelScript!
 fullName: ExcelScript.PivotLabelFilter
-summary: ピボットフィールドに適用するラベル フィルターの構成可能なテンプレート。 フィルター `condition` を操作するために設定する必要がある条件を定義します。
-remarks: ''
+summary: PivotField に適用するラベル フィルター用の構成可能なテンプレート。 フィルター `condition` を動作させるには、どのような条件を設定する必要があるかを定義します。
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script filters items that start with \"L\" from the \"Type\" field\n * of the \"Farm Sales\" PivotTable.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the PivotTable.\n  const pivotTable = workbook.getActiveWorksheet().getPivotTable(\"Farm Sales\");\n\n  // Get the \"Type\" field.\n  const field = pivotTable.getHierarchy(\"Type\").getPivotField(\"Type\");\n\n  // Filter out any types that start with \"L\" (such as \"Lemons\" and \"Limes\").\n  const filter: ExcelScript.PivotLabelFilter = {\n    condition: ExcelScript.LabelFilterCondition.beginsWith,\n    substring: \"L\",\n    exclusive: true\n  };\n\n  // Apply the label filter to the field.\n  field.applyFilter({ labelFilter: filter });\n}\n```"
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: condition
-    uid: 'ExcelScript!ExcelScript.PivotLabelFilter#condition:member'
-    package: ExcelScript!
-    fullName: condition
-    summary: 必要なフィルター条件を定義するフィルターの条件を指定します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'condition: LabelFilterCondition;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.LabelFilterCondition:enum" />'
-  - name: exclusive
-    uid: 'ExcelScript!ExcelScript.PivotLabelFilter#exclusive:member'
-    package: ExcelScript!
-    fullName: exclusive
-    summary: もし `true`<!-- -->を選択すると *、条件を満* たすアイテムが除外されます。 既定値は `false` (条件を満たすアイテムを含めるフィルター)。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'exclusive?: boolean;'
-      return:
-        type: boolean
-  - name: lowerBound
-    uid: 'ExcelScript!ExcelScript.PivotLabelFilter#lowerBound:member'
-    package: ExcelScript!
-    fullName: lowerBound
-    summary: 'フィルター条件の範囲の下限 `between` 。 注: 数値文字列は、他の数値文字列と比較するときに数値として扱われます。'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'lowerBound?: string;'
-      return:
-        type: string
-  - name: substring
-    uid: 'ExcelScript!ExcelScript.PivotLabelFilter#substring:member'
-    package: ExcelScript!
-    fullName: substring
-    summary: 'に使用されるサブ文字列 `beginsWith`<!-- -->, `endsWith`<!-- -->、および `contains` フィルター条件。'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'substring?: string;'
-      return:
-        type: string
-  - name: upperBound
-    uid: 'ExcelScript!ExcelScript.PivotLabelFilter#upperBound:member'
-    package: ExcelScript!
-    fullName: upperBound
-    summary: 'フィルター条件の範囲の上限 `between` 。 注: 数値文字列は、他の数値文字列と比較するときに数値として扱われます。'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'upperBound?: string;'
-      return:
-        type: string
+- name: condition
+  uid: ExcelScript!ExcelScript.PivotLabelFilter#condition:member
+  package: ExcelScript!
+  fullName: condition
+  summary: 必要なフィルター条件を定義するフィルターの条件を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'condition: LabelFilterCondition;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.LabelFilterCondition:enum" />
+- name: exclusive
+  uid: ExcelScript!ExcelScript.PivotLabelFilter#exclusive:member
+  package: ExcelScript!
+  fullName: exclusive
+  summary: もし `true`<!-- -->、フィルター *は、条件を* 満たすアイテムを除外します。 既定値は `false` (条件を満たすアイテムを含めるフィルター) です。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'exclusive?: boolean;'
+    return:
+      type: boolean
+- name: lowerBound
+  uid: ExcelScript!ExcelScript.PivotLabelFilter#lowerBound:member
+  package: ExcelScript!
+  fullName: lowerBound
+  summary: 'フィルター条件の範囲 `between` の下限。 注: 数値文字列は、他の数値文字列と比較されるときに数値として扱われます。'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'lowerBound?: string;'
+    return:
+      type: string
+- name: substring
+  uid: ExcelScript!ExcelScript.PivotLabelFilter#substring:member
+  package: ExcelScript!
+  fullName: substring
+  summary: に使用される部分文字列 `beginsWith`<!-- -->, `endsWith`<!-- -->を選択し、 `contains` 条件をフィルター処理します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'substring?: string;'
+    return:
+      type: string
+- name: upperBound
+  uid: ExcelScript!ExcelScript.PivotLabelFilter#upperBound:member
+  package: ExcelScript!
+  fullName: upperBound
+  summary: 'フィルター条件の範囲 `between` の上限。 注: 数値文字列は、他の数値文字列と比較されるときに数値として扱われます。'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'upperBound?: string;'
+    return:
+      type: string
+metadata:
+  ms.openlocfilehash: 63e09ab08dae58b5cf99510c533c6bb206bdac6f
+  ms.sourcegitcommit: 224152865ad439182e63f5630f0f0aec589420a7
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 07/13/2022
+  ms.locfileid: "66767141"

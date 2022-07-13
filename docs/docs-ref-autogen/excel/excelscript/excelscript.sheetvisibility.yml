@@ -1,22 +1,29 @@
 ### YamlMime:TSEnum
 name: ExcelScript.SheetVisibility
-uid: 'ExcelScript!ExcelScript.SheetVisibility:enum'
+uid: ExcelScript!ExcelScript.SheetVisibility:enum
 package: ExcelScript!
 fullName: ExcelScript.SheetVisibility
 summary: ''
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script unhides all the worksheets in the workbook.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Iterate over each worksheet.\n  workbook.getWorksheets().forEach((worksheet) => {\n    // Set the worksheet visibility to visible.\n    worksheet.setVisibility(ExcelScript.SheetVisibility.visible);\n  });\n}\n```"
 isPreview: false
 isDeprecated: false
 fields:
-  - name: hidden
-    uid: 'ExcelScript!ExcelScript.SheetVisibility.hidden:member'
-    package: ExcelScript!
-    summary: ''
-  - name: veryHidden
-    uid: 'ExcelScript!ExcelScript.SheetVisibility.veryHidden:member'
-    package: ExcelScript!
-    summary: ''
-  - name: visible
-    uid: 'ExcelScript!ExcelScript.SheetVisibility.visible:member'
-    package: ExcelScript!
-    summary: ''
+- name: hidden
+  uid: ExcelScript!ExcelScript.SheetVisibility.hidden:member
+  package: ExcelScript!
+  summary: ''
+- name: veryHidden
+  uid: ExcelScript!ExcelScript.SheetVisibility.veryHidden:member
+  package: ExcelScript!
+  summary: ''
+- name: visible
+  uid: ExcelScript!ExcelScript.SheetVisibility.visible:member
+  package: ExcelScript!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 5da0d6f1500410d75bd5f0a0e9d3174ed656393f
+  ms.sourcegitcommit: 224152865ad439182e63f5630f0f0aec589420a7
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 07/13/2022
+  ms.locfileid: "66767155"

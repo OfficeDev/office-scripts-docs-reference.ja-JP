@@ -1,22 +1,29 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ProtectionSelectionMode
-uid: 'ExcelScript!ExcelScript.ProtectionSelectionMode:enum'
+uid: ExcelScript!ExcelScript.ProtectionSelectionMode:enum
 package: ExcelScript!
 fullName: ExcelScript.ProtectionSelectionMode
 summary: ''
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script protects cells from being selected on the current worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the protection settings for the current worksheet.\n  const currentSheet = workbook.getActiveWorksheet();\n  const sheetProtection = currentSheet.getProtection();\n\n  // Create a new WorksheetProtectionOptions object with the selectionMode property set to `none`.\n  let protectionOptions : ExcelScript.WorksheetProtectionOptions = {\n    selectionMode: ExcelScript.ProtectionSelectionMode.none\n  }\n\n  // Apply the given protection options.\n  sheetProtection.protect(protectionOptions);\n}\n```"
 isPreview: false
 isDeprecated: false
 fields:
-  - name: none
-    uid: 'ExcelScript!ExcelScript.ProtectionSelectionMode.none:member'
-    package: ExcelScript!
-    summary: セルの選択は許可されません。
-  - name: normal
-    uid: 'ExcelScript!ExcelScript.ProtectionSelectionMode.normal:member'
-    package: ExcelScript!
-    summary: すべてのセルに対して選択が許可されます。
-  - name: unlocked
-    uid: 'ExcelScript!ExcelScript.ProtectionSelectionMode.unlocked:member'
-    package: ExcelScript!
-    summary: 選択は、ロックされていないセルに対してのみ許可されます。
+- name: none
+  uid: ExcelScript!ExcelScript.ProtectionSelectionMode.none:member
+  package: ExcelScript!
+  summary: セルの選択は許可されません。
+- name: normal
+  uid: ExcelScript!ExcelScript.ProtectionSelectionMode.normal:member
+  package: ExcelScript!
+  summary: すべてのセルに対して選択が許可されます。
+- name: unlocked
+  uid: ExcelScript!ExcelScript.ProtectionSelectionMode.unlocked:member
+  package: ExcelScript!
+  summary: 選択は、ロックされていないセルに対してのみ許可されます。
+metadata:
+  ms.openlocfilehash: f02e4d2911cfa397411c62c174da219e2f6fc633
+  ms.sourcegitcommit: 224152865ad439182e63f5630f0f0aec589420a7
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 07/13/2022
+  ms.locfileid: "66766952"

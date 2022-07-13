@@ -4,22 +4,22 @@ uid: ExcelScript!ExcelScript.WorkbookLinksRefreshMode:enum
 package: ExcelScript!
 fullName: ExcelScript.WorkbookLinksRefreshMode
 summary: ブック リンクの更新モードを表します。
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script refreshes all the links to external workbooks, \n * if the linked workbook refresh mode is set to manual.\n * To learn about linked workbooks, see https://support.microsoft.com/office/create-an-external-reference-link-to-a-cell-range-in-another-workbook-c98d1803-dd75-4668-ac6a-d7cca2a9b95f.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Check the refresh mode.\n  if (workbook.getLinkedWorkbookRefreshMode() === ExcelScript.WorkbookLinksRefreshMode.manual) {\n    console.log(\"Refreshing workbook links\");\n\n    // Trigger a refresh of linked workbook content.\n    workbook.refreshAllLinksToLinkedWorkbooks();\n  }\n}\n```"
 isPreview: false
 isDeprecated: false
 fields:
 - name: automatic
   uid: ExcelScript!ExcelScript.WorkbookLinksRefreshMode.automatic:member
   package: ExcelScript!
-  summary: ブック のリンクは、アプリケーションによって決定される一定の間隔Excelされます。
+  summary: ブックのリンクは、Excel アプリケーションによって決まる一定の間隔で更新されます。
 - name: manual
   uid: ExcelScript!ExcelScript.WorkbookLinksRefreshMode.manual:member
   package: ExcelScript!
-  summary: ブックリンクは手動で更新されます。
+  summary: ブックのリンクは手動で更新されます。
 metadata:
-  ms.openlocfilehash: b10e670da4146f94e49053a67d15c391909009de
-  ms.sourcegitcommit: 279af9e14fb2bf9e0d54a7e3ead0e3c4ca4164e8
+  ms.openlocfilehash: 43c1229c92cf42b0d9c2d93c10dddf5dcc55e09d
+  ms.sourcegitcommit: 224152865ad439182e63f5630f0f0aec589420a7
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/05/2021
-  ms.locfileid: "60793433"
+  ms.lasthandoff: 07/13/2022
+  ms.locfileid: "66766966"

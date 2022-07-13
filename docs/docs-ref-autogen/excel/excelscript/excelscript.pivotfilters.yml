@@ -3,7 +3,7 @@ name: ExcelScript.PivotFilters
 uid: ExcelScript!ExcelScript.PivotFilters:interface
 package: ExcelScript!
 fullName: ExcelScript.PivotFilters
-summary: 特定の PivotField に現在適用されているすべてのピボットフィルターを表すインターフェイス。
+summary: 特定の PivotField に現在適用されているすべての PivotFilter を表すインターフェイス。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotFilters#dateFilter:member
   package: ExcelScript!
   fullName: dateFilter
-  summary: PivotField の現在適用されている日付フィルター。 このプロパティは、 `null` 値フィルターが適用されない場合です。
+  summary: PivotField の現在適用されている日付フィルター。 このプロパティは、 `null` 値フィルターが適用されていない場合です。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotFilters#labelFilter:member
   package: ExcelScript!
   fullName: labelFilter
-  summary: PivotField の現在適用されているラベル フィルター。 このプロパティは、 `null` 値フィルターが適用されない場合です。
+  summary: PivotField の現在適用されているラベル フィルター。 このプロパティは、 `null` 値フィルターが適用されていない場合です。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -33,11 +33,12 @@ properties:
     content: 'labelFilter?: PivotLabelFilter;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.PivotLabelFilter:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script filters items that start with \"L\" from the \"Type\" field\n * of the \"Farm Sales\" PivotTable.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the PivotTable.\n  const pivotTable = workbook.getActiveWorksheet().getPivotTable(\"Farm Sales\");\n\n  // Get the \"Type\" field.\n  const field = pivotTable.getHierarchy(\"Type\").getPivotField(\"Type\");\n\n  // Filter out any types that start with \"L\" (such as \"Lemons\" and \"Limes\").\n  const filter: ExcelScript.PivotLabelFilter = {\n    condition: ExcelScript.LabelFilterCondition.beginsWith,\n    substring: \"L\",\n    exclusive: true\n  };\n\n  // Apply the label filter to the field.\n  field.applyFilter({ labelFilter: filter });\n}\n```"
 - name: manualFilter
   uid: ExcelScript!ExcelScript.PivotFilters#manualFilter:member
   package: ExcelScript!
   fullName: manualFilter
-  summary: PivotField の現在適用されている手動フィルター。 このプロパティは、 `null` 値フィルターが適用されない場合です。
+  summary: PivotField の現在適用されている手動フィルター。 このプロパティは、 `null` 値フィルターが適用されていない場合です。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -50,7 +51,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotFilters#valueFilter:member
   package: ExcelScript!
   fullName: valueFilter
-  summary: PivotField の現在適用されている値フィルター。 このプロパティは、 `null` 値フィルターが適用されない場合です。
+  summary: PivotField の現在適用されている値フィルター。 このプロパティは、 `null` 値フィルターが適用されていない場合です。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -60,9 +61,9 @@ properties:
       type: <xref uid="ExcelScript!ExcelScript.PivotValueFilter:interface" />
       description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script applies a PivotValueFilter to the first row hierarchy in the PivotTable.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the PivotTable on the current worksheet.\n  let sheet = workbook.getActiveWorksheet();\n  let pivotTable = sheet.getPivotTables()[0];\n\n  // Get the first row hierarchy to use as the field which gets filtered.\n  let rowHierarchy = pivotTable.getRowHierarchies()[0];\n\n  // Get the first data hierarchy to use as the values for filtering the rows.\n  let dataHierarchy = pivotTable.getDataHierarchies()[0];\n\n  // Create a filter that excludes values greater than 500.\n  let filter: ExcelScript.PivotValueFilter = {\n    condition: ExcelScript.ValueFilterCondition.greaterThan,\n    comparator: 500,\n    value: dataHierarchy.getName()\n  };\n\n  // Apply the filter.\n  rowHierarchy.getPivotField(rowHierarchy.getName()).applyFilter({\n    valueFilter: filter\n  });\n}\n```"
 metadata:
-  ms.openlocfilehash: fa190ca98e4c263c4c4fd015b306e2da4092557e
-  ms.sourcegitcommit: b9473966fe37e1ac701719cf9fc4714c572878ca
+  ms.openlocfilehash: edb1b87af0fd2d73aabcd7c0156362fac391ea11
+  ms.sourcegitcommit: 224152865ad439182e63f5630f0f0aec589420a7
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 03/30/2022
-  ms.locfileid: "64536525"
+  ms.lasthandoff: 07/13/2022
+  ms.locfileid: "66767078"

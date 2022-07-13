@@ -263,10 +263,10 @@ methods:
     content: 'getCell(row: number, column: number): Range;'
     parameters:
     - id: row
-      description: 取得するセルの行番号。0 を起点とする番号になります。
+      description: 取得するセルの行番号。 0 を起点とする番号になります。
       type: number
     - id: column
-      description: 取得セルの列番号。0 を起点とする番号になります。
+      description: 取得セルの列番号。 0 を起点とする番号になります。
       type: number
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -296,7 +296,7 @@ methods:
     content: 'getColumn(column: number): Range;'
     parameters:
     - id: column
-      description: 取得する範囲の列番号。0 を起点とする番号になります。
+      description: 取得する範囲の列番号。 0 を起点とする番号になります。
       type: number
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -460,7 +460,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getExtendedRange:member(1)
   package: ExcelScript!
   fullName: getExtendedRange(direction, activeCell)
-  summary: 指定した方向に基づいて、現在の範囲と範囲の端までの範囲を含む範囲オブジェクトを返します。 これは、Windows UI のExcelの Ctrl + Shift + 方向キーの動作と一致します。
+  summary: 指定した方向に基づいて、現在の範囲と範囲の端までの範囲を含む範囲オブジェクトを返します。 これは、Windows UI 上の Excel の Ctrl + Shift + Arrow キーの動作と一致します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -687,7 +687,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getLastCell:member(1)
   package: ExcelScript!
   fullName: getLastCell()
-  summary: 範囲内の最後のセルを取得します。たとえば、"B2:D5" の最後のセルは "D5" になります。
+  summary: 範囲内の最後のセルを取得します。 たとえば、"B2:D5" の最後のセルは "D5" になります。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -700,7 +700,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getLastColumn:member(1)
   package: ExcelScript!
   fullName: getLastColumn()
-  summary: 範囲内の最後の列を取得します。たとえば、"B2:D5" の最後の列は "D2:D5" になります。
+  summary: 範囲内の最後の列を取得します。 たとえば、"B2:D5" の最後の列は "D2:D5" になります。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -713,7 +713,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getLastRow:member(1)
   package: ExcelScript!
   fullName: getLastRow()
-  summary: 範囲内の最後の行を取得します。たとえば、"B2:D5" の最後の行は "B5:D5" になります。
+  summary: 範囲内の最後の行を取得します。 たとえば、"B2:D5" の最後の行は "B5:D5" になります。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -778,7 +778,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getNumberFormat:member(1)
   package: ExcelScript!
   fullName: getNumberFormat()
-  summary: 指定した範囲のセル Excel数値書式コードを表します。 範囲に複数のセルが含まれている場合は、最初のセルのデータ (0 の行インデックスと 0 の列インデックスで表されます) が返されます。
+  summary: 指定した範囲のセル Excel 番号書式コードを表します。 範囲に複数のセルが含まれている場合は、最初のセルのデータ (0 の行インデックスと 0 の列インデックスで表されます) が返されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -799,7 +799,7 @@ methods:
     content: 'getNumberFormatCategories(): NumberFormatCategory[][];'
     return:
       type: <xref uid="ExcelScript!ExcelScript.NumberFormatCategory:enum" />[][]
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script finds cells in a table column that are not formatted as currency\n * and sets the fill color to red.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the \"Cost\" column from the \"Expenses\" table.\n  const table = workbook.getTable(\"Expenses\");\n  const costColumn = table.getColumnByName(\"Cost\");\n  const costColumnRange = costColumn.getRangeBetweenHeaderAndTotal();\n\n  // Get the number format categories for the column's range.\n  const numberFormatCategories = costColumnRange.getNumberFormatCategories();\n\n  // If any cell in the column doesn't have a currency format, make the cell red.\n  numberFormatCategories.forEach((category, index) =>{\n    if (category[0] != ExcelScript.NumberFormatCategory.currency) {\n      costColumnRange.getCell(index, 0).getFormat().getFill().setColor(\"red\");\n    }\n  }); \n}\n```"
 - name: getNumberFormatCategory()
   uid: ExcelScript!ExcelScript.Range#getNumberFormatCategory:member(1)
   package: ExcelScript!
@@ -817,7 +817,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getNumberFormatLocal:member(1)
   package: ExcelScript!
   fullName: getNumberFormatLocal()
-  summary: ユーザーの言語設定に基づいて、指定した範囲のセル Excel数値書式コードを表します。 プロパティを取得または設定するときに、Excelは言語や形式の強制を`numberFormatLocal`実行しません。 返されるテキストは、システム設定で指定された言語に基づいて、ローカルで書式設定された文字列を使用します。 範囲に複数のセルが含まれている場合は、最初のセルのデータ (0 の行インデックスと 0 の列インデックスで表されます) が返されます。
+  summary: ユーザーの言語設定に基づいて、特定の範囲のセル Excel 番号書式コードを表します。 プロパティを取得または設定するときに、Excel では言語や書式の強制は `numberFormatLocal` 実行されません。 返されるテキストは、システム設定で指定された言語に基づいて、ローカルで書式設定された文字列を使用します。 範囲に複数のセルが含まれている場合は、最初のセルのデータ (0 の行インデックスと 0 の列インデックスで表されます) が返されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -830,7 +830,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getNumberFormats:member(1)
   package: ExcelScript!
   fullName: getNumberFormats()
-  summary: 指定した範囲のExcelの数値書式コードを表します。
+  summary: 指定した範囲の Excel の数値書式コードを表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -843,7 +843,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getNumberFormatsLocal:member(1)
   package: ExcelScript!
   fullName: getNumberFormatsLocal()
-  summary: ユーザーの言語設定に基づいて、指定した範囲のExcelの数値書式コードを表します。 プロパティを取得または設定するときに、Excelは言語や形式の強制を`numberFormatLocal`実行しません。 返されるテキストは、システム設定で指定された言語に基づいて、ローカルで書式設定された文字列を使用します。
+  summary: ユーザーの言語設定に基づいて、指定した範囲の Excel の数値書式コードを表します。 プロパティを取得または設定するときに、Excel では言語や書式の強制は `numberFormatLocal` 実行されません。 返されるテキストは、システム設定で指定された言語に基づいて、ローカルで書式設定された文字列を使用します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -906,7 +906,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getRangeEdge:member(1)
   package: ExcelScript!
   fullName: getRangeEdge(direction, activeCell)
-  summary: 指定された方向に対応するデータ領域のエッジ セルである範囲オブジェクトを返します。 これは、Windows UI 上のExcelの Ctrl + 方向キーの動作と一致します。
+  summary: 指定された方向に対応するデータ領域のエッジ セルである範囲オブジェクトを返します。 これは、Windows UI 上の Excel の Ctrl + 方向キーの動作と一致します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -958,7 +958,7 @@ methods:
     content: 'getRow(row: number): Range;'
     parameters:
     - id: row
-      description: 取得する範囲の行番号。0 を起点とする番号になります。
+      description: 取得する範囲の行番号。 0 を起点とする番号になります。
       type: number
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -1146,7 +1146,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getText:member(1)
   package: ExcelScript!
   fullName: getText()
-  summary: 指定した範囲のテキスト値を表します。 テキスト値は、セルの幅には依存しません。 EXCEL UI で行われる符号の置換は\#、API によって返されるテキスト値には影響しません。 範囲に複数のセルが含まれている場合は、最初のセルのデータ (0 の行インデックスと 0 の列インデックスで表されます) が返されます。
+  summary: 指定した範囲のテキスト値を表します。 テキスト値は、セルの幅には依存しません。 Excel UI で行われる符号の置換は \# 、API によって返されるテキスト値には影響しません。 範囲に複数のセルが含まれている場合は、最初のセルのデータ (0 の行インデックスと 0 の列インデックスで表されます) が返されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1159,7 +1159,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getTexts:member(1)
   package: ExcelScript!
   fullName: getTexts()
-  summary: 指定した範囲のテキスト値。 テキスト値は、セルの幅には依存しません。 Excel UI で行われる番号記号 (\#) の置換は、API によって返されるテキスト値には影響しません。
+  summary: 指定した範囲のテキスト値。 テキスト値は、セルの幅には依存しません。 Excel UI で行われる数値記号 (\#) の置換は、API によって返されるテキスト値には影響しません。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1215,7 +1215,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getValues:member(1)
   package: ExcelScript!
   fullName: getValues()
-  summary: 指定した範囲の Raw 値を表します。 返されるデータには、文字列、数値、またはブール値を指定できます。 エラーが含まれているセルは、エラー文字列を返します。 戻り値がプラス ("+")、マイナス ("-")、または等号 ("=") で始まる場合、Excelこの値は数式として解釈されます。
+  summary: 指定した範囲の Raw 値を表します。 返されるデータには、文字列、数値、またはブール値を指定できます。 エラーが含まれているセルは、エラー文字列を返します。 返される値がプラス ("+")、マイナス ("-")、または等号 ("=") で始まる場合、Excel はこの値を数式として解釈します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1236,7 +1236,7 @@ methods:
     content: 'getValueType(): RangeValueType;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeValueType:enum" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script formats rows in a worksheet based on the first value in that row. \n * If it's the boolean value TRUE, the row is bolded. \n * If it's FALSE, nothing is changed. \n * If the value type isn't a boolean, the row is italicized.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the used range in the active worksheet.\n  const sheet = workbook.getActiveWorksheet();\n  const usedRange = sheet.getUsedRange();\n\n  // Get the values in the first column.\n  const firstColumnValues = usedRange.getColumn(0).getValues();\n\n  // Look at the first cell in each row.\n  const rowCount = usedRange.getRowCount();\n  for (let i = 0; i < rowCount; i++) {\n    // Get the type of the first cell to make sure it's a boolean.\n    let firstValueType = usedRange.getCell(i, 0).getValueType();\n\n    // Set the bold or italic of the row as described earlier.\n    if (firstValueType === ExcelScript.RangeValueType.boolean) {\n      if (firstColumnValues[i][0] as boolean === true) {\n        usedRange.getRow(i).getFormat().getFont().setBold(true);\n      } else {\n        usedRange.getRow(i).getFormat().getFont().setBold(false);\n      }\n    } else {\n      usedRange.getRow(i).getFormat().getFont().setItalic(true);\n    }\n  }\n}\n```"
 - name: getValueTypes()
   uid: ExcelScript!ExcelScript.Range#getValueTypes:member(1)
   package: ExcelScript!
@@ -1592,7 +1592,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setNumberFormat:member(1)
   package: ExcelScript!
   fullName: setNumberFormat(numberFormat)
-  summary: セルExcel指定した範囲の数値書式コードを設定します。 範囲に複数のセルが含まれている場合、指定された範囲内の各セルは入力データで更新されます。
+  summary: 指定した範囲のセル Excel 番号書式コードを設定します。 範囲に複数のセルが含まれている場合、指定された範囲内の各セルは入力データで更新されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1609,7 +1609,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setNumberFormatLocal:member(1)
   package: ExcelScript!
   fullName: setNumberFormatLocal(numberFormatLocal)
-  summary: ユーザーの言語設定に基づいて、セルExcel特定の範囲の数値書式コードを設定します。 プロパティを取得または設定するときに、Excelは言語や形式の強制を`numberFormatLocal`実行しません。 返されるテキストは、システム設定で指定された言語に基づいて、ローカルで書式設定された文字列を使用します。 範囲に複数のセルが含まれている場合、指定された範囲内の各セルは入力データで更新されます。
+  summary: ユーザーの言語設定に基づいて、指定した範囲のセル Excel 番号書式コードを設定します。 プロパティを取得または設定するときに、Excel では言語や書式の強制は `numberFormatLocal` 実行されません。 返されるテキストは、システム設定で指定された言語に基づいて、ローカルで書式設定された文字列を使用します。 範囲に複数のセルが含まれている場合、指定された範囲内の各セルは入力データで更新されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1626,7 +1626,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setNumberFormats:member(1)
   package: ExcelScript!
   fullName: setNumberFormats(numberFormats)
-  summary: 指定した範囲のExcelの数値書式コードを表します。
+  summary: 指定した範囲の Excel の数値書式コードを表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1643,7 +1643,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setNumberFormatsLocal:member(1)
   package: ExcelScript!
   fullName: setNumberFormatsLocal(numberFormatsLocal)
-  summary: ユーザーの言語設定に基づいて、指定した範囲のExcelの数値書式コードを表します。 プロパティを取得または設定するときに、Excelは言語や形式の強制を`numberFormatLocal`実行しません。 返されるテキストは、システム設定で指定された言語に基づいて、ローカルで書式設定された文字列を使用します。
+  summary: ユーザーの言語設定に基づいて、指定した範囲の Excel の数値書式コードを表します。 プロパティを取得または設定するときに、Excel では言語や書式の強制は `numberFormatLocal` 実行されません。 返されるテキストは、システム設定で指定された言語に基づいて、ローカルで書式設定された文字列を使用します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1694,7 +1694,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setValue:member(1)
   package: ExcelScript!
   fullName: setValue(value)
-  summary: 指定した範囲の生の値を設定します。 設定するデータには、文字列型、数値型、またはブール型を指定できます。 `null`値は無視されます (Excelでは設定または上書きされません)。 範囲に複数のセルが含まれている場合、指定された範囲内の各セルは入力データで更新されます。
+  summary: 指定した範囲の生の値を設定します。 設定するデータには、文字列型、数値型、またはブール型を指定できます。 `null` 値は無視されます (Excel では設定または上書きされません)。 範囲に複数のセルが含まれている場合、指定された範囲内の各セルは入力データで更新されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1711,7 +1711,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setValues:member(1)
   package: ExcelScript!
   fullName: setValues(values)
-  summary: 指定した範囲の未加工の値を設定します。 指定されたデータには、文字列、数値、ブール値を指定できます。 指定された値がプラス ("+")、マイナス ("-")、または等号 ("=") で始まる場合Excel、この値は数式として解釈されます。
+  summary: 指定した範囲の未加工の値を設定します。 指定されたデータには、文字列、数値、ブール値を指定できます。 指定された値がプラス ("+")、マイナス ("-")、または等号 ("=") で始まる場合、Excel はこの値を数式として解釈します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1785,9 +1785,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 131c648e35d13d5d8bc28d44514f8c893b4250d8
-  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
+  ms.openlocfilehash: f055657018c896408c2ce68ec4513deb84712b6c
+  ms.sourcegitcommit: 224152865ad439182e63f5630f0f0aec589420a7
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 05/13/2022
-  ms.locfileid: "65394150"
+  ms.lasthandoff: 07/13/2022
+  ms.locfileid: "66767169"
