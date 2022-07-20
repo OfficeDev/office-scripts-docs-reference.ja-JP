@@ -4,7 +4,7 @@ uid: ExcelScript!ExcelScript.NamedItem:interface
 package: ExcelScript!
 fullName: ExcelScript.NamedItem
 summary: セルまたは値の範囲の定義済みの名前を表します。 名前には、プリミティブな名前付きオブジェクト (以下の型に示すように)、範囲オブジェクト、または範囲への参照を指定できます。 このオブジェクトを使用して、名前に関連付けられた範囲オブジェクトを取得することができます。
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script creates a named formula and uses it in another part of the workbook.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Create a named item for a formula.\n  // This formula is the sum of the cells F2:F21 on Sheet1.\n  const namedItem: ExcelScript.NamedItem = workbook.addNamedItem(\n    \"GrandTotal\", \n    \"=SUM(Sheet1!$F$2:$F$21)\", \n    \"The sum of table sums.\"\n  );\n\n  // Add this named formula to a new sheet in the workbook.\n  const otherSheet = workbook.addWorksheet();\n  otherSheet.getRange(\"A1\").setFormula(namedItem.getFormula());\n\n  // Switch to the new worksheet.\n  otherSheet.activate();\n}\n```"
 isPreview: false
 isDeprecated: false
 type: interface
@@ -112,7 +112,7 @@ methods:
     content: 'getType(): NamedItemType;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItemType:enum" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script looks for every named range with \"Review\" in the name \n * and marks the range with a yellow fill.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Look at every named item in the workbook.\n  workbook.getNames().forEach((namedItem) => {\n    // Find names containing \"Review\".\n    if (namedItem.getName().includes(\"Review\")) {\n      // Only change the fill color if the named item is a range (not a formula).\n      let itemType: ExcelScript.NamedItemType = namedItem.getType();\n      if (itemType === ExcelScript.NamedItemType.range) {\n        // Set the range's fill color to yellow.\n        namedItem.getRange().getFormat().getFill().setColor(\"yellow\");\n      }\n    }\n  });\n}\n```"
 - name: getValue()
   uid: ExcelScript!ExcelScript.NamedItem#getValue:member(1)
   package: ExcelScript!
@@ -204,9 +204,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 182f0fc8a5e12d2bc525d28c22f8c6734abbcffd
-  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
+  ms.openlocfilehash: 5c1ae71829e038a7809dac8662171ce65e59b9f7
+  ms.sourcegitcommit: 1c3f24cda5e255ddb9dd7741f4af26ea0ad9922e
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 05/13/2022
-  ms.locfileid: "65394122"
+  ms.lasthandoff: 07/20/2022
+  ms.locfileid: "66890516"

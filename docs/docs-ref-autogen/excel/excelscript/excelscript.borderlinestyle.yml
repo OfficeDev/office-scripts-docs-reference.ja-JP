@@ -1,42 +1,49 @@
 ### YamlMime:TSEnum
 name: ExcelScript.BorderLineStyle
-uid: 'ExcelScript!ExcelScript.BorderLineStyle:enum'
+uid: ExcelScript!ExcelScript.BorderLineStyle:enum
 package: ExcelScript!
 fullName: ExcelScript.BorderLineStyle
 summary: ''
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script creates a border around a range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the RangeFormat object for the range \"B2:G10\".\n  const currentSheet = workbook.getActiveWorksheet();\n  const rangeForBorder = currentSheet.getRange(\"B2:G10\");\n  const format = rangeForBorder.getFormat();\n  \n  // Get a RangeBorder object for each edge of the range and set the border properties.\n  let edgeTop = format.getRangeBorder(ExcelScript.BorderIndex.edgeTop);\n  edgeTop.setStyle(ExcelScript.BorderLineStyle.dashDot);\n  edgeTop.setWeight(ExcelScript.BorderWeight.thick);\n\n  let edgeBottom = format.getRangeBorder(ExcelScript.BorderIndex.edgeBottom);\n  edgeBottom.setStyle(ExcelScript.BorderLineStyle.dashDot);\n  edgeBottom.setWeight(ExcelScript.BorderWeight.thick);\n\n  let edgeLeft = format.getRangeBorder(ExcelScript.BorderIndex.edgeLeft);\n  edgeLeft.setStyle(ExcelScript.BorderLineStyle.dashDot);\n  edgeLeft.setWeight(ExcelScript.BorderWeight.thick);\n\n  let edgeRight = format.getRangeBorder(ExcelScript.BorderIndex.edgeRight);\n  edgeRight.setStyle(ExcelScript.BorderLineStyle.dashDot);\n  edgeRight.setWeight(ExcelScript.BorderWeight.thick);\n}\n```"
 isPreview: false
 isDeprecated: false
 fields:
-  - name: continuous
-    uid: 'ExcelScript!ExcelScript.BorderLineStyle.continuous:member'
-    package: ExcelScript!
-    summary: ''
-  - name: dash
-    uid: 'ExcelScript!ExcelScript.BorderLineStyle.dash:member'
-    package: ExcelScript!
-    summary: ''
-  - name: dashDot
-    uid: 'ExcelScript!ExcelScript.BorderLineStyle.dashDot:member'
-    package: ExcelScript!
-    summary: ''
-  - name: dashDotDot
-    uid: 'ExcelScript!ExcelScript.BorderLineStyle.dashDotDot:member'
-    package: ExcelScript!
-    summary: ''
-  - name: dot
-    uid: 'ExcelScript!ExcelScript.BorderLineStyle.dot:member'
-    package: ExcelScript!
-    summary: ''
-  - name: double
-    uid: 'ExcelScript!ExcelScript.BorderLineStyle.double:member'
-    package: ExcelScript!
-    summary: ''
-  - name: none
-    uid: 'ExcelScript!ExcelScript.BorderLineStyle.none:member'
-    package: ExcelScript!
-    summary: ''
-  - name: slantDashDot
-    uid: 'ExcelScript!ExcelScript.BorderLineStyle.slantDashDot:member'
-    package: ExcelScript!
-    summary: ''
+- name: continuous
+  uid: ExcelScript!ExcelScript.BorderLineStyle.continuous:member
+  package: ExcelScript!
+  summary: ''
+- name: dash
+  uid: ExcelScript!ExcelScript.BorderLineStyle.dash:member
+  package: ExcelScript!
+  summary: ''
+- name: dashDot
+  uid: ExcelScript!ExcelScript.BorderLineStyle.dashDot:member
+  package: ExcelScript!
+  summary: ''
+- name: dashDotDot
+  uid: ExcelScript!ExcelScript.BorderLineStyle.dashDotDot:member
+  package: ExcelScript!
+  summary: ''
+- name: dot
+  uid: ExcelScript!ExcelScript.BorderLineStyle.dot:member
+  package: ExcelScript!
+  summary: ''
+- name: double
+  uid: ExcelScript!ExcelScript.BorderLineStyle.double:member
+  package: ExcelScript!
+  summary: ''
+- name: none
+  uid: ExcelScript!ExcelScript.BorderLineStyle.none:member
+  package: ExcelScript!
+  summary: ''
+- name: slantDashDot
+  uid: ExcelScript!ExcelScript.BorderLineStyle.slantDashDot:member
+  package: ExcelScript!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 7ab75034f4e7ad0c282d064c5518d3c6fdb2cc04
+  ms.sourcegitcommit: 1c3f24cda5e255ddb9dd7741f4af26ea0ad9922e
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 07/20/2022
+  ms.locfileid: "66890474"

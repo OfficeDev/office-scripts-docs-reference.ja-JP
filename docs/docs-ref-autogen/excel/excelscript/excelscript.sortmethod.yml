@@ -1,18 +1,25 @@
 ### YamlMime:TSEnum
 name: ExcelScript.SortMethod
-uid: 'ExcelScript!ExcelScript.SortMethod:enum'
+uid: ExcelScript!ExcelScript.SortMethod:enum
 package: ExcelScript!
 fullName: ExcelScript.SortMethod
 summary: ''
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script sorts a range using the values in the first column.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the range (A1:D8) to sort from the current worksheet.\n  const worksheet = workbook.getActiveWorksheet();\n  const rangeToSort = worksheet.getRange(\"A1:D8\");\n\n  // Create a SortField for text sorting.\n  let valueSort: ExcelScript.SortField = {\n    ascending: true,\n    key: 0, /* First column */\n    sortOn: ExcelScript.SortOn.value\n  };\n\n  // Apply the SortField to the range.\n  rangeToSort.getSort().apply(\n    [valueSort],\n    false, /* Don't let casing have an impact of sorting. */\n    true, /* The range has headers. */\n    ExcelScript.SortOrientation.rows,\n    ExcelScript.SortMethod.pinYin /* Use phonetic sorting for Chinese characters. */\n    );\n}\n```"
 isPreview: false
 isDeprecated: false
 fields:
-  - name: pinYin
-    uid: 'ExcelScript!ExcelScript.SortMethod.pinYin:member'
-    package: ExcelScript!
-    summary: ''
-  - name: strokeCount
-    uid: 'ExcelScript!ExcelScript.SortMethod.strokeCount:member'
-    package: ExcelScript!
-    summary: ''
+- name: pinYin
+  uid: ExcelScript!ExcelScript.SortMethod.pinYin:member
+  package: ExcelScript!
+  summary: ''
+- name: strokeCount
+  uid: ExcelScript!ExcelScript.SortMethod.strokeCount:member
+  package: ExcelScript!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 73183351996f4fd530b3e2f42d20f9955f1dbb26
+  ms.sourcegitcommit: 1c3f24cda5e255ddb9dd7741f4af26ea0ad9922e
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 07/20/2022
+  ms.locfileid: "66890390"

@@ -157,7 +157,7 @@ methods:
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script creates a named formula and uses it in another part of the workbook.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Create a named item for a formula.\n  // This formula is the sum of the cells F2:F21 on Sheet1.\n  const namedItem: ExcelScript.NamedItem = workbook.addNamedItem(\n    \"GrandTotal\", \n    \"=SUM(Sheet1!$F$2:$F$21)\", \n    \"The sum of table sums.\"\n  );\n\n  // Add this named formula to a new sheet in the workbook.\n  const otherSheet = workbook.addWorksheet();\n  otherSheet.getRange(\"A1\").setFormula(namedItem.getFormula());\n\n  // Switch to the new worksheet.\n  otherSheet.activate();\n}\n```"
 - name: addNamedItemFormulaLocal(name, formula, comment)
   uid: ExcelScript!ExcelScript.Workbook#addNamedItemFormulaLocal:member(1)
   package: ExcelScript!
@@ -840,7 +840,7 @@ methods:
     content: 'getNames(): NamedItem[];'
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />[]
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script looks for every named range with \"Review\" in the name \n * and marks the range with a yellow fill.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Look at every named item in the workbook.\n  workbook.getNames().forEach((namedItem) => {\n    // Find names containing \"Review\".\n    if (namedItem.getName().includes(\"Review\")) {\n      // Only change the fill color if the named item is a range (not a formula).\n      let itemType: ExcelScript.NamedItemType = namedItem.getType();\n      if (itemType === ExcelScript.NamedItemType.range) {\n        // Set the range's fill color to yellow.\n        namedItem.getRange().getFormat().getFill().setColor(\"yellow\");\n      }\n    }\n  });\n}\n```"
 - name: getPivotTable(name)
   uid: ExcelScript!ExcelScript.Workbook#getPivotTable:member(1)
   package: ExcelScript!
@@ -1384,9 +1384,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 8843595341a0509bc9091a50d9b8b9b0ec33525d
-  ms.sourcegitcommit: 224152865ad439182e63f5630f0f0aec589420a7
+  ms.openlocfilehash: a28bde06c417868ab367f7f7c64641fe89e8d4d5
+  ms.sourcegitcommit: 1c3f24cda5e255ddb9dd7741f4af26ea0ad9922e
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 07/13/2022
-  ms.locfileid: "66767029"
+  ms.lasthandoff: 07/20/2022
+  ms.locfileid: "66890523"

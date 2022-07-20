@@ -1,35 +1,42 @@
 ### YamlMime:TSType
 name: ExcelScript.FilterDatetime
-uid: 'ExcelScript!ExcelScript.FilterDatetime:interface'
+uid: ExcelScript!ExcelScript.FilterDatetime:interface
 package: ExcelScript!
 fullName: ExcelScript.FilterDatetime
 summary: 値をフィルター処理するときに日付をフィルター処理する方法を表します。
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script applies a filter to a PivotTable that filters it\n * to only show rows from between June 20th, 2022 and July 10th, 2022.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the \"Date Recorded\" field to filter. \n  // The data in this field must be dates in order for the filter to work.\n  const pivot = workbook.getPivotTables()[0];\n  const rowHierarchy = pivot.getRowHierarchy(\"Date Recorded\");\n  const rowField = rowHierarchy.getFields()[0];\n\n  // Create the filter's date boundaries.\n  let earliestDate: ExcelScript.FilterDatetime = {\n    date: \"2022-06-20\",\n    specificity: ExcelScript.FilterDatetimeSpecificity.day\n  };\n  let latestDate: ExcelScript.FilterDatetime = {\n    date: \"2022-07-10\",\n    specificity: ExcelScript.FilterDatetimeSpecificity.day\n  };\n\n  // Apply the date filter.\n  rowField.applyFilter({\n    dateFilter: {\n      condition: ExcelScript.DateFilterCondition.between,\n      lowerBound: earliestDate,\n      upperBound: latestDate\n    }\n  });\n}\n```"
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: date
-    uid: 'ExcelScript!ExcelScript.FilterDatetime#date:member'
-    package: ExcelScript!
-    fullName: date
-    summary: データのフィルター処理に使用する ISO8601 形式の日付です。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'date: string;'
-      return:
-        type: string
-  - name: specificity
-    uid: 'ExcelScript!ExcelScript.FilterDatetime#specificity:member'
-    package: ExcelScript!
-    fullName: specificity
-    summary: データを保持するのに、日付をどの程度詳細に使用するか。 たとえば、日付が 2005-04-02 で、指定度が "month" に設定されている場合、フィルター操作では、2005 年 4 月の日付を持つすべての行が保持されます。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'specificity: FilterDatetimeSpecificity;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.FilterDatetimeSpecificity:enum" />'
+- name: date
+  uid: ExcelScript!ExcelScript.FilterDatetime#date:member
+  package: ExcelScript!
+  fullName: date
+  summary: データのフィルター処理に使用する ISO8601 形式の日付です。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'date: string;'
+    return:
+      type: string
+- name: specificity
+  uid: ExcelScript!ExcelScript.FilterDatetime#specificity:member
+  package: ExcelScript!
+  fullName: specificity
+  summary: データを保持するのに、日付をどの程度詳細に使用するか。 たとえば、日付が 2005-04-02 で、仕様が "month" に設定されている場合、フィルター操作では、2005 年 4 月の日付を持つすべての行が保持されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'specificity: FilterDatetimeSpecificity;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.FilterDatetimeSpecificity:enum" />
+metadata:
+  ms.openlocfilehash: 68b1e143834737fc624b36a641c197f5fff21772
+  ms.sourcegitcommit: 1c3f24cda5e255ddb9dd7741f4af26ea0ad9922e
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 07/20/2022
+  ms.locfileid: "66890488"

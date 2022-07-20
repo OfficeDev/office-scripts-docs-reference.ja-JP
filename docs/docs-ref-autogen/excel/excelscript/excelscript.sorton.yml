@@ -1,26 +1,33 @@
 ### YamlMime:TSEnum
 name: ExcelScript.SortOn
-uid: 'ExcelScript!ExcelScript.SortOn:enum'
+uid: ExcelScript!ExcelScript.SortOn:enum
 package: ExcelScript!
 fullName: ExcelScript.SortOn
 summary: ''
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script sorts a range based on the color of the cells.\n * It brings all red cells to the top of the range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the range (A1:D8) to sort from the current worksheet.\n  const worksheet = workbook.getActiveWorksheet();\n  const rangeToSort = worksheet.getRange(\"A1:D8\");\n\n  // Create a SortField for color sorting.\n  // This sorts the rows based on the fill color of each row's cell in the first column.\n  let colorSort: ExcelScript.SortField = {\n    ascending: true,\n    color: \"FF0000\", /* red */\n    key: 0,\n    sortOn: ExcelScript.SortOn.cellColor\n  };\n\n  // Apply the SortField to the range.\n  rangeToSort.getSort().apply([colorSort]);\n}\n```"
 isPreview: false
 isDeprecated: false
 fields:
-  - name: cellColor
-    uid: 'ExcelScript!ExcelScript.SortOn.cellColor:member'
-    package: ExcelScript!
-    summary: ''
-  - name: fontColor
-    uid: 'ExcelScript!ExcelScript.SortOn.fontColor:member'
-    package: ExcelScript!
-    summary: ''
-  - name: icon
-    uid: 'ExcelScript!ExcelScript.SortOn.icon:member'
-    package: ExcelScript!
-    summary: ''
-  - name: value
-    uid: 'ExcelScript!ExcelScript.SortOn.value:member'
-    package: ExcelScript!
-    summary: ''
+- name: cellColor
+  uid: ExcelScript!ExcelScript.SortOn.cellColor:member
+  package: ExcelScript!
+  summary: ''
+- name: fontColor
+  uid: ExcelScript!ExcelScript.SortOn.fontColor:member
+  package: ExcelScript!
+  summary: ''
+- name: icon
+  uid: ExcelScript!ExcelScript.SortOn.icon:member
+  package: ExcelScript!
+  summary: ''
+- name: value
+  uid: ExcelScript!ExcelScript.SortOn.value:member
+  package: ExcelScript!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 4b0388372c75aa216863e9bfdbd3063ccd62defd
+  ms.sourcegitcommit: 1c3f24cda5e255ddb9dd7741f4af26ea0ad9922e
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 07/20/2022
+  ms.locfileid: "66890572"

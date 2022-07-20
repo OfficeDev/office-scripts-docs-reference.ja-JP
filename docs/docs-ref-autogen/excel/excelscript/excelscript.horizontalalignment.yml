@@ -1,42 +1,49 @@
 ### YamlMime:TSEnum
 name: ExcelScript.HorizontalAlignment
-uid: 'ExcelScript!ExcelScript.HorizontalAlignment:enum'
+uid: ExcelScript!ExcelScript.HorizontalAlignment:enum
 package: ExcelScript!
 fullName: ExcelScript.HorizontalAlignment
 summary: ''
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script centers the text in a table's header row cells.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the first table on the current worksheet.\n  const currentSheet = workbook.getActiveWorksheet();\n  const table = currentSheet.getTables()[0];\n\n  // Get the header range.\n  const headerRange = table.getHeaderRowRange();\n\n  // Set the horizontal text alignment to `center`.\n  headerRange.getFormat().setHorizontalAlignment(ExcelScript.HorizontalAlignment.center);\n}\n```"
 isPreview: false
 isDeprecated: false
 fields:
-  - name: center
-    uid: 'ExcelScript!ExcelScript.HorizontalAlignment.center:member'
-    package: ExcelScript!
-    summary: ''
-  - name: centerAcrossSelection
-    uid: 'ExcelScript!ExcelScript.HorizontalAlignment.centerAcrossSelection:member'
-    package: ExcelScript!
-    summary: ''
-  - name: distributed
-    uid: 'ExcelScript!ExcelScript.HorizontalAlignment.distributed:member'
-    package: ExcelScript!
-    summary: ''
-  - name: fill
-    uid: 'ExcelScript!ExcelScript.HorizontalAlignment.fill:member'
-    package: ExcelScript!
-    summary: ''
-  - name: general
-    uid: 'ExcelScript!ExcelScript.HorizontalAlignment.general:member'
-    package: ExcelScript!
-    summary: ''
-  - name: justify
-    uid: 'ExcelScript!ExcelScript.HorizontalAlignment.justify:member'
-    package: ExcelScript!
-    summary: ''
-  - name: left
-    uid: 'ExcelScript!ExcelScript.HorizontalAlignment.left:member'
-    package: ExcelScript!
-    summary: ''
-  - name: right
-    uid: 'ExcelScript!ExcelScript.HorizontalAlignment.right:member'
-    package: ExcelScript!
-    summary: ''
+- name: center
+  uid: ExcelScript!ExcelScript.HorizontalAlignment.center:member
+  package: ExcelScript!
+  summary: ''
+- name: centerAcrossSelection
+  uid: ExcelScript!ExcelScript.HorizontalAlignment.centerAcrossSelection:member
+  package: ExcelScript!
+  summary: ''
+- name: distributed
+  uid: ExcelScript!ExcelScript.HorizontalAlignment.distributed:member
+  package: ExcelScript!
+  summary: ''
+- name: fill
+  uid: ExcelScript!ExcelScript.HorizontalAlignment.fill:member
+  package: ExcelScript!
+  summary: ''
+- name: general
+  uid: ExcelScript!ExcelScript.HorizontalAlignment.general:member
+  package: ExcelScript!
+  summary: ''
+- name: justify
+  uid: ExcelScript!ExcelScript.HorizontalAlignment.justify:member
+  package: ExcelScript!
+  summary: ''
+- name: left
+  uid: ExcelScript!ExcelScript.HorizontalAlignment.left:member
+  package: ExcelScript!
+  summary: ''
+- name: right
+  uid: ExcelScript!ExcelScript.HorizontalAlignment.right:member
+  package: ExcelScript!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 8adb25e4fec14537643cb66bc253a27d8876629c
+  ms.sourcegitcommit: 1c3f24cda5e255ddb9dd7741f4af26ea0ad9922e
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 07/20/2022
+  ms.locfileid: "66890376"

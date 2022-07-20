@@ -62,7 +62,7 @@ methods:
     content: 'calculate(): void;'
     return:
       type: void
-      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script recalculates the used range of a specific worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Only recalculate if the calculation mode is not set to automatic.\n  if (workbook.getApplication().getCalculationMode() !== ExcelScript.CalculationMode.automatic) {\n    // Get the used range from a worksheet named \"Monthly Report\".\n    let sheet = workbook.getWorksheet(\"Monthly Report\");\n    let range = sheet.getUsedRange();\n    console.log(`Calculating ${range.getAddress()}`);\n\n    // Force all the used cells in that worksheet to calculate.\n    sheet.getUsedRange().calculate();\n  }\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script recalculates the used range of a specific worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Only recalculate if the calculation mode is not set to automatic.\n  if (workbook.getApplication().getCalculationMode() !== ExcelScript.CalculationMode.automatic) {\n    // Get the used range from a worksheet named \"Monthly Report\".\n    const sheet = workbook.getWorksheet(\"Monthly Report\");\n    const range = sheet.getUsedRange();\n    console.log(`Calculating ${range.getAddress()}`);\n\n    // Force all the used cells in that worksheet to calculate.\n    sheet.getUsedRange().calculate();\n  }\n}\n```"
 - name: clear(applyTo)
   uid: ExcelScript!ExcelScript.Range#clear:member(1)
   package: ExcelScript!
@@ -250,7 +250,7 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script gets the bounding range of two existing ranges and puts a border around it.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let sheet = workbook.getActiveWorksheet();\n\n  // Create two range objects for the sample.\n  let range1 = sheet.getRange(\"B2:C5\");\n  let range2 = sheet.getRange(\"D10:E15\");\n\n  // Get the rectangular range that fully includes both ranges.\n  let boundingRectangle = range1.getBoundingRect(range2);\n\n  // Add a border around the whole bounding range (B2:E15).\n  let borders = boundingRectangle.getFormat().getBorders();\n  format.getRangeBorder(ExcelScript.BorderIndex.edgeTop).setStyle(ExcelScript.BorderLineStyle.continuous); // Top border\n  format.getRangeBorder(ExcelScript.BorderIndex.edgeBottom).setStyle(ExcelScript.BorderLineStyle.continuous); // Bottom border\n  format.getRangeBorder(ExcelScript.BorderIndex.edgeLeft).setStyle(ExcelScript.BorderLineStyle.continuous); // Left border\n  format.getRangeBorder(ExcelScript.BorderIndex.edgeRight).setStyle(ExcelScript.BorderLineStyle.continuous); // Right border\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script gets the bounding range of two existing ranges and puts a border around it.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let sheet = workbook.getActiveWorksheet();\n\n  // Create two range objects for the sample.\n  let range1 = sheet.getRange(\"B2:C5\");\n  let range2 = sheet.getRange(\"D10:E15\");\n\n  // Get the rectangular range that fully includes both ranges.\n  let boundingRectangle = range1.getBoundingRect(range2);\n\n  // Add a border around the whole bounding range (B2:E15).\n  let format = boundingRectangle.getFormat();\n  format.getRangeBorder(ExcelScript.BorderIndex.edgeTop).setStyle(ExcelScript.BorderLineStyle.continuous); // Top border\n  format.getRangeBorder(ExcelScript.BorderIndex.edgeBottom).setStyle(ExcelScript.BorderLineStyle.continuous); // Bottom border\n  format.getRangeBorder(ExcelScript.BorderIndex.edgeLeft).setStyle(ExcelScript.BorderLineStyle.continuous); // Left border\n  format.getRangeBorder(ExcelScript.BorderIndex.edgeRight).setStyle(ExcelScript.BorderLineStyle.continuous); // Right border\n}\n```"
 - name: getCell(row, column)
   uid: ExcelScript!ExcelScript.Range#getCell:member(1)
   package: ExcelScript!
@@ -1785,9 +1785,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: f055657018c896408c2ce68ec4513deb84712b6c
-  ms.sourcegitcommit: 224152865ad439182e63f5630f0f0aec589420a7
+  ms.openlocfilehash: 8fbc16219f48862902e9d28ced8dbe1be1e67a8c
+  ms.sourcegitcommit: 1c3f24cda5e255ddb9dd7741f4af26ea0ad9922e
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 07/13/2022
-  ms.locfileid: "66767169"
+  ms.lasthandoff: 07/20/2022
+  ms.locfileid: "66890563"

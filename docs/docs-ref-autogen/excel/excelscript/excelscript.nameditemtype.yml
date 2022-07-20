@@ -1,38 +1,45 @@
 ### YamlMime:TSEnum
 name: ExcelScript.NamedItemType
-uid: 'ExcelScript!ExcelScript.NamedItemType:enum'
+uid: ExcelScript!ExcelScript.NamedItemType:enum
 package: ExcelScript!
 fullName: ExcelScript.NamedItemType
 summary: ''
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script looks for every named range with \"Review\" in the name \n * and marks the range with a yellow fill.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Look at every named item in the workbook.\n  workbook.getNames().forEach((namedItem) => {\n    // Find names containing \"Review\".\n    if (namedItem.getName().includes(\"Review\")) {\n      // Only change the fill color if the named item is a range (not a formula).\n      let itemType: ExcelScript.NamedItemType = namedItem.getType();\n      if (itemType === ExcelScript.NamedItemType.range) {\n        // Set the range's fill color to yellow.\n        namedItem.getRange().getFormat().getFill().setColor(\"yellow\");\n      }\n    }\n  });\n}\n```"
 isPreview: false
 isDeprecated: false
 fields:
-  - name: array
-    uid: 'ExcelScript!ExcelScript.NamedItemType.array:member'
-    package: ExcelScript!
-    summary: ''
-  - name: boolean
-    uid: 'ExcelScript!ExcelScript.NamedItemType.boolean:member'
-    package: ExcelScript!
-    summary: ''
-  - name: double
-    uid: 'ExcelScript!ExcelScript.NamedItemType.double:member'
-    package: ExcelScript!
-    summary: ''
-  - name: error
-    uid: 'ExcelScript!ExcelScript.NamedItemType.error:member'
-    package: ExcelScript!
-    summary: ''
-  - name: integer
-    uid: 'ExcelScript!ExcelScript.NamedItemType.integer:member'
-    package: ExcelScript!
-    summary: ''
-  - name: range
-    uid: 'ExcelScript!ExcelScript.NamedItemType.range:member'
-    package: ExcelScript!
-    summary: ''
-  - name: string
-    uid: 'ExcelScript!ExcelScript.NamedItemType.string:member'
-    package: ExcelScript!
-    summary: ''
+- name: array
+  uid: ExcelScript!ExcelScript.NamedItemType.array:member
+  package: ExcelScript!
+  summary: ''
+- name: boolean
+  uid: ExcelScript!ExcelScript.NamedItemType.boolean:member
+  package: ExcelScript!
+  summary: ''
+- name: double
+  uid: ExcelScript!ExcelScript.NamedItemType.double:member
+  package: ExcelScript!
+  summary: ''
+- name: error
+  uid: ExcelScript!ExcelScript.NamedItemType.error:member
+  package: ExcelScript!
+  summary: ''
+- name: integer
+  uid: ExcelScript!ExcelScript.NamedItemType.integer:member
+  package: ExcelScript!
+  summary: ''
+- name: range
+  uid: ExcelScript!ExcelScript.NamedItemType.range:member
+  package: ExcelScript!
+  summary: ''
+- name: string
+  uid: ExcelScript!ExcelScript.NamedItemType.string:member
+  package: ExcelScript!
+  summary: ''
+metadata:
+  ms.openlocfilehash: c89d4abed52f4679d8af1d840c3f6c5b6f45951d
+  ms.sourcegitcommit: 1c3f24cda5e255ddb9dd7741f4af26ea0ad9922e
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 07/20/2022
+  ms.locfileid: "66890369"

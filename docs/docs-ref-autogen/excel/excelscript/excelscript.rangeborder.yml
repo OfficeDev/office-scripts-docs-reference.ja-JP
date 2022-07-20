@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeBorder#getColor:member(1)
   package: ExcelScript!
   fullName: getColor()
-  summary: RRGGBB 形式 ("FFA500" など) の境界線の色を表す HTML カラー コード、または名前付き HTML 色 \# ("オレンジ色" など) を表します。
+  summary: '罫線 \#の色を表す HTML カラー コード(RRGGBB (例: "FFA500")、または名前付き HTML の色 (例: "オレンジ") です。'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeBorder#getTintAndShade:member(1)
   package: ExcelScript!
   fullName: getTintAndShade()
-  summary: 範囲の境界線の色を明るくまたは暗くする倍数を指定します。値は -1 (最も暗い) ~ 1 (最も明るい) で、元の色の場合は 0 です。 値 `null` は、罫線に均一な設定が含めなかったかどうかを示 `tintAndShade` します。
+  summary: 範囲の罫線の色を明るくまたは暗くする double を指定し、値は -1 (最も暗い) から 1 (最も明るい) の間で、元の色の場合は 0 を指定します。 値は `null` 、罫線に均一 `tintAndShade` な設定がないことを示します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeBorder#setColor:member(1)
   package: ExcelScript!
   fullName: setColor(color)
-  summary: RRGGBB 形式 ("FFA500" など) の境界線の色を表す HTML カラー コード、または名前付き HTML 色 \# ("オレンジ色" など) を表します。
+  summary: '罫線 \#の色を表す HTML カラー コード(RRGGBB (例: "FFA500")、または名前付き HTML の色 (例: "オレンジ") です。'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -112,7 +112,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeBorder#setTintAndShade:member(1)
   package: ExcelScript!
   fullName: setTintAndShade(tintAndShade)
-  summary: 範囲の境界線の色を明るくまたは暗くする倍数を指定します。値は -1 (最も暗い) ~ 1 (最も明るい) で、元の色の場合は 0 です。 値 `null` は、罫線に均一な設定が含めなかったかどうかを示 `tintAndShade` します。
+  summary: 範囲の罫線の色を明るくまたは暗くする double を指定し、値は -1 (最も暗い) から 1 (最も明るい) の間で、元の色の場合は 0 を指定します。 値は `null` 、罫線に均一 `tintAndShade` な設定がないことを示します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -141,11 +141,11 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.BorderWeight:enum" />
     return:
       type: void
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script creates a border around a range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the RangeFormat object for the range \"B2:G10\".\n  const currentSheet = workbook.getActiveWorksheet();\n  const rangeForBorder = currentSheet.getRange(\"B2:G10\");\n  const format = rangeForBorder.getFormat();\n  \n  // Get a RangeBorder object for each edge of the range and set the border properties.\n  let edgeTop = format.getRangeBorder(ExcelScript.BorderIndex.edgeTop);\n  edgeTop.setStyle(ExcelScript.BorderLineStyle.dashDot);\n  edgeTop.setWeight(ExcelScript.BorderWeight.thick);\n\n  let edgeBottom = format.getRangeBorder(ExcelScript.BorderIndex.edgeBottom);\n  edgeBottom.setStyle(ExcelScript.BorderLineStyle.dashDot);\n  edgeBottom.setWeight(ExcelScript.BorderWeight.thick);\n\n  let edgeLeft = format.getRangeBorder(ExcelScript.BorderIndex.edgeLeft);\n  edgeLeft.setStyle(ExcelScript.BorderLineStyle.dashDot);\n  edgeLeft.setWeight(ExcelScript.BorderWeight.thick);\n\n  let edgeRight = format.getRangeBorder(ExcelScript.BorderIndex.edgeRight);\n  edgeRight.setStyle(ExcelScript.BorderLineStyle.dashDot);\n  edgeRight.setWeight(ExcelScript.BorderWeight.thick);\n}\n```"
 metadata:
-  ms.openlocfilehash: 1c76336a0b4683796b60d045b2cf0cb33f699b36
-  ms.sourcegitcommit: b862905bd3ed886880931647f7c164ae908cb1cd
+  ms.openlocfilehash: e066a660c36eb17ec200fa079f7c394c7f2c901b
+  ms.sourcegitcommit: 1c3f24cda5e255ddb9dd7741f4af26ea0ad9922e
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/29/2021
-  ms.locfileid: "60003737"
+  ms.lasthandoff: 07/20/2022
+  ms.locfileid: "66890530"

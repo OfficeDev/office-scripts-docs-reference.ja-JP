@@ -1,83 +1,92 @@
 ### YamlMime:TSType
 name: ExcelScript.PivotDateFilter
-uid: 'ExcelScript!ExcelScript.PivotDateFilter:interface'
+uid: ExcelScript!ExcelScript.PivotDateFilter:interface
 package: ExcelScript!
 fullName: ExcelScript.PivotDateFilter
-summary: PivotField に適用する日付フィルターの構成可能なテンプレート。 フィルター `condition` を操作するために設定する必要がある条件を定義します。
+summary: PivotField に適用する日付フィルターの構成可能なテンプレート。 フィルター `condition` を動作させるには、どのような条件を設定する必要があるかを定義します。
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: comparator
-    uid: 'ExcelScript!ExcelScript.PivotDateFilter#comparator:member'
-    package: ExcelScript!
-    fullName: comparator
-    summary: コンパレータは、他の値を比較する静的な値です。 比較の種類は、条件によって定義されます。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'comparator?: FilterDatetime;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.FilterDatetime:interface" />'
-  - name: condition
-    uid: 'ExcelScript!ExcelScript.PivotDateFilter#condition:member'
-    package: ExcelScript!
-    fullName: condition
-    summary: 必要なフィルター条件を定義するフィルターの条件を指定します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'condition: DateFilterCondition;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.DateFilterCondition:enum" />'
-  - name: exclusive
-    uid: 'ExcelScript!ExcelScript.PivotDateFilter#exclusive:member'
-    package: ExcelScript!
-    fullName: exclusive
-    summary: もし `true`<!-- -->を選択すると *、条件を満* たすアイテムが除外されます。 既定値は `false` (条件を満たすアイテムを含めるフィルター)。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'exclusive?: boolean;'
-      return:
-        type: boolean
-  - name: lowerBound
-    uid: 'ExcelScript!ExcelScript.PivotDateFilter#lowerBound:member'
-    package: ExcelScript!
-    fullName: lowerBound
-    summary: フィルター条件の範囲の下限 `between` 。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'lowerBound?: FilterDatetime;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.FilterDatetime:interface" />'
-  - name: upperBound
-    uid: 'ExcelScript!ExcelScript.PivotDateFilter#upperBound:member'
-    package: ExcelScript!
-    fullName: upperBound
-    summary: フィルター条件の範囲の上限 `between` 。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'upperBound?: FilterDatetime;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.FilterDatetime:interface" />'
-  - name: wholeDays
-    uid: 'ExcelScript!ExcelScript.PivotDateFilter#wholeDays:member'
-    package: ExcelScript!
-    fullName: wholeDays
-    summary: '`equals` の場合<!-- -->, `before`<!-- -->, `after`<!-- -->、および `between` フィルター条件は、比較を丸 1 日として行う必要があるかどうかを示します。'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'wholeDays?: boolean;'
-      return:
-        type: boolean
+- name: comparator
+  uid: ExcelScript!ExcelScript.PivotDateFilter#comparator:member
+  package: ExcelScript!
+  fullName: comparator
+  summary: 比較器は、他の値が比較される静的な値です。 比較の種類は、条件によって定義されます。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'comparator?: FilterDatetime;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.FilterDatetime:interface" />
+- name: condition
+  uid: ExcelScript!ExcelScript.PivotDateFilter#condition:member
+  package: ExcelScript!
+  fullName: condition
+  summary: 必要なフィルター条件を定義するフィルターの条件を指定します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'condition: DateFilterCondition;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.DateFilterCondition:enum" />
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script applies a filter to a PivotTable that filters out rows \n * that aren't from this month.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the \"Date Recorded\" field to filter. \n  // The data in this field must be dates in order for the filter to work.\n  const pivot = workbook.getPivotTables()[0];\n  const rowHierarchy = pivot.getRowHierarchy(\"Date Recorded\");\n  const rowField = rowHierarchy.getFields()[0];\n\n  // Apply the date filter.\n  rowField.applyFilter({\n    dateFilter: {\n      // Setting the condition to `thisMonth` means items that are before or\n      // after this month will not be displayed.\n      condition: ExcelScript.DateFilterCondition.thisMonth\n    }\n  });\n}\n```"
+- name: exclusive
+  uid: ExcelScript!ExcelScript.PivotDateFilter#exclusive:member
+  package: ExcelScript!
+  fullName: exclusive
+  summary: もし `true`<!-- -->、フィルター *は、条件を* 満たすアイテムを除外します。 既定値は `false` (条件を満たすアイテムを含めるフィルター) です。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'exclusive?: boolean;'
+    return:
+      type: boolean
+- name: lowerBound
+  uid: ExcelScript!ExcelScript.PivotDateFilter#lowerBound:member
+  package: ExcelScript!
+  fullName: lowerBound
+  summary: フィルター条件の範囲 `between` の下限。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'lowerBound?: FilterDatetime;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.FilterDatetime:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script applies a filter to a PivotTable that filters it\n * to only show rows from between June 20th, 2022 and July 10th, 2022.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the \"Date Recorded\" field to filter. \n  // The data in this field must be dates in order for the filter to work.\n  const pivot = workbook.getPivotTables()[0];\n  const rowHierarchy = pivot.getRowHierarchy(\"Date Recorded\");\n  const rowField = rowHierarchy.getFields()[0];\n\n  // Create the filter's date boundaries.\n  let earliestDate: ExcelScript.FilterDatetime = {\n    date: \"2022-06-20\",\n    specificity: ExcelScript.FilterDatetimeSpecificity.day\n  };\n  let latestDate: ExcelScript.FilterDatetime = {\n    date: \"2022-07-10\",\n    specificity: ExcelScript.FilterDatetimeSpecificity.day\n  };\n\n  // Apply the date filter.\n  rowField.applyFilter({\n    dateFilter: {\n      condition: ExcelScript.DateFilterCondition.between,\n      lowerBound: earliestDate,\n      upperBound: latestDate\n    }\n  });\n}\n```"
+- name: upperBound
+  uid: ExcelScript!ExcelScript.PivotDateFilter#upperBound:member
+  package: ExcelScript!
+  fullName: upperBound
+  summary: フィルター条件の範囲 `between` の上限。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'upperBound?: FilterDatetime;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.FilterDatetime:interface" />
+- name: wholeDays
+  uid: ExcelScript!ExcelScript.PivotDateFilter#wholeDays:member
+  package: ExcelScript!
+  fullName: wholeDays
+  summary: '`equals` の場合<!-- -->, `before`<!-- -->, `after`<!-- -->、および `between` フィルター条件は、比較を日単位で行う必要があるかどうかを示します。'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'wholeDays?: boolean;'
+    return:
+      type: boolean
+metadata:
+  ms.openlocfilehash: ff14d7c30ca13b320cc1219ab0694aa1b18a03b4
+  ms.sourcegitcommit: 1c3f24cda5e255ddb9dd7741f4af26ea0ad9922e
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 07/20/2022
+  ms.locfileid: "66890341"

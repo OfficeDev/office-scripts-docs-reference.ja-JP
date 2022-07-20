@@ -1,22 +1,29 @@
 ### YamlMime:TSEnum
 name: ExcelScript.CalculationMode
-uid: 'ExcelScript!ExcelScript.CalculationMode:enum'
+uid: ExcelScript!ExcelScript.CalculationMode:enum
 package: ExcelScript!
 fullName: ExcelScript.CalculationMode
 summary: ''
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script recalculates the used range of a specific worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Only recalculate if the calculation mode is not set to automatic.\n  if (workbook.getApplication().getCalculationMode() !== ExcelScript.CalculationMode.automatic) {\n    // Get the used range from a worksheet named \"Monthly Report\".\n    const sheet = workbook.getWorksheet(\"Monthly Report\");\n    const range = sheet.getUsedRange();\n    console.log(`Calculating ${range.getAddress()}`);\n\n    // Force all the used cells in that worksheet to calculate.\n    sheet.getUsedRange().calculate();\n  }\n}\n```"
 isPreview: false
 isDeprecated: false
 fields:
-  - name: automatic
-    uid: 'ExcelScript!ExcelScript.CalculationMode.automatic:member'
-    package: ExcelScript!
-    summary: 関連するデータが変更されるExcel新しい数式の結果を計算する既定の再計算動作。
-  - name: automaticExceptTables
-    uid: 'ExcelScript!ExcelScript.CalculationMode.automaticExceptTables:member'
-    package: ExcelScript!
-    summary: 数式がデータ テーブルに含されていない限り、関連するデータが変更される度に新しい数式の結果を計算します。
-  - name: manual
-    uid: 'ExcelScript!ExcelScript.CalculationMode.manual:member'
-    package: ExcelScript!
-    summary: 計算は、ユーザーまたはアドインが要求した場合にのみ発生します。
+- name: automatic
+  uid: ExcelScript!ExcelScript.CalculationMode.automatic:member
+  package: ExcelScript!
+  summary: Excel が新しい数式の結果を計算する既定の再計算動作は、関連するデータが変更されるたびに行われます。
+- name: automaticExceptTables
+  uid: ExcelScript!ExcelScript.CalculationMode.automaticExceptTables:member
+  package: ExcelScript!
+  summary: 数式がデータ テーブル内にある場合を除き、関連するデータが変更されるたびに新しい数式の結果を計算します。
+- name: manual
+  uid: ExcelScript!ExcelScript.CalculationMode.manual:member
+  package: ExcelScript!
+  summary: 計算は、ユーザーまたはアドインが要求した場合にのみ発生します。
+metadata:
+  ms.openlocfilehash: 79cc9d67dd3288540146a4d56fe712f37607a33b
+  ms.sourcegitcommit: 1c3f24cda5e255ddb9dd7741f4af26ea0ad9922e
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 07/20/2022
+  ms.locfileid: "66890460"
