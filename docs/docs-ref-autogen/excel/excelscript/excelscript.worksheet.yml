@@ -73,7 +73,7 @@ methods:
       description: コメントの内容。 これは、文字列または `CommentRichContent` オブジェクトのいずれかです。 文字列はプレーンテキストに使用されます。 `CommentRichContent` オブジェクトでは、メンションなどの他のコメント機能を使用できます。
       type: <xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" /> | string
     - id: contentType
-      description: 省略可能。 コメントに含まれるコンテンツの種類。 既定値は enum です `ContentType.Plain`<!-- -->.
+      description: オプション。 コメントに含まれるコンテンツの種類。 既定値は enum です `ContentType.Plain`<!-- -->.
       type: <xref uid="ExcelScript!ExcelScript.ContentType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
@@ -205,7 +205,7 @@ methods:
       description: 名前が参照する数式または範囲。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: comment
-      description: 省略可能。 名前付きアイテムに関連付けられているコメント。
+      description: オプション。 名前付きアイテムに関連付けられているコメント。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
@@ -233,7 +233,7 @@ methods:
       description: 名前が参照するユーザーのロケールの数式。
       type: string
     - id: comment
-      description: 省略可能。 名前付きアイテムに関連付けられているコメント。
+      description: オプション。 名前付きアイテムに関連付けられているコメント。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
@@ -306,7 +306,7 @@ methods:
       description: フィルター処理するデータ ソース内のフィールド。 オブジェクト、オブジェクト、`TableColumn`A の ID、または a `PivotField` の名前または ID を指定できます`PivotField`。`TableColumn`<!-- -->.
       type: string | <xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | number | <xref uid="ExcelScript!ExcelScript.TableColumn:interface" />
     - id: slicerDestination
-      description: 省略可能。 新しいスライサーが作成されるワークシート。 オブジェクトまたはワークシートの名前または ID を指定できます `Worksheet` 。 このパラメーターは、スライサー コレクションがワークシートから取得される場合は省略できます。
+      description: オプション。 新しいスライサーが作成されるワークシート。 オブジェクトまたはワークシートの名前または ID を指定できます `Worksheet` 。 このパラメーターは、スライサー コレクションがワークシートから取得される場合は省略できます。
       type: string | <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Slicer:interface" />
@@ -447,7 +447,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#enterTemporaryNamedSheetView:member(1)
   package: ExcelScript!
   fullName: enterTemporaryNamedSheetView()
-  summary: 新しい一時シート ビューを作成してアクティブ化します。 アプリケーションを閉じたり、終了メソッドを使用して一時ビューを終了したり、別のシート ビューに切り替えたりすると、一時ビューは削除されます。 一時シート ビューが存在する場合は、空の文字列 ("") を付加することもできます。
+  summary: 新しい一時シート ビューを作成してアクティブ化します。 アプリケーションを閉じたり、終了メソッドを使用して一時ビューを終了したり、別のシート ビューに切り替えたりすると、一時ビューは削除されます。 一時シート ビューが存在する場合は、空の文字列 ("") を使用して一時シート ビューにアクセスすることもできます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -779,7 +779,7 @@ methods:
     content: 'getNext(visibleOnly?: boolean): Worksheet;'
     parameters:
     - id: visibleOnly
-      description: 省略可能。 もし `true`<!-- -->では、非表示のワークシートをスキップして、表示可能なワークシートのみを考慮します。
+      description: オプション。 もし `true`<!-- -->では、非表示のワークシートをスキップして、表示可能なワークシートのみを考慮します。
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -852,7 +852,7 @@ methods:
     content: 'getPrevious(visibleOnly?: boolean): Worksheet;'
     parameters:
     - id: visibleOnly
-      description: 省略可能。 もし `true`<!-- -->では、非表示のワークシートをスキップして、表示可能なワークシートのみを考慮します。
+      description: オプション。 もし `true`<!-- -->では、非表示のワークシートをスキップして、表示可能なワークシートのみを考慮します。
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -882,7 +882,7 @@ methods:
     content: 'getRange(address?: string): Range;'
     parameters:
     - id: address
-      description: 省略可能。 範囲のアドレスまたは名前を表す文字列。 たとえば、"A1:B2" です。 指定されていない場合は、ワークシート全体の範囲が返されます。
+      description: オプション。 範囲のアドレスまたは名前を表す文字列。 たとえば、"A1:B2" です。 指定されていない場合は、ワークシート全体の範囲が返されます。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -931,7 +931,7 @@ methods:
     content: 'getRanges(address?: string): RangeAreas;'
     parameters:
     - id: address
-      description: 省略可能。 コンマ区切りまたはセミコロンで区切られたアドレスまたは個々の範囲の名前を含む文字列。 たとえば、"A1:B2、A5:B5"、または "A1:B2;A5:B5"。 指定しない場合は `RangeAreas` 、ワークシート全体のオブジェクトが返されます。
+      description: オプション。 コンマ区切りまたはセミコロンで区切られたアドレスまたは個々の範囲の名前を含む文字列。 たとえば、"A1:B2、A5:B5"、または "A1:B2;A5:B5"。 指定しない場合は `RangeAreas` 、ワークシート全体のオブジェクトが返されます。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
@@ -1378,9 +1378,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: b17f068406c43a3314853b12680a1c2ea0ba7e16
-  ms.sourcegitcommit: 224152865ad439182e63f5630f0f0aec589420a7
+  ms.openlocfilehash: feaa88a1fe2186a58f01c79ee3e43d4da1864917
+  ms.sourcegitcommit: e4d007e5b8fa836727fe0419950ff22d5edc2384
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 07/13/2022
-  ms.locfileid: "66767176"
+  ms.lasthandoff: 08/24/2022
+  ms.locfileid: "67423863"

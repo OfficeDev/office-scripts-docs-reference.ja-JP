@@ -46,6 +46,7 @@ properties:
     content: 'dataOption?: SortDataOption;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.SortDataOption:enum" />
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script sorts a table based on the values in column 1.\n * If the text of a column-1 value can be treated as a number, \n * it will be sorted in numerical order, rather than Unicode order\n * (so 123 will come before 12.3).\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the first table on the current worksheet.\n  const currentSheet = workbook.getActiveWorksheet();\n  const table = currentSheet.getTables()[0];\n\n  // Create the sorting parameters.\n  const countSortField: ExcelScript.SortField = {\n    key: 1,\n    ascending: true,\n    dataOption: ExcelScript.SortDataOption.textAsNumber\n  };\n\n  // Apply the sort to the table.\n  const sort = table.getSort();\n  sort.apply([countSortField]);\n}\n```"
 - name: icon
   uid: ExcelScript!ExcelScript.SortField#icon:member
   package: ExcelScript!
@@ -95,9 +96,9 @@ properties:
     return:
       type: string
 metadata:
-  ms.openlocfilehash: ef6a2d8ca7c3328b5d52f9aaf5ccb19bed89f592
-  ms.sourcegitcommit: 1c3f24cda5e255ddb9dd7741f4af26ea0ad9922e
+  ms.openlocfilehash: 7d104c29747d9420d34bf39bd8ad104b0b57a8eb
+  ms.sourcegitcommit: e4d007e5b8fa836727fe0419950ff22d5edc2384
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 07/20/2022
-  ms.locfileid: "66890348"
+  ms.lasthandoff: 08/24/2022
+  ms.locfileid: "67423975"

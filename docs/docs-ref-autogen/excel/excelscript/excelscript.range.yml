@@ -765,7 +765,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getMergedAreas:member(1)
   package: ExcelScript!
   fullName: getMergedAreas()
-  summary: この範囲内の `RangeAreas` マージされた領域を表すオブジェクトを返します。 この範囲のマージされた領域数が 512 を超える場合、このメソッドは結果を返しません。 オブジェクトが `RangeAreas` 存在しない場合、この関数は、その `isNullObject` プロパティが設定されたオブジェクトを返します。 `true`<!-- -->.
+  summary: この範囲内の `RangeAreas` マージされた領域を表すオブジェクトを返します。 この範囲のマージされた領域数が 512 を超える場合、このメソッドは結果を返しません。 オブジェクトが `RangeAreas` 存在しない場合、このメソッドは、その `isNullObject` プロパティが設定されたオブジェクトを返します。 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1352,7 +1352,7 @@ methods:
     content: 'merge(across?: boolean): void;'
     parameters:
     - id: across
-      description: 省略可能。 指定した範囲の各行のセルを個別の結合セルとして結合するように設定 `true` します。 既定値は次の値です。 `false`<!-- -->.
+      description: オプション。 指定した範囲の各行のセルを個別の結合セルとして結合するように設定 `true` します。 既定値は次の値です。 `false`<!-- -->.
       type: boolean
     return:
       type: void
@@ -1536,7 +1536,7 @@ methods:
       type: string[][]
     return:
       type: void
-      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script sets the values of a range, then adds SUM formulas to calcuate\n * the totals for each row of that range. \n */\nfunction main(workbook: ExcelScript.Workbook)\n{\n  let currentSheet = workbook.getActiveWorksheet();\n\n  // Set the values of a range.\n  let values = [[1, 2, 4], [8, 16, 32], [64, 128, 256]];\n  let valueRange = currentSheet.getRange(\"A1:C3\");\n  valueRange.setValues(values);\n\n  // Set the formulas of a range.\n  let formulas = [[\"=SUM(A1:C1)\"], [\"=SUM(A2:C2)\"], [\"=SUM(A3:C3)\"]];\n  let formulaRange = currentSheet.getRange(\"D1:D3\");\n  formulaRange.setFormulas(formulas);\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script sets the values of a range, then adds SUM formulas to calculate\n * the totals for each row of that range. \n */\nfunction main(workbook: ExcelScript.Workbook)\n{\n  let currentSheet = workbook.getActiveWorksheet();\n\n  // Set the values of a range.\n  let values = [[1, 2, 4], [8, 16, 32], [64, 128, 256]];\n  let valueRange = currentSheet.getRange(\"A1:C3\");\n  valueRange.setValues(values);\n\n  // Set the formulas of a range.\n  let formulas = [[\"=SUM(A1:C1)\"], [\"=SUM(A2:C2)\"], [\"=SUM(A3:C3)\"]];\n  let formulaRange = currentSheet.getRange(\"D1:D3\");\n  formulaRange.setFormulas(formulas);\n}\n```"
 - name: setFormulasLocal(formulasLocal)
   uid: ExcelScript!ExcelScript.Range#setFormulasLocal:member(1)
   package: ExcelScript!
@@ -1785,9 +1785,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 8fbc16219f48862902e9d28ced8dbe1be1e67a8c
-  ms.sourcegitcommit: 1c3f24cda5e255ddb9dd7741f4af26ea0ad9922e
+  ms.openlocfilehash: c5f9d9b38db8314e8e2c558f0dbb8738453e7ddc
+  ms.sourcegitcommit: e4d007e5b8fa836727fe0419950ff22d5edc2384
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 07/20/2022
-  ms.locfileid: "66890563"
+  ms.lasthandoff: 08/24/2022
+  ms.locfileid: "67423968"

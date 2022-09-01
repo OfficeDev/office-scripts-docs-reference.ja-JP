@@ -1,35 +1,42 @@
 ### YamlMime:TSType
 name: ExcelScript.ConditionalTextComparisonRule
-uid: 'ExcelScript!ExcelScript.ConditionalTextComparisonRule:interface'
+uid: ExcelScript!ExcelScript.ConditionalTextComparisonRule:interface
 package: ExcelScript!
 fullName: ExcelScript.ConditionalTextComparisonRule
 summary: セル値の条件付き書式ルールを表します。
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script adds conditional formatting to the first column in the worksheet.\n * This formatting gives the cells a green fill if they have text starting with \"Excel\".\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the first column in the current worksheet.\n  const currentSheet = workbook.getActiveWorksheet();\n  const firstColumn = currentSheet.getRange(\"A:A\");\n\n  // Add conditional formatting based on the text in the cells.\n  const textConditionFormat = \n    firstColumn.addConditionalFormat(ExcelScript.ConditionalFormatType.containsText).getTextComparison();\n\n  // Set the conditional format to provide a green fill.\n  textConditionFormat.getFormat().getFill().setColor(\"green\");\n\n  // Apply the condition rule that the text begins with \"Excel\".\n  const textRule: ExcelScript.ConditionalTextComparisonRule = {\n    operator: ExcelScript.ConditionalTextOperator.beginsWith,\n    text: \"Excel\"\n  };\n  textConditionFormat.setRule(textRule);\n}\n```"
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: operator
-    uid: 'ExcelScript!ExcelScript.ConditionalTextComparisonRule#operator:member'
-    package: ExcelScript!
-    fullName: operator
-    summary: テキストの条件付き書式の演算子。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'operator: ConditionalTextOperator;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.ConditionalTextOperator:enum" />'
-  - name: text
-    uid: 'ExcelScript!ExcelScript.ConditionalTextComparisonRule#text:member'
-    package: ExcelScript!
-    fullName: text
-    summary: 条件付き書式のテキスト値。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'text: string;'
-      return:
-        type: string
+- name: operator
+  uid: ExcelScript!ExcelScript.ConditionalTextComparisonRule#operator:member
+  package: ExcelScript!
+  fullName: operator
+  summary: テキストの条件付き書式の演算子。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'operator: ConditionalTextOperator;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ConditionalTextOperator:enum" />
+- name: text
+  uid: ExcelScript!ExcelScript.ConditionalTextComparisonRule#text:member
+  package: ExcelScript!
+  fullName: text
+  summary: 条件付き書式のテキスト値。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'text: string;'
+    return:
+      type: string
+metadata:
+  ms.openlocfilehash: ba8c619428f1c9aebf922c08f639af6976db3e84
+  ms.sourcegitcommit: e4d007e5b8fa836727fe0419950ff22d5edc2384
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 08/24/2022
+  ms.locfileid: "67423891"

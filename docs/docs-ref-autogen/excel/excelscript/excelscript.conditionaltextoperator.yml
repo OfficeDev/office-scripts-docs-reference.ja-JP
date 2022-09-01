@@ -1,30 +1,37 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ConditionalTextOperator
-uid: 'ExcelScript!ExcelScript.ConditionalTextOperator:enum'
+uid: ExcelScript!ExcelScript.ConditionalTextOperator:enum
 package: ExcelScript!
 fullName: ExcelScript.ConditionalTextOperator
-summary: テキストの条件付き書式の種類の演算子を表します。
-remarks: ''
+summary: テキストの条件付き書式の型の演算子を表します。
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script adds conditional formatting to the first column in the worksheet.\n * This formatting gives the cells a green fill if they have text starting with \"Excel\".\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the first column in the current worksheet.\n  const currentSheet = workbook.getActiveWorksheet();\n  const firstColumn = currentSheet.getRange(\"A:A\");\n\n  // Add conditional formatting based on the text in the cells.\n  const textConditionFormat = \n    firstColumn.addConditionalFormat(ExcelScript.ConditionalFormatType.containsText).getTextComparison();\n\n  // Set the conditional format to provide a green fill.\n  textConditionFormat.getFormat().getFill().setColor(\"green\");\n\n  // Apply the condition rule that the text begins with \"Excel\".\n  const textRule: ExcelScript.ConditionalTextComparisonRule = {\n    operator: ExcelScript.ConditionalTextOperator.beginsWith,\n    text: \"Excel\"\n  };\n  textConditionFormat.setRule(textRule);\n}\n```"
 isPreview: false
 isDeprecated: false
 fields:
-  - name: beginsWith
-    uid: 'ExcelScript!ExcelScript.ConditionalTextOperator.beginsWith:member'
-    package: ExcelScript!
-    summary: ''
-  - name: contains
-    uid: 'ExcelScript!ExcelScript.ConditionalTextOperator.contains:member'
-    package: ExcelScript!
-    summary: ''
-  - name: endsWith
-    uid: 'ExcelScript!ExcelScript.ConditionalTextOperator.endsWith:member'
-    package: ExcelScript!
-    summary: ''
-  - name: invalid
-    uid: 'ExcelScript!ExcelScript.ConditionalTextOperator.invalid:member'
-    package: ExcelScript!
-    summary: ''
-  - name: notContains
-    uid: 'ExcelScript!ExcelScript.ConditionalTextOperator.notContains:member'
-    package: ExcelScript!
-    summary: ''
+- name: beginsWith
+  uid: ExcelScript!ExcelScript.ConditionalTextOperator.beginsWith:member
+  package: ExcelScript!
+  summary: ''
+- name: contains
+  uid: ExcelScript!ExcelScript.ConditionalTextOperator.contains:member
+  package: ExcelScript!
+  summary: ''
+- name: endsWith
+  uid: ExcelScript!ExcelScript.ConditionalTextOperator.endsWith:member
+  package: ExcelScript!
+  summary: ''
+- name: invalid
+  uid: ExcelScript!ExcelScript.ConditionalTextOperator.invalid:member
+  package: ExcelScript!
+  summary: ''
+- name: notContains
+  uid: ExcelScript!ExcelScript.ConditionalTextOperator.notContains:member
+  package: ExcelScript!
+  summary: ''
+metadata:
+  ms.openlocfilehash: d31cc0621cb632d264bd93006e52943dd5260bac
+  ms.sourcegitcommit: e4d007e5b8fa836727fe0419950ff22d5edc2384
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 08/24/2022
+  ms.locfileid: "67423883"

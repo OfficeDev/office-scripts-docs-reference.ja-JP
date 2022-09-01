@@ -1,74 +1,81 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ShowAsCalculation
-uid: 'ExcelScript!ExcelScript.ShowAsCalculation:enum'
+uid: ExcelScript!ExcelScript.ShowAsCalculation:enum
 package: ExcelScript!
 fullName: ExcelScript.ShowAsCalculation
-summary: DataPivotField の ShowAs 計算関数。
+summary: DataPivotField の ShowAs 計算列挙体。
 remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-  - name: differenceFrom
-    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.differenceFrom:member'
-    package: ExcelScript!
-    summary: 指定した Base フィールドと Base アイテムとの違い。
-  - name: index
-    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.index:member'
-    package: ExcelScript!
-    summary: 次のように値を計算します。(セル内の値) x (総計) / ((Grand Row Total) x (Grand Column Total))
-  - name: none
-    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.none:member'
-    package: ExcelScript!
-    summary: 計算は適用されません。
-  - name: percentDifferenceFrom
-    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentDifferenceFrom:member'
-    package: ExcelScript!
-    summary: 指定した Base フィールドと Base アイテムとの違い。
-  - name: percentOf
-    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOf:member'
-    package: ExcelScript!
-    summary: '指定した [基本] フィールドと [基本アイテム] のパーセント。'
-  - name: percentOfColumnTotal
-    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfColumnTotal:member'
-    package: ExcelScript!
-    summary: 列の合計の割合。
-  - name: percentOfGrandTotal
-    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfGrandTotal:member'
-    package: ExcelScript!
-    summary: 総計のパーセント。
-  - name: percentOfParentColumnTotal
-    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentColumnTotal:member'
-    package: ExcelScript!
-    summary: '指定した [基準] フィールドの列合計のパーセント。'
-  - name: percentOfParentRowTotal
-    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentRowTotal:member'
-    package: ExcelScript!
-    summary: '指定した [基本] フィールドの行合計のパーセント。'
-  - name: percentOfParentTotal
-    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentTotal:member'
-    package: ExcelScript!
-    summary: '指定した [基準] フィールドの合計の割合。'
-  - name: percentOfRowTotal
-    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfRowTotal:member'
-    package: ExcelScript!
-    summary: 行の合計の割合。
-  - name: percentRunningTotal
-    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentRunningTotal:member'
-    package: ExcelScript!
-    summary: '指定した [基準] フィールドの合計を実行する割合。'
-  - name: rankAscending
-    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.rankAscending:member'
-    package: ExcelScript!
-    summary: 指定した Base フィールドの昇順のランク。
-  - name: rankDecending
-    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.rankDecending:member'
-    package: ExcelScript!
-    summary: 指定した Base フィールドの降順ランク。
-  - name: runningTotal
-    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.runningTotal:member'
-    package: ExcelScript!
-    summary: '指定した [基本] フィールドの合計を実行します。'
-  - name: unknown
-    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.unknown:member'
-    package: ExcelScript!
-    summary: 計算が不明またはサポートされていません。
+- name: differenceFrom
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.differenceFrom:member
+  package: ExcelScript!
+  summary: 指定した基準フィールドと基準項目との違い。
+- name: index
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.index:member
+  package: ExcelScript!
+  summary: '次のように値を計算します: ((セルの値) x (総計) / (Grand Row Total) x (Grand Column Total))'
+- name: none
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.none:member
+  package: ExcelScript!
+  summary: 計算は適用されません。
+- name: percentDifferenceFrom
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.percentDifferenceFrom:member
+  package: ExcelScript!
+  summary: 指定した基準フィールドと基準項目との違い。
+- name: percentOf
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.percentOf:member
+  package: ExcelScript!
+  summary: 指定した基準フィールドと基準項目の割合。
+- name: percentOfColumnTotal
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.percentOfColumnTotal:member
+  package: ExcelScript!
+  summary: 列の合計の割合。
+- name: percentOfGrandTotal
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.percentOfGrandTotal:member
+  package: ExcelScript!
+  summary: 総計のパーセント。
+- name: percentOfParentColumnTotal
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentColumnTotal:member
+  package: ExcelScript!
+  summary: 指定した基準フィールドの列合計の割合。
+- name: percentOfParentRowTotal
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentRowTotal:member
+  package: ExcelScript!
+  summary: 指定した基準フィールドの行合計の割合。
+- name: percentOfParentTotal
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentTotal:member
+  package: ExcelScript!
+  summary: 指定した基準フィールドの総計の割合。
+- name: percentOfRowTotal
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.percentOfRowTotal:member
+  package: ExcelScript!
+  summary: 行の合計の割合。
+- name: percentRunningTotal
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.percentRunningTotal:member
+  package: ExcelScript!
+  summary: 指定した基準フィールドの実行率の合計。
+- name: rankAscending
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.rankAscending:member
+  package: ExcelScript!
+  summary: 指定した基準フィールドの昇順ランク。
+- name: rankDecending
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.rankDecending:member
+  package: ExcelScript!
+  summary: 指定した基準フィールドの降順ランク。
+- name: runningTotal
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.runningTotal:member
+  package: ExcelScript!
+  summary: 指定した基準フィールドの合計を実行しています。
+- name: unknown
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.unknown:member
+  package: ExcelScript!
+  summary: 計算が不明であるか、サポートされていません。
+metadata:
+  ms.openlocfilehash: 1f518205e48840d46942669391456e7ab1c2d8b4
+  ms.sourcegitcommit: e4d007e5b8fa836727fe0419950ff22d5edc2384
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 08/24/2022
+  ms.locfileid: "67423982"

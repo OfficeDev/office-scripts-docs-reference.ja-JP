@@ -4,7 +4,7 @@ uid: ExcelScript!ExcelScript.ConditionalCellValueRule:interface
 package: ExcelScript!
 fullName: ExcelScript.ConditionalCellValueRule
 summary: セル値の条件付き書式ルールを表します。
-remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script applies conditional formatting to a range.\n * That formatting is conditional upon the cell's numerical value.\n * Any value between 50 and 75 will have the cell fill color changed and the font made italic.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the range to format.\n  const sheet = workbook.getActiveWorksheet();\n  const ratingColumn = sheet.getRange(\"D2:D20\");\n\n  // Add cell value conditional formatting.\n  const cellValueConditionalFormatting = ratingColumn.addConditionalFormat(ExcelScript.ConditionalFormatType.cellValue).getCellValue();\n  \n  // Create the condition, in this case when the cell value is between 50 and 75.\n  let rule: ExcelScript.ConditionalCellValueRule = {\n    formula1: \"50\",\n    formula2: \"75\",\n    operator: ExcelScript.ConditionalCellValueOperator.between\n  };\n  cellValueConditionalFormatting.setRule(rule);\n\n  // Set the format to apply when the condition is met.\n  let format = cellValueConditionalFormatting.getFormat();\n  format.getFill().setColor(\"yellow\");\n  format.getFont().setItalic(true);\n}\n```"
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script applies conditional formatting to a range.\n * That formatting is conditional upon the cell's numerical value.\n * Any value between 50 and 75 will have the cell fill color changed and the font made italic.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the range to format.\n  const sheet = workbook.getActiveWorksheet();\n  const ratingColumn = sheet.getRange(\"D2:D20\");\n\n  // Add cell value conditional formatting.\n  const cellValueConditionalFormatting =\n    ratingColumn.addConditionalFormat(ExcelScript.ConditionalFormatType.cellValue).getCellValue();\n  \n  // Create the condition, in this case when the cell value is between 50 and 75.\n  let rule: ExcelScript.ConditionalCellValueRule = {\n    formula1: \"50\",\n    formula2: \"75\",\n    operator: ExcelScript.ConditionalCellValueOperator.between\n  };\n  cellValueConditionalFormatting.setRule(rule);\n\n  // Set the format to apply when the condition is met.\n  let format = cellValueConditionalFormatting.getFormat();\n  format.getFill().setColor(\"yellow\");\n  format.getFont().setItalic(true);\n}\n```"
 isPreview: false
 isDeprecated: false
 type: interface
@@ -46,9 +46,9 @@ properties:
     return:
       type: <xref uid="ExcelScript!ExcelScript.ConditionalCellValueOperator:enum" />
 metadata:
-  ms.openlocfilehash: 4ad1a7ef13917eadd37e1ef70cfac72435737c59
-  ms.sourcegitcommit: 224152865ad439182e63f5630f0f0aec589420a7
+  ms.openlocfilehash: c02c04296db65c18328e92683b30839aae4c5faf
+  ms.sourcegitcommit: e4d007e5b8fa836727fe0419950ff22d5edc2384
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 07/13/2022
-  ms.locfileid: "66767148"
+  ms.lasthandoff: 08/24/2022
+  ms.locfileid: "67423878"

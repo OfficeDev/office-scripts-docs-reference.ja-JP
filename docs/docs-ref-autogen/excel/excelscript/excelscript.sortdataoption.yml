@@ -1,18 +1,25 @@
 ### YamlMime:TSEnum
 name: ExcelScript.SortDataOption
-uid: 'ExcelScript!ExcelScript.SortDataOption:enum'
+uid: ExcelScript!ExcelScript.SortDataOption:enum
 package: ExcelScript!
 fullName: ExcelScript.SortDataOption
 summary: ''
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script sorts a table based on the values in column 1.\n * If the text of a column-1 value can be treated as a number, \n * it will be sorted in numerical order, rather than Unicode order\n * (so 123 will come before 12.3).\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the first table on the current worksheet.\n  const currentSheet = workbook.getActiveWorksheet();\n  const table = currentSheet.getTables()[0];\n\n  // Create the sorting parameters.\n  const countSortField: ExcelScript.SortField = {\n    key: 1,\n    ascending: true,\n    dataOption: ExcelScript.SortDataOption.textAsNumber\n  };\n\n  // Apply the sort to the table.\n  const sort = table.getSort();\n  sort.apply([countSortField]);\n}\n```"
 isPreview: false
 isDeprecated: false
 fields:
-  - name: normal
-    uid: 'ExcelScript!ExcelScript.SortDataOption.normal:member'
-    package: ExcelScript!
-    summary: ''
-  - name: textAsNumber
-    uid: 'ExcelScript!ExcelScript.SortDataOption.textAsNumber:member'
-    package: ExcelScript!
-    summary: ''
+- name: normal
+  uid: ExcelScript!ExcelScript.SortDataOption.normal:member
+  package: ExcelScript!
+  summary: ''
+- name: textAsNumber
+  uid: ExcelScript!ExcelScript.SortDataOption.textAsNumber:member
+  package: ExcelScript!
+  summary: ''
+metadata:
+  ms.openlocfilehash: cffe72c18df8b290a5fb63d20ae1000f1b13f626
+  ms.sourcegitcommit: e4d007e5b8fa836727fe0419950ff22d5edc2384
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 08/24/2022
+  ms.locfileid: "67423919"

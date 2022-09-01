@@ -1,54 +1,61 @@
 ### YamlMime:TSType
 name: ExcelScript.TextConditionalFormat
-uid: 'ExcelScript!ExcelScript.TextConditionalFormat:interface'
+uid: ExcelScript!ExcelScript.TextConditionalFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.TextConditionalFormat
 summary: 特定のテキストの条件付き書式を表します。
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script adds conditional formatting to the first column in the worksheet.\n * This formatting gives the cells a green fill if they have text starting with \"Excel\".\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the first column in the current worksheet.\n  const currentSheet = workbook.getActiveWorksheet();\n  const firstColumn = currentSheet.getRange(\"A:A\");\n\n  // Add conditional formatting based on the text in the cells.\n  const textConditionFormat: ExcelScript.TextConditionalFormat = \n    firstColumn.addConditionalFormat(ExcelScript.ConditionalFormatType.containsText).getTextComparison();\n\n  // Set the conditional format to provide a green fill.\n  textConditionFormat.getFormat().getFill().setColor(\"green\");\n\n  // Apply the condition rule that the text begins with \"Excel\".\n  const textRule: ExcelScript.ConditionalTextComparisonRule = {\n    operator: ExcelScript.ConditionalTextOperator.beginsWith,\n    text: \"Excel\"\n  };\n  textConditionFormat.setRule(textRule);\n}\n```"
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-  - name: getFormat()
-    uid: 'ExcelScript!ExcelScript.TextConditionalFormat#getFormat:member(1)'
-    package: ExcelScript!
-    fullName: getFormat()
-    summary: 条件付き書式のフォント、塗りつぶし、罫線、その他のプロパティをカプセル化する format オブジェクトを返します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getFormat(): ConditionalRangeFormat;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeFormat:interface" />'
-        description: ''
-  - name: getRule()
-    uid: 'ExcelScript!ExcelScript.TextConditionalFormat#getRule:member(1)'
-    package: ExcelScript!
-    fullName: getRule()
-    summary: 条件付き書式のルール。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getRule(): ConditionalTextComparisonRule;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.ConditionalTextComparisonRule:interface" />'
-        description: ''
-  - name: setRule(rule)
-    uid: 'ExcelScript!ExcelScript.TextConditionalFormat#setRule:member(1)'
-    package: ExcelScript!
-    fullName: setRule(rule)
-    summary: 条件付き書式のルール。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setRule(rule: ConditionalTextComparisonRule): void;'
-      parameters:
-        - id: rule
-          description: ''
-          type: '<xref uid="ExcelScript!ExcelScript.ConditionalTextComparisonRule:interface" />'
-      return:
-        type: void
-        description: ''
+- name: getFormat()
+  uid: ExcelScript!ExcelScript.TextConditionalFormat#getFormat:member(1)
+  package: ExcelScript!
+  fullName: getFormat()
+  summary: 条件付き書式のフォント、塗りつぶし、罫線、およびその他のプロパティをカプセル化して、書式オブジェクトを返します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFormat(): ConditionalRangeFormat;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeFormat:interface" />
+      description: ''
+- name: getRule()
+  uid: ExcelScript!ExcelScript.TextConditionalFormat#getRule:member(1)
+  package: ExcelScript!
+  fullName: getRule()
+  summary: 条件付き書式のルール。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRule(): ConditionalTextComparisonRule;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ConditionalTextComparisonRule:interface" />
+      description: ''
+- name: setRule(rule)
+  uid: ExcelScript!ExcelScript.TextConditionalFormat#setRule:member(1)
+  package: ExcelScript!
+  fullName: setRule(rule)
+  summary: 条件付き書式のルール。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setRule(rule: ConditionalTextComparisonRule): void;'
+    parameters:
+    - id: rule
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ConditionalTextComparisonRule:interface" />
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 2875ff0fa1201ee742d72615b0ebfc98b5ad856f
+  ms.sourcegitcommit: e4d007e5b8fa836727fe0419950ff22d5edc2384
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 08/24/2022
+  ms.locfileid: "67423961"

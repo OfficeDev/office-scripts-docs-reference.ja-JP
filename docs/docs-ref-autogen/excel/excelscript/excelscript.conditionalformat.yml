@@ -34,7 +34,7 @@ methods:
     content: 'getCellValue(): CellValueConditionalFormat | undefined;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.CellValueConditionalFormat:interface" /> | undefined
-      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script applies conditional formatting to a range.\n * That formatting is conditional upon the cell's numerical value.\n * Any value between 50 and 75 will have the cell fill color changed and the font made italic.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the range to format.\n  const sheet = workbook.getActiveWorksheet();\n  const ratingColumn = sheet.getRange(\"D2:D20\");\n\n  // Add cell value conditional formatting.\n  const cellValueConditionalFormatting = ratingColumn.addConditionalFormat(ExcelScript.ConditionalFormatType.cellValue).getCellValue();\n  \n  // Create the condition, in this case when the cell value is between 50 and 75.\n  let rule: ExcelScript.ConditionalCellValueRule = {\n    formula1: \"50\",\n    formula2: \"75\",\n    operator: ExcelScript.ConditionalCellValueOperator.between\n  };\n  cellValueConditionalFormatting.setRule(rule);\n\n  // Set the format to apply when the condition is met.\n  let format = cellValueConditionalFormatting.getFormat();\n  format.getFill().setColor(\"yellow\");\n  format.getFont().setItalic(true);\n\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script applies conditional formatting to a range.\n * That formatting is conditional upon the cell's numerical value.\n * Any value between 50 and 75 will have the cell fill color changed and the font made italic.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the range to format.\n  const sheet = workbook.getActiveWorksheet();\n  const ratingColumn = sheet.getRange(\"D2:D20\");\n\n  // Add cell value conditional formatting.\n  const cellValueConditionalFormatting =\n    ratingColumn.addConditionalFormat(ExcelScript.ConditionalFormatType.cellValue).getCellValue();\n  \n  // Create the condition, in this case when the cell value is between 50 and 75.\n  let rule: ExcelScript.ConditionalCellValueRule = {\n    formula1: \"50\",\n    formula2: \"75\",\n    operator: ExcelScript.ConditionalCellValueOperator.between\n  };\n  cellValueConditionalFormatting.setRule(rule);\n\n  // Set the format to apply when the condition is met.\n  let format = cellValueConditionalFormatting.getFormat();\n  format.getFill().setColor(\"yellow\");\n  format.getFont().setItalic(true);\n\n}\n```"
 - name: getColorScale()
   uid: ExcelScript!ExcelScript.ConditionalFormat#getColorScale:member(1)
   package: ExcelScript!
@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getRange:member(1)
   package: ExcelScript!
   fullName: getRange()
-  summary: conditonal 形式が適用される範囲を返します。 条件付き書式が複数の範囲に適用されている場合、このメソッドは `undefined`<!-- -->.
+  summary: 条件付き書式を適用する範囲を返します。 条件付き書式が複数の範囲に適用されている場合、このメソッドは `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getRanges:member(1)
   package: ExcelScript!
   fullName: getRanges()
-  summary: を返します。 `RangeAreas`<!-- -->は、1 つ以上の四角形の範囲で構成され、この範囲に対して同一形式が適用されます。
+  summary: を返します。 `RangeAreas`<!-- -->は、条件付き書式が適用される 1 つまたは複数の四角形の範囲で構成されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -177,7 +177,7 @@ methods:
     content: 'getTextComparison(): TextConditionalFormat | undefined;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.TextConditionalFormat:interface" /> | undefined
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script adds conditional formatting to the first column in the worksheet.\n * This formatting gives the cells a green fill if they have text starting with \"Excel\".\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the first column in the current worksheet.\n  const currentSheet = workbook.getActiveWorksheet();\n  const firstColumn = currentSheet.getRange(\"A:A\");\n\n  // Add conditional formatting based on the text in the cells.\n  const textConditionFormat = \n    firstColumn.addConditionalFormat(ExcelScript.ConditionalFormatType.containsText).getTextComparison();\n\n  // Set the conditional format to provide a green fill.\n  textConditionFormat.getFormat().getFill().setColor(\"green\");\n\n  // Apply the condition rule that the text begins with \"Excel\".\n  const textRule: ExcelScript.ConditionalTextComparisonRule = {\n    operator: ExcelScript.ConditionalTextOperator.beginsWith,\n    text: \"Excel\"\n  };\n  textConditionFormat.setRule(textRule);\n}\n```"
 - name: getTopBottom()
   uid: ExcelScript!ExcelScript.ConditionalFormat#getTopBottom:member(1)
   package: ExcelScript!
@@ -239,9 +239,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 343c48a1358746befb093936e24438d82c951d9f
-  ms.sourcegitcommit: 224152865ad439182e63f5630f0f0aec589420a7
+  ms.openlocfilehash: 7c9b7f9b1fb7350f3fb52bdd04d0bdef985cd8b1
+  ms.sourcegitcommit: e4d007e5b8fa836727fe0419950ff22d5edc2384
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 07/13/2022
-  ms.locfileid: "66767099"
+  ms.lasthandoff: 08/24/2022
+  ms.locfileid: "67423898"
