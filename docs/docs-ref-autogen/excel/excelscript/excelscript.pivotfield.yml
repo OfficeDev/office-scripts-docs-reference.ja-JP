@@ -260,14 +260,14 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.DataPivotHierarchy:interface" />
     - id: pivotItemScope
       description: 並べ替えのスコープに使用する必要がある項目。 これらは、並べ替える行または列を構成する項目です。 PivotItem の代わりに文字列を使用する場合、その文字列は PivotItem の ID を表します。 並べ替える軸にデータ階層以外の項目がない場合は、空にすることができます。
-      type: "Array&lt;<xref uid=\"ExcelScript!ExcelScript.PivotItem:interface\" /> | string&gt;\n        "
+      type: Array&lt;<xref uid="ExcelScript!ExcelScript.PivotItem:interface" /> | string&gt;
     return:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: b101e242560b91b8f743585d90e374bd5fbc2851
-  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
+  ms.openlocfilehash: 7360ef6c63b19b899ae28544da943e67379eb237
+  ms.sourcegitcommit: 497d2ecc546aecf311c23c82110f8f0dfbcde0b9
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 05/13/2022
-  ms.locfileid: "65394188"
+  ms.lasthandoff: 10/20/2022
+  ms.locfileid: "68619505"
