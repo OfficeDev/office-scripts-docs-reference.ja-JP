@@ -320,14 +320,14 @@ functions:
     parameters:
     - id: callback
       description: ''
-      type: "(workbook: <xref uid=\"ExcelScript!ExcelScript.Workbook:interface\" />) =&gt; Promise&lt;void&gt;\n    "
+      type: '(workbook: <xref uid="ExcelScript!ExcelScript.Workbook:interface" />) =&gt; Promise&lt;void&gt;'
     return:
       type: Promise&lt;void&gt;
       description: ''
 metadata:
-  ms.openlocfilehash: fe80c01eb64f738e14f541f9a06cfbddf9496ddf
-  ms.sourcegitcommit: 0675e5a8982c67a50f192aff2c47fba884f1fd26
+  ms.openlocfilehash: 330284582046613c3e2b5e5fc1b9141bf7869bff
+  ms.sourcegitcommit: 497d2ecc546aecf311c23c82110f8f0dfbcde0b9
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 01/26/2022
-  ms.locfileid: "62222320"
+  ms.lasthandoff: 10/20/2022
+  ms.locfileid: "68619485"

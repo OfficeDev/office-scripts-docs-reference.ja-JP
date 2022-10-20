@@ -75,7 +75,7 @@ methods:
     content: 'clear(applyTo?: ClearApplyTo): void;'
     parameters:
     - id: applyTo
-      description: 省略可能。 クリア操作の種類を決定します。 詳細は「`ExcelScript.ClearApplyTo`」をご覧ください。
+      description: オプション。 クリア操作の種類を決定します。 詳細は「`ExcelScript.ClearApplyTo`」をご覧ください。
       type: <xref uid="ExcelScript!ExcelScript.ClearApplyTo:enum" />
     return:
       type: void
@@ -352,7 +352,7 @@ methods:
     content: 'getColumnsAfter(count?: number): Range;'
     parameters:
     - id: count
-      description: 省略可能。結果の範囲に含める列の数です。通常、正の数値を使用して現在の範囲外に範囲を作成します。負の数値を使用して、現在の範囲内に範囲を作成することもできます。既定値は 1 です。
+      description: Optional. The number of columns to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.
       type: number
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -369,7 +369,7 @@ methods:
     content: 'getColumnsBefore(count?: number): Range;'
     parameters:
     - id: count
-      description: 省略可能。結果の範囲に含める列の数です。通常、正の数値を使用して現在の範囲外に範囲を作成します。負の数値を使用して、現在の範囲内に範囲を作成することもできます。既定値は 1 です。
+      description: Optional. The number of columns to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.
       type: number
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -476,7 +476,7 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.KeyboardDirection:enum" />
     - id: activeCell
       description: この範囲内のアクティブセル。 既定では、アクティブセルは範囲の左上のセルです。 アクティブセルがこの範囲内にない場合は、エラーがスローされます。
-      type: "<xref uid=\"ExcelScript!ExcelScript.Range:interface\" /> | string\n        "
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script makes the font bold on all the contiguous cells between \n * A1 and the bottom of the used range of the first column.\n */\nfunction main(workbook: ExcelScript.Workbook)\n{\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Get every cell that's used between A1 and the end of the column.\n  // This recreates the Ctrl+Shift+Down arrow key behavior.\n  let firstCell = selectedSheet.getRange(\"A1\");\n  let firstColumn = firstCell.getExtendedRange(ExcelScript.KeyboardDirection.down);\n\n  // Set the font to bold in that range.\n  firstColumn.getFormat().getFont().setBold(true);\n}\n```"
@@ -856,7 +856,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getOffsetRange:member(1)
   package: ExcelScript!
   fullName: getOffsetRange(rowOffset, columnOffset)
-  summary: 指定した範囲からのオフセットで範囲を表すオブジェクトを取得します。返される範囲のディメンションは、この範囲と一致します。結果の範囲がワークシートのグリッドの境界線の外にはみ出る場合は、エラーがスローされます。
+  summary: Gets an object which represents a range that's offset from the specified range. The dimension of the returned range will match this range. If the resulting range is forced outside the bounds of the worksheet grid, an error will be thrown.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -864,10 +864,10 @@ methods:
     content: 'getOffsetRange(rowOffset: number, columnOffset: number): Range;'
     parameters:
     - id: rowOffset
-      description: 範囲をオフセットする行数 (正、負、または 0)。正の値は下方向へのオフセットです。また、負の値は上方向へのオフセットです。
+      description: The number of rows (positive, negative, or 0) by which the range is to be offset. Positive values are offset downward, and negative values are offset upward.
       type: number
     - id: columnOffset
-      description: 範囲をオフセットする列数 (正、負、または 0)。正の値は右方向へのオフセットです。また、負の値は左方向へのオフセットです。
+      description: The number of columns (positive, negative, or 0) by which the range is to be offset. Positive values are offset to the right, and negative values are offset to the left.
       type: number
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -922,7 +922,7 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.KeyboardDirection:enum" />
     - id: activeCell
       description: この範囲内のアクティブセル。 既定では、アクティブセルは範囲の左上のセルです。 アクティブセルがこの範囲内にない場合は、エラーがスローされます。
-      type: "<xref uid=\"ExcelScript!ExcelScript.Range:interface\" /> | string\n        "
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script adds the value \"Total\" after the end of the first column.\n */\nfunction main(workbook: ExcelScript.Workbook)\n{\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Get the last used cell at the end of the column.\n  // This recreates the Ctrl+Down arrow key behavior.\n  let firstCell = selectedSheet.getRange(\"A1\");\n  let firstColumn = selectedSheet.getRange(\"A1\").getRangeEdge(ExcelScript.KeyboardDirection.down);\n  let cellAfter = firstColumn.getOffsetRange(1, 0);\n\n  // Set the value of the cell after the current end of the used column to \"Total\".\n  cellAfter.setValue(\"Total\");\n}\n```"
@@ -938,7 +938,7 @@ methods:
     content: 'getResizedRange(deltaRows: number, deltaColumns: number): Range;'
     parameters:
     - id: deltaRows
-      description: 現在の範囲を基準にして、右下隅を拡張する行の数です。範囲を拡張するには正の数値、または範囲を縮小するには負の数値を使用します。
+      description: The number of rows by which to expand the bottom-right corner, relative to the current range. Use a positive number to expand the range, or a negative number to decrease it.
       type: number
     - id: deltaColumns
       description: 現在の範囲を基準にして右下隅を展開する列の数。 範囲を拡張するには正の数値、または範囲を縮小するには負の数値を使用します。
@@ -1014,7 +1014,7 @@ methods:
     content: 'getRowsAbove(count?: number): Range;'
     parameters:
     - id: count
-      description: 省略可能。結果の範囲に含める行の数です。通常、正の数値を使用して現在の範囲外に範囲を作成します。負の数値を使用して、現在の範囲内に範囲を作成することもできます。既定値は 1 です。
+      description: Optional. The number of rows to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.
       type: number
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -1031,7 +1031,7 @@ methods:
     content: 'getRowsBelow(count?: number): Range;'
     parameters:
     - id: count
-      description: 省略可能。結果の範囲に含める行の数です。通常、正の数値を使用して現在の範囲外に範囲を作成します。負の数値を使用して、現在の範囲内に範囲を作成することもできます。既定値は 1 です。
+      description: Optional. The number of rows to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.
       type: number
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -1785,9 +1785,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: c5f9d9b38db8314e8e2c558f0dbb8738453e7ddc
-  ms.sourcegitcommit: e4d007e5b8fa836727fe0419950ff22d5edc2384
+  ms.openlocfilehash: 08b79a318b4c81cdc469390b4a322fb1b0ab7344
+  ms.sourcegitcommit: 497d2ecc546aecf311c23c82110f8f0dfbcde0b9
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 08/24/2022
-  ms.locfileid: "67423968"
+  ms.lasthandoff: 10/20/2022
+  ms.locfileid: "68619492"

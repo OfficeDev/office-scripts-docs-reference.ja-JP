@@ -45,7 +45,7 @@ methods:
       description: '`Range`ソース データに対応するオブジェクト。'
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
     - id: seriesBy
-      description: 省略可能。 列や行がグラフのデータ系列として使用される方法を指定します。 詳細は「`ExcelScript.ChartSeriesBy`」をご覧ください。
+      description: オプション。 列や行がグラフのデータ系列として使用される方法を指定します。 詳細は「`ExcelScript.ChartSeriesBy`」をご覧ください。
       type: <xref uid="ExcelScript!ExcelScript.ChartSeriesBy:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Chart:interface" />
@@ -279,7 +279,7 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string | <xref uid="ExcelScript!ExcelScript.Table:interface" />
     - id: destination
       description: ピボットテーブル レポートの配置先範囲 (結果のレポートを配置するワークシートの範囲) の左上端のセルを指定します。
-      type: "<xref uid=\"ExcelScript!ExcelScript.Range:interface\" /> | string\n        "
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: <xref uid="ExcelScript!ExcelScript.PivotTable:interface" />
       description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script creates a PivotTable from an existing table and adds it to a new worksheet.\n * This script assumes there is a table in the current worksheet with columns named \"Type\" and \"Sales\".\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Create a PivotTable based on a table in the current worksheet.\n  let sheet = workbook.getActiveWorksheet();\n  let table = sheet.getTables()[0];\n\n  // Add the PivotTable to a new worksheet.\n  let newSheet = workbook.addWorksheet(\"Pivot\");\n  let pivotTable = newSheet.addPivotTable(\"My Pivot\", table, \"A1\");\n\n  // Add fields to the PivotTable to show \"Sales\" per \"Type\".\n  pivotTable.addRowHierarchy(pivotTable.getHierarchy(\"Type\"));\n  pivotTable.addDataHierarchy(pivotTable.getHierarchy(\"Sales\"));\n\n  // Switch to the new worksheet.\n  newSheet.activate();\n}\n```"
@@ -1103,7 +1103,7 @@ methods:
     content: 'getUsedRange(valuesOnly?: boolean): Range;'
     parameters:
     - id: valuesOnly
-      description: 省略可能。 値の入っているセルのみを使用セルと見なします。
+      description: オプション。 値の入っているセルのみを使用セルと見なします。
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -1378,9 +1378,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: feaa88a1fe2186a58f01c79ee3e43d4da1864917
-  ms.sourcegitcommit: e4d007e5b8fa836727fe0419950ff22d5edc2384
+  ms.openlocfilehash: aaf78e0c5d3f2683a030e668b828d105c3f343cc
+  ms.sourcegitcommit: 497d2ecc546aecf311c23c82110f8f0dfbcde0b9
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 08/24/2022
-  ms.locfileid: "67423863"
+  ms.lasthandoff: 10/20/2022
+  ms.locfileid: "68619499"
