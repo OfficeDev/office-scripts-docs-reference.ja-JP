@@ -1,6 +1,6 @@
 # <a name="office-scripts-api-reference"></a>Office スクリプト API リファレンス
 
-Office Scripts API リファレンス ドキュメント リポジトリへようこそ。 最適なエクスペリエンスを得るには、[Microsoft Docsでこの](https://docs.microsoft.com/javascript/api/office-scripts/overview)コンテンツを表示することをお勧めします。
+Office Scripts API リファレンス ドキュメント リポジトリへようこそ。 最適なエクスペリエンスを得るには、 [Microsoft Learn](https://learn.microsoft.com/javascript/api/office-scripts/overview) でこのコンテンツを表示することをお勧めします。
 
 > **注**: Office スクリプトのドキュメントのソース ファイル (チュートリアルやハウツー ガイドなど) は、 [OfficeDev/office-scripts-docs](https://github.com/OfficeDev/office-scripts-docs) GitHub リポジトリにあります。
 
