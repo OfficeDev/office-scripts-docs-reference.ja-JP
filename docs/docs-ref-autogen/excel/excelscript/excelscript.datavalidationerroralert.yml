@@ -1,59 +1,66 @@
 ### YamlMime:TSType
 name: ExcelScript.DataValidationErrorAlert
-uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert:interface'
+uid: ExcelScript!ExcelScript.DataValidationErrorAlert:interface
 package: ExcelScript!
 fullName: ExcelScript.DataValidationErrorAlert
-summary: データ検証のエラー通知プロパティを表します。
-remarks: ''
+summary: データ検証のエラー 警告プロパティを表します。
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script creates a data validation rule for the range B1:B5.\n * All values in that range must be a positive number.\n * Attempts to enter other values are blocked and an error message appears.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the range B1:B5 in the active worksheet.\n  const currentSheet = workbook.getActiveWorksheet();\n  const positiveNumberOnlyCells = currentSheet.getRange(\"B1:B5\");\n\n  // Create a data validation rule to only allow positive numbers.\n  const positiveNumberValidation: ExcelScript.BasicDataValidation = {\n    formula1: \"0\",\n    operator: ExcelScript.DataValidationOperator.greaterThan\n  };\n  const positiveNumberOnlyRule: ExcelScript.DataValidationRule = {\n    wholeNumber: positiveNumberValidation\n  };\n\n  // Set the rule on the range.\n  const rangeDataValidation = positiveNumberOnlyCells.getDataValidation();\n  rangeDataValidation.setRule(positiveNumberOnlyRule);\n\n  // Create an alert to appear when data other than positive numbers are entered.\n  const positiveNumberOnlyAlert: ExcelScript.DataValidationErrorAlert = {\n    message: \"Positive numbers only\",\n    showAlert: true,\n    style: ExcelScript.DataValidationAlertStyle.stop,\n    title: \"Invalid data\"\n  };\n  rangeDataValidation.setErrorAlert(positiveNumberOnlyAlert);\n}\n```"
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: message
-    uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#message:member'
-    package: ExcelScript!
-    fullName: message
-    summary: エラー通知メッセージを表します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'message: string;'
-      return:
-        type: string
-  - name: showAlert
-    uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#showAlert:member'
-    package: ExcelScript!
-    fullName: showAlert
-    summary: ユーザーが無効なデータを入力した場合にエラー通知ダイアログを表示するかどうかを指定します。 既定値は次の値です。 `true`<!-- -->.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'showAlert: boolean;'
-      return:
-        type: boolean
-  - name: style
-    uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#style:member'
-    package: ExcelScript!
-    fullName: style
-    summary: データ検証アラートの種類については、「詳細」 `ExcelScript.DataValidationAlertStyle` を参照してください。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'style: DataValidationAlertStyle;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.DataValidationAlertStyle:enum" />'
-  - name: title
-    uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#title:member'
-    package: ExcelScript!
-    fullName: title
-    summary: エラー通知ダイアログのタイトルを表します。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'title: string;'
-      return:
-        type: string
+- name: message
+  uid: ExcelScript!ExcelScript.DataValidationErrorAlert#message:member
+  package: ExcelScript!
+  fullName: message
+  summary: エラー アラート メッセージを表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'message: string;'
+    return:
+      type: string
+- name: showAlert
+  uid: ExcelScript!ExcelScript.DataValidationErrorAlert#showAlert:member
+  package: ExcelScript!
+  fullName: showAlert
+  summary: ユーザーが無効なデータを入力したときにエラー アラート ダイアログを表示するかどうかを指定します。 既定値は `true`<!-- -->.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'showAlert: boolean;'
+    return:
+      type: boolean
+- name: style
+  uid: ExcelScript!ExcelScript.DataValidationErrorAlert#style:member
+  package: ExcelScript!
+  fullName: style
+  summary: データ検証アラートの種類については、こちらをご覧 `ExcelScript.DataValidationAlertStyle` ください。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'style: DataValidationAlertStyle;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.DataValidationAlertStyle:enum" />
+- name: title
+  uid: ExcelScript!ExcelScript.DataValidationErrorAlert#title:member
+  package: ExcelScript!
+  fullName: title
+  summary: エラー アラート ダイアログのタイトルを表します。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'title: string;'
+    return:
+      type: string
+metadata:
+  ms.openlocfilehash: 8d88e8ad6e12b563577d993ee6a6faaed0270f70
+  ms.sourcegitcommit: f004fc5d3ebfc650a5a353e05f1d75c2bc330f09
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 10/26/2022
+  ms.locfileid: "68698209"

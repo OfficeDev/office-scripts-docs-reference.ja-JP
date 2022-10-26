@@ -1,95 +1,103 @@
 ### YamlMime:TSType
 name: ExcelScript.DataValidationRule
-uid: 'ExcelScript!ExcelScript.DataValidationRule:interface'
+uid: ExcelScript!ExcelScript.DataValidationRule:interface
 package: ExcelScript!
 fullName: ExcelScript.DataValidationRule
-summary: データ検証ルールには、さまざまな種類のデータ検証が含まれる。 一度に 1 つのみ使用できます。 `ExcelScript.DataValidationType`<!-- -->.
+summary: データ検証ルールには、さまざまな種類のデータ検証が含まれています。 に従って一度に 1 つだけ使用できます。 `ExcelScript.DataValidationType`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: custom
-    uid: 'ExcelScript!ExcelScript.DataValidationRule#custom:member'
-    package: ExcelScript!
-    fullName: custom
-    summary: データ検証条件のカスタム数式。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'custom?: CustomDataValidation;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.CustomDataValidation:interface" />'
-  - name: date
-    uid: 'ExcelScript!ExcelScript.DataValidationRule#date:member'
-    package: ExcelScript!
-    fullName: date
-    summary: 日付のデータ検証条件。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'date?: DateTimeDataValidation;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.DateTimeDataValidation:interface" />'
-  - name: decimal
-    uid: 'ExcelScript!ExcelScript.DataValidationRule#decimal:member'
-    package: ExcelScript!
-    fullName: decimal
-    summary: 10 進数のデータ検証条件。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'decimal?: BasicDataValidation;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.BasicDataValidation:interface" />'
-  - name: list
-    uid: 'ExcelScript!ExcelScript.DataValidationRule#list:member'
-    package: ExcelScript!
-    fullName: list
-    summary: リストのデータ検証条件。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'list?: ListDataValidation;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.ListDataValidation:interface" />'
-  - name: textLength
-    uid: 'ExcelScript!ExcelScript.DataValidationRule#textLength:member'
-    package: ExcelScript!
-    fullName: textLength
-    summary: テキストの長さデータの検証条件。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'textLength?: BasicDataValidation;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.BasicDataValidation:interface" />'
-  - name: time
-    uid: 'ExcelScript!ExcelScript.DataValidationRule#time:member'
-    package: ExcelScript!
-    fullName: time
-    summary: 時刻のデータ検証条件。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'time?: DateTimeDataValidation;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.DateTimeDataValidation:interface" />'
-  - name: wholeNumber
-    uid: 'ExcelScript!ExcelScript.DataValidationRule#wholeNumber:member'
-    package: ExcelScript!
-    fullName: wholeNumber
-    summary: 数値データの検証条件。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'wholeNumber?: BasicDataValidation;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.BasicDataValidation:interface" />'
+- name: custom
+  uid: ExcelScript!ExcelScript.DataValidationRule#custom:member
+  package: ExcelScript!
+  fullName: custom
+  summary: データ検証条件のカスタム数式。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'custom?: CustomDataValidation;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.CustomDataValidation:interface" />
+- name: date
+  uid: ExcelScript!ExcelScript.DataValidationRule#date:member
+  package: ExcelScript!
+  fullName: date
+  summary: 日付のデータ検証条件。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'date?: DateTimeDataValidation;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.DateTimeDataValidation:interface" />
+- name: decimal
+  uid: ExcelScript!ExcelScript.DataValidationRule#decimal:member
+  package: ExcelScript!
+  fullName: decimal
+  summary: 10 進数のデータ検証条件。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'decimal?: BasicDataValidation;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.BasicDataValidation:interface" />
+- name: list
+  uid: ExcelScript!ExcelScript.DataValidationRule#list:member
+  package: ExcelScript!
+  fullName: list
+  summary: リストのデータ検証条件。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'list?: ListDataValidation;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ListDataValidation:interface" />
+- name: textLength
+  uid: ExcelScript!ExcelScript.DataValidationRule#textLength:member
+  package: ExcelScript!
+  fullName: textLength
+  summary: テキスト長データの検証条件。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'textLength?: BasicDataValidation;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.BasicDataValidation:interface" />
+- name: time
+  uid: ExcelScript!ExcelScript.DataValidationRule#time:member
+  package: ExcelScript!
+  fullName: time
+  summary: 時刻のデータ検証条件。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'time?: DateTimeDataValidation;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.DateTimeDataValidation:interface" />
+- name: wholeNumber
+  uid: ExcelScript!ExcelScript.DataValidationRule#wholeNumber:member
+  package: ExcelScript!
+  fullName: wholeNumber
+  summary: 整数データの検証条件。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'wholeNumber?: BasicDataValidation;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.BasicDataValidation:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script creates a data validation rule for the range B1:B5.\n * All values in that range must be a positive number.\n * Attempts to enter other values are blocked and an error message appears.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the range B1:B5 in the active worksheet.\n  const currentSheet = workbook.getActiveWorksheet();\n  const positiveNumberOnlyCells = currentSheet.getRange(\"B1:B5\");\n\n  // Create a data validation rule to only allow positive numbers.\n  const positiveNumberValidation: ExcelScript.BasicDataValidation = {\n    formula1: \"0\",\n    operator: ExcelScript.DataValidationOperator.greaterThan\n  };\n  const positiveNumberOnlyRule: ExcelScript.DataValidationRule = {\n    wholeNumber: positiveNumberValidation\n  };\n\n  // Set the rule on the range.\n  const rangeDataValidation = positiveNumberOnlyCells.getDataValidation();\n  rangeDataValidation.setRule(positiveNumberOnlyRule);\n\n  // Create an alert to appear when data other than positive numbers are entered.\n  const positiveNumberOnlyAlert: ExcelScript.DataValidationErrorAlert = {\n    message: \"Positive numbers only\",\n    showAlert: true,\n    style: ExcelScript.DataValidationAlertStyle.stop,\n    title: \"Invalid data\"\n  };\n  rangeDataValidation.setErrorAlert(positiveNumberOnlyAlert);\n}\n```"
+metadata:
+  ms.openlocfilehash: 20df56e868446c6e59ea9e5a1396a4a456868a59
+  ms.sourcegitcommit: f004fc5d3ebfc650a5a353e05f1d75c2bc330f09
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 10/26/2022
+  ms.locfileid: "68698188"

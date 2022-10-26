@@ -3,7 +3,7 @@ name: ExcelScript.DataValidation
 uid: ExcelScript!ExcelScript.DataValidation:interface
 package: ExcelScript!
 fullName: ExcelScript.DataValidation
-summary: 現在の範囲に適用されているデータ検証を表します。
+summary: 現在の範囲に適用されるデータ検証を表します。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#getInvalidCells:member(1)
   package: ExcelScript!
   fullName: getInvalidCells()
-  summary: 無効なセル値を `RangeAreas` 持つ 1 つ以上の四角形の範囲を含むオブジェクトを返します。 すべてのセル値が有効な場合、このメソッドは返されます `null`<!-- -->.
+  summary: 無効なセル値を `RangeAreas` 持つ 1 つ以上の四角形の範囲を含むオブジェクトを返します。 すべてのセル値が有効な場合、このメソッドは `null`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#getPrompt:member(1)
   package: ExcelScript!
   fullName: getPrompt()
-  summary: ユーザーがセルを選択したときにプロンプトが表示されます。
+  summary: ユーザーがセルを選択したときにプロンプトを表示します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#getType:member(1)
   package: ExcelScript!
   fullName: getType()
-  summary: データ検証の種類については `ExcelScript.DataValidationType` 、「」を参照してください。
+  summary: データ検証の種類については、「」を参照してください `ExcelScript.DataValidationType` 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#getValid:member(1)
   package: ExcelScript!
   fullName: getValid()
-  summary: すべてのセルの値がデータの入力規則に従っているかどうかを表します。 `true`すべてのセル値が有効な場合、または`false`すべてのセル値が無効な場合に返されます。 範囲内に `null` 有効なセル値と無効なセル値の両方がある場合に返されます。
+  summary: すべてのセルの値がデータの入力規則に従っているかどうかを表します。 `true`すべてのセル値が有効な場合、または`false`すべてのセル値が無効な場合は を返します。 範囲内に `null` 有効なセル値と無効なセル値の両方がある場合は を返します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -151,7 +151,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#setPrompt:member(1)
   package: ExcelScript!
   fullName: setPrompt(prompt)
-  summary: ユーザーがセルを選択したときにプロンプトが表示されます。
+  summary: ユーザーがセルを選択したときにプロンプトを表示します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -180,11 +180,11 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.DataValidationRule:interface" />
     return:
       type: void
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script creates a data validation rule for the range B1:B5.\n * All values in that range must be a positive number.\n * Attempts to enter other values are blocked and an error message appears.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the range B1:B5 in the active worksheet.\n  const currentSheet = workbook.getActiveWorksheet();\n  const positiveNumberOnlyCells = currentSheet.getRange(\"B1:B5\");\n\n  // Create a data validation rule to only allow positive numbers.\n  const positiveNumberValidation: ExcelScript.BasicDataValidation = {\n    formula1: \"0\",\n    operator: ExcelScript.DataValidationOperator.greaterThan\n  };\n  const positiveNumberOnlyRule: ExcelScript.DataValidationRule = {\n    wholeNumber: positiveNumberValidation\n  };\n\n  // Set the rule on the range.\n  const rangeDataValidation = positiveNumberOnlyCells.getDataValidation();\n  rangeDataValidation.setRule(positiveNumberOnlyRule);\n\n  // Create an alert to appear when data other than positive numbers are entered.\n  const positiveNumberOnlyAlert: ExcelScript.DataValidationErrorAlert = {\n    message: \"Positive numbers only\",\n    showAlert: true,\n    style: ExcelScript.DataValidationAlertStyle.stop,\n    title: \"Invalid data\"\n  };\n  rangeDataValidation.setErrorAlert(positiveNumberOnlyAlert);\n}\n```"
 metadata:
-  ms.openlocfilehash: 3e4285c5bc14bd9323ee70e1481280993e33fbc1
-  ms.sourcegitcommit: e4d007e5b8fa836727fe0419950ff22d5edc2384
+  ms.openlocfilehash: 0c8131bf0d480ce14d4578e6a51a876090f90201
+  ms.sourcegitcommit: f004fc5d3ebfc650a5a353e05f1d75c2bc330f09
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 08/24/2022
-  ms.locfileid: "67423870"
+  ms.lasthandoff: 10/26/2022
+  ms.locfileid: "68698202"

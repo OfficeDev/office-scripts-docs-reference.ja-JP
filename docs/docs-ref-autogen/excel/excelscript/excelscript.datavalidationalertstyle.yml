@@ -1,22 +1,29 @@
 ### YamlMime:TSEnum
 name: ExcelScript.DataValidationAlertStyle
-uid: 'ExcelScript!ExcelScript.DataValidationAlertStyle:enum'
+uid: ExcelScript!ExcelScript.DataValidationAlertStyle:enum
 package: ExcelScript!
 fullName: ExcelScript.DataValidationAlertStyle
-summary: データ検証エラー通知のスタイルを表します。 既定値は次の値です。 `Stop`<!-- -->.
-remarks: ''
+summary: データ検証エラーアラートのスタイルを表します。 既定値は `Stop`<!-- -->.
+remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script creates a data validation rule for the range B1:B5.\n * All values in that range must be a positive number.\n * Attempts to enter other values are blocked and an error message appears.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the range B1:B5 in the active worksheet.\n  const currentSheet = workbook.getActiveWorksheet();\n  const positiveNumberOnlyCells = currentSheet.getRange(\"B1:B5\");\n\n  // Create a data validation rule to only allow positive numbers.\n  const positiveNumberValidation: ExcelScript.BasicDataValidation = {\n    formula1: \"0\",\n    operator: ExcelScript.DataValidationOperator.greaterThan\n  };\n  const positiveNumberOnlyRule: ExcelScript.DataValidationRule = {\n    wholeNumber: positiveNumberValidation\n  };\n\n  // Set the rule on the range.\n  const rangeDataValidation = positiveNumberOnlyCells.getDataValidation();\n  rangeDataValidation.setRule(positiveNumberOnlyRule);\n\n  // Create an alert to appear when data other than positive numbers are entered.\n  const positiveNumberOnlyAlert: ExcelScript.DataValidationErrorAlert = {\n    message: \"Positive numbers only\",\n    showAlert: true,\n    style: ExcelScript.DataValidationAlertStyle.stop,\n    title: \"Invalid data\"\n  };\n  rangeDataValidation.setErrorAlert(positiveNumberOnlyAlert);\n}\n```"
 isPreview: false
 isDeprecated: false
 fields:
-  - name: information
-    uid: 'ExcelScript!ExcelScript.DataValidationAlertStyle.information:member'
-    package: ExcelScript!
-    summary: ''
-  - name: stop
-    uid: 'ExcelScript!ExcelScript.DataValidationAlertStyle.stop:member'
-    package: ExcelScript!
-    summary: ''
-  - name: warning
-    uid: 'ExcelScript!ExcelScript.DataValidationAlertStyle.warning:member'
-    package: ExcelScript!
-    summary: ''
+- name: information
+  uid: ExcelScript!ExcelScript.DataValidationAlertStyle.information:member
+  package: ExcelScript!
+  summary: ''
+- name: stop
+  uid: ExcelScript!ExcelScript.DataValidationAlertStyle.stop:member
+  package: ExcelScript!
+  summary: ''
+- name: warning
+  uid: ExcelScript!ExcelScript.DataValidationAlertStyle.warning:member
+  package: ExcelScript!
+  summary: ''
+metadata:
+  ms.openlocfilehash: a6a9e3a23099906d63f5fabb829d235cae4e7018
+  ms.sourcegitcommit: f004fc5d3ebfc650a5a353e05f1d75c2bc330f09
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 10/26/2022
+  ms.locfileid: "68698181"
