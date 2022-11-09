@@ -3,7 +3,7 @@ name: ExcelScript.PageLayout
 uid: ExcelScript!ExcelScript.PageLayout:interface
 package: ExcelScript!
 fullName: ExcelScript.PageLayout
-summary: プリンター固有の実装に依存しないレイアウトと印刷の設定を表します。 これらの設定には、余白、印刷の向き、ページ番号、タイトル行、および印刷範囲が含まれます。
+summary: プリンター固有の実装に依存しないレイアウトと印刷設定を表します。 これらの設定には、余白、印刷の向き、ページ番号、タイトル行、および印刷範囲が含まれます。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getCenterHorizontally:member(1)
   package: ExcelScript!
   fullName: getCenterHorizontally()
-  summary: ワークシートの中央の水平フラグ。 このフラグによって、印刷時、ワークシートのページ中央を水平に設定するかどうかが決定されます。
+  summary: ワークシートの中央の水平方向のフラグ。 このフラグによって、印刷時、ワークシートのページ中央を水平に設定するかどうかが決定されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getCenterVertically:member(1)
   package: ExcelScript!
   fullName: getCenterVertically()
-  summary: ワークシートの中央の垂直方向のフラグ。 このフラグによって、印刷時、ワークシートのページ中央を垂直に設定するかどうかが決定されます。
+  summary: ワークシートの中央に垂直フラグを設定します。 このフラグによって、印刷時、ワークシートのページ中央を垂直に設定するかどうかが決定されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getFirstPageNumber:member(1)
   package: ExcelScript!
   fullName: getFirstPageNumber()
-  summary: 印刷するワークシートの最初のページ番号。 値は `null` "自動" ページ番号を表します。
+  summary: 印刷するワークシートの最初のページ番号。 値は `null` 、"auto" ページ番号を表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getFooterMargin:member(1)
   package: ExcelScript!
   fullName: getFooterMargin()
-  summary: 印刷時に使用するワークシートのフッター余白 (ポイント単位)。
+  summary: 印刷時に使用するワークシートのフッター余白をポイント単位で指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getHeaderMargin:member(1)
   package: ExcelScript!
   fullName: getHeaderMargin()
-  summary: 印刷時に使用するワークシートのヘッダー余白 (ポイント単位)。
+  summary: 印刷時に使用するワークシートのヘッダー余白をポイント単位で指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getLeftMargin:member(1)
   package: ExcelScript!
   fullName: getLeftMargin()
-  summary: 印刷時に使用するワークシートの左余白 (ポイント単位)。
+  summary: 印刷時に使用するワークシートの左余白をポイント単位で指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getOrientation:member(1)
   package: ExcelScript!
   fullName: getOrientation()
-  summary: ワークシートのページの向き。
+  summary: ページのワークシートの向き。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -156,7 +156,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getPaperSize:member(1)
   package: ExcelScript!
   fullName: getPaperSize()
-  summary: ワークシートのページの用紙サイズ。
+  summary: ページのワークシートの用紙サイズ。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -169,7 +169,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getPrintArea:member(1)
   package: ExcelScript!
   fullName: getPrintArea()
-  summary: ワークシートの `RangeAreas` 印刷領域を表す 1 つまたは複数の四角形の範囲で構成されるオブジェクトを取得します。 印刷領域がない場合、このメソッドは `undefined`<!-- -->.
+  summary: ワークシートの `RangeAreas` 印刷領域を表す 1 つまたは複数の四角形の範囲を含むオブジェクトを取得します。 印刷領域がない場合、このメソッドは `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -208,7 +208,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getPrintGridlines:member(1)
   package: ExcelScript!
   fullName: getPrintGridlines()
-  summary: ワークシートの枠線を印刷するかどうかを指定します。
+  summary: ワークシートの目盛線を印刷するかどうかを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -247,7 +247,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getPrintTitleColumns:member(1)
   package: ExcelScript!
   fullName: getPrintTitleColumns()
-  summary: タイトル列を表す範囲オブジェクトを取得します。 設定されていない場合、このメソッドは返します `undefined`<!-- -->.
+  summary: タイトル列を表す範囲オブジェクトを取得します。 が設定されていない場合、このメソッドは `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -260,7 +260,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getPrintTitleRows:member(1)
   package: ExcelScript!
   fullName: getPrintTitleRows()
-  summary: タイトル行を表す範囲オブジェクトを取得します。 設定されていない場合、このメソッドは返します `undefined`<!-- -->.
+  summary: タイトル行を表す範囲オブジェクトを取得します。 が設定されていない場合、このメソッドは `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -273,7 +273,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getRightMargin:member(1)
   package: ExcelScript!
   fullName: getRightMargin()
-  summary: 印刷時に使用するワークシートの右余白 (ポイント単位)。
+  summary: 印刷時に使用するワークシートの右余白をポイント単位で指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -286,7 +286,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getTopMargin:member(1)
   package: ExcelScript!
   fullName: getTopMargin()
-  summary: 印刷時に使用するワークシートの上余白 (ポイント単位)。
+  summary: 印刷時に使用するワークシートの上余白をポイント単位で指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -299,7 +299,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getZoom:member(1)
   package: ExcelScript!
   fullName: getZoom()
-  summary: ワークシートの印刷ズーム オプション。 オブジェクトは `PageLayoutZoomOptions` JSON オブジェクトとして設定する必要があります (代わりに使用 `x.zoom = {...}` してください) `x.zoom.scale = ...`<!-- -->).
+  summary: ワークシートの印刷ズーム オプション。 オブジェクトは `PageLayoutZoomOptions` JSON オブジェクトとして設定する必要があります (代わりに を使用します `x.zoom = {...}` ) `x.zoom.scale = ...`<!-- -->).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -346,7 +346,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setCenterHorizontally:member(1)
   package: ExcelScript!
   fullName: setCenterHorizontally(centerHorizontally)
-  summary: ワークシートの中央の水平フラグ。 このフラグによって、印刷時、ワークシートのページ中央を水平に設定するかどうかが決定されます。
+  summary: ワークシートの中央の水平方向のフラグ。 このフラグによって、印刷時、ワークシートのページ中央を水平に設定するかどうかが決定されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -363,7 +363,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setCenterVertically:member(1)
   package: ExcelScript!
   fullName: setCenterVertically(centerVertically)
-  summary: ワークシートの中央の垂直方向のフラグ。 このフラグによって、印刷時、ワークシートのページ中央を垂直に設定するかどうかが決定されます。
+  summary: ワークシートの中央に垂直フラグを設定します。 このフラグによって、印刷時、ワークシートのページ中央を垂直に設定するかどうかが決定されます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -397,7 +397,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setFirstPageNumber:member(1)
   package: ExcelScript!
   fullName: setFirstPageNumber(firstPageNumber)
-  summary: 印刷するワークシートの最初のページ番号。 値は `null` "自動" ページ番号を表します。
+  summary: 印刷するワークシートの最初のページ番号。 値は `null` 、"auto" ページ番号を表します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -414,7 +414,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setFooterMargin:member(1)
   package: ExcelScript!
   fullName: setFooterMargin(footerMargin)
-  summary: 印刷時に使用するワークシートのフッター余白 (ポイント単位)。
+  summary: 印刷時に使用するワークシートのフッター余白をポイント単位で指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -431,7 +431,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setHeaderMargin:member(1)
   package: ExcelScript!
   fullName: setHeaderMargin(headerMargin)
-  summary: 印刷時に使用するワークシートのヘッダー余白 (ポイント単位)。
+  summary: 印刷時に使用するワークシートのヘッダー余白をポイント単位で指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -448,7 +448,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setLeftMargin:member(1)
   package: ExcelScript!
   fullName: setLeftMargin(leftMargin)
-  summary: 印刷時に使用するワークシートの左余白 (ポイント単位)。
+  summary: 印刷時に使用するワークシートの左余白をポイント単位で指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -465,7 +465,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setOrientation:member(1)
   package: ExcelScript!
   fullName: setOrientation(orientation)
-  summary: ワークシートのページの向き。
+  summary: ページのワークシートの向き。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -482,7 +482,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setPaperSize:member(1)
   package: ExcelScript!
   fullName: setPaperSize(paperSize)
-  summary: ワークシートのページの用紙サイズ。
+  summary: ページのワークシートの用紙サイズ。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -528,7 +528,7 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.PrintComments:enum" />
     return:
       type: void
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script makes the comments print at the end of the worksheet\n * when the workbook is printed.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Access every worksheet in the workbook.\n  workbook.getWorksheets().forEach(worksheet => {\n    // Get the page layout for each sheet.\n    const layout = worksheet.getPageLayout();\n\n    // Change the comment printing settings to print them at the end of the sheet.\n    layout.setPrintComments(ExcelScript.PrintComments.endSheet);\n  });\n}\n```"
 - name: setPrintErrors(printErrors)
   uid: ExcelScript!ExcelScript.PageLayout#setPrintErrors:member(1)
   package: ExcelScript!
@@ -550,7 +550,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setPrintGridlines:member(1)
   package: ExcelScript!
   fullName: setPrintGridlines(printGridlines)
-  summary: ワークシートの枠線を印刷するかどうかを指定します。
+  summary: ワークシートの目盛線を印刷するかどうかを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -596,7 +596,7 @@ methods:
               ): void;
     parameters:
     - id: unit
-      description: 指定された余白の測定単位。
+      description: 提供された余白の測定単位。
       type: <xref uid="ExcelScript!ExcelScript.PrintMarginUnit:enum" />
     - id: marginOptions
       description: 設定する余白の値。 指定されていない余白は変更されません。
@@ -620,7 +620,7 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.PrintOrder:enum" />
     return:
       type: void
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script sets the print order for every worksheet in the workbook.\n * The order of printed content will go over (e.g., left-to-right) \n * then down (i.e., top-to-bottom).\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Access every worksheet in the workbook.\n  workbook.getWorksheets().forEach(worksheet => {\n    // Get the page layout for each sheet.\n    const layout: ExcelScript.PageLayout = worksheet.getPageLayout();\n\n    // Set the print order to over-then-down.\n    layout.setPrintOrder(ExcelScript.PrintOrder.overThenDown);\n  });\n}\n```"
 - name: setPrintTitleColumns(printTitleColumns)
   uid: ExcelScript!ExcelScript.PageLayout#setPrintTitleColumns:member(1)
   package: ExcelScript!
@@ -633,7 +633,7 @@ methods:
     content: 'setPrintTitleColumns(printTitleColumns: Range | string): void;'
     parameters:
     - id: printTitleColumns
-      description: 各ページの左側に繰り返される列。 範囲は、列全体にまたがって有効にする必要があります。
+      description: 各ページの左側に繰り返される列。 範囲は、有効にするには列全体にまたがる必要があります。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: void
@@ -659,7 +659,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setRightMargin:member(1)
   package: ExcelScript!
   fullName: setRightMargin(rightMargin)
-  summary: 印刷時に使用するワークシートの右余白 (ポイント単位)。
+  summary: 印刷時に使用するワークシートの右余白をポイント単位で指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -676,7 +676,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setTopMargin:member(1)
   package: ExcelScript!
   fullName: setTopMargin(topMargin)
-  summary: 印刷時に使用するワークシートの上余白 (ポイント単位)。
+  summary: 印刷時に使用するワークシートの上余白をポイント単位で指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -693,7 +693,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setZoom:member(1)
   package: ExcelScript!
   fullName: setZoom(zoom)
-  summary: ワークシートの印刷ズーム オプション。 オブジェクトは `PageLayoutZoomOptions` JSON オブジェクトとして設定する必要があります (代わりに使用 `x.zoom = {...}` してください) `x.zoom.scale = ...`<!-- -->).
+  summary: ワークシートの印刷ズーム オプション。 オブジェクトは `PageLayoutZoomOptions` JSON オブジェクトとして設定する必要があります (代わりに を使用します `x.zoom = {...}` ) `x.zoom.scale = ...`<!-- -->).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -707,9 +707,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 3471c7a1cd66390c49f1d211027b97700195aff8
-  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
+  ms.openlocfilehash: dea22c85c02307978e1b36282983575f763566fd
+  ms.sourcegitcommit: bd711a06dd265e3446ede101909916e5d45d7b23
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 05/13/2022
-  ms.locfileid: "65394227"
+  ms.lasthandoff: 11/09/2022
+  ms.locfileid: "68891371"

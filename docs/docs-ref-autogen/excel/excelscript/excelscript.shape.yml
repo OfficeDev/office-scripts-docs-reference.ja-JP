@@ -3,7 +3,7 @@ name: ExcelScript.Shape
 uid: ExcelScript!ExcelScript.Shape:interface
 package: ExcelScript!
 fullName: ExcelScript.Shape
-summary: ワークシート内の汎用図形オブジェクトを表します。 図形には、幾何学的な図形、線、図形のグループなどがあります。
+summary: ワークシート内のジェネリック図形オブジェクトを表します。 図形には、幾何学的図形、線、図形のグループなどがあります。
 remarks: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script creates a hexagon shape on the current worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  const currentSheet = workbook.getActiveWorksheet();\n  const hexagon: ExcelScript.Shape = \n    currentSheet.addGeometricShape(ExcelScript.GeometricShapeType.hexagon);\n  \n  // Set the hexagon size to 40x40 pixels.\n  hexagon.setHeight(40);\n  hexagon.setWidth(40);\n\n  // Position the hexagon at [100,100] pixels.\n  hexagon.setLeft(100);\n  hexagon.setTop(100);\n}\n```"
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#copyTo:member(1)
   package: ExcelScript!
   fullName: copyTo(destinationSheet)
-  summary: オブジェクトをコピーして貼り付けます `Shape` 。 貼り付けられた図形は、この図形と同じピクセル位置にコピーされます。
+  summary: オブジェクトをコピーして貼り付けます `Shape` 。 貼り付けた図形は、この図形と同じピクセル位置にコピーされます。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -21,7 +21,7 @@ methods:
     content: 'copyTo(destinationSheet?: Worksheet | string): Shape;'
     parameters:
     - id: destinationSheet
-      description: 図形オブジェクトを貼り付けるシート。 既定値は、コピーされた図形のワークシートです。
+      description: 図形オブジェクトを貼り付けるシート。 既定値は、コピーした図形のワークシートです。
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" /> | string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
@@ -82,7 +82,7 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.PictureFormat:enum" />
     return:
       type: string
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script creates a star shape with the value from cell A1.\n * It then returns the image as a base64-encoded string. \n * This string would be used as part of a Power Automate flow to add the image elsewhere.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the value of A1 from the worksheet named Sheet1.\n  const sheet = workbook.getWorksheet(\"Sheet1\");\n  const value = sheet.getRange(\"A1\").getValue();\n\n  // Create a Shape object that looks like a 5-pointed star.\n  const star = sheet.addGeometricShape(ExcelScript.GeometricShapeType.star5);\n\n  // Set the text of star and make sure the shape fits the text.\n  const textFrame = star.getTextFrame();\n  textFrame.getTextRange().setText(value.toString());\n  textFrame.setAutoSizeSetting(ExcelScript.ShapeAutoSize.autoSizeShapeToFitText);\n\n  // Return the shape as a PNG image represented by a base64-encoded string.\n  return star.getAsImage(ExcelScript.PictureFormat.png);\n}\n```"
 - name: getConnectionSiteCount()
   uid: ExcelScript!ExcelScript.Shape#getConnectionSiteCount:member(1)
   package: ExcelScript!
@@ -126,7 +126,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getGeometricShapeType:member(1)
   package: ExcelScript!
   fullName: getGeometricShapeType()
-  summary: このジオメトリ図形のジオメトリ図形の種類を指定します。 詳細は「`ExcelScript.GeometricShapeType`」をご覧ください。 図形の `null` 種類が "GeometrShape" でない場合に返されます。
+  summary: このジオメトリ シェイプのジオメトリ シェイプ タイプを指定します。 詳細は「`ExcelScript.GeometricShapeType`」をご覧ください。 図形の `null` 種類が "GeometrShape" でない場合は を返します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -186,7 +186,7 @@ methods:
     content: 'getImage(): Image;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.Image:interface" />
-      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n* This script transfers an image from one worksheet to another.\n*/\nfunction main(workbook: ExcelScript.Workbook)\n{\n  // Get the worksheet with the image on it.\n  let firstWorksheet = workbook.getWorksheet(\"FirstSheet\");\n\n  // Get the first image from the worksheet.\n  // If a script added the image, you could add a name to make it easier to find.\n  let image: ExcelScript.Image;\n  firstWorksheet.getShapes().forEach((shape, index) => {\n    if (shape.getType() === ExcelScript.ShapeType.image) {\n      image = shape.getImage();\n      return;\n    }\n  });\n\n  // Copy the image to another worksheet.\n  image.getShape().copyTo(\"SecondSheet\");\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script transfers an image from one worksheet to another.\n */\nfunction main(workbook: ExcelScript.Workbook)\n{\n  // Get the worksheet with the image on it.\n  let firstWorksheet = workbook.getWorksheet(\"FirstSheet\");\n\n  // Get the first image from the worksheet.\n  // If a script added the image, you could add a name to make it easier to find.\n  let image: ExcelScript.Image;\n  firstWorksheet.getShapes().forEach((shape, index) => {\n    if (shape.getType() === ExcelScript.ShapeType.image) {\n      image = shape.getImage();\n      return;\n    }\n  });\n\n  // Copy the image to another worksheet.\n  image.getShape().copyTo(\"SecondSheet\");\n}\n```"
 - name: getImageAsBase64(format)
   uid: ExcelScript!ExcelScript.Shape#getImageAsBase64:member(1)
   package: ExcelScript!
@@ -260,7 +260,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getLockAspectRatio:member(1)
   package: ExcelScript!
   fullName: getLockAspectRatio()
-  summary: この図形の縦横比をロックするかどうかを指定します。
+  summary: この図形の縦横比がロックされているかどうかを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -312,7 +312,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getRotation:member(1)
   package: ExcelScript!
   fullName: getRotation()
-  summary: 図形の回転角度を度単位で指定します。
+  summary: 図形の回転を度単位で指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -333,7 +333,7 @@ methods:
     content: 'getTextFrame(): TextFrame;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.TextFrame:interface" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>例\n\n```TypeScript\n/**\n * This script creates a star shape with the value from cell A1.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the value of A1 from the worksheet named Sheet1.\n  const sheet = workbook.getWorksheet(\"Sheet1\");\n  const value = sheet.getRange(\"A1\").getValue();\n\n  // Create a Shape object that looks like a 5-pointed star.\n  const star = sheet.addGeometricShape(ExcelScript.GeometricShapeType.star5);\n\n  // Set the text of star and make sure the shape fits the text.\n  const textFrame = star.getTextFrame();\n  textFrame.getTextRange().setText(value.toString());\n  textFrame.setAutoSizeSetting(ExcelScript.ShapeAutoSize.autoSizeShapeToFitText);\n}\n```"
 - name: getTop()
   uid: ExcelScript!ExcelScript.Shape#getTop:member(1)
   package: ExcelScript!
@@ -364,7 +364,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getVisible:member(1)
   package: ExcelScript!
   fullName: getVisible()
-  summary: 図形が表示されるかどうかを指定します。
+  summary: 図形を表示するかどうかを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -411,7 +411,7 @@ methods:
     content: 'incrementLeft(increment: number): void;'
     parameters:
     - id: increment
-      description: インクリメント (ポイント単位) は、図形が水平方向に移動されます。 正の値は図形を右に移動し、負の値は左に移動します。 シートが右から左方向の場合は逆になります。正の値は図形を左に移動し、負の値は右に移動します。
+      description: 図形の増分がポイント単位で水平方向に移動されます。 正の値を指定すると図形が右に移動し、負の値が左に移動します。 シートが右から左方向の場合、これは逆になります。正の値を指定すると図形が左に移動し、負の値が右に移動します。
       type: number
     return:
       type: void
@@ -428,7 +428,7 @@ methods:
     content: 'incrementRotation(increment: number): void;'
     parameters:
     - id: increment
-      description: 図形が回転する角度の数。 正の値は図形を時計回りに回転し、負の値は反時計回りに回転します。
+      description: 図形が回転する角度。 正の値を指定すると、図形が時計回りに回転し、負の値が反時計回りに回転します。
       type: number
     return:
       type: void
@@ -445,7 +445,7 @@ methods:
     content: 'incrementTop(increment: number): void;'
     parameters:
     - id: increment
-      description: インクリメント (ポイント単位) は、図形が垂直方向に移動されます。 正の値は図形を下に移動し、負の値は上に移動します。
+      description: 図形の増分がポイント単位で垂直方向に移動されます。 正の値を指定すると図形が下に移動し、負の値が上に移動します。
       type: number
     return:
       type: void
@@ -470,10 +470,10 @@ methods:
       description: 現在の高さと変更後の高さの比率、または元の高さと変更後の高さの比率を指定します。
       type: number
     - id: scaleType
-      description: 図形を元のサイズまたは現在のサイズに対してスケーリングするかどうかを指定します。 元のサイズのスケーリング オプションは、イメージに対してのみ機能します。
+      description: 図形を元のサイズと現在のサイズのどちらを基準にスケーリングするかを指定します。 元のサイズ スケーリング オプションは、イメージに対してのみ機能します。
       type: <xref uid="ExcelScript!ExcelScript.ShapeScaleType:enum" />
     - id: scaleFrom
-      description: 省略可能。 図形を拡大縮小する場合、図形の位置を保持する部分を指定します。 省略した場合は、図形の左上隅を表し、その位置を保持します。
+      description: オプション。 図形を拡大縮小する場合、図形の位置を保持する部分を指定します。 省略すると、図形の左上隅の位置が保持されます。
       type: <xref uid="ExcelScript!ExcelScript.ShapeScaleFrom:enum" />
     return:
       type: void
@@ -498,10 +498,10 @@ methods:
       description: 現在の幅と変更後の幅の比率、または元の幅と変更後の幅の比率を指定します。
       type: number
     - id: scaleType
-      description: 図形を元のサイズまたは現在のサイズに対してスケーリングするかどうかを指定します。 元のサイズのスケーリング オプションは、イメージに対してのみ機能します。
+      description: 図形を元のサイズと現在のサイズのどちらを基準にスケーリングするかを指定します。 元のサイズ スケーリング オプションは、イメージに対してのみ機能します。
       type: <xref uid="ExcelScript!ExcelScript.ShapeScaleType:enum" />
     - id: scaleFrom
-      description: 省略可能。 図形を拡大縮小する場合、図形の位置を保持する部分を指定します。 省略した場合は、図形の左上隅を表し、その位置を保持します。
+      description: オプション。 図形を拡大縮小する場合、図形の位置を保持する部分を指定します。 省略すると、図形の左上隅の位置が保持されます。
       type: <xref uid="ExcelScript!ExcelScript.ShapeScaleFrom:enum" />
     return:
       type: void
@@ -544,7 +544,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setGeometricShapeType:member(1)
   package: ExcelScript!
   fullName: setGeometricShapeType(geometricShapeType)
-  summary: このジオメトリ図形のジオメトリ図形の種類を指定します。 詳細は「`ExcelScript.GeometricShapeType`」をご覧ください。 図形の `null` 種類が "GeometrShape" でない場合に返されます。
+  summary: このジオメトリ シェイプのジオメトリ シェイプ タイプを指定します。 詳細は「`ExcelScript.GeometricShapeType`」をご覧ください。 図形の `null` 種類が "GeometrShape" でない場合は を返します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -595,7 +595,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setLockAspectRatio:member(1)
   package: ExcelScript!
   fullName: setLockAspectRatio(lockAspectRatio)
-  summary: この図形の縦横比をロックするかどうかを指定します。
+  summary: この図形の縦横比がロックされているかどうかを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -646,7 +646,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setRotation:member(1)
   package: ExcelScript!
   fullName: setRotation(rotation)
-  summary: 図形の回転角度を度単位で指定します。
+  summary: 図形の回転を度単位で指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -680,7 +680,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setVisible:member(1)
   package: ExcelScript!
   fullName: setVisible(visible)
-  summary: 図形が表示されるかどうかを指定します。
+  summary: 図形を表示するかどうかを指定します。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -722,15 +722,15 @@ methods:
     content: 'setZOrder(position: ShapeZOrder): void;'
     parameters:
     - id: position
-      description: Z オーダー スタック内の図形を他の図形に対して相対的に移動する場所。 詳細は「`ExcelScript.ShapeZOrder`」をご覧ください。
+      description: z オーダー スタック内の図形を他の図形を基準に移動する場所。 詳細は「`ExcelScript.ShapeZOrder`」をご覧ください。
       type: <xref uid="ExcelScript!ExcelScript.ShapeZOrder:enum" />
     return:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: ada90a41593e16c30239927364f7955501de640c
-  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
+  ms.openlocfilehash: d356ab4daea59de285b386feb91721336650413a
+  ms.sourcegitcommit: bd711a06dd265e3446ede101909916e5d45d7b23
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 05/13/2022
-  ms.locfileid: "65394213"
+  ms.lasthandoff: 11/09/2022
+  ms.locfileid: "68891378"
